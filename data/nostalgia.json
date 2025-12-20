@@ -1,0 +1,264 @@
+{
+  "nostalgia": [
+    {
+      "title": "Windows 93",
+      "url": "https://www.windows93.net/",
+      "type": "Interactive OS Simulator",
+      "era": "1990s-2000s",
+      "description": "A fully functional, trippy recreation of classic Windows in your browser. Complete with games, apps, and Easter eggs.",
+      "tags": ["windows", "simulator", "interactive", "games"],
+      "nostalgia_score": 10,
+      "still_works": true
+    },
+    {
+      "title": "Space Jam (1996) Official Website",
+      "url": "https://www.spacejam.com/1996/",
+      "type": "Preserved Website",
+      "era": "1996",
+      "description": "The original Space Jam movie website, unchanged since 1996. Peak 90s web design with frames, GIFs, and Comic Sans.",
+      "tags": ["90s", "movies", "original", "preserved"],
+      "nostalgia_score": 10,
+      "still_works": true
+    },
+    {
+      "title": "Hampster Dance",
+      "url": "https://hamsterdance.org/hamsterdance/",
+      "type": "Meme Site",
+      "era": "1998",
+      "description": "One of the first viral internet phenomena. Dancing hamsters with looping music. Pure 90s chaos.",
+      "tags": ["meme", "viral", "90s", "music"],
+      "nostalgia_score": 9,
+      "still_works": true
+    },
+    {
+      "title": "Windows 95 in Browser",
+      "url": "https://win95.ajf.me/",
+      "type": "OS Emulator",
+      "era": "1995",
+      "description": "Run the actual Windows 95 operating system in your browser. Includes Minesweeper, Paint, Solitaire.",
+      "tags": ["windows", "emulator", "os", "retro"],
+      "nostalgia_score": 10,
+      "still_works": true
+    },
+    {
+      "title": "Old Reddit",
+      "url": "https://old.reddit.com/",
+      "type": "Classic UI",
+      "era": "2005-2018",
+      "description": "The original Reddit interface before the redesign. Minimal, fast, information-dense.",
+      "tags": ["reddit", "ui", "minimal", "classic"],
+      "nostalgia_score": 8,
+      "still_works": true
+    },
+    {
+      "title": "Geocities Archive",
+      "url": "https://geocities.restorativland.org/",
+      "type": "Website Archive",
+      "era": "1994-2009",
+      "description": "Browse archived Geocities websites. Peak personal web design from the early internet era.",
+      "tags": ["geocities", "archive", "personal-web", "90s"],
+      "nostalgia_score": 9,
+      "still_works": true
+    },
+    {
+      "title": "The Eternal Maze Screensaver",
+      "url": "https://www.mazescreensaver.net/",
+      "type": "Screensaver Recreation",
+      "era": "Windows 95",
+      "description": "The iconic 3D maze screensaver from Windows 95. Procedurally generated endless hallways.",
+      "tags": ["screensaver", "windows", "3d", "maze"],
+      "nostalgia_score": 9,
+      "still_works": true
+    },
+    {
+      "title": "Poolside FM",
+      "url": "https://poolside.fm/",
+      "type": "Retro Music Radio",
+      "era": "80s-90s Aesthetic",
+      "description": "Vaporwave-inspired internet radio with retro Mac aesthetic. Summer vibes and nostalgic music.",
+      "tags": ["music", "radio", "aesthetic", "vaporwave"],
+      "nostalgia_score": 8,
+      "still_works": true
+    },
+    {
+      "title": "Webamp - Winamp in Browser",
+      "url": "https://webamp.org/",
+      "type": "Music Player",
+      "era": "1997-2013",
+      "description": "Faithful recreation of Winamp 2.9 in the browser. It really whips the llama's ass.",
+      "tags": ["winamp", "music", "player", "retro"],
+      "nostalgia_score": 10,
+      "still_works": true
+    },
+    {
+      "title": "Internet Archive - MS-DOS Games",
+      "url": "https://archive.org/details/softwarelibrary_msdos_games",
+      "type": "Game Archive",
+      "era": "1980s-1990s",
+      "description": "Thousands of DOS games playable directly in your browser. Oregon Trail, Prince of Persia, Doom.",
+      "tags": ["games", "dos", "emulator", "archive"],
+      "nostalgia_score": 10,
+      "still_works": true
+    },
+    {
+      "title": "Zombo.com",
+      "url": "https://zombo.com/",
+      "type": "Experimental Site",
+      "era": "1999",
+      "description": "Welcome to Zombocom. This is Zombocom. Welcome. The only limit is yourself. An internet mystery.",
+      "tags": ["mystery", "experimental", "meme", "cult-classic"],
+      "nostalgia_score": 9,
+      "still_works": true
+    },
+    {
+      "title": "The Useless Web",
+      "url": "https://theuselessweb.com/",
+      "type": "Random Site Generator",
+      "era": "Web 1.0 Spirit",
+      "description": "Takes you to random useless but entertaining websites. Captures the playful spirit of early internet.",
+      "tags": ["random", "fun", "discovery", "weird"],
+      "nostalgia_score": 7,
+      "still_works": true
+    },
+    {
+      "title": "Windows XP Simulator",
+      "url": "https://winxp.now.sh/",
+      "type": "OS Simulator",
+      "era": "2001",
+      "description": "Experience Windows XP again. Includes the iconic startup sound, Bliss wallpaper, and classic UI.",
+      "tags": ["windows", "xp", "simulator", "2000s"],
+      "nostalgia_score": 10,
+      "still_works": true
+    },
+    {
+      "title": "Y2K Aesthetic Institute",
+      "url": "https://www.y2kaestheticinstitute.org/",
+      "type": "Cultural Archive",
+      "era": "1993-2003",
+      "description": "Digital culture archive exploring Y2K era design, technology, and aesthetics. Glossy, futuristic, optimistic.",
+      "tags": ["y2k", "design", "culture", "aesthetic"],
+      "nostalgia_score": 8,
+      "still_works": true
+    },
+    {
+      "title": "One Terabyte of Kilobyte Age",
+      "url": "https://blog.geocities.institute/",
+      "type": "Geocities Archive Project",
+      "era": "1990s-2009",
+      "description": "Tumblr showcasing screenshots from old Geocities pages. A museum of amateur web design.",
+      "tags": ["geocities", "screenshots", "archive", "web-design"],
+      "nostalgia_score": 8,
+      "still_works": true
+    },
+    {
+      "title": "AOL Instant Messenger Revival",
+      "url": "https://aim.rhcloud.com/",
+      "type": "Chat Client",
+      "era": "1997-2017",
+      "description": "Fan-made revival of AIM. Relive the door slam sound and away messages.",
+      "tags": ["aim", "chat", "messaging", "2000s"],
+      "nostalgia_score": 9,
+      "still_works": false
+    },
+    {
+      "title": "The Million Dollar Homepage",
+      "url": "http://www.milliondollarhomepage.com/",
+      "type": "Historical Website",
+      "era": "2005",
+      "description": "A student sold 1 million pixels for $1 each. Peak mid-2000s internet entrepreneurship.",
+      "tags": ["viral", "business", "2000s", "pixel-art"],
+      "nostalgia_score": 7,
+      "still_works": true
+    },
+    {
+      "title": "Flash Game Archive - Flashpoint",
+      "url": "https://bluemaxima.org/flashpoint/",
+      "type": "Game Preservation",
+      "era": "1996-2020",
+      "description": "Preserving 100,000+ Flash games and animations. Download to play classics from Newgrounds, Miniclip.",
+      "tags": ["flash", "games", "preservation", "download"],
+      "nostalgia_score": 10,
+      "still_works": true
+    },
+    {
+      "title": "Neopets Classic",
+      "url": "https://www.neopets.com/",
+      "type": "Virtual Pet Game",
+      "era": "1999-Present",
+      "description": "The original virtual pet site, still running. Feed your Neopet and play Flash-free games.",
+      "tags": ["game", "virtual-pets", "online", "legacy"],
+      "nostalgia_score": 9,
+      "still_works": true
+    },
+    {
+      "title": "FFFFOUND! Archive",
+      "url": "http://ffffound.com/",
+      "type": "Image Bookmarking",
+      "era": "2007-2017",
+      "description": "Iconic invite-only image bookmarking site. Frozen in time but archives still viewable.",
+      "tags": ["design", "images", "archive", "aesthetic"],
+      "nostalgia_score": 7,
+      "still_works": false
+    },
+    {
+      "title": "Club Penguin Rewritten",
+      "url": "https://cprewritten.net/",
+      "type": "Game Revival",
+      "era": "2005-2017",
+      "description": "Fan-made recreation of Club Penguin after Disney shut it down. Waddle on!",
+      "tags": ["game", "mmo", "kids", "revival"],
+      "nostalgia_score": 8,
+      "still_works": true
+    },
+    {
+      "title": "Wayback Machine",
+      "url": "https://web.archive.org/",
+      "type": "Web Archive",
+      "era": "1996-Present",
+      "description": "Browse 866 billion archived web pages. See any website as it looked in the past.",
+      "tags": ["archive", "history", "preservation", "essential"],
+      "nostalgia_score": 10,
+      "still_works": true
+    },
+    {
+      "title": "ASCII Art Archive",
+      "url": "https://www.asciiart.eu/",
+      "type": "Text Art Collection",
+      "era": "Pre-1990s",
+      "description": "Massive collection of ASCII art from BBS days and early internet. Copy-paste nostalgia.",
+      "tags": ["ascii", "art", "text", "retro"],
+      "nostalgia_score": 8,
+      "still_works": true
+    },
+    {
+      "title": "Old Games Download",
+      "url": "https://www.oldgamesdownload.com/",
+      "type": "Game Archive",
+      "era": "1980s-2000s",
+      "description": "Free downloads of classic PC games. DOS, Windows 95/98 era games.",
+      "tags": ["games", "download", "dos", "windows"],
+      "nostalgia_score": 9,
+      "still_works": true
+    },
+    {
+      "title": "Textfiles.com",
+      "url": "http://www.textfiles.com/",
+      "type": "Text Archive",
+      "era": "1980s-1990s",
+      "description": "Archive of BBS textfiles. Hacker manifestos, phreaking guides, ANSI art. Raw internet history.",
+      "tags": ["bbs", "hacking", "history", "text"],
+      "nostalgia_score": 9,
+      "still_works": true
+    },
+    {
+      "title": "Neocities",
+      "url": "https://neocities.org/",
+      "type": "Modern Geocities",
+      "era": "2013-Present",
+      "description": "Free web hosting inspired by Geocities. Modern take on personal homepages and creative freedom.",
+      "tags": ["hosting", "personal-web", "creative", "modern"],
+      "nostalgia_score": 7,
+      "still_works": true
+    }
+  ]
+}

@@ -20,9 +20,9 @@
             "url": "https://kasmweb.com/",
             "tags": [
                 "virtualization",
-                "browser",
+                "browser-streaming",
                 "security",
-                "desktop"
+                "remote-desktop"
             ],
             "difficulty": "Intermediate"
         },
@@ -33,8 +33,8 @@
             "url": "https://www.portainer.io/",
             "tags": [
                 "docker",
-                "ui",
-                "management"
+                "web-ui",
+                "container-management"
             ],
             "difficulty": "Beginner"
         },
@@ -44,10 +44,10 @@
             "description": "Network-wide advertisement and internet tracker blocking application.",
             "url": "https://pi-hole.net/",
             "tags": [
-                "network",
                 "dns",
-                "adblock",
-                "privacy"
+                "ad-blocking",
+                "privacy",
+                "network-security"
             ],
             "difficulty": "Beginner"
         },
@@ -57,36 +57,457 @@
             "description": "Open source home automation that puts local control and privacy first.",
             "url": "https://www.home-assistant.io/",
             "tags": [
-                "automation",
+                "home-automation",
                 "iot",
-                "smart-home"
+                "smart-home",
+                "local-control"
             ],
             "difficulty": "Advanced"
         },
         {
             "name": "Jellyfin",
             "category": "Media",
-            "description": "The Free Software Media System. No strings attached. Alternative to Plex.",
+            "description": "The Free Software Media System. Stream movies, TV shows, and music. Alternative to Plex.",
             "url": "https://jellyfin.org/",
             "tags": [
-                "media",
+                "media-server",
                 "streaming",
-                "video"
+                "video",
+                "movies",
+                "tv-shows"
             ],
             "difficulty": "Intermediate"
         },
         {
             "name": "Nginx Proxy Manager",
             "category": "Network",
-            "description": "Expose your services easily and securely with a web UI for Nginx.",
+            "description": "Expose your services easily and securely with a beautiful web UI for Nginx reverse proxy.",
             "url": "https://nginxproxymanager.com/",
             "tags": [
-                "proxy",
+                "reverse-proxy",
                 "ssl",
-                "security",
-                "web"
+                "load-balancing",
+                "web-ui"
             ],
             "difficulty": "Intermediate"
+        },
+        {
+            "name": "GitLab",
+            "category": "Development",
+            "description": "Complete DevOps platform with Git repository management, CI/CD, issue tracking, and more.",
+            "url": "https://about.gitlab.com/",
+            "tags": [
+                "git",
+                "version-control",
+                "ci-cd",
+                "devops",
+                "project-management"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Gitea",
+            "category": "Development",
+            "description": "Lightweight, painless, self-hosted Git service. Fork of Gogs with community-driven development.",
+            "url": "https://gitea.io/",
+            "tags": [
+                "git",
+                "version-control",
+                "lightweight",
+                "open-source"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Forgejo",
+            "category": "Development",
+            "description": "Community-driven fork of Gitea. Self-hosted Git forge with issue tracking and project management.",
+            "url": "https://forgejo.dev/",
+            "tags": [
+                "git",
+                "version-control",
+                "issue-tracking",
+                "community-driven"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "code-server",
+            "category": "Development",
+            "description": "Run VS Code in the browser. Access your development environment from anywhere.",
+            "url": "https://github.com/coder/code-server",
+            "tags": [
+                "code-editor",
+                "ide",
+                "browser-based",
+                "remote-development"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "n8n",
+            "category": "Automation",
+            "description": "Workflow automation tool connecting apps and services. Alternative to Zapier and IFTTT.",
+            "url": "https://n8n.io/",
+            "tags": [
+                "workflow-automation",
+                "integration",
+                "no-code",
+                "api-integration"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Huginn",
+            "category": "Automation",
+            "description": "Create agents that monitor and act on your behalf. Event-driven automation and data processing.",
+            "url": "https://github.com/huginn/huginn",
+            "tags": [
+                "automation",
+                "data-processing",
+                "agents",
+                "monitoring"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Navidrome",
+            "category": "Media",
+            "description": "Modern music server and streamer. Lightweight and compatible with Subsonic clients.",
+            "url": "https://github.com/navidrome/navidrome",
+            "tags": [
+                "music-streaming",
+                "music-library",
+                "subsonic-compatible",
+                "lightweight"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Airsonic",
+            "category": "Media",
+            "description": "Free, web-based media streamer. Supports streaming to multiple devices.",
+            "url": "https://github.com/airsonic-advanced/airsonic-advanced",
+            "tags": [
+                "music-streaming",
+                "media-server",
+                "transcoding",
+                "multi-device"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "PhotoPrism",
+            "category": "Media",
+            "description": "AI-powered photo management app. Browse, organize, and share your photo collection.",
+            "url": "https://photoprism.app/",
+            "tags": [
+                "photo-management",
+                "ai-powered",
+                "gallery",
+                "machine-learning"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Immich",
+            "category": "Media",
+            "description": "High-performance photo and video backup solution. Google Photos alternative.",
+            "url": "https://github.com/immich-app/immich",
+            "tags": [
+                "photo-backup",
+                "video-backup",
+                "mobile-app",
+                "google-photos-alternative"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Vaultwarden",
+            "category": "Security",
+            "description": "Lightweight Bitwarden server implementation. Perfect for personal or small team use.",
+            "url": "https://github.com/dani-garcia/vaultwarden/",
+            "tags": [
+                "password-manager",
+                "bitwarden-compatible",
+                "lightweight",
+                "security"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Authelia",
+            "category": "Security",
+            "description": "Single Sign-On (SSO) and two-factor authentication server for your services.",
+            "url": "https://www.authelia.com/",
+            "tags": [
+                "sso",
+                "two-factor-auth",
+                "authentication",
+                "access-control"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Authentik",
+            "category": "Security",
+            "description": "Open-source Identity Provider with support for OAuth2, SAML, LDAP, and OIDC.",
+            "url": "https://authentik.io/",
+            "tags": [
+                "identity-provider",
+                "oauth2",
+                "saml",
+                "ldap",
+                "sso"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "WireGuard",
+            "category": "Network",
+            "description": "Fast, modern, and secure VPN tunnel. Simpler and faster than IPsec and OpenVPN.",
+            "url": "https://www.wireguard.com/",
+            "tags": [
+                "vpn",
+                "encryption",
+                "secure-tunnel",
+                "networking"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Tailscale",
+            "category": "Network",
+            "description": "Zero-config VPN built on WireGuard. Connect all your devices with ease.",
+            "url": "https://tailscale.com/",
+            "tags": [
+                "vpn",
+                "mesh-network",
+                "zero-config",
+                "wireguard-based"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Headscale",
+            "category": "Network",
+            "description": "Self-hosted implementation of Tailscale control server. Full mesh VPN without the cloud.",
+            "url": "https://github.com/juanfont/headscale",
+            "tags": [
+                "vpn",
+                "mesh-network",
+                "tailscale-compatible",
+                "self-hosted"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Traefik",
+            "category": "Network",
+            "description": "Cloud-native application proxy. Automatic service discovery and Let's Encrypt integration.",
+            "url": "https://traefik.io/",
+            "tags": [
+                "reverse-proxy",
+                "load-balancer",
+                "auto-discovery",
+                "cloud-native"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Caddy",
+            "category": "Network",
+            "description": "Powerful web server with automatic HTTPS. Simple configuration with Caddyfile.",
+            "url": "https://caddyserver.com/",
+            "tags": [
+                "web-server",
+                "reverse-proxy",
+                "automatic-https",
+                "simple-config"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Grafana",
+            "category": "Monitoring",
+            "description": "Observability and data visualization platform. Create beautiful dashboards from any data source.",
+            "url": "https://grafana.com/",
+            "tags": [
+                "data-visualization",
+                "dashboards",
+                "observability",
+                "analytics"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Prometheus",
+            "category": "Monitoring",
+            "description": "Systems monitoring and alerting toolkit. Time-series database with powerful query language.",
+            "url": "https://prometheus.io/",
+            "tags": [
+                "metrics",
+                "alerting",
+                "time-series",
+                "observability"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Uptime Kuma",
+            "category": "Monitoring",
+            "description": "Fancy uptime monitoring tool with beautiful status pages. Monitor websites, APIs, and more.",
+            "url": "https://github.com/louislam/uptime-kuma",
+            "tags": [
+                "uptime-monitoring",
+                "status-page",
+                "alerting",
+                "website-monitoring"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Netdata",
+            "category": "Monitoring",
+            "description": "Real-time infrastructure monitoring with millisecond precision. No configuration needed.",
+            "url": "https://www.netdata.cloud/",
+            "tags": [
+                "real-time-monitoring",
+                "infrastructure",
+                "performance",
+                "zero-config"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Nextcloud",
+            "category": "Productivity",
+            "description": "Complete cloud platform for file storage, collaboration, calendars, and more. Dropbox alternative.",
+            "url": "https://nextcloud.com/",
+            "tags": [
+                "file-storage",
+                "collaboration",
+                "calendar",
+                "cloud-platform"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Paperless-ngx",
+            "category": "Productivity",
+            "description": "Document management system that transforms physical documents into searchable online archive.",
+            "url": "https://github.com/paperless-ngx/paperless-ngx",
+            "tags": [
+                "document-management",
+                "ocr",
+                "archive",
+                "paperless"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Trilium Notes",
+            "category": "Productivity",
+            "description": "Hierarchical note-taking app with advanced features. Perfect for building personal knowledge bases.",
+            "url": "https://github.com/zadam/trilium",
+            "tags": [
+                "note-taking",
+                "knowledge-base",
+                "hierarchical",
+                "markdown"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Joplin Server",
+            "category": "Productivity",
+            "description": "Backend server for Joplin note-taking app. Sync notes across all your devices.",
+            "url": "https://joplinapp.org/",
+            "tags": [
+                "note-taking",
+                "sync-server",
+                "markdown",
+                "cross-platform"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Memos",
+            "category": "Productivity",
+            "description": "Privacy-first, lightweight note-taking service. Perfect for quick thoughts and memos.",
+            "url": "https://usememos.com/",
+            "tags": [
+                "note-taking",
+                "lightweight",
+                "privacy-first",
+                "quick-notes"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Syncthing",
+            "category": "Productivity",
+            "description": "Continuous file synchronization between devices. Secure, decentralized, and private.",
+            "url": "https://syncthing.net/",
+            "tags": [
+                "file-sync",
+                "peer-to-peer",
+                "encrypted",
+                "decentralized"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "AdGuard Home",
+            "category": "Network",
+            "description": "Network-wide DNS filtering with advanced ad and tracker blocking. Pi-hole alternative.",
+            "url": "https://adguard.com/adguard-home/",
+            "tags": [
+                "dns-filtering",
+                "ad-blocking",
+                "privacy",
+                "parental-control"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Unbound",
+            "category": "Network",
+            "description": "Validating, recursive, and caching DNS resolver. Enhance privacy with local DNS resolution.",
+            "url": "https://nlnetlabs.nl/projects/unbound/about/",
+            "tags": [
+                "dns-resolver",
+                "privacy",
+                "caching",
+                "recursive-dns"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Changedetection.io",
+            "category": "Productivity",
+            "description": "Website change detection and monitoring. Get alerts when websites update.",
+            "url": "https://www.changedetection.io/",
+            "tags": [
+                "website-monitoring",
+                "change-detection",
+                "alerts",
+                "automation"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "FreshRSS",
+            "category": "Productivity",
+            "description": "Lightweight, self-hostable RSS feed aggregator. Follow all your favorite websites.",
+            "url": "https://freshrss.org/",
+            "tags": [
+                "rss-reader",
+                "feed-aggregator",
+                "news-reader",
+                "lightweight"
+            ],
+            "difficulty": "Beginner"
         }
     ]
 }

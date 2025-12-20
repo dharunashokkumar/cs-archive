@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CS Archive: NOSTALGIA</title>
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+
+<body>
+    <h1>:: CS Student Archive ::</h1>
+    <div class="nav-bar">
+        [ <a href="index.html">DASHBOARD</a> ]
+        [ <a href="skills.html">SKILLS</a> ]
+        [ <a href="resources.html">RESOURCES</a> ]
+        [ <a href="repos.html">REPOS</a> ]
+        [ <a href="selfhosted.html">SELF_HOSTED</a> ]
+        [ <a href="nostalgia.html" class="active">NOSTALGIA</a> ]
+        [ <a href="archive.html">ARCHIVE_GEMS</a> ]
+        [ <a href="contribute.html">CONTRIBUTE</a> ]
+    </div>
+
+    <h2>> INTERNET_NOSTALGIA // TIME_MACHINE</h2>
+    
+    <div style="background: #ffe; border: 2px solid #0af; padding: 15px; margin-bottom: 20px; font-family: 'Comic Sans MS', cursive;">
+        <marquee><strong>⚡ WELCOME TO THE OLD INTERNET ⚡</strong></marquee>
+        <p style="margin: 10px 0;">Experience the web as it was meant to be: weird, creative, and full of wonder. These are living fossils of internet history.</p>
+        <p style="font-size: 0.8em; color: #666;">💾 Best viewed in Netscape Navigator 4.0 or higher 💾</p>
+    </div>
+
+    <div id="nostalgia-container" class="section-container"></div>
+
+    <div style="margin-top: 30px; text-align: center; border: 2px dashed #999; padding: 20px; background: #f9f9f9;">
+        <h3 style="margin-top: 0;">📼 WANT MORE NOSTALGIA?</h3>
+        <p>Check out these resources:</p>
+        <ul style="list-style: none; padding: 0; line-height: 2;">
+            <li>🔗 <a href="https://web.archive.org/" target="_blank">Internet Archive Wayback Machine</a></li>
+            <li>🔗 <a href="https://archive.org/details/classicpcgames" target="_blank">Classic PC Games</a></li>
+            <li>🔗 <a href="https://www.cameronsworld.net/" target="_blank">Cameron's World (Geocities Collage)</a></li>
+            <li>🔗 <a href="https://wiby.me/" target="_blank">Wiby.me - Search Engine for Old Web</a></li>
+            <li>🔗 <a href="https://theoldnet.com/" target="_blank">TheOldNet - Browse the web from the 90s</a></li>
+        </ul>
+    </div>
+
+    <script>
+        fetch('data/nostalgia.json')
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById('nostalgia-container');
+                data.nostalgia.forEach(item => {
+                    const card = document.createElement('div');
+                    card.className = `skill-card`;
+                    let tagsHtml = item.tags ? item.tags.map(t => `<span class="tag-link">${t}</span>`).join('') : '';
+                    
+                    // Status indicator
+                    let statusBadge = item.still_works 
+                        ? '<span style="background: #0a0; color: #fff; padding: 2px 6px; font-size: 0.7em; border-radius: 3px;">✓ LIVE</span>'
+                        : '<span style="background: #a00; color: #fff; padding: 2px 6px; font-size: 0.7em; border-radius: 3px;">✗ DEAD</span>';
+
+                    card.innerHTML = `
+                        <h3><a href="${item.url}" target="_blank">${item.title}</a> ${statusBadge}</h3>
+                        <span class="category">TYPE: ${item.type} | ERA: ${item.era}</span>
+                        <p class="description">${item.description}</p>
+                        <div style="margin-top: 10px;">
+                            ${tagsHtml}
+                            <span style="float:right; color: #00a; font-weight:bold;">NOSTALGIA: ${item.nostalgia_score}/10</span>
+                        </div>
+                    `;
+                    container.appendChild(card);
+                });
+            });
+    </script>
+
+    <div style="margin-top: 30px; text-align: center; padding: 15px; background: #000; color: #0f0; font-family: 'Courier New', monospace;">
+        <p style="margin: 0;">[ END OF TRANSMISSION ]</p>
+        <p style="margin: 5px 0; font-size: 0.8em;">You have reached the end of the nostalgia feed.</p>
+        <p style="margin: 5px 0;">Press F5 to refresh or Ctrl+Alt+Del to exit.</p>
+    </div>
+</body>
+
+</html>
