@@ -26,19 +26,7 @@
                 "architecture"
             ]
         },
-        {
-            "name": "kamranahmedse/developer-roadmap",
-            "category": "Learning",
-            "description": "Interactive web developer roadmaps to guide your career path.",
-            "url": "https://github.com/kamranahmedse/developer-roadmap",
-            "tags": [
-                "learning",
-                "roadmap",
-                "career",
-                "web",
-                "guide"
-            ]
-        },
+        
         
         {
             "name": "kasmtech/workspaces-images",
