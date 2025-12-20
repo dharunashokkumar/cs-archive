@@ -1,0 +1,31 @@
+{
+  "skills": [
+    {
+      "id": "python-basics",
+      "name": "Python Basics",
+      "category": "Programming",
+      "difficulty": "beginner",
+      "prerequisites": [],
+      "estimated_hours": 40,
+      "description": "Variables, loops, conditionals, functions"
+    },
+    {
+      "id": "data-structures",
+      "name": "Data Structures",
+      "category": "Computer Science Fundamentals",
+      "difficulty": "intermediate",
+      "prerequisites": ["python-basics"],
+      "estimated_hours": 60,
+      "description": "Arrays, linked lists, stacks, queues, trees, graphs"
+    },
+    {
+      "id": "web-html-css",
+      "name": "HTML & CSS",
+      "category": "Web Development",
+      "difficulty": "beginner",
+      "prerequisites": [],
+      "estimated_hours": 30,
+      "description": "Basic web page structure and styling"
+    }
+  ]
+}
