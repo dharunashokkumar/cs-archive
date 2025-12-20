@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CS Archive: REPOS</title>
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T8EQF64ZTW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T8EQF64ZTW');
+</script>
+</head>
+
+<body>
+    <h1>:: CS Student Archive ::</h1>
+    <div class="nav-bar">
+        [ <a href="../index.html">HOME</a> ]
+        [ <a href="skills.html">SKILLS</a> ]
+        [ <a href="resources.html">RESOURCES</a> ]
+        [ <a href="repos.html" class="active">REPOS</a> ]
+        [ <a href="selfhosted.html">SELF_HOSTED</a> ]
+        [ <a href="learning-paths.html">PATHS</a> ]
+        [ <a href="ai-models.html">AI_MODELS</a> ]
+        [ <a href="tutorials.html">TUTORIALS</a> ]
+        [ <a href="research-papers.html">RESEARCH</a> ]
+        [ <a href="projects.html">PROJECTS</a> ]
+        [ <a href="jobs-careers.html">JOBS</a> ]
+        [ <a href="tools.html">TOOLS</a> ]
+        [ <a href="certifications.html">CERTS</a> ]
+        [ <a href="communities.html">COMMUNITIES</a> ]
+        [ <a href="cheatsheets.html">CHEATSHEETS</a> ]
+        [ <a href="api.html">API</a> ]
+        [ <a href="nostalgia.html">NOSTALGIA</a> ]
+        [ <a href="archive.html">ARCHIVE</a> ]
+        [ <a href="contribute.html">CONTRIBUTE</a> ]
+    </div>
+
+    <h2><span class="material-icons">source</span> GITHUB_REPOS // TOP PICKS</h2>
+
+    <div class="search-container">
+        <input type="text" id="search-box" class="search-box" placeholder="Search repos by name, category, or tags...">
+        <span id="results-count" class="results-count"></span>
+        <div class="filter-tags" id="filter-tags"></div>
+    </div>
+
+    <div id="repos-container" class="section-container"></div>
+
+    <script>
+        let allRepos = [];
+        let activeFilters = new Set();
+
+        fetch('../data/repos.json')
+            .then(response => response.json())
+            .then(data => {
+                allRepos = data.repos;
+                renderRepos(allRepos);
+                buildFilterTags(allRepos);
+            });
+
+        function renderRepos(repos) {
+            const container = document.getElementById('repos-container');
+            container.innerHTML = '';
+            if (repos.length === 0) {
+                container.innerHTML = '<p class="no-results">No repos found matching your criteria.</p>';
+            }
+            repos.forEach(repo => {
+                const card = document.createElement('div');
+                card.className = 'skill-card';
+                const tags = (repo.tags || []).map(t => `<span class="tag">${t}</span>`).join('');
+                card.innerHTML = `
+                    <h3><a href="${repo.url}" target="_blank" class="external-link">${repo.name}</a></h3>
+                    <span class="category">CAT: ${repo.category}</span>
+                    <p class="description">${repo.description}</p>
+                    <div style="margin-top: 5px;">${tags}</div>
+                `;
+                container.appendChild(card);
+            });
+            document.getElementById('results-count').textContent = `Showing ${repos.length} of ${allRepos.length}`;
+        }
+
+        function buildFilterTags(repos) {
+            const categories = [...new Set(repos.map(r => r.category))];
+            const container = document.getElementById('filter-tags');
+            categories.forEach(cat => {
+                const btn = document.createElement('button');
+                btn.className = 'filter-btn';
+                btn.textContent = cat;
+                btn.onclick = () => toggleFilter(cat, btn);
+                container.appendChild(btn);
+            });
+        }
+
+        function toggleFilter(category, btn) {
+            if (activeFilters.has(category)) {
+                activeFilters.delete(category);
+                btn.classList.remove('active');
+            } else {
+                activeFilters.add(category);
+                btn.classList.add('active');
+            }
+            filterRepos();
+        }
+
+        function filterRepos() {
+            const query = document.getElementById('search-box').value.toLowerCase();
+            let filtered = allRepos;
+            if (query) {
+                filtered = filtered.filter(r =>
+                    r.name.toLowerCase().includes(query) ||
+                    r.category.toLowerCase().includes(query) ||
+                    r.description.toLowerCase().includes(query) ||
+                    (r.tags || []).some(t => t.toLowerCase().includes(query))
+                );
+            }
+            if (activeFilters.size > 0) {
+                filtered = filtered.filter(r => activeFilters.has(r.category));
+            }
+            renderRepos(filtered);
+        }
+
+        document.getElementById('search-box').addEventListener('input', filterRepos);
+    </script>
+</body>
+
+</html>

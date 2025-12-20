@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CS Archive: LEARNING PATHS</title>
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T8EQF64ZTW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T8EQF64ZTW');
+</script>
+</head>
+
+<body>
+    <h1>:: CS Student Archive ::</h1>
+    <div class="nav-bar">
+        [ <a href="../index.html">HOME</a> ]
+        [ <a href="skills.html">SKILLS</a> ]
+        [ <a href="resources.html">RESOURCES</a> ]
+        [ <a href="repos.html">REPOS</a> ]
+        [ <a href="selfhosted.html">SELF_HOSTED</a> ]
+        [ <a href="learning-paths.html" class="active">PATHS</a> ]
+        [ <a href="ai-models.html">AI_MODELS</a> ]
+        [ <a href="tutorials.html">TUTORIALS</a> ]
+        [ <a href="research-papers.html">RESEARCH</a> ]
+        [ <a href="projects.html">PROJECTS</a> ]
+        [ <a href="jobs-careers.html">JOBS</a> ]
+        [ <a href="tools.html">TOOLS</a> ]
+        [ <a href="certifications.html">CERTS</a> ]
+        [ <a href="communities.html">COMMUNITIES</a> ]
+        [ <a href="cheatsheets.html">CHEATSHEETS</a> ]
+        [ <a href="api.html">API</a> ]
+        [ <a href="nostalgia.html">NOSTALGIA</a> ]
+        [ <a href="archive.html">ARCHIVE</a> ]
+        [ <a href="contribute.html">CONTRIBUTE</a> ]
+    </div>
+
+    <h2><span class="material-icons">route</span> LEARNING_PATHS // GUIDED CURRICULA</h2>
+    <p style="color: var(--text-muted); margin-bottom: 15px;">Structured roadmaps to help you navigate your learning
+        journey.</p>
+
+    <div id="paths-container" class="section-container"></div>
+
+    <script>
+        fetch('../data/learning-paths.json')
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById('paths-container');
+                data.paths.forEach(path => {
+                    const card = document.createElement('div');
+                    card.className = 'path-card';
+                    const skillsList = path.skills.map(skill => `<li>${skill}</li>`).join('');
+                    card.innerHTML = `
+                        <h3>${path.name}</h3>
+                        <p class="description">${path.description}</p>
+                        <div style="margin-top: 10px;">
+                            <strong style="color: var(--text-muted);">SKILLS:</strong>
+                            <ul>${skillsList}</ul>
+                        </div>
+                        <div style="margin-top: 10px; font-size: 0.85em; color: var(--text-muted);">
+                            EST. TIME: ~${path.estimated_weeks || '?'} weeks
+                        </div>
+                    `;
+                    container.appendChild(card);
+                });
+            })
+            .catch(error => {
+                document.getElementById('paths-container').innerHTML =
+                    '<p class="no-results">Error loading learning paths.</p>';
+            });
+    </script>
+</body>
+
+</html>

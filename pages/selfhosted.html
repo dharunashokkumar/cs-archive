@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CS Archive: SELF-HOSTED</title>
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T8EQF64ZTW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T8EQF64ZTW');
+</script>
+</head>
+
+<body>
+    <h1>:: CS Student Archive ::</h1>
+    <div class="nav-bar">
+        [ <a href="../index.html">HOME</a> ]
+        [ <a href="skills.html">SKILLS</a> ]
+        [ <a href="resources.html">RESOURCES</a> ]
+        [ <a href="repos.html">REPOS</a> ]
+        [ <a href="selfhosted.html" class="active">SELF_HOSTED</a> ]
+        [ <a href="learning-paths.html">PATHS</a> ]
+        [ <a href="ai-models.html">AI_MODELS</a> ]
+        [ <a href="tutorials.html">TUTORIALS</a> ]
+        [ <a href="research-papers.html">RESEARCH</a> ]
+        [ <a href="projects.html">PROJECTS</a> ]
+        [ <a href="jobs-careers.html">JOBS</a> ]
+        [ <a href="tools.html">TOOLS</a> ]
+        [ <a href="certifications.html">CERTS</a> ]
+        [ <a href="communities.html">COMMUNITIES</a> ]
+        [ <a href="cheatsheets.html">CHEATSHEETS</a> ]
+        [ <a href="api.html">API</a> ]
+        [ <a href="nostalgia.html">NOSTALGIA</a> ]
+        [ <a href="archive.html">ARCHIVE</a> ]
+        [ <a href="contribute.html">CONTRIBUTE</a> ]
+    </div>
+
+    <h2><span class="material-icons">dns</span> SELF_HOSTED_TOOLS // HOMELAB ESSENTIALS</h2>
+
+    <div class="search-container">
+        <input type="text" id="search-box" class="search-box" placeholder="Search tools by name, category, or tags...">
+        <span id="results-count" class="results-count"></span>
+        <div class="filter-tags" id="filter-tags"></div>
+    </div>
+
+    <div id="tools-container" class="section-container"></div>
+
+    <script>
+        let allTools = [];
+        let activeFilters = new Set();
+
+        fetch('../data/selfhosted.json')
+            .then(response => response.json())
+            .then(data => {
+                allTools = data.tools;
+                renderTools(allTools);
+                buildFilterTags(allTools);
+            });
+
+        function renderTools(tools) {
+            const container = document.getElementById('tools-container');
+            container.innerHTML = '';
+            if (tools.length === 0) {
+                container.innerHTML = '<p class="no-results">No tools found matching your criteria.</p>';
+            }
+            tools.forEach(tool => {
+                const card = document.createElement('div');
+                card.className = 'skill-card';
+                const tags = (tool.tags || []).map(t => `<span class="tag">${t}</span>`).join('');
+                const diffClass = tool.difficulty.toLowerCase();
+                card.innerHTML = `
+                    <h3><a href="${tool.url}" target="_blank" class="external-link">${tool.name}</a></h3>
+                    <span class="category">CAT: ${tool.category}</span>
+                    <span class="difficulty ${diffClass}">${tool.difficulty}</span>
+                    <p class="description">${tool.description}</p>
+                    <div style="margin-top: 5px;">${tags}</div>
+                `;
+                container.appendChild(card);
+            });
+            document.getElementById('results-count').textContent = `Showing ${tools.length} of ${allTools.length}`;
+        }
+
+        function buildFilterTags(tools) {
+            const categories = [...new Set(tools.map(t => t.category))];
+            const container = document.getElementById('filter-tags');
+            categories.forEach(cat => {
+                const btn = document.createElement('button');
+                btn.className = 'filter-btn';
+                btn.textContent = cat;
+                btn.onclick = () => toggleFilter(cat, btn);
+                container.appendChild(btn);
+            });
+        }
+
+        function toggleFilter(category, btn) {
+            if (activeFilters.has(category)) {
+                activeFilters.delete(category);
+                btn.classList.remove('active');
+            } else {
+                activeFilters.add(category);
+                btn.classList.add('active');
+            }
+            filterTools();
+        }
+
+        function filterTools() {
+            const query = document.getElementById('search-box').value.toLowerCase();
+            let filtered = allTools;
+            if (query) {
+                filtered = filtered.filter(t =>
+                    t.name.toLowerCase().includes(query) ||
+                    t.category.toLowerCase().includes(query) ||
+                    t.description.toLowerCase().includes(query) ||
+                    (t.tags || []).some(tag => tag.toLowerCase().includes(query))
+                );
+            }
+            if (activeFilters.size > 0) {
+                filtered = filtered.filter(t => activeFilters.has(t.category));
+            }
+            renderTools(filtered);
+        }
+
+        document.getElementById('search-box').addEventListener('input', filterTools);
+    </script>
+</body>
+
+</html>

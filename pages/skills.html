@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CS Archive: SKILLS</title>
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T8EQF64ZTW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T8EQF64ZTW');
+</script>
+</head>
+
+<body>
+    <h1>:: CS Student Archive ::</h1>
+    <div class="nav-bar">
+        [ <a href="../index.html">HOME</a> ]
+        [ <a href="skills.html" class="active">SKILLS</a> ]
+        [ <a href="resources.html">RESOURCES</a> ]
+        [ <a href="repos.html">REPOS</a> ]
+        [ <a href="selfhosted.html">SELF_HOSTED</a> ]
+        [ <a href="learning-paths.html">PATHS</a> ]
+        [ <a href="ai-models.html">AI_MODELS</a> ]
+        [ <a href="tutorials.html">TUTORIALS</a> ]
+        [ <a href="research-papers.html">RESEARCH</a> ]
+        [ <a href="projects.html">PROJECTS</a> ]
+        [ <a href="jobs-careers.html">JOBS</a> ]
+        [ <a href="tools.html">TOOLS</a> ]
+        [ <a href="certifications.html">CERTS</a> ]
+        [ <a href="communities.html">COMMUNITIES</a> ]
+        [ <a href="cheatsheets.html">CHEATSHEETS</a> ]
+        [ <a href="api.html">API</a> ]
+        [ <a href="nostalgia.html">NOSTALGIA</a> ]
+        [ <a href="archive.html">ARCHIVE</a> ]
+        [ <a href="contribute.html">CONTRIBUTE</a> ]
+    </div>
+
+    <h2><span class="material-icons">school</span> SKILL_TREE_NODES // INDEX</h2>
+
+    <div class="search-container">
+        <input type="text" id="search-box" class="search-box" placeholder="Search skills by name or category...">
+        <span id="results-count" class="results-count"></span>
+        <div class="filter-tags" id="filter-tags"></div>
+    </div>
+
+    <div id="skills-container" class="section-container"></div>
+
+    <script>
+        let allSkills = [];
+        let activeFilters = new Set();
+
+        fetch('../data/skills.json')
+            .then(response => response.json())
+            .then(data => {
+                allSkills = data.skills;
+                renderSkills(allSkills);
+                buildFilterTags(allSkills);
+            });
+
+        function renderSkills(skills) {
+            const container = document.getElementById('skills-container');
+            container.innerHTML = '';
+            if (skills.length === 0) {
+                container.innerHTML = '<p class="no-results">No skills found matching your criteria.</p>';
+            }
+            skills.forEach(skill => {
+                const card = document.createElement('div');
+                card.className = 'skill-card';
+                card.innerHTML = `
+                    <h3>${skill.name}</h3>
+                    <span class="category">CAT: ${skill.category}</span>
+                    <span class="difficulty ${skill.difficulty}">${skill.difficulty}</span>
+                    <p class="description">${skill.description}</p>
+                    <div style="margin-top: 5px; font-size: 0.8em; color: var(--text-muted);">
+                        TIME: ~${skill.estimated_hours}h | REQ: ${skill.prerequisites.length > 0 ? skill.prerequisites.join(', ') : 'None'}
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+            document.getElementById('results-count').textContent = `Showing ${skills.length} of ${allSkills.length}`;
+        }
+
+        function buildFilterTags(skills) {
+            const categories = [...new Set(skills.map(s => s.category))];
+            const container = document.getElementById('filter-tags');
+            categories.forEach(cat => {
+                const btn = document.createElement('button');
+                btn.className = 'filter-btn';
+                btn.textContent = cat;
+                btn.onclick = () => toggleFilter(cat, btn);
+                container.appendChild(btn);
+            });
+        }
+
+        function toggleFilter(category, btn) {
+            if (activeFilters.has(category)) {
+                activeFilters.delete(category);
+                btn.classList.remove('active');
+            } else {
+                activeFilters.add(category);
+                btn.classList.add('active');
+            }
+            filterSkills();
+        }
+
+        function filterSkills() {
+            const query = document.getElementById('search-box').value.toLowerCase();
+            let filtered = allSkills;
+            if (query) {
+                filtered = filtered.filter(s =>
+                    s.name.toLowerCase().includes(query) ||
+                    s.category.toLowerCase().includes(query) ||
+                    s.description.toLowerCase().includes(query)
+                );
+            }
+            if (activeFilters.size > 0) {
+                filtered = filtered.filter(s => activeFilters.has(s.category));
+            }
+            renderSkills(filtered);
+        }
+
+        document.getElementById('search-box').addEventListener('input', filterSkills);
+    </script>
+</body>
+
+</html>

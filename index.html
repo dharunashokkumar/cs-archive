@@ -4,60 +4,142 @@
 <head>
     <title>CS Archive: DASHBOARD</title>
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T8EQF64ZTW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T8EQF64ZTW');
+</script>
 </head>
 
 <body>
     <h1>:: CS Student Archive ::</h1>
     <div class="nav-bar">
-        [ <a href="index.html" class="active">DASHBOARD</a> ]
-        [ <a href="skills.html">SKILLS</a> ]
-        [ <a href="resources.html">RESOURCES</a> ]
-        [ <a href="repos.html">REPOS</a> ]
-        [ <a href="selfhosted.html">SELF_HOSTED</a> ]
-        [ <a href="nostalgia.html">NOSTALGIA</a> ]
-        [ <a href="archive.html">ARCHIVE_GEMS</a> ]
-        [ <a href="contribute.html">CONTRIBUTE</a> ]
+        [ <a href="index.html" class="active">HOME</a> ]
+        [ <a href="pages/skills.html">SKILLS</a> ]
+        [ <a href="pages/resources.html">RESOURCES</a> ]
+        [ <a href="pages/repos.html">REPOS</a> ]
+        [ <a href="pages/selfhosted.html">SELF_HOSTED</a> ]
+        [ <a href="pages/learning-paths.html">PATHS</a> ]
+        [ <a href="pages/ai-models.html">AI_MODELS</a> ]
+        [ <a href="pages/tutorials.html">TUTORIALS</a> ]
+        [ <a href="pages/research-papers.html">RESEARCH</a> ]
+        [ <a href="pages/projects.html">PROJECTS</a> ]
+        [ <a href="pages/jobs-careers.html">JOBS</a> ]
+        [ <a href="pages/tools.html">TOOLS</a> ]
+        [ <a href="pages/certifications.html">CERTS</a> ]
+        [ <a href="pages/communities.html">COMMUNITIES</a> ]
+        [ <a href="pages/cheatsheets.html">CHEATSHEETS</a> ]
+        [ <a href="pages/api.html">API</a> ]
+        [ <a href="pages/nostalgia.html">NOSTALGIA</a> ]
+        [ <a href="pages/archive.html">ARCHIVE</a> ]
+        [ <a href="pages/contribute.html">CONTRIBUTE</a> ]
     </div>
 
-    <div style="text-align: center; margin: 50px 0;">
+    <div style="text-align: center; margin: 30px 0;">
         <h2>WELCOME_USER</h2>
-        <p>Select a module from the navigation bar above to begin.</p>
-        <br>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
-            <div class="skill-card" onclick="window.location='skills.html'"
-                style="cursor: pointer; text-align: center;">
+        <p style="color: var(--text-muted);">Select a module from the navigation bar above to begin.</p>
+
+        <div class="dashboard-grid" style="margin-top: 25px;">
+            <div class="dash-card" onclick="window.location='pages/skills.html'">
                 <h3>SKILLS</h3>
-                <p>Curriculum & Paths</p>
+                <hr>
+                <p>CS Curriculum, Roadmaps & Learning Paths</p>
             </div>
-            <div class="skill-card" onclick="window.location='resources.html'"
-                style="cursor: pointer; text-align: center;">
+            <div class="dash-card" onclick="window.location='pages/resources.html'">
                 <h3>RESOURCES</h3>
-                <p>External Links</p>
+                <hr>
+                <p>Courses, Docs, Books & External Links</p>
             </div>
-            <div class="skill-card" onclick="window.location='selfhosted.html'"
-                style="cursor: pointer; text-align: center;">
+            <div class="dash-card" onclick="window.location='pages/selfhosted.html'">
                 <h3>SELF-HOSTED</h3>
-                <p>Docker & Tools</p>
+                <hr>
+                <p>Docker, Homelab & Server Tools</p>
             </div>
-            <div class="skill-card" onclick="window.location='repos.html'" style="cursor: pointer; text-align: center;">
+            <div class="dash-card" onclick="window.location='pages/repos.html'">
                 <h3>TOP REPOS</h3>
-                <p>GitHub Gems</p>
+                <hr>
+                <p>Best GitHub Repositories & Gems</p>
             </div>
-            <div class="skill-card" onclick="window.location='nostalgia.html'"
-                style="cursor: pointer; text-align: center;">
+            <div class="dash-card" onclick="window.location='pages/learning-paths.html'">
+                <h3>PATHS</h3>
+                <hr>
+                <p>Structured Guided Learning Curricula</p>
+            </div>
+            <div class="dash-card" onclick="window.location='pages/ai-models.html'">
+                <h3>AI MODELS</h3>
+                <hr>
+                <p>Local LLMs, Ollama & Embeddings</p>
+            </div>
+            <div class="dash-card" onclick="window.location='pages/tutorials.html'">
+                <h3>TUTORIALS</h3>
+                <hr>
+                <p>Step-by-Step Coding Guides & Walkthroughs</p>
+            </div>
+            <div class="dash-card" onclick="window.location='pages/research-papers.html'">
+                <h3>RESEARCH</h3>
+                <hr>
+                <p>Academic Papers, Studies & Methodologies</p>
+            </div>
+            <div class="dash-card" onclick="window.location='pages/projects.html'">
+                <h3>PROJECTS</h3>
+                <hr>
+                <p>Build Ideas, Showcases & Tech Stacks</p>
+            </div>
+            <div class="dash-card" onclick="window.location='pages/jobs-careers.html'">
+                <h3>JOBS</h3>
+                <hr>
+                <p>Career Resources, Interviews & Internships</p>
+            </div>
+            <div class="dash-card" onclick="window.location='pages/tools.html'">
+                <h3>TOOLS</h3>
+                <hr>
+                <p>IDEs, CLI, Extensions & Dev Utilities</p>
+            </div>
+            <div class="dash-card" onclick="window.location='pages/certifications.html'">
+                <h3>CERTS</h3>
+                <hr>
+                <p>Free & Paid Certifications with Roadmaps</p>
+            </div>
+            <div class="dash-card" onclick="window.location='pages/communities.html'">
+                <h3>COMMUNITIES</h3>
+                <hr>
+                <p>Discord Servers, Reddit & Tech Forums</p>
+            </div>
+            <div class="dash-card" onclick="window.location='pages/cheatsheets.html'">
+                <h3>CHEATSHEETS</h3>
+                <hr>
+                <p>Quick Reference Sheets for Everything</p>
+            </div>
+            <div class="dash-card" onclick="window.location='pages/api.html'">
+                <h3>API</h3>
+                <hr>
+                <p>Free APIs, Docs & Testing Resources</p>
+            </div>
+            <div class="dash-card" onclick="window.location='pages/nostalgia.html'">
                 <h3>NOSTALGIA</h3>
-                <p>Old Web Time Machine</p>
+                <hr>
+                <p>Old Web Time Machine & Retro Sites</p>
             </div>
-            <div class="skill-card" onclick="window.location='archive.html'"
-                style="cursor: pointer; text-align: center;">
+            <div class="dash-card" onclick="window.location='pages/archive.html'">
                 <h3>ARCHIVE</h3>
-                <p>Historical Data</p>
+                <hr>
+                <p>Historical CS Data & Archive.org Gems</p>
+            </div>
+            <div class="dash-card" onclick="window.location='pages/contribute.html'">
+                <h3>CONTRIBUTE</h3>
+                <hr>
+                <p>Help Build & Improve This Archive</p>
             </div>
         </div>
     </div>
 
-    <div style="margin-top: 50px; text-align: center; font-size: 0.8em; border-top: 1px solid #777; padding-top: 10px;">
-        <p>SYSTEM_READY // VER: 2.0.0-MULTI_PAGE</p>
+    <div class="footer">
+        <p>SYSTEM_READY // VER: 3.0.0-MULTI_PAGE</p>
     </div>
 </body>
 

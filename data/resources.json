@@ -6,11 +6,22 @@
       "url": "https://cs50.harvard.edu/x/",
       "type": "course",
       "provider": "Harvard University",
-      "skills_covered": ["python-basics", "algorithms", "data-structures"],
+      "skills_covered": [
+        "python-basics",
+        "algorithms",
+        "data-structures"
+      ],
       "is_free": true,
       "language": "English",
       "quality_score": 10,
-      "difficulty": "beginner"
+      "difficulty": "beginner",
+      "tags": [
+        "programming",
+        "fundamentals",
+        "c",
+        "python",
+        "sql"
+      ]
     },
     {
       "id": "freecodecamp-python",
@@ -18,11 +29,19 @@
       "url": "https://www.youtube.com/watch?v=rfscVS0vtbw",
       "type": "video",
       "provider": "freeCodeCamp",
-      "skills_covered": ["python-basics"],
+      "skills_covered": [
+        "python-basics"
+      ],
       "is_free": true,
       "language": "English",
       "quality_score": 9,
-      "difficulty": "beginner"
+      "difficulty": "beginner",
+      "tags": [
+        "python",
+        "programming",
+        "video",
+        "tutorial"
+      ]
     },
     {
       "id": "mdn-web-docs",
@@ -30,11 +49,381 @@
       "url": "https://developer.mozilla.org/",
       "type": "documentation",
       "provider": "Mozilla",
-      "skills_covered": ["html-css", "javascript-basics"],
+      "skills_covered": [
+        "html-css",
+        "javascript-basics"
+      ],
       "is_free": true,
       "language": "English",
       "quality_score": 10,
-      "difficulty": "beginner"
+      "difficulty": "beginner",
+      "tags": [
+        "html",
+        "css",
+        "javascript",
+        "web",
+        "reference"
+      ]
+    },
+    {
+      "id": "the-odin-project",
+      "title": "The Odin Project",
+      "url": "https://www.theodinproject.com/",
+      "type": "course",
+      "provider": "The Odin Project",
+      "skills_covered": [
+        "html-css",
+        "javascript-basics",
+        "react"
+      ],
+      "is_free": true,
+      "language": "English",
+      "quality_score": 10,
+      "difficulty": "beginner",
+      "tags": [
+        "web-development",
+        "full-stack",
+        "javascript",
+        "ruby",
+        "curriculum"
+      ]
+    },
+    {
+      "id": "mit-ocw-intro-cs",
+      "title": "MIT 6.0001 - Introduction to CS with Python",
+      "url": "https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/",
+      "type": "course",
+      "provider": "MIT OpenCourseWare",
+      "skills_covered": [
+        "python-basics",
+        "algorithms"
+      ],
+      "is_free": true,
+      "language": "English",
+      "quality_score": 10,
+      "difficulty": "beginner",
+      "tags": [
+        "python",
+        "mit",
+        "university",
+        "fundamentals"
+      ]
+    },
+    {
+      "id": "mit-ocw-algorithms",
+      "title": "MIT 6.006 - Introduction to Algorithms",
+      "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/",
+      "type": "course",
+      "provider": "MIT OpenCourseWare",
+      "skills_covered": [
+        "algorithms",
+        "data-structures"
+      ],
+      "is_free": true,
+      "language": "English",
+      "quality_score": 10,
+      "difficulty": "intermediate",
+      "tags": [
+        "algorithms",
+        "mit",
+        "university",
+        "data-structures"
+      ]
+    },
+    {
+      "id": "fullstackopen",
+      "title": "Full Stack Open",
+      "url": "https://fullstackopen.com/en/",
+      "type": "course",
+      "provider": "University of Helsinki",
+      "skills_covered": [
+        "javascript-basics",
+        "react",
+        "api-development"
+      ],
+      "is_free": true,
+      "language": "English",
+      "quality_score": 10,
+      "difficulty": "intermediate",
+      "tags": [
+        "react",
+        "node",
+        "mongodb",
+        "graphql",
+        "full-stack"
+      ]
+    },
+    {
+      "id": "roadmap-sh",
+      "title": "Developer Roadmaps",
+      "url": "https://roadmap.sh/",
+      "type": "guide",
+      "provider": "roadmap.sh",
+      "skills_covered": [],
+      "is_free": true,
+      "language": "English",
+      "quality_score": 9,
+      "difficulty": "beginner",
+      "tags": [
+        "roadmap",
+        "career",
+        "learning-path",
+        "guide"
+      ]
+    },
+    {
+      "id": "khan-academy-cs",
+      "title": "Khan Academy - Computing",
+      "url": "https://www.khanacademy.org/computing",
+      "type": "course",
+      "provider": "Khan Academy",
+      "skills_covered": [
+        "python-basics",
+        "algorithms"
+      ],
+      "is_free": true,
+      "language": "English",
+      "quality_score": 9,
+      "difficulty": "beginner",
+      "tags": [
+        "programming",
+        "algorithms",
+        "interactive",
+        "visual"
+      ]
+    },
+    {
+      "id": "exercism",
+      "title": "Exercism - Code Practice",
+      "url": "https://exercism.org/",
+      "type": "practice",
+      "provider": "Exercism",
+      "skills_covered": [
+        "python-basics",
+        "javascript-basics"
+      ],
+      "is_free": true,
+      "language": "English",
+      "quality_score": 9,
+      "difficulty": "beginner",
+      "tags": [
+        "practice",
+        "mentorship",
+        "multi-language",
+        "exercises"
+      ]
+    },
+    {
+      "id": "leetcode",
+      "title": "LeetCode",
+      "url": "https://leetcode.com/",
+      "type": "practice",
+      "provider": "LeetCode",
+      "skills_covered": [
+        "algorithms",
+        "data-structures"
+      ],
+      "is_free": true,
+      "language": "English",
+      "quality_score": 9,
+      "difficulty": "intermediate",
+      "tags": [
+        "interview",
+        "algorithms",
+        "coding",
+        "practice"
+      ]
+    },
+    {
+      "id": "neetcode",
+      "title": "NeetCode - DSA Roadmap",
+      "url": "https://neetcode.io/",
+      "type": "guide",
+      "provider": "NeetCode",
+      "skills_covered": [
+        "algorithms",
+        "data-structures"
+      ],
+      "is_free": true,
+      "language": "English",
+      "quality_score": 10,
+      "difficulty": "intermediate",
+      "tags": [
+        "interview",
+        "blind-75",
+        "roadmap",
+        "video"
+      ]
+    },
+    {
+      "id": "git-immersion",
+      "title": "Git Immersion",
+      "url": "https://gitimmersion.com/",
+      "type": "tutorial",
+      "provider": "EdgeCase",
+      "skills_covered": [
+        "git-github"
+      ],
+      "is_free": true,
+      "language": "English",
+      "quality_score": 8,
+      "difficulty": "beginner",
+      "tags": [
+        "git",
+        "version-control",
+        "hands-on",
+        "tutorial"
+      ]
+    },
+    {
+      "id": "javascript-info",
+      "title": "JavaScript.info",
+      "url": "https://javascript.info/",
+      "type": "documentation",
+      "provider": "javascript.info",
+      "skills_covered": [
+        "javascript-basics"
+      ],
+      "is_free": true,
+      "language": "English",
+      "quality_score": 10,
+      "difficulty": "beginner",
+      "tags": [
+        "javascript",
+        "tutorial",
+        "reference",
+        "modern-js"
+      ]
+    },
+    {
+      "id": "css-tricks",
+      "title": "CSS-Tricks",
+      "url": "https://css-tricks.com/",
+      "type": "documentation",
+      "provider": "CSS-Tricks",
+      "skills_covered": [
+        "html-css"
+      ],
+      "is_free": true,
+      "language": "English",
+      "quality_score": 9,
+      "difficulty": "beginner",
+      "tags": [
+        "css",
+        "flexbox",
+        "grid",
+        "tricks",
+        "reference"
+      ]
+    },
+    {
+      "id": "teach-yourself-cs",
+      "title": "Teach Yourself Computer Science",
+      "url": "https://teachyourselfcs.com/",
+      "type": "guide",
+      "provider": "Oz Nova & Myles Byrne",
+      "skills_covered": [
+        "algorithms",
+        "data-structures"
+      ],
+      "is_free": true,
+      "language": "English",
+      "quality_score": 10,
+      "difficulty": "intermediate",
+      "tags": [
+        "curriculum",
+        "self-study",
+        "comprehensive",
+        "cs-fundamentals"
+      ]
+    },
+    {
+      "id": "missing-semester",
+      "title": "The Missing Semester of Your CS Education",
+      "url": "https://missing.csail.mit.edu/",
+      "type": "course",
+      "provider": "MIT",
+      "skills_covered": [
+        "linux-cli",
+        "git-github"
+      ],
+      "is_free": true,
+      "language": "English",
+      "quality_score": 10,
+      "difficulty": "beginner",
+      "tags": [
+        "shell",
+        "vim",
+        "git",
+        "debugging",
+        "practical"
+      ]
+    },
+    {
+      "id": "hackerrank",
+      "title": "HackerRank",
+      "url": "https://www.hackerrank.com/",
+      "type": "practice",
+      "provider": "HackerRank",
+      "skills_covered": [
+        "python-basics",
+        "algorithms",
+        "sql-databases"
+      ],
+      "is_free": true,
+      "language": "English",
+      "quality_score": 8,
+      "difficulty": "beginner",
+      "tags": [
+        "practice",
+        "certification",
+        "interview",
+        "challenges"
+      ]
+    },
+    {
+      "id": "overthewire",
+      "title": "OverTheWire Wargames",
+      "url": "https://overthewire.org/wargames/",
+      "type": "practice",
+      "provider": "OverTheWire",
+      "skills_covered": [
+        "linux-cli",
+        "cybersecurity-fundamentals"
+      ],
+      "is_free": true,
+      "language": "English",
+      "quality_score": 9,
+      "difficulty": "beginner",
+      "tags": [
+        "security",
+        "linux",
+        "ctf",
+        "hacking",
+        "wargames"
+      ]
+    },
+    {
+      "id": "tryhackme",
+      "title": "TryHackMe",
+      "url": "https://tryhackme.com/",
+      "type": "course",
+      "provider": "TryHackMe",
+      "skills_covered": [
+        "cybersecurity-fundamentals",
+        "penetration-testing"
+      ],
+      "is_free": true,
+      "language": "English",
+      "quality_score": 9,
+      "difficulty": "beginner",
+      "tags": [
+        "security",
+        "hacking",
+        "ctf",
+        "pentesting",
+        "labs"
+      ]
     }
   ]
 }

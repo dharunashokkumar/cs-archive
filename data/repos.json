@@ -9,7 +9,8 @@
                 "media",
                 "streaming",
                 "data",
-                "tv"
+                "tv",
+                "live"
             ]
         },
         {
@@ -21,7 +22,8 @@
                 "api",
                 "development",
                 "data",
-                "json"
+                "json",
+                "free"
             ]
         },
         {
@@ -45,7 +47,8 @@
                 "learning",
                 "roadmap",
                 "career",
-                "web"
+                "web",
+                "guide"
             ]
         },
         {
@@ -57,7 +60,8 @@
                 "selfhosted",
                 "list",
                 "infrastructure",
-                "server"
+                "server",
+                "docker"
             ]
         },
         {
@@ -69,7 +73,8 @@
                 "kasm",
                 "docker",
                 "images",
-                "desktop"
+                "desktop",
+                "virtualization"
             ]
         },
         {
@@ -80,7 +85,8 @@
             "tags": [
                 "list",
                 "resources",
-                "learning"
+                "learning",
+                "curated"
             ]
         },
         {
@@ -92,7 +98,163 @@
                 "linux",
                 "kernel",
                 "os",
-                "c"
+                "c",
+                "foundational"
+            ]
+        },
+        {
+            "name": "freeCodeCamp/freeCodeCamp",
+            "category": "Learning",
+            "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn to code for free.",
+            "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+            "tags": [
+                "learning",
+                "curriculum",
+                "web",
+                "free",
+                "certification"
+            ]
+        },
+        {
+            "name": "ossu/computer-science",
+            "category": "Learning",
+            "description": "Path to a free self-taught education in Computer Science using online materials.",
+            "url": "https://github.com/ossu/computer-science",
+            "tags": [
+                "curriculum",
+                "self-study",
+                "cs-degree",
+                "free",
+                "comprehensive"
+            ]
+        },
+        {
+            "name": "EbookFoundation/free-programming-books",
+            "category": "Learning",
+            "description": "Freely available programming books covering every language and topic.",
+            "url": "https://github.com/EbookFoundation/free-programming-books",
+            "tags": [
+                "books",
+                "free",
+                "programming",
+                "learning",
+                "resources"
+            ]
+        },
+        {
+            "name": "practical-tutorials/project-based-learning",
+            "category": "Learning",
+            "description": "Curated list of project-based tutorials to learn programming by building.",
+            "url": "https://github.com/practical-tutorials/project-based-learning",
+            "tags": [
+                "projects",
+                "tutorials",
+                "hands-on",
+                "learning",
+                "practical"
+            ]
+        },
+        {
+            "name": "TheAlgorithms/Python",
+            "category": "Learning",
+            "description": "All algorithms implemented in Python for educational purposes.",
+            "url": "https://github.com/TheAlgorithms/Python",
+            "tags": [
+                "algorithms",
+                "python",
+                "learning",
+                "data-structures",
+                "reference"
+            ]
+        },
+        {
+            "name": "jwasham/coding-interview-university",
+            "category": "Learning",
+            "description": "A complete computer science study plan to become a software engineer.",
+            "url": "https://github.com/jwasham/coding-interview-university",
+            "tags": [
+                "interview",
+                "study-plan",
+                "cs-fundamentals",
+                "career"
+            ]
+        },
+        {
+            "name": "codecrafters-io/build-your-own-x",
+            "category": "Learning",
+            "description": "Master programming by recreating your favorite technologies from scratch.",
+            "url": "https://github.com/codecrafters-io/build-your-own-x",
+            "tags": [
+                "projects",
+                "learning",
+                "from-scratch",
+                "tutorials",
+                "hands-on"
+            ]
+        },
+        {
+            "name": "microsoft/Web-Dev-For-Beginners",
+            "category": "Learning",
+            "description": "24 lessons, 12 weeks curriculum to get started with web development.",
+            "url": "https://github.com/microsoft/Web-Dev-For-Beginners",
+            "tags": [
+                "web",
+                "curriculum",
+                "microsoft",
+                "beginner",
+                "javascript"
+            ]
+        },
+        {
+            "name": "trimstray/the-book-of-secret-knowledge",
+            "category": "Utilities",
+            "description": "A collection of inspiring lists, manuals, cheatsheets, tools, and resources.",
+            "url": "https://github.com/trimstray/the-book-of-secret-knowledge",
+            "tags": [
+                "cheatsheets",
+                "tools",
+                "sysadmin",
+                "security",
+                "reference"
+            ]
+        },
+        {
+            "name": "jlevy/the-art-of-command-line",
+            "category": "Learning",
+            "description": "Master the command line, in one page. Essential terminal skills.",
+            "url": "https://github.com/jlevy/the-art-of-command-line",
+            "tags": [
+                "cli",
+                "linux",
+                "terminal",
+                "bash",
+                "reference"
+            ]
+        },
+        {
+            "name": "gothinkster/realworld",
+            "category": "Development",
+            "description": "The mother of all demo apps. Full stack clone of Medium.com in every framework.",
+            "url": "https://github.com/gothinkster/realworld",
+            "tags": [
+                "full-stack",
+                "demo",
+                "frameworks",
+                "learning",
+                "comparison"
+            ]
+        },
+        {
+            "name": "ripienaar/free-for-dev",
+            "category": "Development",
+            "description": "A list of SaaS, PaaS, IaaS with free tiers for developers.",
+            "url": "https://github.com/ripienaar/free-for-dev",
+            "tags": [
+                "free",
+                "saas",
+                "paas",
+                "tools",
+                "cloud"
             ]
         }
     ]

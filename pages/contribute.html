@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CS Archive: CONTRIBUTE</title>
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T8EQF64ZTW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T8EQF64ZTW');
+</script>
+</head>
+
+<body>
+    <h1>:: CS Student Archive ::</h1>
+    <div class="nav-bar">
+        [ <a href="../index.html">HOME</a> ]
+        [ <a href="skills.html">SKILLS</a> ]
+        [ <a href="resources.html">RESOURCES</a> ]
+        [ <a href="repos.html">REPOS</a> ]
+        [ <a href="selfhosted.html">SELF_HOSTED</a> ]
+        [ <a href="learning-paths.html">PATHS</a> ]
+        [ <a href="ai-models.html">AI_MODELS</a> ]
+        [ <a href="tutorials.html">TUTORIALS</a> ]
+        [ <a href="research-papers.html">RESEARCH</a> ]
+        [ <a href="projects.html">PROJECTS</a> ]
+        [ <a href="jobs-careers.html">JOBS</a> ]
+        [ <a href="tools.html">TOOLS</a> ]
+        [ <a href="certifications.html">CERTS</a> ]
+        [ <a href="communities.html">COMMUNITIES</a> ]
+        [ <a href="cheatsheets.html">CHEATSHEETS</a> ]
+        [ <a href="api.html">API</a> ]
+        [ <a href="nostalgia.html">NOSTALGIA</a> ]
+        [ <a href="archive.html">ARCHIVE</a> ]
+        [ <a href="contribute.html" class="active">CONTRIBUTE</a> ]
+    </div>
+
+    <h2><span class="material-icons">handshake</span> CONTRIBUTE // HELP BUILD THE ARCHIVE</h2>
+
+    <div style="max-width: 800px; margin: 0 auto;">
+        <div class="skill-card" style="margin-bottom: 15px;">
+            <h3><span class="material-icons">list_alt</span> How to Contribute</h3>
+            <ol style="margin: 10px 0; padding-left: 25px; color: var(--text-muted);">
+                <li style="margin: 8px 0;"><strong style="color: var(--text-color);">Fork the repository</strong> on
+                    GitHub</li>
+                <li style="margin: 8px 0;"><strong style="color: var(--text-color);">Add your resource</strong> to the
+                    appropriate JSON file in <code
+                        style="background: var(--bg-secondary); padding: 2px 6px;">data/</code></li>
+                <li style="margin: 8px 0;"><strong style="color: var(--text-color);">Validate your JSON</strong> -
+                    ensure syntax is correct</li>
+                <li style="margin: 8px 0;"><strong style="color: var(--text-color);">Submit a Pull Request</strong> with
+                    a description of what you added</li>
+            </ol>
+        </div>
+
+        <div class="skill-card" style="margin-bottom: 15px;">
+            <h3><span class="material-icons">folder</span> Data Files</h3>
+            <table style="width: 100%; margin-top: 10px; border-collapse: collapse; color: var(--text-muted);">
+                <tr style="border-bottom: 1px solid var(--border-color);">
+                    <td style="padding: 5px;"><code>skills.json</code></td>
+                    <td style="padding: 5px;">CS concepts and skills</td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--border-color);">
+                    <td style="padding: 5px;"><code>resources.json</code></td>
+                    <td style="padding: 5px;">External tutorials, courses, docs</td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--border-color);">
+                    <td style="padding: 5px;"><code>repos.json</code></td>
+                    <td style="padding: 5px;">GitHub repositories</td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--border-color);">
+                    <td style="padding: 5px;"><code>selfhosted.json</code></td>
+                    <td style="padding: 5px;">Self-hosted tools</td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--border-color);">
+                    <td style="padding: 5px;"><code>ai-models.json</code></td>
+                    <td style="padding: 5px;">Local LLMs and AI models</td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--border-color);">
+                    <td style="padding: 5px;"><code>tutorials.json</code></td>
+                    <td style="padding: 5px;">Step-by-step tutorials</td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--border-color);">
+                    <td style="padding: 5px;"><code>projects.json</code></td>
+                    <td style="padding: 5px;">Project ideas</td>
+                </tr>
+                <tr>
+                    <td style="padding: 5px;"><code>cheatsheets.json</code></td>
+                    <td style="padding: 5px;">Quick reference sheets</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="skill-card" style="margin-bottom: 15px;">
+            <h3><span class="material-icons">code</span> Entry Schema</h3>
+            <pre
+                style="background: var(--bg-color); color: var(--accent-color); padding: 10px; overflow-x: auto; font-size: 0.85em; border: 1px solid var(--border-color);">
+{
+  "name": "Item Name",
+  "category": "Category",
+  "description": "Brief, useful description.",
+  "url": "https://...",
+  "tags": ["tag1", "tag2"]
+}</pre>
+        </div>
+
+        <div class="skill-card">
+            <h3><span class="material-icons">rule</span> Guidelines</h3>
+            <ul style="margin: 10px 0; padding-left: 25px; color: var(--text-muted);">
+                <li style="margin: 5px 0;"><strong style="color: var(--text-color);">Quality over Quantity</strong> -
+                    Only add high-quality, free resources</li>
+                <li style="margin: 5px 0;"><strong style="color: var(--text-color);">No Spam</strong> - Affiliate links
+                    or low-effort content will be rejected</li>
+                <li style="margin: 5px 0;"><strong style="color: var(--text-color);">Add Tags</strong> - Help with
+                    discoverability by adding relevant tags</li>
+                <li style="margin: 5px 0;"><strong style="color: var(--text-color);">Test Links</strong> - Make sure
+                    URLs are working before submitting</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Thank you for contributing to the archive!</p>
+    </div>
+</body>
+
+</html>
