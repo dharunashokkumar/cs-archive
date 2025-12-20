@@ -13,19 +13,7 @@
                 "live"
             ]
         },
-        {
-            "name": "public-apis/public-apis",
-            "category": "Development",
-            "description": "A collective list of free APIs for use in software and web development.",
-            "url": "https://github.com/public-apis/public-apis",
-            "tags": [
-                "api",
-                "development",
-                "data",
-                "json",
-                "free"
-            ]
-        },
+        
         {
             "name": "donnemartin/system-design-primer",
             "category": "Learning",
