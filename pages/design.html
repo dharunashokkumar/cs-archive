@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>CS Research Papers - CS Archive</title>
+    <title>UI/UX Design Resources - CS Archive</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Important CS research papers, academic studies, and methodologies for computer science students.">
-    <meta name="keywords"
-        content="CS research papers, academic papers, computer science studies, research methodologies">
-    <meta property="og:title" content="CS Research Papers - CS Archive">
-    <meta property="og:description" content="Important CS research papers and academic studies.">
-    <meta property="og:url" content="https://archive.dharunashokkumar.com/pages/research-papers.html">
-    <link rel="canonical" href="https://archive.dharunashokkumar.com/pages/research-papers.html">
+        content="UI/UX design resources - design systems, color palettes, icon libraries, typography, and design tools.">
+    <meta name="keywords" content="UI design, UX design, design resources, color palette, icons, typography, Figma">
+    <meta property="og:title" content="UI/UX Design Resources - CS Archive">
+    <meta property="og:description" content="UI/UX design resources, design systems, and color palettes.">
+    <meta property="og:url" content="https://archive.dharunashokkumar.com/pages/design.html">
+    <link rel="canonical" href="https://archive.dharunashokkumar.com/pages/design.html">
     <link rel="stylesheet" href="../assets/style.css">
     <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -22,7 +21,6 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-T8EQF64ZTW');
     </script>
 </head>
@@ -38,7 +36,7 @@
         [ <a href="learning-paths.html">PATHS</a> ]
         [ <a href="ai-models.html">AI_MODELS</a> ]
         [ <a href="tutorials.html">TUTORIALS</a> ]
-        [ <a href="research-papers.html" class="active">RESEARCH</a> ]
+        [ <a href="research-papers.html">RESEARCH</a> ]
         [ <a href="projects.html">PROJECTS</a> ]
         [ <a href="jobs-careers.html">JOBS</a> ]
         [ <a href="tools.html">TOOLS</a> ]
@@ -47,28 +45,28 @@
         [ <a href="cheatsheets.html">CHEATSHEETS</a> ]
         [ <a href="api.html">API</a> ]
         [ <a href="security.html">SECURITY</a> ]
-        [ <a href="design.html">DESIGN</a> ]
+        [ <a href="design.html" class="active">DESIGN</a> ]
         [ <a href="newsletters.html">NEWSLETTERS</a> ]
         [ <a href="nostalgia.html">NOSTALGIA</a> ]
         [ <a href="archive.html">ARCHIVE</a> ]
         [ <a href="contribute.html">CONTRIBUTE</a> ]
     </div>
 
-    <h2><span class="material-icons">science</span> RESEARCH_PAPERS // ACADEMIC CS</h2>
-    <p style="color: var(--text-muted); margin-bottom: 15px;">Important CS papers, reading guides, and research
-        methodologies.</p>
+    <h2><span class="material-icons">palette</span> DESIGN // UI/UX RESOURCES</h2>
+    <p style="color: var(--text-muted); margin-bottom: 15px;">Design systems, color palettes, icon libraries,
+        typography, and design tools.</p>
 
     <div class="search-container">
-        <input type="text" id="search-box" class="search-box" placeholder="Search papers...">
+        <input type="text" id="search-box" class="search-box" placeholder="Search design resources...">
         <span id="results-count" class="results-count"></span>
     </div>
 
     <div id="items-container" class="section-container">
-        <p class="no-results">No items yet. Add data to data/research-papers.json</p>
+        <p class="no-results">No items yet. Add data to data/design.json</p>
     </div>
 
     <script>
-        fetch('../data/research-papers.json')
+        fetch('../data/design.json')
             .then(r => r.json())
             .then(data => {
                 if (data.items && data.items.length > 0) {

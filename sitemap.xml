@@ -102,6 +102,26 @@
         <priority>0.7</priority>
     </url>
     
+    <!-- Security, Design, Newsletters -->
+    <url>
+        <loc>https://archive.dharunashokkumar.com/pages/security.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://archive.dharunashokkumar.com/pages/design.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://archive.dharunashokkumar.com/pages/newsletters.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
     <!-- Nostalgia & Archive -->
     <url>
         <loc>https://archive.dharunashokkumar.com/pages/nostalgia.html</loc>

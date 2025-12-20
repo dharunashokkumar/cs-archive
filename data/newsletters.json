@@ -1,0 +1,124 @@
+{
+    "items": [
+        {
+            "name": "TLDR Newsletter",
+            "category": "Daily",
+            "description": "Byte-sized summaries of the most interesting tech stories. Quick 5-minute daily read.",
+            "url": "https://tldr.tech/",
+            "tags": [
+                "daily",
+                "tech-news",
+                "free",
+                "popular"
+            ]
+        },
+        {
+            "name": "JavaScript Weekly",
+            "category": "Language",
+            "description": "A weekly newsletter covering JavaScript news, articles, and tutorials.",
+            "url": "https://javascriptweekly.com/",
+            "tags": [
+                "javascript",
+                "weekly",
+                "web-dev",
+                "free"
+            ]
+        },
+        {
+            "name": "Hacker Newsletter",
+            "category": "Curated",
+            "description": "Best articles from Hacker News, delivered weekly. Top stories handpicked.",
+            "url": "https://hackernewsletter.com/",
+            "tags": [
+                "weekly",
+                "hacker-news",
+                "curated",
+                "free"
+            ]
+        },
+        {
+            "name": "ByteByteGo",
+            "category": "System Design",
+            "description": "Weekly system design and architecture insights by Alex Xu.",
+            "url": "https://blog.bytebytego.com/",
+            "tags": [
+                "system-design",
+                "architecture",
+                "weekly",
+                "paid-option"
+            ]
+        },
+        {
+            "name": "Morning Brew",
+            "category": "Business Tech",
+            "description": "Daily business and tech news in a witty, conversational style.",
+            "url": "https://www.morningbrew.com/",
+            "tags": [
+                "daily",
+                "business",
+                "tech-news",
+                "free"
+            ]
+        },
+        {
+            "name": "Pointer.io",
+            "category": "Curated",
+            "description": "A reading club for developers. Weekly curated articles from across the web.",
+            "url": "https://www.pointer.io/",
+            "tags": [
+                "weekly",
+                "curated",
+                "programming",
+                "free"
+            ]
+        },
+        {
+            "name": "React Status",
+            "category": "Language",
+            "description": "Weekly roundup of React and React Native news and tutorials.",
+            "url": "https://react.statuscode.com/",
+            "tags": [
+                "react",
+                "weekly",
+                "frontend",
+                "free"
+            ]
+        },
+        {
+            "name": "Python Weekly",
+            "category": "Language",
+            "description": "Free weekly newsletter featuring Python articles, tutorials, and news.",
+            "url": "https://www.pythonweekly.com/",
+            "tags": [
+                "python",
+                "weekly",
+                "tutorials",
+                "free"
+            ]
+        },
+        {
+            "name": "The Pragmatic Engineer",
+            "category": "Engineering",
+            "description": "Deep dives into engineering practices at big tech companies by Gergely Orosz.",
+            "url": "https://newsletter.pragmaticengineer.com/",
+            "tags": [
+                "engineering",
+                "big-tech",
+                "career",
+                "paid-option"
+            ]
+        },
+        {
+            "name": "Console.dev",
+            "category": "Tools",
+            "description": "Weekly digest of the best developer tools, curated by developers.",
+            "url": "https://console.dev/",
+            "tags": [
+                "tools",
+                "weekly",
+                "developer",
+                "free"
+            ]
+        }
+    ]
+}

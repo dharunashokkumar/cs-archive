@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Best GitHub Repositories - CS Archive</title>
+    <title>Developer Newsletters - CS Archive</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Top GitHub repositories for developers - learning resources, awesome lists, open source projects, and developer tools.">
-    <meta name="keywords" content="GitHub repos, open source, awesome lists, developer tools, programming projects">
-    <meta property="og:title" content="Best GitHub Repositories - CS Archive">
-    <meta property="og:description" content="Top GitHub repositories for developers and CS students.">
-    <meta property="og:url" content="https://archive.dharunashokkumar.com/pages/repos.html">
-    <link rel="canonical" href="https://archive.dharunashokkumar.com/pages/repos.html">
+        content="Best developer newsletters - daily and weekly tech digests, programming news, and curated content.">
+    <meta name="keywords"
+        content="developer newsletters, tech newsletters, programming news, weekly digest, TLDR, JavaScript Weekly">
+    <meta property="og:title" content="Developer Newsletters - CS Archive">
+    <meta property="og:description" content="Best developer newsletters and weekly tech digests.">
+    <meta property="og:url" content="https://archive.dharunashokkumar.com/pages/newsletters.html">
+    <link rel="canonical" href="https://archive.dharunashokkumar.com/pages/newsletters.html">
     <link rel="stylesheet" href="../assets/style.css">
     <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -21,7 +22,6 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-T8EQF64ZTW');
     </script>
 </head>
@@ -32,7 +32,7 @@
         [ <a href="../index.html">HOME</a> ]
         [ <a href="skills.html">SKILLS</a> ]
         [ <a href="resources.html">RESOURCES</a> ]
-        [ <a href="repos.html" class="active">REPOS</a> ]
+        [ <a href="repos.html">REPOS</a> ]
         [ <a href="selfhosted.html">SELF_HOSTED</a> ]
         [ <a href="learning-paths.html">PATHS</a> ]
         [ <a href="ai-models.html">AI_MODELS</a> ]
@@ -47,57 +47,62 @@
         [ <a href="api.html">API</a> ]
         [ <a href="security.html">SECURITY</a> ]
         [ <a href="design.html">DESIGN</a> ]
-        [ <a href="newsletters.html">NEWSLETTERS</a> ]
+        [ <a href="newsletters.html" class="active">NEWSLETTERS</a> ]
         [ <a href="nostalgia.html">NOSTALGIA</a> ]
         [ <a href="archive.html">ARCHIVE</a> ]
         [ <a href="contribute.html">CONTRIBUTE</a> ]
     </div>
 
-    <h2><span class="material-icons">source</span> GITHUB_REPOS // TOP PICKS</h2>
+    <h2><span class="material-icons">mail</span> NEWSLETTERS // DEV DIGESTS</h2>
+    <p style="color: var(--text-muted); margin-bottom: 15px;">Best developer newsletters - daily and weekly tech
+        digests, programming news.</p>
 
     <div class="search-container">
-        <input type="text" id="search-box" class="search-box" placeholder="Search repos by name, category, or tags...">
+        <input type="text" id="search-box" class="search-box" placeholder="Search newsletters...">
         <span id="results-count" class="results-count"></span>
         <div class="filter-tags" id="filter-tags"></div>
     </div>
 
-    <div id="repos-container" class="section-container"></div>
+    <div id="items-container" class="section-container"></div>
 
     <script>
-        let allRepos = [];
+        let allItems = [];
         let activeFilters = new Set();
 
-        fetch('../data/repos.json')
-            .then(response => response.json())
+        fetch('../data/newsletters.json')
+            .then(r => r.json())
             .then(data => {
-                allRepos = data.repos;
-                renderRepos(allRepos);
-                buildFilterTags(allRepos);
+                allItems = data.items || [];
+                renderItems(allItems);
+                buildFilterTags(allItems);
+            }).catch(e => {
+                document.getElementById('items-container').innerHTML = '<p class="no-results">No items yet.</p>';
             });
 
-        function renderRepos(repos) {
-            const container = document.getElementById('repos-container');
+        function renderItems(items) {
+            const container = document.getElementById('items-container');
             container.innerHTML = '';
-            if (repos.length === 0) {
-                container.innerHTML = '<p class="no-results">No repos found matching your criteria.</p>';
+            if (items.length === 0) {
+                container.innerHTML = '<p class="no-results">No newsletters found.</p>';
+                return;
             }
-            repos.forEach(repo => {
+            items.forEach(item => {
                 const card = document.createElement('div');
                 card.className = 'skill-card';
-                const tags = (repo.tags || []).map(t => `<span class="tag">${t}</span>`).join('');
+                const tags = (item.tags || []).map(t => `<span class="tag">${t}</span>`).join('');
                 card.innerHTML = `
-                    <h3><a href="${repo.url}" target="_blank" class="external-link">${repo.name}</a></h3>
-                    <span class="category">CAT: ${repo.category}</span>
-                    <p class="description">${repo.description}</p>
+                    <h3><a href="${item.url || '#'}" target="_blank" class="external-link">${item.name}</a></h3>
+                    <span class="category">CAT: ${item.category || 'N/A'}</span>
+                    <p class="description">${item.description || ''}</p>
                     <div style="margin-top: 5px;">${tags}</div>
                 `;
                 container.appendChild(card);
             });
-            document.getElementById('results-count').textContent = `Showing ${repos.length} of ${allRepos.length}`;
+            document.getElementById('results-count').textContent = `Showing ${items.length} of ${allItems.length}`;
         }
 
-        function buildFilterTags(repos) {
-            const categories = [...new Set(repos.map(r => r.category))];
+        function buildFilterTags(items) {
+            const categories = [...new Set(items.map(i => i.category))];
             const container = document.getElementById('filter-tags');
             categories.forEach(cat => {
                 const btn = document.createElement('button');
@@ -116,27 +121,27 @@
                 activeFilters.add(category);
                 btn.classList.add('active');
             }
-            filterRepos();
+            filterItems();
         }
 
-        function filterRepos() {
+        function filterItems() {
             const query = document.getElementById('search-box').value.toLowerCase();
-            let filtered = allRepos;
+            let filtered = allItems;
             if (query) {
-                filtered = filtered.filter(r =>
-                    r.name.toLowerCase().includes(query) ||
-                    r.category.toLowerCase().includes(query) ||
-                    r.description.toLowerCase().includes(query) ||
-                    (r.tags || []).some(t => t.toLowerCase().includes(query))
+                filtered = filtered.filter(i =>
+                    i.name.toLowerCase().includes(query) ||
+                    i.category.toLowerCase().includes(query) ||
+                    i.description.toLowerCase().includes(query) ||
+                    (i.tags || []).some(t => t.toLowerCase().includes(query))
                 );
             }
             if (activeFilters.size > 0) {
-                filtered = filtered.filter(r => activeFilters.has(r.category));
+                filtered = filtered.filter(i => activeFilters.has(i.category));
             }
-            renderRepos(filtered);
+            renderItems(filtered);
         }
 
-        document.getElementById('search-box').addEventListener('input', filterRepos);
+        document.getElementById('search-box').addEventListener('input', filterItems);
     </script>
 </body>
 
