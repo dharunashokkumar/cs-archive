@@ -39,19 +39,7 @@
                 "guide"
             ]
         },
-        {
-            "name": "awesome-selfhosted/awesome-selfhosted",
-            "category": "Infrastructure",
-            "description": "A list of Free Software network services and web applications which can be hosted on your own servers.",
-            "url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
-            "tags": [
-                "selfhosted",
-                "list",
-                "infrastructure",
-                "server",
-                "docker"
-            ]
-        },
+        
         {
             "name": "kasmtech/workspaces-images",
             "category": "Infrastructure",
