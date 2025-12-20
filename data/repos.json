@@ -1,0 +1,99 @@
+{
+    "repos": [
+        {
+            "name": "iptv-org/iptv",
+            "category": "Media",
+            "description": "Collection of publicly available IPTV channels from all over the world.",
+            "url": "https://github.com/iptv-org/iptv",
+            "tags": [
+                "media",
+                "streaming",
+                "data",
+                "tv"
+            ]
+        },
+        {
+            "name": "public-apis/public-apis",
+            "category": "Development",
+            "description": "A collective list of free APIs for use in software and web development.",
+            "url": "https://github.com/public-apis/public-apis",
+            "tags": [
+                "api",
+                "development",
+                "data",
+                "json"
+            ]
+        },
+        {
+            "name": "donnemartin/system-design-primer",
+            "category": "Learning",
+            "description": "Learn how to design large-scale systems. Prep for the system design interview.",
+            "url": "https://github.com/donnemartin/system-design-primer",
+            "tags": [
+                "learning",
+                "system-design",
+                "interview",
+                "architecture"
+            ]
+        },
+        {
+            "name": "kamranahmedse/developer-roadmap",
+            "category": "Learning",
+            "description": "Interactive web developer roadmaps to guide your career path.",
+            "url": "https://github.com/kamranahmedse/developer-roadmap",
+            "tags": [
+                "learning",
+                "roadmap",
+                "career",
+                "web"
+            ]
+        },
+        {
+            "name": "awesome-selfhosted/awesome-selfhosted",
+            "category": "Infrastructure",
+            "description": "A list of Free Software network services and web applications which can be hosted on your own servers.",
+            "url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
+            "tags": [
+                "selfhosted",
+                "list",
+                "infrastructure",
+                "server"
+            ]
+        },
+        {
+            "name": "kasmtech/workspaces-images",
+            "category": "Infrastructure",
+            "description": "Docker images for Kasm Workspaces - run full desktops in containers.",
+            "url": "https://github.com/kasmtech/workspaces-images",
+            "tags": [
+                "kasm",
+                "docker",
+                "images",
+                "desktop"
+            ]
+        },
+        {
+            "name": "sindresorhus/awesome",
+            "category": "Utilities",
+            "description": "Awesome lists about all kinds of interesting topics.",
+            "url": "https://github.com/sindresorhus/awesome",
+            "tags": [
+                "list",
+                "resources",
+                "learning"
+            ]
+        },
+        {
+            "name": "torvalds/linux",
+            "category": "Core",
+            "description": "Linux kernel source tree. The ultimate reference.",
+            "url": "https://github.com/torvalds/linux",
+            "tags": [
+                "linux",
+                "kernel",
+                "os",
+                "c"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,92 @@
+{
+    "tools": [
+        {
+            "name": "Docker",
+            "category": "Infrastructure",
+            "description": "The fundamental platform for containerizing applications. Essential for self-hosting.",
+            "url": "https://www.docker.com/",
+            "tags": [
+                "containers",
+                "virtualization",
+                "devops",
+                "essential"
+            ],
+            "difficulty": "Essential"
+        },
+        {
+            "name": "Kasm Workspaces",
+            "category": "Workspace",
+            "description": "Stream containerized desktop apps and Linux desktops to your browser. Secure, isolated environments.",
+            "url": "https://kasmweb.com/",
+            "tags": [
+                "virtualization",
+                "browser",
+                "security",
+                "desktop"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Portainer",
+            "category": "Management",
+            "description": "A lightweight management UI which allows you to easily manage your different Docker environments.",
+            "url": "https://www.portainer.io/",
+            "tags": [
+                "docker",
+                "ui",
+                "management"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Pi-hole",
+            "category": "Network",
+            "description": "Network-wide advertisement and internet tracker blocking application.",
+            "url": "https://pi-hole.net/",
+            "tags": [
+                "network",
+                "dns",
+                "adblock",
+                "privacy"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Home Assistant",
+            "category": "Automation",
+            "description": "Open source home automation that puts local control and privacy first.",
+            "url": "https://www.home-assistant.io/",
+            "tags": [
+                "automation",
+                "iot",
+                "smart-home"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Jellyfin",
+            "category": "Media",
+            "description": "The Free Software Media System. No strings attached. Alternative to Plex.",
+            "url": "https://jellyfin.org/",
+            "tags": [
+                "media",
+                "streaming",
+                "video"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Nginx Proxy Manager",
+            "category": "Network",
+            "description": "Expose your services easily and securely with a web UI for Nginx.",
+            "url": "https://nginxproxymanager.com/",
+            "tags": [
+                "proxy",
+                "ssl",
+                "security",
+                "web"
+            ],
+            "difficulty": "Intermediate"
+        }
+    ]
+}

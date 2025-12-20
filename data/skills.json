@@ -7,7 +7,16 @@
       "difficulty": "beginner",
       "prerequisites": [],
       "estimated_hours": 40,
-      "description": "Variables, loops, conditionals, functions"
+      "description": "Variables, loops, conditionals, functions, basic data types"
+    },
+    {
+      "id": "python-oop",
+      "name": "Python OOP",
+      "category": "Programming",
+      "difficulty": "intermediate",
+      "prerequisites": ["python-basics"],
+      "estimated_hours": 30,
+      "description": "Classes, objects, inheritance, polymorphism, encapsulation"
     },
     {
       "id": "data-structures",
@@ -16,16 +25,178 @@
       "difficulty": "intermediate",
       "prerequisites": ["python-basics"],
       "estimated_hours": 60,
-      "description": "Arrays, linked lists, stacks, queues, trees, graphs"
+      "description": "Arrays, linked lists, stacks, queues, trees, graphs, hash tables"
     },
     {
-      "id": "web-html-css",
+      "id": "algorithms",
+      "name": "Algorithms",
+      "category": "Computer Science Fundamentals",
+      "difficulty": "intermediate",
+      "prerequisites": ["data-structures"],
+      "estimated_hours": 80,
+      "description": "Sorting, searching, recursion, dynamic programming, greedy algorithms"
+    },
+    {
+      "id": "html-css",
       "name": "HTML & CSS",
       "category": "Web Development",
       "difficulty": "beginner",
       "prerequisites": [],
       "estimated_hours": 30,
-      "description": "Basic web page structure and styling"
+      "description": "Web page structure, styling, responsive design, flexbox, grid"
+    },
+    {
+      "id": "javascript-basics",
+      "name": "JavaScript Basics",
+      "category": "Web Development",
+      "difficulty": "beginner",
+      "prerequisites": ["html-css"],
+      "estimated_hours": 40,
+      "description": "DOM manipulation, events, async programming, ES6 features"
+    },
+    {
+      "id": "react",
+      "name": "React",
+      "category": "Web Development",
+      "difficulty": "intermediate",
+      "prerequisites": ["javascript-basics"],
+      "estimated_hours": 50,
+      "description": "Components, props, state, hooks, routing, API integration"
+    },
+    {
+      "id": "networking-basics",
+      "name": "Networking Basics",
+      "category": "Networking",
+      "difficulty": "beginner",
+      "prerequisites": [],
+      "estimated_hours": 40,
+      "description": "OSI model, TCP/IP, DNS, HTTP/HTTPS, network protocols"
+    },
+    {
+      "id": "linux-cli",
+      "name": "Linux Command Line",
+      "category": "System Administration",
+      "difficulty": "beginner",
+      "prerequisites": [],
+      "estimated_hours": 25,
+      "description": "Terminal basics, file operations, permissions, shell scripting"
+    },
+    {
+      "id": "git-github",
+      "name": "Git & GitHub",
+      "category": "Development Tools",
+      "difficulty": "beginner",
+      "prerequisites": [],
+      "estimated_hours": 20,
+      "description": "Version control, commits, branches, pull requests, collaboration"
+    },
+    {
+      "id": "cybersecurity-fundamentals",
+      "name": "Cybersecurity Fundamentals",
+      "category": "Cybersecurity",
+      "difficulty": "intermediate",
+      "prerequisites": ["networking-basics", "linux-cli"],
+      "estimated_hours": 50,
+      "description": "Security principles, encryption, authentication, common vulnerabilities"
+    },
+    {
+      "id": "sql-databases",
+      "name": "SQL & Databases",
+      "category": "Databases",
+      "difficulty": "beginner",
+      "prerequisites": [],
+      "estimated_hours": 35,
+      "description": "Database design, SQL queries, joins, normalization, indexing"
+    },
+    {
+      "id": "api-development",
+      "name": "API Development",
+      "category": "Backend Development",
+      "difficulty": "intermediate",
+      "prerequisites": ["python-basics", "sql-databases"],
+      "estimated_hours": 45,
+      "description": "REST APIs, HTTP methods, authentication, API design patterns"
+    },
+    {
+      "id": "autocad-basics",
+      "name": "AutoCAD Basics",
+      "category": "Engineering Design",
+      "difficulty": "beginner",
+      "prerequisites": [],
+      "estimated_hours": 40,
+      "description": "2D drawing, layers, blocks, dimensioning, plotting"
+    },
+    {
+      "id": "iot-arduino",
+      "name": "IoT with Arduino",
+      "category": "Embedded Systems",
+      "difficulty": "intermediate",
+      "prerequisites": ["python-basics"],
+      "estimated_hours": 50,
+      "description": "Arduino programming, sensors, actuators, serial communication"
+    },
+    {
+      "id": "iot-esp32",
+      "name": "IoT with ESP32",
+      "category": "Embedded Systems",
+      "difficulty": "intermediate",
+      "prerequisites": ["iot-arduino", "networking-basics"],
+      "estimated_hours": 45,
+      "description": "WiFi/Bluetooth connectivity, web servers, MQTT, cloud integration"
+    },
+    {
+      "id": "machine-learning-basics",
+      "name": "Machine Learning Basics",
+      "category": "AI/ML",
+      "difficulty": "intermediate",
+      "prerequisites": ["python-basics", "data-structures"],
+      "estimated_hours": 60,
+      "description": "Supervised learning, regression, classification, model evaluation"
+    },
+    {
+      "id": "deep-learning",
+      "name": "Deep Learning",
+      "category": "AI/ML",
+      "difficulty": "advanced",
+      "prerequisites": ["machine-learning-basics"],
+      "estimated_hours": 80,
+      "description": "Neural networks, CNNs, RNNs, transformers, PyTorch/TensorFlow"
+    },
+    {
+      "id": "mathematics-discrete",
+      "name": "Discrete Mathematics",
+      "category": "Mathematics",
+      "difficulty": "intermediate",
+      "prerequisites": [],
+      "estimated_hours": 60,
+      "description": "Logic, sets, relations, graph theory, combinatorics, proofs"
+    },
+    {
+      "id": "mathematics-calculus",
+      "name": "Calculus",
+      "category": "Mathematics",
+      "difficulty": "intermediate",
+      "prerequisites": [],
+      "estimated_hours": 80,
+      "description": "Limits, derivatives, integrals, multivariable calculus"
+    },
+    {
+      "id": "penetration-testing",
+      "name": "Penetration Testing",
+      "category": "Cybersecurity",
+      "difficulty": "advanced",
+      "prerequisites": ["cybersecurity-fundamentals", "networking-basics", "linux-cli"],
+      "estimated_hours": 70,
+      "description": "Reconnaissance, vulnerability scanning, exploitation, reporting"
+    },
+    {
+      "id": "docker-containers",
+      "name": "Docker & Containers",
+      "category": "DevOps",
+      "difficulty": "intermediate",
+      "prerequisites": ["linux-cli"],
+      "estimated_hours": 30,
+      "description": "Containerization, Docker images, volumes, docker-compose, deployment"
     }
   ]
 }

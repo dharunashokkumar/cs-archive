@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CS Archive: SELF-HOSTED</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <h1>:: CS Student Archive ::</h1>
+    <div class="nav-bar">
+        [ <a href="index.html">DASHBOARD</a> ]
+        [ <a href="skills.html">SKILLS</a> ]
+        [ <a href="resources.html">RESOURCES</a> ]
+        [ <a href="repos.html">REPOS</a> ]
+        [ <a href="selfhosted.html" class="active">SELF_HOSTED</a> ]
+        [ <a href="archive.html">ARCHIVE_GEMS</a> ]
+        [ <a href="contribute.html">CONTRIBUTE</a> ]
+    </div>
+
+    <h2>> SELF_HOSTED_TOOLS // ESSENTIALS</h2>
+    <div id="selfhosted-container" class="section-container"></div>
+
+    <script>
+        fetch('data/selfhosted.json')
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById('selfhosted-container');
+                data.tools.forEach(tool => {
+                    const card = document.createElement('div');
+                    card.className = `skill-card`;
+                    let tagsHtml = tool.tags ? tool.tags.map(t => `<span class="tag-link">${t}</span>`).join('') : '';
+
+                    card.innerHTML = `
+                        <h3><a href="${tool.url}" target="_blank">${tool.name}</a></h3>
+                        <span class="category">CAT: ${tool.category}</span>
+                        <p class="description">${tool.description}</p>
+                        <div style="margin-top: 10px;">${tagsHtml}</div>
+                    `;
+                    container.appendChild(card);
+                });
+            });
+    </script>
+</body>
+
+</html>

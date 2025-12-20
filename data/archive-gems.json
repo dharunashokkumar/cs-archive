@@ -1,0 +1,76 @@
+{
+    "gems": [
+        {
+            "title": "Structure and Interpretation of Computer Programs (SICP)",
+            "type": "Book / Course",
+            "description": "The Wizard Book. A fundamental textbook on computer programming from MIT.",
+            "url": "https://archive.org/details/structure-and-interpretation-of-computer-programs_202104",
+            "tags": [
+                "foundational",
+                "scheme",
+                "mit"
+            ],
+            "curiosity_score": 10
+        },
+        {
+            "title": "The Computer Chronicles (1983-2002)",
+            "type": "Video Series",
+            "description": "A golden window into the history of personal computing. See the launch of the Mac, Windows 1.0, and the Internet.",
+            "url": "https://archive.org/details/computerchronicles",
+            "tags": [
+                "history",
+                "video",
+                "vintage"
+            ],
+            "curiosity_score": 9
+        },
+        {
+            "title": "UNIX Programmer's Manual (1979)",
+            "type": "Documentation",
+            "description": "The original v7 UNIX manual. A masterclass in technical writing and system design.",
+            "url": "https://archive.org/details/7th-edition-unix-programmers-manual-vol-1",
+            "tags": [
+                "unix",
+                "manual",
+                "history"
+            ],
+            "curiosity_score": 8
+        },
+        {
+            "title": "Hackers: Heroes of the Computer Revolution",
+            "type": "Audiobook/Text",
+            "description": "Steven Levy's classic book about the early culture of hackers at MIT and beyond.",
+            "url": "https://archive.org/details/hackersheroesofc00levy",
+            "tags": [
+                "culture",
+                "book",
+                "documentary"
+            ],
+            "curiosity_score": 9
+        },
+        {
+            "title": "SimCity (1989)",
+            "type": "Software",
+            "description": "Play the original SimCity directly in your browser via DOSBox emulation.",
+            "url": "https://archive.org/details/msdos_SimCity_1989",
+            "tags": [
+                "game",
+                "simulation",
+                "interactive"
+            ],
+            "curiosity_score": 7
+        },
+        {
+            "title": "Xerox Alto Operating System",
+            "type": "Software",
+            "description": "Experience the GUI that inspired Macintosh and Windows.",
+            "url": "https://archive.org/details/xerox-alto",
+            "tags": [
+                "os",
+                "gui",
+                "history"
+            ],
+            "curiosity_score": 10
+        }
+    ]
+}

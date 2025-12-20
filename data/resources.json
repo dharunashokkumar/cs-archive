@@ -1,0 +1,40 @@
+{
+  "resources": [
+    {
+      "id": "cs50",
+      "title": "CS50: Introduction to Computer Science",
+      "url": "https://cs50.harvard.edu/x/",
+      "type": "course",
+      "provider": "Harvard University",
+      "skills_covered": ["python-basics", "algorithms", "data-structures"],
+      "is_free": true,
+      "language": "English",
+      "quality_score": 10,
+      "difficulty": "beginner"
+    },
+    {
+      "id": "freecodecamp-python",
+      "title": "Python for Beginners - Full Course",
+      "url": "https://www.youtube.com/watch?v=rfscVS0vtbw",
+      "type": "video",
+      "provider": "freeCodeCamp",
+      "skills_covered": ["python-basics"],
+      "is_free": true,
+      "language": "English",
+      "quality_score": 9,
+      "difficulty": "beginner"
+    },
+    {
+      "id": "mdn-web-docs",
+      "title": "MDN Web Docs",
+      "url": "https://developer.mozilla.org/",
+      "type": "documentation",
+      "provider": "Mozilla",
+      "skills_covered": ["html-css", "javascript-basics"],
+      "is_free": true,
+      "language": "English",
+      "quality_score": 10,
+      "difficulty": "beginner"
+    }
+  ]
+}

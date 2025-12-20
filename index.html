@@ -1,42 +1,58 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>CS Student Knowledge Base</title>
-    <style>
-        body { font-family: Arial; max-width: 1000px; margin: 50px auto; padding: 20px; }
-        .skill-card { border: 1px solid #ddd; padding: 15px; margin: 10px 0; border-radius: 5px; }
-        .beginner { border-left: 4px solid green; }
-        .intermediate { border-left: 4px solid orange; }
-        .advanced { border-left: 4px solid red; }
-        h1 { color: #333; }
-        .category { color: #666; font-size: 0.9em; }
-        .prerequisites { background: #f0f0f0; padding: 5px; margin-top: 10px; font-size: 0.85em; }
-    </style>
-</head>
-<body>
-    <h1>CS Student Knowledge Base - India</h1>
-    <p>Open dataset of skills, learning paths, and resources for CS students</p>
-    <div id="skills-container"></div>
 
-    <script>
-        fetch('data/skills.json')
-            .then(response => response.json())
-            .then(data => {
-                const container = document.getElementById('skills-container');
-                data.skills.forEach(skill => {
-                    const card = document.createElement('div');
-                    card.className = `skill-card ${skill.difficulty}`;
-                    card.innerHTML = `
-                        <h3>${skill.name}</h3>
-                        <p class="category">${skill.category} • ${skill.difficulty} • ~${skill.estimated_hours} hours</p>
-                        <p>${skill.description}</p>
-                        ${skill.prerequisites.length > 0 ? 
-                            `<div class="prerequisites">Prerequisites: ${skill.prerequisites.join(', ')}</div>` 
-                            : ''}
-                    `;
-                    container.appendChild(card);
-                });
-            });
-    </script>
+<head>
+    <title>CS Archive: DASHBOARD</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <h1>:: CS Student Archive ::</h1>
+    <div class="nav-bar">
+        [ <a href="index.html" class="active">DASHBOARD</a> ]
+        [ <a href="skills.html">SKILLS</a> ]
+        [ <a href="resources.html">RESOURCES</a> ]
+        [ <a href="repos.html">REPOS</a> ]
+        [ <a href="selfhosted.html">SELF_HOSTED</a> ]
+        [ <a href="archive.html">ARCHIVE_GEMS</a> ]
+        [ <a href="contribute.html">CONTRIBUTE</a> ]
+    </div>
+
+    <div style="text-align: center; margin: 50px 0;">
+        <h2>WELCOME_USER</h2>
+        <p>Select a module from the navigation bar above to begin.</p>
+        <br>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+            <div class="skill-card" onclick="window.location='skills.html'"
+                style="cursor: pointer; text-align: center;">
+                <h3>SKILLS</h3>
+                <p>Curriculum & Paths</p>
+            </div>
+            <div class="skill-card" onclick="window.location='resources.html'"
+                style="cursor: pointer; text-align: center;">
+                <h3>RESOURCES</h3>
+                <p>External Links</p>
+            </div>
+            <div class="skill-card" onclick="window.location='selfhosted.html'"
+                style="cursor: pointer; text-align: center;">
+                <h3>SELF-HOSTED</h3>
+                <p>Docker & Tools</p>
+            </div>
+            <div class="skill-card" onclick="window.location='repos.html'" style="cursor: pointer; text-align: center;">
+                <h3>TOP REPOS</h3>
+                <p>GitHub Gems</p>
+            </div>
+            <div class="skill-card" onclick="window.location='archive.html'"
+                style="cursor: pointer; text-align: center;">
+                <h3>ARCHIVE</h3>
+                <p>Historical Data</p>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-top: 50px; text-align: center; font-size: 0.8em; border-top: 1px solid #777; padding-top: 10px;">
+        <p>SYSTEM_READY // VER: 2.0.0-MULTI_PAGE</p>
+    </div>
 </body>
+
 </html>

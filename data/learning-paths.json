@@ -1,0 +1,48 @@
+{
+  "paths": [
+    {
+      "id": "web-dev-fullstack",
+      "name": "Full Stack Web Developer",
+      "goal": "Build complete web applications",
+      "difficulty": "intermediate",
+      "estimated_total_hours": 250,
+      "skill_sequence": [
+        "html-css",
+        "javascript-basics",
+        "git-github",
+        "react",
+        "sql-databases",
+        "api-development"
+      ]
+    },
+    {
+      "id": "cybersecurity-specialist",
+      "name": "Cybersecurity Specialist",
+      "goal": "Secure systems and perform penetration testing",
+      "difficulty": "advanced",
+      "estimated_total_hours": 300,
+      "skill_sequence": [
+        "linux-cli",
+        "networking-basics",
+        "python-basics",
+        "cybersecurity-fundamentals",
+        "penetration-testing"
+      ]
+    },
+    {
+      "id": "ml-engineer",
+      "name": "Machine Learning Engineer",
+      "goal": "Build and deploy ML models",
+      "difficulty": "advanced",
+      "estimated_total_hours": 350,
+      "skill_sequence": [
+        "python-basics",
+        "data-structures",
+        "algorithms",
+        "mathematics-calculus",
+        "machine-learning-basics",
+        "deep-learning"
+      ]
+    }
+  ]
+}
