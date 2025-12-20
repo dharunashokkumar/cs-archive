@@ -55,38 +55,384 @@
     </div>
 
     <h2><span class="material-icons">route</span> LEARNING_PATHS // GUIDED CURRICULA</h2>
-    <p style="color: var(--text-muted); margin-bottom: 15px;">Structured roadmaps to help you navigate your learning
-        journey.</p>
+    <p style="color: var(--text-muted); margin-bottom: 15px;">Comprehensive collection of 62 structured learning paths and roadmaps for developers.</p>
+
+    <div class="search-container">
+        <input type="text" id="search-box" class="search-box" placeholder="Search roadmaps by name or description...">
+        <span id="results-count" class="results-count"></span>
+    </div>
+
+    <div style="margin: 15px 0; display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
+        <select id="category-filter" style="padding: 8px 12px; background: var(--bg-color); color: var(--text-color); border: 1px solid var(--border-color); border-radius: 4px; min-width: 200px; font-size: 0.9em;">
+            <option value="">All Categories (62)</option>
+            <option value="frontend">🎨 Frontend Development</option>
+            <option value="backend">⚙️ Backend Development</option>
+            <option value="mobile">📱 Mobile Development</option>
+            <option value="ai">🤖 AI & Machine Learning</option>
+            <option value="devops">🚀 DevOps & Cloud</option>
+            <option value="database">🗃️ Databases</option>
+            <option value="language">💻 Programming Languages</option>
+            <option value="other">📚 Other</option>
+        </select>
+        <button id="reset-filters" style="padding: 8px 16px; background: var(--accent-color); color: var(--bg-color); border: none; border-radius: 4px; cursor: pointer; font-size: 0.9em;">Reset</button>
+    </div>
 
     <div id="paths-container" class="section-container"></div>
 
+    <!-- Roadmap Viewer Modal -->
+    <div id="roadmap-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 9999; overflow: auto;">
+        <div style="position: relative; max-width: 1400px; margin: 20px auto; padding: 20px;">
+            <button id="close-modal" style="position: fixed; top: 20px; right: 20px; padding: 10px 20px; background: var(--accent-color); color: var(--bg-color); border: none; border-radius: 4px; cursor: pointer; font-size: 1em; z-index: 10000;">✕ Close</button>
+            <div id="roadmap-content" style="background: var(--bg-color); padding: 30px; border-radius: 8px; border: 2px solid var(--border-color);"></div>
+        </div>
+    </div>
+
     <script>
+        let allRoadmaps = [];
+
         fetch('../data/learning-paths.json')
-            .then(response => response.json())
+            .then(r => r.json())
             .then(data => {
-                const container = document.getElementById('paths-container');
-                data.paths.forEach(path => {
-                    const card = document.createElement('div');
-                    card.className = 'path-card';
-                    const skillsList = path.skills.map(skill => `<li>${skill}</li>`).join('');
-                    card.innerHTML = `
-                        <h3>${path.name}</h3>
-                        <p class="description">${path.description}</p>
-                        <div style="margin-top: 10px;">
-                            <strong style="color: var(--text-muted);">SKILLS:</strong>
-                            <ul>${skillsList}</ul>
-                        </div>
-                        <div style="margin-top: 10px; font-size: 0.85em; color: var(--text-muted);">
-                            EST. TIME: ~${path.estimated_weeks || '?'} weeks
-                        </div>
-                    `;
-                    container.appendChild(card);
+                allRoadmaps = data.roadmaps;
+                renderRoadmaps(allRoadmaps);
+                
+                document.getElementById('search-box').addEventListener('input', filterRoadmaps);
+                document.getElementById('category-filter').addEventListener('change', filterRoadmaps);
+                document.getElementById('reset-filters').addEventListener('click', () => {
+                    document.getElementById('search-box').value = '';
+                    document.getElementById('category-filter').value = '';
+                    renderRoadmaps(allRoadmaps);
                 });
             })
-            .catch(error => {
-                document.getElementById('paths-container').innerHTML =
-                    '<p class="no-results">Error loading learning paths.</p>';
+            .catch(e => {
+                console.error('Error loading roadmaps:', e);
+                document.getElementById('paths-container').innerHTML = '<p class="no-results">Error loading roadmaps</p>';
             });
+
+        function getCategory(roadmapId) {
+            const id = roadmapId.toLowerCase();
+            if (['frontend', 'angular', 'react', 'vue', 'html', 'css'].includes(id)) return 'frontend';
+            if (['backend', 'nodejs', 'aspnet-core', 'spring-boot', 'laravel', 'php'].includes(id)) return 'backend';
+            if (['android', 'ios', 'react-native', 'flutter'].includes(id)) return 'mobile';
+            if (id.includes('ai-') || ['machine-learning', 'mlops', 'data-analyst', 'data-engineer', 'prompt-engineering'].includes(id)) return 'ai';
+            if (['devops', 'docker', 'kubernetes', 'aws', 'terraform', 'cloudflare'].includes(id)) return 'devops';
+            if (['sql', 'postgresql-dba', 'mongodb', 'redis'].includes(id)) return 'database';
+            if (['python', 'java', 'golang', 'rust', 'cpp', 'javascript', 'typescript', 'kotlin', 'php'].includes(id)) return 'language';
+            return 'other';
+        }
+
+        function renderRoadmaps(roadmaps) {
+            const container = document.getElementById('paths-container');
+            
+            if (roadmaps.length === 0) {
+                container.innerHTML = '<p class="no-results">No roadmaps found</p>';
+                return;
+            }
+
+            container.innerHTML = roadmaps.map(roadmap => `
+                <div class="skill-card roadmap-card" data-name="${roadmap.name.toLowerCase()}" data-description="${roadmap.description.toLowerCase()}" data-category="${getCategory(roadmap.id)}">
+                    <h3>
+                        <span style="font-size: 1.5em; margin-right: 10px;">${roadmap.icon}</span>
+                        ${roadmap.name}
+                    </h3>
+                    <p class="description">${roadmap.description}</p>
+                    <div style="margin: 10px 0;">
+                        <span style="padding: 4px 10px; background: rgba(139,90,43,0.2); border-radius: 3px; font-size: 0.8em; color: var(--text-muted);">
+                            ${roadmap.difficulty}
+                        </span>
+                    </div>
+                    <button onclick="openRoadmap('${roadmap.id}')" style="margin-top: 10px; padding: 8px 16px; background: var(--accent-color); color: var(--bg-color); border: none; border-radius: 4px; cursor: pointer; font-size: 0.85em; font-weight: bold;">
+                        View Roadmap →
+                    </button>
+                </div>
+            `).join('');
+
+            document.getElementById('results-count').textContent = `${roadmaps.length} roadmap${roadmaps.length !== 1 ? 's' : ''} found`;
+        }
+
+        function filterRoadmaps() {
+            const searchTerm = document.getElementById('search-box').value.toLowerCase();
+            const category = document.getElementById('category-filter').value;
+            
+            const filtered = allRoadmaps.filter(roadmap => {
+                const matchesSearch = !searchTerm || 
+                    roadmap.name.toLowerCase().includes(searchTerm) ||
+                    roadmap.description.toLowerCase().includes(searchTerm) ||
+                    roadmap.id.toLowerCase().includes(searchTerm);
+                
+                const matchesCategory = !category || getCategory(roadmap.id) === category;
+                
+                return matchesSearch && matchesCategory;
+            });
+            
+            renderRoadmaps(filtered);
+        }
+
+        async function openRoadmap(roadmapId) {
+            const roadmap = allRoadmaps.find(r => r.id === roadmapId);
+            if (!roadmap) return;
+
+            const modal = document.getElementById('roadmap-modal');
+            const content = document.getElementById('roadmap-content');
+            
+            content.innerHTML = '<p style="text-align: center; color: var(--text-muted);">Loading roadmap...</p>';
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+
+            try {
+                // Load the markdown description
+                const mdResponse = await fetch(`../${roadmap.path}/${roadmap.mdFile}`);
+                const mdText = await mdResponse.text();
+                
+                // Load the JSON structure
+                const jsonResponse = await fetch(`../${roadmap.path}/${roadmap.jsonFile}`);
+                const jsonData = await jsonResponse.json();
+
+                // Parse the markdown frontmatter and content
+                const frontmatterMatch = mdText.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
+                const markdownContent = frontmatterMatch ? frontmatterMatch[2] : mdText;
+
+                // Extract topics from JSON nodes
+                const topics = jsonData.nodes
+                    .filter(node => node.data && node.data.label && node.data.label.length > 3 && node.data.label !== 'vertical node' && node.data.label !== 'horizontal node')
+                    .map(node => node.data.label)
+                    .slice(0, 50); // Limit to first 50 topics
+
+                content.innerHTML = `
+                    <h2 style="color: var(--accent-color); margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                        <span style="font-size: 1.5em;">${roadmap.icon}</span>
+                        ${roadmap.name}
+                    </h2>
+                    
+                    <div style="margin-bottom: 20px; padding: 15px; background: rgba(139,90,43,0.1); border-radius: 6px; border-left: 4px solid var(--accent-color);">
+                        <p style="font-size: 1em; line-height: 1.6; margin: 0;">${roadmap.description}</p>
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                        <h3 style="color: var(--text-color); margin-bottom: 15px; font-size: 1.1em;">🗺️ Roadmap Flowchart</h3>
+                        <div id="roadmap-flowchart-container" style="background: #FFFFFF; border-radius: 8px; border: 2px solid var(--border-color); overflow: auto; max-height: 700px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); position: relative;">
+                            <div id="roadmap-flowchart" style="position: relative; min-width: 1200px; min-height: 600px;"></div>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.85em; margin-top: 10px; text-align: center;">
+                            🟡 Yellow = Topics • 🟠 Light Yellow = Subtopics • 🔵 Blue = Related Roadmaps • Scroll to explore
+                        </p>
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                        <h3 style="color: var(--text-color); margin-bottom: 15px; font-size: 1.1em;">📊 Statistics</h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px;">
+                            <div style="padding: 12px; background: rgba(139,90,43,0.1); border-radius: 4px; text-align: center;">
+                                <div style="font-size: 1.5em; color: var(--accent-color); font-weight: bold;">${jsonData.nodes.length}</div>
+                                <div style="color: var(--text-muted); font-size: 0.85em;">Nodes</div>
+                            </div>
+                            <div style="padding: 12px; background: rgba(139,90,43,0.1); border-radius: 4px; text-align: center;">
+                                <div style="font-size: 1.5em; color: var(--accent-color); font-weight: bold;">${jsonData.edges.length}</div>
+                                <div style="color: var(--text-muted); font-size: 0.85em;">Connections</div>
+                            </div>
+                            <div style="padding: 12px; background: rgba(139,90,43,0.1); border-radius: 4px; text-align: center;">
+                                <div style="font-size: 1.5em; color: var(--accent-color); font-weight: bold;">${topics.length}</div>
+                                <div style="color: var(--text-muted); font-size: 0.85em;">Topics</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                        <h3 style="color: var(--text-color); margin-bottom: 10px; font-size: 1.1em;">🎯 Key Topics</h3>
+                        <div style="display: flex; flex-wrap: wrap; gap: 8px; max-height: 200px; overflow-y: auto; padding: 10px; background: rgba(0,0,0,0.2); border-radius: 4px;">
+                            ${topics.map(topic => `
+                                <span style="padding: 4px 10px; background: rgba(139,90,43,0.15); border: 1px solid var(--border-color); border-radius: 3px; font-size: 0.8em; white-space: nowrap;">
+                                    ${topic}
+                                </span>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+
+                // Render the roadmap as flowchart using coordinates
+                setTimeout(() => renderFlowchart(jsonData), 100);
+            } catch (error) {
+                console.error('Error loading roadmap:', error);
+                content.innerHTML = `
+                    <p style="color: #ff6b6b; text-align: center;">
+                        Error loading roadmap details. Please try again.
+                    </p>
+                `;
+            }
+        }
+
+        document.getElementById('close-modal').addEventListener('click', () => {
+            document.getElementById('roadmap-modal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+
+        // Close modal on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && document.getElementById('roadmap-modal').style.display === 'block') {
+                document.getElementById('roadmap-modal').style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Close modal on background click
+        document.getElementById('roadmap-modal').addEventListener('click', (e) => {
+            if (e.target.id === 'roadmap-modal') {
+                document.getElementById('roadmap-modal').style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Flowchart Rendering using actual coordinates
+        function renderFlowchart(data) {
+            const container = document.getElementById('roadmap-flowchart');
+            
+            // Find bounds to normalize coordinates
+            let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+            
+            data.nodes.forEach(node => {
+                if (node.position) {
+                    minX = Math.min(minX, node.position.x);
+                    minY = Math.min(minY, node.position.y);
+                    maxX = Math.max(maxX, node.position.x + (node.width || 150));
+                    maxY = Math.max(maxY, node.position.y + (node.height || 50));
+                }
+            });
+
+            // Add padding
+            const padding = 50;
+            const offsetX = -minX + padding;
+            const offsetY = -minY + padding;
+            const totalWidth = maxX - minX + padding * 2;
+            const totalHeight = maxY - minY + padding * 2;
+
+            // Build node map for edge drawing
+            const nodeMap = {};
+            data.nodes.forEach(node => {
+                nodeMap[node.id] = node;
+            });
+
+            // Create SVG for edges (connections)
+            let svgContent = `<svg width="${totalWidth}" height="${totalHeight}" style="position: absolute; top: 0; left: 0; pointer-events: none;">`;
+            
+            // Draw edges
+            data.edges.forEach(edge => {
+                const source = nodeMap[edge.source];
+                const target = nodeMap[edge.target];
+                
+                if (!source?.position || !target?.position) return;
+                
+                // Calculate connection points
+                let x1 = source.position.x + offsetX + (source.width || 150) / 2;
+                let y1 = source.position.y + offsetY + (source.height || 50) / 2;
+                let x2 = target.position.x + offsetX + (target.width || 150) / 2;
+                let y2 = target.position.y + offsetY + (target.height || 50) / 2;
+                
+                // Adjust based on handle positions
+                const sh = edge.sourceHandle;
+                const th = edge.targetHandle;
+                
+                if (sh === 'x2' || sh === 'right') { x1 = source.position.x + offsetX + (source.width || 150); }
+                if (sh === 'w1' || sh === 'left') { x1 = source.position.x + offsetX; }
+                if (sh === 'z2' || sh === 'bottom') { y1 = source.position.y + offsetY + (source.height || 50); }
+                if (sh === 'y1' || sh === 'top') { y1 = source.position.y + offsetY; }
+                
+                if (th === 'x2' || th === 'right') { x2 = target.position.x + offsetX + (target.width || 150); }
+                if (th === 'w1' || th === 'left') { x2 = target.position.x + offsetX; }
+                if (th === 'z2' || th === 'bottom') { y2 = target.position.y + offsetY + (target.height || 50); }
+                if (th === 'y1' || th === 'top') { y2 = target.position.y + offsetY; }
+                
+                // Edge style
+                const strokeColor = edge.style?.stroke || '#2b78e4';
+                const strokeWidth = edge.style?.strokeWidth || 2.5;
+                const isDashed = edge.style?.strokeDasharray && edge.style.strokeDasharray !== '0';
+                const dashArray = isDashed ? '5,5' : 'none';
+                
+                // Draw path with orthogonal routing
+                let path = '';
+                const dx = x2 - x1;
+                const dy = y2 - y1;
+                
+                if (Math.abs(dx) > Math.abs(dy)) {
+                    const midX = x1 + dx / 2;
+                    path = `M ${x1} ${y1} L ${midX} ${y1} L ${midX} ${y2} L ${x2} ${y2}`;
+                } else {
+                    const midY = y1 + dy / 2;
+                    path = `M ${x1} ${y1} L ${x1} ${midY} L ${x2} ${midY} L ${x2} ${y2}`;
+                }
+                
+                svgContent += `<path d="${path}" fill="none" stroke="${strokeColor}" stroke-width="${strokeWidth}" stroke-dasharray="${dashArray}" stroke-linecap="round"/>`;
+            });
+            
+            svgContent += '</svg>';
+
+            // Create HTML for nodes
+            let nodesHTML = svgContent;
+            
+            data.nodes.forEach(node => {
+                if (!node.position) return;
+                
+                const label = node.data?.label || '';
+                if (!label || label === 'vertical node' || label === 'horizontal node') return;
+                if (node.type === 'vertical' || node.type === 'horizontal') return;
+                
+                const x = node.position.x + offsetX;
+                const y = node.position.y + offsetY;
+                const w = node.width || 150;
+                const h = node.height || 50;
+                
+                // Get node style based on type
+                let bgColor, borderColor, textColor;
+                switch(node.type) {
+                    case 'topic':
+                        bgColor = '#FFC107'; borderColor = '#B8860B'; textColor = '#000000';
+                        break;
+                    case 'subtopic':
+                        bgColor = '#FFF3CD'; borderColor = '#FFCA28'; textColor = '#000000';
+                        break;
+                    case 'button':
+                        bgColor = '#3B82F6'; borderColor = '#1D4ED8'; textColor = '#FFFFFF';
+                        break;
+                    case 'title':
+                        bgColor = '#1E293B'; borderColor = '#334155'; textColor = '#FFFFFF';
+                        break;
+                    case 'paragraph':
+                        bgColor = '#F8FAFC'; borderColor = '#CBD5E1'; textColor = '#334155';
+                        break;
+                    default:
+                        bgColor = '#FFFFFF'; borderColor = '#E2E8F0'; textColor = '#334155';
+                }
+                
+                nodesHTML += `
+                    <div style="
+                        position: absolute;
+                        left: ${x}px;
+                        top: ${y}px;
+                        width: ${w}px;
+                        height: ${h}px;
+                        background: ${bgColor};
+                        border: 2px solid ${borderColor};
+                        border-radius: 8px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 8px;
+                        box-sizing: border-box;
+                        font-size: 13px;
+                        font-weight: 500;
+                        color: ${textColor};
+                        text-align: center;
+                        box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+                        overflow: hidden;
+                        z-index: 10;
+                    ">
+                        ${label}
+                    </div>
+                `;
+            });
+
+            container.style.width = totalWidth + 'px';
+            container.style.height = totalHeight + 'px';
+            container.innerHTML = nodesHTML;
+        }
     </script>
 </body>
 
