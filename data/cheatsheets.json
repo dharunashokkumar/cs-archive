@@ -1,3 +1,554 @@
 {
-    "items": []
+    "items": [
+        {
+            "name": "DevHints",
+            "category": "Collection",
+            "description": "A ridiculous collection of web development cheatsheets.",
+            "url": "https://devhints.io/",
+            "tags": [
+                "web-dev",
+                "reference"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Cheatography",
+            "category": "Community",
+            "description": "Over 5,000 cheatsheets, revision aids and references.",
+            "url": "https://cheatography.com/",
+            "tags": [
+                "community",
+                "builder"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "OverAPI",
+            "category": "Collection",
+            "description": "Collecting all cheatsheets in a visual interface.",
+            "url": "https://overapi.com/",
+            "tags": [
+                "api",
+                "visual"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Git Cheatsheet (NDP)",
+            "category": "Specific",
+            "description": "Interactive visual Git cheatsheet.",
+            "url": "https://ndpsoftware.com/git-cheatsheet.html",
+            "tags": [
+                "git",
+                "interactive"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Vim Cheat Sheet",
+            "category": "Specific",
+            "description": "Mobile friendly VIM cheat sheet.",
+            "url": "https://vim.rtorr.com/",
+            "tags": [
+                "vim",
+                "editor"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Learn X in Y minutes",
+            "category": "Language",
+            "description": "Whirlwind tour of programming languages.",
+            "url": "https://learnxinyminutes.com/",
+            "tags": [
+                "languages",
+                "syntax"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Flexbox Guide",
+            "category": "CSS",
+            "description": "A Complete Guide to Flexbox by CSS-Tricks.",
+            "url": "https://css-tricks.com/snippets/css/a-guide-to-flexbox/",
+            "tags": [
+                "css",
+                "flexbox"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Grid Guide",
+            "category": "CSS",
+            "description": "A Complete Guide to Grid by CSS-Tricks.",
+            "url": "https://css-tricks.com/snippets/css/complete-guide-grid/",
+            "tags": [
+                "css",
+                "grid"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Regex 101",
+            "category": "Tool",
+            "description": "Build, test, and debug regex.",
+            "url": "https://regex101.com/",
+            "tags": [
+                "regex",
+                "debugger"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Linux Command Library",
+            "category": "System",
+            "description": "Web and Android app with 4000+ Linux commands.",
+            "url": "https://linuxcommandlibrary.com/",
+            "tags": [
+                "linux",
+                "cli"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Markdown Guide",
+            "category": "Specific",
+            "description": "A comprehensive reference guide for Markdown.",
+            "url": "https://www.markdownguide.org/cheat-sheet/",
+            "tags": [
+                "markdown",
+                "writing"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Docker Cheat Sheet",
+            "category": "DevOps",
+            "description": "Official Docker CLI cheatsheet.",
+            "url": "https://docs.docker.com/get-started/docker_cheatsheet.pdf",
+            "tags": [
+                "docker",
+                "containers"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Kubernetes Cheat Sheet",
+            "category": "DevOps",
+            "description": "kubectl reference docs.",
+            "url": "https://kubernetes.io/docs/reference/kubectl/cheatsheet/",
+            "tags": [
+                "k8s",
+                "cli"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "SQL Cheat Sheet",
+            "category": "Database",
+            "description": "SQL basics, syntax, and queries.",
+            "url": "https://www.sqltutorial.org/sql-cheat-sheet/",
+            "tags": [
+                "sql",
+                "database"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Python Cheat Sheet",
+            "category": "Language",
+            "description": "Comprehensive Python cheatsheet.",
+            "url": "https://www.pythoncheatsheet.org/",
+            "tags": [
+                "python",
+                "reference"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "React Cheat Sheet",
+            "category": "Framework",
+            "description": "Quick reference for React developers.",
+            "url": "https://dev.to/devvsakib/react-cheat-sheet-3ikd",
+            "tags": [
+                "react",
+                "web"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "HTML5 Cheat Sheet",
+            "category": "Web",
+            "description": "HTML 5 tags and attributes.",
+            "url": "https://html5doctor.com/html5-element-flowchart/",
+            "tags": [
+                "html",
+                "web"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Modern JS Cheatsheet",
+            "category": "Language",
+            "description": "Cheatsheet for the JavaScript knowledge you will frequently encounter in modern projects.",
+            "url": "https://github.com/mbeaudru/modern-js-cheatsheet",
+            "tags": [
+                "javascript",
+                "es6+"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Awesome Cheatsheets",
+            "category": "Collection",
+            "description": "Awesome list of cheatsheets.",
+            "url": "https://github.com/detailyang/awesome-cheatsheet",
+            "tags": [
+                "list",
+                "collection"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "ShortcutFoo",
+            "category": "Tool",
+            "description": "Learn shortcuts for your favorite programs.",
+            "url": "https://www.shortcutfoo.com/",
+            "tags": [
+                "learning",
+                "keyboard"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Keyframes.app",
+            "category": "CSS",
+            "description": "Visual CSS tools/cheatsheets.",
+            "url": "https://keyframes.app/",
+            "tags": [
+                "css",
+                "animation"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Easings.net",
+            "category": "CSS",
+            "description": "Easing functions cheatsheet.",
+            "url": "https://easings.net/",
+            "tags": [
+                "animation",
+                "math"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "HTTP Status Dogs",
+            "category": "Fun",
+            "description": "HTTP status codes as dogs.",
+            "url": "https://httpstatusdogs.com/",
+            "tags": [
+                "http",
+                "fun"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "ASCII Table",
+            "category": "Reference",
+            "description": "ASCII character codes.",
+            "url": "https://www.asciitable.com/",
+            "tags": [
+                "encoding",
+                "reference"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Big-O Cheat Sheet",
+            "category": "CS Theory",
+            "description": "Know Thy Complexities!",
+            "url": "https://www.bigocheatsheet.com/",
+            "tags": [
+                "algorithms",
+                "complexity"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Bash Cheat Sheet",
+            "category": "System",
+            "description": "Detailed guide to Bash scripting.",
+            "url": "https://devhints.io/bash",
+            "tags": [
+                "linux",
+                "scripting"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Crontab Guru",
+            "category": "System",
+            "description": "The quick and simple editor for cron schedule expressions.",
+            "url": "https://crontab.guru/",
+            "tags": [
+                "cron",
+                "scheduler"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Chmod Calculator",
+            "category": "System",
+            "description": "Unix permissions calculator.",
+            "url": "https://chmod-calculator.com/",
+            "tags": [
+                "permissions",
+                "linux"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Can I Use",
+            "category": "Web",
+            "description": "Browser support tables.",
+            "url": "https://caniuse.com/",
+            "tags": [
+                "compatibility",
+                "web"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "HTML Codes",
+            "category": "Refrerence",
+            "description": "HTML character codes and symbols.",
+            "url": "https://www.toptal.com/designers/htmlarrows/",
+            "tags": [
+                "html",
+                "symbols"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Moment.js Docs",
+            "category": "Library",
+            "description": "Formatting dates cheatsheet.",
+            "url": "https://momentjs.com/docs/#/displaying/format/",
+            "tags": [
+                "dates",
+                "js"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Figma Shortcuts",
+            "category": "Design",
+            "description": "Keyboard shortcuts for Figma.",
+            "url": "https://help.figma.com/hc/en-us/articles/360040328653-Use-shortcuts-and-quick-actions",
+            "tags": [
+                "figma",
+                "shortcuts"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Emoji Cheat Sheet",
+            "category": "Reference",
+            "description": "Codes for emojis on GitHub and Slack.",
+            "url": "https://www.webfx.com/tools/emoji-cheat-sheet/",
+            "tags": [
+                "emoji",
+                "markdown"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "LaTeX Cheat Sheet",
+            "category": "Writing",
+            "description": "LaTeX mathematical symbols and commands.",
+            "url": "https://wch.github.io/latexsheet/",
+            "tags": [
+                "latex",
+                "math"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "VS Code Key Bindings",
+            "category": "Editor",
+            "description": "Keyboard shortcuts for VS Code.",
+            "url": "https://code.visualstudio.com/docs/getstarted/keybindings",
+            "tags": [
+                "vscode",
+                "shortcuts"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Emmet Cheat Sheet",
+            "category": "Web",
+            "description": "Essential abbreviation syntax.",
+            "url": "https://docs.emmet.io/cheat-sheet/",
+            "tags": [
+                "html",
+                "css"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Swift Cheat Sheet",
+            "category": "Language",
+            "description": "Quick reference for Swift.",
+            "url": "https://github.com/raywenderlich/swift-cheat-sheet",
+            "tags": [
+                "swift",
+                "ios"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Go Cheat Sheet",
+            "category": "Language",
+            "description": "Go syntax and features.",
+            "url": "https://github.com/a8m/go-lang-cheat-sheet",
+            "tags": [
+                "go",
+                "golang"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Rust Cheat Sheet",
+            "category": "Language",
+            "description": "Rust language features.",
+            "url": "https://cheats.rs/",
+            "tags": [
+                "rust",
+                "systems"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "TypeScript Cheat Sheet",
+            "category": "Language",
+            "description": "Types and interfaces reference.",
+            "url": "https://www.typescriptlang.org/cheatsheets",
+            "tags": [
+                "typescript",
+                "web"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "JWT.io",
+            "category": "Tool",
+            "description": "Decode, verify and generate JWTs.",
+            "url": "https://jwt.io/",
+            "tags": [
+                "security",
+                "auth"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "DigitalOcean Community",
+            "category": "Tutorials",
+            "description": "High quality tutorials and cheatsheets.",
+            "url": "https://www.digitalocean.com/community/cheatsheets",
+            "tags": [
+                "server",
+                "linux"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Glob Tester",
+            "category": "Tool",
+            "description": "Test glob patterns.",
+            "url": "https://www.digitalocean.com/community/tools/glob",
+            "tags": [
+                "glob",
+                "matching"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "JSON Crack",
+            "category": "Tool",
+            "description": "Visualize JSON data as a graph.",
+            "url": "https://jsoncrack.com/",
+            "tags": [
+                "json",
+                "visualization"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Curl Builder",
+            "category": "Tool",
+            "description": "Visual builder for curl commands.",
+            "url": "https://curlbuilder.com/",
+            "tags": [
+                "api",
+                "terminal"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Sed & Awk 101",
+            "category": "System",
+            "description": "Text processing in Linux.",
+            "url": "https://github.com/learnbyexample/Command-line-text-processing",
+            "tags": [
+                "text",
+                "linux"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Open Source Licenses",
+            "category": "Legal",
+            "description": "Choose a license for your project.",
+            "url": "https://choosealicense.com/",
+            "tags": [
+                "licensing",
+                "oss"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Semver",
+            "category": "Reference",
+            "description": "Semantic Versioning specification.",
+            "url": "https://semver.org/",
+            "tags": [
+                "versioning",
+                "standards"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Keep a Changelog",
+            "category": "Reference",
+            "description": "Standard format for changelogs.",
+            "url": "https://keepachangelog.com/en/1.0.0/",
+            "tags": [
+                "documentation",
+                "git"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Conventional Commits",
+            "category": "Reference",
+            "description": "Specification for adding human and machine readable meaning to commit messages.",
+            "url": "https://www.conventionalcommits.org/",
+            "tags": [
+                "git",
+                "standards"
+            ],
+            "difficulty": "Intermediate"
+        }
+    ]
 }

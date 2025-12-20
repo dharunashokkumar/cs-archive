@@ -1,3 +1,554 @@
 {
-    "items": []
+    "items": [
+        {
+            "name": "Levels.fyi",
+            "category": "Salary",
+            "description": "Accurate software engineer salary data.",
+            "url": "https://www.levels.fyi/",
+            "tags": [
+                "salary",
+                "negotiation"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Tech Interview Handbook",
+            "category": "Interview",
+            "description": "Curated interview prep materials.",
+            "url": "https://www.techinterviewhandbook.org/",
+            "tags": [
+                "interview",
+                "guide"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "LeetCode",
+            "category": "Practice",
+            "description": "Technical interview preparation.",
+            "url": "https://leetcode.com/",
+            "tags": [
+                "dsa",
+                "coding"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "NeetCode",
+            "category": "Practice",
+            "description": "A better way to LeetCode.",
+            "url": "https://neetcode.io/",
+            "tags": [
+                "dsa",
+                "video"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "The Pragmatic Engineer",
+            "category": "Newsletter",
+            "description": "#1 tech newsletter.",
+            "url": "https://blog.pragmaticengineer.com/",
+            "tags": [
+                "career",
+                "blog"
+            ],
+            "difficulty": "Senior"
+        },
+        {
+            "name": "System Design Primer",
+            "category": "Architecture",
+            "description": "Ultimate guide for system design interviews.",
+            "url": "https://github.com/donnemartin/system-design-primer",
+            "tags": [
+                "system-design",
+                "interviews"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "LinkedIn",
+            "category": "Networking",
+            "description": "Professional network.",
+            "url": "https://www.linkedin.com/",
+            "tags": [
+                "networking",
+                "jobs"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Glassdoor",
+            "category": "Reviews",
+            "description": "Company reviews and salaries.",
+            "url": "https://www.glassdoor.com/",
+            "tags": [
+                "reviews",
+                "jobs"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Wellfound",
+            "category": "Jobs",
+            "description": "Startup jobs.",
+            "url": "https://wellfound.com/",
+            "tags": [
+                "startups",
+                "remote"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Hanko Hack",
+            "category": "Hackathons",
+            "description": "Find hackathons.",
+            "url": "https://devpost.com/",
+            "tags": [
+                "hackathons",
+                "projects"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "AlgoExpert",
+            "category": "Practice",
+            "description": "Ace the technical interview.",
+            "url": "https://www.algoexpert.io/",
+            "tags": [
+                "interview",
+                "paid"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Pramp",
+            "category": "Interview",
+            "description": "Mock interviews with peers.",
+            "url": "https://www.pramp.com/",
+            "tags": [
+                "mock",
+                "practice"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Interviewing.io",
+            "category": "Interview",
+            "description": "Anonymous mock interviews with FAANG engineers.",
+            "url": "https://interviewing.io/",
+            "tags": [
+                "mock",
+                "expert"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "HackerRank",
+            "category": "Practice",
+            "description": "Practice coding skills.",
+            "url": "https://www.hackerrank.com/",
+            "tags": [
+                "coding",
+                "intro"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Triplebyte",
+            "category": "Jobs",
+            "description": "Job search for engineers.",
+            "url": "https://triplebyte.com/",
+            "tags": [
+                "jobs",
+                "skills"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Hired",
+            "category": "Jobs",
+            "description": "Get job offers from top companies.",
+            "url": "https://hired.com/",
+            "tags": [
+                "jobs",
+                "hiring"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Dice",
+            "category": "Jobs",
+            "description": "Tech job board.",
+            "url": "https://www.dice.com/",
+            "tags": [
+                "jobs",
+                "tech"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Crunchbase",
+            "category": "Research",
+            "description": "Company insights and funding data.",
+            "url": "https://www.crunchbase.com/",
+            "tags": [
+                "business",
+                "research"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Blind",
+            "category": "Community",
+            "description": "Anonymous professional network.",
+            "url": "https://www.teamblind.com/",
+            "tags": [
+                "community",
+                "salary"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Big Tech Interviews",
+            "category": "Interview",
+            "description": "System design interview prep.",
+            "url": "https://www.youtube.com/c/SystemDesignInterview",
+            "tags": [
+                "video",
+                "system-design"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "ByteByteGo",
+            "category": "Architecture",
+            "description": "System design newsletter and course.",
+            "url": "https://bytebytego.com/",
+            "tags": [
+                "system-design",
+                "learning"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Grokking the System Design Interview",
+            "category": "Architecture",
+            "description": "Famous system design course.",
+            "url": "https://www.designgurus.io/course/grokking-the-system-design-interview",
+            "tags": [
+                "course",
+                "paid"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Cracking the Coding Interview",
+            "category": "Book",
+            "description": "The bible of coding interviews.",
+            "url": "https://www.crackingthecodinginterview.com/",
+            "tags": [
+                "book",
+                "classic"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Refactoring.fm",
+            "category": "Podcast",
+            "description": "Podcast about writing better code.",
+            "url": "https://refactoring.fm/",
+            "tags": [
+                "podcast",
+                "learning"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Soft Skills Engineering",
+            "category": "Podcast",
+            "description": "Podcast about non-technical stuff.",
+            "url": "https://softskills.audio/",
+            "tags": [
+                "podcast",
+                "soft-skills"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Coding Horror",
+            "category": "Blog",
+            "description": "Jeff Atwood's blog.",
+            "url": "https://blog.codinghorror.com/",
+            "tags": [
+                "blog",
+                "classic"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Joel on Software",
+            "category": "Blog",
+            "description": "Joel Spolsky's blog.",
+            "url": "https://www.joelonsoftware.com/",
+            "tags": [
+                "blog",
+                "classic"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Paul Graham Essays",
+            "category": "Blog",
+            "description": "Essays by Paul Graham.",
+            "url": "http://www.paulgraham.com/articles.html",
+            "tags": [
+                "blog",
+                "startups"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "StaffEng",
+            "category": "Career",
+            "description": "Stories of Staff+ engineering.",
+            "url": "https://staffeng.com/",
+            "tags": [
+                "career",
+                "leadership"
+            ],
+            "difficulty": "Senior"
+        },
+        {
+            "name": "Engineering Manager",
+            "category": "Career",
+            "description": "Resources for engineering managers.",
+            "url": "https://www.engineeringmanager.com/",
+            "tags": [
+                "management",
+                "leadership"
+            ],
+            "difficulty": "Senior"
+        },
+        {
+            "name": "ADPList",
+            "category": "Mentorship",
+            "description": "Find a mentor for free.",
+            "url": "https://adplist.org/",
+            "tags": [
+                "mentorship",
+                "networking"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "MentorCruise",
+            "category": "Mentorship",
+            "description": "Paid mentorship from experts.",
+            "url": "https://mentorcruise.com/",
+            "tags": [
+                "mentorship",
+                "paid"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "CareerFoundry",
+            "category": "Education",
+            "description": "Career change courses.",
+            "url": "https://careerfoundry.com/",
+            "tags": [
+                "bootcamp",
+                "reskilling"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "General Assembly",
+            "category": "Education",
+            "description": "Coding bootcamps.",
+            "url": "https://generalassemb.ly/",
+            "tags": [
+                "bootcamp",
+                "learning"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Springboard",
+            "category": "Education",
+            "description": "Online bootcamps with job guarantee.",
+            "url": "https://www.springboard.com/",
+            "tags": [
+                "bootcamp",
+                "learning"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Remote.co",
+            "category": "Jobs",
+            "description": "Remote jobs resource.",
+            "url": "https://remote.co/",
+            "tags": [
+                "remote",
+                "jobs"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "We Work Remotely",
+            "category": "Jobs",
+            "description": "Largest remote work community.",
+            "url": "https://weworkremotely.com/",
+            "tags": [
+                "remote",
+                "jobs"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "FlexJobs",
+            "category": "Jobs",
+            "description": "Vetted remote jobs.",
+            "url": "https://www.flexjobs.com/",
+            "tags": [
+                "remote",
+                "paid"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Arc.dev",
+            "category": "Jobs",
+            "description": "Remote jobs for developers.",
+            "url": "https://arc.dev/",
+            "tags": [
+                "remote",
+                "dev"
+            ],
+            "difficulty": "Senior"
+        },
+        {
+            "name": "Toptal",
+            "category": "Freelance",
+            "description": "Exclusive network of top freelancers.",
+            "url": "https://www.toptal.com/",
+            "tags": [
+                "freelance",
+                "expert"
+            ],
+            "difficulty": "Senior"
+        },
+        {
+            "name": "Gun.io",
+            "category": "Freelance",
+            "description": "Hire elite freelance developers.",
+            "url": "https://www.gun.io/",
+            "tags": [
+                "freelance",
+                "expert"
+            ],
+            "difficulty": "Senior"
+        },
+        {
+            "name": "Braintrust",
+            "category": "Freelance",
+            "description": "User-owned talent network.",
+            "url": "https://www.usebraintrust.com/",
+            "tags": [
+                "freelance",
+                "web3"
+            ],
+            "difficulty": "Senior"
+        },
+        {
+            "name": "Resume.io",
+            "category": "Tools",
+            "description": "Resume builder.",
+            "url": "https://resume.io/",
+            "tags": [
+                "resume",
+                "tools"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Canva Resumes",
+            "category": "Tools",
+            "description": "Design resumes easily.",
+            "url": "https://www.canva.com/resumes/",
+            "tags": [
+                "resume",
+                "design"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "FlowCV",
+            "category": "Tools",
+            "description": "Free resume builder.",
+            "url": "https://flowcv.com/",
+            "tags": [
+                "resume",
+                "free"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Creddle",
+            "category": "Tools",
+            "description": "Resume maker.",
+            "url": "https://creddle.io/",
+            "tags": [
+                "resume",
+                "simple"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Standard Resume",
+            "category": "Tools",
+            "description": "Professional bio and resume.",
+            "url": "https://standardresume.co/",
+            "tags": [
+                "resume",
+                "web"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "VisualCV",
+            "category": "Tools",
+            "description": "Resume and CV builder.",
+            "url": "https://www.visualcv.com/",
+            "tags": [
+                "resume",
+                "cv"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Jobscan",
+            "category": "Tools",
+            "description": "Optimize resume for ATS.",
+            "url": "https://www.jobscan.co/",
+            "tags": [
+                "resume",
+                "ats"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Cultivated Culture",
+            "category": "Advice",
+            "description": "Career advice and tools.",
+            "url": "https://cultivatedculture.com/",
+            "tags": [
+                "advice",
+                "tools"
+            ],
+            "difficulty": "All Levels"
+        }
+    ]
 }

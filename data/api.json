@@ -1,3 +1,554 @@
 {
-    "items": []
+    "items": [
+        {
+            "name": "JSONPlaceholder",
+            "category": "Testing",
+            "description": "Free fake API for testing and prototyping.",
+            "url": "https://jsonplaceholder.typicode.com/",
+            "tags": [
+                "mock",
+                "testing"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "OpenWeather",
+            "category": "Data",
+            "description": "Access current weather data for any location.",
+            "url": "https://openweathermap.org/api",
+            "tags": [
+                "weather",
+                "geolocation"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "NASA APIs",
+            "category": "Data",
+            "description": "Access NASA data, imagery, and astronomy pictures.",
+            "url": "https://api.nasa.gov/",
+            "tags": [
+                "space",
+                "science"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "PokeAPI",
+            "category": "Fun",
+            "description": "All the Pokémon data you'll ever need in one place.",
+            "url": "https://pokeapi.co/",
+            "tags": [
+                "games",
+                "pokemon"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "ReqRes",
+            "category": "Testing",
+            "description": "A hosted REST-API ready to respond to your AJAX requests.",
+            "url": "https://reqres.in/",
+            "tags": [
+                "mock",
+                "frontend"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Public APIs",
+            "category": "Collection",
+            "description": "A collective list of free APIs for use in software development.",
+            "url": "https://github.com/public-apis/public-apis",
+            "tags": [
+                "list",
+                "directory"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "The Cat API",
+            "category": "Fun",
+            "description": "Cats as a Service. Free API for cat photos.",
+            "url": "https://thecatapi.com/",
+            "tags": [
+                "images",
+                "fun"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Stripe API",
+            "category": "Payments",
+            "description": "The golden standard for payment APIs.",
+            "url": "https://stripe.com/docs/api",
+            "tags": [
+                "payments",
+                "financial"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "TMDB API",
+            "category": "Media",
+            "description": "Access movie, TV show, and actor information.",
+            "url": "https://developer.themoviedb.org/docs",
+            "tags": [
+                "movies",
+                "media"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Discord API",
+            "category": "Social",
+            "description": "Create bots and integrate with Discord.",
+            "url": "https://discord.com/developers/docs/intro",
+            "tags": [
+                "bots",
+                "chat"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Spotify Web API",
+            "category": "Media",
+            "description": "Get metadata from Spotify tracks, albums, and artists.",
+            "url": "https://developer.spotify.com/documentation/web-api",
+            "tags": [
+                "music",
+                "streaming"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Twitter API",
+            "category": "Social",
+            "description": "Access to Tweet, User, and Space data.",
+            "url": "https://developer.twitter.com/en/docs/twitter-api",
+            "tags": [
+                "social",
+                "data"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "GitHub API",
+            "category": "DevTools",
+            "description": "Interact with the world's largest development platform.",
+            "url": "https://docs.github.com/en/rest",
+            "tags": [
+                "git",
+                "dev-tools"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Twilio API",
+            "category": "Communication",
+            "description": "Unite communications and drive customer engagement.",
+            "url": "https://www.twilio.com/docs/usage/api",
+            "tags": [
+                "sms",
+                "voice"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "SendGrid API",
+            "category": "Communication",
+            "description": "Email delivery service API.",
+            "url": "https://docs.sendgrid.com/api-reference",
+            "tags": [
+                "email",
+                "marketing"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Google Maps Platform",
+            "category": "Data",
+            "description": "Build with reliable, comprehensive data for over 200 countries.",
+            "url": "https://developers.google.com/maps",
+            "tags": [
+                "maps",
+                "location"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "OpenAI API",
+            "category": "AI",
+            "description": "Access advanced AI models like GPT-4 and DALL-E.",
+            "url": "https://platform.openai.com/docs/introduction",
+            "tags": [
+                "ai",
+                "llm"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Notion API",
+            "category": "Productivity",
+            "description": "Connect Notion pages and databases to the tools you use.",
+            "url": "https://developers.notion.com/",
+            "tags": [
+                "productivity",
+                "cms"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Slack API",
+            "category": "Communication",
+            "description": "Build apps to extend Slack's functionality.",
+            "url": "https://api.slack.com/",
+            "tags": [
+                "bots",
+                "chat"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Unsplash API",
+            "category": "Media",
+            "description": "Beautiful, free photos. Gifted by the world's most generous community.",
+            "url": "https://unsplash.com/developers",
+            "tags": [
+                "images",
+                "photos"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "RapidAPI",
+            "category": "Marketplace",
+            "description": "The world's largest API marketplace.",
+            "url": "https://rapidapi.com/",
+            "tags": [
+                "marketplace",
+                "discovery"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Polygon.io",
+            "category": "Financial",
+            "description": "Real-time and historical stock market data.",
+            "url": "https://polygon.io/",
+            "tags": [
+                "stocks",
+                "finance"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "CoinGecko API",
+            "category": "Financial",
+            "description": "Crypto market data for developers.",
+            "url": "https://www.coingecko.com/en/api",
+            "tags": [
+                "crypto",
+                "finance"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "NewsAPI",
+            "category": "Data",
+            "description": "Search worldwide news with specific criteria.",
+            "url": "https://newsapi.org/",
+            "tags": [
+                "news",
+                "search"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "REST Countries",
+            "category": "Data",
+            "description": "Get information about countries via a RESTful API.",
+            "url": "https://restcountries.com/",
+            "tags": [
+                "geography",
+                "data"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "RandomUser.me",
+            "category": "Testing",
+            "description": "A free, open-source API for generating random user data.",
+            "url": "https://randomuser.me/",
+            "tags": [
+                "mock",
+                "testing"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Agify.io",
+            "category": "Fun",
+            "description": "Predict age based on a name.",
+            "url": "https://agify.io/",
+            "tags": [
+                "fun",
+                "prediction"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Genderize.io",
+            "category": "Fun",
+            "description": "Predict gender based on a name.",
+            "url": "https://genderize.io/",
+            "tags": [
+                "fun",
+                "prediction"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Nationalize.io",
+            "category": "Fun",
+            "description": "Predict nationality based on a name.",
+            "url": "https://nationalize.io/",
+            "tags": [
+                "fun",
+                "prediction"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "IPify",
+            "category": "Utility",
+            "description": "A simple public IP address API.",
+            "url": "https://www.ipify.org/",
+            "tags": [
+                "ip",
+                "utility"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "IP-API",
+            "category": "Utility",
+            "description": "Free IP Geolocation API.",
+            "url": "https://ip-api.com/",
+            "tags": [
+                "ip",
+                "geolocation"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "ExchangeRate-API",
+            "category": "Financial",
+            "description": "Free and easy currency exchange rates.",
+            "url": "https://www.exchangerate-api.com/",
+            "tags": [
+                "currency",
+                "finance"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Advice Slip",
+            "category": "Fun",
+            "description": "Free JSON API for random advice.",
+            "url": "https://api.adviceslip.com/",
+            "tags": [
+                "fun",
+                "quotes"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Fun Translations",
+            "category": "Fun",
+            "description": "Translate text into Yoda, Pirate, Klingon, etc.",
+            "url": "https://funtranslations.com/api",
+            "tags": [
+                "fun",
+                "translation"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Marvel API",
+            "category": "Fun",
+            "description": "Access information about Marvel's unparalleled library.",
+            "url": "https://developer.marvel.com/",
+            "tags": [
+                "comics",
+                "entertainment"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "IGDB API",
+            "category": "Media",
+            "description": "Internet Game Database API.",
+            "url": "https://api-docs.igdb.com/",
+            "tags": [
+                "games",
+                "database"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Jikan API",
+            "category": "Media",
+            "description": "Unofficial MyAnimeList API.",
+            "url": "https://jikan.moe/",
+            "tags": [
+                "anime",
+                "manga"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "OpenLibrary API",
+            "category": "Data",
+            "description": "Book data from the Internet Archive.",
+            "url": "https://openlibrary.org/developers/api",
+            "tags": [
+                "books",
+                "library"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Numbers API",
+            "category": "Fun",
+            "description": "Facts about numbers.",
+            "url": "http://numbersapi.com/",
+            "tags": [
+                "fun",
+                "facts"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Deck of Cards",
+            "category": "Fun",
+            "description": "A card deck API.",
+            "url": "https://deckofcardsapi.com/",
+            "tags": [
+                "games",
+                "cards"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Dog CEO",
+            "category": "Fun",
+            "description": "Dog API. The internet's biggest collection of open source dog pictures.",
+            "url": "https://dog.ceo/dog-api/",
+            "tags": [
+                "images",
+                "animals"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "PlaceKitten",
+            "category": "Utility",
+            "description": "A quick and simple service for getting pictures of kittens for use as placeholders.",
+            "url": "https://placekitten.com/",
+            "tags": [
+                "images",
+                "placeholder"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Lorem Picsum",
+            "category": "Utility",
+            "description": "The Lorem Ipsum for photos.",
+            "url": "https://picsum.photos/",
+            "tags": [
+                "images",
+                "placeholder"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "DummyJSON",
+            "category": "Testing",
+            "description": "Get dummy/fake JSON data to use as placeholder in development.",
+            "url": "https://dummyjson.com/",
+            "tags": [
+                "mock",
+                "testing"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Postman Echo",
+            "category": "Testing",
+            "description": "A service to test REST clients and make sample API calls.",
+            "url": "https://www.postman.com/postman/workspace/postman-public-workspace/collection/12959542-c8182b8d-2900-410a-977d-7815F3e22619",
+            "tags": [
+                "testing",
+                "debug"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "HttpBin",
+            "category": "Testing",
+            "description": "A simple HTTP Request & Response Service.",
+            "url": "https://httpbin.org/",
+            "tags": [
+                "testing",
+                "debug"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Beeceptor",
+            "category": "Testing",
+            "description": "Rest API Mocking and Intercepting.",
+            "url": "https://beeceptor.com/",
+            "tags": [
+                "mock",
+                "intercept"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Mockaroo",
+            "category": "Testing",
+            "description": "Random data generator and API mocking.",
+            "url": "https://www.mockaroo.com/",
+            "tags": [
+                "data-gen",
+                "mock"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "SheetDB",
+            "category": "Utility",
+            "description": "Turn Google Sheets into a JSON API.",
+            "url": "https://sheetdb.io/",
+            "tags": [
+                "sheets",
+                "backend"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Airtable API",
+            "category": "Productivity",
+            "description": "The power of a relational database with the ease of a spreadsheet.",
+            "url": "https://airtable.com/developers/web/api/introduction",
+            "tags": [
+                "database",
+                "low-code"
+            ],
+            "difficulty": "Intermediate"
+        }
+    ]
 }

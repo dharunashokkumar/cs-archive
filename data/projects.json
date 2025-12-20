@@ -1,3 +1,554 @@
 {
-    "items": []
+    "items": [
+        {
+            "name": "Build Your Own X",
+            "category": "Learning",
+            "description": "Master programming by recreating your favorite technologies.",
+            "url": "https://github.com/codecrafters-io/build-your-own-x",
+            "tags": [
+                "learning",
+                "recreation"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "App Ideas Collection",
+            "category": "Inspiration",
+            "description": "Collection of application ideas.",
+            "url": "https://github.com/florinpop17/app-ideas",
+            "tags": [
+                "ideas",
+                "practice"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Project Based Learning",
+            "category": "Tutorials",
+            "description": "Curated list of project-based tutorials.",
+            "url": "https://github.com/practical-tutorials/project-based-learning",
+            "tags": [
+                "tutorial",
+                "hands-on"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "7 Days 7 Websites",
+            "category": "Challenge",
+            "description": "Build 7 websites in 7 days.",
+            "url": "https://www.youtube.com/results?search_query=7+days+7+websites",
+            "tags": [
+                "challenge",
+                "portfolio"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Frontend Mentor",
+            "category": "Frontend",
+            "description": "Real-world HTML, CSS and JS challenges.",
+            "url": "https://www.frontendmentor.io/",
+            "tags": [
+                "frontend",
+                "design"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Mega Project List",
+            "category": "Inspiration",
+            "description": "Practical projects for any language.",
+            "url": "https://github.com/karan/Projects",
+            "tags": [
+                "ideas",
+                "classic"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "First Contributions",
+            "category": "Open Source",
+            "description": "Help beginners contribute to open source.",
+            "url": "https://github.com/firstcontributions/first-contributions",
+            "tags": [
+                "git",
+                "contribution"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Public APIs Projects",
+            "category": "Inspiration",
+            "description": "Build projects using free APIs.",
+            "url": "https://github.com/public-apis/public-apis",
+            "tags": [
+                "api",
+                "ideas"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "CodeCrafters",
+            "category": "Learning",
+            "description": "Build complex tools like Redis or Git.",
+            "url": "https://codecrafters.io/",
+            "tags": [
+                "advanced",
+                "systems"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "100 Days of Code",
+            "category": "Challenge",
+            "description": "Code every day for 100 days.",
+            "url": "https://www.100daysofcode.com/",
+            "tags": [
+                "challenge",
+                "habit"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Advent of Code",
+            "category": "Challenge",
+            "description": "Advent calendar of small programming puzzles.",
+            "url": "https://adventofcode.com/",
+            "tags": [
+                "puzzles",
+                "christmas"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Project Euler",
+            "category": "Math",
+            "description": "Challenging mathematical/computer programming problems.",
+            "url": "https://projecteuler.net/",
+            "tags": [
+                "math",
+                "algorithms"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Rosetta Code",
+            "category": "Reference",
+            "description": "Programming chrestomathy site.",
+            "url": "https://rosettacode.org/",
+            "tags": [
+                "algorithms",
+                "languages"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "JavaScript30",
+            "category": "Course",
+            "description": "30 Day Vanilla JS Challenge.",
+            "url": "https://javascript30.com/",
+            "tags": [
+                "javascript",
+                "challenge"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "React 30",
+            "category": "Inspiration",
+            "description": "30 React projects in 30 days.",
+            "url": "https://github.com/Asabeneh/30-Days-Of-React",
+            "tags": [
+                "react",
+                "challenge"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "50 Projects 50 Days",
+            "category": "Course",
+            "description": "50 mini web projects.",
+            "url": "https://www.udemy.com/course/50-projects-50-days/",
+            "tags": [
+                "web",
+                "mini-projects"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Clone Wars",
+            "category": "Inspiration",
+            "description": "Open source clones of popular sites.",
+            "url": "https://github.com/GorvGoyl/Clone-Wars",
+            "tags": [
+                "clones",
+                "fullstack"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "RealWorld",
+            "category": "Spec",
+            "description": "The mother of all demo apps.",
+            "url": "https://github.com/gothinkster/realworld",
+            "tags": [
+                "fullstack",
+                "spec"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "TodoMVC",
+            "category": "Spec",
+            "description": "Helping you select an MV* framework.",
+            "url": "https://todomvc.com/",
+            "tags": [
+                "frontend",
+                "comparison"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Hacker News Clone",
+            "category": "Project",
+            "description": "Build a Hacker News clone.",
+            "url": "https://github.com/HackerNews/API",
+            "tags": [
+                "api",
+                "frontend"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Portfolio Website",
+            "category": "Essential",
+            "description": "Build your personal portfolio.",
+            "url": "https://github.com/topics/portfolio-website",
+            "tags": [
+                "personal",
+                "career"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Blog Engine",
+            "category": "Project",
+            "description": "Build a blog from scratch.",
+            "url": "https://youtu.be/3ESKI-64WjI",
+            "tags": [
+                "fullstack",
+                "cms"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "E-commerce Store",
+            "category": "Project",
+            "description": "Build an online store.",
+            "url": "https://youtu.be/CDtPMR5y0QU",
+            "tags": [
+                "fullstack",
+                "commercial"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Chat Application",
+            "category": "Project",
+            "description": "Real-time chat app.",
+            "url": "https://socket.io/get-started/chat",
+            "tags": [
+                "real-time",
+                "sockets"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Weather App",
+            "category": "Project",
+            "description": "Classic weather application.",
+            "url": "https://openweathermap.org/guide",
+            "tags": [
+                "api",
+                "frontend"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Movie Search App",
+            "category": "Project",
+            "description": "Search movies using TMDB API.",
+            "url": "https://developer.themoviedb.org/docs",
+            "tags": [
+                "api",
+                "react"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Recipe Finder",
+            "category": "Project",
+            "description": "Find recipes based on ingredients.",
+            "url": "https://spoonacular.com/food-api",
+            "tags": [
+                "api",
+                "search"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Expense Tracker",
+            "category": "Project",
+            "description": "Track income and expenses.",
+            "url": "https://github.com/topics/expense-tracker",
+            "tags": [
+                "crud",
+                "state"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Task Manager",
+            "category": "Project",
+            "description": "Kanban style task manager.",
+            "url": "https://github.com/topics/task-manager",
+            "tags": [
+                "crud",
+                "productivity"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Markdown Editor",
+            "category": "Project",
+            "description": "Browser-based markdown editor.",
+            "url": "https://github.com/topics/markdown-editor",
+            "tags": [
+                "editor",
+                "tools"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "URL Shortener",
+            "category": "Project",
+            "description": "Shorten long URLs.",
+            "url": "https://github.com/topics/url-shortener",
+            "tags": [
+                "backend",
+                "database"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "File Sharing App",
+            "category": "Project",
+            "description": "Upload and share files.",
+            "url": "https://github.com/topics/file-sharing",
+            "tags": [
+                "backend",
+                "storage"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Video Chat App",
+            "category": "Project",
+            "description": "WebRTC video calls.",
+            "url": "https://webrtc.org/getting-started/overview",
+            "tags": [
+                "webrtc",
+                "video"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Discord Bot",
+            "category": "Project",
+            "description": "Build a bot for Discord.",
+            "url": "https://discord.com/developers/docs/intro",
+            "tags": [
+                "bots",
+                "api"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "VS Code Extension",
+            "category": "Project",
+            "description": "Build an extension for VS Code.",
+            "url": "https://code.visualstudio.com/api",
+            "tags": [
+                "tooling",
+                "typescript"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Chrome Extension",
+            "category": "Project",
+            "description": "Build a browser extension.",
+            "url": "https://developer.chrome.com/docs/extensions/mv3/getstarted/",
+            "tags": [
+                "browser",
+                "js"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Mobile Game",
+            "category": "Project",
+            "description": "Build a game with Unity or Godot.",
+            "url": "https://unity.com/learn",
+            "tags": [
+                "gamedev",
+                "mobile"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "CLI Tool",
+            "category": "Project",
+            "description": "Build a command line interface.",
+            "url": "https://oclif.io/",
+            "tags": [
+                "cli",
+                "productivity"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Web Scraper",
+            "category": "Project",
+            "description": "Scrape data from websites.",
+            "url": "https://www.selenium.dev/",
+            "tags": [
+                "automation",
+                "data"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Crypto Tracker",
+            "category": "Project",
+            "description": "Track cryptocurrency prices.",
+            "url": "https://www.coingecko.com/en/api",
+            "tags": [
+                "crypto",
+                "api"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Quiz App",
+            "category": "Project",
+            "description": "Multiple choice quiz.",
+            "url": "https://opentdb.com/api_config.php",
+            "tags": [
+                "frontend",
+                "logic"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Calculator",
+            "category": "Project",
+            "description": "Simple or scientific calculator.",
+            "url": "https://www.theodinproject.com/lessons/foundations-calculator",
+            "tags": [
+                "frontend",
+                "logic"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Pomodoro Clock",
+            "category": "Project",
+            "description": "Focus timer.",
+            "url": "https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-25-5-clock",
+            "tags": [
+                "timer",
+                "logic"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Drum Machine",
+            "category": "Project",
+            "description": "Play sounds on click.",
+            "url": "https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-drum-machine",
+            "tags": [
+                "audio",
+                "interactive"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Random Quote Machine",
+            "category": "Project",
+            "description": "Display random quotes.",
+            "url": "https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-random-quote-machine",
+            "tags": [
+                "api",
+                "frontend"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Memegen",
+            "category": "Project",
+            "description": "Meme generator.",
+            "url": "https://imgflip.com/api",
+            "tags": [
+                "fun",
+                "images"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Sudoku Solver",
+            "category": "Project",
+            "description": "Solve Sudoku puzzles.",
+            "url": "https://en.wikipedia.org/wiki/Sudoku_solving_algorithms",
+            "tags": [
+                "algorithms",
+                "logic"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Maze Generator",
+            "category": "Project",
+            "description": "Generate and solve mazes.",
+            "url": "https://en.wikipedia.org/wiki/Maze_generation_algorithm",
+            "tags": [
+                "algorithms",
+                "visual"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Pathfinding Visualizer",
+            "category": "Project",
+            "description": "Visualize A*, Dijkstra, etc.",
+            "url": "https://github.com/clementmihailescu/Pathfinding-Visualizer",
+            "tags": [
+                "algorithms",
+                "visual"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Sorting Visualizer",
+            "category": "Project",
+            "description": "Visualize sorting algorithms.",
+            "url": "https://github.com/topics/sorting-visualizer",
+            "tags": [
+                "algorithms",
+                "visual"
+            ],
+            "difficulty": "Intermediate"
+        }
+    ]
 }

@@ -1,3 +1,554 @@
 {
-    "items": []
+    "items": [
+        {
+            "name": "FreeCodeCamp",
+            "category": "Full Stack",
+            "description": "Learn to code for free.",
+            "url": "https://www.freecodecamp.org/",
+            "tags": [
+                "learning",
+                "certification"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "The Odin Project",
+            "category": "Full Stack",
+            "description": "Your Career in Web Development Starts Here.",
+            "url": "https://www.theodinproject.com/",
+            "tags": [
+                "web-dev",
+                "curriculum"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Full Stack Open",
+            "category": "Full Stack",
+            "description": "Deep dive into modern web development.",
+            "url": "https://fullstackopen.com/en/",
+            "tags": [
+                "react",
+                "node"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "CS50",
+            "category": "CS Fundamentals",
+            "description": "Harvard's introduction to computer science.",
+            "url": "https://cs50.harvard.edu/x/",
+            "tags": [
+                "cs",
+                "academic"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Roadmap.sh",
+            "category": "Roadmaps",
+            "description": "Developer Roadmaps.",
+            "url": "https://roadmap.sh/",
+            "tags": [
+                "career",
+                "paths"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "MDN Web Docs",
+            "category": "Documentation",
+            "description": "Resources for developers, by developers.",
+            "url": "https://developer.mozilla.org/",
+            "tags": [
+                "web",
+                "reference"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Javascript.info",
+            "category": "Language",
+            "description": "The Modern JavaScript Tutorial.",
+            "url": "https://javascript.info/",
+            "tags": [
+                "javascript",
+                "deep-dive"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Refactoring Guru",
+            "category": "Design Patterns",
+            "description": "Design patterns and refactoring.",
+            "url": "https://refactoring.guru/",
+            "tags": [
+                "architecture",
+                "patterns"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Git Immersion",
+            "category": "Version Control",
+            "description": "A guided tour that walks through the fundamentals of Git.",
+            "url": "https://gitimmersion.com/",
+            "tags": [
+                "git",
+                "hands-on"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Learn Git Branching",
+            "category": "Version Control",
+            "description": "Interactive git visualization.",
+            "url": "https://learngitbranching.js.org/",
+            "tags": [
+                "git",
+                "interactive"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "SQLZoo",
+            "category": "Database",
+            "description": "Learn SQL step by step.",
+            "url": "https://sqlzoo.net/",
+            "tags": [
+                "sql",
+                "practice"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "CryptoZombies",
+            "category": "Web3",
+            "description": "Learn to code games on Ethereum.",
+            "url": "https://cryptozombies.io/",
+            "tags": [
+                "solidity",
+                "blockchain"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Flexbox Froggy",
+            "category": "CSS",
+            "description": "A game for learning CSS flexbox.",
+            "url": "https://flexboxfroggy.com/",
+            "tags": [
+                "css",
+                "game"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Grid Garden",
+            "category": "CSS",
+            "description": "A game for learning CSS grid.",
+            "url": "https://cssgridgarden.com/",
+            "tags": [
+                "css",
+                "game"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Vim Adventures",
+            "category": "Tool",
+            "description": "Learn VIM while playing a game.",
+            "url": "https://vim-adventures.com/",
+            "tags": [
+                "vim",
+                "game"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Patterns.dev",
+            "category": "Architecture",
+            "description": "Modern web app design patterns.",
+            "url": "https://www.patterns.dev/",
+            "tags": [
+                "performance",
+                "react"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Web.dev",
+            "category": "Performance",
+            "description": "Guidance from the Chrome team.",
+            "url": "https://web.dev/",
+            "tags": [
+                "google",
+                "best-practices"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "CSS-Tricks",
+            "category": "CSS",
+            "description": "Daily articles about CSS and web development.",
+            "url": "https://css-tricks.com/",
+            "tags": [
+                "css",
+                "frontend"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Real Python",
+            "category": "Language",
+            "description": "Python tutorials.",
+            "url": "https://realpython.com/",
+            "tags": [
+                "python",
+                "community"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "W3Schools",
+            "category": "Basics",
+            "description": "Web development tutorials.",
+            "url": "https://www.w3schools.com/",
+            "tags": [
+                "html",
+                "css"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "GeeksforGeeks",
+            "category": "CS Fundamentals",
+            "description": "Computer Science portal.",
+            "url": "https://www.geeksforgeeks.org/",
+            "tags": [
+                "dsa",
+                "interview"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Educative.io",
+            "category": "Course",
+            "description": "Interactive courses.",
+            "url": "https://www.educative.io/",
+            "tags": [
+                "learning",
+                "interactive"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Scrimba",
+            "category": "Course",
+            "description": "Learn to code with interactive screencasts.",
+            "url": "https://scrimba.com/",
+            "tags": [
+                "frontend",
+                "video"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Egghead.io",
+            "category": "Course",
+            "description": "Short video lessons for developers.",
+            "url": "https://egghead.io/",
+            "tags": [
+                "video",
+                "concise"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Frontend Masters",
+            "category": "Course",
+            "description": "Deep dive frontend courses.",
+            "url": "https://frontendmasters.com/",
+            "tags": [
+                "frontend",
+                "expert"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Pluralsight",
+            "category": "Course",
+            "description": "Tech workforce development.",
+            "url": "https://www.pluralsight.com/",
+            "tags": [
+                "enterprise",
+                "learning"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Udacity",
+            "category": "Course",
+            "description": "Learn the latest tech skills.",
+            "url": "https://www.udacity.com/",
+            "tags": [
+                "nanodegree",
+                "career"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Coursera",
+            "category": "Course",
+            "description": "Degrees and certificates from top universities.",
+            "url": "https://www.coursera.org/",
+            "tags": [
+                "academic",
+                "official"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "edX",
+            "category": "Course",
+            "description": "Access to 2500+ online courses.",
+            "url": "https://www.edx.org/",
+            "tags": [
+                "academic",
+                "university"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Khan Academy",
+            "category": "Math",
+            "description": "Free online courses.",
+            "url": "https://www.khanacademy.org/computing",
+            "tags": [
+                "math",
+                "cs"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "MIT OpenCourseWare",
+            "category": "Academic",
+            "description": "MIT courses for free.",
+            "url": "https://ocw.mit.edu/",
+            "tags": [
+                "mit",
+                "academic"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Stanford Online",
+            "category": "Academic",
+            "description": "Stanford courses.",
+            "url": "https://online.stanford.edu/",
+            "tags": [
+                "stanford",
+                "academic"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Codecademy",
+            "category": "Interactive",
+            "description": "Learn to code interactively.",
+            "url": "https://www.codecademy.com/",
+            "tags": [
+                "interactive",
+                "basics"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Sololearn",
+            "category": "Mobile",
+            "description": "Learn to code on mobile.",
+            "url": "https://www.sololearn.com/",
+            "tags": [
+                "mobile",
+                "bite-sized"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Udemy",
+            "category": "Marketplace",
+            "description": "Largest selection of courses.",
+            "url": "https://www.udemy.com/",
+            "tags": [
+                "video",
+                "various"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Laracasts",
+            "category": "Language",
+            "description": "The best PHP and Laravel screencasts.",
+            "url": "https://laracasts.com/",
+            "tags": [
+                "php",
+                "laravel"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Go by Example",
+            "category": "Language",
+            "description": "Hands-on introduction to Go.",
+            "url": "https://gobyexample.com/",
+            "tags": [
+                "go",
+                "examples"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Rust by Example",
+            "category": "Language",
+            "description": "Learn Rust with examples.",
+            "url": "https://doc.rust-lang.org/rust-by-example/",
+            "tags": [
+                "rust",
+                "official"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Ruby Koans",
+            "category": "Language",
+            "description": "Learn Ruby through koans.",
+            "url": "http://rubykoans.com/",
+            "tags": [
+                "ruby",
+                "exercises"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Elixir School",
+            "category": "Language",
+            "description": "Lessons about the Elixir language.",
+            "url": "https://elixirschool.com/",
+            "tags": [
+                "elixir",
+                "functional"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Haskell",
+            "category": "Language",
+            "description": "Learn You a Haskell for Great Good!",
+            "url": "http://learnyouahaskell.com/",
+            "tags": [
+                "haskell",
+                "functional"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Eloquent JavaScript",
+            "category": "Book",
+            "description": "A modern introduction to programming.",
+            "url": "https://eloquentjavascript.net/",
+            "tags": [
+                "javascript",
+                "book"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "You Don't Know JS",
+            "category": "Book",
+            "description": "Deep dive into JS core mechanisms.",
+            "url": "https://github.com/getify/You-Dont-Know-JS",
+            "tags": [
+                "javascript",
+                "advanced"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Pro Git",
+            "category": "Book",
+            "description": "The official Git book.",
+            "url": "https://git-scm.com/book/en/v2",
+            "tags": [
+                "git",
+                "reference"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Automate the Boring Stuff",
+            "category": "Book",
+            "description": "Practical programming for total beginners.",
+            "url": "https://automatetheboringstuff.com/",
+            "tags": [
+                "python",
+                "automation"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Teach Yourself CS",
+            "category": "Guide",
+            "description": "A path for self-taught engineers.",
+            "url": "https://teachyourselfcs.com/",
+            "tags": [
+                "curriculum",
+                "guide"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "OSSU",
+            "category": "Curriculum",
+            "description": "Open Source Society University.",
+            "url": "https://github.com/ossu/computer-science",
+            "tags": [
+                "degree",
+                "free"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "P1xt Guide",
+            "category": "Guide",
+            "description": "Job ready guides.",
+            "url": "https://github.com/P1xt/p1xt-guides",
+            "tags": [
+                "career",
+                "plan"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "App Academy Open",
+            "category": "Full Stack",
+            "description": "Free access to App Academy's curriculum.",
+            "url": "https://www.appacademy.io/course/app-academy-open",
+            "tags": [
+                "bootcamp",
+                "ruby"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Code.org",
+            "category": "Education",
+            "description": "K-12 CS education.",
+            "url": "https://code.org/",
+            "tags": [
+                "kids",
+                "basics"
+            ],
+            "difficulty": "Beginner"
+        }
+    ]
 }

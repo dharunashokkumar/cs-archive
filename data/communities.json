@@ -1,3 +1,554 @@
 {
-    "items": []
+    "items": [
+        {
+            "name": "Stack Overflow",
+            "category": "Q&A",
+            "description": "The world's largest developer community.",
+            "url": "https://stackoverflow.com/",
+            "tags": [
+                "q&a",
+                "help"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Reddit r/programming",
+            "category": "Reddit",
+            "description": "Computer Programming.",
+            "url": "https://www.reddit.com/r/programming/",
+            "tags": [
+                "news",
+                "discussion"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Hacker News",
+            "category": "News",
+            "description": "Social news website focusing on computer science.",
+            "url": "https://news.ycombinator.com/",
+            "tags": [
+                "news",
+                "tech"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Dev.to",
+            "category": "Blogging",
+            "description": "Constructive and inclusive social network for developers.",
+            "url": "https://dev.to/",
+            "tags": [
+                "blogging",
+                "community"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Lobsters",
+            "category": "News",
+            "description": "Technology-focused community.",
+            "url": "https://lobste.rs/",
+            "tags": [
+                "news",
+                "tech"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Hashnode",
+            "category": "Blogging",
+            "description": "The easiest way to start a developer blog.",
+            "url": "https://hashnode.com/",
+            "tags": [
+                "blogging",
+                "writing"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "IndieHackers",
+            "category": "Startups",
+            "description": "Community for side-projects and bootstrapping.",
+            "url": "https://www.indiehackers.com/",
+            "tags": [
+                "startups",
+                "business"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Product Hunt",
+            "category": "Launch",
+            "description": "The place to find the next big thing in tech.",
+            "url": "https://www.producthunt.com/",
+            "tags": [
+                "products",
+                "discovery"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Kaggle",
+            "category": "Data Science",
+            "description": "World's largest data science community.",
+            "url": "https://www.kaggle.com/",
+            "tags": [
+                "data-science",
+                "competitions"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Discord",
+            "category": "Chat",
+            "description": "Platform for finding niche tech communities.",
+            "url": "https://discord.com/",
+            "tags": [
+                "chat",
+                "social"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "GitHub Discussions",
+            "category": "Code",
+            "description": "Discuss projects next to the code.",
+            "url": "https://github.com/discussions",
+            "tags": [
+                "git",
+                "collaboration"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "CodeNewbie",
+            "category": "Support",
+            "description": "Most supportive community of programmers.",
+            "url": "https://www.codenewbie.org/",
+            "tags": [
+                "beginners",
+                "support"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "freeCodeCamp Forum",
+            "category": "Learning",
+            "description": "Forum for the freeCodeCamp community.",
+            "url": "https://forum.freecodecamp.org/",
+            "tags": [
+                "learning",
+                "help"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Twitter / X",
+            "category": "Social",
+            "description": "Tech Twitter community.",
+            "url": "https://twitter.com/",
+            "tags": [
+                "social",
+                "networking"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "LinkedIn",
+            "category": "Social",
+            "description": "Professional networking.",
+            "url": "https://linkedin.com/",
+            "tags": [
+                "career",
+                "jobs"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Medium",
+            "category": "Blogging",
+            "description": "Read and write tech articles.",
+            "url": "https://medium.com/",
+            "tags": [
+                "articles",
+                "reading"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Show HN",
+            "category": "News",
+            "description": "Share what you've made on Hacker News.",
+            "url": "https://news.ycombinator.com/show",
+            "tags": [
+                "showcase",
+                "feedback"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "r/cscareerquestions",
+            "category": "Reddit",
+            "description": "CS career advice.",
+            "url": "https://www.reddit.com/r/cscareerquestions/",
+            "tags": [
+                "career",
+                "advice"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "r/learnprogramming",
+            "category": "Reddit",
+            "description": "For those learning programming.",
+            "url": "https://www.reddit.com/r/learnprogramming/",
+            "tags": [
+                "learning",
+                "help"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "r/webdev",
+            "category": "Reddit",
+            "description": "Web development discussion.",
+            "url": "https://www.reddit.com/r/webdev/",
+            "tags": [
+                "web",
+                "frontend"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "r/selfhosted",
+            "category": "Reddit",
+            "description": "Self-hosting discussion.",
+            "url": "https://www.reddit.com/r/selfhosted/",
+            "tags": [
+                "self-hosted",
+                "server"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "r/MachineLearning",
+            "category": "Reddit",
+            "description": "Machine Learning news.",
+            "url": "https://www.reddit.com/r/MachineLearning/",
+            "tags": [
+                "ml",
+                "ai"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "r/unixporn",
+            "category": "Reddit",
+            "description": "*NIX customization.",
+            "url": "https://www.reddit.com/r/unixporn/",
+            "tags": [
+                "linux",
+                "design"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Slack Communities",
+            "category": "Chat",
+            "description": "Various tech slack groups.",
+            "url": "https://slofile.com/",
+            "tags": [
+                "chat",
+                "groups"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "IRC",
+            "category": "Chat",
+            "description": "Internet Relay Chat. Old school dev chat.",
+            "url": "https://libera.chat/",
+            "tags": [
+                "chat",
+                "legacy"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Matrix",
+            "category": "Chat",
+            "description": "Open network for secure, decentralized communication.",
+            "url": "https://matrix.org/",
+            "tags": [
+                "chat",
+                "decentralized"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Mastodon",
+            "category": "Social",
+            "description": "Decentralized social media.",
+            "url": "https://joinmastodon.org/",
+            "tags": [
+                "social",
+                "fediverse"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Women Who Code",
+            "category": "Support",
+            "description": "Empowering women in technology.",
+            "url": "https://www.womenwhocode.com/",
+            "tags": [
+                "diversity",
+                "support"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Black Girls Code",
+            "category": "Support",
+            "description": "Empowering girls of color in tech.",
+            "url": "https://www.blackgirlscode.com/",
+            "tags": [
+                "diversity",
+                "education"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Out in Tech",
+            "category": "Support",
+            "description": "LGBTQ+ tech community.",
+            "url": "https://outintech.com/",
+            "tags": [
+                "diversity",
+                "networking"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "CodePen",
+            "category": "Code",
+            "description": "Social development environment for front-end designers and developers.",
+            "url": "https://codepen.io/",
+            "tags": [
+                "frontend",
+                "showcase"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Glitch",
+            "category": "Code",
+            "description": "Friendly community where you'll build the app of your dreams.",
+            "url": "https://glitch.com/",
+            "tags": [
+                "web",
+                "prototyping"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Replit Community",
+            "category": "Code",
+            "description": "Share and discuss Repls.",
+            "url": "https://replit.com/community",
+            "tags": [
+                "coding",
+                "cloud"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Exercism",
+            "category": "Learning",
+            "description": "Develop fluency in 67 programming languages.",
+            "url": "https://exercism.org/",
+            "tags": [
+                "learning",
+                "mentorship"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Codewars",
+            "category": "Learning",
+            "description": "Achieve mastery through challenge.",
+            "url": "https://www.codewars.com/",
+            "tags": [
+                "kata",
+                "practice"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Topcoder",
+            "category": "Competition",
+            "description": "Competitive programming community.",
+            "url": "https://www.topcoder.com/",
+            "tags": [
+                "competition",
+                "freelance"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Codeforces",
+            "category": "Competition",
+            "description": "Competitive programming contests.",
+            "url": "https://codeforces.com/",
+            "tags": [
+                "algorithms",
+                "contest"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "AtCoder",
+            "category": "Competition",
+            "description": "Programming contests from Japan.",
+            "url": "https://atcoder.jp/",
+            "tags": [
+                "contest",
+                "algorithms"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "LeetCode Discuss",
+            "category": "Q&A",
+            "description": "Discuss interview questions and solutions.",
+            "url": "https://leetcode.com/discuss/",
+            "tags": [
+                "interviews",
+                "dsa"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Blind",
+            "category": "Social",
+            "description": "Anonymous professional network.",
+            "url": "https://www.teamblind.com/",
+            "tags": [
+                "career",
+                "salary"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Polywork",
+            "category": "Social",
+            "description": "Professional network for multihyphenates.",
+            "url": "https://www.polywork.com/",
+            "tags": [
+                "career",
+                "portfolio"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Peerlist",
+            "category": "Social",
+            "description": "Professional network for people in tech.",
+            "url": "https://peerlist.io/",
+            "tags": [
+                "career",
+                "networking"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Contra",
+            "category": "Freelance",
+            "description": "Commission-free freelance marketplace.",
+            "url": "https://contra.com/",
+            "tags": [
+                "freelance",
+                "work"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Upwork Community",
+            "category": "Freelance",
+            "description": "Community for freelancers.",
+            "url": "https://community.upwork.com/",
+            "tags": [
+                "freelance",
+                "discussion"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Makerlog",
+            "category": "Productivity",
+            "description": "Home for makers building products.",
+            "url": "https://getmakerlog.com/",
+            "tags": [
+                "makers",
+                "logs"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "WIP",
+            "category": "Productivity",
+            "description": "Ship products, together.",
+            "url": "https://wip.co/",
+            "tags": [
+                "makers",
+                "community"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Nomad List",
+            "category": "Remote",
+            "description": "Community for digital nomads.",
+            "url": "https://nomadlist.com/",
+            "tags": [
+                "remote",
+                "travel"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "RemoteOK",
+            "category": "Jobs",
+            "description": "Remote job board and community.",
+            "url": "https://remoteok.com/",
+            "tags": [
+                "remote",
+                "jobs"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Daily.dev",
+            "category": "News",
+            "description": "Developer news feed.",
+            "url": "https://daily.dev/",
+            "tags": [
+                "news",
+                "extension"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Tealfeed",
+            "category": "Blogging",
+            "description": "Knowledge sharing platform.",
+            "url": "https://tealfeed.com/",
+            "tags": [
+                "blogging",
+                "creators"
+            ],
+            "difficulty": "All Levels"
+        }
+    ]
 }

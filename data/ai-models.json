@@ -1,3 +1,554 @@
 {
-    "items": []
+    "items": [
+        {
+            "name": "Llama 3",
+            "category": "LLM",
+            "description": "Meta's open-source large language model.",
+            "url": "https://llama.meta.com/",
+            "tags": [
+                "llm",
+                "meta"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Mistral 7B",
+            "category": "LLM",
+            "description": "Powerful small-model flagship from Mistral AI.",
+            "url": "https://mistral.ai/",
+            "tags": [
+                "llm",
+                "efficient"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Ollama",
+            "category": "Tool",
+            "description": "Run Llama 3, Mistral, Gemma, and more locally.",
+            "url": "https://ollama.com/",
+            "tags": [
+                "local-ai",
+                "runner"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Hugging Face",
+            "category": "Platform",
+            "description": "The home of models, datasets, and demos.",
+            "url": "https://huggingface.co/",
+            "tags": [
+                "hub",
+                "models"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Stable Diffusion",
+            "category": "Image Gen",
+            "description": "Latent text-to-image diffusion model.",
+            "url": "https://stability.ai/",
+            "tags": [
+                "image-generation",
+                "creative"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "LangChain",
+            "category": "Framework",
+            "description": "Framework for developing applications powered by LLMs.",
+            "url": "https://www.langchain.com/",
+            "tags": [
+                "framework",
+                "python"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Whisper",
+            "category": "Audio",
+            "description": "Robust speech recognition via large-scale weak supervision.",
+            "url": "https://github.com/openai/whisper",
+            "tags": [
+                "speech-to-text",
+                "openai"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "PrivateGPT",
+            "category": "Tool",
+            "description": "Interact with your documents 100% privately.",
+            "url": "https://github.com/zylon-ai/private-gpt",
+            "tags": [
+                "privacy",
+                "rag"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "LM Studio",
+            "category": "Tool",
+            "description": "Discover, download, and run local LLMs.",
+            "url": "https://lmstudio.ai/",
+            "tags": [
+                "gui",
+                "local-ai"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "GPT4All",
+            "category": "Tool",
+            "description": "Privacy-aware chatbot. No GPU required.",
+            "url": "https://gpt4all.io/",
+            "tags": [
+                "chatbot",
+                "cpu"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Midjourney",
+            "category": "Image Gen",
+            "description": "High-quality AI image generation via Discord.",
+            "url": "https://www.midjourney.com/",
+            "tags": [
+                "image-gen",
+                "art"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "DALL-E 3",
+            "category": "Image Gen",
+            "description": "OpenAI's latest image generation model.",
+            "url": "https://openai.com/dall-e-3",
+            "tags": [
+                "image-gen",
+                "openai"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Claude 3",
+            "category": "LLM",
+            "description": "Anthropic's state-of-the-art AI model family.",
+            "url": "https://www.anthropic.com/claude",
+            "tags": [
+                "llm",
+                "chat"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Gemini",
+            "category": "LLM",
+            "description": "Google's most capable and general model.",
+            "url": "https://deepmind.google/technologies/gemini/",
+            "tags": [
+                "llm",
+                "google"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Copilot",
+            "category": "Assistant",
+            "description": "Your everyday AI companion by Microsoft.",
+            "url": "https://copilot.microsoft.com/",
+            "tags": [
+                "assistant",
+                "productivity"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Perplexity",
+            "category": "Search",
+            "description": "AI-powered answer engine.",
+            "url": "https://www.perplexity.ai/",
+            "tags": [
+                "search",
+                "research"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Gemma",
+            "category": "LLM",
+            "description": "State-of-the-art open models from Google.",
+            "url": "https://ai.google.dev/gemma",
+            "tags": [
+                "llm",
+                "open-weights"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Mixtral 8x7B",
+            "category": "LLM",
+            "description": "High-quality sparse mixture-of-experts model.",
+            "url": "https://mistral.ai/news/mixtral-of-experts/",
+            "tags": [
+                "llm",
+                "moe"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Falcon",
+            "category": "LLM",
+            "description": "TII's flagship series of large language models.",
+            "url": "https://falconllm.tii.ae/",
+            "tags": [
+                "llm",
+                "open-source"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Vicuna",
+            "category": "LLM",
+            "description": "Open-source chatbot impressing GPT-4.",
+            "url": "https://lmsys.org/blog/2023-03-30-vicuna/",
+            "tags": [
+                "llm",
+                "chatbot"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "LocalAI",
+            "category": "Tool",
+            "description": "Drop-in replacement for OpenAI API for local inference.",
+            "url": "https://localai.io/",
+            "tags": [
+                "api",
+                "local"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Llama.cpp",
+            "category": "Library",
+            "description": "Port of Facebook's LLaMA model in C/C++.",
+            "url": "https://github.com/ggerganov/llama.cpp",
+            "tags": [
+                "inference",
+                "cpp"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "AutoGPT",
+            "category": "Agent",
+            "description": "An experimental open-source attempt to make GPT-4 fully autonomous.",
+            "url": "https://github.com/Significant-Gravitas/AutoGPT",
+            "tags": [
+                "agent",
+                "automation"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "BabyAGI",
+            "category": "Agent",
+            "description": "Task-driven autonomous agent.",
+            "url": "https://github.com/yoheinakajima/babyagi",
+            "tags": [
+                "agent",
+                "python"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Open Interpreter",
+            "category": "Tool",
+            "description": "Let language models run code on your computer.",
+            "url": "https://github.com/OpenInterpreter/open-interpreter",
+            "tags": [
+                "cli",
+                "automation"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Cursor",
+            "category": "Editor",
+            "description": "The AI-first code editor.",
+            "url": "https://cursor.sh/",
+            "tags": [
+                "ide",
+                "coding"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "GitHub Copilot",
+            "category": "Tool",
+            "description": "Your AI pair programmer.",
+            "url": "https://github.com/features/copilot",
+            "tags": [
+                "coding",
+                "assistant"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Tabnine",
+            "category": "Tool",
+            "description": "AI code assistant for developers.",
+            "url": "https://www.tabnine.com/",
+            "tags": [
+                "coding",
+                "autocomplete"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Amazon CodeWhisperer",
+            "category": "Tool",
+            "description": "AI coding companion.",
+            "url": "https://aws.amazon.com/codewhisperer/",
+            "tags": [
+                "coding",
+                "aws"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Codeium",
+            "category": "Tool",
+            "description": "Free AI code completion and chat.",
+            "url": "https://codeium.com/",
+            "tags": [
+                "coding",
+                "free"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Blackbox AI",
+            "category": "Tool",
+            "description": "Coding LLM designed to help developers.",
+            "url": "https://www.blackbox.ai/",
+            "tags": [
+                "coding",
+                "chat"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Phind",
+            "category": "Search",
+            "description": "The AI search engine for developers.",
+            "url": "https://www.phind.com/",
+            "tags": [
+                "search",
+                "dev"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "ElevenLabs",
+            "category": "Audio",
+            "description": "The most realistic AI voice generator.",
+            "url": "https://elevenlabs.io/",
+            "tags": [
+                "tts",
+                "voice"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Suno",
+            "category": "Audio",
+            "description": "Make music with AI.",
+            "url": "https://suno.com/",
+            "tags": [
+                "music",
+                "generation"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Udio",
+            "category": "Audio",
+            "description": "Create music from text.",
+            "url": "https://www.udio.com/",
+            "tags": [
+                "music",
+                "generation"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Runway",
+            "category": "Video",
+            "description": "Advancing creativity with artificial intelligence.",
+            "url": "https://runwayml.com/",
+            "tags": [
+                "video",
+                "editor"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Pika",
+            "category": "Video",
+            "description": "Idea to video platform.",
+            "url": "https://pika.art/",
+            "tags": [
+                "video",
+                "generation"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Sora",
+            "category": "Video",
+            "description": "OpenAI's text-to-video model.",
+            "url": "https://openai.com/sora",
+            "tags": [
+                "video",
+                "openai"
+            ],
+            "difficulty": "Coming Soon"
+        },
+        {
+            "name": "Leonardo.Ai",
+            "category": "Image Gen",
+            "description": "Create production-quality visual assets.",
+            "url": "https://leonardo.ai/",
+            "tags": [
+                "art",
+                "assets"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Civitai",
+            "category": "Platform",
+            "description": "The place to share and discover resources for generating AI art.",
+            "url": "https://civitai.com/",
+            "tags": [
+                "models",
+                "lora"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Replicate",
+            "category": "Platform",
+            "description": "Run AI with an API.",
+            "url": "https://replicate.com/",
+            "tags": [
+                "api",
+                "hosting"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Modal",
+            "category": "Platform",
+            "description": "End-to-end cloud platform for data & AI.",
+            "url": "https://modal.com/",
+            "tags": [
+                "cloud",
+                "serverless"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Vapi",
+            "category": "Tool",
+            "description": "Voice AI for developers.",
+            "url": "https://vapi.ai/",
+            "tags": [
+                "voice",
+                "api"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Flowise",
+            "category": "Tool",
+            "description": "Drag & drop UI to build your customized LLM flow.",
+            "url": "https://flowiseai.com/",
+            "tags": [
+                "low-code",
+                "langchain"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "LangFlow",
+            "category": "Tool",
+            "description": "Visual prototyping for LangChain.",
+            "url": "https://github.com/logspace-ai/langflow",
+            "tags": [
+                "visual",
+                "prototype"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "AnythingLLM",
+            "category": "Tool",
+            "description": "The all-in-one desktop application for RAG.",
+            "url": "https://useanything.com/",
+            "tags": [
+                "desktop",
+                "rag"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Jan",
+            "category": "Tool",
+            "description": "Open source alternative to ChatGPT that runs 100% offline.",
+            "url": "https://jan.ai/",
+            "tags": [
+                "offline",
+                "chat"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Text Generation WebUI",
+            "category": "Tool",
+            "description": "A Gradio web UI for Large Language Models.",
+            "url": "https://github.com/oobabooga/text-generation-webui",
+            "tags": [
+                "gui",
+                "advanced"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Lobe",
+            "category": "Tool",
+            "description": "Machine learning made simple.",
+            "url": "https://www.lobe.ai/",
+            "tags": [
+                "training",
+                "visual"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Teachable Machine",
+            "category": "Education",
+            "description": "Train a computer to recognize your own images, sounds, & poses.",
+            "url": "https://teachablemachine.withgoogle.com/",
+            "tags": [
+                "education",
+                "google"
+            ],
+            "difficulty": "Beginner"
+        }
+    ]
 }

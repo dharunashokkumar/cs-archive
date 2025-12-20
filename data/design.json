@@ -1,3 +1,556 @@
 {
-    "items": []
+    "items": [
+        {
+            "name": "Coolors",
+            "category": "Color",
+            "description": "The super fast color palettes generator.",
+            "url": "https://coolors.co/",
+            "tags": [
+                "color",
+                "generator"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Phosphor Icons",
+            "category": "Icons",
+            "description": "A flexible icon family for interfaces.",
+            "url": "https://phosphoricons.com/",
+            "tags": [
+                "icons",
+                "svg"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Google Fonts",
+            "category": "Typography",
+            "description": "Vast library of free and open source fonts.",
+            "url": "https://fonts.google.com/",
+            "tags": [
+                "fonts",
+                "typography"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Awwwards",
+            "category": "Inspiration",
+            "description": "Recognizing the talent of best web designers.",
+            "url": "https://www.awwwards.com/",
+            "tags": [
+                "inspiration",
+                "trends"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Figma",
+            "category": "Tools",
+            "description": "Collaborative interface design tool.",
+            "url": "https://www.figma.com/",
+            "tags": [
+                "ui",
+                "design"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Penpot",
+            "category": "Tools",
+            "description": "Open-source design and code collaboration tool.",
+            "url": "https://penpot.app/",
+            "tags": [
+                "open-source",
+                "ui"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Dribbble",
+            "category": "Inspiration",
+            "description": "Showcase creative work and design professionals.",
+            "url": "https://dribbble.com/",
+            "tags": [
+                "inspiration",
+                "portfolio"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Fontshare",
+            "category": "Typography",
+            "description": "Free fonts service by Indian Type Foundry.",
+            "url": "https://www.fontshare.com/",
+            "tags": [
+                "fonts",
+                "professional"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Happy Hues",
+            "category": "Color",
+            "description": "Curated colors in context.",
+            "url": "https://www.happyhues.co/",
+            "tags": [
+                "color",
+                "palettes"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Remix Icon",
+            "category": "Icons",
+            "description": "Open-source neutral-style system symbols.",
+            "url": "https://remixicon.com/",
+            "tags": [
+                "icons",
+                "open-source"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Behance",
+            "category": "Inspiration",
+            "description": "Showcase and discover creative work.",
+            "url": "https://www.behance.net/",
+            "tags": [
+                "portfolio",
+                "inspiration"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Unsplash",
+            "category": "Assets",
+            "description": "The internet's source for visuals. Powered by creators everywhere.",
+            "url": "https://unsplash.com/",
+            "tags": [
+                "photos",
+                "stock"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Pexels",
+            "category": "Assets",
+            "description": "The best free stock photos, royalty free images & videos shared by creators.",
+            "url": "https://www.pexels.com/",
+            "tags": [
+                "stock",
+                "video"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Adobe Color",
+            "category": "Color",
+            "description": "Create color palettes with the color wheel or image.",
+            "url": "https://color.adobe.com/",
+            "tags": [
+                "color",
+                "wheel"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "FontAwesome",
+            "category": "Icons",
+            "description": "The internet's icon library and toolkit.",
+            "url": "https://fontawesome.com/",
+            "tags": [
+                "icons",
+                "toolkit"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Heroicons",
+            "category": "Icons",
+            "description": "Beautiful hand-crafted SVG icons, by the makers of Tailwind CSS.",
+            "url": "https://heroicons.com/",
+            "tags": [
+                "icons",
+                "svg",
+                "tailwind"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Simple Icons",
+            "category": "Icons",
+            "description": "Free SVG icons for popular brands.",
+            "url": "https://simpleicons.org/",
+            "tags": [
+                "logos",
+                "brands"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Feather Icons",
+            "category": "Icons",
+            "description": "Simply beautiful open source icons.",
+            "url": "https://feathericons.com/",
+            "tags": [
+                "icons",
+                "minimalist"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Lucide",
+            "category": "Icons",
+            "description": "Beautiful & consistent icon toolkit made by the community.",
+            "url": "https://lucide.dev/",
+            "tags": [
+                "icons",
+                "community"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Iconify",
+            "category": "Icons",
+            "description": "Unified Open Source Icon Framework.",
+            "url": "https://iconify.design/",
+            "tags": [
+                "icons",
+                "framework"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Undraw",
+            "category": "Assets",
+            "description": "Open-source illustrations for any idea you can imagine and create.",
+            "url": "https://undraw.co/",
+            "tags": [
+                "illustrations",
+                "svg"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "DrawKit",
+            "category": "Assets",
+            "description": "Beautiful, free illustrations. Updated weekly.",
+            "url": "https://www.drawkit.com/",
+            "tags": [
+                "illustrations",
+                "vectors"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Humaaans",
+            "category": "Assets",
+            "description": "Mix-&-match illustrations of people with a design library.",
+            "url": "https://www.humaaans.com/",
+            "tags": [
+                "illustrations",
+                "customizable"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "ManyPixels Gallery",
+            "category": "Assets",
+            "description": "2,500+ royalty-free illustrations to power up your designs.",
+            "url": "https://www.manypixels.co/gallery",
+            "tags": [
+                "illustrations",
+                "royalty-free"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Open Peeps",
+            "category": "Assets",
+            "description": "A hand-drawn illustration library.",
+            "url": "https://www.openpeeps.com/",
+            "tags": [
+                "illustrations",
+                "hand-drawn"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Storyset",
+            "category": "Assets",
+            "description": "Awesome free customizable illustrations for your next project.",
+            "url": "https://storyset.com/",
+            "tags": [
+                "illustrations",
+                "animated"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Canva",
+            "category": "Tools",
+            "description": "Free-to-use online graphic design tool.",
+            "url": "https://www.canva.com/",
+            "tags": [
+                "design",
+                "easy"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Sketch",
+            "category": "Tools",
+            "description": "The all-in-one platform for digital design.",
+            "url": "https://www.sketch.com/",
+            "tags": [
+                "mac",
+                "design"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Blender",
+            "category": "Tools",
+            "description": "Free and open source 3D creation suite.",
+            "url": "https://www.blender.org/",
+            "tags": [
+                "3d",
+                "modeling"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Inkscape",
+            "category": "Tools",
+            "description": "Professional quality vector graphics software.",
+            "url": "https://inkscape.org/",
+            "tags": [
+                "vector",
+                "open-source"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "GIMP",
+            "category": "Tools",
+            "description": "GNU Image Manipulation Program.",
+            "url": "https://www.gimp.org/",
+            "tags": [
+                "image-editor",
+                "open-source"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Photopea",
+            "category": "Tools",
+            "description": "Advanced image editor supporting PSD, XCF, Sketch, XD and CDR formats.",
+            "url": "https://www.photopea.com/",
+            "tags": [
+                "online",
+                "editor"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Darktable",
+            "category": "Tools",
+            "description": "Open source photography workflow application and raw developer.",
+            "url": "https://www.darktable.org/",
+            "tags": [
+                "photography",
+                "raw"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Krita",
+            "category": "Tools",
+            "description": "Professional open source painting program.",
+            "url": "https://krita.org/en/",
+            "tags": [
+                "painting",
+                "art"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Affinity Designer",
+            "category": "Tools",
+            "description": "Professional graphic design software for Mac, Windows and iPad.",
+            "url": "https://affinity.serif.com/en-us/designer/",
+            "tags": [
+                "vector",
+                "professional"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Spline",
+            "category": "Tools",
+            "description": "Design and collaborate in 3D along with your team.",
+            "url": "https://spline.design/",
+            "tags": [
+                "3d",
+                "web"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Rive",
+            "category": "Tools",
+            "description": "Build interactive animations that run anywhere.",
+            "url": "https://rive.app/",
+            "tags": [
+                "animation",
+                "interactive"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "LottieFiles",
+            "category": "Assets",
+            "description": "The world's largest collection of free Lottie animations.",
+            "url": "https://lottiefiles.com/",
+            "tags": [
+                "animation",
+                "json"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Type Scale",
+            "category": "Typography",
+            "description": "Visual type scale calculator.",
+            "url": "https://typescale.com/",
+            "tags": [
+                "calculator",
+                "typography"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Fonts In Use",
+            "category": "The Archive",
+            "description": "A public archive of typography indexed by typeface, format, and industry.",
+            "url": "https://fontsinuse.com/",
+            "tags": [
+                "typography",
+                "examples"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Material Design",
+            "category": "System",
+            "description": "Google's open-source design system.",
+            "url": "https://m3.material.io/",
+            "tags": [
+                "design-system",
+                "guidelines"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Human Interface Guidelines",
+            "category": "System",
+            "description": "Design for Apple platforms.",
+            "url": "https://developer.apple.com/design/human-interface-guidelines/",
+            "tags": [
+                "apple",
+                "guidelines"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "IBM Carbon",
+            "category": "System",
+            "description": "IBM's open source design system for products and digital experiences.",
+            "url": "https://carbondesignsystem.com/",
+            "tags": [
+                "design-system",
+                "enterprise"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Ant Design",
+            "category": "System",
+            "description": "An enterprise-class UI design language and React UI library.",
+            "url": "https://ant.design/",
+            "tags": [
+                "react",
+                "ui-library"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Tailwind UI",
+            "category": "Components",
+            "description": "Official Tailwind CSS components.",
+            "url": "https://tailwindui.com/",
+            "tags": [
+                "components",
+                "tailwind"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Shadcn UI",
+            "category": "Components",
+            "description": "Beautifully designed components that you can copy and paste.",
+            "url": "https://ui.shadcn.com/",
+            "tags": [
+                "components",
+                "radix",
+                "react"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Aceternity UI",
+            "category": "Components",
+            "description": "Modern components for your React apps.",
+            "url": "https://ui.aceternity.com/",
+            "tags": [
+                "react",
+                "framer-motion"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Magic UI",
+            "category": "Components",
+            "description": "UI library for Design Engineers.",
+            "url": "https://magicui.design/",
+            "tags": [
+                "react",
+                "animated"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Godly Website",
+            "category": "Inspiration",
+            "description": "Astronomically good web design inspiration.",
+            "url": "https://godly.website/",
+            "tags": [
+                "inspiration",
+                "curated"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Siteinspire",
+            "category": "Inspiration",
+            "description": "A showcase of the finest web and interactive design.",
+            "url": "https://www.siteinspire.com/",
+            "tags": [
+                "inspiration",
+                "web"
+            ],
+            "difficulty": "All Levels"
+        }
+    ]
 }

@@ -1,3 +1,554 @@
 {
-    "items": []
+    "items": [
+        {
+            "name": "AWS Solutions Architect",
+            "category": "Cloud",
+            "description": "Validate ability to design and deploy scalable systems on AWS.",
+            "url": "https://aws.amazon.com/certification/certified-solutions-architect-associate/",
+            "tags": [
+                "aws",
+                "cloud"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "OSCP",
+            "category": "Security",
+            "description": "Offensive Security Certified Professional. The gladiator certification.",
+            "url": "https://www.offsec.com/courses/pen-200/",
+            "tags": [
+                "security",
+                "hacking"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "CompTIA Security+",
+            "category": "Security",
+            "description": "Entry-level workforce certification for cybersecurity professionals.",
+            "url": "https://www.comptia.org/certifications/security",
+            "tags": [
+                "security",
+                "foundation"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "CKAD",
+            "category": "DevOps",
+            "description": "Certified Kubernetes Application Developer.",
+            "url": "https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/",
+            "tags": [
+                "kubernetes",
+                "cloud-native"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Azure Fundamentals",
+            "category": "Cloud",
+            "description": "Prove your knowledge of cloud concepts and Azure services.",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/",
+            "tags": [
+                "azure",
+                "cloud"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Google Cloud Architect",
+            "category": "Cloud",
+            "description": "Design and manage robust, secure systems on GCP.",
+            "url": "https://cloud.google.com/learn/certification/cloud-architect",
+            "tags": [
+                "gcp",
+                "architecture"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "CISSP",
+            "category": "Security",
+            "description": "Certified Information Systems Security Professional.",
+            "url": "https://www.isc2.org/Certifications/CISSP",
+            "tags": [
+                "management",
+                "security"
+            ],
+            "difficulty": "Expert"
+        },
+        {
+            "name": "Terraform Associate",
+            "category": "DevOps",
+            "description": "Validates basic infrastructure automation skills.",
+            "url": "https://www.hashicorp.com/certification/terraform-associate",
+            "tags": [
+                "iac",
+                "terraform"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "RHCSA",
+            "category": "Linux",
+            "description": "Red Hat Certified System Administrator.",
+            "url": "https://www.redhat.com/en/services/certification/rhcsa",
+            "tags": [
+                "linux",
+                "sysadmin"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "CCNA",
+            "category": "Networking",
+            "description": "Cisco Certified Network Associate.",
+            "url": "https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna.html",
+            "tags": [
+                "networking",
+                "cisco"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "PMP",
+            "category": "Management",
+            "description": "Project Management Professional.",
+            "url": "https://www.pmi.org/certifications/project-management-pmp",
+            "tags": [
+                "project-management",
+                "leadership"
+            ],
+            "difficulty": "Expert"
+        },
+        {
+            "name": "CompTIA A+",
+            "category": "IT Support",
+            "description": "The industry standard for launching IT careers.",
+            "url": "https://www.comptia.org/certifications/a",
+            "tags": [
+                "it-support",
+                "hardware"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "CompTIA Network+",
+            "category": "Networking",
+            "description": "Develop a career in IT infrastructure.",
+            "url": "https://www.comptia.org/certifications/network",
+            "tags": [
+                "networking",
+                "infrastructure"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "CEH",
+            "category": "Security",
+            "description": "Certified Ethical Hacker.",
+            "url": "https://www.eccouncil.org/programs/certified-ethical-hacker-ceh/",
+            "tags": [
+                "hacking",
+                "security"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "CISM",
+            "category": "Security",
+            "description": "Certified Information Security Manager.",
+            "url": "https://www.isaca.org/credentialing/cism",
+            "tags": [
+                "management",
+                "security"
+            ],
+            "difficulty": "Expert"
+        },
+        {
+            "name": "AWS Cloud Practitioner",
+            "category": "Cloud",
+            "description": "Overall understanding of the AWS Cloud platform.",
+            "url": "https://aws.amazon.com/certification/certified-cloud-practitioner/",
+            "tags": [
+                "aws",
+                "cloud"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Oracle Java SE 8 Programmer",
+            "category": "Programming",
+            "description": "Professional Java certification.",
+            "url": "https://education.oracle.com/java-se-8-programmer-i/pexam_1Z0-808",
+            "tags": [
+                "java",
+                "development"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Meta Frontend Developer",
+            "category": "Web Dev",
+            "description": "Launch your career as a front-end developer.",
+            "url": "https://www.coursera.org/professional-certificates/meta-front-end-developer",
+            "tags": [
+                "frontend",
+                "react"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Meta Backend Developer",
+            "category": "Web Dev",
+            "description": "Launch your career as a back-end developer.",
+            "url": "https://www.coursera.org/professional-certificates/meta-back-end-developer",
+            "tags": [
+                "backend",
+                "python"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Google Data Analytics",
+            "category": "Data",
+            "description": "Get on the fast track to a career in data analytics.",
+            "url": "https://www.coursera.org/professional-certificates/google-data-analytics",
+            "tags": [
+                "data-analytics",
+                "google"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Google UX Design",
+            "category": "Design",
+            "description": "Get started in the fast-growing field of user experience design.",
+            "url": "https://www.coursera.org/professional-certificates/google-ux-design",
+            "tags": [
+                "ux",
+                "design"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "TensorFlow Developer",
+            "category": "AI",
+            "description": "Demonstrate competence in building ML models.",
+            "url": "https://www.tensorflow.org/certificate",
+            "tags": [
+                "ml",
+                "tensorflow"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Unity Certified User",
+            "category": "Game Dev",
+            "description": "Entry-level certification for game developers.",
+            "url": "https://unity.com/products/unity-certifications/user",
+            "tags": [
+                "unity",
+                "gamedev"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Scrum Master (CSM)",
+            "category": "Management",
+            "description": "Certified ScrumMaster.",
+            "url": "https://www.scrumalliance.org/get-certified/scrum-master-track/certified-scrummaster",
+            "tags": [
+                "agile",
+                "scrum"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "ITIL 4 Foundation",
+            "category": "IT Management",
+            "description": "IT Service Management certification.",
+            "url": "https://www.axelos.com/certifications/itil-service-management",
+            "tags": [
+                "itsm",
+                "management"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "GitHub Foundations",
+            "category": "DevOps",
+            "description": "Verify your understanding of GitHub.",
+            "url": "https://github.com/certifications",
+            "tags": [
+                "git",
+                "github"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "GitLab Certified Associate",
+            "category": "DevOps",
+            "description": "Validate your GitLab skills.",
+            "url": "https://about.gitlab.com/services/education/certification/",
+            "tags": [
+                "gitlab",
+                "ci-cd"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "MongoDB Developer",
+            "category": "Database",
+            "description": "Associate Data Developer certification.",
+            "url": "https://learn.mongodb.com/pages/certification",
+            "tags": [
+                "mongodb",
+                "nosql"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Neo4j Certified Professional",
+            "category": "Database",
+            "description": "Graph database certification.",
+            "url": "https://graphacademy.neo4j.com/certification/",
+            "tags": [
+                "graph-db",
+                "neo4j"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "PostgreSQL 12 Associate",
+            "category": "Database",
+            "description": "PostgreSQL certification.",
+            "url": "https://www.enterprisedb.com/training/certification",
+            "tags": [
+                "sql",
+                "database"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Databricks Data Engineer",
+            "category": "Data",
+            "description": "Certified Data Engineer Associate.",
+            "url": "https://www.databricks.com/learn/certification/data-engineer-associate",
+            "tags": [
+                "data-engineering",
+                "spark"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Snowflake SnowPro Core",
+            "category": "Data",
+            "description": "Demonstrate knowledge of Snowflake Cloud Data Platform.",
+            "url": "https://www.snowflake.com/en/support/services-training/certification/",
+            "tags": [
+                "data-warehouse",
+                "cloud"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Tableau Desktop Specialist",
+            "category": "Data",
+            "description": "Demonstrate foundational skills with Tableau.",
+            "url": "https://www.tableau.com/learn/certification/desktop-specialist",
+            "tags": [
+                "visualization",
+                "data"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Power BI Data Analyst",
+            "category": "Data",
+            "description": "Microsoft Certified: Power BI Data Analyst Associate.",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate/",
+            "tags": [
+                "visualization",
+                "microsoft"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Salesforce Administrator",
+            "category": "CRM",
+            "description": "Become a Salesforce Admin.",
+            "url": "https://trailhead.salesforce.com/en/credentials/administrator",
+            "tags": [
+                "crm",
+                "salesforce"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "HubSpot Inbound",
+            "category": "Marketing",
+            "description": "Inbound Marketing Certification.",
+            "url": "https://academy.hubspot.com/courses/inbound",
+            "tags": [
+                "marketing",
+                "hubspot"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Google Ads Search",
+            "category": "Marketing",
+            "description": "Demonstrate mastery of Google Ads Search.",
+            "url": "https://skillshop.exceedlms.com/student/path/18128-google-ads-search-certification",
+            "tags": [
+                "marketing",
+                "ads"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Android Certified Developer",
+            "category": "Mobile",
+            "description": "Associate Android Developer.",
+            "url": "https://developers.google.com/certification/associate-android-developer",
+            "tags": [
+                "android",
+                "mobile"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "PCAP – Python Associate",
+            "category": "Programming",
+            "description": "Certified Associate in Python Programming.",
+            "url": "https://pythoninstitute.org/pcap",
+            "tags": [
+                "python",
+                "programming"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "C++ Certified Associate",
+            "category": "Programming",
+            "description": "CPA – C++ Certified Associate Programmer.",
+            "url": "https://cppinstitute.org/cpa-c-certified-associate-programmer",
+            "tags": [
+                "cpp",
+                "programming"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Linux Essentials",
+            "category": "Linux",
+            "description": "LPI Linux Essentials.",
+            "url": "https://www.lpi.org/our-certifications/linux-essentials-overview/",
+            "tags": [
+                "linux",
+                "basics"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "LPIC-1",
+            "category": "Linux",
+            "description": "Linux Administrator.",
+            "url": "https://www.lpi.org/our-certifications/lpic-1-overview/",
+            "tags": [
+                "linux",
+                "admin"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Wireshark WCNA",
+            "category": "Networking",
+            "description": "Wireshark Certified Network Analyst.",
+            "url": "https://www.wireshark.training/certification",
+            "tags": [
+                "networking",
+                "analysis"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Juniper JNCIA",
+            "category": "Networking",
+            "description": "Juniper Networks Certified Internet Associate.",
+            "url": "https://www.juniper.net/us/en/training/certification/certification-tracks/junos-intro-track.html",
+            "tags": [
+                "networking",
+                "juniper"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Fortinet NSE 4",
+            "category": "Security",
+            "description": "Network Security Professional.",
+            "url": "https://training.fortinet.com/local/staticpage/view.php?page=nse_4",
+            "tags": [
+                "security",
+                "firewall"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Palo Alto PCNSA",
+            "category": "Security",
+            "description": "Networks Certified Network Security Administrator.",
+            "url": "https://www.paloaltonetworks.com/services/education/certification",
+            "tags": [
+                "security",
+                "firewall"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Splunk Core Certified Power User",
+            "category": "Data",
+            "description": "Demonstrate foundational knowledge of Splunk.",
+            "url": "https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-power-user.html",
+            "tags": [
+                "data",
+                "logging"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Elastic Certified Engineer",
+            "category": "Data",
+            "description": "Become an expert in Elasticsearch.",
+            "url": "https://www.elastic.co/training/certification",
+            "tags": [
+                "search",
+                "elastic"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Astronomer (Airflow)",
+            "category": "Data",
+            "description": "Apache Airflow Fundamentals.",
+            "url": "https://academy.astronomer.io/path/certification-exams",
+            "tags": [
+                "data-engineering",
+                "airflow"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "dbt Developer",
+            "category": "Data",
+            "description": "dbt Analytics Engineering Certification.",
+            "url": "https://www.getdbt.com/certifications",
+            "tags": [
+                "analytics",
+                "dbt"
+            ],
+            "difficulty": "Intermediate"
+        }
+    ]
 }

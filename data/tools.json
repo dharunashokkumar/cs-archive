@@ -1,3 +1,554 @@
 {
-    "items": []
+    "items": [
+        {
+            "name": "Visual Studio Code",
+            "category": "Editor",
+            "description": "Code editing. Redefined.",
+            "url": "https://code.visualstudio.com/",
+            "tags": [
+                "editor",
+                "microsoft"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Postman",
+            "category": "API",
+            "description": "API collaboration platform.",
+            "url": "https://www.postman.com/",
+            "tags": [
+                "api",
+                "testing"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Docker Desktop",
+            "category": "DevOps",
+            "description": "Containerize applications.",
+            "url": "https://www.docker.com/products/docker-desktop/",
+            "tags": [
+                "containers",
+                "devops"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Git",
+            "category": "Version Control",
+            "description": "Distributed version control.",
+            "url": "https://git-scm.com/",
+            "tags": [
+                "vcs",
+                "cli"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Obsidian",
+            "category": "Notes",
+            "description": "Markdown note-taking.",
+            "url": "https://obsidian.md/",
+            "tags": [
+                "knowledge",
+                "markdown"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "f.lux",
+            "category": "Health",
+            "description": "Blue light barrier.",
+            "url": "https://justgetflux.com/",
+            "tags": [
+                "health",
+                "utility"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Warp",
+            "category": "Terminal",
+            "description": "Modern AI terminal.",
+            "url": "https://www.warp.dev/",
+            "tags": [
+                "terminal",
+                "ai"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Insomnia",
+            "category": "API",
+            "description": "Design and test APIs.",
+            "url": "https://insomnia.rest/",
+            "tags": [
+                "api",
+                "rest"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Excalidraw",
+            "category": "Design",
+            "description": "Virtual whiteboard.",
+            "url": "https://excalidraw.com/",
+            "tags": [
+                "drawing",
+                "diagrams"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Vercel",
+            "category": "Deployment",
+            "description": "Frontend cloud.",
+            "url": "https://vercel.com/",
+            "tags": [
+                "hosting",
+                "cloud"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Sublime Text",
+            "category": "Editor",
+            "description": "Sophisticated text editor.",
+            "url": "https://www.sublimetext.com/",
+            "tags": [
+                "editor",
+                "fast"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "IntelliJ IDEA",
+            "category": "IDE",
+            "description": "Capable and ergonomic Java IDE.",
+            "url": "https://www.jetbrains.com/idea/",
+            "tags": [
+                "java",
+                "ide"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "PyCharm",
+            "category": "IDE",
+            "description": "Python IDE for professionals.",
+            "url": "https://www.jetbrains.com/pycharm/",
+            "tags": [
+                "python",
+                "ide"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "WebStorm",
+            "category": "IDE",
+            "description": "The smartest JavaScript IDE.",
+            "url": "https://www.jetbrains.com/webstorm/",
+            "tags": [
+                "javascript",
+                "ide"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Windows Terminal",
+            "category": "Terminal",
+            "description": "Modern terminal for Windows.",
+            "url": "https://github.com/microsoft/terminal",
+            "tags": [
+                "terminal",
+                "windows"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "iTerm2",
+            "category": "Terminal",
+            "description": "Terminal replacement for macOS.",
+            "url": "https://iterm2.com/",
+            "tags": [
+                "terminal",
+                "mac"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Oh My Zsh",
+            "category": "Terminal",
+            "description": "Framework for managing Zsh configuration.",
+            "url": "https://ohmyz.sh/",
+            "tags": [
+                "cli",
+                "zsh"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Starship",
+            "category": "Terminal",
+            "description": "Cross-shell prompt.",
+            "url": "https://starship.rs/",
+            "tags": [
+                "cli",
+                "rust"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Homebrew",
+            "category": "Package Manager",
+            "description": "Missing package manager for macOS.",
+            "url": "https://brew.sh/",
+            "tags": [
+                "cli",
+                "mac"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Chocolatey",
+            "category": "Package Manager",
+            "description": "Package manager for Windows.",
+            "url": "https://chocolatey.org/",
+            "tags": [
+                "cli",
+                "windows"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Scoop",
+            "category": "Package Manager",
+            "description": "Command-line installer for Windows.",
+            "url": "https://scoop.sh/",
+            "tags": [
+                "cli",
+                "windows"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "GitHub Desktop",
+            "category": "Git UI",
+            "description": "Focus on what matters instead of fighting with Git.",
+            "url": "https://desktop.github.com/",
+            "tags": [
+                "gui",
+                "git"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Sourcetree",
+            "category": "Git UI",
+            "description": "Free Git client.",
+            "url": "https://www.sourcetreeapp.com/",
+            "tags": [
+                "gui",
+                "git"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "GitKraken",
+            "category": "Git UI",
+            "description": "Legendary Git client.",
+            "url": "https://www.gitkraken.com/",
+            "tags": [
+                "gui",
+                "git"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "LazyGit",
+            "category": "Git UI",
+            "description": "Simple terminal UI for git commands.",
+            "url": "https://github.com/jesseduffield/lazygit",
+            "tags": [
+                "tui",
+                "git"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Notion",
+            "category": "Productivity",
+            "description": "Connected workspace.",
+            "url": "https://www.notion.so/",
+            "tags": [
+                "notes",
+                "docs"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Trello",
+            "category": "Productivity",
+            "description": "Visual collaboration tool.",
+            "url": "https://trello.com/",
+            "tags": [
+                "kanban",
+                "planning"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Linear",
+            "category": "Productivity",
+            "description": "Issue tracking built for speed.",
+            "url": "https://linear.app/",
+            "tags": [
+                "issues",
+                "agile"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Jira",
+            "category": "Productivity",
+            "description": "#1 software development tool for agile teams.",
+            "url": "https://www.atlassian.com/software/jira",
+            "tags": [
+                "agile",
+                "enterprise"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Slack",
+            "category": "Communication",
+            "description": "Where work happens.",
+            "url": "https://slack.com/",
+            "tags": [
+                "chat",
+                "collaboration"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Zoom",
+            "category": "Communication",
+            "description": "Video conferencing.",
+            "url": "https://zoom.us/",
+            "tags": [
+                "video",
+                "meetings"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Cyberduck",
+            "category": "FTP",
+            "description": "Libre server and cloud storage browser.",
+            "url": "https://cyberduck.io/",
+            "tags": [
+                "ftp",
+                "sftp"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "FileZilla",
+            "category": "FTP",
+            "description": "Free FTP solution.",
+            "url": "https://filezilla-project.org/",
+            "tags": [
+                "ftp",
+                "transfer"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "DB Browser for SQLite",
+            "category": "Database",
+            "description": "Create, design, and edit database files compatible with SQLite.",
+            "url": "https://sqlitebrowser.org/",
+            "tags": [
+                "database",
+                "sqlite"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "DBeaver",
+            "category": "Database",
+            "description": "Universal Database Tool.",
+            "url": "https://dbeaver.io/",
+            "tags": [
+                "database",
+                "sql"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "TablePlus",
+            "category": "Database",
+            "description": "Modern, native tool for relational databases.",
+            "url": "https://tableplus.com/",
+            "tags": [
+                "database",
+                "gui"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "MongoDB Compass",
+            "category": "Database",
+            "description": "GUI for MongoDB.",
+            "url": "https://www.mongodb.com/products/compass",
+            "tags": [
+                "nosql",
+                "gui"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Chrome DevTools",
+            "category": "Browser",
+            "description": "Web developer tools.",
+            "url": "https://developer.chrome.com/docs/devtools/",
+            "tags": [
+                "debug",
+                "web"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Responsively App",
+            "category": "Browser",
+            "description": "Develop responsive web apps 5x faster.",
+            "url": "https://responsively.app/",
+            "tags": [
+                "responsive",
+                "testing"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "BrowserStack",
+            "category": "Testing",
+            "description": "App & Browser Testing.",
+            "url": "https://www.browserstack.com/",
+            "tags": [
+                "testing",
+                "cloud"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Ngrok",
+            "category": "Networking",
+            "description": "Connect your localhost to the internet.",
+            "url": "https://ngrok.com/",
+            "tags": [
+                "tunnel",
+                "dev"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Prettier",
+            "category": "Formatter",
+            "description": "Opinionated code formatter.",
+            "url": "https://prettier.io/",
+            "tags": [
+                "format",
+                "style"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "ESLint",
+            "category": "Linter",
+            "description": "Find and fix problems in your JavaScript code.",
+            "url": "https://eslint.org/",
+            "tags": [
+                "lint",
+                "js"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Netlify",
+            "category": "Deployment",
+            "description": "Build, test, and deploy.",
+            "url": "https://www.netlify.com/",
+            "tags": [
+                "cloud",
+                "hosting"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Heroku",
+            "category": "Deployment",
+            "description": "Platform as a service.",
+            "url": "https://www.heroku.com/",
+            "tags": [
+                "paas",
+                "cloud"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Railway",
+            "category": "Deployment",
+            "description": "Infrastructure, instantly.",
+            "url": "https://railway.app/",
+            "tags": [
+                "cloud",
+                "deploy"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Render",
+            "category": "Deployment",
+            "description": "Unified cloud to build and run all your apps.",
+            "url": "https://render.com/",
+            "tags": [
+                "cloud",
+                "hosting"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Supabase",
+            "category": "Backend",
+            "description": "Open source Firebase alternative.",
+            "url": "https://supabase.com/",
+            "tags": [
+                "backend",
+                "database"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Firebase",
+            "category": "Backend",
+            "description": "App development platform.",
+            "url": "https://firebase.google.com/",
+            "tags": [
+                "backend",
+                "google"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Appwrite",
+            "category": "Backend",
+            "description": "Secure Backend for Web, Mobile & Flutter Developers.",
+            "url": "https://appwrite.io/",
+            "tags": [
+                "backend",
+                "open-source"
+            ],
+            "difficulty": "Intermediate"
+        }
+    ]
 }

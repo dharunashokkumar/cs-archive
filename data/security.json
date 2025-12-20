@@ -1,3 +1,603 @@
 {
-    "items": []
+    "items": [
+        {
+            "name": "HackTheBox",
+            "category": "CTF Platform",
+            "description": "A massive hacking playground for practicing penetration testing skills.",
+            "url": "https://www.hackthebox.com/",
+            "tags": [
+                "ctf",
+                "pen-testing",
+                "labs"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "TryHackMe",
+            "category": "Training",
+            "description": "Hands-on cyber security training through guided rooms.",
+            "url": "https://tryhackme.com/",
+            "tags": [
+                "training",
+                "guided-learning",
+                "beginners"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "OverTheWire",
+            "category": "Wargames",
+            "description": "Learn security concepts by solving wargames like Bandit and Natas.",
+            "url": "https://overthewire.org/wargames/",
+            "tags": [
+                "wargames",
+                "linux",
+                "web-security"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Burp Suite",
+            "category": "Tools",
+            "description": "The de facto standard tool for web application security testing.",
+            "url": "https://portswigger.net/burp",
+            "tags": [
+                "web-security",
+                "proxy",
+                "testing-tool"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Wireshark",
+            "category": "Tools",
+            "description": "The world's foremost network protocol analyzer.",
+            "url": "https://www.wireshark.org/",
+            "tags": [
+                "network-analysis",
+                "packet-capture",
+                "troubleshooting"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Metasploit",
+            "category": "Tools",
+            "description": "The world's most used penetration testing framework.",
+            "url": "https://www.metasploit.com/",
+            "tags": [
+                "exploit-framework",
+                "pen-testing",
+                "ruby"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "OWASP",
+            "category": "Resources",
+            "description": "The Open Web Application Security Project. Home of the Top 10.",
+            "url": "https://owasp.org/",
+            "tags": [
+                "standards",
+                "documentation",
+                "web-security"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "GTFOBins",
+            "category": "Resources",
+            "description": "Curated list of Unix binaries that can be used to bypass local security restrictions.",
+            "url": "https://gtfobins.github.io/",
+            "tags": [
+                "privilege-escalation",
+                "unix",
+                "binaries"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Ghidra",
+            "category": "Tools",
+            "description": "A software reverse engineering (SRE) suite of tools developed by NSA.",
+            "url": "https://ghidra-sre.org/",
+            "tags": [
+                "reverse-engineering",
+                "disassembler",
+                "malware-analysis"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "PicoCTF",
+            "category": "CTF Platform",
+            "description": "A free computer security education program with original content.",
+            "url": "https://picoctf.org/",
+            "tags": [
+                "ctf",
+                "education",
+                "beginners"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Nmap",
+            "category": "Tools",
+            "description": "Free and open source utility for network discovery and security auditing.",
+            "url": "https://nmap.org/",
+            "tags": [
+                "network-scanning",
+                "reconnaissance",
+                "security-auditing"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Kali Linux",
+            "category": "OS",
+            "description": "Advanced Penetration Testing Linux Distribution.",
+            "url": "https://www.kali.org/",
+            "tags": [
+                "os",
+                "pen-testing",
+                "tools-collection"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Parrot OS",
+            "category": "OS",
+            "description": "The ultimate framework for your cyber security operations.",
+            "url": "https://parrotsec.org/",
+            "tags": [
+                "os",
+                "security",
+                "privacy"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Hashcat",
+            "category": "Tools",
+            "description": "World's fastest and most advanced password recovery utility.",
+            "url": "https://hashcat.net/hashcat/",
+            "tags": [
+                "password-cracking",
+                "gpu",
+                "recovery"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "John the Ripper",
+            "category": "Tools",
+            "description": "Open Source password security auditing and password recovery.",
+            "url": "https://www.openwall.com/john/",
+            "tags": [
+                "password-cracking",
+                "auditing",
+                "offline"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Aircrack-ng",
+            "category": "Tools",
+            "description": "Complete suite of tools to assess WiFi network security.",
+            "url": "https://www.aircrack-ng.org/",
+            "tags": [
+                "wifi",
+                "monitoring",
+                "cracking"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "OWASP ZAP",
+            "category": "Tools",
+            "description": "The world's most widely used web app scanner.",
+            "url": "https://www.zaproxy.org/",
+            "tags": [
+                "scanner",
+                "web-security",
+                "open-source"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Shodan",
+            "category": "Search Engine",
+            "description": "Search engine for Internet-connected devices.",
+            "url": "https://www.shodan.io/",
+            "tags": [
+                "osint",
+                "iot",
+                "search"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Censys",
+            "category": "Search Engine",
+            "description": "Search for devices, networks, and infrastructure on the internet.",
+            "url": "https://censys.io/",
+            "tags": [
+                "osint",
+                "attack-surface",
+                "search"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "VirusTotal",
+            "category": "Resources",
+            "description": "Analyze suspicious files and URLs to detect malware.",
+            "url": "https://www.virustotal.com/",
+            "tags": [
+                "malware-analysis",
+                "threat-intelligence",
+                "online-scanner"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "Fail2Ban",
+            "category": "Tools",
+            "description": "Intrusion prevention software framework that protects computer servers from brute-force attacks.",
+            "url": "https://www.fail2ban.org/",
+            "tags": [
+                "security",
+                "prevention",
+                "server-hardening"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Snort",
+            "category": "Tools",
+            "description": "Open Source Intrusion Prevention System (IPS).",
+            "url": "https://www.snort.org/",
+            "tags": [
+                "ids",
+                "ips",
+                "network-security"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Suricata",
+            "category": "Tools",
+            "description": "High performance Network IDS, IPS and Network Security Monitoring engine.",
+            "url": "https://suricata.io/",
+            "tags": [
+                "ids",
+                "ips",
+                "monitoring"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Wazuh",
+            "category": "Platform",
+            "description": "The Open Source Security Platform. XDR and SIEM.",
+            "url": "https://wazuh.com/",
+            "tags": [
+                "siem",
+                "xdr",
+                "monitoring"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "OpenVAS",
+            "category": "Tools",
+            "description": "Full-featured vulnerability scanner.",
+            "url": "https://www.openvas.org/",
+            "tags": [
+                "vulnerability-scanning",
+                "security-management"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Nessus Essentials",
+            "category": "Tools",
+            "description": "The #1 vulnerability assessment solution.",
+            "url": "https://www.tenable.com/products/nessus/nessus-essentials",
+            "tags": [
+                "vulnerability-scanner",
+                "assessment",
+                "audit"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Sqlmap",
+            "category": "Tools",
+            "description": "Automatic SQL injection and database takeover tool.",
+            "url": "https://sqlmap.org/",
+            "tags": [
+                "sql-injection",
+                "database",
+                "exploitation"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Nikto",
+            "category": "Tools",
+            "description": "Web server scanner which performs comprehensive tests.",
+            "url": "https://cirt.net/Nikto2",
+            "tags": [
+                "web-scanner",
+                "vulnerability",
+                "perl"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Gobuster",
+            "category": "Tools",
+            "description": "Directory/File, DNS and VHost busting tool written in Go.",
+            "url": "https://github.com/OJ/gobuster",
+            "tags": [
+                "enumeration",
+                "brute-force",
+                "web"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Dirb",
+            "category": "Tools",
+            "description": "Web Content Scanner. It looks for existing (and/or hidden) Web Objects.",
+            "url": "https://tools.kali.org/web-applications/dirb",
+            "tags": [
+                "web-scanner",
+                "enumeration",
+                "directory"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Amass",
+            "category": "Tools",
+            "description": "In-depth Attack Surface Mapping and Asset Discovery.",
+            "url": "https://github.com/owasp-amass/amass",
+            "tags": [
+                "reconnaissance",
+                "osint",
+                "asset-discovery"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Maltego",
+            "category": "Tools",
+            "description": "Graph link analysis tool for gathering and connecting information.",
+            "url": "https://www.maltego.com/",
+            "tags": [
+                "osint",
+                "visualization",
+                "investigation"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Recon-ng",
+            "category": "Tools",
+            "description": "Full-featured Web Reconnaissance framework written in Python.",
+            "url": "https://github.com/lanmaster53/recon-ng",
+            "tags": [
+                "reconnaissance",
+                "osint",
+                "framework"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Social Engineering Toolkit",
+            "category": "Tools",
+            "description": "Penetration testing framework designed for social engineering.",
+            "url": "https://github.com/trustedsec/social-engineer-toolkit",
+            "tags": [
+                "social-engineering",
+                "phishing",
+                "framework"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "BeEF",
+            "category": "Tools",
+            "description": "The Browser Exploitation Framework.",
+            "url": "https://beefproject.com/",
+            "tags": [
+                "browser-exploitation",
+                "client-side",
+                "framework"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Hydra",
+            "category": "Tools",
+            "description": "Parallelized login cracker which supports numerous protocols.",
+            "url": "https://github.com/vanhauser-thc/thc-hydra",
+            "tags": [
+                "brute-force",
+                "password-cracking",
+                "online"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Medusa",
+            "category": "Tools",
+            "description": "Speedy, massively parallel, modular, login brute-forcer.",
+            "url": "http://foofus.net/goons/jmk/medusa/medusa.html",
+            "tags": [
+                "brute-force",
+                "password-cracking",
+                "parallel"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Mimikatz",
+            "category": "Tools",
+            "description": "A little tool to play with Windows security.",
+            "url": "https://github.com/gentilkiwi/mimikatz",
+            "tags": [
+                "windows",
+                "credential-dumping",
+                "post-exploitation"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Empire",
+            "category": "Framework",
+            "description": "Post-exploitation toolkit.",
+            "url": "https://github.com/BC-SECURITY/Empire",
+            "tags": [
+                "post-exploitation",
+                "powershell",
+                "python"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "BloodHound",
+            "category": "Tools",
+            "description": "Six Degrees of Domain Admin. Active Directory trust relationship analysis.",
+            "url": "https://github.com/BloodHoundAD/BloodHound",
+            "tags": [
+                "active-directory",
+                "graph-theory",
+                "attack-path"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Impacket",
+            "category": "Library",
+            "description": "Collection of Python classes for working with network protocols.",
+            "url": "https://github.com/fortra/impacket",
+            "tags": [
+                "python",
+                "network-protocols",
+                "exploitation"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Responder",
+            "category": "Tools",
+            "description": "LLMNR, NBT-NS and MDNS poisoner.",
+            "url": "https://github.com/lgandx/Responder",
+            "tags": [
+                "poisoning",
+                "man-in-the-middle",
+                "windows"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Mirekusoft Install Monitor",
+            "category": "Tools",
+            "description": "Monitor and analyze application installations.",
+            "url": "https://www.mirekusoft.com/",
+            "tags": [
+                "monitoring",
+                "analysis",
+                "windows"
+            ],
+            "difficulty": "Beginner"
+        },
+        {
+            "name": "Process Hacker",
+            "category": "Tools",
+            "description": "A free, powerful, multi-purpose tool that helps you monitor system resources.",
+            "url": "https://processhacker.sourceforge.io/",
+            "tags": [
+                "task-manager",
+                "debugging",
+                "monitoring"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Sysinternals Suite",
+            "category": "Tools",
+            "description": "The definitive suite of tools for Windows troubleshooting.",
+            "url": "https://learn.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite",
+            "tags": [
+                "windows",
+                "troubleshooting",
+                "diagnostics"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "CyberChef",
+            "category": "Tools",
+            "description": "The Cyber Swiss Army Knife - a web app for encryption, encoding, compression and data analysis.",
+            "url": "https://gchq.github.io/CyberChef/",
+            "tags": [
+                "decoding",
+                "analysis",
+                "utility"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "PortSwigger Academy",
+            "category": "Training",
+            "description": "Free web security training from the creators of Burp Suite.",
+            "url": "https://portswigger.net/web-security",
+            "tags": [
+                "training",
+                "web-security",
+                "labs"
+            ],
+            "difficulty": "All Levels"
+        },
+        {
+            "name": "PentesterLab",
+            "category": "Training",
+            "description": "The best place to learn Web Penetration Testing.",
+            "url": "https://pentesterlab.com/",
+            "tags": [
+                "web-security",
+                "training",
+                "hands-on"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "VulnHub",
+            "category": "Labs",
+            "description": "Provides materials that allow anyone to gain practical 'hands-on' experience.",
+            "url": "https://www.vulnhub.com/",
+            "tags": [
+                "vm",
+                "vulnerable-machines",
+                "practice"
+            ],
+            "difficulty": "Intermediate"
+        },
+        {
+            "name": "Exploit Database",
+            "category": "Resources",
+            "description": "The ultimate archive of Exploits, Shellcode, and Security Papers.",
+            "url": "https://www.exploit-db.com/",
+            "tags": [
+                "exploits",
+                "archive",
+                "research"
+            ],
+            "difficulty": "Advanced"
+        }
+    ]
 }
