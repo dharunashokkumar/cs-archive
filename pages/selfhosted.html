@@ -54,91 +54,260 @@
     </div>
 
     <h2><span class="material-icons">dns</span> SELF_HOSTED_TOOLS // HOMELAB ESSENTIALS</h2>
+    <p style="color: var(--text-muted); margin-bottom: 15px;">Comprehensive collection of self-hosted software solutions - both free and non-free options.</p>
 
     <div class="search-container">
-        <input type="text" id="search-box" class="search-box" placeholder="Search tools by name, category, or tags...">
+        <input type="text" id="search-box" class="search-box" placeholder="Search by name, description, or category...">
         <span id="results-count" class="results-count"></span>
-        <div class="filter-tags" id="filter-tags"></div>
     </div>
 
-    <div id="tools-container" class="section-container"></div>
+    <div style="margin: 20px 0; padding: 15px; background: rgba(139,90,43,0.1); border: 1px solid var(--border-color); border-radius: 4px;">
+        <div style="display: grid; grid-template-columns: 1fr auto; gap: 15px; align-items: start;">
+            <div style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
+                <select id="category-filter" style="padding: 8px 12px; background: var(--bg-color); color: var(--text-color); border: 1px solid var(--border-color); border-radius: 4px; min-width: 200px; font-size: 0.9em;">
+                    <option value="">All Categories</option>
+                </select>
+                
+                <label style="display: flex; align-items: center; gap: 5px; cursor: pointer; padding: 6px 10px; border: 1px solid var(--border-color); border-radius: 4px; font-size: 0.9em;">
+                    <input type="checkbox" id="show-free" checked style="cursor: pointer;">
+                    <span>Free</span>
+                </label>
+                
+                <label style="display: flex; align-items: center; gap: 5px; cursor: pointer; padding: 6px 10px; border: 1px solid var(--border-color); border-radius: 4px; font-size: 0.9em;">
+                    <input type="checkbox" id="show-nonfree" checked style="cursor: pointer;">
+                    <span>Non-Free</span>
+                </label>
+                
+                <label style="display: flex; align-items: center; gap: 5px; cursor: pointer; padding: 6px 10px; border: 1px solid var(--border-color); border-radius: 4px; font-size: 0.9em;">
+                    <input type="checkbox" id="hide-warnings" style="cursor: pointer;">
+                    <span>Hide ⚠</span>
+                </label>
+            </div>
+            
+            <button id="reset-filters" style="padding: 8px 16px; background: var(--accent-color); color: var(--bg-color); border: none; border-radius: 4px; cursor: pointer; font-size: 0.9em; white-space: nowrap;">Reset</button>
+        </div>
+        
+        <!-- Statistics Bar -->
+        <div id="stats-bar" style="margin-top: 15px; padding-top: 15px; border-top: 1px solid var(--border-color); display: flex; gap: 20px; flex-wrap: wrap; font-size: 0.9em;"></div>
+    </div>
+
+    <!-- Categories Container -->
+    <div id="categories-container"></div>
 
     <script>
-        let allTools = [];
-        let activeFilters = new Set();
+        let allData = null;
+        let allSoftware = [];
 
         fetch('../data/selfhosted.json')
-            .then(response => response.json())
+            .then(r => r.json())
             .then(data => {
-                allTools = data.tools;
-                renderTools(allTools);
-                buildFilterTags(allTools);
+                allData = data;
+                
+                // Populate category filter
+                const categoryFilter = document.getElementById('category-filter');
+                data.categories.forEach(cat => {
+                    const option = document.createElement('option');
+                    option.value = cat.name;
+                    option.textContent = `${cat.name} (${cat.total_count})`;
+                    categoryFilter.appendChild(option);
+                });
+
+                // Flatten all software for easy searching
+                data.categories.forEach(cat => {
+                    cat.free_software.forEach(sw => allSoftware.push({ ...sw, categoryName: cat.name, categoryDesc: cat.description }));
+                    cat.non_free_software.forEach(sw => allSoftware.push({ ...sw, categoryName: cat.name, categoryDesc: cat.description }));
+                });
+
+                renderCategories(data.categories);
+                updateStats(data.metadata);
+                
+                // Setup event listeners
+                document.getElementById('search-box').addEventListener('input', filterSoftware);
+                document.getElementById('category-filter').addEventListener('change', filterSoftware);
+                document.getElementById('show-free').addEventListener('change', filterSoftware);
+                document.getElementById('show-nonfree').addEventListener('change', filterSoftware);
+                document.getElementById('hide-warnings').addEventListener('change', filterSoftware);
+                document.getElementById('reset-filters').addEventListener('click', resetFilters);
+            })
+            .catch(e => {
+                console.log('Error loading data:', e);
+                document.getElementById('categories-container').innerHTML = '<p class="no-results">Error loading self-hosted software data</p>';
             });
 
-        function renderTools(tools) {
-            const container = document.getElementById('tools-container');
-            container.innerHTML = '';
-            if (tools.length === 0) {
-                container.innerHTML = '<p class="no-results">No tools found matching your criteria.</p>';
+        function updateStats(metadata) {
+            const statsBar = document.getElementById('stats-bar');
+            statsBar.innerHTML = `
+                <div style="flex: 1; min-width: 180px;">
+                    <strong style="color: var(--accent-color);">Categories:</strong> ${metadata.total_categories}
+                </div>
+                <div style="flex: 1; min-width: 180px;">
+                    <strong style="color: var(--accent-color);">Total:</strong> ${metadata.total_software}
+                </div>
+                <div style="flex: 1; min-width: 180px;">
+                    <strong style="color: var(--text-color);">Free:</strong> ${metadata.total_free_software} <span style="color: var(--text-muted);">(${(metadata.total_free_software/metadata.total_software*100).toFixed(1)}%)</span>
+                </div>
+                <div style="flex: 1; min-width: 180px;">
+                    <strong style="color: var(--text-color);">Non-Free:</strong> ${metadata.total_non_free_software} <span style="color: var(--text-muted);">(${(metadata.total_non_free_software/metadata.total_software*100).toFixed(1)}%)</span>
+                </div>
+            `;
+        }
+
+        function renderCategories(categories) {
+            const container = document.getElementById('categories-container');
+            container.innerHTML = categories.map(cat => `
+                <div class="category-section" data-category="${cat.name}" style="margin-bottom: 40px;">
+                    <h3 style="color: var(--accent-color); margin-bottom: 10px; border-bottom: 2px solid var(--accent-color); padding-bottom: 5px;">
+                        ${cat.name} 
+                        <span style="color: var(--text-muted); font-size: 0.8em;">
+                            (${cat.total_count} total: ${cat.free_count} free, ${cat.non_free_count} non-free)
+                        </span>
+                    </h3>
+                    <p style="color: var(--text-muted); margin-bottom: 15px; font-size: 0.9em;">${cleanDescription(cat.description)}</p>
+                    
+                    ${cat.free_count > 0 ? `
+                        <div class="software-section free-section">
+                            <h4 style="color: var(--text-color); margin: 15px 0 10px 0; font-size: 1em; opacity: 0.8;">✓ Free & Open Source (${cat.free_count})</h4>
+                            <div class="software-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 15px;">
+                                ${cat.free_software.map(sw => createSoftwareCard(sw, cat.name, true)).join('')}
+                            </div>
+                        </div>
+                    ` : ''}
+                    
+                    ${cat.non_free_count > 0 ? `
+                        <div class="software-section nonfree-section">
+                            <h4 style="color: #ffa500; margin: 15px 0 10px 0; font-size: 1em;">⊘ Non-Free / Proprietary (${cat.non_free_count})</h4>
+                            <div class="software-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 15px;">
+                                ${cat.non_free_software.map(sw => createSoftwareCard(sw, cat.name, false)).join('')}
+                            </div>
+                        </div>
+                    ` : ''}
+                </div>
+            `).join('');
+        }
+
+        function cleanDescription(desc) {
+            // Remove markdown links
+            return desc.replace(/\[([^\]]+)\]\([^\)]+\)/g, '$1');
+        }
+
+        function createSoftwareCard(sw, category, isFree) {
+            const licenseBadge = getBadgeHtml('License', sw.license, isFree);
+            const platformBadge = getBadgeHtml('Platform', sw.platform, isFree);
+            const warningFlag = sw.warning ? '<span style="color: #ff6b6b; font-size: 1.2em; margin-left: 5px;" title="Warning">⚠</span>' : '';
+            
+            const links = [];
+            if (sw.demo) links.push(`<a href="${sw.demo}" target="_blank" style="color: var(--accent-color); font-size: 0.85em; text-decoration: none;">🎮 Demo</a>`);
+            if (sw.source_code) links.push(`<a href="${sw.source_code}" target="_blank" style="color: var(--accent-color); font-size: 0.85em; text-decoration: none;">💻 Source</a>`);
+            if (sw.clients) links.push(`<a href="${sw.clients}" target="_blank" style="color: var(--accent-color); font-size: 0.85em; text-decoration: none;">📱 Clients</a>`);
+            
+            const borderColor = isFree ? 'var(--border-color)' : '#ffa500';
+            const bgGradient = isFree ? 'transparent' : 'linear-gradient(135deg, rgba(255,165,0,0.05) 0%, rgba(255,165,0,0.02) 100%)';
+            
+            return `
+                <div class="skill-card software-card ${isFree ? 'free-card' : 'nonfree-card'}" 
+                     data-name="${sw.name.toLowerCase()}" 
+                     data-description="${sw.description.toLowerCase()}" 
+                     data-category="${category.toLowerCase()}"
+                     data-is-free="${isFree}"
+                     data-warning="${sw.warning}"
+                     style="background: ${bgGradient}; border-left: 3px solid ${borderColor};">
+                    <h3>
+                        <a href="${sw.url}" target="_blank" class="external-link">${sw.name}</a>${warningFlag}
+                    </h3>
+                    <p class="description" style="margin: 10px 0;">${sw.description || 'No description available'}</p>
+                    <div style="display: flex; gap: 8px; flex-wrap: wrap; margin: 10px 0;">
+                        ${licenseBadge}
+                        ${platformBadge}
+                    </div>
+                    ${links.length > 0 ? `<div style="display: flex; gap: 15px; margin-top: 10px; flex-wrap: wrap;">${links.join(' ')}</div>` : ''}
+                </div>
+            `;
+        }
+
+        function getBadgeHtml(label, value, isFree) {
+            if (!value) return '';
+            
+            let bgColor = 'rgba(100,100,100,0.3)';
+            let textColor = '#aaa';
+            let borderColor = '#666';
+            
+            if (label === 'License') {
+                if (isFree) {
+                    bgColor = 'rgba(139,90,43,0.2)';
+                    textColor = 'var(--text-color)';
+                    borderColor = 'var(--border-color)';
+                } else {
+                    bgColor = 'rgba(255,165,0,0.2)';
+                    textColor = '#ffa500';
+                    borderColor = '#ffa500';
+                }
+            } else if (label === 'Platform') {
+                bgColor = 'rgba(100,100,100,0.2)';
+                textColor = 'var(--text-muted)';
+                borderColor = 'var(--border-color)';
             }
-            tools.forEach(tool => {
-                const card = document.createElement('div');
-                card.className = 'skill-card';
-                const tags = (tool.tags || []).map(t => `<span class="tag">${t}</span>`).join('');
-                const diffClass = tool.difficulty.toLowerCase();
-                card.innerHTML = `
-                    <h3><a href="${tool.url}" target="_blank" class="external-link">${tool.name}</a></h3>
-                    <span class="category">CAT: ${tool.category}</span>
-                    <span class="difficulty ${diffClass}">${tool.difficulty}</span>
-                    <p class="description">${tool.description}</p>
-                    <div style="margin-top: 5px;">${tags}</div>
-                `;
-                container.appendChild(card);
+            
+            return `<span style="padding: 3px 8px; background: ${bgColor}; border-radius: 3px; font-size: 0.75em; font-weight: 600; color: ${textColor}; border: 1.5px solid ${borderColor}; display: inline-block;">${label}: ${value}</span>`;
+        }
+
+        function filterSoftware() {
+            const searchTerm = document.getElementById('search-box').value.toLowerCase();
+            const categoryFilter = document.getElementById('category-filter').value.toLowerCase();
+            const showFree = document.getElementById('show-free').checked;
+            const showNonFree = document.getElementById('show-nonfree').checked;
+            const hideWarnings = document.getElementById('hide-warnings').checked;
+
+            const softwareCards = document.querySelectorAll('.software-card');
+            const categorySections = document.querySelectorAll('.category-section');
+            let visibleCount = 0;
+            
+            // Hide all category sections initially
+            categorySections.forEach(section => {
+                section.style.display = 'none';
             });
-            document.getElementById('results-count').textContent = `Showing ${tools.length} of ${allTools.length}`;
-        }
 
-        function buildFilterTags(tools) {
-            const categories = [...new Set(tools.map(t => t.category))];
-            const container = document.getElementById('filter-tags');
-            categories.forEach(cat => {
-                const btn = document.createElement('button');
-                btn.className = 'filter-btn';
-                btn.textContent = cat;
-                btn.onclick = () => toggleFilter(cat, btn);
-                container.appendChild(btn);
+            softwareCards.forEach(card => {
+                const name = card.dataset.name;
+                const description = card.dataset.description;
+                const category = card.dataset.category;
+                const isFree = card.dataset.isFree === 'true';
+                const hasWarning = card.dataset.warning === 'true';
+
+                const matchesSearch = !searchTerm || name.includes(searchTerm) || description.includes(searchTerm) || category.includes(searchTerm);
+                const matchesCategory = !categoryFilter || category === categoryFilter;
+                const matchesType = (isFree && showFree) || (!isFree && showNonFree);
+                const matchesWarning = !hideWarnings || !hasWarning;
+
+                if (matchesSearch && matchesCategory && matchesType && matchesWarning) {
+                    card.style.display = 'block';
+                    visibleCount++;
+                    // Show the parent category section
+                    const parentSection = card.closest('.category-section');
+                    if (parentSection) {
+                        parentSection.style.display = 'block';
+                    }
+                } else {
+                    card.style.display = 'none';
+                }
             });
+
+            // Hide empty software sections
+            document.querySelectorAll('.software-section').forEach(section => {
+                const visibleCards = section.querySelectorAll('.software-card[style*="display: block"]');
+                section.style.display = visibleCards.length > 0 ? 'block' : 'none';
+            });
+
+            document.getElementById('results-count').textContent = `${visibleCount} software found`;
         }
 
-        function toggleFilter(category, btn) {
-            if (activeFilters.has(category)) {
-                activeFilters.delete(category);
-                btn.classList.remove('active');
-            } else {
-                activeFilters.add(category);
-                btn.classList.add('active');
-            }
-            filterTools();
+        function resetFilters() {
+            document.getElementById('search-box').value = '';
+            document.getElementById('category-filter').value = '';
+            document.getElementById('show-free').checked = true;
+            document.getElementById('show-nonfree').checked = true;
+            document.getElementById('hide-warnings').checked = false;
+            filterSoftware();
         }
-
-        function filterTools() {
-            const query = document.getElementById('search-box').value.toLowerCase();
-            let filtered = allTools;
-            if (query) {
-                filtered = filtered.filter(t =>
-                    t.name.toLowerCase().includes(query) ||
-                    t.category.toLowerCase().includes(query) ||
-                    t.description.toLowerCase().includes(query) ||
-                    (t.tags || []).some(tag => tag.toLowerCase().includes(query))
-                );
-            }
-            if (activeFilters.size > 0) {
-                filtered = filtered.filter(t => activeFilters.has(t.category));
-            }
-            renderTools(filtered);
-        }
-
-        document.getElementById('search-box').addEventListener('input', filterTools);
     </script>
 </body>
 
