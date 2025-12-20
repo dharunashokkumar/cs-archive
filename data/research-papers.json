@@ -1,549 +1,241 @@
 {
     "items": [
         {
-            "name": "arXiv.org",
-            "category": "Repository",
-            "description": "Open-access archive for scholarly articles.",
-            "url": "https://arxiv.org/",
-            "tags": [
-                "research",
-                "papers"
-            ],
-            "difficulty": "Advanced"
-        },
-        {
-            "name": "Papers with Code",
-            "category": "Repository",
-            "description": "ML papers with code.",
-            "url": "https://paperswithcode.com/",
-            "tags": [
-                "ml",
-                "code"
-            ],
-            "difficulty": "Advanced"
-        },
-        {
-            "name": "Google Scholar",
-            "category": "Search",
-            "description": "Search for scholarly literature.",
-            "url": "https://scholar.google.com/",
-            "tags": [
-                "search",
-                "academic"
-            ],
-            "difficulty": "All Levels"
-        },
-        {
             "name": "Attention Is All You Need",
             "category": "Paper",
-            "description": "Transformer architecture paper.",
-            "url": "https://arxiv.org/abs/1706.03762",
-            "tags": [
-                "seminal",
-                "nlp"
+            "authors": [
+                "Ashish Vaswani",
+                "Noam Shazeer",
+                "Niki Parmar",
+                "Jakob Uszkoreit",
+                "Llion Jones",
+                "Aidan N Gomez",
+                "Łukasz Kaiser",
+                "Illia Polosukhin"
             ],
-            "difficulty": "Advanced"
-        },
-        {
-            "name": "Bitcoin Whitepaper",
-            "category": "Paper",
-            "description": "A Peer-to-Peer Electronic Cash System.",
-            "url": "https://bitcoin.org/bitcoin.pdf",
+            "year": 2017,
+            "venue": "NeurIPS",
+            "summary": "Introduces the Transformer, replacing recurrence with self-attention to enable parallel training and superior sequence modeling.",
+            "pdf": "../data/papers/Attention_Is_All_You_Need_2017.pdf",
             "tags": [
-                "crypto",
+                "transformer",
+                "nlp",
                 "seminal"
             ],
-            "difficulty": "Intermediate"
-        },
-        {
-            "name": "Distill.pub",
-            "category": "Journal",
-            "description": "Machine learning research aimed at clarity.",
-            "url": "https://distill.pub/",
-            "tags": [
-                "visual",
-                "ml"
-            ],
-            "difficulty": "Intermediate"
-        },
-        {
-            "name": "ResearchGate",
-            "category": "Network",
-            "description": "Social network for scientists.",
-            "url": "https://www.researchgate.net/",
-            "tags": [
-                "networking",
-                "papers"
-            ],
             "difficulty": "Advanced"
         },
         {
-            "name": "Connected Papers",
-            "category": "Tool",
-            "description": "Visual graph of related papers.",
-            "url": "https://www.connectedpapers.com/",
-            "tags": [
-                "discovery",
-                "visual"
-            ],
-            "difficulty": "Intermediate"
-        },
-        {
-            "name": "Unreasonable Effectiveness of RNNs",
-            "category": "Article",
-            "description": "Andrej Karpathy's famous blog post.",
-            "url": "http://karpathy.github.io/2015/05/21/rnn-effectiveness/",
-            "tags": [
-                "classic",
-                "rnn"
-            ],
-            "difficulty": "Intermediate"
-        },
-        {
-            "name": "Deep Learning Book",
-            "category": "Book",
-            "description": "Comprehensive textbook on deep learning.",
-            "url": "https://www.deeplearningbook.org/",
-            "tags": [
-                "textbook",
-                "theory"
-            ],
-            "difficulty": "Advanced"
-        },
-        {
-            "name": "ResNet Paper",
+            "name": "BERT: Pre-training of Deep Bidirectional Transformers",
             "category": "Paper",
-            "description": "Deep Residual Learning for Image Recognition.",
-            "url": "https://arxiv.org/abs/1512.03385",
-            "tags": [
-                "cv",
-                "deep-learning"
+            "authors": [
+                "Jacob Devlin",
+                "Ming-Wei Chang",
+                "Kenton Lee",
+                "Kristina Toutanova"
             ],
-            "difficulty": "Advanced"
-        },
-        {
-            "name": "GAN Paper",
-            "category": "Paper",
-            "description": "Generative Adversarial Networks.",
-            "url": "https://arxiv.org/abs/1406.2661",
-            "tags": [
-                "gan",
-                "generative"
-            ],
-            "difficulty": "Advanced"
-        },
-        {
-            "name": "AlexNet",
-            "category": "Paper",
-            "description": "ImageNet Classification with Deep CNNs.",
-            "url": "https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks",
-            "tags": [
-                "cv",
-                "classic"
-            ],
-            "difficulty": "Advanced"
-        },
-        {
-            "name": "YOLO",
-            "category": "Paper",
-            "description": "You Only Look Once: Object Detection.",
-            "url": "https://arxiv.org/abs/1506.02640",
-            "tags": [
-                "cv",
-                "detection"
-            ],
-            "difficulty": "Advanced"
-        },
-        {
-            "name": "BERT",
-            "category": "Paper",
-            "description": "Pre-training of Deep Bidirectional Transformers.",
-            "url": "https://arxiv.org/abs/1810.04805",
+            "year": 2018,
+            "venue": "NAACL",
+            "summary": "Masked language modeling and next-sentence prediction pre-train deep bidirectional Transformers, dramatically improving NLP benchmarks.",
+            "pdf": "../data/papers/BERT_Pre-training_of_Deep_Bidirectional_Transformers_2018.pdf",
             "tags": [
                 "nlp",
-                "google"
+                "pretraining"
             ],
             "difficulty": "Advanced"
         },
         {
-            "name": "GPT-3 Paper",
+            "name": "Language Models are Few-Shot Learners (GPT-3)",
             "category": "Paper",
-            "description": "Language Models are Few-Shot Learners.",
-            "url": "https://arxiv.org/abs/2005.14165",
+            "authors": [
+                "Tom B. Brown",
+                "Benjamin Mann",
+                "Nick Ryder",
+                "Melanie Subbiah",
+                "et al."
+            ],
+            "year": 2020,
+            "venue": "NeurIPS",
+            "summary": "Shows large autoregressive models can perform diverse tasks via in-context learning without gradient updates.",
+            "pdf": "../data/papers/Language_Models_are_Few-Shot_Learners_(GPT-3)_2020.pdf",
             "tags": [
                 "llm",
-                "openai"
+                "in-context"
             ],
             "difficulty": "Advanced"
         },
         {
-            "name": "AlphaGo",
+            "name": "Deep Residual Learning for Image Recognition (ResNet)",
             "category": "Paper",
-            "description": "Mastering the game of Go with deep neural networks.",
-            "url": "https://www.nature.com/articles/nature16961",
+            "authors": [
+                "Kaiming He",
+                "Xiangyu Zhang",
+                "Shaoqing Ren",
+                "Jian Sun"
+            ],
+            "year": 2015,
+            "venue": "CVPR",
+            "summary": "Residual connections enable very deep convolutional networks by mitigating vanishing gradients, achieving state-of-the-art on ImageNet.",
+            "pdf": "../data/papers/Deep_Residual_Learning_for_Image_Recognition_(ResNet)_2015.pdf",
+            "tags": [
+                "cv",
+                "cnn",
+                "residual"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Generative Adversarial Networks (GANs)",
+            "category": "Paper",
+            "authors": [
+                "Ian Goodfellow",
+                "Jean Pouget-Abadie",
+                "Mehdi Mirza",
+                "Bing Xu",
+                "David Warde-Farley",
+                "Sherjil Ozair",
+                "Aaron Courville",
+                "Yoshua Bengio"
+            ],
+            "year": 2014,
+            "venue": "NeurIPS",
+            "summary": "Introduces adversarial training: a generator and discriminator play a minimax game to produce realistic samples.",
+            "pdf": "../data/papers/Generative_Adversarial_Networks_(GANs)_2014.pdf",
+            "tags": [
+                "generative",
+                "adversarial"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "ImageNet Classification with Deep CNNs (AlexNet)",
+            "category": "Paper",
+            "authors": [
+                "Alex Krizhevsky",
+                "Ilya Sutskever",
+                "Geoffrey Hinton"
+            ],
+            "year": 2012,
+            "venue": "NeurIPS",
+            "summary": "Demonstrates deep convolutional networks with ReLU, dropout, and data augmentation, igniting the deep learning revolution in vision.",
+            "pdf": "../data/papers/ImageNet_Classification_with_Deep_CNNs_(AlexNet)_2012.pdf",
+            "tags": [
+                "cv",
+                "imagenet",
+                "cnn"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "You Only Look Once (YOLO)",
+            "category": "Paper",
+            "authors": [
+                "Joseph Redmon",
+                "Santosh Divvala",
+                "Ross Girshick",
+                "Ali Farhadi"
+            ],
+            "year": 2015,
+            "venue": "CVPR",
+            "summary": "Single-stage object detection that frames detection as regression, enabling real-time performance.",
+            "pdf": "../data/papers/You_Only_Look_Once_(YOLO)_2015.pdf",
+            "tags": [
+                "cv",
+                "detection",
+                "real-time"
+            ],
+            "difficulty": "Advanced"
+        },
+        {
+            "name": "Mastering the game of Go with deep neural networks and tree search (AlphaGo)",
+            "category": "Paper",
+            "authors": [
+                "David Silver",
+                "Aja Huang",
+                "Chris Maddison",
+                "et al."
+            ],
+            "year": 2016,
+            "venue": "Nature",
+            "summary": "Combines policy/value networks with Monte Carlo tree search to surpass human performance in Go.",
+            "pdf": "../data/papers/alphago-silver-2016.pdf",
             "tags": [
                 "rl",
-                "deepmind"
+                "deepmind",
+                "mcts"
             ],
             "difficulty": "Advanced"
         },
         {
-            "name": "Ethereum Whitepaper",
+            "name": "Learning Transferable Visual Models From Natural Language Supervision (CLIP)",
             "category": "Paper",
-            "description": "Smart Contract and Decentralized Application Platform.",
-            "url": "https://ethereum.org/en/whitepaper/",
-            "tags": [
-                "crypto",
-                "blockchain"
+            "authors": [
+                "Alec Radford",
+                "Jong Wook Kim",
+                "Chris Hallacy",
+                "et al."
             ],
-            "difficulty": "Intermediate"
-        },
-        {
-            "name": "MapReduce",
-            "category": "Paper",
-            "description": "Simplified Data Processing on Large Clusters.",
-            "url": "https://research.google/pubs/pub62/",
-            "tags": [
-                "big-data",
-                "google"
-            ],
-            "difficulty": "Advanced"
-        },
-        {
-            "name": "BigTable",
-            "category": "Paper",
-            "description": "A Distributed Storage System for Structured Data.",
-            "url": "https://research.google/pubs/pub27898/",
-            "tags": [
-                "database",
-                "distributed"
-            ],
-            "difficulty": "Advanced"
-        },
-        {
-            "name": "Dynamo",
-            "category": "Paper",
-            "description": "Amazon's Key-Value Store.",
-            "url": "https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf",
-            "tags": [
-                "database",
-                "amazon"
-            ],
-            "difficulty": "Advanced"
-        },
-        {
-            "name": "Kafka Paper",
-            "category": "Paper",
-            "description": "Kafka: a Distributed Messaging System for Log Processing.",
-            "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2017/09/Kafka.pdf",
-            "tags": [
-                "distributed",
-                "messaging"
-            ],
-            "difficulty": "Advanced"
-        },
-        {
-            "name": "Raft Consensus",
-            "category": "Paper",
-            "description": "In Search of an Understandable Consensus Algorithm.",
-            "url": "https://raft.github.io/raft.pdf",
-            "tags": [
-                "distributed",
-                "consensus"
-            ],
-            "difficulty": "Advanced"
-        },
-        {
-            "name": "Paxos Made Simple",
-            "category": "Paper",
-            "description": "Leslie Lamport's explanation of Paxos.",
-            "url": "https://lamport.azurewebsites.net/pubs/paxos-simple.pdf",
-            "tags": [
-                "distributed",
-                "consensus"
-            ],
-            "difficulty": "Expert"
-        },
-        {
-            "name": "Flux Architecture",
-            "category": "Concept",
-            "description": "Application Architecture for Building Client-Side Web Applications.",
-            "url": "https://facebook.github.io/flux/",
-            "tags": [
-                "frontend",
-                "architecture"
-            ],
-            "difficulty": "Intermediate"
-        },
-        {
-            "name": "React: Virtual DOM",
-            "category": "Concept",
-            "description": "How React's Virtual DOM works.",
-            "url": "https://legacy.reactjs.org/docs/faq-internals.html",
-            "tags": [
-                "frontend",
-                "react"
-            ],
-            "difficulty": "Intermediate"
-        },
-        {
-            "name": "Restful Web Services",
-            "category": "Thesis",
-            "description": "Fielding's Dissertation on REST.",
-            "url": "https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm",
-            "tags": [
-                "web",
-                "architecture"
-            ],
-            "difficulty": "Advanced"
-        },
-        {
-            "name": "The C Programming Language",
-            "category": "Book",
-            "description": "K&R. The classic text on C.",
-            "url": "https://en.wikipedia.org/wiki/The_C_Programming_Language",
-            "tags": [
-                "c",
-                "classic"
-            ],
-            "difficulty": "Intermediate"
-        },
-        {
-            "name": "SICP",
-            "category": "Book",
-            "description": "Structure and Interpretation of Computer Programs.",
-            "url": "https://mitpress.mit.edu/sites/default/files/sicp/index.html",
-            "tags": [
-                "scheme",
-                "foundational"
-            ],
-            "difficulty": "Expert"
-        },
-        {
-            "name": "Design Patterns",
-            "category": "Book",
-            "description": "The Gang of Four book on OOP patterns.",
-            "url": "https://en.wikipedia.org/wiki/Design_Patterns",
-            "tags": [
-                "oop",
-                "patterns"
-            ],
-            "difficulty": "Intermediate"
-        },
-        {
-            "name": "Clean Code",
-            "category": "Book",
-            "description": "A Handbook of Agile Software Craftsmanship.",
-            "url": "https://www.oreilly.com/library/view/clean-code-a/9780132350884/",
-            "tags": [
-                "coding",
-                "style"
-            ],
-            "difficulty": "Intermediate"
-        },
-        {
-            "name": "The Mythical Man-Month",
-            "category": "Book",
-            "description": "Essays on Software Engineering.",
-            "url": "https://en.wikipedia.org/wiki/The_Mythical_Man-Month",
-            "tags": [
-                "management",
-                "classic"
-            ],
-            "difficulty": "All Levels"
-        },
-        {
-            "name": "Introduction to Algorithms",
-            "category": "Book",
-            "description": "CLRS. The standard algorithms textbook.",
-            "url": "https://mitpress.mit.edu/9780262046305/introduction-to-algorithms/",
-            "tags": [
-                "algorithms",
-                "textbook"
-            ],
-            "difficulty": "Advanced"
-        },
-        {
-            "name": "Operating Systems: Three Easy Pieces",
-            "category": "Book",
-            "description": "Modern OS textbook. Free online.",
-            "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
-            "tags": [
-                "os",
-                "textbook"
-            ],
-            "difficulty": "Intermediate"
-        },
-        {
-            "name": "Min-Dalle",
-            "category": "Tool",
-            "description": "Minimal implementation of DALL-E.",
-            "url": "https://github.com/kakaobrain/minDALL-E",
-            "tags": [
-                "ml",
-                "image-gen"
-            ],
-            "difficulty": "Advanced"
-        },
-        {
-            "name": "Semantic Scholar",
-            "category": "Search",
-            "description": "AI-powered research tool.",
-            "url": "https://www.semanticscholar.org/",
-            "tags": [
-                "search",
-                "ai"
-            ],
-            "difficulty": "All Levels"
-        },
-        {
-            "name": "Zotero",
-            "category": "Tool",
-            "description": "Your personal research assistant.",
-            "url": "https://www.zotero.org/",
-            "tags": [
-                "citation",
-                "management"
-            ],
-            "difficulty": "Beginner"
-        },
-        {
-            "name": "Mendeley",
-            "category": "Tool",
-            "description": "Reference management software.",
-            "url": "https://www.mendeley.com/",
-            "tags": [
-                "citation",
-                "network"
-            ],
-            "difficulty": "Beginner"
-        },
-        {
-            "name": "Overleaf",
-            "category": "Tool",
-            "description": "Collaborative LaTeX editor.",
-            "url": "https://www.overleaf.com/",
-            "tags": [
-                "latex",
-                "editor"
-            ],
-            "difficulty": "Beginner"
-        },
-        {
-            "name": "IEEE Xplore",
-            "category": "Repository",
-            "description": "Digital library for technical literature.",
-            "url": "https://ieeexplore.ieee.org/",
-            "tags": [
-                "engineering",
-                "papers"
-            ],
-            "difficulty": "Advanced"
-        },
-        {
-            "name": "ACM Digital Library",
-            "category": "Repository",
-            "description": "Full-text collection of ACM publications.",
-            "url": "https://dl.acm.org/",
-            "tags": [
-                "cs",
-                "papers"
-            ],
-            "difficulty": "Advanced"
-        },
-        {
-            "name": "ScienceDirect",
-            "category": "Repository",
-            "description": "Peer-reviewed scientific literature.",
-            "url": "https://www.sciencedirect.com/",
-            "tags": [
-                "science",
-                "health"
-            ],
-            "difficulty": "Advanced"
-        },
-        {
-            "name": "DOAJ",
-            "category": "Repository",
-            "description": "Directory of Open Access Journals.",
-            "url": "https://doaj.org/",
-            "tags": [
-                "open-access",
-                "journals"
-            ],
-            "difficulty": "All Levels"
-        },
-        {
-            "name": "Hugging Face Papers",
-            "category": "Page",
-            "description": "Daily curated list of papers.",
-            "url": "https://huggingface.co/papers",
-            "tags": [
-                "ml",
-                "daily"
-            ],
-            "difficulty": "Intermediate"
-        },
-        {
-            "name": "AlphaFold Paper",
-            "category": "Paper",
-            "description": "Highly accurate protein structure prediction.",
-            "url": "https://www.nature.com/articles/s41586-021-03819-2",
-            "tags": [
-                "biology",
-                "ai"
-            ],
-            "difficulty": "Advanced"
-        },
-        {
-            "name": "CLIP Paper",
-            "category": "Paper",
-            "description": "Learning Transferable Visual Models From Natural Language Supervision.",
-            "url": "https://arxiv.org/abs/2103.00020",
+            "year": 2021,
+            "venue": "ICML",
+            "summary": "Pre-trains vision encoders on image–text pairs to enable zero-shot recognition and flexible multimodal tasks.",
+            "pdf": "../data/papers/Learning_Transferable_Visual_Models_From_Natural_Language_Supervision_(CLIP)_2021.pdf",
             "tags": [
                 "multimodal",
-                "openai"
+                "zero-shot"
             ],
             "difficulty": "Advanced"
         },
         {
-            "name": "NeRF",
+            "name": "NeRF: Representing Scenes as Neural Radiance Fields",
             "category": "Paper",
-            "description": "Representing Scenes as Neural Radiance Fields for View Synthesis.",
-            "url": "https://www.matthewtancik.com/nerf",
+            "authors": [
+                "Ben Mildenhall",
+                "Pratul Srinivasan",
+                "Matthew Tancik",
+                "et al."
+            ],
+            "year": 2020,
+            "venue": "ECCV",
+            "summary": "Optimizes a radiance field with volumetric rendering to synthesize novel views from sparse images.",
+            "pdf": "../data/papers/NeRF_Representing_Scenes_as_Neural_Radiance_Fields_2020.pdf",
             "tags": [
                 "3d",
-                "vision"
+                "vision",
+                "rendering"
             ],
             "difficulty": "Advanced"
         },
         {
-            "name": "InstructGPT",
+            "name": "Chain-of-Thought Prompting Elicits Reasoning in LLMs",
             "category": "Paper",
-            "description": "Training language models to follow instructions.",
-            "url": "https://arxiv.org/abs/2203.02155",
-            "tags": [
-                "llm",
-                "alignment"
+            "authors": [
+                "Jason Wei",
+                "Xuezhi Wang",
+                "Dale Schuurmans",
+                "et al."
             ],
-            "difficulty": "Advanced"
-        },
-        {
-            "name": "Chain-of-Thought",
-            "category": "Paper",
-            "description": "CoT Prompting Elicits Reasoning in Large Language Models.",
-            "url": "https://arxiv.org/abs/2201.11903",
+            "year": 2022,
+            "venue": "NeurIPS",
+            "summary": "Simple prompting that encourages step-by-step reasoning improves performance on arithmetic and logic tasks.",
+            "pdf": "../data/papers/Chain-of-Thought_Prompting_Elicits_Reasoning_in_LLMs_2022.pdf",
             "tags": [
                 "prompting",
-                "llm"
+                "reasoning"
             ],
             "difficulty": "Intermediate"
         },
         {
-            "name": "FlashAttention",
+            "name": "FlashAttention: Fast and Memory-Efficient Exact Attention",
             "category": "Paper",
-            "description": "Fast and Memory-Efficient Exact Attention with IO-Awareness.",
-            "url": "https://arxiv.org/abs/2205.14135",
+            "authors": [
+                "Tri Dao",
+                "Daniel Y. Fu",
+                "Stefano Ermon",
+                "Atri Rudra"
+            ],
+            "year": 2022,
+            "venue": "NeurIPS",
+            "summary": "IO-aware attention algorithm that tiles queries/keys to maximize GPU bandwidth and reduce memory reads.",
+            "pdf": "../data/papers/FlashAttention_Fast_and_Memory-Efficient_Exact_Attention_2022.pdf",
             "tags": [
                 "optimization",
                 "efficient"

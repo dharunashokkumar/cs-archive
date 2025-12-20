@@ -12,6 +12,12 @@
     --font-main: "IBM Plex Mono", "Consolas", monospace;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -160,6 +166,7 @@ h2 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 12px;
+    /* Equal spacing for rows and columns */
     margin-bottom: 20px;
 }
 

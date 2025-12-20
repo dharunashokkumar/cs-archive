@@ -38,7 +38,7 @@
         [ <a href="learning-paths.html">PATHS</a> ]
         [ <a href="ai-models.html">AI_MODELS</a> ]
         [ <a href="tutorials.html">TUTORIALS</a> ]
-        [ <a href="research-papers.html" class="active">RESEARCH</a> ]
+        [ <a href="research-papers.html" class="active">TOP RESEARCH PAPERS</a> ]
         [ <a href="projects.html">PROJECTS</a> ]
         [ <a href="jobs-careers.html">JOBS</a> ]
         [ <a href="tools.html">TOOLS</a> ]
@@ -55,8 +55,7 @@
     </div>
 
     <h2><span class="material-icons">science</span> RESEARCH_PAPERS // ACADEMIC CS</h2>
-    <p style="color: var(--text-muted); margin-bottom: 15px;">Important CS papers, reading guides, and research
-        methodologies.</p>
+    <p style="color: var(--text-muted); margin-bottom: 15px;">Host PDFs locally with summaries and details. No external source links going forward.</p>
 
     <div class="search-container">
         <input type="text" id="search-box" class="search-box" placeholder="Search papers...">
@@ -68,27 +67,83 @@
     </div>
 
     <script>
+        const searchBox = document.getElementById('search-box');
+        const resultsCount = document.getElementById('results-count');
+
+        function renderItems(items) {
+            const container = document.getElementById('items-container');
+            container.innerHTML = '';
+            if (!items || items.length === 0) {
+                container.innerHTML = '<p class="no-results">No matching items</p>';
+                resultsCount.textContent = '0 items';
+                return;
+            }
+
+            items.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'skill-card';
+                const tags = (item.tags || []).map(t => `<span class="tag">${t}</span>`).join('');
+
+                const title = item.name || 'Untitled Paper';
+                const authors = (item.authors || []).join(', ');
+                const meta = [item.venue, item.year].filter(Boolean).join(' • ');
+                const summary = item.summary || item.description || '';
+                const hasPdf = Boolean(item.pdf);
+                const pdfPath = hasPdf ? item.pdf : '';
+
+                const actions = `
+                    <div style="margin-top: 8px; display:flex; gap:8px; flex-wrap:wrap;">
+                        ${hasPdf ? `<a href="${pdfPath}" target="_blank" style="padding:6px 10px; cursor:pointer; border:1px solid #000; background:#fff; color:#000; text-decoration:none;">View PDF</a>
+                                    <a href="${pdfPath}" download style="padding:6px 10px; text-decoration:none; border:1px solid #000; background:#fff; color:#000;" class="btn-download">Download</a>`
+                                : `<span class="tag">PDF pending</span>`}
+                        ${item.url && !hasPdf ? `<a href="${item.url}" target="_blank" class="external-link" style="padding:6px 10px;">Source</a>` : ''}
+                    </div>`;
+
+                card.innerHTML = `
+                    <h3>${title}</h3>
+                    <span class="category">CAT: ${item.category || 'Paper'}</span>
+                    <p class="description" style="margin-top:6px;">${summary}</p>
+                    <p style="margin-top:6px; color:var(--text-muted);">${authors ? 'Authors: ' + authors + (meta ? ' • ' + meta : '') : meta}</p>
+                    <div style="margin-top: 5px;">${tags}</div>
+                    ${actions}
+                `;
+
+                container.appendChild(card);
+            });
+            resultsCount.textContent = `${items.length} items`;
+        }
+
+        let allItems = [];
         fetch('../data/research-papers.json')
             .then(r => r.json())
             .then(data => {
-                if (data.items && data.items.length > 0) {
-                    const container = document.getElementById('items-container');
-                    container.innerHTML = '';
-                    data.items.forEach(item => {
-                        const card = document.createElement('div');
-                        card.className = 'skill-card';
-                        const tags = (item.tags || []).map(t => `<span class="tag">${t}</span>`).join('');
-                        card.innerHTML = `
-                            <h3><a href="${item.url || '#'}" target="_blank" class="external-link">${item.name}</a></h3>
-                            <span class="category">CAT: ${item.category || 'N/A'}</span>
-                            <p class="description">${item.description || ''}</p>
-                            <div style="margin-top: 5px;">${tags}</div>
-                        `;
-                        container.appendChild(card);
-                    });
-                    document.getElementById('results-count').textContent = `${data.items.length} items`;
-                }
-            }).catch(e => console.log('No data yet'));
+                allItems = data.items || [];
+                renderItems(allItems);
+            })
+            .catch(() => {
+                renderItems([]);
+            });
+
+        searchBox.addEventListener('input', () => {
+            const q = searchBox.value.toLowerCase().trim();
+            if (!q) {
+                renderItems(allItems);
+                return;
+            }
+            const filtered = allItems.filter(item => {
+                const hay = [
+                    item.name,
+                    (item.authors || []).join(' '),
+                    item.venue,
+                    item.year && String(item.year),
+                    item.summary,
+                    item.description,
+                    (item.tags || []).join(' ')
+                ].filter(Boolean).join(' ').toLowerCase();
+                return hay.includes(q);
+            });
+            renderItems(filtered);
+        });
     </script>
 </body>
 
