@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Free Developer Services & Tools - CS Archive</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Comprehensive list of free developer services, cloud platforms, APIs, and tools with free tiers for developers.">
+    <meta name="keywords"
+        content="free developer tools, free cloud services, free APIs, developer resources, free tier services">
+    <meta property="og:title" content="Free Developer Services - CS Archive">
+    <meta property="og:description" content="Curated list of free developer services and tools with free tiers.">
+    <meta property="og:url" content="https://archive.dharunashokkumar.com/pages/free-services.html">
+    <link rel="canonical" href="https://archive.dharunashokkumar.com/pages/free-services.html">
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T8EQF64ZTW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-T8EQF64ZTW');
+    </script>
+    <style>
+        .resources-header {
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--card-bg) 100%);
+            padding: 20px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 20px;
+        }
+
+        .resources-header h3 {
+            margin: 0 0 10px 0;
+            color: var(--accent-color);
+        }
+
+        .resources-header p {
+            margin: 5px 0;
+            color: var(--text-muted);
+            font-size: 0.9em;
+        }
+
+        .stats-bar {
+            display: flex;
+            gap: 20px;
+            padding: 10px 15px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            margin-bottom: 15px;
+            font-size: 0.85em;
+            flex-wrap: wrap;
+        }
+
+        .stats-bar span {
+            color: var(--text-muted);
+        }
+
+        .stats-bar strong {
+            color: var(--accent-color);
+        }
+
+        /* Category Accordion Styles */
+        .category-accordion {
+            margin-bottom: 10px;
+            border: 1px solid var(--border-color);
+        }
+
+        .category-header {
+            background: var(--bg-secondary);
+            padding: 12px 15px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.2s ease;
+            user-select: none;
+        }
+
+        .category-header:hover {
+            background: #a09d90;
+        }
+
+        .category-header h3 {
+            margin: 0;
+            color: var(--accent-color);
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .category-header .toggle-icon {
+            transition: transform 0.3s ease;
+            color: var(--accent-color);
+        }
+
+        .category-header.open .toggle-icon {
+            transform: rotate(180deg);
+        }
+
+        .category-header .count {
+            color: var(--text-muted);
+            font-size: 0.85em;
+            font-weight: normal;
+        }
+
+        .category-content {
+            display: none;
+            padding: 15px;
+            background: var(--card-bg);
+        }
+
+        .category-content.open {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+        }
+
+        /* Service Card Styles */
+        .service-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 10px;
+            transition: border-color 0.2s;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 2px 2px 0px #888;
+            font-size: 0.85em;
+            min-height: 180px;
+        }
+
+        .service-card:hover {
+            border-color: var(--accent-color);
+        }
+
+        .service-card h4 {
+            margin: 0 0 5px 0;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            flex-wrap: wrap;
+            font-size: 0.95em;
+        }
+
+        .service-card h4 a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+
+        .service-card h4 a:hover {
+            text-decoration: underline;
+            color: var(--accent-color);
+        }
+
+        .service-domain {
+            font-size: 0.75em;
+            color: var(--text-muted);
+            background: var(--bg-secondary);
+            padding: 2px 8px;
+        }
+
+        .service-description {
+            color: var(--text-muted);
+            font-size: 0.85em;
+            line-height: 1.4;
+            margin: 5px 0;
+        }
+
+        .service-description.collapsed {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .read-more-btn {
+            background: none;
+            border: none;
+            color: var(--link-color);
+            cursor: pointer;
+            font-size: 0.75em;
+            padding: 0;
+            margin-top: 3px;
+            font-family: inherit;
+        }
+
+        .read-more-btn:hover {
+            text-decoration: underline;
+        }
+
+        .service-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            align-items: center;
+            margin-top: auto;
+            padding-top: 8px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .badge {
+            font-size: 0.7em;
+            padding: 3px 8px;
+            font-weight: bold;
+        }
+
+        .badge-free {
+            background: #2ecc71;
+            color: #000;
+        }
+
+        .badge-oss {
+            background: #3498db;
+            color: #fff;
+        }
+
+        .service-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-left: auto;
+        }
+
+        .service-features .feature {
+            font-size: 0.7em;
+            background: var(--bg-secondary);
+            color: var(--text-muted);
+            padding: 2px 6px;
+            border: 1px solid var(--border-color);
+        }
+
+        .free-details {
+            font-size: 0.75em;
+            color: #2ecc71;
+            margin-top: 8px;
+        }
+
+        .no-results {
+            padding: 40px;
+            text-align: center;
+            color: var(--text-muted);
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+        }
+
+        .expand-all-btn {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-muted);
+            padding: 8px 15px;
+            font-size: 0.85em;
+            cursor: pointer;
+            font-family: inherit;
+            margin-bottom: 15px;
+        }
+
+        .expand-all-btn:hover {
+            border-color: var(--accent-color);
+            color: var(--accent-color);
+        }
+
+        @media (max-width: 1200px) {
+            .category-content.open {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 900px) {
+            .category-content.open {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .category-content.open {
+                grid-template-columns: 1fr;
+            }
+
+            .service-card h4 {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .service-meta {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .service-features {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>:: CS Student Archive ::</h1>
+    <div class="nav-bar">
+        [ <a href="../index.html">HOME</a> ]
+        [ <a href="skills.html">SKILLS</a> ]
+        [ <a href="resources.html">RESOURCES</a> ]
+        [ <a href="free-services.html" class="active">FREE_SERVICES</a> ]
+        [ <a href="repos.html">REPOS</a> ]
+        [ <a href="selfhosted.html">SELF_HOSTED</a> ]
+        [ <a href="learning-paths.html">PATHS</a> ]
+        [ <a href="ai-models.html">AI_MODELS</a> ]
+        [ <a href="tutorials.html">TUTORIALS</a> ]
+        [ <a href="research-papers.html">TOP RESEARCH PAPERS</a> ]
+        [ <a href="projects.html">PROJECTS</a> ]
+        [ <a href="jobs-careers.html">JOBS</a> ]
+        [ <a href="tools.html">TOOLS</a> ]
+        [ <a href="certifications.html">CERTS</a> ]
+        [ <a href="communities.html">COMMUNITIES</a> ]
+        [ <a href="cheatsheets.html">CHEATSHEETS</a> ]
+        [ <a href="api.html">PUBLIC APIs</a> ]
+        [ <a href="security.html">SECURITY</a> ]
+        [ <a href="design.html">DESIGN</a> ]
+        [ <a href="newsletters.html">NEWSLETTERS</a> ]
+        [ <a href="nostalgia.html">NOSTALGIA</a> ]
+        [ <a href="archive.html">ARCHIVE</a> ]
+        [ <a href="contribute.html">CONTRIBUTE</a> ]
+    </div>
+
+    <h2><span class="material-icons">cloud</span> FREE_FOR_DEV // SERVICES & TOOLS</h2>
+
+    <div id="header-container"></div>
+
+    <div class="search-container">
+        <input type="text" id="search-box" class="search-box"
+            placeholder="Search services by name, description, or features...">
+        <span id="results-count" class="results-count"></span>
+    </div>
+
+    <div class="stats-bar" id="stats-bar">
+        <span>Total Services: <strong id="total-count">0</strong></span>
+        <span>Categories: <strong id="category-count">0</strong></span>
+        <span>Free Tier: <strong id="free-count">0</strong></span>
+        <span>Open Source: <strong id="oss-count">0</strong></span>
+    </div>
+
+    <button class="expand-all-btn" id="expand-all-btn" onclick="toggleAllCategories()">
+        <span class="material-icons" style="font-size: 14px; vertical-align: middle;">unfold_more</span>
+        Expand All Categories
+    </button>
+
+    <div id="categories-container"></div>
+
+    <script>
+        let data = {};
+        let allServices = [];
+        let categories = {};
+        let allExpanded = false;
+        const DESC_LIMIT = 200;
+
+        fetch('../data/free-services.json')
+            .then(response => response.json())
+            .then(jsonData => {
+                data = jsonData;
+                categories = data.categories || {};
+
+                // Flatten all services
+                allServices = [];
+                Object.keys(categories).forEach(catKey => {
+                    const cat = categories[catKey];
+                    if (cat.services && Array.isArray(cat.services)) {
+                        cat.services.forEach(service => {
+                            service._category = cat.name;
+                            service._categorySlug = catKey;
+                            allServices.push(service);
+                        });
+                    }
+                });
+
+                renderHeader();
+                renderCategories();
+                updateStats();
+            })
+            .catch(err => {
+                console.error('Error loading services:', err);
+                document.getElementById('categories-container').innerHTML =
+                    '<p class="no-results">Error loading services. Please try again later.</p>';
+            });
+
+        function renderHeader() {
+            const container = document.getElementById('header-container');
+            const metadata = data.metadata || {};
+            if (metadata.title || metadata.description) {
+                container.innerHTML = `
+                    <div class="resources-header">
+                        <h3>${metadata.title || 'Free Developer Services'}</h3>
+                        <p>${metadata.description || ''}</p>
+                        ${metadata.note ? `<p style="font-style: italic; font-size: 0.85em; margin-top: 10px; opacity: 0.8;">📝 ${metadata.note}</p>` : ''}
+                    </div>
+                `;
+            }
+        }
+
+        function renderCategories() {
+            const container = document.getElementById('categories-container');
+            container.innerHTML = '';
+
+            // Sort categories by count
+            const sortedCategories = Object.entries(categories)
+                .filter(([key, cat]) => cat.services && cat.services.length > 0)
+                .sort((a, b) => b[1].count - a[1].count);
+
+            sortedCategories.forEach(([catKey, cat], index) => {
+                const accordion = document.createElement('div');
+                accordion.className = 'category-accordion';
+                accordion.id = `cat-${catKey}`;
+
+                // Clean up category name if it's too long (malformed data)
+                let categoryName = cat.name || catKey;
+                if (categoryName.length > 60) {
+                    categoryName = categoryName.substring(0, 57) + '...';
+                }
+
+                accordion.innerHTML = `
+                    <div class="category-header" onclick="toggleCategory('${catKey}')">
+                        <h3>
+                            <span class="material-icons toggle-icon">expand_more</span>
+                            ${categoryName}
+                            <span class="count">(${cat.services?.length || 0} services)</span>
+                        </h3>
+                    </div>
+                    <div class="category-content" id="content-${catKey}">
+                        ${renderServicesForCategory(cat.services || [], catKey)}
+                    </div>
+                `;
+
+                container.appendChild(accordion);
+            });
+
+            document.getElementById('results-count').textContent = `${allServices.length} services across ${sortedCategories.length} categories`;
+        }
+
+        function renderServicesForCategory(services, catKey) {
+            if (!services || services.length === 0) {
+                return '<p class="no-results">No services in this category.</p>';
+            }
+
+            return services.map((service, idx) => {
+                const features = (service.features || []).map(f => `<span class="feature">${f}</span>`).join('');
+                const description = service.description || '';
+                const needsReadMore = description.length > DESC_LIMIT;
+                const descId = `desc-${catKey}-${idx}`;
+
+                // Free tier details
+                let freeDetails = '';
+                if (service.free_tier && service.free_tier.available && service.free_tier.details) {
+                    if (typeof service.free_tier.details === 'string' && service.free_tier.details.length < 100) {
+                        freeDetails = service.free_tier.details;
+                    } else if (typeof service.free_tier.details === 'object') {
+                        freeDetails = Object.entries(service.free_tier.details)
+                            .map(([k, v]) => `${k}: ${v}`)
+                            .join(' | ');
+                    }
+                }
+
+                return `
+                    <div class="service-card">
+                        <h4>
+                            <a href="${service.url}" target="_blank" rel="noopener">${service.name}</a>
+                            <span class="service-domain">${service.domain || ''}</span>
+                        </h4>
+                        <div id="${descId}" class="service-description ${needsReadMore ? 'collapsed' : ''}">${description}</div>
+                        ${needsReadMore ? `<button class="read-more-btn" onclick="toggleDescription(this, '${descId}')">[ Read More ]</button>` : ''}
+                        ${freeDetails ? `<div class="free-details">✓ Free: ${freeDetails}</div>` : ''}
+                        <div class="service-meta">
+                            ${service.free_tier?.available ? '<span class="badge badge-free">FREE TIER</span>' : ''}
+                            ${service.open_source ? '<span class="badge badge-oss">OPEN SOURCE</span>' : ''}
+                            <div class="service-features">${features}</div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function toggleCategory(catKey) {
+            const header = document.querySelector(`#cat-${catKey} .category-header`);
+            const content = document.getElementById(`content-${catKey}`);
+
+            header.classList.toggle('open');
+            content.classList.toggle('open');
+        }
+
+        function toggleAllCategories() {
+            allExpanded = !allExpanded;
+            const headers = document.querySelectorAll('.category-header');
+            const contents = document.querySelectorAll('.category-content');
+            const btn = document.getElementById('expand-all-btn');
+
+            headers.forEach(h => {
+                if (allExpanded) {
+                    h.classList.add('open');
+                } else {
+                    h.classList.remove('open');
+                }
+            });
+
+            contents.forEach(c => {
+                if (allExpanded) {
+                    c.classList.add('open');
+                } else {
+                    c.classList.remove('open');
+                }
+            });
+
+            btn.innerHTML = allExpanded
+                ? '<span class="material-icons" style="font-size: 14px; vertical-align: middle;">unfold_less</span> Collapse All Categories'
+                : '<span class="material-icons" style="font-size: 14px; vertical-align: middle;">unfold_more</span> Expand All Categories';
+        }
+
+        function toggleDescription(btn, descId) {
+            const desc = document.getElementById(descId);
+            if (desc.classList.contains('collapsed')) {
+                desc.classList.remove('collapsed');
+                btn.textContent = '[ Read Less ]';
+            } else {
+                desc.classList.add('collapsed');
+                btn.textContent = '[ Read More ]';
+            }
+        }
+
+        function filterServices() {
+            const query = document.getElementById('search-box').value.toLowerCase().trim();
+
+            if (!query) {
+                // Show all categories
+                document.querySelectorAll('.category-accordion').forEach(acc => {
+                    acc.style.display = 'block';
+                });
+                document.querySelectorAll('.service-card').forEach(card => {
+                    card.style.display = 'flex';
+                });
+                document.getElementById('results-count').textContent = `${allServices.length} services across ${Object.keys(categories).length} categories`;
+                return;
+            }
+
+            let visibleCount = 0;
+            let visibleCategories = 0;
+
+            // Filter within each category
+            Object.keys(categories).forEach(catKey => {
+                const accordion = document.getElementById(`cat-${catKey}`);
+                if (!accordion) return;
+
+                const content = document.getElementById(`content-${catKey}`);
+                const cards = content.querySelectorAll('.service-card');
+                let categoryHasVisible = false;
+
+                cards.forEach((card, idx) => {
+                    const service = categories[catKey].services[idx];
+                    if (!service) return;
+
+                    const matches =
+                        (service.name || '').toLowerCase().includes(query) ||
+                        (service.description || '').toLowerCase().includes(query) ||
+                        (service.domain || '').toLowerCase().includes(query) ||
+                        (service.features || []).some(f => f.toLowerCase().includes(query));
+
+                    if (matches) {
+                        card.style.display = 'flex';
+                        visibleCount++;
+                        categoryHasVisible = true;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+
+                if (categoryHasVisible) {
+                    accordion.style.display = 'block';
+                    visibleCategories++;
+                    // Auto-expand categories with results
+                    accordion.querySelector('.category-header').classList.add('open');
+                    content.classList.add('open');
+                } else {
+                    accordion.style.display = 'none';
+                }
+            });
+
+            document.getElementById('results-count').textContent = `Found ${visibleCount} services in ${visibleCategories} categories`;
+        }
+
+        function updateStats() {
+            const stats = data.statistics || {};
+            document.getElementById('total-count').textContent = stats.total_services || allServices.length;
+            document.getElementById('category-count').textContent = stats.total_categories || Object.keys(categories).length;
+            document.getElementById('free-count').textContent = stats.services_with_free_tier || allServices.filter(s => s.free_tier?.available).length;
+            document.getElementById('oss-count').textContent = stats.open_source_services || allServices.filter(s => s.open_source).length;
+        }
+
+        document.getElementById('search-box').addEventListener('input', filterServices);
+    </script>
+</body>
+
+</html>
