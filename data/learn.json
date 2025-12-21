@@ -1,0 +1,3853 @@
+{
+  "title": "Awesome Lists",
+  "description": "A curated collection of awesome lists for various topics",
+  "categories": [
+    {
+      "name": "Contents",
+      "items": [
+        {
+          "name": "Platforms",
+          "path": "#platforms",
+          "description": ""
+        },
+        {
+          "name": "Programming Languages",
+          "path": "#programming-languages",
+          "description": ""
+        },
+        {
+          "name": "Front-End Development",
+          "path": "#front-end-development",
+          "description": ""
+        },
+        {
+          "name": "Back-End Development",
+          "path": "#back-end-development",
+          "description": ""
+        },
+        {
+          "name": "Computer Science",
+          "path": "#computer-science",
+          "description": ""
+        },
+        {
+          "name": "Big Data",
+          "path": "#big-data",
+          "description": ""
+        },
+        {
+          "name": "Theory",
+          "path": "#theory",
+          "description": ""
+        },
+        {
+          "name": "Books",
+          "path": "#books",
+          "description": ""
+        },
+        {
+          "name": "Editors",
+          "path": "#editors",
+          "description": ""
+        },
+        {
+          "name": "Gaming",
+          "path": "#gaming",
+          "description": ""
+        },
+        {
+          "name": "Development Environment",
+          "path": "#development-environment",
+          "description": ""
+        },
+        {
+          "name": "Entertainment",
+          "path": "#entertainment",
+          "description": ""
+        },
+        {
+          "name": "Databases",
+          "path": "#databases",
+          "description": ""
+        },
+        {
+          "name": "Media",
+          "path": "#media",
+          "description": ""
+        },
+        {
+          "name": "Learn",
+          "path": "#learn",
+          "description": ""
+        },
+        {
+          "name": "Security",
+          "path": "#security",
+          "description": ""
+        },
+        {
+          "name": "Content Management Systems",
+          "path": "#content-management-systems",
+          "description": ""
+        },
+        {
+          "name": "Hardware",
+          "path": "#hardware",
+          "description": ""
+        },
+        {
+          "name": "Business",
+          "path": "#business",
+          "description": ""
+        },
+        {
+          "name": "Work",
+          "path": "#work",
+          "description": ""
+        },
+        {
+          "name": "Networking",
+          "path": "#networking",
+          "description": ""
+        },
+        {
+          "name": "Decentralized Systems",
+          "path": "#decentralized-systems",
+          "description": ""
+        },
+        {
+          "name": "Health and Social Science",
+          "path": "#health-and-social-science",
+          "description": ""
+        },
+        {
+          "name": "Events",
+          "path": "#events",
+          "description": ""
+        },
+        {
+          "name": "Testing",
+          "path": "#testing",
+          "description": ""
+        },
+        {
+          "name": "Miscellaneous",
+          "path": "#miscellaneous",
+          "description": ""
+        },
+        {
+          "name": "Related",
+          "path": "#related",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Platforms",
+      "items": [
+        {
+          "name": "Node.js",
+          "path": "learn/sindresorhus_awesome-nodejs/sindresorhus_awesome-nodejs.html",
+          "description": "Async non-blocking event-driven JavaScript runtime built on Chrome's V8 JavaScript engine.",
+          "subcategories": [
+            {
+              "name": "Cross-Platform",
+              "path": "learn/bcoe_awesome-cross-platform-nodejs/bcoe_awesome-cross-platform-nodejs.html",
+              "description": "Writing cross-platform code on Node.js."
+            }
+          ]
+        },
+        {
+          "name": "Frontend Development",
+          "path": "learn/dypsilon_frontend-dev-bookmarks/dypsilon_frontend-dev-bookmarks.html",
+          "description": ""
+        },
+        {
+          "name": "iOS",
+          "path": "learn/vsouza_awesome-ios/vsouza_awesome-ios.html",
+          "description": "Mobile operating system for Apple phones and tablets."
+        },
+        {
+          "name": "Android",
+          "path": "learn/JStumpp_awesome-android/JStumpp_awesome-android.html",
+          "description": "Mobile operating system developed by Google."
+        },
+        {
+          "name": "IoT & Hybrid Apps",
+          "path": "learn/weblancaster_awesome-IoT-hybrid/weblancaster_awesome-IoT-hybrid.html",
+          "description": ""
+        },
+        {
+          "name": "Electron",
+          "path": "learn/sindresorhus_awesome-electron/sindresorhus_awesome-electron.html",
+          "description": "Cross-platform native desktop apps using JavaScript/HTML/CSS."
+        },
+        {
+          "name": "Cordova",
+          "path": "learn/busterc_awesome-cordova/busterc_awesome-cordova.html",
+          "description": "JavaScript API for hybrid apps."
+        },
+        {
+          "name": "React Native",
+          "path": "learn/jondot_awesome-react-native/jondot_awesome-react-native.html",
+          "description": "JavaScript framework for writing natively rendering mobile apps for iOS and Android."
+        },
+        {
+          "name": "Xamarin",
+          "path": "learn/XamSome_awesome-xamarin/XamSome_awesome-xamarin.html",
+          "description": "Mobile app development IDE, testing, and distribution."
+        },
+        {
+          "name": "Linux",
+          "path": "learn/inputsh_awesome-linux/inputsh_awesome-linux.html",
+          "description": "",
+          "subcategories": [
+            {
+              "name": "Containers",
+              "path": "learn/Friz-zy_awesome-linux-containers/Friz-zy_awesome-linux-containers.html",
+              "description": ""
+            },
+            {
+              "name": "eBPF",
+              "path": "https://github.com/zoidbergwill/awesome-ebpf#readme",
+              "description": "Virtual machine that allows you to write more efficient and powerful tracing and monitoring for Linux systems."
+            },
+            {
+              "name": "Arch-based Projects",
+              "path": "learn/PandaFoss_Awesome-Arch/PandaFoss_Awesome-Arch.html",
+              "description": "Linux distributions and projects based on Arch Linux."
+            },
+            {
+              "name": "AppImage",
+              "path": "learn/AppImage_awesome-appimage/AppImage_awesome-appimage.html",
+              "description": "Package apps in a single file that works on various mainstream Linux distributions."
+            },
+            {
+              "name": "Omarchy",
+              "path": "learn/aorumbayev_awesome-omarchy/aorumbayev_awesome-omarchy.html",
+              "description": "Opinionated Arch Linux and Hyprland desktop environment from the creator of Ruby on Rails."
+            }
+          ]
+        },
+        {
+          "name": "macOS",
+          "path": "",
+          "description": "Operating system for Apple's Mac computers.",
+          "subcategories": [
+            {
+              "name": "Screensavers",
+              "path": "learn/agarrharr_awesome-macos-screensavers/agarrharr_awesome-macos-screensavers.html",
+              "description": ""
+            },
+            {
+              "name": "Apps",
+              "path": "learn/jaywcjlove_awesome-mac/jaywcjlove_awesome-mac.html",
+              "description": ""
+            },
+            {
+              "name": "Open Source Apps",
+              "path": "learn/serhii-londar_open-source-mac-os-apps/serhii-londar_open-source-mac-os-apps.html",
+              "description": ""
+            }
+          ]
+        },
+        {
+          "name": "watchOS",
+          "path": "learn/yenchenlin_awesome-watchos/yenchenlin_awesome-watchos.html",
+          "description": "Operating system for the Apple Watch."
+        },
+        {
+          "name": "JVM",
+          "path": "learn/deephacks_awesome-jvm/deephacks_awesome-jvm.html",
+          "description": ""
+        },
+        {
+          "name": "Salesforce",
+          "path": "learn/mailtoharshit_awesome-salesforce/mailtoharshit_awesome-salesforce.html",
+          "description": ""
+        },
+        {
+          "name": "Amazon Web Services",
+          "path": "learn/donnemartin_awesome-aws/donnemartin_awesome-aws.html",
+          "description": ""
+        },
+        {
+          "name": "Windows",
+          "path": "learn/0pandadev_awesome-windows/0pandadev_awesome-windows.html",
+          "description": "Consumer desktop operating system.",
+          "subcategories": [
+            {
+              "name": "PowerToys Run Plugins",
+              "path": "learn/hlaueriksson_awesome-powertoys-run-plugins/hlaueriksson_awesome-powertoys-run-plugins.html",
+              "description": "Community plugins for the Windows quick launcher."
+            }
+          ]
+        },
+        {
+          "name": "IPFS",
+          "path": "learn/ipfs_awesome-ipfs/ipfs_awesome-ipfs.html",
+          "description": "P2P hypermedia protocol."
+        },
+        {
+          "name": "Fuse",
+          "path": "learn/fuse-compound_awesome-fuse/fuse-compound_awesome-fuse.html",
+          "description": "Mobile development tools."
+        },
+        {
+          "name": "Heroku",
+          "path": "learn/ianstormtaylor_awesome-heroku/ianstormtaylor_awesome-heroku.html",
+          "description": "Cloud platform as a service."
+        },
+        {
+          "name": "Raspberry Pi",
+          "path": "learn/thibmaek_awesome-raspberry-pi/thibmaek_awesome-raspberry-pi.html",
+          "description": "Credit card-sized computer aimed at teaching kids programming, but capable of a lot more."
+        },
+        {
+          "name": "Qt",
+          "path": "learn/JesseTG_awesome-qt/JesseTG_awesome-qt.html",
+          "description": "Cross-platform GUI app framework."
+        },
+        {
+          "name": "WebExtensions",
+          "path": "learn/fregante_Awesome-WebExtensions/fregante_Awesome-WebExtensions.html",
+          "description": "Cross-browser extension system."
+        },
+        {
+          "name": "Smart TV",
+          "path": "learn/vitalets_awesome-smart-tv/vitalets_awesome-smart-tv.html",
+          "description": "Create apps for different TV platforms."
+        },
+        {
+          "name": "GNOME",
+          "path": "learn/Kazhnuz_awesome-gnome/Kazhnuz_awesome-gnome.html",
+          "description": "Simple and distraction-free desktop environment for Linux."
+        },
+        {
+          "name": "KDE",
+          "path": "learn/francoism90_awesome-kde/francoism90_awesome-kde.html",
+          "description": "A free software community dedicated to creating an open and user-friendly computing experience."
+        },
+        {
+          "name": ".NET",
+          "path": "learn/quozd_awesome-dotnet/quozd_awesome-dotnet.html",
+          "description": "",
+          "subcategories": [
+            {
+              "name": "Core",
+              "path": "learn/thangchung_awesome-dotnet-core/thangchung_awesome-dotnet-core.html",
+              "description": ""
+            },
+            {
+              "name": "Roslyn",
+              "path": "learn/ironcev_awesome-roslyn/ironcev_awesome-roslyn.html",
+              "description": "Open-source compilers and code analysis APIs for C# and VB.NET languages."
+            }
+          ]
+        },
+        {
+          "name": "Amazon Alexa",
+          "path": "learn/miguelmota_awesome-amazon-alexa/miguelmota_awesome-amazon-alexa.html",
+          "description": "Virtual home assistant."
+        },
+        {
+          "name": "DigitalOcean",
+          "path": "learn/jonleibowitz_awesome-digitalocean/jonleibowitz_awesome-digitalocean.html",
+          "description": "Cloud computing platform designed for developers."
+        },
+        {
+          "name": "Flutter",
+          "path": "learn/Solido_awesome-flutter/Solido_awesome-flutter.html",
+          "description": "Google's mobile SDK for building native iOS and Android apps from a single codebase written in Dart."
+        },
+        {
+          "name": "Home Assistant",
+          "path": "learn/frenck_awesome-home-assistant/frenck_awesome-home-assistant.html",
+          "description": "Open source home automation that puts local control and privacy first."
+        },
+        {
+          "name": "IBM Cloud",
+          "path": "learn/victorshinya_awesome-ibmcloud/victorshinya_awesome-ibmcloud.html",
+          "description": "Cloud platform for developers and companies."
+        },
+        {
+          "name": "Firebase",
+          "path": "learn/jthegedus_awesome-firebase/jthegedus_awesome-firebase.html",
+          "description": "App development platform built on Google Cloud."
+        },
+        {
+          "name": "Robot Operating System 2.0",
+          "path": "learn/fkromer_awesome-ros2/fkromer_awesome-ros2.html",
+          "description": "Set of software libraries and tools that help you build robot apps."
+        },
+        {
+          "name": "Adafruit IO",
+          "path": "learn/adafruit_awesome-adafruitio/adafruit_awesome-adafruitio.html",
+          "description": "Visualize and store data from any device."
+        },
+        {
+          "name": "Cloudflare",
+          "path": "learn/irazasyed_awesome-cloudflare/irazasyed_awesome-cloudflare.html",
+          "description": "CDN, DNS, DDoS protection, and security for your site."
+        },
+        {
+          "name": "Actions on Google",
+          "path": "learn/ravirupareliya_awesome-actions-on-google/ravirupareliya_awesome-actions-on-google.html",
+          "description": "Developer platform for Google Assistant."
+        },
+        {
+          "name": "ESP",
+          "path": "learn/agucova_awesome-esp/agucova_awesome-esp.html",
+          "description": "Low-cost microcontrollers with WiFi and broad IoT applications."
+        },
+        {
+          "name": "Deno",
+          "path": "learn/denolib_awesome-deno/denolib_awesome-deno.html",
+          "description": "A secure runtime for JavaScript and TypeScript that uses V8 and is built in Rust."
+        },
+        {
+          "name": "DOS",
+          "path": "learn/balintkissdev_awesome-dos/balintkissdev_awesome-dos.html",
+          "description": "Operating system for x86-based personal computers that was popular during the 1980s and early 1990s."
+        },
+        {
+          "name": "Nix",
+          "path": "learn/nix-community_awesome-nix/nix-community_awesome-nix.html",
+          "description": "Package manager for Linux and other Unix systems that makes package management reliable and reproducible."
+        },
+        {
+          "name": "Integration",
+          "path": "learn/stn1slv_awesome-integration/stn1slv_awesome-integration.html",
+          "description": "Linking together different IT systems (components) to functionally cooperate as a whole."
+        },
+        {
+          "name": "Node-RED",
+          "path": "learn/naimo84_awesome-nodered/naimo84_awesome-nodered.html",
+          "description": "A programming tool for wiring together hardware devices, APIs, and online services."
+        },
+        {
+          "name": "Low Code",
+          "path": "learn/zenitysec_awesome-low-code/zenitysec_awesome-low-code.html",
+          "description": "Allowing business professionals to address their needs on their own with little to no coding skills."
+        },
+        {
+          "name": "Capacitor",
+          "path": "learn/riderx_awesome-capacitor/riderx_awesome-capacitor.html",
+          "description": "Cross-platform open source runtime for building Web Native apps."
+        },
+        {
+          "name": "ArcGIS Developer",
+          "path": "learn/Esri_awesome-arcgis-developer/Esri_awesome-arcgis-developer.html",
+          "description": "Mapping and location analysis platform for developers."
+        },
+        {
+          "name": "Bluetooth Low Energy",
+          "path": "learn/dotintent_awesome-ble/dotintent_awesome-ble.html",
+          "description": "Low-power wireless communication protocol ideal for IoT, wearables, and other battery-powered applications."
+        },
+        {
+          "name": "Uno Platform",
+          "path": "learn/MartinZikmund_awesome-uno-platform/MartinZikmund_awesome-uno-platform.html",
+          "description": "Open-source .NET UI platform for building cross-platform apps."
+        },
+        {
+          "name": "Google Cloud",
+          "path": "learn/GoogleCloudPlatform_awesome-google-cloud/GoogleCloudPlatform_awesome-google-cloud.html",
+          "description": "Cloud computing services by Google."
+        },
+        {
+          "name": "Firebase Genkit",
+          "path": "learn/xavidop_awesome-firebase-genkit/xavidop_awesome-firebase-genkit.html",
+          "description": "An open-source framework for building AI-powered apps and features."
+        },
+        {
+          "name": "Backstage",
+          "path": "learn/shano_awesome-backstage/shano_awesome-backstage.html",
+          "description": "Open-source platform for building Internal Developer Portals that unify tools and workflows."
+        }
+      ]
+    },
+    {
+      "name": "Programming Languages",
+      "items": [
+        {
+          "name": "JavaScript",
+          "path": "learn/sorrycc_awesome-javascript/sorrycc_awesome-javascript.html",
+          "description": "",
+          "subcategories": [
+            {
+              "name": "Promises",
+              "path": "learn/wbinnssmith_awesome-promises/wbinnssmith_awesome-promises.html",
+              "description": ""
+            },
+            {
+              "name": "Standard Style",
+              "path": "learn/standard_awesome-standard/standard_awesome-standard.html",
+              "description": "Style guide and linter."
+            },
+            {
+              "name": "Must Watch Talks",
+              "path": "learn/bolshchikov_js-must-watch/bolshchikov_js-must-watch.html",
+              "description": ""
+            },
+            {
+              "name": "Tips",
+              "path": "learn/loverajoel_jstips/loverajoel_jstips.html",
+              "description": ""
+            },
+            {
+              "name": "Network Layer",
+              "path": "learn/Kikobeats_awesome-network-js/Kikobeats_awesome-network-js.html",
+              "description": ""
+            },
+            {
+              "name": "Micro npm Packages",
+              "path": "learn/parro-it_awesome-micro-npm-packages/parro-it_awesome-micro-npm-packages.html",
+              "description": ""
+            },
+            {
+              "name": "Mad Science npm Packages",
+              "path": "learn/feross_awesome-mad-science/feross_awesome-mad-science.html",
+              "description": "Impossible sounding projects that exist."
+            },
+            {
+              "name": "Maintenance Modules",
+              "path": "https://github.com/maxogden/maintenance-modules#readme",
+              "description": "For npm packages."
+            },
+            {
+              "name": "npm",
+              "path": "learn/sindresorhus_awesome-npm/sindresorhus_awesome-npm.html",
+              "description": "Package manager."
+            },
+            {
+              "name": "AVA",
+              "path": "learn/avajs_awesome-ava/avajs_awesome-ava.html",
+              "description": "Test runner."
+            },
+            {
+              "name": "ESLint",
+              "path": "learn/dustinspecker_awesome-eslint/dustinspecker_awesome-eslint.html",
+              "description": "Linter."
+            },
+            {
+              "name": "Functional Programming",
+              "path": "learn/stoeffel_awesome-fp-js/stoeffel_awesome-fp-js.html",
+              "description": ""
+            },
+            {
+              "name": "Observables",
+              "path": "learn/sindresorhus_awesome-observables/sindresorhus_awesome-observables.html",
+              "description": ""
+            },
+            {
+              "name": "npm scripts",
+              "path": "learn/RyanZim_awesome-npm-scripts/RyanZim_awesome-npm-scripts.html",
+              "description": "Task runner."
+            },
+            {
+              "name": "30 Seconds of Code",
+              "path": "learn/30-seconds_30-seconds-of-code/30-seconds_30-seconds-of-code.html",
+              "description": "Code snippets you can understand in 30 seconds."
+            },
+            {
+              "name": "Ponyfills",
+              "path": "learn/Richienb_awesome-ponyfills/Richienb_awesome-ponyfills.html",
+              "description": "Like polyfills but without overriding native APIs."
+            }
+          ]
+        },
+        {
+          "name": "Swift",
+          "path": "learn/matteocrippa_awesome-swift/matteocrippa_awesome-swift.html",
+          "description": "Apple's compiled programming language that is secure, modern, programmer-friendly, and fast.",
+          "subcategories": [
+            {
+              "name": "Education",
+              "path": "learn/hsavit1_Awesome-Swift-Education/hsavit1_Awesome-Swift-Education.html",
+              "description": ""
+            },
+            {
+              "name": "Playgrounds",
+              "path": "learn/uraimo_Awesome-Swift-Playgrounds/uraimo_Awesome-Swift-Playgrounds.html",
+              "description": ""
+            }
+          ]
+        },
+        {
+          "name": "Python",
+          "path": "learn/vinta_awesome-python/vinta_awesome-python.html",
+          "description": "General-purpose programming language designed for readability.",
+          "subcategories": [
+            {
+              "name": "Asyncio",
+              "path": "learn/timofurrer_awesome-asyncio/timofurrer_awesome-asyncio.html",
+              "description": "Asynchronous I/O in Python 3."
+            },
+            {
+              "name": "Scientific Audio",
+              "path": "learn/faroit_awesome-python-scientific-audio/faroit_awesome-python-scientific-audio.html",
+              "description": "Scientific research in audio/music."
+            },
+            {
+              "name": "CircuitPython",
+              "path": "learn/adafruit_awesome-circuitpython/adafruit_awesome-circuitpython.html",
+              "description": "A version of Python for microcontrollers."
+            },
+            {
+              "name": "Data Science",
+              "path": "learn/krzjoa_awesome-python-data-science/krzjoa_awesome-python-data-science.html",
+              "description": "Data analysis and machine learning."
+            },
+            {
+              "name": "Typing",
+              "path": "learn/typeddjango_awesome-python-typing/typeddjango_awesome-python-typing.html",
+              "description": "Optional static typing for Python."
+            },
+            {
+              "name": "MicroPython",
+              "path": "learn/mcauser_awesome-micropython/mcauser_awesome-micropython.html",
+              "description": "A lean and efficient implementation of Python 3 for microcontrollers."
+            }
+          ]
+        },
+        {
+          "name": "Rust",
+          "path": "learn/rust-unofficial_awesome-rust/rust-unofficial_awesome-rust.html",
+          "description": "",
+          "subcategories": [
+            {
+              "name": "Pest",
+              "path": "learn/pest-parser_awesome-pest/pest-parser_awesome-pest.html",
+              "description": "Parser generator."
+            }
+          ]
+        },
+        {
+          "name": "Haskell",
+          "path": "learn/krispo_awesome-haskell/krispo_awesome-haskell.html",
+          "description": ""
+        },
+        {
+          "name": "PureScript",
+          "path": "learn/passy_awesome-purescript/passy_awesome-purescript.html",
+          "description": ""
+        },
+        {
+          "name": "Go",
+          "path": "learn/avelino_awesome-go/avelino_awesome-go.html",
+          "description": ""
+        },
+        {
+          "name": "Scala",
+          "path": "learn/lauris_awesome-scala/lauris_awesome-scala.html",
+          "description": "",
+          "subcategories": [
+            {
+              "name": "Scala Native",
+              "path": "learn/tindzk_awesome-scala-native/tindzk_awesome-scala-native.html",
+              "description": "Optimizing ahead-of-time compiler for Scala based on LLVM."
+            }
+          ]
+        },
+        {
+          "name": "Ruby",
+          "path": "learn/markets_awesome-ruby/markets_awesome-ruby.html",
+          "description": ""
+        },
+        {
+          "name": "Clojure",
+          "path": "learn/razum2um_awesome-clojure/razum2um_awesome-clojure.html",
+          "description": ""
+        },
+        {
+          "name": "ClojureScript",
+          "path": "learn/hantuzun_awesome-clojurescript/hantuzun_awesome-clojurescript.html",
+          "description": ""
+        },
+        {
+          "name": "Elixir",
+          "path": "learn/h4cc_awesome-elixir/h4cc_awesome-elixir.html",
+          "description": ""
+        },
+        {
+          "name": "Elm",
+          "path": "learn/sporto_awesome-elm/sporto_awesome-elm.html",
+          "description": ""
+        },
+        {
+          "name": "Erlang",
+          "path": "learn/drobakowski_awesome-erlang/drobakowski_awesome-erlang.html",
+          "description": ""
+        },
+        {
+          "name": "Julia",
+          "path": "learn/svaksha_Julia.jl/svaksha_Julia.jl.html",
+          "description": "High-level dynamic programming language designed to address the needs of high-performance numerical analysis and computational science."
+        },
+        {
+          "name": "Lua",
+          "path": "learn/LewisJEllis_awesome-lua/LewisJEllis_awesome-lua.html",
+          "description": ""
+        },
+        {
+          "name": "C",
+          "path": "learn/inputsh_awesome-c/inputsh_awesome-c.html",
+          "description": ""
+        },
+        {
+          "name": "C/C++",
+          "path": "learn/fffaraz_awesome-cpp/fffaraz_awesome-cpp.html",
+          "description": "General-purpose language with a bias toward system programming and embedded, resource-constrained software."
+        },
+        {
+          "name": "R",
+          "path": "learn/qinwf_awesome-R/qinwf_awesome-R.html",
+          "description": "Functional programming language and environment for statistical computing and graphics.",
+          "subcategories": [
+            {
+              "name": "Learning",
+              "path": "learn/iamericfletcher_awesome-r-learning-resources/iamericfletcher_awesome-r-learning-resources.html",
+              "description": ""
+            }
+          ]
+        },
+        {
+          "name": "D",
+          "path": "learn/dlang-community_awesome-d/dlang-community_awesome-d.html",
+          "description": ""
+        },
+        {
+          "name": "Common Lisp",
+          "path": "learn/CodyReichert_awesome-cl/CodyReichert_awesome-cl.html",
+          "description": "Powerful dynamic multiparadigm language that facilitates iterative and interactive development.",
+          "subcategories": [
+            {
+              "name": "Learning",
+              "path": "learn/GustavBertram_awesome-common-lisp-learning/GustavBertram_awesome-common-lisp-learning.html",
+              "description": ""
+            }
+          ]
+        },
+        {
+          "name": "Perl",
+          "path": "learn/hachiojipm_awesome-perl/hachiojipm_awesome-perl.html",
+          "description": ""
+        },
+        {
+          "name": "Groovy",
+          "path": "learn/kdabir_awesome-groovy/kdabir_awesome-groovy.html",
+          "description": ""
+        },
+        {
+          "name": "Dart",
+          "path": "learn/yissachar_awesome-dart/yissachar_awesome-dart.html",
+          "description": ""
+        },
+        {
+          "name": "Java",
+          "path": "learn/akullpp_awesome-java/akullpp_awesome-java.html",
+          "description": "Popular secure object-oriented language designed for flexibility to \"write once, run anywhere\".",
+          "subcategories": [
+            {
+              "name": "RxJava",
+              "path": "learn/eleventigers_awesome-rxjava/eleventigers_awesome-rxjava.html",
+              "description": ""
+            },
+            {
+              "name": "J2ME",
+              "path": "learn/hstsethi_awesome-j2me/hstsethi_awesome-j2me.html",
+              "description": "Java specification designed for old keypad phones and PDAs."
+            }
+          ]
+        },
+        {
+          "name": "Kotlin",
+          "path": "learn/KotlinBy_awesome-kotlin/KotlinBy_awesome-kotlin.html",
+          "description": ""
+        },
+        {
+          "name": "OCaml",
+          "path": "learn/ocaml-community_awesome-ocaml/ocaml-community_awesome-ocaml.html",
+          "description": ""
+        },
+        {
+          "name": "ColdFusion",
+          "path": "learn/seancoyne_awesome-coldfusion/seancoyne_awesome-coldfusion.html",
+          "description": ""
+        },
+        {
+          "name": "Fortran",
+          "path": "learn/rabbiabram_awesome-fortran/rabbiabram_awesome-fortran.html",
+          "description": ""
+        },
+        {
+          "name": "PHP",
+          "path": "learn/ziadoz_awesome-php/ziadoz_awesome-php.html",
+          "description": "Server-side scripting language.",
+          "subcategories": [
+            {
+              "name": "Composer",
+              "path": "learn/jakoch_awesome-composer/jakoch_awesome-composer.html",
+              "description": "Package manager."
+            }
+          ]
+        },
+        {
+          "name": "Pascal",
+          "path": "learn/Fr0sT-Brutal_awesome-pascal/Fr0sT-Brutal_awesome-pascal.html",
+          "description": ""
+        },
+        {
+          "name": "AutoHotkey",
+          "path": "learn/ahkscript_awesome-AutoHotkey/ahkscript_awesome-AutoHotkey.html",
+          "description": ""
+        },
+        {
+          "name": "AutoIt",
+          "path": "learn/J2TeaM_awesome-AutoIt/J2TeaM_awesome-AutoIt.html",
+          "description": ""
+        },
+        {
+          "name": "Crystal",
+          "path": "learn/veelenga_awesome-crystal/veelenga_awesome-crystal.html",
+          "description": ""
+        },
+        {
+          "name": "Frege",
+          "path": "learn/sfischer13_awesome-frege/sfischer13_awesome-frege.html",
+          "description": "Haskell for the JVM."
+        },
+        {
+          "name": "CMake",
+          "path": "learn/onqtam_awesome-cmake/onqtam_awesome-cmake.html",
+          "description": "Build, test, and package software."
+        },
+        {
+          "name": "ActionScript 3",
+          "path": "learn/robinrodricks_awesome-actionscript3/robinrodricks_awesome-actionscript3.html",
+          "description": "Object-oriented language targeting Adobe AIR."
+        },
+        {
+          "name": "Eta",
+          "path": "learn/sfischer13_awesome-eta/sfischer13_awesome-eta.html",
+          "description": "Functional programming language for the JVM."
+        },
+        {
+          "name": "Idris",
+          "path": "learn/joaomilho_awesome-idris/joaomilho_awesome-idris.html",
+          "description": "General purpose pure functional programming language with dependent types influenced by Haskell and ML."
+        },
+        {
+          "name": "Ada/SPARK",
+          "path": "learn/ohenley_awesome-ada/ohenley_awesome-ada.html",
+          "description": "Modern programming language designed for large, long-lived apps where reliability and efficiency are essential."
+        },
+        {
+          "name": "Q#",
+          "path": "learn/ebraminio_awesome-qsharp/ebraminio_awesome-qsharp.html",
+          "description": "Domain-specific programming language used for expressing quantum algorithms."
+        },
+        {
+          "name": "Imba",
+          "path": "learn/koolamusic_awesome-imba/koolamusic_awesome-imba.html",
+          "description": "Programming language inspired by Ruby and Python and compiles to performant JavaScript."
+        },
+        {
+          "name": "Vala",
+          "path": "learn/desiderantes_awesome-vala/desiderantes_awesome-vala.html",
+          "description": "Programming language designed to take full advantage of the GLib and GNOME ecosystems, while preserving the speed of C code."
+        },
+        {
+          "name": "Coq",
+          "path": "learn/coq-community_awesome-coq/coq-community_awesome-coq.html",
+          "description": "Formal language and environment for programming and specification which facilitates interactive development of machine-checked proofs."
+        },
+        {
+          "name": "V",
+          "path": "learn/vlang_awesome-v/vlang_awesome-v.html",
+          "description": "Simple, fast, safe, compiled language for developing maintainable software."
+        },
+        {
+          "name": "Move",
+          "path": "learn/MystenLabs_awesome-move/MystenLabs_awesome-move.html",
+          "description": "Domain-specific programming language for writing safe smart contracts."
+        },
+        {
+          "name": "Esolangs",
+          "path": "learn/angrykoala_awesome-esolangs/angrykoala_awesome-esolangs.html",
+          "description": "Programming languages designed for experimentation or as jokes rather than actual use."
+        },
+        {
+          "name": "VBA",
+          "path": "learn/sancarn_awesome-vba/sancarn_awesome-vba.html",
+          "description": "An event-driven version of Visual Basic 6.0 built into most Microsoft Office apps for automation and scripting."
+        },
+        {
+          "name": "F#",
+          "path": "learn/fsprojects_awesome-fsharp/fsprojects_awesome-fsharp.html",
+          "description": "A .NET-based language with focus on functional programming."
+        }
+      ]
+    },
+    {
+      "name": "Front-End Development",
+      "items": [
+        {
+          "name": "ES6 Tools",
+          "path": "learn/addyosmani_es6-tools/addyosmani_es6-tools.html",
+          "description": ""
+        },
+        {
+          "name": "Web Performance Optimization",
+          "path": "learn/davidsonfellipe_awesome-wpo/davidsonfellipe_awesome-wpo.html",
+          "description": ""
+        },
+        {
+          "name": "Web Tools",
+          "path": "learn/lvwzhen_tools/lvwzhen_tools.html",
+          "description": ""
+        },
+        {
+          "name": "CSS",
+          "path": "learn/awesome-css-group_awesome-css/awesome-css-group_awesome-css.html",
+          "description": "Style sheet language that specifies how HTML elements are displayed on screen.",
+          "subcategories": [
+            {
+              "name": "Critical-Path Tools",
+              "path": "learn/addyosmani_critical-path-css-tools/addyosmani_critical-path-css-tools.html",
+              "description": ""
+            },
+            {
+              "name": "Scalability",
+              "path": "learn/davidtheclark_scalable-css-reading-list/davidtheclark_scalable-css-reading-list.html",
+              "description": ""
+            },
+            {
+              "name": "Must-Watch Talks",
+              "path": "learn/AllThingsSmitty_must-watch-css/AllThingsSmitty_must-watch-css.html",
+              "description": ""
+            },
+            {
+              "name": "Protips",
+              "path": "learn/AllThingsSmitty_css-protips/AllThingsSmitty_css-protips.html",
+              "description": ""
+            },
+            {
+              "name": "Frameworks",
+              "path": "learn/troxler_awesome-css-frameworks/troxler_awesome-css-frameworks.html",
+              "description": ""
+            }
+          ]
+        },
+        {
+          "name": "React",
+          "path": "learn/enaqx_awesome-react/enaqx_awesome-react.html",
+          "description": "JavaScript library for building user interfaces.",
+          "subcategories": [
+            {
+              "name": "Relay",
+              "path": "learn/expede_awesome-relay/expede_awesome-relay.html",
+              "description": "Framework for building data-driven React apps."
+            },
+            {
+              "name": "React Hooks",
+              "path": "learn/glauberfc_awesome-react-hooks/glauberfc_awesome-react-hooks.html",
+              "description": "Lets you use state and other React features without writing a class."
+            }
+          ]
+        },
+        {
+          "name": "Web Components",
+          "path": "learn/web-padawan_awesome-web-components/web-padawan_awesome-web-components.html",
+          "description": ""
+        },
+        {
+          "name": "Polymer",
+          "path": "learn/Granze_awesome-polymer/Granze_awesome-polymer.html",
+          "description": "JavaScript library to develop Web Components."
+        },
+        {
+          "name": "Angular",
+          "path": "learn/PatrickJS_awesome-angular/PatrickJS_awesome-angular.html",
+          "description": "App framework."
+        },
+        {
+          "name": "Backbone",
+          "path": "learn/sadcitizen_awesome-backbone/sadcitizen_awesome-backbone.html",
+          "description": "App framework."
+        },
+        {
+          "name": "HTML5",
+          "path": "learn/diegocard_awesome-html5/diegocard_awesome-html5.html",
+          "description": "Markup language used for websites & web apps."
+        },
+        {
+          "name": "SVG",
+          "path": "learn/willianjusten_awesome-svg/willianjusten_awesome-svg.html",
+          "description": "XML-based vector image format."
+        },
+        {
+          "name": "Canvas",
+          "path": "learn/raphamorim_awesome-canvas/raphamorim_awesome-canvas.html",
+          "description": ""
+        },
+        {
+          "name": "KnockoutJS",
+          "path": "learn/dnbard_awesome-knockout/dnbard_awesome-knockout.html",
+          "description": "JavaScript library."
+        },
+        {
+          "name": "Dojo Toolkit",
+          "path": "learn/petk_awesome-dojo/petk_awesome-dojo.html",
+          "description": "JavaScript toolkit."
+        },
+        {
+          "name": "Inspiration",
+          "path": "learn/NoahBuscher_Inspire/NoahBuscher_Inspire.html",
+          "description": ""
+        },
+        {
+          "name": "Ember",
+          "path": "learn/ember-community-russia_awesome-ember/ember-community-russia_awesome-ember.html",
+          "description": "App framework."
+        },
+        {
+          "name": "Android UI",
+          "path": "learn/wasabeef_awesome-android-ui/wasabeef_awesome-android-ui.html",
+          "description": ""
+        },
+        {
+          "name": "iOS UI",
+          "path": "learn/cjwirth_awesome-ios-ui/cjwirth_awesome-ios-ui.html",
+          "description": ""
+        },
+        {
+          "name": "Meteor",
+          "path": "learn/Urigo_awesome-meteor/Urigo_awesome-meteor.html",
+          "description": ""
+        },
+        {
+          "name": "BEM",
+          "path": "learn/sturobson_BEM-resources/sturobson_BEM-resources.html",
+          "description": ""
+        },
+        {
+          "name": "Flexbox",
+          "path": "learn/afonsopacifer_awesome-flexbox/afonsopacifer_awesome-flexbox.html",
+          "description": ""
+        },
+        {
+          "name": "Web Typography",
+          "path": "learn/deanhume_typography/deanhume_typography.html",
+          "description": ""
+        },
+        {
+          "name": "Web Accessibility",
+          "path": "learn/brunopulis_awesome-a11y/brunopulis_awesome-a11y.html",
+          "description": ""
+        },
+        {
+          "name": "Material Design",
+          "path": "learn/sachin1092_awesome-material/sachin1092_awesome-material.html",
+          "description": ""
+        },
+        {
+          "name": "D3",
+          "path": "learn/wbkd_awesome-d3/wbkd_awesome-d3.html",
+          "description": "Library for producing dynamic, interactive data visualizations."
+        },
+        {
+          "name": "Emails",
+          "path": "learn/jonathandion_awesome-emails/jonathandion_awesome-emails.html",
+          "description": ""
+        },
+        {
+          "name": "jQuery",
+          "path": "learn/petk_awesome-jquery/petk_awesome-jquery.html",
+          "description": "Easy to use JavaScript library for DOM manipulation.",
+          "subcategories": [
+            {
+              "name": "Tips",
+              "path": "learn/AllThingsSmitty_jquery-tips-everyone-should-know/AllThingsSmitty_jquery-tips-everyone-should-know.html",
+              "description": ""
+            }
+          ]
+        },
+        {
+          "name": "Web Audio",
+          "path": "learn/notthetup_awesome-webaudio/notthetup_awesome-webaudio.html",
+          "description": ""
+        },
+        {
+          "name": "Offline-First",
+          "path": "learn/pazguille_offline-first/pazguille_offline-first.html",
+          "description": ""
+        },
+        {
+          "name": "Static Website Services",
+          "path": "learn/agarrharr_awesome-static-website-services/agarrharr_awesome-static-website-services.html",
+          "description": ""
+        },
+        {
+          "name": "Cycle.js",
+          "path": "learn/cyclejs-community_awesome-cyclejs/cyclejs-community_awesome-cyclejs.html",
+          "description": "Functional and reactive JavaScript framework."
+        },
+        {
+          "name": "Text Editing",
+          "path": "learn/dok_awesome-text-editing/dok_awesome-text-editing.html",
+          "description": ""
+        },
+        {
+          "name": "Motion UI Design",
+          "path": "learn/fliptheweb_motion-ui-design/fliptheweb_motion-ui-design.html",
+          "description": ""
+        },
+        {
+          "name": "Vue.js",
+          "path": "learn/vuejs_awesome-vue/vuejs_awesome-vue.html",
+          "description": "App framework."
+        },
+        {
+          "name": "Marionette.js",
+          "path": "learn/sadcitizen_awesome-marionette/sadcitizen_awesome-marionette.html",
+          "description": "App framework."
+        },
+        {
+          "name": "Aurelia",
+          "path": "learn/aurelia-contrib_awesome-aurelia/aurelia-contrib_awesome-aurelia.html",
+          "description": "App framework."
+        },
+        {
+          "name": "Charting",
+          "path": "learn/zingchart_awesome-charting/zingchart_awesome-charting.html",
+          "description": ""
+        },
+        {
+          "name": "Ionic Framework",
+          "path": "learn/candelibas_awesome-ionic/candelibas_awesome-ionic.html",
+          "description": ""
+        },
+        {
+          "name": "Chrome DevTools",
+          "path": "learn/ChromeDevTools_awesome-chrome-devtools/ChromeDevTools_awesome-chrome-devtools.html",
+          "description": ""
+        },
+        {
+          "name": "PostCSS",
+          "path": "learn/jdrgomes_awesome-postcss/jdrgomes_awesome-postcss.html",
+          "description": "CSS tool."
+        },
+        {
+          "name": "Draft.js",
+          "path": "learn/nikgraf_awesome-draft-js/nikgraf_awesome-draft-js.html",
+          "description": "Rich text editor framework for React."
+        },
+        {
+          "name": "Service Workers",
+          "path": "learn/TalAter_awesome-service-workers/TalAter_awesome-service-workers.html",
+          "description": ""
+        },
+        {
+          "name": "Progressive Web Apps",
+          "path": "learn/TalAter_awesome-progressive-web-apps/TalAter_awesome-progressive-web-apps.html",
+          "description": ""
+        },
+        {
+          "name": "choo",
+          "path": "learn/choojs_awesome-choo/choojs_awesome-choo.html",
+          "description": "App framework."
+        },
+        {
+          "name": "Redux",
+          "path": "learn/brillout_awesome-redux/brillout_awesome-redux.html",
+          "description": "State container for JavaScript apps."
+        },
+        {
+          "name": "Browserify",
+          "path": "learn/browserify_awesome-browserify/browserify_awesome-browserify.html",
+          "description": "Module bundler."
+        },
+        {
+          "name": "Sass",
+          "path": "learn/Famolus_awesome-sass/Famolus_awesome-sass.html",
+          "description": "CSS preprocessor."
+        },
+        {
+          "name": "Ant Design",
+          "path": "learn/websemantics_awesome-ant-design/websemantics_awesome-ant-design.html",
+          "description": "Enterprise-class UI design language."
+        },
+        {
+          "name": "Less",
+          "path": "learn/LucasBassetti_awesome-less/LucasBassetti_awesome-less.html",
+          "description": "CSS preprocessor."
+        },
+        {
+          "name": "WebGL",
+          "path": "learn/sjfricke_awesome-webgl/sjfricke_awesome-webgl.html",
+          "description": "JavaScript API for rendering 3D graphics."
+        },
+        {
+          "name": "Preact",
+          "path": "learn/preactjs_awesome-preact/preactjs_awesome-preact.html",
+          "description": "App framework."
+        },
+        {
+          "name": "Progressive Enhancement",
+          "path": "learn/jbmoelker_progressive-enhancement-resources/jbmoelker_progressive-enhancement-resources.html",
+          "description": ""
+        },
+        {
+          "name": "Next.js",
+          "path": "learn/unicodeveloper_awesome-nextjs/unicodeveloper_awesome-nextjs.html",
+          "description": "Framework for server-rendered React apps."
+        },
+        {
+          "name": "lit",
+          "path": "learn/web-padawan_awesome-lit/web-padawan_awesome-lit.html",
+          "description": "Library for building web components with a declarative template system."
+        },
+        {
+          "name": "JAMstack",
+          "path": "learn/automata_awesome-jamstack/automata_awesome-jamstack.html",
+          "description": "Modern web development architecture based on client-side JavaScript, reusable APIs, and prebuilt markup."
+        },
+        {
+          "name": "WordPress-Gatsby",
+          "path": "learn/henrikwirth_awesome-wordpress-gatsby/henrikwirth_awesome-wordpress-gatsby.html",
+          "description": "Web development technology stack with WordPress as a back end and Gatsby as a front end."
+        },
+        {
+          "name": "Mobile Web Development",
+          "path": "learn/myshov_awesome-mobile-web-development/myshov_awesome-mobile-web-development.html",
+          "description": "Creating a great mobile web experience."
+        },
+        {
+          "name": "Storybook",
+          "path": "learn/lauthieb_awesome-storybook/lauthieb_awesome-storybook.html",
+          "description": "Development environment for UI components."
+        },
+        {
+          "name": "Blazor",
+          "path": "learn/AdrienTorris_awesome-blazor/AdrienTorris_awesome-blazor.html",
+          "description": ".NET web framework using C#/Razor and HTML that runs in the browser with WebAssembly."
+        },
+        {
+          "name": "PageSpeed Metrics",
+          "path": "learn/csabapalfi_awesome-pagespeed-metrics/csabapalfi_awesome-pagespeed-metrics.html",
+          "description": "Metrics to help understand page speed and user experience."
+        },
+        {
+          "name": "Tailwind CSS",
+          "path": "learn/aniftyco_awesome-tailwindcss/aniftyco_awesome-tailwindcss.html",
+          "description": "Utility-first CSS framework for rapid UI development."
+        },
+        {
+          "name": "Seed",
+          "path": "learn/seed-rs_awesome-seed-rs/seed-rs_awesome-seed-rs.html",
+          "description": "Rust framework for creating web apps running in WebAssembly."
+        },
+        {
+          "name": "Web Performance Budget",
+          "path": "learn/pajaydev_awesome-web-performance-budget/pajaydev_awesome-web-performance-budget.html",
+          "description": "Techniques to ensure certain performance metrics for a website."
+        },
+        {
+          "name": "Web Animation",
+          "path": "learn/sergey-pimenov_awesome-web-animation/sergey-pimenov_awesome-web-animation.html",
+          "description": "Animations in the browser with JavaScript, CSS, SVG, etc."
+        },
+        {
+          "name": "Yew",
+          "path": "learn/jetli_awesome-yew/jetli_awesome-yew.html",
+          "description": "Rust framework inspired by Elm and React for creating multi-threaded frontend web apps with WebAssembly."
+        },
+        {
+          "name": "Material-UI",
+          "path": "learn/nadunindunil_awesome-material-ui/nadunindunil_awesome-material-ui.html",
+          "description": "Material Design React components for faster and easier web development."
+        },
+        {
+          "name": "Building Blocks for Web Apps",
+          "path": "learn/componently-com_awesome-building-blocks-for-web-apps/componently-com_awesome-building-blocks-for-web-apps.html",
+          "description": "Standalone features to be integrated into web apps."
+        },
+        {
+          "name": "Svelte",
+          "path": "learn/TheComputerM_awesome-svelte/TheComputerM_awesome-svelte.html",
+          "description": "App framework."
+        },
+        {
+          "name": "Design systems",
+          "path": "learn/klaufel_awesome-design-systems/klaufel_awesome-design-systems.html",
+          "description": "Collection of reusable components, guided by rules that ensure consistency and speed."
+        },
+        {
+          "name": "Inertia.js",
+          "path": "learn/innocenzi_awesome-inertiajs/innocenzi_awesome-inertiajs.html",
+          "description": "Make single-page apps without building an API."
+        },
+        {
+          "name": "MDBootstrap",
+          "path": "learn/mdbootstrap_awesome-mdbootstrap/mdbootstrap_awesome-mdbootstrap.html",
+          "description": "Templates, layouts, components, and widgets to rapidly build websites."
+        },
+        {
+          "name": "Master CSS",
+          "path": "learn/master-co_awesome-master-css/master-co_awesome-master-css.html",
+          "description": "A virtual CSS language with enhanced syntax."
+        },
+        {
+          "name": "Hydrogen",
+          "path": "learn/shopify_awesome-hydrogen/shopify_awesome-hydrogen.html",
+          "description": "Edge-first framework for building Shopify storefronts with React."
+        },
+        {
+          "name": "Tiny JS",
+          "path": "learn/thoughtspile_awesome-tiny-js/thoughtspile_awesome-tiny-js.html",
+          "description": "Frontend libraries that fit into 2 kB with dependencies."
+        },
+        {
+          "name": "Frontend GIS",
+          "path": "learn/joewdavies_awesome-frontend-gis/joewdavies_awesome-frontend-gis.html",
+          "description": "Geographic Information Systems (GIS) for web browsers."
+        },
+        {
+          "name": "WebGPU",
+          "path": "learn/mikbry_awesome-webgpu/mikbry_awesome-webgpu.html",
+          "description": "JavaScript API for rendering and compute on GPUs."
+        },
+        {
+          "name": "WebAssembly",
+          "path": "learn/idematos_awesome-webassembly/idematos_awesome-webassembly.html",
+          "description": "A portable binary format for running code efficiently across platforms."
+        }
+      ]
+    },
+    {
+      "name": "Back-End Development",
+      "items": [
+        {
+          "name": "Flask",
+          "path": "learn/mjhea0_awesome-flask/mjhea0_awesome-flask.html",
+          "description": "Python framework."
+        },
+        {
+          "name": "Docker",
+          "path": "learn/veggiemonk_awesome-docker/veggiemonk_awesome-docker.html",
+          "description": ""
+        },
+        {
+          "name": "Vagrant",
+          "path": "learn/iJackUA_awesome-vagrant/iJackUA_awesome-vagrant.html",
+          "description": "Automation virtual machine environment."
+        },
+        {
+          "name": "Pyramid",
+          "path": "learn/uralbash_awesome-pyramid/uralbash_awesome-pyramid.html",
+          "description": "Python framework."
+        },
+        {
+          "name": "Play1 Framework",
+          "path": "learn/PerfectCarl_awesome-play1/PerfectCarl_awesome-play1.html",
+          "description": ""
+        },
+        {
+          "name": "CakePHP",
+          "path": "learn/friendsofcake_awesome-cakephp/friendsofcake_awesome-cakephp.html",
+          "description": "PHP framework."
+        },
+        {
+          "name": "Symfony",
+          "path": "learn/sitepoint-editors_awesome-symfony/sitepoint-editors_awesome-symfony.html",
+          "description": "PHP framework.",
+          "subcategories": [
+            {
+              "name": "Education",
+              "path": "learn/pehapkari_awesome-symfony-education/pehapkari_awesome-symfony-education.html",
+              "description": ""
+            }
+          ]
+        },
+        {
+          "name": "Laravel",
+          "path": "learn/chiraggude_awesome-laravel/chiraggude_awesome-laravel.html",
+          "description": "PHP framework.",
+          "subcategories": [
+            {
+              "name": "Education",
+              "path": "learn/fukuball_Awesome-Laravel-Education/fukuball_Awesome-Laravel-Education.html",
+              "description": ""
+            },
+            {
+              "name": "TALL Stack",
+              "path": "learn/livewire_awesome-tall-stack/livewire_awesome-tall-stack.html",
+              "description": "Full-stack development solution featuring libraries built by the Laravel community."
+            }
+          ]
+        },
+        {
+          "name": "Rails",
+          "path": "learn/gramantin_awesome-rails/gramantin_awesome-rails.html",
+          "description": "Web app framework for Ruby.",
+          "subcategories": [
+            {
+              "name": "Gems",
+              "path": "learn/hothero_awesome-rails-gem/hothero_awesome-rails-gem.html",
+              "description": "Packages."
+            }
+          ]
+        },
+        {
+          "name": "Phalcon",
+          "path": "learn/phalcon_awesome-phalcon/phalcon_awesome-phalcon.html",
+          "description": "PHP framework."
+        },
+        {
+          "name": "Useful `.htaccess` Snippets",
+          "path": "learn/phanan_htaccess/phanan_htaccess.html",
+          "description": ""
+        },
+        {
+          "name": "nginx",
+          "path": "learn/fcambus_nginx-resources/fcambus_nginx-resources.html",
+          "description": "Web server."
+        },
+        {
+          "name": "Dropwizard",
+          "path": "learn/stve_awesome-dropwizard/stve_awesome-dropwizard.html",
+          "description": "Java framework."
+        },
+        {
+          "name": "Kubernetes",
+          "path": "https://github.com/ramitsurana/awesome-kubernetes#readme",
+          "description": "Open-source platform that automates Linux container operations."
+        },
+        {
+          "name": "Lumen",
+          "path": "learn/unicodeveloper_awesome-lumen/unicodeveloper_awesome-lumen.html",
+          "description": "PHP micro-framework."
+        },
+        {
+          "name": "Serverless Framework",
+          "path": "learn/pmuens_awesome-serverless/pmuens_awesome-serverless.html",
+          "description": "Serverless computing and serverless architectures."
+        },
+        {
+          "name": "Apache Wicket",
+          "path": "learn/PhantomYdn_awesome-wicket/PhantomYdn_awesome-wicket.html",
+          "description": "Java web app framework."
+        },
+        {
+          "name": "Vert.x",
+          "path": "learn/vert-x3_vertx-awesome/vert-x3_vertx-awesome.html",
+          "description": "Toolkit for building reactive apps on the JVM."
+        },
+        {
+          "name": "Terraform",
+          "path": "learn/shuaibiyy_awesome-terraform/shuaibiyy_awesome-terraform.html",
+          "description": "Tool for building, changing, and versioning infrastructure."
+        },
+        {
+          "name": "Vapor",
+          "path": "learn/vapor-community_awesome-vapor/vapor-community_awesome-vapor.html",
+          "description": "Server-side development in Swift."
+        },
+        {
+          "name": "Dash",
+          "path": "learn/ucg8j_awesome-dash/ucg8j_awesome-dash.html",
+          "description": "Python web app framework."
+        },
+        {
+          "name": "FastAPI",
+          "path": "learn/mjhea0_awesome-fastapi/mjhea0_awesome-fastapi.html",
+          "description": "Python web app framework."
+        },
+        {
+          "name": "CDK",
+          "path": "learn/kolomied_awesome-cdk/kolomied_awesome-cdk.html",
+          "description": "Open-source software development framework for defining cloud infrastructure in code."
+        },
+        {
+          "name": "IAM",
+          "path": "learn/kdeldycke_awesome-iam/kdeldycke_awesome-iam.html",
+          "description": "User accounts, authentication and authorization."
+        },
+        {
+          "name": "Slim",
+          "path": "learn/nekofar_awesome-slim/nekofar_awesome-slim.html",
+          "description": "PHP framework."
+        },
+        {
+          "name": "Fiber",
+          "path": "learn/gofiber_awesome-fiber/gofiber_awesome-fiber.html",
+          "description": "Web framework built on top of Fasthttp, the fastest HTTP engine for Go."
+        },
+        {
+          "name": "Kustomize",
+          "path": "learn/DevOpsHiveHQ_awesome-kustomize/DevOpsHiveHQ_awesome-kustomize.html",
+          "description": "Kubernetes native declarative configuration management tool."
+        },
+        {
+          "name": "OpenTofu",
+          "path": "learn/virtualroot_awesome-opentofu/virtualroot_awesome-opentofu.html",
+          "description": "Open-source infrastructure as code tool."
+        },
+        {
+          "name": "Reflex",
+          "path": "learn/reflex-dev_awesome-reflex/reflex-dev_awesome-reflex.html",
+          "description": "Python web framework for building both your frontend and backend with no JavaScript."
+        }
+      ]
+    },
+    {
+      "name": "Computer Science",
+      "items": [
+        {
+          "name": "University Courses",
+          "path": "learn/prakhar1989_awesome-courses/prakhar1989_awesome-courses.html",
+          "description": ""
+        },
+        {
+          "name": "Data Science",
+          "path": "learn/academic_awesome-datascience/academic_awesome-datascience.html",
+          "description": "",
+          "subcategories": [
+            {
+              "name": "Tutorials",
+              "path": "learn/siboehm_awesome-learn-datascience/siboehm_awesome-learn-datascience.html",
+              "description": ""
+            }
+          ]
+        },
+        {
+          "name": "Machine Learning",
+          "path": "learn/josephmisiti_awesome-machine-learning/josephmisiti_awesome-machine-learning.html",
+          "description": "",
+          "subcategories": [
+            {
+              "name": "Tutorials",
+              "path": "learn/ujjwalkarn_Machine-Learning-Tutorials/ujjwalkarn_Machine-Learning-Tutorials.html",
+              "description": ""
+            },
+            {
+              "name": "ML with Ruby",
+              "path": "learn/arbox_machine-learning-with-ruby/arbox_machine-learning-with-ruby.html",
+              "description": "Learning, implementing, and applying Machine Learning using Ruby."
+            },
+            {
+              "name": "Core ML Models",
+              "path": "learn/likedan_Awesome-CoreML-Models/likedan_Awesome-CoreML-Models.html",
+              "description": "Models for Apple's machine learning framework."
+            },
+            {
+              "name": "H2O",
+              "path": "learn/h2oai_awesome-h2o/h2oai_awesome-h2o.html",
+              "description": "Open source distributed machine learning platform written in Java with APIs in R, Python, and Scala."
+            },
+            {
+              "name": "Software Engineering for Machine Learning",
+              "path": "learn/SE-ML_awesome-seml/SE-ML_awesome-seml.html",
+              "description": "From experiment to production-level machine learning."
+            },
+            {
+              "name": "AI in Finance",
+              "path": "learn/georgezouq_awesome-ai-in-finance/georgezouq_awesome-ai-in-finance.html",
+              "description": "Solving problems in finance with machine learning."
+            },
+            {
+              "name": "JAX",
+              "path": "learn/n2cholas_awesome-jax/n2cholas_awesome-jax.html",
+              "description": "Automatic differentiation and XLA compilation brought together for high-performance machine learning research."
+            },
+            {
+              "name": "XAI",
+              "path": "learn/altamiracorp_awesome-xai/altamiracorp_awesome-xai.html",
+              "description": "Providing insight, explanations, and interpretability to machine learning methods."
+            }
+          ]
+        },
+        {
+          "name": "Speech and Natural Language Processing",
+          "path": "https://github.com/edobashira/speech-language-processing#readme",
+          "description": "",
+          "subcategories": [
+            {
+              "name": "Spanish",
+              "path": "learn/dav009_awesome-spanish-nlp/dav009_awesome-spanish-nlp.html",
+              "description": ""
+            },
+            {
+              "name": "NLP with Ruby",
+              "path": "learn/arbox_nlp-with-ruby/arbox_nlp-with-ruby.html",
+              "description": ""
+            },
+            {
+              "name": "Question Answering",
+              "path": "learn/seriousran_awesome-qa/seriousran_awesome-qa.html",
+              "description": "The science of asking and answering in natural language with a machine."
+            },
+            {
+              "name": "Natural Language Generation",
+              "path": "learn/accelerated-text_awesome-nlg/accelerated-text_awesome-nlg.html",
+              "description": "Generation of text used in data-to-text, conversational agents, and narrative generation applications."
+            }
+          ]
+        },
+        {
+          "name": "Linguistics",
+          "path": "learn/theimpossibleastronaut_awesome-linguistics/theimpossibleastronaut_awesome-linguistics.html",
+          "description": ""
+        },
+        {
+          "name": "Cryptography",
+          "path": "learn/sobolevn_awesome-cryptography/sobolevn_awesome-cryptography.html",
+          "description": "",
+          "subcategories": [
+            {
+              "name": "Papers",
+              "path": "learn/pFarb_awesome-crypto-papers/pFarb_awesome-crypto-papers.html",
+              "description": "Theory basics for using cryptography by non-cryptographers."
+            }
+          ]
+        },
+        {
+          "name": "Computer Vision",
+          "path": "learn/jbhuang0604_awesome-computer-vision/jbhuang0604_awesome-computer-vision.html",
+          "description": ""
+        },
+        {
+          "name": "Deep Learning",
+          "path": "learn/ChristosChristofidis_awesome-deep-learning/ChristosChristofidis_awesome-deep-learning.html",
+          "description": "Neural networks.",
+          "subcategories": [
+            {
+              "name": "TensorFlow",
+              "path": "learn/jtoy_awesome-tensorflow/jtoy_awesome-tensorflow.html",
+              "description": "Library for machine intelligence."
+            },
+            {
+              "name": "TensorFlow.js",
+              "path": "learn/aaronhma_awesome-tensorflow-js/aaronhma_awesome-tensorflow-js.html",
+              "description": "WebGL-accelerated machine learning JavaScript library for training and deploying models."
+            },
+            {
+              "name": "TensorFlow Lite",
+              "path": "learn/margaretmz_awesome-tensorflow-lite/margaretmz_awesome-tensorflow-lite.html",
+              "description": "Framework that optimizes TensorFlow models for on-device machine learning."
+            },
+            {
+              "name": "Papers",
+              "path": "learn/terryum_awesome-deep-learning-papers/terryum_awesome-deep-learning-papers.html",
+              "description": "The most cited deep learning papers."
+            },
+            {
+              "name": "Education",
+              "path": "learn/guillaume-chevalier_awesome-deep-learning-resources/guillaume-chevalier_awesome-deep-learning-resources.html",
+              "description": ""
+            }
+          ]
+        },
+        {
+          "name": "Deep Vision",
+          "path": "learn/kjw0612_awesome-deep-vision/kjw0612_awesome-deep-vision.html",
+          "description": ""
+        },
+        {
+          "name": "Open Source Society University",
+          "path": "learn/ossu_computer-science/ossu_computer-science.html",
+          "description": ""
+        },
+        {
+          "name": "Functional Programming",
+          "path": "learn/lucasviola_awesome-functional-programming/lucasviola_awesome-functional-programming.html",
+          "description": ""
+        },
+        {
+          "name": "Empirical Software Engineering",
+          "path": "learn/dspinellis_awesome-msr/dspinellis_awesome-msr.html",
+          "description": "Evidence-based research on software systems."
+        },
+        {
+          "name": "Static Analysis & Code Quality",
+          "path": "learn/analysis-tools-dev_static-analysis/analysis-tools-dev_static-analysis.html",
+          "description": ""
+        },
+        {
+          "name": "Information Retrieval",
+          "path": "learn/harpribot_awesome-information-retrieval/harpribot_awesome-information-retrieval.html",
+          "description": "Learn to develop your own search engine."
+        },
+        {
+          "name": "Quantum Computing",
+          "path": "learn/desireevl_awesome-quantum-computing/desireevl_awesome-quantum-computing.html",
+          "description": "Computing that utilizes quantum mechanics and qubits on quantum computers."
+        },
+        {
+          "name": "Theoretical Computer Science",
+          "path": "learn/mostafatouny_awesome-theoretical-computer-science/mostafatouny_awesome-theoretical-computer-science.html",
+          "description": "The interplay of computer science and pure mathematics, distinguished by its emphasis on mathematical rigour and technique."
+        },
+        {
+          "name": "Conversational AI",
+          "path": "learn/jyguyomarch_awesome-conversational-ai/jyguyomarch_awesome-conversational-ai.html",
+          "description": "Build awesome chatbots and digital assistants."
+        },
+        {
+          "name": "Generative AI",
+          "path": "learn/steven2358_awesome-generative-ai/steven2358_awesome-generative-ai.html",
+          "description": "Automatically generates a wide range of unique content in text, image, and audio format."
+        },
+        {
+          "name": "Position-Based Quantum Cryptography",
+          "path": "learn/Renaller_awesome-position-based-quantum-cryptography/Renaller_awesome-position-based-quantum-cryptography.html",
+          "description": "Theory on quantum cryptography that utilizes special relativistic constraints to achieve quantum-security under certain conditions."
+        }
+      ]
+    },
+    {
+      "name": "Big Data",
+      "items": [
+        {
+          "name": "Big Data",
+          "path": "https://github.com/0xnr/awesome-bigdata#readme",
+          "description": ""
+        },
+        {
+          "name": "Public Datasets",
+          "path": "https://github.com/awesomedata/awesome-public-datasets#readme",
+          "description": ""
+        },
+        {
+          "name": "Hadoop",
+          "path": "learn/youngwookim_awesome-hadoop/youngwookim_awesome-hadoop.html",
+          "description": "Framework for distributed storage and processing of very large data sets."
+        },
+        {
+          "name": "Data Engineering",
+          "path": "learn/igorbarinov_awesome-data-engineering/igorbarinov_awesome-data-engineering.html",
+          "description": ""
+        },
+        {
+          "name": "Streaming",
+          "path": "learn/manuzhang_awesome-streaming/manuzhang_awesome-streaming.html",
+          "description": ""
+        },
+        {
+          "name": "Apache Spark",
+          "path": "learn/awesome-spark_awesome-spark/awesome-spark_awesome-spark.html",
+          "description": "Unified engine for large-scale data processing."
+        },
+        {
+          "name": "Qlik",
+          "path": "learn/ambster-public_awesome-qlik/ambster-public_awesome-qlik.html",
+          "description": "Business intelligence platform for data visualization, analytics, and reporting apps."
+        },
+        {
+          "name": "Splunk",
+          "path": "learn/sduff_awesome-splunk/sduff_awesome-splunk.html",
+          "description": "Platform for searching, monitoring, and analyzing structured and unstructured machine-generated big data in real time."
+        },
+        {
+          "name": "Network Analysis",
+          "path": "learn/briatte_awesome-network-analysis/briatte_awesome-network-analysis.html",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Theory",
+      "items": [
+        {
+          "name": "Papers We Love",
+          "path": "learn/papers-we-love_papers-we-love/papers-we-love_papers-we-love.html",
+          "description": ""
+        },
+        {
+          "name": "Talks",
+          "path": "learn/JanVanRyswyck_awesome-talks/JanVanRyswyck_awesome-talks.html",
+          "description": ""
+        },
+        {
+          "name": "Algorithms",
+          "path": "learn/tayllan_awesome-algorithms/tayllan_awesome-algorithms.html",
+          "description": "",
+          "subcategories": [
+            {
+              "name": "Education",
+              "path": "learn/gaerae_awesome-algorithms-education/gaerae_awesome-algorithms-education.html",
+              "description": "Learning and practicing."
+            }
+          ]
+        },
+        {
+          "name": "Algorithm Visualizations",
+          "path": "learn/enjalot_algovis/enjalot_algovis.html",
+          "description": ""
+        },
+        {
+          "name": "Artificial Intelligence",
+          "path": "learn/owainlewis_awesome-artificial-intelligence/owainlewis_awesome-artificial-intelligence.html",
+          "description": ""
+        },
+        {
+          "name": "Search Engine Optimization",
+          "path": "learn/marcobiedermann_search-engine-optimization/marcobiedermann_search-engine-optimization.html",
+          "description": ""
+        },
+        {
+          "name": "Competitive Programming",
+          "path": "learn/lnishan_awesome-competitive-programming/lnishan_awesome-competitive-programming.html",
+          "description": ""
+        },
+        {
+          "name": "Math",
+          "path": "learn/rossant_awesome-math/rossant_awesome-math.html",
+          "description": ""
+        },
+        {
+          "name": "Recursion Schemes",
+          "path": "learn/passy_awesome-recursion-schemes/passy_awesome-recursion-schemes.html",
+          "description": "Traversing nested data structures."
+        },
+        {
+          "name": "Audit Algorithms",
+          "path": "learn/erwanlemerrer_awesome-audit-algorithms/erwanlemerrer_awesome-audit-algorithms.html",
+          "description": "Algorithmic audits of algorithms."
+        },
+        {
+          "name": "AGI & CoCoSci",
+          "path": "learn/YuzheSHI_awesome-agi-cocosci/YuzheSHI_awesome-agi-cocosci.html",
+          "description": "The reciprocation of Artificial General Intelligence (AGI) and Computational Cognitive Sciences (CoCoSci)."
+        },
+        {
+          "name": "Complex Systems",
+          "path": "learn/sellisd_awesome-complexity/sellisd_awesome-complexity.html",
+          "description": "The scientific field studying systems with multiple interacting parts and emergent properties."
+        },
+        {
+          "name": "VLM Architectures",
+          "path": "learn/gokayfem_awesome-vlm-architectures/gokayfem_awesome-vlm-architectures.html",
+          "description": "Vision Language Model architectures."
+        }
+      ]
+    },
+    {
+      "name": "Books",
+      "items": [
+        {
+          "name": "Free Programming Books",
+          "path": "learn/EbookFoundation_free-programming-books/EbookFoundation_free-programming-books.html",
+          "description": ""
+        },
+        {
+          "name": "Go Books",
+          "path": "learn/dariubs_GoBooks/dariubs_GoBooks.html",
+          "description": ""
+        },
+        {
+          "name": "R Books",
+          "path": "learn/RomanTsegelskyi_rbooks/RomanTsegelskyi_rbooks.html",
+          "description": ""
+        },
+        {
+          "name": "Mind Expanding Books",
+          "path": "learn/hackerkid_Mind-Expanding-Books/hackerkid_Mind-Expanding-Books.html",
+          "description": ""
+        },
+        {
+          "name": "Book Authoring",
+          "path": "learn/TalAter_awesome-book-authoring/TalAter_awesome-book-authoring.html",
+          "description": ""
+        },
+        {
+          "name": "Elixir Books",
+          "path": "learn/sger_ElixirBooks/sger_ElixirBooks.html",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Editors",
+      "items": [
+        {
+          "name": "Sublime Text",
+          "path": "learn/dreikanter_sublime-bookmarks/dreikanter_sublime-bookmarks.html",
+          "description": ""
+        },
+        {
+          "name": "Vim",
+          "path": "learn/mhinz_vim-galore/mhinz_vim-galore.html",
+          "description": ""
+        },
+        {
+          "name": "Neovim",
+          "path": "learn/rockerBOO_awesome-neovim/rockerBOO_awesome-neovim.html",
+          "description": "Vim-fork focused on extensibility and usability."
+        },
+        {
+          "name": "Emacs",
+          "path": "https://github.com/emacs-tw/awesome-emacs#readme",
+          "description": ""
+        },
+        {
+          "name": "Atom",
+          "path": "learn/mehcode_awesome-atom/mehcode_awesome-atom.html",
+          "description": "Open-source and hackable text editor."
+        },
+        {
+          "name": "Visual Studio Code",
+          "path": "learn/viatsko_awesome-vscode/viatsko_awesome-vscode.html",
+          "description": "Cross-platform open-source text editor."
+        }
+      ]
+    },
+    {
+      "name": "Gaming",
+      "items": [
+        {
+          "name": "Game Development",
+          "path": "learn/ellisonleao_magictools/ellisonleao_magictools.html",
+          "description": ""
+        },
+        {
+          "name": "Game Talks",
+          "path": "learn/hzoo_awesome-gametalks/hzoo_awesome-gametalks.html",
+          "description": ""
+        },
+        {
+          "name": "Godot",
+          "path": "learn/godotengine_awesome-godot/godotengine_awesome-godot.html",
+          "description": "Game engine."
+        },
+        {
+          "name": "Open Source Games",
+          "path": "learn/michelpereira_awesome-open-source-games/michelpereira_awesome-open-source-games.html",
+          "description": ""
+        },
+        {
+          "name": "Unity",
+          "path": "learn/RyanNielson_awesome-unity/RyanNielson_awesome-unity.html",
+          "description": "Game engine."
+        },
+        {
+          "name": "Chess",
+          "path": "learn/hkirat_awesome-chess/hkirat_awesome-chess.html",
+          "description": ""
+        },
+        {
+          "name": "LÖVE",
+          "path": "learn/love2d-community_awesome-love2d/love2d-community_awesome-love2d.html",
+          "description": "Game engine."
+        },
+        {
+          "name": "PICO-8",
+          "path": "learn/pico-8_awesome-PICO-8/pico-8_awesome-PICO-8.html",
+          "description": "Fantasy console."
+        },
+        {
+          "name": "Game Boy Development",
+          "path": "learn/gbdev_awesome-gbdev/gbdev_awesome-gbdev.html",
+          "description": ""
+        },
+        {
+          "name": "Construct 2",
+          "path": "learn/ConstructCommunity_awesome-construct/ConstructCommunity_awesome-construct.html",
+          "description": "Game engine."
+        },
+        {
+          "name": "Gideros",
+          "path": "learn/stetso_awesome-gideros/stetso_awesome-gideros.html",
+          "description": "Game engine."
+        },
+        {
+          "name": "Minecraft",
+          "path": "learn/bs-community_awesome-minecraft/bs-community_awesome-minecraft.html",
+          "description": "Sandbox video game."
+        },
+        {
+          "name": "ComputerCraft",
+          "path": "learn/tomodachi94_awesome-computercraft/tomodachi94_awesome-computercraft.html",
+          "description": "Minecraft mod that adds programmable computers."
+        },
+        {
+          "name": "Game Datasets",
+          "path": "learn/leomaurodesenv_game-datasets/leomaurodesenv_game-datasets.html",
+          "description": "Materials and datasets for Artificial Intelligence in games."
+        },
+        {
+          "name": "Haxe Game Development",
+          "path": "learn/Dvergar_awesome-haxe-gamedev/Dvergar_awesome-haxe-gamedev.html",
+          "description": "A high-level strongly typed programming language used to produce cross-platform native code."
+        },
+        {
+          "name": "libGDX",
+          "path": "learn/rafaskb_awesome-libgdx/rafaskb_awesome-libgdx.html",
+          "description": "Java game framework."
+        },
+        {
+          "name": "PlayCanvas",
+          "path": "learn/playcanvas_awesome-playcanvas/playcanvas_awesome-playcanvas.html",
+          "description": "Game engine."
+        },
+        {
+          "name": "Game Remakes",
+          "path": "learn/radek-sprta_awesome-game-remakes/radek-sprta_awesome-game-remakes.html",
+          "description": "Actively maintained open-source game remakes."
+        },
+        {
+          "name": "Flame",
+          "path": "learn/flame-engine_awesome-flame/flame-engine_awesome-flame.html",
+          "description": "Game engine for Flutter."
+        },
+        {
+          "name": "Discord Communities",
+          "path": "learn/mhxion_awesome-discord-communities/mhxion_awesome-discord-communities.html",
+          "description": "Chat with friends and communities."
+        },
+        {
+          "name": "CHIP-8",
+          "path": "learn/tobiasvl_awesome-chip-8/tobiasvl_awesome-chip-8.html",
+          "description": "Virtual computer game machine from the 70s."
+        },
+        {
+          "name": "Games of Coding",
+          "path": "learn/michelpereira_awesome-games-of-coding/michelpereira_awesome-games-of-coding.html",
+          "description": "Learn a programming language by making games."
+        },
+        {
+          "name": "Esports",
+          "path": "learn/strift_awesome-esports/strift_awesome-esports.html",
+          "description": "Video games played as a sport."
+        },
+        {
+          "name": "Learn Gamedev",
+          "path": "learn/notpresident35_awesome-learn-gamedev/notpresident35_awesome-learn-gamedev.html",
+          "description": "The craft of video game creation."
+        },
+        {
+          "name": "Game Engine Development",
+          "path": "learn/stevinz_awesome-game-engine-dev/stevinz_awesome-game-engine-dev.html",
+          "description": "Building software to speed up game creation."
+        },
+        {
+          "name": "GameMaker",
+          "path": "learn/bytecauldron_awesome-gamemaker/bytecauldron_awesome-gamemaker.html",
+          "description": "Game engine."
+        },
+        {
+          "name": "Game Production",
+          "path": "learn/vhladiienko_awesome-game-production/vhladiienko_awesome-game-production.html",
+          "description": "Leading the process of designing, developing, testing and distributing a video game from concept to release."
+        },
+        {
+          "name": "Babylon.js",
+          "path": "learn/Symbitic_awesome-babylonjs/Symbitic_awesome-babylonjs.html",
+          "description": "Game engine for cross-platform web and native game development."
+        },
+        {
+          "name": "Roblox",
+          "path": "learn/awesome-roblox_awesome-roblox/awesome-roblox_awesome-roblox.html",
+          "description": "Immersive platform for hosting millions of diverse experiences."
+        }
+      ]
+    },
+    {
+      "name": "Development Environment",
+      "items": [
+        {
+          "name": "Quick Look Plugins",
+          "path": "learn/sindresorhus_quick-look-plugins/sindresorhus_quick-look-plugins.html",
+          "description": "For macOS."
+        },
+        {
+          "name": "Dev Env",
+          "path": "learn/jondot_awesome-devenv/jondot_awesome-devenv.html",
+          "description": ""
+        },
+        {
+          "name": "Dotfiles",
+          "path": "learn/webpro_awesome-dotfiles/webpro_awesome-dotfiles.html",
+          "description": ""
+        },
+        {
+          "name": "Shell",
+          "path": "learn/alebcay_awesome-shell/alebcay_awesome-shell.html",
+          "description": ""
+        },
+        {
+          "name": "Fish",
+          "path": "learn/jorgebucaran_awsm.fish/jorgebucaran_awsm.fish.html",
+          "description": "User-friendly shell."
+        },
+        {
+          "name": "Command-Line Apps",
+          "path": "learn/agarrharr_awesome-cli-apps/agarrharr_awesome-cli-apps.html",
+          "description": ""
+        },
+        {
+          "name": "ZSH Plugins",
+          "path": "learn/unixorn_awesome-zsh-plugins/unixorn_awesome-zsh-plugins.html",
+          "description": ""
+        },
+        {
+          "name": "GitHub",
+          "path": "learn/phillipadsmith_awesome-github/phillipadsmith_awesome-github.html",
+          "description": "Hosting service for Git repositories.",
+          "subcategories": [
+            {
+              "name": "Browser Extensions",
+              "path": "learn/stefanbuck_awesome-browser-extensions-for-github/stefanbuck_awesome-browser-extensions-for-github.html",
+              "description": ""
+            },
+            {
+              "name": "Cheat Sheet",
+              "path": "learn/tiimgreen_github-cheat-sheet/tiimgreen_github-cheat-sheet.html",
+              "description": ""
+            },
+            {
+              "name": "Pinned Gists",
+              "path": "learn/matchai_awesome-pinned-gists/matchai_awesome-pinned-gists.html",
+              "description": "Dynamic pinned gists for your GitHub profile."
+            }
+          ]
+        },
+        {
+          "name": "Git Cheat Sheet & Git Flow",
+          "path": "learn/arslanbilal_git-cheat-sheet/arslanbilal_git-cheat-sheet.html",
+          "description": ""
+        },
+        {
+          "name": "Git Tips",
+          "path": "learn/git-tips_tips/git-tips_tips.html",
+          "description": ""
+        },
+        {
+          "name": "Git Add-ons",
+          "path": "learn/stevemao_awesome-git-addons/stevemao_awesome-git-addons.html",
+          "description": "Enhance the `git` CLI."
+        },
+        {
+          "name": "Git Hooks",
+          "path": "learn/compscilauren_awesome-git-hooks/compscilauren_awesome-git-hooks.html",
+          "description": "Scripts for automating tasks during `git` workflows."
+        },
+        {
+          "name": "SSH",
+          "path": "learn/moul_awesome-ssh/moul_awesome-ssh.html",
+          "description": ""
+        },
+        {
+          "name": "FOSS for Developers",
+          "path": "learn/tvvocold_FOSS-for-Dev/tvvocold_FOSS-for-Dev.html",
+          "description": ""
+        },
+        {
+          "name": "Hyper",
+          "path": "learn/bnb_awesome-hyper/bnb_awesome-hyper.html",
+          "description": "Cross-platform terminal app built on web technologies."
+        },
+        {
+          "name": "PowerShell",
+          "path": "learn/janikvonrotz_awesome-powershell/janikvonrotz_awesome-powershell.html",
+          "description": "Cross-platform object-oriented shell."
+        },
+        {
+          "name": "Alfred Workflows",
+          "path": "learn/alfred-workflows_awesome-alfred-workflows/alfred-workflows_awesome-alfred-workflows.html",
+          "description": "Productivity app for macOS."
+        },
+        {
+          "name": "Terminals Are Sexy",
+          "path": "learn/k4m4_terminals-are-sexy/k4m4_terminals-are-sexy.html",
+          "description": ""
+        },
+        {
+          "name": "GitHub Actions",
+          "path": "learn/sdras_awesome-actions/sdras_awesome-actions.html",
+          "description": "Create tasks to automate your workflow and share them with others on GitHub."
+        },
+        {
+          "name": "WezTerm",
+          "path": "learn/michaelbrusegard_awesome-wezterm/michaelbrusegard_awesome-wezterm.html",
+          "description": "Powerful cross-platform terminal emulator."
+        }
+      ]
+    },
+    {
+      "name": "Entertainment",
+      "items": [
+        {
+          "name": "Science Fiction",
+          "path": "learn/sindresorhus_awesome-scifi/sindresorhus_awesome-scifi.html",
+          "description": "Scifi."
+        },
+        {
+          "name": "Fantasy",
+          "path": "learn/RichardLitt_awesome-fantasy/RichardLitt_awesome-fantasy.html",
+          "description": ""
+        },
+        {
+          "name": "Podcasts",
+          "path": "learn/ayr-ton_awesome-geek-podcasts/ayr-ton_awesome-geek-podcasts.html",
+          "description": ""
+        },
+        {
+          "name": "Email Newsletters",
+          "path": "learn/zudochkin_awesome-newsletters/zudochkin_awesome-newsletters.html",
+          "description": ""
+        },
+        {
+          "name": "IT Quotes",
+          "path": "learn/victorlaerte_awesome-it-quotes/victorlaerte_awesome-it-quotes.html",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Databases",
+      "items": [
+        {
+          "name": "Database",
+          "path": "learn/numetriclabz_awesome-db/numetriclabz_awesome-db.html",
+          "description": ""
+        },
+        {
+          "name": "MySQL",
+          "path": "learn/shlomi-noach_awesome-mysql/shlomi-noach_awesome-mysql.html",
+          "description": ""
+        },
+        {
+          "name": "SQLAlchemy",
+          "path": "https://github.com/dahlia/awesome-sqlalchemy#readme",
+          "description": ""
+        },
+        {
+          "name": "InfluxDB",
+          "path": "learn/mark-rushakoff_awesome-influxdb/mark-rushakoff_awesome-influxdb.html",
+          "description": ""
+        },
+        {
+          "name": "Neo4j",
+          "path": "learn/neueda_awesome-neo4j/neueda_awesome-neo4j.html",
+          "description": ""
+        },
+        {
+          "name": "MongoDB",
+          "path": "learn/ramnes_awesome-mongodb/ramnes_awesome-mongodb.html",
+          "description": "NoSQL database."
+        },
+        {
+          "name": "RethinkDB",
+          "path": "learn/d3viant0ne_awesome-rethinkdb/d3viant0ne_awesome-rethinkdb.html",
+          "description": ""
+        },
+        {
+          "name": "TinkerPop",
+          "path": "learn/mohataher_awesome-tinkerpop/mohataher_awesome-tinkerpop.html",
+          "description": "Graph computing framework."
+        },
+        {
+          "name": "PostgreSQL",
+          "path": "learn/dhamaniasad_awesome-postgres/dhamaniasad_awesome-postgres.html",
+          "description": "Object-relational database."
+        },
+        {
+          "name": "CouchDB",
+          "path": "learn/quangv_awesome-couchdb/quangv_awesome-couchdb.html",
+          "description": "Document-oriented NoSQL database."
+        },
+        {
+          "name": "HBase",
+          "path": "learn/rayokota_awesome-hbase/rayokota_awesome-hbase.html",
+          "description": "Distributed, scalable, big data store."
+        },
+        {
+          "name": "NoSQL Guides",
+          "path": "learn/erictleung_awesome-nosql-guides/erictleung_awesome-nosql-guides.html",
+          "description": "Help on using non-relational, distributed, open-source, and horizontally scalable databases."
+        },
+        {
+          "name": "Database Tools",
+          "path": "learn/mgramin_awesome-db-tools/mgramin_awesome-db-tools.html",
+          "description": "Everything that makes working with databases easier."
+        },
+        {
+          "name": "TypeDB",
+          "path": "learn/vaticle_typedb-awesome/vaticle_typedb-awesome.html",
+          "description": "Logical database to organize large and complex networks of data as one body of knowledge."
+        },
+        {
+          "name": "Cassandra",
+          "path": "learn/Anant_awesome-cassandra/Anant_awesome-cassandra.html",
+          "description": "Open-source, distributed, wide column store, NoSQL database management system."
+        },
+        {
+          "name": "TDengine",
+          "path": "learn/taosdata_awesome-tdengine/taosdata_awesome-tdengine.html",
+          "description": "An open-source time-series database with high-performance, scalability, and SQL support."
+        },
+        {
+          "name": "Supabase",
+          "path": "learn/lyqht_awesome-supabase/lyqht_awesome-supabase.html",
+          "description": "An open-source alternative to Firebase."
+        },
+        {
+          "name": "PocketBase",
+          "path": "learn/benallfree_awesome-pocketbase/benallfree_awesome-pocketbase.html",
+          "description": "An open-source, Go-based backend in one file."
+        },
+        {
+          "name": "Neon",
+          "path": "learn/tyaga001_awesome-neon/tyaga001_awesome-neon.html",
+          "description": "An open-source alternative to AWS Aurora."
+        }
+      ]
+    },
+    {
+      "name": "Media",
+      "items": [
+        {
+          "name": "Fonts",
+          "path": "learn/brabadu_awesome-fonts/brabadu_awesome-fonts.html",
+          "description": ""
+        },
+        {
+          "name": "Codeface",
+          "path": "learn/chrissimpkins_codeface/chrissimpkins_codeface.html",
+          "description": "Text editor fonts."
+        },
+        {
+          "name": "Stock Resources",
+          "path": "learn/neutraltone_awesome-stock-resources/neutraltone_awesome-stock-resources.html",
+          "description": ""
+        },
+        {
+          "name": "GIF",
+          "path": "learn/davisonio_awesome-gif/davisonio_awesome-gif.html",
+          "description": "Image format known for animated images."
+        },
+        {
+          "name": "Music",
+          "path": "learn/ciconia_awesome-music/ciconia_awesome-music.html",
+          "description": ""
+        },
+        {
+          "name": "Open Source Documents",
+          "path": "learn/44bits_awesome-opensource-documents/44bits_awesome-opensource-documents.html",
+          "description": ""
+        },
+        {
+          "name": "Audio Visualization",
+          "path": "learn/willianjusten_awesome-audio-visualization/willianjusten_awesome-audio-visualization.html",
+          "description": ""
+        },
+        {
+          "name": "Broadcasting",
+          "path": "learn/ebu_awesome-broadcasting/ebu_awesome-broadcasting.html",
+          "description": ""
+        },
+        {
+          "name": "Pixel Art",
+          "path": "learn/Siilwyn_awesome-pixel-art/Siilwyn_awesome-pixel-art.html",
+          "description": "Pixel-level digital art."
+        },
+        {
+          "name": "FFmpeg",
+          "path": "learn/transitive-bullshit_awesome-ffmpeg/transitive-bullshit_awesome-ffmpeg.html",
+          "description": "Cross-platform solution to record, convert and stream audio and video."
+        },
+        {
+          "name": "Icons",
+          "path": "learn/notlmn_awesome-icons/notlmn_awesome-icons.html",
+          "description": "Downloadable SVG/PNG/font icon projects."
+        },
+        {
+          "name": "Audiovisual",
+          "path": "learn/stingalleman_awesome-audiovisual/stingalleman_awesome-audiovisual.html",
+          "description": "Lighting, audio and video in professional environments."
+        },
+        {
+          "name": "VLC",
+          "path": "learn/mfkl_awesome-vlc/mfkl_awesome-vlc.html",
+          "description": "Cross-platform media player software and streaming server."
+        },
+        {
+          "name": "Audio Over IP",
+          "path": "learn/Mo-way_awesome-aoip/Mo-way_awesome-aoip.html",
+          "description": "Reliably transmit uncompressed, low-latency audio over an IP (layer 3) network."
+        }
+      ]
+    },
+    {
+      "name": "Learn",
+      "items": [
+        {
+          "name": "CLI Workshoppers",
+          "path": "learn/therebelrobot_awesome-workshopper/therebelrobot_awesome-workshopper.html",
+          "description": "Interactive tutorials."
+        },
+        {
+          "name": "Learn to Program",
+          "path": "learn/karlhorky_learn-to-program/karlhorky_learn-to-program.html",
+          "description": ""
+        },
+        {
+          "name": "Speaking",
+          "path": "learn/matteofigus_awesome-speaking/matteofigus_awesome-speaking.html",
+          "description": ""
+        },
+        {
+          "name": "Tech Videos",
+          "path": "learn/lucasviola_awesome-tech-videos/lucasviola_awesome-tech-videos.html",
+          "description": ""
+        },
+        {
+          "name": "Dive into Machine Learning",
+          "path": "learn/hangtwenty_dive-into-machine-learning/hangtwenty_dive-into-machine-learning.html",
+          "description": ""
+        },
+        {
+          "name": "Computer History",
+          "path": "learn/watson_awesome-computer-history/watson_awesome-computer-history.html",
+          "description": ""
+        },
+        {
+          "name": "Programming for Kids",
+          "path": "learn/HollyAdele_awesome-programming-for-kids/HollyAdele_awesome-programming-for-kids.html",
+          "description": ""
+        },
+        {
+          "name": "STEAM",
+          "path": "learn/RahulBirCodes_awesome-steam/RahulBirCodes_awesome-steam.html",
+          "description": "Supplements for specific science, technology, engineering, arts, and math (STEAM) courses across all grade levels."
+        },
+        {
+          "name": "Educational Games",
+          "path": "learn/yrgo_awesome-educational-games/yrgo_awesome-educational-games.html",
+          "description": "Learn while playing."
+        },
+        {
+          "name": "JavaScript Learning",
+          "path": "learn/micromata_awesome-javascript-learning/micromata_awesome-javascript-learning.html",
+          "description": ""
+        },
+        {
+          "name": "CSS Learning",
+          "path": "learn/micromata_awesome-css-learning/micromata_awesome-css-learning.html",
+          "description": "Mainly about CSS – the language and the modules."
+        },
+        {
+          "name": "Product Management",
+          "path": "learn/dend_awesome-product-management/dend_awesome-product-management.html",
+          "description": "Learn how to be a better product manager."
+        },
+        {
+          "name": "Roadmaps",
+          "path": "learn/liuchong_awesome-roadmaps/liuchong_awesome-roadmaps.html",
+          "description": "Gives you a clear route to improve your knowledge and skills."
+        },
+        {
+          "name": "YouTubers",
+          "path": "learn/JoseDeFreitas_awesome-youtubers/JoseDeFreitas_awesome-youtubers.html",
+          "description": "Watch video tutorials from YouTubers that teach you about technology."
+        },
+        {
+          "name": "Hackathon",
+          "path": "learn/dribdat_awesome-hackathon/dribdat_awesome-hackathon.html",
+          "description": "Running fun and productive hackathons."
+        },
+        {
+          "name": "Certificates",
+          "path": "learn/PanXProject_awesome-certificates/PanXProject_awesome-certificates.html",
+          "description": "Free computer science certifications to showcase your knowledge."
+        }
+      ]
+    },
+    {
+      "name": "Security",
+      "items": [
+        {
+          "name": "Application Security",
+          "path": "learn/paragonie_awesome-appsec/paragonie_awesome-appsec.html",
+          "description": ""
+        },
+        {
+          "name": "Security",
+          "path": "learn/sbilly_awesome-security/sbilly_awesome-security.html",
+          "description": ""
+        },
+        {
+          "name": "CTF",
+          "path": "learn/apsdehal_awesome-ctf/apsdehal_awesome-ctf.html",
+          "description": "Capture The Flag."
+        },
+        {
+          "name": "Cyber Security University",
+          "path": "learn/brootware_awesome-cyber-security-university/brootware_awesome-cyber-security-university.html",
+          "description": "Free educational resources that focus on learning by doing."
+        },
+        {
+          "name": "Malware Analysis",
+          "path": "learn/rshipp_awesome-malware-analysis/rshipp_awesome-malware-analysis.html",
+          "description": ""
+        },
+        {
+          "name": "Android Security",
+          "path": "learn/ashishb_android-security-awesome/ashishb_android-security-awesome.html",
+          "description": ""
+        },
+        {
+          "name": "Hacking",
+          "path": "learn/carpedm20_awesome-hacking/carpedm20_awesome-hacking.html",
+          "description": ""
+        },
+        {
+          "name": "Hacking Spots",
+          "path": "learn/daviddias_awesome-hacking-locations/daviddias_awesome-hacking-locations.html",
+          "description": ""
+        },
+        {
+          "name": "Honeypots",
+          "path": "learn/paralax_awesome-honeypots/paralax_awesome-honeypots.html",
+          "description": "Deception trap, designed to entice an attacker into attempting to compromise the information systems in an organization."
+        },
+        {
+          "name": "Incident Response",
+          "path": "learn/meirwah_awesome-incident-response/meirwah_awesome-incident-response.html",
+          "description": ""
+        },
+        {
+          "name": "Vehicle Security and Car Hacking",
+          "path": "learn/jaredthecoder_awesome-vehicle-security/jaredthecoder_awesome-vehicle-security.html",
+          "description": ""
+        },
+        {
+          "name": "Web Security",
+          "path": "learn/qazbnm456_awesome-web-security/qazbnm456_awesome-web-security.html",
+          "description": "Security of web apps & services."
+        },
+        {
+          "name": "Lockpicking",
+          "path": "learn/fabacab_awesome-lockpicking/fabacab_awesome-lockpicking.html",
+          "description": "The art of unlocking a lock by manipulating its components without the key."
+        },
+        {
+          "name": "Cybersecurity Blue Team",
+          "path": "learn/fabacab_awesome-cybersecurity-blueteam/fabacab_awesome-cybersecurity-blueteam.html",
+          "description": "Groups of individuals who identify security flaws in information technology systems."
+        },
+        {
+          "name": "Fuzzing",
+          "path": "learn/cpuu_awesome-fuzzing/cpuu_awesome-fuzzing.html",
+          "description": "Automated software testing technique that involves feeding pseudo-randomly generated input data."
+        },
+        {
+          "name": "Embedded and IoT Security",
+          "path": "learn/fkie-cad_awesome-embedded-and-iot-security/fkie-cad_awesome-embedded-and-iot-security.html",
+          "description": ""
+        },
+        {
+          "name": "GDPR",
+          "path": "learn/bakke92_awesome-gdpr/bakke92_awesome-gdpr.html",
+          "description": "Regulation on data protection and privacy for all individuals within EU."
+        },
+        {
+          "name": "DevSecOps",
+          "path": "learn/TaptuIT_awesome-devsecops/TaptuIT_awesome-devsecops.html",
+          "description": "Integration of security practices into [DevOps](https://en.wikipedia.org/wiki/DevOps)."
+        },
+        {
+          "name": "Executable Packing",
+          "path": "learn/dhondta_awesome-executable-packing/dhondta_awesome-executable-packing.html",
+          "description": "Packing and unpacking executable formats."
+        },
+        {
+          "name": "Malware Persistence",
+          "path": "learn/Karneades_awesome-malware-persistence/Karneades_awesome-malware-persistence.html",
+          "description": "Techniques that adversaries use to keep access to systems across restarts."
+        },
+        {
+          "name": "EVM Security",
+          "path": "learn/kareniel_awesome-evm-security/kareniel_awesome-evm-security.html",
+          "description": "Understanding the Ethereum Virtual Machine security ecosystem."
+        },
+        {
+          "name": "Password Cracking",
+          "path": "learn/n0kovo_awesome-password-cracking/n0kovo_awesome-password-cracking.html",
+          "description": "The process of recovering passwords from data that has been stored in or transmitted by a system in scrambled form."
+        },
+        {
+          "name": "Security Card Games",
+          "path": "learn/Karneades_awesome-security-card-games/Karneades_awesome-security-card-games.html",
+          "description": "Train your skills and discuss various security topics."
+        },
+        {
+          "name": "Suricata",
+          "path": "learn/satta_awesome-suricata/satta_awesome-suricata.html",
+          "description": "Intrusion detection/prevention system and network security monitoring engine."
+        },
+        {
+          "name": "Prompt Injection",
+          "path": "learn/FonduAI_awesome-prompt-injection/FonduAI_awesome-prompt-injection.html",
+          "description": "A type of vulnerability that specifically targets machine learning models."
+        },
+        {
+          "name": "Detection Engineering",
+          "path": "learn/infosecB_awesome-detection-engineering/infosecB_awesome-detection-engineering.html",
+          "description": "Design, build, and operate detective cybersecurity controls."
+        },
+        {
+          "name": "Annual Security Reports",
+          "path": "learn/jacobdjwilson_awesome-annual-security-reports/jacobdjwilson_awesome-annual-security-reports.html",
+          "description": "Exploring cybersecurity trends, insights, and challenges."
+        },
+        {
+          "name": "CI/CD Attacks",
+          "path": "learn/TupleType_awesome-cicd-attacks/TupleType_awesome-cicd-attacks.html",
+          "description": "Offensive research of systems and processes related to developing and deploying code."
+        },
+        {
+          "name": "OpenID Connect",
+          "path": "learn/cerberauth_awesome-openid-connect/cerberauth_awesome-openid-connect.html",
+          "description": "Identity standard and authentication protocol built on OAuth 2.0 for user identity assertion."
+        }
+      ]
+    },
+    {
+      "name": "Content Management Systems",
+      "items": [
+        {
+          "name": "Umbraco",
+          "path": "learn/umbraco-community_awesome-umbraco/umbraco-community_awesome-umbraco.html",
+          "description": ""
+        },
+        {
+          "name": "Refinery CMS",
+          "path": "learn/refinerycms-contrib_awesome-refinerycms/refinerycms-contrib_awesome-refinerycms.html",
+          "description": "Ruby on Rails CMS."
+        },
+        {
+          "name": "Wagtail",
+          "path": "learn/springload_awesome-wagtail/springload_awesome-wagtail.html",
+          "description": "Django CMS focused on flexibility and user experience."
+        },
+        {
+          "name": "Textpattern",
+          "path": "https://github.com/drmonkeyninja/awesome-textpattern#readme",
+          "description": "Lightweight PHP-based CMS."
+        },
+        {
+          "name": "Drupal",
+          "path": "learn/nirgn975_awesome-drupal/nirgn975_awesome-drupal.html",
+          "description": "Extensible PHP-based CMS."
+        },
+        {
+          "name": "Craft CMS",
+          "path": "learn/craftcms_awesome/craftcms_awesome.html",
+          "description": "Content-first CMS."
+        },
+        {
+          "name": "Sitecore",
+          "path": "learn/MartinMiles_Awesome-Sitecore/MartinMiles_Awesome-Sitecore.html",
+          "description": ".NET digital marketing platform that combines CMS with tools for managing multiple websites."
+        },
+        {
+          "name": "Silverstripe CMS",
+          "path": "learn/wernerkrauss_awesome-silverstripe-cms/wernerkrauss_awesome-silverstripe-cms.html",
+          "description": "PHP MVC framework that serves as a classic or headless CMS."
+        },
+        {
+          "name": "Directus",
+          "path": "learn/directus-community_awesome-directus/directus-community_awesome-directus.html",
+          "description": "A real-time API and app dashboard for managing SQL database content."
+        },
+        {
+          "name": "Plone",
+          "path": "learn/collective_awesome-plone/collective_awesome-plone.html",
+          "description": "Open source Python CMS."
+        },
+        {
+          "name": "Payload",
+          "path": "learn/DanailMinchev_awesome-payload/DanailMinchev_awesome-payload.html",
+          "description": "Next.js native and open source headless CMS."
+        }
+      ]
+    },
+    {
+      "name": "Hardware",
+      "items": [
+        {
+          "name": "Robotics",
+          "path": "learn/Kiloreux_awesome-robotics/Kiloreux_awesome-robotics.html",
+          "description": ""
+        },
+        {
+          "name": "Internet of Things",
+          "path": "learn/HQarroum_awesome-iot/HQarroum_awesome-iot.html",
+          "description": ""
+        },
+        {
+          "name": "Electronics",
+          "path": "learn/kitspace_awesome-electronics/kitspace_awesome-electronics.html",
+          "description": "For electronic engineers and hobbyists."
+        },
+        {
+          "name": "Bluetooth Beacons",
+          "path": "learn/rabschi_awesome-beacon/rabschi_awesome-beacon.html",
+          "description": ""
+        },
+        {
+          "name": "Electric Guitar Specifications",
+          "path": "learn/gitfrage_guitarspecs/gitfrage_guitarspecs.html",
+          "description": "Checklist for building your own electric guitar."
+        },
+        {
+          "name": "Plotters",
+          "path": "learn/beardicus_awesome-plotters/beardicus_awesome-plotters.html",
+          "description": "Computer-controlled drawing machines and other visual art robots."
+        },
+        {
+          "name": "Robotic Tooling",
+          "path": "learn/protontypes_awesome-robotic-tooling/protontypes_awesome-robotic-tooling.html",
+          "description": "Free and open tools for professional robotic development."
+        },
+        {
+          "name": "LIDAR",
+          "path": "learn/szenergy_awesome-lidar/szenergy_awesome-lidar.html",
+          "description": "Sensor for measuring distances by illuminating the target with laser light."
+        },
+        {
+          "name": "Open Hardware",
+          "path": "learn/delftopenhardware_awesome-open-hardware/delftopenhardware_awesome-open-hardware.html",
+          "description": "Open-source hardware projects."
+        },
+        {
+          "name": "ADS-B",
+          "path": "learn/rickstaa_awesome-adsb/rickstaa_awesome-adsb.html",
+          "description": "Technology broadcasting aircraft's identity, position, and data periodically."
+        },
+        {
+          "name": "Flying FPV",
+          "path": "learn/Matthias84_awesome-flying-fpv/Matthias84_awesome-flying-fpv.html",
+          "description": "Open hardware and software related to drones / UAVs."
+        }
+      ]
+    },
+    {
+      "name": "Business",
+      "items": [
+        {
+          "name": "Open Companies",
+          "path": "learn/opencompany_awesome-open-company/opencompany_awesome-open-company.html",
+          "description": ""
+        },
+        {
+          "name": "Places to Post Your Startup",
+          "path": "learn/mmccaff_PlacesToPostYourStartup/mmccaff_PlacesToPostYourStartup.html",
+          "description": ""
+        },
+        {
+          "name": "OKR Methodology",
+          "path": "learn/domenicosolazzo_awesome-okr/domenicosolazzo_awesome-okr.html",
+          "description": "Goal setting & communication best practices."
+        },
+        {
+          "name": "Indie",
+          "path": "learn/mezod_awesome-indie/mezod_awesome-indie.html",
+          "description": "Independent developer businesses."
+        },
+        {
+          "name": "Tools of the Trade",
+          "path": "learn/cjbarber_ToolsOfTheTrade/cjbarber_ToolsOfTheTrade.html",
+          "description": "Tools used by companies on Hacker News."
+        },
+        {
+          "name": "Clean Tech",
+          "path": "learn/nglgzz_awesome-clean-tech/nglgzz_awesome-clean-tech.html",
+          "description": "Fighting climate change with technology."
+        },
+        {
+          "name": "Wardley Maps",
+          "path": "learn/wardley-maps-community_awesome-wardley-maps/wardley-maps-community_awesome-wardley-maps.html",
+          "description": "Provides high situational awareness to help improve strategic planning and decision making."
+        },
+        {
+          "name": "Social Enterprise",
+          "path": "learn/RayBB_awesome-social-enterprise/RayBB_awesome-social-enterprise.html",
+          "description": "Building an organization primarily focused on social impact that is at least partially self-funded."
+        },
+        {
+          "name": "Engineering Team Management",
+          "path": "learn/kdeldycke_awesome-engineering-team-management/kdeldycke_awesome-engineering-team-management.html",
+          "description": "How to transition from software development to engineering management."
+        },
+        {
+          "name": "Developer-First Products",
+          "path": "learn/agamm_awesome-developer-first/agamm_awesome-developer-first.html",
+          "description": "Products that target developers as the user."
+        },
+        {
+          "name": "Billing",
+          "path": "learn/kdeldycke_awesome-billing/kdeldycke_awesome-billing.html",
+          "description": "Payments, invoicing, pricing, accounting, marketplace, fraud, and business intelligence."
+        },
+        {
+          "name": "Engineering Strategy",
+          "path": "learn/aleixmorgadas_awesome-engineering-strategy/aleixmorgadas_awesome-engineering-strategy.html",
+          "description": "How to design and execute engineering strategies for tech leadership."
+        }
+      ]
+    },
+    {
+      "name": "Work",
+      "items": [
+        {
+          "name": "Slack",
+          "path": "learn/matiassingers_awesome-slack/matiassingers_awesome-slack.html",
+          "description": "Team collaboration.",
+          "subcategories": [
+            {
+              "name": "Communities",
+              "path": "learn/filipelinhares_awesome-slack/filipelinhares_awesome-slack.html",
+              "description": ""
+            }
+          ]
+        },
+        {
+          "name": "Remote Jobs",
+          "path": "learn/lukasz-madon_awesome-remote-job/lukasz-madon_awesome-remote-job.html",
+          "description": ""
+        },
+        {
+          "name": "Productivity",
+          "path": "learn/jyguyomarch_awesome-productivity/jyguyomarch_awesome-productivity.html",
+          "description": ""
+        },
+        {
+          "name": "Niche Job Boards",
+          "path": "learn/tramcar_awesome-job-boards/tramcar_awesome-job-boards.html",
+          "description": ""
+        },
+        {
+          "name": "Programming Interviews",
+          "path": "learn/DopplerHQ_awesome-interview-questions/DopplerHQ_awesome-interview-questions.html",
+          "description": ""
+        },
+        {
+          "name": "Code Review",
+          "path": "learn/joho_awesome-code-review/joho_awesome-code-review.html",
+          "description": "Reviewing code."
+        },
+        {
+          "name": "Creative Technology",
+          "path": "learn/j0hnm4r5_awesome-creative-technology/j0hnm4r5_awesome-creative-technology.html",
+          "description": "Businesses & groups that specialize in combining computing, design, art, and user experience."
+        },
+        {
+          "name": "Internships",
+          "path": "learn/lodthe_awesome-internships/lodthe_awesome-internships.html",
+          "description": "CV writing guides and companies that hire interns."
+        }
+      ]
+    },
+    {
+      "name": "Networking",
+      "items": [
+        {
+          "name": "Software-Defined Networking",
+          "path": "learn/sdnds-tw_awesome-sdn/sdnds-tw_awesome-sdn.html",
+          "description": ""
+        },
+        {
+          "name": "PCAPTools",
+          "path": "learn/caesar0301_awesome-pcaptools/caesar0301_awesome-pcaptools.html",
+          "description": ""
+        },
+        {
+          "name": "Real-Time Communications",
+          "path": "learn/rtckit_awesome-rtc/rtckit_awesome-rtc.html",
+          "description": "Network protocols for near simultaneous exchange of media and data."
+        },
+        {
+          "name": "SNMP",
+          "path": "learn/eozer_awesome-snmp/eozer_awesome-snmp.html",
+          "description": "A protocol for collecting, modifying, and organizing information about managed devices on IP networks."
+        },
+        {
+          "name": "Scapy",
+          "path": "learn/secdev_awesome-scapy/secdev_awesome-scapy.html",
+          "description": "Python-based interactive packet manipulation."
+        },
+        {
+          "name": "Cilium",
+          "path": "learn/seifrajhi_awesome-cilium/seifrajhi_awesome-cilium.html",
+          "description": "Provides networking and security capabilities for containerized apps, microservices, and virtual machines."
+        }
+      ]
+    },
+    {
+      "name": "Decentralized Systems",
+      "items": [
+        {
+          "name": "Bitcoin",
+          "path": "learn/igorbarinov_awesome-bitcoin/igorbarinov_awesome-bitcoin.html",
+          "description": "Bitcoin services and tools for software developers."
+        },
+        {
+          "name": "Ripple",
+          "path": "learn/vhpoet_awesome-ripple/vhpoet_awesome-ripple.html",
+          "description": "Open source distributed settlement network."
+        },
+        {
+          "name": "Non-Financial Blockchain",
+          "path": "learn/machinomy_awesome-non-financial-blockchain/machinomy_awesome-non-financial-blockchain.html",
+          "description": "Non-financial blockchain applications."
+        },
+        {
+          "name": "Mastodon",
+          "path": "learn/hyperupcall_awesome-mastodon/hyperupcall_awesome-mastodon.html",
+          "description": "Open source decentralized microblogging network."
+        },
+        {
+          "name": "Ethereum",
+          "path": "learn/ttumiel_Awesome-Ethereum/ttumiel_Awesome-Ethereum.html",
+          "description": "Distributed computing platform for smart contract development."
+        },
+        {
+          "name": "Blockchain AI",
+          "path": "learn/steven2358_awesome-blockchain-ai/steven2358_awesome-blockchain-ai.html",
+          "description": "Blockchain projects for artificial intelligence and machine learning."
+        },
+        {
+          "name": "EOSIO",
+          "path": "learn/DanailMinchev_awesome-eosio/DanailMinchev_awesome-eosio.html",
+          "description": "A decentralized operating system supporting industrial-scale apps."
+        },
+        {
+          "name": "Corda",
+          "path": "learn/chainstack_awesome-corda/chainstack_awesome-corda.html",
+          "description": "Open source blockchain platform designed for business."
+        },
+        {
+          "name": "Waves",
+          "path": "learn/msmolyakov_awesome-waves/msmolyakov_awesome-waves.html",
+          "description": "Open source blockchain platform and development toolset for Web 3.0 apps and decentralized solutions."
+        },
+        {
+          "name": "Substrate",
+          "path": "learn/substrate-developer-hub_awesome-substrate/substrate-developer-hub_awesome-substrate.html",
+          "description": "Framework for writing scalable, upgradeable blockchains in Rust."
+        },
+        {
+          "name": "Golem",
+          "path": "learn/golemfactory_awesome-golem/golemfactory_awesome-golem.html",
+          "description": "Open source peer-to-peer marketplace for computing resources."
+        },
+        {
+          "name": "Stacks",
+          "path": "learn/friedger_awesome-stacks-chain/friedger_awesome-stacks-chain.html",
+          "description": "A smart contract platform secured by Bitcoin."
+        },
+        {
+          "name": "Algorand",
+          "path": "learn/aorumbayev_awesome-algorand/aorumbayev_awesome-algorand.html",
+          "description": "An open-source, proof of stake blockchain and smart contract computing platform."
+        },
+        {
+          "name": "ZeroNet",
+          "path": "learn/zolagonano_awesome-zeronet/zolagonano_awesome-zeronet.html",
+          "description": "A decentralized web-like network of peer-to-peer users."
+        },
+        {
+          "name": "Cosmos SDK",
+          "path": "learn/cosmos_awesome-cosmos/cosmos_awesome-cosmos.html",
+          "description": "Modular framework for building app-specific blockchains in Go."
+        },
+        {
+          "name": "Tor",
+          "path": "learn/polycarbohydrate_awesome-tor/polycarbohydrate_awesome-tor.html",
+          "description": "A free overlay network for enabling anonymous communication."
+        },
+        {
+          "name": "ATProto",
+          "path": "learn/atblueprints_awesome-atproto/atblueprints_awesome-atproto.html",
+          "description": "Open, decentralized network for building social apps."
+        }
+      ]
+    },
+    {
+      "name": "Health and Social Science",
+      "items": [
+        {
+          "name": "Biomedical Information Extraction",
+          "path": "learn/caufieldjh_awesome-bioie/caufieldjh_awesome-bioie.html",
+          "description": "How to extract information from unstructured biomedical data and text."
+        },
+        {
+          "name": "Computational Neuroscience",
+          "path": "learn/eselkin_awesome-computational-neuroscience/eselkin_awesome-computational-neuroscience.html",
+          "description": "A multidisciplinary science which uses computational approaches to study the nervous system."
+        },
+        {
+          "name": "Diversity",
+          "path": "learn/folkswhocode_awesome-diversity/folkswhocode_awesome-diversity.html",
+          "description": "Creating a more inclusive and diverse tech community."
+        },
+        {
+          "name": "Digital History",
+          "path": "learn/maehr_awesome-digital-history/maehr_awesome-digital-history.html",
+          "description": "Computer-aided scientific investigation of history."
+        },
+        {
+          "name": "Empathy in Engineering",
+          "path": "learn/KimberlyMunoz_empathy-in-engineering/KimberlyMunoz_empathy-in-engineering.html",
+          "description": "Building and promoting more compassionate engineering cultures."
+        },
+        {
+          "name": "Healthcare",
+          "path": "learn/kakoni_awesome-healthcare/kakoni_awesome-healthcare.html",
+          "description": "Open source healthcare software for facilities, providers, developers, policy experts, and researchers."
+        },
+        {
+          "name": "Humane Technology",
+          "path": "learn/humanetech-community_awesome-humane-tech/humanetech-community_awesome-humane-tech.html",
+          "description": "Open source projects that help improve society."
+        },
+        {
+          "name": "Mental Health",
+          "path": "learn/dreamingechoes_awesome-mental-health/dreamingechoes_awesome-mental-health.html",
+          "description": "Mental health awareness and self-care in the software industry."
+        },
+        {
+          "name": "Neuroscience",
+          "path": "learn/analyticalmonk_awesome-neuroscience/analyticalmonk_awesome-neuroscience.html",
+          "description": "Study of the nervous system and brain."
+        },
+        {
+          "name": "Digital Humanities",
+          "path": "learn/dh-tech_awesome-digital-humanities/dh-tech_awesome-digital-humanities.html",
+          "description": "Software for humanities scholars using quantitative or computational methods."
+        },
+        {
+          "name": "Lucid Dreams",
+          "path": "learn/IAmCoder_awesome-lucid-dreams/IAmCoder_awesome-lucid-dreams.html",
+          "description": "A dream where one becomes aware they are dreaming."
+        },
+        {
+          "name": "Neuroimaging",
+          "path": "learn/NPACore_awesome-neuroimaging/NPACore_awesome-neuroimaging.html",
+          "description": "Software for analyzing brain data from living subjects."
+        },
+        {
+          "name": "Transgender",
+          "path": "learn/cvyl_awesome-transgender/cvyl_awesome-transgender.html",
+          "description": "Someone whose gender identity differs from their assigned birth sex."
+        }
+      ]
+    },
+    {
+      "name": "Events",
+      "items": [
+        {
+          "name": "Creative Tech Events",
+          "path": "learn/danvoyce_awesome-creative-tech-events/danvoyce_awesome-creative-tech-events.html",
+          "description": "Events around the globe for creative coding, tech, design, music, arts and cool stuff."
+        },
+        {
+          "name": "Events in Italy",
+          "path": "learn/ildoc_awesome-italy-events/ildoc_awesome-italy-events.html",
+          "description": "Tech-related events in Italy."
+        },
+        {
+          "name": "Events in the Netherlands",
+          "path": "learn/awkward_awesome-netherlands-events/awkward_awesome-netherlands-events.html",
+          "description": "Tech-related events in the Netherlands."
+        }
+      ]
+    },
+    {
+      "name": "Testing",
+      "items": [
+        {
+          "name": "Testing",
+          "path": "learn/TheJambo_awesome-testing/TheJambo_awesome-testing.html",
+          "description": "Software testing."
+        },
+        {
+          "name": "Visual Regression Testing",
+          "path": "learn/mojoaxel_awesome-regression-testing/mojoaxel_awesome-regression-testing.html",
+          "description": "Ensures changes did not break the functionality or style."
+        },
+        {
+          "name": "Selenium",
+          "path": "learn/christian-bromann_awesome-selenium/christian-bromann_awesome-selenium.html",
+          "description": "Open-source browser automation framework and ecosystem."
+        },
+        {
+          "name": "Appium",
+          "path": "learn/SrinivasanTarget_awesome-appium/SrinivasanTarget_awesome-appium.html",
+          "description": "Test automation tool for apps."
+        },
+        {
+          "name": "TAP",
+          "path": "learn/sindresorhus_awesome-tap/sindresorhus_awesome-tap.html",
+          "description": "Test Anything Protocol."
+        },
+        {
+          "name": "JMeter",
+          "path": "learn/aliesbelik_awesome-jmeter/aliesbelik_awesome-jmeter.html",
+          "description": "Load testing and performance measurement tool."
+        },
+        {
+          "name": "k6",
+          "path": "learn/grafana_awesome-k6/grafana_awesome-k6.html",
+          "description": "Open-source, developer-centric performance monitoring and load testing solution."
+        },
+        {
+          "name": "Playwright",
+          "path": "learn/mxschmitt_awesome-playwright/mxschmitt_awesome-playwright.html",
+          "description": "Node.js library to automate Chromium, Firefox and WebKit with a single API."
+        },
+        {
+          "name": "Quality Assurance Roadmap",
+          "path": "learn/fityanos_awesome-quality-assurance-roadmap/fityanos_awesome-quality-assurance-roadmap.html",
+          "description": "How to start & build a career in software testing."
+        },
+        {
+          "name": "Gatling",
+          "path": "learn/aliesbelik_awesome-gatling/aliesbelik_awesome-gatling.html",
+          "description": "Open-source load and performance testing framework based on Scala, Akka, and Netty."
+        },
+        {
+          "name": "CodeRabbit",
+          "path": "learn/coderabbitai_awesome-coderabbit/coderabbitai_awesome-coderabbit.html",
+          "description": "AI-powered code review platform."
+        }
+      ]
+    },
+    {
+      "name": "Miscellaneous",
+      "items": [
+        {
+          "name": "Scientific Writing",
+          "path": "learn/writing-resources_awesome-scientific-writing/writing-resources_awesome-scientific-writing.html",
+          "description": "Distraction-free scientific writing with Markdown, reStructuredText and Jupyter notebooks."
+        },
+        {
+          "name": "JSON",
+          "path": "learn/burningtree_awesome-json/burningtree_awesome-json.html",
+          "description": "Text based data interchange format.",
+          "subcategories": [
+            {
+              "name": "GeoJSON",
+              "path": "learn/tmcw_awesome-geojson/tmcw_awesome-geojson.html",
+              "description": ""
+            },
+            {
+              "name": "Datasets",
+              "path": "learn/jdorfman_awesome-json-datasets/jdorfman_awesome-json-datasets.html",
+              "description": ""
+            }
+          ]
+        },
+        {
+          "name": "CSV",
+          "path": "learn/secretGeek_awesomeCSV/secretGeek_awesomeCSV.html",
+          "description": "A text file format that stores tabular data and uses a comma to separate values."
+        },
+        {
+          "name": "Discounts for Student Developers",
+          "path": "learn/AchoArnold_discount-for-student-dev/AchoArnold_discount-for-student-dev.html",
+          "description": ""
+        },
+        {
+          "name": "Radio",
+          "path": "learn/kyleterry_awesome-radio/kyleterry_awesome-radio.html",
+          "description": ""
+        },
+        {
+          "name": "Awesome",
+          "path": "learn/sindresorhus_awesome/sindresorhus_awesome.html",
+          "description": "Recursion illustrated."
+        },
+        {
+          "name": "Analytics",
+          "path": "https://github.com/0xnr/awesome-analytics#readme",
+          "description": ""
+        },
+        {
+          "name": "REST",
+          "path": "learn/marmelab_awesome-rest/marmelab_awesome-rest.html",
+          "description": ""
+        },
+        {
+          "name": "Continuous Integration and Continuous Delivery",
+          "path": "learn/cicdops_awesome-ciandcd/cicdops_awesome-ciandcd.html",
+          "description": ""
+        },
+        {
+          "name": "Services Engineering",
+          "path": "learn/mmcgrana_services-engineering/mmcgrana_services-engineering.html",
+          "description": ""
+        },
+        {
+          "name": "Free for Developers",
+          "path": "learn/ripienaar_free-for-dev/ripienaar_free-for-dev.html",
+          "description": ""
+        },
+        {
+          "name": "Answers",
+          "path": "learn/cyberglot_awesome-answers/cyberglot_awesome-answers.html",
+          "description": "Stack Overflow, Quora, etc."
+        },
+        {
+          "name": "Sketch",
+          "path": "learn/diessica_awesome-sketch/diessica_awesome-sketch.html",
+          "description": "Design app for macOS."
+        },
+        {
+          "name": "Boilerplate Projects",
+          "path": "learn/melvin0008_awesome-projects-boilerplates/melvin0008_awesome-projects-boilerplates.html",
+          "description": ""
+        },
+        {
+          "name": "Readme",
+          "path": "learn/matiassingers_awesome-readme/matiassingers_awesome-readme.html",
+          "description": ""
+        },
+        {
+          "name": "GitHub Wiki",
+          "path": "learn/MyHoneyBadger_awesome-github-wiki/MyHoneyBadger_awesome-github-wiki.html",
+          "description": "Comprehensive documentation on GitHub beyond README."
+        },
+        {
+          "name": "Design and Development Guides",
+          "path": "learn/NARKOZ_guides/NARKOZ_guides.html",
+          "description": ""
+        },
+        {
+          "name": "Software Engineering Blogs",
+          "path": "learn/kilimchoi_engineering-blogs/kilimchoi_engineering-blogs.html",
+          "description": ""
+        },
+        {
+          "name": "Self Hosted",
+          "path": "learn/awesome-selfhosted_awesome-selfhosted/awesome-selfhosted_awesome-selfhosted.html",
+          "description": ""
+        },
+        {
+          "name": "FOSS Production Apps",
+          "path": "learn/DataDaoDe_awesome-foss-apps/DataDaoDe_awesome-foss-apps.html",
+          "description": ""
+        },
+        {
+          "name": "Gulp",
+          "path": "learn/alferov_awesome-gulp/alferov_awesome-gulp.html",
+          "description": "Task runner."
+        },
+        {
+          "name": "AMA",
+          "path": "learn/sindresorhus_amas/sindresorhus_amas.html",
+          "description": "Ask Me Anything.",
+          "subcategories": [
+            {
+              "name": "Answers",
+              "path": "learn/stoeffel_awesome-ama-answers/stoeffel_awesome-ama-answers.html",
+              "description": ""
+            }
+          ]
+        },
+        {
+          "name": "Open Source Photography",
+          "path": "learn/ibaaj_awesome-OpenSourcePhotography/ibaaj_awesome-OpenSourcePhotography.html",
+          "description": ""
+        },
+        {
+          "name": "OpenGL",
+          "path": "learn/eug_awesome-opengl/eug_awesome-opengl.html",
+          "description": "Cross-platform API for rendering 2D and 3D graphics."
+        },
+        {
+          "name": "GraphQL",
+          "path": "learn/chentsulin_awesome-graphql/chentsulin_awesome-graphql.html",
+          "description": ""
+        },
+        {
+          "name": "Urban & Regional Planning",
+          "path": "learn/APA-Technology-Division_urban-and-regional-planning-resources/APA-Technology-Division_urban-and-regional-planning-resources.html",
+          "description": "Concerning the built environment and communities."
+        },
+        {
+          "name": "Transit",
+          "path": "learn/CUTR-at-USF_awesome-transit/CUTR-at-USF_awesome-transit.html",
+          "description": ""
+        },
+        {
+          "name": "Research Tools",
+          "path": "learn/emptymalei_awesome-research/emptymalei_awesome-research.html",
+          "description": ""
+        },
+        {
+          "name": "Data Visualization",
+          "path": "learn/javierluraschi_awesome-dataviz/javierluraschi_awesome-dataviz.html",
+          "description": ""
+        },
+        {
+          "name": "Microservices",
+          "path": "learn/mfornos_awesome-microservices/mfornos_awesome-microservices.html",
+          "description": ""
+        },
+        {
+          "name": "Unicode",
+          "path": "learn/jagracey_Awesome-Unicode/jagracey_Awesome-Unicode.html",
+          "description": "Unicode standards, quirks, packages and resources.",
+          "subcategories": [
+            {
+              "name": "Code Points",
+              "path": "learn/Codepoints_awesome-codepoints/Codepoints_awesome-codepoints.html",
+              "description": ""
+            }
+          ]
+        },
+        {
+          "name": "Beginner-Friendly Projects",
+          "path": "learn/MunGell_awesome-for-beginners/MunGell_awesome-for-beginners.html",
+          "description": ""
+        },
+        {
+          "name": "Katas",
+          "path": "learn/gamontal_awesome-katas/gamontal_awesome-katas.html",
+          "description": ""
+        },
+        {
+          "name": "Tools for Activism",
+          "path": "learn/drewrwilson_toolsforactivism/drewrwilson_toolsforactivism.html",
+          "description": ""
+        },
+        {
+          "name": "Citizen Science",
+          "path": "learn/dylanrees_citizen-science/dylanrees_citizen-science.html",
+          "description": "For community-based and non-institutional scientists."
+        },
+        {
+          "name": "MQTT",
+          "path": "learn/hobbyquaker_awesome-mqtt/hobbyquaker_awesome-mqtt.html",
+          "description": "\"Internet of Things\" connectivity protocol."
+        },
+        {
+          "name": "For Girls",
+          "path": "learn/cristianoliveira_awesome4girls/cristianoliveira_awesome4girls.html",
+          "description": ""
+        },
+        {
+          "name": "Vorpal",
+          "path": "learn/vorpaljs_awesome-vorpal/vorpaljs_awesome-vorpal.html",
+          "description": "Node.js CLI framework."
+        },
+        {
+          "name": "Vulkan",
+          "path": "learn/vinjn_awesome-vulkan/vinjn_awesome-vulkan.html",
+          "description": "Low-overhead, cross-platform 3D graphics and compute API."
+        },
+        {
+          "name": "LaTeX",
+          "path": "learn/egeerardyn_awesome-LaTeX/egeerardyn_awesome-LaTeX.html",
+          "description": "Typesetting language."
+        },
+        {
+          "name": "Economics",
+          "path": "learn/antontarasenko_awesome-economics/antontarasenko_awesome-economics.html",
+          "description": "An economist's starter kit."
+        },
+        {
+          "name": "Funny Markov Chains",
+          "path": "learn/sublimino_awesome-funny-markov/sublimino_awesome-funny-markov.html",
+          "description": ""
+        },
+        {
+          "name": "Bioinformatics",
+          "path": "learn/danielecook_Awesome-Bioinformatics/danielecook_Awesome-Bioinformatics.html",
+          "description": ""
+        },
+        {
+          "name": "Cheminformatics",
+          "path": "learn/hsiaoyi0504_awesome-cheminformatics/hsiaoyi0504_awesome-cheminformatics.html",
+          "description": "Informatics techniques applied to problems in chemistry."
+        },
+        {
+          "name": "Colorful",
+          "path": "learn/Siddharth11_Colorful/Siddharth11_Colorful.html",
+          "description": "Choose your next color scheme."
+        },
+        {
+          "name": "Steam",
+          "path": "learn/scholtzm_awesome-steam/scholtzm_awesome-steam.html",
+          "description": "Digital distribution platform."
+        },
+        {
+          "name": "Bots",
+          "path": "learn/hackerkid_bots/hackerkid_bots.html",
+          "description": "Building bots."
+        },
+        {
+          "name": "Site Reliability Engineering",
+          "path": "learn/dastergon_awesome-sre/dastergon_awesome-sre.html",
+          "description": ""
+        },
+        {
+          "name": "DTrace",
+          "path": "learn/xen0l_awesome-dtrace/xen0l_awesome-dtrace.html",
+          "description": "Dynamic tracing framework."
+        },
+        {
+          "name": "Userscripts",
+          "path": "learn/bvolpato_awesome-userscripts/bvolpato_awesome-userscripts.html",
+          "description": "Enhance your browsing experience."
+        },
+        {
+          "name": "Pokémon",
+          "path": "learn/tobiasbueschel_awesome-pokemon/tobiasbueschel_awesome-pokemon.html",
+          "description": "Pokémon and Pokémon GO."
+        },
+        {
+          "name": "ChatOps",
+          "path": "learn/exAspArk_awesome-chatops/exAspArk_awesome-chatops.html",
+          "description": "Managing technical and business operations through a chat."
+        },
+        {
+          "name": "Falsehood",
+          "path": "learn/kdeldycke_awesome-falsehood/kdeldycke_awesome-falsehood.html",
+          "description": "Falsehoods programmers believe in."
+        },
+        {
+          "name": "Domain-Driven Design",
+          "path": "learn/heynickc_awesome-ddd/heynickc_awesome-ddd.html",
+          "description": "Software development approach for complex needs by connecting the implementation to an evolving model."
+        },
+        {
+          "name": "Quantified Self",
+          "path": "learn/woop_awesome-quantified-self/woop_awesome-quantified-self.html",
+          "description": "Self-tracking through technology."
+        },
+        {
+          "name": "SaltStack",
+          "path": "learn/hbokh_awesome-saltstack/hbokh_awesome-saltstack.html",
+          "description": "Python-based config management system."
+        },
+        {
+          "name": "Web Design",
+          "path": "learn/nicolesaidy_awesome-web-design/nicolesaidy_awesome-web-design.html",
+          "description": "For digital designers."
+        },
+        {
+          "name": "Creative Coding",
+          "path": "learn/terkelg_awesome-creative-coding/terkelg_awesome-creative-coding.html",
+          "description": "Programming something expressive instead of something functional."
+        },
+        {
+          "name": "No-Login Web Apps",
+          "path": "learn/aviaryan_awesome-no-login-web-apps/aviaryan_awesome-no-login-web-apps.html",
+          "description": "Web apps that work without login."
+        },
+        {
+          "name": "Free Software",
+          "path": "learn/johnjago_awesome-free-software/johnjago_awesome-free-software.html",
+          "description": "Free as in freedom."
+        },
+        {
+          "name": "Framer",
+          "path": "learn/podo_awesome-framer/podo_awesome-framer.html",
+          "description": "Prototyping interactive UI designs."
+        },
+        {
+          "name": "Markdown",
+          "path": "learn/BubuAnabelas_awesome-markdown/BubuAnabelas_awesome-markdown.html",
+          "description": "Markup language."
+        },
+        {
+          "name": "Dev Fun",
+          "path": "learn/mislavcimpersak_awesome-dev-fun/mislavcimpersak_awesome-dev-fun.html",
+          "description": "Funny developer projects."
+        },
+        {
+          "name": "Magento 2",
+          "path": "learn/DavidLambauer_awesome-magento2/DavidLambauer_awesome-magento2.html",
+          "description": "Open Source eCommerce built with PHP."
+        },
+        {
+          "name": "TikZ",
+          "path": "learn/xiaohanyu_awesome-tikz/xiaohanyu_awesome-tikz.html",
+          "description": "Graph drawing packages for TeX/LaTeX/ConTeXt."
+        },
+        {
+          "name": "Ad-Free",
+          "path": "learn/johnjago_awesome-ad-free/johnjago_awesome-ad-free.html",
+          "description": "Ad-free alternatives."
+        },
+        {
+          "name": "Prometheus",
+          "path": "learn/roaldnefs_awesome-prometheus/roaldnefs_awesome-prometheus.html",
+          "description": "Open-source monitoring system."
+        },
+        {
+          "name": "Homematic",
+          "path": "learn/homematic-community_awesome-homematic/homematic-community_awesome-homematic.html",
+          "description": "Smart home devices."
+        },
+        {
+          "name": "Ledger",
+          "path": "learn/sfischer13_awesome-ledger/sfischer13_awesome-ledger.html",
+          "description": "Double-entry accounting on the command-line."
+        },
+        {
+          "name": "Web Monetization",
+          "path": "learn/thomasbnt_awesome-web-monetization/thomasbnt_awesome-web-monetization.html",
+          "description": "A free open web standard service that allows you to send money directly in your browser."
+        },
+        {
+          "name": "Uncopyright",
+          "path": "learn/johnjago_awesome-uncopyright/johnjago_awesome-uncopyright.html",
+          "description": "Public domain works."
+        },
+        {
+          "name": "Crypto Currency Tools & Algorithms",
+          "path": "learn/Zheaoli_awesome-coins/Zheaoli_awesome-coins.html",
+          "description": "Digital currency where encryption is used to regulate the generation of units and verify transfers."
+        },
+        {
+          "name": "Open Source Supporters",
+          "path": "learn/zachflower_awesome-open-source-supporters/zachflower_awesome-open-source-supporters.html",
+          "description": "Companies that offer their tools and services for free to open source projects."
+        },
+        {
+          "name": "Design Principles",
+          "path": "learn/robinstickel_awesome-design-principles/robinstickel_awesome-design-principles.html",
+          "description": "Create better and more consistent designs and experiences."
+        },
+        {
+          "name": "Theravada",
+          "path": "learn/johnjago_awesome-theravada/johnjago_awesome-theravada.html",
+          "description": "Teachings from the Theravada Buddhist tradition."
+        },
+        {
+          "name": "inspectIT",
+          "path": "learn/inspectit-labs_awesome-inspectit/inspectit-labs_awesome-inspectit.html",
+          "description": "Open source Java app performance management tool."
+        },
+        {
+          "name": "Open Source Maintainers",
+          "path": "learn/nayafia_awesome-maintainers/nayafia_awesome-maintainers.html",
+          "description": "The experience of being an open source maintainer."
+        },
+        {
+          "name": "Calculators",
+          "path": "learn/xxczaki_awesome-calculators/xxczaki_awesome-calculators.html",
+          "description": "Calculators for every platform."
+        },
+        {
+          "name": "Captcha",
+          "path": "learn/ZYSzys_awesome-captcha/ZYSzys_awesome-captcha.html",
+          "description": "A type of challenge–response test used in computing to determine whether or not the user is human."
+        },
+        {
+          "name": "Jupyter",
+          "path": "learn/markusschanta_awesome-jupyter/markusschanta_awesome-jupyter.html",
+          "description": "Create and share documents that contain code, equations, visualizations and narrative text."
+        },
+        {
+          "name": "FIRST Robotics Competition",
+          "path": "learn/andrewda_awesome-frc/andrewda_awesome-frc.html",
+          "description": "International high school robotics championship."
+        },
+        {
+          "name": "Speakers",
+          "path": "learn/karlhorky_awesome-speakers/karlhorky_awesome-speakers.html",
+          "description": "Conference and meetup speakers in the programming and design community."
+        },
+        {
+          "name": "Board Games",
+          "path": "learn/edm00se_awesome-board-games/edm00se_awesome-board-games.html",
+          "description": "Table-top gaming fun for all."
+        },
+        {
+          "name": "Software Patreons",
+          "path": "learn/uraimo_awesome-software-patreons/uraimo_awesome-software-patreons.html",
+          "description": "Fund individual programmers or the development of open source projects."
+        },
+        {
+          "name": "Parasite",
+          "path": "learn/ecohealthalliance_awesome-parasite/ecohealthalliance_awesome-parasite.html",
+          "description": "Parasites and host-pathogen interactions."
+        },
+        {
+          "name": "Food",
+          "path": "learn/jzarca01_awesome-food/jzarca01_awesome-food.html",
+          "description": "Food-related projects on GitHub."
+        },
+        {
+          "name": "Bitcoin Payment Processors",
+          "path": "learn/alexk111_awesome-bitcoin-payment-processors/alexk111_awesome-bitcoin-payment-processors.html",
+          "description": "Start accepting Bitcoin."
+        },
+        {
+          "name": "Scientific Computing",
+          "path": "learn/nschloe_awesome-scientific-computing/nschloe_awesome-scientific-computing.html",
+          "description": "Solving complex scientific problems using computers."
+        },
+        {
+          "name": "Amazon Sellers",
+          "path": "learn/ScaleLeap_awesome-amazon-seller/ScaleLeap_awesome-amazon-seller.html",
+          "description": ""
+        },
+        {
+          "name": "Agriculture",
+          "path": "learn/brycejohnston_awesome-agriculture/brycejohnston_awesome-agriculture.html",
+          "description": "Open source technology for farming and gardening."
+        },
+        {
+          "name": "Product Design",
+          "path": "learn/ttt30ga_awesome-product-design/ttt30ga_awesome-product-design.html",
+          "description": "Design a product from the initial concept to production."
+        },
+        {
+          "name": "Prisma",
+          "path": "learn/catalinmiron_awesome-prisma/catalinmiron_awesome-prisma.html",
+          "description": "Turn your database into a GraphQL API."
+        },
+        {
+          "name": "Software Architecture",
+          "path": "learn/simskij_awesome-software-architecture/simskij_awesome-software-architecture.html",
+          "description": "The discipline of designing and building software."
+        },
+        {
+          "name": "Connectivity Data and Reports",
+          "path": "learn/stevesong_awesome-connectivity-info/stevesong_awesome-connectivity-info.html",
+          "description": "Better understand who has access to telecommunication and internet infrastructure and on what terms."
+        },
+        {
+          "name": "Stacks",
+          "path": "learn/stackshareio_awesome-stacks/stackshareio_awesome-stacks.html",
+          "description": "Tech stacks for building different apps and features."
+        },
+        {
+          "name": "Cytodata",
+          "path": "learn/cytodata_awesome-cytodata/cytodata_awesome-cytodata.html",
+          "description": "Image-based profiling of biological phenotypes for computational biologists."
+        },
+        {
+          "name": "IRC",
+          "path": "learn/davisonio_awesome-irc/davisonio_awesome-irc.html",
+          "description": "Open source messaging protocol."
+        },
+        {
+          "name": "Advertising",
+          "path": "learn/cenoura_awesome-ads/cenoura_awesome-ads.html",
+          "description": "Advertising and programmatic media for websites."
+        },
+        {
+          "name": "Earth",
+          "path": "learn/philsturgeon_awesome-earth/philsturgeon_awesome-earth.html",
+          "description": "Find ways to resolve the climate crisis."
+        },
+        {
+          "name": "Naming",
+          "path": "learn/gruhn_awesome-naming/gruhn_awesome-naming.html",
+          "description": "Naming things in computer science done right."
+        },
+        {
+          "name": "Web Archiving",
+          "path": "learn/iipc_awesome-web-archiving/iipc_awesome-web-archiving.html",
+          "description": "An effort to preserve the Web for future generations."
+        },
+        {
+          "name": "WP-CLI",
+          "path": "learn/schlessera_awesome-wp-cli/schlessera_awesome-wp-cli.html",
+          "description": "Command-line interface for WordPress."
+        },
+        {
+          "name": "Credit Modeling",
+          "path": "learn/mourarthur_awesome-credit-modeling/mourarthur_awesome-credit-modeling.html",
+          "description": "Methods for classifying credit applicants into risk classes."
+        },
+        {
+          "name": "Ansible",
+          "path": "learn/ansible-community_awesome-ansible/ansible-community_awesome-ansible.html",
+          "description": "A Python-based, open-source IT configuration management and automation platform."
+        },
+        {
+          "name": "Biological Visualizations",
+          "path": "learn/keller-mark_awesome-biological-visualizations/keller-mark_awesome-biological-visualizations.html",
+          "description": "Interactive visualization of biological data on the web."
+        },
+        {
+          "name": "QR Code",
+          "path": "learn/make-github-pseudonymous-again_awesome-qr-code/make-github-pseudonymous-again_awesome-qr-code.html",
+          "description": "A type of matrix barcode that can be used to store and share a small amount of information."
+        },
+        {
+          "name": "Veganism",
+          "path": "learn/sdassow_awesome-veganism/sdassow_awesome-veganism.html",
+          "description": "Making the plant-based lifestyle easy and accessible."
+        },
+        {
+          "name": "Translations",
+          "path": "learn/mbiesiad_awesome-translations/mbiesiad_awesome-translations.html",
+          "description": "The transfer of the meaning of a text from one language to another."
+        },
+        {
+          "name": "Scriptable",
+          "path": "learn/dersvenhesse_awesome-scriptable/dersvenhesse_awesome-scriptable.html",
+          "description": "An iOS app for automation in JavaScript."
+        },
+        {
+          "name": "WebXR",
+          "path": "learn/msub2_awesome-webxr/msub2_awesome-webxr.html",
+          "description": "Enables immersive virtual reality and augmented reality content on the web."
+        },
+        {
+          "name": "Computational Geometry",
+          "path": "learn/atkirtland_awesome-computational-geometry/atkirtland_awesome-computational-geometry.html",
+          "description": "Computational approaches for problems in geometry."
+        },
+        {
+          "name": "OpenStreetMap",
+          "path": "learn/osmlab_awesome-openstreetmap/osmlab_awesome-openstreetmap.html",
+          "description": "An open data mapping project utilized by many apps and devices."
+        },
+        {
+          "name": "Computational Biology",
+          "path": "learn/inoue0426_awesome-computational-biology/inoue0426_awesome-computational-biology.html",
+          "description": "Computational approaches applied to problems in biology."
+        },
+        {
+          "name": "Read the Docs",
+          "path": "learn/readthedocs-examples_awesome-read-the-docs/readthedocs-examples_awesome-read-the-docs.html",
+          "description": "Example documentation projects to inspire and help bootstrap new documentation projects."
+        },
+        {
+          "name": "Quarto",
+          "path": "learn/mcanouil_awesome-quarto/mcanouil_awesome-quarto.html",
+          "description": "Scientific and technical open-source publishing system built on Pandoc."
+        },
+        {
+          "name": "Biological Image Analysis",
+          "path": "learn/hallvaaw_awesome-biological-image-analysis/hallvaaw_awesome-biological-image-analysis.html",
+          "description": "Interpreting biological phenomena using images."
+        },
+        {
+          "name": "ChatGPT",
+          "path": "learn/sindresorhus_awesome-chatgpt/sindresorhus_awesome-chatgpt.html",
+          "description": "Artificial intelligence chatbot developed by OpenAI."
+        },
+        {
+          "name": "Whisper",
+          "path": "learn/sindresorhus_awesome-whisper/sindresorhus_awesome-whisper.html",
+          "description": "Open-source AI-powered speech recognition system developed by OpenAI."
+        },
+        {
+          "name": "Stock Trading",
+          "path": "learn/shi-rudo_awesome-stock-trading/shi-rudo_awesome-stock-trading.html",
+          "description": "Purchase and sale of equities of publicly traded companies to generate profits."
+        },
+        {
+          "name": "Steam Deck",
+          "path": "learn/airscripts_awesome-steam-deck/airscripts_awesome-steam-deck.html",
+          "description": "A handheld gaming computer developed by Valve."
+        },
+        {
+          "name": "Astrophotography",
+          "path": "learn/lunohodov_awesome-astrophotography/lunohodov_awesome-astrophotography.html",
+          "description": "Photography of astronomical objects, celestial events, or areas of the night sky."
+        },
+        {
+          "name": "HPC",
+          "path": "learn/dstdev_awesome-hpc/dstdev_awesome-hpc.html",
+          "description": "High Performance Computing."
+        },
+        {
+          "name": "Geocaching",
+          "path": "learn/FoxFil_awesome-geocaching/FoxFil_awesome-geocaching.html",
+          "description": "Outdoor treasure-hunting activity that uses GPS-enabled devices."
+        },
+        {
+          "name": "Regex",
+          "path": "learn/slevithan_awesome-regex/slevithan_awesome-regex.html",
+          "description": "Specialized language for matching patterns in text."
+        },
+        {
+          "name": "Event-Driven Architecture",
+          "path": "learn/lutzh_awesome-event-driven-architecture/lutzh_awesome-event-driven-architecture.html",
+          "description": "A software architecture approach where services collaborate by publishing and subscribing to events."
+        },
+        {
+          "name": "Permacomputing",
+          "path": "learn/idematos_awesome-permacomputing/idematos_awesome-permacomputing.html",
+          "description": "Resilient and regenerative computing practices inspired by permaculture."
+        },
+        {
+          "name": "Standards",
+          "path": "learn/donBarbos_awesome-standards/donBarbos_awesome-standards.html",
+          "description": "Standards and proposals that define and enhance software, languages, and related technologies."
+        },
+        {
+          "name": "Claude Code",
+          "path": "learn/hesreallyhim_awesome-claude-code/hesreallyhim_awesome-claude-code.html",
+          "description": "Terminal-based AI coding assistant by Anthropic."
+        },
+        {
+          "name": "Gemini CLI",
+          "path": "learn/Piebald-AI_awesome-gemini-cli/Piebald-AI_awesome-gemini-cli.html",
+          "description": "Terminal-based AI coding assistant by Google."
+        },
+        {
+          "name": "SAP Commerce",
+          "path": "learn/eminyagiz42_awesome-sap-commerce/eminyagiz42_awesome-sap-commerce.html",
+          "description": "An e-commerce platform built with Java, Spring MVC, and Angular."
+        },
+        {
+          "name": "Tech Ethics",
+          "path": "learn/sampart_awesome-tech-ethics/sampart_awesome-tech-ethics.html",
+          "description": "Mitigating and avoiding the potential negative effects of technology on society."
+        },
+        {
+          "name": "Copilot Agents",
+          "path": "learn/Code-and-Sorts_awesome-copilot-agents/Code-and-Sorts_awesome-copilot-agents.html",
+          "description": "AI pair programming assistant by GitHub that provides code suggestions and completions."
+        }
+      ]
+    },
+    {
+      "name": "Related",
+      "items": [
+        {
+          "name": "All Awesome Lists",
+          "path": "https://github.com/topics/awesome",
+          "description": "All the Awesome lists on GitHub."
+        },
+        {
+          "name": "Awesome Search",
+          "path": "https://awesomelists.top",
+          "description": "Quick search for Awesome lists."
+        },
+        {
+          "name": "StumbleUponAwesome",
+          "path": "https://github.com/basharovV/StumbleUponAwesome",
+          "description": "Discover random pages from the Awesome dataset using a browser extension."
+        },
+        {
+          "name": "Awesome CLI",
+          "path": "https://github.com/umutphp/awesome-cli",
+          "description": "A simple command-line tool to dive into Awesome lists."
+        },
+        {
+          "name": "Track Awesome List",
+          "path": "https://www.trackawesomelist.com",
+          "description": "View the latest updates of Awesome lists."
+        }
+      ]
+    }
+  ]
+}

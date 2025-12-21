@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Awesome Lists - CS Archive</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="A curated collection of awesome lists covering platforms, programming languages, frameworks, tools, and more for CS students and developers.">
+    <meta name="keywords"
+        content="awesome lists, programming resources, developer tools, frameworks, libraries, curated lists">
+    <meta property="og:title" content="Awesome Lists - CS Archive">
+    <meta property="og:description" content="Curated awesome lists for developers and CS students.">
+    <meta property="og:url" content="https://archive.dharunashokkumar.com/pages/learn.html">
+    <link rel="canonical" href="https://archive.dharunashokkumar.com/pages/learn.html">
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T8EQF64ZTW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-T8EQF64ZTW');
+    </script>
+    <style>
+        .category-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+        }
+
+        .category-btn {
+            padding: 6px 12px;
+            background: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-muted);
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 0.85em;
+            transition: all 0.2s;
+        }
+
+        .category-btn:hover,
+        .category-btn.active {
+            background: var(--accent-color);
+            color: var(--bg-color);
+            border-color: var(--accent-color);
+        }
+
+        .learn-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 15px;
+        }
+
+        .learn-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 15px;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+            min-height: 120px;
+            box-shadow: 2px 2px 0px #888;
+        }
+
+        .learn-card:hover {
+            border-color: var(--accent-color);
+            box-shadow: 3px 3px 0px var(--accent-color);
+        }
+
+        .learn-card h3 {
+            margin: 0 0 8px 0;
+            font-size: 1em;
+            border-bottom: 1px dashed var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        .learn-card h3 a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .learn-card h3 a:hover {
+            text-decoration: underline;
+        }
+
+        .learn-card .description {
+            color: var(--text-muted);
+            font-size: 0.85em;
+            margin: 0 0 10px 0;
+            line-height: 1.4;
+            flex-grow: 1;
+        }
+
+        .learn-card .description.truncated {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .learn-card .description.expanded {
+            display: block;
+            -webkit-line-clamp: unset;
+        }
+
+        .read-more-btn {
+            background: none;
+            border: none;
+            color: var(--accent-color);
+            cursor: pointer;
+            font-size: 0.8em;
+            padding: 0;
+            margin-top: 5px;
+            font-family: inherit;
+        }
+
+        .read-more-btn:hover {
+            text-decoration: underline;
+        }
+
+        .subcategories {
+            margin-top: auto;
+            padding-top: 10px;
+            border-top: 1px dotted var(--border-color);
+        }
+
+        .subcategories h4 {
+            font-size: 0.75em;
+            color: var(--text-muted);
+            margin: 0 0 8px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .subcategories.collapsed-subs .sub-items {
+            display: none;
+        }
+
+        .sub-toggle {
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            cursor: pointer;
+            font-size: 0.75em;
+            padding: 0;
+            margin-left: 5px;
+        }
+
+        .sub-toggle:hover {
+            color: var(--accent-color);
+        }
+
+        .sub-item {
+            display: block;
+            padding: 4px 0;
+            font-size: 0.85em;
+        }
+
+        .sub-item a {
+            color: var(--text-color);
+            text-decoration: none;
+        }
+
+        .sub-item a:hover {
+            color: var(--accent-color);
+        }
+
+        .sub-item .sub-desc {
+            color: var(--text-muted);
+            font-size: 0.9em;
+            margin-left: 10px;
+        }
+
+        .category-section {
+            margin-bottom: 30px;
+        }
+
+        .category-section h2 {
+            font-size: 1.1em;
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+        }
+
+        .category-section h2:hover {
+            opacity: 0.9;
+        }
+
+        .category-section h2 .material-icons {
+            font-size: 1.2em;
+        }
+
+        .item-count {
+            background: var(--accent-color);
+            color: var(--bg-color);
+            padding: 2px 8px;
+            font-size: 0.75em;
+            margin-left: auto;
+        }
+
+        .no-path {
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        .external-badge {
+            font-size: 0.7em;
+            color: var(--text-muted);
+            margin-left: 5px;
+        }
+
+        .stats-bar {
+            display: flex;
+            gap: 20px;
+            padding: 10px 15px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            margin-bottom: 15px;
+            font-size: 0.85em;
+            flex-wrap: wrap;
+        }
+
+        .stats-bar span {
+            color: var(--text-muted);
+        }
+
+        .stats-bar strong {
+            color: var(--accent-color);
+        }
+
+        #back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 15px;
+            background: var(--accent-color);
+            color: var(--bg-color);
+            border: none;
+            cursor: pointer;
+            display: none;
+            font-family: inherit;
+            z-index: 1000;
+        }
+
+        #back-to-top:hover {
+            opacity: 0.8;
+        }
+
+        .collapse-btn {
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            cursor: pointer;
+            font-size: 0.8em;
+            padding: 2px 6px;
+        }
+
+        .collapse-btn:hover {
+            color: var(--accent-color);
+        }
+
+        .collapsed .learn-grid {
+            display: none;
+        }
+
+        .expand-all-btn {
+            padding: 6px 12px;
+            background: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-muted);
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 0.85em;
+            margin-left: auto;
+        }
+
+        .expand-all-btn:hover {
+            background: var(--accent-color);
+            color: var(--bg-color);
+            border-color: var(--accent-color);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>:: CS Student Archive ::</h1>
+    <div class="nav-bar">
+        [ <a href="../index.html">HOME</a> ]
+        [ <a href="skills.html">SKILLS</a> ]
+        [ <a href="resources.html">RESOURCES</a> ]
+        [ <a href="free-services.html">FREE_SERVICES</a> ]
+        [ <a href="repos.html">REPOS</a> ]
+        [ <a href="selfhosted.html">SELF_HOSTED</a> ]
+        [ <a href="learning-paths.html">PATHS</a> ]
+        [ <a href="ai-models.html">AI_MODELS</a> ]
+        [ <a href="tutorials.html">TUTORIALS</a> ]
+        [ <a href="research-papers.html">TOP RESEARCH PAPERS</a> ]
+        [ <a href="projects.html">PROJECTS</a> ]
+        [ <a href="jobs-careers.html">JOBS</a> ]
+        [ <a href="tools.html">TOOLS</a> ]
+        [ <a href="certifications.html">CERTS</a> ]
+        [ <a href="communities.html">COMMUNITIES</a> ]
+        [ <a href="cheatsheets.html">CHEATSHEETS</a> ]
+        [ <a href="api.html">PUBLIC APIs</a> ]
+        [ <a href="security.html">SECURITY</a> ]
+        [ <a href="design.html">DESIGN</a> ]
+        [ <a href="newsletters.html">NEWSLETTERS</a> ]
+        [ <a href="nostalgia.html">NOSTALGIA</a> ]
+        [ <a href="archive.html">ARCHIVE</a> ]
+        [ <a href="learn.html" class="active">LEARN</a> ]
+        [ <a href="contribute.html">CONTRIBUTE</a> ]
+    </div>
+
+    <h2><span class="material-icons">auto_awesome</span> AWESOME LISTS // CURATED RESOURCES</h2>
+    <p style="color: var(--text-muted); margin-bottom: 15px;">A comprehensive collection of awesome lists for platforms, languages, frameworks, tools, and more.</p>
+
+    <div class="search-container">
+        <input type="text" id="search-box" class="search-box" placeholder="Search awesome lists...">
+        <span id="results-count" class="results-count"></span>
+    </div>
+
+    <div class="stats-bar" id="stats-bar">
+        <span>Categories: <strong id="cat-count">0</strong></span>
+        <span>Total Items: <strong id="item-count">0</strong></span>
+        <span>With Subcategories: <strong id="sub-count">0</strong></span>
+        <button class="expand-all-btn" id="expand-all-btn" onclick="toggleAllSections()">[ Expand All ]</button>
+    </div>
+
+    <div class="category-nav" id="category-nav">
+        <button class="category-btn active" data-category="all">All</button>
+    </div>
+
+    <div id="content-container">
+        <p class="no-results">Loading awesome lists...</p>
+    </div>
+
+    <button id="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑ TOP</button>
+
+    <script>
+        let allData = null;
+        let currentCategory = 'all';
+        let allExpanded = false;
+
+        // Category icons mapping
+        const categoryIcons = {
+            'Platforms': 'devices',
+            'Programming Languages': 'code',
+            'Front-End Development': 'web',
+            'Back-End Development': 'dns',
+            'Computer Science': 'psychology',
+            'Big Data': 'storage',
+            'Theory': 'school',
+            'Books': 'menu_book',
+            'Editors': 'edit',
+            'Gaming': 'sports_esports',
+            'Development Environment': 'terminal',
+            'Entertainment': 'movie',
+            'Databases': 'table_chart',
+            'Media': 'perm_media',
+            'Learn': 'lightbulb',
+            'Security': 'security',
+            'Content Management Systems': 'article',
+            'Hardware': 'memory',
+            'Business': 'business',
+            'Work': 'work',
+            'Networking': 'lan',
+            'Decentralized Systems': 'hub',
+            'Health and Social Science': 'health_and_safety',
+            'Events': 'event',
+            'Testing': 'bug_report',
+            'Miscellaneous': 'category',
+            'Related': 'link',
+            'Contents': 'toc'
+        };
+
+        // Default descriptions for items with empty descriptions
+        const defaultDescriptions = {
+            'Frontend Development': 'Resources and bookmarks for frontend web development.',
+            'IoT & Hybrid Apps': 'Internet of Things and hybrid mobile application development.',
+            'Linux': 'Open-source Unix-like operating system based on the Linux kernel.',
+            'JVM': 'Java Virtual Machine - runtime environment for Java applications.',
+            'Salesforce': 'Cloud-based CRM platform for sales, service, and marketing.',
+            'Amazon Web Services': 'Comprehensive cloud computing platform by Amazon.',
+            '.NET': 'Free, cross-platform, open-source developer platform by Microsoft.',
+            'JavaScript': 'High-level, dynamic programming language for web development.',
+            'Rust': 'Systems programming language focused on safety, speed, and concurrency.',
+            'Haskell': 'Purely functional programming language with strong static typing.',
+            'PureScript': 'Strongly-typed functional language that compiles to JavaScript.',
+            'Go': 'Statically typed, compiled language designed for simplicity and efficiency.',
+            'Scala': 'Multi-paradigm language combining object-oriented and functional programming.',
+            'Ruby': 'Dynamic, object-oriented language focused on simplicity and productivity.',
+            'Clojure': 'Dynamic, functional dialect of Lisp on the Java platform.',
+            'ClojureScript': 'Compiler for Clojure that targets JavaScript.',
+            'Elixir': 'Dynamic, functional language for building scalable applications.',
+            'Elm': 'Functional language that compiles to JavaScript for web apps.',
+            'Erlang': 'Programming language for building concurrent, distributed systems.',
+            'Lua': 'Lightweight, embeddable scripting language.',
+            'C': 'General-purpose, procedural programming language.',
+            'D': 'Systems programming language with C-like syntax and modern features.',
+            'Perl': 'High-level, interpreted programming language for text processing.',
+            'Groovy': 'Dynamic language for the Java platform with concise syntax.',
+            'Dart': 'Client-optimized language for fast apps on any platform.',
+            'Kotlin': 'Modern, concise language for JVM and Android development.',
+            'OCaml': 'Industrial-strength functional programming language.',
+            'ColdFusion': 'Rapid web application development platform.',
+            'Fortran': 'Compiled language suited for numeric computation and scientific computing.',
+            'Pascal': 'Imperative and procedural programming language.',
+            'AutoHotkey': 'Scripting language for Windows automation.',
+            'AutoIt': 'Scripting language for Windows GUI automation.',
+            'Crystal': 'Language with Ruby-like syntax and C-like performance.',
+            'ES6 Tools': 'Tools for working with ECMAScript 2015+ features.',
+            'Web Performance Optimization': 'Techniques and tools for improving website speed.',
+            'Web Tools': 'Collection of useful tools for web development.',
+            'Web Components': 'Suite of technologies for creating reusable custom elements.',
+            'Canvas': 'HTML5 element for drawing graphics via scripting.',
+            'Inspiration': 'Design inspiration and creative resources for developers.',
+            'Android UI': 'User interface components and libraries for Android.',
+            'iOS UI': 'User interface components and libraries for iOS.',
+            'Meteor': 'Full-stack JavaScript platform for web and mobile apps.',
+            'BEM': 'Block Element Modifier methodology for CSS.',
+            'Flexbox': 'CSS layout model for flexible responsive design.',
+            'Web Typography': 'Resources for beautiful typography on the web.',
+            'Web Accessibility': 'Making websites accessible to all users.',
+            'Material Design': 'Design system created by Google.',
+            'Emails': 'Resources for HTML email development.',
+            'Web Audio': 'High-level JavaScript API for processing audio.',
+            'Offline-First': 'Building apps that work without an internet connection.',
+            'Text Editing': 'Text editors and editing tools for the web.',
+            'Motion UI Design': 'Animation and motion design for user interfaces.',
+            'Charting': 'Libraries and tools for data visualization charts.',
+            'Ionic Framework': 'Cross-platform mobile app development framework.',
+            'Chrome DevTools': 'Web developer tools built into Google Chrome.',
+            'Service Workers': 'Scripts that run in the background for offline support.',
+            'Progressive Web Apps': 'Web apps with native app-like capabilities.',
+            'Progressive Enhancement': 'Strategy for web design emphasizing accessibility.',
+            'Docker': 'Platform for developing, shipping, and running applications in containers.',
+            'Play1 Framework': 'High-productivity Java and Scala web framework.',
+            'Phalcon': 'High-performance PHP framework delivered as a C extension.',
+            'Useful .htaccess Snippets': 'Apache server configuration snippets.',
+            'University Courses': 'Free online courses from top universities.',
+            'Data Science': 'Extracting knowledge and insights from data.',
+            'Talks': 'Conference talks and presentations on technology.',
+            'Algorithms': 'Step-by-step procedures for calculations and problem-solving.',
+            'Machine Learning': 'Algorithms that improve through experience and data.',
+            'Static Analysis': 'Analyzing code without executing it.',
+            'Software Engineering Blogs': 'Blogs about software development practices.',
+            'Papers We Love': 'Academic computer science papers worth reading.',
+            'Competitive Programming': 'Sport of programming problem solving.',
+            'Math': 'Mathematical concepts and resources for developers.',
+            'Recursion Schemes': 'Patterns for recursive data structure processing.',
+            'Application Security': 'Protecting applications from security threats.',
+            'Malware Analysis': 'Studying malicious software behavior.',
+            'Hacking': 'Security research and penetration testing.',
+            'Hacking Spots': 'Places with good wifi for hackers and developers.',
+            'Incident Response': 'Handling security incidents and breaches.',
+            'DevSecOps': 'Integrating security into DevOps practices.',
+            'Containers': 'Lightweight, isolated environments for running applications.',
+            'Screensavers': 'Screen savers for macOS.',
+            'Apps': 'Applications for macOS.',
+            'Open Source Apps': 'Open source applications for macOS.',
+            'Core': '.NET Core cross-platform framework.',
+            'Promises': 'JavaScript Promises for async programming.',
+            'Must Watch Talks': 'Essential JavaScript conference talks.',
+            'Tips': 'Useful JavaScript tips and tricks.',
+            'Network Layer': 'Networking libraries for JavaScript.',
+            'Micro npm Packages': 'Small, focused npm packages.',
+            'Functional Programming': 'Functional programming in JavaScript.',
+            'Observables': 'Reactive programming with observables.',
+            'Education': 'Educational resources and tutorials.',
+            'Playgrounds': 'Interactive coding environments.',
+            'Learning': 'Learning resources and tutorials.',
+            'RxJava': 'Reactive Extensions for the JVM.'
+        };
+
+        async function loadData() {
+            try {
+                const response = await fetch('../data/learn.json');
+                allData = await response.json();
+                
+                // Skip "Contents" category (it's just navigation)
+                const categories = allData.categories.filter(c => c.name !== 'Contents');
+                
+                // Build category navigation
+                buildCategoryNav(categories);
+                
+                // Calculate stats
+                updateStats(categories);
+                
+                // Render all categories (collapsed by default)
+                renderCategories(categories);
+                
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('content-container').innerHTML = `
+                    <div class="learn-card" style="text-align: center; padding: 40px;">
+                        <h3 style="border: none;">⚠️ Error Loading Data</h3>
+                        <p class="description">Unable to load awesome lists. Please try again later.</p>
+                    </div>
+                `;
+            }
+        }
+
+        function buildCategoryNav(categories) {
+            const nav = document.getElementById('category-nav');
+            categories.forEach(cat => {
+                const btn = document.createElement('button');
+                btn.className = 'category-btn';
+                btn.dataset.category = cat.name;
+                btn.textContent = cat.name;
+                btn.onclick = () => filterByCategory(cat.name);
+                nav.appendChild(btn);
+            });
+        }
+
+        function updateStats(categories) {
+            let totalItems = 0;
+            let itemsWithSubs = 0;
+            
+            categories.forEach(cat => {
+                totalItems += cat.items.length;
+                cat.items.forEach(item => {
+                    if (item.subcategories && item.subcategories.length > 0) {
+                        itemsWithSubs++;
+                    }
+                });
+            });
+            
+            document.getElementById('cat-count').textContent = categories.length;
+            document.getElementById('item-count').textContent = totalItems;
+            document.getElementById('sub-count').textContent = itemsWithSubs;
+            document.getElementById('results-count').textContent = `${totalItems} awesome lists`;
+        }
+
+        function getDescription(item) {
+            if (item.description && item.description.trim() !== '') {
+                return item.description;
+            }
+            return defaultDescriptions[item.name] || '';
+        }
+
+        function renderCategories(categories, searchTerm = '') {
+            const container = document.getElementById('content-container');
+            container.innerHTML = '';
+            
+            let visibleItems = 0;
+            
+            categories.forEach(category => {
+                // Filter items by search term
+                let items = category.items;
+                if (searchTerm) {
+                    items = items.filter(item => {
+                        const nameMatch = item.name.toLowerCase().includes(searchTerm);
+                        const descMatch = item.description && item.description.toLowerCase().includes(searchTerm);
+                        const subMatch = item.subcategories && item.subcategories.some(sub => 
+                            sub.name.toLowerCase().includes(searchTerm) || 
+                            (sub.description && sub.description.toLowerCase().includes(searchTerm))
+                        );
+                        return nameMatch || descMatch || subMatch;
+                    });
+                }
+                
+                // Filter by current category
+                if (currentCategory !== 'all' && category.name !== currentCategory) {
+                    return;
+                }
+                
+                if (items.length === 0) return;
+                
+                visibleItems += items.length;
+                
+                const section = document.createElement('div');
+                // Start collapsed by default, unless searching or single category selected
+                const shouldCollapse = !searchTerm && currentCategory === 'all' && !allExpanded;
+                section.className = 'category-section' + (shouldCollapse ? ' collapsed' : '');
+                section.id = category.name.toLowerCase().replace(/\s+/g, '-');
+                
+                const icon = categoryIcons[category.name] || 'folder';
+                
+                section.innerHTML = `
+                    <h2 onclick="toggleSection(this.querySelector('.collapse-btn'))">
+                        <span class="material-icons">${icon}</span>
+                        ${category.name}
+                        <span class="item-count">${items.length} items</span>
+                        <button class="collapse-btn" onclick="event.stopPropagation(); toggleSection(this)">${shouldCollapse ? '[ + ]' : '[ - ]'}</button>
+                    </h2>
+                    <div class="learn-grid">
+                        ${items.map(item => renderItem(item)).join('')}
+                    </div>
+                `;
+                
+                container.appendChild(section);
+            });
+            
+            if (visibleItems === 0) {
+                container.innerHTML = `
+                    <div class="learn-card" style="text-align: center; padding: 40px;">
+                        <h3 style="border: none;">🔍 No Results Found</h3>
+                        <p class="description">No awesome lists match your search. Try different keywords.</p>
+                    </div>
+                `;
+            }
+            
+            document.getElementById('results-count').textContent = `${visibleItems} awesome lists`;
+        }
+
+        function renderItem(item) {
+            const hasPath = item.path && item.path.trim() !== '' && !item.path.startsWith('#');
+            const isExternal = hasPath && item.path.startsWith('http');
+            
+            let linkHtml;
+            if (hasPath) {
+                const href = isExternal ? item.path : `../data/${item.path}`;
+                const target = isExternal ? ' target="_blank" rel="noopener noreferrer"' : '';
+                const badge = isExternal ? '<span class="external-badge">↗</span>' : '';
+                linkHtml = `<a href="${href}"${target}>${item.name}${badge}</a>`;
+            } else {
+                linkHtml = `<span class="no-path">${item.name}</span>`;
+            }
+            
+            const description = getDescription(item);
+            const isLongDesc = description.length > 150;
+            const descId = 'desc-' + Math.random().toString(36).substr(2, 9);
+            
+            let descriptionHtml = '';
+            if (description) {
+                descriptionHtml = `
+                    <p class="description ${isLongDesc ? 'truncated' : ''}" id="${descId}">${description}</p>
+                    ${isLongDesc ? `<button class="read-more-btn" onclick="toggleDescription('${descId}', this)">Read more</button>` : ''}
+                `;
+            }
+            
+            let subcategoriesHtml = '';
+            if (item.subcategories && item.subcategories.length > 0) {
+                const subId = 'sub-' + Math.random().toString(36).substr(2, 9);
+                subcategoriesHtml = `
+                    <div class="subcategories" id="${subId}">
+                        <h4>
+                            → Subcategories (${item.subcategories.length})
+                            <button class="sub-toggle" onclick="toggleSubcategories('${subId}', this)">[ show ]</button>
+                        </h4>
+                        <div class="sub-items" style="display: none;">
+                            ${item.subcategories.map(sub => {
+                                const subHasPath = sub.path && sub.path.trim() !== '';
+                                const subIsExternal = subHasPath && sub.path.startsWith('http');
+                                const subDesc = sub.description || defaultDescriptions[sub.name] || '';
+                                
+                                if (subHasPath) {
+                                    const subHref = subIsExternal ? sub.path : `../data/${sub.path}`;
+                                    const subTarget = subIsExternal ? ' target="_blank" rel="noopener noreferrer"' : '';
+                                    const subBadge = subIsExternal ? '<span class="external-badge">↗</span>' : '';
+                                    return `
+                                        <div class="sub-item">
+                                            <a href="${subHref}"${subTarget}>• ${sub.name}${subBadge}</a>
+                                            ${subDesc ? `<span class="sub-desc">- ${subDesc}</span>` : ''}
+                                        </div>
+                                    `;
+                                } else {
+                                    return `
+                                        <div class="sub-item">
+                                            <span class="no-path">• ${sub.name}</span>
+                                            ${subDesc ? `<span class="sub-desc">- ${subDesc}</span>` : ''}
+                                        </div>
+                                    `;
+                                }
+                            }).join('')}
+                        </div>
+                    </div>
+                `;
+            }
+            
+            return `
+                <div class="learn-card">
+                    <h3>${linkHtml}</h3>
+                    ${descriptionHtml}
+                    ${subcategoriesHtml}
+                </div>
+            `;
+        }
+
+        function toggleDescription(descId, btn) {
+            const desc = document.getElementById(descId);
+            if (desc.classList.contains('truncated')) {
+                desc.classList.remove('truncated');
+                desc.classList.add('expanded');
+                btn.textContent = 'Read less';
+            } else {
+                desc.classList.remove('expanded');
+                desc.classList.add('truncated');
+                btn.textContent = 'Read more';
+            }
+        }
+
+        function toggleSubcategories(subId, btn) {
+            const subContainer = document.getElementById(subId);
+            const subItems = subContainer.querySelector('.sub-items');
+            if (subItems.style.display === 'none') {
+                subItems.style.display = 'block';
+                btn.textContent = '[ hide ]';
+            } else {
+                subItems.style.display = 'none';
+                btn.textContent = '[ show ]';
+            }
+        }
+
+        function filterByCategory(categoryName) {
+            currentCategory = categoryName;
+            
+            // Update active button
+            document.querySelectorAll('.category-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.category === categoryName || 
+                    (categoryName === 'all' && btn.dataset.category === 'all'));
+            });
+            
+            // Re-render with current search term
+            const searchTerm = document.getElementById('search-box').value.toLowerCase().trim();
+            const categories = allData.categories.filter(c => c.name !== 'Contents');
+            renderCategories(categories, searchTerm);
+            
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function toggleSection(btn) {
+            const section = btn.closest('.category-section');
+            section.classList.toggle('collapsed');
+            btn.textContent = section.classList.contains('collapsed') ? '[ + ]' : '[ - ]';
+        }
+
+        function toggleAllSections() {
+            allExpanded = !allExpanded;
+            const sections = document.querySelectorAll('.category-section');
+            const btn = document.getElementById('expand-all-btn');
+            
+            sections.forEach(section => {
+                if (allExpanded) {
+                    section.classList.remove('collapsed');
+                    section.querySelector('.collapse-btn').textContent = '[ - ]';
+                } else {
+                    section.classList.add('collapsed');
+                    section.querySelector('.collapse-btn').textContent = '[ + ]';
+                }
+            });
+            
+            btn.textContent = allExpanded ? '[ Collapse All ]' : '[ Expand All ]';
+        }
+
+        // Search functionality
+        document.getElementById('search-box').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase().trim();
+            const categories = allData.categories.filter(c => c.name !== 'Contents');
+            renderCategories(categories, searchTerm);
+        });
+
+        // Back to top button visibility
+        window.addEventListener('scroll', function() {
+            const btn = document.getElementById('back-to-top');
+            if (window.scrollY > 500) {
+                btn.style.display = 'block';
+            } else {
+                btn.style.display = 'none';
+            }
+        });
+
+        // Load data on page load
+        loadData();
+    </script>
+</body>
+
+</html>

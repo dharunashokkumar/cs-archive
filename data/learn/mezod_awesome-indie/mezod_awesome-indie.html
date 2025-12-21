@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mezod Awesome Indie - Awesome List Resources">
+    <title>Mezod Awesome Indie</title>
+    <link rel="stylesheet" href="../markdown-page.css">
+    <!-- Marked.js - Markdown parser -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body>
+    <article id="content">
+        <p>Loading content...</p>
+    </article>
+
+    <script>
+        // =====================================================
+        // MARKDOWN TEMPLATE - Direct .md file rendering
+        // =====================================================
+        // 
+        // HOW TO USE:
+        // 1. Copy this template and rename it for your page
+        // 2. Change the 'markdownFile' variable below to your .md filename
+        // 3. Update the <title> and meta description
+        // 4. That's it! The markdown will be automatically converted to HTML
+        //
+        // =====================================================
+
+        // Change this to your markdown file name
+        const markdownFile = 'mezod_awesome-indie_README.md';
+
+        fetch(markdownFile)
+            .then(response => {
+                if (!response.ok) throw new Error('File not found');
+                return response.text();
+            })
+            .then(markdown => {
+                // Parse markdown to HTML using marked.js
+                document.getElementById('content').innerHTML = marked.parse(markdown);
+            })
+            .catch(err => {
+                console.error('Error loading markdown:', err);
+                document.getElementById('content').innerHTML = `
+                    <h1>Markdown Template</h1>
+                    <p>Could not load <code>${markdownFile}</code></p>
+                    <p>To use this template:</p>
+                    <ol>
+                        <li>Place your .md file in the same directory</li>
+                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
+                        <li>Update the page title and description in the &lt;head&gt;</li>
+                    </ol>
+                `;
+            });
+    </script>
+</body>
+
+</html>
