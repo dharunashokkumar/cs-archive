@@ -61,18 +61,115 @@
     </div>
 
     <div id="resources-container" class="section-container">
-        <div class="skill-card" style="grid-column: 1 / -1; text-align: center; padding: 40px;">
-            <h3 style="border: none; margin-bottom: 10px;">🚧 Coming Soon!</h3>
-            <p style="color: var(--text-muted);">This section is being populated with curated learning resources,
-                courses, books, and educational content.</p>
-            <p style="color: var(--text-muted); margin-top: 15px;">Check out <a
-                    href="free-services.html">FREE_SERVICES</a> for free developer tools and services!</p>
-        </div>
+        <!-- Resources will be loaded here -->
     </div>
 
     <script>
-        // Placeholder for future resource loading
-        // Will load from ../data/resources.json when populated
+        let allResources = [];
+
+        async function loadResources() {
+            try {
+                const response = await fetch('../data/resources.json');
+                const data = await response.json();
+                allResources = data.resources;
+                displayResources(allResources);
+                updateResultsCount(allResources);
+            } catch (error) {
+                console.error('Error loading resources:', error);
+                document.getElementById('resources-container').innerHTML = `
+                    <div class="skill-card" style="grid-column: 1 / -1; text-align: center; padding: 40px;">
+                        <h3 style="border: none; margin-bottom: 10px;">⚠️ Error Loading Resources</h3>
+                        <p style="color: var(--text-muted);">Unable to load resources. Please try again later.</p>
+                    </div>
+                `;
+            }
+        }
+
+        function displayResources(resources) {
+            const container = document.getElementById('resources-container');
+            
+            if (!resources || resources.length === 0) {
+                container.innerHTML = `
+                    <div class="skill-card" style="grid-column: 1 / -1; text-align: center; padding: 40px;">
+                        <h3 style="border: none; margin-bottom: 10px;">📚 No Resources Found</h3>
+                        <p style="color: var(--text-muted);">No resources match your search.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            container.innerHTML = resources.map(categoryData => `
+                <div class="skill-card">
+                    <h3>${categoryData.category}</h3>
+                    <div class="skill-list">
+                        ${categoryData.items.map(resource => `
+                            <div class="skill-item">
+                                <a href="${resource.url}" target="_blank" rel="noopener noreferrer">
+                                    ${resource.title}
+                                </a>
+                                <p style="color: var(--text-muted); margin: 5px 0; font-size: 0.9em;">
+                                    ${resource.description}
+                                </p>
+                                ${resource.tags && resource.tags.length > 0 ? `
+                                    <div style="margin-top: 8px;">
+                                        ${resource.tags.map(tag => `
+                                            <span style="display: inline-block; background: var(--border-color); 
+                                                padding: 2px 8px; margin: 2px; border-radius: 3px; 
+                                                font-size: 0.75em; color: var(--text-muted);">
+                                                ${tag}
+                                            </span>
+                                        `).join('')}
+                                    </div>
+                                ` : ''}
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function updateResultsCount(resources) {
+            const totalItems = resources.reduce((sum, cat) => sum + cat.items.length, 0);
+            const resultsCount = document.getElementById('results-count');
+            resultsCount.textContent = `${totalItems} resources found`;
+        }
+
+        function searchResources(query) {
+            if (!query.trim()) {
+                displayResources(allResources);
+                updateResultsCount(allResources);
+                return;
+            }
+
+            const searchTerm = query.toLowerCase();
+            const filteredResources = allResources.map(categoryData => {
+                const filteredItems = categoryData.items.filter(resource => {
+                    const matchTitle = resource.title.toLowerCase().includes(searchTerm);
+                    const matchDescription = resource.description.toLowerCase().includes(searchTerm);
+                    const matchTags = resource.tags && resource.tags.some(tag => 
+                        tag.toLowerCase().includes(searchTerm)
+                    );
+                    const matchCategory = categoryData.category.toLowerCase().includes(searchTerm);
+                    return matchTitle || matchDescription || matchTags || matchCategory;
+                });
+
+                return {
+                    category: categoryData.category,
+                    items: filteredItems
+                };
+            }).filter(categoryData => categoryData.items.length > 0);
+
+            displayResources(filteredResources);
+            updateResultsCount(filteredResources);
+        }
+
+        // Event listener for search
+        document.getElementById('search-box').addEventListener('input', (e) => {
+            searchResources(e.target.value);
+        });
+
+        // Load resources on page load
+        loadResources();
     </script>
 </body>
 

@@ -4,5 +4,23 @@
     "description": "Curated learning resources, courses, books, and educational content for CS students.",
     "last_updated": "2025-12-21"
   },
-  "resources": []
+  "resources": [
+    {
+      "category": "Books",
+      "items": [
+        {
+          "title": "The Art of Command Line",
+          "description": "Master the command line in one page - a comprehensive guide covering bash, commands, and command-line productivity.",
+          "url": "../data/resources/the-art-of-command-line/the_art_of_command_line.html",
+          "tags": ["command-line", "bash", "linux", "terminal"]
+        },
+        {
+          "title": "The Book of Secret Knowledge",
+          "description": "A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools, and more for developers and system administrators.",
+          "url": "../data/resources/the-book-of-secret-knowledge/the_book_of_secret_knowledge.html",
+          "tags": ["security", "devops", "tools", "cheatsheets", "sysadmin"]
+        }
+      ]
+    }
+  ]
 }

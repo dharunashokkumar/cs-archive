@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="The Art of Command Line - Master the command line in one page. Tips and notes for using command line on Linux.">
+    <title>The Art of Command Line</title>
+    <link rel="stylesheet" href="../asset/markdown-page.css">
+    <!-- Marked.js - Markdown parser -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body>
+    <article id="content">
+        <p>Loading content...</p>
+    </article>
+
+    <script>
+        // Load and render the markdown file directly
+        fetch('the_art_of_command_line.md')
+            .then(response => {
+                if (!response.ok) throw new Error('File not found');
+                return response.text();
+            })
+            .then(markdown => {
+                // Parse markdown to HTML using marked.js
+                document.getElementById('content').innerHTML = marked.parse(markdown);
+            })
+            .catch(err => {
+                console.error('Error loading markdown:', err);
+                document.getElementById('content').innerHTML = `
+                    <h1>Error Loading Content</h1>
+                    <p>Could not load the_art_of_command_line.md</p>
+                    <p>Error: ${err.message}</p>
+                `;
+            });
+    </script>
+</body>
+
+</html>
