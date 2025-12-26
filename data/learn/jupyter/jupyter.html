@@ -8,38 +8,177 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Markusschanta Awesome Jupyter - Awesome List Resources">
-    <title>Markusschanta Awesome Jupyter</title>
+    <meta name="description" content="A curated list of awesome Jupyter projects, libraries and resources. Jupyter is an open-source web application that allows you to create and share documents...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Jupyter [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![HitCount](https://hits.dwyl.com/markusschanta/awesome-jupyter.svg?style=flat)](http://hits.dwyl.com/markusschanta/awesome-jupyter) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Jupyter <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a> <a href="http://hits.dwyl.com/markusschanta/awesome-jupyter"><img alt="HitCount" src="https://hits.dwyl.com/markusschanta/awesome-jupyter.svg?style=flat" /></a></h1>
+<p>A curated list of awesome <a href="http://jupyter.org">Jupyter</a> projects, libraries and resources. Jupyter is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text.</p>
+<div align="center" style="border-bottom: 0px;">
+    <br>
+    <img width="400" src="assets/logo.png" alt="Jupyter logo">
+    <br>
+    <br>
+</div>
+
+<hr />
+<div align="center" style="border-bottom: 0px;">
+    <sub>Awesome Jupyter is proudly supported by our sponsor:</sub>
+    <br>
+    <br>
+    <a href="https://deepnote.com/?utm_source=github&utm_medium=promo&utm_campaign=awesomejupyter"><img width="300" src="assets/deepnote.jpeg" alt="Deepnote logo"></a>
+    <br>
+    <br>
+    <b>Deepnote is a collaborative data science notebook built for teams.</b>
+    <div>
+    <sub>Explore data with Python & SQL from your browser. Add context with data visualizations and rich text editing. Share your work by simply sending a link. <a href="https://deepnote.com/?utm_source=github&utm_medium=promo&utm_campaign=awesomejupyter">Check it out on the Deepnote free plan.</a></sub>
+    </div>
+</div>
+
+<hr />
+<h2>Contents</h2>
+<!--lint ignore awesome-toc alphabetize-lists-->
+<ul>
+<li><a href="#runtimesfrontends">Runtimes/Frontends</a></li>
+<li><a href="#collaborationeducation">Collaboration/Education</a></li>
+<li><a href="#visualization">Visualization</a></li>
+<li><a href="#Tables">Tables</a></li>
+<li><a href="#renderingpublishingconversion">Rendering/Publishing/Conversion</a></li>
+<li><a href="#version-control">Version Control</a></li>
+<li><a href="#jupyterlab-extensions">JupyterLab Extensions</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#domain-specific-projects">Domain-Specific Projects</a></li>
+<li><a href="#hosted-notebook-solutions">Hosted Notebook Solutions</a></li>
+<li><a href="#official-resources-and-documentation">Official Resources and Documentation</a></li>
+<li><a href="#community-resources">Community Resources</a></li>
+<li><a href="#articlesguidestutorials">Articles/Guides/Tutorials</a></li>
+<li><a href="#contributing">Contributing</a></li>
+</ul>
+<!--lint disable no-repeat-item-in-description-->
+
+<hr />
+<h2>Runtimes/Frontends</h2>
+<ul>
+<li><a href="http://beakerx.com/">Beaker</a> - Development environment with seamless data transmission from one language to another.</li>
+<li><a href="https://github.com/jupyter/docker-stacks">docker-stacks</a> - Hierarchical stacks of ready-to-run Jupyter applications in Docker.</li>
+<li><a href="https://my.guild.ai/docs/jupyter-notebook-experiments/">Guild AI</a> - Execute notebooks as experiments to capture and compare results over time.</li>
+<li><a href="https://github.com/nteract/hydrogen">Hydrogen</a> - Run code inline in Atom using Jupyter kernels.</li>
+<li><a href="https://github.com/jupyter/notebook">Jupyter Notebook</a> - Main Jupyter notebook runtime.</li>
+<li><a href="https://github.com/jupyterhub/jupyterhub">JupyterHub</a> - Multi-user server for Jupyter.</li>
+<li><a href="https://github.com/jupyterlab/jupyterlab">JupyterLab</a> - JupyterLab is the next generation user interface for Jupyter.</li>
+<li><a href="https://github.com/jupyterlab/jupyterlab-desktop">JupyterLab Desktop</a> - A desktop application for JupyterLab, based on Electron.</li>
+<li><a href="https://github.com/tweag/jupyterWith">JupyterWith</a> - Nix-based framework for the definition of declarative and reproducible Jupyter environments.</li>
+<li><a href="https://github.com/kaggle/docker-python">kaggle/docker-python</a> - Kaggle Python Docker image that includes datasets and packages.</li>
+<li><a href="https://github.com/ml-tooling/ml-workspace">ML Workspace</a> - Docker image that includes Jupyter(Lab) and various packages for data science/machine learning.</li>
+<li><a href="https://github.com/nteract/nteract">nteract</a> - Native desktop notebook frontend. <!--lint disable double-link--></li>
+<li><a href="https://github.com/holoviz/panel">Panel</a> - Notebooks as static files or interactive and standalone server-/client-side (via pyodide) apps.</li>
+<li><a href="https://panelite.holoviz.org">PaneLite</a> - A distribution of <a href="https://jupyterlite.readthedocs.io/en/latest/">JupyterLite</a> that works with <a href="https://panel.holoviz.org">Panel</a> and the <a href="https://holoviz.org">HoloViz</a> ecosystem. <!--lint enable double-link--></li>
+<li><a href="https://github.com/stencila/stencila">Stencila</a> - Native desktop notebook frontend.</li>
+<li><a href="https://code.visualstudio.com/docs/python/jupyter-support">Visual Studio Code</a> - Native desktop notebook frontend.</li>
+<li><a href="https://github.com/voila-dashboards/voila">voila</a> - Notebooks as interactive standalone web applications.</li>
+</ul>
+<h2>Collaboration/Education</h2>
+<ul>
+<li><a href="https://github.com/osteele/callgraph">callgraph</a> - Magic to display a function call graph.</li>
+<li><a href="https://github.com/IllumiDesk/illumidesk">IllumiDesk</a> - Docker-based JupyterHub + LTI + nbgrader distribution for education.</li>
+<li><a href="https://github.com/jiffyclub/ipythonblocks">IPythonBlocks</a> - Practice Python with colored grids in Jupyter.</li>
+<li><a href="https://github.com/jupyter/jupyter-drive">jupyter-drive</a> - Google Drive for Jupyter.</li>
+<li><a href="https://github.com/ibleducation/jupyter-edx-grader-xblock">jupyter-edx-grader-xblock</a> - Auto-grade a student assignment created as a Jupyter notebook and write the score in the Open edX gradebook.</li>
+<li><a href="https://github.com/ibleducation/jupyter-viewer-xblock">jupyter-viewer-xblock</a> - Fetch and display part of, or an entire Jupyter Notebook in an Open edX XBlock.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Jupyter <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a> <a href="http://hits.dwyl.com/markusschanta/awesome-jupyter"><img alt="HitCount" src="https://hits.dwyl.com/markusschanta/awesome-jupyter.svg?style=flat" /></a></h1>
+<p>A curated list of awesome <a href="http://jupyter.org">Jupyter</a> projects, libraries and resources. Jupyter is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text.</p>
+<div align="center" style="border-bottom: 0px;">
+    <br>
+    <img width="400" src="assets/logo.png" alt="Jupyter logo">
+    <br>
+    <br>
+</div>
+
+<hr />
+<div align="center" style="border-bottom: 0px;">
+    <sub>Awesome Jupyter is proudly supported by our sponsor:</sub>
+    <br>
+    <br>
+    <a href="https://deepnote.com/?utm_source=github&utm_medium=promo&utm_campaign=awesomejupyter"><img width="300" src="assets/deepnote.jpeg" alt="Deepnote logo"></a>
+    <br>
+    <br>
+    <b>Deepnote is a collaborative data science notebook built for teams.</b>
+    <div>
+    <sub>Explore data with Python & SQL from your browser. Add context with data visualizations and rich text editing. Share your work by simply sending a link. <a href="https://deepnote.com/?utm_source=github&utm_medium=promo&utm_campaign=awesomejupyter">Check it out on the Deepnote free plan.</a></sub>
+    </div>
+</div>
+
+<hr />
+<h2>Contents</h2>
+<!--lint ignore awesome-toc alphabetize-lists-->
+<ul>
+<li><a href="#runtimesfrontends">Runtimes/Frontends</a></li>
+<li><a href="#collaborationeducation">Collaboration/Education</a></li>
+<li><a href="#visualization">Visualization</a></li>
+<li><a href="#Tables">Tables</a></li>
+<li><a href="#renderingpublishingconversion">Rendering/Publishing/Conversion</a></li>
+<li><a href="#version-control">Version Control</a></li>
+<li><a href="#jupyterlab-extensions">JupyterLab Extensions</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#domain-specific-projects">Domain-Specific Projects</a></li>
+<li><a href="#hosted-notebook-solutions">Hosted Notebook Solutions</a></li>
+<li><a href="#official-resources-and-documentation">Official Resources and Documentation</a></li>
+<li><a href="#community-resources">Community Resources</a></li>
+<li><a href="#articlesguidestutorials">Articles/Guides/Tutorials</a></li>
+<li><a href="#contributing">Contributing</a></li>
+</ul>
+<!--lint disable no-repeat-item-in-description-->
+
+<hr />
+<h2>Runtimes/Frontends</h2>
+<ul>
+<li><a href="http://beakerx.com/">Beaker</a> - Development environment with seamless data transmission from one language to another.</li>
+<li><a href="https://github.com/jupyter/docker-stacks">docker-stacks</a> - Hierarchical stacks of ready-to-run Jupyter applications in Docker.</li>
+<li><a href="https://my.guild.ai/docs/jupyter-notebook-experiments/">Guild AI</a> - Execute notebooks as experiments to capture and compare results over time.</li>
+<li><a href="https://github.com/nteract/hydrogen">Hydrogen</a> - Run code inline in Atom using Jupyter kernels.</li>
+<li><a href="https://github.com/jupyter/notebook">Jupyter Notebook</a> - Main Jupyter notebook runtime.</li>
+<li><a href="https://github.com/jupyterhub/jupyterhub">JupyterHub</a> - Multi-user server for Jupyter.</li>
+<li><a href="https://github.com/jupyterlab/jupyterlab">JupyterLab</a> - JupyterLab is the next generation user interface for Jupyter.</li>
+<li><a href="https://github.com/jupyterlab/jupyterlab-desktop">JupyterLab Desktop</a> - A desktop application for JupyterLab, based on Electron.</li>
+<li><a href="https://github.com/tweag/jupyterWith">JupyterWith</a> - Nix-based framework for the definition of declarative and reproducible Jupyter environments.</li>
+<li><a href="https://github.com/kaggle/docker-python">kaggle/docker-python</a> - Kaggle Python Docker image that includes datasets and packages.</li>
+<li><a href="https://github.com/ml-tooling/ml-workspace">ML Workspace</a> - Docker image that includes Jupyter(Lab) and various packages for data science/machine learning.</li>
+<li><a href="https://github.com/nteract/nteract">nteract</a> - Native desktop notebook frontend. <!--lint disable double-link--></li>
+<li><a href="https://github.com/holoviz/panel">Panel</a> - Notebooks as static files or interactive and standalone server-/client-side (via pyodide) apps.</li>
+<li><a href="https://panelite.holoviz.org">PaneLite</a> - A distribution of <a href="https://jupyterlite.readthedocs.io/en/latest/">JupyterLite</a> that works with <a href="https://panel.holoviz.org">Panel</a> and the <a href="https://holoviz.org">HoloViz</a> ecosystem. <!--lint enable double-link--></li>
+<li><a href="https://github.com/stencila/stencila">Stencila</a> - Native desktop notebook frontend.</li>
+<li><a href="https://code.visualstudio.com/docs/python/jupyter-support">Visual Studio Code</a> - Native desktop notebook frontend.</li>
+<li><a href="https://github.com/voila-dashboards/voila">voila</a> - Notebooks as interactive standalone web applications.</li>
+</ul>
+<h2>Collaboration/Education</h2>
+<ul>
+<li><a href="https://github.com/osteele/callgraph">callgraph</a> - Magic to display a function call graph.</li>
+<li><a href="https://github.com/IllumiDesk/illumidesk">IllumiDesk</a> - Docker-based JupyterHub + LTI + nbgrader distribution for education.</li>
+<li><a href="https://github.com/jiffyclub/ipythonblocks">IPythonBlocks</a> - Practice Python with colored grids in Jupyter.</li>
+<li><a href="https://github.com/jupyter/jupyter-drive">jupyter-drive</a> - Google Drive for Jupyter.</li>
+<li><a href="https://github.com/ibleducation/jupyter-edx-grader-xblock">jupyter-edx-grader-xblock</a> - Auto-grade a student assignment created as a Jupyter notebook and write the score in the Open edX gradebook.</li>
+<li><a href="https://github.com/ibleducation/jupyter-viewer-xblock">jupyter-viewer-xblock</a> - Fetch and display part of, or an entire Jupyter Notebook in an Open edX XBlock.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'jupyter_README.md';
 
         fetch(markdownFile)
@@ -48,21 +187,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

@@ -8,38 +8,193 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hantuzun Awesome Clojurescript - Awesome List Resources">
-    <title>Hantuzun Awesome Clojurescript</title>
+    <meta name="description" content="- Resources - Books - Awesome ClojureScript - Canvas - Client/Server Communication - Code Analysis - Data Serialization - Data Visualization - Database -...">
+    <meta name="robots" content="index, follow">
+    <title>Clojurescript - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <p><img src="https://avatars2.githubusercontent.com/u/12118456?v=3&s=75"
+     align="right"/></p>
+<h1>Awesome ClojureScript</h1>
+<h5>A community driven list of ClojureScript books, frameworks, libraries and wrappers.</h5>
+<hr />
+<ul>
+<li><a href="#resources">Resources</a><ul>
+<li><a href="#books">Books</a></li>
+</ul>
+</li>
+<li><a href="#awesome-clojurescript-1">Awesome ClojureScript</a><ul>
+<li><a href="#canvas">Canvas</a></li>
+<li><a href="#clientserver-communication">Client/Server Communication</a></li>
+<li><a href="#code-analysis">Code Analysis</a></li>
+<li><a href="#data-serialization">Data Serialization</a></li>
+<li><a href="#data-visualization">Data Visualization</a></li>
+<li><a href="#database">Database</a></li>
+<li><a href="#development">Development</a></li>
+<li><a href="#document-object-model">Document Object Model</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#graphics">Graphics</a></li>
+<li><a href="#http-handler">HTTP Handler</a></li>
+<li><a href="#internationalization">Internationalization</a></li>
+<li><a href="#javascript-interoperability">JavaScript Interoperability</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#reactjs-interface">React.js Interface</a></li>
+<li><a href="#reactive-programming">Reactive Programming</a></li>
+<li><a href="#routing">Routing</a></li>
+<li><a href="#state-management">State Management</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#validation">Validation</a></li>
+<li><a href="#web-framework--template">Web Framework &amp; Template</a></li>
+<li><a href="#websockets">WebSockets</a></li>
+</ul>
+</li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<hr />
+<h2>Resources</h2>
+<h3>Books</h3>
+<ul>
+<li><a href="https://leanpub.com/clojurescript-unraveled">ClojureScript Unraveled</a> – An open source book about the ClojureScript language that covers all the language features, how to use the compiler and the tooling for building applications and libraries.</li>
+<li><a href="https://funcool.github.io/clojurescript-unraveled/">ClojureScript Unraveled (2nd edition)</a> – An open source book about the ClojureScript language that covers all the language features, how to use the compiler and the tooling for building applications and libraries.</li>
+<li><a href="https://shop.oreilly.com/product/0636920025139.do">ClojureScript: Up and Running</a> – An introduction to ClojureScript written by big guns of Clojure Stuart Sierra and Luke VanderHart.</li>
+<li><a href="https://www.manning.com/books/clojure-the-essential-reference">Clojure, The Essential Reference</a> – A reference book on the Clojure language and standard library.</li>
+<li><a href="https://shop.oreilly.com/product/0636920043584.do">Etudes for ClojureScript</a> – A hands-on-book of 30 companion exercises or études for introducing ClojureScript.</li>
+<li><a href="https://www.packtpub.com/web-development/learning-clojurescript">Learning ClojureScript</a> – Master the art of agile single page web application development with ClojureScript.</li>
+<li><a href="https://langintro.com/cljsbook">Transforming Data with ClojureScript</a> – A beginner's guide to ClojureScript with interactive examples and exercises, "focusing on the main task that programming does—transforming data".</li>
+</ul>
+<h3>Courses</h3>
+<ul>
+<li><a href="http://clojurescriptkoans.com/">ClojureScript Koans</a> – A great way to start learning Clojure and ClojureScript on the web with interactive challanges.</li>
+<li><a href="https://lambdaisland.com/">Lambda Island</a> – A full-stack web development course including front-end with ClojureScript, back-end with Clojure, language essentials, security, internet standards and system administration.</li>
+<li><a href="https://www.learnreagent.com/">Learn Reagent</a> – An introduction to ClojureScript with Reagent for developers. 1 hour free content is available. <a href="https://www.learnreframe.com/">learn re-frame</a> is its follow up.</li>
+<li><a href="https://purelyfunctional.tv/">Learning ClojureScript</a> – A 2h 11m long introduction to Clojurescript by O'Really Online Learning. Also available on <a href="https://www.udemy.com/course/learning-clojurescript/">Udemy</a>.</li>
+</ul>
+<h3>Videos</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=gsffg5xxFQI">ClojureScript for Skeptics</a> – Derek Slager's talk for Clojure Conj 2015 where he is Discussing the many reasons why ClojureScript is in fact a very pragmatic language to consider for web development.</li>
+<li><a href="https://www.youtube.com/watch?v=KZjFVdU8VLI">Interactive programming Flappy Bird in ClojureScript</a> – A 5 minutes video from 2014 demostrating the power of ClojureScript's developer experience.</li>
+</ul>
+<h2>Awesome ClojureScript</h2>
+<h3>Canvas</h3>
+<ul>
+<li><a href="https://github.com/rm-hull/monet">Monet</a> – A small ClojureScript library to make it easier to work with canvas and visuals.</li>
+<li><a href="https://github.com/Quamolit/quamolit">Quamolit</a> – A tiny declarative animation library , inspired by React.</li>
+</ul>
+<h3>Client/Server Communication</h3>
+<ul>
+<li><a href="https://github.com/JulianBirch/cljs-ajax">cljs-ajax</a> – A simple Ajax client for ClojureScript and Clojure.</li>
+<li><a href="https://github.com/LightTable/fetch">Fetch</a> – A ClojureScript library that makes client/server interaction painless.</li>
+</ul>
+<h3>Code Analysis</h3>
+<ul>
+<li><a href="https://github.com/jonase/kibit">kibit</a> – Static code analyzer to find patterns of code that could be rewritten with a more idiomatic function or macro.</li>
+</ul>
+<h3>Data Serialization</h3>
+<ul>
+<li><a href="https://github.com/tailrecursion/cljson">Cljson</a> – Clojure/ClojureScript library for accelerated browser data deserialization.</li>
+<li><a href="https://github.com/cognitect/transit-cljs">Transit</a> – A data interchange format and set of libraries for conveying values between applications written in different programming languages.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <p><img src="https://avatars2.githubusercontent.com/u/12118456?v=3&s=75"
+     align="right"/></p>
+<h1>Awesome ClojureScript</h1>
+<h5>A community driven list of ClojureScript books, frameworks, libraries and wrappers.</h5>
+<hr />
+<ul>
+<li><a href="#resources">Resources</a><ul>
+<li><a href="#books">Books</a></li>
+</ul>
+</li>
+<li><a href="#awesome-clojurescript-1">Awesome ClojureScript</a><ul>
+<li><a href="#canvas">Canvas</a></li>
+<li><a href="#clientserver-communication">Client/Server Communication</a></li>
+<li><a href="#code-analysis">Code Analysis</a></li>
+<li><a href="#data-serialization">Data Serialization</a></li>
+<li><a href="#data-visualization">Data Visualization</a></li>
+<li><a href="#database">Database</a></li>
+<li><a href="#development">Development</a></li>
+<li><a href="#document-object-model">Document Object Model</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#graphics">Graphics</a></li>
+<li><a href="#http-handler">HTTP Handler</a></li>
+<li><a href="#internationalization">Internationalization</a></li>
+<li><a href="#javascript-interoperability">JavaScript Interoperability</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#reactjs-interface">React.js Interface</a></li>
+<li><a href="#reactive-programming">Reactive Programming</a></li>
+<li><a href="#routing">Routing</a></li>
+<li><a href="#state-management">State Management</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#validation">Validation</a></li>
+<li><a href="#web-framework--template">Web Framework &amp; Template</a></li>
+<li><a href="#websockets">WebSockets</a></li>
+</ul>
+</li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<hr />
+<h2>Resources</h2>
+<h3>Books</h3>
+<ul>
+<li><a href="https://leanpub.com/clojurescript-unraveled">ClojureScript Unraveled</a> – An open source book about the ClojureScript language that covers all the language features, how to use the compiler and the tooling for building applications and libraries.</li>
+<li><a href="https://funcool.github.io/clojurescript-unraveled/">ClojureScript Unraveled (2nd edition)</a> – An open source book about the ClojureScript language that covers all the language features, how to use the compiler and the tooling for building applications and libraries.</li>
+<li><a href="https://shop.oreilly.com/product/0636920025139.do">ClojureScript: Up and Running</a> – An introduction to ClojureScript written by big guns of Clojure Stuart Sierra and Luke VanderHart.</li>
+<li><a href="https://www.manning.com/books/clojure-the-essential-reference">Clojure, The Essential Reference</a> – A reference book on the Clojure language and standard library.</li>
+<li><a href="https://shop.oreilly.com/product/0636920043584.do">Etudes for ClojureScript</a> – A hands-on-book of 30 companion exercises or études for introducing ClojureScript.</li>
+<li><a href="https://www.packtpub.com/web-development/learning-clojurescript">Learning ClojureScript</a> – Master the art of agile single page web application development with ClojureScript.</li>
+<li><a href="https://langintro.com/cljsbook">Transforming Data with ClojureScript</a> – A beginner's guide to ClojureScript with interactive examples and exercises, "focusing on the main task that programming does—transforming data".</li>
+</ul>
+<h3>Courses</h3>
+<ul>
+<li><a href="http://clojurescriptkoans.com/">ClojureScript Koans</a> – A great way to start learning Clojure and ClojureScript on the web with interactive challanges.</li>
+<li><a href="https://lambdaisland.com/">Lambda Island</a> – A full-stack web development course including front-end with ClojureScript, back-end with Clojure, language essentials, security, internet standards and system administration.</li>
+<li><a href="https://www.learnreagent.com/">Learn Reagent</a> – An introduction to ClojureScript with Reagent for developers. 1 hour free content is available. <a href="https://www.learnreframe.com/">learn re-frame</a> is its follow up.</li>
+<li><a href="https://purelyfunctional.tv/">Learning ClojureScript</a> – A 2h 11m long introduction to Clojurescript by O'Really Online Learning. Also available on <a href="https://www.udemy.com/course/learning-clojurescript/">Udemy</a>.</li>
+</ul>
+<h3>Videos</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=gsffg5xxFQI">ClojureScript for Skeptics</a> – Derek Slager's talk for Clojure Conj 2015 where he is Discussing the many reasons why ClojureScript is in fact a very pragmatic language to consider for web development.</li>
+<li><a href="https://www.youtube.com/watch?v=KZjFVdU8VLI">Interactive programming Flappy Bird in ClojureScript</a> – A 5 minutes video from 2014 demostrating the power of ClojureScript's developer experience.</li>
+</ul>
+<h2>Awesome ClojureScript</h2>
+<h3>Canvas</h3>
+<ul>
+<li><a href="https://github.com/rm-hull/monet">Monet</a> – A small ClojureScript library to make it easier to work with canvas and visuals.</li>
+<li><a href="https://github.com/Quamolit/quamolit">Quamolit</a> – A tiny declarative animation library , inspired by React.</li>
+</ul>
+<h3>Client/Server Communication</h3>
+<ul>
+<li><a href="https://github.com/JulianBirch/cljs-ajax">cljs-ajax</a> – A simple Ajax client for ClojureScript and Clojure.</li>
+<li><a href="https://github.com/LightTable/fetch">Fetch</a> – A ClojureScript library that makes client/server interaction painless.</li>
+</ul>
+<h3>Code Analysis</h3>
+<ul>
+<li><a href="https://github.com/jonase/kibit">kibit</a> – Static code analyzer to find patterns of code that could be rewritten with a more idiomatic function or macro.</li>
+</ul>
+<h3>Data Serialization</h3>
+<ul>
+<li><a href="https://github.com/tailrecursion/cljson">Cljson</a> – Clojure/ClojureScript library for accelerated browser data deserialization.</li>
+<li><a href="https://github.com/cognitect/transit-cljs">Transit</a> – A data interchange format and set of libraries for conveying values between applications written in different programming languages.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'clojurescript_README.md';
 
         fetch(markdownFile)
@@ -48,21 +203,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

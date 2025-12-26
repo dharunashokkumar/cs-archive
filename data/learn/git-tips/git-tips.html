@@ -8,38 +8,159 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Git Tips Tips - Awesome List Resources">
-    <title>Git Tips Tips</title>
+    <meta name="description" content="> Collection of , want to add your tips? Checkout contributing.md English | 中文 | Русский | 한국어 | Tiếng Việt | 日本語 | नेपाली | Polski | فارسی git-tip - A handy...">
+    <meta name="robots" content="index, follow">
+    <title>Git Tips - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h2>git-tips</h2>
+<blockquote>
+<p>Collection of <code>git-tips</code>, want to add your tips? Checkout <a href="./contributing.md">contributing.md</a></p>
+</blockquote>
+<p><a href="http://git.io/git-tips">English</a> | <a href="https://github.com/521xueweihan/git-tips">中文</a> | <a href="https://github.com/Imangazaliev/git-tips">Русский</a> | <a href="https://github.com/mingrammer/git-tips">한국어</a> | <a href="https://github.com/hprobotic/git-tips">Tiếng Việt</a> | <a href="https://github.com/isotai/git-tips">日本語</a> | <a href="https://github.com/amarduwal/git-tips">नेपाली</a> | <a href="https://github.com/mbiesiad/tips">Polski</a> | <a href="https://github.com/javadnikbakht/git-tips">فارسی</a></p>
+<h3><strong>Tools:</strong></h3>
+<ul>
+<li><a href="https://www.npmjs.com/package/git-tip">git-tip</a> - A handy CLI to make optimum use of these tips. (<a href="https://github.com/djoudi5/docker-git-tip">Here in Docker container</a>)</li>
+</ul>
+<p>P.S: All these commands are tested on <code>git version 2.7.4 (Apple Git-66)</code>.</p>
+<!-- @doxie.inject start toc -->
+<!-- Don’t remove or change the comment above – that can break automatic updates. -->
+<ul>
+<li><a href="#everyday-git-in-twenty-commands-or-so">Everyday Git in twenty commands or so</a></li>
+<li><a href="#show-helpful-guides-that-come-with-git">Show helpful guides that come with Git</a></li>
+<li><a href="#search-change-by-content">Search change by content</a></li>
+<li><a href="#show-changes-over-time-for-specific-file">Show changes over time for specific file</a></li>
+<li><a href="#remove-sensitive-data-from-history-after-a-push">Remove sensitive data from history, after a push</a></li>
+<li><a href="#sync-with-remote-overwrite-local-changes">Sync with remote, overwrite local changes</a></li>
+<li><a href="#list-of-all-files-till-a-commit">List of all files till a commit</a></li>
+<li><a href="#git-reset-first-commit">Git reset first commit</a></li>
+<li><a href="#reset-preserve-uncommitted-local-changes">Reset: preserve uncommitted local changes</a></li>
+<li><a href="#list-all-the-conflicted-files">List all the conflicted files</a></li>
+<li><a href="#list-of-all-files-changed-in-a-commit">List of all files changed in a commit</a></li>
+<li><a href="#unstaged-changes-since-last-commit">Unstaged changes since last commit</a></li>
+<li><a href="#changes-staged-for-commit">Changes staged for commit</a></li>
+<li><a href="#show-both-staged-and-unstaged-changes">Show both staged and unstaged changes</a></li>
+<li><a href="#list-all-branches-that-are-already-merged-into-master">List all branches that are already merged into master</a></li>
+<li><a href="#quickly-switch-to-the-previous-branch">Quickly switch to the previous branch</a></li>
+<li><a href="#remove-branches-that-have-already-been-merged-with-master">Remove branches that have already been merged with master</a></li>
+<li><a href="#list-all-branches-and-their-upstreams-as-well-as-last-commit-on-branch">List all branches and their upstreams, as well as last commit on branch</a></li>
+<li><a href="#track-upstream-branch">Track upstream branch</a></li>
+<li><a href="#delete-local-branch">Delete local branch</a></li>
+<li><a href="#delete-remote-branch">Delete remote branch</a></li>
+<li><a href="#create-local-tag">Create local tag</a></li>
+<li><a href="#delete-local-tag">Delete local tag</a></li>
+<li><a href="#delete-remote-tag">Delete remote tag</a></li>
+<li><a href="#undo-local-changes-with-the-last-content-in-head">Undo local changes with the last content in head</a></li>
+<li><a href="#revert-undo-a-commit-by-creating-a-new-commit">Revert: Undo a commit by creating a new commit</a></li>
+<li><a href="#reset-discard-commits-advised-for-private-branch">Reset: Discard commits, advised for private branch</a></li>
+<li><a href="#reword-the-previous-commit-message">Reword the previous commit message</a></li>
+<li><a href="#see-commit-history-for-just-the-current-branch">See commit history for just the current branch</a></li>
+<li><a href="#amend-author">Amend author.</a></li>
+<li><a href="#reset-author-after-author-has-been-changed-in-the-global-config">Reset author, after author has been changed in the global config.</a></li>
+<li><a href="#changing-a-remotes-url">Changing a remote's URL</a></li>
+<li><a href="#get-list-of-all-remote-references">Get list of all remote references</a></li>
+<li><a href="#get-list-of-all-local-and-remote-branches">Get list of all local and remote branches</a></li>
+<li><a href="#get-only-remote-branches">Get only remote branches</a></li>
+<li><a href="#stage-parts-of-a-changed-file-instead-of-the-entire-file">Stage parts of a changed file, instead of the entire file</a></li>
+<li><a href="#get-git-bash-completion">Get git bash completion</a></li>
+<li><a href="#what-changed-since-two-weeks">What changed since two weeks?</a></li>
+<li><a href="#see-all-commits-made-since-forking-from-master">See all commits made since forking from master</a></li>
+<li><a href="#pick-commits-across-branches-using-cherry-pick">Pick commits across branches using cherry-pick</a></li>
+<li><a href="#find-out-branches-containing-commit-hash">Find out branches containing commit-hash</a></li>
+<li><a href="#git-aliases">Git Aliases</a></li>
+<li><a href="#saving-current-state-of-tracked-files-without-commiting">Saving current state of tracked files without commiting</a></li>
+<li><a href="#saving-current-state-of-unstaged-changes-to-tracked-files">Saving current state of unstaged changes to tracked files</a></li>
+<li><a href="#saving-current-state-including-untracked-files">Saving current state including untracked files</a></li>
+<li><a href="#saving-current-state-with-message">Saving current state with message</a></li>
+<li><a href="#saving-current-state-of-all-files-ignored-untracked-and-tracked">Saving current state of all files (ignored, untracked, and tracked)</a></li>
+<li><a href="#show-list-of-all-saved-stashes">Show list of all saved stashes</a></li>
+<li><a href="#show-the-contents-of-any-stash-in-patch-form">Show the contents of any stash in patch form</a></li>
+<li><a href="#apply-any-stash-without-deleting-from-the-stashed-list">Apply any stash without deleting from the stashed list</a></li>
+<li><a href="#apply-last-stashed-state-and-delete-it-from-stashed-list">Apply last stashed state and delete it from stashed list</a></li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h2>git-tips</h2>
+<blockquote>
+<p>Collection of <code>git-tips</code>, want to add your tips? Checkout <a href="./contributing.md">contributing.md</a></p>
+</blockquote>
+<p><a href="http://git.io/git-tips">English</a> | <a href="https://github.com/521xueweihan/git-tips">中文</a> | <a href="https://github.com/Imangazaliev/git-tips">Русский</a> | <a href="https://github.com/mingrammer/git-tips">한국어</a> | <a href="https://github.com/hprobotic/git-tips">Tiếng Việt</a> | <a href="https://github.com/isotai/git-tips">日本語</a> | <a href="https://github.com/amarduwal/git-tips">नेपाली</a> | <a href="https://github.com/mbiesiad/tips">Polski</a> | <a href="https://github.com/javadnikbakht/git-tips">فارسی</a></p>
+<h3><strong>Tools:</strong></h3>
+<ul>
+<li><a href="https://www.npmjs.com/package/git-tip">git-tip</a> - A handy CLI to make optimum use of these tips. (<a href="https://github.com/djoudi5/docker-git-tip">Here in Docker container</a>)</li>
+</ul>
+<p>P.S: All these commands are tested on <code>git version 2.7.4 (Apple Git-66)</code>.</p>
+<!-- @doxie.inject start toc -->
+<!-- Don’t remove or change the comment above – that can break automatic updates. -->
+<ul>
+<li><a href="#everyday-git-in-twenty-commands-or-so">Everyday Git in twenty commands or so</a></li>
+<li><a href="#show-helpful-guides-that-come-with-git">Show helpful guides that come with Git</a></li>
+<li><a href="#search-change-by-content">Search change by content</a></li>
+<li><a href="#show-changes-over-time-for-specific-file">Show changes over time for specific file</a></li>
+<li><a href="#remove-sensitive-data-from-history-after-a-push">Remove sensitive data from history, after a push</a></li>
+<li><a href="#sync-with-remote-overwrite-local-changes">Sync with remote, overwrite local changes</a></li>
+<li><a href="#list-of-all-files-till-a-commit">List of all files till a commit</a></li>
+<li><a href="#git-reset-first-commit">Git reset first commit</a></li>
+<li><a href="#reset-preserve-uncommitted-local-changes">Reset: preserve uncommitted local changes</a></li>
+<li><a href="#list-all-the-conflicted-files">List all the conflicted files</a></li>
+<li><a href="#list-of-all-files-changed-in-a-commit">List of all files changed in a commit</a></li>
+<li><a href="#unstaged-changes-since-last-commit">Unstaged changes since last commit</a></li>
+<li><a href="#changes-staged-for-commit">Changes staged for commit</a></li>
+<li><a href="#show-both-staged-and-unstaged-changes">Show both staged and unstaged changes</a></li>
+<li><a href="#list-all-branches-that-are-already-merged-into-master">List all branches that are already merged into master</a></li>
+<li><a href="#quickly-switch-to-the-previous-branch">Quickly switch to the previous branch</a></li>
+<li><a href="#remove-branches-that-have-already-been-merged-with-master">Remove branches that have already been merged with master</a></li>
+<li><a href="#list-all-branches-and-their-upstreams-as-well-as-last-commit-on-branch">List all branches and their upstreams, as well as last commit on branch</a></li>
+<li><a href="#track-upstream-branch">Track upstream branch</a></li>
+<li><a href="#delete-local-branch">Delete local branch</a></li>
+<li><a href="#delete-remote-branch">Delete remote branch</a></li>
+<li><a href="#create-local-tag">Create local tag</a></li>
+<li><a href="#delete-local-tag">Delete local tag</a></li>
+<li><a href="#delete-remote-tag">Delete remote tag</a></li>
+<li><a href="#undo-local-changes-with-the-last-content-in-head">Undo local changes with the last content in head</a></li>
+<li><a href="#revert-undo-a-commit-by-creating-a-new-commit">Revert: Undo a commit by creating a new commit</a></li>
+<li><a href="#reset-discard-commits-advised-for-private-branch">Reset: Discard commits, advised for private branch</a></li>
+<li><a href="#reword-the-previous-commit-message">Reword the previous commit message</a></li>
+<li><a href="#see-commit-history-for-just-the-current-branch">See commit history for just the current branch</a></li>
+<li><a href="#amend-author">Amend author.</a></li>
+<li><a href="#reset-author-after-author-has-been-changed-in-the-global-config">Reset author, after author has been changed in the global config.</a></li>
+<li><a href="#changing-a-remotes-url">Changing a remote's URL</a></li>
+<li><a href="#get-list-of-all-remote-references">Get list of all remote references</a></li>
+<li><a href="#get-list-of-all-local-and-remote-branches">Get list of all local and remote branches</a></li>
+<li><a href="#get-only-remote-branches">Get only remote branches</a></li>
+<li><a href="#stage-parts-of-a-changed-file-instead-of-the-entire-file">Stage parts of a changed file, instead of the entire file</a></li>
+<li><a href="#get-git-bash-completion">Get git bash completion</a></li>
+<li><a href="#what-changed-since-two-weeks">What changed since two weeks?</a></li>
+<li><a href="#see-all-commits-made-since-forking-from-master">See all commits made since forking from master</a></li>
+<li><a href="#pick-commits-across-branches-using-cherry-pick">Pick commits across branches using cherry-pick</a></li>
+<li><a href="#find-out-branches-containing-commit-hash">Find out branches containing commit-hash</a></li>
+<li><a href="#git-aliases">Git Aliases</a></li>
+<li><a href="#saving-current-state-of-tracked-files-without-commiting">Saving current state of tracked files without commiting</a></li>
+<li><a href="#saving-current-state-of-unstaged-changes-to-tracked-files">Saving current state of unstaged changes to tracked files</a></li>
+<li><a href="#saving-current-state-including-untracked-files">Saving current state including untracked files</a></li>
+<li><a href="#saving-current-state-with-message">Saving current state with message</a></li>
+<li><a href="#saving-current-state-of-all-files-ignored-untracked-and-tracked">Saving current state of all files (ignored, untracked, and tracked)</a></li>
+<li><a href="#show-list-of-all-saved-stashes">Show list of all saved stashes</a></li>
+<li><a href="#show-the-contents-of-any-stash-in-patch-form">Show the contents of any stash in patch form</a></li>
+<li><a href="#apply-any-stash-without-deleting-from-the-stashed-list">Apply any stash without deleting from the stashed list</a></li>
+<li><a href="#apply-last-stashed-state-and-delete-it-from-stashed-list">Apply last stashed state and delete it from stashed list</a></li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'git-tips_README.md';
 
         fetch(markdownFile)
@@ -48,21 +169,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

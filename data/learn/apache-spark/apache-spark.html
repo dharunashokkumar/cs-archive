@@ -8,38 +8,95 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Awesome Spark Awesome Spark - Awesome List Resources">
-    <title>Awesome Spark Awesome Spark</title>
+    <meta name="description" content="A curated list of awesome Apache Spark packages and resources. _Apache Spark is an open-source cluster-computing framework. Originally developed at the...">
+    <meta name="robots" content="index, follow">
+    <title>Apache Spark - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <p><a href="https://spark.apache.org/"><img src="https://cdn.rawgit.com/awesome-spark/awesome-spark/f78a16db/spark-logo-trademark.svg" align="right"></a></p>
+<h1>Awesome Spark <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A curated list of awesome <a href="https://spark.apache.org/">Apache Spark</a> packages and resources.</p>
+<p><em>Apache Spark is an open-source cluster-computing framework. Originally developed at the <a href="https://www.universityofcalifornia.edu/">University of California</a>, <a href="https://amplab.cs.berkeley.edu/">Berkeley's AMPLab</a>, the Spark codebase was later donated to the <a href="https://www.apache.org/">Apache Software Foundation</a>, which has maintained it since. Spark provides an interface for programming entire clusters with implicit data parallelism and fault-tolerance</em>  (<a href="#wikipedia-2017">Wikipedia 2017</a>).</p>
+<p>Users of Apache Spark may choose between different the Python, R, Scala and Java programming languages to interface with the Apache Spark APIs.</p>
+<h2>Packages</h2>
+<h3>Language Bindings</h3>
+<ul>
+<li><a href="https://github.com/Kotlin/kotlin-spark-api">Kotlin for Apache Spark</a> <img src="https://img.shields.io/github/last-commit/Kotlin/kotlin-spark-api.svg"> - Kotlin API bindings and extensions.</li>
+<li><a href="https://github.com/dotnet/spark">.NET for Apache Spark</a> <img src="https://img.shields.io/github/last-commit/dotnet/spark.svg"> - .NET bindings.</li>
+<li><a href="https://github.com/rstudio/sparklyr">sparklyr</a> <img src="https://img.shields.io/github/last-commit/rstudio/sparklyr.svg"> - An alternative R backend, using <a href="https://github.com/hadley/dplyr"><code>dplyr</code></a>.</li>
+<li><a href="https://github.com/tweag/sparkle">sparkle</a> <img src="https://img.shields.io/github/last-commit/tweag/sparkle.svg"> - Haskell on Apache Spark.</li>
+<li><a href="https://github.com/sjrusso8/spark-connect-rs">spark-connect-rs</a> <img src="https://img.shields.io/github/last-commit/sjrusso8/spark-connect-rs.svg"> - Rust bindings.</li>
+<li><a href="https://github.com/apache/spark-connect-go">spark-connect-go</a> <img src="https://img.shields.io/github/last-commit/apache/spark-connect-go.svg"> - Golang bindings.</li>
+<li><a href="https://github.com/mdrakiburrahman/spark-connect-csharp">spark-connect-csharp</a> <img src="https://img.shields.io/github/last-commit/mdrakiburrahman/spark-connect-csharp.svg"> - C# bindings.</li>
+</ul>
+<h3>Notebooks and IDEs</h3>
+<ul>
+<li><a href="https://almond.sh/">almond</a> <img src="https://img.shields.io/github/last-commit/almond-sh/almond.svg"> - A scala kernel for <a href="https://jupyter.org/">Jupyter</a>.</li>
+<li><a href="https://zeppelin.incubator.apache.org/">Apache Zeppelin</a> <img src="https://img.shields.io/github/last-commit/apache/zeppelin.svg"> - Web-based notebook that enables interactive data analytics with plugable backends, integrated plotting, and extensive Spark support out-of-the-box.</li>
+<li><a href="https://polynote.org/">Polynote</a>  <img src="https://img.shields.io/github/last-commit/polynote/polynote.svg"> - Polynote: an IDE-inspired polyglot notebook. It supports mixing multiple languages in one notebook, and sharing data between them seamlessly. It encourages reproducible notebooks with its immutable data model. Originating from <a href="https://medium.com/netflix-techblog/open-sourcing-polynote-an-ide-inspired-polyglot-notebook-7f929d3f447">Netflix</a>.</li>
+<li><a href="https://github.com/jupyter-incubator/sparkmagic">sparkmagic</a> <img src="https://img.shields.io/github/last-commit/jupyter-incubator/sparkmagic.svg"> - <a href="https://jupyter.org/">Jupyter</a> magics and kernels for working with remote Spark clusters, for interactively working with remote Spark clusters through <a href="https://github.com/cloudera/livy">Livy</a>, in Jupyter notebooks.</li>
+</ul>
+<h3>General Purpose Libraries</h3>
+<ul>
+<li><a href="https://github.com/yaooqinn/itachi">itachi</a> <img src="https://img.shields.io/github/last-commit/yaooqinn/itachi.svg"> - A library that brings useful functions from modern database management systems to Apache Spark.</li>
+<li><a href="https://github.com/mrpowers-io/spark-daria">spark-daria</a> <img src="https://img.shields.io/github/last-commit/mrpowers-io/spark-daria.svg"> - A Scala library with essential Spark functions and extensions to make you more productive.</li>
+<li><a href="https://github.com/mrpowers-io/quinn">quinn</a> <img src="https://img.shields.io/github/last-commit/mrpowers-io/quinn.svg"> - A native PySpark implementation of spark-daria.</li>
+<li><a href="https://github.com/apache/datafu/tree/master/datafu-spark">Apache DataFu</a> <img src="https://img.shields.io/github/last-commit/apache/datafu.svg"> - A library of general purpose functions and UDF's.</li>
+<li><a href="https://github.com/joblib/joblib-spark">Joblib Apache Spark Backend</a> <img src="https://img.shields.io/github/last-commit/joblib/joblib-spark.svg"> - <a href="https://github.com/joblib/joblib"><code>joblib</code></a> backend for running tasks on Spark clusters.</li>
+</ul>
+<h3>SQL Data Sources</h3>
+<p>SparkSQL has <a href="https://spark.apache.org/docs/latest/sql-data-sources-load-save-functions.html#manually-specifying-options">serveral built-in Data Sources</a> for files. These include <code>csv</code>, <code>json</code>, <code>parquet</code>, <code>orc</code>, and <code>avro</code>. It also supports JDBC databases as well as Apache Hive. Additional data sources can be added by including the packages listed below, or writing your own.</p>
+        </noscript>
+        <div id="dynamic-content">
+            <p><a href="https://spark.apache.org/"><img src="https://cdn.rawgit.com/awesome-spark/awesome-spark/f78a16db/spark-logo-trademark.svg" align="right"></a></p>
+<h1>Awesome Spark <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A curated list of awesome <a href="https://spark.apache.org/">Apache Spark</a> packages and resources.</p>
+<p><em>Apache Spark is an open-source cluster-computing framework. Originally developed at the <a href="https://www.universityofcalifornia.edu/">University of California</a>, <a href="https://amplab.cs.berkeley.edu/">Berkeley's AMPLab</a>, the Spark codebase was later donated to the <a href="https://www.apache.org/">Apache Software Foundation</a>, which has maintained it since. Spark provides an interface for programming entire clusters with implicit data parallelism and fault-tolerance</em>  (<a href="#wikipedia-2017">Wikipedia 2017</a>).</p>
+<p>Users of Apache Spark may choose between different the Python, R, Scala and Java programming languages to interface with the Apache Spark APIs.</p>
+<h2>Packages</h2>
+<h3>Language Bindings</h3>
+<ul>
+<li><a href="https://github.com/Kotlin/kotlin-spark-api">Kotlin for Apache Spark</a> <img src="https://img.shields.io/github/last-commit/Kotlin/kotlin-spark-api.svg"> - Kotlin API bindings and extensions.</li>
+<li><a href="https://github.com/dotnet/spark">.NET for Apache Spark</a> <img src="https://img.shields.io/github/last-commit/dotnet/spark.svg"> - .NET bindings.</li>
+<li><a href="https://github.com/rstudio/sparklyr">sparklyr</a> <img src="https://img.shields.io/github/last-commit/rstudio/sparklyr.svg"> - An alternative R backend, using <a href="https://github.com/hadley/dplyr"><code>dplyr</code></a>.</li>
+<li><a href="https://github.com/tweag/sparkle">sparkle</a> <img src="https://img.shields.io/github/last-commit/tweag/sparkle.svg"> - Haskell on Apache Spark.</li>
+<li><a href="https://github.com/sjrusso8/spark-connect-rs">spark-connect-rs</a> <img src="https://img.shields.io/github/last-commit/sjrusso8/spark-connect-rs.svg"> - Rust bindings.</li>
+<li><a href="https://github.com/apache/spark-connect-go">spark-connect-go</a> <img src="https://img.shields.io/github/last-commit/apache/spark-connect-go.svg"> - Golang bindings.</li>
+<li><a href="https://github.com/mdrakiburrahman/spark-connect-csharp">spark-connect-csharp</a> <img src="https://img.shields.io/github/last-commit/mdrakiburrahman/spark-connect-csharp.svg"> - C# bindings.</li>
+</ul>
+<h3>Notebooks and IDEs</h3>
+<ul>
+<li><a href="https://almond.sh/">almond</a> <img src="https://img.shields.io/github/last-commit/almond-sh/almond.svg"> - A scala kernel for <a href="https://jupyter.org/">Jupyter</a>.</li>
+<li><a href="https://zeppelin.incubator.apache.org/">Apache Zeppelin</a> <img src="https://img.shields.io/github/last-commit/apache/zeppelin.svg"> - Web-based notebook that enables interactive data analytics with plugable backends, integrated plotting, and extensive Spark support out-of-the-box.</li>
+<li><a href="https://polynote.org/">Polynote</a>  <img src="https://img.shields.io/github/last-commit/polynote/polynote.svg"> - Polynote: an IDE-inspired polyglot notebook. It supports mixing multiple languages in one notebook, and sharing data between them seamlessly. It encourages reproducible notebooks with its immutable data model. Originating from <a href="https://medium.com/netflix-techblog/open-sourcing-polynote-an-ide-inspired-polyglot-notebook-7f929d3f447">Netflix</a>.</li>
+<li><a href="https://github.com/jupyter-incubator/sparkmagic">sparkmagic</a> <img src="https://img.shields.io/github/last-commit/jupyter-incubator/sparkmagic.svg"> - <a href="https://jupyter.org/">Jupyter</a> magics and kernels for working with remote Spark clusters, for interactively working with remote Spark clusters through <a href="https://github.com/cloudera/livy">Livy</a>, in Jupyter notebooks.</li>
+</ul>
+<h3>General Purpose Libraries</h3>
+<ul>
+<li><a href="https://github.com/yaooqinn/itachi">itachi</a> <img src="https://img.shields.io/github/last-commit/yaooqinn/itachi.svg"> - A library that brings useful functions from modern database management systems to Apache Spark.</li>
+<li><a href="https://github.com/mrpowers-io/spark-daria">spark-daria</a> <img src="https://img.shields.io/github/last-commit/mrpowers-io/spark-daria.svg"> - A Scala library with essential Spark functions and extensions to make you more productive.</li>
+<li><a href="https://github.com/mrpowers-io/quinn">quinn</a> <img src="https://img.shields.io/github/last-commit/mrpowers-io/quinn.svg"> - A native PySpark implementation of spark-daria.</li>
+<li><a href="https://github.com/apache/datafu/tree/master/datafu-spark">Apache DataFu</a> <img src="https://img.shields.io/github/last-commit/apache/datafu.svg"> - A library of general purpose functions and UDF's.</li>
+<li><a href="https://github.com/joblib/joblib-spark">Joblib Apache Spark Backend</a> <img src="https://img.shields.io/github/last-commit/joblib/joblib-spark.svg"> - <a href="https://github.com/joblib/joblib"><code>joblib</code></a> backend for running tasks on Spark clusters.</li>
+</ul>
+<h3>SQL Data Sources</h3>
+<p>SparkSQL has <a href="https://spark.apache.org/docs/latest/sql-data-sources-load-save-functions.html#manually-specifying-options">serveral built-in Data Sources</a> for files. These include <code>csv</code>, <code>json</code>, <code>parquet</code>, <code>orc</code>, and <code>avro</code>. It also supports JDBC databases as well as Apache Hive. Additional data sources can be added by including the packages listed below, or writing your own.</p>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'apache-spark_README.md';
 
         fetch(markdownFile)
@@ -48,21 +105,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

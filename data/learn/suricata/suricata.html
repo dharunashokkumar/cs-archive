@@ -8,38 +8,173 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Satta Awesome Suricata - Awesome List Resources">
-    <title>Satta Awesome Suricata</title>
+    <meta name="description" content="> Curated list of awesome things related to Suricata. Suricata is a free intrusion detection/prevention system (IDS/IPS) and network security monitoring...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Suricata [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Suricata <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat2.svg" /></a></h1>
+<p><a href="https://suricata.io"><img src="https://suricata.io/wp-content/uploads/2022/01/Logo-SuricataFinal-1-translucent.png" align="right" width="120"></a></p>
+<blockquote>
+<p>Curated list of awesome things related to Suricata.</p>
+</blockquote>
+<p><a href="https://suricata.io/features">Suricata</a> is a free intrusion detection/prevention system (IDS/IPS) and network security monitoring engine.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#input-tools">Input Tools</a></li>
+<li><a href="#output-tools">Output Tools</a></li>
+<li><a href="#operations-monitoring-and-troubleshooting">Operations, Monitoring and Troubleshooting</a></li>
+<li><a href="#programming-libraries-and-toolkits">Programming Libraries and Toolkits</a></li>
+<li><a href="#dashboards-and-templates">Dashboards and Templates</a></li>
+<li><a href="#development-tools">Development Tools</a></li>
+<li><a href="#documentation-and-guides">Documentation and Guides</a></li>
+<li><a href="#analysis-tools">Analysis Tools</a></li>
+<li><a href="#rule-sets">Rule Sets</a></li>
+<li><a href="#rulesecurity-content-management-and-handling">Rule/Security Content Management and Handling</a></li>
+<li><a href="#plugins-and-extensions">Plugins and Extensions</a></li>
+<li><a href="#systems-using-suricata">Systems Using Suricata</a></li>
+<li><a href="#training">Training</a></li>
+<li><a href="#simulation-and-testing">Simulation and Testing</a></li>
+<li><a href="#data-sets">Data Sets</a></li>
+<li><a href="#misc">Misc</a></li>
+</ul>
+<h2>Input Tools</h2>
+<ul>
+<li><a href="https://github.com/deepfence/PacketStreamer">PacketStreamer</a> - Distributed tcpdump for cloud native environments.</li>
+</ul>
+<h2>Output Tools</h2>
+<ul>
+<li><a href="https://github.com/Center-Sun/suricata-kafka-output">suricata-kafka-output</a> - Suricata Eve Kafka Output Plugin for Suricata 6.</li>
+<li><a href="https://github.com/jasonish/suricata-redis-output">suricata-redis-output</a> - Suricata Eve Redis Output Plugin for Suricata 7.</li>
+<li><a href="https://github.com/quadrantsec/meer">Meer</a> - A "spooler" for Suricata / Sagan.</li>
+<li><a href="https://github.com/DCSO/fever">FEVER</a> - Fast, extensible, versatile event router for Suricata's EVE-JSON format.</li>
+<li><a href="https://github.com/pevma/Suricata-Logstash-Templates">Suricata-Logstash-Templates</a> - Templates for Kibana/Logstash to use with Suricata IDPS.</li>
+<li><a href="https://github.com/VVelox/Lilith">Lilith</a> - Reads EVE files into SQL as well as search stored data.</li>
+</ul>
+<h2>Operations, Monitoring and Troubleshooting</h2>
+<ul>
+<li><a href="https://github.com/DCSO/slinkwatch">slinkwatch</a> - Automatic enumeration and maintenance of Suricata monitoring interfaces.</li>
+<li><a href="https://github.com/regit/suri-stats">suri-stats</a> - A tool to work on suricata <code>stats.log</code> file.</li>
+<li><a href="https://github.com/DCSO/mauerspecht">Mauerspecht</a> - Simple Probing Tool for Corporate Walled Garden Networks.</li>
+<li><a href="https://github.com/GitMirar/ansible-suricata">ansible-suricata</a> - Suricata Ansible role (slightly outdated).</li>
+<li><a href="https://github.com/pevma/MassDeploySuricata">MassDeploySuricata</a> - Mass deploy and update Suricata IDPS using Ansible IT automation platform.</li>
+<li><a href="https://github.com/jasonish/docker-suricata">docker-suricata</a> - Suricata Docker image.</li>
+<li><a href="https://github.com/VVelox/Suricata-Monitoring">Suricata-Monitoring</a> - LibreNMS JSON / Nagios monitor for Suricata stats.</li>
+<li><a href="https://github.com/onetwopunch/terraform-google-suricata">Terraform Module for Suricata</a> - Terraform module to setup Google Cloud packet mirroring and send packets to Suricata.</li>
+<li><a href="https://github.com/influxdata/telegraf/tree/master/plugins/inputs/suricata">InfluxDB Suricata Input Plugin</a> - Input Plugin for Telegraf to collect and forward Suricata <code>stats</code> logs (included out of the box in recent Telegraf releases).</li>
+<li><a href="https://github.com/corelight/suricata_exporter">suricata_exporter</a> - Simple Prometheus exporter written in Go exporting stats metrics scraped from Suricata socket.</li>
+</ul>
+<h2>Programming Libraries and Toolkits</h2>
+<ul>
+<li><a href="https://github.com/jasonish/rust-suricatax-rule-parser">rust-suricatax-rule-parser</a> - Experimental Suricata Rule Parser in Rust.</li>
+<li><a href="https://github.com/ks2211/go-suricata">go-suricata</a> - Go Client for Suricata (Interacting via Socket).</li>
+<li><a href="https://github.com/google/gonids">gonids</a> - Go library to parse intrusion detection rules for engines like Snort and Suricata.</li>
+<li><a href="https://github.com/rhaist/surevego">surevego</a> - Suricata EVE-JSON parser in Go.</li>
+<li><a href="https://github.com/m-chrome/py-suricataparser">suricataparser</a> - Pure python parser for Snort/Suricata rules.</li>
+<li><a href="https://github.com/jasonish/py-idstools">py-idstools</a> - Snort and Suricata Rule and Event Utilities in Python (Including a Rule Update Tool).</li>
+</ul>
+<h2>Dashboards and Templates</h2>
+<ul>
+<li><a href="https://github.com/StamusNetworks/KTS">KTS</a> - Kibana 4 Templates for Suricata IDPS Threat Hunting.</li>
+<li><a href="https://github.com/StamusNetworks/KTS5">KTS5</a> - Kibana 5 Templates for Suricata IDPS Threat Hunting.</li>
+<li><a href="https://github.com/StamusNetworks/KTS6">KTS6</a> - Kibana 6 Templates for Suricata IDPS Threat Hunting.</li>
+<li><a href="https://github.com/StamusNetworks/KTS7">KTS7</a> - Kibana 7 Templates for Suricata IDPS Threat Hunting.</li>
+</ul>
+<h2>Development Tools</h2>
+<ul>
+<li><a href="https://github.com/StamusNetworks/suricata-language-server">Suricata Language Server</a> - An implementation of the Language Server Protocol for Suricata signatures. It adds syntax check, hints and auto-completion to your preferred editor once it is configured.</li>
+<li><a href="https://github.com/StamusNetworks/suricata-ls-vscode">suricata-ls-vscode</a> - Suricata IntelliSense Extension using the Suricata Language Server.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Suricata <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat2.svg" /></a></h1>
+<p><a href="https://suricata.io"><img src="https://suricata.io/wp-content/uploads/2022/01/Logo-SuricataFinal-1-translucent.png" align="right" width="120"></a></p>
+<blockquote>
+<p>Curated list of awesome things related to Suricata.</p>
+</blockquote>
+<p><a href="https://suricata.io/features">Suricata</a> is a free intrusion detection/prevention system (IDS/IPS) and network security monitoring engine.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#input-tools">Input Tools</a></li>
+<li><a href="#output-tools">Output Tools</a></li>
+<li><a href="#operations-monitoring-and-troubleshooting">Operations, Monitoring and Troubleshooting</a></li>
+<li><a href="#programming-libraries-and-toolkits">Programming Libraries and Toolkits</a></li>
+<li><a href="#dashboards-and-templates">Dashboards and Templates</a></li>
+<li><a href="#development-tools">Development Tools</a></li>
+<li><a href="#documentation-and-guides">Documentation and Guides</a></li>
+<li><a href="#analysis-tools">Analysis Tools</a></li>
+<li><a href="#rule-sets">Rule Sets</a></li>
+<li><a href="#rulesecurity-content-management-and-handling">Rule/Security Content Management and Handling</a></li>
+<li><a href="#plugins-and-extensions">Plugins and Extensions</a></li>
+<li><a href="#systems-using-suricata">Systems Using Suricata</a></li>
+<li><a href="#training">Training</a></li>
+<li><a href="#simulation-and-testing">Simulation and Testing</a></li>
+<li><a href="#data-sets">Data Sets</a></li>
+<li><a href="#misc">Misc</a></li>
+</ul>
+<h2>Input Tools</h2>
+<ul>
+<li><a href="https://github.com/deepfence/PacketStreamer">PacketStreamer</a> - Distributed tcpdump for cloud native environments.</li>
+</ul>
+<h2>Output Tools</h2>
+<ul>
+<li><a href="https://github.com/Center-Sun/suricata-kafka-output">suricata-kafka-output</a> - Suricata Eve Kafka Output Plugin for Suricata 6.</li>
+<li><a href="https://github.com/jasonish/suricata-redis-output">suricata-redis-output</a> - Suricata Eve Redis Output Plugin for Suricata 7.</li>
+<li><a href="https://github.com/quadrantsec/meer">Meer</a> - A "spooler" for Suricata / Sagan.</li>
+<li><a href="https://github.com/DCSO/fever">FEVER</a> - Fast, extensible, versatile event router for Suricata's EVE-JSON format.</li>
+<li><a href="https://github.com/pevma/Suricata-Logstash-Templates">Suricata-Logstash-Templates</a> - Templates for Kibana/Logstash to use with Suricata IDPS.</li>
+<li><a href="https://github.com/VVelox/Lilith">Lilith</a> - Reads EVE files into SQL as well as search stored data.</li>
+</ul>
+<h2>Operations, Monitoring and Troubleshooting</h2>
+<ul>
+<li><a href="https://github.com/DCSO/slinkwatch">slinkwatch</a> - Automatic enumeration and maintenance of Suricata monitoring interfaces.</li>
+<li><a href="https://github.com/regit/suri-stats">suri-stats</a> - A tool to work on suricata <code>stats.log</code> file.</li>
+<li><a href="https://github.com/DCSO/mauerspecht">Mauerspecht</a> - Simple Probing Tool for Corporate Walled Garden Networks.</li>
+<li><a href="https://github.com/GitMirar/ansible-suricata">ansible-suricata</a> - Suricata Ansible role (slightly outdated).</li>
+<li><a href="https://github.com/pevma/MassDeploySuricata">MassDeploySuricata</a> - Mass deploy and update Suricata IDPS using Ansible IT automation platform.</li>
+<li><a href="https://github.com/jasonish/docker-suricata">docker-suricata</a> - Suricata Docker image.</li>
+<li><a href="https://github.com/VVelox/Suricata-Monitoring">Suricata-Monitoring</a> - LibreNMS JSON / Nagios monitor for Suricata stats.</li>
+<li><a href="https://github.com/onetwopunch/terraform-google-suricata">Terraform Module for Suricata</a> - Terraform module to setup Google Cloud packet mirroring and send packets to Suricata.</li>
+<li><a href="https://github.com/influxdata/telegraf/tree/master/plugins/inputs/suricata">InfluxDB Suricata Input Plugin</a> - Input Plugin for Telegraf to collect and forward Suricata <code>stats</code> logs (included out of the box in recent Telegraf releases).</li>
+<li><a href="https://github.com/corelight/suricata_exporter">suricata_exporter</a> - Simple Prometheus exporter written in Go exporting stats metrics scraped from Suricata socket.</li>
+</ul>
+<h2>Programming Libraries and Toolkits</h2>
+<ul>
+<li><a href="https://github.com/jasonish/rust-suricatax-rule-parser">rust-suricatax-rule-parser</a> - Experimental Suricata Rule Parser in Rust.</li>
+<li><a href="https://github.com/ks2211/go-suricata">go-suricata</a> - Go Client for Suricata (Interacting via Socket).</li>
+<li><a href="https://github.com/google/gonids">gonids</a> - Go library to parse intrusion detection rules for engines like Snort and Suricata.</li>
+<li><a href="https://github.com/rhaist/surevego">surevego</a> - Suricata EVE-JSON parser in Go.</li>
+<li><a href="https://github.com/m-chrome/py-suricataparser">suricataparser</a> - Pure python parser for Snort/Suricata rules.</li>
+<li><a href="https://github.com/jasonish/py-idstools">py-idstools</a> - Snort and Suricata Rule and Event Utilities in Python (Including a Rule Update Tool).</li>
+</ul>
+<h2>Dashboards and Templates</h2>
+<ul>
+<li><a href="https://github.com/StamusNetworks/KTS">KTS</a> - Kibana 4 Templates for Suricata IDPS Threat Hunting.</li>
+<li><a href="https://github.com/StamusNetworks/KTS5">KTS5</a> - Kibana 5 Templates for Suricata IDPS Threat Hunting.</li>
+<li><a href="https://github.com/StamusNetworks/KTS6">KTS6</a> - Kibana 6 Templates for Suricata IDPS Threat Hunting.</li>
+<li><a href="https://github.com/StamusNetworks/KTS7">KTS7</a> - Kibana 7 Templates for Suricata IDPS Threat Hunting.</li>
+</ul>
+<h2>Development Tools</h2>
+<ul>
+<li><a href="https://github.com/StamusNetworks/suricata-language-server">Suricata Language Server</a> - An implementation of the Language Server Protocol for Suricata signatures. It adds syntax check, hints and auto-completion to your preferred editor once it is configured.</li>
+<li><a href="https://github.com/StamusNetworks/suricata-ls-vscode">suricata-ls-vscode</a> - Suricata IntelliSense Extension using the Suricata Language Server.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'suricata_README.md';
 
         fetch(markdownFile)
@@ -48,21 +183,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

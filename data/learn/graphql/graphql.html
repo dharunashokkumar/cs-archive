@@ -8,38 +8,297 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chentsulin Awesome Graphql - Awesome List Resources">
-    <title>Chentsulin Awesome Graphql</title>
+    <meta name="description" content="> Awesome list of GraphQL If you want to contribute to this list (please do), send me a pull request. - awesome-graphql - Table of Contents - Specifications -...">
+    <meta name="robots" content="index, follow">
+    <title>awesome-graphql [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/chentsulin/awesome-graphql/awesome_bot.yml?logo=githubactions&label=Awesome%20Bot) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>awesome-graphql <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/chentsulin/awesome-graphql/awesome_bot.yml?logo=githubactions&amp;label=Awesome%20Bot" /></h1>
+<blockquote>
+<p>Awesome list of GraphQL</p>
+</blockquote>
+<p>If you want to contribute to this list (please do), send me a pull request.</p>
+<h2>Table of Contents</h2>
+<!-- MarkdownTOC depth=4 -->
+
+<ul>
+<li><a href="#awesome-graphql--">awesome-graphql  </a></li>
+<li><a href="#table-of-contents">Table of Contents</a></li>
+<li><a href="#specifications">Specifications</a></li>
+<li><a href="#foundations">Foundations</a></li>
+<li><a href="#communities">Communities</a></li>
+<li><a href="#meetups">Meetups</a></li>
+<li><a href="#implementations">Implementations</a><ul>
+<li><a href="#javascripttypescript">JavaScript/TypeScript</a></li>
+<li><a href="#clients">Clients</a><ul>
+<li><a href="#frontend-framework-integrations">Frontend Framework Integrations</a></li>
+<li><a href="#react">React</a></li>
+</ul>
+</li>
+<li><a href="#servers">Servers</a><ul>
+<li><a href="#databases--orms">Databases \&amp; ORMs</a></li>
+<li><a href="#pubsub">PubSub</a></li>
+</ul>
+</li>
+<li><a href="#custom-scalars">Custom Scalars</a></li>
+<li><a href="#type">Type</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#javascript-examples">JavaScript Examples</a></li>
+<li><a href="#typescript-examples">TypeScript Examples</a></li>
+<li><a href="#ruby">Ruby</a></li>
+<li><a href="#ruby-examples">Ruby Examples</a></li>
+<li><a href="#php">PHP</a></li>
+<li><a href="#php-examples">PHP Examples</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#python-examples">Python Examples</a></li>
+<li><a href="#java">Java</a></li>
+<li><a href="#custom-scalars-1">Custom Scalars</a></li>
+<li><a href="#java-examples">Java Examples</a></li>
+<li><a href="#kotlin">Kotlin</a></li>
+<li><a href="#kotlin-examples">Kotlin Examples</a></li>
+<li><a href="#cc">C/C++</a></li>
+<li><a href="#go">Go</a></li>
+<li><a href="#go-examples">Go Examples</a></li>
+<li><a href="#scala">Scala</a></li>
+<li><a href="#scala-examples">Scala Examples</a></li>
+<li><a href="#net">.NET</a></li>
+<li><a href="#net-examples">.NET Examples</a></li>
+<li><a href="#elixir">Elixir</a></li>
+<li><a href="#elixir-examples">Elixir Examples</a></li>
+<li><a href="#haskell">Haskell</a></li>
+<li><a href="#sql">SQL</a></li>
+<li><a href="#lua">Lua</a></li>
+<li><a href="#elm">Elm</a></li>
+<li><a href="#clojure">Clojure</a></li>
+<li><a href="#clojure-examples">Clojure Examples</a></li>
+<li><a href="#swift">Swift</a></li>
+<li><a href="#ocaml">OCaml</a></li>
+<li><a href="#android">Android</a></li>
+<li><a href="#android-examples">Android Examples</a></li>
+<li><a href="#ios">iOS</a></li>
+<li><a href="#ios-examples">iOS Examples</a></li>
+<li><a href="#clojurescript">ClojureScript</a></li>
+<li><a href="#reasonml">ReasonML</a></li>
+<li><a href="#dart">Dart</a></li>
+<li><a href="#rust">Rust</a></li>
+<li><a href="#rust-examples">Rust Examples</a></li>
+<li><a href="#d-dlang">D (dlang)</a></li>
+<li><a href="#r-rstat">R (Rstat)</a></li>
+<li><a href="#julia">Julia</a></li>
+<li><a href="#crystal">Crystal</a></li>
+<li><a href="#ballerina">Ballerina</a></li>
+<li><a href="#ballerina-samples">Ballerina Samples</a></li>
+</ul>
+</li>
+<li><a href="#tools">Tools</a><ul>
+<li><a href="#tools---editors--ides--explorers">Tools - Editors \&amp; IDEs \&amp; Explorers</a></li>
+<li><a href="#tools---testing">Tools - Testing</a></li>
+<li><a href="#tools---security">Tools - Security</a></li>
+<li><a href="#tools---browser-extensions">Tools - Browser Extensions</a></li>
+<li><a href="#tools---prototyping">Tools - Prototyping</a></li>
+<li><a href="#tools---docs">Tools - Docs</a></li>
+<li><a href="#tools---editor-plugins">Tools - Editor Plugins</a></li>
+<li><a href="#tools---miscellaneous">Tools - Miscellaneous</a></li>
+</ul>
+</li>
+<li><a href="#databases">Databases</a></li>
+<li><a href="#services">Services</a><ul>
+<li><a href="#cdn">CDN</a></li>
+<li><a href="#cms">CMS</a></li>
+</ul>
+</li>
+<li><a href="#books">Books</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#podcasts">Podcasts</a></li>
+<li><a href="#style-guides">Style Guides</a></li>
+<li><a href="#blogs">Blogs</a><ul>
+<li><a href="#blogs---security">Blogs - Security</a></li>
+</ul>
+</li>
+<li><a href="#posts">Posts</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<!-- /MarkdownTOC -->
+
+<p><a name="spec" /></p>
+<h2>Specifications</h2>
+<ul>
+<li><a href="https://github.com/graphql/graphql-spec">GraphQL</a> - Working draft of the specification for GraphQL.</li>
+<li><a href="https://github.com/graphql/graphql-over-http">GraphQL over HTTP</a> - Working draft of "GraphQL over HTTP" specification.</li>
+<li><a href="https://relay.dev/docs/guides/graphql-server-specification/">GraphQL Relay</a> - Relay-compliant GraphQL server specification.</li>
+<li><a href="https://github.com/opencrud/opencrud">OpenCRUD</a> - OpenCRUD is a GraphQL CRUD API specification for databases.</li>
+<li><a href="https://www.apollographql.com/docs/federation/federation-spec/">Apollo Federation</a> - Apollo Federation specification</li>
+<li><a href="https://gabotechs.github.io/graphqxl/">GraphQXL</a> - GraphQXL is an extension of the GraphQL language with some additional features that help creating big and scalable server-side schemas.</li>
+<li><a href="https://www.graphql-scalars.com/">GraphQL Scalars</a> - hosts community defined custom Scalar specifications for use with @specifiedBy.</li>
+</ul>
+<p><a name="foundation" /></p>
+<h2>Foundations</h2>
+<ul>
+<li><a href="https://graphql.org/foundation/">GraphQL Foundation</a> - GraphQL Foundation under the Linux Foundation</li>
+</ul>
+<p><a name="community" /></p>
+<h2>Communities</h2>
+<ul>
+<li><a href="https://discord.graphql.org/">Discord - GraphQL</a> - Official GraphQL.org discord channel.</li>
+<li><a href="https://www.graphqlweekly.com/">GraphQL Weekly</a> - A weekly newsletter highlighting resources and news from the GraphQL community.</li>
+<li><a href="https://community.apollographql.com/">Apollo GraphQL Community</a> - Connect with other developers and share knowledge about every part of the Apollo GraphQL platform.</li>
+<li><a href="http://join.reactiflux.com/">Discord - Reactiflux</a> - Join <code>#help-graphql</code> on the Reactiflux Discord server.</li>
+<li><a href="https://www.facebook.com/groups/795330550572866/">Facebook</a> - Group for discussions, articles and knowledge sharing.</li>
+<li><a href="https://x.com/search?q=%23GraphQL">X</a> - Use the hashtag <code>#graphql</code>.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>awesome-graphql <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/chentsulin/awesome-graphql/awesome_bot.yml?logo=githubactions&amp;label=Awesome%20Bot" /></h1>
+<blockquote>
+<p>Awesome list of GraphQL</p>
+</blockquote>
+<p>If you want to contribute to this list (please do), send me a pull request.</p>
+<h2>Table of Contents</h2>
+<!-- MarkdownTOC depth=4 -->
+
+<ul>
+<li><a href="#awesome-graphql--">awesome-graphql  </a></li>
+<li><a href="#table-of-contents">Table of Contents</a></li>
+<li><a href="#specifications">Specifications</a></li>
+<li><a href="#foundations">Foundations</a></li>
+<li><a href="#communities">Communities</a></li>
+<li><a href="#meetups">Meetups</a></li>
+<li><a href="#implementations">Implementations</a><ul>
+<li><a href="#javascripttypescript">JavaScript/TypeScript</a></li>
+<li><a href="#clients">Clients</a><ul>
+<li><a href="#frontend-framework-integrations">Frontend Framework Integrations</a></li>
+<li><a href="#react">React</a></li>
+</ul>
+</li>
+<li><a href="#servers">Servers</a><ul>
+<li><a href="#databases--orms">Databases \&amp; ORMs</a></li>
+<li><a href="#pubsub">PubSub</a></li>
+</ul>
+</li>
+<li><a href="#custom-scalars">Custom Scalars</a></li>
+<li><a href="#type">Type</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#javascript-examples">JavaScript Examples</a></li>
+<li><a href="#typescript-examples">TypeScript Examples</a></li>
+<li><a href="#ruby">Ruby</a></li>
+<li><a href="#ruby-examples">Ruby Examples</a></li>
+<li><a href="#php">PHP</a></li>
+<li><a href="#php-examples">PHP Examples</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#python-examples">Python Examples</a></li>
+<li><a href="#java">Java</a></li>
+<li><a href="#custom-scalars-1">Custom Scalars</a></li>
+<li><a href="#java-examples">Java Examples</a></li>
+<li><a href="#kotlin">Kotlin</a></li>
+<li><a href="#kotlin-examples">Kotlin Examples</a></li>
+<li><a href="#cc">C/C++</a></li>
+<li><a href="#go">Go</a></li>
+<li><a href="#go-examples">Go Examples</a></li>
+<li><a href="#scala">Scala</a></li>
+<li><a href="#scala-examples">Scala Examples</a></li>
+<li><a href="#net">.NET</a></li>
+<li><a href="#net-examples">.NET Examples</a></li>
+<li><a href="#elixir">Elixir</a></li>
+<li><a href="#elixir-examples">Elixir Examples</a></li>
+<li><a href="#haskell">Haskell</a></li>
+<li><a href="#sql">SQL</a></li>
+<li><a href="#lua">Lua</a></li>
+<li><a href="#elm">Elm</a></li>
+<li><a href="#clojure">Clojure</a></li>
+<li><a href="#clojure-examples">Clojure Examples</a></li>
+<li><a href="#swift">Swift</a></li>
+<li><a href="#ocaml">OCaml</a></li>
+<li><a href="#android">Android</a></li>
+<li><a href="#android-examples">Android Examples</a></li>
+<li><a href="#ios">iOS</a></li>
+<li><a href="#ios-examples">iOS Examples</a></li>
+<li><a href="#clojurescript">ClojureScript</a></li>
+<li><a href="#reasonml">ReasonML</a></li>
+<li><a href="#dart">Dart</a></li>
+<li><a href="#rust">Rust</a></li>
+<li><a href="#rust-examples">Rust Examples</a></li>
+<li><a href="#d-dlang">D (dlang)</a></li>
+<li><a href="#r-rstat">R (Rstat)</a></li>
+<li><a href="#julia">Julia</a></li>
+<li><a href="#crystal">Crystal</a></li>
+<li><a href="#ballerina">Ballerina</a></li>
+<li><a href="#ballerina-samples">Ballerina Samples</a></li>
+</ul>
+</li>
+<li><a href="#tools">Tools</a><ul>
+<li><a href="#tools---editors--ides--explorers">Tools - Editors \&amp; IDEs \&amp; Explorers</a></li>
+<li><a href="#tools---testing">Tools - Testing</a></li>
+<li><a href="#tools---security">Tools - Security</a></li>
+<li><a href="#tools---browser-extensions">Tools - Browser Extensions</a></li>
+<li><a href="#tools---prototyping">Tools - Prototyping</a></li>
+<li><a href="#tools---docs">Tools - Docs</a></li>
+<li><a href="#tools---editor-plugins">Tools - Editor Plugins</a></li>
+<li><a href="#tools---miscellaneous">Tools - Miscellaneous</a></li>
+</ul>
+</li>
+<li><a href="#databases">Databases</a></li>
+<li><a href="#services">Services</a><ul>
+<li><a href="#cdn">CDN</a></li>
+<li><a href="#cms">CMS</a></li>
+</ul>
+</li>
+<li><a href="#books">Books</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#podcasts">Podcasts</a></li>
+<li><a href="#style-guides">Style Guides</a></li>
+<li><a href="#blogs">Blogs</a><ul>
+<li><a href="#blogs---security">Blogs - Security</a></li>
+</ul>
+</li>
+<li><a href="#posts">Posts</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<!-- /MarkdownTOC -->
+
+<p><a name="spec" /></p>
+<h2>Specifications</h2>
+<ul>
+<li><a href="https://github.com/graphql/graphql-spec">GraphQL</a> - Working draft of the specification for GraphQL.</li>
+<li><a href="https://github.com/graphql/graphql-over-http">GraphQL over HTTP</a> - Working draft of "GraphQL over HTTP" specification.</li>
+<li><a href="https://relay.dev/docs/guides/graphql-server-specification/">GraphQL Relay</a> - Relay-compliant GraphQL server specification.</li>
+<li><a href="https://github.com/opencrud/opencrud">OpenCRUD</a> - OpenCRUD is a GraphQL CRUD API specification for databases.</li>
+<li><a href="https://www.apollographql.com/docs/federation/federation-spec/">Apollo Federation</a> - Apollo Federation specification</li>
+<li><a href="https://gabotechs.github.io/graphqxl/">GraphQXL</a> - GraphQXL is an extension of the GraphQL language with some additional features that help creating big and scalable server-side schemas.</li>
+<li><a href="https://www.graphql-scalars.com/">GraphQL Scalars</a> - hosts community defined custom Scalar specifications for use with @specifiedBy.</li>
+</ul>
+<p><a name="foundation" /></p>
+<h2>Foundations</h2>
+<ul>
+<li><a href="https://graphql.org/foundation/">GraphQL Foundation</a> - GraphQL Foundation under the Linux Foundation</li>
+</ul>
+<p><a name="community" /></p>
+<h2>Communities</h2>
+<ul>
+<li><a href="https://discord.graphql.org/">Discord - GraphQL</a> - Official GraphQL.org discord channel.</li>
+<li><a href="https://www.graphqlweekly.com/">GraphQL Weekly</a> - A weekly newsletter highlighting resources and news from the GraphQL community.</li>
+<li><a href="https://community.apollographql.com/">Apollo GraphQL Community</a> - Connect with other developers and share knowledge about every part of the Apollo GraphQL platform.</li>
+<li><a href="http://join.reactiflux.com/">Discord - Reactiflux</a> - Join <code>#help-graphql</code> on the Reactiflux Discord server.</li>
+<li><a href="https://www.facebook.com/groups/795330550572866/">Facebook</a> - Group for discussions, articles and knowledge sharing.</li>
+<li><a href="https://x.com/search?q=%23GraphQL">X</a> - Use the hashtag <code>#graphql</code>.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'graphql_README.md';
 
         fetch(markdownFile)
@@ -48,21 +307,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

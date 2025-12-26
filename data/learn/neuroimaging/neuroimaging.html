@@ -8,38 +8,185 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Npacore Awesome Neuroimaging - Awesome List Resources">
-    <title>Npacore Awesome Neuroimaging</title>
+    <meta name="description" content="> Exploring, organizing, and analysing brain images and recordings. MR focused. - Viewers - Acquisition - MR - Quality Assurance and Checking - Pipelines -...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Neuroimaging [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Neuroimaging <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<blockquote>
+<p>Exploring, organizing, and analysing brain images and recordings. MR focused.</p>
+</blockquote>
+<h2>Contents</h2>
+<ul>
+<li><a href="#viewers">Viewers</a></li>
+<li><a href="#acquisition">Acquisition</a></li>
+<li><a href="#mr">MR</a></li>
+<li><a href="#quality-assurance-and-checking">Quality Assurance and Checking</a></li>
+<li><a href="#pipelines">Pipelines</a></li>
+<li><a href="#suites">Suites</a></li>
+<li><a href="#bold">BOLD</a></li>
+<li><a href="#dsi">DSI</a></li>
+<li><a href="#structural">Structural</a></li>
+<li><a href="#raw-data">Raw Data</a></li>
+<li><a href="#provenance-and-automation">Provenance and Automation</a> </li>
+<li><a href="#imaging-tools">Imaging Tools</a></li>
+<li><a href="#skullstripping">Skullstripping</a></li>
+<li><a href="#warping">Warping</a></li>
+<li><a href="#manipulation">Manipulation</a></li>
+<li><a href="#modeling">Modeling</a></li>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#blogs-books-and-docs">Blogs, Books, and Docs</a></li>
+<li><a href="#boards-and-chats">Boards And Chats</a></li>
+<li><a href="#datasets-repositories">Datasets Repositories</a></li>
+</ul>
+<h2>Viewers</h2>
+<ul>
+<li><a href="https://afni.nimh.nih.gov/pub/dist/doc/htmldoc/afniandafni/gui_guide/main_toc.html">AFNI</a> - Volumetric viewer from the AFNI suit. GUI's aesthetic defined by the '90s era Motif toolkit.</li>
+<li><a href="https://surfer.nmr.mgh.harvard.edu/fswiki/FreeviewGuide/FreeviewIntroduction">freeview</a> - Surface and volumetric image viewer in Freesurfer suit. Uses the QT toolkit.</li>
+<li><a href="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FSLeyes">fsleyes</a> - Volumetric viewer from FSL.</li>
+<li><a href="https://www.nitrc.org/projects/mricron">mricron</a> - Volumetric viewer that works on windows.</li>
+<li><a href="https://dsi-studio.labsolver.org/doc/gui_t1.html">dsistudio</a> - DSI viewer from the dsi-studio suit of tools.</li>
+<li><a href="https://www.osirix-viewer.com/">osirix</a> - DICOM database organizer and viewer.</li>
+<li><a href="https://mangoviewer.com/">Mango</a> - Multi-image Analysis GUI is a viewer for medical research images for dcm, nii, surface, etc; version 4.1 released in 2019.</li>
+<li><a href="https://www.humanconnectome.org/software/connectome-workbench"><code>wb_view</code></a> - Connectome workbench surface file viewer.</li>
+</ul>
+<h2>Acquisition</h2>
+<h3>MR</h3>
+<h4>Organization</h4>
+<ul>
+<li><a href="https://dbic-handbook.readthedocs.io/en/latest/mri/reproin.html">reproIn</a> - Naming exam card sequences.</li>
+<li><a href="https://bids-specification.readthedocs.io/en/stable/">BIDS</a> - Brain Imaging Data Structure - directory hierarchy and file naming specification.</li>
+</ul>
+<h4>Management</h4>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Picture_archiving_and_communication_system">PACS</a> - Picture Archiving and Communication System standard used to store and transfer DICOM images from medical equipment and likely implemented by scanner manufacture. See <a href="https://www.siemens-healthineers.com/en-us/digital-health-solutions/syngo-carbon">Siemens Healthineers Syngo Carbon</a>, <a href="https://www.documents.philips.com/assets/20240227/5a788a79bbdd4e1986f1b12300b0e534.pdf">Phillips Vue PACS</a>, <a href="https://www.gehealthcare.com/products/healthcare-it/true-pacs">GE HealthCare True PACS</a>.</li>
+<li><a href="https://www.xnat.org/">XNAT</a> - An extensible open-source imaging informatics software platform dedicated to imaging-based research.</li>
+<li><a href="https://github.com/VUIIS/dax">DAX</a> - Distributed Automation for XNAT: use containerization w/YAML defined input/output.</li>
+<li><a href="https://mcin.ca/technology/loris/">LORIS</a> - LORIS (Longitudinal Online Research and Imaging System) is web-based data and project management software for neuroimaging research studies.</li>
+<li><a href="https://brainlife.io">brainlife.io</a> - Open-source, free and secure reproducible neuroscience analysis platform.</li>
+<li><a href="https://mcin.ca/technology/cbrain/">cbrain</a> - CBRAIN is web-based software that allows neuroimaging researchers to perform computationally intensive analyses on data by connecting them to High-Performance Computing (HPC).</li>
+<li>💲<a href="https://flywheel.io">Flywheel</a> - A cloud-based imaging research data platform for data capture, curating, automation, and machine learning.</li>
+<li>💲<a href="https://qmenta.com">QMENTA</a> - The all in one imaging platform for your clinical trial.</li>
+</ul>
+<h4>Motion</h4>
+<ul>
+<li><a href="https://firmm.readthedocs.io">FIRMM</a> - Real-time motion monitoring for fMRI, diffusion, and navigated T1/T2 image acquisition. </li>
+<li><a href="https://afni.nimh.nih.gov/pub/dist/doc/program_help/Dimon.html"><code>Dimon</code></a> - Monitor real-time acquisition of DICOM image files with AFNI.</li>
+</ul>
+<h2>Quality Assurance and Checking</h2>
+<p>QA and QC of scanner images.</p>
+<ul>
+<li><a href="https://mriqc.readthedocs.io/">MRIQC</a> - Extracts no-reference IQMs (image quality metrics) from structural (T1w and T2w) and functional MRI (magnetic resonance imaging) data.</li>
+<li><a href="https://github.com/Open-Minds-Lab/mrQA">mrQA</a> - Tools for quality assurance in medical imaging datasets, including protocol compliance.</li>
+<li><a href="https://github.com/bids-standard/bids-validator/">bids-validator</a> - Validator for the Brain Imaging Data Structure.</li>
+</ul>
+<h2>Pipelines</h2>
+<p>Preprocessing workflows.</p>
+<h3>Suites</h3>
+<p>Software packages for multiple modalities, often offering a graphical user interface.</p>
+<!--lint ignore double-link-->
+<ul>
+<li><a href="https://afni.nimh.nih.gov/">AFNI</a> - Analysis of Functional NeuroImages is a leading software suite of C, Python, R programs and shell scripts primarily developed for the analysis and display of multiple MRI modalities.</li>
+<li><a href="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki">FSL</a> - A comprehensive library of analysis tools for FMRI, MRI and diffusion brain imaging data.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Neuroimaging <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<blockquote>
+<p>Exploring, organizing, and analysing brain images and recordings. MR focused.</p>
+</blockquote>
+<h2>Contents</h2>
+<ul>
+<li><a href="#viewers">Viewers</a></li>
+<li><a href="#acquisition">Acquisition</a></li>
+<li><a href="#mr">MR</a></li>
+<li><a href="#quality-assurance-and-checking">Quality Assurance and Checking</a></li>
+<li><a href="#pipelines">Pipelines</a></li>
+<li><a href="#suites">Suites</a></li>
+<li><a href="#bold">BOLD</a></li>
+<li><a href="#dsi">DSI</a></li>
+<li><a href="#structural">Structural</a></li>
+<li><a href="#raw-data">Raw Data</a></li>
+<li><a href="#provenance-and-automation">Provenance and Automation</a> </li>
+<li><a href="#imaging-tools">Imaging Tools</a></li>
+<li><a href="#skullstripping">Skullstripping</a></li>
+<li><a href="#warping">Warping</a></li>
+<li><a href="#manipulation">Manipulation</a></li>
+<li><a href="#modeling">Modeling</a></li>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#blogs-books-and-docs">Blogs, Books, and Docs</a></li>
+<li><a href="#boards-and-chats">Boards And Chats</a></li>
+<li><a href="#datasets-repositories">Datasets Repositories</a></li>
+</ul>
+<h2>Viewers</h2>
+<ul>
+<li><a href="https://afni.nimh.nih.gov/pub/dist/doc/htmldoc/afniandafni/gui_guide/main_toc.html">AFNI</a> - Volumetric viewer from the AFNI suit. GUI's aesthetic defined by the '90s era Motif toolkit.</li>
+<li><a href="https://surfer.nmr.mgh.harvard.edu/fswiki/FreeviewGuide/FreeviewIntroduction">freeview</a> - Surface and volumetric image viewer in Freesurfer suit. Uses the QT toolkit.</li>
+<li><a href="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FSLeyes">fsleyes</a> - Volumetric viewer from FSL.</li>
+<li><a href="https://www.nitrc.org/projects/mricron">mricron</a> - Volumetric viewer that works on windows.</li>
+<li><a href="https://dsi-studio.labsolver.org/doc/gui_t1.html">dsistudio</a> - DSI viewer from the dsi-studio suit of tools.</li>
+<li><a href="https://www.osirix-viewer.com/">osirix</a> - DICOM database organizer and viewer.</li>
+<li><a href="https://mangoviewer.com/">Mango</a> - Multi-image Analysis GUI is a viewer for medical research images for dcm, nii, surface, etc; version 4.1 released in 2019.</li>
+<li><a href="https://www.humanconnectome.org/software/connectome-workbench"><code>wb_view</code></a> - Connectome workbench surface file viewer.</li>
+</ul>
+<h2>Acquisition</h2>
+<h3>MR</h3>
+<h4>Organization</h4>
+<ul>
+<li><a href="https://dbic-handbook.readthedocs.io/en/latest/mri/reproin.html">reproIn</a> - Naming exam card sequences.</li>
+<li><a href="https://bids-specification.readthedocs.io/en/stable/">BIDS</a> - Brain Imaging Data Structure - directory hierarchy and file naming specification.</li>
+</ul>
+<h4>Management</h4>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Picture_archiving_and_communication_system">PACS</a> - Picture Archiving and Communication System standard used to store and transfer DICOM images from medical equipment and likely implemented by scanner manufacture. See <a href="https://www.siemens-healthineers.com/en-us/digital-health-solutions/syngo-carbon">Siemens Healthineers Syngo Carbon</a>, <a href="https://www.documents.philips.com/assets/20240227/5a788a79bbdd4e1986f1b12300b0e534.pdf">Phillips Vue PACS</a>, <a href="https://www.gehealthcare.com/products/healthcare-it/true-pacs">GE HealthCare True PACS</a>.</li>
+<li><a href="https://www.xnat.org/">XNAT</a> - An extensible open-source imaging informatics software platform dedicated to imaging-based research.</li>
+<li><a href="https://github.com/VUIIS/dax">DAX</a> - Distributed Automation for XNAT: use containerization w/YAML defined input/output.</li>
+<li><a href="https://mcin.ca/technology/loris/">LORIS</a> - LORIS (Longitudinal Online Research and Imaging System) is web-based data and project management software for neuroimaging research studies.</li>
+<li><a href="https://brainlife.io">brainlife.io</a> - Open-source, free and secure reproducible neuroscience analysis platform.</li>
+<li><a href="https://mcin.ca/technology/cbrain/">cbrain</a> - CBRAIN is web-based software that allows neuroimaging researchers to perform computationally intensive analyses on data by connecting them to High-Performance Computing (HPC).</li>
+<li>💲<a href="https://flywheel.io">Flywheel</a> - A cloud-based imaging research data platform for data capture, curating, automation, and machine learning.</li>
+<li>💲<a href="https://qmenta.com">QMENTA</a> - The all in one imaging platform for your clinical trial.</li>
+</ul>
+<h4>Motion</h4>
+<ul>
+<li><a href="https://firmm.readthedocs.io">FIRMM</a> - Real-time motion monitoring for fMRI, diffusion, and navigated T1/T2 image acquisition. </li>
+<li><a href="https://afni.nimh.nih.gov/pub/dist/doc/program_help/Dimon.html"><code>Dimon</code></a> - Monitor real-time acquisition of DICOM image files with AFNI.</li>
+</ul>
+<h2>Quality Assurance and Checking</h2>
+<p>QA and QC of scanner images.</p>
+<ul>
+<li><a href="https://mriqc.readthedocs.io/">MRIQC</a> - Extracts no-reference IQMs (image quality metrics) from structural (T1w and T2w) and functional MRI (magnetic resonance imaging) data.</li>
+<li><a href="https://github.com/Open-Minds-Lab/mrQA">mrQA</a> - Tools for quality assurance in medical imaging datasets, including protocol compliance.</li>
+<li><a href="https://github.com/bids-standard/bids-validator/">bids-validator</a> - Validator for the Brain Imaging Data Structure.</li>
+</ul>
+<h2>Pipelines</h2>
+<p>Preprocessing workflows.</p>
+<h3>Suites</h3>
+<p>Software packages for multiple modalities, often offering a graphical user interface.</p>
+<!--lint ignore double-link-->
+<ul>
+<li><a href="https://afni.nimh.nih.gov/">AFNI</a> - Analysis of Functional NeuroImages is a leading software suite of C, Python, R programs and shell scripts primarily developed for the analysis and display of multiple MRI modalities.</li>
+<li><a href="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki">FSL</a> - A comprehensive library of analysis tools for FMRI, MRI and diffusion brain imaging data.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'neuroimaging_README.md';
 
         fetch(markdownFile)
@@ -48,21 +195,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

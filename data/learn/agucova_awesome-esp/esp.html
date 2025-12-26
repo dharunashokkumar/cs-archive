@@ -8,38 +8,157 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Agucova Awesome Esp - Awesome List Resources">
-    <title>Agucova Awesome Esp</title>
+    <meta name="description" content="A curated list of awesome ESP8266/32 projects and code. > Both the ESP8266 and the ESP32 are low-cost Wi-Fi microchips with full TCP/IP stack and...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome ESP [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code-of-conduct.md) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome ESP <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a> <a href="code-of-conduct.md"><img alt="Contributor Covenant" src="https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg" /></a></h1>
+<p>A curated list of awesome ESP8266/32 projects and code.</p>
+<p><a href="http://espressif.com/en/products/hardware/esp8266ex/overview"><img src="img/esp8266.jpg" alt="ESP8266" align="left" style="margin-right: 25px" height=150></a>
+<a href="http://espressif.com/en/products/hardware/esp32/overview"><img src="https://pbs.twimg.com/profile_images/863510403120222208/rjVOiTe3.jpg" alt="ESP32" align="left" style="margin-right: 25px" height=150></a></p>
+<blockquote>
+<p>Both the <a href="http://espressif.com/en/products/hardware/esp8266ex/overview">ESP8266</a> and the <a href="http://espressif.com/en/products/hardware/esp32/overview">ESP32</a> are low-cost Wi-Fi microchips with full TCP/IP stack and microcontroller capabilities produced by the Shanghai-based manufacturer Espressif Systems.
+<br/>
+See <a href="contributing.md">Contributing</a> for information on how to contribute to this list.
+<br/><br/></p>
+</blockquote>
+<hr />
+<h2>Contents</h2>
+<ul>
+<li><a href="#firmware">Firmware</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#smart-home-and-iot">Smart Home and IoT</a></li>
+<li><a href="#infosec">InfoSec</a></li>
+<li><a href="#biomedical">Biomedical</a></li>
+<li><a href="#lora">LoRa</a></li>
+<li><a href="#music-and-audio">Music and Audio</a></li>
+<li><a href="#smartwatches">Smartwatches</a></li>
+<li><a href="#others">Others</a></li>
+<li><a href="#libraries">Libraries</a></li>
+</ul>
+<h2>Firmware</h2>
+<ul>
+<li><a href="http://bbs.espressif.com/">Espressif AT</a> - The default vanilla firmware for the ESP8266.</li>
+<li><a href="https://github.com/nodemcu/nodemcu-firmware">NodeMCU</a> - An eLua-based firmware for the ESP8266.</li>
+<li><a href="http://www.esp8266basic.com/">ESPBasic</a> - A BASIC firmware for easy and wireless programming, ready for the 8266.</li>
+<li><a href="https://github.com/micropython/micropython/">MicroPython</a> - An implemention of Python3 for the ESP8266 and 32.</li>
+<li><a href="https://github.com/luc-github/ESP3D">ESP3D</a> - An experimental firmware for 3D Printers, both the ESP32 and 8266.</li>
+<li><a href="https://github.com/nekromant/esp8266-frankenstein">Frankenstein</a> - A quick and dirty firmware with cool features for the ESP8266.</li>
+<li><a href="https://github.com/cesanta/mongoose-os">MongooseOS</a> - An IoT specific firmware, with both C and JS. Available for the ESP32/8266.</li>
+<li><a href="https://devicehive.com/">DeviceHive</a> - A firmware made as a client for DeviceHive's IoT data platform, only for the 8266.</li>
+<li><a href="https://github.com/RT-Thread/rt-thread">RT-Thread</a> - Chinese open source firmware available for the ESP32.</li>
+<li><a href="https://github.com/SmingHub/Sming">Sming Framework</a> - Superb C/C++ IoT Framework with support for ESP8266 and ESP32.</li>
+</ul>
+<h2>Tools</h2>
+<ul>
+<li><a href="http://espressif.com/en/support/download/other-tools">ESP Flash Tool</a> - The vanilla firmware flasher for both ESP's.</li>
+<li><a href="https://github.com/esp8266/arduino">Arduino Core/8266</a> - The Arduino core for the ESP8266.</li>
+<li><a href="https://github.com/espressif/arduino-esp32">Arduino Core/32</a> - The other Arduino core for the ESP32.</li>
+<li><a href="https://github.com/espressif/esptool">ESPTool</a> - Espressif's command line tool for bootloader comms in both ESP's.</li>
+<li><a href="https://github.com/pfalcon/esp-open-sdk">ESP-Open-SDK</a> - An open SDK for the ESP8266.</li>
+<li><a href="https://github.com/igrr/esptool-ck">ESPTool-ck</a> - A CLI tool for flashing in the ESP8266.</li>
+<li><a href="https://github.com/Rodmg/esptool-gui">ESPTool-gui</a> - A flashing GUI tool based on ESPTool-ck.</li>
+<li><a href="https://github.com/Nicholas3388/LuaNode">LuaNode</a> - A lua-only SDK for 32/8266.</li>
+<li><a href="https://github.com/ct-Open-Source/tuya-convert">Tuya-Convert</a> - A Wi-Fi firmware flasher ESP8266 that has been pre-loaded with Tuya firmware.</li>
+<li><a href="https://github.com/nodemcu/nodemcu-flasher">NodeMCU Flasher</a> - The official flashing tool for the NodeMCU OS.</li>
+<li><a href="https://github.com/tasmota/tasmotizer">Tasmotizer</a> - A graphical flashing tool for Tasmota firmware. Can manage Wi-Fi &amp; MQTT settings, modules &amp; templates.</li>
+<li><a href="https://github.com/esp8266/arduino-esp8266fs-plugin">Arduino FS Plugin</a> - An Arduino plugin for filesystem uploads in the 8266.</li>
+<li><a href="https://github.com/platformio/platformio-core">PlatformIO</a> - Cross Platform IDE and Debugger that supports both the ESP32 and ESP8266.</li>
+</ul>
+<h2>Projects</h2>
+<h3>Smart Home and IoT</h3>
+<ul>
+<li><a href="https://github.com/1technophile/OpenMQTTGateway">OpenMQTTGateway</a> - An implementation of a multiprotocol MQTT gateway for both ESP's among other devices.</li>
+<li><a href="https://esphome.io/">ESPHome</a> - A full-featured system for controlling ESP's through simple yet powerful configuration files and Home Automation systems.</li>
+<li><a href="https://tasmota.github.io/docs/">Tasmota</a> - An alternative firmware for Sonoff &amp; other ESP8266/ESP32 devices. Includes a large collection of sensor drivers &amp; integrates with <a href="https://www.home-assistant.io/">Home Assistant</a> natively or via MQTT.</li>
+<li><a href="https://github.com/letscontrolit/ESPEasy">ESPEasy</a> - Easily turn ESP modules into multifunction sensor devices for home automation systems.</li>
+<li><a href="https://github.com/Gruppio/Sonoff-Homekit">Sonoff-Homekit</a> - An alternative firmware for Sonoff devices (and other 8266 devices) which allows control through Apple's Homekit.</li>
+<li><a href="https://github.com/jamct/DoorsignEPD">DoorsignEPD</a> - A smart doorsign with an E-Paper display using the ESP32.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome ESP <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a> <a href="code-of-conduct.md"><img alt="Contributor Covenant" src="https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg" /></a></h1>
+<p>A curated list of awesome ESP8266/32 projects and code.</p>
+<p><a href="http://espressif.com/en/products/hardware/esp8266ex/overview"><img src="img/esp8266.jpg" alt="ESP8266" align="left" style="margin-right: 25px" height=150></a>
+<a href="http://espressif.com/en/products/hardware/esp32/overview"><img src="https://pbs.twimg.com/profile_images/863510403120222208/rjVOiTe3.jpg" alt="ESP32" align="left" style="margin-right: 25px" height=150></a></p>
+<blockquote>
+<p>Both the <a href="http://espressif.com/en/products/hardware/esp8266ex/overview">ESP8266</a> and the <a href="http://espressif.com/en/products/hardware/esp32/overview">ESP32</a> are low-cost Wi-Fi microchips with full TCP/IP stack and microcontroller capabilities produced by the Shanghai-based manufacturer Espressif Systems.
+<br/>
+See <a href="contributing.md">Contributing</a> for information on how to contribute to this list.
+<br/><br/></p>
+</blockquote>
+<hr />
+<h2>Contents</h2>
+<ul>
+<li><a href="#firmware">Firmware</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#smart-home-and-iot">Smart Home and IoT</a></li>
+<li><a href="#infosec">InfoSec</a></li>
+<li><a href="#biomedical">Biomedical</a></li>
+<li><a href="#lora">LoRa</a></li>
+<li><a href="#music-and-audio">Music and Audio</a></li>
+<li><a href="#smartwatches">Smartwatches</a></li>
+<li><a href="#others">Others</a></li>
+<li><a href="#libraries">Libraries</a></li>
+</ul>
+<h2>Firmware</h2>
+<ul>
+<li><a href="http://bbs.espressif.com/">Espressif AT</a> - The default vanilla firmware for the ESP8266.</li>
+<li><a href="https://github.com/nodemcu/nodemcu-firmware">NodeMCU</a> - An eLua-based firmware for the ESP8266.</li>
+<li><a href="http://www.esp8266basic.com/">ESPBasic</a> - A BASIC firmware for easy and wireless programming, ready for the 8266.</li>
+<li><a href="https://github.com/micropython/micropython/">MicroPython</a> - An implemention of Python3 for the ESP8266 and 32.</li>
+<li><a href="https://github.com/luc-github/ESP3D">ESP3D</a> - An experimental firmware for 3D Printers, both the ESP32 and 8266.</li>
+<li><a href="https://github.com/nekromant/esp8266-frankenstein">Frankenstein</a> - A quick and dirty firmware with cool features for the ESP8266.</li>
+<li><a href="https://github.com/cesanta/mongoose-os">MongooseOS</a> - An IoT specific firmware, with both C and JS. Available for the ESP32/8266.</li>
+<li><a href="https://devicehive.com/">DeviceHive</a> - A firmware made as a client for DeviceHive's IoT data platform, only for the 8266.</li>
+<li><a href="https://github.com/RT-Thread/rt-thread">RT-Thread</a> - Chinese open source firmware available for the ESP32.</li>
+<li><a href="https://github.com/SmingHub/Sming">Sming Framework</a> - Superb C/C++ IoT Framework with support for ESP8266 and ESP32.</li>
+</ul>
+<h2>Tools</h2>
+<ul>
+<li><a href="http://espressif.com/en/support/download/other-tools">ESP Flash Tool</a> - The vanilla firmware flasher for both ESP's.</li>
+<li><a href="https://github.com/esp8266/arduino">Arduino Core/8266</a> - The Arduino core for the ESP8266.</li>
+<li><a href="https://github.com/espressif/arduino-esp32">Arduino Core/32</a> - The other Arduino core for the ESP32.</li>
+<li><a href="https://github.com/espressif/esptool">ESPTool</a> - Espressif's command line tool for bootloader comms in both ESP's.</li>
+<li><a href="https://github.com/pfalcon/esp-open-sdk">ESP-Open-SDK</a> - An open SDK for the ESP8266.</li>
+<li><a href="https://github.com/igrr/esptool-ck">ESPTool-ck</a> - A CLI tool for flashing in the ESP8266.</li>
+<li><a href="https://github.com/Rodmg/esptool-gui">ESPTool-gui</a> - A flashing GUI tool based on ESPTool-ck.</li>
+<li><a href="https://github.com/Nicholas3388/LuaNode">LuaNode</a> - A lua-only SDK for 32/8266.</li>
+<li><a href="https://github.com/ct-Open-Source/tuya-convert">Tuya-Convert</a> - A Wi-Fi firmware flasher ESP8266 that has been pre-loaded with Tuya firmware.</li>
+<li><a href="https://github.com/nodemcu/nodemcu-flasher">NodeMCU Flasher</a> - The official flashing tool for the NodeMCU OS.</li>
+<li><a href="https://github.com/tasmota/tasmotizer">Tasmotizer</a> - A graphical flashing tool for Tasmota firmware. Can manage Wi-Fi &amp; MQTT settings, modules &amp; templates.</li>
+<li><a href="https://github.com/esp8266/arduino-esp8266fs-plugin">Arduino FS Plugin</a> - An Arduino plugin for filesystem uploads in the 8266.</li>
+<li><a href="https://github.com/platformio/platformio-core">PlatformIO</a> - Cross Platform IDE and Debugger that supports both the ESP32 and ESP8266.</li>
+</ul>
+<h2>Projects</h2>
+<h3>Smart Home and IoT</h3>
+<ul>
+<li><a href="https://github.com/1technophile/OpenMQTTGateway">OpenMQTTGateway</a> - An implementation of a multiprotocol MQTT gateway for both ESP's among other devices.</li>
+<li><a href="https://esphome.io/">ESPHome</a> - A full-featured system for controlling ESP's through simple yet powerful configuration files and Home Automation systems.</li>
+<li><a href="https://tasmota.github.io/docs/">Tasmota</a> - An alternative firmware for Sonoff &amp; other ESP8266/ESP32 devices. Includes a large collection of sensor drivers &amp; integrates with <a href="https://www.home-assistant.io/">Home Assistant</a> natively or via MQTT.</li>
+<li><a href="https://github.com/letscontrolit/ESPEasy">ESPEasy</a> - Easily turn ESP modules into multifunction sensor devices for home automation systems.</li>
+<li><a href="https://github.com/Gruppio/Sonoff-Homekit">Sonoff-Homekit</a> - An alternative firmware for Sonoff devices (and other 8266 devices) which allows control through Apple's Homekit.</li>
+<li><a href="https://github.com/jamct/DoorsignEPD">DoorsignEPD</a> - A smart doorsign with an E-Paper display using the ESP32.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'esp_README.md';
 
         fetch(markdownFile)
@@ -48,21 +167,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

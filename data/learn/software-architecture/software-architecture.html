@@ -8,38 +8,173 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Simskij Awesome Software Architecture - Awesome List Resources">
-    <title>Simskij Awesome Software Architecture</title>
+    <meta name="description" content="Software architecture aims to describe the high level structures of software as well as the discipline of creating them. As this topic is pretty broad, it...">
+    <meta name="robots" content="index, follow">
+    <title>Software Architecture - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <div align="center">
+
+<img src="./banner.png" />
+
+# Awesome Software Architecture<br/>
+
+[![awesome-badge](https://awesome.re/badge.svg)](https://awesome.re)
+
+[Software architecture](https://en.wikipedia.org/wiki/Software_architecture) aims to describe the high level 
+structures of software as well as the discipline of creating them. As this topic is pretty broad, it might 
+contain some resources that are also present in more niche lists. 
+
+<i>
+  If you like this list, consider showing your support by following <a href="https://twitter.com/0x12b/">@0x12b</a> on Twitter. 
+</i>
+
+</div>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#principles">Principles</a></li>
+<li><a href="#design-patterns">Design Patterns</a></li>
+<li><a href="#scalability-and-resilience">Scalability and Resilience</a></li>
+<li><a href="#methodology">Methodology</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#workshop-formats">Workshop formats</a></li>
+<li><a href="#modeling">Modeling</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#frameworks">Frameworks</a></li>
+<li><a href="#agile">Agile</a></li>
+<li><a href="#lean-software-development">Lean software development</a></li>
+<li><a href="#extreme-programming">Extreme programming</a></li>
+<li><a href="#devops">DevOps</a></li>
+<li><a href="#bonus">Bonus</a></li>
+</ul>
+<h2>Principles</h2>
+<ul>
+<li><a href="https://medium.com/faun/flexibility-a-software-architecture-principle-6eafe045a1d4">Flexibility</a> - Able to adapt to changes in both environment and usability requirements without encompassing structural changes.</li>
+<li><a href="https://www.digitalocean.com/community/conceptual-articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design">SOLID</a> - Lend to developing software with considerations for maintaining and extending as the project grows</li>
+</ul>
+<h2>Design Patterns</h2>
+<ul>
+<li><a href="https://jmgarridopaz.github.io/content/hexagonalarchitecture.html">Ports and adapters pattern</a> - Decouple the application core logic from the services it uses.</li>
+<li><a href="https://medium.com/datadriveninvestor/design-patterns-a-quick-guide-to-observer-pattern-d0622145d6c2">Observer pattern</a> - One-to-many state change notification.</li>
+<li><a href="https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612/">Design Patterns: Elements of Reusable Object-Oriented Software, by Gamma et al</a> - The one that started it all :orange_book:.</li>
+<li><a href="https://airbrake.io/blog/design-patterns/software-design-patterns-guide">Software Design Patterns: A Guide</a> - Introduction to common software design patterns.</li>
+<li><a href="https://www.youtube.com/watch?v=WV2Ed1QTst8">Software Design Patterns and Principes (quick overview)</a> - Reasons about common design patterns as well as their upsides and downsides 🎥.</li>
+<li><a href="https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs">CQRS</a> - Segregate operations that read data from operations that update data by using separate interfaces.</li>
+<li><a href="https://docs.microsoft.com/en-us/azure/architecture/patterns/event-sourcing">Event Sourcing</a> - Instead of storing just the current state of the data in a domain, use an append-only store to record the full series of actions taken on that data.</li>
+<li><a href="https://www.martinfowler.com/articles/feature-toggles.html">Feature Toggles</a> - Feature Toggles (often also refered to as Feature Flags) are a powerful technique, allowing teams to modify system behavior without changing code.</li>
+<li><a href="https://medium.com/javascript-scene/behavior-driven-development-bdd-and-functional-testing-62084ad7f1f2">Behavior Driven Development (BDD) and Functional Testing</a> - BDD uses human-readable descriptions of software user requirements as the basis for software tests.</li>
+<li><a href="https://docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/n-tier">N-tier architecture style</a> - Layers are a way to separate responsibilities and manage dependencies.</li>
+</ul>
+<h3>Scalability and Resilience</h3>
+<ul>
+<li><a href="https://martinfowler.com/bliki/CircuitBreaker.html">Circuit Breaker</a> - Protecting failing resources to prevent cascading failures.</li>
+<li><a href="https://docs.microsoft.com/en-us/azure/architecture/patterns/bulkhead">Bulkhead</a> - Partition resources to isolate failures.</li>
+<li><a href="https://docs.microsoft.com/en-us/azure/architecture/patterns/leader-election">Leader Election</a> - Coordinate distributed workloads by electing a leader.</li>
+</ul>
+<h2>Methodology</h2>
+<ul>
+<li><a href="http://worrydream.com/refs/Brooks-NoSilverBullet.pdf">No silver bullet, by Brooks</a> - Making a case for growing software in small increments :orange_book:.</li>
+<li><a href="https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164">Clean Architecture, by Martin</a> - Key principles and concepts for building sustainable and maintainable software :orange_book:.</li>
+<li><a href="https://martinfowler.com/bliki/TechnicalDebt.html">Technical Debt, by Fowler</a> - Cost and impact of accumulating technical debt.</li>
+<li><a href="https://www.youtube.com/watch?v=URSWYvyc42M">The Magic Tricks of Testing, by Metz</a> - Minimalistic ideals as a practical and pragmatic approach to software testing 🎥.</li>
+<li><a href="https://www.infoq.com/presentations/tdd-original/">TDD, Where did it all go wrong?, by Cooper</a> - Suggestion on TDD practices and boundaries to reduce coupling 🎥.</li>
+</ul>
+<h2>Documentation</h2>
+<ul>
+<li><a href="https://arc42.org/">arc42</a> - Template for documentation and communication of software and system architectures.</li>
+<li><a href="https://adr.github.io/">Architectural Decision Records</a> - Version and document architectural decisions the same way you do with code.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <div align="center">
+
+<img src="./banner.png" />
+
+# Awesome Software Architecture<br/>
+
+[![awesome-badge](https://awesome.re/badge.svg)](https://awesome.re)
+
+[Software architecture](https://en.wikipedia.org/wiki/Software_architecture) aims to describe the high level 
+structures of software as well as the discipline of creating them. As this topic is pretty broad, it might 
+contain some resources that are also present in more niche lists. 
+
+<i>
+  If you like this list, consider showing your support by following <a href="https://twitter.com/0x12b/">@0x12b</a> on Twitter. 
+</i>
+
+</div>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#principles">Principles</a></li>
+<li><a href="#design-patterns">Design Patterns</a></li>
+<li><a href="#scalability-and-resilience">Scalability and Resilience</a></li>
+<li><a href="#methodology">Methodology</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#workshop-formats">Workshop formats</a></li>
+<li><a href="#modeling">Modeling</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#frameworks">Frameworks</a></li>
+<li><a href="#agile">Agile</a></li>
+<li><a href="#lean-software-development">Lean software development</a></li>
+<li><a href="#extreme-programming">Extreme programming</a></li>
+<li><a href="#devops">DevOps</a></li>
+<li><a href="#bonus">Bonus</a></li>
+</ul>
+<h2>Principles</h2>
+<ul>
+<li><a href="https://medium.com/faun/flexibility-a-software-architecture-principle-6eafe045a1d4">Flexibility</a> - Able to adapt to changes in both environment and usability requirements without encompassing structural changes.</li>
+<li><a href="https://www.digitalocean.com/community/conceptual-articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design">SOLID</a> - Lend to developing software with considerations for maintaining and extending as the project grows</li>
+</ul>
+<h2>Design Patterns</h2>
+<ul>
+<li><a href="https://jmgarridopaz.github.io/content/hexagonalarchitecture.html">Ports and adapters pattern</a> - Decouple the application core logic from the services it uses.</li>
+<li><a href="https://medium.com/datadriveninvestor/design-patterns-a-quick-guide-to-observer-pattern-d0622145d6c2">Observer pattern</a> - One-to-many state change notification.</li>
+<li><a href="https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612/">Design Patterns: Elements of Reusable Object-Oriented Software, by Gamma et al</a> - The one that started it all :orange_book:.</li>
+<li><a href="https://airbrake.io/blog/design-patterns/software-design-patterns-guide">Software Design Patterns: A Guide</a> - Introduction to common software design patterns.</li>
+<li><a href="https://www.youtube.com/watch?v=WV2Ed1QTst8">Software Design Patterns and Principes (quick overview)</a> - Reasons about common design patterns as well as their upsides and downsides 🎥.</li>
+<li><a href="https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs">CQRS</a> - Segregate operations that read data from operations that update data by using separate interfaces.</li>
+<li><a href="https://docs.microsoft.com/en-us/azure/architecture/patterns/event-sourcing">Event Sourcing</a> - Instead of storing just the current state of the data in a domain, use an append-only store to record the full series of actions taken on that data.</li>
+<li><a href="https://www.martinfowler.com/articles/feature-toggles.html">Feature Toggles</a> - Feature Toggles (often also refered to as Feature Flags) are a powerful technique, allowing teams to modify system behavior without changing code.</li>
+<li><a href="https://medium.com/javascript-scene/behavior-driven-development-bdd-and-functional-testing-62084ad7f1f2">Behavior Driven Development (BDD) and Functional Testing</a> - BDD uses human-readable descriptions of software user requirements as the basis for software tests.</li>
+<li><a href="https://docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/n-tier">N-tier architecture style</a> - Layers are a way to separate responsibilities and manage dependencies.</li>
+</ul>
+<h3>Scalability and Resilience</h3>
+<ul>
+<li><a href="https://martinfowler.com/bliki/CircuitBreaker.html">Circuit Breaker</a> - Protecting failing resources to prevent cascading failures.</li>
+<li><a href="https://docs.microsoft.com/en-us/azure/architecture/patterns/bulkhead">Bulkhead</a> - Partition resources to isolate failures.</li>
+<li><a href="https://docs.microsoft.com/en-us/azure/architecture/patterns/leader-election">Leader Election</a> - Coordinate distributed workloads by electing a leader.</li>
+</ul>
+<h2>Methodology</h2>
+<ul>
+<li><a href="http://worrydream.com/refs/Brooks-NoSilverBullet.pdf">No silver bullet, by Brooks</a> - Making a case for growing software in small increments :orange_book:.</li>
+<li><a href="https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164">Clean Architecture, by Martin</a> - Key principles and concepts for building sustainable and maintainable software :orange_book:.</li>
+<li><a href="https://martinfowler.com/bliki/TechnicalDebt.html">Technical Debt, by Fowler</a> - Cost and impact of accumulating technical debt.</li>
+<li><a href="https://www.youtube.com/watch?v=URSWYvyc42M">The Magic Tricks of Testing, by Metz</a> - Minimalistic ideals as a practical and pragmatic approach to software testing 🎥.</li>
+<li><a href="https://www.infoq.com/presentations/tdd-original/">TDD, Where did it all go wrong?, by Cooper</a> - Suggestion on TDD practices and boundaries to reduce coupling 🎥.</li>
+</ul>
+<h2>Documentation</h2>
+<ul>
+<li><a href="https://arc42.org/">arc42</a> - Template for documentation and communication of software and system architectures.</li>
+<li><a href="https://adr.github.io/">Architectural Decision Records</a> - Version and document architectural decisions the same way you do with code.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'software-architecture_README.md';
 
         fetch(markdownFile)
@@ -48,21 +183,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

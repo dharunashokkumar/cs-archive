@@ -8,38 +8,175 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Matthias84 Awesome Flying Fpv - Awesome List Resources">
-    <title>Matthias84 Awesome Flying Fpv</title>
+    <meta name="description" content="This is a list of Free Software and Open Hardware dedicated for multicopters as well as airplanes or flying wings. We list esp. established projects with a...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Flying FPV [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Flying FPV <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<!--lint disable awesome-toc no-repeat-punctuation match-punctuation -->
+
+<p>This is a list of Free Software and Open Hardware dedicated for multicopters as well as airplanes or flying wings. We list esp. established projects with a active community and also some classics that might be legacy but important projects with a lot of mods.</p>
+<p>We hope to give you some orientation where to start and present you the full spectrum of open source development on the world of UAVs.</p>
+<blockquote>
+<p><strong>Warning</strong>
+You as creator, mechanic, spotter and pilot <strong>are responsible</strong> for your drone and doing. It is on you to avoid damages and not to hurt any person or animal.
+You are also responsible to match the local regulations of your country and to know where and how to fly with a minimum risk to others and yourself.
+Please respect <a href="https://en.wikipedia.org/wiki/Airmanship">good airmanship</a>.</p>
+<p><strong>Warning</strong>
+In past and recent wars and <strong>military conflicts</strong>, parties make use of UAVs and sometimes DIY aircraft to spot and attack opponents.
+My intention on this technology is in opposite a peaceful research and learning on tech and nature, not on killing people! <a href="https://www.stopkillerrobots.org">stopkillerrobots.org</a></p>
+</blockquote>
+<h2>Contents</h2>
+<ul>
+<li><a href="#airframes">Airframes</a></li>
+<li><a href="#multicopters-">Multicopters 🚁</a></li>
+<li><a href="#fixed-wing--planes-%EF%B8%8F">Fixed Wing / Planes 🛩️</a></li>
+<li><a href="#vtols-">VTOLs 🚀</a></li>
+<li><a href="#batteries--power-control-">Batteries &amp; Power Control 🔋</a></li>
+<li><a href="#motor-control-%EF%B8%8F">Motor Control ⚙️</a></li>
+<li><a href="#flight-control-%EF%B8%8F">Flight Control 👨‍✈️</a></li>
+<li><a href="#rc-transmitters--handcontroller-">RC Transmitters &amp; Handcontroller 🎮</a></li>
+<li><a href="#modules-">Modules 🧩</a></li>
+<li><a href="#vtx-">VTX 📺</a></li>
+<li><a href="#camera--gimbals-">Camera &amp; Gimbals 🎥</a></li>
+<li><a href="#gps-%EF%B8%8F">GPS 🛰️</a></li>
+<li><a href="#sensors-%EF%B8%8F">Sensors 🌡️</a></li>
+<li><a href="#video-receivers-">Video Receivers 📶</a></li>
+<li><a href="#antennas-and-trackers-">Antennas and Trackers 📡</a></li>
+<li><a href="#telemetry--logs-">Telemetry &amp; Logs 📊</a></li>
+<li><a href="#mission-control--basestation-%EF%B8%8F">Mission Control &amp; Basestation 🗺️</a></li>
+<li><a href="#companion-computers--integration-">Companion Computers &amp; Integration 💻</a></li>
+<li><a href="#computer-vision-">Computer Vision 🤖</a></li>
+<li><a href="#complete-systems-">Complete Systems 🎁</a></li>
+<li><a href="#security--safety-">Security &amp; Safety 🪂</a></li>
+<li><a href="#simulators-">Simulators 🌐</a></li>
+<li><a href="#checklists-">Checklists 📋</a></li>
+<li><a href="#id-systems-">ID Systems 🛂</a></li>
+<li><a href="#hacking--hijacking-">Hacking &amp; Hijacking 🔓</a></li>
+<li><a href="#accesoirs-">Accesoirs 🪠</a></li>
+<li><a href="#mobile-apps-">Mobile Apps 📱</a></li>
+<li><a href="#workbench-">Workbench 🧰</a></li>
+<li><a href="#legal-information-%EF%B8%8F">Legal Information 🏛️</a></li>
+<li><a href="#communities-%EF%B8%8F">Communities 🗣️</a></li>
+<li><a href="#forums-social-media">Forums &amp; Social Media</a></li>
+<li><a href="#video-channels">Video Channels</a></li>
+</ul>
+<h2>Airframes</h2>
+<p>The body of a UAV depends on the kind of aircraft and is optimized for it's usecase. Is it high speed for racing, improved agility for acrobatic freestyle, a heavy lifter for filming , long distance observations, ... . This requirements result in different mechanics and materials and take DIY aspect into account.</p>
+<p>You will find also a lot of spare parts or mods / extensions to commercial vehicles, which we don't list up here!</p>
+<blockquote>
+<p><strong>Note</strong>
+Building a UAV from scratch is a <strong>pretty challenging task</strong> for a beginner, esp. if you have limited amount of time.
+So it might be wise, to try existing solutions or kits before, so you don't get stuck to early and have a handy manual. Later on, you can try different mods or start with custom builds, if you have gained more experience and know how to avoid common pitfalls.
+See also: <a href="https://www.youtube.com/watch?v=ZCOlT_sz6Gs">My Raspberry Pi drone: the story so far by Matchstic</a>.</p>
+</blockquote>
+<h3>Multicopters 🚁</h3>
+<p>Copters are built using different materials from alu / carbon profiles to CNC cuts to full 3D printed cases and have different configurations for different number of rotors (bi... octo):</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=u_ArriXbrR0">Sub 250g autonomous drone</a> - 3D printed bare minimum frame with Liion and GPS</li>
+<li><a href="https://github.com/WE-are-FPV/JeNo-5.1">JeNo 5.1"</a> - Modern carbon wide X-frame with accessoirs</li>
+<li><a href="https://www.printables.com/de/model/396395-goblin-fpv-drone">Goblin v3</a> - 3D printed frame, 4S power, 16x16 AIO stack, 2023.</li>
+<li><a href="https://www.thingiverse.com/thing:4769576">NanoLongRange</a> - 3D printed frame with mostly a 18650 Liion cell and a all-in-one board for whoops, 2021.</li>
+<li><a href="https://www.thingiverse.com/thing:5428365">Discovery Edition</a> - Optimized frame with integrated battery holder, 2022.</li>
+<li><a href="https://www.thingiverse.com/thing:4818009">NanoLongRange 2</a> - With GPS and slightly lighter in 3 variants also for 21700 cells, 2021.</li>
+<li><a href="https://www.thingiverse.com/thing:5428923">NLR35</a> - Lighter and similar to NLR, but 21700 cell, 2022.</li>
+<li><a href="https://hackaday.com/2023/09/01/hefty-3d-printed-quadcopter-meets-nasty-end/">hefty</a> - Full 3d printed heavy quadcopter with custom made motors, 2023</li>
+<li><a href="https://www.thingiverse.com/thing:4502805">Ultimate 3D printable Cinewhoop</a> - 2020.</li>
+<li><a href="https://blog.prusaprinters.org/how-to-build-a-3d-printed-micro-drone_29310/">TinyTina</a> - 3D printed whoop, 2018.</li>
+<li><a href="https://www.thingiverse.com/thing:4089842">Heavy Lift Quadcopter Frame</a> - CNC cut by carbon, 2020.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Flying FPV <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<!--lint disable awesome-toc no-repeat-punctuation match-punctuation -->
+
+<p>This is a list of Free Software and Open Hardware dedicated for multicopters as well as airplanes or flying wings. We list esp. established projects with a active community and also some classics that might be legacy but important projects with a lot of mods.</p>
+<p>We hope to give you some orientation where to start and present you the full spectrum of open source development on the world of UAVs.</p>
+<blockquote>
+<p><strong>Warning</strong>
+You as creator, mechanic, spotter and pilot <strong>are responsible</strong> for your drone and doing. It is on you to avoid damages and not to hurt any person or animal.
+You are also responsible to match the local regulations of your country and to know where and how to fly with a minimum risk to others and yourself.
+Please respect <a href="https://en.wikipedia.org/wiki/Airmanship">good airmanship</a>.</p>
+<p><strong>Warning</strong>
+In past and recent wars and <strong>military conflicts</strong>, parties make use of UAVs and sometimes DIY aircraft to spot and attack opponents.
+My intention on this technology is in opposite a peaceful research and learning on tech and nature, not on killing people! <a href="https://www.stopkillerrobots.org">stopkillerrobots.org</a></p>
+</blockquote>
+<h2>Contents</h2>
+<ul>
+<li><a href="#airframes">Airframes</a></li>
+<li><a href="#multicopters-">Multicopters 🚁</a></li>
+<li><a href="#fixed-wing--planes-%EF%B8%8F">Fixed Wing / Planes 🛩️</a></li>
+<li><a href="#vtols-">VTOLs 🚀</a></li>
+<li><a href="#batteries--power-control-">Batteries &amp; Power Control 🔋</a></li>
+<li><a href="#motor-control-%EF%B8%8F">Motor Control ⚙️</a></li>
+<li><a href="#flight-control-%EF%B8%8F">Flight Control 👨‍✈️</a></li>
+<li><a href="#rc-transmitters--handcontroller-">RC Transmitters &amp; Handcontroller 🎮</a></li>
+<li><a href="#modules-">Modules 🧩</a></li>
+<li><a href="#vtx-">VTX 📺</a></li>
+<li><a href="#camera--gimbals-">Camera &amp; Gimbals 🎥</a></li>
+<li><a href="#gps-%EF%B8%8F">GPS 🛰️</a></li>
+<li><a href="#sensors-%EF%B8%8F">Sensors 🌡️</a></li>
+<li><a href="#video-receivers-">Video Receivers 📶</a></li>
+<li><a href="#antennas-and-trackers-">Antennas and Trackers 📡</a></li>
+<li><a href="#telemetry--logs-">Telemetry &amp; Logs 📊</a></li>
+<li><a href="#mission-control--basestation-%EF%B8%8F">Mission Control &amp; Basestation 🗺️</a></li>
+<li><a href="#companion-computers--integration-">Companion Computers &amp; Integration 💻</a></li>
+<li><a href="#computer-vision-">Computer Vision 🤖</a></li>
+<li><a href="#complete-systems-">Complete Systems 🎁</a></li>
+<li><a href="#security--safety-">Security &amp; Safety 🪂</a></li>
+<li><a href="#simulators-">Simulators 🌐</a></li>
+<li><a href="#checklists-">Checklists 📋</a></li>
+<li><a href="#id-systems-">ID Systems 🛂</a></li>
+<li><a href="#hacking--hijacking-">Hacking &amp; Hijacking 🔓</a></li>
+<li><a href="#accesoirs-">Accesoirs 🪠</a></li>
+<li><a href="#mobile-apps-">Mobile Apps 📱</a></li>
+<li><a href="#workbench-">Workbench 🧰</a></li>
+<li><a href="#legal-information-%EF%B8%8F">Legal Information 🏛️</a></li>
+<li><a href="#communities-%EF%B8%8F">Communities 🗣️</a></li>
+<li><a href="#forums-social-media">Forums &amp; Social Media</a></li>
+<li><a href="#video-channels">Video Channels</a></li>
+</ul>
+<h2>Airframes</h2>
+<p>The body of a UAV depends on the kind of aircraft and is optimized for it's usecase. Is it high speed for racing, improved agility for acrobatic freestyle, a heavy lifter for filming , long distance observations, ... . This requirements result in different mechanics and materials and take DIY aspect into account.</p>
+<p>You will find also a lot of spare parts or mods / extensions to commercial vehicles, which we don't list up here!</p>
+<blockquote>
+<p><strong>Note</strong>
+Building a UAV from scratch is a <strong>pretty challenging task</strong> for a beginner, esp. if you have limited amount of time.
+So it might be wise, to try existing solutions or kits before, so you don't get stuck to early and have a handy manual. Later on, you can try different mods or start with custom builds, if you have gained more experience and know how to avoid common pitfalls.
+See also: <a href="https://www.youtube.com/watch?v=ZCOlT_sz6Gs">My Raspberry Pi drone: the story so far by Matchstic</a>.</p>
+</blockquote>
+<h3>Multicopters 🚁</h3>
+<p>Copters are built using different materials from alu / carbon profiles to CNC cuts to full 3D printed cases and have different configurations for different number of rotors (bi... octo):</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=u_ArriXbrR0">Sub 250g autonomous drone</a> - 3D printed bare minimum frame with Liion and GPS</li>
+<li><a href="https://github.com/WE-are-FPV/JeNo-5.1">JeNo 5.1"</a> - Modern carbon wide X-frame with accessoirs</li>
+<li><a href="https://www.printables.com/de/model/396395-goblin-fpv-drone">Goblin v3</a> - 3D printed frame, 4S power, 16x16 AIO stack, 2023.</li>
+<li><a href="https://www.thingiverse.com/thing:4769576">NanoLongRange</a> - 3D printed frame with mostly a 18650 Liion cell and a all-in-one board for whoops, 2021.</li>
+<li><a href="https://www.thingiverse.com/thing:5428365">Discovery Edition</a> - Optimized frame with integrated battery holder, 2022.</li>
+<li><a href="https://www.thingiverse.com/thing:4818009">NanoLongRange 2</a> - With GPS and slightly lighter in 3 variants also for 21700 cells, 2021.</li>
+<li><a href="https://www.thingiverse.com/thing:5428923">NLR35</a> - Lighter and similar to NLR, but 21700 cell, 2022.</li>
+<li><a href="https://hackaday.com/2023/09/01/hefty-3d-printed-quadcopter-meets-nasty-end/">hefty</a> - Full 3d printed heavy quadcopter with custom made motors, 2023</li>
+<li><a href="https://www.thingiverse.com/thing:4502805">Ultimate 3D printable Cinewhoop</a> - 2020.</li>
+<li><a href="https://blog.prusaprinters.org/how-to-build-a-3d-printed-micro-drone_29310/">TinyTina</a> - 3D printed whoop, 2018.</li>
+<li><a href="https://www.thingiverse.com/thing:4089842">Heavy Lift Quadcopter Frame</a> - CNC cut by carbon, 2020.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'flying-fpv_README.md';
 
         fetch(markdownFile)
@@ -48,21 +185,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

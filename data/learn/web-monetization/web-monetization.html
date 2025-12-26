@@ -8,38 +8,193 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Thomasbnt Awesome Web Monetization - Awesome List Resources">
-    <title>Thomasbnt Awesome Web Monetization</title>
+    <meta name="description" content="> Awesome stuffs about Web Monetization. Learn more, check modules and others tools. Web Monetization is a web service that allows you to send money directly...">
+    <meta name="robots" content="index, follow">
+    <title>Web Monetization - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <p><img src="assets/wm_icon_animated.svg" alt="Logo Web Monetization" align="right" width="120px" /></p>
+<h1>Awesome Web Monetization <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat2.svg" /></a></h1>
+<blockquote>
+<p>Awesome stuffs about Web Monetization. Learn more, check modules and others tools.</p>
+</blockquote>
+<p><strong>Web Monetization</strong> is a web service that allows you to send money directly in your browser.
+This is a JavaScript browser API that allows the creation of a payment stream from the user agent to the website</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#about-web-monetization">About Web Monetization</a></li>
+<li><a href="#how-to-start-monetize-my-website">How to start monetize my website</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#packages">Packages</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#newsletters">Newsletters</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#contribute">Contribute</a></li>
+<li><a href="#donate">Donate</a></li>
+</ul>
+<h2>About Web Monetization</h2>
+<ul>
+<li><a href="https://webmonetization.org/">Webmonetization.org</a></li>
+<li><a href="https://webmonetization.org/docs/">Documentation</a></li>
+<li><a href="https://webmonetization.org/docs/intro/sending-payments/">How Web Monetization work for paying payments</a></li>
+<li><a href="https://webmonetization.org/docs/intro/receiving-payments/">How Web Monetization work for receiving payments</a></li>
+<li><a href="https://webmonetization.org/specification/">Specifications</a></li>
+<li><a href="https://forum.interledger.org/">ILP Forum (read only)</a></li>
+<li><a href="https://www.grantfortheweb.org/">Grant For The Web</a></li>
+</ul>
+<hr />
+<ul>
+<li><a href="https://interledger.org/">Interledger : Open protocol suite for sending payments across different ledgers</a></li>
+</ul>
+<h2>How to start monetize my website</h2>
+<p>If you would like to monetize your content, you must have a Wallet and Provider account. See below the platforms that allow you to use them.</p>
+<details><summary>More details about Wallet and Provider account</summary>
+<p>
+
+---
+
+| **Wallets** |                                                                                             |                                                                                                                                                                                                         |     |
+|:-----------:|:-------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:---:|
+|    Name     | [![GateHub](https://webmonetization.org/img/logo-wallet-gatehub.svg)](https://gatehub.net/) | [New Wallet ?<br>Create a issue !](https://github.com/thomasbnt/awesome-web-monetization/issues/new?assignees=thomasbnt&labels=Wallet%2C+%E2%86%94+WM+repository&template=new-wallet.md&title=%5BWa%5D) |
+|    Fees     |                   SEPA: 1.00 EUR < 50,000 EUR<br>Wire: $15 min ($150 max)                   |                                                                                                                                                                                                         |
+
+| **Payments** |        |
+|--------------|--------|
+| Name         | Empty. |
+
+---
+
+</p>
+</details>
+
+<p>On your webpage, integrate your <code>monetization</code> tag on meta</p>
+<pre><code class="language-html">&lt;link rel=&quot;monetization&quot; href=&quot;https://ilp.example.com/alice&quot;&gt;
+</code></pre>
+<p>and detect if <code>monetization</code> is possible, then work</p>
+<pre><code class="language-js">if (document.monetization) {
+  document.monetization.addEventListener(&quot;monetizationstart&quot;, () =&gt; {
+    console.log(
+      &quot;🎉 Awesome ! You use Web Monetization.\nMore information https://webmonetization.org&quot;,
+    );
+  });
+}
+</code></pre>
+<h2>Resources</h2>
+<h3>Packages</h3>
+<p><em>Any packages/modules and plugins</em></p>
+<ul>
+<li><a href="https://github.com/sunchayn/monetize.js">monetize.js</a> - An event-driven library to manage and simulate Web Monetization. <img alt="" src="assets/small_icons/javascript.png" /></li>
+<li><a href="https://github.com/dacioromero/types-wm">types-wm</a> - TypeScript definitions for Web Monetization <img alt="" src="assets/small_icons/typescript.png" /></li>
+<li><a href="https://github.com/CDDelta/ngx-monetization">ngx-monetization (archived)</a> - Web Monetization API for Angular. <img alt="" src="assets/small_icons/angular.png" /></li>
+<li><a href="https://github.com/dacioromero/react-hook-wm">react-hook-wm</a> - React hooks for integrating with Web Monetization. <img alt="" src="assets/small_icons/react.png" /></li>
+<li><a href="https://github.com/guidovizoso/react-monetize">react-monetize</a> - Helpers and hooks to speed up your integration with Web Monetization API. <img alt="" src="assets/small_icons/react.png" /></li>
+<li><a href="https://github.com/ISNIT0/ep_monetization">ep_monetization</a> - Plugin for applying payment pointer meta tag to Etherpad site. <img alt="" src="assets/small_icons/javascript.png" /></li>
+<li><a href="https://wordpress.org/plugins/wp-connect-coil/">wp-connect-coil</a> - Plugin for applying Coil payment pointer meta tag to WordPress site. <img alt="" src="assets/small_icons/wordpress.png" /></li>
+<li><a href="https://wordpress.org/plugins/widget-xrptipbot/">xrptipbot-wordpress-widget</a> - WordPress Widget based on XRPTIPBOT embed code to donate content creators. <img alt="" src="assets/small_icons/wordpress.png" /></li>
+<li><a href="https://github.com/DanCanetti/eleventy-plugin-monetization">eleventy-plugin-monetization</a> - An Eleventy plugin to monetize posts and site content. <img alt="" src="assets/small_icons/11ty.png" /></li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <p><img src="assets/wm_icon_animated.svg" alt="Logo Web Monetization" align="right" width="120px" /></p>
+<h1>Awesome Web Monetization <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat2.svg" /></a></h1>
+<blockquote>
+<p>Awesome stuffs about Web Monetization. Learn more, check modules and others tools.</p>
+</blockquote>
+<p><strong>Web Monetization</strong> is a web service that allows you to send money directly in your browser.
+This is a JavaScript browser API that allows the creation of a payment stream from the user agent to the website</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#about-web-monetization">About Web Monetization</a></li>
+<li><a href="#how-to-start-monetize-my-website">How to start monetize my website</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#packages">Packages</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#newsletters">Newsletters</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#contribute">Contribute</a></li>
+<li><a href="#donate">Donate</a></li>
+</ul>
+<h2>About Web Monetization</h2>
+<ul>
+<li><a href="https://webmonetization.org/">Webmonetization.org</a></li>
+<li><a href="https://webmonetization.org/docs/">Documentation</a></li>
+<li><a href="https://webmonetization.org/docs/intro/sending-payments/">How Web Monetization work for paying payments</a></li>
+<li><a href="https://webmonetization.org/docs/intro/receiving-payments/">How Web Monetization work for receiving payments</a></li>
+<li><a href="https://webmonetization.org/specification/">Specifications</a></li>
+<li><a href="https://forum.interledger.org/">ILP Forum (read only)</a></li>
+<li><a href="https://www.grantfortheweb.org/">Grant For The Web</a></li>
+</ul>
+<hr />
+<ul>
+<li><a href="https://interledger.org/">Interledger : Open protocol suite for sending payments across different ledgers</a></li>
+</ul>
+<h2>How to start monetize my website</h2>
+<p>If you would like to monetize your content, you must have a Wallet and Provider account. See below the platforms that allow you to use them.</p>
+<details><summary>More details about Wallet and Provider account</summary>
+<p>
+
+---
+
+| **Wallets** |                                                                                             |                                                                                                                                                                                                         |     |
+|:-----------:|:-------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:---:|
+|    Name     | [![GateHub](https://webmonetization.org/img/logo-wallet-gatehub.svg)](https://gatehub.net/) | [New Wallet ?<br>Create a issue !](https://github.com/thomasbnt/awesome-web-monetization/issues/new?assignees=thomasbnt&labels=Wallet%2C+%E2%86%94+WM+repository&template=new-wallet.md&title=%5BWa%5D) |
+|    Fees     |                   SEPA: 1.00 EUR < 50,000 EUR<br>Wire: $15 min ($150 max)                   |                                                                                                                                                                                                         |
+
+| **Payments** |        |
+|--------------|--------|
+| Name         | Empty. |
+
+---
+
+</p>
+</details>
+
+<p>On your webpage, integrate your <code>monetization</code> tag on meta</p>
+<pre><code class="language-html">&lt;link rel=&quot;monetization&quot; href=&quot;https://ilp.example.com/alice&quot;&gt;
+</code></pre>
+<p>and detect if <code>monetization</code> is possible, then work</p>
+<pre><code class="language-js">if (document.monetization) {
+  document.monetization.addEventListener(&quot;monetizationstart&quot;, () =&gt; {
+    console.log(
+      &quot;🎉 Awesome ! You use Web Monetization.\nMore information https://webmonetization.org&quot;,
+    );
+  });
+}
+</code></pre>
+<h2>Resources</h2>
+<h3>Packages</h3>
+<p><em>Any packages/modules and plugins</em></p>
+<ul>
+<li><a href="https://github.com/sunchayn/monetize.js">monetize.js</a> - An event-driven library to manage and simulate Web Monetization. <img alt="" src="assets/small_icons/javascript.png" /></li>
+<li><a href="https://github.com/dacioromero/types-wm">types-wm</a> - TypeScript definitions for Web Monetization <img alt="" src="assets/small_icons/typescript.png" /></li>
+<li><a href="https://github.com/CDDelta/ngx-monetization">ngx-monetization (archived)</a> - Web Monetization API for Angular. <img alt="" src="assets/small_icons/angular.png" /></li>
+<li><a href="https://github.com/dacioromero/react-hook-wm">react-hook-wm</a> - React hooks for integrating with Web Monetization. <img alt="" src="assets/small_icons/react.png" /></li>
+<li><a href="https://github.com/guidovizoso/react-monetize">react-monetize</a> - Helpers and hooks to speed up your integration with Web Monetization API. <img alt="" src="assets/small_icons/react.png" /></li>
+<li><a href="https://github.com/ISNIT0/ep_monetization">ep_monetization</a> - Plugin for applying payment pointer meta tag to Etherpad site. <img alt="" src="assets/small_icons/javascript.png" /></li>
+<li><a href="https://wordpress.org/plugins/wp-connect-coil/">wp-connect-coil</a> - Plugin for applying Coil payment pointer meta tag to WordPress site. <img alt="" src="assets/small_icons/wordpress.png" /></li>
+<li><a href="https://wordpress.org/plugins/widget-xrptipbot/">xrptipbot-wordpress-widget</a> - WordPress Widget based on XRPTIPBOT embed code to donate content creators. <img alt="" src="assets/small_icons/wordpress.png" /></li>
+<li><a href="https://github.com/DanCanetti/eleventy-plugin-monetization">eleventy-plugin-monetization</a> - An Eleventy plugin to monetize posts and site content. <img alt="" src="assets/small_icons/11ty.png" /></li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'web-monetization_README.md';
 
         fetch(markdownFile)
@@ -48,21 +203,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

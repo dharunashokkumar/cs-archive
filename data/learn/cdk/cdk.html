@@ -8,38 +8,187 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kolomied Awesome Cdk - Awesome List Resources">
-    <title>Kolomied Awesome Cdk</title>
+    <meta name="description" content="> Curated list of awesome AWS Cloud Development Kit (AWS CDK) open-source projects, guides, blogs and other resources. The AWS Cloud Development Kit (AWS CDK)...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome CDK [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [<img src="https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-128-dark.png" align="right" alt="CDK">](https://github.com/aws/aws-cdk) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome CDK <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a> <a href="https://github.com/aws/aws-cdk"><img src="https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-128-dark.png" align="right" alt="CDK"></a></h1>
+<blockquote>
+<p>Curated list of awesome <a href="https://github.com/awslabs/aws-cdk">AWS Cloud Development Kit</a> (AWS CDK) open-source projects, guides, blogs and other resources.</p>
+</blockquote>
+<p>The AWS Cloud Development Kit (AWS CDK) is an open-source software development framework for defining cloud infrastructure in code.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#construct-libraries">Construct Libraries</a></li>
+<li><a href="#apis">APIs</a></li>
+<li><a href="#databases">Databases</a></li>
+<li><a href="#static-websites">Static Websites</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#ops">Ops</a></li>
+<li><a href="#queue">Queue</a></li>
+<li><a href="#cicd">CI/CD</a></li>
+<li><a href="#monitoring">Monitoring</a></li>
+<li><a href="#workflows">Workflows</a></li>
+<li><a href="#multi-accounts-setup">Multi-accounts setup</a></li>
+<li><a href="#high-level-frameworks">High-Level Frameworks</a></li>
+<li><a href="#scaffolding">Scaffolding</a></li>
+<li><a href="#language-support">Language Support</a></li>
+<li><a href="#library-publishing">Library Publishing</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#training-materials-and-sample-code">Training Materials and Sample Code</a></li>
+<li><a href="#blog-posts--talks">Blog Posts &amp; Talks</a></li>
+<li><a href="#related-projects">Related Projects</a></li>
+<li><a href="#tips--tricks">Tips &amp; Tricks</a></li>
+</ul>
+<h2>Construct Libraries</h2>
+<p>This section includes code libraries in various programming languages which vend constructs that can be used in CDK apps.</p>
+<h3>APIs</h3>
+<ul>
+<li><a href="https://github.com/alexpulver/cdk-chalice">cdk-chalice</a> - AWS CDK construct for AWS Chalice (Python Serverless Microframework for AWS).</li>
+<li><a href="https://github.com/wulfmann/auto-cdk">auto-cdk</a> - Automatically generate api-gateway/lambda integrations with the filesystem (beta).</li>
+<li><a href="https://github.com/thomasstep/crow-api">crow-api</a> - Create a serverless API with routes based on your file structure.</li>
+</ul>
+<h3>Databases</h3>
+<ul>
+<li><a href="https://github.com/elegantdevelopment/aws-cdk-dynamodb-seeder">aws-cdk-dynamodb-seeder</a> - A simple CDK seeder for DynamoDB.</li>
+<li><a href="https://www.npmjs.com/package/cdk-tweet-sentiment">cdk-tweet-sentiment</a> - Identify sentiments in tweets and log them into an Amazon DynamoDB table.</li>
+<li><a href="https://github.com/eladb/cdk-dynamo-table-viewer">cdk-dynamo-table-viewer</a> - Exposes the contents of an Amazon DynamoDB table through a public HTML page.</li>
+<li><a href="https://github.com/botpress/cdk-postgresql">cdk-postgresql</a> - AWS CDK Constructs for PostgreSQL.</li>
+<li><a href="https://github.com/kolomied/cdk-sqlserver-seeder">cdk-sqlserver-seeder</a> - CDK construct that executes custom SQL scripts against SQL Server database.</li>
+</ul>
+<h3>Static Websites</h3>
+<ul>
+<li><a href="https://github.com/cloudcomponents/cdk-components/blob/master/packages/cdk-static-website">cdk-static-website</a> - CDK component that creates a static website using S3, configures CloudFront (CDN) and maps a custom domain via Route53 (DNS).</li>
+<li><a href="https://github.com/nessjs/ness">ness</a> - CDK powered CLI tool for deploying static sites to your AWS account.</li>
+</ul>
+<h3>Security</h3>
+<ul>
+<li><a href="https://github.com/farminf/aws-cdk-passwordless">cdk-passwordless</a> - Construct for having passwordless authentication using userpool.</li>
+<li><a href="https://github.com/srihariph/cdk-iam-generator">cdk-iam-generator</a> - Construct to generate IAM Managed Policies and IAM Roles using JSON Configuration.</li>
+<li><a href="https://github.com/SSHcom/c3">c3</a> - Enables compliancy with privacy and security best practices.</li>
+<li><a href="https://github.com/udondan/iam-floyd">cdk-iam-floyd</a> - IAM policy statement generator with fluent interface.</li>
+<li><a href="https://github.com/k9securityio/k9-cdk">k9-cdk</a> - Construct to generate secure S3 bucket policies easily.</li>
+<li><a href="https://github.com/cloudcomponents/cdk-constructs/tree/master/packages/cdk-cloudfront-authorization">cdk-cloudfront-authorization</a> - CloudFront with Cognito authentication using Lambda@Edge.</li>
+<li><a href="https://github.com/globaldatanet/aws-firewall-factory">aws-firewall-factory</a> - Deploy, update, and stage your WAFs while managing them centrally via FMS.</li>
+</ul>
+<h3>Ops</h3>
+<ul>
+<li><a href="https://github.com/tecracer/cdk-constructs/tree/master/packages/cdk-instanceStopRule">cdk-instanceStopRule</a> - CDK component which creates an instance with a CloudWatch rule to stop it at the end of the day.</li>
+<li><a href="https://github.com/jmb12686/cdk-time-bomb">cdk-time-bomb</a> - CDK Construct that implodes your AWS CDK Stack after a set amount of time.</li>
+</ul>
+<h3>Queue</h3>
+<ul>
+<li><a href="https://www.npmjs.com/package/cdk-tweet-queue">cdk-tweet-queue</a> - Fills up an SQS queue with tweets from a tweeter search query.</li>
+<li><a href="https://github.com/mkrn/cdk-ses-template-mailer">cdk-ses-template-mailer</a> - Constructs to create AWS SES email templates + microservice to send templated emails with AWS SES.</li>
+<li><a href="https://github.com/kamilbiela/cdk-sqs-monitored">cdk-sqs-monitored</a> - SQS Construct with dead letter queue and configured alarms.</li>
+</ul>
+<h3>CI/CD</h3>
+<ul>
+<li><a href="https://github.com/awslabs/aws-delivlib">aws-delivlib</a> - Synthesizes CI/CD pipelines for multi-language software delivery (used by the CDK itself).</li>
+<li><a href="https://github.com/cloudcomponents/cdk-constructs/tree/master/packages/cdk-blue-green-container-deployment">cdk-blue-green-container-deployment</a> - Blue/Green container deployment with CodeDeploy.</li>
+</ul>
+<h3>Monitoring</h3>
+<ul>
+<li><a href="https://github.com/eladb/cdk-watchful">cdk-watchful</a> - Automatic dashboards and alarms for CDK apps.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome CDK <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a> <a href="https://github.com/aws/aws-cdk"><img src="https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-128-dark.png" align="right" alt="CDK"></a></h1>
+<blockquote>
+<p>Curated list of awesome <a href="https://github.com/awslabs/aws-cdk">AWS Cloud Development Kit</a> (AWS CDK) open-source projects, guides, blogs and other resources.</p>
+</blockquote>
+<p>The AWS Cloud Development Kit (AWS CDK) is an open-source software development framework for defining cloud infrastructure in code.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#construct-libraries">Construct Libraries</a></li>
+<li><a href="#apis">APIs</a></li>
+<li><a href="#databases">Databases</a></li>
+<li><a href="#static-websites">Static Websites</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#ops">Ops</a></li>
+<li><a href="#queue">Queue</a></li>
+<li><a href="#cicd">CI/CD</a></li>
+<li><a href="#monitoring">Monitoring</a></li>
+<li><a href="#workflows">Workflows</a></li>
+<li><a href="#multi-accounts-setup">Multi-accounts setup</a></li>
+<li><a href="#high-level-frameworks">High-Level Frameworks</a></li>
+<li><a href="#scaffolding">Scaffolding</a></li>
+<li><a href="#language-support">Language Support</a></li>
+<li><a href="#library-publishing">Library Publishing</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#training-materials-and-sample-code">Training Materials and Sample Code</a></li>
+<li><a href="#blog-posts--talks">Blog Posts &amp; Talks</a></li>
+<li><a href="#related-projects">Related Projects</a></li>
+<li><a href="#tips--tricks">Tips &amp; Tricks</a></li>
+</ul>
+<h2>Construct Libraries</h2>
+<p>This section includes code libraries in various programming languages which vend constructs that can be used in CDK apps.</p>
+<h3>APIs</h3>
+<ul>
+<li><a href="https://github.com/alexpulver/cdk-chalice">cdk-chalice</a> - AWS CDK construct for AWS Chalice (Python Serverless Microframework for AWS).</li>
+<li><a href="https://github.com/wulfmann/auto-cdk">auto-cdk</a> - Automatically generate api-gateway/lambda integrations with the filesystem (beta).</li>
+<li><a href="https://github.com/thomasstep/crow-api">crow-api</a> - Create a serverless API with routes based on your file structure.</li>
+</ul>
+<h3>Databases</h3>
+<ul>
+<li><a href="https://github.com/elegantdevelopment/aws-cdk-dynamodb-seeder">aws-cdk-dynamodb-seeder</a> - A simple CDK seeder for DynamoDB.</li>
+<li><a href="https://www.npmjs.com/package/cdk-tweet-sentiment">cdk-tweet-sentiment</a> - Identify sentiments in tweets and log them into an Amazon DynamoDB table.</li>
+<li><a href="https://github.com/eladb/cdk-dynamo-table-viewer">cdk-dynamo-table-viewer</a> - Exposes the contents of an Amazon DynamoDB table through a public HTML page.</li>
+<li><a href="https://github.com/botpress/cdk-postgresql">cdk-postgresql</a> - AWS CDK Constructs for PostgreSQL.</li>
+<li><a href="https://github.com/kolomied/cdk-sqlserver-seeder">cdk-sqlserver-seeder</a> - CDK construct that executes custom SQL scripts against SQL Server database.</li>
+</ul>
+<h3>Static Websites</h3>
+<ul>
+<li><a href="https://github.com/cloudcomponents/cdk-components/blob/master/packages/cdk-static-website">cdk-static-website</a> - CDK component that creates a static website using S3, configures CloudFront (CDN) and maps a custom domain via Route53 (DNS).</li>
+<li><a href="https://github.com/nessjs/ness">ness</a> - CDK powered CLI tool for deploying static sites to your AWS account.</li>
+</ul>
+<h3>Security</h3>
+<ul>
+<li><a href="https://github.com/farminf/aws-cdk-passwordless">cdk-passwordless</a> - Construct for having passwordless authentication using userpool.</li>
+<li><a href="https://github.com/srihariph/cdk-iam-generator">cdk-iam-generator</a> - Construct to generate IAM Managed Policies and IAM Roles using JSON Configuration.</li>
+<li><a href="https://github.com/SSHcom/c3">c3</a> - Enables compliancy with privacy and security best practices.</li>
+<li><a href="https://github.com/udondan/iam-floyd">cdk-iam-floyd</a> - IAM policy statement generator with fluent interface.</li>
+<li><a href="https://github.com/k9securityio/k9-cdk">k9-cdk</a> - Construct to generate secure S3 bucket policies easily.</li>
+<li><a href="https://github.com/cloudcomponents/cdk-constructs/tree/master/packages/cdk-cloudfront-authorization">cdk-cloudfront-authorization</a> - CloudFront with Cognito authentication using Lambda@Edge.</li>
+<li><a href="https://github.com/globaldatanet/aws-firewall-factory">aws-firewall-factory</a> - Deploy, update, and stage your WAFs while managing them centrally via FMS.</li>
+</ul>
+<h3>Ops</h3>
+<ul>
+<li><a href="https://github.com/tecracer/cdk-constructs/tree/master/packages/cdk-instanceStopRule">cdk-instanceStopRule</a> - CDK component which creates an instance with a CloudWatch rule to stop it at the end of the day.</li>
+<li><a href="https://github.com/jmb12686/cdk-time-bomb">cdk-time-bomb</a> - CDK Construct that implodes your AWS CDK Stack after a set amount of time.</li>
+</ul>
+<h3>Queue</h3>
+<ul>
+<li><a href="https://www.npmjs.com/package/cdk-tweet-queue">cdk-tweet-queue</a> - Fills up an SQS queue with tweets from a tweeter search query.</li>
+<li><a href="https://github.com/mkrn/cdk-ses-template-mailer">cdk-ses-template-mailer</a> - Constructs to create AWS SES email templates + microservice to send templated emails with AWS SES.</li>
+<li><a href="https://github.com/kamilbiela/cdk-sqs-monitored">cdk-sqs-monitored</a> - SQS Construct with dead letter queue and configured alarms.</li>
+</ul>
+<h3>CI/CD</h3>
+<ul>
+<li><a href="https://github.com/awslabs/aws-delivlib">aws-delivlib</a> - Synthesizes CI/CD pipelines for multi-language software delivery (used by the CDK itself).</li>
+<li><a href="https://github.com/cloudcomponents/cdk-constructs/tree/master/packages/cdk-blue-green-container-deployment">cdk-blue-green-container-deployment</a> - Blue/Green container deployment with CodeDeploy.</li>
+</ul>
+<h3>Monitoring</h3>
+<ul>
+<li><a href="https://github.com/eladb/cdk-watchful">cdk-watchful</a> - Automatic dashboards and alarms for CDK apps.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'cdk_README.md';
 
         fetch(markdownFile)
@@ -48,21 +197,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

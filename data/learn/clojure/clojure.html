@@ -8,38 +8,233 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Razum2um Awesome Clojure - Awesome List Resources">
-    <title>Razum2um Awesome Clojure</title>
+    <meta name="description" content="- Awesome products in Clojure - OneKeePass: A secure password manager and mobile app in ClojureScript - Penpot: design and prototyping platform - LightTable...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Clojure [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Clojure <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<ul>
+<li><a href="#awesome-products-in-clojure">Awesome products in Clojure</a></li>
+<li><a href="https://github.com/OneKeePass/desktop">OneKeePass</a>: A secure password manager and <a href="https://github.com/OneKeePass/mobile">mobile app in ClojureScript</a></li>
+<li><a href="https://penpot.app/">Penpot</a>: design and prototyping platform</li>
+<li><a href="http://lighttable.com/">LightTable (IDE)</a> (archived)</li>
+<li><a href="https://www.maria.cloud/">Maria.cloud (Online IDE for beginners)</a></li>
+<li><a href="http://riemann.io/">Riemann (Monitoring)</a></li>
+<li><a href="https://precursorapp.com/">Precursor (Online prototyping tool)</a></li>
+<li><a href="https://github.com/puppetlabs/puppet-server">Puppet Server</a></li>
+<li><a href="https://github.com/puppetlabs/puppetdb">PuppetDB</a></li>
+<li><a href="https://github.com/metabase/metabase">Metabase</a></li>
+<li><a href="https://github.com/lambdaisland/metabase-datomic">Metabase Datomic</a></li>
+<li><a href="https://circleci.com/">CircleCI</a></li>
+<li><a href="https://github.com/maitria/avi">Avi (vim rewrite)</a></li>
+<li><a href="https://github.com/mogenslund/liquid">Liquid (Text Editor)</a></li>
+<li><a href="https://github.com/clojupyter/clojupyter">Clojupyter</a></li>
+<li><a href="https://github.com/matthiasn/meins">meins</a></li>
+<li><a href="https://github.com/jepsen-io/jepsen">Jepsen</a></li>
+<li><a href="https://github.com/braidchat/braid">Braid</a>: a team-chat app with a novel UI that leads to better conversations</li>
+<li><a href="https://github.com/tokenmill/accelerated-text">Accelerated Text</a>: a natural language generation environment (backend: Clojure, frontend: JS)</li>
+<li><a href="https://github.com/gojek/ziggurat">Ziggurat</a>: a framework built to simplify Stream processing on Kafka</li>
+<li><a href="https://github.com/oakes/Nightcode">Nightcode</a>: An IDE for Clojure (archived)</li>
+<li><a href="https://github.com/oakes/Nightlight">Nightlight</a>: text editor (archived)</li>
+<li><a href="https://github.com/pkamenarsky/atea">Atea</a>: a minimalistic menu bar time tracker for MacOS (legacy, requires jvm 1.6)</li>
+<li><a href="https://github.com/ertugrulcetin/herfi">herfi</a> - 3D multiplayer game prototype written in Clojure and ClojureScript</li>
+<li><a href="https://github.com/ertugrulcetin/racing-game-cljs">racing-game-cljs</a> - A 3D racing game built with ClojureScript, React and ThreeJS</li>
+<li><a href="#awesome-saas-in-clojure">Awesome SaaS (partially OSS) in Clojure</a></li>
+<li><a href="https://github.com/logseq/logseq">Logseq</a>: knowledge management and collaboration (open frontend)</li>
+<li><a href="#languages-written-with-clojure">Languages written with Clojure</a></li>
+<li><a href="https://github.com/jeaye/jank">jank</a></li>
+<li><a href="https://github.com/LuxLang/lux">lux</a></li>
+<li><a href="https://github.com/kanaka/mal/tree/master/impls/clojure">mal</a></li>
+<li><a href="https://github.com/turbopape/scheje">scheje</a></li>
+<li><a href="https://github.com/benzap/eden">eden</a></li>
+<li><a href="https://ferret-lang.org">ferret</a></li>
+<li><a href="#awesome-tools-in-clojure">Awesome tools in Clojure</a></li>
+<li><a href="#awesome-macros-usage">Awesome macros usage</a></li>
+<li><a href="#advanced-datastructures">Advanced datastructures</a></li>
+<li><a href="#web-framework">Web Framework</a></li>
+<li><a href="#dependency-injection">Dependency injection</a></li>
+<li><a href="#build-automation-and-package-management">Build Automation and Package management</a></li>
+<li><a href="#version-control-management">Version Control Management</a></li>
+<li><a href="#date-and-time">Date and Time</a></li>
+<li><a href="#gui">GUI</a></li>
+<li><a href="#audio">Audio</a></li>
+<li><a href="#http">HTTP</a></li>
+<li><a href="#database">Database</a></li>
+<li><a href="#connection-pools">Connection pools</a></li>
+<li><a href="#structural-migrations">Structural Migrations</a></li>
+<li><a href="#redis">Redis</a></li>
+<li><a href="#json">JSON</a></li>
+<li><a href="#protocol-buffers-and-grpc">Protocol Buffers and gRPC</a></li>
+<li><a href="#orm-and-sql-generation">ORM and SQL generation</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#restful-api">RESTful API</a></li>
+<li><a href="#graphql-api">GraphQL API</a></li>
+<li><a href="#emails">Emails</a></li>
+<li><a href="#html-manipulation">HTML Manipulation</a></li>
+<li><a href="#data-validation">Data Validation</a></li>
+<li><a href="#type-system">Type System</a></li>
+<li><a href="#pattern-matching">Pattern Matching</a></li>
+<li><a href="#async-processing">Async processing</a></li>
+<li><a href="#monads">Monads</a></li>
+<li><a href="#websocket">WebSocket</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#webdriver-automation">Webdriver automation</a></li>
+<li><a href="#code-analysis-and-linter">Code Analysis and Linter</a></li>
+<li><a href="#science-and-data-analysis">Science and Data Analysis</a></li>
+<li><a href="#machine-learning">Machine Learning</a></li>
+<li><a href="#computer-vision">Computer Vision</a></li>
+<li><a href="#text-processing">Text Processing</a></li>
+<li><a href="#parsing">Parsing</a></li>
+<li><a href="#editor-plugins">Editor Plugins</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#literate-programming">Literate Programming</a></li>
+<li><a href="#archives-and-compression">Archives and Compression</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#debugging">Debugging tools</a></li>
+<li><a href="#ci">CI</a></li>
+<li><a href="#project-management">Project Management</a></li>
+<li><a href="#terminal-ui">Terminal UI</a></li>
+<li>
+<p><a href="#graphviz">Graphviz</a></p>
+</li>
+<li>
+<p><a href="#resources">Resources</a></p>
+</li>
+<li><a href="#guides">Guides</a></li>
+<li><a href="#video-tutorials">Video tutorials</a></li>
+<li><a href="#websites">Websites</a></li>
+<li><a href="#twitter">Twitter</a></li>
+<li><a href="#exercises">Exercises</a></li>
+</ul>
+<h2>Awesome macros usage</h2>
+<p><em>Answers why the lisp shines, killer features in action</em></p>
+<ul>
+<li><a href="https://github.com/clojure/core.async">core.async</a> - transforms AST into CSP programs</li>
+<li><a href="https://github.com/leonoel/cloroutine">cloroutine</a> - suspends and continuations (coroutines)</li>
+<li><a href="https://github.com/leonoel/missionary">missionary</a> - a reactive dataflow programming toolkit</li>
+<li><a href="https://github.com/venantius/photon">photon</a> - realtime web, like Meteor, but for Clojure(Script)</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Clojure <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<ul>
+<li><a href="#awesome-products-in-clojure">Awesome products in Clojure</a></li>
+<li><a href="https://github.com/OneKeePass/desktop">OneKeePass</a>: A secure password manager and <a href="https://github.com/OneKeePass/mobile">mobile app in ClojureScript</a></li>
+<li><a href="https://penpot.app/">Penpot</a>: design and prototyping platform</li>
+<li><a href="http://lighttable.com/">LightTable (IDE)</a> (archived)</li>
+<li><a href="https://www.maria.cloud/">Maria.cloud (Online IDE for beginners)</a></li>
+<li><a href="http://riemann.io/">Riemann (Monitoring)</a></li>
+<li><a href="https://precursorapp.com/">Precursor (Online prototyping tool)</a></li>
+<li><a href="https://github.com/puppetlabs/puppet-server">Puppet Server</a></li>
+<li><a href="https://github.com/puppetlabs/puppetdb">PuppetDB</a></li>
+<li><a href="https://github.com/metabase/metabase">Metabase</a></li>
+<li><a href="https://github.com/lambdaisland/metabase-datomic">Metabase Datomic</a></li>
+<li><a href="https://circleci.com/">CircleCI</a></li>
+<li><a href="https://github.com/maitria/avi">Avi (vim rewrite)</a></li>
+<li><a href="https://github.com/mogenslund/liquid">Liquid (Text Editor)</a></li>
+<li><a href="https://github.com/clojupyter/clojupyter">Clojupyter</a></li>
+<li><a href="https://github.com/matthiasn/meins">meins</a></li>
+<li><a href="https://github.com/jepsen-io/jepsen">Jepsen</a></li>
+<li><a href="https://github.com/braidchat/braid">Braid</a>: a team-chat app with a novel UI that leads to better conversations</li>
+<li><a href="https://github.com/tokenmill/accelerated-text">Accelerated Text</a>: a natural language generation environment (backend: Clojure, frontend: JS)</li>
+<li><a href="https://github.com/gojek/ziggurat">Ziggurat</a>: a framework built to simplify Stream processing on Kafka</li>
+<li><a href="https://github.com/oakes/Nightcode">Nightcode</a>: An IDE for Clojure (archived)</li>
+<li><a href="https://github.com/oakes/Nightlight">Nightlight</a>: text editor (archived)</li>
+<li><a href="https://github.com/pkamenarsky/atea">Atea</a>: a minimalistic menu bar time tracker for MacOS (legacy, requires jvm 1.6)</li>
+<li><a href="https://github.com/ertugrulcetin/herfi">herfi</a> - 3D multiplayer game prototype written in Clojure and ClojureScript</li>
+<li><a href="https://github.com/ertugrulcetin/racing-game-cljs">racing-game-cljs</a> - A 3D racing game built with ClojureScript, React and ThreeJS</li>
+<li><a href="#awesome-saas-in-clojure">Awesome SaaS (partially OSS) in Clojure</a></li>
+<li><a href="https://github.com/logseq/logseq">Logseq</a>: knowledge management and collaboration (open frontend)</li>
+<li><a href="#languages-written-with-clojure">Languages written with Clojure</a></li>
+<li><a href="https://github.com/jeaye/jank">jank</a></li>
+<li><a href="https://github.com/LuxLang/lux">lux</a></li>
+<li><a href="https://github.com/kanaka/mal/tree/master/impls/clojure">mal</a></li>
+<li><a href="https://github.com/turbopape/scheje">scheje</a></li>
+<li><a href="https://github.com/benzap/eden">eden</a></li>
+<li><a href="https://ferret-lang.org">ferret</a></li>
+<li><a href="#awesome-tools-in-clojure">Awesome tools in Clojure</a></li>
+<li><a href="#awesome-macros-usage">Awesome macros usage</a></li>
+<li><a href="#advanced-datastructures">Advanced datastructures</a></li>
+<li><a href="#web-framework">Web Framework</a></li>
+<li><a href="#dependency-injection">Dependency injection</a></li>
+<li><a href="#build-automation-and-package-management">Build Automation and Package management</a></li>
+<li><a href="#version-control-management">Version Control Management</a></li>
+<li><a href="#date-and-time">Date and Time</a></li>
+<li><a href="#gui">GUI</a></li>
+<li><a href="#audio">Audio</a></li>
+<li><a href="#http">HTTP</a></li>
+<li><a href="#database">Database</a></li>
+<li><a href="#connection-pools">Connection pools</a></li>
+<li><a href="#structural-migrations">Structural Migrations</a></li>
+<li><a href="#redis">Redis</a></li>
+<li><a href="#json">JSON</a></li>
+<li><a href="#protocol-buffers-and-grpc">Protocol Buffers and gRPC</a></li>
+<li><a href="#orm-and-sql-generation">ORM and SQL generation</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#restful-api">RESTful API</a></li>
+<li><a href="#graphql-api">GraphQL API</a></li>
+<li><a href="#emails">Emails</a></li>
+<li><a href="#html-manipulation">HTML Manipulation</a></li>
+<li><a href="#data-validation">Data Validation</a></li>
+<li><a href="#type-system">Type System</a></li>
+<li><a href="#pattern-matching">Pattern Matching</a></li>
+<li><a href="#async-processing">Async processing</a></li>
+<li><a href="#monads">Monads</a></li>
+<li><a href="#websocket">WebSocket</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#webdriver-automation">Webdriver automation</a></li>
+<li><a href="#code-analysis-and-linter">Code Analysis and Linter</a></li>
+<li><a href="#science-and-data-analysis">Science and Data Analysis</a></li>
+<li><a href="#machine-learning">Machine Learning</a></li>
+<li><a href="#computer-vision">Computer Vision</a></li>
+<li><a href="#text-processing">Text Processing</a></li>
+<li><a href="#parsing">Parsing</a></li>
+<li><a href="#editor-plugins">Editor Plugins</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#literate-programming">Literate Programming</a></li>
+<li><a href="#archives-and-compression">Archives and Compression</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#debugging">Debugging tools</a></li>
+<li><a href="#ci">CI</a></li>
+<li><a href="#project-management">Project Management</a></li>
+<li><a href="#terminal-ui">Terminal UI</a></li>
+<li>
+<p><a href="#graphviz">Graphviz</a></p>
+</li>
+<li>
+<p><a href="#resources">Resources</a></p>
+</li>
+<li><a href="#guides">Guides</a></li>
+<li><a href="#video-tutorials">Video tutorials</a></li>
+<li><a href="#websites">Websites</a></li>
+<li><a href="#twitter">Twitter</a></li>
+<li><a href="#exercises">Exercises</a></li>
+</ul>
+<h2>Awesome macros usage</h2>
+<p><em>Answers why the lisp shines, killer features in action</em></p>
+<ul>
+<li><a href="https://github.com/clojure/core.async">core.async</a> - transforms AST into CSP programs</li>
+<li><a href="https://github.com/leonoel/cloroutine">cloroutine</a> - suspends and continuations (coroutines)</li>
+<li><a href="https://github.com/leonoel/missionary">missionary</a> - a reactive dataflow programming toolkit</li>
+<li><a href="https://github.com/venantius/photon">photon</a> - realtime web, like Meteor, but for Clojure(Script)</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'clojure_README.md';
 
         fetch(markdownFile)
@@ -48,21 +243,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

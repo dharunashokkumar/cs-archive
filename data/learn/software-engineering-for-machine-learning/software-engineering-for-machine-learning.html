@@ -8,38 +8,135 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Se Ml Awesome Seml - Awesome List Resources">
-    <title>Se Ml Awesome Seml</title>
+    <meta name="description" content="Software Engineering for Machine Learning are techniques and guidelines for building ML applications that do not concern the core ML problem -- e.g. the...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Software Engineering for Machine Learning [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/SE-ML/awesome-seml/blob/master/contributing.md) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Software Engineering for Machine Learning <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat2.svg" /></a><a href="https://github.com/SE-ML/awesome-seml/blob/master/contributing.md"><img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" /></a></h1>
+<p>Software Engineering for Machine Learning are techniques and guidelines for building ML applications that do not concern the core ML problem  -- e.g. the development of new algorithms -- but rather the surrounding activities like data ingestion, coding, testing, versioning, deployment, quality control, and team collaboration.
+Good software engineering practices enhance development, deployment and maintenance of production level applications using machine learning components.</p>
+<p>⭐ Must-read</p>
+<p>🎓 Scientific publication</p>
+<p><br>
+Based on this literature, we compiled a survey on the adoption of software engineering practices for applications with machine learning components.</p>
+<p>Feel free to <a href="https://se-ml.github.io/survey">take and share the survey</a> and to <a href="https://se-ml.github.io/practices">read more</a>!</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#broad-overviews">Broad Overviews</a></li>
+<li><a href="#data-management">Data Management</a></li>
+<li><a href="#model-training">Model Training</a></li>
+<li><a href="#deployment-and-operation">Deployment and Operation</a></li>
+<li><a href="#social-aspects">Social Aspects</a></li>
+<li><a href="#governance">Governance</a></li>
+<li><a href="#tooling">Tooling</a></li>
+</ul>
+<h2>Broad Overviews</h2>
+<p>These resources cover all aspects.
+- <a href="https://resources.sei.cmu.edu/asset_files/WhitePaper/2019_019_001_634648.pdf">AI Engineering: 11 Foundational Practices</a> ⭐
+- <a href="https://pdfs.semanticscholar.org/2869/6212a4a204783e9dd3953f06e103c02c6972.pdf">Best Practices for Machine Learning Applications</a>
+- <a href="https://se-ml.github.io/practices/">Engineering Best Practices for Machine Learning</a> ⭐
+- <a href="https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf">Hidden Technical Debt in Machine Learning Systems</a> 🎓⭐
+- <a href="https://developers.google.com/machine-learning/guides/rules-of-ml">Rules of Machine Learning: Best Practices for ML Engineering</a> ⭐
+- <a href="https://www.microsoft.com/en-us/research/publication/software-engineering-for-machine-learning-a-case-study/">Software Engineering for Machine Learning: A Case Study</a> 🎓⭐</p>
+<h2>Data Management</h2>
+<p>How to manage the data sets you use in machine learning.</p>
+<ul>
+<li><a href="https://deepai.org/publication/a-survey-on-data-collection-for-machine-learning-a-big-data-ai-integration-perspective">A Survey on Data Collection for Machine Learning A Big Data - AI Integration Perspective_2019</a> 🎓</li>
+<li><a href="http://www.vldb.org/pvldb/vol11/p1781-schelter.pdf">Automating Large-Scale Data Quality Verification</a> 🎓</li>
+<li><a href="https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/46178.pdf">Data management challenges in production machine learning</a></li>
+<li><a href="https://mlsys.org/Conferences/2019/doc/2019/167.pdf">Data Validation for Machine Learning</a> 🎓</li>
+<li><a href="https://www.altexsoft.com/blognp/datascience/how-to-organize-data-labeling-for-machine-learning-approaches-and-tools/">How to organize data labelling for ML</a></li>
+<li><a href="https://aws.amazon.com/blogs/apn/the-curse-of-big-data-labeling-and-three-ways-to-solve-it/">The curse of big data labeling and three ways to solve it</a></li>
+<li><a href="http://learningsys.org/nips17/assets/papers/paper_19.pdf">The Data Linter: Lightweight, Automated Sanity Checking for ML Data Sets</a> 🎓</li>
+<li><a href="https://www.cloudfactory.com/data-labeling-guide">The ultimate guide to data labeling for ML</a></li>
+</ul>
+<h2>Model Training</h2>
+<p>How to organize your model training experiments.</p>
+<ul>
+<li><a href="https://nanonets.com/blog/10-best-practices-deep-learning/#track-model-experiments">10 Best Practices for Deep Learning</a></li>
+<li><a href="https://dl.acm.org/doi/abs/10.1145/1882471.1882479">Apples-to-apples in cross-validation studies: pitfalls in classifier performance measurement</a> 🎓</li>
+<li><a href="https://scontent-amt2-1.xx.fbcdn.net/v/t39.8562-6/159714417_1180893265647073_4215201353052552221_n.pdf?_nc_cat=111&amp;ccb=1-3&amp;_nc_sid=ae5e01&amp;_nc_ohc=6WFnNMmyp68AX95bRHk&amp;_nc_ht=scontent-amt2-1.xx&amp;oh=7a548f822e659b7bb2f58a511c30ee19&amp;oe=606F33AD">Fairness On The Ground: Applying Algorithmic FairnessApproaches To Production Systems</a>🎓</li>
+<li><a href="https://medium.com/@hadyelsahar/how-do-you-manage-your-machine-learning-experiments-ab87508348ac">How do you manage your Machine Learning Experiments?</a></li>
+<li><a href="https://arxiv.org/pdf/1906.10742.pdf">Machine Learning Testing: Survey, Landscapes and Horizons</a> 🎓</li>
+<li><a href="https://matthewmcateer.me/blog/machine-learning-technical-debt/">Nitpicking Machine Learning Technical Debt</a></li>
+<li><a href="https://link.springer.com/article/10.1023/A:1009752403260">On Comparing Classifiers: Pitfalls to Avoid and a Recommended Approach</a> 🎓⭐</li>
+<li><a href="https://arxiv.org/pdf/1611.08309.pdf">On human intellect and machine failures: Troubleshooting integrative machine learning systems</a> 🎓</li>
+<li><a href="https://www.jair.org/index.php/jair/article/download/11420/26488/">Pitfalls and Best Practices in Algorithm Configuration</a> 🎓</li>
+<li><a href="https://academic.oup.com/bioinformatics/article/26/3/440/213774">Pitfalls of supervised feature selection</a> 🎓</li>
+<li><a href="https://www.gartner.com/en/documents/3889770/preparing-and-architecting-for-machine-learning-2018-upd">Preparing and Architecting for Machine Learning</a></li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Software Engineering for Machine Learning <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat2.svg" /></a><a href="https://github.com/SE-ML/awesome-seml/blob/master/contributing.md"><img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" /></a></h1>
+<p>Software Engineering for Machine Learning are techniques and guidelines for building ML applications that do not concern the core ML problem  -- e.g. the development of new algorithms -- but rather the surrounding activities like data ingestion, coding, testing, versioning, deployment, quality control, and team collaboration.
+Good software engineering practices enhance development, deployment and maintenance of production level applications using machine learning components.</p>
+<p>⭐ Must-read</p>
+<p>🎓 Scientific publication</p>
+<p><br>
+Based on this literature, we compiled a survey on the adoption of software engineering practices for applications with machine learning components.</p>
+<p>Feel free to <a href="https://se-ml.github.io/survey">take and share the survey</a> and to <a href="https://se-ml.github.io/practices">read more</a>!</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#broad-overviews">Broad Overviews</a></li>
+<li><a href="#data-management">Data Management</a></li>
+<li><a href="#model-training">Model Training</a></li>
+<li><a href="#deployment-and-operation">Deployment and Operation</a></li>
+<li><a href="#social-aspects">Social Aspects</a></li>
+<li><a href="#governance">Governance</a></li>
+<li><a href="#tooling">Tooling</a></li>
+</ul>
+<h2>Broad Overviews</h2>
+<p>These resources cover all aspects.
+- <a href="https://resources.sei.cmu.edu/asset_files/WhitePaper/2019_019_001_634648.pdf">AI Engineering: 11 Foundational Practices</a> ⭐
+- <a href="https://pdfs.semanticscholar.org/2869/6212a4a204783e9dd3953f06e103c02c6972.pdf">Best Practices for Machine Learning Applications</a>
+- <a href="https://se-ml.github.io/practices/">Engineering Best Practices for Machine Learning</a> ⭐
+- <a href="https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf">Hidden Technical Debt in Machine Learning Systems</a> 🎓⭐
+- <a href="https://developers.google.com/machine-learning/guides/rules-of-ml">Rules of Machine Learning: Best Practices for ML Engineering</a> ⭐
+- <a href="https://www.microsoft.com/en-us/research/publication/software-engineering-for-machine-learning-a-case-study/">Software Engineering for Machine Learning: A Case Study</a> 🎓⭐</p>
+<h2>Data Management</h2>
+<p>How to manage the data sets you use in machine learning.</p>
+<ul>
+<li><a href="https://deepai.org/publication/a-survey-on-data-collection-for-machine-learning-a-big-data-ai-integration-perspective">A Survey on Data Collection for Machine Learning A Big Data - AI Integration Perspective_2019</a> 🎓</li>
+<li><a href="http://www.vldb.org/pvldb/vol11/p1781-schelter.pdf">Automating Large-Scale Data Quality Verification</a> 🎓</li>
+<li><a href="https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/46178.pdf">Data management challenges in production machine learning</a></li>
+<li><a href="https://mlsys.org/Conferences/2019/doc/2019/167.pdf">Data Validation for Machine Learning</a> 🎓</li>
+<li><a href="https://www.altexsoft.com/blognp/datascience/how-to-organize-data-labeling-for-machine-learning-approaches-and-tools/">How to organize data labelling for ML</a></li>
+<li><a href="https://aws.amazon.com/blogs/apn/the-curse-of-big-data-labeling-and-three-ways-to-solve-it/">The curse of big data labeling and three ways to solve it</a></li>
+<li><a href="http://learningsys.org/nips17/assets/papers/paper_19.pdf">The Data Linter: Lightweight, Automated Sanity Checking for ML Data Sets</a> 🎓</li>
+<li><a href="https://www.cloudfactory.com/data-labeling-guide">The ultimate guide to data labeling for ML</a></li>
+</ul>
+<h2>Model Training</h2>
+<p>How to organize your model training experiments.</p>
+<ul>
+<li><a href="https://nanonets.com/blog/10-best-practices-deep-learning/#track-model-experiments">10 Best Practices for Deep Learning</a></li>
+<li><a href="https://dl.acm.org/doi/abs/10.1145/1882471.1882479">Apples-to-apples in cross-validation studies: pitfalls in classifier performance measurement</a> 🎓</li>
+<li><a href="https://scontent-amt2-1.xx.fbcdn.net/v/t39.8562-6/159714417_1180893265647073_4215201353052552221_n.pdf?_nc_cat=111&amp;ccb=1-3&amp;_nc_sid=ae5e01&amp;_nc_ohc=6WFnNMmyp68AX95bRHk&amp;_nc_ht=scontent-amt2-1.xx&amp;oh=7a548f822e659b7bb2f58a511c30ee19&amp;oe=606F33AD">Fairness On The Ground: Applying Algorithmic FairnessApproaches To Production Systems</a>🎓</li>
+<li><a href="https://medium.com/@hadyelsahar/how-do-you-manage-your-machine-learning-experiments-ab87508348ac">How do you manage your Machine Learning Experiments?</a></li>
+<li><a href="https://arxiv.org/pdf/1906.10742.pdf">Machine Learning Testing: Survey, Landscapes and Horizons</a> 🎓</li>
+<li><a href="https://matthewmcateer.me/blog/machine-learning-technical-debt/">Nitpicking Machine Learning Technical Debt</a></li>
+<li><a href="https://link.springer.com/article/10.1023/A:1009752403260">On Comparing Classifiers: Pitfalls to Avoid and a Recommended Approach</a> 🎓⭐</li>
+<li><a href="https://arxiv.org/pdf/1611.08309.pdf">On human intellect and machine failures: Troubleshooting integrative machine learning systems</a> 🎓</li>
+<li><a href="https://www.jair.org/index.php/jair/article/download/11420/26488/">Pitfalls and Best Practices in Algorithm Configuration</a> 🎓</li>
+<li><a href="https://academic.oup.com/bioinformatics/article/26/3/440/213774">Pitfalls of supervised feature selection</a> 🎓</li>
+<li><a href="https://www.gartner.com/en/documents/3889770/preparing-and-architecting-for-machine-learning-2018-upd">Preparing and Architecting for Machine Learning</a></li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'software-engineering-for-machine-learning_README.md';
 
         fetch(markdownFile)
@@ -48,21 +145,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

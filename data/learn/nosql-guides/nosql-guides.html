@@ -8,38 +8,115 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Erictleung Awesome Nosql Guides - Awesome List Resources">
-    <title>Erictleung Awesome Nosql Guides</title>
+    <meta name="description" content="> Curated list of resources and links about using NoSQL databases and things to look for when deciding to use one. A basic definition of NoSQL databases can be...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome NoSQL Guides [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome NoSQL Guides <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<blockquote>
+<p>Curated list of resources and links about <em>using</em> NoSQL databases and things to look for when deciding to use one.</p>
+</blockquote>
+<p>A basic definition of NoSQL databases can be found on Wikipedia as:</p>
+<blockquote>
+<p>"A NoSQL (originally referring to 'non SQL' or 'non relational') database provides a mechanism for storage and retrieval of data which is modeled in means other than the tabular relations used in relational databases."</p>
+</blockquote>
+<p>For actual NoSQL databases, you can go
+<a href="https://github.com/sindresorhus/awesome#databases">here</a>,
+<a href="https://hostingdata.co.uk/nosql-database/">here</a>,
+<a href="https://db-engines.com/en/ranking">here</a>,
+<a href="https://dbdb.io/">here</a>,
+<a href="https://github.com/igorbarinov/awesome-data-engineering#databases">here</a>, or
+<a href="https://github.com/kahun/awesome-sysadmin#nosql">here</a>. Also, not to be confused with the relational database management system, <a href="http://www.strozzi.it/cgi-bin/CSA/tw7/I/en_US/nosql/Home%20Page">NoSQL</a>.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#overview-of-nosql">Overview of NoSQL</a></li>
+<li><a href="#data-structures-and-modeling">Data Structures and Modeling</a></li>
+<li><a href="#trade-offs-in-capbrewers-theorem">Trade-Offs in CAP/Brewer's Theorem</a></li>
+<li><a href="#crowd-sourced-information">Crowd-Sourced Information</a></li>
+<li><a href="#graph-databases">Graph Databases</a></li>
+<li><a href="#criticisms-and-debates">Criticisms and Debates</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+</ul>
+<h2>Overview of NoSQL</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=qI_g07C_Q5I">Introduction To NoSQL - Martin Fowler (54:52)</a> - Talk given at GOTO 2012 as a great introduction to NoSQL databases, the types of NoSQL databases, their history, pros and cons, and how and when to use them.</li>
+<li><a href="https://martinfowler.com/books/nosql.html">NoSQL Distilled</a> - Very digestable and affordable book describing the different NoSQL databases and help you make the decision on whether using a NoSQL database is appropriate for your project.</li>
+<li><a href="https://www.youtube.com/watch?v=jyx8iP5tfCI">Seven Databases in Song (1:43)</a> - Fun song from 2012 about seven (six are NoSQL) databases with a very condensed overview of how they each work.</li>
+<li><a href="https://medium.baqend.com/nosql-databases-a-survey-and-decision-guidance-ea7823a822d">NoSQL Databases: a Survey and Decision Guidance (2016)</a> - "This NoSQL Toolbox allows us to derive a simple decision tree to help practitioners and researchers filter potential system candidates based on central application requirements".</li>
+<li><a href="http://www.cs.umd.edu/~abadi/papers/abadi-cloud-ieee09.pdf">Data Management in the Cloud: Limitations and Opportunities (PDF)</a> - Abadi (2009) discusses limitations and opportunities of data management and data analysis in the cloud.</li>
+<li><a href="https://web.archive.org/web/20210701080816/https://www.dummies.com/programming/big-data/10-nosql-misconceptions/">10 NoSQL Misconceptions</a> - Some misconceptions about NoSQL databases relating to topics such as what they are, ACID-compliance, and security.</li>
+<li><a href="https://web.archive.org/web/20210701080841/https://www.dummies.com/programming/big-data/10-reasons-developers-love-nosql/">10 Reasons Developers Love NoSQL</a> - A list of ten arguments for why developers like to use NoSQL databases.</li>
+<li><a href="https://resources.sei.cmu.edu/library/asset-view.cfm?assetID=90909">Distribution, Data, Deployment: Software Architecture Convergence in Big Data Systems (PDF)</a> - Gorton and Klein (2014) paper to discuss software engineering concerns when dealing with big data systems in terms of distribution, data, and deployment. Also accessible <a href="https://doi.org/10.1109/MS.2014.51">here</a>.</li>
+<li><a href="https://stackoverflow.com/questions/2875432/use-cases-for-nosql">Use cases for NoSQL (2017)</a> - Discussion on Stack Overflow on best use cases for using NoSQL databases over traditional SQL databases.</li>
+<li><a href="https://shopify.engineering/five-common-data-stores-usage">Five Common Data Stores and When to Use Them (2019)</a> - Article describes five common data stores (relational database, non-relational (“NoSQL”) database, key-value store, full-text search engine, message queue) and their attributes.</li>
+<li><a href="https://web.archive.org/web/20190927222738/https://www.christof-strauch.de/nosqldbs.pdf">NoSQL Databases (PDF)</a> - A 149-page document outlining motives and rationale for NoSQL databases, and common concepts, techniques and patterns among these databases; last updated around 2011.</li>
+<li><a href="https://www.dataversity.net/nosql-data-architecture-data-governance-everything-need-know/">NoSQL Data Architecture &amp; Data Governance: Everything You Need to Know (2018)</a> - Overview of different NoSQL database architectures with diagrams.</li>
+<li><a href="https://build5nines.com/nosql-vs-sql-demystifying-nosql-databases/">NoSQL vs SQL: Demystifying NoSQL Databases (2019)</a> - General overview and examples of NoSQL database schema types, while covering CAP theorem tradeoffs.</li>
+<li><a href="https://www.prisma.io/dataguide/intro/comparing-database-types">Comparing Database Types: How Database Types Evolved to Meet Different Needs</a> - Good overview of databases in general and how NoSQL database types differ and can be useful.</li>
+<li><a href="https://www.aosabook.org/en/nosql.html">The NoSQL Ecosystem</a> - A chapter written by Adam Marcus from "The Architecture of Open Source Applications" book, this chapter is geared more towards systems architects needing to learn more in-depth understanding of how these systems are built.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome NoSQL Guides <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<blockquote>
+<p>Curated list of resources and links about <em>using</em> NoSQL databases and things to look for when deciding to use one.</p>
+</blockquote>
+<p>A basic definition of NoSQL databases can be found on Wikipedia as:</p>
+<blockquote>
+<p>"A NoSQL (originally referring to 'non SQL' or 'non relational') database provides a mechanism for storage and retrieval of data which is modeled in means other than the tabular relations used in relational databases."</p>
+</blockquote>
+<p>For actual NoSQL databases, you can go
+<a href="https://github.com/sindresorhus/awesome#databases">here</a>,
+<a href="https://hostingdata.co.uk/nosql-database/">here</a>,
+<a href="https://db-engines.com/en/ranking">here</a>,
+<a href="https://dbdb.io/">here</a>,
+<a href="https://github.com/igorbarinov/awesome-data-engineering#databases">here</a>, or
+<a href="https://github.com/kahun/awesome-sysadmin#nosql">here</a>. Also, not to be confused with the relational database management system, <a href="http://www.strozzi.it/cgi-bin/CSA/tw7/I/en_US/nosql/Home%20Page">NoSQL</a>.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#overview-of-nosql">Overview of NoSQL</a></li>
+<li><a href="#data-structures-and-modeling">Data Structures and Modeling</a></li>
+<li><a href="#trade-offs-in-capbrewers-theorem">Trade-Offs in CAP/Brewer's Theorem</a></li>
+<li><a href="#crowd-sourced-information">Crowd-Sourced Information</a></li>
+<li><a href="#graph-databases">Graph Databases</a></li>
+<li><a href="#criticisms-and-debates">Criticisms and Debates</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+</ul>
+<h2>Overview of NoSQL</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=qI_g07C_Q5I">Introduction To NoSQL - Martin Fowler (54:52)</a> - Talk given at GOTO 2012 as a great introduction to NoSQL databases, the types of NoSQL databases, their history, pros and cons, and how and when to use them.</li>
+<li><a href="https://martinfowler.com/books/nosql.html">NoSQL Distilled</a> - Very digestable and affordable book describing the different NoSQL databases and help you make the decision on whether using a NoSQL database is appropriate for your project.</li>
+<li><a href="https://www.youtube.com/watch?v=jyx8iP5tfCI">Seven Databases in Song (1:43)</a> - Fun song from 2012 about seven (six are NoSQL) databases with a very condensed overview of how they each work.</li>
+<li><a href="https://medium.baqend.com/nosql-databases-a-survey-and-decision-guidance-ea7823a822d">NoSQL Databases: a Survey and Decision Guidance (2016)</a> - "This NoSQL Toolbox allows us to derive a simple decision tree to help practitioners and researchers filter potential system candidates based on central application requirements".</li>
+<li><a href="http://www.cs.umd.edu/~abadi/papers/abadi-cloud-ieee09.pdf">Data Management in the Cloud: Limitations and Opportunities (PDF)</a> - Abadi (2009) discusses limitations and opportunities of data management and data analysis in the cloud.</li>
+<li><a href="https://web.archive.org/web/20210701080816/https://www.dummies.com/programming/big-data/10-nosql-misconceptions/">10 NoSQL Misconceptions</a> - Some misconceptions about NoSQL databases relating to topics such as what they are, ACID-compliance, and security.</li>
+<li><a href="https://web.archive.org/web/20210701080841/https://www.dummies.com/programming/big-data/10-reasons-developers-love-nosql/">10 Reasons Developers Love NoSQL</a> - A list of ten arguments for why developers like to use NoSQL databases.</li>
+<li><a href="https://resources.sei.cmu.edu/library/asset-view.cfm?assetID=90909">Distribution, Data, Deployment: Software Architecture Convergence in Big Data Systems (PDF)</a> - Gorton and Klein (2014) paper to discuss software engineering concerns when dealing with big data systems in terms of distribution, data, and deployment. Also accessible <a href="https://doi.org/10.1109/MS.2014.51">here</a>.</li>
+<li><a href="https://stackoverflow.com/questions/2875432/use-cases-for-nosql">Use cases for NoSQL (2017)</a> - Discussion on Stack Overflow on best use cases for using NoSQL databases over traditional SQL databases.</li>
+<li><a href="https://shopify.engineering/five-common-data-stores-usage">Five Common Data Stores and When to Use Them (2019)</a> - Article describes five common data stores (relational database, non-relational (“NoSQL”) database, key-value store, full-text search engine, message queue) and their attributes.</li>
+<li><a href="https://web.archive.org/web/20190927222738/https://www.christof-strauch.de/nosqldbs.pdf">NoSQL Databases (PDF)</a> - A 149-page document outlining motives and rationale for NoSQL databases, and common concepts, techniques and patterns among these databases; last updated around 2011.</li>
+<li><a href="https://www.dataversity.net/nosql-data-architecture-data-governance-everything-need-know/">NoSQL Data Architecture &amp; Data Governance: Everything You Need to Know (2018)</a> - Overview of different NoSQL database architectures with diagrams.</li>
+<li><a href="https://build5nines.com/nosql-vs-sql-demystifying-nosql-databases/">NoSQL vs SQL: Demystifying NoSQL Databases (2019)</a> - General overview and examples of NoSQL database schema types, while covering CAP theorem tradeoffs.</li>
+<li><a href="https://www.prisma.io/dataguide/intro/comparing-database-types">Comparing Database Types: How Database Types Evolved to Meet Different Needs</a> - Good overview of databases in general and how NoSQL database types differ and can be useful.</li>
+<li><a href="https://www.aosabook.org/en/nosql.html">The NoSQL Ecosystem</a> - A chapter written by Adam Marcus from "The Architecture of Open Source Applications" book, this chapter is geared more towards systems architects needing to learn more in-depth understanding of how these systems are built.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'nosql-guides_README.md';
 
         fetch(markdownFile)
@@ -48,21 +125,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

@@ -8,38 +8,167 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bytecauldron Awesome Gamemaker - Awesome List Resources">
-    <title>Bytecauldron Awesome Gamemaker</title>
+    <meta name="description" content="> A curated list of awesome libraries, snippets, guides, and projects for GameMaker. 😎 GameMaker is a user-friendly, cross-platform game engine by YoYo Games...">
+    <meta name="robots" content="index, follow">
+    <title>Gamemaker - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <p align="center">
+    <a href="https://gamemaker.io/"><img src="https://github.com/bytecauldron/awesome-gamemaker/raw/main/images/banner.png" /></a>
+</p>
+
+<h1>Awesome GameMaker <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a> <a href="https://www.yoyogames.com/gamemaker"><img alt="Made with GameMaker" src="https://img.shields.io/badge/Made%20with-GameMaker-000000.svg?style=flat&amp;logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAMAAAAolt3jAAAAZlBMVEX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2BrG8stAAAAIXRSTlMABg0OFBkfcn1%2Bf4CBgoOFhoeIiouWmNDa5ebp8PX2%2B%2F6o6Vq%2BAAAAY0lEQVR42k2OWQ6AIAwFn%2BIOioobrnD%2FS4o0EeanmQxNAdErRFTWtsFq6%2BiiZozz0CSnTjYBwo0RkF8DWDLf51Ni9K%2FYdq0Fy3KAfzk97M7goK1F%2F4rGH9Kk1OlboQtEDIrmC%2BU3CVxTr%2FRMAAAAAElFTkSuQmCC" /></a> <a href="https://github.com/bytecauldron/awesome-gamemaker/actions/workflows/links.yml"><img alt="Links" src="https://github.com/bytecauldron/awesome-gamemaker/actions/workflows/links.yml/badge.svg" /></a></h1>
+<blockquote>
+<p>A curated list of awesome libraries, snippets, guides, and projects for GameMaker. 😎</p>
+</blockquote>
+<p><a href="https://gamemaker.io/">GameMaker</a> is a user-friendly, cross-platform game engine by YoYo Games that allows both beginner and advanced game developers to create 2D and 3D games for desktop, HTML5, and console platforms.</p>
+<p>What kind of games can you make in GameMaker? <a href="https://steamdb.info/tech/Engine/GameMaker/">Check out this list.</a></p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#getting-started">Getting Started</a></li>
+<li><a href="#data-manipulation">Data Manipulation</a></li>
+<li><a href="#native-extensions">Native Extensions</a></li>
+<li><a href="#timing">Timing</a></li>
+<li><a href="#utilities">Utilities</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#debugging">Debugging</a></li>
+<li><a href="#input-handling">Input Handling</a></li>
+<li><a href="#user-interface">User Interface</a></li>
+<li><a href="#localization">Localization</a></li>
+<li><a href="#physics">Physics</a></li>
+<li><a href="#sprites">Sprites</a></li>
+<li><a href="#audio">Audio</a></li>
+<li><a href="#levels">Levels</a></li>
+<li><a href="#particles">Particles</a></li>
+<li><a href="#lighting">Lighting</a></li>
+<li><a href="#shaders">Shaders</a></li>
+<li><a href="#3d">3D</a></li>
+<li><a href="#sprite-stacking">Sprite Stacking</a></li>
+<li><a href="#networking">Networking</a></li>
+<li><a href="#integrations">Integrations</a></li>
+<li><a href="#camera">Camera</a></li>
+<li><a href="#sequences">Sequences</a></li>
+<li><a href="#state-machines">State Machines</a></li>
+<li><a href="#pathing">Pathing</a></li>
+<li><a href="#useful-extras">Useful Extras</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#youtube">YouTube</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#special-thanks">Special Thanks</a></li>
+</ul>
+<h2>Getting Started</h2>
+<ul>
+<li><a href="https://manual.gamemaker.io/">GameMaker Manual</a></li>
+<li><a href="https://gms.yoyogames.com/ReleaseNotes.html">GameMaker Release Notes</a></li>
+<li><a href="https://marketplace.gamemaker.io/">GameMaker Marketplace</a></li>
+<li><a href="https://www.youtube.com/watch?v=nBCDzE9MDbk&amp;list=PLPRT_JORnIur4v19PHXCtJ5P05vaokFdP">Beginner GameMaker Tutorials</a> - Tutorials from Shaun Spalding. A comprehensive introduction to basic features of the IDE. Highly recommended to check out the full playlist if you're a complete beginner. <img alt="YouTube" src="https://github.com/bytecauldron/awesome-gamemaker/raw/main/icons/youtube.png" /></li>
+<li><a href="https://www.youtube.com/watch?v=n8-MuIuOQFE&amp;list=PL_hT--4HOvrfuDcYrTufdpgwoALAczPR2">Advanced GameMaker Tutorials</a> - Tutorials from DragoniteSpam that dive into more advanced topics related to the GML language. They also have comprehensive 3D and shader introduction videos. <img alt="YouTube" src="https://github.com/bytecauldron/awesome-gamemaker/raw/main/icons/youtube.png" /></li>
+</ul>
+<h3>Recommendations</h3>
+<ul>
+<li>If you already have programming experience, learn the GameMaker Language (GML) instead of the Visual (Drag and Drop) feature.</li>
+<li>For pixel art, <a href="https://www.aseprite.org/">Aseprite</a> is a popular alternative to the native sprite editor. 💸</li>
+<li><a href="https://github.com/aseprite/aseprite">Aseprite's source code</a> can be compiled for free.</li>
+<li>Don't be afraid to use other developer libraries. A lot of them are free for a reason. Just be mindful of the license.</li>
+<li>Updates to the IDE and runtime can break your game (like syntax changes to GML). If you are working in a group, make sure you are running on the same version of GMS and only update when given a fair warning. You can reinstall previous versions of your IDE at the GMS download page.</li>
+<li>Unless your game requires complex physics interactions, it's generally advised to avoid GameMaker's built-in physics system.</li>
+<li>Schedule routine backups for projects. If you are dealing with larger media files in your repo, try <a href="https://git-lfs.github.com/">Git LFS</a>.</li>
+</ul>
+<h2>Data Manipulation</h2>
+<p>This includes data structures and file formats that do not fit into a more specific category.</p>
+<ul>
+<li><a href="https://github.com/Mtax-Development/GML-OOP">GML-OOP</a> - A constructor library for operating the primary functionalities of GameMaker.</li>
+<li><a href="https://github.com/Nikko-the-cat/GML-Classes">GML-Classes</a> - Another project that adds OOP functionality to GameMaker.</li>
+<li><a href="https://github.com/DatZach/Destructors">Destructors</a> - Allows you to use ds_* types such as lists and maps inside of structs.</li>
+<li><a href="https://github.com/JujuAdams/SNAP">SNAP</a> - Easy data format saving and loading. Please note that newer versions of GameMaker contain <code>json_parse</code> and <code>json_stringify</code>. However, if you are converting csv, ini, xml, etc, you may find this very useful.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <p align="center">
+    <a href="https://gamemaker.io/"><img src="https://github.com/bytecauldron/awesome-gamemaker/raw/main/images/banner.png" /></a>
+</p>
+
+<h1>Awesome GameMaker <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a> <a href="https://www.yoyogames.com/gamemaker"><img alt="Made with GameMaker" src="https://img.shields.io/badge/Made%20with-GameMaker-000000.svg?style=flat&amp;logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAMAAAAolt3jAAAAZlBMVEX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2BrG8stAAAAIXRSTlMABg0OFBkfcn1%2Bf4CBgoOFhoeIiouWmNDa5ebp8PX2%2B%2F6o6Vq%2BAAAAY0lEQVR42k2OWQ6AIAwFn%2BIOioobrnD%2FS4o0EeanmQxNAdErRFTWtsFq6%2BiiZozz0CSnTjYBwo0RkF8DWDLf51Ni9K%2FYdq0Fy3KAfzk97M7goK1F%2F4rGH9Kk1OlboQtEDIrmC%2BU3CVxTr%2FRMAAAAAElFTkSuQmCC" /></a> <a href="https://github.com/bytecauldron/awesome-gamemaker/actions/workflows/links.yml"><img alt="Links" src="https://github.com/bytecauldron/awesome-gamemaker/actions/workflows/links.yml/badge.svg" /></a></h1>
+<blockquote>
+<p>A curated list of awesome libraries, snippets, guides, and projects for GameMaker. 😎</p>
+</blockquote>
+<p><a href="https://gamemaker.io/">GameMaker</a> is a user-friendly, cross-platform game engine by YoYo Games that allows both beginner and advanced game developers to create 2D and 3D games for desktop, HTML5, and console platforms.</p>
+<p>What kind of games can you make in GameMaker? <a href="https://steamdb.info/tech/Engine/GameMaker/">Check out this list.</a></p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#getting-started">Getting Started</a></li>
+<li><a href="#data-manipulation">Data Manipulation</a></li>
+<li><a href="#native-extensions">Native Extensions</a></li>
+<li><a href="#timing">Timing</a></li>
+<li><a href="#utilities">Utilities</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#debugging">Debugging</a></li>
+<li><a href="#input-handling">Input Handling</a></li>
+<li><a href="#user-interface">User Interface</a></li>
+<li><a href="#localization">Localization</a></li>
+<li><a href="#physics">Physics</a></li>
+<li><a href="#sprites">Sprites</a></li>
+<li><a href="#audio">Audio</a></li>
+<li><a href="#levels">Levels</a></li>
+<li><a href="#particles">Particles</a></li>
+<li><a href="#lighting">Lighting</a></li>
+<li><a href="#shaders">Shaders</a></li>
+<li><a href="#3d">3D</a></li>
+<li><a href="#sprite-stacking">Sprite Stacking</a></li>
+<li><a href="#networking">Networking</a></li>
+<li><a href="#integrations">Integrations</a></li>
+<li><a href="#camera">Camera</a></li>
+<li><a href="#sequences">Sequences</a></li>
+<li><a href="#state-machines">State Machines</a></li>
+<li><a href="#pathing">Pathing</a></li>
+<li><a href="#useful-extras">Useful Extras</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#youtube">YouTube</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#special-thanks">Special Thanks</a></li>
+</ul>
+<h2>Getting Started</h2>
+<ul>
+<li><a href="https://manual.gamemaker.io/">GameMaker Manual</a></li>
+<li><a href="https://gms.yoyogames.com/ReleaseNotes.html">GameMaker Release Notes</a></li>
+<li><a href="https://marketplace.gamemaker.io/">GameMaker Marketplace</a></li>
+<li><a href="https://www.youtube.com/watch?v=nBCDzE9MDbk&amp;list=PLPRT_JORnIur4v19PHXCtJ5P05vaokFdP">Beginner GameMaker Tutorials</a> - Tutorials from Shaun Spalding. A comprehensive introduction to basic features of the IDE. Highly recommended to check out the full playlist if you're a complete beginner. <img alt="YouTube" src="https://github.com/bytecauldron/awesome-gamemaker/raw/main/icons/youtube.png" /></li>
+<li><a href="https://www.youtube.com/watch?v=n8-MuIuOQFE&amp;list=PL_hT--4HOvrfuDcYrTufdpgwoALAczPR2">Advanced GameMaker Tutorials</a> - Tutorials from DragoniteSpam that dive into more advanced topics related to the GML language. They also have comprehensive 3D and shader introduction videos. <img alt="YouTube" src="https://github.com/bytecauldron/awesome-gamemaker/raw/main/icons/youtube.png" /></li>
+</ul>
+<h3>Recommendations</h3>
+<ul>
+<li>If you already have programming experience, learn the GameMaker Language (GML) instead of the Visual (Drag and Drop) feature.</li>
+<li>For pixel art, <a href="https://www.aseprite.org/">Aseprite</a> is a popular alternative to the native sprite editor. 💸</li>
+<li><a href="https://github.com/aseprite/aseprite">Aseprite's source code</a> can be compiled for free.</li>
+<li>Don't be afraid to use other developer libraries. A lot of them are free for a reason. Just be mindful of the license.</li>
+<li>Updates to the IDE and runtime can break your game (like syntax changes to GML). If you are working in a group, make sure you are running on the same version of GMS and only update when given a fair warning. You can reinstall previous versions of your IDE at the GMS download page.</li>
+<li>Unless your game requires complex physics interactions, it's generally advised to avoid GameMaker's built-in physics system.</li>
+<li>Schedule routine backups for projects. If you are dealing with larger media files in your repo, try <a href="https://git-lfs.github.com/">Git LFS</a>.</li>
+</ul>
+<h2>Data Manipulation</h2>
+<p>This includes data structures and file formats that do not fit into a more specific category.</p>
+<ul>
+<li><a href="https://github.com/Mtax-Development/GML-OOP">GML-OOP</a> - A constructor library for operating the primary functionalities of GameMaker.</li>
+<li><a href="https://github.com/Nikko-the-cat/GML-Classes">GML-Classes</a> - Another project that adds OOP functionality to GameMaker.</li>
+<li><a href="https://github.com/DatZach/Destructors">Destructors</a> - Allows you to use ds_* types such as lists and maps inside of structs.</li>
+<li><a href="https://github.com/JujuAdams/SNAP">SNAP</a> - Easy data format saving and loading. Please note that newer versions of GameMaker contain <code>json_parse</code> and <code>json_stringify</code>. However, if you are converting csv, ini, xml, etc, you may find this very useful.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'gamemaker_README.md';
 
         fetch(markdownFile)
@@ -48,21 +177,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

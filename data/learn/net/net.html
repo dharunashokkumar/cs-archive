@@ -8,38 +8,249 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Quozd Awesome Dotnet - Awesome List Resources">
-    <title>Quozd Awesome Dotnet</title>
+    <meta name="description" content="A collection of awesome .NET libraries, tools, frameworks, and software. Inspired by awesome-ruby, awesome-php, awesome-python, frontend-dev-bookmarks and...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome .NET! - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome .NET!</h1>
+<p><a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a>
+<a href="https://github.com/quozd/awesome-dotnet/actions/workflows/awesome-bot.yml"><img alt="Build Status" src="https://github.com/quozd/awesome-dotnet/actions/workflows/awesome-bot.yml/badge.svg" /></a>
+<a href="https://gitter.im/quozd/awesome-dotnet?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img alt="Join the chat at https://gitter.im/quozd/awesome-dotnet" src="https://badges.gitter.im/Join%20Chat.svg" /></a></p>
+<p>A collection of awesome .NET libraries, tools, frameworks, and software.</p>
+<p>Inspired by <a href="https://github.com/markets/awesome-ruby">awesome-ruby</a>, <a href="https://github.com/ziadoz/awesome-php">awesome-php</a>, <a href="https://github.com/vinta/awesome-python">awesome-python</a>, <a href="https://github.com/dypsilon/frontend-dev-bookmarks">frontend-dev-bookmarks</a> and <a href="https://github.com/dreikanter/ruby-bookmarks">ruby-bookmarks</a>.</p>
+<p>Contributions are always welcome! Please take a look at the <a href="https://github.com/quozd/awesome-dotnet/blob/master/CONTRIBUTING.md">contribution guidelines and quality standard</a> pages first. We accept proprietary and commercial software too.</p>
+<p>Thanks to all <a href="https://github.com/quozd/awesome-dotnet/graphs/contributors">contributors</a>, you're awesome and wouldn't be possible without you! The goal is to build a categorized community-driven collection of very well-known resources.</p>
+<h1>License</h1>
+<p><a href="https://creativecommons.org/publicdomain/zero/1.0/"><img alt="CC0" src="https://licensebuttons.net/p/zero/1.0/88x31.png" /></a></p>
+<p>To the extent possible under law, <a href="https://github.com/quozd">Vitali Fokin</a> has waived all copyright and related or neighboring rights to this work.</p>
+<h1>Table of Contents</h1>
+<ul>
+<li><a href="#awesome-dotnet">Awesome DotNet</a></li>
+<li><a href="#algorithms-and-data-structures">Algorithms and Data Structures</a></li>
+<li><a href="#api">API</a></li>
+<li><a href="#application-frameworks">Application Frameworks</a></li>
+<li><a href="#application-templates">Application Templates</a></li>
+<li><a href="#artificial-intelligence">Artificial Intelligence</a></li>
+<li><a href="#assembly-manipulation">Assembly Manipulation</a></li>
+<li><a href="#assets">Assets</a></li>
+<li><a href="#authentication-and-authorization">Authentication and Authorization</a></li>
+<li><a href="#background-processing">Background Processing</a></li>
+<li><a href="#blazor">Blazor</a></li>
+<li><a href="#build-automation">Build Automation</a></li>
+<li><a href="#business-intelligence">Business Intelligence and Reporting</a></li>
+<li><a href="#caching">Caching</a></li>
+<li><a href="#calendar">Calendar</a></li>
+<li><a href="#chat">Chat</a></li>
+<li><a href="#cli">CLI</a></li>
+<li><a href="#clr">CLR</a></li>
+<li><a href="#cms">CMS</a></li>
+<li><a href="#code-analysis-and-metrics">Code Analysis and Metrics</a></li>
+<li><a href="#code-snippets">Code Snippets</a></li>
+<li><a href="#compilers-transpilers-and-languages">Compilers, Transpilers and Languages</a></li>
+<li><a href="#compression">Compression</a></li>
+<li><a href="#configuration">Configuration</a></li>
+<li><a href="#continuous-integration">Continuous Integration</a></li>
+<li><a href="#cryptography">Cryptography</a></li>
+<li><a href="#cloud-storage">Cloud Storage</a></li>
+<li><a href="#database">Database</a></li>
+<li><a href="#database-drivers">Database Drivers</a></li>
+<li><a href="#datetime">DateTime</a></li>
+<li><a href="#decompilation">Decompilation</a></li>
+<li><a href="#deployment">Deployment</a></li>
+<li><a href="#desktop">Desktop</a></li>
+<li><a href="#directx">DirectX</a></li>
+<li><a href="#distributed-computing">Distributed Computing</a></li>
+<li><a href="#dlr">DLR</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#e-commerce-and-payments">E-Commerce and Payments</a></li>
+<li><a href="#emulators">Emulators</a></li>
+<li><a href="#environment-management">Environment Management</a></li>
+<li><a href="#etl">ETL</a></li>
+<li><a href="#event-aggregator-and-messenger">Event aggregator and messenger</a></li>
+<li><a href="#exceptions">Exceptions</a></li>
+<li><a href="#extensions">Extensions libraries</a></li>
+<li><a href="#feature-management">Feature Management</a></li>
+<li><a href="#functional-programming">Functional programming</a></li>
+<li><a href="#game">Game</a></li>
+<li><a href="#gis">GIS</a></li>
+<li><a href="#git-tools">Git Tools</a></li>
+<li><a href="#graphics">Graphics</a></li>
+<li><a href="#graphql">GraphQL</a></li>
+<li><a href="#gui">GUI</a></li>
+<li><a href="#html-and-css">HTML and CSS</a></li>
+<li><a href="#http">HTTP</a></li>
+<li><a href="#ide">IDE</a></li>
+<li><a href="#image-processing">Image Processing</a></li>
+<li><a href="#install-tools">Install Tools</a></li>
+<li><a href="#internationalization">Internationalization</a></li>
+<li><a href="#interoperability">Interoperability</a></li>
+<li><a href="#ioc">IoC</a></li>
+<li><a href="#javascript-engines">JavaScript Engines</a></li>
+<li><a href="#logging">Logging</a></li>
+<li><a href="#mail">Mail</a></li>
+<li><a href="#machine-learning-and-data-science">Machine Learning and Data Science</a></li>
+<li><a href="#markdown-processors">Markdown Processors</a></li>
+<li><a href="#mathematics">Mathematics</a></li>
+<li><a href="#media">Media</a></li>
+<li><a href="#metrics">Metrics</a></li>
+<li><a href="#micro-framework">Micro Framework</a></li>
+<li><a href="#minification">Minification</a></li>
+<li><a href="#misc">Misc</a></li>
+<li><a href="#mqtt">MQTT</a></li>
+<li><a href="#mvvm">MVVM</a></li>
+<li><a href="#networking">Networking</a></li>
+<li><a href="#object-to-object-mapping">Object to object mapping</a></li>
+<li><a href="#office">Office</a></li>
+<li><a href="#openai">OpenAI</a></li>
+<li><a href="#orm">ORM</a></li>
+<li><a href="#package-management">Package Management</a></li>
+<li><a href="#pdf">PDF</a></li>
+<li><a href="#profiler">Profiler</a></li>
+<li><a href="#protocols">Protocols</a></li>
+<li><a href="#push-notifications">Push Notifications</a></li>
+<li><a href="#query-builders">Query Builders</a></li>
+<li><a href="#queue">Queue</a></li>
+<li><a href="#RPC">RPC</a></li>
+<li><a href="#reactive-programming">Reactive Programming</a></li>
+<li><a href="#real-time-communications">Real-time Communications</a></li>
+<li><a href="#regular-expression">Regular Expression</a></li>
+<li><a href="#scheduling">Scheduling</a></li>
+<li><a href="#sdk-and-api-clients">SDK and API Clients</a></li>
+<li><a href="#search">Search</a></li>
+<li><a href="#serialization">Serialization</a></li>
+<li><a href="#sms-and-phone-calls">SMS and Phone Calls</a></li>
+<li><a href="#state-machines">State machines</a></li>
+<li><a href="#static-site-generators">Static Site Generators</a></li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome .NET!</h1>
+<p><a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a>
+<a href="https://github.com/quozd/awesome-dotnet/actions/workflows/awesome-bot.yml"><img alt="Build Status" src="https://github.com/quozd/awesome-dotnet/actions/workflows/awesome-bot.yml/badge.svg" /></a>
+<a href="https://gitter.im/quozd/awesome-dotnet?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img alt="Join the chat at https://gitter.im/quozd/awesome-dotnet" src="https://badges.gitter.im/Join%20Chat.svg" /></a></p>
+<p>A collection of awesome .NET libraries, tools, frameworks, and software.</p>
+<p>Inspired by <a href="https://github.com/markets/awesome-ruby">awesome-ruby</a>, <a href="https://github.com/ziadoz/awesome-php">awesome-php</a>, <a href="https://github.com/vinta/awesome-python">awesome-python</a>, <a href="https://github.com/dypsilon/frontend-dev-bookmarks">frontend-dev-bookmarks</a> and <a href="https://github.com/dreikanter/ruby-bookmarks">ruby-bookmarks</a>.</p>
+<p>Contributions are always welcome! Please take a look at the <a href="https://github.com/quozd/awesome-dotnet/blob/master/CONTRIBUTING.md">contribution guidelines and quality standard</a> pages first. We accept proprietary and commercial software too.</p>
+<p>Thanks to all <a href="https://github.com/quozd/awesome-dotnet/graphs/contributors">contributors</a>, you're awesome and wouldn't be possible without you! The goal is to build a categorized community-driven collection of very well-known resources.</p>
+<h1>License</h1>
+<p><a href="https://creativecommons.org/publicdomain/zero/1.0/"><img alt="CC0" src="https://licensebuttons.net/p/zero/1.0/88x31.png" /></a></p>
+<p>To the extent possible under law, <a href="https://github.com/quozd">Vitali Fokin</a> has waived all copyright and related or neighboring rights to this work.</p>
+<h1>Table of Contents</h1>
+<ul>
+<li><a href="#awesome-dotnet">Awesome DotNet</a></li>
+<li><a href="#algorithms-and-data-structures">Algorithms and Data Structures</a></li>
+<li><a href="#api">API</a></li>
+<li><a href="#application-frameworks">Application Frameworks</a></li>
+<li><a href="#application-templates">Application Templates</a></li>
+<li><a href="#artificial-intelligence">Artificial Intelligence</a></li>
+<li><a href="#assembly-manipulation">Assembly Manipulation</a></li>
+<li><a href="#assets">Assets</a></li>
+<li><a href="#authentication-and-authorization">Authentication and Authorization</a></li>
+<li><a href="#background-processing">Background Processing</a></li>
+<li><a href="#blazor">Blazor</a></li>
+<li><a href="#build-automation">Build Automation</a></li>
+<li><a href="#business-intelligence">Business Intelligence and Reporting</a></li>
+<li><a href="#caching">Caching</a></li>
+<li><a href="#calendar">Calendar</a></li>
+<li><a href="#chat">Chat</a></li>
+<li><a href="#cli">CLI</a></li>
+<li><a href="#clr">CLR</a></li>
+<li><a href="#cms">CMS</a></li>
+<li><a href="#code-analysis-and-metrics">Code Analysis and Metrics</a></li>
+<li><a href="#code-snippets">Code Snippets</a></li>
+<li><a href="#compilers-transpilers-and-languages">Compilers, Transpilers and Languages</a></li>
+<li><a href="#compression">Compression</a></li>
+<li><a href="#configuration">Configuration</a></li>
+<li><a href="#continuous-integration">Continuous Integration</a></li>
+<li><a href="#cryptography">Cryptography</a></li>
+<li><a href="#cloud-storage">Cloud Storage</a></li>
+<li><a href="#database">Database</a></li>
+<li><a href="#database-drivers">Database Drivers</a></li>
+<li><a href="#datetime">DateTime</a></li>
+<li><a href="#decompilation">Decompilation</a></li>
+<li><a href="#deployment">Deployment</a></li>
+<li><a href="#desktop">Desktop</a></li>
+<li><a href="#directx">DirectX</a></li>
+<li><a href="#distributed-computing">Distributed Computing</a></li>
+<li><a href="#dlr">DLR</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#e-commerce-and-payments">E-Commerce and Payments</a></li>
+<li><a href="#emulators">Emulators</a></li>
+<li><a href="#environment-management">Environment Management</a></li>
+<li><a href="#etl">ETL</a></li>
+<li><a href="#event-aggregator-and-messenger">Event aggregator and messenger</a></li>
+<li><a href="#exceptions">Exceptions</a></li>
+<li><a href="#extensions">Extensions libraries</a></li>
+<li><a href="#feature-management">Feature Management</a></li>
+<li><a href="#functional-programming">Functional programming</a></li>
+<li><a href="#game">Game</a></li>
+<li><a href="#gis">GIS</a></li>
+<li><a href="#git-tools">Git Tools</a></li>
+<li><a href="#graphics">Graphics</a></li>
+<li><a href="#graphql">GraphQL</a></li>
+<li><a href="#gui">GUI</a></li>
+<li><a href="#html-and-css">HTML and CSS</a></li>
+<li><a href="#http">HTTP</a></li>
+<li><a href="#ide">IDE</a></li>
+<li><a href="#image-processing">Image Processing</a></li>
+<li><a href="#install-tools">Install Tools</a></li>
+<li><a href="#internationalization">Internationalization</a></li>
+<li><a href="#interoperability">Interoperability</a></li>
+<li><a href="#ioc">IoC</a></li>
+<li><a href="#javascript-engines">JavaScript Engines</a></li>
+<li><a href="#logging">Logging</a></li>
+<li><a href="#mail">Mail</a></li>
+<li><a href="#machine-learning-and-data-science">Machine Learning and Data Science</a></li>
+<li><a href="#markdown-processors">Markdown Processors</a></li>
+<li><a href="#mathematics">Mathematics</a></li>
+<li><a href="#media">Media</a></li>
+<li><a href="#metrics">Metrics</a></li>
+<li><a href="#micro-framework">Micro Framework</a></li>
+<li><a href="#minification">Minification</a></li>
+<li><a href="#misc">Misc</a></li>
+<li><a href="#mqtt">MQTT</a></li>
+<li><a href="#mvvm">MVVM</a></li>
+<li><a href="#networking">Networking</a></li>
+<li><a href="#object-to-object-mapping">Object to object mapping</a></li>
+<li><a href="#office">Office</a></li>
+<li><a href="#openai">OpenAI</a></li>
+<li><a href="#orm">ORM</a></li>
+<li><a href="#package-management">Package Management</a></li>
+<li><a href="#pdf">PDF</a></li>
+<li><a href="#profiler">Profiler</a></li>
+<li><a href="#protocols">Protocols</a></li>
+<li><a href="#push-notifications">Push Notifications</a></li>
+<li><a href="#query-builders">Query Builders</a></li>
+<li><a href="#queue">Queue</a></li>
+<li><a href="#RPC">RPC</a></li>
+<li><a href="#reactive-programming">Reactive Programming</a></li>
+<li><a href="#real-time-communications">Real-time Communications</a></li>
+<li><a href="#regular-expression">Regular Expression</a></li>
+<li><a href="#scheduling">Scheduling</a></li>
+<li><a href="#sdk-and-api-clients">SDK and API Clients</a></li>
+<li><a href="#search">Search</a></li>
+<li><a href="#serialization">Serialization</a></li>
+<li><a href="#sms-and-phone-calls">SMS and Phone Calls</a></li>
+<li><a href="#state-machines">State machines</a></li>
+<li><a href="#static-site-generators">Static Site Generators</a></li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'net_README.md';
 
         fetch(markdownFile)
@@ -48,21 +259,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

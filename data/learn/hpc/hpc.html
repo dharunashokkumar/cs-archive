@@ -8,38 +8,167 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dstdev Awesome Hpc - Awesome List Resources">
-    <title>Dstdev Awesome Hpc</title>
+    <meta name="description" content="High Performance Computing tools and resources for engineers and administrators. High Performance Computing (HPC) most generally refers to the practice of...">
+    <meta name="robots" content="index, follow">
+    <title>Hpc - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <!--lint ignore-->
+<h1>Awesome HPC <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a></h1>
+<p>High Performance Computing tools and resources for engineers and administrators.</p>
+<p><a href="https://en.wikipedia.org/wiki/Supercomputer">High Performance Computing (HPC)</a> most generally refers to the practice of aggregating computing power in a way that delivers much higher performance than one could get out of a typical desktop computer or workstation in order to solve large problems in science, engineering, or business.</p>
+<h2>Contents</h2>
+<details>
+  <summary><b>(click to expand)</b></summary>
+
+- [Provisioning](#provisioning)
+- [Workload Managers](#workload-managers)
+- [Pipelines](#pipelines)
+- [Applications](#applications)
+- [Compilers](#compilers)
+- [MPI](#mpi)
+- [Parallel Computing](#parallel-computing)
+- [Benchmarking](#benchmarking)
+- [Miscellaneous](#miscellaneous)
+- [Performance](#performance)
+- [Parallel Shells](#parallel-shells)
+- [Containers](#containers)
+- [Environment Management](#environment-management)
+- [Visualization](#visualization)
+- [Parallel Filesystems](#parallel-filesystems)
+- [Programming Languages](#programming-languages)
+- [Monitoring](#monitoring)
+- [Journals](#journals)
+- [Podcasts](#podcasts)
+- [Blogs](#blogs)
+- [Conferences](#conferences)
+- [Websites](#websites)
+- [User Groups](#user-groups)
+
+</details>
+
+<h2>Provisioning</h2>
+<ul>
+<li><a href="https://grendel.readthedocs.io/">Grendel</a> - Bare Metal Provisioning system for HPC Linux clusters ([Source Code](https://github.com<code>ubccr/grendel))</code>GPL-3`.</li>
+<li><a href="https://xcat.org/">XCat</a> - xCAT is a toolkit for deployment and administration of clusters of all sizes (<a href="https://github.com/xcat2/xcat-core">Source Code</a>) <code>EPL-1.0</code>.</li>
+<li><a href="https://warewulf.hpcng.org/">Warewulf</a> - Warewulf is a stateless and diskless container operating system provisioning system for large clusters of bare metal and/or virtual systems (<a href="https://github.com/hpcng/warewulf">Source Code</a>) <code>BSD-3</code>.</li>
+<li><a href="http://www.rocksclusters.org/">Rocks</a> - A Linux distribution for developing Linux clusters <code>other</code>.</li>
+<li><a href="https://cobbler.github.io/">Cobbler</a> - Cobbler is a Linux installation server that allows for rapid setup of network installation environments (<a href="https://github.com/cobbler/cobbler">Source Code</a>) <code>GPL-2.0</code>.</li>
+<li><a href="https://docs.nvidia.com/base-command-manager/index.html">Base Command Manager</a> - Base Command Manager allows administrator to quickly build and manage heterogeneous clusters <code>Proprietary</code>.</li>
+<li><a href="https://www.penguinsolutions.com/computing/products/software/scyld-clusterware/">Scyld</a> - Scyld Clusterware Scyld ClusterWare is developed based on the continuing evolution of Beowulf clusters first developed at NASA in the 1990s <code>Proprietary</code>.</li>
+<li><a href="https://bluebanquise.com">BlueBanquise</a> - BlueBanquise is an open source cluster deployment and management stack built on Python and Ansible (<a href="https://github.com/bluebanquise/bluebanquise">Source Code</a>) <code>MIT</code>.</li>
+</ul>
+<h2>Workload Managers</h2>
+<ul>
+<li><a href="https://slurm.schedmd.com/documentation.html">Slurm</a> - A free and open source job scheduler (<a href="https://github.com/SchedMD/slurm">Source Code</a>) <code>OSS</code>.</li>
+<li><a href="https://www.ibm.com/products/hpc-workload-management">LSF</a> - A job scheduler and workload management software developed by IBM <code>Proprietary</code>.</li>
+<li><a href="https://adaptivecomputing.com/moab-hpc-suite/">Moab</a> - Moab is a workload management and job scheduler <code>other</code>.</li>
+<li><a href="https://en.wikipedia.org/wiki/TORQUE">Torque</a> - Torque is a workload management and job scheduler <code>other</code>.</li>
+<li><a href="https://en.wikipedia.org/wiki/OpenLava">OpenLava</a> - OpenLava is a workload management and job scheduler <code>other</code>.</li>
+<li><a href="https://en.wikipedia.org/wiki/Univa_Grid_Engine">UGE/SGE</a> - Univa Grid Engine is a workload management engine for HPC <code>Proprietary</code>.</li>
+<li><a href="https://volcano.sh/">Volcano</a> - Volcano is a batch system built on Kubernetes <code>Apache-2.0</code>.</li>
+<li><a href="https://www.mhpcc.hpc.mil/">Maui</a> - Maui is a workload management and job scheduler <code>other</code>.</li>
+<li><a href="https://github.com/kubernetes-sigs/kube-batch">Kube Batch</a> - A batch scheduler of kubernetes for high performance workload, e.g. AI/ML, BigData, HPC <code>Apache-2.0</code>.</li>
+<li><a href="https://www.openpbs.org/">OpenPBS</a> - OpenPBS® software optimizes job scheduling and workload management in high-performance computing (HPC) environments (<a href="https://github.com/openpbs/openpbs">Source Code</a>) <code>other</code>.</li>
+</ul>
+<h2>Pipelines</h2>
+<ul>
+<li><a href="https://nextflow.io">Nextflow</a> - Data drive computational pipelines <code>Apache-2.0</code>.</li>
+<li><a href="https://cromwell.readthedocs.io/en/stable/">Cromwell</a> - Scientific workflow engine designed for simplicity &amp; scalability (<a href="https://github.com/broadinstitute/cromwell">Source Code</a>) <code>BSD-3</code>.</li>
+<li><a href="https://pegasus.isi.edu/">Pegasus</a> - A configurable system for mapping and executing scientific workflows over a wide range of computational infrastructure (<a href="https://github.com/pegasus-isi/pegasus">Source Code</a>)<code>Apache-2.0</code>.</li>
+</ul>
+<h2>Applications</h2>
+<ul>
+<li><a href="https://spack.io">Spack</a> - A flexible package manager that supports multiple versions, configurations, platforms, and compilers (<a href="https://github.com/spack/spack">Source Code</a>) <code>other</code>.</li>
+<li><a href="https://easybuild.io/">EasyBuild</a> -  EasyBuild - building software with ease (<a href="https://github.com/easybuilders/easybuild">Source Code</a>) <code>GPL-2</code>.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <!--lint ignore-->
+<h1>Awesome HPC <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a></h1>
+<p>High Performance Computing tools and resources for engineers and administrators.</p>
+<p><a href="https://en.wikipedia.org/wiki/Supercomputer">High Performance Computing (HPC)</a> most generally refers to the practice of aggregating computing power in a way that delivers much higher performance than one could get out of a typical desktop computer or workstation in order to solve large problems in science, engineering, or business.</p>
+<h2>Contents</h2>
+<details>
+  <summary><b>(click to expand)</b></summary>
+
+- [Provisioning](#provisioning)
+- [Workload Managers](#workload-managers)
+- [Pipelines](#pipelines)
+- [Applications](#applications)
+- [Compilers](#compilers)
+- [MPI](#mpi)
+- [Parallel Computing](#parallel-computing)
+- [Benchmarking](#benchmarking)
+- [Miscellaneous](#miscellaneous)
+- [Performance](#performance)
+- [Parallel Shells](#parallel-shells)
+- [Containers](#containers)
+- [Environment Management](#environment-management)
+- [Visualization](#visualization)
+- [Parallel Filesystems](#parallel-filesystems)
+- [Programming Languages](#programming-languages)
+- [Monitoring](#monitoring)
+- [Journals](#journals)
+- [Podcasts](#podcasts)
+- [Blogs](#blogs)
+- [Conferences](#conferences)
+- [Websites](#websites)
+- [User Groups](#user-groups)
+
+</details>
+
+<h2>Provisioning</h2>
+<ul>
+<li><a href="https://grendel.readthedocs.io/">Grendel</a> - Bare Metal Provisioning system for HPC Linux clusters ([Source Code](https://github.com<code>ubccr/grendel))</code>GPL-3`.</li>
+<li><a href="https://xcat.org/">XCat</a> - xCAT is a toolkit for deployment and administration of clusters of all sizes (<a href="https://github.com/xcat2/xcat-core">Source Code</a>) <code>EPL-1.0</code>.</li>
+<li><a href="https://warewulf.hpcng.org/">Warewulf</a> - Warewulf is a stateless and diskless container operating system provisioning system for large clusters of bare metal and/or virtual systems (<a href="https://github.com/hpcng/warewulf">Source Code</a>) <code>BSD-3</code>.</li>
+<li><a href="http://www.rocksclusters.org/">Rocks</a> - A Linux distribution for developing Linux clusters <code>other</code>.</li>
+<li><a href="https://cobbler.github.io/">Cobbler</a> - Cobbler is a Linux installation server that allows for rapid setup of network installation environments (<a href="https://github.com/cobbler/cobbler">Source Code</a>) <code>GPL-2.0</code>.</li>
+<li><a href="https://docs.nvidia.com/base-command-manager/index.html">Base Command Manager</a> - Base Command Manager allows administrator to quickly build and manage heterogeneous clusters <code>Proprietary</code>.</li>
+<li><a href="https://www.penguinsolutions.com/computing/products/software/scyld-clusterware/">Scyld</a> - Scyld Clusterware Scyld ClusterWare is developed based on the continuing evolution of Beowulf clusters first developed at NASA in the 1990s <code>Proprietary</code>.</li>
+<li><a href="https://bluebanquise.com">BlueBanquise</a> - BlueBanquise is an open source cluster deployment and management stack built on Python and Ansible (<a href="https://github.com/bluebanquise/bluebanquise">Source Code</a>) <code>MIT</code>.</li>
+</ul>
+<h2>Workload Managers</h2>
+<ul>
+<li><a href="https://slurm.schedmd.com/documentation.html">Slurm</a> - A free and open source job scheduler (<a href="https://github.com/SchedMD/slurm">Source Code</a>) <code>OSS</code>.</li>
+<li><a href="https://www.ibm.com/products/hpc-workload-management">LSF</a> - A job scheduler and workload management software developed by IBM <code>Proprietary</code>.</li>
+<li><a href="https://adaptivecomputing.com/moab-hpc-suite/">Moab</a> - Moab is a workload management and job scheduler <code>other</code>.</li>
+<li><a href="https://en.wikipedia.org/wiki/TORQUE">Torque</a> - Torque is a workload management and job scheduler <code>other</code>.</li>
+<li><a href="https://en.wikipedia.org/wiki/OpenLava">OpenLava</a> - OpenLava is a workload management and job scheduler <code>other</code>.</li>
+<li><a href="https://en.wikipedia.org/wiki/Univa_Grid_Engine">UGE/SGE</a> - Univa Grid Engine is a workload management engine for HPC <code>Proprietary</code>.</li>
+<li><a href="https://volcano.sh/">Volcano</a> - Volcano is a batch system built on Kubernetes <code>Apache-2.0</code>.</li>
+<li><a href="https://www.mhpcc.hpc.mil/">Maui</a> - Maui is a workload management and job scheduler <code>other</code>.</li>
+<li><a href="https://github.com/kubernetes-sigs/kube-batch">Kube Batch</a> - A batch scheduler of kubernetes for high performance workload, e.g. AI/ML, BigData, HPC <code>Apache-2.0</code>.</li>
+<li><a href="https://www.openpbs.org/">OpenPBS</a> - OpenPBS® software optimizes job scheduling and workload management in high-performance computing (HPC) environments (<a href="https://github.com/openpbs/openpbs">Source Code</a>) <code>other</code>.</li>
+</ul>
+<h2>Pipelines</h2>
+<ul>
+<li><a href="https://nextflow.io">Nextflow</a> - Data drive computational pipelines <code>Apache-2.0</code>.</li>
+<li><a href="https://cromwell.readthedocs.io/en/stable/">Cromwell</a> - Scientific workflow engine designed for simplicity &amp; scalability (<a href="https://github.com/broadinstitute/cromwell">Source Code</a>) <code>BSD-3</code>.</li>
+<li><a href="https://pegasus.isi.edu/">Pegasus</a> - A configurable system for mapping and executing scientific workflows over a wide range of computational infrastructure (<a href="https://github.com/pegasus-isi/pegasus">Source Code</a>)<code>Apache-2.0</code>.</li>
+</ul>
+<h2>Applications</h2>
+<ul>
+<li><a href="https://spack.io">Spack</a> - A flexible package manager that supports multiple versions, configurations, platforms, and compilers (<a href="https://github.com/spack/spack">Source Code</a>) <code>other</code>.</li>
+<li><a href="https://easybuild.io/">EasyBuild</a> -  EasyBuild - building software with ease (<a href="https://github.com/easybuilders/easybuild">Source Code</a>) <code>GPL-2</code>.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'hpc_README.md';
 
         fetch(markdownFile)
@@ -48,21 +177,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

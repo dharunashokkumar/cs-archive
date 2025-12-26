@@ -8,38 +8,121 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cytodata Awesome Cytodata - Awesome List Resources">
-    <title>Cytodata Awesome Cytodata</title>
+    <meta name="description" content="> A curated list of awesome cytodata resources. !cytodata logo Cytodata refers to a community of researchers and resources involved in the image-based...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Cytodata [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Cytodata <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<blockquote>
+<p>A curated list of awesome cytodata resources.</p>
+</blockquote>
+<p><img alt="cytodata logo" src="cytodata-logo.png" /></p>
+<p><a href="https://cytodata.org/">Cytodata</a> refers to a community of researchers and resources involved in the <strong>image-based profiling</strong> of <strong>biological phenotypes</strong>.
+These <strong>biological phenotypes</strong> are typically induced by genetic or chemical perturbations and often represent disease states.
+<strong>Image-based profiling</strong> is used to inspect these phenotypes to uncover biological insight including discovering the impact of genetic alterations and determining the mechanism of action of compounds.</p>
+<p>This page represents a curated list of software, datasets, landmark publications, and image-based profiling methods.
+Our goal is to provide researchers, both new and established, a place to discover and document awesome Cytodata resources.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#datasets">Datasets</a></li>
+<li><a href="#raw-images">Raw Images</a></li>
+<li><a href="#chemical-perturbations">Chemical Perturbations</a></li>
+<li><a href="#genetic-perturbations">Genetic Perturbations</a></li>
+<li><a href="#software">Software</a></li>
+<li><a href="#publications">Publications</a></li>
+<li><a href="#reviews">Reviews</a></li>
+<li><a href="#applications">Applications</a></li>
+<li><a href="#methods">Methods</a></li>
+</ul>
+<h2>Datasets</h2>
+<p>Annotated datasets, including <strong>raw images</strong> and <strong>processed profiles</strong>, for image-based profiling of chemical and genetic perturbations.</p>
+<h3>Raw Images</h3>
+<ul>
+<li><a href="https://broad.io/CellPaintingGallery">The Cell Painting Gallery</a> - The Cell Painting Gallery is a collection of image datasets created using the Cell Painting assay (or similar); it is maintained by the Carpenter--Singh lab at the Broad Institute.</li>
+<li><a href="https://data.broadinstitute.org/bbbc/">Broad Bioimage Benchmark Collection</a> - The Broad Bioimage Benchmark Collection (BBBC) is a collection of freely downloadable microscopy image sets. In addition to the images themselves, each set includes a description of the biological application and some type of "ground truth" (expected results).</li>
+<li><a href="https://idr.openmicroscopy.org/">Image Data Resource</a> - Public repository of image datasets from published scientific studies.</li>
+<li><a href="https://www.rxrx.ai/rxrx1">RxRx1</a> - RxRx1 is a set of 125,514 high-resolution 512x512 6-channel fluorescence microscopy images of human cells under 1,108 genetic perturbations in 51 experimental batches across four cell types.  The images were produced by Recursion Pharmaceuticals in their labs in Salt Lake City, Utah.  Researchers will use this dataset for studying and benchmarking methods for dealing with biological batch effects, as well as areas in machine learning such as domain adaptation, transfer learning, and k-shot learning.</li>
+<li><a href="https://www.rxrx.ai/rxrx19">RxRx19</a> - RxRx19 is the first morphological dataset that demonstrates the rescue of morphological effects of COVID-19. </li>
+<li><a href="https://www.proteinatlas.org/humanproteome/subcellular">Human Protein Atlas</a> - Among other assays, the HPA performed confocal imaging of displaying the location of more than 2/3 of human proteins in cell lines. <a href="https://github.com/CellProfiling/HPA-competition#script-to-download-hpav18">Raw images</a> or <a href="https://www.proteinatlas.org/about/download">infered protein subcellular locations</a> can be downloaded.</li>
+</ul>
+<h3>Chemical Perturbations</h3>
+<ul>
+<li><a href="https://doi.org/10.1371/journal.pone.0080999">Gustafsdottir et al. 2013</a> - Cell painting profiles from 1,600 bioactive compounds in U2OS cells (Access from public S3 bucket: <code>s3://cytodata/datasets/Bioactives-BBBC022-Gustafsdottir/profiles/Bioactives-BBBC022-Gustafsdottir/</code>).</li>
+<li><a href="https://doi.org/10.1073/pnas.1410933111">Wawer et al. 2014</a> - Cell painting profiles from 31,770 compounds in U2OS cells (<a href="http://www.broadinstitute.org/mlpcn/data/Broad.PNAS2014.ProfilingData.zip">Click to download</a>).</li>
+<li><a href="https://doi.org/10.1093/gigascience/giw014">Bray et al. 2017</a> - Cell painting profiles from 30,616 compounds in U2OS cells (Center Driven Research Project <em>CDRP</em>) (<a href="https://doi.org/10.5524/100351">Download from GigaDB</a> | Access from public S3 bucket: <code>s3://cytodata/datasets/CDRPBIO-BBBC036-Bray/profiles_cp/CDRPBIO-BBBC036-Bray/</code>).</li>
+<li><a href="https://doi.org/10.1038/s41592-022-01667-0">Haghighi et al. 2021</a> - Cell painting matched to L1000 profiles in 4 experiments, including compound and genetic screens (<a href="https://github.com/carpenterlab/2021_Haghighi_submitted">Details on GitHub</a>).</li>
+</ul>
+<h3>Genetic Perturbations</h3>
+<ul>
+<li><a href="https://doi.org/10.1371/journal.pone.0131370">Singh et al. 2015</a> - 3,072 cell painting profiles from 41 genes knocked down with RNA interference (RNAi) in U2OS cells (<a href="https://github.com/carpenterlab/2016_bray_natprot/blob/6dcdcf72cd90bb2dbf238b3ecf94691246d8f104/supplementary_files/profiles.csv.zip">Access from GitHub</a>).</li>
+<li><a href="https://doi.org/10.7554/eLife.24060.001">Rohban et al. 2017</a> - Cell painting data from 220 overexpressed genes in U2OS cells (Access from public S3 bucket: <code>s3://cytodata/datasets/TA-ORF-BBBC037-Rohban/profiles_cp/TA-ORF-BBBC037-Rohban/</code>).</li>
+<li>Unpublished - Cell painting profiles of 596 overexpressed alleles from 53 genes in A549 cells (Access from public S3 bucket: <code>s3://cytodata/datasets/LUAD-BBBC043-Caicedo/profiles_cp/LUAD-BBBC043-Caicedo/</code>)</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Cytodata <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<blockquote>
+<p>A curated list of awesome cytodata resources.</p>
+</blockquote>
+<p><img alt="cytodata logo" src="cytodata-logo.png" /></p>
+<p><a href="https://cytodata.org/">Cytodata</a> refers to a community of researchers and resources involved in the <strong>image-based profiling</strong> of <strong>biological phenotypes</strong>.
+These <strong>biological phenotypes</strong> are typically induced by genetic or chemical perturbations and often represent disease states.
+<strong>Image-based profiling</strong> is used to inspect these phenotypes to uncover biological insight including discovering the impact of genetic alterations and determining the mechanism of action of compounds.</p>
+<p>This page represents a curated list of software, datasets, landmark publications, and image-based profiling methods.
+Our goal is to provide researchers, both new and established, a place to discover and document awesome Cytodata resources.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#datasets">Datasets</a></li>
+<li><a href="#raw-images">Raw Images</a></li>
+<li><a href="#chemical-perturbations">Chemical Perturbations</a></li>
+<li><a href="#genetic-perturbations">Genetic Perturbations</a></li>
+<li><a href="#software">Software</a></li>
+<li><a href="#publications">Publications</a></li>
+<li><a href="#reviews">Reviews</a></li>
+<li><a href="#applications">Applications</a></li>
+<li><a href="#methods">Methods</a></li>
+</ul>
+<h2>Datasets</h2>
+<p>Annotated datasets, including <strong>raw images</strong> and <strong>processed profiles</strong>, for image-based profiling of chemical and genetic perturbations.</p>
+<h3>Raw Images</h3>
+<ul>
+<li><a href="https://broad.io/CellPaintingGallery">The Cell Painting Gallery</a> - The Cell Painting Gallery is a collection of image datasets created using the Cell Painting assay (or similar); it is maintained by the Carpenter--Singh lab at the Broad Institute.</li>
+<li><a href="https://data.broadinstitute.org/bbbc/">Broad Bioimage Benchmark Collection</a> - The Broad Bioimage Benchmark Collection (BBBC) is a collection of freely downloadable microscopy image sets. In addition to the images themselves, each set includes a description of the biological application and some type of "ground truth" (expected results).</li>
+<li><a href="https://idr.openmicroscopy.org/">Image Data Resource</a> - Public repository of image datasets from published scientific studies.</li>
+<li><a href="https://www.rxrx.ai/rxrx1">RxRx1</a> - RxRx1 is a set of 125,514 high-resolution 512x512 6-channel fluorescence microscopy images of human cells under 1,108 genetic perturbations in 51 experimental batches across four cell types.  The images were produced by Recursion Pharmaceuticals in their labs in Salt Lake City, Utah.  Researchers will use this dataset for studying and benchmarking methods for dealing with biological batch effects, as well as areas in machine learning such as domain adaptation, transfer learning, and k-shot learning.</li>
+<li><a href="https://www.rxrx.ai/rxrx19">RxRx19</a> - RxRx19 is the first morphological dataset that demonstrates the rescue of morphological effects of COVID-19. </li>
+<li><a href="https://www.proteinatlas.org/humanproteome/subcellular">Human Protein Atlas</a> - Among other assays, the HPA performed confocal imaging of displaying the location of more than 2/3 of human proteins in cell lines. <a href="https://github.com/CellProfiling/HPA-competition#script-to-download-hpav18">Raw images</a> or <a href="https://www.proteinatlas.org/about/download">infered protein subcellular locations</a> can be downloaded.</li>
+</ul>
+<h3>Chemical Perturbations</h3>
+<ul>
+<li><a href="https://doi.org/10.1371/journal.pone.0080999">Gustafsdottir et al. 2013</a> - Cell painting profiles from 1,600 bioactive compounds in U2OS cells (Access from public S3 bucket: <code>s3://cytodata/datasets/Bioactives-BBBC022-Gustafsdottir/profiles/Bioactives-BBBC022-Gustafsdottir/</code>).</li>
+<li><a href="https://doi.org/10.1073/pnas.1410933111">Wawer et al. 2014</a> - Cell painting profiles from 31,770 compounds in U2OS cells (<a href="http://www.broadinstitute.org/mlpcn/data/Broad.PNAS2014.ProfilingData.zip">Click to download</a>).</li>
+<li><a href="https://doi.org/10.1093/gigascience/giw014">Bray et al. 2017</a> - Cell painting profiles from 30,616 compounds in U2OS cells (Center Driven Research Project <em>CDRP</em>) (<a href="https://doi.org/10.5524/100351">Download from GigaDB</a> | Access from public S3 bucket: <code>s3://cytodata/datasets/CDRPBIO-BBBC036-Bray/profiles_cp/CDRPBIO-BBBC036-Bray/</code>).</li>
+<li><a href="https://doi.org/10.1038/s41592-022-01667-0">Haghighi et al. 2021</a> - Cell painting matched to L1000 profiles in 4 experiments, including compound and genetic screens (<a href="https://github.com/carpenterlab/2021_Haghighi_submitted">Details on GitHub</a>).</li>
+</ul>
+<h3>Genetic Perturbations</h3>
+<ul>
+<li><a href="https://doi.org/10.1371/journal.pone.0131370">Singh et al. 2015</a> - 3,072 cell painting profiles from 41 genes knocked down with RNA interference (RNAi) in U2OS cells (<a href="https://github.com/carpenterlab/2016_bray_natprot/blob/6dcdcf72cd90bb2dbf238b3ecf94691246d8f104/supplementary_files/profiles.csv.zip">Access from GitHub</a>).</li>
+<li><a href="https://doi.org/10.7554/eLife.24060.001">Rohban et al. 2017</a> - Cell painting data from 220 overexpressed genes in U2OS cells (Access from public S3 bucket: <code>s3://cytodata/datasets/TA-ORF-BBBC037-Rohban/profiles_cp/TA-ORF-BBBC037-Rohban/</code>).</li>
+<li>Unpublished - Cell painting profiles of 596 overexpressed alleles from 53 genes in A549 cells (Access from public S3 bucket: <code>s3://cytodata/datasets/LUAD-BBBC043-Caicedo/profiles_cp/LUAD-BBBC043-Caicedo/</code>)</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'cytodata_README.md';
 
         fetch(markdownFile)
@@ -48,21 +131,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

@@ -8,38 +8,201 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bcoe Awesome Cross Platform Nodejs - Awesome List Resources">
-    <title>Bcoe Awesome Cross Platform Nodejs</title>
+    <meta name="description" content="A curated list of awesome developer tools for writing cross-platform Node.js code. - Resources - Applications - Development environment - Continuous...">
+    <meta name="robots" content="index, follow">
+    <title>Cross Platform - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="logo_dark.svg"/>
+    <img alt="awesome-cross-platform-nodejs logo" src="logo.svg" width="500"/>
+  </picture>
+  <br>
+  <a href="https://awesome.re">
+      <img src="https://awesome.re/badge.svg" alt="Awesome">
+  </a>
+  <p>A curated list of awesome developer tools for writing cross-platform Node.js code.</p>
+</div>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#applications">Applications</a></li>
+<li><a href="#development-environment">Development environment</a></li>
+<li><a href="#continuous-integration">Continuous integration</a></li>
+<li><a href="#virtualization">Virtualization</a></li>
+<li><a href="#compatibility">Compatibility</a></li>
+<li><a href="#databases">Databases</a></li>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#os-identification">OS identification</a></li>
+<li><a href="#shell">Shell</a></li>
+<li><a href="#environment">Environment</a></li>
+<li><a href="#filesystem">Filesystem</a></li>
+<li><a href="#signals">Signals</a></li>
+<li><a href="#processes">Processes</a></li>
+<li><a href="#streams">Streams</a></li>
+<li><a href="#desktop-ui">Desktop UI</a></li>
+<li><a href="#windows-registry">Windows registry</a></li>
+<li><a href="#known-issues">Known issues</a></li>
+<li><a href="#support">Support</a></li>
+</ul>
+<h2>Resources</h2>
+<ul>
+<li><a href="https://nodejs.org/en/docs/">Core Node.js documentation</a> - Especially the <a href="https://nodejs.org/api/os.html"><code>os</code></a>, <a href="https://nodejs.org/api/path.html"><code>path</code></a>, <a href="https://nodejs.org/api/fs.html"><code>fs</code></a>, <a href="https://nodejs.org/api/process.html"><code>process</code></a> and <a href="https://nodejs.org/api/child_process.html"><code>child_process</code></a> modules.</li>
+<li><a href="https://github.com/ehmicky/cross-platform-node-guide">Cross-platform Node.js guide</a> - How to write cross-platform Node.js code.</li>
+<li><a href="https://github.com/Microsoft/nodejs-guidelines">Microsoft Node.js Guidelines</a> - Tips, tricks, and resources for working with Node.js on Microsoft platforms.</li>
+<li><a href="http://shapeshed.com/writing-cross-platform-node/">Writing Cross-Platform Node.js</a> - Great tutorial covering many common issues that arise when writing cross-platform code: path creation, script execution, newline characters.</li>
+<li><a href="https://github.com/ehmicky/cross-platform-terminal-characters">Cross-platform terminal characters</a> - All the characters that work on most terminals and most operating systems.</li>
+</ul>
+<h2>Applications</h2>
+<h3>Development environment</h3>
+<ul>
+<li><a href="https://nodejs.org/en/download/">Node.js</a> - Node.js installer for various platforms.</li>
+<li><a href="https://github.com/coreybutler/nvm-windows">nvm-windows</a> - Manage multiple installations of Node.js on a Windows computer.</li>
+<li><a href="https://github.com/creationix/nvm">nvm</a> / <a href="https://github.com/tj/n">n</a> - Node version manager for macOS/Linux.</li>
+<li><a href="https://github.com/felixrieseberg/npm-windows-upgrade">npm-windows-upgrade</a> - Upgrade npm on Windows.</li>
+<li><a href="https://github.com/felixrieseberg/windows-build-tools">windows-build-tools</a> - Install C++ Build Tools for Windows using npm.</li>
+</ul>
+<h3>Continuous integration</h3>
+<ul>
+<li><a href="http://www.appveyor.com/">AppVeyor</a> - Focused on Windows. Free tiers are available for OSS projects.</li>
+<li><a href="https://travis-ci.org/">Travis</a> - Windows/macOS/Linux. Free for OSS projects.</li>
+<li><a href="https://azure.microsoft.com/en-us/services/devops/pipelines/">Azure Pipelines</a> - Windows/macOS/Linux. Free for OSS projects with 10 parallel jobs.</li>
+<li><a href="https://github.com/features/actions">Github Action</a> - Windows/macOS/Linux. GitHub Actions makes it easy to automate all your software workflows.</li>
+<li><a href="https://docs.gitlab.com/ee/ci/">Gitlab CI</a> - Windows/macOS/Linux. GitLab CI/CD is a tool built into GitLab for software development.</li>
+</ul>
+<h3>Virtualization</h3>
+<ul>
+<li><a href="https://github.com/amichaelparker/ievms">ievms</a> - Automated installer for the free virtual machine images that Microsoft provides for testing on multiple versions of IE. These images can be useful for cross-platform testing various technologies, however make sure you read and understand Microsofts' licensing.</li>
+<li><a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a> - General purpose software for running x86 virtual machines.</li>
+<li><a href="https://www.docker.com/">Docker</a> - Software platform to create, deploy and manage virtualized application containers on a common operating system, with an ecosystem of allied tools.</li>
+</ul>
+<h3>Compatibility</h3>
+<ul>
+<li><a href="https://www.winehq.org/">Wine</a> - Run Windows API calls on Linux, Mac, BSD and Solaris.</li>
+<li><a href="https://www.cygwin.com/">Cygwin</a> - Run POSIX on Windows.</li>
+<li><a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">WSL</a> - Run the Linux command line on Windows (ELF binary execution, system calls, filesystem, Bash, core utilities, common applications).</li>
+<li><a href="http://www.mingw.org/">MinGW</a> - <code>gcc</code> on Windows.</li>
+<li><a href="http://www.mingw.org/wiki/msys">msys</a> / <a href="https://gitforwindows.org/">Git Bash</a> - Bash on Windows.</li>
+</ul>
+<h3>Databases</h3>
+<ul>
+<li><a href="https://github.com/tporadowski/redis">Redis</a> - Native port of Redis for Windows.</li>
+</ul>
+<h2>Libraries</h2>
+<h3>OS identification</h3>
+<ul>
+<li><a href="https://github.com/jonschlinkert/is-windows">is-windows</a> - Detect whether the current platform is Windows.</li>
+<li><a href="https://github.com/sindresorhus/is-wsl">is-wsl</a> - Detect whether current platform is WSL (Windows Subsystem for Linux).</li>
+<li><a href="https://github.com/retrohacker/getos">getos</a> - Retrieve the current OS, including Linux distribution.</li>
+<li><a href="https://github.com/sindresorhus/os-name">os-name</a> - Get the name of the current operating system.</li>
+<li><a href="https://github.com/sebhildebrandt/systeminformation">systeminformation</a> - Hardware/software system information.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="logo_dark.svg"/>
+    <img alt="awesome-cross-platform-nodejs logo" src="logo.svg" width="500"/>
+  </picture>
+  <br>
+  <a href="https://awesome.re">
+      <img src="https://awesome.re/badge.svg" alt="Awesome">
+  </a>
+  <p>A curated list of awesome developer tools for writing cross-platform Node.js code.</p>
+</div>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#applications">Applications</a></li>
+<li><a href="#development-environment">Development environment</a></li>
+<li><a href="#continuous-integration">Continuous integration</a></li>
+<li><a href="#virtualization">Virtualization</a></li>
+<li><a href="#compatibility">Compatibility</a></li>
+<li><a href="#databases">Databases</a></li>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#os-identification">OS identification</a></li>
+<li><a href="#shell">Shell</a></li>
+<li><a href="#environment">Environment</a></li>
+<li><a href="#filesystem">Filesystem</a></li>
+<li><a href="#signals">Signals</a></li>
+<li><a href="#processes">Processes</a></li>
+<li><a href="#streams">Streams</a></li>
+<li><a href="#desktop-ui">Desktop UI</a></li>
+<li><a href="#windows-registry">Windows registry</a></li>
+<li><a href="#known-issues">Known issues</a></li>
+<li><a href="#support">Support</a></li>
+</ul>
+<h2>Resources</h2>
+<ul>
+<li><a href="https://nodejs.org/en/docs/">Core Node.js documentation</a> - Especially the <a href="https://nodejs.org/api/os.html"><code>os</code></a>, <a href="https://nodejs.org/api/path.html"><code>path</code></a>, <a href="https://nodejs.org/api/fs.html"><code>fs</code></a>, <a href="https://nodejs.org/api/process.html"><code>process</code></a> and <a href="https://nodejs.org/api/child_process.html"><code>child_process</code></a> modules.</li>
+<li><a href="https://github.com/ehmicky/cross-platform-node-guide">Cross-platform Node.js guide</a> - How to write cross-platform Node.js code.</li>
+<li><a href="https://github.com/Microsoft/nodejs-guidelines">Microsoft Node.js Guidelines</a> - Tips, tricks, and resources for working with Node.js on Microsoft platforms.</li>
+<li><a href="http://shapeshed.com/writing-cross-platform-node/">Writing Cross-Platform Node.js</a> - Great tutorial covering many common issues that arise when writing cross-platform code: path creation, script execution, newline characters.</li>
+<li><a href="https://github.com/ehmicky/cross-platform-terminal-characters">Cross-platform terminal characters</a> - All the characters that work on most terminals and most operating systems.</li>
+</ul>
+<h2>Applications</h2>
+<h3>Development environment</h3>
+<ul>
+<li><a href="https://nodejs.org/en/download/">Node.js</a> - Node.js installer for various platforms.</li>
+<li><a href="https://github.com/coreybutler/nvm-windows">nvm-windows</a> - Manage multiple installations of Node.js on a Windows computer.</li>
+<li><a href="https://github.com/creationix/nvm">nvm</a> / <a href="https://github.com/tj/n">n</a> - Node version manager for macOS/Linux.</li>
+<li><a href="https://github.com/felixrieseberg/npm-windows-upgrade">npm-windows-upgrade</a> - Upgrade npm on Windows.</li>
+<li><a href="https://github.com/felixrieseberg/windows-build-tools">windows-build-tools</a> - Install C++ Build Tools for Windows using npm.</li>
+</ul>
+<h3>Continuous integration</h3>
+<ul>
+<li><a href="http://www.appveyor.com/">AppVeyor</a> - Focused on Windows. Free tiers are available for OSS projects.</li>
+<li><a href="https://travis-ci.org/">Travis</a> - Windows/macOS/Linux. Free for OSS projects.</li>
+<li><a href="https://azure.microsoft.com/en-us/services/devops/pipelines/">Azure Pipelines</a> - Windows/macOS/Linux. Free for OSS projects with 10 parallel jobs.</li>
+<li><a href="https://github.com/features/actions">Github Action</a> - Windows/macOS/Linux. GitHub Actions makes it easy to automate all your software workflows.</li>
+<li><a href="https://docs.gitlab.com/ee/ci/">Gitlab CI</a> - Windows/macOS/Linux. GitLab CI/CD is a tool built into GitLab for software development.</li>
+</ul>
+<h3>Virtualization</h3>
+<ul>
+<li><a href="https://github.com/amichaelparker/ievms">ievms</a> - Automated installer for the free virtual machine images that Microsoft provides for testing on multiple versions of IE. These images can be useful for cross-platform testing various technologies, however make sure you read and understand Microsofts' licensing.</li>
+<li><a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a> - General purpose software for running x86 virtual machines.</li>
+<li><a href="https://www.docker.com/">Docker</a> - Software platform to create, deploy and manage virtualized application containers on a common operating system, with an ecosystem of allied tools.</li>
+</ul>
+<h3>Compatibility</h3>
+<ul>
+<li><a href="https://www.winehq.org/">Wine</a> - Run Windows API calls on Linux, Mac, BSD and Solaris.</li>
+<li><a href="https://www.cygwin.com/">Cygwin</a> - Run POSIX on Windows.</li>
+<li><a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">WSL</a> - Run the Linux command line on Windows (ELF binary execution, system calls, filesystem, Bash, core utilities, common applications).</li>
+<li><a href="http://www.mingw.org/">MinGW</a> - <code>gcc</code> on Windows.</li>
+<li><a href="http://www.mingw.org/wiki/msys">msys</a> / <a href="https://gitforwindows.org/">Git Bash</a> - Bash on Windows.</li>
+</ul>
+<h3>Databases</h3>
+<ul>
+<li><a href="https://github.com/tporadowski/redis">Redis</a> - Native port of Redis for Windows.</li>
+</ul>
+<h2>Libraries</h2>
+<h3>OS identification</h3>
+<ul>
+<li><a href="https://github.com/jonschlinkert/is-windows">is-windows</a> - Detect whether the current platform is Windows.</li>
+<li><a href="https://github.com/sindresorhus/is-wsl">is-wsl</a> - Detect whether current platform is WSL (Windows Subsystem for Linux).</li>
+<li><a href="https://github.com/retrohacker/getos">getos</a> - Retrieve the current OS, including Linux distribution.</li>
+<li><a href="https://github.com/sindresorhus/os-name">os-name</a> - Get the name of the current operating system.</li>
+<li><a href="https://github.com/sebhildebrandt/systeminformation">systeminformation</a> - Hardware/software system information.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'cross-platform_README.md';
 
         fetch(markdownFile)
@@ -48,21 +211,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

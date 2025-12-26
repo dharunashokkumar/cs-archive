@@ -8,38 +8,215 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mikbry Awesome Webgpu - Awesome List Resources">
-    <title>Mikbry Awesome Webgpu</title>
+    <meta name="description" content="> Lovely curated list of WebGPU resources, libraries and tools. WebGPU is a work in progress Web standard from W3C for modern 3D and GPU computing. Its purpose...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome WebGPU [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome WebGPU <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p><a href="https://www.w3.org/TR/webgpu/"><img src="https://www.w3.org/2023/02/webgpu-logos/webgpu-notext.svg" align="right" height="150"></a></p>
+<blockquote>
+<p>Lovely curated list of WebGPU resources, libraries and tools.</p>
+</blockquote>
+<p>WebGPU is a work in progress Web standard from <a href="https://www.w3.org/">W3C</a> for modern 3D and GPU computing. Its purpose is to get the best performances on recent GPUs from desktop to mobile. Unlike WebGL, WebGPU is not a port of an existing native API. It borrows concepts from Metal, Vulkan and Direct3D12.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#websites">Websites</a></li>
+<li><a href="#browser-support">Browser support</a></li>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#debuggers-and-profilers">Debuggers and Profilers</a></li>
+<li><a href="#gists">Gists</a></li>
+<li><a href="#demos">Demos</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#presentations">Presentations</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#bug-reporting">Bug reporting</a></li>
+</ul>
+<h2>Websites</h2>
+<h3>Official websites</h3>
+<ul>
+<li><a href="https://github.com/gpuweb/gpuweb">GPUWeb</a> - Official GitHub repository.</li>
+<li><a href="https://gpuweb.github.io/gpuweb/explainer/">Official WebGPU Explainer</a></li>
+</ul>
+<h3>WebGPU Specifications</h3>
+<ul>
+<li><a href="https://www.w3.org/standards/history/webgpu/">History</a></li>
+<li><a href="https://gpuweb.github.io/gpuweb/">Editor's Draft</a></li>
+</ul>
+<h3>WGSL (WebGPU Shading Language) Specifications</h3>
+<ul>
+<li><a href="https://www.w3.org/TR/WGSL/">Working Draft</a></li>
+<li><a href="https://gpuweb.github.io/gpuweb/wgsl/">Editor's Draft</a></li>
+</ul>
+<h3>API documentations</h3>
+<ul>
+<li><a href="https://webgpu.rocks/">API quick reference and documentation</a> - WebGPU.rocks.</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGPU_API">MDN</a> - MDN WebGPU API references.</li>
+</ul>
+<h3>Misc</h3>
+<ul>
+<li><a href="https://developer.chrome.com/docs/web-platform/webgpu">Google Developers Site</a></li>
+<li><a href="https://awesomeopensource.com/projects/webgpu">107 WebGPU Projects on GitHub</a> - AwesomeOpenSource.com.</li>
+<li><a href="https://www.reddit.com/r/webgpu/">r/WebGPU - Reddit</a> - WebGPU Subreddit.</li>
+<li><a href="https://compute.toys/">compute.toys</a> - Compute shader playground (like shadertoy).</li>
+<li><a href="https://shadeup.dev/">Shadeup</a> - Language/website that makes experimenting with WebGPU easier.</li>
+<li><a href="https://google.github.io/tour-of-wgsl/">Tour of WGSL</a> - A quick introduction to the WebGPU Shading Language.</li>
+<li><a href="https://www.webgpuexperts.com/blog">WebGPU Experts Blog</a> - Monthly news about WebGPU.</li>
+</ul>
+<h2>Browser support</h2>
+<blockquote>
+<p>This is an experimental technology
+- <a href="https://github.com/gpuweb/gpuweb/wiki/Implementation-Status">Implementation status</a> - Official W3C Group.
+- <a href="https://caniuse.com/webgpu">WebGPU browser support overview</a> - CanIUse.com WebGPU.</p>
+</blockquote>
+<h3>Chrome</h3>
+<blockquote>
+<p>Chrome and Blink/Chromium based browsers support WebGPU
+- <a href="https://www.google.com/chrome/">Desktop</a> - WebGPU supported by default on Windows and macOS.
+- <a href="https://developer.chrome.com/blog/new-in-webgpu-121">Android</a> - WebGPU is supported by default.
+- <a href="https://www.microsoft.com/edge/">Edge</a> - WebGPU is supported by default.</p>
+</blockquote>
+<h3>Firefox</h3>
+<blockquote>
+<p>WebGPU support is still experimental
+- <a href="https://nightly.mozilla.org/">Firefox Nightly</a> - Go to <code>about:config</code> and set <code>dom.webgpu.enabled</code> to true.</p>
+</blockquote>
+<h3>Safari</h3>
+<blockquote>
+<p>WebGPU support is still experimental
+- <a href="https://developer.apple.com/safari/resources/">macOS Safari TP</a> - WebGPU is enabled by default since 190.
+- <a href="https://www.apple.com/safari/">macOS Safari</a> - Soon available.
+- <a href="https://mil-tokyo.github.io/webdnn/docs/tips/enable_webgpu_ios.html">iOS</a> - You can enable WebGPU in <code>Settings</code> &rightarrow; <code>Safari</code> &rightarrow; <code>Advanced</code> &rightarrow; <code>Feature Flags</code> &rightarrow; <code>WebGPU</code>.</p>
+</blockquote>
+<h2>Articles</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/WebGPU">WebGPU</a> - Wikipedia article.</li>
+<li><a href="https://hacks.mozilla.org/2020/04/experimental-webgpu-in-firefox/">A Taste of WebGPU in Firefox</a> - Mozilla.org article by Dzmitry Malyshau.</li>
+<li><a href="https://kvark.github.io/web/gpu/native/2020/05/03/point-of-webgpu-native">Point of WebGPU native</a> - By Dzmitry Malyshau.</li>
+<li><a href="https://dmnsgn.medium.com/13c4ba049039">Graphics on the web and beyond with WebGPU</a> - By <a href="https://dmnsgn.medium.com/">Damien Seguin</a>.</li>
+<li><a href="https://kvark.github.io/web/gpu/gecko/2019/12/10/gecko-webgpu">Implementing WebGPU in Gecko</a> - By <a href="https://github.com/kvark">Dzmitry Malyshau</a>.</li>
+<li><a href="https://www.construct.net/en/blogs/ashleys-blog-2/webgl-webgpu-construct-1519">From WebGL to WebGPU in Construct</a> - By Ashley Gullen.</li>
+<li><a href="https://www.construct.net/en/blogs/ashleys-blog-2/brief-history-graphics-web-1517">A brief history of graphics on the web and WebGPU</a> - By Ashley Gullen.</li>
+<li><a href="https://toji.github.io/webgpu-best-practices/img-textures.html">WebGPU texture best practices</a> - By Brandon Jones.</li>
+<li><a href="https://toji.github.io/webgpu-best-practices/buffer-uploads.html">WebGPU Buffer upload best practices</a> - By Brandon Jones.</li>
+<li><a href="https://gfx-rs.github.io/2020/04/21/wgpu-web">wgpu-rs on the web</a> - Rust Graphics Mages.</li>
+<li><a href="https://tvm.apache.org/2020/05/14/compiling-machine-learning-to-webassembly-and-webgpu">Compiling Machine Learning to WASM and WebGPU with Apache TVM</a> - By <a href="https://github.com/tqchen">Tianqi Chen</a> &amp; <a href="https://github.com/jroesch">Jared Roesch</a>.</li>
+<li><a href="https://paulbutler.org/2020/the-webassembly-app-gap/">The WebAssembly App Gap</a> - By <a href="https://github.com/paulgb">Paul Butler</a>.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome WebGPU <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p><a href="https://www.w3.org/TR/webgpu/"><img src="https://www.w3.org/2023/02/webgpu-logos/webgpu-notext.svg" align="right" height="150"></a></p>
+<blockquote>
+<p>Lovely curated list of WebGPU resources, libraries and tools.</p>
+</blockquote>
+<p>WebGPU is a work in progress Web standard from <a href="https://www.w3.org/">W3C</a> for modern 3D and GPU computing. Its purpose is to get the best performances on recent GPUs from desktop to mobile. Unlike WebGL, WebGPU is not a port of an existing native API. It borrows concepts from Metal, Vulkan and Direct3D12.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#websites">Websites</a></li>
+<li><a href="#browser-support">Browser support</a></li>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#debuggers-and-profilers">Debuggers and Profilers</a></li>
+<li><a href="#gists">Gists</a></li>
+<li><a href="#demos">Demos</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#presentations">Presentations</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#bug-reporting">Bug reporting</a></li>
+</ul>
+<h2>Websites</h2>
+<h3>Official websites</h3>
+<ul>
+<li><a href="https://github.com/gpuweb/gpuweb">GPUWeb</a> - Official GitHub repository.</li>
+<li><a href="https://gpuweb.github.io/gpuweb/explainer/">Official WebGPU Explainer</a></li>
+</ul>
+<h3>WebGPU Specifications</h3>
+<ul>
+<li><a href="https://www.w3.org/standards/history/webgpu/">History</a></li>
+<li><a href="https://gpuweb.github.io/gpuweb/">Editor's Draft</a></li>
+</ul>
+<h3>WGSL (WebGPU Shading Language) Specifications</h3>
+<ul>
+<li><a href="https://www.w3.org/TR/WGSL/">Working Draft</a></li>
+<li><a href="https://gpuweb.github.io/gpuweb/wgsl/">Editor's Draft</a></li>
+</ul>
+<h3>API documentations</h3>
+<ul>
+<li><a href="https://webgpu.rocks/">API quick reference and documentation</a> - WebGPU.rocks.</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGPU_API">MDN</a> - MDN WebGPU API references.</li>
+</ul>
+<h3>Misc</h3>
+<ul>
+<li><a href="https://developer.chrome.com/docs/web-platform/webgpu">Google Developers Site</a></li>
+<li><a href="https://awesomeopensource.com/projects/webgpu">107 WebGPU Projects on GitHub</a> - AwesomeOpenSource.com.</li>
+<li><a href="https://www.reddit.com/r/webgpu/">r/WebGPU - Reddit</a> - WebGPU Subreddit.</li>
+<li><a href="https://compute.toys/">compute.toys</a> - Compute shader playground (like shadertoy).</li>
+<li><a href="https://shadeup.dev/">Shadeup</a> - Language/website that makes experimenting with WebGPU easier.</li>
+<li><a href="https://google.github.io/tour-of-wgsl/">Tour of WGSL</a> - A quick introduction to the WebGPU Shading Language.</li>
+<li><a href="https://www.webgpuexperts.com/blog">WebGPU Experts Blog</a> - Monthly news about WebGPU.</li>
+</ul>
+<h2>Browser support</h2>
+<blockquote>
+<p>This is an experimental technology
+- <a href="https://github.com/gpuweb/gpuweb/wiki/Implementation-Status">Implementation status</a> - Official W3C Group.
+- <a href="https://caniuse.com/webgpu">WebGPU browser support overview</a> - CanIUse.com WebGPU.</p>
+</blockquote>
+<h3>Chrome</h3>
+<blockquote>
+<p>Chrome and Blink/Chromium based browsers support WebGPU
+- <a href="https://www.google.com/chrome/">Desktop</a> - WebGPU supported by default on Windows and macOS.
+- <a href="https://developer.chrome.com/blog/new-in-webgpu-121">Android</a> - WebGPU is supported by default.
+- <a href="https://www.microsoft.com/edge/">Edge</a> - WebGPU is supported by default.</p>
+</blockquote>
+<h3>Firefox</h3>
+<blockquote>
+<p>WebGPU support is still experimental
+- <a href="https://nightly.mozilla.org/">Firefox Nightly</a> - Go to <code>about:config</code> and set <code>dom.webgpu.enabled</code> to true.</p>
+</blockquote>
+<h3>Safari</h3>
+<blockquote>
+<p>WebGPU support is still experimental
+- <a href="https://developer.apple.com/safari/resources/">macOS Safari TP</a> - WebGPU is enabled by default since 190.
+- <a href="https://www.apple.com/safari/">macOS Safari</a> - Soon available.
+- <a href="https://mil-tokyo.github.io/webdnn/docs/tips/enable_webgpu_ios.html">iOS</a> - You can enable WebGPU in <code>Settings</code> &rightarrow; <code>Safari</code> &rightarrow; <code>Advanced</code> &rightarrow; <code>Feature Flags</code> &rightarrow; <code>WebGPU</code>.</p>
+</blockquote>
+<h2>Articles</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/WebGPU">WebGPU</a> - Wikipedia article.</li>
+<li><a href="https://hacks.mozilla.org/2020/04/experimental-webgpu-in-firefox/">A Taste of WebGPU in Firefox</a> - Mozilla.org article by Dzmitry Malyshau.</li>
+<li><a href="https://kvark.github.io/web/gpu/native/2020/05/03/point-of-webgpu-native">Point of WebGPU native</a> - By Dzmitry Malyshau.</li>
+<li><a href="https://dmnsgn.medium.com/13c4ba049039">Graphics on the web and beyond with WebGPU</a> - By <a href="https://dmnsgn.medium.com/">Damien Seguin</a>.</li>
+<li><a href="https://kvark.github.io/web/gpu/gecko/2019/12/10/gecko-webgpu">Implementing WebGPU in Gecko</a> - By <a href="https://github.com/kvark">Dzmitry Malyshau</a>.</li>
+<li><a href="https://www.construct.net/en/blogs/ashleys-blog-2/webgl-webgpu-construct-1519">From WebGL to WebGPU in Construct</a> - By Ashley Gullen.</li>
+<li><a href="https://www.construct.net/en/blogs/ashleys-blog-2/brief-history-graphics-web-1517">A brief history of graphics on the web and WebGPU</a> - By Ashley Gullen.</li>
+<li><a href="https://toji.github.io/webgpu-best-practices/img-textures.html">WebGPU texture best practices</a> - By Brandon Jones.</li>
+<li><a href="https://toji.github.io/webgpu-best-practices/buffer-uploads.html">WebGPU Buffer upload best practices</a> - By Brandon Jones.</li>
+<li><a href="https://gfx-rs.github.io/2020/04/21/wgpu-web">wgpu-rs on the web</a> - Rust Graphics Mages.</li>
+<li><a href="https://tvm.apache.org/2020/05/14/compiling-machine-learning-to-webassembly-and-webgpu">Compiling Machine Learning to WASM and WebGPU with Apache TVM</a> - By <a href="https://github.com/tqchen">Tianqi Chen</a> &amp; <a href="https://github.com/jroesch">Jared Roesch</a>.</li>
+<li><a href="https://paulbutler.org/2020/the-webassembly-app-gap/">The WebAssembly App Gap</a> - By <a href="https://github.com/paulgb">Paul Butler</a>.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'webgpu_README.md';
 
         fetch(markdownFile)
@@ -48,21 +225,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

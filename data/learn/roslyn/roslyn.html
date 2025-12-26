@@ -8,38 +8,141 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ironcev Awesome Roslyn - Awesome List Resources">
-    <title>Ironcev Awesome Roslyn</title>
+    <meta name="description" content="> Curated list of Roslyn books, tutorials, open source projects, analyzers, code fixes, refactorings, and source generators. Roslyn, officially named .NET...">
+    <meta name="robots" content="index, follow">
+    <title>Roslyn - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <p align="center">
+    <a href="https://github.com/dotnet/roslyn">
+        <img src="https://raw.githubusercontent.com/ironcev/awesome-roslyn/master/images/awesome-roslyn-logo.png" alt="Awesome Roslyn" width="500">
+    </a>
+</p>
+
+<p align="center">
+    <a href="https://github.com/sindresorhus/awesome">
+        <img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome">
+    </a>
+</p>
+
+<blockquote>
+<p>Curated list of Roslyn books, tutorials, open source projects, analyzers, code fixes, refactorings, and source generators.</p>
+</blockquote>
+<p>Roslyn, officially named <a href="https://en.wikipedia.org/wiki/.NET_Compiler_Platform">.NET Compiler Platform</a>, is a set of open-source compilers and code analysis APIs for C# and Visual Basic .NET languages.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#books">Books</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#open-source-projects">Open Source Projects</a></li>
+<li><a href="#open-source-analyzers-code-fixes-and-refactorings">Open Source Analyzers, Code Fixes, and Refactorings</a></li>
+<li><a href="#libraries-and-frameworks-for-testing-analyzers-code-fixes-and-refactorings">Libraries and Frameworks for Testing Analyzers, Code Fixes, and Refactorings</a></li>
+<li><a href="#source-generators">Source Generators</a></li>
+<li><a href="#blog-posts-and-articles">Blog Posts and Articles</a></li>
+<li><a href="#talks">Talks</a></li>
+</ul>
+<h2>Books</h2>
+<p>Awesome books to give you a good start with Roslyn.</p>
+<ul>
+<li><a href="https://www.syncfusion.com/ebooks/roslyn">Roslyn Succinctly</a> - <em>Free e-book</em> by Alessandro Del Sole and the perfect book to start with. Explains Roslyn APIs and afterward focuses on writing analyzers and refactorings.</li>
+<li><a href="https://www.apress.com/la/book/9781484221105">.NET Development Using the Compiler API</a> - Book by Jason Bock. Besides analyzers and refactorings, it also explains the scripting API and provides an interesting reflection on the future of the Compiler API.</li>
+<li><a href="https://www.packtpub.com/application-development/roslyn-cookbook">Roslyn Cookbook</a> - Book by Manish Vasani, a member of the Roslyn analyzers team. After covering analyzers, refactorings, and scripting in detail, the book goes in-depth explaining how to develop new C# language features and contribute to the Roslyn source code.</li>
+</ul>
+<h2>Tutorials</h2>
+<p>Awesome online tutorials to help you write your first analyzers, code fixes, and source generators.</p>
+<ul>
+<li><a href="https://joshvarty.com/learn-roslyn-now/">Learn Roslyn Now</a> - Series of blog posts that explore the Roslyn compiler API. It introduces the power of Roslyn through small self-contained examples. A perfect tutorial to start with :-)</li>
+<li><a href="https://github.com/dotnet/roslyn/blob/master/docs/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix.md">How To Write a C# Analyzer and Code Fix</a> - The mother of all Roslyn tutorials :-) A realistic step-by-step introduction to syntax and semantic analysis as well as the syntax transformation.</li>
+<li><a href="https://msdn.microsoft.com/en-us/magazine/dn879356.aspx">C# and Visual Basic - Use Roslyn to Write a Live Code Analyzer for Your API</a> - Older but still not outdated, very detailed MSDN article on writing code analyzers.</li>
+<li><a href="https://msdn.microsoft.com/en-us/magazine/dn904670.aspx">C# - Adding a Code Fix to Your Roslyn Analyzer</a> - The sequel to the previous MSDN article. A detailed introduction into code fixes.</li>
+<li><a href="https://devblogs.microsoft.com/dotnet/introducing-c-source-generators/">Introducing C# Source Generators</a> - Original announcement of the C# 9.0 Source Generators feature. Explains what source generators are, in which scenarios they are useful, and shows how to write a simple source generator.</li>
+<li><a href="https://devblogs.microsoft.com/dotnet/new-c-source-generator-samples/">New C# Source Generator Samples</a> - Samples on how to write a non-trivial code generator driven by additional, non-code files like CSV files or <a href="https://mustache.github.io/">Mustache</a> templates.</li>
+<li><a href="https://github.com/amis92/csharp-source-generators">C# Source Generators</a> - Comprehensive list of additional learning sources, samples, and experimental and productive source generators. A perfect reference once you grasp the basics.</li>
+</ul>
+<h2>Open Source Projects</h2>
+<p>Awesome open source projects built on top of Roslyn.</p>
+<ul>
+<li><a href="https://github.com/bridgedotnet/Bridge">Bridge</a> - C# to JavaScript transpiler. Write modern mobile and web apps in C# and run them anywhere in JavaScript.</li>
+<li><a href="https://github.com/icsharpcode/CodeConverter/">Code Converter</a> - C# to VB.NET and VB.NET to C# transpiler.</li>
+<li><a href="https://github.com/pvginkel/Microsoft.CodeAnalysis.CSharp.PatternMatching">CodeAnalysis.CSharp.PatternMatching</a> - Intuitive pattern matching for Roslyn syntax trees. Simplifies C# syntax and semantic analysis.</li>
+<li><a href="https://github.com/AArnott/CodeGeneration.Roslyn">CodeGeneration.Roslyn</a> - Roslyn-based Code Generation during a build with design-time support.</li>
+<li><a href="https://github.com/filipw/dotnet-script">dotnet-script</a> - Runs C# scripts from the .NET CLI, defines NuGet packages inline and edit/debugs them in VS Code.</li>
+<li><a href="https://github.com/dotnetcore/FlubuCore">FlubuCore</a> - Cross platform build automation tool for building projects and executing deployment scripts using C# code.</li>
+<li><a href="https://github.com/ashmind/mirrorsharp">MirrorSharp</a> - Online C#, VB.NET, and F# code editor. Features code completion, method signature help, quick fixes, and diagnostics.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <p align="center">
+    <a href="https://github.com/dotnet/roslyn">
+        <img src="https://raw.githubusercontent.com/ironcev/awesome-roslyn/master/images/awesome-roslyn-logo.png" alt="Awesome Roslyn" width="500">
+    </a>
+</p>
+
+<p align="center">
+    <a href="https://github.com/sindresorhus/awesome">
+        <img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome">
+    </a>
+</p>
+
+<blockquote>
+<p>Curated list of Roslyn books, tutorials, open source projects, analyzers, code fixes, refactorings, and source generators.</p>
+</blockquote>
+<p>Roslyn, officially named <a href="https://en.wikipedia.org/wiki/.NET_Compiler_Platform">.NET Compiler Platform</a>, is a set of open-source compilers and code analysis APIs for C# and Visual Basic .NET languages.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#books">Books</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#open-source-projects">Open Source Projects</a></li>
+<li><a href="#open-source-analyzers-code-fixes-and-refactorings">Open Source Analyzers, Code Fixes, and Refactorings</a></li>
+<li><a href="#libraries-and-frameworks-for-testing-analyzers-code-fixes-and-refactorings">Libraries and Frameworks for Testing Analyzers, Code Fixes, and Refactorings</a></li>
+<li><a href="#source-generators">Source Generators</a></li>
+<li><a href="#blog-posts-and-articles">Blog Posts and Articles</a></li>
+<li><a href="#talks">Talks</a></li>
+</ul>
+<h2>Books</h2>
+<p>Awesome books to give you a good start with Roslyn.</p>
+<ul>
+<li><a href="https://www.syncfusion.com/ebooks/roslyn">Roslyn Succinctly</a> - <em>Free e-book</em> by Alessandro Del Sole and the perfect book to start with. Explains Roslyn APIs and afterward focuses on writing analyzers and refactorings.</li>
+<li><a href="https://www.apress.com/la/book/9781484221105">.NET Development Using the Compiler API</a> - Book by Jason Bock. Besides analyzers and refactorings, it also explains the scripting API and provides an interesting reflection on the future of the Compiler API.</li>
+<li><a href="https://www.packtpub.com/application-development/roslyn-cookbook">Roslyn Cookbook</a> - Book by Manish Vasani, a member of the Roslyn analyzers team. After covering analyzers, refactorings, and scripting in detail, the book goes in-depth explaining how to develop new C# language features and contribute to the Roslyn source code.</li>
+</ul>
+<h2>Tutorials</h2>
+<p>Awesome online tutorials to help you write your first analyzers, code fixes, and source generators.</p>
+<ul>
+<li><a href="https://joshvarty.com/learn-roslyn-now/">Learn Roslyn Now</a> - Series of blog posts that explore the Roslyn compiler API. It introduces the power of Roslyn through small self-contained examples. A perfect tutorial to start with :-)</li>
+<li><a href="https://github.com/dotnet/roslyn/blob/master/docs/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix.md">How To Write a C# Analyzer and Code Fix</a> - The mother of all Roslyn tutorials :-) A realistic step-by-step introduction to syntax and semantic analysis as well as the syntax transformation.</li>
+<li><a href="https://msdn.microsoft.com/en-us/magazine/dn879356.aspx">C# and Visual Basic - Use Roslyn to Write a Live Code Analyzer for Your API</a> - Older but still not outdated, very detailed MSDN article on writing code analyzers.</li>
+<li><a href="https://msdn.microsoft.com/en-us/magazine/dn904670.aspx">C# - Adding a Code Fix to Your Roslyn Analyzer</a> - The sequel to the previous MSDN article. A detailed introduction into code fixes.</li>
+<li><a href="https://devblogs.microsoft.com/dotnet/introducing-c-source-generators/">Introducing C# Source Generators</a> - Original announcement of the C# 9.0 Source Generators feature. Explains what source generators are, in which scenarios they are useful, and shows how to write a simple source generator.</li>
+<li><a href="https://devblogs.microsoft.com/dotnet/new-c-source-generator-samples/">New C# Source Generator Samples</a> - Samples on how to write a non-trivial code generator driven by additional, non-code files like CSV files or <a href="https://mustache.github.io/">Mustache</a> templates.</li>
+<li><a href="https://github.com/amis92/csharp-source-generators">C# Source Generators</a> - Comprehensive list of additional learning sources, samples, and experimental and productive source generators. A perfect reference once you grasp the basics.</li>
+</ul>
+<h2>Open Source Projects</h2>
+<p>Awesome open source projects built on top of Roslyn.</p>
+<ul>
+<li><a href="https://github.com/bridgedotnet/Bridge">Bridge</a> - C# to JavaScript transpiler. Write modern mobile and web apps in C# and run them anywhere in JavaScript.</li>
+<li><a href="https://github.com/icsharpcode/CodeConverter/">Code Converter</a> - C# to VB.NET and VB.NET to C# transpiler.</li>
+<li><a href="https://github.com/pvginkel/Microsoft.CodeAnalysis.CSharp.PatternMatching">CodeAnalysis.CSharp.PatternMatching</a> - Intuitive pattern matching for Roslyn syntax trees. Simplifies C# syntax and semantic analysis.</li>
+<li><a href="https://github.com/AArnott/CodeGeneration.Roslyn">CodeGeneration.Roslyn</a> - Roslyn-based Code Generation during a build with design-time support.</li>
+<li><a href="https://github.com/filipw/dotnet-script">dotnet-script</a> - Runs C# scripts from the .NET CLI, defines NuGet packages inline and edit/debugs them in VS Code.</li>
+<li><a href="https://github.com/dotnetcore/FlubuCore">FlubuCore</a> - Cross platform build automation tool for building projects and executing deployment scripts using C# code.</li>
+<li><a href="https://github.com/ashmind/mirrorsharp">MirrorSharp</a> - Online C#, VB.NET, and F# code editor. Features code completion, method signature help, quick fixes, and diagnostics.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'roslyn_README.md';
 
         fetch(markdownFile)
@@ -48,21 +151,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

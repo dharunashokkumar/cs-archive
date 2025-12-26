@@ -8,38 +8,165 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Preactjs Awesome Preact - Awesome List Resources">
-    <title>Preactjs Awesome Preact</title>
+    <meta name="description" content="> A curated list of amazingly awesome things regarding Preact ecosystem :star2: Preact is a fast 3kb React alternative with the same ES6 API. Components &...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Preact [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Preact <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p><a href="https://preactjs.com"><img src="https://rawgit.com/ooade/awesome-preact/master/preact-logo.svg" align="right" width="100"></a></p>
+<blockquote>
+<p>A curated list of amazingly awesome things regarding <a href="https://github.com/developit/preact">Preact</a> ecosystem :star2:</p>
+</blockquote>
+<p><a href="https://github.com/developit/preact">Preact</a> is a fast 3kb React alternative with the same ES6 API. Components &amp; Virtual DOM.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#community">Community</a></li>
+<li><a href="#toolkits">Toolkits</a></li>
+<li><a href="#boilerplates">Boilerplates</a></li>
+<li><a href="#routing">Routing</a></li>
+<li><a href="#components">Components</a></li>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#testing-utils">Testing Utils</a></li>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#example-apps">Example Apps</a></li>
+<li><a href="https://preactjs.com/about/we-are-using">Real Apps</a></li>
+<li><a href="#related-libraries">Related Libraries</a></li>
+<li><a href="#tips">Tips</a></li>
+</ul>
+<h3>Community</h3>
+<ul>
+<li><a href="https://chat.preactjs.com/">Slack</a> (Discussion Forum)</li>
+<li><a href="https://stackoverflow.com/questions/tagged/preact">Stack Overflow</a></li>
+<li><a href="https://github.com/developit/preact">Github</a></li>
+<li><a href="https://twitter.com/preactjs">Twitter</a></li>
+</ul>
+<h3>Toolkits</h3>
+<ul>
+<li><a href="https://github.com/developit/preact-cli">Preact CLI</a> - Build a Preact Progressive Web App in seconds.</li>
+<li><a href="https://github.com/vitejs/vite">Vite</a> - Fast native-ESM powered web dev build tool for Preact, Vue or React.</li>
+<li><a href="https://github.com/insin/nwb">nwb</a> - Quick Development with React, Inferno or Preact.</li>
+<li><a href="https://github.com/timarney/react-app-rewired">React App Rewire Preact</a> - Use Preact with create-react-app without ejecting.</li>
+<li><a href="https://github.com/SaraVieira/preact-cli-postcss">Preact CLI PostCSS</a> - It removes the default postcss config on Preact CLI, so you can use postcss.config.js.</li>
+<li><a href="https://github.com/just-boris/create-preact-app">Create Preact App</a> - Create Preact apps with no build configuration.</li>
+<li><a href="https://github.com/storybooks/storybook/tree/next/app/preact">Storybook Preact</a> - Storybook for Preact is a UI development environment for your Preact components.</li>
+</ul>
+<h3>Boilerplates</h3>
+<ul>
+<li><a href="https://github.com/developit/preact-boilerplate">Official Boilerplate</a> - Ready-to-rock Preact starter project, powered by Webpack.</li>
+<li><a href="https://github.com/ooade/PreactSimpleStarter">Preact Simple Starter</a> - PWA Simple Starter with Preact, Preact-mdl and Webpack2.</li>
+<li><a href="https://github.com/lukeed/preact-starter">Preact Offline Starter</a> - Webpack2 boilerplate for building SPA / PWA / offline front-end apps with Preact.</li>
+<li><a href="https://github.com/nickytonline/ts-preact-starter">TypeScript Preact Starter</a> - Barebones starter project for Preact with TypeScript.</li>
+<li><a href="https://github.com/bmitchinson/preact-typescript-pwa-starter">TypeScript PWA Preact Starter</a> - PWA Starter with TypeScript and SASS (131kb)</li>
+<li><a href="https://github.com/yoctopuce-examples/electron-typescript-preact-boilerplate">Electron TypeScript Preact Boilerplate</a> - Electron starter project with TypeScript and Preact support, powered by esbuild.</li>
+<li><a href="https://github.com/kolodziejczakM/preact-modern-startupper">Preact Modern Startupper</a> - PWA boilerplate with support for TypeScript, Goober, Unistore and Plop.</li>
+<li><a href="https://github.com/csbun/preact-redux-ssr-example">Preact Redux SSR Example</a> - Server-side Rendering with Redux Example.</li>
+<li><a href="https://github.com/ezekielchentnik/preact-pwa">Preact PWA</a> - PWA focused on raw performance, server side rendering, prerendering, redux, express, rollup.</li>
+<li><a href="https://github.com/debdut/preact-chrome-extension">Preact Chrome Extension</a> - A Full Feature Preact Chrome Extension Starter Kit.</li>
+<li><a href="https://github.com/PiyushSuthar/preact-webext">Preact Web Extension</a> - ⚡️ WebExtension Vite Starter Template with Preact.</li>
+<li><a href="https://github.com/ernest-rudnicki/preact-neutralino-typescript-starter">Preact Neutralino TypeScript Starter</a> - Starter project for building lightweight desktop applications with Preact and neutralino.js.</li>
+<li><a href="https://github.com/nesterow/minizavr">Simple Deno Starter</a> - Tiny starter template with Preact and Deno for building single page applications.</li>
+</ul>
+<h3>Routing</h3>
+<ul>
+<li><a href="https://github.com/developit/preact-router">Preact Router</a> - URL router for Preact.</li>
+<li><a href="https://github.com/mjanssen/preact-route-async">Preact Route Async</a> - A (440b gzip) route component that enables async loading of page-components.</li>
+<li><a href="https://github.com/molefrog/wouter">Wouter</a> - A tiny (1KB gzip) router for Preact/React with React Router-like API.</li>
+</ul>
+<h3>Components</h3>
+<ul>
+<li><a href="https://github.com/prateekbh/preact-material-components">Preact Material Components</a> - Preact wrapper for "Material Components for the web".</li>
+<li><a href="https://github.com/lukeed/preact-scroll-header">Preact Scroll Header</a> - A (800b gzip) header that will show/hide while scrolling for Preact.</li>
+<li><a href="https://github.com/lukeed/preact-progress">Preact Progress</a> - Simple and lightweight (~590 bytes gzip) progress bar component for Preact.</li>
+<li><a href="https://github.com/preactjs/preact-compat">Preact Compat</a> - Use any React library with Preact <em>(<a href="https://github.com/developit/preact-compat-example">full example</a>)</em>.</li>
+<li><a href="https://github.com/preactjs/preact-render-to-string">Preact Render To String</a> - Universal rendering.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Preact <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p><a href="https://preactjs.com"><img src="https://rawgit.com/ooade/awesome-preact/master/preact-logo.svg" align="right" width="100"></a></p>
+<blockquote>
+<p>A curated list of amazingly awesome things regarding <a href="https://github.com/developit/preact">Preact</a> ecosystem :star2:</p>
+</blockquote>
+<p><a href="https://github.com/developit/preact">Preact</a> is a fast 3kb React alternative with the same ES6 API. Components &amp; Virtual DOM.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#community">Community</a></li>
+<li><a href="#toolkits">Toolkits</a></li>
+<li><a href="#boilerplates">Boilerplates</a></li>
+<li><a href="#routing">Routing</a></li>
+<li><a href="#components">Components</a></li>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#testing-utils">Testing Utils</a></li>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#example-apps">Example Apps</a></li>
+<li><a href="https://preactjs.com/about/we-are-using">Real Apps</a></li>
+<li><a href="#related-libraries">Related Libraries</a></li>
+<li><a href="#tips">Tips</a></li>
+</ul>
+<h3>Community</h3>
+<ul>
+<li><a href="https://chat.preactjs.com/">Slack</a> (Discussion Forum)</li>
+<li><a href="https://stackoverflow.com/questions/tagged/preact">Stack Overflow</a></li>
+<li><a href="https://github.com/developit/preact">Github</a></li>
+<li><a href="https://twitter.com/preactjs">Twitter</a></li>
+</ul>
+<h3>Toolkits</h3>
+<ul>
+<li><a href="https://github.com/developit/preact-cli">Preact CLI</a> - Build a Preact Progressive Web App in seconds.</li>
+<li><a href="https://github.com/vitejs/vite">Vite</a> - Fast native-ESM powered web dev build tool for Preact, Vue or React.</li>
+<li><a href="https://github.com/insin/nwb">nwb</a> - Quick Development with React, Inferno or Preact.</li>
+<li><a href="https://github.com/timarney/react-app-rewired">React App Rewire Preact</a> - Use Preact with create-react-app without ejecting.</li>
+<li><a href="https://github.com/SaraVieira/preact-cli-postcss">Preact CLI PostCSS</a> - It removes the default postcss config on Preact CLI, so you can use postcss.config.js.</li>
+<li><a href="https://github.com/just-boris/create-preact-app">Create Preact App</a> - Create Preact apps with no build configuration.</li>
+<li><a href="https://github.com/storybooks/storybook/tree/next/app/preact">Storybook Preact</a> - Storybook for Preact is a UI development environment for your Preact components.</li>
+</ul>
+<h3>Boilerplates</h3>
+<ul>
+<li><a href="https://github.com/developit/preact-boilerplate">Official Boilerplate</a> - Ready-to-rock Preact starter project, powered by Webpack.</li>
+<li><a href="https://github.com/ooade/PreactSimpleStarter">Preact Simple Starter</a> - PWA Simple Starter with Preact, Preact-mdl and Webpack2.</li>
+<li><a href="https://github.com/lukeed/preact-starter">Preact Offline Starter</a> - Webpack2 boilerplate for building SPA / PWA / offline front-end apps with Preact.</li>
+<li><a href="https://github.com/nickytonline/ts-preact-starter">TypeScript Preact Starter</a> - Barebones starter project for Preact with TypeScript.</li>
+<li><a href="https://github.com/bmitchinson/preact-typescript-pwa-starter">TypeScript PWA Preact Starter</a> - PWA Starter with TypeScript and SASS (131kb)</li>
+<li><a href="https://github.com/yoctopuce-examples/electron-typescript-preact-boilerplate">Electron TypeScript Preact Boilerplate</a> - Electron starter project with TypeScript and Preact support, powered by esbuild.</li>
+<li><a href="https://github.com/kolodziejczakM/preact-modern-startupper">Preact Modern Startupper</a> - PWA boilerplate with support for TypeScript, Goober, Unistore and Plop.</li>
+<li><a href="https://github.com/csbun/preact-redux-ssr-example">Preact Redux SSR Example</a> - Server-side Rendering with Redux Example.</li>
+<li><a href="https://github.com/ezekielchentnik/preact-pwa">Preact PWA</a> - PWA focused on raw performance, server side rendering, prerendering, redux, express, rollup.</li>
+<li><a href="https://github.com/debdut/preact-chrome-extension">Preact Chrome Extension</a> - A Full Feature Preact Chrome Extension Starter Kit.</li>
+<li><a href="https://github.com/PiyushSuthar/preact-webext">Preact Web Extension</a> - ⚡️ WebExtension Vite Starter Template with Preact.</li>
+<li><a href="https://github.com/ernest-rudnicki/preact-neutralino-typescript-starter">Preact Neutralino TypeScript Starter</a> - Starter project for building lightweight desktop applications with Preact and neutralino.js.</li>
+<li><a href="https://github.com/nesterow/minizavr">Simple Deno Starter</a> - Tiny starter template with Preact and Deno for building single page applications.</li>
+</ul>
+<h3>Routing</h3>
+<ul>
+<li><a href="https://github.com/developit/preact-router">Preact Router</a> - URL router for Preact.</li>
+<li><a href="https://github.com/mjanssen/preact-route-async">Preact Route Async</a> - A (440b gzip) route component that enables async loading of page-components.</li>
+<li><a href="https://github.com/molefrog/wouter">Wouter</a> - A tiny (1KB gzip) router for Preact/React with React Router-like API.</li>
+</ul>
+<h3>Components</h3>
+<ul>
+<li><a href="https://github.com/prateekbh/preact-material-components">Preact Material Components</a> - Preact wrapper for "Material Components for the web".</li>
+<li><a href="https://github.com/lukeed/preact-scroll-header">Preact Scroll Header</a> - A (800b gzip) header that will show/hide while scrolling for Preact.</li>
+<li><a href="https://github.com/lukeed/preact-progress">Preact Progress</a> - Simple and lightweight (~590 bytes gzip) progress bar component for Preact.</li>
+<li><a href="https://github.com/preactjs/preact-compat">Preact Compat</a> - Use any React library with Preact <em>(<a href="https://github.com/developit/preact-compat-example">full example</a>)</em>.</li>
+<li><a href="https://github.com/preactjs/preact-render-to-string">Preact Render To String</a> - Universal rendering.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'preact_README.md';
 
         fetch(markdownFile)
@@ -48,21 +175,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

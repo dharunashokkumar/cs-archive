@@ -8,38 +8,189 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jonleibowitz Awesome Digitalocean - Awesome List Resources">
-    <title>Jonleibowitz Awesome Digitalocean</title>
+    <meta name="description" content="> A curated list of awesome DigitalOcean guides, blogs, and other resources. DigitalOcean's tagline is it is a simple and robust cloud computing platform,...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome DigitalOcean [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome DigitalOcean <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p><a href="https://www.digitalocean.com/"><img src="https://raw.githubusercontent.com/jonleibowitz/awesome-digitalocean/master/media/DO_Logo.png" align="right" width="100"></a></p>
+<blockquote>
+<p>A curated list of awesome <a href="https://www.digitalocean.com">DigitalOcean</a> guides, blogs, and other resources.</p>
+</blockquote>
+<p>DigitalOcean's tagline is it is a simple and robust cloud computing platform, designed for developers. With DigitalOcean you can easily spin up cloud compute and storage resources either indivdually or with a team. </p>
+<p>Contributions welcome. Add links through pull requests or create an issue to start a discussion.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#community">Community</a></li>
+<li><a href="#configuration-management">Configuration management</a></li>
+<li><a href="#developer-documentation">Developer documentation</a></li>
+<li><a href="#open-source-projects">Open source projects</a></li>
+<li><a href="#commercial-integrations">Commercial integrations</a></li>
+<li><a href="#community-oss-projects">Community OSS projects</a></li>
+<li><a href="#clients">Clients</a></li>
+<li><a href="#video-tutorials">Video tutorials</a></li>
+<li><a href="#other">Other</a></li>
+</ul>
+<h2>Community</h2>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorials">Tutorial Search and Index</a></li>
+<li><a href="https://www.digitalocean.com/community/tags">Community articles by tag</a></li>
+<li><a href="https://www.digitalocean.com/community/questions">Questions</a></li>
+<li><a href="https://www.digitalocean.com/community/projects">Projects</a></li>
+<li><a href="https://www.meetup.com/pro/digitalocean/">Meetups</a></li>
+<li><a href="https://www.linkedin.com/groups/8876623/">DigitalOcean Lovers</a> - A LinkedIn group for users and lovers of DigitalOcean.</li>
+<li></li>
+</ul>
+<h2>Configuration management</h2>
+<ul>
+<li><a href="https://the.binbashtheory.com/using-ansible-with-digitalocean/">Using Ansible with DigitalOcean</a></li>
+<li><a href="https://docs.ansible.com/ansible/latest/collections/community/digitalocean/index.html#plugins-in-community-digitalocean">Ansible Cloud Modules - DigitalOcean</a></li>
+<li><a href="https://www.terraform.io/docs/providers/do/">Terraform - DigitalOcean Provider</a></li>
+<li><a href="https://github.com/keinohguchi/do-in-action">DigitalOcean in Action!</a> - Example repo for using DigitalOcean with Terraform and Ansible.</li>
+<li><a href="https://surdu.me/2019/07/28/digital-ocean-ddns.html">Use DigitalOcean as Dynamic DNS</a></li>
+</ul>
+<h2>Developer documentation</h2>
+<ul>
+<li><a href="https://developers.digitalocean.com/documentation/v2/">API</a></li>
+<li><a href="https://developers.digitalocean.com/documentation/spaces/">Spaces API</a></li>
+<li><a href="https://developers.digitalocean.com/documentation/oauth/">OAuth</a></li>
+<li><a href="https://developers.digitalocean.com/documentation/metadata/">Droplet Metadata</a></li>
+<li><a href="https://www.digitalocean.com/docs/release-notes/">Official DO Release Notes</a> - Notes tracking incremental improvements and major releases for the DigitalOcean cloud platform.</li>
+<li><a href="https://slugs.do-api.dev/">DigitalOcean API Slugs</a></li>
+</ul>
+<h2>Open source projects</h2>
+<ul>
+<li><a href="https://developers.digitalocean.com/opensource/">Open Source @ DigitalOcean</a></li>
+<li><a href="https://github.com/digitalocean/netbox">Netbox</a></li>
+<li><a href="https://github.com/digitalocean/doctl">Doctl</a> - Official command-line interface for the DigitalOcean API.</li>
+<li><a href="https://github.com/digitalocean/go-libvirt">go-libvirt</a></li>
+<li><a href="https://github.com/digitalocean/go-qemu">go-qemu</a></li>
+</ul>
+<h2>Commercial integrations</h2>
+<ul>
+<li><a href="https://bill.do">Bill.do</a> - Free DigitalOcean billing monitoring and insights tool</li>
+<li><a href="https://hostlaunch.io">HostLaunch</a> - Launch a hosting company based on DigitalOcean and ServerPilot.</li>
+<li><a href="https://simplebackups.io">SimpleBackups</a> - Tool for scheduling DigitalOcean backups (files &amp; databases) on auto-pilot.</li>
+<li><a href="https://snapshooter.io/digitalocean">SnapShooter</a> - Tool for taking Daily to Hourly backups of Droplets and Volumes</li>
+<li><a href="https://weap.io">Weap.io</a> - Hourly to Daily DigitalOcean backups. Tool for scheduling more frequent DigitalOcean backups</li>
+</ul>
+<h2>Community OSS projects</h2>
+<ul>
+<li><a href="https://github.com/f/do-sshuttle">do-sshuttle</a> - Transparent Proxying via sshuttle to DigitalOcean Droplet.</li>
+<li><a href="https://github.com/qmx/drophosts">drophosts</a> - Update <code>/etc/hosts</code> with peer droplets.</li>
+<li><a href="https://github.com/tam7t/droplan">droplan</a> - Manage iptable rules for the private interface on DigitalOcean droplets.</li>
+<li><a href="https://github.com/theforeman/foreman-digitalocean">foreman-digitalocean</a> - Plugin to enable management of DigitalOcean droplets in Foreman.</li>
+<li><a href="https://github.com/shiva-hack/ghost-digitalocean">ghost-digitalocean</a> - A DigitalOcean Storage adapter for Ghost.</li>
+<li><a href="https://github.com/jimmycuadra/lita-digitalocean">lita-digitalocean</a> - Lita handler for managing DigitalOcean services.</li>
+<li><a href="https://github.com/progrium/hostpool">hostpool</a> - Worker pool manager for DigitalOcean hosts.</li>
+<li><a href="https://github.com/skibish/ddns">DDNS</a> - Personal DDNS client with DigitalOcean Networking DNS as backend.</li>
+<li><a href="https://github.com/addpipe/Less-Confusing-Digital-Ocean-Menus">Less Confusing Menus</a> - A Chrome extension that makes account menus less confusing.</li>
+<li><a href="https://github.com/NicholasPCole/dodc">DigitalOcean Droplet creator</a> - A dialog-based shell script to quickly create a single DigitalOcean Droplet.</li>
+<li><a href="https://github.com/bjornjohansen/do-upgrade-plans">do-upgrade-plans</a> - A script to upgrade your DigitalOcean Droplets to better plans with the same cost.</li>
+</ul>
+<h2>Clients</h2>
+<ul>
+<li><a href="https://github.com/digitalocean/doctl">doctl</a> - Command-line tool for DigitalOcean services.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome DigitalOcean <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p><a href="https://www.digitalocean.com/"><img src="https://raw.githubusercontent.com/jonleibowitz/awesome-digitalocean/master/media/DO_Logo.png" align="right" width="100"></a></p>
+<blockquote>
+<p>A curated list of awesome <a href="https://www.digitalocean.com">DigitalOcean</a> guides, blogs, and other resources.</p>
+</blockquote>
+<p>DigitalOcean's tagline is it is a simple and robust cloud computing platform, designed for developers. With DigitalOcean you can easily spin up cloud compute and storage resources either indivdually or with a team. </p>
+<p>Contributions welcome. Add links through pull requests or create an issue to start a discussion.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#community">Community</a></li>
+<li><a href="#configuration-management">Configuration management</a></li>
+<li><a href="#developer-documentation">Developer documentation</a></li>
+<li><a href="#open-source-projects">Open source projects</a></li>
+<li><a href="#commercial-integrations">Commercial integrations</a></li>
+<li><a href="#community-oss-projects">Community OSS projects</a></li>
+<li><a href="#clients">Clients</a></li>
+<li><a href="#video-tutorials">Video tutorials</a></li>
+<li><a href="#other">Other</a></li>
+</ul>
+<h2>Community</h2>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorials">Tutorial Search and Index</a></li>
+<li><a href="https://www.digitalocean.com/community/tags">Community articles by tag</a></li>
+<li><a href="https://www.digitalocean.com/community/questions">Questions</a></li>
+<li><a href="https://www.digitalocean.com/community/projects">Projects</a></li>
+<li><a href="https://www.meetup.com/pro/digitalocean/">Meetups</a></li>
+<li><a href="https://www.linkedin.com/groups/8876623/">DigitalOcean Lovers</a> - A LinkedIn group for users and lovers of DigitalOcean.</li>
+<li></li>
+</ul>
+<h2>Configuration management</h2>
+<ul>
+<li><a href="https://the.binbashtheory.com/using-ansible-with-digitalocean/">Using Ansible with DigitalOcean</a></li>
+<li><a href="https://docs.ansible.com/ansible/latest/collections/community/digitalocean/index.html#plugins-in-community-digitalocean">Ansible Cloud Modules - DigitalOcean</a></li>
+<li><a href="https://www.terraform.io/docs/providers/do/">Terraform - DigitalOcean Provider</a></li>
+<li><a href="https://github.com/keinohguchi/do-in-action">DigitalOcean in Action!</a> - Example repo for using DigitalOcean with Terraform and Ansible.</li>
+<li><a href="https://surdu.me/2019/07/28/digital-ocean-ddns.html">Use DigitalOcean as Dynamic DNS</a></li>
+</ul>
+<h2>Developer documentation</h2>
+<ul>
+<li><a href="https://developers.digitalocean.com/documentation/v2/">API</a></li>
+<li><a href="https://developers.digitalocean.com/documentation/spaces/">Spaces API</a></li>
+<li><a href="https://developers.digitalocean.com/documentation/oauth/">OAuth</a></li>
+<li><a href="https://developers.digitalocean.com/documentation/metadata/">Droplet Metadata</a></li>
+<li><a href="https://www.digitalocean.com/docs/release-notes/">Official DO Release Notes</a> - Notes tracking incremental improvements and major releases for the DigitalOcean cloud platform.</li>
+<li><a href="https://slugs.do-api.dev/">DigitalOcean API Slugs</a></li>
+</ul>
+<h2>Open source projects</h2>
+<ul>
+<li><a href="https://developers.digitalocean.com/opensource/">Open Source @ DigitalOcean</a></li>
+<li><a href="https://github.com/digitalocean/netbox">Netbox</a></li>
+<li><a href="https://github.com/digitalocean/doctl">Doctl</a> - Official command-line interface for the DigitalOcean API.</li>
+<li><a href="https://github.com/digitalocean/go-libvirt">go-libvirt</a></li>
+<li><a href="https://github.com/digitalocean/go-qemu">go-qemu</a></li>
+</ul>
+<h2>Commercial integrations</h2>
+<ul>
+<li><a href="https://bill.do">Bill.do</a> - Free DigitalOcean billing monitoring and insights tool</li>
+<li><a href="https://hostlaunch.io">HostLaunch</a> - Launch a hosting company based on DigitalOcean and ServerPilot.</li>
+<li><a href="https://simplebackups.io">SimpleBackups</a> - Tool for scheduling DigitalOcean backups (files &amp; databases) on auto-pilot.</li>
+<li><a href="https://snapshooter.io/digitalocean">SnapShooter</a> - Tool for taking Daily to Hourly backups of Droplets and Volumes</li>
+<li><a href="https://weap.io">Weap.io</a> - Hourly to Daily DigitalOcean backups. Tool for scheduling more frequent DigitalOcean backups</li>
+</ul>
+<h2>Community OSS projects</h2>
+<ul>
+<li><a href="https://github.com/f/do-sshuttle">do-sshuttle</a> - Transparent Proxying via sshuttle to DigitalOcean Droplet.</li>
+<li><a href="https://github.com/qmx/drophosts">drophosts</a> - Update <code>/etc/hosts</code> with peer droplets.</li>
+<li><a href="https://github.com/tam7t/droplan">droplan</a> - Manage iptable rules for the private interface on DigitalOcean droplets.</li>
+<li><a href="https://github.com/theforeman/foreman-digitalocean">foreman-digitalocean</a> - Plugin to enable management of DigitalOcean droplets in Foreman.</li>
+<li><a href="https://github.com/shiva-hack/ghost-digitalocean">ghost-digitalocean</a> - A DigitalOcean Storage adapter for Ghost.</li>
+<li><a href="https://github.com/jimmycuadra/lita-digitalocean">lita-digitalocean</a> - Lita handler for managing DigitalOcean services.</li>
+<li><a href="https://github.com/progrium/hostpool">hostpool</a> - Worker pool manager for DigitalOcean hosts.</li>
+<li><a href="https://github.com/skibish/ddns">DDNS</a> - Personal DDNS client with DigitalOcean Networking DNS as backend.</li>
+<li><a href="https://github.com/addpipe/Less-Confusing-Digital-Ocean-Menus">Less Confusing Menus</a> - A Chrome extension that makes account menus less confusing.</li>
+<li><a href="https://github.com/NicholasPCole/dodc">DigitalOcean Droplet creator</a> - A dialog-based shell script to quickly create a single DigitalOcean Droplet.</li>
+<li><a href="https://github.com/bjornjohansen/do-upgrade-plans">do-upgrade-plans</a> - A script to upgrade your DigitalOcean Droplets to better plans with the same cost.</li>
+</ul>
+<h2>Clients</h2>
+<ul>
+<li><a href="https://github.com/digitalocean/doctl">doctl</a> - Command-line tool for DigitalOcean services.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'digitalocean_README.md';
 
         fetch(markdownFile)
@@ -48,21 +199,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

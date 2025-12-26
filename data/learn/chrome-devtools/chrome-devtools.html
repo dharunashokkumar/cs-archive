@@ -8,38 +8,195 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chromedevtools Awesome Chrome Devtools - Awesome List Resources">
-    <title>Chromedevtools Awesome Chrome Devtools</title>
+    <meta name="description" content="> Awesome tooling and resources in the Chrome DevTools ecosystem - Learning - DevTools tooling and ecosystem - Chrome DevTools Protocol - Using DevTools...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Chrome DevTools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Chrome DevTools <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<blockquote>
+<p>Awesome tooling and resources in the Chrome DevTools ecosystem</p>
+</blockquote>
+<h2>Contents</h2>
+<ul>
+<li><a href="#learning">Learning</a></li>
+<li><a href="#devtools-tooling-and-ecosystem">DevTools tooling and ecosystem</a></li>
+<li><a href="#chrome-devtools-protocol">Chrome DevTools Protocol</a></li>
+<li><a href="#using-devtools-frontend-with-other-platforms">Using DevTools frontend with other platforms</a></li>
+<li><a href="#applications">Applications</a></li>
+<li><a href="#devtools-extensions">DevTools Extensions</a></li>
+<li><a href="#alumni">Alumni</a></li>
+</ul>
+<hr />
+<h2>Learning</h2>
+<ul>
+<li><a href="https://umaar.com/dev-tips/">Dev Tips</a> - Large collection of tips as animated gifs.</li>
+<li><a href="https://devtoolstips.org/">DevTools Tips</a> - Collection of illustrated tips as mini tutorials.</li>
+<li><a href="https://www.canidev.tools/">Can I DevTools?</a> - Various workflows, documented. Also a weekly tips &amp; tricks <a href="https://canidevtools.substack.com/">newsletter</a>.</li>
+<li><a href="https://codepo8.github.io/web-cheatcodes/">Web cheatcodes</a> - Browser developer tools for non-developers.</li>
+<li><a href="https://codepo8.github.io/dearconsole">Dear Console</a> - A collection of snippets to use in the browser console.</li>
+</ul>
+<hr />
+<h2>DevTools tooling and ecosystem</h2>
+<h3>Object formatting</h3>
+<ul>
+<li><a href="https://github.com/andrewdavey/immutable-devtools">immutable-devtools</a> - Custom formatter for Immutable-js values.</li>
+</ul>
+<h3>Network Inspection</h3>
+<ul>
+<li><a href="https://github.com/kdzwinel/betwixt">betwixt</a> - System level network proxy, providing inspection via Network panel.</li>
+<li><a href="https://weerdbg.com/">Weer</a> - A HTTP protocol debugger <strong>(closed source)</strong></li>
+</ul>
+<h3>CPU profile</h3>
+<ul>
+<li><a href="https://github.com/brendankenny/call-trace">call-trace</a> - Can instrument your JS with hooks, and then generate a <code>.cpuprofile</code>  of the of the complete (non-sampled) execution. View either time or call counts.</li>
+<li><a href="https://github.com/thlorenz/cpuprofilify">cpuprofilify</a> - Converts output of various profiling/sampling tools to the <code>.cpuprofile</code> format.</li>
+<li><a href="https://wishbone.readthedocs.io/en/latest/misc/profiling.html">Wishbone Python framework</a> - Profiling data can export as <code>.cpuprofile</code>.</li>
+</ul>
+<h3>Multimedia</h3>
+<ul>
+<li><a href="https://github.com/pmdartus/snapline">snapline</a> - Converts timeline screenshots to gif.</li>
+</ul>
+<h3>Timeline, Tracing &amp; Profiling</h3>
+<ul>
+<li><a href="https://chromedevtools.github.io/timeline-viewer/">DevTools Timeline Viewer</a> - Share URLs of your timeline recordings.</li>
+</ul>
+<h3>Chrome Debugger integration with Editors</h3>
+<ul>
+<li><a href="https://github.com/Microsoft/vscode-chrome-debug/">VS Code - Debugger for Chrome</a> - Breakpoint debugging in VS Code.</li>
+<li><a href="https://github.com/microsoft/vscode-edge-devtools">VS Code - Elements for Microsoft Edge</a> - Elements panel inside VS Code.</li>
+<li><a href="https://github.com/acarabott/ChromeREPL">ChromeREPL</a> - Within Sublime Text, use the Chrome console.</li>
+<li><a href="http://sokolovstas.github.io/SublimeWebInspector/">Sublime Web Inspector</a> - JavaScript Breakpoint debugging right in Sublime Text.</li>
+<li><a href="https://www.jetbrains.com/help/webstorm/2017.1/configuring-javascript-debugger-and-jetbrains-chrome-extension.html">WebStorm/JetBrains Chrome Extension</a> - The WebStorm IDE can debug JavaScript, view the DOM tree, and edit HTML, CSS and JS live.</li>
+</ul>
+<hr />
+<h2>Chrome DevTools Protocol</h2>
+<ul>
+<li><a href="https://github.com/chromedevtools/devtools-protocol">ChromeDevTools/devtools-protocol</a> - <strong>Canonical location of the protocol JSON</strong>. Issue tracker for protocol bugs. TypeScript types.</li>
+<li><a href="https://chromedevtools.github.io/devtools-protocol/">DevTools Protocol API Docs</a> - Easy browsable UI for exploring the protocol's domains, methods and events.</li>
+</ul>
+<h3>Developing with the protocol</h3>
+<ul>
+<li><a href="https://github.com/cyrus-and/chrome-remote-interface/wiki">chrome-remote-interface Wiki</a> - Many useful recipes.</li>
+<li><a href="https://github.com/wendigo/chrome-protocol-proxy">Chrome Protocol Proxy</a> - Tool for debugging clients using devtools protocol.</li>
+</ul>
+<h3>The big two automation libraries</h3>
+<ul>
+<li><a href="https://github.com/GoogleChrome/puppeteer/">Puppeteer</a> - Node.js offering a high-level API to control headless Chrome over the DevTools Protocol. See also <a href="https://github.com/transitive-bullshit/awesome-puppeteer">awesome-puppeteer</a>.</li>
+<li><a href="https://github.com/microsoft/playwright">Playwright</a> - Library to automate Chromium, Firefox and WebKit with a single API. Available for Node.js, Python, .Net, Java. See also <a href="https://github.com/mxschmitt/awesome-playwright">awesome-playwright</a>.</li>
+</ul>
+<h3>Libraries for driving the protocol (or a layer above)</h3>
+<ul>
+<li>JavaScript/Node.js: <a href="https://github.com/cyrus-and/chrome-remote-interface">chrome-remote-interface</a></li>
+<li>TypeScript/Node.js: <a href="https://github.com/TracerBench/chrome-debugging-client">chrome-debugging-client</a></li>
+<li>TypeScript/Node.js: <a href="https://www.npmjs.com/package/noice-json-rpc">noice-json-rpc</a> - A proxy-based implementation to expose the CDP as its API.</li>
+<li>TypeScript/Node.js: <a href="https://github.com/getgauge/taiko/">Taiko</a></li>
+<li>Rust: <a href="https://github.com/atroche/rust-headless-chrome/">Rust Headless Chrome</a></li>
+<li>Java: <a href="https://github.com/kklisura/chrome-devtools-java-client">chrome-devtools-java-client</a></li>
+<li>Java: <a href="https://github.com/fanyong920/jvppeteer">jvppeteer</a>  - Headless Chrome For Java </li>
+<li>Python: <a href="https://github.com/hyperiongray/python-chrome-devtools-protocol">PyCDP</a> - Pure-Python, sans-IO wrappers. See also the <a href="https://github.com/hyperiongray/trio-chrome-devtools-protocol">Trio CDP driver</a></li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Chrome DevTools <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<blockquote>
+<p>Awesome tooling and resources in the Chrome DevTools ecosystem</p>
+</blockquote>
+<h2>Contents</h2>
+<ul>
+<li><a href="#learning">Learning</a></li>
+<li><a href="#devtools-tooling-and-ecosystem">DevTools tooling and ecosystem</a></li>
+<li><a href="#chrome-devtools-protocol">Chrome DevTools Protocol</a></li>
+<li><a href="#using-devtools-frontend-with-other-platforms">Using DevTools frontend with other platforms</a></li>
+<li><a href="#applications">Applications</a></li>
+<li><a href="#devtools-extensions">DevTools Extensions</a></li>
+<li><a href="#alumni">Alumni</a></li>
+</ul>
+<hr />
+<h2>Learning</h2>
+<ul>
+<li><a href="https://umaar.com/dev-tips/">Dev Tips</a> - Large collection of tips as animated gifs.</li>
+<li><a href="https://devtoolstips.org/">DevTools Tips</a> - Collection of illustrated tips as mini tutorials.</li>
+<li><a href="https://www.canidev.tools/">Can I DevTools?</a> - Various workflows, documented. Also a weekly tips &amp; tricks <a href="https://canidevtools.substack.com/">newsletter</a>.</li>
+<li><a href="https://codepo8.github.io/web-cheatcodes/">Web cheatcodes</a> - Browser developer tools for non-developers.</li>
+<li><a href="https://codepo8.github.io/dearconsole">Dear Console</a> - A collection of snippets to use in the browser console.</li>
+</ul>
+<hr />
+<h2>DevTools tooling and ecosystem</h2>
+<h3>Object formatting</h3>
+<ul>
+<li><a href="https://github.com/andrewdavey/immutable-devtools">immutable-devtools</a> - Custom formatter for Immutable-js values.</li>
+</ul>
+<h3>Network Inspection</h3>
+<ul>
+<li><a href="https://github.com/kdzwinel/betwixt">betwixt</a> - System level network proxy, providing inspection via Network panel.</li>
+<li><a href="https://weerdbg.com/">Weer</a> - A HTTP protocol debugger <strong>(closed source)</strong></li>
+</ul>
+<h3>CPU profile</h3>
+<ul>
+<li><a href="https://github.com/brendankenny/call-trace">call-trace</a> - Can instrument your JS with hooks, and then generate a <code>.cpuprofile</code>  of the of the complete (non-sampled) execution. View either time or call counts.</li>
+<li><a href="https://github.com/thlorenz/cpuprofilify">cpuprofilify</a> - Converts output of various profiling/sampling tools to the <code>.cpuprofile</code> format.</li>
+<li><a href="https://wishbone.readthedocs.io/en/latest/misc/profiling.html">Wishbone Python framework</a> - Profiling data can export as <code>.cpuprofile</code>.</li>
+</ul>
+<h3>Multimedia</h3>
+<ul>
+<li><a href="https://github.com/pmdartus/snapline">snapline</a> - Converts timeline screenshots to gif.</li>
+</ul>
+<h3>Timeline, Tracing &amp; Profiling</h3>
+<ul>
+<li><a href="https://chromedevtools.github.io/timeline-viewer/">DevTools Timeline Viewer</a> - Share URLs of your timeline recordings.</li>
+</ul>
+<h3>Chrome Debugger integration with Editors</h3>
+<ul>
+<li><a href="https://github.com/Microsoft/vscode-chrome-debug/">VS Code - Debugger for Chrome</a> - Breakpoint debugging in VS Code.</li>
+<li><a href="https://github.com/microsoft/vscode-edge-devtools">VS Code - Elements for Microsoft Edge</a> - Elements panel inside VS Code.</li>
+<li><a href="https://github.com/acarabott/ChromeREPL">ChromeREPL</a> - Within Sublime Text, use the Chrome console.</li>
+<li><a href="http://sokolovstas.github.io/SublimeWebInspector/">Sublime Web Inspector</a> - JavaScript Breakpoint debugging right in Sublime Text.</li>
+<li><a href="https://www.jetbrains.com/help/webstorm/2017.1/configuring-javascript-debugger-and-jetbrains-chrome-extension.html">WebStorm/JetBrains Chrome Extension</a> - The WebStorm IDE can debug JavaScript, view the DOM tree, and edit HTML, CSS and JS live.</li>
+</ul>
+<hr />
+<h2>Chrome DevTools Protocol</h2>
+<ul>
+<li><a href="https://github.com/chromedevtools/devtools-protocol">ChromeDevTools/devtools-protocol</a> - <strong>Canonical location of the protocol JSON</strong>. Issue tracker for protocol bugs. TypeScript types.</li>
+<li><a href="https://chromedevtools.github.io/devtools-protocol/">DevTools Protocol API Docs</a> - Easy browsable UI for exploring the protocol's domains, methods and events.</li>
+</ul>
+<h3>Developing with the protocol</h3>
+<ul>
+<li><a href="https://github.com/cyrus-and/chrome-remote-interface/wiki">chrome-remote-interface Wiki</a> - Many useful recipes.</li>
+<li><a href="https://github.com/wendigo/chrome-protocol-proxy">Chrome Protocol Proxy</a> - Tool for debugging clients using devtools protocol.</li>
+</ul>
+<h3>The big two automation libraries</h3>
+<ul>
+<li><a href="https://github.com/GoogleChrome/puppeteer/">Puppeteer</a> - Node.js offering a high-level API to control headless Chrome over the DevTools Protocol. See also <a href="https://github.com/transitive-bullshit/awesome-puppeteer">awesome-puppeteer</a>.</li>
+<li><a href="https://github.com/microsoft/playwright">Playwright</a> - Library to automate Chromium, Firefox and WebKit with a single API. Available for Node.js, Python, .Net, Java. See also <a href="https://github.com/mxschmitt/awesome-playwright">awesome-playwright</a>.</li>
+</ul>
+<h3>Libraries for driving the protocol (or a layer above)</h3>
+<ul>
+<li>JavaScript/Node.js: <a href="https://github.com/cyrus-and/chrome-remote-interface">chrome-remote-interface</a></li>
+<li>TypeScript/Node.js: <a href="https://github.com/TracerBench/chrome-debugging-client">chrome-debugging-client</a></li>
+<li>TypeScript/Node.js: <a href="https://www.npmjs.com/package/noice-json-rpc">noice-json-rpc</a> - A proxy-based implementation to expose the CDP as its API.</li>
+<li>TypeScript/Node.js: <a href="https://github.com/getgauge/taiko/">Taiko</a></li>
+<li>Rust: <a href="https://github.com/atroche/rust-headless-chrome/">Rust Headless Chrome</a></li>
+<li>Java: <a href="https://github.com/kklisura/chrome-devtools-java-client">chrome-devtools-java-client</a></li>
+<li>Java: <a href="https://github.com/fanyong920/jvppeteer">jvppeteer</a>  - Headless Chrome For Java </li>
+<li>Python: <a href="https://github.com/hyperiongray/python-chrome-devtools-protocol">PyCDP</a> - Pure-Python, sans-IO wrappers. See also the <a href="https://github.com/hyperiongray/trio-chrome-devtools-protocol">Trio CDP driver</a></li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'chrome-devtools_README.md';
 
         fetch(markdownFile)
@@ -48,21 +205,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

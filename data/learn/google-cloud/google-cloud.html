@@ -8,38 +8,205 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Googlecloudplatform Awesome Google Cloud - Awesome List Resources">
-    <title>Googlecloudplatform Awesome Google Cloud</title>
+    <meta name="description" content="A curated list of awesome applications, tools, and resources for Google Cloud. Google Cloud is a suite of modular cloud services including computing, data...">
+    <meta name="robots" content="index, follow">
+    <title>Google Cloud - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <!--lint ignore no-dead-urls awesome-license-->
+<h1>Awesome Google Cloud <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<!--lint ignore double-link-->
+<p><a href="https://cloud.google.com"><img src="https://www.gstatic.com/images/branding/productlogos/google_cloud/v8/web-96dp/logo_google_cloud_color_1x_web_96dp.png" align="right"></a></p>
+<!--lint ignore double-link-->
+<p>A curated list of awesome applications, tools, and resources for <a href="https://cloud.google.com">Google Cloud</a>.</p>
+<p>Google Cloud is a suite of modular cloud services including computing, data storage, data analytics, and machine learning, alongside a set of management tools.</p>
+<p>If you are new to Google Cloud, there is a <a href="https://cloud.google.com/free-trial/">free trial</a> to try it out.</p>
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+<h2>Contents</h2>
+<ul>
+<li><a href="#general">General</a></li>
+<li><a href="#compute">Compute</a></li>
+<li><a href="#app-engine">App Engine</a></li>
+<li><a href="#cloud-functions">Cloud Functions</a></li>
+<li><a href="#cloud-run">Cloud Run</a></li>
+<li><a href="#kubernetes-engine">Kubernetes Engine</a></li>
+<li><a href="#cross-product">Cross-product</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#cloud-ai">Cloud AI</a></li>
+<li><a href="#cloud-vision-api">Cloud Vision API</a></li>
+<li><a href="#storage--databases">Storage &amp; Databases</a></li>
+<li><a href="#monorepo">Monorepo</a></li>
+<li><a href="#bazel-grpc-protocol-buffers">Bazel, gRPC, Protocol Buffers</a></li>
+<li><a href="#big-data">Big Data</a></li>
+<li><a href="#apache-beam--dataflow">Apache Beam &amp; Dataflow</a></li>
+<li><a href="#bigtable">Bigtable</a></li>
+<li><a href="#bigquery">BigQuery</a></li>
+<li><a href="#pubsub">Pub/Sub</a></li>
+<li><a href="#interactive-learning-resources">Interactive Learning Resources</a></li>
+<li><a href="#other-awesome-lists">Other Awesome Lists</a></li>
+<li><a href="#about-this-document">About This Document</a></li>
+<li><a href="#license">License</a></li>
+<li><a href="#disclaimer">Disclaimer</a></li>
+<li><a href="#contributing">Contributing</a></li>
+</ul>
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+<h2>General</h2>
+<ul>
+<li><a href="https://github.com/gregsramblings/google-cloud-4-words">"The Google Cloud Developer Cheat Sheet" by Greg Wilson</a> - A list of every product in the Google Cloud family described in 4 words or less.</li>
+<li><a href="https://www.linkedin.com/pulse/google-cloud-jumpstart-tutorials-community-david-das-neves/">"Google Cloud - Jumpstart, Tutorials &amp; Community!" by David das Neves</a> - Additional links about GCP including tutorials, solutions and community.</li>
+</ul>
+<h2>Compute</h2>
+<ul>
+<li><a href="https://cloud.google.com/products/compute/">Google Compute Engine</a> - From app platform to containers to VMs, cloud compute tailored to your needs.</li>
+</ul>
+<h3>App Engine</h3>
+<ul>
+<li><a href="https://cloud.google.com/nodejs/resources/frameworks/parse-server">Running Parse server on Google App Engine</a> - Deploy and run Parse server on Google App Engine with a sample Node.js app.</li>
+<li><a href="https://github.com/thesandlord/SlackEngine">SlackEngine</a> - Slack inviter running on Google App Engine.</li>
+</ul>
+<h3>Cloud Functions</h3>
+<ul>
+<li>
+<p><a href="https://github.com/GoogleCloudPlatform/functions-framework">Functions Framework</a> - An open source set of libraries for writing portable Google Cloud functions.</p>
+</li>
+<li>
+<p><a href="https://github.com/anovis/goblet">Goblet</a> - An open source library for serverless Python application development using Google Cloud functions.</p>
+</li>
+</ul>
+<h3>Cloud Run</h3>
+<ul>
+<li><a href="https://github.com/steren/awesome-cloudrun">Awesome Cloud Run</a> - Extensive list of awesome Cloud Run applications.</li>
+</ul>
+<h3>Kubernetes Engine</h3>
+<ul>
+<li>
+<p><a href="https://github.com/google/gke-policy-automation">GKE Policy Automation</a> - Tool and policy library for validating GKE clusters against configuration best practices.</p>
+</li>
+<li>
+<p><a href="https://github.com/grpc-ecosystem/grpc-simon-says">Real-time Simon Says</a> - If you have played the 70s handheld game "Simon" as a child, you know exactly what this is. There are example clients for the Web, IoT (arduino), Android, and command line. Built with <a href="https://grpc.io">gRPC</a> for bidirectional streaming and <a href="https://kubernetes.io">Kubernetes</a> for scalability.</p>
+</li>
+</ul>
+<!--lint ignore double-link-->
+<ul>
+<li><a href="https://github.com/GoogleCloudPlatform/click-to-deploy/tree/master/k8s">Click to Deploy Charts Repo</a> - Source for Google Click to Deploy solutions listed on <a href="https://cloud.google.com/marketplace">Google Cloud Marketplace</a>. Provide several examples with detailed READMEs on how-to install in a <a href="https://cloud.google.com/kubernetes-engine">Google Kubernetes Engine</a> cluster.</li>
+</ul>
+<!--lint ignore double-link-->
+<ul>
+<li><a href="https://github.com/GoogleCloudPlatform/bank-of-anthos/">Bank of Anthos</a> - Sample HTTP-based web application that simulates a bank's payment processing network. It runs on <a href="https://cloud.google.com/kubernetes-engine">Google Kubernetes Engine (GKE)</a> and showcases many other Google Cloud products such as <a href="https://cloud.google.com/anthos/service-mesh">Anthos Service Mesh (ASM)</a>, <a href="https://cloud.google.com/anthos/config-management">Anthos Config Management (ACM)</a>, <a href="https://cloud.google.com/products/operations">Cloud Operations</a>, <a href="https://cloud.google.com/sql/docs">Cloud SQL</a>, <a href="https://cloud.google.com/build">Cloud Build</a>, and <a href="https://cloud.google.com/deploy">Cloud Deploy</a>.</li>
+</ul>
+<!--lint ignore double-link-->
+<ul>
+<li><a href="https://github.com/GoogleCloudPlatform/microservices-demo/">Online Boutique</a> - Sample gRPC-based web application that simulates an ecommerce store. It runs on <a href="https://cloud.google.com/kubernetes-engine">Google Kubernetes Engine (GKE)</a>, is built of 11 microservices in 5 different languages, and showcases many other Google Cloud products.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <!--lint ignore no-dead-urls awesome-license-->
+<h1>Awesome Google Cloud <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<!--lint ignore double-link-->
+<p><a href="https://cloud.google.com"><img src="https://www.gstatic.com/images/branding/productlogos/google_cloud/v8/web-96dp/logo_google_cloud_color_1x_web_96dp.png" align="right"></a></p>
+<!--lint ignore double-link-->
+<p>A curated list of awesome applications, tools, and resources for <a href="https://cloud.google.com">Google Cloud</a>.</p>
+<p>Google Cloud is a suite of modular cloud services including computing, data storage, data analytics, and machine learning, alongside a set of management tools.</p>
+<p>If you are new to Google Cloud, there is a <a href="https://cloud.google.com/free-trial/">free trial</a> to try it out.</p>
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+<h2>Contents</h2>
+<ul>
+<li><a href="#general">General</a></li>
+<li><a href="#compute">Compute</a></li>
+<li><a href="#app-engine">App Engine</a></li>
+<li><a href="#cloud-functions">Cloud Functions</a></li>
+<li><a href="#cloud-run">Cloud Run</a></li>
+<li><a href="#kubernetes-engine">Kubernetes Engine</a></li>
+<li><a href="#cross-product">Cross-product</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#cloud-ai">Cloud AI</a></li>
+<li><a href="#cloud-vision-api">Cloud Vision API</a></li>
+<li><a href="#storage--databases">Storage &amp; Databases</a></li>
+<li><a href="#monorepo">Monorepo</a></li>
+<li><a href="#bazel-grpc-protocol-buffers">Bazel, gRPC, Protocol Buffers</a></li>
+<li><a href="#big-data">Big Data</a></li>
+<li><a href="#apache-beam--dataflow">Apache Beam &amp; Dataflow</a></li>
+<li><a href="#bigtable">Bigtable</a></li>
+<li><a href="#bigquery">BigQuery</a></li>
+<li><a href="#pubsub">Pub/Sub</a></li>
+<li><a href="#interactive-learning-resources">Interactive Learning Resources</a></li>
+<li><a href="#other-awesome-lists">Other Awesome Lists</a></li>
+<li><a href="#about-this-document">About This Document</a></li>
+<li><a href="#license">License</a></li>
+<li><a href="#disclaimer">Disclaimer</a></li>
+<li><a href="#contributing">Contributing</a></li>
+</ul>
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+<h2>General</h2>
+<ul>
+<li><a href="https://github.com/gregsramblings/google-cloud-4-words">"The Google Cloud Developer Cheat Sheet" by Greg Wilson</a> - A list of every product in the Google Cloud family described in 4 words or less.</li>
+<li><a href="https://www.linkedin.com/pulse/google-cloud-jumpstart-tutorials-community-david-das-neves/">"Google Cloud - Jumpstart, Tutorials &amp; Community!" by David das Neves</a> - Additional links about GCP including tutorials, solutions and community.</li>
+</ul>
+<h2>Compute</h2>
+<ul>
+<li><a href="https://cloud.google.com/products/compute/">Google Compute Engine</a> - From app platform to containers to VMs, cloud compute tailored to your needs.</li>
+</ul>
+<h3>App Engine</h3>
+<ul>
+<li><a href="https://cloud.google.com/nodejs/resources/frameworks/parse-server">Running Parse server on Google App Engine</a> - Deploy and run Parse server on Google App Engine with a sample Node.js app.</li>
+<li><a href="https://github.com/thesandlord/SlackEngine">SlackEngine</a> - Slack inviter running on Google App Engine.</li>
+</ul>
+<h3>Cloud Functions</h3>
+<ul>
+<li>
+<p><a href="https://github.com/GoogleCloudPlatform/functions-framework">Functions Framework</a> - An open source set of libraries for writing portable Google Cloud functions.</p>
+</li>
+<li>
+<p><a href="https://github.com/anovis/goblet">Goblet</a> - An open source library for serverless Python application development using Google Cloud functions.</p>
+</li>
+</ul>
+<h3>Cloud Run</h3>
+<ul>
+<li><a href="https://github.com/steren/awesome-cloudrun">Awesome Cloud Run</a> - Extensive list of awesome Cloud Run applications.</li>
+</ul>
+<h3>Kubernetes Engine</h3>
+<ul>
+<li>
+<p><a href="https://github.com/google/gke-policy-automation">GKE Policy Automation</a> - Tool and policy library for validating GKE clusters against configuration best practices.</p>
+</li>
+<li>
+<p><a href="https://github.com/grpc-ecosystem/grpc-simon-says">Real-time Simon Says</a> - If you have played the 70s handheld game "Simon" as a child, you know exactly what this is. There are example clients for the Web, IoT (arduino), Android, and command line. Built with <a href="https://grpc.io">gRPC</a> for bidirectional streaming and <a href="https://kubernetes.io">Kubernetes</a> for scalability.</p>
+</li>
+</ul>
+<!--lint ignore double-link-->
+<ul>
+<li><a href="https://github.com/GoogleCloudPlatform/click-to-deploy/tree/master/k8s">Click to Deploy Charts Repo</a> - Source for Google Click to Deploy solutions listed on <a href="https://cloud.google.com/marketplace">Google Cloud Marketplace</a>. Provide several examples with detailed READMEs on how-to install in a <a href="https://cloud.google.com/kubernetes-engine">Google Kubernetes Engine</a> cluster.</li>
+</ul>
+<!--lint ignore double-link-->
+<ul>
+<li><a href="https://github.com/GoogleCloudPlatform/bank-of-anthos/">Bank of Anthos</a> - Sample HTTP-based web application that simulates a bank's payment processing network. It runs on <a href="https://cloud.google.com/kubernetes-engine">Google Kubernetes Engine (GKE)</a> and showcases many other Google Cloud products such as <a href="https://cloud.google.com/anthos/service-mesh">Anthos Service Mesh (ASM)</a>, <a href="https://cloud.google.com/anthos/config-management">Anthos Config Management (ACM)</a>, <a href="https://cloud.google.com/products/operations">Cloud Operations</a>, <a href="https://cloud.google.com/sql/docs">Cloud SQL</a>, <a href="https://cloud.google.com/build">Cloud Build</a>, and <a href="https://cloud.google.com/deploy">Cloud Deploy</a>.</li>
+</ul>
+<!--lint ignore double-link-->
+<ul>
+<li><a href="https://github.com/GoogleCloudPlatform/microservices-demo/">Online Boutique</a> - Sample gRPC-based web application that simulates an ecommerce store. It runs on <a href="https://cloud.google.com/kubernetes-engine">Google Kubernetes Engine (GKE)</a>, is built of 11 microservices in 5 different languages, and showcases many other Google Cloud products.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'google-cloud_README.md';
 
         fetch(markdownFile)
@@ -48,21 +215,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

@@ -8,38 +8,161 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cyclejs Community Awesome Cyclejs - Awesome List Resources">
-    <title>Cyclejs Community Awesome Cyclejs</title>
+    <meta name="description" content="A collection of awesome Cycle.js tools, resources, videos and shiny things. - Learn - Documentation - Tutorials - Videos - Slides - Example Applications -...">
+    <meta name="robots" content="index, follow">
+    <title>Cycle Js - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h2>Awesome Cycle.js <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h2>
+<p>A collection of awesome Cycle.js tools, resources, videos and shiny things.</p>
+<ul>
+<li><a href="#learn">Learn</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#slides">Slides</a></li>
+<li><a href="#example-applications">Example Applications</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#cli">CLI</a></li>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#drivers">Drivers</a></li>
+<li><a href="#boilerplates">Boilerplates</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#debugging">Debugging</a></li>
+<li><a href="#components">Components</a></li>
+<li><a href="#community">Community</a></li>
+</ul>
+<hr />
+<h2>Learn</h2>
+<h3>Documentation</h3>
+<ul>
+<li><a href="http://cycle.js.org/">cycle.js.org</a> - Cycle.js official tutorial and documentation.</li>
+</ul>
+<h3>Tutorials</h3>
+<ul>
+<li><a href="http://thenewstack.io/developers-need-know-mvi-model-view-intent/">What Developers Need to Know about MVI (Model-View-Intent)</a> - Post on MVI architecture.</li>
+<li><a href="https://lucamezzalira.com/2016/05/23/cycle-js-a-reactive-framework/">Cycle.js: a reactive framework</a> - Introduction to Cycle.js with real time data example.</li>
+<li><a href="https://blog.pusher.com/building-realtime-applications-with-cyclejs-and-rxjs/">Building realtime applications with CycleJS and RxJS</a> - Learn how to build realtime applications with CycleJS and RxJS</li>
+<li><a href="http://ivanjov.com/working-with-http-streams-with-cycle-js/">Working with HTTP Streams with Cycle.js</a> - Learn how to use Cycle.js to handle HTTP requests and responses</li>
+</ul>
+<h3>Videos</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=1zj7M1LnJV4">What if the user was a function?</a> - Presentation at JSConf BP2015 by <a href="https://twitter.com/andrestaltz">Andre Staltz</a></li>
+<li><a href="https://vimeo.com/168652278">Unidirectional data flow architectures</a> - Presentation AtTheFrontend Conference by <a href="https://twitter.com/andrestaltz">Andre Staltz</a></li>
+<li><a href="https://www.youtube.com/watch?v=uNZnftSksYg">Cycle.js and functional reactive user interfaces</a> - Presentation at ReactiveConf 2015 by <a href="http://twitter.com/andrestaltz">Andre Staltz</a></li>
+<li><a href="https://www.youtube.com/watch?v=6_ETUyh0tns">Intro to Functional Reactive Programming with Cycle.js</a> - Presentation by <a href="https://twitter.com/widdnz">Nick Johnstone</a></li>
+<li><a href="https://egghead.io/series/cycle-js-fundamentals">Cycle.js Fundamentals</a> - Playlist at <a href="https://egghead.io">egghead.io</a></li>
+<li><a href="https://www.youtube.com/watch?v=Rj8ZTRVka4E">Cycle.js was built to solve problems</a> - by Andre Staltz at <a href="http://frontend.fi/">Frontend.fi</a></li>
+<li><a href="https://www.youtube.com/watch?v=1ToJ7cxb1R8">Brains as Building Blocks</a> - by Andre Staltz at <a href="http://cycleconf.com/">CycleConf 2016</a></li>
+<li><a href="https://www.youtube.com/watch?v=rbrnyC5fXMM">Back to the Future, Hot reloading with Cycle.js</a> - by Nick Johnstone at <a href="http://cycleconf.com/">CycleConf 2016</a></li>
+<li><a href="https://www.youtube.com/watch?v=-PCq4pXaDZw">From MVC to FRP</a> - by Gleb Bahmutov at <a href="http://cycleconf.com/">CycleConf 2016</a></li>
+<li><a href="https://www.youtube.com/watch?v=Rx5N99TQ52g">Cycle.js on the bash side</a> - by Hadrien de Cuzey at <a href="http://cycleconf.com/">CycleConf 2016</a></li>
+<li><a href="https://vimeo.com/175121069">Reactive Programming with Cycle.js</a> - by Luca Mezzalira at <a href="http://2016.jsday.it/">JSDay 2016</a></li>
+<li><a href="https://youtu.be/31URmaeNHSs">Learning how to ride: an introduction to Cycle.js</a> - by Fernando Macias Pereznieto at <a href="http://www.meetup.com/js-monthly-london/">JS Monthly London</a></li>
+<li><a href="https://www.youtube.com/watch?v=9BG0Y3C6WqM">User Interfaces as Pure Functions of Time</a> - Lightning talk by <a href="http://twitter.com/atomrc">Thomas Belin</a> at <a href="http://dotjs.io/">dotjs 2016</a></li>
+</ul>
+<h3>Slides</h3>
+<ul>
+<li><a href="http://slides.com/erykpiast/cycle">Cycle.js an honestly reactive framework for web user interfaces</a> - by Eryk Napierała</li>
+<li><a href="http://www.slideshare.net/aryelukashevski/cyclejs-introduction">Intro to Cycle.js</a> - by Arye Lukashevki</li>
+<li><a href="http://www.slideshare.net/flashplatform/reactive-programming-with-cyclejs">Reactive Programming with Cycle.js</a> - by Luca Mezzalira</li>
+<li><a href="http://lmatteis.github.io/cyclejs-slides/keynote/index.html">Cycle.js - building apps with streams only</a> - by Luca Matteis</li>
+<li><a href="https://slides.com/artfuldev/frp-with-cycle-js">Functional Reactive Programming with Cycle.js</a> - by Sudarsan Balaji</li>
+<li><a href="https://clementd-files.cellar.services.clever-cloud.com/blog/frp-full-cycle-ncrafts.html">Beyond flux: going full cycle with FRP</a> - by <a href="http://clementd.cleverapps.io/">Clément Delafargue</a></li>
+</ul>
+<h3>Example Applications</h3>
+<ul>
+<li><a href="https://github.com/cyclejs/cyclejs/tree/master/examples"><strong>cyclejs/cycle-examples</strong></a> - Official collection of small Cycle.js examples</li>
+<li><a href="https://github.com/Widdershin/tricycle">Widdershin/tricycle ★23</a> - Scratchpad for trying out Cycle.js, relies on Ace Editor with Cycle</li>
+<li><a href="https://github.com/cgeorg/todomvp">cgeorg/todomvp ★21</a> - Minimum Viable Pizza, an example webapp written in Cycle.js</li>
+<li><a href="https://github.com/erykpiast/cyclejs-examples">erykpiast/cyclejs-examples ★9</a> - Example web applications built with Cycle.js.</li>
+<li><a href="https://github.com/grozen/trends-cycle">grozen/trends-cycle ★3</a> - Slack trend searching written in Cycle.js</li>
+<li><a href="https://github.com/ivan-kleshnin/cyclejs-examples">ivan-kleshnin/cyclejs-examples ★120</a> - Collection of CycleJS examples, ES6.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h2>Awesome Cycle.js <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h2>
+<p>A collection of awesome Cycle.js tools, resources, videos and shiny things.</p>
+<ul>
+<li><a href="#learn">Learn</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#slides">Slides</a></li>
+<li><a href="#example-applications">Example Applications</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#cli">CLI</a></li>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#drivers">Drivers</a></li>
+<li><a href="#boilerplates">Boilerplates</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#debugging">Debugging</a></li>
+<li><a href="#components">Components</a></li>
+<li><a href="#community">Community</a></li>
+</ul>
+<hr />
+<h2>Learn</h2>
+<h3>Documentation</h3>
+<ul>
+<li><a href="http://cycle.js.org/">cycle.js.org</a> - Cycle.js official tutorial and documentation.</li>
+</ul>
+<h3>Tutorials</h3>
+<ul>
+<li><a href="http://thenewstack.io/developers-need-know-mvi-model-view-intent/">What Developers Need to Know about MVI (Model-View-Intent)</a> - Post on MVI architecture.</li>
+<li><a href="https://lucamezzalira.com/2016/05/23/cycle-js-a-reactive-framework/">Cycle.js: a reactive framework</a> - Introduction to Cycle.js with real time data example.</li>
+<li><a href="https://blog.pusher.com/building-realtime-applications-with-cyclejs-and-rxjs/">Building realtime applications with CycleJS and RxJS</a> - Learn how to build realtime applications with CycleJS and RxJS</li>
+<li><a href="http://ivanjov.com/working-with-http-streams-with-cycle-js/">Working with HTTP Streams with Cycle.js</a> - Learn how to use Cycle.js to handle HTTP requests and responses</li>
+</ul>
+<h3>Videos</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=1zj7M1LnJV4">What if the user was a function?</a> - Presentation at JSConf BP2015 by <a href="https://twitter.com/andrestaltz">Andre Staltz</a></li>
+<li><a href="https://vimeo.com/168652278">Unidirectional data flow architectures</a> - Presentation AtTheFrontend Conference by <a href="https://twitter.com/andrestaltz">Andre Staltz</a></li>
+<li><a href="https://www.youtube.com/watch?v=uNZnftSksYg">Cycle.js and functional reactive user interfaces</a> - Presentation at ReactiveConf 2015 by <a href="http://twitter.com/andrestaltz">Andre Staltz</a></li>
+<li><a href="https://www.youtube.com/watch?v=6_ETUyh0tns">Intro to Functional Reactive Programming with Cycle.js</a> - Presentation by <a href="https://twitter.com/widdnz">Nick Johnstone</a></li>
+<li><a href="https://egghead.io/series/cycle-js-fundamentals">Cycle.js Fundamentals</a> - Playlist at <a href="https://egghead.io">egghead.io</a></li>
+<li><a href="https://www.youtube.com/watch?v=Rj8ZTRVka4E">Cycle.js was built to solve problems</a> - by Andre Staltz at <a href="http://frontend.fi/">Frontend.fi</a></li>
+<li><a href="https://www.youtube.com/watch?v=1ToJ7cxb1R8">Brains as Building Blocks</a> - by Andre Staltz at <a href="http://cycleconf.com/">CycleConf 2016</a></li>
+<li><a href="https://www.youtube.com/watch?v=rbrnyC5fXMM">Back to the Future, Hot reloading with Cycle.js</a> - by Nick Johnstone at <a href="http://cycleconf.com/">CycleConf 2016</a></li>
+<li><a href="https://www.youtube.com/watch?v=-PCq4pXaDZw">From MVC to FRP</a> - by Gleb Bahmutov at <a href="http://cycleconf.com/">CycleConf 2016</a></li>
+<li><a href="https://www.youtube.com/watch?v=Rx5N99TQ52g">Cycle.js on the bash side</a> - by Hadrien de Cuzey at <a href="http://cycleconf.com/">CycleConf 2016</a></li>
+<li><a href="https://vimeo.com/175121069">Reactive Programming with Cycle.js</a> - by Luca Mezzalira at <a href="http://2016.jsday.it/">JSDay 2016</a></li>
+<li><a href="https://youtu.be/31URmaeNHSs">Learning how to ride: an introduction to Cycle.js</a> - by Fernando Macias Pereznieto at <a href="http://www.meetup.com/js-monthly-london/">JS Monthly London</a></li>
+<li><a href="https://www.youtube.com/watch?v=9BG0Y3C6WqM">User Interfaces as Pure Functions of Time</a> - Lightning talk by <a href="http://twitter.com/atomrc">Thomas Belin</a> at <a href="http://dotjs.io/">dotjs 2016</a></li>
+</ul>
+<h3>Slides</h3>
+<ul>
+<li><a href="http://slides.com/erykpiast/cycle">Cycle.js an honestly reactive framework for web user interfaces</a> - by Eryk Napierała</li>
+<li><a href="http://www.slideshare.net/aryelukashevski/cyclejs-introduction">Intro to Cycle.js</a> - by Arye Lukashevki</li>
+<li><a href="http://www.slideshare.net/flashplatform/reactive-programming-with-cyclejs">Reactive Programming with Cycle.js</a> - by Luca Mezzalira</li>
+<li><a href="http://lmatteis.github.io/cyclejs-slides/keynote/index.html">Cycle.js - building apps with streams only</a> - by Luca Matteis</li>
+<li><a href="https://slides.com/artfuldev/frp-with-cycle-js">Functional Reactive Programming with Cycle.js</a> - by Sudarsan Balaji</li>
+<li><a href="https://clementd-files.cellar.services.clever-cloud.com/blog/frp-full-cycle-ncrafts.html">Beyond flux: going full cycle with FRP</a> - by <a href="http://clementd.cleverapps.io/">Clément Delafargue</a></li>
+</ul>
+<h3>Example Applications</h3>
+<ul>
+<li><a href="https://github.com/cyclejs/cyclejs/tree/master/examples"><strong>cyclejs/cycle-examples</strong></a> - Official collection of small Cycle.js examples</li>
+<li><a href="https://github.com/Widdershin/tricycle">Widdershin/tricycle ★23</a> - Scratchpad for trying out Cycle.js, relies on Ace Editor with Cycle</li>
+<li><a href="https://github.com/cgeorg/todomvp">cgeorg/todomvp ★21</a> - Minimum Viable Pizza, an example webapp written in Cycle.js</li>
+<li><a href="https://github.com/erykpiast/cyclejs-examples">erykpiast/cyclejs-examples ★9</a> - Example web applications built with Cycle.js.</li>
+<li><a href="https://github.com/grozen/trends-cycle">grozen/trends-cycle ★3</a> - Slack trend searching written in Cycle.js</li>
+<li><a href="https://github.com/ivan-kleshnin/cyclejs-examples">ivan-kleshnin/cyclejs-examples ★120</a> - Collection of CycleJS examples, ES6.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'cycle-js_README.md';
 
         fetch(markdownFile)
@@ -48,21 +171,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

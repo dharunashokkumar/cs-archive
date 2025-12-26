@@ -8,38 +8,187 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Michaelbrusegard Awesome Wezterm - Awesome List Resources">
-    <title>Michaelbrusegard Awesome Wezterm</title>
+    <meta name="description" content="> Collections of awesome WezTerm plugins. Plugin Guide. Found something cool? Please contribute! WezTerm is a powerful cross-platform terminal emulator and...">
+    <meta name="robots" content="index, follow">
+    <title>Wezterm - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <!-- lint ignore awesome-git-repo-age -->
+
+<h1>Awesome WezTerm <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p><img src="https://raw.githubusercontent.com/wez/wezterm/main/assets/icon/wezterm-icon.svg" align="right" width="144" /></p>
+<blockquote>
+<p>Collections of awesome WezTerm plugins. <a href="https://github.com/wezterm/wezterm/blob/main/docs/config/plugins.md">Plugin Guide</a>. Found something cool? Please <a href="CONTRIBUTING.md">contribute</a>!</p>
+</blockquote>
+<p><a href="https://wezfurlong.org/wezterm/">WezTerm</a> is a powerful cross-platform terminal emulator and multiplexer written by <a href="https://github.com/wez">@wez</a> and implemented in <a href="https://www.rust-lang.org">Rust</a>.</p>
+<p>To enhance your WezTerm configuration experience:</p>
+<ul>
+<li><a href="https://github.com/DrKJeff16/wezterm-types">DrKJeff16/wezterm-types</a> - WezTerm types that can be added as a completion source in your editor to provide code assistance when working with WezTerm's Lua API.</li>
+</ul>
+<h2>Contents</h2>
+<ul>
+<li><a href="#ai">AI</a></li>
+<li><a href="#keybinding">Keybinding</a></li>
+<li><a href="#media">Media</a></li>
+<li><a href="#neovim">Neovim</a></li>
+<li><a href="#panes">Panes</a></li>
+<li><a href="#session">Session</a></li>
+<li><a href="#tab-bar">Tab bar</a></li>
+<li><a href="#themes">Themes</a></li>
+<li><a href="#utility">Utility</a></li>
+</ul>
+<h2>AI</h2>
+<ul>
+<li><a href="https://github.com/Michal1993r/ai-helper.wezterm/tree/master">Michal1993r/ai-helper.wezterm</a> - Ask AI for CLI help with LM Studio or Google Gemini.</li>
+<li><a href="https://github.com/dimao/ai-commander.wezterm">dimao/ai-commander.wezterm</a> - Generate and select bash commands based on natural language prompts.</li>
+</ul>
+<h2>Keybinding</h2>
+<ul>
+<li><a href="https://github.com/MLFlexer/modal.wezterm">MLFlexer/modal.wezterm</a> - Predefined Vim-like modal keybindings with a good looking UI.</li>
+<li><a href="https://github.com/sei40kr/wez-pain-control?tab=readme-ov-file">sei40kr/wez-pain-control</a> - Pane control keybindings like tmux-pain-control.</li>
+<li><a href="https://github.com/sei40kr/wez-tmux">sei40kr/wez-tmux</a> - Ported tmux keybindings.</li>
+<li><a href="https://github.com/selectnull/pinned-tabs.wezterm">selectnull/pinned-tabs.wezterm</a> - Lets you assign a key binding to a specific tab.</li>
+</ul>
+<h2>Media</h2>
+<ul>
+<li><a href="https://github.com/xarvex/presentation.wez">xarvex/presentation.wez</a> - Rather simple presentation mode toggle.</li>
+</ul>
+<h2>Neovim</h2>
+<ul>
+<li><a href="https://github.com/mrjones2014/smart-splits.nvim">mrjones2014/smart-splits.nvim</a> - Provides an addon for seamless pane navigation between Neovim and the WezTerm MUX.</li>
+<li><a href="https://github.com/winter-again/wezterm-config.nvim">winter-again/wezterm-config.nvim</a> - Interact with the WezTerm configuration directly from Neovim.</li>
+</ul>
+<h2>Panes</h2>
+<ul>
+<li><a href="https://github.com/ChrisGVE/pivot_panes.wezterm">ChrisGVE/pivot_panes.wezterm</a> - Toggle pane orientation between horizontal and vertical splits.</li>
+<li><a href="https://github.com/bad-noodles/stack.wez">bad-noodles/stack.wez</a> - Stacked pane mode, work with multiple panes but see only one at a time.</li>
+</ul>
+<h2>Session</h2>
+<ul>
+<li><a href="https://github.com/DavidRR-F/quick_domains.wezterm">DavidRR-F/quick_domains.wezterm</a> - Faster way to search and attach to (SSH) domains.</li>
+<li><a href="https://github.com/JuanraCM/wsinit.wezterm">JuanraCM/wsinit.wezterm</a> - A simple and flexible way to manage and initialize workspace configurations.</li>
+<li><a href="https://github.com/mikkasendke/sessionizer.wezterm">mikkasendke/sessionizer.wezterm</a> - Opening Git repositories as their own WezTerm workspaces using <code>fd</code>.</li>
+<li><a href="https://github.com/MLFlexer/resurrect.wezterm">MLFlexer/resurrect.wezterm</a> - Save and restore the state of windows, tabs and panes.</li>
+<li><a href="https://github.com/MLFlexer/smart_workspace_switcher.wezterm">MLFlexer/smart_workspace_switcher.wezterm</a> - Switch between workspaces with fuzzy finding and <code>zoxide</code>.</li>
+<li><a href="https://github.com/vieitesss/workspacesionizer.wezterm">vieitesss/workspacesionizer.wezterm</a> - Blazingly fast workspace chooser inspired by <code>tmux-sessionizer</code>.</li>
+<li><a href="https://github.com/abidibo/wezterm-sessions">abidibo/wezterm-sessions</a> - Save and restore sessions.</li>
+</ul>
+<h2>Tab bar</h2>
+<ul>
+<li><a href="https://github.com/adriankarlen/bar.wezterm">adriankarlen/bar.wezterm</a> - A configurable tab bar with batteries included.</li>
+<li><a href="https://github.com/michaelbrusegard/tabline.wez">michaelbrusegard/tabline.wez</a> - A versatile and easy to use retro tab bar with the <code>lualine.nvim</code> configuration format.</li>
+<li><a href="https://github.com/rootiest/battery.wez">rootiest/battery.wez</a> - A colorful and fancy battery component for the retro tab bar.</li>
+<li><a href="https://github.com/yriveiro/wezterm-status">yriveiro/wezterm-status</a> - Configurable status for the retro tab bar.</li>
+<li><a href="https://github.com/yriveiro/wezterm-tabs">yriveiro/wezterm-tabs</a> - Configurable tabs for the retro tab bar.</li>
+</ul>
+<h2>Themes</h2>
+<ul>
+<li><a href="https://github.com/neapsix/wezterm">neapsix/wezterm</a> - Rosé Pine theme, all natural pine, faux fur and a bit of soho vibes.</li>
+<li><a href="https://github.com/koh-sh/wezterm-theme-rotator">koh-sh/wezterm-theme-rotator</a> - Cycle through built-in themes using keyboard shortcuts.</li>
+</ul>
+<h2>Utility</h2>
+<ul>
+<li><a href="https://github.com/aureolebigben/wezterm-cmd-sender">aureolebigben/wezterm-cmd-sender</a> - Send commands to multiple panes.</li>
+<li><a href="https://github.com/ChrisGVE/dev.wezterm">ChrisGVE/dev.wezterm</a> - Location resolver for development and deployment of a plugin.</li>
+<li><a href="https://github.com/ChrisGVE/lib.wezterm">ChrisGVE/lib.wezterm</a> - A library of common utility functions for plugin developers.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <!-- lint ignore awesome-git-repo-age -->
+
+<h1>Awesome WezTerm <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p><img src="https://raw.githubusercontent.com/wez/wezterm/main/assets/icon/wezterm-icon.svg" align="right" width="144" /></p>
+<blockquote>
+<p>Collections of awesome WezTerm plugins. <a href="https://github.com/wezterm/wezterm/blob/main/docs/config/plugins.md">Plugin Guide</a>. Found something cool? Please <a href="CONTRIBUTING.md">contribute</a>!</p>
+</blockquote>
+<p><a href="https://wezfurlong.org/wezterm/">WezTerm</a> is a powerful cross-platform terminal emulator and multiplexer written by <a href="https://github.com/wez">@wez</a> and implemented in <a href="https://www.rust-lang.org">Rust</a>.</p>
+<p>To enhance your WezTerm configuration experience:</p>
+<ul>
+<li><a href="https://github.com/DrKJeff16/wezterm-types">DrKJeff16/wezterm-types</a> - WezTerm types that can be added as a completion source in your editor to provide code assistance when working with WezTerm's Lua API.</li>
+</ul>
+<h2>Contents</h2>
+<ul>
+<li><a href="#ai">AI</a></li>
+<li><a href="#keybinding">Keybinding</a></li>
+<li><a href="#media">Media</a></li>
+<li><a href="#neovim">Neovim</a></li>
+<li><a href="#panes">Panes</a></li>
+<li><a href="#session">Session</a></li>
+<li><a href="#tab-bar">Tab bar</a></li>
+<li><a href="#themes">Themes</a></li>
+<li><a href="#utility">Utility</a></li>
+</ul>
+<h2>AI</h2>
+<ul>
+<li><a href="https://github.com/Michal1993r/ai-helper.wezterm/tree/master">Michal1993r/ai-helper.wezterm</a> - Ask AI for CLI help with LM Studio or Google Gemini.</li>
+<li><a href="https://github.com/dimao/ai-commander.wezterm">dimao/ai-commander.wezterm</a> - Generate and select bash commands based on natural language prompts.</li>
+</ul>
+<h2>Keybinding</h2>
+<ul>
+<li><a href="https://github.com/MLFlexer/modal.wezterm">MLFlexer/modal.wezterm</a> - Predefined Vim-like modal keybindings with a good looking UI.</li>
+<li><a href="https://github.com/sei40kr/wez-pain-control?tab=readme-ov-file">sei40kr/wez-pain-control</a> - Pane control keybindings like tmux-pain-control.</li>
+<li><a href="https://github.com/sei40kr/wez-tmux">sei40kr/wez-tmux</a> - Ported tmux keybindings.</li>
+<li><a href="https://github.com/selectnull/pinned-tabs.wezterm">selectnull/pinned-tabs.wezterm</a> - Lets you assign a key binding to a specific tab.</li>
+</ul>
+<h2>Media</h2>
+<ul>
+<li><a href="https://github.com/xarvex/presentation.wez">xarvex/presentation.wez</a> - Rather simple presentation mode toggle.</li>
+</ul>
+<h2>Neovim</h2>
+<ul>
+<li><a href="https://github.com/mrjones2014/smart-splits.nvim">mrjones2014/smart-splits.nvim</a> - Provides an addon for seamless pane navigation between Neovim and the WezTerm MUX.</li>
+<li><a href="https://github.com/winter-again/wezterm-config.nvim">winter-again/wezterm-config.nvim</a> - Interact with the WezTerm configuration directly from Neovim.</li>
+</ul>
+<h2>Panes</h2>
+<ul>
+<li><a href="https://github.com/ChrisGVE/pivot_panes.wezterm">ChrisGVE/pivot_panes.wezterm</a> - Toggle pane orientation between horizontal and vertical splits.</li>
+<li><a href="https://github.com/bad-noodles/stack.wez">bad-noodles/stack.wez</a> - Stacked pane mode, work with multiple panes but see only one at a time.</li>
+</ul>
+<h2>Session</h2>
+<ul>
+<li><a href="https://github.com/DavidRR-F/quick_domains.wezterm">DavidRR-F/quick_domains.wezterm</a> - Faster way to search and attach to (SSH) domains.</li>
+<li><a href="https://github.com/JuanraCM/wsinit.wezterm">JuanraCM/wsinit.wezterm</a> - A simple and flexible way to manage and initialize workspace configurations.</li>
+<li><a href="https://github.com/mikkasendke/sessionizer.wezterm">mikkasendke/sessionizer.wezterm</a> - Opening Git repositories as their own WezTerm workspaces using <code>fd</code>.</li>
+<li><a href="https://github.com/MLFlexer/resurrect.wezterm">MLFlexer/resurrect.wezterm</a> - Save and restore the state of windows, tabs and panes.</li>
+<li><a href="https://github.com/MLFlexer/smart_workspace_switcher.wezterm">MLFlexer/smart_workspace_switcher.wezterm</a> - Switch between workspaces with fuzzy finding and <code>zoxide</code>.</li>
+<li><a href="https://github.com/vieitesss/workspacesionizer.wezterm">vieitesss/workspacesionizer.wezterm</a> - Blazingly fast workspace chooser inspired by <code>tmux-sessionizer</code>.</li>
+<li><a href="https://github.com/abidibo/wezterm-sessions">abidibo/wezterm-sessions</a> - Save and restore sessions.</li>
+</ul>
+<h2>Tab bar</h2>
+<ul>
+<li><a href="https://github.com/adriankarlen/bar.wezterm">adriankarlen/bar.wezterm</a> - A configurable tab bar with batteries included.</li>
+<li><a href="https://github.com/michaelbrusegard/tabline.wez">michaelbrusegard/tabline.wez</a> - A versatile and easy to use retro tab bar with the <code>lualine.nvim</code> configuration format.</li>
+<li><a href="https://github.com/rootiest/battery.wez">rootiest/battery.wez</a> - A colorful and fancy battery component for the retro tab bar.</li>
+<li><a href="https://github.com/yriveiro/wezterm-status">yriveiro/wezterm-status</a> - Configurable status for the retro tab bar.</li>
+<li><a href="https://github.com/yriveiro/wezterm-tabs">yriveiro/wezterm-tabs</a> - Configurable tabs for the retro tab bar.</li>
+</ul>
+<h2>Themes</h2>
+<ul>
+<li><a href="https://github.com/neapsix/wezterm">neapsix/wezterm</a> - Rosé Pine theme, all natural pine, faux fur and a bit of soho vibes.</li>
+<li><a href="https://github.com/koh-sh/wezterm-theme-rotator">koh-sh/wezterm-theme-rotator</a> - Cycle through built-in themes using keyboard shortcuts.</li>
+</ul>
+<h2>Utility</h2>
+<ul>
+<li><a href="https://github.com/aureolebigben/wezterm-cmd-sender">aureolebigben/wezterm-cmd-sender</a> - Send commands to multiple panes.</li>
+<li><a href="https://github.com/ChrisGVE/dev.wezterm">ChrisGVE/dev.wezterm</a> - Location resolver for development and deployment of a plugin.</li>
+<li><a href="https://github.com/ChrisGVE/lib.wezterm">ChrisGVE/lib.wezterm</a> - A library of common utility functions for plugin developers.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'wezterm_README.md';
 
         fetch(markdownFile)
@@ -48,21 +197,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

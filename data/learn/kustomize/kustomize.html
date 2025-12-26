@@ -8,38 +8,181 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Devopshivehq Awesome Kustomize - Awesome List Resources">
-    <title>Devopshivehq Awesome Kustomize</title>
+    <meta name="description" content="> A curated and collaborative list of awesome Kustomize resources. Kustomize introduces a template-free way to customize Kubernetes manifests. It's extensible...">
+    <meta name="robots" content="index, follow">
+    <title>Kustomize - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <!-- omit in toc -->
+<h1>Awesome Kustomize <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://raw.githubusercontent.com/sindresorhus/awesome/main/media/badge.svg" /></a> <a href="https://github.com/aabouzaid/awesome-kustomize/compare"><img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" /></a></h1>
+<p align="center">
+  <a href="https://kustomize.io">
+    <img src="img/awesome-kustomize.svg" width="90%">
+  </a>
+</p>
+
+<blockquote>
+<p>A curated and collaborative list of awesome Kustomize resources.</p>
+</blockquote>
+<p><a href="https://kustomize.io">Kustomize</a> introduces a template-free way to customize Kubernetes manifests. It's extensible and uses a purely declarative approach to configuration customization, which will help you efficiently manage your Infrastructure as a code (IaC).</p>
+<p>Contributions are welcome, add links through <a href="https://github.com/aabouzaid/awesome-kustomize/pulls">pull requests</a> or create an issue to start a discussion.</p>
+<p>Push it forward and add the project badge in your repo to support the community! ⭐</p>
+<p>Markdown:</p>
+<pre><code class="language-text">[![Awesome Kustomize](https://devopshive.com/badges/awesome-kustomize.svg)](https://github.com/DevOpsHiveHQ/awesome-kustomize)
+</code></pre>
+<p>Preview:</p>
+<p><a href="https://github.com/DevOpsHiveHQ/awesome-kustomize"><img alt="Awesome Kustomize" src="https://raw.githubusercontent.com/DevOpsHiveHQ/awesome-kustomize/main/img/awesome-kustomize-badge.svg" /></a></p>
+<!-- omit in toc -->
+<h2>Contents</h2>
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#plugins">Plugins</a></li>
+<li><a href="#generators">Generators</a></li>
+<li><a href="#transformers">Transformers</a></li>
+<li><a href="#validators">Validators</a></li>
+<li><a href="#guides">Guides</a></li>
+<li><a href="#novice">Novice</a></li>
+<li><a href="#intermediate">Intermediate</a></li>
+<li><a href="#advanced">Advanced</a></li>
+<li><a href="#tips--tricks">Tips \&amp; Tricks</a></li>
+<li><a href="#snippets">Snippets</a></li>
+<li><a href="#misc">Misc</a></li>
+<li><a href="#related-lists">Related lists</a></li>
+</ul>
+<h2>Overview</h2>
+<p>Kustomize works as a standalone binary; also, it's built into <code>kubectl</code> (since v1.14). It can be used with off-the-shelf applications like <strong>Helm charts</strong>. Also, it has a deep integration with different <strong>GitOps</strong> tools like ArgoCD, Flux, and many others.</p>
+<h2>Plugins</h2>
+<p>Kustomize has 3 types of plugins <code>generator</code>, <code>transformer</code>, and <code>validator</code>.</p>
+<blockquote>
+<p>Note</p>
+<p>If you are a plugin developer, it's highly recommended to support the new plugins standard
+<a href="https://github.com/kubernetes-sigs/kustomize/blob/master/cmd/config/docs/api-conventions/functions-spec.md">KRM function</a>.</p>
+</blockquote>
+<h3>Generators</h3>
+<ul>
+<li><a href="https://github.com/bbl/secretize">Secretize</a> - Generating Kubernetes Secret from various sources. It's like a swiss army knife, but for Kubernetes secrets (Exec).</li>
+<li><a href="https://github.com/goabout/kustomize-sopssecretgenerator/">SopsSecretGenerator</a> - Generating Secrets from sops-encrypted files (Exec, Exec KRM).</li>
+<li><a href="https://github.com/viaduct-ai/kustomize-sops">KSops</a> - Generating Secrets from sops-encrypted files (Exec).</li>
+<li><a href="https://github.com/open-cluster-management-io/policy-generator-plugin">PolicyGenerator</a> - Generating Open Cluster Management policies (Exec).</li>
+<li><a href="https://github.com/kaweezle/krmfnbuiltin">KRMFfnBuiltin</a> - Running builtin generators transformers (Exec).</li>
+<li><a href="https://github.com/aabouzaid/kustomize-plugin-merger">Merger</a> - Generating manifests seamlessly by extending Kustomize merge strategies using schemaless StrategicMerge (Containerized KRM, Exec KRM).</li>
+</ul>
+<h3>Transformers</h3>
+<ul>
+<li><a href="https://github.com/openinfradev/kustomize-helm-transformer">HelmValuesTransformer</a> - Transforming values in HelmRelease CustomResource. It helps to manage a lot of HelmRelease's value in single transformer file (Exec).</li>
+<li><a href="https://github.com/joshdk/template-transformer">TemplateTransformer</a> - Providing a set of KRM Functions to run builtin transformers in place (Containerized KRM, Exec KRM).</li>
+</ul>
+<h3>Validators</h3>
+<ul>
+<li><a href="https://github.com/aabouzaid/kustomize-kubeconformvalidator">KubeconformValidator</a> - Validating Kubernetes manifests using embedded Kubeconform (Containerized KRM, Exec KRM).</li>
+</ul>
+<h2>Guides</h2>
+<p>Kustomize guides based on their level or type like 📰 Article, 📺 Video, 🧪 Lab.</p>
+<h3>Novice</h3>
+<ul>
+<li>📰 <a href="https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/">Declarative Management of Kubernetes Objects Using Kustomize</a> - The official Kubernetes documentation task for Kustomize.</li>
+<li>📰 <a href="https://cloud.google.com/anthos-config-management/docs/concepts/kustomize">Configure Kubernetes with Kustomize</a> - A guide helps to get started with Kustomize, understand its intended use cases, and find resources for using it with other Google Cloud tools.</li>
+<li>📺 <a href="https://www.youtube.com/watch?v=1fCAwFGX38U">Organizing the YAML mess with Kustomize</a> - A talk shows how Kustomize could help to manage Kubernetes YAML files with a growing number of services and environments.</li>
+<li>📺 <a href="https://www.youtube.com/watch?v=ahMIBxufNR0">Kustomize: Deploy Your App with Template Free YAML</a> - A talk introduces Kustomize, a declarative application management system, that allows deployments to be described as template free YAML.</li>
+</ul>
+<h3>Intermediate</h3>
+<ul>
+<li>🧪 <a href="https://redhat-scholars.github.io/argocd-tutorial/argocd-tutorial/03-kustomize.html">ArgoCD GitOps Tutorial - Working with Kustomize</a> - A hands-on lab covers using Kustomize in GitOps and it goes through the Kustomize syntax and deploying a Kustomized application.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <!-- omit in toc -->
+<h1>Awesome Kustomize <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://raw.githubusercontent.com/sindresorhus/awesome/main/media/badge.svg" /></a> <a href="https://github.com/aabouzaid/awesome-kustomize/compare"><img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" /></a></h1>
+<p align="center">
+  <a href="https://kustomize.io">
+    <img src="img/awesome-kustomize.svg" width="90%">
+  </a>
+</p>
+
+<blockquote>
+<p>A curated and collaborative list of awesome Kustomize resources.</p>
+</blockquote>
+<p><a href="https://kustomize.io">Kustomize</a> introduces a template-free way to customize Kubernetes manifests. It's extensible and uses a purely declarative approach to configuration customization, which will help you efficiently manage your Infrastructure as a code (IaC).</p>
+<p>Contributions are welcome, add links through <a href="https://github.com/aabouzaid/awesome-kustomize/pulls">pull requests</a> or create an issue to start a discussion.</p>
+<p>Push it forward and add the project badge in your repo to support the community! ⭐</p>
+<p>Markdown:</p>
+<pre><code class="language-text">[![Awesome Kustomize](https://devopshive.com/badges/awesome-kustomize.svg)](https://github.com/DevOpsHiveHQ/awesome-kustomize)
+</code></pre>
+<p>Preview:</p>
+<p><a href="https://github.com/DevOpsHiveHQ/awesome-kustomize"><img alt="Awesome Kustomize" src="https://raw.githubusercontent.com/DevOpsHiveHQ/awesome-kustomize/main/img/awesome-kustomize-badge.svg" /></a></p>
+<!-- omit in toc -->
+<h2>Contents</h2>
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#plugins">Plugins</a></li>
+<li><a href="#generators">Generators</a></li>
+<li><a href="#transformers">Transformers</a></li>
+<li><a href="#validators">Validators</a></li>
+<li><a href="#guides">Guides</a></li>
+<li><a href="#novice">Novice</a></li>
+<li><a href="#intermediate">Intermediate</a></li>
+<li><a href="#advanced">Advanced</a></li>
+<li><a href="#tips--tricks">Tips \&amp; Tricks</a></li>
+<li><a href="#snippets">Snippets</a></li>
+<li><a href="#misc">Misc</a></li>
+<li><a href="#related-lists">Related lists</a></li>
+</ul>
+<h2>Overview</h2>
+<p>Kustomize works as a standalone binary; also, it's built into <code>kubectl</code> (since v1.14). It can be used with off-the-shelf applications like <strong>Helm charts</strong>. Also, it has a deep integration with different <strong>GitOps</strong> tools like ArgoCD, Flux, and many others.</p>
+<h2>Plugins</h2>
+<p>Kustomize has 3 types of plugins <code>generator</code>, <code>transformer</code>, and <code>validator</code>.</p>
+<blockquote>
+<p>Note</p>
+<p>If you are a plugin developer, it's highly recommended to support the new plugins standard
+<a href="https://github.com/kubernetes-sigs/kustomize/blob/master/cmd/config/docs/api-conventions/functions-spec.md">KRM function</a>.</p>
+</blockquote>
+<h3>Generators</h3>
+<ul>
+<li><a href="https://github.com/bbl/secretize">Secretize</a> - Generating Kubernetes Secret from various sources. It's like a swiss army knife, but for Kubernetes secrets (Exec).</li>
+<li><a href="https://github.com/goabout/kustomize-sopssecretgenerator/">SopsSecretGenerator</a> - Generating Secrets from sops-encrypted files (Exec, Exec KRM).</li>
+<li><a href="https://github.com/viaduct-ai/kustomize-sops">KSops</a> - Generating Secrets from sops-encrypted files (Exec).</li>
+<li><a href="https://github.com/open-cluster-management-io/policy-generator-plugin">PolicyGenerator</a> - Generating Open Cluster Management policies (Exec).</li>
+<li><a href="https://github.com/kaweezle/krmfnbuiltin">KRMFfnBuiltin</a> - Running builtin generators transformers (Exec).</li>
+<li><a href="https://github.com/aabouzaid/kustomize-plugin-merger">Merger</a> - Generating manifests seamlessly by extending Kustomize merge strategies using schemaless StrategicMerge (Containerized KRM, Exec KRM).</li>
+</ul>
+<h3>Transformers</h3>
+<ul>
+<li><a href="https://github.com/openinfradev/kustomize-helm-transformer">HelmValuesTransformer</a> - Transforming values in HelmRelease CustomResource. It helps to manage a lot of HelmRelease's value in single transformer file (Exec).</li>
+<li><a href="https://github.com/joshdk/template-transformer">TemplateTransformer</a> - Providing a set of KRM Functions to run builtin transformers in place (Containerized KRM, Exec KRM).</li>
+</ul>
+<h3>Validators</h3>
+<ul>
+<li><a href="https://github.com/aabouzaid/kustomize-kubeconformvalidator">KubeconformValidator</a> - Validating Kubernetes manifests using embedded Kubeconform (Containerized KRM, Exec KRM).</li>
+</ul>
+<h2>Guides</h2>
+<p>Kustomize guides based on their level or type like 📰 Article, 📺 Video, 🧪 Lab.</p>
+<h3>Novice</h3>
+<ul>
+<li>📰 <a href="https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/">Declarative Management of Kubernetes Objects Using Kustomize</a> - The official Kubernetes documentation task for Kustomize.</li>
+<li>📰 <a href="https://cloud.google.com/anthos-config-management/docs/concepts/kustomize">Configure Kubernetes with Kustomize</a> - A guide helps to get started with Kustomize, understand its intended use cases, and find resources for using it with other Google Cloud tools.</li>
+<li>📺 <a href="https://www.youtube.com/watch?v=1fCAwFGX38U">Organizing the YAML mess with Kustomize</a> - A talk shows how Kustomize could help to manage Kubernetes YAML files with a growing number of services and environments.</li>
+<li>📺 <a href="https://www.youtube.com/watch?v=ahMIBxufNR0">Kustomize: Deploy Your App with Template Free YAML</a> - A talk introduces Kustomize, a declarative application management system, that allows deployments to be described as template free YAML.</li>
+</ul>
+<h3>Intermediate</h3>
+<ul>
+<li>🧪 <a href="https://redhat-scholars.github.io/argocd-tutorial/argocd-tutorial/03-kustomize.html">ArgoCD GitOps Tutorial - Working with Kustomize</a> - A hands-on lab covers using Kustomize in GitOps and it goes through the Kustomize syntax and deploying a Kustomized application.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'kustomize_README.md';
 
         fetch(markdownFile)
@@ -48,21 +191,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

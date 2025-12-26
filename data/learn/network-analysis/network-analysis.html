@@ -8,38 +8,191 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Briatte Awesome Network Analysis - Awesome List Resources">
-    <title>Briatte Awesome Network Analysis</title>
+    <meta name="description" content="An awesome list of resources to construct, analyze and visualize network data. Inspired by Awesome Deep Learning, Awesome Math and others. Started in 2016, and...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Network Analysis [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7869481.svg)](https://doi.org/10.5281/zenodo.7869481) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Network Analysis <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <a href="https://doi.org/10.5281/zenodo.7869481"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.7869481.svg" /></a></h1>
+<p>An <a href="https://github.com/sindresorhus/awesome">awesome list</a> of resources to construct, analyze and visualize network data.</p>
+<p>Inspired by <a href="https://github.com/ChristosChristofidis/awesome-deep-learning">Awesome Deep Learning</a>, <a href="https://github.com/rossant/awesome-math">Awesome Math</a> and others. Started in 2016, and irregularly updated since then.</p>
+<p><a href="http://www.maths.tcd.ie/~mnl/store/AdamicGlance2004a.pdf"><img alt="Adamic and Glance’s network of political blogs, 2004." src="https://raw.githubusercontent.com/briatte/awesome-network-analysis/master/illustration.png" /></a></p>
+<blockquote>
+<p>Network of U.S. political blogs by <a href="https://dl.acm.org/citation.cfm?doid=1134271.1134277">Adamic and Glance (2004)</a> (<a href="http://www.maths.tcd.ie/~mnl/store/AdamicGlance2004a.pdf">preprint</a>).</p>
+</blockquote>
+<p><strong>Note:</strong> searching for ‘@’ will return all Twitter accounts listed on this page.</p>
+<h2>Contents</h2>
+<ul>
+<li><strong><a href="#books">Books</a></strong></li>
+<li><a href="#classics">Classics</a></li>
+<li><a href="#dissemination">Dissemination</a></li>
+<li><a href="#general-overviews">General Overviews</a></li>
+<li><a href="#graph-theory">Graph Theory</a></li>
+<li><a href="#method-specific">Method-specific</a></li>
+<li><a href="#software-specific">Software-specific</a></li>
+<li><a href="#topic-specific">Topic-specific</a></li>
+<li><strong><a href="#conferences">Conferences</a></strong></li>
+<li><strong><a href="#courses">Courses</a></strong></li>
+<li><strong><a href="#datasets">Datasets</a></strong></li>
+<li><strong><a href="#journals">Journals</a></strong></li>
+<li><strong><a href="#professional-groups">Professional groups</a></strong></li>
+<li><a href="#research-groups-usa">Research Groups (USA)</a></li>
+<li><a href="#research-groups-other">Research Groups (Other)</a></li>
+<li><strong><a href="#review-articles">Review Articles</a></strong></li>
+<li><a href="#archeological-and-historical-networks">Archeological and Historical Networks</a></li>
+<li><a href="#bibliographic-citation-and-semantic-networks">Bibliographic, Citation and Semantic Networks</a></li>
+<li><a href="#biological-ecological-and-disease-networks">Biological, Ecological and Disease Networks</a></li>
+<li><a href="#complex-networks">Complex Networks</a></li>
+<li><a href="#ethics-of-network-analysis">Ethics of Network Analysis</a></li>
+<li><a href="#network-modeling">Network Modeling</a></li>
+<li><a href="#network-visualization">Network Visualization</a></li>
+<li><a href="#social-economic-and-political-networks">Social, Economic and Political Networks</a></li>
+<li><strong><a href="#selected-papers">Selected Papers</a></strong></li>
+<li><strong><a href="#software">Software</a></strong></li>
+<li><a href="#algorithms">Algorithms</a></li>
+<li><a href="#c--c">C / C++</a></li>
+<li><a href="#java">Java</a>  </li>
+<li><a href="#javascript">JavaScript</a></li>
+<li><a href="#julia">Julia</a></li>
+<li><a href="#matlab">MATLAB</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#r">R</a></li>
+<li><a href="#stata">Stata</a></li>
+<li><a href="#syntaxes">Syntaxes</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><strong><a href="#varia">Varia</a></strong></li>
+<li><a href="#blog-series">Blog Series</a></li>
+<li><a href="#fictional-networks">Fictional Networks</a></li>
+<li><a href="#network-science">Network Science</a></li>
+<li><a href="#small-worlds">Small Worlds</a></li>
+<li><a href="#two-mode-networks">Two-Mode Networks</a></li>
+<li><strong><a href="CONTRIBUTING.md">Contributing Guidelines</a></strong></li>
+<li><strong><a href="#license">License</a></strong></li>
+</ul>
+<h2>Books</h2>
+<h3>Classics</h3>
+<ul>
+<li><em><a href="https://f.briatte.org/temp/sampson1968.pdf">A Novitiate in a Period of Change: An Experimental and Case Study of Social Relationships</a></em>, by Samuel F. Sampson (unpublished PhD dissertation, 1968).</li>
+<li><em><a href="https://uk.sagepub.com/en-gb/eur/social-network-analysis/book249668">Social Network Analysis</a></em>, by John Scott (2017).</li>
+<li><em><a href="http://www.cambridge.org/ar/academic/subjects/sociology/sociology-general-interest/social-network-analysis-methods-and-applications">Social Network Analysis. Methods and Applications</a></em>, by Stanley Wasserman and Katherine Faust (1994).</li>
+<li><em><a href="http://press.princeton.edu/titles/8114.html">The Structure and Dynamics of Networks</a></em>, edited by Mark E.J. Newman, Albert-László Barabási and Duncan J. Watts - 600 pages of classic network analysis articles (2006).</li>
+</ul>
+<h3>Dissemination</h3>
+<blockquote>
+<p>Accessible introductions aimed at non-technical audiences.</p>
+</blockquote>
+<ul>
+<li><em><a href="http://www.connectedthebook.com/">Connected: The Surprising Power of Our Social Networks and How They Shape Our Lives</a></em>, by Nicholas A. Christakis and James H. Fowler (2009).</li>
+<li><em><a href="https://barabasi.com/book/linked">Linked: The New Science of Networks</a></em>, by Albert-László Barabási (2002).</li>
+<li><em><a href="https://sites.google.com/a/binghamton.edu/netscied/teaching-learning/network-concepts">Network Literacy: Essential Concepts and Core ideas</a></em>, by the NetSciEd team (c. 2016) - Available in several languages (<a href="https://academic.oup.com/comnet/article-abstract/4/3/457/1745356">paper</a>).</li>
+<li><em><a href="http://books.wwnorton.com/books/Nexus/">Nexus. Small Worlds and the Groundbreaking Theory of Networks</a></em>, by Mark Buchanan (2003).</li>
+<li><em><a href="http://books.wwnorton.com/books/detail.aspx?ID=7599">Six Degrees: The Science of a Connected Age</a></em>, by Duncan J. Watts (2003).</li>
+</ul>
+<h3>General Overviews</h3>
+<ul>
+<li><em><a href="https://hal.science/hal-04052709">L'analyse de réseau en sciences sociales. Petit guide pratique</a></em>, by Laurent Beauguitte, in French (2023). <a href="https://beauguitte.github.io/analyse-de-reseau-en-shs/">Readable online</a>.</li>
+<li><em><a href="https://www.networkatlas.eu/">The Atlas for the Aspiring Network Scientist</a></em>, by Michele Coscia (2021).</li>
+<li><em><a href="http://sk.sagepub.com/reference/socialnetworks">Encyclopedia of Social Networks</a></em>, edited by George A. Barnett - Covers all sorts of network-related themes (many of them not formal) as well as social network analysis (2011).</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Network Analysis <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <a href="https://doi.org/10.5281/zenodo.7869481"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.7869481.svg" /></a></h1>
+<p>An <a href="https://github.com/sindresorhus/awesome">awesome list</a> of resources to construct, analyze and visualize network data.</p>
+<p>Inspired by <a href="https://github.com/ChristosChristofidis/awesome-deep-learning">Awesome Deep Learning</a>, <a href="https://github.com/rossant/awesome-math">Awesome Math</a> and others. Started in 2016, and irregularly updated since then.</p>
+<p><a href="http://www.maths.tcd.ie/~mnl/store/AdamicGlance2004a.pdf"><img alt="Adamic and Glance’s network of political blogs, 2004." src="https://raw.githubusercontent.com/briatte/awesome-network-analysis/master/illustration.png" /></a></p>
+<blockquote>
+<p>Network of U.S. political blogs by <a href="https://dl.acm.org/citation.cfm?doid=1134271.1134277">Adamic and Glance (2004)</a> (<a href="http://www.maths.tcd.ie/~mnl/store/AdamicGlance2004a.pdf">preprint</a>).</p>
+</blockquote>
+<p><strong>Note:</strong> searching for ‘@’ will return all Twitter accounts listed on this page.</p>
+<h2>Contents</h2>
+<ul>
+<li><strong><a href="#books">Books</a></strong></li>
+<li><a href="#classics">Classics</a></li>
+<li><a href="#dissemination">Dissemination</a></li>
+<li><a href="#general-overviews">General Overviews</a></li>
+<li><a href="#graph-theory">Graph Theory</a></li>
+<li><a href="#method-specific">Method-specific</a></li>
+<li><a href="#software-specific">Software-specific</a></li>
+<li><a href="#topic-specific">Topic-specific</a></li>
+<li><strong><a href="#conferences">Conferences</a></strong></li>
+<li><strong><a href="#courses">Courses</a></strong></li>
+<li><strong><a href="#datasets">Datasets</a></strong></li>
+<li><strong><a href="#journals">Journals</a></strong></li>
+<li><strong><a href="#professional-groups">Professional groups</a></strong></li>
+<li><a href="#research-groups-usa">Research Groups (USA)</a></li>
+<li><a href="#research-groups-other">Research Groups (Other)</a></li>
+<li><strong><a href="#review-articles">Review Articles</a></strong></li>
+<li><a href="#archeological-and-historical-networks">Archeological and Historical Networks</a></li>
+<li><a href="#bibliographic-citation-and-semantic-networks">Bibliographic, Citation and Semantic Networks</a></li>
+<li><a href="#biological-ecological-and-disease-networks">Biological, Ecological and Disease Networks</a></li>
+<li><a href="#complex-networks">Complex Networks</a></li>
+<li><a href="#ethics-of-network-analysis">Ethics of Network Analysis</a></li>
+<li><a href="#network-modeling">Network Modeling</a></li>
+<li><a href="#network-visualization">Network Visualization</a></li>
+<li><a href="#social-economic-and-political-networks">Social, Economic and Political Networks</a></li>
+<li><strong><a href="#selected-papers">Selected Papers</a></strong></li>
+<li><strong><a href="#software">Software</a></strong></li>
+<li><a href="#algorithms">Algorithms</a></li>
+<li><a href="#c--c">C / C++</a></li>
+<li><a href="#java">Java</a>  </li>
+<li><a href="#javascript">JavaScript</a></li>
+<li><a href="#julia">Julia</a></li>
+<li><a href="#matlab">MATLAB</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#r">R</a></li>
+<li><a href="#stata">Stata</a></li>
+<li><a href="#syntaxes">Syntaxes</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><strong><a href="#varia">Varia</a></strong></li>
+<li><a href="#blog-series">Blog Series</a></li>
+<li><a href="#fictional-networks">Fictional Networks</a></li>
+<li><a href="#network-science">Network Science</a></li>
+<li><a href="#small-worlds">Small Worlds</a></li>
+<li><a href="#two-mode-networks">Two-Mode Networks</a></li>
+<li><strong><a href="CONTRIBUTING.md">Contributing Guidelines</a></strong></li>
+<li><strong><a href="#license">License</a></strong></li>
+</ul>
+<h2>Books</h2>
+<h3>Classics</h3>
+<ul>
+<li><em><a href="https://f.briatte.org/temp/sampson1968.pdf">A Novitiate in a Period of Change: An Experimental and Case Study of Social Relationships</a></em>, by Samuel F. Sampson (unpublished PhD dissertation, 1968).</li>
+<li><em><a href="https://uk.sagepub.com/en-gb/eur/social-network-analysis/book249668">Social Network Analysis</a></em>, by John Scott (2017).</li>
+<li><em><a href="http://www.cambridge.org/ar/academic/subjects/sociology/sociology-general-interest/social-network-analysis-methods-and-applications">Social Network Analysis. Methods and Applications</a></em>, by Stanley Wasserman and Katherine Faust (1994).</li>
+<li><em><a href="http://press.princeton.edu/titles/8114.html">The Structure and Dynamics of Networks</a></em>, edited by Mark E.J. Newman, Albert-László Barabási and Duncan J. Watts - 600 pages of classic network analysis articles (2006).</li>
+</ul>
+<h3>Dissemination</h3>
+<blockquote>
+<p>Accessible introductions aimed at non-technical audiences.</p>
+</blockquote>
+<ul>
+<li><em><a href="http://www.connectedthebook.com/">Connected: The Surprising Power of Our Social Networks and How They Shape Our Lives</a></em>, by Nicholas A. Christakis and James H. Fowler (2009).</li>
+<li><em><a href="https://barabasi.com/book/linked">Linked: The New Science of Networks</a></em>, by Albert-László Barabási (2002).</li>
+<li><em><a href="https://sites.google.com/a/binghamton.edu/netscied/teaching-learning/network-concepts">Network Literacy: Essential Concepts and Core ideas</a></em>, by the NetSciEd team (c. 2016) - Available in several languages (<a href="https://academic.oup.com/comnet/article-abstract/4/3/457/1745356">paper</a>).</li>
+<li><em><a href="http://books.wwnorton.com/books/Nexus/">Nexus. Small Worlds and the Groundbreaking Theory of Networks</a></em>, by Mark Buchanan (2003).</li>
+<li><em><a href="http://books.wwnorton.com/books/detail.aspx?ID=7599">Six Degrees: The Science of a Connected Age</a></em>, by Duncan J. Watts (2003).</li>
+</ul>
+<h3>General Overviews</h3>
+<ul>
+<li><em><a href="https://hal.science/hal-04052709">L'analyse de réseau en sciences sociales. Petit guide pratique</a></em>, by Laurent Beauguitte, in French (2023). <a href="https://beauguitte.github.io/analyse-de-reseau-en-shs/">Readable online</a>.</li>
+<li><em><a href="https://www.networkatlas.eu/">The Atlas for the Aspiring Network Scientist</a></em>, by Michele Coscia (2021).</li>
+<li><em><a href="http://sk.sagepub.com/reference/socialnetworks">Encyclopedia of Social Networks</a></em>, edited by George A. Barnett - Covers all sorts of network-related themes (many of them not formal) as well as social network analysis (2011).</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'network-analysis_README.md';
 
         fetch(markdownFile)
@@ -48,21 +201,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

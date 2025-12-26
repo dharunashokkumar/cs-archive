@@ -8,38 +8,179 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dotintent Awesome Ble - Awesome List Resources">
-    <title>Dotintent Awesome Ble</title>
+    <meta name="description" content="Bluetooth Low Energy (BLE): Low-power wireless communication protocol enabling efficient data exchange between devices, ideal for IoT, wearables, and other...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome BLE [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome BLE <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a></h1>
+<p><img alt="" src=".github/awesome-ble.png" /></p>
+<p><strong>Bluetooth Low Energy (BLE)</strong>: Low-power wireless communication protocol enabling efficient data exchange between devices, ideal for IoT, wearables, and other battery-powered applications.</p>
+<p>A collaborative list of Awesome Bluetooth Low Energy resources by <a href="https://withintent.com">🔴 intent</a>.</p>
+<p><img alt="" src="https://img.shields.io/github/last-commit/dotintent/awesome-ble/main" /></p>
+<h2>Contents</h2>
+<h3>Hardware</h3>
+<ul>
+<li><a href="#arduino">Arduino</a></li>
+<li><a href="#esp">ESP</a></li>
+<li><a href="#nordic">Nordic</a></li>
+<li><a href="#raspberrypi">RaspberryPi</a></li>
+</ul>
+<h3>Mobile</h3>
+<ul>
+<li><a href="#android">Android</a></li>
+<li><a href="#flutter">Flutter</a></li>
+<li><a href="#kmm">KMM</a></li>
+<li>
+<p><a href="#ios">iOS</a></p>
+</li>
+<li>
+<p><a href="#documentation">Documentation</a></p>
+</li>
+<li><a href="#framework">Framework</a></li>
+<li><a href="#library">Library</a></li>
+<li><a href="#tool">Tool</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#web">Web</a></li>
+</ul>
+<h2>Documentation</h2>
+<p><em>Official specifications, standards, and technical documentation about the Bluetooth Low Energy (BLE) protocol.</em></p>
+<ul>
+<li><a href="https://developer.android.com/guide/topics/connectivity/bluetooth/ble-overview">Android Bluetooth Low Energy</a> - Overview about BLE in Android.</li>
+<li><a href="https://software-dl.ti.com/lprf/simplelink_cc2640r2_sdk/1.35.00.33/exports/docs/ble5stack/ble_user_guide/html/ble-stack/index.html">Developing a Bluetooth Low Energy Application by TI</a> - A guide by TI about how to develop a BLE app.</li>
+<li><a href="https://learn.adafruit.com/introduction-to-bluetooth-low-energy">Getting Started with Bluetooth Low Energy (BLE)</a> - A comprehensive guide to getting started with Bluetooth Low Energy development.</li>
+<li><a href="https://www.bluetooth.com/bluetooth-resources/intro-to-bluetooth-gap-gatt/">Intro to Bluetooth Generic Attribute Profile (GATT)</a> - Intro about GATT.</li>
+<li><a href="https://www.bluetooth.com/bluetooth-resources/intro-to-bluetooth-low-energy/">Intro to Bluetooth Low Energy</a> - Intro about the basics of BLE.</li>
+<li><a href="https://microsoft.github.io/IoT-For-Beginners/#/">IoT for Beginners</a> - Azure Cloud Advocates at Microsoft are pleased to offer a 12-week, 24-lesson curriculum all about IoT basics.</li>
+<li><a href="https://www.nordicsemi.com/Software-and-tools/Software/nRF5-SDK">nRF51 SDK</a> - Software Development Kit (SDK) for developing Bluetooth Low Energy applications on Nordic Semiconductor's nRF51 series of chips.</li>
+<li><a href="https://www.microchip.com/wwwproducts/en/RN4870">RN4870/71 Bluetooth Low Energy Module User's Guide</a> - User's guide for the RN4870/71 Bluetooth Low Energy module by Microchip.</li>
+<li><a href="https://en.wikipedia.org/wiki/Bluetooth_Low_Energy">Wikipedia Bluetooth Low Energy</a> - The wiki page for Bluetooth Low Energy (BLE).</li>
+</ul>
+<h2>Framework</h2>
+<p><em>Framework useful to develop your BLE peripherals.</em></p>
+<ul>
+<li><a href="https://github.com/project-chip/connectedhomeip">Matter</a> - Matter</li>
+<li><a href="https://github.com/zephyrproject-rtos/zephyr">Zephyr</a> - Zephyr</li>
+</ul>
+<h2>Library</h2>
+<p><em>Software libraries and frameworks for integrating Bluetooth Low Energy (BLE) functionality into various platforms, including mobile, embedded systems, and IoT devices.</em></p>
+<ul>
+<li><a href="https://github.com/IanHarvey/bluepy">bluepy</a> - A Python interface for Bluetooth LE on Linux.</li>
+<li><a href="https://github.com/PureSwift/Bluetooth">Bluetooth</a> - Bluetooth is a Swift multiplatform package with multiple libraries supporting the Bluetooth SIG specifications.</li>
+<li><a href="http://www.bluez.org/">bluez</a> - The official Linux Bluetooth protocol stack.</li>
+<li><a href="https://github.com/google/bumble">bumble</a> - Bumble is a full-featured Bluetooth stack written entirely in Python.</li>
+<li><a href="https://github.com/peplin/pygatt">pygatt</a> - A Python library for interacting with BLE devices.</li>
+<li><a href="https://github.com/OpenBluetoothToolbox/SimpleBLE">SimpleBLE</a> - The all-in-one C/C++/Python/Rust Bluetooth LE library for MacOS, iOS, Windows, and Linux.</li>
+<li><a href="https://github.com/Moddable-OpenSource/moddable">Moddable</a> - JavaScript libraries and tools for microcontrollers development. Includes BLE functionality.</li>
+</ul>
+<h2>iOS</h2>
+<p><em>iOS libraries, tools, and resources for developing Bluetooth Low Energy (BLE) applications on Apple devices.</em></p>
+<ul>
+<li><a href="https://github.com/manolofdez/AsyncBluetooth">AsyncBluetooth</a> - A small library that adds concurrency to CoreBluetooth APIs.</li>
+<li><a href="https://github.com/StarryInternet/CombineCoreBluetooth">CombineCoreBluetooth</a> - CombineCoreBluetooth is a library that bridges Apple's CoreBluetooth framework and Apple's Combine framework.</li>
+<li><a href="https://github.com/NordicSemiconductor/IOS-DFU-Library">iOS DFU Library</a> - DFU application allows to flash new firmware on the DK.</li>
+<li><a href="https://github.com/Polidea/RxBluetoothKit">Rx Bluetooth Kit</a> - RxBluetoothKit is a Bluetooth library that makes interaction with BLE devices much more pleasant using RxSwift.</li>
+<li><a href="https://github.com/codeinversion/sensors-swift">Swifty Sensors</a> - Bluetooth LE Sensor Manager for iOS and macOS.</li>
+<li><a href="https://github.com/StanfordSpezi/SpeziBluetooth">SpeziBluetooth</a> - Connect and communicate with Bluetooth devices using modern programming paradigms.</li>
+</ul>
+<h2>KMM</h2>
+<p><em>Resources and libraries for building Bluetooth Low Energy (BLE) applications using the Kotlin Multiplatform Mobile (KMM) framework.</em></p>
+<ul>
+<li><a href="https://github.com/Reedyuk/blue-falcon">BlueFalcon</a> - A Bluetooth kotlin multiplatform "Cross-Platform" library for iOS and Android.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome BLE <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a></h1>
+<p><img alt="" src=".github/awesome-ble.png" /></p>
+<p><strong>Bluetooth Low Energy (BLE)</strong>: Low-power wireless communication protocol enabling efficient data exchange between devices, ideal for IoT, wearables, and other battery-powered applications.</p>
+<p>A collaborative list of Awesome Bluetooth Low Energy resources by <a href="https://withintent.com">🔴 intent</a>.</p>
+<p><img alt="" src="https://img.shields.io/github/last-commit/dotintent/awesome-ble/main" /></p>
+<h2>Contents</h2>
+<h3>Hardware</h3>
+<ul>
+<li><a href="#arduino">Arduino</a></li>
+<li><a href="#esp">ESP</a></li>
+<li><a href="#nordic">Nordic</a></li>
+<li><a href="#raspberrypi">RaspberryPi</a></li>
+</ul>
+<h3>Mobile</h3>
+<ul>
+<li><a href="#android">Android</a></li>
+<li><a href="#flutter">Flutter</a></li>
+<li><a href="#kmm">KMM</a></li>
+<li>
+<p><a href="#ios">iOS</a></p>
+</li>
+<li>
+<p><a href="#documentation">Documentation</a></p>
+</li>
+<li><a href="#framework">Framework</a></li>
+<li><a href="#library">Library</a></li>
+<li><a href="#tool">Tool</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#web">Web</a></li>
+</ul>
+<h2>Documentation</h2>
+<p><em>Official specifications, standards, and technical documentation about the Bluetooth Low Energy (BLE) protocol.</em></p>
+<ul>
+<li><a href="https://developer.android.com/guide/topics/connectivity/bluetooth/ble-overview">Android Bluetooth Low Energy</a> - Overview about BLE in Android.</li>
+<li><a href="https://software-dl.ti.com/lprf/simplelink_cc2640r2_sdk/1.35.00.33/exports/docs/ble5stack/ble_user_guide/html/ble-stack/index.html">Developing a Bluetooth Low Energy Application by TI</a> - A guide by TI about how to develop a BLE app.</li>
+<li><a href="https://learn.adafruit.com/introduction-to-bluetooth-low-energy">Getting Started with Bluetooth Low Energy (BLE)</a> - A comprehensive guide to getting started with Bluetooth Low Energy development.</li>
+<li><a href="https://www.bluetooth.com/bluetooth-resources/intro-to-bluetooth-gap-gatt/">Intro to Bluetooth Generic Attribute Profile (GATT)</a> - Intro about GATT.</li>
+<li><a href="https://www.bluetooth.com/bluetooth-resources/intro-to-bluetooth-low-energy/">Intro to Bluetooth Low Energy</a> - Intro about the basics of BLE.</li>
+<li><a href="https://microsoft.github.io/IoT-For-Beginners/#/">IoT for Beginners</a> - Azure Cloud Advocates at Microsoft are pleased to offer a 12-week, 24-lesson curriculum all about IoT basics.</li>
+<li><a href="https://www.nordicsemi.com/Software-and-tools/Software/nRF5-SDK">nRF51 SDK</a> - Software Development Kit (SDK) for developing Bluetooth Low Energy applications on Nordic Semiconductor's nRF51 series of chips.</li>
+<li><a href="https://www.microchip.com/wwwproducts/en/RN4870">RN4870/71 Bluetooth Low Energy Module User's Guide</a> - User's guide for the RN4870/71 Bluetooth Low Energy module by Microchip.</li>
+<li><a href="https://en.wikipedia.org/wiki/Bluetooth_Low_Energy">Wikipedia Bluetooth Low Energy</a> - The wiki page for Bluetooth Low Energy (BLE).</li>
+</ul>
+<h2>Framework</h2>
+<p><em>Framework useful to develop your BLE peripherals.</em></p>
+<ul>
+<li><a href="https://github.com/project-chip/connectedhomeip">Matter</a> - Matter</li>
+<li><a href="https://github.com/zephyrproject-rtos/zephyr">Zephyr</a> - Zephyr</li>
+</ul>
+<h2>Library</h2>
+<p><em>Software libraries and frameworks for integrating Bluetooth Low Energy (BLE) functionality into various platforms, including mobile, embedded systems, and IoT devices.</em></p>
+<ul>
+<li><a href="https://github.com/IanHarvey/bluepy">bluepy</a> - A Python interface for Bluetooth LE on Linux.</li>
+<li><a href="https://github.com/PureSwift/Bluetooth">Bluetooth</a> - Bluetooth is a Swift multiplatform package with multiple libraries supporting the Bluetooth SIG specifications.</li>
+<li><a href="http://www.bluez.org/">bluez</a> - The official Linux Bluetooth protocol stack.</li>
+<li><a href="https://github.com/google/bumble">bumble</a> - Bumble is a full-featured Bluetooth stack written entirely in Python.</li>
+<li><a href="https://github.com/peplin/pygatt">pygatt</a> - A Python library for interacting with BLE devices.</li>
+<li><a href="https://github.com/OpenBluetoothToolbox/SimpleBLE">SimpleBLE</a> - The all-in-one C/C++/Python/Rust Bluetooth LE library for MacOS, iOS, Windows, and Linux.</li>
+<li><a href="https://github.com/Moddable-OpenSource/moddable">Moddable</a> - JavaScript libraries and tools for microcontrollers development. Includes BLE functionality.</li>
+</ul>
+<h2>iOS</h2>
+<p><em>iOS libraries, tools, and resources for developing Bluetooth Low Energy (BLE) applications on Apple devices.</em></p>
+<ul>
+<li><a href="https://github.com/manolofdez/AsyncBluetooth">AsyncBluetooth</a> - A small library that adds concurrency to CoreBluetooth APIs.</li>
+<li><a href="https://github.com/StarryInternet/CombineCoreBluetooth">CombineCoreBluetooth</a> - CombineCoreBluetooth is a library that bridges Apple's CoreBluetooth framework and Apple's Combine framework.</li>
+<li><a href="https://github.com/NordicSemiconductor/IOS-DFU-Library">iOS DFU Library</a> - DFU application allows to flash new firmware on the DK.</li>
+<li><a href="https://github.com/Polidea/RxBluetoothKit">Rx Bluetooth Kit</a> - RxBluetoothKit is a Bluetooth library that makes interaction with BLE devices much more pleasant using RxSwift.</li>
+<li><a href="https://github.com/codeinversion/sensors-swift">Swifty Sensors</a> - Bluetooth LE Sensor Manager for iOS and macOS.</li>
+<li><a href="https://github.com/StanfordSpezi/SpeziBluetooth">SpeziBluetooth</a> - Connect and communicate with Bluetooth devices using modern programming paradigms.</li>
+</ul>
+<h2>KMM</h2>
+<p><em>Resources and libraries for building Bluetooth Low Energy (BLE) applications using the Kotlin Multiplatform Mobile (KMM) framework.</em></p>
+<ul>
+<li><a href="https://github.com/Reedyuk/blue-falcon">BlueFalcon</a> - A Bluetooth kotlin multiplatform "Cross-Platform" library for iOS and Android.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'bluetooth-low-energy_README.md';
 
         fetch(markdownFile)
@@ -48,21 +189,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

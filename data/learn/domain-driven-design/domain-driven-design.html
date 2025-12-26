@@ -8,38 +8,163 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Heynickc Awesome Ddd - Awesome List Resources">
-    <title>Heynickc Awesome Ddd</title>
+    <meta name="description" content="> A curated list of Domain-Driven Design (DDD), Command Query Responsibility Segregation (CQRS), Event Sourcing, and Event Storming resources. Check out my...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Domain-Driven Design [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Domain-Driven Design <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<blockquote>
+<p>A curated list of Domain-Driven Design (DDD), Command Query Responsibility Segregation (CQRS), Event Sourcing, and Event Storming resources.</p>
+</blockquote>
+<p><strong>Check out my <a href="https://buildplease.com">blog</a> and <a href="https://buildplease.com/pages/dddweekly/">weekly DDD newsletter</a> or say hi on <a href="https://twitter.com/heynickc">Twitter</a>!</strong></p>
+<p><strong><a href="https://en.m.wikipedia.org/wiki/Domain-driven_design">Domain-Driven Design (DDD)</a></strong> is an approach to software development for complex needs by connecting the implementation to an evolving model.  The premise of Domain-Driven Design is the following:</p>
+<ul>
+<li>placing the project's primary focus on the core domain and domain logic</li>
+<li>basing complex designs on a model of the domain</li>
+<li>initiating a creative collaboration between technical and domain experts to iteratively refine a conceptual model that addresses particular domain problems</li>
+</ul>
+<p>The term was coined by Eric Evans in his book of the same title.</p>
+<p><strong><a href="http://codebetter.com/gregyoung/2010/02/16/cqrs-task-based-uis-event-sourcing-agh/">Command Query Responsibility Segregation (CQRS)</a></strong> is simply the creation of two objects where there was previously only one. The separation occurs based upon whether the methods are a command or a query (the same definition that is used by Meyer in Command and Query Separation, a command is any method that mutates state and a query is any method that returns a value).</p>
+<p><strong><a href="http://www.martinfowler.com/eaaDev/EventSourcing.html">Event Sourcing</a></strong> the fundamental idea of Event Sourcing is that of ensuring every change to the state of an application is captured in an event object, and that these event objects are themselves stored in the sequence they were applied for the same lifetime as the application state itself.</p>
+<p><strong><a href="https://ziobrando.blogspot.com/2013/11/introducing-event-storming.html">Event Storming</a></strong> is a workshop format for quickly exploring complex business domains.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="https://github.com/heynickc/awesome-ddd/">Awesome Domain-Driven Design</a><ul>
+<li><a href="#contents">Contents</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#free-ebooks">Free eBooks</a></li>
+<li><a href="#training-courses">Training Courses</a></li>
+<li><a href="#video-collections">Video Collections</a></li>
+<li><a href="#community-resources">Community Resources</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#sample-projects">Sample Projects</a><ul>
+<li><a href="#go">GO</a></li>
+<li><a href="#net-cf">.NET (C#/F#)</a></li>
+<li><a href="#haskell">Haskell</a></li>
+<li><a href="#idris">Idris</a></li>
+<li><a href="#javascript--typescript">JavaScript / TypeScript</a></li>
+<li><a href="#jvm-languages">JVM languages</a></li>
+<li><a href="#php">PHP</a></li>
+</ul>
+</li>
+<li><a href="#libraries-and-frameworks">Libraries and Frameworks</a><ul>
+<li><a href="#go-1">GO</a></li>
+<li><a href="#net">.NET</a></li>
+<li><a href="#databases">Databases</a></li>
+<li><a href="#elixir">Elixir</a></li>
+<li><a href="#javascript--typescript-1">JavaScript / TypeScript</a></li>
+<li><a href="#jvm">JVM</a></li>
+<li><a href="#php-1">PHP</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#ruby">Ruby</a></li>
+</ul>
+</li>
+<li><a href="#podcasts-and-interviews">Podcasts and Interviews</a></li>
+<li><a href="#conferences">Conferences</a></li>
+<li><a href="#user-groups">User Groups</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+</li>
+</ul>
+<h2>Books</h2>
+<ul>
+<li><a href="https://buildplease.com/pages/now-what/">Applying Domain Driven Design with CQRS and Event Sourcing</a> - A walkthrough of using EventStorming and other modeling techniques to build a CQRS and Event Sourcing-based prototype for a fictional business domain.</li>
+<li><a href="https://www.manning.com/books/architecture-modernization">Architecture Modernization</a> - Concrete tools, techniques, and processes to align software architecture with your business domains, organizational design, team topologies, and corporate strategy.</li>
+<li><a href="https://www.manning.com/books/collaborative-software-design">Collaborative Software Design</a> - A practical guide for effectively involving all stakeholders in the design of software.A practical guide for effectively involving all stakeholders in the design of software.</li>
+<li><a href="https://leanpub.com/cqrs">CQRS</a> - Notes by Mark Nijhof from his experiences learning DDD and CQRS from Greg Young.  There is an extensive sample project that accompanies this book.</li>
+<li><a href="https://amzn.com/0321125215">Domain-Driven Design: Tackling the Complexity at the Heart of Software</a> - The canonical book that coined the term Domain-Driven Design.  Also known as the "Blue Book."</li>
+<li><a href="https://www.amazon.com/Domain-Driven-Design-Distilled-Vaughn-Vernon/dp/0134434420">Domain-Driven Design Distilled</a> - Very good starter book before you read <a href="https://vaughnvernon.co/?page_id=168#iddd">Implementing Domain-Driven Design</a> or <a href="https://amzn.com/0321125215">Domain-Driven Design: Tackling the Complexity at the Heart of Software</a>.</li>
+<li><a href="https://leanpub.com/ddd-in-php">Domain-Driven Design in PHP</a> - Real examples written in PHP showcasing DDD Architectural Styles, Tactical Design, and Bounded Context Integration.</li>
+<li><a href="https://blog.arkency.com/domain-driven-rails/">Domain-Driven Rails</a> - Domain-Driven Rails describes 11 techniques (from Bounded Contexts to Event Sourcing) that you can use separately and together in new and old Rails apps to achieve better architecture.</li>
+<li><a href="https://pragprog.com/book/swdddf/domain-modeling-made-functional">Domain Modeling Made Functional</a> - Tackle Software Complexity with Domain-Driven Design and F#.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Domain-Driven Design <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<blockquote>
+<p>A curated list of Domain-Driven Design (DDD), Command Query Responsibility Segregation (CQRS), Event Sourcing, and Event Storming resources.</p>
+</blockquote>
+<p><strong>Check out my <a href="https://buildplease.com">blog</a> and <a href="https://buildplease.com/pages/dddweekly/">weekly DDD newsletter</a> or say hi on <a href="https://twitter.com/heynickc">Twitter</a>!</strong></p>
+<p><strong><a href="https://en.m.wikipedia.org/wiki/Domain-driven_design">Domain-Driven Design (DDD)</a></strong> is an approach to software development for complex needs by connecting the implementation to an evolving model.  The premise of Domain-Driven Design is the following:</p>
+<ul>
+<li>placing the project's primary focus on the core domain and domain logic</li>
+<li>basing complex designs on a model of the domain</li>
+<li>initiating a creative collaboration between technical and domain experts to iteratively refine a conceptual model that addresses particular domain problems</li>
+</ul>
+<p>The term was coined by Eric Evans in his book of the same title.</p>
+<p><strong><a href="http://codebetter.com/gregyoung/2010/02/16/cqrs-task-based-uis-event-sourcing-agh/">Command Query Responsibility Segregation (CQRS)</a></strong> is simply the creation of two objects where there was previously only one. The separation occurs based upon whether the methods are a command or a query (the same definition that is used by Meyer in Command and Query Separation, a command is any method that mutates state and a query is any method that returns a value).</p>
+<p><strong><a href="http://www.martinfowler.com/eaaDev/EventSourcing.html">Event Sourcing</a></strong> the fundamental idea of Event Sourcing is that of ensuring every change to the state of an application is captured in an event object, and that these event objects are themselves stored in the sequence they were applied for the same lifetime as the application state itself.</p>
+<p><strong><a href="https://ziobrando.blogspot.com/2013/11/introducing-event-storming.html">Event Storming</a></strong> is a workshop format for quickly exploring complex business domains.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="https://github.com/heynickc/awesome-ddd/">Awesome Domain-Driven Design</a><ul>
+<li><a href="#contents">Contents</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#free-ebooks">Free eBooks</a></li>
+<li><a href="#training-courses">Training Courses</a></li>
+<li><a href="#video-collections">Video Collections</a></li>
+<li><a href="#community-resources">Community Resources</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#sample-projects">Sample Projects</a><ul>
+<li><a href="#go">GO</a></li>
+<li><a href="#net-cf">.NET (C#/F#)</a></li>
+<li><a href="#haskell">Haskell</a></li>
+<li><a href="#idris">Idris</a></li>
+<li><a href="#javascript--typescript">JavaScript / TypeScript</a></li>
+<li><a href="#jvm-languages">JVM languages</a></li>
+<li><a href="#php">PHP</a></li>
+</ul>
+</li>
+<li><a href="#libraries-and-frameworks">Libraries and Frameworks</a><ul>
+<li><a href="#go-1">GO</a></li>
+<li><a href="#net">.NET</a></li>
+<li><a href="#databases">Databases</a></li>
+<li><a href="#elixir">Elixir</a></li>
+<li><a href="#javascript--typescript-1">JavaScript / TypeScript</a></li>
+<li><a href="#jvm">JVM</a></li>
+<li><a href="#php-1">PHP</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#ruby">Ruby</a></li>
+</ul>
+</li>
+<li><a href="#podcasts-and-interviews">Podcasts and Interviews</a></li>
+<li><a href="#conferences">Conferences</a></li>
+<li><a href="#user-groups">User Groups</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+</li>
+</ul>
+<h2>Books</h2>
+<ul>
+<li><a href="https://buildplease.com/pages/now-what/">Applying Domain Driven Design with CQRS and Event Sourcing</a> - A walkthrough of using EventStorming and other modeling techniques to build a CQRS and Event Sourcing-based prototype for a fictional business domain.</li>
+<li><a href="https://www.manning.com/books/architecture-modernization">Architecture Modernization</a> - Concrete tools, techniques, and processes to align software architecture with your business domains, organizational design, team topologies, and corporate strategy.</li>
+<li><a href="https://www.manning.com/books/collaborative-software-design">Collaborative Software Design</a> - A practical guide for effectively involving all stakeholders in the design of software.A practical guide for effectively involving all stakeholders in the design of software.</li>
+<li><a href="https://leanpub.com/cqrs">CQRS</a> - Notes by Mark Nijhof from his experiences learning DDD and CQRS from Greg Young.  There is an extensive sample project that accompanies this book.</li>
+<li><a href="https://amzn.com/0321125215">Domain-Driven Design: Tackling the Complexity at the Heart of Software</a> - The canonical book that coined the term Domain-Driven Design.  Also known as the "Blue Book."</li>
+<li><a href="https://www.amazon.com/Domain-Driven-Design-Distilled-Vaughn-Vernon/dp/0134434420">Domain-Driven Design Distilled</a> - Very good starter book before you read <a href="https://vaughnvernon.co/?page_id=168#iddd">Implementing Domain-Driven Design</a> or <a href="https://amzn.com/0321125215">Domain-Driven Design: Tackling the Complexity at the Heart of Software</a>.</li>
+<li><a href="https://leanpub.com/ddd-in-php">Domain-Driven Design in PHP</a> - Real examples written in PHP showcasing DDD Architectural Styles, Tactical Design, and Bounded Context Integration.</li>
+<li><a href="https://blog.arkency.com/domain-driven-rails/">Domain-Driven Rails</a> - Domain-Driven Rails describes 11 techniques (from Bounded Contexts to Event Sourcing) that you can use separately and together in new and old Rails apps to achieve better architecture.</li>
+<li><a href="https://pragprog.com/book/swdddf/domain-modeling-made-functional">Domain Modeling Made Functional</a> - Tackle Software Complexity with Domain-Driven Design and F#.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'domain-driven-design_README.md';
 
         fetch(markdownFile)
@@ -48,21 +173,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

@@ -8,38 +8,187 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dvergar Awesome Haxe Gamedev - Awesome List Resources">
-    <title>Dvergar Awesome Haxe Gamedev</title>
+    <meta name="description" content="A curated list of game development resources for Haxe 4, a high level strictly typed programming language which is used to produce cross-platform native code....">
+    <meta name="robots" content="index, follow">
+    <title>Haxe Game Development - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <div align="center"><a href="https://haxe.org/"><img src="images/haxe-logo.png" width="500"></a></div>
+
+<h1>Awesome Haxe Game Development <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat2.svg" /></a></h1>
+<p>A curated list of game development resources for <strong><a href="https://haxe.org/">Haxe 4</a></strong>, a high level strictly typed programming language which is used to produce cross-platform native code.</p>
+<p>Feel free to update it.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#game-engines">Game engines</a></li>
+<li><a href="#low-level-engine">Low-level Engine</a></li>
+<li><a href="#physics">Physics</a></li>
+<li><a href="#architecture">Architecture</a></li>
+<li><a href="#networking">Networking</a></li>
+<li><a href="#serialization-and-storage">Serialization and storage</a></li>
+<li><a href="#games">Games</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#other-haxe-lists">Other haxe lists</a></li>
+</ul>
+<h2>Game engines</h2>
+<p>Those are Haxe 4 compatible game engines
+* <a href="https://github.com/armory3d/armory">Armory (Kha)</a> - An open-source 3D game engine with full Blender integration (<code>Web</code>, <code>Mobile</code>, <code>Desktop</code>, <code>Consoles</code>).
+* <a href="https://github.com/openfl/away3d">Away3D</a> - An open source, real-time 3D engine for OpenFL (<code>Web</code>, <code>Mobile</code>, <code>Desktop</code>).
+* <a href="https://github.com/ceramic-engine/ceramic">ceramic</a> - Cross-platform 2D framework (<code>Web</code>, <code>Mobile</code>, <code>Desktop</code>, <code>Unity</code>).
+* <a href="https://github.com/HaxeFlixel/flixel">HaxeFlixel (OpenFL)</a> - Free, cross-platform 2D game engine powered by OpenFL (<code>Web</code>, <code>Mobile</code>, <code>Desktop</code>, <code>Consoles</code>).
+* <a href="https://github.com/haxegon/haxegon">Haxegon (OpenFL)</a> - A programming library for beginners. Powered by OpenFL and Starling (<code>Web</code>, <code>Mobile</code>, <code>Desktop</code>, <code>Consoles</code>).
+* <a href="https://github.com/HeapsIO/heaps">Heaps</a> - High Performance Game Framework (<code>Web</code>, <code>Mobile</code>, <code>Desktop</code>, <code>Consoles</code>).
+* <a href="https://github.com/hxdefold/hxdefold">hxdefold</a> - Haxe/Lua externs for Defold game engine (<code>Web</code>, <code>Mobile</code>, <code>Desktop</code>).
+* <a href="https://github.com/openfl/openfl">OpenFL</a> - Interactive game and app development library (<code>Web</code>, <code>Mobile</code>, <code>Desktop</code>, <code>Consoles</code>).
+* <a href="https://github.com/openfl/starling">Starling</a> - The "Cross-Platform Game Engine", a popular Stage3D framework (<code>Web</code>, <code>Mobile</code>, <code>Desktop</code>).
+* <a href="https://github.com/Stencyl/stencyl-engine">Stencyl (OpenFL)</a> - Create Flash, HTML5, iOS, Android, and desktop games with no code (<code>Mobile</code>, <code>Desktop</code>).
+* <a href="https://github.com/proletariatgames/unreal.hx">unreal.hx</a> - Haxe Integration for Unreal (<code>Web</code>, <code>Mobile</code>, <code>Desktop</code>, <code>Consoles</code>).
+* <a href="https://github.com/HxGodot/hxgodot">HxGodot (Godot 4.0)</a> - A Haxe GDExtension for Godot 4 (<code>Web</code>, <code>Mobile</code>, <code>Desktop</code>, <code>Consoles</code>).</p>
+<h2>Low-level Engine</h2>
+<ul>
+<li><a href="https://github.com/Kode/Kha">Kha</a> - Ultra-portable, high performance, open source multimedia framework (<code>Web</code>, <code>Mobile</code>, <code>Desktop</code>, <code>Consoles</code>).    </li>
+<li><a href="https://github.com/openfl/lime">Lime</a> - A flexible, lightweight layer for Haxe cross-platform developers (<code>Web</code>, <code>Mobile</code>, <code>Desktop</code>).      </li>
+<li><a href="https://github.com/Sunjammer/linc_glfw">linc_glfw</a> - Desktop - GLFW binding (multi-platform library for OpenGL, OpenGL ES and Vulkan) <em>(Desktop)</em>.</li>
+<li><a href="https://github.com/haxenme/nme">NME</a> - A cross-platform native backend (<code>Web</code>, <code>Mobile</code>, <code>Desktop</code>).</li>
+<li><a href="https://github.com/Krismowo/3DSHaxe">3DSHaxe</a> - Make 3ds homebrew! (<code>3DS</code>).</li>
+</ul>
+<h2>Physics</h2>
+<ul>
+<li><a href="https://github.com/AustinEast/echo/">echo</a> - Simple Physics Library.</li>
+<li><a href="https://github.com/armory3d/haxebullet">haxebullet</a> - Bullet 3D Physics.</li>
+<li><a href="https://github.com/HaxeFlixel/nape-haxe4">nape-haxe4</a> - Physics Engine (the original Haxe3 version of nape can be found <a href="https://github.com/deltaluca/nape">here</a>).</li>
+</ul>
+<h2>Architecture</h2>
+<pre><code>IoC == Inversion of Control  
+EC == Entity Component  
+ECS == Entity-Component-System
+FSM == Finite State Machine
+MVC == Model View Controller
+</code></pre>
+<ul>
+<li><a href="https://github.com/hypersurge/awe6">awe6</a> - <code>IoC</code>, <code>EC</code> - The inverted game framework, is a development tool focused on Future Proofing.</li>
+<li><a href="https://github.com/eliasku/ecx">ecx</a> - <code>ECS</code> - An Entity Component System framework.</li>
+<li><a href="https://github.com/DoclerLabs/hexCore">hexMachina</a> - <code>MVC</code> - A powerful multi-modular MVC framework.</li>
+<li><a href="https://github.com/Dvergar/OSIS">OSIS</a> - <code>ECS</code> - Entity Component System architecture with networking support.</li>
+</ul>
+<h2>Networking</h2>
+<ul>
+<li><a href="https://github.com/Dvergar/Anette">Anette</a> - Simple network library (no UDP).</li>
+<li><a href="https://github.com/colyseus/colyseus-hx">colyseus-hx</a> - Multiplayer Game Client.</li>
+<li><a href="https://github.com/melonin/haxe-simple-peer">haxe-simple-peer (js)</a> - Haxe externs for simple-peer.</li>
+<li><a href="https://github.com/ianharrigan/hxWebSockets">hxWebSockets</a> - Websockets for all platforms.</li>
+<li>Built-in - Heaps, OpenFL (HaxeFlixel &amp; co), Kha (Armory).</li>
+</ul>
+<h2>Serialization and storage</h2>
+<ul>
+<li><a href="https://github.com/RealyUniqueName/Bits">Bits</a> - Binary bit flags with unlimited amount of bits.</li>
+<li><a href="https://github.com/ncannasse/castle">CastleDB</a> - A structured static database easing collaboration.</li>
+<li><a href="https://github.com/ncannasse/hxbit">hxbit</a> - A binary serialization and network synchronization library.</li>
+<li><a href="https://github.com/Dvergar/PODStream">PODStream</a> - Plain Old Data serializer.</li>
+</ul>
+<!--lint disable awesome-list-item-->
+<h2>Games</h2>
+<ul>
+<li><a href="https://store.steampowered.com/app/939100/Darksburg/">Darksburg</a> - Heaps - <code>Desktop</code>.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <div align="center"><a href="https://haxe.org/"><img src="images/haxe-logo.png" width="500"></a></div>
+
+<h1>Awesome Haxe Game Development <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat2.svg" /></a></h1>
+<p>A curated list of game development resources for <strong><a href="https://haxe.org/">Haxe 4</a></strong>, a high level strictly typed programming language which is used to produce cross-platform native code.</p>
+<p>Feel free to update it.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#game-engines">Game engines</a></li>
+<li><a href="#low-level-engine">Low-level Engine</a></li>
+<li><a href="#physics">Physics</a></li>
+<li><a href="#architecture">Architecture</a></li>
+<li><a href="#networking">Networking</a></li>
+<li><a href="#serialization-and-storage">Serialization and storage</a></li>
+<li><a href="#games">Games</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#other-haxe-lists">Other haxe lists</a></li>
+</ul>
+<h2>Game engines</h2>
+<p>Those are Haxe 4 compatible game engines
+* <a href="https://github.com/armory3d/armory">Armory (Kha)</a> - An open-source 3D game engine with full Blender integration (<code>Web</code>, <code>Mobile</code>, <code>Desktop</code>, <code>Consoles</code>).
+* <a href="https://github.com/openfl/away3d">Away3D</a> - An open source, real-time 3D engine for OpenFL (<code>Web</code>, <code>Mobile</code>, <code>Desktop</code>).
+* <a href="https://github.com/ceramic-engine/ceramic">ceramic</a> - Cross-platform 2D framework (<code>Web</code>, <code>Mobile</code>, <code>Desktop</code>, <code>Unity</code>).
+* <a href="https://github.com/HaxeFlixel/flixel">HaxeFlixel (OpenFL)</a> - Free, cross-platform 2D game engine powered by OpenFL (<code>Web</code>, <code>Mobile</code>, <code>Desktop</code>, <code>Consoles</code>).
+* <a href="https://github.com/haxegon/haxegon">Haxegon (OpenFL)</a> - A programming library for beginners. Powered by OpenFL and Starling (<code>Web</code>, <code>Mobile</code>, <code>Desktop</code>, <code>Consoles</code>).
+* <a href="https://github.com/HeapsIO/heaps">Heaps</a> - High Performance Game Framework (<code>Web</code>, <code>Mobile</code>, <code>Desktop</code>, <code>Consoles</code>).
+* <a href="https://github.com/hxdefold/hxdefold">hxdefold</a> - Haxe/Lua externs for Defold game engine (<code>Web</code>, <code>Mobile</code>, <code>Desktop</code>).
+* <a href="https://github.com/openfl/openfl">OpenFL</a> - Interactive game and app development library (<code>Web</code>, <code>Mobile</code>, <code>Desktop</code>, <code>Consoles</code>).
+* <a href="https://github.com/openfl/starling">Starling</a> - The "Cross-Platform Game Engine", a popular Stage3D framework (<code>Web</code>, <code>Mobile</code>, <code>Desktop</code>).
+* <a href="https://github.com/Stencyl/stencyl-engine">Stencyl (OpenFL)</a> - Create Flash, HTML5, iOS, Android, and desktop games with no code (<code>Mobile</code>, <code>Desktop</code>).
+* <a href="https://github.com/proletariatgames/unreal.hx">unreal.hx</a> - Haxe Integration for Unreal (<code>Web</code>, <code>Mobile</code>, <code>Desktop</code>, <code>Consoles</code>).
+* <a href="https://github.com/HxGodot/hxgodot">HxGodot (Godot 4.0)</a> - A Haxe GDExtension for Godot 4 (<code>Web</code>, <code>Mobile</code>, <code>Desktop</code>, <code>Consoles</code>).</p>
+<h2>Low-level Engine</h2>
+<ul>
+<li><a href="https://github.com/Kode/Kha">Kha</a> - Ultra-portable, high performance, open source multimedia framework (<code>Web</code>, <code>Mobile</code>, <code>Desktop</code>, <code>Consoles</code>).    </li>
+<li><a href="https://github.com/openfl/lime">Lime</a> - A flexible, lightweight layer for Haxe cross-platform developers (<code>Web</code>, <code>Mobile</code>, <code>Desktop</code>).      </li>
+<li><a href="https://github.com/Sunjammer/linc_glfw">linc_glfw</a> - Desktop - GLFW binding (multi-platform library for OpenGL, OpenGL ES and Vulkan) <em>(Desktop)</em>.</li>
+<li><a href="https://github.com/haxenme/nme">NME</a> - A cross-platform native backend (<code>Web</code>, <code>Mobile</code>, <code>Desktop</code>).</li>
+<li><a href="https://github.com/Krismowo/3DSHaxe">3DSHaxe</a> - Make 3ds homebrew! (<code>3DS</code>).</li>
+</ul>
+<h2>Physics</h2>
+<ul>
+<li><a href="https://github.com/AustinEast/echo/">echo</a> - Simple Physics Library.</li>
+<li><a href="https://github.com/armory3d/haxebullet">haxebullet</a> - Bullet 3D Physics.</li>
+<li><a href="https://github.com/HaxeFlixel/nape-haxe4">nape-haxe4</a> - Physics Engine (the original Haxe3 version of nape can be found <a href="https://github.com/deltaluca/nape">here</a>).</li>
+</ul>
+<h2>Architecture</h2>
+<pre><code>IoC == Inversion of Control  
+EC == Entity Component  
+ECS == Entity-Component-System
+FSM == Finite State Machine
+MVC == Model View Controller
+</code></pre>
+<ul>
+<li><a href="https://github.com/hypersurge/awe6">awe6</a> - <code>IoC</code>, <code>EC</code> - The inverted game framework, is a development tool focused on Future Proofing.</li>
+<li><a href="https://github.com/eliasku/ecx">ecx</a> - <code>ECS</code> - An Entity Component System framework.</li>
+<li><a href="https://github.com/DoclerLabs/hexCore">hexMachina</a> - <code>MVC</code> - A powerful multi-modular MVC framework.</li>
+<li><a href="https://github.com/Dvergar/OSIS">OSIS</a> - <code>ECS</code> - Entity Component System architecture with networking support.</li>
+</ul>
+<h2>Networking</h2>
+<ul>
+<li><a href="https://github.com/Dvergar/Anette">Anette</a> - Simple network library (no UDP).</li>
+<li><a href="https://github.com/colyseus/colyseus-hx">colyseus-hx</a> - Multiplayer Game Client.</li>
+<li><a href="https://github.com/melonin/haxe-simple-peer">haxe-simple-peer (js)</a> - Haxe externs for simple-peer.</li>
+<li><a href="https://github.com/ianharrigan/hxWebSockets">hxWebSockets</a> - Websockets for all platforms.</li>
+<li>Built-in - Heaps, OpenFL (HaxeFlixel &amp; co), Kha (Armory).</li>
+</ul>
+<h2>Serialization and storage</h2>
+<ul>
+<li><a href="https://github.com/RealyUniqueName/Bits">Bits</a> - Binary bit flags with unlimited amount of bits.</li>
+<li><a href="https://github.com/ncannasse/castle">CastleDB</a> - A structured static database easing collaboration.</li>
+<li><a href="https://github.com/ncannasse/hxbit">hxbit</a> - A binary serialization and network synchronization library.</li>
+<li><a href="https://github.com/Dvergar/PODStream">PODStream</a> - Plain Old Data serializer.</li>
+</ul>
+<!--lint disable awesome-list-item-->
+<h2>Games</h2>
+<ul>
+<li><a href="https://store.steampowered.com/app/939100/Darksburg/">Darksburg</a> - Heaps - <code>Desktop</code>.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'haxe-game-development_README.md';
 
         fetch(markdownFile)
@@ -48,21 +197,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

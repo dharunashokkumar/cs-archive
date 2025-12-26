@@ -8,38 +8,291 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Stevinz Awesome Game Engine Dev - Awesome List Resources">
-    <title>Stevinz Awesome Game Engine Dev</title>
+    <meta name="description" content="Curated list of resources related to the development of game engines (tools that improve and speed up game creation). Specifically toward the development of...">
+    <meta name="robots" content="index, follow">
+    <title>Game Engine Development - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <!--lint ignore no-dead-urls-->
+
+<div align="center">
+    <a href="https://github.com/stevinz/awesome-game-engine-dev"><img width="1100" src="aged-title.png" alt="Awesome Game Engine Dev Logo"/></a>
+</div>
+
+<h1>Awesome Game Engine Development <a href="https://github.com/sindresorhus/awesome#readme"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a></h1>
+<p>Curated list of resources related to the development of game engines (tools that improve and speed up game creation). Specifically toward the development of high-level, fully featured game engines (e.g., Godot / Unity).</p>
+<p>This includes things typically not found in low-level game engines, app / game frameworks, or graphics libraries (e.g., MonoGame / SDL). Most importantly of which would be a visual scene editor, but also capabilities like scripting, physics, asset management, special effects, monetization, etc.</p>
+<p><br /></p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#game-engines">Game Engines</a><ul>
+<li><a href="#awesome-collections">Awesome Collections</a></li>
+<li><a href="#popular">Popular</a></li>
+<li><a href="#aaa">AAA</a></li>
+<li><a href="#commercial">Commercial</a></li>
+<li><a href="#specialty">Specialty</a></li>
+</ul>
+</li>
+<li><a href="#learning">Learning</a><ul>
+<li><a href="#computer-graphics">Computer Graphics</a></li>
+<li><a href="#engine-development">Engine Development</a></li>
+<li><a href="#game-development">Game Development</a></li>
+<li><a href="#graphical-user-interface">Graphical User Interface</a></li>
+<li><a href="#programming">Programming</a></li>
+</ul>
+</li>
+<li><a href="#libraries">Libraries</a><ul>
+<li><a href="#basic">BASIC</a></li>
+<li><a href="#c">C</a></li>
+<li><a href="#c-1">C++</a></li>
+<li><a href="#c-2">C#</a></li>
+<li><a href="#dart">Dart</a></li>
+<li><a href="#f">F#</a></li>
+<li><a href="#go">Go</a></li>
+<li><a href="#haxe">Haxe</a></li>
+<li><a href="#lua">Lua</a></li>
+<li><a href="#java">Java</a></li>
+<li><a href="#javascript">JavaScript</a></li>
+<li><a href="#kotlin">Kotlin</a></li>
+<li><a href="#pascal">Pascal</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#ruby">Ruby</a></li>
+<li><a href="#rust">Rust</a></li>
+<li><a href="#zig">Zig</a></li>
+</ul>
+</li>
+<li><a href="#open-source-games">Open Source Games</a><ul>
+<li><a href="#awesome-collections-1">Awesome Collections</a></li>
+<li><a href="#c-3">C</a></li>
+<li><a href="#c-4">C++</a></li>
+<li><a href="#java-1">Java</a></li>
+</ul>
+</li>
+<li><a href="#specialty-topics">Specialty Topics</a><ul>
+<li><a href="#ai--pathfinding">AI / Pathfinding</a></li>
+<li><a href="#color-manipulation">Color Manipulation</a></li>
+<li><a href="#entity-component-systems">Entity Component Systems</a></li>
+<li><a href="#fluid--smoke">Fluid / Smoke</a></li>
+<li><a href="#geometry">Geometry</a></li>
+<li><a href="#hair">Hair</a></li>
+<li><a href="#lighting--shadows">Lighting / Shadows</a></li>
+<li><a href="#network">Network</a></li>
+<li><a href="#particles">Particles</a></li>
+<li><a href="#physics">Physics</a></li>
+<li><a href="#rendering">Rendering</a></li>
+<li><a href="#scripting">Scripting</a></li>
+<li><a href="#shaders">Shaders</a></li>
+<li><a href="#signed-distance-fields">Signed Distance Fields</a></li>
+<li><a href="#tiling">Tiling</a></li>
+<li><a href="#transparency">Transparency</a></li>
+</ul>
+</li>
+<li><a href="#tools--software">Tools / Software</a><ul>
+<li><a href="#2d-game-dev">2D Game Dev</a></li>
+<li><a href="#ai-assistants">AI Assistants</a></li>
+<li><a href="#animation-software">Animation Software</a></li>
+<li><a href="#audio-tools">Audio Tools</a></li>
+<li><a href="#color--palettes">Color / Palettes</a></li>
+<li><a href="#generative-art">Generative Art</a></li>
+<li><a href="#image-editors">Image Editors</a></li>
+<li><a href="#level-editors">Level Editors</a></li>
+<li><a href="#materials--textures">Materials / Textures</a></li>
+<li><a href="#modeling-tools">Modeling Tools</a></li>
+<li><a href="#particle-tools">Particle Tools</a></li>
+<li><a href="#pixel-art">Pixel Art</a></li>
+<li><a href="#vector-editors">Vector Editors</a></li>
+<li><a href="#voxel">Voxel</a></li>
+</ul>
+</li>
+<li><a href="#video-game-assets">Video Game Assets</a><ul>
+<li><a href="#audio-assets">Audio Assets</a></li>
+<li><a href="#graphic-assets">Graphic Assets</a></li>
+<li><a href="#material-assets">Material Assets</a></li>
+<li><a href="#model-assets">Model Assets</a></li>
+</ul>
+</li>
+<li><a href="#archive">Archive</a></li>
+<li><a href="#legend">Legend</a></li>
+</ul>
+<p><br />
+<br /></p>
+<h2>Game Engines</h2>
+<p><em>Production ready game engines to tinker with, explore, learn and inspire.</em></p>
+<h3>Awesome Collections</h3>
+<ul>
+<li>📚 <a href="https://github.com/JohnClarking/CoolEngines">CoolEngines</a> - List of open source graphic &amp; game engines.</li>
+<li>📚 <a href="https://en.wikipedia.org/wiki/List_of_game_engines">Wikipedia: List of Game Engines</a> - Game engines along with their platforms and licenses.</li>
+</ul>
+<h3>Popular</h3>
+<ul>
+<li>🎉 <a href="https://github.com/godotengine/godot#readme">Godot</a> 🔥 - Feature-packed, open source engine. Excellent! [<a href="https://github.com/godotengine/awesome-godot#readme">Awesome</a> | <a href="https://godotengine.org">Website</a>]</li>
+<li>💸 <a href="https://unity.com">Unity</a> - Biggest name in game engines, industry standard. [<a href="https://github.com/RyanNielson/awesome-unity">Awesome</a>]</li>
+<li>💸 <a href="https://www.unrealengine.com">Unreal Engine</a> - AAA quality, insane feature set, photoreal visuals. [<a href="https://github.com/insthync/awesome-ue4#readme">Awesome</a>]</li>
+</ul>
+<h3>AAA</h3>
+<ul>
+<li>🎉 <a href="https://github.com/aws/lumberyard">Amazon Lumberyard</a> - AAA engine integrated with AWS and Twitch. Forked from <em>CRYENGINE</em>.</li>
+<li>💰 <a href="http://c4engine.com">C4 Engine</a> - Modern console engine.</li>
+<li>💸 <a href="https://www.cryengine.com">CRYENGINE</a> - Powerful real-time game development platform by <em>Crytek</em>.</li>
+<li>🆓 <a href="https://evergine.com">Evergine</a> - High-quality 3D and 2D solutions. Formerly <em>Wave Engine</em>. [<a href="https://github.com/EvergineTeam/Samples">Samples</a>]</li>
+<li>💸 <a href="https://github.com/FlaxEngine/FlaxEngine">Flax Engine</a> - Modern 3D game engine written in C++ and C#.</li>
+<li>💰 <a href="http://www.gamebryo.com">Gamebryo</a> - Complete toolset, flexible workflow, rapid prototyping.</li>
+<li>🎉 <a href="https://github.com/o3de/o3de/">O3DE</a> - Multi-platform AAA engine. Cinema-quality 3D. Successor to <em>Lumberyard</em>.</li>
+<li>💸 <a href="https://unigine.com">Unigine</a> - Real-time 3D engine. Photorealistic graphics, large virtual worlds, C++ and C# API.</li>
+</ul>
+<h3>Commercial</h3>
+<ul>
+<li>💰 <a href="https://www.appgamekit.com/studio">AppGameKit</a> - Easy and quick game making by <em>TheGameCreators</em>.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <!--lint ignore no-dead-urls-->
+
+<div align="center">
+    <a href="https://github.com/stevinz/awesome-game-engine-dev"><img width="1100" src="aged-title.png" alt="Awesome Game Engine Dev Logo"/></a>
+</div>
+
+<h1>Awesome Game Engine Development <a href="https://github.com/sindresorhus/awesome#readme"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a></h1>
+<p>Curated list of resources related to the development of game engines (tools that improve and speed up game creation). Specifically toward the development of high-level, fully featured game engines (e.g., Godot / Unity).</p>
+<p>This includes things typically not found in low-level game engines, app / game frameworks, or graphics libraries (e.g., MonoGame / SDL). Most importantly of which would be a visual scene editor, but also capabilities like scripting, physics, asset management, special effects, monetization, etc.</p>
+<p><br /></p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#game-engines">Game Engines</a><ul>
+<li><a href="#awesome-collections">Awesome Collections</a></li>
+<li><a href="#popular">Popular</a></li>
+<li><a href="#aaa">AAA</a></li>
+<li><a href="#commercial">Commercial</a></li>
+<li><a href="#specialty">Specialty</a></li>
+</ul>
+</li>
+<li><a href="#learning">Learning</a><ul>
+<li><a href="#computer-graphics">Computer Graphics</a></li>
+<li><a href="#engine-development">Engine Development</a></li>
+<li><a href="#game-development">Game Development</a></li>
+<li><a href="#graphical-user-interface">Graphical User Interface</a></li>
+<li><a href="#programming">Programming</a></li>
+</ul>
+</li>
+<li><a href="#libraries">Libraries</a><ul>
+<li><a href="#basic">BASIC</a></li>
+<li><a href="#c">C</a></li>
+<li><a href="#c-1">C++</a></li>
+<li><a href="#c-2">C#</a></li>
+<li><a href="#dart">Dart</a></li>
+<li><a href="#f">F#</a></li>
+<li><a href="#go">Go</a></li>
+<li><a href="#haxe">Haxe</a></li>
+<li><a href="#lua">Lua</a></li>
+<li><a href="#java">Java</a></li>
+<li><a href="#javascript">JavaScript</a></li>
+<li><a href="#kotlin">Kotlin</a></li>
+<li><a href="#pascal">Pascal</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#ruby">Ruby</a></li>
+<li><a href="#rust">Rust</a></li>
+<li><a href="#zig">Zig</a></li>
+</ul>
+</li>
+<li><a href="#open-source-games">Open Source Games</a><ul>
+<li><a href="#awesome-collections-1">Awesome Collections</a></li>
+<li><a href="#c-3">C</a></li>
+<li><a href="#c-4">C++</a></li>
+<li><a href="#java-1">Java</a></li>
+</ul>
+</li>
+<li><a href="#specialty-topics">Specialty Topics</a><ul>
+<li><a href="#ai--pathfinding">AI / Pathfinding</a></li>
+<li><a href="#color-manipulation">Color Manipulation</a></li>
+<li><a href="#entity-component-systems">Entity Component Systems</a></li>
+<li><a href="#fluid--smoke">Fluid / Smoke</a></li>
+<li><a href="#geometry">Geometry</a></li>
+<li><a href="#hair">Hair</a></li>
+<li><a href="#lighting--shadows">Lighting / Shadows</a></li>
+<li><a href="#network">Network</a></li>
+<li><a href="#particles">Particles</a></li>
+<li><a href="#physics">Physics</a></li>
+<li><a href="#rendering">Rendering</a></li>
+<li><a href="#scripting">Scripting</a></li>
+<li><a href="#shaders">Shaders</a></li>
+<li><a href="#signed-distance-fields">Signed Distance Fields</a></li>
+<li><a href="#tiling">Tiling</a></li>
+<li><a href="#transparency">Transparency</a></li>
+</ul>
+</li>
+<li><a href="#tools--software">Tools / Software</a><ul>
+<li><a href="#2d-game-dev">2D Game Dev</a></li>
+<li><a href="#ai-assistants">AI Assistants</a></li>
+<li><a href="#animation-software">Animation Software</a></li>
+<li><a href="#audio-tools">Audio Tools</a></li>
+<li><a href="#color--palettes">Color / Palettes</a></li>
+<li><a href="#generative-art">Generative Art</a></li>
+<li><a href="#image-editors">Image Editors</a></li>
+<li><a href="#level-editors">Level Editors</a></li>
+<li><a href="#materials--textures">Materials / Textures</a></li>
+<li><a href="#modeling-tools">Modeling Tools</a></li>
+<li><a href="#particle-tools">Particle Tools</a></li>
+<li><a href="#pixel-art">Pixel Art</a></li>
+<li><a href="#vector-editors">Vector Editors</a></li>
+<li><a href="#voxel">Voxel</a></li>
+</ul>
+</li>
+<li><a href="#video-game-assets">Video Game Assets</a><ul>
+<li><a href="#audio-assets">Audio Assets</a></li>
+<li><a href="#graphic-assets">Graphic Assets</a></li>
+<li><a href="#material-assets">Material Assets</a></li>
+<li><a href="#model-assets">Model Assets</a></li>
+</ul>
+</li>
+<li><a href="#archive">Archive</a></li>
+<li><a href="#legend">Legend</a></li>
+</ul>
+<p><br />
+<br /></p>
+<h2>Game Engines</h2>
+<p><em>Production ready game engines to tinker with, explore, learn and inspire.</em></p>
+<h3>Awesome Collections</h3>
+<ul>
+<li>📚 <a href="https://github.com/JohnClarking/CoolEngines">CoolEngines</a> - List of open source graphic &amp; game engines.</li>
+<li>📚 <a href="https://en.wikipedia.org/wiki/List_of_game_engines">Wikipedia: List of Game Engines</a> - Game engines along with their platforms and licenses.</li>
+</ul>
+<h3>Popular</h3>
+<ul>
+<li>🎉 <a href="https://github.com/godotengine/godot#readme">Godot</a> 🔥 - Feature-packed, open source engine. Excellent! [<a href="https://github.com/godotengine/awesome-godot#readme">Awesome</a> | <a href="https://godotengine.org">Website</a>]</li>
+<li>💸 <a href="https://unity.com">Unity</a> - Biggest name in game engines, industry standard. [<a href="https://github.com/RyanNielson/awesome-unity">Awesome</a>]</li>
+<li>💸 <a href="https://www.unrealengine.com">Unreal Engine</a> - AAA quality, insane feature set, photoreal visuals. [<a href="https://github.com/insthync/awesome-ue4#readme">Awesome</a>]</li>
+</ul>
+<h3>AAA</h3>
+<ul>
+<li>🎉 <a href="https://github.com/aws/lumberyard">Amazon Lumberyard</a> - AAA engine integrated with AWS and Twitch. Forked from <em>CRYENGINE</em>.</li>
+<li>💰 <a href="http://c4engine.com">C4 Engine</a> - Modern console engine.</li>
+<li>💸 <a href="https://www.cryengine.com">CRYENGINE</a> - Powerful real-time game development platform by <em>Crytek</em>.</li>
+<li>🆓 <a href="https://evergine.com">Evergine</a> - High-quality 3D and 2D solutions. Formerly <em>Wave Engine</em>. [<a href="https://github.com/EvergineTeam/Samples">Samples</a>]</li>
+<li>💸 <a href="https://github.com/FlaxEngine/FlaxEngine">Flax Engine</a> - Modern 3D game engine written in C++ and C#.</li>
+<li>💰 <a href="http://www.gamebryo.com">Gamebryo</a> - Complete toolset, flexible workflow, rapid prototyping.</li>
+<li>🎉 <a href="https://github.com/o3de/o3de/">O3DE</a> - Multi-platform AAA engine. Cinema-quality 3D. Successor to <em>Lumberyard</em>.</li>
+<li>💸 <a href="https://unigine.com">Unigine</a> - Real-time 3D engine. Photorealistic graphics, large virtual worlds, C++ and C# API.</li>
+</ul>
+<h3>Commercial</h3>
+<ul>
+<li>💰 <a href="https://www.appgamekit.com/studio">AppGameKit</a> - Easy and quick game making by <em>TheGameCreators</em>.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'game-engine-development_README.md';
 
         fetch(markdownFile)
@@ -48,21 +301,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

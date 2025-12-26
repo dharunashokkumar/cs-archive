@@ -8,38 +8,127 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tmcw Awesome Geojson - Awesome List Resources">
-    <title>Tmcw Awesome Geojson</title>
+    <meta name="description" content="GeoJSON utilities that will make your life easier. Sponsored by Placemark, a collaborative editor for maps with great support for GeoJSON CoGran: Resample...">
+    <meta name="robots" content="index, follow">
+    <title>awesome geojson [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>awesome geojson <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>GeoJSON utilities that will make your life easier.</p>
+<p><a href='https://www.placemark.io/'><i><img src='.github/placemark.png' width='16' alt='Placemark' height='16' /> Sponsored by Placemark, a collaborative editor for maps with great support for GeoJSON</i></a></p>
+<h3>operations</h3>
+<ul>
+<li><a href="https://github.com/berlinermorgenpost/cogran">CoGran</a>: Resample statistics from one set of GeoJSON polygons to another</li>
+<li><a href="https://github.com/stadt-karlsruhe/geo_assigner">geo_assigner</a>: Copy a property to all intersecting features</li>
+<li><a href="https://github.com/mapbox/geojson-coords">geojson-coords</a>: Extract coordinates from GeoJSON</li>
+<li><a href="https://www.npmjs.com/package/geojson-extent">geojson-extent</a>: compute the bounding box of geojson features</li>
+<li><a href="https://github.com/tmcw/geojson-flatten">geojson-flatten</a>: flatten multi geometries into normal geometries</li>
+<li><a href="https://github.com/haoliangyu/geojson-multiply">geojson-multiply</a>:  merge normal geojson features into one multi geometry type feature</li>
+<li><a href="https://github.com/maxogden/geojson-js-utils">geojson-js-utils</a>: JavaScript helper functions for manipulating GeoJSON</li>
+<li><a href="https://github.com/mapbox/geojson-merge">geojson-merge</a>: Merge multiple GeoJSON files into one FeatureCollection.</li>
+<li><a href="https://github.com/mapbox/geojson-normalize">geojson-normalize</a>: normalize any geojson object into a geojson featurecollection</li>
+<li><a href="https://www.npmjs.com/package/geojson-pick">geojson-pick</a>: remove all but specified properties from features in a geojson featurecollection</li>
+<li><a href="https://github.com/tmcw/geojson-random">geojson-random</a>: generate random geojson points, lines, and polygons</li>
+<li><a href="https://github.com/mapbox/geojson-rewind">geojson-rewind</a>: enforce ring winding order</li>
+<li><a href="https://github.com/tyrasd/rfc7946-to-d3">rfc7946-to-d3</a>: Converts polygon winding order between rfc7946 and <a href="https://github.com/d3/d3-geo#d3-geo">d3 compatible</a> conventions.</li>
+<li><a href="https://github.com/mapbox/geojson-summary">geojson-summary</a>: get a plain-english summary of what's in a geojson file</li>
+<li><a href="https://github.com/substack/point-grouper">point-grouper</a>: group geojson points into containing polygons</li>
+<li><a href="https://github.com/tmcw/geojson-join">geojson-join</a>: join geojson against json, dbf, and csv files</li>
+<li><a href="https://github.com/maxogden/simplify-geojson">simplify-geojson</a>: apply the ramer-douglas-peucker line simplification to geojson features or feature collections in JS or on the CLI</li>
+<li><a href="https://github.com/Turfjs/turf">turf</a>: collection of functions for spatial operations and analysi</li>
+<li><a href="https://github.com/dartclub/turf_dart">turf_dart</a>: a turf.js port for Dart and Flutter</li>
+<li><a href="https://github.com/dpmcmlxxvi/de9im">de9im</a>: collection of fast functions for spatial javascript operations</li>
+<li><a href="https://github.com/dmfenton/winnow">winnow</a>: run sql queries against geojson with javascript</li>
+<li><a href="https://github.com/andrewharvey/geojson-id-streaming">geojson-id-streaming</a>: Add a unique id to each Feature</li>
+<li><a href="https://github.com/andrewharvey/geojson-mesh">geojson-mesh</a>: extract shared borders of Polygons in a GeoJSON</li>
+<li><a href="https://github.com/andrewharvey/geojson-polygon-labels">geojson-polygon-labels</a>: generate point labels from GeoJSON polygons</li>
+<li><a href="https://github.com/micolous/geojsontools">geojsontools</a>: Python tools for manipulating GeoJSON files</li>
+<li><a href="https://github.com/armanjr/geojson-indoor-tools">geojson-indoor-tools</a>: Python tools for editing indoor GeoJSON features: adding room heights, building walls and creating doors</li>
+<li><a href="https://github.com/ben-n93/geojson-shave">geojson-shave</a>: a Python command-line tool for reducing the size of GeoJSON files.</li>
+</ul>
+<h3>editors &amp; viewers</h3>
+<ul>
+<li><a href="https://play.placemark.io/">play.placemark.io</a>: web-based editor, supports many filetype imports &amp; exports, operations</li>
+<li><a href="http://geojson.io/">geojson.io</a>: web-based editor, supports many filetype imports &amp; exports, operations, sharing via GitHub</li>
+<li><a href="http://umap.openstreetmap.fr/en/">umap</a>: web-based editor, supports sharing on-site</li>
+<li><a href="https://formatjsononline.com/geojson-formatter">geojson formatter</a>: Validate &amp; Analyze Geographic Data Online</li>
+<li><a href="http://geojson.tools/">geojson.tools</a>: web-based editor from HERE XYZ</li>
+<li><a href="http://mapstarter.com/">mapstarter</a>: helps generate svg, images, and code from GeoJSON</li>
+<li><a href="https://github.com/anandthakker/gjv">gjv</a>: electron app enables viewing GeoJSON locally and hack on it with turf; works offline</li>
+<li><a href="https://tomscholz.github.io/geojson-editor/">GeoJSON editor</a>: a modified version of Google's simple geojson editor</li>
+<li><a href="https://github.com/brycejohnston/geojson2image">geojson2image</a>: library for generating images from GeoJSON</li>
+<li><a href="http://dropchop.io/">dropchop</a>: browser-based GIS based on Turf.js</li>
+<li><a href="https://drewweth.github.io/geodebugger">Web GIS</a>: tools to view, inspect, and manipulate geospatial data</li>
+<li><a href="https://caseymm.github.io/img2geojson/">img2geojson</a>: digitize images by overlaying on a web map and drawing</li>
+<li><a href="https://zverik.github.io/point_ed/">point_ed</a>: click on map to add points, download those as GeoJSON file</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>awesome geojson <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>GeoJSON utilities that will make your life easier.</p>
+<p><a href='https://www.placemark.io/'><i><img src='.github/placemark.png' width='16' alt='Placemark' height='16' /> Sponsored by Placemark, a collaborative editor for maps with great support for GeoJSON</i></a></p>
+<h3>operations</h3>
+<ul>
+<li><a href="https://github.com/berlinermorgenpost/cogran">CoGran</a>: Resample statistics from one set of GeoJSON polygons to another</li>
+<li><a href="https://github.com/stadt-karlsruhe/geo_assigner">geo_assigner</a>: Copy a property to all intersecting features</li>
+<li><a href="https://github.com/mapbox/geojson-coords">geojson-coords</a>: Extract coordinates from GeoJSON</li>
+<li><a href="https://www.npmjs.com/package/geojson-extent">geojson-extent</a>: compute the bounding box of geojson features</li>
+<li><a href="https://github.com/tmcw/geojson-flatten">geojson-flatten</a>: flatten multi geometries into normal geometries</li>
+<li><a href="https://github.com/haoliangyu/geojson-multiply">geojson-multiply</a>:  merge normal geojson features into one multi geometry type feature</li>
+<li><a href="https://github.com/maxogden/geojson-js-utils">geojson-js-utils</a>: JavaScript helper functions for manipulating GeoJSON</li>
+<li><a href="https://github.com/mapbox/geojson-merge">geojson-merge</a>: Merge multiple GeoJSON files into one FeatureCollection.</li>
+<li><a href="https://github.com/mapbox/geojson-normalize">geojson-normalize</a>: normalize any geojson object into a geojson featurecollection</li>
+<li><a href="https://www.npmjs.com/package/geojson-pick">geojson-pick</a>: remove all but specified properties from features in a geojson featurecollection</li>
+<li><a href="https://github.com/tmcw/geojson-random">geojson-random</a>: generate random geojson points, lines, and polygons</li>
+<li><a href="https://github.com/mapbox/geojson-rewind">geojson-rewind</a>: enforce ring winding order</li>
+<li><a href="https://github.com/tyrasd/rfc7946-to-d3">rfc7946-to-d3</a>: Converts polygon winding order between rfc7946 and <a href="https://github.com/d3/d3-geo#d3-geo">d3 compatible</a> conventions.</li>
+<li><a href="https://github.com/mapbox/geojson-summary">geojson-summary</a>: get a plain-english summary of what's in a geojson file</li>
+<li><a href="https://github.com/substack/point-grouper">point-grouper</a>: group geojson points into containing polygons</li>
+<li><a href="https://github.com/tmcw/geojson-join">geojson-join</a>: join geojson against json, dbf, and csv files</li>
+<li><a href="https://github.com/maxogden/simplify-geojson">simplify-geojson</a>: apply the ramer-douglas-peucker line simplification to geojson features or feature collections in JS or on the CLI</li>
+<li><a href="https://github.com/Turfjs/turf">turf</a>: collection of functions for spatial operations and analysi</li>
+<li><a href="https://github.com/dartclub/turf_dart">turf_dart</a>: a turf.js port for Dart and Flutter</li>
+<li><a href="https://github.com/dpmcmlxxvi/de9im">de9im</a>: collection of fast functions for spatial javascript operations</li>
+<li><a href="https://github.com/dmfenton/winnow">winnow</a>: run sql queries against geojson with javascript</li>
+<li><a href="https://github.com/andrewharvey/geojson-id-streaming">geojson-id-streaming</a>: Add a unique id to each Feature</li>
+<li><a href="https://github.com/andrewharvey/geojson-mesh">geojson-mesh</a>: extract shared borders of Polygons in a GeoJSON</li>
+<li><a href="https://github.com/andrewharvey/geojson-polygon-labels">geojson-polygon-labels</a>: generate point labels from GeoJSON polygons</li>
+<li><a href="https://github.com/micolous/geojsontools">geojsontools</a>: Python tools for manipulating GeoJSON files</li>
+<li><a href="https://github.com/armanjr/geojson-indoor-tools">geojson-indoor-tools</a>: Python tools for editing indoor GeoJSON features: adding room heights, building walls and creating doors</li>
+<li><a href="https://github.com/ben-n93/geojson-shave">geojson-shave</a>: a Python command-line tool for reducing the size of GeoJSON files.</li>
+</ul>
+<h3>editors &amp; viewers</h3>
+<ul>
+<li><a href="https://play.placemark.io/">play.placemark.io</a>: web-based editor, supports many filetype imports &amp; exports, operations</li>
+<li><a href="http://geojson.io/">geojson.io</a>: web-based editor, supports many filetype imports &amp; exports, operations, sharing via GitHub</li>
+<li><a href="http://umap.openstreetmap.fr/en/">umap</a>: web-based editor, supports sharing on-site</li>
+<li><a href="https://formatjsononline.com/geojson-formatter">geojson formatter</a>: Validate &amp; Analyze Geographic Data Online</li>
+<li><a href="http://geojson.tools/">geojson.tools</a>: web-based editor from HERE XYZ</li>
+<li><a href="http://mapstarter.com/">mapstarter</a>: helps generate svg, images, and code from GeoJSON</li>
+<li><a href="https://github.com/anandthakker/gjv">gjv</a>: electron app enables viewing GeoJSON locally and hack on it with turf; works offline</li>
+<li><a href="https://tomscholz.github.io/geojson-editor/">GeoJSON editor</a>: a modified version of Google's simple geojson editor</li>
+<li><a href="https://github.com/brycejohnston/geojson2image">geojson2image</a>: library for generating images from GeoJSON</li>
+<li><a href="http://dropchop.io/">dropchop</a>: browser-based GIS based on Turf.js</li>
+<li><a href="https://drewweth.github.io/geodebugger">Web GIS</a>: tools to view, inspect, and manipulate geospatial data</li>
+<li><a href="https://caseymm.github.io/img2geojson/">img2geojson</a>: digitize images by overlaying on a web map and drawing</li>
+<li><a href="https://zverik.github.io/point_ed/">point_ed</a>: click on map to add points, download those as GeoJSON file</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'geojson_README.md';
 
         fetch(markdownFile)
@@ -48,21 +137,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

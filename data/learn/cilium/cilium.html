@@ -8,38 +8,123 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Seifrajhi Awesome Cilium - Awesome List Resources">
-    <title>Seifrajhi Awesome Cilium</title>
+    <meta name="description" content="> Cilium is an open-source networking project that provides networking and security capabilities for containerized applications, microservices, and virtual...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Cilium [![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Cilium <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<blockquote>
+<p>Cilium is an open-source networking project that provides networking and security capabilities for containerized applications, microservices, and virtual machines.</p>
+</blockquote>
+<p>Recently <a href="https://docs.cilium.io/en/stable">Cilium</a> launched a great website about eBPF called <a href="https://ebpf.io/">ebpf.io</a>. It serves a similar purpose to this list, with <a href="https://ebpf.io/what-is-ebpf">an introduction to eBPF</a>.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#reference-documentation">Reference Documentation</a></li>
+<li><a href="#cilium-related-projects">Cilium related projects</a></li>
+<li><a href="#articles-and-presentations">Articles and Presentations</a></li>
+<li><a href="#community-events">Community Events</a></li>
+<li><a href="#community-and-contributing">Community and Contributing</a></li>
+<li><a href="#hands-on-contents">Hands on Contents</a></li>
+</ul>
+<h2>Reference Documentation</h2>
+<ul>
+<li><a href="https://cilium.io">Website</a> - Official website of Cilium, originally created by <a href="https://isovalent.com/">Isovalent</a>.</li>
+<li><a href="https://github.com/cilium">Official GitHub repository</a> - GitHub repository of the Cilium project.</li>
+<li><a href="https://github.com/littlejo/cilium-eks-cookbook">A cookbook of installing Cilium on AWS EKS</a> - Multiple ways to install Cilium in EKS.</li>
+<li><a href="https://github.com/isovalent/CCA-Study-Guide">Cilium Certified Associate Study Guide</a> - Study guide to help the Cilium community prepare for the CNCF's Cilium Certified Associate (CCA) Exam.</li>
+</ul>
+<h2>Cilium related projects</h2>
+<ul>
+<li><a href="https://github.com/cilium/cilium">Cilium</a> - A networking plugin for various container runtimes such as Kubernetes, Docker, and Mesos. It leverages Linux kernel features like eBPF to provide fast and secure networking and load balancing for applications.</li>
+<li><a href="https://github.com/cilium/ebpf">eBPF</a> - Technology that allows for dynamic, programmable packet filtering and network analysis in the Linux kernel.</li>
+<li><a href="https://github.com/cilium/proxy">Cilium Proxy</a> - High-performance HTTP, TCP, and gRPC proxy that can be automatically injected into Kubernetes pods. It provides features like load balancing, health checking, and L7 visibility.</li>
+<li><a href="https://docs.cilium.io/en/v1.9/gettingstarted/clustermesh/">Cilium Cluster Mesh</a> - Securely connects multiple Kubernetes clusters together using encrypted tunnels. It enables seamless communication and service discovery across clusters while maintaining strong security boundaries.</li>
+<li><a href="https://github.com/cilium/hubble">Hubble</a> - Network visibility and monitoring tool built by the Cilium community. It provides real-time visibility into network traffic, allowing operators to gain insights into application behavior, troubleshoot connectivity issues, and enforce network security policies.</li>
+<li><a href="https://docs.cilium.io/en/stable/internals/cilium_operator/">Cilium Operator</a> - Kubernetes operator that simplifies the deployment and management of Cilium within a Kubernetes cluster. It automates tasks such as deploying Cilium agents, configuring eBPF policies, and handling upgrades.</li>
+<li><a href="https://github.com/cilium/tetragon">Tetragon</a> - Runtime security enforcement and observability tool.</li>
+<li><a href="https://isovalent.com/blog/post/introducing-cilium-mesh/">Cilium Mesh</a> - Connects Kubernetes workloads, virtual machines, and physical servers running in the cloud, on-premises, or at the edge.</li>
+<li><a href="https://editor.networkpolicy.io/">NetworkPolicy Editor</a> - Create, visualize, and share Kubernetes network policies.</li>
+<li><a href="https://github.com/cilium/cilium/tree/main/examples/kubernetes/addons/prometheus">Prometheus &amp; Grafana for Cilium</a> - Collects metrics from Cilium and stores them in Prometheus for analysis and alerting.</li>
+<li><a href="https://artifacthub.io/packages/helm/cilium/cilium">Cilium Helm Chart</a> - Helm chart that can be used to deploy Cilium on Kubernetes.</li>
+<li><a href="https://github.com/cilium/hubble-otel">Hubble adaptor for OpenTelemetry</a> - Enables exporting Hubble flow data using OpenTelemetry collector.</li>
+<li><a href="https://github.com/cilium/pwru">Packet, where are you?</a> - eBPF-based Linux kernel networking debugger.</li>
+<li><a href="https://github.com/coroot/coroot">Coroot</a> - Turns telemetry data into actionable insights, helping you identify and resolve application issues quickly.</li>
+<li><a href="https://github.com/pixie-io/pixie">Pixie</a> - Instant Kubernetes-native application observability.</li>
+<li><a href="https://github.com/groundcover-com/caretta">caretta</a> - Instant K8s service dependency map, right to your Grafana.</li>
+<li><a href="https://github.com/cosmonic-labs/netreap">Netreap</a> - Cilium controller implementation for Nomad.</li>
+<li><a href="https://www.solo.io/products/gloo-network/">Gloo Network</a> - Enables Cilium-CNI powered by eBPF to provide networking, packet filtering, and observability for modern applications.</li>
+<li><a href="https://www.admin-magazine.com/Archive/2019/50/Bpfilter-offers-a-new-approach-to-packet-filtering-in-Linux">Bpfilter instead of iptables for routing</a> - Bpfilter offers a new approach to packet filtering in Linux.</li>
+</ul>
+<p><img alt="image" src="https://github.com/seifrajhi/awesome-cilium/assets/26981510/b2236520-ea4c-400d-a5fd-15850a8bf420" /></p>
+<ul>
+<li><a href="https://docs.cilium.io/en/latest/network/kubernetes/policy/#ciliumclusterwidenetworkpolicy">Inter-node traffic control</a> - Policies that are applicable to the whole cluster (non-namespaced) and provide you with the means to specify nodes as the source and target.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Cilium <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<blockquote>
+<p>Cilium is an open-source networking project that provides networking and security capabilities for containerized applications, microservices, and virtual machines.</p>
+</blockquote>
+<p>Recently <a href="https://docs.cilium.io/en/stable">Cilium</a> launched a great website about eBPF called <a href="https://ebpf.io/">ebpf.io</a>. It serves a similar purpose to this list, with <a href="https://ebpf.io/what-is-ebpf">an introduction to eBPF</a>.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#reference-documentation">Reference Documentation</a></li>
+<li><a href="#cilium-related-projects">Cilium related projects</a></li>
+<li><a href="#articles-and-presentations">Articles and Presentations</a></li>
+<li><a href="#community-events">Community Events</a></li>
+<li><a href="#community-and-contributing">Community and Contributing</a></li>
+<li><a href="#hands-on-contents">Hands on Contents</a></li>
+</ul>
+<h2>Reference Documentation</h2>
+<ul>
+<li><a href="https://cilium.io">Website</a> - Official website of Cilium, originally created by <a href="https://isovalent.com/">Isovalent</a>.</li>
+<li><a href="https://github.com/cilium">Official GitHub repository</a> - GitHub repository of the Cilium project.</li>
+<li><a href="https://github.com/littlejo/cilium-eks-cookbook">A cookbook of installing Cilium on AWS EKS</a> - Multiple ways to install Cilium in EKS.</li>
+<li><a href="https://github.com/isovalent/CCA-Study-Guide">Cilium Certified Associate Study Guide</a> - Study guide to help the Cilium community prepare for the CNCF's Cilium Certified Associate (CCA) Exam.</li>
+</ul>
+<h2>Cilium related projects</h2>
+<ul>
+<li><a href="https://github.com/cilium/cilium">Cilium</a> - A networking plugin for various container runtimes such as Kubernetes, Docker, and Mesos. It leverages Linux kernel features like eBPF to provide fast and secure networking and load balancing for applications.</li>
+<li><a href="https://github.com/cilium/ebpf">eBPF</a> - Technology that allows for dynamic, programmable packet filtering and network analysis in the Linux kernel.</li>
+<li><a href="https://github.com/cilium/proxy">Cilium Proxy</a> - High-performance HTTP, TCP, and gRPC proxy that can be automatically injected into Kubernetes pods. It provides features like load balancing, health checking, and L7 visibility.</li>
+<li><a href="https://docs.cilium.io/en/v1.9/gettingstarted/clustermesh/">Cilium Cluster Mesh</a> - Securely connects multiple Kubernetes clusters together using encrypted tunnels. It enables seamless communication and service discovery across clusters while maintaining strong security boundaries.</li>
+<li><a href="https://github.com/cilium/hubble">Hubble</a> - Network visibility and monitoring tool built by the Cilium community. It provides real-time visibility into network traffic, allowing operators to gain insights into application behavior, troubleshoot connectivity issues, and enforce network security policies.</li>
+<li><a href="https://docs.cilium.io/en/stable/internals/cilium_operator/">Cilium Operator</a> - Kubernetes operator that simplifies the deployment and management of Cilium within a Kubernetes cluster. It automates tasks such as deploying Cilium agents, configuring eBPF policies, and handling upgrades.</li>
+<li><a href="https://github.com/cilium/tetragon">Tetragon</a> - Runtime security enforcement and observability tool.</li>
+<li><a href="https://isovalent.com/blog/post/introducing-cilium-mesh/">Cilium Mesh</a> - Connects Kubernetes workloads, virtual machines, and physical servers running in the cloud, on-premises, or at the edge.</li>
+<li><a href="https://editor.networkpolicy.io/">NetworkPolicy Editor</a> - Create, visualize, and share Kubernetes network policies.</li>
+<li><a href="https://github.com/cilium/cilium/tree/main/examples/kubernetes/addons/prometheus">Prometheus &amp; Grafana for Cilium</a> - Collects metrics from Cilium and stores them in Prometheus for analysis and alerting.</li>
+<li><a href="https://artifacthub.io/packages/helm/cilium/cilium">Cilium Helm Chart</a> - Helm chart that can be used to deploy Cilium on Kubernetes.</li>
+<li><a href="https://github.com/cilium/hubble-otel">Hubble adaptor for OpenTelemetry</a> - Enables exporting Hubble flow data using OpenTelemetry collector.</li>
+<li><a href="https://github.com/cilium/pwru">Packet, where are you?</a> - eBPF-based Linux kernel networking debugger.</li>
+<li><a href="https://github.com/coroot/coroot">Coroot</a> - Turns telemetry data into actionable insights, helping you identify and resolve application issues quickly.</li>
+<li><a href="https://github.com/pixie-io/pixie">Pixie</a> - Instant Kubernetes-native application observability.</li>
+<li><a href="https://github.com/groundcover-com/caretta">caretta</a> - Instant K8s service dependency map, right to your Grafana.</li>
+<li><a href="https://github.com/cosmonic-labs/netreap">Netreap</a> - Cilium controller implementation for Nomad.</li>
+<li><a href="https://www.solo.io/products/gloo-network/">Gloo Network</a> - Enables Cilium-CNI powered by eBPF to provide networking, packet filtering, and observability for modern applications.</li>
+<li><a href="https://www.admin-magazine.com/Archive/2019/50/Bpfilter-offers-a-new-approach-to-packet-filtering-in-Linux">Bpfilter instead of iptables for routing</a> - Bpfilter offers a new approach to packet filtering in Linux.</li>
+</ul>
+<p><img alt="image" src="https://github.com/seifrajhi/awesome-cilium/assets/26981510/b2236520-ea4c-400d-a5fd-15850a8bf420" /></p>
+<ul>
+<li><a href="https://docs.cilium.io/en/latest/network/kubernetes/policy/#ciliumclusterwidenetworkpolicy">Inter-node traffic control</a> - Policies that are applicable to the whole cluster (non-namespaced) and provide you with the means to specify nodes as the source and target.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'cilium_README.md';
 
         fetch(markdownFile)
@@ -48,21 +133,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

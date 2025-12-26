@@ -8,38 +8,215 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aliesbelik Awesome Jmeter - Awesome List Resources">
-    <title>Aliesbelik Awesome Jmeter</title>
+    <meta name="description" content="A curated collection of resources covering Apache JMeter and related stuff and shiny things: plugins, integrations, testing techniques, DevOps practices, etc....">
+    <meta name="robots" content="index, follow">
+    <title>Awesome JMeter [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome JMeter <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<!--lint ignore double-link-->
+<p>A curated collection of resources covering <a href="https://jmeter.apache.org/">Apache JMeter</a> and related stuff and shiny things: plugins, integrations, testing techniques, DevOps practices, etc.</p>
+<!--lint ignore double-link match-punctuation -->
+<p><a href="https://jmeter.apache.org/"><img src="assets/images/jmeter-logo.svg" align="right" width="260" alt="Apache JMeter"></a></p>
+<!--lint ignore double-link-->
+<blockquote>
+<p><a href="https://jmeter.apache.org/">Apache JMeter</a> is open source, pure Java application designed to load test functional behavior and measure performance.</p>
+</blockquote>
+<!--lint ignore double-link-->
+<p>This list grew up from <a href="https://sqa.stackexchange.com/a/2552/1842">an occasional answer</a> on Stack Exchange and personal JMeter-related links collection, got further inspiration from <a href="https://github.com/sindresorhus/awesome">awesome</a> project and improved by these <a href="CONTRIBUTORS.md">amazing contributors</a>.</p>
+<h2>Contents</h2>
+<!--lint ignore double-link-->
+<ul>
+<li><a href="#official-resources">Official Resources</a></li>
+<li><a href="#distributions">Distributions</a></li>
+<li><a href="#getting-started">Getting Started</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#best-practices">Best Practices</a></li>
+<li><a href="#scripting">Scripting</a></li>
+<li><a href="#automation">Automation</a></li>
+<li><a href="#dsl">DSL</a></li>
+<li><a href="#packages">Packages</a></li>
+<li><a href="#frameworks">Frameworks</a></li>
+<li><a href="#conversion">Conversion</a></li>
+<li><a href="#ci">CI</a></li>
+<li><a href="#tools--plugins">Tools &amp; Plugins</a></li>
+<li><a href="#tutorials--demo">Tutorials &amp; Demo</a></li>
+<li><a href="#distributed-testing">Distributed Testing</a></li>
+<li><a href="#cloud-services--saas">Cloud Services / SaaS</a></li>
+<li><a href="#results-processing">Results Processing</a></li>
+<li><a href="#results-analysis">Results Analysis</a></li>
+<li><a href="#reporting--visualization">Reporting &amp; Visualization</a></li>
+<li><a href="#performance-testing">Performance Testing</a></li>
+<li><a href="#streaming-protocols">Streaming Protocols</a></li>
+<li><a href="#mobile-apps">Mobile Apps</a></li>
+<li><a href="#mainframe-environments">Mainframe Environments</a></li>
+<li><a href="#rpc-frameworks">RPC Frameworks</a></li>
+<li><a href="#restful-api">RESTful API</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#plugins">Plugins</a></li>
+<li><a href="#correlation">Correlation</a></li>
+<li><a href="#extending-jmeter">Extending JMeter</a></li>
+<li><a href="#ide-integration">IDE Integration</a></li>
+<li><a href="#editors">Editors</a></li>
+<li><a href="#utilities">Utilities</a></li>
+<li><a href="#apm-integration">APM Integration</a></li>
+<li><a href="#jmeter-performance">JMeter Performance</a></li>
+<li><a href="#tips--tricks">Tips &amp; Tricks</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#trainings--courses">Trainings &amp; Courses</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#forums">Forums</a></li>
+<li><a href="#twitter">Twitter</a></li>
+<li><a href="#qa">Q&amp;A</a></li>
+<li><a href="#related">Related</a></li>
+<li><a href="#awesome-lists">Awesome Lists</a></li>
+<li><a href="#other">Other</a></li>
+</ul>
+<h2>Official Resources</h2>
+<!--lint ignore double-link-->
+<ul>
+<li><a href="https://jmeter.apache.org/">Apache JMeter Project</a> - Apache JMeter official website.</li>
+<li><a href="https://github.com/apache/jmeter">GitHub Repository</a> - Apache JMeter source code repository.</li>
+<li><a href="https://cwiki.apache.org/confluence/display/jmeter">JMeter Wiki</a> - Apache JMeter official documentation.</li>
+<li><a href="https://jmeter.apache.org/issues.html">Issue Tracking</a> - Apache JMeter issue tracking system.</li>
+<li><a href="https://jmeter.apache.org/mail2.html">Mailing Lists</a> - Apache JMeter mailing lists.</li>
+</ul>
+<h2>Distributions</h2>
+<ul>
+<li><a href="https://jmeter.apache.org/download_jmeter.cgi">Download Apache JMeter</a> - Apache JMeter: Official downloads.</li>
+<li><a href="https://sourceforge.net/projects/jmeterforwindows/">JMeter for Windows</a> - Package for installation JMeter with plugins.</li>
+<li><a href="https://github.com/cfpb/jmeter-bootstrap">JMeter Bootstrap</a> - Solution to setup JMeter and JMeter plugins, suitable to be used as a submodule.</li>
+</ul>
+<h2>Getting Started</h2>
+<ul>
+<li><a href="https://dzone.com/refcardz/getting-started-with-apache-jmeter">Getting Started with Apache JMeter</a></li>
+<li><a href="https://betterprogramming.pub/the-beginners-guide-to-performance-testing-with-apache-jmeter-5cc52c327ff6">The Beginner's Guide to Performance Testing with Apache JMeter</a></li>
+<li>JMeter — Performance and Load Testing: Beginner's Guide: <a href="https://ekremkurt1907.medium.com/jmeter-performance-and-load-testing-beginners-guide-part-i-5121604bf97a">part 1</a>, <a href="https://ekremkurt1907.medium.com/jmeter-performance-and-load-testing-beginners-guide-part-ii-7edb98b0d2c3">part 2</a></li>
+</ul>
+<h2>Tutorials</h2>
+<ul>
+<li><a href="https://artoftesting.com/jmeter-tutorial">JMeter Tutorial</a> - By ArtOfTesting.</li>
+<li>Load Testing with JMeter: <a href="https://lincolnloop.com/blog/load-testing-jmeter-part-1-getting-started/">part 1</a>, <a href="https://lincolnloop.com/blog/load-testing-jmeter-part-2-headless-testing-and-je/">part 2</a>, <a href="https://lincolnloop.com/blog/load-testing-jmeter-part-3-replaying-apache-logs/">part 3</a> - By Brandon Konkle.</li>
+<li><a href="https://www.tutorialspoint.com/jmeter/">JMeter Tutorial</a> - By Tutorials Point.</li>
+<li><a href="https://www.javacodegeeks.com/2014/11/jmeter-tutorial-load-testing.html">JMeter Tutorial for Load Testing: The Ultimate Guide</a> - By Daniel Gutierrez Diez.</li>
+<li><a href="https://datacadamia.com/jmeter/lifecycle">JMeter: Load Development Lifecycle</a> - By DataCadamia.</li>
+<li><a href="https://www.digitalocean.com/community/tutorial-series/load-testing-with-apache-jmeter">Load Testing with Apache JMeter</a> - By Mitchell Anicas @ DigitalOcean.</li>
+<li><a href="https://www.guru99.com/jmeter-tutorials.html">JMeter Tutorial for Beginners</a> - By Guru99.</li>
+<li><a href="https://qaautomation.expert/2023/12/07/jmeter-tutorials/">JMeter Tutorials</a> - By QA Automation Expert.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome JMeter <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<!--lint ignore double-link-->
+<p>A curated collection of resources covering <a href="https://jmeter.apache.org/">Apache JMeter</a> and related stuff and shiny things: plugins, integrations, testing techniques, DevOps practices, etc.</p>
+<!--lint ignore double-link match-punctuation -->
+<p><a href="https://jmeter.apache.org/"><img src="assets/images/jmeter-logo.svg" align="right" width="260" alt="Apache JMeter"></a></p>
+<!--lint ignore double-link-->
+<blockquote>
+<p><a href="https://jmeter.apache.org/">Apache JMeter</a> is open source, pure Java application designed to load test functional behavior and measure performance.</p>
+</blockquote>
+<!--lint ignore double-link-->
+<p>This list grew up from <a href="https://sqa.stackexchange.com/a/2552/1842">an occasional answer</a> on Stack Exchange and personal JMeter-related links collection, got further inspiration from <a href="https://github.com/sindresorhus/awesome">awesome</a> project and improved by these <a href="CONTRIBUTORS.md">amazing contributors</a>.</p>
+<h2>Contents</h2>
+<!--lint ignore double-link-->
+<ul>
+<li><a href="#official-resources">Official Resources</a></li>
+<li><a href="#distributions">Distributions</a></li>
+<li><a href="#getting-started">Getting Started</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#best-practices">Best Practices</a></li>
+<li><a href="#scripting">Scripting</a></li>
+<li><a href="#automation">Automation</a></li>
+<li><a href="#dsl">DSL</a></li>
+<li><a href="#packages">Packages</a></li>
+<li><a href="#frameworks">Frameworks</a></li>
+<li><a href="#conversion">Conversion</a></li>
+<li><a href="#ci">CI</a></li>
+<li><a href="#tools--plugins">Tools &amp; Plugins</a></li>
+<li><a href="#tutorials--demo">Tutorials &amp; Demo</a></li>
+<li><a href="#distributed-testing">Distributed Testing</a></li>
+<li><a href="#cloud-services--saas">Cloud Services / SaaS</a></li>
+<li><a href="#results-processing">Results Processing</a></li>
+<li><a href="#results-analysis">Results Analysis</a></li>
+<li><a href="#reporting--visualization">Reporting &amp; Visualization</a></li>
+<li><a href="#performance-testing">Performance Testing</a></li>
+<li><a href="#streaming-protocols">Streaming Protocols</a></li>
+<li><a href="#mobile-apps">Mobile Apps</a></li>
+<li><a href="#mainframe-environments">Mainframe Environments</a></li>
+<li><a href="#rpc-frameworks">RPC Frameworks</a></li>
+<li><a href="#restful-api">RESTful API</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#plugins">Plugins</a></li>
+<li><a href="#correlation">Correlation</a></li>
+<li><a href="#extending-jmeter">Extending JMeter</a></li>
+<li><a href="#ide-integration">IDE Integration</a></li>
+<li><a href="#editors">Editors</a></li>
+<li><a href="#utilities">Utilities</a></li>
+<li><a href="#apm-integration">APM Integration</a></li>
+<li><a href="#jmeter-performance">JMeter Performance</a></li>
+<li><a href="#tips--tricks">Tips &amp; Tricks</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#trainings--courses">Trainings &amp; Courses</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#forums">Forums</a></li>
+<li><a href="#twitter">Twitter</a></li>
+<li><a href="#qa">Q&amp;A</a></li>
+<li><a href="#related">Related</a></li>
+<li><a href="#awesome-lists">Awesome Lists</a></li>
+<li><a href="#other">Other</a></li>
+</ul>
+<h2>Official Resources</h2>
+<!--lint ignore double-link-->
+<ul>
+<li><a href="https://jmeter.apache.org/">Apache JMeter Project</a> - Apache JMeter official website.</li>
+<li><a href="https://github.com/apache/jmeter">GitHub Repository</a> - Apache JMeter source code repository.</li>
+<li><a href="https://cwiki.apache.org/confluence/display/jmeter">JMeter Wiki</a> - Apache JMeter official documentation.</li>
+<li><a href="https://jmeter.apache.org/issues.html">Issue Tracking</a> - Apache JMeter issue tracking system.</li>
+<li><a href="https://jmeter.apache.org/mail2.html">Mailing Lists</a> - Apache JMeter mailing lists.</li>
+</ul>
+<h2>Distributions</h2>
+<ul>
+<li><a href="https://jmeter.apache.org/download_jmeter.cgi">Download Apache JMeter</a> - Apache JMeter: Official downloads.</li>
+<li><a href="https://sourceforge.net/projects/jmeterforwindows/">JMeter for Windows</a> - Package for installation JMeter with plugins.</li>
+<li><a href="https://github.com/cfpb/jmeter-bootstrap">JMeter Bootstrap</a> - Solution to setup JMeter and JMeter plugins, suitable to be used as a submodule.</li>
+</ul>
+<h2>Getting Started</h2>
+<ul>
+<li><a href="https://dzone.com/refcardz/getting-started-with-apache-jmeter">Getting Started with Apache JMeter</a></li>
+<li><a href="https://betterprogramming.pub/the-beginners-guide-to-performance-testing-with-apache-jmeter-5cc52c327ff6">The Beginner's Guide to Performance Testing with Apache JMeter</a></li>
+<li>JMeter — Performance and Load Testing: Beginner's Guide: <a href="https://ekremkurt1907.medium.com/jmeter-performance-and-load-testing-beginners-guide-part-i-5121604bf97a">part 1</a>, <a href="https://ekremkurt1907.medium.com/jmeter-performance-and-load-testing-beginners-guide-part-ii-7edb98b0d2c3">part 2</a></li>
+</ul>
+<h2>Tutorials</h2>
+<ul>
+<li><a href="https://artoftesting.com/jmeter-tutorial">JMeter Tutorial</a> - By ArtOfTesting.</li>
+<li>Load Testing with JMeter: <a href="https://lincolnloop.com/blog/load-testing-jmeter-part-1-getting-started/">part 1</a>, <a href="https://lincolnloop.com/blog/load-testing-jmeter-part-2-headless-testing-and-je/">part 2</a>, <a href="https://lincolnloop.com/blog/load-testing-jmeter-part-3-replaying-apache-logs/">part 3</a> - By Brandon Konkle.</li>
+<li><a href="https://www.tutorialspoint.com/jmeter/">JMeter Tutorial</a> - By Tutorials Point.</li>
+<li><a href="https://www.javacodegeeks.com/2014/11/jmeter-tutorial-load-testing.html">JMeter Tutorial for Load Testing: The Ultimate Guide</a> - By Daniel Gutierrez Diez.</li>
+<li><a href="https://datacadamia.com/jmeter/lifecycle">JMeter: Load Development Lifecycle</a> - By DataCadamia.</li>
+<li><a href="https://www.digitalocean.com/community/tutorial-series/load-testing-with-apache-jmeter">Load Testing with Apache JMeter</a> - By Mitchell Anicas @ DigitalOcean.</li>
+<li><a href="https://www.guru99.com/jmeter-tutorials.html">JMeter Tutorial for Beginners</a> - By Guru99.</li>
+<li><a href="https://qaautomation.expert/2023/12/07/jmeter-tutorials/">JMeter Tutorials</a> - By QA Automation Expert.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'jmeter_README.md';
 
         fetch(markdownFile)
@@ -48,21 +225,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

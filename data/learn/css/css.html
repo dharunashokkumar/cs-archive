@@ -8,38 +8,207 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Awesome Css Group Awesome Css - Awesome List Resources">
-    <title>Awesome Css Group Awesome Css</title>
+    <meta name="description" content="[awesome-link]: https://github.com/sindresorhus/awesome [awesome-badge]:...">
+    <meta name="robots" content="index, follow">
+    <title>Css - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome CSS <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <a href="https://travis-ci.org/awesome-css-group/awesome-css"><img alt="Travis Build Status" src="https://travis-ci.org/awesome-css-group/awesome-css.svg?branch=master" /></a></h1>
+<blockquote>
+<p>/<em> A curated list of awesome frameworks, style guides, and other cool nuggets for writing amazing CSS. </em>/</p>
+</blockquote>
+<h2>Introduction</h2>
+<h3>Motivation</h3>
+<p>This document is a curated list of frameworks, style guides, and cool nuggets of information for writing awesome CSS. It does not contain resources to learn CSS.</p>
+<h3>Complementary Resources</h3>
+<p>If you're struggling with something CSS-related, look for answers within the following resources:</p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS - MDN - Mozilla</a></li>
+<li><a href="https://www.reddit.com/r/css/">Reddit (CSS)</a></li>
+<li><a href="https://stackoverflow.com/questions/tagged/css">StackOverflow (CSS)</a></li>
+</ul>
+<!-- Used for the "back to top" links within the document -->
+<div id="contents"></div>
+
+<h2>Table of Contents</h2>
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+<ul>
+<li><a href="#css-working-group">CSS Working Group</a></li>
+<li><a href="#editors-draft-black_nib">Editor's Draft :black_nib:</a></li>
+<li><a href="#parsers-mag">Parsers :mag:</a></li>
+<li><a href="#preprocessors-pill">Preprocessors :pill:</a></li>
+<li><a href="#frameworks-art">Frameworks :art:</a></li>
+<li><a href="#toolkits-wrench">Toolkits :wrench:</a></li>
+<li><a href="#reset-and-normalize">Reset and Normalize</a></li>
+<li><a href="#css-development-at-large-scale-websites">CSS Development at Large-Scale Websites</a></li>
+<li><a href="#code-style-guidelines-book">Code Style Guidelines :book:</a></li>
+<li><a href="#style-guide">Style Guide</a></li>
+<li><a href="#style-guide-generators-slot_machine">Style Guide Generators :slot_machine:</a></li>
+<li><a href="#naming-conventions--methodologies-bulb">Naming conventions &amp; Methodologies :bulb:</a></li>
+<li><a href="#css-in-js">CSS in JS</a></li>
+<li><a href="#css-polyfills">CSS Polyfills</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#podcasts-radio">Podcasts :radio:</a></li>
+<li><a href="#twitter-satellite">Twitter :satellite:</a></li>
+<li><a href="#videos-tv">Videos :tv:</a></li>
+<li><a href="#2019">2019</a></li>
+<li><a href="#2016">2016</a></li>
+<li><a href="#2015">2015</a></li>
+<li><a href="#books-books">Books :books:</a></li>
+<li><a href="#tutorials-clapper">Tutorials :clapper:</a></li>
+<li><a href="#maintainers">Maintainers</a></li>
+<li><a href="#contribute">Contribute</a></li>
+</ul>
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+<h2>CSS Working Group</h2>
+<p>The CSS Working Group creates and defines CSS specifications. These specifications are assigned <a href="https://www.w3.org/2005/10/Process-20051014/tr#maturity-levels">maturity levels</a> as they move through the design process. If you would like to learn more, visit <a href="https://www.w3.org/Style/CSS/">CSS Working Group Page</a>.</p>
+<h3>Editor's Draft :black_nib:</h3>
+<p><em>Editor's drafts of CSS specifications</em></p>
+<ul>
+<li><a href="https://github.com/w3c/csswg-drafts">W3c/csswg-drafts</a> - Mirror of CSS WG Editor Draft repository.</li>
+<li><a href="https://github.com/w3c/css-houdini-drafts">W3c/css-houdini-drafts</a> - Mirror of Houdini WG Editor repository.</li>
+</ul>
+<h2>Parsers :mag:</h2>
+<ul>
+<li><a href="https://github.com/NV/CSSOM">CSSOM</a> - CSS Object Model implemented in pure JavaScript.</li>
+<li><a href="https://github.com/csstree/csstree">CSSTree</a> - Detailed CSS parser with syntax validator.</li>
+<li><a href="https://github.com/tonyganch/gonzales-pe">Gonzales PE</a> - CSS parser with support for preprocessors.</li>
+<li><a href="https://github.com/brettstimmerman/mensch">Mensch</a> - A decent CSS parser.</li>
+<li><a href="https://github.com/CSSLint/parser-lib">ParserLib</a> - CSSLint/parser-lib.</li>
+<li><a href="https://github.com/postcss/postcss">PostCSS</a> - Transforming styles with JS plugins.</li>
+<li><a href="https://github.com/reworkcss/rework">Rework</a> - Plugin framework for CSS preprocessing in Node.js.</li>
+<li><a href="https://github.com/stylecow/stylecow">Stylecow</a> - Modern CSS for all browsers.</li>
+</ul>
+<p><sub><a href="#contents">⇧ back to top</a></sub></p>
+<h2>Preprocessors :pill:</h2>
+<p><em>Write CSS faster</em></p>
+<ul>
+<li><a href="https://github.com/less/less.js">LESS</a> - Backwards compatible with CSS, and the extra features it adds use existing CSS syntax.</li>
+<li><a href="https://github.com/postcss/postcss">PostCSS</a> - Transforming CSS with JS plugins.</li>
+<li><a href="https://github.com/sass/sass">Sass</a> - Mature, stable, and powerful professional-grade CSS extension language.</li>
+<li><a href="https://github.com/thysultan/stylis.js">STYLIS</a> - Light-weight CSS preprocessor.</li>
+<li><a href="http://learnboost.github.io/stylus/">Stylus</a> - Expressive, robust, feature-rich CSS language built for NodeJs.</li>
+<li><a href="https://vanilla-extract.style/">Vanilla Extract</a> - Generate static CSS using Typescript. Write type‑safe, locally scoped classes, variables and themes.</li>
+</ul>
+<p><sub><a href="#contents">⇧ back to top</a></sub></p>
+<h2>Frameworks :art:</h2>
+<ul>
+<li><a href="https://www.agnosticui.com/">AgnosticUI</a> - Accessible CSS component primitives that also work with React, Vue 3, Svelte, and Angular.</li>
+<li><a href="https://www.bonsaicss.com/">Bonsai</a> - A complete Utility First CSS Framework for less than 50kb.</li>
+<li><a href="https://getbootstrap.com/">Bootstrap</a> - The most popular HTML, CSS, and JS framework.</li>
+<li><a href="http://bulma.io/">Bulma</a> - A modern CSS framework based on Flexbox. Also has Sass import for modification.</li>
+<li><a href="http://getbuttercake.com/">Butter Cake</a> - A Modern Lightweight Front End CSS framework for faster and easier web development.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome CSS <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <a href="https://travis-ci.org/awesome-css-group/awesome-css"><img alt="Travis Build Status" src="https://travis-ci.org/awesome-css-group/awesome-css.svg?branch=master" /></a></h1>
+<blockquote>
+<p>/<em> A curated list of awesome frameworks, style guides, and other cool nuggets for writing amazing CSS. </em>/</p>
+</blockquote>
+<h2>Introduction</h2>
+<h3>Motivation</h3>
+<p>This document is a curated list of frameworks, style guides, and cool nuggets of information for writing awesome CSS. It does not contain resources to learn CSS.</p>
+<h3>Complementary Resources</h3>
+<p>If you're struggling with something CSS-related, look for answers within the following resources:</p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS - MDN - Mozilla</a></li>
+<li><a href="https://www.reddit.com/r/css/">Reddit (CSS)</a></li>
+<li><a href="https://stackoverflow.com/questions/tagged/css">StackOverflow (CSS)</a></li>
+</ul>
+<!-- Used for the "back to top" links within the document -->
+<div id="contents"></div>
+
+<h2>Table of Contents</h2>
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+<ul>
+<li><a href="#css-working-group">CSS Working Group</a></li>
+<li><a href="#editors-draft-black_nib">Editor's Draft :black_nib:</a></li>
+<li><a href="#parsers-mag">Parsers :mag:</a></li>
+<li><a href="#preprocessors-pill">Preprocessors :pill:</a></li>
+<li><a href="#frameworks-art">Frameworks :art:</a></li>
+<li><a href="#toolkits-wrench">Toolkits :wrench:</a></li>
+<li><a href="#reset-and-normalize">Reset and Normalize</a></li>
+<li><a href="#css-development-at-large-scale-websites">CSS Development at Large-Scale Websites</a></li>
+<li><a href="#code-style-guidelines-book">Code Style Guidelines :book:</a></li>
+<li><a href="#style-guide">Style Guide</a></li>
+<li><a href="#style-guide-generators-slot_machine">Style Guide Generators :slot_machine:</a></li>
+<li><a href="#naming-conventions--methodologies-bulb">Naming conventions &amp; Methodologies :bulb:</a></li>
+<li><a href="#css-in-js">CSS in JS</a></li>
+<li><a href="#css-polyfills">CSS Polyfills</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#podcasts-radio">Podcasts :radio:</a></li>
+<li><a href="#twitter-satellite">Twitter :satellite:</a></li>
+<li><a href="#videos-tv">Videos :tv:</a></li>
+<li><a href="#2019">2019</a></li>
+<li><a href="#2016">2016</a></li>
+<li><a href="#2015">2015</a></li>
+<li><a href="#books-books">Books :books:</a></li>
+<li><a href="#tutorials-clapper">Tutorials :clapper:</a></li>
+<li><a href="#maintainers">Maintainers</a></li>
+<li><a href="#contribute">Contribute</a></li>
+</ul>
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+<h2>CSS Working Group</h2>
+<p>The CSS Working Group creates and defines CSS specifications. These specifications are assigned <a href="https://www.w3.org/2005/10/Process-20051014/tr#maturity-levels">maturity levels</a> as they move through the design process. If you would like to learn more, visit <a href="https://www.w3.org/Style/CSS/">CSS Working Group Page</a>.</p>
+<h3>Editor's Draft :black_nib:</h3>
+<p><em>Editor's drafts of CSS specifications</em></p>
+<ul>
+<li><a href="https://github.com/w3c/csswg-drafts">W3c/csswg-drafts</a> - Mirror of CSS WG Editor Draft repository.</li>
+<li><a href="https://github.com/w3c/css-houdini-drafts">W3c/css-houdini-drafts</a> - Mirror of Houdini WG Editor repository.</li>
+</ul>
+<h2>Parsers :mag:</h2>
+<ul>
+<li><a href="https://github.com/NV/CSSOM">CSSOM</a> - CSS Object Model implemented in pure JavaScript.</li>
+<li><a href="https://github.com/csstree/csstree">CSSTree</a> - Detailed CSS parser with syntax validator.</li>
+<li><a href="https://github.com/tonyganch/gonzales-pe">Gonzales PE</a> - CSS parser with support for preprocessors.</li>
+<li><a href="https://github.com/brettstimmerman/mensch">Mensch</a> - A decent CSS parser.</li>
+<li><a href="https://github.com/CSSLint/parser-lib">ParserLib</a> - CSSLint/parser-lib.</li>
+<li><a href="https://github.com/postcss/postcss">PostCSS</a> - Transforming styles with JS plugins.</li>
+<li><a href="https://github.com/reworkcss/rework">Rework</a> - Plugin framework for CSS preprocessing in Node.js.</li>
+<li><a href="https://github.com/stylecow/stylecow">Stylecow</a> - Modern CSS for all browsers.</li>
+</ul>
+<p><sub><a href="#contents">⇧ back to top</a></sub></p>
+<h2>Preprocessors :pill:</h2>
+<p><em>Write CSS faster</em></p>
+<ul>
+<li><a href="https://github.com/less/less.js">LESS</a> - Backwards compatible with CSS, and the extra features it adds use existing CSS syntax.</li>
+<li><a href="https://github.com/postcss/postcss">PostCSS</a> - Transforming CSS with JS plugins.</li>
+<li><a href="https://github.com/sass/sass">Sass</a> - Mature, stable, and powerful professional-grade CSS extension language.</li>
+<li><a href="https://github.com/thysultan/stylis.js">STYLIS</a> - Light-weight CSS preprocessor.</li>
+<li><a href="http://learnboost.github.io/stylus/">Stylus</a> - Expressive, robust, feature-rich CSS language built for NodeJs.</li>
+<li><a href="https://vanilla-extract.style/">Vanilla Extract</a> - Generate static CSS using Typescript. Write type‑safe, locally scoped classes, variables and themes.</li>
+</ul>
+<p><sub><a href="#contents">⇧ back to top</a></sub></p>
+<h2>Frameworks :art:</h2>
+<ul>
+<li><a href="https://www.agnosticui.com/">AgnosticUI</a> - Accessible CSS component primitives that also work with React, Vue 3, Svelte, and Angular.</li>
+<li><a href="https://www.bonsaicss.com/">Bonsai</a> - A complete Utility First CSS Framework for less than 50kb.</li>
+<li><a href="https://getbootstrap.com/">Bootstrap</a> - The most popular HTML, CSS, and JS framework.</li>
+<li><a href="http://bulma.io/">Bulma</a> - A modern CSS framework based on Flexbox. Also has Sass import for modification.</li>
+<li><a href="http://getbuttercake.com/">Butter Cake</a> - A Modern Lightweight Front End CSS framework for faster and easier web development.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'css_README.md';
 
         fetch(markdownFile)
@@ -48,21 +217,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

@@ -8,38 +8,187 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mohataher Awesome Tinkerpop - Awesome List Resources">
-    <title>Mohataher Awesome Tinkerpop</title>
+    <meta name="description" content="!alt tag A curated list of only awesome TinkerPop libraries on Github. >Apache TinkerPop™ is a graph computing framework for both graph databases (OLTP) and...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome TinkerPop [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome TinkerPop <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p><img alt="alt tag" src="https://raw.githubusercontent.com/mohataher/awesome-tinkerpop/master/tinkerpop-splash.png" /></p>
+<p>A curated list of only awesome TinkerPop libraries on Github.</p>
+<blockquote>
+<p>Apache TinkerPop™ is a graph computing framework for both graph databases (OLTP) and graph analytic systems (OLAP).</p>
+</blockquote>
+<h3>Table of Contents</h3>
+<ul>
+<li><a href="#tinkerpop3">TinkerPop3</a><ul>
+<li><a href="#tinkerpop3-implementations">Implementations</a></li>
+<li><a href="#wrappers">Wrappers/Clients</a></li>
+<li><a href="#qlang">Query Languages</a></li>
+</ul>
+</li>
+<li><a href="#tinkerpop2">TinkerPop2</a></li>
+<li><a href="#communites">Communites</a></li>
+<li><a href="#people-to-follow">People to Follow</a></li>
+<li><a href="#tutorials-and-resources">Tutorials and Resources</a></li>
+<li><a href="#contributing">How to Contribute</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h3><A NAME="tinkerpop3"></A>TinkerPop3 Libraries</h3>
+<h4><A NAME="tinkerpop3-implementations"></A>Implementations</h4>
+<ul>
+<li><a href="https://github.com/apache/tinkerpop">TinkerPop3 implementation</a> - Mirror of Apache TinkerPop.</li>
+<li><a href="https://github.com/pietermartin/sqlg">sqlg</a> - Sqlg is a implementation of TinkerPop3 on a RDBMS.</li>
+<li><a href="https://github.com/blazegraph/database">blazegraph</a> - TinkerPop3 <a href="https://github.com/blazegraph/tinkerpop3">implementation</a> for Blaze Graph; a high performance graph database.</li>
+<li><a href="https://github.com/jbmusso/tinkergraph-js">tinkergraph-js</a> - A pure JavaScript implementation of TinkerPop's TinkerGraph in-memory graph database.</li>
+<li><a href="https://github.com/jbmusso/gremlin-javascript">gremlin-javascript</a> - JavaScript graph database client for TinkerPop3 Gremlin Server.</li>
+<li><a href="https://github.com/rmagen/elastic-gremlin">Elastic Gremlin</a> - TinkerPop3 implementation on Elasticsearch backend.</li>
+<li><a href="http://tinkerpop.apache.org/docs/current/reference/#giraphgraphcomputer">Hadoop (Giraph)</a> - OLAP graph processor using Giraph.</li>
+<li><a href="http://tinkerpop.apache.org/docs/current/reference/#sparkgraphcomputer">Hadoop (Spark)</a> - OLAP graph processor using Spark.</li>
+<li><a href="https://console.ng.bluemix.net/catalog/services/ibm-graph/">IBM Graph</a> - OLTP graph database as a service.</li>
+<li><a href="http://tinkerpop.apache.org/docs/currentg/#neo4j-gremlin">Neo4j</a> - OLTP graph database.</li>
+<li><a href="http://stardog.com/">Stardog</a> - RDF graph database with OLTP and OLAP support.</li>
+<li><a href="http://tinkerpop.apache.org/docs/current/reference/#tinkergraph-gremlin">TinkerGraph</a> - In-memory OLTP and OLAP reference implementation.</li>
+<li><a href="https://github.com/rmagen/unipop">Unipop</a> - OLTP Elasticsearch and JDBC backed graph.</li>
+<li><a href="https://github.com/PureSolTechnologies/DuctileDB">DuctileDB</a> - Ductile DB is a graph database based on Hadoop/HBase which provides a vast set of features.</li>
+<li><a href="https://github.com/rayokota/hgraphdb">hgraphdb</a> - HBase as a TinkerPop Graph Database.</li>
+<li><a href="https://github.com/JanusGraph/janusgraph">JanusGraph</a> - JanusGraph: an open-source, distributed graph database http://janusgraph.org </li>
+<li><a href="https://github.com/awslabs/dynamodb-janusgraph-storage-backend">JanusGraph for DynamoDB (Amazon)</a> - The Amazon DynamoDB storage backend for JanusGraph.</li>
+<li><a href="https://github.com/orientechnologies/orientdb-gremlin">orientdb-gremlin</a> - TinkerPop3 Graph Structure Implementation for OrientDB.</li>
+</ul>
+<h4><A NAME="wrappers"></A>Wrappers/Clients</h4>
+<h5>C# .NET</h5>
+<ul>
+<li><a href="https://www.nuget.org/packages/Teva.Common.Data.Gremlin/">Teva Gremlin</a> (.NET - C#) - A Gremlin Server driver for .NET.</li>
+</ul>
+<h5>Clojure</h5>
+<ul>
+<li><a href="https://github.com/clojurewerkz/ogre">ogre</a> - Clojure library for querying TinkerPop graphs.</li>
+<li><a href="https://github.com/viagraphs/scalajs-gremlin-client">scalajs-gremlin-client</a> (scala) - A Gremlin-Server client with ad-hoc extensible, reactive, typeclass based API.</li>
+</ul>
+<h5>Go</h5>
+<ul>
+<li><a href="https://github.com/go-gremlin/gremlin">go-gremlin</a> - Go graph database client for TinkerPop3 Gremlin Server.</li>
+<li><a href="https://github.com/qasaur/gremgo">Gremgo</a> - A fast, efficient, and easy-to-use Go client for the TinkerPop graph database stack.</li>
+<li><a href="https://github.com/northwesternmutual/grammes">grammes</a> - A Go package built to communicate with Apache TinkerPop™ Graph computing framework using Gremlin.</li>
+</ul>
+<h5>Haskell</h5>
+<ul>
+<li><a href="https://github.com/debug-ito/greskell">greskell-websocket</a> - Haskell client for TinkerPop3 Gremlin Server.</li>
+</ul>
+<h5>Java</h5>
+<ul>
+<li><a href="http://tinkerpop.apache.org/docs/current/reference/#connecting-via-java">gremlin-driver</a> (java) - A Gremlin Server driver for Java.</li>
+<li><a href="https://github.com/neo4j-contrib/neo4j-tinkerpop-api">neo4j-tinkerpop-api</a> - Apache Licensed Neo4j API for TinkerPop3.</li>
+<li><a href="https://github.com/SteelBridgeLabs/neo4j-gremlin-bolt">neo4j-gremlin-bolt</a> - Allows use of the Apache Tinkerpop Java API with the neo4j server using the BOLT protocol.</li>
+<li><a href="https://github.com/Syncleus/Ferma">Ferma</a> - An ORM / OGM for the TinkerPop graph stack.</li>
+</ul>
+<h5>Javascript</h5>
+<ul>
+<li><a href="https://github.com/RedSeal-co/ts-tinkerpop">ts-tinkerpop</a> - Utilities for using TinkerPop3 via the node-java API in Typescript.</li>
+<li><a href="https://github.com/jbmusso/gremlin-javascript">gremlin-javascript</a> (js) - A Gremlin Server driver for JavaScript.</li>
+</ul>
+<h5>PHP</h5>
+<ul>
+<li><a href="https://github.com/PommeVerte/gremlin-php">gremlin-php</a> - gremlin-server php driver compatible with TinkerPop3. It will allow you to connect to gremlin-server and it's backends (Neo4J, Titan, etc.).</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome TinkerPop <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p><img alt="alt tag" src="https://raw.githubusercontent.com/mohataher/awesome-tinkerpop/master/tinkerpop-splash.png" /></p>
+<p>A curated list of only awesome TinkerPop libraries on Github.</p>
+<blockquote>
+<p>Apache TinkerPop™ is a graph computing framework for both graph databases (OLTP) and graph analytic systems (OLAP).</p>
+</blockquote>
+<h3>Table of Contents</h3>
+<ul>
+<li><a href="#tinkerpop3">TinkerPop3</a><ul>
+<li><a href="#tinkerpop3-implementations">Implementations</a></li>
+<li><a href="#wrappers">Wrappers/Clients</a></li>
+<li><a href="#qlang">Query Languages</a></li>
+</ul>
+</li>
+<li><a href="#tinkerpop2">TinkerPop2</a></li>
+<li><a href="#communites">Communites</a></li>
+<li><a href="#people-to-follow">People to Follow</a></li>
+<li><a href="#tutorials-and-resources">Tutorials and Resources</a></li>
+<li><a href="#contributing">How to Contribute</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h3><A NAME="tinkerpop3"></A>TinkerPop3 Libraries</h3>
+<h4><A NAME="tinkerpop3-implementations"></A>Implementations</h4>
+<ul>
+<li><a href="https://github.com/apache/tinkerpop">TinkerPop3 implementation</a> - Mirror of Apache TinkerPop.</li>
+<li><a href="https://github.com/pietermartin/sqlg">sqlg</a> - Sqlg is a implementation of TinkerPop3 on a RDBMS.</li>
+<li><a href="https://github.com/blazegraph/database">blazegraph</a> - TinkerPop3 <a href="https://github.com/blazegraph/tinkerpop3">implementation</a> for Blaze Graph; a high performance graph database.</li>
+<li><a href="https://github.com/jbmusso/tinkergraph-js">tinkergraph-js</a> - A pure JavaScript implementation of TinkerPop's TinkerGraph in-memory graph database.</li>
+<li><a href="https://github.com/jbmusso/gremlin-javascript">gremlin-javascript</a> - JavaScript graph database client for TinkerPop3 Gremlin Server.</li>
+<li><a href="https://github.com/rmagen/elastic-gremlin">Elastic Gremlin</a> - TinkerPop3 implementation on Elasticsearch backend.</li>
+<li><a href="http://tinkerpop.apache.org/docs/current/reference/#giraphgraphcomputer">Hadoop (Giraph)</a> - OLAP graph processor using Giraph.</li>
+<li><a href="http://tinkerpop.apache.org/docs/current/reference/#sparkgraphcomputer">Hadoop (Spark)</a> - OLAP graph processor using Spark.</li>
+<li><a href="https://console.ng.bluemix.net/catalog/services/ibm-graph/">IBM Graph</a> - OLTP graph database as a service.</li>
+<li><a href="http://tinkerpop.apache.org/docs/currentg/#neo4j-gremlin">Neo4j</a> - OLTP graph database.</li>
+<li><a href="http://stardog.com/">Stardog</a> - RDF graph database with OLTP and OLAP support.</li>
+<li><a href="http://tinkerpop.apache.org/docs/current/reference/#tinkergraph-gremlin">TinkerGraph</a> - In-memory OLTP and OLAP reference implementation.</li>
+<li><a href="https://github.com/rmagen/unipop">Unipop</a> - OLTP Elasticsearch and JDBC backed graph.</li>
+<li><a href="https://github.com/PureSolTechnologies/DuctileDB">DuctileDB</a> - Ductile DB is a graph database based on Hadoop/HBase which provides a vast set of features.</li>
+<li><a href="https://github.com/rayokota/hgraphdb">hgraphdb</a> - HBase as a TinkerPop Graph Database.</li>
+<li><a href="https://github.com/JanusGraph/janusgraph">JanusGraph</a> - JanusGraph: an open-source, distributed graph database http://janusgraph.org </li>
+<li><a href="https://github.com/awslabs/dynamodb-janusgraph-storage-backend">JanusGraph for DynamoDB (Amazon)</a> - The Amazon DynamoDB storage backend for JanusGraph.</li>
+<li><a href="https://github.com/orientechnologies/orientdb-gremlin">orientdb-gremlin</a> - TinkerPop3 Graph Structure Implementation for OrientDB.</li>
+</ul>
+<h4><A NAME="wrappers"></A>Wrappers/Clients</h4>
+<h5>C# .NET</h5>
+<ul>
+<li><a href="https://www.nuget.org/packages/Teva.Common.Data.Gremlin/">Teva Gremlin</a> (.NET - C#) - A Gremlin Server driver for .NET.</li>
+</ul>
+<h5>Clojure</h5>
+<ul>
+<li><a href="https://github.com/clojurewerkz/ogre">ogre</a> - Clojure library for querying TinkerPop graphs.</li>
+<li><a href="https://github.com/viagraphs/scalajs-gremlin-client">scalajs-gremlin-client</a> (scala) - A Gremlin-Server client with ad-hoc extensible, reactive, typeclass based API.</li>
+</ul>
+<h5>Go</h5>
+<ul>
+<li><a href="https://github.com/go-gremlin/gremlin">go-gremlin</a> - Go graph database client for TinkerPop3 Gremlin Server.</li>
+<li><a href="https://github.com/qasaur/gremgo">Gremgo</a> - A fast, efficient, and easy-to-use Go client for the TinkerPop graph database stack.</li>
+<li><a href="https://github.com/northwesternmutual/grammes">grammes</a> - A Go package built to communicate with Apache TinkerPop™ Graph computing framework using Gremlin.</li>
+</ul>
+<h5>Haskell</h5>
+<ul>
+<li><a href="https://github.com/debug-ito/greskell">greskell-websocket</a> - Haskell client for TinkerPop3 Gremlin Server.</li>
+</ul>
+<h5>Java</h5>
+<ul>
+<li><a href="http://tinkerpop.apache.org/docs/current/reference/#connecting-via-java">gremlin-driver</a> (java) - A Gremlin Server driver for Java.</li>
+<li><a href="https://github.com/neo4j-contrib/neo4j-tinkerpop-api">neo4j-tinkerpop-api</a> - Apache Licensed Neo4j API for TinkerPop3.</li>
+<li><a href="https://github.com/SteelBridgeLabs/neo4j-gremlin-bolt">neo4j-gremlin-bolt</a> - Allows use of the Apache Tinkerpop Java API with the neo4j server using the BOLT protocol.</li>
+<li><a href="https://github.com/Syncleus/Ferma">Ferma</a> - An ORM / OGM for the TinkerPop graph stack.</li>
+</ul>
+<h5>Javascript</h5>
+<ul>
+<li><a href="https://github.com/RedSeal-co/ts-tinkerpop">ts-tinkerpop</a> - Utilities for using TinkerPop3 via the node-java API in Typescript.</li>
+<li><a href="https://github.com/jbmusso/gremlin-javascript">gremlin-javascript</a> (js) - A Gremlin Server driver for JavaScript.</li>
+</ul>
+<h5>PHP</h5>
+<ul>
+<li><a href="https://github.com/PommeVerte/gremlin-php">gremlin-php</a> - gremlin-server php driver compatible with TinkerPop3. It will allow you to connect to gremlin-server and it's backends (Neo4J, Titan, etc.).</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'tinkerpop_README.md';
 
         fetch(markdownFile)
@@ -48,21 +197,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

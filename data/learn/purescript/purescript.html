@@ -8,38 +8,163 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Passy Awesome Purescript - Awesome List Resources">
-    <title>Passy Awesome Purescript</title>
+    <meta name="description" content="> A curated list of delightful libraries, tools and other shiny things for PureScript. - pulp - psvm-js - PureScript Version Manager - purescript-psa - A...">
+    <meta name="robots" content="index, follow">
+    <title>awesome-purescript [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>awesome-purescript <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<blockquote>
+<p>A curated list of delightful libraries, tools and other shiny things for PureScript.</p>
+</blockquote>
+<h2>Build Tooling</h2>
+<ul>
+<li><a href="https://github.com/bodil/pulp">pulp</a></li>
+<li><a href="https://github.com/ThomasCrvsr/psvm-js">psvm-js</a> - PureScript Version Manager</li>
+<li><a href="https://github.com/natefaubion/purescript-psa">purescript-psa</a> - A pretty, flexible error/warning reporting frontend for <code>psc</code></li>
+<li><a href="https://github.com/purescript-contrib/grunt-purescript">grunt-purescript</a></li>
+<li><a href="https://github.com/purescript-contrib/gulp-purescript">gulp-purescript</a></li>
+<li><a href="https://github.com/ethul/purs-loader">purs-loader</a> for webpack</li>
+<li><a href="https://github.com/purescript/psc-package">psc-package</a> - A package manager for PureScript based on package sets</li>
+<li><a href="https://github.com/spacchetti/spago">spago</a> - PureScript package manager and build tool powered by Dhall and package-sets</li>
+</ul>
+<h2>Preludes</h2>
+<ul>
+<li><a href="https://github.com/purescript/purescript-prelude">purescript-prelude</a> - The standard Prelude.</li>
+<li><a href="https://github.com/tfausak/purescript-batteries">purescript-batteries</a> - A PureScript prelude with more features.</li>
+</ul>
+<h2>UI Libraries</h2>
+<p>CSS:</p>
+<ul>
+<li><a href="https://github.com/slamdata/purescript-css">purescript-css</a> - A clean, type-safe library for describing, manipulating and rendering CSS.</li>
+</ul>
+<p>React-based:</p>
+<ul>
+<li><a href="https://github.com/paf31/purescript-thermite">purescript-thermite</a> - A simple wrapper for ReactJS inspired by <code>react-blaze</code>.</li>
+<li><a href="https://github.com/purescript-contrib/purescript-react">purescript-react</a> - React bindings for PureScript</li>
+<li><a href="https://github.com/lumihq/purescript-react-basic">purescript-react-basic</a> - An opinionated set of bindings to the React library, optimizing for the most basic use cases.</li>
+<li><a href="https://github.com/spicydonuts/purescript-react-basic-hooks">purescript-react-basic-hooks</a> - An alternative way to define React components using React's "hooks" APIs. Compatible with <code>purescript-react-basic</code>.</li>
+<li><a href="https://github.com/alexmingoia/purescript-pux">purescript-pux</a> - Build type-safe web apps with PureScript.</li>
+<li><a href="https://github.com/natefaubion/purescript-spork">purescript-spork</a> - Elm-like for PureScript.</li>
+<li><a href="https://github.com/ajnsit/purescript-concur">purescript-concur</a> - Concur UI framework. React backend, but can use others.</li>
+<li><a href="https://github.com/juspay/purescript-presto">purescript-presto</a> - Write Apps like Mathematical Equations!</li>
+<li><a href="https://github.com/zrho/purescript-optic-ui">purescript-optic-ui</a> - Write single page web user interfaces declaratively and concisely with the help of lenses and traversals.</li>
+<li><a href="https://github.com/paf31/purescript-react-explore">purescript-react-explor</a> - Experiments with comonads for modelling React UIs.</li>
+</ul>
+<p>Virtual-DOM based:</p>
+<ul>
+<li><a href="https://github.com/slamdata/purescript-halogen">purescript-halogen</a> - A declarative, type-safe UI library.</li>
+<li><a href="https://github.com/utkarshkukreti/purescript-hedwig">purescript-hedwig</a> - Hedwig is a fast, type safe, declarative PureScript library for building web applications.</li>
+<li><a href="https://github.com/easafe/purescript-flame">purescript-flame</a> - Flame is a fast &amp; simple framework for building web applications in PureScript inspired by purescript-hedwig and Elm</li>
+</ul>
+<p>Signals/Behaviors/FRP:</p>
+<ul>
+<li><a href="https://github.com/sharkdp/purescript-flare">purescript-flare</a> - Applicative-style reactive user interfaces built on top of purescript-signal.</li>
+<li><a href="https://github.com/funkia/purescript-turbine">purescript-turbine</a> - Purely functional frontend framework powered by FRP.</li>
+<li><a href="https://github.com/OutWatch/purescript-outwatch">purescript-outwatch</a> - A functional and reactive UI framework based on Rx and VirtualDom.</li>
+<li><a href="https://github.com/i-am-tom/purescript-panda">purescript-panda</a> - What would TEA look like if we had no VDOM?</li>
+<li><a href="https://github.com/restaumatic/purescript-specular">purescript-specular</a> - A Reflex-Dom inspired UI library for PureScript.</li>
+<li><a href="https://github.com/paf31/purescript-sdom">purescript-sdom</a> - An experiment in replacing the virtual DOM and avoiding diffing.</li>
+<li><a href="https://github.com/paf31/purescript-purview">purescript-purview</a> - A UI library based on the incremental lambda calculus.</li>
+</ul>
+<h2>URL Routers</h2>
+<ul>
+<li><a href="https://github.com/slamdata/purescript-routing">purescript-routing</a> - A clean, type-safe routing library for PureScript.</li>
+<li><a href="https://github.com/coot/purescript-cofree-react-router">purescript-cofree-react-router</a> - React-Router implemented in PureScript as Cofree Comonad for the Array functor.</li>
+<li><a href="https://github.com/owickstrom/purescript-trout">purescript-trout</a> - Type-level routing for PureScript.</li>
+<li><a href="https://github.com/paluh/purescript-boomboom">purescript-boomboom</a> - Never hard code your urls again. Boomboom them all!</li>
+<li><a href="https://github.com/natefaubion/purescript-routing-duplex">purescript-routing-duplex</a> - Simple bidirectional parser/printers for your routing data types.</li>
+</ul>
+<h2>Components</h2>
+<ul>
+<li><a href="https://github.com/thomashoneyman/purescript-halogen-formless">purescript-halogen-formless</a> - A renderless component for building painless forms in Halogen</li>
+<li><a href="https://github.com/citizennet/purescript-halogen-select">purescript-halogen-select</a> - Building blocks for common selection user interfaces like dropdowns, typeaheads, image pickers, and calendars.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>awesome-purescript <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<blockquote>
+<p>A curated list of delightful libraries, tools and other shiny things for PureScript.</p>
+</blockquote>
+<h2>Build Tooling</h2>
+<ul>
+<li><a href="https://github.com/bodil/pulp">pulp</a></li>
+<li><a href="https://github.com/ThomasCrvsr/psvm-js">psvm-js</a> - PureScript Version Manager</li>
+<li><a href="https://github.com/natefaubion/purescript-psa">purescript-psa</a> - A pretty, flexible error/warning reporting frontend for <code>psc</code></li>
+<li><a href="https://github.com/purescript-contrib/grunt-purescript">grunt-purescript</a></li>
+<li><a href="https://github.com/purescript-contrib/gulp-purescript">gulp-purescript</a></li>
+<li><a href="https://github.com/ethul/purs-loader">purs-loader</a> for webpack</li>
+<li><a href="https://github.com/purescript/psc-package">psc-package</a> - A package manager for PureScript based on package sets</li>
+<li><a href="https://github.com/spacchetti/spago">spago</a> - PureScript package manager and build tool powered by Dhall and package-sets</li>
+</ul>
+<h2>Preludes</h2>
+<ul>
+<li><a href="https://github.com/purescript/purescript-prelude">purescript-prelude</a> - The standard Prelude.</li>
+<li><a href="https://github.com/tfausak/purescript-batteries">purescript-batteries</a> - A PureScript prelude with more features.</li>
+</ul>
+<h2>UI Libraries</h2>
+<p>CSS:</p>
+<ul>
+<li><a href="https://github.com/slamdata/purescript-css">purescript-css</a> - A clean, type-safe library for describing, manipulating and rendering CSS.</li>
+</ul>
+<p>React-based:</p>
+<ul>
+<li><a href="https://github.com/paf31/purescript-thermite">purescript-thermite</a> - A simple wrapper for ReactJS inspired by <code>react-blaze</code>.</li>
+<li><a href="https://github.com/purescript-contrib/purescript-react">purescript-react</a> - React bindings for PureScript</li>
+<li><a href="https://github.com/lumihq/purescript-react-basic">purescript-react-basic</a> - An opinionated set of bindings to the React library, optimizing for the most basic use cases.</li>
+<li><a href="https://github.com/spicydonuts/purescript-react-basic-hooks">purescript-react-basic-hooks</a> - An alternative way to define React components using React's "hooks" APIs. Compatible with <code>purescript-react-basic</code>.</li>
+<li><a href="https://github.com/alexmingoia/purescript-pux">purescript-pux</a> - Build type-safe web apps with PureScript.</li>
+<li><a href="https://github.com/natefaubion/purescript-spork">purescript-spork</a> - Elm-like for PureScript.</li>
+<li><a href="https://github.com/ajnsit/purescript-concur">purescript-concur</a> - Concur UI framework. React backend, but can use others.</li>
+<li><a href="https://github.com/juspay/purescript-presto">purescript-presto</a> - Write Apps like Mathematical Equations!</li>
+<li><a href="https://github.com/zrho/purescript-optic-ui">purescript-optic-ui</a> - Write single page web user interfaces declaratively and concisely with the help of lenses and traversals.</li>
+<li><a href="https://github.com/paf31/purescript-react-explore">purescript-react-explor</a> - Experiments with comonads for modelling React UIs.</li>
+</ul>
+<p>Virtual-DOM based:</p>
+<ul>
+<li><a href="https://github.com/slamdata/purescript-halogen">purescript-halogen</a> - A declarative, type-safe UI library.</li>
+<li><a href="https://github.com/utkarshkukreti/purescript-hedwig">purescript-hedwig</a> - Hedwig is a fast, type safe, declarative PureScript library for building web applications.</li>
+<li><a href="https://github.com/easafe/purescript-flame">purescript-flame</a> - Flame is a fast &amp; simple framework for building web applications in PureScript inspired by purescript-hedwig and Elm</li>
+</ul>
+<p>Signals/Behaviors/FRP:</p>
+<ul>
+<li><a href="https://github.com/sharkdp/purescript-flare">purescript-flare</a> - Applicative-style reactive user interfaces built on top of purescript-signal.</li>
+<li><a href="https://github.com/funkia/purescript-turbine">purescript-turbine</a> - Purely functional frontend framework powered by FRP.</li>
+<li><a href="https://github.com/OutWatch/purescript-outwatch">purescript-outwatch</a> - A functional and reactive UI framework based on Rx and VirtualDom.</li>
+<li><a href="https://github.com/i-am-tom/purescript-panda">purescript-panda</a> - What would TEA look like if we had no VDOM?</li>
+<li><a href="https://github.com/restaumatic/purescript-specular">purescript-specular</a> - A Reflex-Dom inspired UI library for PureScript.</li>
+<li><a href="https://github.com/paf31/purescript-sdom">purescript-sdom</a> - An experiment in replacing the virtual DOM and avoiding diffing.</li>
+<li><a href="https://github.com/paf31/purescript-purview">purescript-purview</a> - A UI library based on the incremental lambda calculus.</li>
+</ul>
+<h2>URL Routers</h2>
+<ul>
+<li><a href="https://github.com/slamdata/purescript-routing">purescript-routing</a> - A clean, type-safe routing library for PureScript.</li>
+<li><a href="https://github.com/coot/purescript-cofree-react-router">purescript-cofree-react-router</a> - React-Router implemented in PureScript as Cofree Comonad for the Array functor.</li>
+<li><a href="https://github.com/owickstrom/purescript-trout">purescript-trout</a> - Type-level routing for PureScript.</li>
+<li><a href="https://github.com/paluh/purescript-boomboom">purescript-boomboom</a> - Never hard code your urls again. Boomboom them all!</li>
+<li><a href="https://github.com/natefaubion/purescript-routing-duplex">purescript-routing-duplex</a> - Simple bidirectional parser/printers for your routing data types.</li>
+</ul>
+<h2>Components</h2>
+<ul>
+<li><a href="https://github.com/thomashoneyman/purescript-halogen-formless">purescript-halogen-formless</a> - A renderless component for building painless forms in Halogen</li>
+<li><a href="https://github.com/citizennet/purescript-halogen-select">purescript-halogen-select</a> - Building blocks for common selection user interfaces like dropdowns, typeaheads, image pickers, and calendars.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'purescript_README.md';
 
         fetch(markdownFile)
@@ -48,21 +173,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

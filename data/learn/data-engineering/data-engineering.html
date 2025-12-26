@@ -8,38 +8,181 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Igorbarinov Awesome Data Engineering - Awesome List Resources">
-    <title>Igorbarinov Awesome Data Engineering</title>
+    <meta name="description" content="> A curated list of awesome things related to Data Engineering. - Databases - Data Comparison - Data Ingestion - File System - Serialization format - Stream...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Data Engineering [![Awesome](https://awesome.re/badge-flat2.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Data Engineering <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://awesome.re/badge-flat2.svg" /></a></h1>
+<blockquote>
+<p>A curated list of awesome things related to Data Engineering.</p>
+</blockquote>
+<h2>Contents</h2>
+<ul>
+<li><a href="#databases">Databases</a></li>
+<li><a href="#data-comparison">Data Comparison</a></li>
+<li><a href="#data-ingestion">Data Ingestion</a></li>
+<li><a href="#file-system">File System</a></li>
+<li><a href="#serialization-format">Serialization format</a></li>
+<li><a href="#stream-processing">Stream Processing</a></li>
+<li><a href="#batch-processing">Batch Processing</a></li>
+<li><a href="#charts-and-dashboards">Charts and Dashboards</a></li>
+<li><a href="#workflow">Workflow</a></li>
+<li><a href="#data-lake-management">Data Lake Management</a></li>
+<li><a href="#elk-elastic-logstash-kibana">ELK Elastic Logstash Kibana</a></li>
+<li><a href="#docker">Docker</a></li>
+<li><a href="#datasets">Datasets</a></li>
+<li><a href="#realtime">Realtime</a></li>
+<li><a href="#data-dumps">Data Dumps</a></li>
+<li><a href="#monitoring">Monitoring</a></li>
+<li><a href="#prometheus">Prometheus</a></li>
+<li><a href="#profiling">Profiling</a></li>
+<li><a href="#data-profiler">Data Profiler</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#forums">Forums</a></li>
+<li><a href="#conferences">Conferences</a></li>
+<li><a href="#podcasts">Podcasts</a></li>
+<li><a href="#books">Books</a></li>
+</ul>
+<h2>Databases</h2>
+<ul>
+<li>Relational</li>
+<li><a href="https://github.com/rqlite/rqlite">RQLite</a> - Replicated SQLite using the Raft consensus protocol.</li>
+<li><a href="https://www.mysql.com/">MySQL</a> - The world's most popular open source database.<ul>
+<li><a href="https://github.com/pingcap/tidb">TiDB</a> - A distributed NewSQL database compatible with MySQL protocol.</li>
+<li><a href="https://www.percona.com/software/mysql-database/percona-xtrabackup">Percona XtraBackup</a> - A free, open source, complete online backup solution for all versions of Percona Server, MySQL® and MariaDB®.</li>
+<li><a href="https://github.com/pinterest/mysql_utils">mysql_utils</a> - Pinterest MySQL Management Tools.</li>
+</ul>
+</li>
+<li><a href="https://mariadb.org/">MariaDB</a> - An enhanced, drop-in replacement for MySQL.</li>
+<li><a href="https://www.postgresql.org/">PostgreSQL</a> - The world's most advanced open source database.</li>
+<li><a href="https://aws.amazon.com/rds/">Amazon RDS</a> - Makes it easy to set up, operate, and scale a relational database in the cloud.</li>
+<li><a href="https://crate.io/">Crate.IO</a> - Scalable SQL database with the NOSQL goodies.</li>
+<li>Key-Value</li>
+<li><a href="https://redis.io/">Redis</a> - An open source, BSD licensed, advanced key-value cache and store.</li>
+<li><a href="https://docs.basho.com/riak/kv/">Riak</a> - A distributed database designed to deliver maximum data availability by distributing data across multiple servers.</li>
+<li><a href="https://aws.amazon.com/dynamodb/">AWS DynamoDB</a> - A fast and flexible NoSQL database service for all applications that need consistent, single-digit millisecond latency at any scale.</li>
+<li><a href="https://github.com/rescrv/HyperDex">HyperDex</a> - A scalable, searchable key-value store. Deprecated.</li>
+<li><a href="https://ssdb.io">SSDB</a> - A high performance NoSQL database supporting many data structures, an alternative to Redis.</li>
+<li><a href="https://github.com/alticelabs/kyoto">Kyoto Tycoon</a> - A lightweight network server on top of the Kyoto Cabinet key-value database, built for high-performance and concurrency.</li>
+<li><a href="https://github.com/iondbproject/iondb">IonDB</a> - A key-value store for microcontroller and IoT applications.</li>
+<li>Column</li>
+<li><a href="https://cassandra.apache.org/">Cassandra</a> - The right choice when you need scalability and high availability without compromising performance.<ul>
+<li><a href="https://www.ecyrd.com/cassandracalculator/">Cassandra Calculator</a> - This simple form allows you to try out different values for your Apache Cassandra cluster and see what the impact is for your application.</li>
+<li><a href="https://github.com/pcmanus/ccm">CCM</a> - A script to easily create and destroy an Apache Cassandra cluster on localhost.</li>
+<li><a href="https://github.com/scylladb/scylla">ScyllaDB</a> - NoSQL data store using the seastar framework, compatible with Apache Cassandra.</li>
+</ul>
+</li>
+<li><a href="https://hbase.apache.org/">HBase</a> - The Hadoop database, a distributed, scalable, big data store.</li>
+<li><a href="https://aws.amazon.com/redshift/">AWS Redshift</a> - A fast, fully managed, petabyte-scale data warehouse that makes it simple and cost-effective to analyze all your data using your existing business intelligence tools.</li>
+<li><a href="https://github.com/filodb/FiloDB">FiloDB</a> - Distributed. Columnar. Versioned. Streaming. SQL.</li>
+<li><a href="https://www.vertica.com">Vertica</a> - Distributed, MPP columnar database with extensive analytics SQL.</li>
+<li><a href="https://clickhouse.tech">ClickHouse</a> - Distributed columnar DBMS for OLAP. SQL.</li>
+<li>Document</li>
+<li><a href="https://www.mongodb.com">MongoDB</a> - An open-source, document database designed for ease of development and scaling.<ul>
+<li><a href="https://www.percona.com/software/mongo-database/percona-server-for-mongodb">Percona Server for MongoDB</a> - Percona Server for MongoDB® is a free, enhanced, fully compatible, open source, drop-in replacement for the MongoDB® Community Edition that includes enterprise-grade features and functionality.</li>
+<li><a href="https://github.com/rain1017/memdb">MemDB</a> - Distributed Transactional In-Memory Database (based on MongoDB).</li>
+</ul>
+</li>
+<li><a href="https://www.elastic.co/">Elasticsearch</a> - Search &amp; Analyze Data in Real Time.</li>
+<li><a href="https://www.couchbase.com/">Couchbase</a> - The highest performing NoSQL distributed database.</li>
+<li><a href="https://rethinkdb.com/">RethinkDB</a> - The open-source database for the realtime web.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Data Engineering <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://awesome.re/badge-flat2.svg" /></a></h1>
+<blockquote>
+<p>A curated list of awesome things related to Data Engineering.</p>
+</blockquote>
+<h2>Contents</h2>
+<ul>
+<li><a href="#databases">Databases</a></li>
+<li><a href="#data-comparison">Data Comparison</a></li>
+<li><a href="#data-ingestion">Data Ingestion</a></li>
+<li><a href="#file-system">File System</a></li>
+<li><a href="#serialization-format">Serialization format</a></li>
+<li><a href="#stream-processing">Stream Processing</a></li>
+<li><a href="#batch-processing">Batch Processing</a></li>
+<li><a href="#charts-and-dashboards">Charts and Dashboards</a></li>
+<li><a href="#workflow">Workflow</a></li>
+<li><a href="#data-lake-management">Data Lake Management</a></li>
+<li><a href="#elk-elastic-logstash-kibana">ELK Elastic Logstash Kibana</a></li>
+<li><a href="#docker">Docker</a></li>
+<li><a href="#datasets">Datasets</a></li>
+<li><a href="#realtime">Realtime</a></li>
+<li><a href="#data-dumps">Data Dumps</a></li>
+<li><a href="#monitoring">Monitoring</a></li>
+<li><a href="#prometheus">Prometheus</a></li>
+<li><a href="#profiling">Profiling</a></li>
+<li><a href="#data-profiler">Data Profiler</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#forums">Forums</a></li>
+<li><a href="#conferences">Conferences</a></li>
+<li><a href="#podcasts">Podcasts</a></li>
+<li><a href="#books">Books</a></li>
+</ul>
+<h2>Databases</h2>
+<ul>
+<li>Relational</li>
+<li><a href="https://github.com/rqlite/rqlite">RQLite</a> - Replicated SQLite using the Raft consensus protocol.</li>
+<li><a href="https://www.mysql.com/">MySQL</a> - The world's most popular open source database.<ul>
+<li><a href="https://github.com/pingcap/tidb">TiDB</a> - A distributed NewSQL database compatible with MySQL protocol.</li>
+<li><a href="https://www.percona.com/software/mysql-database/percona-xtrabackup">Percona XtraBackup</a> - A free, open source, complete online backup solution for all versions of Percona Server, MySQL® and MariaDB®.</li>
+<li><a href="https://github.com/pinterest/mysql_utils">mysql_utils</a> - Pinterest MySQL Management Tools.</li>
+</ul>
+</li>
+<li><a href="https://mariadb.org/">MariaDB</a> - An enhanced, drop-in replacement for MySQL.</li>
+<li><a href="https://www.postgresql.org/">PostgreSQL</a> - The world's most advanced open source database.</li>
+<li><a href="https://aws.amazon.com/rds/">Amazon RDS</a> - Makes it easy to set up, operate, and scale a relational database in the cloud.</li>
+<li><a href="https://crate.io/">Crate.IO</a> - Scalable SQL database with the NOSQL goodies.</li>
+<li>Key-Value</li>
+<li><a href="https://redis.io/">Redis</a> - An open source, BSD licensed, advanced key-value cache and store.</li>
+<li><a href="https://docs.basho.com/riak/kv/">Riak</a> - A distributed database designed to deliver maximum data availability by distributing data across multiple servers.</li>
+<li><a href="https://aws.amazon.com/dynamodb/">AWS DynamoDB</a> - A fast and flexible NoSQL database service for all applications that need consistent, single-digit millisecond latency at any scale.</li>
+<li><a href="https://github.com/rescrv/HyperDex">HyperDex</a> - A scalable, searchable key-value store. Deprecated.</li>
+<li><a href="https://ssdb.io">SSDB</a> - A high performance NoSQL database supporting many data structures, an alternative to Redis.</li>
+<li><a href="https://github.com/alticelabs/kyoto">Kyoto Tycoon</a> - A lightweight network server on top of the Kyoto Cabinet key-value database, built for high-performance and concurrency.</li>
+<li><a href="https://github.com/iondbproject/iondb">IonDB</a> - A key-value store for microcontroller and IoT applications.</li>
+<li>Column</li>
+<li><a href="https://cassandra.apache.org/">Cassandra</a> - The right choice when you need scalability and high availability without compromising performance.<ul>
+<li><a href="https://www.ecyrd.com/cassandracalculator/">Cassandra Calculator</a> - This simple form allows you to try out different values for your Apache Cassandra cluster and see what the impact is for your application.</li>
+<li><a href="https://github.com/pcmanus/ccm">CCM</a> - A script to easily create and destroy an Apache Cassandra cluster on localhost.</li>
+<li><a href="https://github.com/scylladb/scylla">ScyllaDB</a> - NoSQL data store using the seastar framework, compatible with Apache Cassandra.</li>
+</ul>
+</li>
+<li><a href="https://hbase.apache.org/">HBase</a> - The Hadoop database, a distributed, scalable, big data store.</li>
+<li><a href="https://aws.amazon.com/redshift/">AWS Redshift</a> - A fast, fully managed, petabyte-scale data warehouse that makes it simple and cost-effective to analyze all your data using your existing business intelligence tools.</li>
+<li><a href="https://github.com/filodb/FiloDB">FiloDB</a> - Distributed. Columnar. Versioned. Streaming. SQL.</li>
+<li><a href="https://www.vertica.com">Vertica</a> - Distributed, MPP columnar database with extensive analytics SQL.</li>
+<li><a href="https://clickhouse.tech">ClickHouse</a> - Distributed columnar DBMS for OLAP. SQL.</li>
+<li>Document</li>
+<li><a href="https://www.mongodb.com">MongoDB</a> - An open-source, document database designed for ease of development and scaling.<ul>
+<li><a href="https://www.percona.com/software/mongo-database/percona-server-for-mongodb">Percona Server for MongoDB</a> - Percona Server for MongoDB® is a free, enhanced, fully compatible, open source, drop-in replacement for the MongoDB® Community Edition that includes enterprise-grade features and functionality.</li>
+<li><a href="https://github.com/rain1017/memdb">MemDB</a> - Distributed Transactional In-Memory Database (based on MongoDB).</li>
+</ul>
+</li>
+<li><a href="https://www.elastic.co/">Elasticsearch</a> - Search &amp; Analyze Data in Real Time.</li>
+<li><a href="https://www.couchbase.com/">Couchbase</a> - The highest performing NoSQL distributed database.</li>
+<li><a href="https://rethinkdb.com/">RethinkDB</a> - The open-source database for the realtime web.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'data-engineering_README.md';
 
         fetch(markdownFile)
@@ -48,21 +191,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

@@ -8,38 +8,295 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dlang Community Awesome D - Awesome List Resources">
-    <title>Dlang Community Awesome D</title>
+    <meta name="description" content="A curated list of awesome D frameworks, libraries and software. Inspired by awesome-python. Most documents and links are collected from the D forum, the D...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome D [![Awesome](https://cdn.jsdelivr.net/gh/sindresorhus/awesome@d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome D <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.jsdelivr.net/gh/sindresorhus/awesome@d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A curated list of awesome D frameworks, libraries and software. Inspired by <a href="https://github.com/vinta/awesome-python">awesome-python</a>.</p>
+<p>Most documents and links are collected from the <a href="https://forum.dlang.org">D forum</a>, the <a href="https://wiki.dlang.org">D wiki</a>, and the <a href="https://code.dlang.org">D package repository</a>. Exploring GitHub is also helpful, as many libraries are hosted there. If you know of an interesting D project, please let us know via <a href="https://github.com/dlang-community/awesome-d/issues">GitHub issues</a> or by <a href="https://github.com/dlang-community/awesome-d/edit/master/README.md">editing this file</a>.</p>
+<h2>Contents</h2>
+<ul>
+<li>Basic Information<ul>
+<li><a href="#official-website">Official Website</a></li>
+<li><a href="#getting-help">Getting Help</a></li>
+<li><a href="#people">People</a></li>
+<li><a href="#events">Events</a></li>
+<li><a href="#organizations">Organizations</a></li>
+</ul>
+</li>
+<li>Documents<ul>
+<li><a href="#books">Books</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#articles">Articles</a></li>
+</ul>
+</li>
+<li>Language Related<ul>
+<li><a href="#package-management">Package Management</a></li>
+<li><a href="#compilers">Compilers</a></li>
+<li><a href="#alternative--wip-compilers">Alternative / WIP Compilers</a></li>
+<li><a href="#dev-tools">Dev Tools</a></li>
+<li><a href="#build-tools">Build Tools</a></li>
+<li><a href="#ides--editors">IDEs &amp; Editors</a></li>
+<li><a href="#lexers-parsers--generators">Lexers, Parsers &amp; Generators</a></li>
+<li><a href="#preprocessors">Preprocessors</a></li>
+<li><a href="#version-managers">Version Managers</a></li>
+</ul>
+</li>
+<li>Continuous Integration<ul>
+<li><a href="#github-actions">GitHub Actions</a></li>
+<li><a href="#testing-frameworks">Testing Frameworks</a></li>
+</ul>
+</li>
+<li>Compiler for Other Languages<ul>
+<li><a href="#javascript">Javascript</a></li>
+</ul>
+</li>
+<li>OS<ul>
+<li><a href="#operating-systems">Operating Systems</a></li>
+<li><a href="#bare-metal--kernel-development">Bare Metal / Kernel Development</a></li>
+</ul>
+</li>
+<li>Common<ul>
+<li><a href="#general-containers">General Containers</a></li>
+<li><a href="#core-utilities">Core Utilities</a></li>
+</ul>
+</li>
+<li>Networking / Web<ul>
+<li><a href="#web-frameworks">Web Frameworks</a></li>
+<li><a href="#data-serialization">Data Serialization</a></li>
+</ul>
+</li>
+<li>Database<ul>
+<li><a href="#database-clients">Database Clients</a></li>
+</ul>
+</li>
+<li>CLI<ul>
+<li><a href="#cli-libraries">CLI Libraries</a></li>
+<li><a href="#cli-applications">CLI Applications</a></li>
+</ul>
+</li>
+<li>GUI<ul>
+<li><a href="#gui-libraries">GUI Libraries</a></li>
+<li><a href="#gui-applications">GUI Applications</a></li>
+</ul>
+</li>
+<li>Game Development<ul>
+<li><a href="#game-bindings">Game Bindings</a></li>
+<li><a href="#game-libraries">Game Libraries</a></li>
+<li><a href="#games">Games</a></li>
+</ul>
+</li>
+<li>Internationalization (i18n) / Globalization<ul>
+<li><a href="#internationalization">Internationalization</a></li>
+</ul>
+</li>
+<li>Image Processing<ul>
+<li><a href="#image-processing">Image Processing</a></li>
+</ul>
+</li>
+<li>Machine Learning<ul>
+<li><a href="#machine-learning">Machine Learning</a></li>
+<li><a href="#parallel-computing">Parallel Computing</a></li>
+</ul>
+</li>
+<li>Scientific<ul>
+<li><a href="#scientific">Scientific</a></li>
+<li><a href="#language-processing">Language Processing</a></li>
+</ul>
+</li>
+<li>Others<ul>
+<li><a href="#text-processing">Text Processing</a></li>
+<li><a href="#logging">Logging</a></li>
+<li><a href="#configuration">Configuration</a></li>
+<li><a href="#blog-engine">BlogEngine</a></li>
+<li><a href="#dependency-injection">Dependency Injection</a></li>
+<li><a href="#cryptography">Cryptography</a></li>
+<li><a href="#unmaintained">Unmaintained</a></li>
+</ul>
+</li>
+</ul>
+<h2>Official Websites</h2>
+<p><em>Official website URLs for D.</em></p>
+<ul>
+<li><a href="https://dlang.org">dlang.org</a> - Official website for D.</li>
+<li><a href="https://wiki.dlang.org">wiki.dlang.org</a> - Official wiki for D.</li>
+<li><a href="https://dlang.org/blog/">blog.dlang.org</a> - Official blog for D.</li>
+<li><a href="https://forum.dlang.org/">forum.dlang.org</a> - Official forum for D. Many interesting discussions occurring on a daily basis.</li>
+<li><a href="https://code.dlang.org">code.dlang.org</a> - Official library registry for D.</li>
+<li><a href="https://github.com/dlang">GitHub organization</a> - Official GitHub organization for D. Repository for all official D tools &amp; code.</li>
+<li><a href="https://github.com/dlang">Issue tracker</a> – Official issue tracker for D. Older reports can be found in the <a href="https://issues.dlang.org/">archived tracker</a>.</li>
+<li><a href="https://dlang.org/spec/spec.html">Language specification</a> - The D programming language specification.</li>
+</ul>
+<h2>Getting Help</h2>
+<p><em>For when you're stuck.</em></p>
+<ul>
+<li><a href="https://forum.dlang.org/group/learn">Official D Forum Learn Group</a> - Highest-traffic site for getting D questions answered.</li>
+<li><a href="https://stackoverflow.com/questions/tagged/d">D on Stack Overflow</a> - Less traffic than the forums but possibly easier to search.</li>
+<li><a href="https://rosettacode.org/wiki/Category:D">D on Rosetta Code</a> - Examples of how to do many basic things in D.</li>
+<li><a href="https://discord.com/invite/bMZk9Q4">D on Discord</a> - Another very active community for D discussions and questions.</li>
+</ul>
+<h2>People</h2>
+<p><em>The people that made D the language it is.</em></p>
+<ul>
+<li><a href="https://www.walterbright.com/">Walter Bright</a> - Father of D. Walter Bright is the creator and first implementer of the D programming language and has implemented compilers for several other languages.</li>
+<li><a href="http://erdani.org/">Andrei Alexandrescu, PhD</a> - C++ guru. Author of <em>The D Programming Language</em> and <em>Modern C++ Design</em>. With Walter Bright, Andrei co-designed many important features of D and authored a large part of D's standard library. Andrei works as a trainer in advanced C++ programming and algorithms and is now actively evangelizing D in the organization.</li>
+<li><a href="https://atilaoncode.blog/">Átila Neves</a> - <a href="https://dlang.org/blog/2019/10/15/my-vision-of-ds-future/">Deputy Leader of D</a>.</li>
+<li><strong>YOU</strong> - Please add your information if you've done something interesting in D. It is you, the awesome people that make D awesome.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome D <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.jsdelivr.net/gh/sindresorhus/awesome@d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A curated list of awesome D frameworks, libraries and software. Inspired by <a href="https://github.com/vinta/awesome-python">awesome-python</a>.</p>
+<p>Most documents and links are collected from the <a href="https://forum.dlang.org">D forum</a>, the <a href="https://wiki.dlang.org">D wiki</a>, and the <a href="https://code.dlang.org">D package repository</a>. Exploring GitHub is also helpful, as many libraries are hosted there. If you know of an interesting D project, please let us know via <a href="https://github.com/dlang-community/awesome-d/issues">GitHub issues</a> or by <a href="https://github.com/dlang-community/awesome-d/edit/master/README.md">editing this file</a>.</p>
+<h2>Contents</h2>
+<ul>
+<li>Basic Information<ul>
+<li><a href="#official-website">Official Website</a></li>
+<li><a href="#getting-help">Getting Help</a></li>
+<li><a href="#people">People</a></li>
+<li><a href="#events">Events</a></li>
+<li><a href="#organizations">Organizations</a></li>
+</ul>
+</li>
+<li>Documents<ul>
+<li><a href="#books">Books</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#articles">Articles</a></li>
+</ul>
+</li>
+<li>Language Related<ul>
+<li><a href="#package-management">Package Management</a></li>
+<li><a href="#compilers">Compilers</a></li>
+<li><a href="#alternative--wip-compilers">Alternative / WIP Compilers</a></li>
+<li><a href="#dev-tools">Dev Tools</a></li>
+<li><a href="#build-tools">Build Tools</a></li>
+<li><a href="#ides--editors">IDEs &amp; Editors</a></li>
+<li><a href="#lexers-parsers--generators">Lexers, Parsers &amp; Generators</a></li>
+<li><a href="#preprocessors">Preprocessors</a></li>
+<li><a href="#version-managers">Version Managers</a></li>
+</ul>
+</li>
+<li>Continuous Integration<ul>
+<li><a href="#github-actions">GitHub Actions</a></li>
+<li><a href="#testing-frameworks">Testing Frameworks</a></li>
+</ul>
+</li>
+<li>Compiler for Other Languages<ul>
+<li><a href="#javascript">Javascript</a></li>
+</ul>
+</li>
+<li>OS<ul>
+<li><a href="#operating-systems">Operating Systems</a></li>
+<li><a href="#bare-metal--kernel-development">Bare Metal / Kernel Development</a></li>
+</ul>
+</li>
+<li>Common<ul>
+<li><a href="#general-containers">General Containers</a></li>
+<li><a href="#core-utilities">Core Utilities</a></li>
+</ul>
+</li>
+<li>Networking / Web<ul>
+<li><a href="#web-frameworks">Web Frameworks</a></li>
+<li><a href="#data-serialization">Data Serialization</a></li>
+</ul>
+</li>
+<li>Database<ul>
+<li><a href="#database-clients">Database Clients</a></li>
+</ul>
+</li>
+<li>CLI<ul>
+<li><a href="#cli-libraries">CLI Libraries</a></li>
+<li><a href="#cli-applications">CLI Applications</a></li>
+</ul>
+</li>
+<li>GUI<ul>
+<li><a href="#gui-libraries">GUI Libraries</a></li>
+<li><a href="#gui-applications">GUI Applications</a></li>
+</ul>
+</li>
+<li>Game Development<ul>
+<li><a href="#game-bindings">Game Bindings</a></li>
+<li><a href="#game-libraries">Game Libraries</a></li>
+<li><a href="#games">Games</a></li>
+</ul>
+</li>
+<li>Internationalization (i18n) / Globalization<ul>
+<li><a href="#internationalization">Internationalization</a></li>
+</ul>
+</li>
+<li>Image Processing<ul>
+<li><a href="#image-processing">Image Processing</a></li>
+</ul>
+</li>
+<li>Machine Learning<ul>
+<li><a href="#machine-learning">Machine Learning</a></li>
+<li><a href="#parallel-computing">Parallel Computing</a></li>
+</ul>
+</li>
+<li>Scientific<ul>
+<li><a href="#scientific">Scientific</a></li>
+<li><a href="#language-processing">Language Processing</a></li>
+</ul>
+</li>
+<li>Others<ul>
+<li><a href="#text-processing">Text Processing</a></li>
+<li><a href="#logging">Logging</a></li>
+<li><a href="#configuration">Configuration</a></li>
+<li><a href="#blog-engine">BlogEngine</a></li>
+<li><a href="#dependency-injection">Dependency Injection</a></li>
+<li><a href="#cryptography">Cryptography</a></li>
+<li><a href="#unmaintained">Unmaintained</a></li>
+</ul>
+</li>
+</ul>
+<h2>Official Websites</h2>
+<p><em>Official website URLs for D.</em></p>
+<ul>
+<li><a href="https://dlang.org">dlang.org</a> - Official website for D.</li>
+<li><a href="https://wiki.dlang.org">wiki.dlang.org</a> - Official wiki for D.</li>
+<li><a href="https://dlang.org/blog/">blog.dlang.org</a> - Official blog for D.</li>
+<li><a href="https://forum.dlang.org/">forum.dlang.org</a> - Official forum for D. Many interesting discussions occurring on a daily basis.</li>
+<li><a href="https://code.dlang.org">code.dlang.org</a> - Official library registry for D.</li>
+<li><a href="https://github.com/dlang">GitHub organization</a> - Official GitHub organization for D. Repository for all official D tools &amp; code.</li>
+<li><a href="https://github.com/dlang">Issue tracker</a> – Official issue tracker for D. Older reports can be found in the <a href="https://issues.dlang.org/">archived tracker</a>.</li>
+<li><a href="https://dlang.org/spec/spec.html">Language specification</a> - The D programming language specification.</li>
+</ul>
+<h2>Getting Help</h2>
+<p><em>For when you're stuck.</em></p>
+<ul>
+<li><a href="https://forum.dlang.org/group/learn">Official D Forum Learn Group</a> - Highest-traffic site for getting D questions answered.</li>
+<li><a href="https://stackoverflow.com/questions/tagged/d">D on Stack Overflow</a> - Less traffic than the forums but possibly easier to search.</li>
+<li><a href="https://rosettacode.org/wiki/Category:D">D on Rosetta Code</a> - Examples of how to do many basic things in D.</li>
+<li><a href="https://discord.com/invite/bMZk9Q4">D on Discord</a> - Another very active community for D discussions and questions.</li>
+</ul>
+<h2>People</h2>
+<p><em>The people that made D the language it is.</em></p>
+<ul>
+<li><a href="https://www.walterbright.com/">Walter Bright</a> - Father of D. Walter Bright is the creator and first implementer of the D programming language and has implemented compilers for several other languages.</li>
+<li><a href="http://erdani.org/">Andrei Alexandrescu, PhD</a> - C++ guru. Author of <em>The D Programming Language</em> and <em>Modern C++ Design</em>. With Walter Bright, Andrei co-designed many important features of D and authored a large part of D's standard library. Andrei works as a trainer in advanced C++ programming and algorithms and is now actively evangelizing D in the organization.</li>
+<li><a href="https://atilaoncode.blog/">Átila Neves</a> - <a href="https://dlang.org/blog/2019/10/15/my-vision-of-ds-future/">Deputy Leader of D</a>.</li>
+<li><strong>YOU</strong> - Please add your information if you've done something interesting in D. It is you, the awesome people that make D awesome.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'd_README.md';
 
         fetch(markdownFile)
@@ -48,21 +305,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

@@ -8,38 +8,231 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mehcode Awesome Atom - Awesome List Resources">
-    <title>Mehcode Awesome Atom</title>
+    <meta name="description" content="A curated list of delightful Atom packages and resources. For more awesomeness, check out awesome. - Syntax - Lint - Build - Extensions - Nuclide - Themes -...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Atom [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Atom <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A curated list of delightful Atom packages and resources. For more awesomeness, check out <a href="https://github.com/sindresorhus/awesome">awesome</a>.</p>
+<h2>Table of Content</h2>
+<ul>
+<li><a href="#syntax">Syntax</a></li>
+<li><a href="#lint">Lint</a></li>
+<li><a href="#build">Build</a></li>
+<li><a href="#extensions">Extensions</a></li>
+<li><a href="#nuclide">Nuclide</a></li>
+<li><a href="http://enrmarc.github.io/atom-theme-gallery/">Themes</a></li>
+<li><a href="#collaboration">Collaboration</a></li>
+<li><a href="#codesidestory">CodeSideStory</a></li>
+<li><a href="#uncategorized">Uncategorized</a></li>
+<li><a href="#nuclide">Nuclide</a></li>
+<li><a href="#advanced-open-file">Advanced Open File</a></li>
+<li><a href="#atom-reverser">Atom Reverser</a></li>
+<li><a href="#atom-terminal">Atom Terminal</a></li>
+<li><a href="#autocomplete-module-import">Autocomplete module import</a></li>
+<li><a href="#beautify">Beautify</a></li>
+<li><a href="#code-peek">Code Peek</a></li>
+<li><a href="#color-picker">Color Picker</a></li>
+<li><a href="#copy-paste">Copy Paste</a></li>
+<li><a href="#css-declaration-sorter">CSS Declaration Sorter</a></li>
+<li><a href="#duplicate-selection">Duplicate Selection</a></li>
+<li><a href="#editor-config">Editor Config</a></li>
+<li><a href="#emmet">Emmet</a></li>
+<li><a href="#file-icons">File Icons</a></li>
+<li><a href="#fonts">Fonts</a></li>
+<li><a href="#git-time-machine">Git Time Machine</a></li>
+<li><a href="#html-to-css">html-to-css</a></li>
+<li><a href="#imdone">iMDone</a></li>
+<li><a href="#jumpy">Jumpy</a></li>
+<li><a href="#merge-conflicts">Merge Conflicts</a></li>
+<li><a href="#minimap">Minimap</a></li>
+<li><a href="#pigments">Pigments</a></li>
+<li><a href="#project-plus">Project Plus</a></li>
+<li><a href="#sort-lines">Sort lines</a></li>
+<li><a href="#sorter">Sorter</a></li>
+<li><a href="#sync-settings">Sync Settings</a></li>
+<li><a href="#platformio-ide-terminal">PlatformIO IDE Terminal</a></li>
+<li><a href="#ternjs">TernJS</a></li>
+<li><a href="#test-navigator">Test Navigator</a></li>
+<li><a href="#themer">Themer</a></li>
+<li><a href="#toggle-quotes">Toggle Quotes</a></li>
+</ul>
+<h2>Syntax</h2>
+<p>Language packages extend the editor with syntax highlighting and/or
+snippets for a specific language or file format.</p>
+<ul>
+<li><a href="https://atom.io/packages/angularjs">Angular</a></li>
+<li><a href="https://atom.io/packages/language-vue">Vue.js</a></li>
+<li><a href="https://atom.io/packages/language-docker">Dockerfile</a></li>
+<li><a href="https://atom.io/packages/language-markdown">Markdown</a></li>
+<li><a href="https://atom.io/packages/react">React</a></li>
+<li><a href="https://atom.io/packages/stylus">Stylus</a></li>
+<li><a href="https://atom.io/packages/language-pug">Pug</a></li>
+<li><a href="https://atom.io/packages/language-tcl">Tcl</a></li>
+<li><a href="https://atom.io/packages/atom-typescript">TypeScript</a></li>
+</ul>
+<h2>Lint</h2>
+<p>In case the awesome nirvana that is linting has not yet been unleashed upon you:</p>
+<blockquote>
+<p>lint was the name originally given to a particular program that flagged some suspicious and non-portable constructs (likely to be bugs) in C language source code. The term is now applied generically to tools that flag suspicious usage in software written in any computer language.</p>
+</blockquote>
+<p>To enable linting, you'll need the general <a href="https://atom.io/packages/linter">linter</a> which provides the interface for the provider plugins for specific languages. The full list of current plugins can be found at <a href="http://atomlinter.github.io/">atomlinter.github.io</a>, a few examples being:</p>
+<ul>
+<li>C++</li>
+<li><a href="https://atom.io/packages/linter-clang">linter-clang</a></li>
+<li><a href="https://atom.io/packages/linter-cppcheck">linter-cppcheck</a></li>
+<li><a href="https://atom.io/packages/linter-gcc">linter-gcc</a> - on-the-fly linting!</li>
+<li><a href="https://atom.io/packages/linter-cpplint">linter-cpplint</a> - checks against google style guide</li>
+<li><a href="https://atom.io/packages/linter-stylelint">CSS</a> — stylelint</li>
+<li><a href="https://atom.io/packages/linter-eslint">JavaScript</a> — eslint</li>
+<li><a href="https://atom.io/packages/linter-pylama">Python</a> — pylama</li>
+<li><a href="https://atom.io/packages/linter-sass-lint">SASS</a> — sass-lint</li>
+<li><a href="https://atom.io/packages/linter-stylint">Stylus</a> — stylint</li>
+<li><a href="https://atom.io/packages/linter-tslint">TypeScript</a> - tslint</li>
+</ul>
+<p><img alt="atom-linter" src="https://camo.githubusercontent.com/70b6e697c9d793642414b4ea6d08dbb9678877b3/687474703a2f2f672e7265636f726469742e636f2f313352666d6972507a322e676966" /></p>
+<h2>Build</h2>
+<p>To enable building, you'll need the general <a href="https://atom.io/packages/build">build</a> which provides the interface for the provider plugins for specific languages and adds integrates with <a href="#lint">lint</a>. The full list of current plugins can be found at <a href="http://atombuild.github.io/">atombuild.github.io</a>, a few examples being:</p>
+<ul>
+<li><a href="https://atom.io/packages/build-applescript">AppleScript</a> — oscompile</li>
+<li><a href="https://atom.io/packages/build-xcodebuild">C/C++/Objective C</a> — xcodebuild</li>
+<li><a href="https://atom.io/packages/build-coffee">CoffeeScript</a> - coffee</li>
+<li><a href="https://github.com/AtomBuild/atom-build-make">GNU Make</a> - make</li>
+<li><a href="https://atom.io/packages/build-sass">Sass</a> — sass</li>
+<li><a href="https://atom.io/packages/build-tsc">TypeScript</a> - tsc</li>
+</ul>
+<p><img alt="atom-build" src="https://camo.githubusercontent.com/ca10be645c7a2024dddc550466e67d692fb411ed/68747470733a2f2f6e6f7365676c69642e6769746875622e696f2f746172676574732d6d616b652e676966" /></p>
+<h2>Extensions</h2>
+<h4><a href="https://nuclide.io/">Nuclide</a></h4>
+<blockquote>
+<p>An open IDE for web and native mobile development, built on top of Atom maintained by <a href="https://github.com/facebook/nuclide">Facebook</a>.</p>
+</blockquote>
+<p><img alt="" src="https://nuclide.io/static/images/docs/promo-hack.png" /></p>
+<h2>Collaboration</h2>
+<h4><a href="https://atom.io/packages/codesidestory-atom">CodeSideStory</a></h4>
+<blockquote>
+<p>An Atom/Slack integration to start conversations about code right from the editor. Record screens and archive it right next to the line number to provide more context to your code.</p>
+</blockquote>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Atom <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A curated list of delightful Atom packages and resources. For more awesomeness, check out <a href="https://github.com/sindresorhus/awesome">awesome</a>.</p>
+<h2>Table of Content</h2>
+<ul>
+<li><a href="#syntax">Syntax</a></li>
+<li><a href="#lint">Lint</a></li>
+<li><a href="#build">Build</a></li>
+<li><a href="#extensions">Extensions</a></li>
+<li><a href="#nuclide">Nuclide</a></li>
+<li><a href="http://enrmarc.github.io/atom-theme-gallery/">Themes</a></li>
+<li><a href="#collaboration">Collaboration</a></li>
+<li><a href="#codesidestory">CodeSideStory</a></li>
+<li><a href="#uncategorized">Uncategorized</a></li>
+<li><a href="#nuclide">Nuclide</a></li>
+<li><a href="#advanced-open-file">Advanced Open File</a></li>
+<li><a href="#atom-reverser">Atom Reverser</a></li>
+<li><a href="#atom-terminal">Atom Terminal</a></li>
+<li><a href="#autocomplete-module-import">Autocomplete module import</a></li>
+<li><a href="#beautify">Beautify</a></li>
+<li><a href="#code-peek">Code Peek</a></li>
+<li><a href="#color-picker">Color Picker</a></li>
+<li><a href="#copy-paste">Copy Paste</a></li>
+<li><a href="#css-declaration-sorter">CSS Declaration Sorter</a></li>
+<li><a href="#duplicate-selection">Duplicate Selection</a></li>
+<li><a href="#editor-config">Editor Config</a></li>
+<li><a href="#emmet">Emmet</a></li>
+<li><a href="#file-icons">File Icons</a></li>
+<li><a href="#fonts">Fonts</a></li>
+<li><a href="#git-time-machine">Git Time Machine</a></li>
+<li><a href="#html-to-css">html-to-css</a></li>
+<li><a href="#imdone">iMDone</a></li>
+<li><a href="#jumpy">Jumpy</a></li>
+<li><a href="#merge-conflicts">Merge Conflicts</a></li>
+<li><a href="#minimap">Minimap</a></li>
+<li><a href="#pigments">Pigments</a></li>
+<li><a href="#project-plus">Project Plus</a></li>
+<li><a href="#sort-lines">Sort lines</a></li>
+<li><a href="#sorter">Sorter</a></li>
+<li><a href="#sync-settings">Sync Settings</a></li>
+<li><a href="#platformio-ide-terminal">PlatformIO IDE Terminal</a></li>
+<li><a href="#ternjs">TernJS</a></li>
+<li><a href="#test-navigator">Test Navigator</a></li>
+<li><a href="#themer">Themer</a></li>
+<li><a href="#toggle-quotes">Toggle Quotes</a></li>
+</ul>
+<h2>Syntax</h2>
+<p>Language packages extend the editor with syntax highlighting and/or
+snippets for a specific language or file format.</p>
+<ul>
+<li><a href="https://atom.io/packages/angularjs">Angular</a></li>
+<li><a href="https://atom.io/packages/language-vue">Vue.js</a></li>
+<li><a href="https://atom.io/packages/language-docker">Dockerfile</a></li>
+<li><a href="https://atom.io/packages/language-markdown">Markdown</a></li>
+<li><a href="https://atom.io/packages/react">React</a></li>
+<li><a href="https://atom.io/packages/stylus">Stylus</a></li>
+<li><a href="https://atom.io/packages/language-pug">Pug</a></li>
+<li><a href="https://atom.io/packages/language-tcl">Tcl</a></li>
+<li><a href="https://atom.io/packages/atom-typescript">TypeScript</a></li>
+</ul>
+<h2>Lint</h2>
+<p>In case the awesome nirvana that is linting has not yet been unleashed upon you:</p>
+<blockquote>
+<p>lint was the name originally given to a particular program that flagged some suspicious and non-portable constructs (likely to be bugs) in C language source code. The term is now applied generically to tools that flag suspicious usage in software written in any computer language.</p>
+</blockquote>
+<p>To enable linting, you'll need the general <a href="https://atom.io/packages/linter">linter</a> which provides the interface for the provider plugins for specific languages. The full list of current plugins can be found at <a href="http://atomlinter.github.io/">atomlinter.github.io</a>, a few examples being:</p>
+<ul>
+<li>C++</li>
+<li><a href="https://atom.io/packages/linter-clang">linter-clang</a></li>
+<li><a href="https://atom.io/packages/linter-cppcheck">linter-cppcheck</a></li>
+<li><a href="https://atom.io/packages/linter-gcc">linter-gcc</a> - on-the-fly linting!</li>
+<li><a href="https://atom.io/packages/linter-cpplint">linter-cpplint</a> - checks against google style guide</li>
+<li><a href="https://atom.io/packages/linter-stylelint">CSS</a> — stylelint</li>
+<li><a href="https://atom.io/packages/linter-eslint">JavaScript</a> — eslint</li>
+<li><a href="https://atom.io/packages/linter-pylama">Python</a> — pylama</li>
+<li><a href="https://atom.io/packages/linter-sass-lint">SASS</a> — sass-lint</li>
+<li><a href="https://atom.io/packages/linter-stylint">Stylus</a> — stylint</li>
+<li><a href="https://atom.io/packages/linter-tslint">TypeScript</a> - tslint</li>
+</ul>
+<p><img alt="atom-linter" src="https://camo.githubusercontent.com/70b6e697c9d793642414b4ea6d08dbb9678877b3/687474703a2f2f672e7265636f726469742e636f2f313352666d6972507a322e676966" /></p>
+<h2>Build</h2>
+<p>To enable building, you'll need the general <a href="https://atom.io/packages/build">build</a> which provides the interface for the provider plugins for specific languages and adds integrates with <a href="#lint">lint</a>. The full list of current plugins can be found at <a href="http://atombuild.github.io/">atombuild.github.io</a>, a few examples being:</p>
+<ul>
+<li><a href="https://atom.io/packages/build-applescript">AppleScript</a> — oscompile</li>
+<li><a href="https://atom.io/packages/build-xcodebuild">C/C++/Objective C</a> — xcodebuild</li>
+<li><a href="https://atom.io/packages/build-coffee">CoffeeScript</a> - coffee</li>
+<li><a href="https://github.com/AtomBuild/atom-build-make">GNU Make</a> - make</li>
+<li><a href="https://atom.io/packages/build-sass">Sass</a> — sass</li>
+<li><a href="https://atom.io/packages/build-tsc">TypeScript</a> - tsc</li>
+</ul>
+<p><img alt="atom-build" src="https://camo.githubusercontent.com/ca10be645c7a2024dddc550466e67d692fb411ed/68747470733a2f2f6e6f7365676c69642e6769746875622e696f2f746172676574732d6d616b652e676966" /></p>
+<h2>Extensions</h2>
+<h4><a href="https://nuclide.io/">Nuclide</a></h4>
+<blockquote>
+<p>An open IDE for web and native mobile development, built on top of Atom maintained by <a href="https://github.com/facebook/nuclide">Facebook</a>.</p>
+</blockquote>
+<p><img alt="" src="https://nuclide.io/static/images/docs/promo-hack.png" /></p>
+<h2>Collaboration</h2>
+<h4><a href="https://atom.io/packages/codesidestory-atom">CodeSideStory</a></h4>
+<blockquote>
+<p>An Atom/Slack integration to start conversations about code right from the editor. Record screens and archive it right next to the line number to provide more context to your code.</p>
+</blockquote>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'atom_README.md';
 
         fetch(markdownFile)
@@ -48,21 +241,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

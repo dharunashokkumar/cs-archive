@@ -8,38 +8,253 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jstumpp Awesome Android - Awesome List Resources">
-    <title>Jstumpp Awesome Android</title>
+    <meta name="description" content="A curated list of awesome Android libraries and resources. For general Java libraries have a look at awesome-java. >Instabug helps Android developers and...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Android - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Android</h1>
+<p><a href="https://github.com/jstumpp/awesome-android"><img src="https://raw.githubusercontent.com/jstumpp/awesome-android/master/awesome-android.png"></a></p>
+<p align="center">
+  <a href="https://github.com/sindresorhus/awesome"><img alt="awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a>
+  <a href="https://travis-ci.org/JStumpp/awesome-android"><img alt="Build Status" src="https://api.travis-ci.org/JStumpp/awesome-android.svg?branch=master" /></a>
+  <img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" />
+</p>
+
+<h1>About</h1>
+<p>A curated list of awesome Android <a href="#libraries">libraries</a> and <a href="#resources">resources</a>. For general Java libraries have a look at <a href="https://github.com/akullpp/awesome-java">awesome-java</a>.</p>
+<h2>Supported with ❤️ by <a href="https://instabug.com/android/sdk?utm_source=toolsofthetrade&amp;utm_medium=spon&amp;utm_content=header">Instabug</a></h2>
+<h3>Understand How Your Android App is Doing with Real-Time Contextual Insights From Your Users</h3>
+<p><a href="https://instabug.com/android/sdk?utm_source=awesomeandroid&amp;utm_medium=spon&amp;utm_content=banner"><img alt="instabug-github" src="https://user-images.githubusercontent.com/10850625/65512691-fd45f280-ded9-11e9-8921-3528b98c30a7.png" /></a></p>
+<blockquote>
+<p>Instabug helps Android developers and product teams easily collect bugs and feedback from beta testers and users to iterate faster and ship quality apps. Instabug automatically attaches screenshots, device details, network logs, repro steps, and tons of other critical insights needed to resolve issues and prioritize product backlogs. 
+Mobile teams accelerate their workflows by seamlessly integrating with third-party tools like Github, Jira, Slack, Zendesk and much more. <a href="https://instabug.com/android/sdk/?utm_source=awesomeandroid&amp;utm_medium=spon&amp;utm_content=get-started">Instabug is offering Awesome Android community an exclusive 15% discount on all paid plans. Get Started!</a>
+<a href="https://instabug.com"><img alt="" src="https://instabug-ga.appspot.com/UA-41982088-6/github/awesomeandroid?pixel" /></a></p>
+</blockquote>
+<h1>How to Use</h1>
+<p>Awesome-Android is an amazing list for people who need a certain feature on their app, so the best ways to use are:
+ - Simply press command + F to search for a keyword
+ - Go through our Content Menu</p>
+<h1>Content</h1>
+<ul>
+<li><a href="#emulators">Emulators</a></li>
+<li><a href="#libraries">Libraries</a><ul>
+<li><a href="#charts">Charts</a></li>
+<li><a href="#cloud-services">Cloud Services</a></li>
+<li><a href="#dependency-injection">Dependency Injection</a></li>
+<li><a href="#android-services">Android Services</a></li>
+<li><a href="#game-development">Game Development</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#gui">GUI</a><ul>
+<li><a href="#actionbar">ActionBar</a></li>
+<li><a href="#navigation">Navigation</a></li>
+<li><a href="#animations">Animations</a></li>
+<li><a href="#images">Images</a></li>
+<li><a href="#inputs">Inputs</a></li>
+<li><a href="#loading-images">Loading images</a></li>
+<li><a href="#media-picker">Media Picker</a></li>
+<li><a href="#video">Video</a></li>
+<li><a href="#camera">Camera</a></li>
+<li><a href="#field-validation">Field Validation</a></li>
+</ul>
+</li>
+<li><a href="#json">JSON</a></li>
+<li><a href="#crash-monitoring">Crash monitoring</a></li>
+<li><a href="#networking">Networking</a></li>
+<li><a href="#logger">Logger</a></li>
+<li><a href="#notifications">Notifications</a></li>
+<li><a href="#database">Database</a><ul>
+<li><a href="#orm">ORM</a></li>
+</ul>
+</li>
+<li><a href="#rest">REST</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#tracking">Tracking</a></li>
+<li><a href="#maps">Maps</a></li>
+<li><a href="#utility">Utility</a></li>
+<li><a href="#debugging-tools">Debugging tools</a></li>
+<li><a href="#wireless">Wireless</a></li>
+<li><a href="#chat--messaging">Chat and Messaging</a></li>
+<li><a href="#custom-dialog">Custom Dialog</a></li>
+<li><a href="#version-checking">Version Checking</a></li>
+<li><a href="#date--time">Date &amp; Time</a></li>
+<li><a href="#runtime-permissions">Runtime Permissions</a></li>
+<li><a href="#other">Other</a></li>
+</ul>
+</li>
+<li><a href="#resources">Resources</a><ul>
+<li><a href="#code-examples">Code examples</a></li>
+<li><a href="#podcasts">Podcasts</a></li>
+<li><a href="#more-lists-of-libraries">More lists of libraries</a></li>
+</ul>
+</li>
+<li><a href="#development-alternatives">Development Alternatives</a><ul>
+<li><a href="#c">C#</a></li>
+<li><a href="#html-css-and-javascript">HTML, CSS and Javascript</a></li>
+<li><a href="#lua">Lua</a></li>
+<li><a href="#scala">Scala</a></li>
+<li><a href="#groovy">Groovy</a></li>
+<li><a href="#kotlin">Kotlin</a></li>
+<li><a href="#flutter">Flutter</a></li>
+</ul>
+</li>
+<li><a href="#performance">Performance</a></li>
+<li><a href="#other-awesome-lists">Other Awesome Lists</a></li>
+<li><a href="#contributing">Contributing</a></li>
+</ul>
+<h2>Emulators</h2>
+<ul>
+<li><a href="https://andyroid.net">AndY</a></li>
+<li><a href="https://archon-runtime.github.io">ARChon</a></li>
+<li><a href="https://www.bluestacks.com">BlueStacks</a></li>
+<li><a href="https://www.genymotion.com">Genymotion</a></li>
+<li><a href="https://www.bignox.com">nox</a></li>
+</ul>
+<h2>Libraries</h2>
+<h3>Charts</h3>
+<ul>
+<li><a href="https://github.com/ddanny/achartengine">AChartEngine</a> - Charting Engine.</li>
+<li><a href="https://github.com/blackfizz/EazeGraph">EazeGraph</a> - Chart and graph library.</li>
+<li><a href="https://github.com/diogobernardino/WilliamChart">WilliamChart</a> - Chart library with good motion capabilities.</li>
+<li><a href="https://github.com/lecho/hellocharts-android">HelloCharts</a> - Chart and graph library with support for scaling, scrolling and animations.</li>
+<li><a href="https://github.com/PhilJay/MPAndroidChart">MPAndroidChart</a> - An Android chart and graph library supporting scaling and dragging by gesture.</li>
+<li><a href="https://github.com/imaNNeoFighT/ArcChartView">ArcChartView</a> - Draw Creative Statistic Arc Charts.</li>
+<li><a href="https://github.com/AnyChart/AnyChart-Android">AnyChart</a> - Data visualization library, Interactive charts.</li>
+</ul>
+<h3>Cloud Services</h3>
+<ul>
+<li><a href="https://cloudrail.com">CloudRail</a> - Unified API Library for: Cloud Storage, Social Profiles, Payment, Email, SMS &amp; POIs.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Android</h1>
+<p><a href="https://github.com/jstumpp/awesome-android"><img src="https://raw.githubusercontent.com/jstumpp/awesome-android/master/awesome-android.png"></a></p>
+<p align="center">
+  <a href="https://github.com/sindresorhus/awesome"><img alt="awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a>
+  <a href="https://travis-ci.org/JStumpp/awesome-android"><img alt="Build Status" src="https://api.travis-ci.org/JStumpp/awesome-android.svg?branch=master" /></a>
+  <img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" />
+</p>
+
+<h1>About</h1>
+<p>A curated list of awesome Android <a href="#libraries">libraries</a> and <a href="#resources">resources</a>. For general Java libraries have a look at <a href="https://github.com/akullpp/awesome-java">awesome-java</a>.</p>
+<h2>Supported with ❤️ by <a href="https://instabug.com/android/sdk?utm_source=toolsofthetrade&amp;utm_medium=spon&amp;utm_content=header">Instabug</a></h2>
+<h3>Understand How Your Android App is Doing with Real-Time Contextual Insights From Your Users</h3>
+<p><a href="https://instabug.com/android/sdk?utm_source=awesomeandroid&amp;utm_medium=spon&amp;utm_content=banner"><img alt="instabug-github" src="https://user-images.githubusercontent.com/10850625/65512691-fd45f280-ded9-11e9-8921-3528b98c30a7.png" /></a></p>
+<blockquote>
+<p>Instabug helps Android developers and product teams easily collect bugs and feedback from beta testers and users to iterate faster and ship quality apps. Instabug automatically attaches screenshots, device details, network logs, repro steps, and tons of other critical insights needed to resolve issues and prioritize product backlogs. 
+Mobile teams accelerate their workflows by seamlessly integrating with third-party tools like Github, Jira, Slack, Zendesk and much more. <a href="https://instabug.com/android/sdk/?utm_source=awesomeandroid&amp;utm_medium=spon&amp;utm_content=get-started">Instabug is offering Awesome Android community an exclusive 15% discount on all paid plans. Get Started!</a>
+<a href="https://instabug.com"><img alt="" src="https://instabug-ga.appspot.com/UA-41982088-6/github/awesomeandroid?pixel" /></a></p>
+</blockquote>
+<h1>How to Use</h1>
+<p>Awesome-Android is an amazing list for people who need a certain feature on their app, so the best ways to use are:
+ - Simply press command + F to search for a keyword
+ - Go through our Content Menu</p>
+<h1>Content</h1>
+<ul>
+<li><a href="#emulators">Emulators</a></li>
+<li><a href="#libraries">Libraries</a><ul>
+<li><a href="#charts">Charts</a></li>
+<li><a href="#cloud-services">Cloud Services</a></li>
+<li><a href="#dependency-injection">Dependency Injection</a></li>
+<li><a href="#android-services">Android Services</a></li>
+<li><a href="#game-development">Game Development</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#gui">GUI</a><ul>
+<li><a href="#actionbar">ActionBar</a></li>
+<li><a href="#navigation">Navigation</a></li>
+<li><a href="#animations">Animations</a></li>
+<li><a href="#images">Images</a></li>
+<li><a href="#inputs">Inputs</a></li>
+<li><a href="#loading-images">Loading images</a></li>
+<li><a href="#media-picker">Media Picker</a></li>
+<li><a href="#video">Video</a></li>
+<li><a href="#camera">Camera</a></li>
+<li><a href="#field-validation">Field Validation</a></li>
+</ul>
+</li>
+<li><a href="#json">JSON</a></li>
+<li><a href="#crash-monitoring">Crash monitoring</a></li>
+<li><a href="#networking">Networking</a></li>
+<li><a href="#logger">Logger</a></li>
+<li><a href="#notifications">Notifications</a></li>
+<li><a href="#database">Database</a><ul>
+<li><a href="#orm">ORM</a></li>
+</ul>
+</li>
+<li><a href="#rest">REST</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#tracking">Tracking</a></li>
+<li><a href="#maps">Maps</a></li>
+<li><a href="#utility">Utility</a></li>
+<li><a href="#debugging-tools">Debugging tools</a></li>
+<li><a href="#wireless">Wireless</a></li>
+<li><a href="#chat--messaging">Chat and Messaging</a></li>
+<li><a href="#custom-dialog">Custom Dialog</a></li>
+<li><a href="#version-checking">Version Checking</a></li>
+<li><a href="#date--time">Date &amp; Time</a></li>
+<li><a href="#runtime-permissions">Runtime Permissions</a></li>
+<li><a href="#other">Other</a></li>
+</ul>
+</li>
+<li><a href="#resources">Resources</a><ul>
+<li><a href="#code-examples">Code examples</a></li>
+<li><a href="#podcasts">Podcasts</a></li>
+<li><a href="#more-lists-of-libraries">More lists of libraries</a></li>
+</ul>
+</li>
+<li><a href="#development-alternatives">Development Alternatives</a><ul>
+<li><a href="#c">C#</a></li>
+<li><a href="#html-css-and-javascript">HTML, CSS and Javascript</a></li>
+<li><a href="#lua">Lua</a></li>
+<li><a href="#scala">Scala</a></li>
+<li><a href="#groovy">Groovy</a></li>
+<li><a href="#kotlin">Kotlin</a></li>
+<li><a href="#flutter">Flutter</a></li>
+</ul>
+</li>
+<li><a href="#performance">Performance</a></li>
+<li><a href="#other-awesome-lists">Other Awesome Lists</a></li>
+<li><a href="#contributing">Contributing</a></li>
+</ul>
+<h2>Emulators</h2>
+<ul>
+<li><a href="https://andyroid.net">AndY</a></li>
+<li><a href="https://archon-runtime.github.io">ARChon</a></li>
+<li><a href="https://www.bluestacks.com">BlueStacks</a></li>
+<li><a href="https://www.genymotion.com">Genymotion</a></li>
+<li><a href="https://www.bignox.com">nox</a></li>
+</ul>
+<h2>Libraries</h2>
+<h3>Charts</h3>
+<ul>
+<li><a href="https://github.com/ddanny/achartengine">AChartEngine</a> - Charting Engine.</li>
+<li><a href="https://github.com/blackfizz/EazeGraph">EazeGraph</a> - Chart and graph library.</li>
+<li><a href="https://github.com/diogobernardino/WilliamChart">WilliamChart</a> - Chart library with good motion capabilities.</li>
+<li><a href="https://github.com/lecho/hellocharts-android">HelloCharts</a> - Chart and graph library with support for scaling, scrolling and animations.</li>
+<li><a href="https://github.com/PhilJay/MPAndroidChart">MPAndroidChart</a> - An Android chart and graph library supporting scaling and dragging by gesture.</li>
+<li><a href="https://github.com/imaNNeoFighT/ArcChartView">ArcChartView</a> - Draw Creative Statistic Arc Charts.</li>
+<li><a href="https://github.com/AnyChart/AnyChart-Android">AnyChart</a> - Data visualization library, Interactive charts.</li>
+</ul>
+<h3>Cloud Services</h3>
+<ul>
+<li><a href="https://cloudrail.com">CloudRail</a> - Unified API Library for: Cloud Storage, Social Profiles, Payment, Email, SMS &amp; POIs.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'android_README.md';
 
         fetch(markdownFile)
@@ -48,21 +263,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

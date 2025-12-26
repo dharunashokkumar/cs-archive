@@ -8,38 +8,147 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Secdev Awesome Scapy - Awesome List Resources">
-    <title>Secdev Awesome Scapy</title>
+    <meta name="description" content="A curated list of tools, add-ons, articles or cool exploits using Scapy, the Python-based interactive packet manipulation program & library. Feel free to...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Scapy [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Scapy <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p align="center">
+  <a href="https://scapy.net/"><img src="https://github.com/secdev/scapy/blob/master/doc/scapy_logo.png" width="200" alt="Scapy" /></a>
+</p>
+
+<p>A curated list of tools, add-ons, articles or cool exploits using <strong><a href="https://scapy.net">Scapy</a></strong>, the Python-based interactive packet manipulation program &amp; library. 
+Feel free to <a href="https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fsecdev%2Fawesome-scapy%2Fedit%2Fmain%2FREADME.md">contribute</a>!</p>
+<p>You can also <a href="https://github.com/topics/scapy">explore Scapy topics</a> on GitHub!</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#exploits">Exploits</a></li>
+</ul>
+<h2>Tools</h2>
+<p>Tools that use Scapy (a lot) or extend it.</p>
+<p>Fun
+- <a href="https://github.com/evilsocket/pwnagotchi">pwnagotchi</a> - Your AI pet that hacks WiFI to grow. It's super cute.</p>
+<p>DDoS
+- <a href="https://github.com/epsylon/ufonet">ufonet</a> - Create your own botnet to send untraceable DDoS attacks.</p>
+<p>Wi-Fi.
+- <a href="https://github.com/calebmadrigal/trackerjacker">trackerjacker</a> - Maps and tracks Wi-Fi networks and devices through raw 802.11 monitoring.
+- <a href="https://github.com/wifiphisher/wifiphisher">wifiphisher</a> - Create rogue access point.</p>
+<p>Wireless
+- <a href="https://github.com/whad-team/whad-client">WHAD</a> - A powerful framework to perform various kinds of Wireless attacks.</p>
+<p>IPv6
+- <a href="https://github.com/aatlasis/Chiron">Chiron</a> - An IPv6 security assessment framework.
+- <a href="https://github.com/fox-it/mitm6">mitm6</a> - Performs MiTM for IPv6.</p>
+<p>Measurements
+- <a href="https://github.com/rwhalb/mtraceroute">mtraceroute</a> - Create cool graphs over multiple traceroute analysis.
+- <a href="https://wiki.networksecuritytoolkit.org/nstwiki/index.php?title=HowTo_Use_The_Scapy:_Multi-Traceroute_-_MTR">Network Security Toolkit (NST)</a> - Includes an enhanced version of <code>mtraceroute</code> with IP Geolocation and GUI management.
+- <a href="https://github.com/criteo/netprobify">netprobify</a> - Network probing tool crafted for datacenters (but not only). Probing using: TCP, UDP or ICMP.</p>
+<p>Protocols
+- <a href="https://github.com/Samsung/cotopaxi">Cotopaxi</a> - Set of tools for security testing of Internet of Things devices using specific network IoT protocols (AMQP, CoAP, DTLS, HTCPCP, KNX, mDNS, MQTT, MQTT-SN, QUIC, RTSP, SSDP) .
+- <a href="https://github.com/Forescout/project-memoria-detector">project-memoria-detector</a> - Determine whether a network device runs a specific embedded TCP/IP stack.
+- <a href="https://github.com/sensepost/routopsy">routopsy</a> - Toolkit to attack DRP &amp; FHRP.
+- <a href="https://github.com/cea-sec/TorPylle">TorPylle</a> - Implementation of the OR (TOR) protocol.</p>
+<p>Unit Tests
+- <a href="https://github.com/torvalds/linux/blob/master/tools/testing/selftests/tc-testing/plugin-lib/scapyPlugin.py">Linux Kernel</a> - Linux Traffic Control (tc) testing suite.
+- <a href="https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fsearch%3Fq%3Dscapy%2Brepo%253Aopenbsd%252Fsrc%2Bpath%253Aregress%252F%26type%3DCode%26ref%3Dadvsearch%26l%3D%26l%3D">OpenBSD</a> - IPv6 stack testing suite.
+- <a href="https://github.com/RIOT-OS/RIOT/search?l=Python&amp;q=scapy&amp;type=Code">RIOT-OS</a> - RIOT OS networking testing suite.</p>
+<p>Visualization
+- <a href="https://pypi.org/project/scapy-packet-viewer/">Scapy-Packet-Viewer</a> - Minimal packet viewer similar to tshark/mitmproxy. Based on urwid.</p>
+<p>Misc
+- <a href="https://github.com/frawau/aioblescan">aioblescan</a> - Scan and decode advertised BLE info.
+- <a href="https://github.com/Orange-Cyberdefense/fenrir-ocd">fenrir</a> - Bypass wired 802.1x protection.
+- <a href="https://github.com/secureworks/flowsynth">flowsynth</a> - Tool for rapidly modeling network traffic.
+- <a href="https://github.com/AMOSSYS/Fragscapy">Fragscapy</a> - Fuzz network protocols by automating the modification of outgoing network packets.
+- <a href="https://github.com/fportantier/habu">Habu</a> - Toolkit with a lot of little hacking tools. Many of them use Scapy.
+- <a href="https://redmine.laas.fr/projects/mirage">mirage</a> - Powerful and modular framework dedicated to the security analysis of wireless communications.
+- <a href="https://github.com/redcode-labs/Netenum">netenum</a> - A tool to passively discover active hosts on a network.
+- <a href="https://github.com/DanMcInerney/net-creds">net-creds</a> - Sniff and catch all sensitive data on an interface.
+- <a href="https://github.com/ANSSI-FR/packetweaver">packetweaver</a> - A Python framework for script filing and task sequencing.
+- <a href="https://github.com/FlUxIuS/p0f3plus">p0f3plus</a> - An implementation of with extra analysis features.
+- <a href="https://github.com/SecureAuthCorp/pysap">pysap</a> - Interact with SAP using custom built frames &amp; tools.
+- <a href="https://github.com/SpiderLabs/Responder">Responder</a> -  LLMNR, NBT-NS and MDNS poisoner.
+- <a href="https://github.com/scapy-unroot/scapy_unroot">scapy_unroot</a> - Tooling to use Scapy without root permissions.
+- <a href="https://github.com/gpotter2/scapy-benchmarks">scapy-benchmarks</a> - A small test suite that tracks the evolution of Scapy's performance.
+- <a href="https://github.com/HynekPetrak/sshame">sshame</a> - Tool to brute force SSH public-key authentication.
+- <a href="https://github.com/0xInfection/TIDoS-Framework">TIDoS Framework</a> - The Offensive Manual Web Application Penetration Testing Framework.</p>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Scapy <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p align="center">
+  <a href="https://scapy.net/"><img src="https://github.com/secdev/scapy/blob/master/doc/scapy_logo.png" width="200" alt="Scapy" /></a>
+</p>
+
+<p>A curated list of tools, add-ons, articles or cool exploits using <strong><a href="https://scapy.net">Scapy</a></strong>, the Python-based interactive packet manipulation program &amp; library. 
+Feel free to <a href="https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fsecdev%2Fawesome-scapy%2Fedit%2Fmain%2FREADME.md">contribute</a>!</p>
+<p>You can also <a href="https://github.com/topics/scapy">explore Scapy topics</a> on GitHub!</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#exploits">Exploits</a></li>
+</ul>
+<h2>Tools</h2>
+<p>Tools that use Scapy (a lot) or extend it.</p>
+<p>Fun
+- <a href="https://github.com/evilsocket/pwnagotchi">pwnagotchi</a> - Your AI pet that hacks WiFI to grow. It's super cute.</p>
+<p>DDoS
+- <a href="https://github.com/epsylon/ufonet">ufonet</a> - Create your own botnet to send untraceable DDoS attacks.</p>
+<p>Wi-Fi.
+- <a href="https://github.com/calebmadrigal/trackerjacker">trackerjacker</a> - Maps and tracks Wi-Fi networks and devices through raw 802.11 monitoring.
+- <a href="https://github.com/wifiphisher/wifiphisher">wifiphisher</a> - Create rogue access point.</p>
+<p>Wireless
+- <a href="https://github.com/whad-team/whad-client">WHAD</a> - A powerful framework to perform various kinds of Wireless attacks.</p>
+<p>IPv6
+- <a href="https://github.com/aatlasis/Chiron">Chiron</a> - An IPv6 security assessment framework.
+- <a href="https://github.com/fox-it/mitm6">mitm6</a> - Performs MiTM for IPv6.</p>
+<p>Measurements
+- <a href="https://github.com/rwhalb/mtraceroute">mtraceroute</a> - Create cool graphs over multiple traceroute analysis.
+- <a href="https://wiki.networksecuritytoolkit.org/nstwiki/index.php?title=HowTo_Use_The_Scapy:_Multi-Traceroute_-_MTR">Network Security Toolkit (NST)</a> - Includes an enhanced version of <code>mtraceroute</code> with IP Geolocation and GUI management.
+- <a href="https://github.com/criteo/netprobify">netprobify</a> - Network probing tool crafted for datacenters (but not only). Probing using: TCP, UDP or ICMP.</p>
+<p>Protocols
+- <a href="https://github.com/Samsung/cotopaxi">Cotopaxi</a> - Set of tools for security testing of Internet of Things devices using specific network IoT protocols (AMQP, CoAP, DTLS, HTCPCP, KNX, mDNS, MQTT, MQTT-SN, QUIC, RTSP, SSDP) .
+- <a href="https://github.com/Forescout/project-memoria-detector">project-memoria-detector</a> - Determine whether a network device runs a specific embedded TCP/IP stack.
+- <a href="https://github.com/sensepost/routopsy">routopsy</a> - Toolkit to attack DRP &amp; FHRP.
+- <a href="https://github.com/cea-sec/TorPylle">TorPylle</a> - Implementation of the OR (TOR) protocol.</p>
+<p>Unit Tests
+- <a href="https://github.com/torvalds/linux/blob/master/tools/testing/selftests/tc-testing/plugin-lib/scapyPlugin.py">Linux Kernel</a> - Linux Traffic Control (tc) testing suite.
+- <a href="https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fsearch%3Fq%3Dscapy%2Brepo%253Aopenbsd%252Fsrc%2Bpath%253Aregress%252F%26type%3DCode%26ref%3Dadvsearch%26l%3D%26l%3D">OpenBSD</a> - IPv6 stack testing suite.
+- <a href="https://github.com/RIOT-OS/RIOT/search?l=Python&amp;q=scapy&amp;type=Code">RIOT-OS</a> - RIOT OS networking testing suite.</p>
+<p>Visualization
+- <a href="https://pypi.org/project/scapy-packet-viewer/">Scapy-Packet-Viewer</a> - Minimal packet viewer similar to tshark/mitmproxy. Based on urwid.</p>
+<p>Misc
+- <a href="https://github.com/frawau/aioblescan">aioblescan</a> - Scan and decode advertised BLE info.
+- <a href="https://github.com/Orange-Cyberdefense/fenrir-ocd">fenrir</a> - Bypass wired 802.1x protection.
+- <a href="https://github.com/secureworks/flowsynth">flowsynth</a> - Tool for rapidly modeling network traffic.
+- <a href="https://github.com/AMOSSYS/Fragscapy">Fragscapy</a> - Fuzz network protocols by automating the modification of outgoing network packets.
+- <a href="https://github.com/fportantier/habu">Habu</a> - Toolkit with a lot of little hacking tools. Many of them use Scapy.
+- <a href="https://redmine.laas.fr/projects/mirage">mirage</a> - Powerful and modular framework dedicated to the security analysis of wireless communications.
+- <a href="https://github.com/redcode-labs/Netenum">netenum</a> - A tool to passively discover active hosts on a network.
+- <a href="https://github.com/DanMcInerney/net-creds">net-creds</a> - Sniff and catch all sensitive data on an interface.
+- <a href="https://github.com/ANSSI-FR/packetweaver">packetweaver</a> - A Python framework for script filing and task sequencing.
+- <a href="https://github.com/FlUxIuS/p0f3plus">p0f3plus</a> - An implementation of with extra analysis features.
+- <a href="https://github.com/SecureAuthCorp/pysap">pysap</a> - Interact with SAP using custom built frames &amp; tools.
+- <a href="https://github.com/SpiderLabs/Responder">Responder</a> -  LLMNR, NBT-NS and MDNS poisoner.
+- <a href="https://github.com/scapy-unroot/scapy_unroot">scapy_unroot</a> - Tooling to use Scapy without root permissions.
+- <a href="https://github.com/gpotter2/scapy-benchmarks">scapy-benchmarks</a> - A small test suite that tracks the evolution of Scapy's performance.
+- <a href="https://github.com/HynekPetrak/sshame">sshame</a> - Tool to brute force SSH public-key authentication.
+- <a href="https://github.com/0xInfection/TIDoS-Framework">TIDoS Framework</a> - The Offensive Manual Web Application Penetration Testing Framework.</p>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'scapy_README.md';
 
         fetch(markdownFile)
@@ -48,21 +157,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

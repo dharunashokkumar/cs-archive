@@ -8,38 +8,135 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dhondta Awesome Executable Packing - Awesome List Resources">
-    <title>Dhondta Awesome Executable Packing</title>
+    <meta name="description" content="> A curated list of resources related to executable packing (including Portable Executable, Executable and Linkable Format and others) containing references to...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Executable Packing [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) <a href="https://x.com/intent/tweet?text=Awesome%20Executable%20Packing%20-%20A%20curated%20list%20of%20resources%20related%20to%20the%20packing%20of%20various%20executable%20formats%20and%20its%20detection.%0D%0Ahttps%3a%2f%2fgithub%2ecom%2fdhondta%2fawesome-executable-packing%0D%0A&hashtags=awesomelists,malware,malwareresearch,executablepacking,cybersecurity,infosec"><img id="top" src="https://img.shields.io/badge/Tweet--lightgrey?logo=twitter&style=social" alt="Tweet" height="20"/></a> - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Executable Packing <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a> <a href="https://x.com/intent/tweet?text=Awesome%20Executable%20Packing%20-%20A%20curated%20list%20of%20resources%20related%20to%20the%20packing%20of%20various%20executable%20formats%20and%20its%20detection.%0D%0Ahttps%3a%2f%2fgithub%2ecom%2fdhondta%2fawesome-executable-packing%0D%0A&hashtags=awesomelists,malware,malwareresearch,executablepacking,cybersecurity,infosec"><img id="top" src="https://img.shields.io/badge/Tweet--lightgrey?logo=twitter&style=social" alt="Tweet" height="20"/></a></h1>
+<blockquote>
+<p>A curated list of resources related to executable packing (including Portable Executable, Executable and Linkable Format and others) containing references to books, papers, blog posts, and other written resources but also packers and tools for detecting packers and unpacking executables.</p>
+</blockquote>
+<p><em>Packing</em> is the action of modifying an executable in a way that does not modify its purpose. It is generally one or a combination of the following operations:
+- bundling: makes a single executable with multiple files
+- compression: compresses the executable to reduce its original size
+- encoding: obfuscates the executable by encoding it
+- encryption: obfuscates the executable by encrypting it
+- mutation: alters the executable's code so that it uses a modifided instruction set and architecture (e.g. using oligomorphism)
+- protection: makes the reversing of the executable harder (i.e. using anti-debugging, anti-tampering or other tricks)
+- virtualization: embeds a virtual machine that allows to virtualize executable's instructions</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#books-literature">:books: Literature</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#scientific-research">Scientific Research</a></li>
+<li><a href="#bookmark_tabs-datasets">:bookmark_tabs: Datasets</a></li>
+<li><a href="#package-packers">:package: Packers</a></li>
+<li><a href="#after-2010">After 2010</a></li>
+<li><a href="#between-2000-and-2010">Between 2000 and 2010</a></li>
+<li><a href="#before-2000">Before 2000</a></li>
+<li><a href="#wrench-tools">:wrench: Tools</a></li>
+</ul>
+<h2>:books: Literature</h2>
+<h3>Documentation</h3>
+<ul>
+<li>:earth_americas: <a href="https://www.freebsd.org/cgi/man.cgi?a.out(5)">a.out (FreeBSD manual pages)</a></li>
+<li>:earth_americas: <a href="https://wiki.osdev.org/A.out">A.out binary format</a></li>
+<li>:earth_americas: <a href="https://anti-debug.checkpoint.com">About anti-debug tricks</a></li>
+<li>:bar_chart: <a href="https://www.fortiguard.com/events/759/2014-06-12-android-packers-separating-from-the-pack">Android packers: Separating from the pack</a></li>
+<li>:pushpin: <a href="https://www.apriorit.com/dev-blog/367-anti-reverse-engineering-protection-techniques-to-use-before-releasing-software">Anti debugging protection techniques with examples</a></li>
+<li>:page_facing_up: <a href="https://www.virusbulletin.com/virusbulletin/2010/11/anti-unpacker-tricks-part-fourteen/">Anti-unpacker tricks - Part 14 (and previous parts)</a></li>
+<li>:bar_chart: <a href="https://www.blackhat.com/docs/us-15/materials/us-15-Choi-API-Deobfuscator-Resolving-Obfuscated-API-Functions-In-Modern-Packers.pdf">API deobfuscator: Resolving obfuscated API functions in modern packers</a></li>
+<li>:green_book: <a href="https://www.oreilly.com/library/view/the-art-of/9781118824993">The art of memory forensics: Detecting malware and threats in Windows, Linux, and mac memory</a></li>
+<li>:bar_chart: <a href="https://www.blackhat.com/presentations/bh-usa-07/Yason/Whitepaper/bh-usa-07-yason-WP.pdf">The art of unpacking</a></li>
+<li>:earth_americas: <a href="https://github.com/packing-box/awesome-executable-packing">Awesome executable packing</a></li>
+<li>:earth_americas: <a href="https://github.com/gmh5225/awesome-llvm-security">Awesome LLVM security</a></li>
+<li>:pushpin: <a href="https://symantec-enterprise-blogs.security.com/blogs/expert-perspectives/unpacking-hidden-malware-attacks">Cloak and dagger: Unpacking hidden malware attacks</a></li>
+<li>:book: <a href="https://en.wikipedia.org/w/index.php?title=Cluster_analysis&amp;oldid=1148034400">Cluster analysis</a></li>
+<li>:earth_americas: <a href="https://developers.google.com/machine-learning/clustering/clustering-algorithms">Clustering algorithms</a></li>
+<li>:earth_americas: <a href="https://wiki.osdev.org/COM">COM binary format</a></li>
+<li>:earth_americas: <a href="https://wiki.osdev.org/COFF">Common object file format (COFF)</a></li>
+<li>:earth_americas: <a href="https://en.wikipedia.org/wiki/Comparison_of_executable_file_formats">Comparison of executable file formats</a></li>
+<li>:newspaper: <a href="https://ieeexplore.ieee.org/document/1702388/">A complexity measure</a></li>
+<li>:newspaper: <a href="https://ieeexplore.ieee.org/document/106988">Cyclomatic complexity density and software maintenance productivity</a></li>
+<li>:earth_americas: <a href="https://defacto2.net/g/defacto2net">Defacto2</a></li>
+<li>:newspaper: <a href="https://jmlr.org/papers/v15/delgado14a.html">Do we need hundreds of classiﬁers to solve real world classiﬁcation problems?</a></li>
+<li>:bar_chart: <a href="https://triton.quarkslab.com/files/sthack2016-rthomas-jsalwan.pdf">Dynamic binary analysis and obfuscated codes</a></li>
+<li>:earth_americas: <a href="https://www.freebsd.org/cgi/man.cgi?elf(5)">elf (FreeBSD manual pages)</a></li>
+<li>:pushpin: <a href="https://n10info.blogspot.com/2014/06/entropy-and-distinctive-signs-of-packed.html">Entropy and the distinctive signs of packer PE files</a></li>
+<li>:earth_americas: <a href="https://wiki.osdev.org/ELF">Executable and linkable format (ELF)</a></li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Executable Packing <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a> <a href="https://x.com/intent/tweet?text=Awesome%20Executable%20Packing%20-%20A%20curated%20list%20of%20resources%20related%20to%20the%20packing%20of%20various%20executable%20formats%20and%20its%20detection.%0D%0Ahttps%3a%2f%2fgithub%2ecom%2fdhondta%2fawesome-executable-packing%0D%0A&hashtags=awesomelists,malware,malwareresearch,executablepacking,cybersecurity,infosec"><img id="top" src="https://img.shields.io/badge/Tweet--lightgrey?logo=twitter&style=social" alt="Tweet" height="20"/></a></h1>
+<blockquote>
+<p>A curated list of resources related to executable packing (including Portable Executable, Executable and Linkable Format and others) containing references to books, papers, blog posts, and other written resources but also packers and tools for detecting packers and unpacking executables.</p>
+</blockquote>
+<p><em>Packing</em> is the action of modifying an executable in a way that does not modify its purpose. It is generally one or a combination of the following operations:
+- bundling: makes a single executable with multiple files
+- compression: compresses the executable to reduce its original size
+- encoding: obfuscates the executable by encoding it
+- encryption: obfuscates the executable by encrypting it
+- mutation: alters the executable's code so that it uses a modifided instruction set and architecture (e.g. using oligomorphism)
+- protection: makes the reversing of the executable harder (i.e. using anti-debugging, anti-tampering or other tricks)
+- virtualization: embeds a virtual machine that allows to virtualize executable's instructions</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#books-literature">:books: Literature</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#scientific-research">Scientific Research</a></li>
+<li><a href="#bookmark_tabs-datasets">:bookmark_tabs: Datasets</a></li>
+<li><a href="#package-packers">:package: Packers</a></li>
+<li><a href="#after-2010">After 2010</a></li>
+<li><a href="#between-2000-and-2010">Between 2000 and 2010</a></li>
+<li><a href="#before-2000">Before 2000</a></li>
+<li><a href="#wrench-tools">:wrench: Tools</a></li>
+</ul>
+<h2>:books: Literature</h2>
+<h3>Documentation</h3>
+<ul>
+<li>:earth_americas: <a href="https://www.freebsd.org/cgi/man.cgi?a.out(5)">a.out (FreeBSD manual pages)</a></li>
+<li>:earth_americas: <a href="https://wiki.osdev.org/A.out">A.out binary format</a></li>
+<li>:earth_americas: <a href="https://anti-debug.checkpoint.com">About anti-debug tricks</a></li>
+<li>:bar_chart: <a href="https://www.fortiguard.com/events/759/2014-06-12-android-packers-separating-from-the-pack">Android packers: Separating from the pack</a></li>
+<li>:pushpin: <a href="https://www.apriorit.com/dev-blog/367-anti-reverse-engineering-protection-techniques-to-use-before-releasing-software">Anti debugging protection techniques with examples</a></li>
+<li>:page_facing_up: <a href="https://www.virusbulletin.com/virusbulletin/2010/11/anti-unpacker-tricks-part-fourteen/">Anti-unpacker tricks - Part 14 (and previous parts)</a></li>
+<li>:bar_chart: <a href="https://www.blackhat.com/docs/us-15/materials/us-15-Choi-API-Deobfuscator-Resolving-Obfuscated-API-Functions-In-Modern-Packers.pdf">API deobfuscator: Resolving obfuscated API functions in modern packers</a></li>
+<li>:green_book: <a href="https://www.oreilly.com/library/view/the-art-of/9781118824993">The art of memory forensics: Detecting malware and threats in Windows, Linux, and mac memory</a></li>
+<li>:bar_chart: <a href="https://www.blackhat.com/presentations/bh-usa-07/Yason/Whitepaper/bh-usa-07-yason-WP.pdf">The art of unpacking</a></li>
+<li>:earth_americas: <a href="https://github.com/packing-box/awesome-executable-packing">Awesome executable packing</a></li>
+<li>:earth_americas: <a href="https://github.com/gmh5225/awesome-llvm-security">Awesome LLVM security</a></li>
+<li>:pushpin: <a href="https://symantec-enterprise-blogs.security.com/blogs/expert-perspectives/unpacking-hidden-malware-attacks">Cloak and dagger: Unpacking hidden malware attacks</a></li>
+<li>:book: <a href="https://en.wikipedia.org/w/index.php?title=Cluster_analysis&amp;oldid=1148034400">Cluster analysis</a></li>
+<li>:earth_americas: <a href="https://developers.google.com/machine-learning/clustering/clustering-algorithms">Clustering algorithms</a></li>
+<li>:earth_americas: <a href="https://wiki.osdev.org/COM">COM binary format</a></li>
+<li>:earth_americas: <a href="https://wiki.osdev.org/COFF">Common object file format (COFF)</a></li>
+<li>:earth_americas: <a href="https://en.wikipedia.org/wiki/Comparison_of_executable_file_formats">Comparison of executable file formats</a></li>
+<li>:newspaper: <a href="https://ieeexplore.ieee.org/document/1702388/">A complexity measure</a></li>
+<li>:newspaper: <a href="https://ieeexplore.ieee.org/document/106988">Cyclomatic complexity density and software maintenance productivity</a></li>
+<li>:earth_americas: <a href="https://defacto2.net/g/defacto2net">Defacto2</a></li>
+<li>:newspaper: <a href="https://jmlr.org/papers/v15/delgado14a.html">Do we need hundreds of classiﬁers to solve real world classiﬁcation problems?</a></li>
+<li>:bar_chart: <a href="https://triton.quarkslab.com/files/sthack2016-rthomas-jsalwan.pdf">Dynamic binary analysis and obfuscated codes</a></li>
+<li>:earth_americas: <a href="https://www.freebsd.org/cgi/man.cgi?elf(5)">elf (FreeBSD manual pages)</a></li>
+<li>:pushpin: <a href="https://n10info.blogspot.com/2014/06/entropy-and-distinctive-signs-of-packed.html">Entropy and the distinctive signs of packer PE files</a></li>
+<li>:earth_americas: <a href="https://wiki.osdev.org/ELF">Executable and linkable format (ELF)</a></li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'executable-packing_README.md';
 
         fetch(markdownFile)
@@ -48,21 +145,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

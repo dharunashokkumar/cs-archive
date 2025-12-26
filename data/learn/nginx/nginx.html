@@ -8,38 +8,149 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fcambus Nginx Resources - Awesome List Resources">
-    <title>Fcambus Nginx Resources</title>
+    <meta name="description" content="A collection of resources covering Nginx, Nginx + Lua, OpenResty and Tengine. This list is maintained by Frederic Cambus. For updates, follow me on Twitter:...">
+    <meta name="robots" content="index, follow">
+    <title>Nginx Resources [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Nginx Resources <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A collection of resources covering Nginx, Nginx + Lua, OpenResty and Tengine.</p>
+<p>This list is maintained by <a href="https://www.cambus.net">Frederic Cambus</a>. For updates, follow me on Twitter: <a href="https://twitter.com/fcambus">@fcambus</a></p>
+<h2>Understanding Nginx</h2>
+<ul>
+<li><a href="https://www.nginx.com/wp-content/uploads/2014/11/Infographic_History-of-Nginx_FulI_20141101.png">History of Nginx</a></li>
+<li><a href="https://www.nginx.com/blog/nginx-1-6-1-7-released/">Understanding Nginx versioning</a></li>
+<li><a href="https://web.archive.org/web/20180614224054/http://mindend.com/interview-with-the-creator-of-nginx/">Interview with the creator of Nginx</a></li>
+<li><a href="http://freesoftwaremagazine.com/articles/interview_igor_sysoev_author_apaches_competitor_nginx/">Interview with Igor Sysoev, author of Apache's competitor NGINX</a></li>
+<li><a href="https://www.cambus.net/the-case-for-nginx-in-front-of-application-servers/">The case for Nginx in front of application servers</a></li>
+<li><a href="https://thoughts.t37.net/nginx-optimization-understanding-sendfile-tcp-nodelay-and-tcp-nopush-c55cdd276765">Nginx Optimization: understanding sendfile, tcp_nodelay and tcp_nopush</a></li>
+</ul>
+<h2>Architecture</h2>
+<ul>
+<li><a href="https://aosabook.org/en/nginx.html">The Architecture of Open Source Applications (Volume 2): nginx</a></li>
+<li><a href="http://www.nginxguts.com/category/nginx/">Nginx Guts - Shedding light on Nginx internals</a></li>
+<li><a href="https://www.nginx-discovery.com/">Nginx discovery journey</a></li>
+<li><a href="https://www.slideshare.net/joshzhu/nginx-internals">Nginx Internals</a></li>
+<li><a href="https://www.nginx.com/blog/inside-nginx-how-we-designed-for-performance-scale/">Inside NGINX: How We Designed for Performance &amp; Scale</a></li>
+<li><a href="https://www.nginx.com/blog/thread-pools-boost-performance-9x/">Thread Pools in NGINX</a></li>
+</ul>
+<h2>Configuration</h2>
+<ul>
+<li><a href="https://nginx.org/en/docs/beginners_guide.html">Beginner's Guide</a></li>
+<li><a href="https://nginx.org/en/docs/varindex.html">Alphabetical index of variables</a></li>
+<li><a href="https://www.nginx.com/resources/wiki/start/topics/tutorials/config_pitfalls/">Nginx Pitfalls</a></li>
+<li><a href="https://blog.engineyard.com/useful-rewrites-for-nginx">Useful Rewrites for Nginx</a></li>
+<li><a href="https://blog.martinfjordvald.com/nginx-primer/">Nginx Configuration Primer</a></li>
+<li><a href="https://blog.martinfjordvald.com/nginx-primer-2-from-apache-to-nginx/">Nginx Primer 2: From Apache to Nginx</a></li>
+<li><a href="https://blog.martinfjordvald.com/understanding-the-nginx-configuration-inheritance-model/">Understanding the Nginx Configuration Inheritance Model</a></li>
+<li><a href="https://github.com/h5bp/server-configs-nginx">Nginx HTTP server boilerplate configs</a></li>
+<li><a href="https://github.com/nginx-boilerplate/nginx-boilerplate">Nginx Boilerplate - Configuration template and a set of handy must-have snippets</a></li>
+<li><a href="https://sslmate.com/blog/post/ocsp_stapling_in_apache_and_nginx">How to Configure OCSP Stapling in Apache and Nginx</a></li>
+<li><a href="https://www.digitalocean.com/community/tools/nginx">NGINX Config - Online nginx configuration generator</a></li>
+<li><a href="https://alex.dzyoba.com/blog/nginx-features-for-developers/">Nice nginx features for developers</a></li>
+<li><a href="https://alex.dzyoba.com/blog/nginx-features-for-operators/">Nice nginx features for operators</a></li>
+<li><a href="https://www.nginx.com/blog/avoiding-top-10-nginx-configuration-mistakes/">Avoiding the Top 10 NGINX Configuration Mistakes</a></li>
+<li><a href="https://github.com/yandex/gixy">Gixy - Nginx configuration static analyzer</a></li>
+<li><a href="https://github.com/tldr-devops/nginx-common-configuration">Nginx common configuration - Universal config and snippets</a></li>
+</ul>
+<h2>Tutorials</h2>
+<ul>
+<li><a href="https://docs.nginx.com/nginx/admin-guide/">NGINX and NGINX Plus Admin Guide</a></li>
+<li><a href="https://openresty.org/download/agentzh-nginx-tutorials-en.html">agentzh's Nginx Tutorials</a> (<a href="https://github.com/openresty/nginx-tutorials">Source</a>)</li>
+<li><a href="https://agentzh.org/misc/slides/nginx-conf-scripting/nginx-conf-scripting.html">Introduction to nginx.conf scripting</a></li>
+<li><a href="https://www.nginx.com/blog/load-balancing-with-nginx-plus/">Load Balancing with NGINX and NGINX Plus</a> (<a href="https://www.nginx.com/blog/load-balancing-with-nginx-plus-part-2/">Part 2</a>)</li>
+<li><a href="https://blog.martinfjordvald.com/optimizing-nginx-for-high-traffic-loads/">Optimizing Nginx for High Traffic Loads</a></li>
+<li><a href="https://www.nginx.com/blog/websocket-nginx/">NGINX as a WebSockets Proxy</a></li>
+<li><a href="https://www.nginx.com/blog/http-keepalives-and-web-performance/">HTTP Keepalive Connections and Web Performance </a></li>
+<li><a href="https://enable-cors.org/server_nginx.html">CORS on Nginx</a></li>
+<li><a href="https://www.cambus.net/serving-precompressed-content-with-nginx-and-zopfli/">Serving precompressed content with Nginx and Zopfli</a></li>
+<li><a href="https://www.cambus.net/nginx-on-freebsd/">Nginx on FreeBSD</a></li>
+<li><a href="https://www.nginx.com/blog/new-debugging-features-probe-nginx-internals/">Using New Debugging Features to Probe NGINX Internals</a></li>
+<li><a href="https://www.nginx.com/blog/performing-a-b-testing-nginx-plus/">Performing A/B Testing with NGINX and NGINX Plus</a></li>
+<li><a href="https://www.nginx.com/blog/improving-nginx-performance-with-kernel-tls/">Improving NGINX Performance with Kernel TLS and SSL_sendfile()</a></li>
+</ul>
+<h2>Modules development</h2>
+<ul>
+<li><a href="https://nginx.org/en/docs/dev/development_guide.html">Official Development Guide</a></li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Nginx Resources <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A collection of resources covering Nginx, Nginx + Lua, OpenResty and Tengine.</p>
+<p>This list is maintained by <a href="https://www.cambus.net">Frederic Cambus</a>. For updates, follow me on Twitter: <a href="https://twitter.com/fcambus">@fcambus</a></p>
+<h2>Understanding Nginx</h2>
+<ul>
+<li><a href="https://www.nginx.com/wp-content/uploads/2014/11/Infographic_History-of-Nginx_FulI_20141101.png">History of Nginx</a></li>
+<li><a href="https://www.nginx.com/blog/nginx-1-6-1-7-released/">Understanding Nginx versioning</a></li>
+<li><a href="https://web.archive.org/web/20180614224054/http://mindend.com/interview-with-the-creator-of-nginx/">Interview with the creator of Nginx</a></li>
+<li><a href="http://freesoftwaremagazine.com/articles/interview_igor_sysoev_author_apaches_competitor_nginx/">Interview with Igor Sysoev, author of Apache's competitor NGINX</a></li>
+<li><a href="https://www.cambus.net/the-case-for-nginx-in-front-of-application-servers/">The case for Nginx in front of application servers</a></li>
+<li><a href="https://thoughts.t37.net/nginx-optimization-understanding-sendfile-tcp-nodelay-and-tcp-nopush-c55cdd276765">Nginx Optimization: understanding sendfile, tcp_nodelay and tcp_nopush</a></li>
+</ul>
+<h2>Architecture</h2>
+<ul>
+<li><a href="https://aosabook.org/en/nginx.html">The Architecture of Open Source Applications (Volume 2): nginx</a></li>
+<li><a href="http://www.nginxguts.com/category/nginx/">Nginx Guts - Shedding light on Nginx internals</a></li>
+<li><a href="https://www.nginx-discovery.com/">Nginx discovery journey</a></li>
+<li><a href="https://www.slideshare.net/joshzhu/nginx-internals">Nginx Internals</a></li>
+<li><a href="https://www.nginx.com/blog/inside-nginx-how-we-designed-for-performance-scale/">Inside NGINX: How We Designed for Performance &amp; Scale</a></li>
+<li><a href="https://www.nginx.com/blog/thread-pools-boost-performance-9x/">Thread Pools in NGINX</a></li>
+</ul>
+<h2>Configuration</h2>
+<ul>
+<li><a href="https://nginx.org/en/docs/beginners_guide.html">Beginner's Guide</a></li>
+<li><a href="https://nginx.org/en/docs/varindex.html">Alphabetical index of variables</a></li>
+<li><a href="https://www.nginx.com/resources/wiki/start/topics/tutorials/config_pitfalls/">Nginx Pitfalls</a></li>
+<li><a href="https://blog.engineyard.com/useful-rewrites-for-nginx">Useful Rewrites for Nginx</a></li>
+<li><a href="https://blog.martinfjordvald.com/nginx-primer/">Nginx Configuration Primer</a></li>
+<li><a href="https://blog.martinfjordvald.com/nginx-primer-2-from-apache-to-nginx/">Nginx Primer 2: From Apache to Nginx</a></li>
+<li><a href="https://blog.martinfjordvald.com/understanding-the-nginx-configuration-inheritance-model/">Understanding the Nginx Configuration Inheritance Model</a></li>
+<li><a href="https://github.com/h5bp/server-configs-nginx">Nginx HTTP server boilerplate configs</a></li>
+<li><a href="https://github.com/nginx-boilerplate/nginx-boilerplate">Nginx Boilerplate - Configuration template and a set of handy must-have snippets</a></li>
+<li><a href="https://sslmate.com/blog/post/ocsp_stapling_in_apache_and_nginx">How to Configure OCSP Stapling in Apache and Nginx</a></li>
+<li><a href="https://www.digitalocean.com/community/tools/nginx">NGINX Config - Online nginx configuration generator</a></li>
+<li><a href="https://alex.dzyoba.com/blog/nginx-features-for-developers/">Nice nginx features for developers</a></li>
+<li><a href="https://alex.dzyoba.com/blog/nginx-features-for-operators/">Nice nginx features for operators</a></li>
+<li><a href="https://www.nginx.com/blog/avoiding-top-10-nginx-configuration-mistakes/">Avoiding the Top 10 NGINX Configuration Mistakes</a></li>
+<li><a href="https://github.com/yandex/gixy">Gixy - Nginx configuration static analyzer</a></li>
+<li><a href="https://github.com/tldr-devops/nginx-common-configuration">Nginx common configuration - Universal config and snippets</a></li>
+</ul>
+<h2>Tutorials</h2>
+<ul>
+<li><a href="https://docs.nginx.com/nginx/admin-guide/">NGINX and NGINX Plus Admin Guide</a></li>
+<li><a href="https://openresty.org/download/agentzh-nginx-tutorials-en.html">agentzh's Nginx Tutorials</a> (<a href="https://github.com/openresty/nginx-tutorials">Source</a>)</li>
+<li><a href="https://agentzh.org/misc/slides/nginx-conf-scripting/nginx-conf-scripting.html">Introduction to nginx.conf scripting</a></li>
+<li><a href="https://www.nginx.com/blog/load-balancing-with-nginx-plus/">Load Balancing with NGINX and NGINX Plus</a> (<a href="https://www.nginx.com/blog/load-balancing-with-nginx-plus-part-2/">Part 2</a>)</li>
+<li><a href="https://blog.martinfjordvald.com/optimizing-nginx-for-high-traffic-loads/">Optimizing Nginx for High Traffic Loads</a></li>
+<li><a href="https://www.nginx.com/blog/websocket-nginx/">NGINX as a WebSockets Proxy</a></li>
+<li><a href="https://www.nginx.com/blog/http-keepalives-and-web-performance/">HTTP Keepalive Connections and Web Performance </a></li>
+<li><a href="https://enable-cors.org/server_nginx.html">CORS on Nginx</a></li>
+<li><a href="https://www.cambus.net/serving-precompressed-content-with-nginx-and-zopfli/">Serving precompressed content with Nginx and Zopfli</a></li>
+<li><a href="https://www.cambus.net/nginx-on-freebsd/">Nginx on FreeBSD</a></li>
+<li><a href="https://www.nginx.com/blog/new-debugging-features-probe-nginx-internals/">Using New Debugging Features to Probe NGINX Internals</a></li>
+<li><a href="https://www.nginx.com/blog/performing-a-b-testing-nginx-plus/">Performing A/B Testing with NGINX and NGINX Plus</a></li>
+<li><a href="https://www.nginx.com/blog/improving-nginx-performance-with-kernel-tls/">Improving NGINX Performance with Kernel TLS and SSL_sendfile()</a></li>
+</ul>
+<h2>Modules development</h2>
+<ul>
+<li><a href="https://nginx.org/en/docs/dev/development_guide.html">Official Development Guide</a></li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'nginx_README.md';
 
         fetch(markdownFile)
@@ -48,21 +159,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

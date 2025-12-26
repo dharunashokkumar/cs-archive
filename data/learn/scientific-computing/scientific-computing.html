@@ -8,38 +8,191 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nschloe Awesome Scientific Computing - Awesome List Resources">
-    <title>Nschloe Awesome Scientific Computing</title>
+    <meta name="description" content="> Useful resources for scientific computing and numerical analysis. Scientific computing and numerical analysis are research fields that aim to provide methods...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Scientific Computing [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Scientific Computing <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p><a href="#readme"><img src="https://nschloe.github.io/awesome-scientific-computing/sunglasses.svg" align="right" width="30%"></a></p>
+<blockquote>
+<p>Useful resources for scientific computing and numerical analysis.</p>
+</blockquote>
+<p>Scientific computing and numerical analysis are research fields that aim to provide
+methods for solving large-scale problems from various areas of science with the help of
+computers. Typical problems are ordinary and partial differential equations (ODEs,
+PDEs), their discretizations, and the solution of linear algebra problems arising from
+them.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#basic-linear-algebra">Basic linear algebra</a></li>
+<li><a href="#multi-purpose-toolkits">Multi-purpose toolkits</a></li>
+<li><a href="#finite-elements">Finite Elements</a></li>
+<li><a href="#meshing">Meshing</a></li>
+<li><a href="#data-formats">Data formats</a></li>
+<li><a href="#sparse-linear-solvers">Sparse linear solvers</a></li>
+<li><a href="#visualization">Visualization</a></li>
+<li><a href="#other-libraries-and-tools">Other libraries and tools</a></li>
+<li><a href="#community">Community</a></li>
+</ul>
+<h2>Basic linear algebra</h2>
+<ul>
+<li><a href="https://netlib.org/blas/">BLAS</a> - Standard building blocks for performing basic vector and matrix operations.
+  (Fortran, public domain, <a href="https://github.com/Reference-LAPACK/lapack/tree/master/BLAS">GitHub</a>)</li>
+<li><a href="https://www.openblas.net">OpenBLAS</a> - Optimized BLAS library based on GotoBLAS2.
+  (C and Assembly, BSD, <a href="https://github.com/OpenMathLib/OpenBLAS">GitHub</a>)</li>
+<li><a href="https://github.com/flame/blis">BLIS</a> - High-performance BLAS-like dense linear algebra libraries.
+  (C, BSD, GitHub)</li>
+<li><a href="https://netlib.org/lapack/">LAPACK</a> - Routines for solving systems of linear equations, linear least-squares, eigenvalue problems, etc.
+  (Fortran, BSD, <a href="https://github.com/Reference-LAPACK/lapack">GitHub</a>)</li>
+<li><a href="https://eigen.tuxfamily.org/index.php?title=Main_Page">Eigen</a> - C++ template library for linear algebra.
+  (C++, MPL 2, <a href="https://gitlab.com/libeigen/eigen">GitLab</a>)</li>
+<li><a href="https://ginkgo-project.github.io/">Ginkgo</a> - High-performance manycore linear algebra library, focus on sparse systems.
+  (C++, BSD, <a href="https://github.com/ginkgo-project/ginkgo">GitHub</a>)</li>
+<li><a href="https://bitbucket.org/blaze-lib/blaze">blaze</a> - High-performance C++ math library for dense and sparse arithmetic.
+  (C++, BSD, Bitbucket)</li>
+</ul>
+<h2>Multi-purpose toolkits</h2>
+<ul>
+<li><a href="https://petsc.org/release/">PETSc</a> - Parallel solution of scientific applications modeled by PDEs.
+  (C, 2-clause BSD, <a href="https://gitlab.com/petsc/petsc">GitLab</a>)</li>
+<li><a href="https://www.dune-project.org">DUNE Numerics</a> - Toolbox for solving PDEs with grid-based methods.
+  (C++, GPL 2, <a href="https://gitlab.dune-project.org/core/">GitLab</a>)</li>
+<li><a href="https://scipy.org">SciPy</a> - Python modules for statistics, optimization, integration, linear algebra, etc.
+  (Python, mostly BSD, <a href="https://github.com/scipy/scipy/">GitHub</a>)</li>
+<li><a href="https://numpy.org/">NumPy</a> - Fundamental package needed for scientific computing with Python.
+  (Python, BSD, <a href="https://github.com/numpy/numpy">GitHub</a>)</li>
+<li><a href="https://diffeq.sciml.ai/">DifferentialEquations.jl</a> - Toolbox for solving different types of differential equations numerically. (Julia, MIT, <a href="https://github.com/SciML/DifferentialEquations.jl">GitHub</a>)</li>
+</ul>
+<h2>Finite Elements</h2>
+<ul>
+<li><a href="https://fenicsproject.org">FEniCS</a> - Computing platform for solving PDEs in Python and C++.
+  (C++/Python, LGPL 3, <a href="https://github.com/FEniCS">GitHub</a>/<a href="https://bitbucket.org/fenics-project/">Bitbucket</a>)</li>
+<li><a href="https://libmesh.github.io">libMesh</a> - Framework for the numerical simulation of PDEs using unstructured discretizations.
+  (C++, LGPL 2.1, <a href="https://github.com/libMesh/libmesh">GitHub</a>)</li>
+<li><a href="https://dealii.org">deal.II</a> - Software library supporting the creation of finite element codes.
+  (C++, LGPL 2.1, <a href="https://github.com/dealii/dealii">GitHub</a>)</li>
+<li><a href="https://ngsolve.org">Netgen/NGSolve</a> - High performance multiphysics finite element software.
+  (C++, LGPL 2.1, <a href="https://github.com/NGSolve/netgen">GitHub</a>)</li>
+<li><a href="https://www.firedrakeproject.org">Firedrake</a> - Automated system for the solution of PDEs using the finite element method.
+  (Python, LGPL 3, <a href="https://github.com/firedrakeproject/firedrake">GitHub</a>)</li>
+<li><a href="https://mooseframework.inl.gov/">MOOSE</a> - Multiphysics Object Oriented Simulation Environment.
+  (C++, LGPL 2.1, <a href="https://github.com/idaholab/moose">GitHub</a>)</li>
+<li><a href="https://mfem.org">MFEM</a> - Free, lightweight, scalable C++ library for finite element methods.
+  (C++, BSD-3-Clause, <a href="https://github.com/mfem/mfem">GitHub</a>)</li>
+<li><a href="https://sfepy.org">SfePy</a> - Simple Finite Elements in Python.
+  (Python, BSD, <a href="https://github.com/sfepy/sfepy">GitHub</a>)</li>
+<li><a href="https://freefem.org">FreeFEM</a> - High level multiphysics-multimesh finite element language.
+  (C++, LGPL, <a href="https://github.com/FreeFem">GitHub</a>)</li>
+<li><a href="https://libceed.readthedocs.io/en/latest/index.html">libceed</a> - Code for Efficient Extensible Discretizations.
+  (C, 2-clause BSD, <a href="https://github.com/CEED/libCEED">GitHub</a>)</li>
+<li><a href="https://github.com/kinnala/scikit-fem">scikit-fem</a> - Simple finite element assemblers.
+  (Python, BSD/GPL, GitHub)</li>
+</ul>
+<h2>Meshing</h2>
+<h3>Triangular and tetrahedral meshing</h3>
+<ul>
+<li><a href="https://gmsh.info">Gmsh</a> - Three-dimensional finite element mesh generator with pre- and post-processing facilities.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Scientific Computing <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p><a href="#readme"><img src="https://nschloe.github.io/awesome-scientific-computing/sunglasses.svg" align="right" width="30%"></a></p>
+<blockquote>
+<p>Useful resources for scientific computing and numerical analysis.</p>
+</blockquote>
+<p>Scientific computing and numerical analysis are research fields that aim to provide
+methods for solving large-scale problems from various areas of science with the help of
+computers. Typical problems are ordinary and partial differential equations (ODEs,
+PDEs), their discretizations, and the solution of linear algebra problems arising from
+them.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#basic-linear-algebra">Basic linear algebra</a></li>
+<li><a href="#multi-purpose-toolkits">Multi-purpose toolkits</a></li>
+<li><a href="#finite-elements">Finite Elements</a></li>
+<li><a href="#meshing">Meshing</a></li>
+<li><a href="#data-formats">Data formats</a></li>
+<li><a href="#sparse-linear-solvers">Sparse linear solvers</a></li>
+<li><a href="#visualization">Visualization</a></li>
+<li><a href="#other-libraries-and-tools">Other libraries and tools</a></li>
+<li><a href="#community">Community</a></li>
+</ul>
+<h2>Basic linear algebra</h2>
+<ul>
+<li><a href="https://netlib.org/blas/">BLAS</a> - Standard building blocks for performing basic vector and matrix operations.
+  (Fortran, public domain, <a href="https://github.com/Reference-LAPACK/lapack/tree/master/BLAS">GitHub</a>)</li>
+<li><a href="https://www.openblas.net">OpenBLAS</a> - Optimized BLAS library based on GotoBLAS2.
+  (C and Assembly, BSD, <a href="https://github.com/OpenMathLib/OpenBLAS">GitHub</a>)</li>
+<li><a href="https://github.com/flame/blis">BLIS</a> - High-performance BLAS-like dense linear algebra libraries.
+  (C, BSD, GitHub)</li>
+<li><a href="https://netlib.org/lapack/">LAPACK</a> - Routines for solving systems of linear equations, linear least-squares, eigenvalue problems, etc.
+  (Fortran, BSD, <a href="https://github.com/Reference-LAPACK/lapack">GitHub</a>)</li>
+<li><a href="https://eigen.tuxfamily.org/index.php?title=Main_Page">Eigen</a> - C++ template library for linear algebra.
+  (C++, MPL 2, <a href="https://gitlab.com/libeigen/eigen">GitLab</a>)</li>
+<li><a href="https://ginkgo-project.github.io/">Ginkgo</a> - High-performance manycore linear algebra library, focus on sparse systems.
+  (C++, BSD, <a href="https://github.com/ginkgo-project/ginkgo">GitHub</a>)</li>
+<li><a href="https://bitbucket.org/blaze-lib/blaze">blaze</a> - High-performance C++ math library for dense and sparse arithmetic.
+  (C++, BSD, Bitbucket)</li>
+</ul>
+<h2>Multi-purpose toolkits</h2>
+<ul>
+<li><a href="https://petsc.org/release/">PETSc</a> - Parallel solution of scientific applications modeled by PDEs.
+  (C, 2-clause BSD, <a href="https://gitlab.com/petsc/petsc">GitLab</a>)</li>
+<li><a href="https://www.dune-project.org">DUNE Numerics</a> - Toolbox for solving PDEs with grid-based methods.
+  (C++, GPL 2, <a href="https://gitlab.dune-project.org/core/">GitLab</a>)</li>
+<li><a href="https://scipy.org">SciPy</a> - Python modules for statistics, optimization, integration, linear algebra, etc.
+  (Python, mostly BSD, <a href="https://github.com/scipy/scipy/">GitHub</a>)</li>
+<li><a href="https://numpy.org/">NumPy</a> - Fundamental package needed for scientific computing with Python.
+  (Python, BSD, <a href="https://github.com/numpy/numpy">GitHub</a>)</li>
+<li><a href="https://diffeq.sciml.ai/">DifferentialEquations.jl</a> - Toolbox for solving different types of differential equations numerically. (Julia, MIT, <a href="https://github.com/SciML/DifferentialEquations.jl">GitHub</a>)</li>
+</ul>
+<h2>Finite Elements</h2>
+<ul>
+<li><a href="https://fenicsproject.org">FEniCS</a> - Computing platform for solving PDEs in Python and C++.
+  (C++/Python, LGPL 3, <a href="https://github.com/FEniCS">GitHub</a>/<a href="https://bitbucket.org/fenics-project/">Bitbucket</a>)</li>
+<li><a href="https://libmesh.github.io">libMesh</a> - Framework for the numerical simulation of PDEs using unstructured discretizations.
+  (C++, LGPL 2.1, <a href="https://github.com/libMesh/libmesh">GitHub</a>)</li>
+<li><a href="https://dealii.org">deal.II</a> - Software library supporting the creation of finite element codes.
+  (C++, LGPL 2.1, <a href="https://github.com/dealii/dealii">GitHub</a>)</li>
+<li><a href="https://ngsolve.org">Netgen/NGSolve</a> - High performance multiphysics finite element software.
+  (C++, LGPL 2.1, <a href="https://github.com/NGSolve/netgen">GitHub</a>)</li>
+<li><a href="https://www.firedrakeproject.org">Firedrake</a> - Automated system for the solution of PDEs using the finite element method.
+  (Python, LGPL 3, <a href="https://github.com/firedrakeproject/firedrake">GitHub</a>)</li>
+<li><a href="https://mooseframework.inl.gov/">MOOSE</a> - Multiphysics Object Oriented Simulation Environment.
+  (C++, LGPL 2.1, <a href="https://github.com/idaholab/moose">GitHub</a>)</li>
+<li><a href="https://mfem.org">MFEM</a> - Free, lightweight, scalable C++ library for finite element methods.
+  (C++, BSD-3-Clause, <a href="https://github.com/mfem/mfem">GitHub</a>)</li>
+<li><a href="https://sfepy.org">SfePy</a> - Simple Finite Elements in Python.
+  (Python, BSD, <a href="https://github.com/sfepy/sfepy">GitHub</a>)</li>
+<li><a href="https://freefem.org">FreeFEM</a> - High level multiphysics-multimesh finite element language.
+  (C++, LGPL, <a href="https://github.com/FreeFem">GitHub</a>)</li>
+<li><a href="https://libceed.readthedocs.io/en/latest/index.html">libceed</a> - Code for Efficient Extensible Discretizations.
+  (C, 2-clause BSD, <a href="https://github.com/CEED/libCEED">GitHub</a>)</li>
+<li><a href="https://github.com/kinnala/scikit-fem">scikit-fem</a> - Simple finite element assemblers.
+  (Python, BSD/GPL, GitHub)</li>
+</ul>
+<h2>Meshing</h2>
+<h3>Triangular and tetrahedral meshing</h3>
+<ul>
+<li><a href="https://gmsh.info">Gmsh</a> - Three-dimensional finite element mesh generator with pre- and post-processing facilities.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'scientific-computing_README.md';
 
         fetch(markdownFile)
@@ -48,21 +201,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

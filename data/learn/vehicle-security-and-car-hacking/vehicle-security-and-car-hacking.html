@@ -8,38 +8,175 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jaredthecoder Awesome Vehicle Security - Awesome List Resources">
-    <title>Jaredthecoder Awesome Vehicle Security</title>
+    <meta name="description" content="A curated list of awesome resources, books, hardware, software, applications, people to follow, and more cool stuff about vehicle security, car hacking, and...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Vehicle Security [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Vehicle Security <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p><em>A curated list of awesome resources, books, hardware, software, applications, people to follow, and more cool stuff about vehicle security, car hacking, and tinkering with the functionality of your car.</em></p>
+<p><img alt="" src="assets/car_hacking_jeep.gif" /></p>
+<hr />
+<p>I would love as much help as I can get. <a href="https://github.com/jaredmichaelsmith/awesome-vehicle-security/blob/master/contributing.md">Start contributing!</a></p>
+<p>Follow me on <a href="https://twitter.com/jaredthecoder">Twitter</a> for more security goodness.</p>
+<hr />
+<h1>Contents</h1>
+<ul>
+<li><a href="#related-lists">Related Lists</a></li>
+<li><a href="#learn">Learn</a><ul>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#presentations">Presentations</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#research-papers">Research Papers</a></li>
+<li><a href="#courses">Courses</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#websites">Websites</a></li>
+<li><a href="#newsletters">Newsletters</a></li>
+<li><a href="#conferences">Conferences</a></li>
+<li><a href="#who-to-follow">Who to Follow</a></li>
+<li><a href="#podcasts-and-episodes">Podcasts and Episodes</a><ul>
+<li><a href="#podcasts">Podcasts</a></li>
+<li><a href="#episodes">Episodes</a></li>
+</ul>
+</li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+</ul>
+</li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#hardware">Hardware</a></li>
+<li><a href="#software">Software</a></li>
+<li><a href="#applications">Applications</a></li>
+<li><a href="#libraries-and-tools">Libraries and Tools</a><ul>
+<li><a href="#c">C</a></li>
+<li><a href="#java">Java</a></li>
+<li><a href="#c++">C++</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#go">Go</a></li>
+<li><a href="#javascript">JavaScript</a></li>
+</ul>
+</li>
+<li><a href="#companies-and-jobs">Companies and Jobs</a><ul>
+<li><a href="#coordinated-disclosure">Coordinated Disclosure</a></li>
+</ul>
+</li>
+<li><a href="#other-awesome-lists">Other Awesome (non-vehicle related) Lists</a></li>
+<li><a href="#contributing">Contributing</a></li>
+</ul>
+<h1>Related Lists</h1>
+<p>These lists are related to a specific protocol that you will find in the world of car hacking.</p>
+<ul>
+<li><a href="https://github.com/iDoka/awesome-canbus">Awesome CAN Bus - an awesome list just for CAN Bus-related tools (hardware, software, etc.)</a></li>
+<li><a href="https://github.com/iDoka/awesome-linbus">Awesome LIN Bus - an awesome list just for LIN-Bus related tools (hardware, software, etc.)</a></li>
+</ul>
+<h1>Learn</h1>
+<h2>Articles</h2>
+<ul>
+<li><a href="https://medium.freecodecamp.org/hacking-cars-a-guide-tutorial-on-how-to-hack-a-car-5eafcfbbb7ec">How to hack a car — a quick crash-course</a> - Car enthusiast Kenny Kuchera illustrates just enough information to get you up and running. An excellent resource for first timers!</li>
+<li><a href="https://www.wired.com/2015/07/hackers-remotely-kill-jeep-highway/">Stopping a Jeep Cherokee on the Highway Remotely</a> - Chris Valasek's and Charlie Miller's pivotal research on hacking into Jeep's presented at DEFCON in 2015.</li>
+<li><a href="https://www.troyhunt.com/controlling-vehicle-features-of-nissan/">Troy Hunt on Controlling Nissans</a> - Troy Hunt goes into controlling Nissan vehicles.</li>
+<li><a href="http://www.cnet.com/roadshow/news/tesla-hackers-explain-how-they-did-it-at-def-con-23/">Tesla hackers explain how they did it at Defcon</a> - Overview of DEFCON 23 presentation on hacking into Tesla cars.</li>
+<li><a href="http://makezine.com/2015/08/11/anatomy-of-the-rolljam-wireless-car-hack/">Anatomy of the Rolljam Wireless Car Hack</a> - Overview of the RollJam rolling code exploitation device.</li>
+<li><a href="http://blog.ioactive.com/2013/08/car-hacking-content.html">IOActive's Tools and Data</a> - Chris Valasek and Charlie Miller release some of their tools and data for hacking into vehicles in an effort to get more people into vehicle security research.</li>
+<li><a href="https://www.sans.org/reading-room/whitepapers/ICS/developments-car-hacking-36607">Developments in Car Hacking</a> - via the SANS Reading Room, Currie's paper analyses the risks and perils of smart vehicle technology.</li>
+<li><a href="http://www.ioactive.com/pdfs/IOActive_Car_Hacking_Poories.pdf">Car Hacking on the Cheap</a> -  A whitepaper from Chris Valasek and IOActive on hacking your car when you don't have a lot of resources at your disposal.</li>
+<li><a href="http://illmatics.com/carhacking.html">Car Hacking: The definitive source</a> - Charlie Miller and Chris Valasek publish all tools, data, research notes, and papers for everyone for free</li>
+<li><a href="https://community.rapid7.com/community/transpo-security/blog/2017/02/08/car-hacking-on-the-cheap">Car Hacking on the cheap</a> - Craig Smith wrote a brief article on working with Metasploit’s HWBrige using ELM327 Bluetooth dongle</li>
+<li><a href="https://phys.org/news/2017-05-tackle-autonomous-vehicle.html">Researchers tackle autonomous vehicle security</a> - Texas A&amp;M researchers develop intelligence system prototype.</li>
+<li><a href="https://blog.quarkslab.com/reverse-engineering-of-the-nitro-obd2.html">Reverse engineering of the Nitro OBD2</a> - Reverse engineering of CAN diagnostic tools.</li>
+<li><a href="https://p1kachu.pluggi.fr/project/automotive/2018/12/28/subaru-ssm1/">Analysis of an old Subaru Impreza - Subaru Select Monitor v1 (SSM1)</a> - Digging into an old ECU through an old protocol and disabling a 1997 Subaru Impreza's speed limiter.</li>
+<li><a href="https://brysonpayne.com/2018/10/20/start-car-hacking-in-30-minutes-or-less/">Car Hacking in 30 Minutes or Less</a> - Using VirtualBox and Kali Linux, you can start car hacking using completely free open-source software and tools, including can-utils, ICSim, ScanTool, Wireshark, and tcpdump</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Vehicle Security <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p><em>A curated list of awesome resources, books, hardware, software, applications, people to follow, and more cool stuff about vehicle security, car hacking, and tinkering with the functionality of your car.</em></p>
+<p><img alt="" src="assets/car_hacking_jeep.gif" /></p>
+<hr />
+<p>I would love as much help as I can get. <a href="https://github.com/jaredmichaelsmith/awesome-vehicle-security/blob/master/contributing.md">Start contributing!</a></p>
+<p>Follow me on <a href="https://twitter.com/jaredthecoder">Twitter</a> for more security goodness.</p>
+<hr />
+<h1>Contents</h1>
+<ul>
+<li><a href="#related-lists">Related Lists</a></li>
+<li><a href="#learn">Learn</a><ul>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#presentations">Presentations</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#research-papers">Research Papers</a></li>
+<li><a href="#courses">Courses</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#websites">Websites</a></li>
+<li><a href="#newsletters">Newsletters</a></li>
+<li><a href="#conferences">Conferences</a></li>
+<li><a href="#who-to-follow">Who to Follow</a></li>
+<li><a href="#podcasts-and-episodes">Podcasts and Episodes</a><ul>
+<li><a href="#podcasts">Podcasts</a></li>
+<li><a href="#episodes">Episodes</a></li>
+</ul>
+</li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+</ul>
+</li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#hardware">Hardware</a></li>
+<li><a href="#software">Software</a></li>
+<li><a href="#applications">Applications</a></li>
+<li><a href="#libraries-and-tools">Libraries and Tools</a><ul>
+<li><a href="#c">C</a></li>
+<li><a href="#java">Java</a></li>
+<li><a href="#c++">C++</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#go">Go</a></li>
+<li><a href="#javascript">JavaScript</a></li>
+</ul>
+</li>
+<li><a href="#companies-and-jobs">Companies and Jobs</a><ul>
+<li><a href="#coordinated-disclosure">Coordinated Disclosure</a></li>
+</ul>
+</li>
+<li><a href="#other-awesome-lists">Other Awesome (non-vehicle related) Lists</a></li>
+<li><a href="#contributing">Contributing</a></li>
+</ul>
+<h1>Related Lists</h1>
+<p>These lists are related to a specific protocol that you will find in the world of car hacking.</p>
+<ul>
+<li><a href="https://github.com/iDoka/awesome-canbus">Awesome CAN Bus - an awesome list just for CAN Bus-related tools (hardware, software, etc.)</a></li>
+<li><a href="https://github.com/iDoka/awesome-linbus">Awesome LIN Bus - an awesome list just for LIN-Bus related tools (hardware, software, etc.)</a></li>
+</ul>
+<h1>Learn</h1>
+<h2>Articles</h2>
+<ul>
+<li><a href="https://medium.freecodecamp.org/hacking-cars-a-guide-tutorial-on-how-to-hack-a-car-5eafcfbbb7ec">How to hack a car — a quick crash-course</a> - Car enthusiast Kenny Kuchera illustrates just enough information to get you up and running. An excellent resource for first timers!</li>
+<li><a href="https://www.wired.com/2015/07/hackers-remotely-kill-jeep-highway/">Stopping a Jeep Cherokee on the Highway Remotely</a> - Chris Valasek's and Charlie Miller's pivotal research on hacking into Jeep's presented at DEFCON in 2015.</li>
+<li><a href="https://www.troyhunt.com/controlling-vehicle-features-of-nissan/">Troy Hunt on Controlling Nissans</a> - Troy Hunt goes into controlling Nissan vehicles.</li>
+<li><a href="http://www.cnet.com/roadshow/news/tesla-hackers-explain-how-they-did-it-at-def-con-23/">Tesla hackers explain how they did it at Defcon</a> - Overview of DEFCON 23 presentation on hacking into Tesla cars.</li>
+<li><a href="http://makezine.com/2015/08/11/anatomy-of-the-rolljam-wireless-car-hack/">Anatomy of the Rolljam Wireless Car Hack</a> - Overview of the RollJam rolling code exploitation device.</li>
+<li><a href="http://blog.ioactive.com/2013/08/car-hacking-content.html">IOActive's Tools and Data</a> - Chris Valasek and Charlie Miller release some of their tools and data for hacking into vehicles in an effort to get more people into vehicle security research.</li>
+<li><a href="https://www.sans.org/reading-room/whitepapers/ICS/developments-car-hacking-36607">Developments in Car Hacking</a> - via the SANS Reading Room, Currie's paper analyses the risks and perils of smart vehicle technology.</li>
+<li><a href="http://www.ioactive.com/pdfs/IOActive_Car_Hacking_Poories.pdf">Car Hacking on the Cheap</a> -  A whitepaper from Chris Valasek and IOActive on hacking your car when you don't have a lot of resources at your disposal.</li>
+<li><a href="http://illmatics.com/carhacking.html">Car Hacking: The definitive source</a> - Charlie Miller and Chris Valasek publish all tools, data, research notes, and papers for everyone for free</li>
+<li><a href="https://community.rapid7.com/community/transpo-security/blog/2017/02/08/car-hacking-on-the-cheap">Car Hacking on the cheap</a> - Craig Smith wrote a brief article on working with Metasploit’s HWBrige using ELM327 Bluetooth dongle</li>
+<li><a href="https://phys.org/news/2017-05-tackle-autonomous-vehicle.html">Researchers tackle autonomous vehicle security</a> - Texas A&amp;M researchers develop intelligence system prototype.</li>
+<li><a href="https://blog.quarkslab.com/reverse-engineering-of-the-nitro-obd2.html">Reverse engineering of the Nitro OBD2</a> - Reverse engineering of CAN diagnostic tools.</li>
+<li><a href="https://p1kachu.pluggi.fr/project/automotive/2018/12/28/subaru-ssm1/">Analysis of an old Subaru Impreza - Subaru Select Monitor v1 (SSM1)</a> - Digging into an old ECU through an old protocol and disabling a 1997 Subaru Impreza's speed limiter.</li>
+<li><a href="https://brysonpayne.com/2018/10/20/start-car-hacking-in-30-minutes-or-less/">Car Hacking in 30 Minutes or Less</a> - Using VirtualBox and Kali Linux, you can start car hacking using completely free open-source software and tools, including can-utils, ICSim, ScanTool, Wireshark, and tcpdump</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'vehicle-security-and-car-hacking_README.md';
 
         fetch(markdownFile)
@@ -48,21 +185,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

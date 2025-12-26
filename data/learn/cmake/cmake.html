@@ -8,38 +8,155 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Onqtam Awesome Cmake - Awesome List Resources">
-    <title>Onqtam Awesome Cmake</title>
+    <meta name="description" content="> A curated list of awesome CMake scripts, modules, examples and others Your contributions are highly welcome (first see CONTRIBUTING.md). There is another...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome CMake [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome CMake <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p><a href="https://cmake.org/"><img src="https://rawgit.com/onqtam/awesome-cmake/master/cmake-logo.svg" align="right" width="100"></a></p>
+<blockquote>
+<p>A curated list of awesome <a href="https://cmake.org/">CMake</a> scripts, modules, examples and others</p>
+</blockquote>
+<p>Your contributions are highly welcome (first see <a href="CONTRIBUTING.md">CONTRIBUTING.md</a>).</p>
+<p>There is another file <a href="NonModernCMake.md"><code>NonModernCMake.md</code></a> with other links worth taking a look, but they use obsolete practices which are considered non-modern - like not using <code>target_*</code>-based dependency management - see <a href="https://github.com/onqtam/awesome-cmake/issues/16"><code>#16</code></a> and <a href="https://github.com/onqtam/awesome-cmake/pull/42"><code>#42</code></a> for more details.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#community">Community</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#package-management--build-systems">Package Management / Build Systems</a></li>
+<li><a href="#modules">Modules</a></li>
+<li><a href="#utility-scripts">Utility Scripts</a></li>
+<li><a href="#toolchains">Toolchains</a></li>
+<li><a href="#examples--templates">Examples / Templates</a></li>
+<li><a href="#other">Other</a></li>
+</ul>
+<h2>Community</h2>
+<ul>
+<li><a href="http://webchat.freenode.net/?channels=cmake"><code>#cmake</code> on Freenode</a></li>
+<li><a href="https://www.reddit.com/r/cmake/"><code>/r/cmake</code> on Reddit</a></li>
+<li><a href="https://www.reddit.com/r/cpp/"><code>/r/cpp</code> on Reddit</a></li>
+<li><a href="https://discourse.cmake.org/">Official Discourse Forum</a></li>
+<li><a href="http://stackoverflow.com/questions/tagged/cmake">Stack Overflow</a></li>
+</ul>
+<h2>Resources</h2>
+<ul>
+<li><a href="https://cmake.org/cmake/help/latest/">Latest Documentation</a></li>
+<li><a href="https://gitlab.kitware.com/cmake/community/-/wikis/FAQ">FAQ</a></li>
+<li><a href="https://gitlab.kitware.com/cmake/community/-/wikis/home">Wiki</a></li>
+<li><a href="https://cmake.org/webinars/">Webinars</a></li>
+<li><a href="https://github.com/ruslo/CGold">Web Book</a> - CGold: The Hitchhiker’s <a href="https://cgold.readthedocs.io">Guide</a> to the CMake. [<code>[BSD2]</code>][BSD-2-Clause]</li>
+<li><a href="https://github.com/toeb/moderncmake">Modern CMake</a> - Modern CMake <strong>PDF</strong> and samples by the creator of <a href="https://github.com/toeb/cmakepp">cmakepp</a>. [<code>[MIT]</code>][MIT]</li>
+<li><a href="https://www.siliceum.com/en/blog/post/cmake_01_cmake-basics">Tutorial</a> - Modern CMake tutorials part1: CMake basics</li>
+<li><a href="http://foonathan.net/blog/2016/03/03/cmake-install.html">Article</a> - Easily supporting CMake install and find_package().</li>
+<li><a href="http://foonathan.net/blog/2016/07/07/cmake-dependency-handling.html">Article</a> - Easy dependency management for C++ with CMake and Git.</li>
+<li><a href="https://steveire.wordpress.com/2016/08/09/opt-in-header-only-libraries-with-cmake/">Article</a> - Opt-in header-only libraries with CMake.</li>
+<li><a href="https://rix0r.nl/blog/2015/08/13/cmake-guide/">Article</a> - Ultimate Guide to Modern CMake.</li>
+<li><a href="https://web.archive.org/web/20190116071957/http://voices.canonical.com/jussi.pakkanen/2013/03/26/a-list-of-common-cmake-antipatterns/">Article</a> - A list of common CMake antipatterns (from 2013 but still relevant).</li>
+<li><a href="http://preshing.com/20170511/how-to-build-a-cmake-based-project/">Article</a> - How to Build a CMake-Based Project.</li>
+<li><a href="http://preshing.com/20170522/learn-cmakes-scripting-language-in-15-minutes/">Article</a> - Learn CMake's Scripting Language in 15 Minutes.</li>
+<li><a href="http://aosabook.org/en/cmake.html">Article</a> - The architecture of CMake.</li>
+<li><a href="https://www.youtube.com/watch?v=bsXLMQ6WgIk">Lecture</a> - Effective CMake - by Daniel Pfeifer, C++Now 2017.</li>
+<li><a href="https://devblogs.nvidia.com/parallelforall/building-cuda-applications-cmake/">Article</a> - Building Cross-Platform CUDA Applications with CMake.</li>
+<li><a href="https://github.com/Wigner-GPU-Lab/Teaching/tree/master/CMake">Tutorial</a> - A step-by-step guide for understanding CMake.</li>
+<li><a href="https://steveire.wordpress.com/2017/11/05/embracing-modern-cmake/">Article + Lecture</a> - Embracing Modern CMake - by Stephen Kelly.</li>
+<li><a href="https://www.youtube.com/watch?v=eC9-iRN2b04">Lecture</a> - Modern CMake for Modular Design - by Mathieu Ropert, CppCon 2017.</li>
+<li><a href="https://pabloariasal.github.io/2018/02/19/its-time-to-do-cmake-right/">Article</a> - It's Time To Do CMake Right (one of the best articles about CMake).</li>
+<li>Articles - A series on CMake - by Martin Hořeňovský<ul>
+<li><a href="https://codingnest.com/basic-cmake/">Basic CMake usage</a>.</li>
+<li><a href="https://codingnest.com/basic-cmake-part-2/">Basic CMake, part 2: libraries</a>.</li>
+</ul>
+</li>
+<li><a href="https://www.youtube.com/watch?v=jt3meXdP-QI">Lecture</a> - Introduction to CMake - by Florent Castelli, C++ Sweden 2018.</li>
+<li><a href="http://bastian.rieck.me/blog/posts/2018/cmake_tips/">Article</a> - Some nice and accurate CMake tips.</li>
+<li><a href="http://unclejimbo.github.io/2018/06/08/Modern-CMake-for-Library-Developers/">Article</a> - Modern CMake for Library Developers.</li>
+<li><a href="https://gist.github.com/mbinna/c61dbb39bca0e4fb7d1f73b0d66a4fd1">Article</a> - Effective Modern CMake: a great summary of most good practices - by Manuel Binna.</li>
+<li><a href="https://crascit.com/professional-cmake/">Book</a> - Professional CMake: A Practical Guide (paid).</li>
+<li><a href="https://leanpub.com/effective-cmake">Book</a> - Effective CMake: Practical Advice to Write Better CMake (not fully written yet).</li>
+<li><a href="https://cliutils.gitlab.io/modern-cmake/">Web Book</a> - An Introduction to Modern CMake.</li>
+<li><a href="https://vector-of-bool.github.io/2018/08/12/cmake-good.html">YouTube Series</a> - How to CMake Good. [<code>[CC0-1.0]</code>][CC0-1.0]</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome CMake <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p><a href="https://cmake.org/"><img src="https://rawgit.com/onqtam/awesome-cmake/master/cmake-logo.svg" align="right" width="100"></a></p>
+<blockquote>
+<p>A curated list of awesome <a href="https://cmake.org/">CMake</a> scripts, modules, examples and others</p>
+</blockquote>
+<p>Your contributions are highly welcome (first see <a href="CONTRIBUTING.md">CONTRIBUTING.md</a>).</p>
+<p>There is another file <a href="NonModernCMake.md"><code>NonModernCMake.md</code></a> with other links worth taking a look, but they use obsolete practices which are considered non-modern - like not using <code>target_*</code>-based dependency management - see <a href="https://github.com/onqtam/awesome-cmake/issues/16"><code>#16</code></a> and <a href="https://github.com/onqtam/awesome-cmake/pull/42"><code>#42</code></a> for more details.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#community">Community</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#package-management--build-systems">Package Management / Build Systems</a></li>
+<li><a href="#modules">Modules</a></li>
+<li><a href="#utility-scripts">Utility Scripts</a></li>
+<li><a href="#toolchains">Toolchains</a></li>
+<li><a href="#examples--templates">Examples / Templates</a></li>
+<li><a href="#other">Other</a></li>
+</ul>
+<h2>Community</h2>
+<ul>
+<li><a href="http://webchat.freenode.net/?channels=cmake"><code>#cmake</code> on Freenode</a></li>
+<li><a href="https://www.reddit.com/r/cmake/"><code>/r/cmake</code> on Reddit</a></li>
+<li><a href="https://www.reddit.com/r/cpp/"><code>/r/cpp</code> on Reddit</a></li>
+<li><a href="https://discourse.cmake.org/">Official Discourse Forum</a></li>
+<li><a href="http://stackoverflow.com/questions/tagged/cmake">Stack Overflow</a></li>
+</ul>
+<h2>Resources</h2>
+<ul>
+<li><a href="https://cmake.org/cmake/help/latest/">Latest Documentation</a></li>
+<li><a href="https://gitlab.kitware.com/cmake/community/-/wikis/FAQ">FAQ</a></li>
+<li><a href="https://gitlab.kitware.com/cmake/community/-/wikis/home">Wiki</a></li>
+<li><a href="https://cmake.org/webinars/">Webinars</a></li>
+<li><a href="https://github.com/ruslo/CGold">Web Book</a> - CGold: The Hitchhiker’s <a href="https://cgold.readthedocs.io">Guide</a> to the CMake. [<code>[BSD2]</code>][BSD-2-Clause]</li>
+<li><a href="https://github.com/toeb/moderncmake">Modern CMake</a> - Modern CMake <strong>PDF</strong> and samples by the creator of <a href="https://github.com/toeb/cmakepp">cmakepp</a>. [<code>[MIT]</code>][MIT]</li>
+<li><a href="https://www.siliceum.com/en/blog/post/cmake_01_cmake-basics">Tutorial</a> - Modern CMake tutorials part1: CMake basics</li>
+<li><a href="http://foonathan.net/blog/2016/03/03/cmake-install.html">Article</a> - Easily supporting CMake install and find_package().</li>
+<li><a href="http://foonathan.net/blog/2016/07/07/cmake-dependency-handling.html">Article</a> - Easy dependency management for C++ with CMake and Git.</li>
+<li><a href="https://steveire.wordpress.com/2016/08/09/opt-in-header-only-libraries-with-cmake/">Article</a> - Opt-in header-only libraries with CMake.</li>
+<li><a href="https://rix0r.nl/blog/2015/08/13/cmake-guide/">Article</a> - Ultimate Guide to Modern CMake.</li>
+<li><a href="https://web.archive.org/web/20190116071957/http://voices.canonical.com/jussi.pakkanen/2013/03/26/a-list-of-common-cmake-antipatterns/">Article</a> - A list of common CMake antipatterns (from 2013 but still relevant).</li>
+<li><a href="http://preshing.com/20170511/how-to-build-a-cmake-based-project/">Article</a> - How to Build a CMake-Based Project.</li>
+<li><a href="http://preshing.com/20170522/learn-cmakes-scripting-language-in-15-minutes/">Article</a> - Learn CMake's Scripting Language in 15 Minutes.</li>
+<li><a href="http://aosabook.org/en/cmake.html">Article</a> - The architecture of CMake.</li>
+<li><a href="https://www.youtube.com/watch?v=bsXLMQ6WgIk">Lecture</a> - Effective CMake - by Daniel Pfeifer, C++Now 2017.</li>
+<li><a href="https://devblogs.nvidia.com/parallelforall/building-cuda-applications-cmake/">Article</a> - Building Cross-Platform CUDA Applications with CMake.</li>
+<li><a href="https://github.com/Wigner-GPU-Lab/Teaching/tree/master/CMake">Tutorial</a> - A step-by-step guide for understanding CMake.</li>
+<li><a href="https://steveire.wordpress.com/2017/11/05/embracing-modern-cmake/">Article + Lecture</a> - Embracing Modern CMake - by Stephen Kelly.</li>
+<li><a href="https://www.youtube.com/watch?v=eC9-iRN2b04">Lecture</a> - Modern CMake for Modular Design - by Mathieu Ropert, CppCon 2017.</li>
+<li><a href="https://pabloariasal.github.io/2018/02/19/its-time-to-do-cmake-right/">Article</a> - It's Time To Do CMake Right (one of the best articles about CMake).</li>
+<li>Articles - A series on CMake - by Martin Hořeňovský<ul>
+<li><a href="https://codingnest.com/basic-cmake/">Basic CMake usage</a>.</li>
+<li><a href="https://codingnest.com/basic-cmake-part-2/">Basic CMake, part 2: libraries</a>.</li>
+</ul>
+</li>
+<li><a href="https://www.youtube.com/watch?v=jt3meXdP-QI">Lecture</a> - Introduction to CMake - by Florent Castelli, C++ Sweden 2018.</li>
+<li><a href="http://bastian.rieck.me/blog/posts/2018/cmake_tips/">Article</a> - Some nice and accurate CMake tips.</li>
+<li><a href="http://unclejimbo.github.io/2018/06/08/Modern-CMake-for-Library-Developers/">Article</a> - Modern CMake for Library Developers.</li>
+<li><a href="https://gist.github.com/mbinna/c61dbb39bca0e4fb7d1f73b0d66a4fd1">Article</a> - Effective Modern CMake: a great summary of most good practices - by Manuel Binna.</li>
+<li><a href="https://crascit.com/professional-cmake/">Book</a> - Professional CMake: A Practical Guide (paid).</li>
+<li><a href="https://leanpub.com/effective-cmake">Book</a> - Effective CMake: Practical Advice to Write Better CMake (not fully written yet).</li>
+<li><a href="https://cliutils.gitlab.io/modern-cmake/">Web Book</a> - An Introduction to Modern CMake.</li>
+<li><a href="https://vector-of-bool.github.io/2018/08/12/cmake-good.html">YouTube Series</a> - How to CMake Good. [<code>[CC0-1.0]</code>][CC0-1.0]</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'cmake_README.md';
 
         fetch(markdownFile)
@@ -48,21 +165,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

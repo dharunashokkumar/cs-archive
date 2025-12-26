@@ -8,38 +8,191 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Igorbarinov Awesome Bitcoin - Awesome List Resources">
-    <title>Igorbarinov Awesome Bitcoin</title>
+    <meta name="description" content="Awesome Bitcoin =============== A curated list of bitcoin services and tools for software developers - Utilities - Blockchain API and Web services - Wallets...">
+    <meta name="robots" content="index, follow">
+    <title>Bitcoin - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Bitcoin</h1>
+<p>A curated list of bitcoin services and tools for software developers
+<a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></p>
+<h2>List of content</h2>
+<ul>
+<li><a href="#utilities">Utilities</a></li>
+<li><a href="#blockchain-api-and-web-services">Blockchain API and Web services</a></li>
+<li><a href="#wallets-api">Wallets API</a></li>
+<li><a href="#open-source-wallets">Open Source wallets</a></li>
+<li><a href="#blockchain-explorers">Blockchain Explorers</a></li>
+<li><a href="#c-libraries">C Libraries</a></li>
+<li><a href="#c-libraries-1">C++ Libraries</a></li>
+<li><a href="#javascript-libraries">JavaScript Libraries</a></li>
+<li><a href="#php-libraries">PHP Libraries</a></li>
+<li><a href="#ruby-libraries">Ruby Libraries</a></li>
+<li><a href="#python-libraries">Python Libraries</a></li>
+<li><a href="#java-libraries">Java Libraries</a></li>
+<li><a href="#scala-libraries">Scala Libraries</a></li>
+<li><a href="#swift-libraries">Swift Libraries</a></li>
+<li><a href="#net-libraries">.Net Libraries</a></li>
+<li><a href="#haskell-libraries">Haskell Libraries</a></li>
+<li><a href="#playgrounds">Playgrounds</a></li>
+<li><a href="#blockchain-dump">Blockchain dump</a></li>
+<li><a href="#full-nodes">Full nodes</a></li>
+<li><a href="#read">Read</a></li>
+<li><a href="#course">Course</a></li>
+<li><a href="#additional-resources">Additional Resources</a></li>
+</ul>
+<h2>Utilities</h2>
+<ul>
+<li><a href="https://github.com/vulpemventures/nigiri/">Nigiri</a> - CLI to quickly fire up a a Bitcoin regtest box along with Electrs and Esplora. Includes faucet and push commands.</li>
+<li><a href="https://github.com/stevenroose/hal">hal</a> - Bitcoin CLI swiss-army-knife (based on rust-bitcoin).</li>
+<li><a href="https://bitkey.io">BitKey</a> - Live USB for airgapped transactions and Bitcoin swiss army knife.</li>
+<li><a href="https://github.com/richardkiss/pycoin">Pycoin</a> - Python-based Bitcoin and alt-coin utility library.</li>
+<li><a href="https://github.com/libbitcoin/libbitcoin-explorer">bx</a> - Bitcoin Command Line Tool.</li>
+<li><a href="https://github.com/tsileo/txwatcher">txwatcher</a> - A little Python utility that lets you monitor Bitcoin addresses through Blockchain Websocket API and perform custom callbacks.</li>
+<li><a href="https://github.com/prettymuchbryce/hellobitcoin">hellobitcoin</a> - A collection of simple programs which can generate bitcoin wallets, create and sign transactions, and send transactions over the bitcoin network.</li>
+<li><a href="http://www.yogh.io/#mine:last">Mining visualization</a></li>
+<li><a href="https://github.com/alexk111/HD-Wallet-Scanner">HD Wallet Scanner</a> - Find all used addresses in your Bitcoin HD wallets bypassing gap limits.</li>
+<li><a href="https://github.com/bitjson/qr-code"><code>&lt;qr-code&gt;</code></a> – A no-framework, no-dependencies, customizable, animate-able, SVG-based <code>&lt;qr-code&gt;</code> web component.</li>
+<li><a href="https://github.com/douvy/btc-tooling">BTC Tooling</a> - Bitcoin dashboard with real-time price data, a chart, orderbook, market summary, Twitter/X insights, and halving countdown data. <a href="https://www.btctooling.com/">Live Demo</a></li>
+</ul>
+<h2>Blockchain API and Web services</h2>
+<ul>
+<li><a href="https://3xpl.com/">3xpl.com</a> - Fastest ad-free universal block explorer.</li>
+<li><a href="https://bitquery.io/">Bitquery.io</a> - Bitquery provides blockchain data, offering real-time streaming APIs for 40+ chains, NFT APIs, and a money flow investigation tool.</li>
+<li><a href="https://block.io">block.io</a></li>
+<li><a href="https://blockchair.com/">blockchair.com</a> - Universal blockchain explorer and search engine.</li>
+<li><a href="https://www.blockcypher.com">BlockCypher</a></li>
+<li><a href="https://github.com/Blockstream/esplora">Esplora</a> - Self-hosted blockchain explorer.</li>
+<li><a href="https://insight.is">Insight</a></li>
+<li><a href="https://chain.com">Chain.com</a></li>
+<li><a href="https://wallet.coinbase.com/">Coinbase Wallet</a></li>
+<li><a href="https://github.com/yasaricli/chainradar-api">Chainradar API</a> - Blockchain Explorer API for Chainradar.</li>
+<li><a href="https://github.com/alexk111/One-Time-Address">One-Time Address</a> A better way to share your Bitcoin address.</li>
+<li><a href="https://cryptocurrencyalerting.com/blockchain-alerts.html">Cryptocurrency Alerting</a> - Bitcoin wallet monitoring and blockchain alerts.</li>
+<li><a href="https://developers.particle.network/reference/introduction-to-btc-connect">BTC Connect</a> - Unified Bitcoin Layer-1 and Layer-2 wallet connection and account abstraction.</li>
+<li><a href="https://tatum.io/blockchain-api">Tatum</a> - The blockchain development platform to build Web3 application. The go-to blockchain data API for Web3 developers.</li>
+<li><a href="https://mempool.space/docs/api/rest">mempool.space</a> - Open source and self hostable REST, WebSocket and Electrum RPC API</li>
+<li><a href="https://kibo.money">kibō.money</a> - An open source Bitcoin Core data extractor and visualizer (aka FOSS Glassnode)</li>
+<li><a href="https://www.gomaestro.org/">Maestro</a> - A high-performance Bitcoin RPC and UTXO indexer API that powers applications with real-time blockchain data, mempool monitoring, and event notifications.</li>
+</ul>
+<h2>Market Data API</h2>
+<ul>
+<li><a href="https://docs.coinmetrics.io/api/v2/">CoinMetrics.io</a> JSON REST API (free as well as paid) with access to market data. Also CSV data file download available.</li>
+<li><a href="https://messari.io/api">Messari.io</a> JSON REST API (free as well as paid) with access to market data, news, metrics, profile, etc.</li>
+</ul>
+<h2>Wallets API</h2>
+<ul>
+<li><a href="https://bitgo.github.io/bitgo-docs/">BitGo</a></li>
+<li><a href="https://developers.coinbase.com">Coinbase</a></li>
+<li><a href="https://www.blockchain.com/api">Blockchain.com</a></li>
+<li><a href="http://bip32.org">BIP32</a></li>
+<li><a href="https://www.pinestreetlabs.com/walletos/">walletOS</a></li>
+</ul>
+<h2>Open Source Wallets</h2>
+<ul>
+<li><a href="https://copay.io/">CoPay by BitPay</a></li>
+<li><a href="https://coinb.in">Coinb.in</a></li>
+<li><a href="https://coin.space/">Coin Wallet</a></li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Bitcoin</h1>
+<p>A curated list of bitcoin services and tools for software developers
+<a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></p>
+<h2>List of content</h2>
+<ul>
+<li><a href="#utilities">Utilities</a></li>
+<li><a href="#blockchain-api-and-web-services">Blockchain API and Web services</a></li>
+<li><a href="#wallets-api">Wallets API</a></li>
+<li><a href="#open-source-wallets">Open Source wallets</a></li>
+<li><a href="#blockchain-explorers">Blockchain Explorers</a></li>
+<li><a href="#c-libraries">C Libraries</a></li>
+<li><a href="#c-libraries-1">C++ Libraries</a></li>
+<li><a href="#javascript-libraries">JavaScript Libraries</a></li>
+<li><a href="#php-libraries">PHP Libraries</a></li>
+<li><a href="#ruby-libraries">Ruby Libraries</a></li>
+<li><a href="#python-libraries">Python Libraries</a></li>
+<li><a href="#java-libraries">Java Libraries</a></li>
+<li><a href="#scala-libraries">Scala Libraries</a></li>
+<li><a href="#swift-libraries">Swift Libraries</a></li>
+<li><a href="#net-libraries">.Net Libraries</a></li>
+<li><a href="#haskell-libraries">Haskell Libraries</a></li>
+<li><a href="#playgrounds">Playgrounds</a></li>
+<li><a href="#blockchain-dump">Blockchain dump</a></li>
+<li><a href="#full-nodes">Full nodes</a></li>
+<li><a href="#read">Read</a></li>
+<li><a href="#course">Course</a></li>
+<li><a href="#additional-resources">Additional Resources</a></li>
+</ul>
+<h2>Utilities</h2>
+<ul>
+<li><a href="https://github.com/vulpemventures/nigiri/">Nigiri</a> - CLI to quickly fire up a a Bitcoin regtest box along with Electrs and Esplora. Includes faucet and push commands.</li>
+<li><a href="https://github.com/stevenroose/hal">hal</a> - Bitcoin CLI swiss-army-knife (based on rust-bitcoin).</li>
+<li><a href="https://bitkey.io">BitKey</a> - Live USB for airgapped transactions and Bitcoin swiss army knife.</li>
+<li><a href="https://github.com/richardkiss/pycoin">Pycoin</a> - Python-based Bitcoin and alt-coin utility library.</li>
+<li><a href="https://github.com/libbitcoin/libbitcoin-explorer">bx</a> - Bitcoin Command Line Tool.</li>
+<li><a href="https://github.com/tsileo/txwatcher">txwatcher</a> - A little Python utility that lets you monitor Bitcoin addresses through Blockchain Websocket API and perform custom callbacks.</li>
+<li><a href="https://github.com/prettymuchbryce/hellobitcoin">hellobitcoin</a> - A collection of simple programs which can generate bitcoin wallets, create and sign transactions, and send transactions over the bitcoin network.</li>
+<li><a href="http://www.yogh.io/#mine:last">Mining visualization</a></li>
+<li><a href="https://github.com/alexk111/HD-Wallet-Scanner">HD Wallet Scanner</a> - Find all used addresses in your Bitcoin HD wallets bypassing gap limits.</li>
+<li><a href="https://github.com/bitjson/qr-code"><code>&lt;qr-code&gt;</code></a> – A no-framework, no-dependencies, customizable, animate-able, SVG-based <code>&lt;qr-code&gt;</code> web component.</li>
+<li><a href="https://github.com/douvy/btc-tooling">BTC Tooling</a> - Bitcoin dashboard with real-time price data, a chart, orderbook, market summary, Twitter/X insights, and halving countdown data. <a href="https://www.btctooling.com/">Live Demo</a></li>
+</ul>
+<h2>Blockchain API and Web services</h2>
+<ul>
+<li><a href="https://3xpl.com/">3xpl.com</a> - Fastest ad-free universal block explorer.</li>
+<li><a href="https://bitquery.io/">Bitquery.io</a> - Bitquery provides blockchain data, offering real-time streaming APIs for 40+ chains, NFT APIs, and a money flow investigation tool.</li>
+<li><a href="https://block.io">block.io</a></li>
+<li><a href="https://blockchair.com/">blockchair.com</a> - Universal blockchain explorer and search engine.</li>
+<li><a href="https://www.blockcypher.com">BlockCypher</a></li>
+<li><a href="https://github.com/Blockstream/esplora">Esplora</a> - Self-hosted blockchain explorer.</li>
+<li><a href="https://insight.is">Insight</a></li>
+<li><a href="https://chain.com">Chain.com</a></li>
+<li><a href="https://wallet.coinbase.com/">Coinbase Wallet</a></li>
+<li><a href="https://github.com/yasaricli/chainradar-api">Chainradar API</a> - Blockchain Explorer API for Chainradar.</li>
+<li><a href="https://github.com/alexk111/One-Time-Address">One-Time Address</a> A better way to share your Bitcoin address.</li>
+<li><a href="https://cryptocurrencyalerting.com/blockchain-alerts.html">Cryptocurrency Alerting</a> - Bitcoin wallet monitoring and blockchain alerts.</li>
+<li><a href="https://developers.particle.network/reference/introduction-to-btc-connect">BTC Connect</a> - Unified Bitcoin Layer-1 and Layer-2 wallet connection and account abstraction.</li>
+<li><a href="https://tatum.io/blockchain-api">Tatum</a> - The blockchain development platform to build Web3 application. The go-to blockchain data API for Web3 developers.</li>
+<li><a href="https://mempool.space/docs/api/rest">mempool.space</a> - Open source and self hostable REST, WebSocket and Electrum RPC API</li>
+<li><a href="https://kibo.money">kibō.money</a> - An open source Bitcoin Core data extractor and visualizer (aka FOSS Glassnode)</li>
+<li><a href="https://www.gomaestro.org/">Maestro</a> - A high-performance Bitcoin RPC and UTXO indexer API that powers applications with real-time blockchain data, mempool monitoring, and event notifications.</li>
+</ul>
+<h2>Market Data API</h2>
+<ul>
+<li><a href="https://docs.coinmetrics.io/api/v2/">CoinMetrics.io</a> JSON REST API (free as well as paid) with access to market data. Also CSV data file download available.</li>
+<li><a href="https://messari.io/api">Messari.io</a> JSON REST API (free as well as paid) with access to market data, news, metrics, profile, etc.</li>
+</ul>
+<h2>Wallets API</h2>
+<ul>
+<li><a href="https://bitgo.github.io/bitgo-docs/">BitGo</a></li>
+<li><a href="https://developers.coinbase.com">Coinbase</a></li>
+<li><a href="https://www.blockchain.com/api">Blockchain.com</a></li>
+<li><a href="http://bip32.org">BIP32</a></li>
+<li><a href="https://www.pinestreetlabs.com/walletos/">walletOS</a></li>
+</ul>
+<h2>Open Source Wallets</h2>
+<ul>
+<li><a href="https://copay.io/">CoPay by BitPay</a></li>
+<li><a href="https://coinb.in">Coinb.in</a></li>
+<li><a href="https://coin.space/">Coin Wallet</a></li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'bitcoin_README.md';
 
         fetch(markdownFile)
@@ -48,21 +201,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

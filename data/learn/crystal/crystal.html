@@ -8,38 +8,219 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Veelenga Awesome Crystal - Awesome List Resources">
-    <title>Veelenga Awesome Crystal</title>
+    <meta name="description" content="A curated list of awesome Crystal code and resources. Inspired by awesome and awesome-awesomeness. The goal is to have projects mostly stable and useful for...">
+    <meta name="robots" content="index, follow">
+    <title>Crystal - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <p><a href="https://github.com/vshymanskyy/StandWithUkraine/blob/main/docs/README.md"><img alt="SWUbanner" src="https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner-direct.svg" /></a></p>
+<p align="center"><img src="logo/logotype_horizontal.jpg" alt="awesome-crystal"></p>
+
+<h1>Awesome Crystal</h1>
+<p><a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></p>
+<p>A curated list of awesome Crystal code and resources. Inspired by <a href="https://github.com/sindresorhus/awesome">awesome</a> and <a href="https://github.com/bayandin/awesome-awesomeness">awesome-awesomeness</a>.
+The goal is to have projects mostly stable and useful for the community.</p>
+<p>Search shards at <a href="https://shards.info">shards.info</a> for more.</p>
+<p>Contributions are welcome. Please take a quick look at the <a href="https://github.com/veelenga/awesome-crystal/blob/master/.github/CONTRIBUTING.md">contribution guidelines</a> first.</p>
+<ul>
+<li><a href="#awesome-crystal">Awesome Crystal</a></li>
+<li><a href="#algorithms-and-data-structures">Algorithms and Data structures</a></li>
+<li><a href="#blockchain">Blockchain</a></li>
+<li><a href="#c-bindings">C Bindings</a></li>
+<li><a href="#caching">Caching</a></li>
+<li><a href="#cli-builders">CLI Builders</a></li>
+<li><a href="#cli-utils">CLI Utils</a></li>
+<li><a href="#code-analysis-and-metrics">Code Analysis and Metrics</a></li>
+<li><a href="#compression">Compression</a></li>
+<li><a href="#configuration">Configuration</a></li>
+<li><a href="#converters">Converters</a></li>
+<li><a href="#cryptography">Cryptography</a></li>
+<li><a href="#data-formats">Data Formats</a></li>
+<li><a href="#data-generators">Data Generators</a></li>
+<li><a href="#database-driversclients">Database Drivers/Clients</a></li>
+<li><a href="#database-tools">Database Tools</a></li>
+<li><a href="#debugging">Debugging</a></li>
+<li><a href="#dependency-injection">Dependency Injection</a></li>
+<li><a href="#email">Email</a></li>
+<li><a href="#environment-management">Environment Management</a></li>
+<li><a href="#examples-and-funny-stuff">Examples and funny stuff</a></li>
+<li><a href="#framework-components">Framework Components</a></li>
+<li><a href="#game-development">Game Development</a></li>
+<li><a href="#gui-development">GUI Development</a></li>
+<li><a href="#html-builders">HTML Builders</a></li>
+<li><a href="#htmlxml-parsing">HTML/XML parsing</a></li>
+<li><a href="#http">HTTP</a></li>
+<li><a href="#image-processing">Image Processing</a></li>
+<li><a href="#implementationscompilers">Implementations/Compilers</a></li>
+<li><a href="#internationalization">Internationalization</a></li>
+<li><a href="#logging-and-monitoring">Logging and monitoring</a></li>
+<li><a href="#machine-learning">Machine Learning</a></li>
+<li><a href="#markdowntext-processors">Markdown/Text Processors</a></li>
+<li><a href="#misc">Misc</a></li>
+<li><a href="#network-protocols">Network Protocols</a></li>
+<li><a href="#networking">Networking</a></li>
+<li><a href="#ormodm-extensions">ORM/ODM Extensions</a></li>
+<li><a href="#package-management">Package Management</a></li>
+<li><a href="#processes-and-threads">Processes and Threads</a></li>
+<li><a href="#project-generators">Project Generators</a></li>
+<li><a href="#queues-and-messaging">Queues and Messaging</a></li>
+<li><a href="#routing">Routing</a></li>
+<li><a href="#scheduling">Scheduling</a></li>
+<li><a href="#science-and-data-analysis">Science and Data analysis</a></li>
+<li><a href="#search">Search</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#serverless-computing">Serverless Computing</a></li>
+<li><a href="#system">System</a></li>
+<li><a href="#task-management">Task management</a></li>
+<li><a href="#template-engine">Template Engine</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#third-party-apis">Third-party APIs</a></li>
+<li><a href="#validation">Validation</a></li>
+<li><a href="#web-frameworks">Web Frameworks</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#unofficial">Unofficial</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#official-documentation-translations">Official Documentation Translations</a></li>
+<li><a href="#services-and-apps">Services and Apps</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#devops">DevOps</a></li>
+<li><a href="#editor-plugins">Editor Plugins</a></li>
+<li><a href="#lsp-language-server-protocol-implementations">LSP Language Server Protocol Implementations</a></li>
+<li><a href="#shell-plugins">Shell Plugins</a></li>
+</ul>
+<h2>Algorithms and Data structures</h2>
+<ul>
+<li><a href="https://github.com/spider-gazelle/bisect">bisect</a> - Inserting values into a sorted array</li>
+<li><a href="https://github.com/Sija/blurhash.cr">blurhash.cr</a> - <a href="https://github.com/woltapp/blurhash">BlurHash</a> implementation</li>
+<li><a href="https://github.com/c910335/crie">crie</a> - Compile-time Trie</li>
+<li><a href="https://github.com/philnash/crotp">CrOTP</a> - HOTP and TOTP implementation for two factor authentication</li>
+<li><a href="https://github.com/abvdasker/crystal-linked-list">crystal-linked-list</a> - Implementation of Linked List</li>
+<li><a href="https://github.com/unn4m3d/crystaledge">crystaledge</a> - A pure Vector Math library</li>
+<li><a href="https://github.com/tobyapi/crystalg">crystalg</a> - A Generic Algorithm Library</li>
+<li><a href="https://github.com/jtomschroeder/crystalline">crystalline</a> - A collection of containers and algorithms</li>
+<li><a href="https://github.com/wyhaines/csuuid.cr">csuuid</a> - A Chronologically Sortable UUID</li>
+<li><a href="https://github.com/tcrouch/edits.cr">edits.cr</a> - Collection of edit distance algorithms</li>
+<li><a href="https://github.com/hugopl/fzy">fzy</a> - A Crystal port of awesome Fzy project fuzzy finder algorithm</li>
+<li><a href="https://github.com/soya-daizu/goban">Goban</a> - A fast and efficient QR Code implementation</li>
+<li><a href="https://github.com/mettuaditya/graphlb">graphlb</a> - Collection of graph datastructure and algorithms</li>
+<li><a href="https://github.com/geocrystal/haversine">haversine</a> - An Implementation of the Haversine formula</li>
+<li><a href="https://github.com/spider-gazelle/HKDF">HKDF</a> - HMAC-based Extract-and-Expand Key Derivation Function <a href="https://www.rfc-editor.org/rfc/rfc5869">rfc5869</a></li>
+<li><a href="https://github.com/geocrystal/kd_tree">kd_tree</a> - An implementation of "K-Dimensional Tree" and "N-Nearest Neighbors"</li>
+<li><a href="https://github.com/Sija/ksuid.cr">ksuid.cr</a> - K-Sortable Globally Unique IDs</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <p><a href="https://github.com/vshymanskyy/StandWithUkraine/blob/main/docs/README.md"><img alt="SWUbanner" src="https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner-direct.svg" /></a></p>
+<p align="center"><img src="logo/logotype_horizontal.jpg" alt="awesome-crystal"></p>
+
+<h1>Awesome Crystal</h1>
+<p><a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></p>
+<p>A curated list of awesome Crystal code and resources. Inspired by <a href="https://github.com/sindresorhus/awesome">awesome</a> and <a href="https://github.com/bayandin/awesome-awesomeness">awesome-awesomeness</a>.
+The goal is to have projects mostly stable and useful for the community.</p>
+<p>Search shards at <a href="https://shards.info">shards.info</a> for more.</p>
+<p>Contributions are welcome. Please take a quick look at the <a href="https://github.com/veelenga/awesome-crystal/blob/master/.github/CONTRIBUTING.md">contribution guidelines</a> first.</p>
+<ul>
+<li><a href="#awesome-crystal">Awesome Crystal</a></li>
+<li><a href="#algorithms-and-data-structures">Algorithms and Data structures</a></li>
+<li><a href="#blockchain">Blockchain</a></li>
+<li><a href="#c-bindings">C Bindings</a></li>
+<li><a href="#caching">Caching</a></li>
+<li><a href="#cli-builders">CLI Builders</a></li>
+<li><a href="#cli-utils">CLI Utils</a></li>
+<li><a href="#code-analysis-and-metrics">Code Analysis and Metrics</a></li>
+<li><a href="#compression">Compression</a></li>
+<li><a href="#configuration">Configuration</a></li>
+<li><a href="#converters">Converters</a></li>
+<li><a href="#cryptography">Cryptography</a></li>
+<li><a href="#data-formats">Data Formats</a></li>
+<li><a href="#data-generators">Data Generators</a></li>
+<li><a href="#database-driversclients">Database Drivers/Clients</a></li>
+<li><a href="#database-tools">Database Tools</a></li>
+<li><a href="#debugging">Debugging</a></li>
+<li><a href="#dependency-injection">Dependency Injection</a></li>
+<li><a href="#email">Email</a></li>
+<li><a href="#environment-management">Environment Management</a></li>
+<li><a href="#examples-and-funny-stuff">Examples and funny stuff</a></li>
+<li><a href="#framework-components">Framework Components</a></li>
+<li><a href="#game-development">Game Development</a></li>
+<li><a href="#gui-development">GUI Development</a></li>
+<li><a href="#html-builders">HTML Builders</a></li>
+<li><a href="#htmlxml-parsing">HTML/XML parsing</a></li>
+<li><a href="#http">HTTP</a></li>
+<li><a href="#image-processing">Image Processing</a></li>
+<li><a href="#implementationscompilers">Implementations/Compilers</a></li>
+<li><a href="#internationalization">Internationalization</a></li>
+<li><a href="#logging-and-monitoring">Logging and monitoring</a></li>
+<li><a href="#machine-learning">Machine Learning</a></li>
+<li><a href="#markdowntext-processors">Markdown/Text Processors</a></li>
+<li><a href="#misc">Misc</a></li>
+<li><a href="#network-protocols">Network Protocols</a></li>
+<li><a href="#networking">Networking</a></li>
+<li><a href="#ormodm-extensions">ORM/ODM Extensions</a></li>
+<li><a href="#package-management">Package Management</a></li>
+<li><a href="#processes-and-threads">Processes and Threads</a></li>
+<li><a href="#project-generators">Project Generators</a></li>
+<li><a href="#queues-and-messaging">Queues and Messaging</a></li>
+<li><a href="#routing">Routing</a></li>
+<li><a href="#scheduling">Scheduling</a></li>
+<li><a href="#science-and-data-analysis">Science and Data analysis</a></li>
+<li><a href="#search">Search</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#serverless-computing">Serverless Computing</a></li>
+<li><a href="#system">System</a></li>
+<li><a href="#task-management">Task management</a></li>
+<li><a href="#template-engine">Template Engine</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#third-party-apis">Third-party APIs</a></li>
+<li><a href="#validation">Validation</a></li>
+<li><a href="#web-frameworks">Web Frameworks</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#unofficial">Unofficial</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#official-documentation-translations">Official Documentation Translations</a></li>
+<li><a href="#services-and-apps">Services and Apps</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#devops">DevOps</a></li>
+<li><a href="#editor-plugins">Editor Plugins</a></li>
+<li><a href="#lsp-language-server-protocol-implementations">LSP Language Server Protocol Implementations</a></li>
+<li><a href="#shell-plugins">Shell Plugins</a></li>
+</ul>
+<h2>Algorithms and Data structures</h2>
+<ul>
+<li><a href="https://github.com/spider-gazelle/bisect">bisect</a> - Inserting values into a sorted array</li>
+<li><a href="https://github.com/Sija/blurhash.cr">blurhash.cr</a> - <a href="https://github.com/woltapp/blurhash">BlurHash</a> implementation</li>
+<li><a href="https://github.com/c910335/crie">crie</a> - Compile-time Trie</li>
+<li><a href="https://github.com/philnash/crotp">CrOTP</a> - HOTP and TOTP implementation for two factor authentication</li>
+<li><a href="https://github.com/abvdasker/crystal-linked-list">crystal-linked-list</a> - Implementation of Linked List</li>
+<li><a href="https://github.com/unn4m3d/crystaledge">crystaledge</a> - A pure Vector Math library</li>
+<li><a href="https://github.com/tobyapi/crystalg">crystalg</a> - A Generic Algorithm Library</li>
+<li><a href="https://github.com/jtomschroeder/crystalline">crystalline</a> - A collection of containers and algorithms</li>
+<li><a href="https://github.com/wyhaines/csuuid.cr">csuuid</a> - A Chronologically Sortable UUID</li>
+<li><a href="https://github.com/tcrouch/edits.cr">edits.cr</a> - Collection of edit distance algorithms</li>
+<li><a href="https://github.com/hugopl/fzy">fzy</a> - A Crystal port of awesome Fzy project fuzzy finder algorithm</li>
+<li><a href="https://github.com/soya-daizu/goban">Goban</a> - A fast and efficient QR Code implementation</li>
+<li><a href="https://github.com/mettuaditya/graphlb">graphlb</a> - Collection of graph datastructure and algorithms</li>
+<li><a href="https://github.com/geocrystal/haversine">haversine</a> - An Implementation of the Haversine formula</li>
+<li><a href="https://github.com/spider-gazelle/HKDF">HKDF</a> - HMAC-based Extract-and-Expand Key Derivation Function <a href="https://www.rfc-editor.org/rfc/rfc5869">rfc5869</a></li>
+<li><a href="https://github.com/geocrystal/kd_tree">kd_tree</a> - An implementation of "K-Dimensional Tree" and "N-Nearest Neighbors"</li>
+<li><a href="https://github.com/Sija/ksuid.cr">ksuid.cr</a> - K-Sortable Globally Unique IDs</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'crystal_README.md';
 
         fetch(markdownFile)
@@ -48,21 +229,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

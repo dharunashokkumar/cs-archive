@@ -8,38 +8,145 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mark Rushakoff Awesome Influxdb - Awesome List Resources">
-    <title>Mark Rushakoff Awesome Influxdb</title>
+    <meta name="description" content="A curated list of awesome projects, libraries, tools, etc. related to InfluxDB. This list focuses on libraries, tools, etc. supporting InfluxDB version 1.0 and...">
+    <meta name="robots" content="index, follow">
+    <title>awesome-influxdb [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>awesome-influxdb <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A curated list of awesome projects, libraries, tools, etc. related to <a href="https://www.influxdata.com/">InfluxDB</a>.
+This list focuses on libraries, tools, etc. supporting InfluxDB version 1.0 and up.</p>
+<p>Want to make this list better?
+Take a look at our page on <a href="CONTRIBUTING.md">contributing</a> and then open a pull request!</p>
+<h2>Reference material</h2>
+<p>If you know of any particularly useful blog posts, talks, slides, etc. that belong in this list, please open a pull request!</p>
+<ul>
+<li><a href="https://docs.influxdata.com/influxdb/latest/">Official documentation</a></li>
+<li>InfluxDB in IoT world. <a href="https://www.easyitblog.info/2017/11/10/influxdb-and-grafana-fighting-together-with-iot-data-attack/">Part 1: Introduction</a> | <a href="https://www.easyitblog.info/2017/11/14/influxdb-in-iot-world-aws-part-2/">Part 2: Hosting and scaling on AWS</a> | <a href="https://www.easyitblog.info/2017/11/26/influxdb-in-iot-world-making-it-production-ready-part-3/">Part 3: Plotting graphs using Grafana</a></li>
+</ul>
+<h2>Client libraries</h2>
+<h3>Official</h3>
+<ul>
+<li><a href="https://github.com/influxdata/influxdb-csharp">C#</a> - A .NET library for efficiently sending points to InfluxDB</li>
+<li><a href="https://github.com/influxdata/influxdb1-client">Go</a> - Go client for InfluxDB 1.x</li>
+<li><a href="https://github.com/influxdata/influxdb-java">Java</a> - Java client for InfluxDB</li>
+<li><a href="https://github.com/influxdata/influxdb-php">PHP</a> - PHP client for InfluxDB</li>
+<li><a href="https://github.com/influxdata/influxdb-python">Python</a> - Python client for InfluxDB</li>
+<li><a href="https://github.com/influxdata/influxdb-rails">Rails</a> - Ruby on Rails bindings to automatically write metrics into InfluxDB</li>
+<li><a href="https://github.com/influxdata/influxdb-ruby">Ruby</a> - Ruby client for InfluxDB</li>
+</ul>
+<h3>Unofficial</h3>
+<ul>
+<li><a href="https://github.com/olauzon/capacitor">capacitor</a> - A Clojure client for InfluxDB</li>
+<li><a href="https://github.com/mmaul/cl-influxdb">cl-influxdb</a> - Common Lisp interface to the Time Series Database InfluxDB</li>
+<li><a href="https://github.com/gossiperl/erflux">erflux</a> - InfluxDB client for Erlang</li>
+<li><a href="https://github.com/lexmag/fluxter">fluxter</a> - An InfluxDB writer for Elixir</li>
+<li><a href="https://github.com/gobwas/influent">influent</a> - InfluxDB Javascript driver</li>
+<li><a href="https://github.com/gobwas/influent.rs">influent.rs</a> - InfluxDB Rust driver</li>
+<li><a href="https://github.com/tobiasschuerg/InfluxDB-Client-for-Arduino">InfluxDB-Client-for-Arduino</a> - Arduino client for InfluxDB</li>
+<li><a href="https://github.com/johanvandenbroek/InfluxDB-Client-LabVIEW">InfluxDB-Client-LabVIEW</a> - LabVIEW client for InfluxDB</li>
+<li><a href="https://github.com/d-led/influxdb-cpp-rest">influxdb-cpp-rest</a> - A C++ InfluxDB client with a batching async interface</li>
+<li><a href="https://github.com/maoe/influxdb-haskell">influxdb-haskell</a> - Haskell client library for InfluxDB</li>
+<li><a href="https://github.com/ziyasal/InfluxDB.Net">InfluxDB.NET</a> - .NET client for InfluxDB</li>
+<li><a href="https://github.com/corley/influxdb-php-sdk">InfluxDB PHP SDK</a> - UDP/IP or HTTP adapters for read and write data</li>
+<li><a href="https://github.com/dleutnant/influxdbr">influxdbr</a> - R library for InfluxDB</li>
+<li><a href="https://github.com/mneudert/instream">instream</a> - InfluxDB driver for Elixir</li>
+<li><a href="https://github.com/node-influx/node-influx">node-influx</a> - InfluxDB Node.js Client</li>
+<li><a href="https://github.com/mediocre/node-influx-udp">node-influx-udp</a> - Write to InfluxDB using its UDP interface</li>
+<li><a href="https://github.com/paulgoldbaum/scala-influxdb-client">scala-influxdb-client</a> - Asynchronous InfluxDB client for Scala</li>
+</ul>
+<h2>Collecting data into InfluxDB</h2>
+<h3>Projects</h3>
+<h4>Dedicated</h4>
+<p>Tools whose primary or sole purpose is to feed data into InfluxDB.</p>
+<ul>
+<li><a href="https://github.com/CorpGlory/accelerometer2influx">accelerometer2influx</a> - Android application that takes the x-y-z axis metrics from your phone accelerometer and sends the data to InfluxDB.</li>
+<li><a href="https://github.com/abrander/agento">agento</a> - Client/server collecting near realtime metrics from Linux hosts</li>
+<li><a href="https://github.com/ccpgames/aggregateD">aggregateD</a> - A <a href="https://docs.datadoghq.com/guides/dogstatsd/">dogstatsD</a> inspired metrics and event aggregation daemon for InfluxDB</li>
+<li><a href="https://github.com/FaradayRF/aprs2influxdb">aprs2influxdb</a> - Interfaces ham radio APRS-IS servers and saves packet data into an influxdb database</li>
+<li><a href="https://github.com/att-innovate/charmander">Charmander</a> - Charmander is a lab environment for measuring and analyzing resource-scheduling algorithms</li>
+<li><a href="https://github.com/chrissnell/gopherwx">gopherwx</a> - a service that pulls live weather data from a Davis Instruments Vantage Pro2 station and stores it in InfluxDB</li>
+<li><a href="https://github.com/influxdata/grade">grade</a> - Track Go benchmark performance over time by storing results in InfluxDB</li>
+<li><a href="https://github.com/poxet/Influx-Capacitor">Influx-Capacitor</a> - Influx-Capacitor collects metrics from windows machines using Performance Counters. Data is sent to influxDB to be viewable by grafana</li>
+<li><a href="https://github.com/vsavornin/Influxdb-Powershell">Influxdb-Powershell</a> - Powershell script to send Windows Performance counters to an InfluxDB Server</li>
+<li><a href="https://github.com/codersaur/SmartThings/tree/master/smartapps/influxdb-logger">influxdb-logger</a> - SmartApp to log <a href="https://www.smartthings.com/">SmartThings</a> device attributes to an InfluxDB database</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>awesome-influxdb <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A curated list of awesome projects, libraries, tools, etc. related to <a href="https://www.influxdata.com/">InfluxDB</a>.
+This list focuses on libraries, tools, etc. supporting InfluxDB version 1.0 and up.</p>
+<p>Want to make this list better?
+Take a look at our page on <a href="CONTRIBUTING.md">contributing</a> and then open a pull request!</p>
+<h2>Reference material</h2>
+<p>If you know of any particularly useful blog posts, talks, slides, etc. that belong in this list, please open a pull request!</p>
+<ul>
+<li><a href="https://docs.influxdata.com/influxdb/latest/">Official documentation</a></li>
+<li>InfluxDB in IoT world. <a href="https://www.easyitblog.info/2017/11/10/influxdb-and-grafana-fighting-together-with-iot-data-attack/">Part 1: Introduction</a> | <a href="https://www.easyitblog.info/2017/11/14/influxdb-in-iot-world-aws-part-2/">Part 2: Hosting and scaling on AWS</a> | <a href="https://www.easyitblog.info/2017/11/26/influxdb-in-iot-world-making-it-production-ready-part-3/">Part 3: Plotting graphs using Grafana</a></li>
+</ul>
+<h2>Client libraries</h2>
+<h3>Official</h3>
+<ul>
+<li><a href="https://github.com/influxdata/influxdb-csharp">C#</a> - A .NET library for efficiently sending points to InfluxDB</li>
+<li><a href="https://github.com/influxdata/influxdb1-client">Go</a> - Go client for InfluxDB 1.x</li>
+<li><a href="https://github.com/influxdata/influxdb-java">Java</a> - Java client for InfluxDB</li>
+<li><a href="https://github.com/influxdata/influxdb-php">PHP</a> - PHP client for InfluxDB</li>
+<li><a href="https://github.com/influxdata/influxdb-python">Python</a> - Python client for InfluxDB</li>
+<li><a href="https://github.com/influxdata/influxdb-rails">Rails</a> - Ruby on Rails bindings to automatically write metrics into InfluxDB</li>
+<li><a href="https://github.com/influxdata/influxdb-ruby">Ruby</a> - Ruby client for InfluxDB</li>
+</ul>
+<h3>Unofficial</h3>
+<ul>
+<li><a href="https://github.com/olauzon/capacitor">capacitor</a> - A Clojure client for InfluxDB</li>
+<li><a href="https://github.com/mmaul/cl-influxdb">cl-influxdb</a> - Common Lisp interface to the Time Series Database InfluxDB</li>
+<li><a href="https://github.com/gossiperl/erflux">erflux</a> - InfluxDB client for Erlang</li>
+<li><a href="https://github.com/lexmag/fluxter">fluxter</a> - An InfluxDB writer for Elixir</li>
+<li><a href="https://github.com/gobwas/influent">influent</a> - InfluxDB Javascript driver</li>
+<li><a href="https://github.com/gobwas/influent.rs">influent.rs</a> - InfluxDB Rust driver</li>
+<li><a href="https://github.com/tobiasschuerg/InfluxDB-Client-for-Arduino">InfluxDB-Client-for-Arduino</a> - Arduino client for InfluxDB</li>
+<li><a href="https://github.com/johanvandenbroek/InfluxDB-Client-LabVIEW">InfluxDB-Client-LabVIEW</a> - LabVIEW client for InfluxDB</li>
+<li><a href="https://github.com/d-led/influxdb-cpp-rest">influxdb-cpp-rest</a> - A C++ InfluxDB client with a batching async interface</li>
+<li><a href="https://github.com/maoe/influxdb-haskell">influxdb-haskell</a> - Haskell client library for InfluxDB</li>
+<li><a href="https://github.com/ziyasal/InfluxDB.Net">InfluxDB.NET</a> - .NET client for InfluxDB</li>
+<li><a href="https://github.com/corley/influxdb-php-sdk">InfluxDB PHP SDK</a> - UDP/IP or HTTP adapters for read and write data</li>
+<li><a href="https://github.com/dleutnant/influxdbr">influxdbr</a> - R library for InfluxDB</li>
+<li><a href="https://github.com/mneudert/instream">instream</a> - InfluxDB driver for Elixir</li>
+<li><a href="https://github.com/node-influx/node-influx">node-influx</a> - InfluxDB Node.js Client</li>
+<li><a href="https://github.com/mediocre/node-influx-udp">node-influx-udp</a> - Write to InfluxDB using its UDP interface</li>
+<li><a href="https://github.com/paulgoldbaum/scala-influxdb-client">scala-influxdb-client</a> - Asynchronous InfluxDB client for Scala</li>
+</ul>
+<h2>Collecting data into InfluxDB</h2>
+<h3>Projects</h3>
+<h4>Dedicated</h4>
+<p>Tools whose primary or sole purpose is to feed data into InfluxDB.</p>
+<ul>
+<li><a href="https://github.com/CorpGlory/accelerometer2influx">accelerometer2influx</a> - Android application that takes the x-y-z axis metrics from your phone accelerometer and sends the data to InfluxDB.</li>
+<li><a href="https://github.com/abrander/agento">agento</a> - Client/server collecting near realtime metrics from Linux hosts</li>
+<li><a href="https://github.com/ccpgames/aggregateD">aggregateD</a> - A <a href="https://docs.datadoghq.com/guides/dogstatsd/">dogstatsD</a> inspired metrics and event aggregation daemon for InfluxDB</li>
+<li><a href="https://github.com/FaradayRF/aprs2influxdb">aprs2influxdb</a> - Interfaces ham radio APRS-IS servers and saves packet data into an influxdb database</li>
+<li><a href="https://github.com/att-innovate/charmander">Charmander</a> - Charmander is a lab environment for measuring and analyzing resource-scheduling algorithms</li>
+<li><a href="https://github.com/chrissnell/gopherwx">gopherwx</a> - a service that pulls live weather data from a Davis Instruments Vantage Pro2 station and stores it in InfluxDB</li>
+<li><a href="https://github.com/influxdata/grade">grade</a> - Track Go benchmark performance over time by storing results in InfluxDB</li>
+<li><a href="https://github.com/poxet/Influx-Capacitor">Influx-Capacitor</a> - Influx-Capacitor collects metrics from windows machines using Performance Counters. Data is sent to influxDB to be viewable by grafana</li>
+<li><a href="https://github.com/vsavornin/Influxdb-Powershell">Influxdb-Powershell</a> - Powershell script to send Windows Performance counters to an InfluxDB Server</li>
+<li><a href="https://github.com/codersaur/SmartThings/tree/master/smartapps/influxdb-logger">influxdb-logger</a> - SmartApp to log <a href="https://www.smartthings.com/">SmartThings</a> device attributes to an InfluxDB database</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'influxdb_README.md';
 
         fetch(markdownFile)
@@ -48,21 +155,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

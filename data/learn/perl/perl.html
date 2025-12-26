@@ -8,38 +8,265 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hachiojipm Awesome Perl - Awesome List Resources">
-    <title>Hachiojipm Awesome Perl</title>
+    <meta name="description" content="A curated list of awesome Perl resources, including frameworks, libraries and software. Inspired by awesome-go. We also recommend these lists. Task::Kensho...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Perl [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Perl <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A curated list of awesome Perl resources, including frameworks, libraries and software. Inspired by <a href="https://github.com/avelino/awesome-go">awesome-go</a>.</p>
+<h3>Another module list</h3>
+<p>We also recommend these lists.</p>
+<ul>
+<li><a href="https://github.com/EnlightenedPerlOrganisation/task-kensho" title="Task::Kensho">Task::Kensho</a></li>
+<li><a href="https://github.com/thibaultduponchelle/perlres">Perlres - A list of resources about Perl</a></li>
+<li><a href="http://perlmaven.com/perl-based-open-source-products">PerlMaven.com list of Perl Software</a></li>
+<li><a href="https://github.com/eserte/srezic-misc/blob/master/cpan_in_a_nutshell/cpan_in_a_nutshell.pod">Slaven's CPAN in a nutshell</a></li>
+<li>Many Task::** Modules. (ex. Task::Plack, Task::BeLike::<AuthorName>...)</li>
+</ul>
+<h3>Contents</h3>
+<ul>
+<li><a href="#awesome-perl">Awesome Perl</a><ul>
+<li><a href="#args">Args</a></li>
+<li><a href="#audio">Audio</a><ul>
+<li><a href="#DSP">Digital Signal Processing</a></li>
+</ul>
+</li>
+<li><a href="#benchmarks">Benchmarks</a></li>
+<li><a href="#caches">Caches</a></li>
+<li><a href="#class-builder">Class Builder</a></li>
+<li><a href="#cli">CLI</a></li>
+<li><a href="#cloud">Cloud</a></li>
+<li><a href="#cryptography">Cryptography</a></li>
+<li><a href="#commercial-webservices">Commercial WebServices</a></li>
+<li><a href="#container">Container</a></li>
+<li><a href="#data-format">Data Format</a></li>
+<li><a href="#database">Database</a></li>
+<li><a href="#database-drivers">Database Drivers</a><ul>
+<li><a href="#relational-databases">Relational Databases</a></li>
+<li><a href="#nosql-databases">NoSQL Databases</a></li>
+</ul>
+</li>
+<li><a href="#date--time">Date &amp; Time</a></li>
+<li><a href="#devices">Devices</a></li>
+<li><a href="#devops-tools">DevOps</a></li>
+<li><a href="#email">Email</a></li>
+<li><a href="#event-loops">Event Loops</a></li>
+<li><a href="#exception-handling">Exception Handling</a></li>
+<li><a href="#dom-manipulation">DOM Manipulation</a></li>
+<li><a href="#file-manipulation">File Manipulation</a></li>
+<li><a href="#form-frameworks">Form Frameworks</a></li>
+<li><a href="#images">Images</a></li>
+<li><a href="#list-manipulation">List Manipulation</a></li>
+<li><a href="#logging">Logging</a></li>
+<li><a href="#module-development">Module Development</a></li>
+<li><a href="#network">Network</a></li>
+<li><a href="#orm">ORM</a></li>
+<li><a href="#package-management">Package Management</a></li>
+<li><a href="#processes-and-threads">Processes and Threads</a></li>
+<li><a href="#profiling">Profiling</a></li>
+<li><a href="#protocol">Protocol</a></li>
+<li><a href="#queueing">Queueing</a></li>
+<li><a href="#rest-frameworks">REST Frameworks</a></li>
+<li><a href="#sciencenumerics">Science/Numerics</a></li>
+<li><a href="#stream-manipulation">Stream Manipulation</a></li>
+<li><a href="#template-engines">Template Engines</a></li>
+<li><a href="#testing">Testing</a><ul>
+<li><a href="#testing-frameworks">Testing Frameworks</a></li>
+<li><a href="#test-double">Test Double</a></li>
+<li><a href="#coverage">Coverage</a></li>
+</ul>
+</li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#type-checking">Type Checking</a></li>
+<li><a href="#video">Video</a></li>
+<li><a href="#web-frameworks">Web Frameworks</a><ul>
+<li><a href="#middlewares">Middlewares</a></li>
+</ul>
+</li>
+<li><a href="#web-frameworks-like">Web Frameworks-Like</a></li>
+<li><a href="#web-scraping">Web Scraping</a></li>
+<li><a href="#Network-Security">Network Security</a></li>
+<li><a href="#Metadata-Forensics">Digital Forensics</a></li>
+<li><a href="#Reverse-Engineering">Reverse Engineering</a></li>
+</ul>
+</li>
+</ul>
+<h2>Args</h2>
+<p><em>Libraries for argument manifestation and validation.</em></p>
+<ul>
+<li><a href="https://metacpan.org/pod/Data::Validator">Data::Validator</a> - Rule based validator on type constraint system.</li>
+<li><a href="https://metacpan.org/pod/Params::Util">Params::Util</a> - Simple, compact and correct param-checking functions.</li>
+<li><a href="https://metacpan.org/pod/Params::ValidationCompiler">Params::ValidationCompiler</a> - Validate method/function parameters.</li>
+<li><a href="https://metacpan.org/pod/Smart::Args">Smart::Args</a></li>
+</ul>
+<h2>Audio</h2>
+<ul>
+<li><a href="https://metacpan.org/pod/Audio::CD">Audio::CD</a> - Interface to libcdaudio (cd + cddb)</li>
+<li><a href="https://metacpan.org/pod/Audio::Wav">Audio::Wav</a> - Modules for reading &amp; writing Microsoft WAV files.</li>
+<li><a href="https://metacpan.org/pod/Audio::SndFile">Audio::SndFile</a> - Perl library for  reading and writing  sound files</li>
+<li><a href="https://metacpan.org/pod/Audio::Ao">Audio::Ao</a> - A Perl wrapper for the Ao audio library</li>
+<li><a href="https://metacpan.org/pod/MIDI::ALSA">MIDI::ALSA</a> - the perl ALSA library, plus some interface functions</li>
+</ul>
+<h3>DSP</h3>
+<ul>
+<li><a href="https://metacpan.org/pod/Audio::Analyzer">Audio::Analyzer</a> - Demodulate Audio through  FFT and perl!</li>
+<li><a href="https://metacpan.org/pod/Audio::Analyzer::ToneDetect">Audio::Analyzer::ToneDetect</a> - Detect freq of tones in an audio file or stream</li>
+</ul>
+<h2>Benchmarks</h2>
+<p><em>Libraries for benchmarking</em></p>
+<ul>
+<li><a href="https://metacpan.org/pod/Benchmark">Benchmark</a></li>
+<li><a href="https://metacpan.org/pod/Dumbbench">Dumbbench</a></li>
+<li><a href="https://metacpan.org/pod/Parallel::Benchmark">Parallel::Benchmark</a> - Benchmark in multiprocesses</li>
+</ul>
+<h2>Caches</h2>
+<p><em>Libraries to talk to Cache Softwares</em></p>
+<ul>
+<li><a href="https://metacpan.org/pod/CHI">CHI</a> - Unified cache handling interface, think DBI for caches</li>
+<li><a href="https://metacpan.org/pod/CHI::Driver::DBI">CHI::Driver::DBI</a> - DBI driver for CHI</li>
+<li><a href="https://metacpan.org/pod/CHI::Driver::DBIC">CHI::Driver::DBIC</a> - DBIx::Class driver for CHI</li>
+<li><a href="https://metacpan.org/pod/CHI::Driver::Memcached">CHI::Driver::Memcached</a> - Memcached driver for CHI</li>
+<li><a href="https://metacpan.org/pod/CHI::Driver::MongoDB">CHI::Driver::MongoDB</a> - MongoDB driver for CHI</li>
+<li><a href="https://metacpan.org/pod/CHI::Driver::Redis">CHI::Driver::Redis</a> - Redis driver for CHI</li>
+<li><a href="https://metacpan.org/pod/Catalyst::Plugin::Session::Store::CHI">Catalyst::Plugin::Session::Store::CHI</a> -  Use CHI module to handle storage backend for session data</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Perl <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A curated list of awesome Perl resources, including frameworks, libraries and software. Inspired by <a href="https://github.com/avelino/awesome-go">awesome-go</a>.</p>
+<h3>Another module list</h3>
+<p>We also recommend these lists.</p>
+<ul>
+<li><a href="https://github.com/EnlightenedPerlOrganisation/task-kensho" title="Task::Kensho">Task::Kensho</a></li>
+<li><a href="https://github.com/thibaultduponchelle/perlres">Perlres - A list of resources about Perl</a></li>
+<li><a href="http://perlmaven.com/perl-based-open-source-products">PerlMaven.com list of Perl Software</a></li>
+<li><a href="https://github.com/eserte/srezic-misc/blob/master/cpan_in_a_nutshell/cpan_in_a_nutshell.pod">Slaven's CPAN in a nutshell</a></li>
+<li>Many Task::** Modules. (ex. Task::Plack, Task::BeLike::<AuthorName>...)</li>
+</ul>
+<h3>Contents</h3>
+<ul>
+<li><a href="#awesome-perl">Awesome Perl</a><ul>
+<li><a href="#args">Args</a></li>
+<li><a href="#audio">Audio</a><ul>
+<li><a href="#DSP">Digital Signal Processing</a></li>
+</ul>
+</li>
+<li><a href="#benchmarks">Benchmarks</a></li>
+<li><a href="#caches">Caches</a></li>
+<li><a href="#class-builder">Class Builder</a></li>
+<li><a href="#cli">CLI</a></li>
+<li><a href="#cloud">Cloud</a></li>
+<li><a href="#cryptography">Cryptography</a></li>
+<li><a href="#commercial-webservices">Commercial WebServices</a></li>
+<li><a href="#container">Container</a></li>
+<li><a href="#data-format">Data Format</a></li>
+<li><a href="#database">Database</a></li>
+<li><a href="#database-drivers">Database Drivers</a><ul>
+<li><a href="#relational-databases">Relational Databases</a></li>
+<li><a href="#nosql-databases">NoSQL Databases</a></li>
+</ul>
+</li>
+<li><a href="#date--time">Date &amp; Time</a></li>
+<li><a href="#devices">Devices</a></li>
+<li><a href="#devops-tools">DevOps</a></li>
+<li><a href="#email">Email</a></li>
+<li><a href="#event-loops">Event Loops</a></li>
+<li><a href="#exception-handling">Exception Handling</a></li>
+<li><a href="#dom-manipulation">DOM Manipulation</a></li>
+<li><a href="#file-manipulation">File Manipulation</a></li>
+<li><a href="#form-frameworks">Form Frameworks</a></li>
+<li><a href="#images">Images</a></li>
+<li><a href="#list-manipulation">List Manipulation</a></li>
+<li><a href="#logging">Logging</a></li>
+<li><a href="#module-development">Module Development</a></li>
+<li><a href="#network">Network</a></li>
+<li><a href="#orm">ORM</a></li>
+<li><a href="#package-management">Package Management</a></li>
+<li><a href="#processes-and-threads">Processes and Threads</a></li>
+<li><a href="#profiling">Profiling</a></li>
+<li><a href="#protocol">Protocol</a></li>
+<li><a href="#queueing">Queueing</a></li>
+<li><a href="#rest-frameworks">REST Frameworks</a></li>
+<li><a href="#sciencenumerics">Science/Numerics</a></li>
+<li><a href="#stream-manipulation">Stream Manipulation</a></li>
+<li><a href="#template-engines">Template Engines</a></li>
+<li><a href="#testing">Testing</a><ul>
+<li><a href="#testing-frameworks">Testing Frameworks</a></li>
+<li><a href="#test-double">Test Double</a></li>
+<li><a href="#coverage">Coverage</a></li>
+</ul>
+</li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#type-checking">Type Checking</a></li>
+<li><a href="#video">Video</a></li>
+<li><a href="#web-frameworks">Web Frameworks</a><ul>
+<li><a href="#middlewares">Middlewares</a></li>
+</ul>
+</li>
+<li><a href="#web-frameworks-like">Web Frameworks-Like</a></li>
+<li><a href="#web-scraping">Web Scraping</a></li>
+<li><a href="#Network-Security">Network Security</a></li>
+<li><a href="#Metadata-Forensics">Digital Forensics</a></li>
+<li><a href="#Reverse-Engineering">Reverse Engineering</a></li>
+</ul>
+</li>
+</ul>
+<h2>Args</h2>
+<p><em>Libraries for argument manifestation and validation.</em></p>
+<ul>
+<li><a href="https://metacpan.org/pod/Data::Validator">Data::Validator</a> - Rule based validator on type constraint system.</li>
+<li><a href="https://metacpan.org/pod/Params::Util">Params::Util</a> - Simple, compact and correct param-checking functions.</li>
+<li><a href="https://metacpan.org/pod/Params::ValidationCompiler">Params::ValidationCompiler</a> - Validate method/function parameters.</li>
+<li><a href="https://metacpan.org/pod/Smart::Args">Smart::Args</a></li>
+</ul>
+<h2>Audio</h2>
+<ul>
+<li><a href="https://metacpan.org/pod/Audio::CD">Audio::CD</a> - Interface to libcdaudio (cd + cddb)</li>
+<li><a href="https://metacpan.org/pod/Audio::Wav">Audio::Wav</a> - Modules for reading &amp; writing Microsoft WAV files.</li>
+<li><a href="https://metacpan.org/pod/Audio::SndFile">Audio::SndFile</a> - Perl library for  reading and writing  sound files</li>
+<li><a href="https://metacpan.org/pod/Audio::Ao">Audio::Ao</a> - A Perl wrapper for the Ao audio library</li>
+<li><a href="https://metacpan.org/pod/MIDI::ALSA">MIDI::ALSA</a> - the perl ALSA library, plus some interface functions</li>
+</ul>
+<h3>DSP</h3>
+<ul>
+<li><a href="https://metacpan.org/pod/Audio::Analyzer">Audio::Analyzer</a> - Demodulate Audio through  FFT and perl!</li>
+<li><a href="https://metacpan.org/pod/Audio::Analyzer::ToneDetect">Audio::Analyzer::ToneDetect</a> - Detect freq of tones in an audio file or stream</li>
+</ul>
+<h2>Benchmarks</h2>
+<p><em>Libraries for benchmarking</em></p>
+<ul>
+<li><a href="https://metacpan.org/pod/Benchmark">Benchmark</a></li>
+<li><a href="https://metacpan.org/pod/Dumbbench">Dumbbench</a></li>
+<li><a href="https://metacpan.org/pod/Parallel::Benchmark">Parallel::Benchmark</a> - Benchmark in multiprocesses</li>
+</ul>
+<h2>Caches</h2>
+<p><em>Libraries to talk to Cache Softwares</em></p>
+<ul>
+<li><a href="https://metacpan.org/pod/CHI">CHI</a> - Unified cache handling interface, think DBI for caches</li>
+<li><a href="https://metacpan.org/pod/CHI::Driver::DBI">CHI::Driver::DBI</a> - DBI driver for CHI</li>
+<li><a href="https://metacpan.org/pod/CHI::Driver::DBIC">CHI::Driver::DBIC</a> - DBIx::Class driver for CHI</li>
+<li><a href="https://metacpan.org/pod/CHI::Driver::Memcached">CHI::Driver::Memcached</a> - Memcached driver for CHI</li>
+<li><a href="https://metacpan.org/pod/CHI::Driver::MongoDB">CHI::Driver::MongoDB</a> - MongoDB driver for CHI</li>
+<li><a href="https://metacpan.org/pod/CHI::Driver::Redis">CHI::Driver::Redis</a> - Redis driver for CHI</li>
+<li><a href="https://metacpan.org/pod/Catalyst::Plugin::Session::Store::CHI">Catalyst::Plugin::Session::Store::CHI</a> -  Use CHI module to handle storage backend for session data</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'perl_README.md';
 
         fetch(markdownFile)
@@ -48,21 +275,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

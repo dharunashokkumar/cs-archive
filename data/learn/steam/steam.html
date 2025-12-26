@@ -8,38 +8,59 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rahulbircodes Awesome Steam - Awesome List Resources">
-    <title>Rahulbircodes Awesome Steam</title>
+    <meta name="description" content="An awesome list of high quality __science, technology, engineering, art, and math__ (STEAM) resources to help aid students in their classes or to provide...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome STEAM [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome STEAM <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p><a href="https://awesomesteam.org/about/"><img alt="AwesomeSTEAM illustrations" src="https://user-images.githubusercontent.com/30447336/200147061-5f2b8f0a-de03-453e-8d98-aa3ebbbcfb88.png" /></a></p>
+<p>An awesome list of high quality <strong>science, technology, engineering, art, and math</strong> (<a href="https://en.wikipedia.org/wiki/STEAM_fields">STEAM</a>) resources to help aid students in their classes or to provide curious minds with a starting point into numerous topics. Wanna contribute? Just send a PR!</p>
+<p>Check out our website at <a href="https://awesomesteam.org">awesomesteam.org</a> where this content is also made available.</p>
+<p>We were recently featured on the news! Check out <a href="https://www.edsurge.com/news/2023-04-25-this-student-saw-teachers-lacked-a-place-to-share-digital-resources-so-he-created-one">This student saw teachers lacked a place to share digital resources so he created one</a>.</p>
+<p><strong>Click one of the table of content sections below to see the corresponding list of resources.</strong></p>
+<hr />
+<h2>Content</h2>
+<ul>
+<li><a href="https://github.com/RahulBirCodes/awesome-steam/blob/main/content/science/index.md">Science</a></li>
+<li><a href="https://github.com/RahulBirCodes/awesome-steam/blob/main/content/technology/index.md">Technology</a></li>
+<li><a href="https://github.com/RahulBirCodes/awesome-steam/blob/main/content/engineering/index.md">Engineering</a></li>
+<li><a href="https://github.com/RahulBirCodes/awesome-steam/blob/main/content/arts/index.md">Arts</a></li>
+<li><a href="https://github.com/RahulBirCodes/awesome-steam/blob/main/content/mathematics/index.md">Mathematics</a></li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome STEAM <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p><a href="https://awesomesteam.org/about/"><img alt="AwesomeSTEAM illustrations" src="https://user-images.githubusercontent.com/30447336/200147061-5f2b8f0a-de03-453e-8d98-aa3ebbbcfb88.png" /></a></p>
+<p>An awesome list of high quality <strong>science, technology, engineering, art, and math</strong> (<a href="https://en.wikipedia.org/wiki/STEAM_fields">STEAM</a>) resources to help aid students in their classes or to provide curious minds with a starting point into numerous topics. Wanna contribute? Just send a PR!</p>
+<p>Check out our website at <a href="https://awesomesteam.org">awesomesteam.org</a> where this content is also made available.</p>
+<p>We were recently featured on the news! Check out <a href="https://www.edsurge.com/news/2023-04-25-this-student-saw-teachers-lacked-a-place-to-share-digital-resources-so-he-created-one">This student saw teachers lacked a place to share digital resources so he created one</a>.</p>
+<p><strong>Click one of the table of content sections below to see the corresponding list of resources.</strong></p>
+<hr />
+<h2>Content</h2>
+<ul>
+<li><a href="https://github.com/RahulBirCodes/awesome-steam/blob/main/content/science/index.md">Science</a></li>
+<li><a href="https://github.com/RahulBirCodes/awesome-steam/blob/main/content/technology/index.md">Technology</a></li>
+<li><a href="https://github.com/RahulBirCodes/awesome-steam/blob/main/content/engineering/index.md">Engineering</a></li>
+<li><a href="https://github.com/RahulBirCodes/awesome-steam/blob/main/content/arts/index.md">Arts</a></li>
+<li><a href="https://github.com/RahulBirCodes/awesome-steam/blob/main/content/mathematics/index.md">Mathematics</a></li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'steam_README.md';
 
         fetch(markdownFile)
@@ -48,21 +69,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

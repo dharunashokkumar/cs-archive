@@ -8,38 +8,135 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ashishb Android Security Awesome - Awesome List Resources">
-    <title>Ashishb Android Security Awesome</title>
+    <meta name="description" content="!GitHub contributors A collection of Android security-related resources. 1. Tools 1. Academic/Research/Publications/Books 1. Exploits/Vulnerabilities/Bugs 1....">
+    <meta name="robots" content="index, follow">
+    <title>android-security-awesome ![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>android-security-awesome <img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></h1>
+<p><a href="https://github.com/ashishb/android-security-awesome/actions/workflows/validate-links.yml"><img alt="Link Liveness Checker" src="https://github.com/ashishb/android-security-awesome/actions/workflows/validate-links.yml/badge.svg" /></a></p>
+<p><a href="https://github.com/ashishb/android-security-awesome/actions/workflows/lint-shell-script.yaml"><img alt="Lint Shell scripts" src="https://github.com/ashishb/android-security-awesome/actions/workflows/lint-shell-script.yaml/badge.svg" /></a>
+<a href="https://github.com/ashishb/android-security-awesome/actions/workflows/lint-markdown.yaml"><img alt="Lint Markdown" src="https://github.com/ashishb/android-security-awesome/actions/workflows/lint-markdown.yaml/badge.svg" /></a>
+<a href="https://github.com/ashishb/android-security-awesome/actions/workflows/lint-yaml.yaml"><img alt="Lint YAML" src="https://github.com/ashishb/android-security-awesome/actions/workflows/lint-yaml.yaml/badge.svg" /></a>
+<a href="https://github.com/ashishb/android-security-awesome/actions/workflows/lint-github-actions.yaml"><img alt="Lint GitHub Actions" src="https://github.com/ashishb/android-security-awesome/actions/workflows/lint-github-actions.yaml/badge.svg" /></a>
+<img alt="GitHub contributors" src="https://img.shields.io/github/contributors/ashishb/android-security-awesome" /></p>
+<p>A collection of Android security-related resources.</p>
+<ol>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#academic">Academic/Research/Publications/Books</a></li>
+<li><a href="#exploits">Exploits/Vulnerabilities/Bugs</a></li>
+</ol>
+<h2>Tools</h2>
+<h3>Online Analyzers</h3>
+<ol>
+<li><a href="http://andrototal.org/">AndroTotal</a></li>
+<li><a href="https://www.appknox.com/">Appknox</a> - not free</li>
+<li><a href="https://www.virustotal.com/">Virustotal</a> - max 128MB</li>
+<li><a href="http://app-ray.co/">Fraunhofer App-ray</a> - not free</li>
+<li><a href="https://www.nowsecure.com/blog/2016/09/19/announcing-nowsecure-lab-automated/">NowSecure Lab Automated</a> - Enterprise tool for mobile app security testing both Android and iOS mobile apps. Lab Automated features dynamic and static analysis on real devices in the cloud to return results in minutes. Not free</li>
+<li><a href="https://appdetonator.run/">App Detonator</a> - Detonate APK binary to provide source code level details, including app author, signature, build, and manifest information. 3 Analysis/day free quota.</li>
+<li><a href="https://beta.pithus.org/">Pithus</a> - Open-Source APK analyzer. Still in Beta and limited to static analysis for the moment. It is possible to hunt malware with Yara rules. More <a href="https://beta.pithus.org/about/">here</a>.</li>
+<li><a href="https://oversecured.com/">Oversecured</a> - Enterprise vulnerability scanner for Android and iOS apps; it offers app owners and developers the ability to secure each new version of a mobile app by integrating Oversecured into the development process. Not free.</li>
+<li><a href="https://appsweep.guardsquare.com/">AppSweep by Guardsquare</a> - Free, fast Android application security testing for developers</li>
+<li><a href="https://koodous.com">Koodous</a> - Performs static/dynamic malware analysis over a vast repository of Android samples and checks them against public and private Yara rules.</li>
+<li><a href="https://www.immuniweb.com/mobile/">Immuniweb</a>. Does an "OWASP Mobile Top 10 Test", "Mobile App Privacy Check", and an application permissions test. The free tier is 4 tests per day, including report after registration</li>
+<li><a href="https://app.any.run/">ANY.RUN</a> - An interactive cloud-based malware analysis platform with support for Android application analysis. Limited free plan available.</li>
+<li>~~<a href="https://malab.bitbaan.com/">BitBaan</a>~~</li>
+<li>~~<a href="http://undroid.av-comparatives.info/">AVC UnDroid</a>~~</li>
+<li>~~<a href="https://amaaas.com">AMAaaS</a> - Free Android Malware Analysis Service. A bare-metal service features static and dynamic analysis for Android applications. A product of <a href="https://malwarepot.com/index.php/AMAaaS">MalwarePot</a>~~.</li>
+<li>~~<a href="https://appcritique.boozallen.com">AppCritique</a> - Upload your Android APKs and receive comprehensive free security assessments~~</li>
+<li>~~<a href="https://apkscan.nviso.be/">NVISO ApkScan</a> - sunsetting on Oct 31, 2019~~</li>
+<li>~~<a href="http://www.mobilemalware.com.br/analysis/index_en.php">Mobile Malware Sandbox</a>~~</li>
+<li>~~<a href="https://appscan.bluemix.net/mobileAnalyzer">IBM Security AppScan Mobile Analyzer</a> - not free~~</li>
+<li>~~<a href="https://www.visualthreat.com/">Visual Threat</a> - no longer an Android app analyzer~~</li>
+<li>~~<a href="http://tracedroid.few.vu.nl/">Tracedroid</a>~~</li>
+<li>~~<a href="https://habo.qq.com/">habo</a> - 10/day~~</li>
+<li>~~<a href="http://copperdroid.isg.rhul.ac.uk/copperdroid/">CopperDroid</a>~~</li>
+<li>~~<a href="http://sanddroid.xjtu.edu.cn/">SandDroid</a>~~</li>
+<li>~~<a href="http://www.android-permissions.org/">Stowaway</a>~~</li>
+<li>~~<a href="http://anubis.iseclab.org/">Anubis</a>~~</li>
+<li>~~<a href="http://www.mobile-app-insight.org">Mobile app insight</a>~~</li>
+<li>~~<a href="http://mobile-sandbox.com">Mobile-Sandbox</a>~~</li>
+<li>~~<a href="http://safe.ijiami.cn/">Ijiami</a>~~</li>
+<li>~~<a href="http://www.comdroid.org/">Comdroid</a>~~</li>
+<li>~~<a href="http://www.androidsandbox.net/">Android Sandbox</a>~~</li>
+<li>~~<a href="http://www.foresafe.com/scan">Foresafe</a>~~</li>
+<li>~~<a href="https://dexter.dexlabs.org/">Dexter</a>~~</li>
+<li>~~<a href="http://www.mobiseclab.org/eacus.jsp">MobiSec Eacus</a>~~</li>
+<li>~~<a href="https://fireeye.ijinshan.com/">Fireeye</a>- max 60MB 15/day~~</li>
+<li>~~<a href="https://approver.talos-sec.com/">approver</a> - Approver  is a fully automated security analysis and risk assessment platform for Android and iOS apps. Not free.~~</li>
+</ol>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>android-security-awesome <img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></h1>
+<p><a href="https://github.com/ashishb/android-security-awesome/actions/workflows/validate-links.yml"><img alt="Link Liveness Checker" src="https://github.com/ashishb/android-security-awesome/actions/workflows/validate-links.yml/badge.svg" /></a></p>
+<p><a href="https://github.com/ashishb/android-security-awesome/actions/workflows/lint-shell-script.yaml"><img alt="Lint Shell scripts" src="https://github.com/ashishb/android-security-awesome/actions/workflows/lint-shell-script.yaml/badge.svg" /></a>
+<a href="https://github.com/ashishb/android-security-awesome/actions/workflows/lint-markdown.yaml"><img alt="Lint Markdown" src="https://github.com/ashishb/android-security-awesome/actions/workflows/lint-markdown.yaml/badge.svg" /></a>
+<a href="https://github.com/ashishb/android-security-awesome/actions/workflows/lint-yaml.yaml"><img alt="Lint YAML" src="https://github.com/ashishb/android-security-awesome/actions/workflows/lint-yaml.yaml/badge.svg" /></a>
+<a href="https://github.com/ashishb/android-security-awesome/actions/workflows/lint-github-actions.yaml"><img alt="Lint GitHub Actions" src="https://github.com/ashishb/android-security-awesome/actions/workflows/lint-github-actions.yaml/badge.svg" /></a>
+<img alt="GitHub contributors" src="https://img.shields.io/github/contributors/ashishb/android-security-awesome" /></p>
+<p>A collection of Android security-related resources.</p>
+<ol>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#academic">Academic/Research/Publications/Books</a></li>
+<li><a href="#exploits">Exploits/Vulnerabilities/Bugs</a></li>
+</ol>
+<h2>Tools</h2>
+<h3>Online Analyzers</h3>
+<ol>
+<li><a href="http://andrototal.org/">AndroTotal</a></li>
+<li><a href="https://www.appknox.com/">Appknox</a> - not free</li>
+<li><a href="https://www.virustotal.com/">Virustotal</a> - max 128MB</li>
+<li><a href="http://app-ray.co/">Fraunhofer App-ray</a> - not free</li>
+<li><a href="https://www.nowsecure.com/blog/2016/09/19/announcing-nowsecure-lab-automated/">NowSecure Lab Automated</a> - Enterprise tool for mobile app security testing both Android and iOS mobile apps. Lab Automated features dynamic and static analysis on real devices in the cloud to return results in minutes. Not free</li>
+<li><a href="https://appdetonator.run/">App Detonator</a> - Detonate APK binary to provide source code level details, including app author, signature, build, and manifest information. 3 Analysis/day free quota.</li>
+<li><a href="https://beta.pithus.org/">Pithus</a> - Open-Source APK analyzer. Still in Beta and limited to static analysis for the moment. It is possible to hunt malware with Yara rules. More <a href="https://beta.pithus.org/about/">here</a>.</li>
+<li><a href="https://oversecured.com/">Oversecured</a> - Enterprise vulnerability scanner for Android and iOS apps; it offers app owners and developers the ability to secure each new version of a mobile app by integrating Oversecured into the development process. Not free.</li>
+<li><a href="https://appsweep.guardsquare.com/">AppSweep by Guardsquare</a> - Free, fast Android application security testing for developers</li>
+<li><a href="https://koodous.com">Koodous</a> - Performs static/dynamic malware analysis over a vast repository of Android samples and checks them against public and private Yara rules.</li>
+<li><a href="https://www.immuniweb.com/mobile/">Immuniweb</a>. Does an "OWASP Mobile Top 10 Test", "Mobile App Privacy Check", and an application permissions test. The free tier is 4 tests per day, including report after registration</li>
+<li><a href="https://app.any.run/">ANY.RUN</a> - An interactive cloud-based malware analysis platform with support for Android application analysis. Limited free plan available.</li>
+<li>~~<a href="https://malab.bitbaan.com/">BitBaan</a>~~</li>
+<li>~~<a href="http://undroid.av-comparatives.info/">AVC UnDroid</a>~~</li>
+<li>~~<a href="https://amaaas.com">AMAaaS</a> - Free Android Malware Analysis Service. A bare-metal service features static and dynamic analysis for Android applications. A product of <a href="https://malwarepot.com/index.php/AMAaaS">MalwarePot</a>~~.</li>
+<li>~~<a href="https://appcritique.boozallen.com">AppCritique</a> - Upload your Android APKs and receive comprehensive free security assessments~~</li>
+<li>~~<a href="https://apkscan.nviso.be/">NVISO ApkScan</a> - sunsetting on Oct 31, 2019~~</li>
+<li>~~<a href="http://www.mobilemalware.com.br/analysis/index_en.php">Mobile Malware Sandbox</a>~~</li>
+<li>~~<a href="https://appscan.bluemix.net/mobileAnalyzer">IBM Security AppScan Mobile Analyzer</a> - not free~~</li>
+<li>~~<a href="https://www.visualthreat.com/">Visual Threat</a> - no longer an Android app analyzer~~</li>
+<li>~~<a href="http://tracedroid.few.vu.nl/">Tracedroid</a>~~</li>
+<li>~~<a href="https://habo.qq.com/">habo</a> - 10/day~~</li>
+<li>~~<a href="http://copperdroid.isg.rhul.ac.uk/copperdroid/">CopperDroid</a>~~</li>
+<li>~~<a href="http://sanddroid.xjtu.edu.cn/">SandDroid</a>~~</li>
+<li>~~<a href="http://www.android-permissions.org/">Stowaway</a>~~</li>
+<li>~~<a href="http://anubis.iseclab.org/">Anubis</a>~~</li>
+<li>~~<a href="http://www.mobile-app-insight.org">Mobile app insight</a>~~</li>
+<li>~~<a href="http://mobile-sandbox.com">Mobile-Sandbox</a>~~</li>
+<li>~~<a href="http://safe.ijiami.cn/">Ijiami</a>~~</li>
+<li>~~<a href="http://www.comdroid.org/">Comdroid</a>~~</li>
+<li>~~<a href="http://www.androidsandbox.net/">Android Sandbox</a>~~</li>
+<li>~~<a href="http://www.foresafe.com/scan">Foresafe</a>~~</li>
+<li>~~<a href="https://dexter.dexlabs.org/">Dexter</a>~~</li>
+<li>~~<a href="http://www.mobiseclab.org/eacus.jsp">MobiSec Eacus</a>~~</li>
+<li>~~<a href="https://fireeye.ijinshan.com/">Fireeye</a>- max 60MB 15/day~~</li>
+<li>~~<a href="https://approver.talos-sec.com/">approver</a> - Approver  is a fully automated security analysis and risk assessment platform for Android and iOS apps. Not free.~~</li>
+</ol>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'android-security_README.md';
 
         fetch(markdownFile)
@@ -48,21 +145,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

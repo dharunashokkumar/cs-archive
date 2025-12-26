@@ -8,38 +8,41 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="30 Seconds 30 Seconds Of Code - Awesome List Resources">
-    <title>30 Seconds 30 Seconds Of Code</title>
+    <meta name="description" content="> Coding articles to level up your development skills">
+    <meta name="robots" content="index, follow">
+    <title>30 Seconds Of Code - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <p><a href="https://30secondsofcode.org/js/p/1"><img alt="Logo" src="/logo.png" /></a></p>
+<h1>30 seconds of code</h1>
+<blockquote>
+<p>Coding articles to level up your development skills</p>
+</blockquote>
+<h3>To be update</h3>
+        </noscript>
+        <div id="dynamic-content">
+            <p><a href="https://30secondsofcode.org/js/p/1"><img alt="Logo" src="/logo.png" /></a></p>
+<h1>30 seconds of code</h1>
+<blockquote>
+<p>Coding articles to level up your development skills</p>
+</blockquote>
+<h3>To be update</h3>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = '30-seconds-of-code_README.md';
 
         fetch(markdownFile)
@@ -48,21 +51,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

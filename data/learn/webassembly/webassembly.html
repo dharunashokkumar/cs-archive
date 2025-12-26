@@ -8,38 +8,195 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Idematos Awesome Webassembly - Awesome List Resources">
-    <title>Idematos Awesome Webassembly</title>
+    <meta name="description" content="A curation of WebAssembly resources, projects, and communities. > WebAssembly (abbreviated Wasm) is a binary instruction format for a stack-based virtual...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome WebAssembly [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome WebAssembly <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat2.svg" /></a></h1>
+<p><a href="https://webassembly.org/"><img src="media/wasm-logo.png" alt="Wasm Logo" align="right" style="height: 120px; width: 120px"></a>
+A curation of WebAssembly resources, projects, and communities. </p>
+<blockquote>
+<p><a href="https://webassembly.org/">WebAssembly</a> (abbreviated Wasm) is a binary instruction format for a stack-based virtual machine. Wasm is designed as a portable compilation target for programming languages, enabling deployment on the web for client and server applications.</p>
+</blockquote>
+<h2>Contents</h2>
+<ul>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#basics">Basics</a></li>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#compilers">Compilers</a></li>
+<li><a href="#runtimes">Runtimes</a></li>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#frameworks">Frameworks</a></li>
+<li><a href="#communities">Communities</a></li>
+</ul>
+<h2>Resources</h2>
+<h3>Basics</h3>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/WebAssembly">WebAssembly MDN</a></li>
+<li><a href="https://webassembly.github.io/spec/">WebAssembly Specification</a></li>
+</ul>
+<h3>Articles</h3>
+<ul>
+<li><a href="https://medium.com/javascript-scene/what-is-webassembly-the-dawn-of-a-new-era-61256ec5a8f6">What is WebAssembly?</a> - Eric Elliott, 2015.</li>
+<li><a href="https://auth0.com/blog/7-things-you-should-know-about-web-assembly/">7 Things You Should Know About WebAssembly</a> - Sebastian Peyrott, 2015.</li>
+<li><a href="https://floooh.github.io/2017/06/09/webassembly-demystified.html">WebAssembly Demystified</a> - Andre Weissflog, 2017.</li>
+<li><a href="https://medium.com/dfinity/why-webassembly-f21967076e4">Why WebAssembly?</a> - Andreas Rossberg, 2018.</li>
+<li><a href="https://medium.com/free-code-camp/webassembly-with-golang-is-fun-b243c0e34f02">The world's easiest introduction to WebAssembly</a> - Martin Olsansky, 2019.</li>
+<li><a href="https://www.sitepoint.com/future-programming-webassembly-life-after-javascript/">The Future of Programming: WebAssembly &amp; Life After JavaScript</a> - Eric Elliott, 2024.</li>
+<li><a href="https://blog.scottlogic.com/ceberhardt/assets/white-papers/the-web-assembles.pdf">The Web Assembles</a> - Chris Price and Colin Eberhardt, 2017.</li>
+<li><a href="https://dlehmann.eu/publications/WasmBench-www2021.pdf">An Empirical Study of Real-World WebAssembly Binaries</a> - Aaron Hilbig, Daniel Lehmann, and Michael Pradel, 2021.</li>
+<li><a href="https://www.usenix.org/system/files/atc19-jangda.pdf">Not So Fast: Analyzing the Performance of WebAssembly vs. Native Code</a> - Abhinav Jangda, Bobby Powers, Emery D. Berger, and Arjun Guha, 2019.</li>
+<li><a href="https://www.usenix.org/system/files/sec22-bosamiya.pdf">Provably-Safe Multilingual Software Sandboxing using WebAssembly</a> - Jay Bosamiya, Wen Shih Lim, and Bryan Parno, 2022.</li>
+<li><a href="https://software-lab.org/publications/asplos2019_Wasabi.pdf">Wasabi: A Framework for Dynamically Analyzing WebAssembly</a> - Daniel Lehmann and Michael Pradel, 2019.</li>
+<li><a href="https://github.com/WebAssembly/spec/blob/main/papers/pldi2017.pdf">Bringing the Web up to Speed with WebAssembly</a> - Andreas Haas, Andreas Rossberg, Derek L. Schuff, Ben L. Titzer, Michael Holman, Dan Gohman, Luke Wagner, Alon Zakai, JF Bastien, 2017.</li>
+</ul>
+<h3>Books</h3>
+<ul>
+<li><a href="https://rustwasm.github.io/docs/book/">Rust and WebAssembly</a> - Open-source book describing how to use Rust and WebAssembly together.</li>
+<li><a href="https://pragprog.com/titles/khrust/programming-webassembly-with-rust/">Programming WebAssembly with Rust</a> - Kevin Hoffman, 2019.</li>
+<li><a href="https://nostarch.com/art-webassembly">The Art of WebAssembly</a> - Rick Battagline, 2021.</li>
+</ul>
+<h3>Videos</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=NhAPPQqKCi8">WebAssembly</a> - Nick Bray, 2015.</li>
+<li><a href="https://www.youtube.com/watch?v=HktWin_LPf4">What is WebAssembly?</a> - Lin Clark, 2017.</li>
+<li><a href="https://www.youtube.com/watch?v=iTrx0BbUXI4">Get Going with WebAssembly</a> - Johan Brandhorst, 2018.</li>
+<li><a href="https://www.youtube.com/watch?v=pBYqen3B2gc">WebAssembly and the Death of JavaScript</a> - Colin Eberhardt, 2018.</li>
+</ul>
+<h2>Projects</h2>
+<h3>Compilers</h3>
+<ul>
+<li><a href="https://emscripten.org/">Emscripten</a> - Compile C and C++ to WebAssembly.</li>
+<li><a href="https://www.assemblyscript.org/">AssemblyScript</a> - TypeScript-like language compiled to WebAssembly.</li>
+<li><a href="https://github.com/WebAssembly/binaryen">Binaryen</a> - Compiler infrastructure for WebAssembly.</li>
+<li><a href="https://tinygo.org/">TinyGo</a> - Go compiler for WebAssembly.</li>
+</ul>
+<h3>Runtimes</h3>
+<ul>
+<li><a href="https://wasmtime.dev/">Wasmtime</a> - Standalone WebAssembly runtime.</li>
+<li><a href="https://github.com/WasmEdge/WasmEdge">WasmEdge</a> - High-performance WebAssembly runtime.</li>
+<li><a href="https://github.com/WAVM/WAVM">WAVM</a> - WebAssembly virtual machine.</li>
+<li><a href="https://github.com/wasm3/wasm3">Wasm3</a> - Small, fast WebAssembly interpreter.</li>
+<li><a href="https://wasmer.io/">Wasmer</a> - WebAssembly runtime for desktop, cloud, and edge.</li>
+</ul>
+<h3>Libraries</h3>
+<ul>
+<li><a href="https://github.com/rustwasm/wasm-bindgen">wasm-bindgen</a> - Interoperability between Rust and JavaScript.</li>
+<li><a href="https://github.com/wasmerio/wasmer-js">wasmer-js</a> - WebAssembly runtime for JavaScript.</li>
+<li><a href="https://github.com/rustwasm/wasm-pack">wasm-pack</a> - Build, test, and publish Rust-generated Wasm.</li>
+<li><a href="https://github.com/WebAssembly/wabt">Wabt</a> - WebAssembly binary tolkit.</li>
+<li><a href="https://github.com/WebAssembly/WASI">WASI</a> - WebAssembly system interface.</li>
+</ul>
+<h3>Tools</h3>
+<ul>
+<li><a href="https://mbebenita.github.io/WasmExplorer/">Wasm Explorer</a> - Visualize and debug WebAssembly binaries.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome WebAssembly <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat2.svg" /></a></h1>
+<p><a href="https://webassembly.org/"><img src="media/wasm-logo.png" alt="Wasm Logo" align="right" style="height: 120px; width: 120px"></a>
+A curation of WebAssembly resources, projects, and communities. </p>
+<blockquote>
+<p><a href="https://webassembly.org/">WebAssembly</a> (abbreviated Wasm) is a binary instruction format for a stack-based virtual machine. Wasm is designed as a portable compilation target for programming languages, enabling deployment on the web for client and server applications.</p>
+</blockquote>
+<h2>Contents</h2>
+<ul>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#basics">Basics</a></li>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#compilers">Compilers</a></li>
+<li><a href="#runtimes">Runtimes</a></li>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#frameworks">Frameworks</a></li>
+<li><a href="#communities">Communities</a></li>
+</ul>
+<h2>Resources</h2>
+<h3>Basics</h3>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/WebAssembly">WebAssembly MDN</a></li>
+<li><a href="https://webassembly.github.io/spec/">WebAssembly Specification</a></li>
+</ul>
+<h3>Articles</h3>
+<ul>
+<li><a href="https://medium.com/javascript-scene/what-is-webassembly-the-dawn-of-a-new-era-61256ec5a8f6">What is WebAssembly?</a> - Eric Elliott, 2015.</li>
+<li><a href="https://auth0.com/blog/7-things-you-should-know-about-web-assembly/">7 Things You Should Know About WebAssembly</a> - Sebastian Peyrott, 2015.</li>
+<li><a href="https://floooh.github.io/2017/06/09/webassembly-demystified.html">WebAssembly Demystified</a> - Andre Weissflog, 2017.</li>
+<li><a href="https://medium.com/dfinity/why-webassembly-f21967076e4">Why WebAssembly?</a> - Andreas Rossberg, 2018.</li>
+<li><a href="https://medium.com/free-code-camp/webassembly-with-golang-is-fun-b243c0e34f02">The world's easiest introduction to WebAssembly</a> - Martin Olsansky, 2019.</li>
+<li><a href="https://www.sitepoint.com/future-programming-webassembly-life-after-javascript/">The Future of Programming: WebAssembly &amp; Life After JavaScript</a> - Eric Elliott, 2024.</li>
+<li><a href="https://blog.scottlogic.com/ceberhardt/assets/white-papers/the-web-assembles.pdf">The Web Assembles</a> - Chris Price and Colin Eberhardt, 2017.</li>
+<li><a href="https://dlehmann.eu/publications/WasmBench-www2021.pdf">An Empirical Study of Real-World WebAssembly Binaries</a> - Aaron Hilbig, Daniel Lehmann, and Michael Pradel, 2021.</li>
+<li><a href="https://www.usenix.org/system/files/atc19-jangda.pdf">Not So Fast: Analyzing the Performance of WebAssembly vs. Native Code</a> - Abhinav Jangda, Bobby Powers, Emery D. Berger, and Arjun Guha, 2019.</li>
+<li><a href="https://www.usenix.org/system/files/sec22-bosamiya.pdf">Provably-Safe Multilingual Software Sandboxing using WebAssembly</a> - Jay Bosamiya, Wen Shih Lim, and Bryan Parno, 2022.</li>
+<li><a href="https://software-lab.org/publications/asplos2019_Wasabi.pdf">Wasabi: A Framework for Dynamically Analyzing WebAssembly</a> - Daniel Lehmann and Michael Pradel, 2019.</li>
+<li><a href="https://github.com/WebAssembly/spec/blob/main/papers/pldi2017.pdf">Bringing the Web up to Speed with WebAssembly</a> - Andreas Haas, Andreas Rossberg, Derek L. Schuff, Ben L. Titzer, Michael Holman, Dan Gohman, Luke Wagner, Alon Zakai, JF Bastien, 2017.</li>
+</ul>
+<h3>Books</h3>
+<ul>
+<li><a href="https://rustwasm.github.io/docs/book/">Rust and WebAssembly</a> - Open-source book describing how to use Rust and WebAssembly together.</li>
+<li><a href="https://pragprog.com/titles/khrust/programming-webassembly-with-rust/">Programming WebAssembly with Rust</a> - Kevin Hoffman, 2019.</li>
+<li><a href="https://nostarch.com/art-webassembly">The Art of WebAssembly</a> - Rick Battagline, 2021.</li>
+</ul>
+<h3>Videos</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=NhAPPQqKCi8">WebAssembly</a> - Nick Bray, 2015.</li>
+<li><a href="https://www.youtube.com/watch?v=HktWin_LPf4">What is WebAssembly?</a> - Lin Clark, 2017.</li>
+<li><a href="https://www.youtube.com/watch?v=iTrx0BbUXI4">Get Going with WebAssembly</a> - Johan Brandhorst, 2018.</li>
+<li><a href="https://www.youtube.com/watch?v=pBYqen3B2gc">WebAssembly and the Death of JavaScript</a> - Colin Eberhardt, 2018.</li>
+</ul>
+<h2>Projects</h2>
+<h3>Compilers</h3>
+<ul>
+<li><a href="https://emscripten.org/">Emscripten</a> - Compile C and C++ to WebAssembly.</li>
+<li><a href="https://www.assemblyscript.org/">AssemblyScript</a> - TypeScript-like language compiled to WebAssembly.</li>
+<li><a href="https://github.com/WebAssembly/binaryen">Binaryen</a> - Compiler infrastructure for WebAssembly.</li>
+<li><a href="https://tinygo.org/">TinyGo</a> - Go compiler for WebAssembly.</li>
+</ul>
+<h3>Runtimes</h3>
+<ul>
+<li><a href="https://wasmtime.dev/">Wasmtime</a> - Standalone WebAssembly runtime.</li>
+<li><a href="https://github.com/WasmEdge/WasmEdge">WasmEdge</a> - High-performance WebAssembly runtime.</li>
+<li><a href="https://github.com/WAVM/WAVM">WAVM</a> - WebAssembly virtual machine.</li>
+<li><a href="https://github.com/wasm3/wasm3">Wasm3</a> - Small, fast WebAssembly interpreter.</li>
+<li><a href="https://wasmer.io/">Wasmer</a> - WebAssembly runtime for desktop, cloud, and edge.</li>
+</ul>
+<h3>Libraries</h3>
+<ul>
+<li><a href="https://github.com/rustwasm/wasm-bindgen">wasm-bindgen</a> - Interoperability between Rust and JavaScript.</li>
+<li><a href="https://github.com/wasmerio/wasmer-js">wasmer-js</a> - WebAssembly runtime for JavaScript.</li>
+<li><a href="https://github.com/rustwasm/wasm-pack">wasm-pack</a> - Build, test, and publish Rust-generated Wasm.</li>
+<li><a href="https://github.com/WebAssembly/wabt">Wabt</a> - WebAssembly binary tolkit.</li>
+<li><a href="https://github.com/WebAssembly/WASI">WASI</a> - WebAssembly system interface.</li>
+</ul>
+<h3>Tools</h3>
+<ul>
+<li><a href="https://mbebenita.github.io/WasmExplorer/">Wasm Explorer</a> - Visualize and debug WebAssembly binaries.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'webassembly_README.md';
 
         fetch(markdownFile)
@@ -48,21 +205,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

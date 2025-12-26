@@ -8,38 +8,197 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Shuaibiyy Awesome Terraform - Awesome List Resources">
-    <title>Shuaibiyy Awesome Terraform</title>
+    <meta name="description" content="> A curated list of resources on HashiCorp's Terraform. > > Your contributions are welcome! Terraform enables you to safely and predictably create, change, and...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Terraform [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) <!-- omit in toc --> - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Terraform <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <!-- omit in toc --></h1>
+<p><a href="https://github.com/shuaibiyy/awesome-tf/actions/workflows/link-checker.yml"><img alt="Link Checker" src="https://github.com/shuaibiyy/awesome-tf/actions/workflows/link-checker.yml/badge.svg" /></a>
+<a href="https://github.com/shuaibiyy/awesome-tf/actions/workflows/misspell.yml"><img alt="Misspell Check" src="https://github.com/shuaibiyy/awesome-tf/actions/workflows/misspell.yml/badge.svg" /></a>
+<a href="https://github.com/shuaibiyy/awesome-tf/actions/workflows/notfound.yml"><img alt="Not Found Check" src="https://github.com/shuaibiyy/awesome-tf/actions/workflows/notfound.yml/badge.svg" /></a></p>
+<blockquote>
+<p>A curated list of resources on <a href="https://www.terraform.io/">HashiCorp's Terraform</a>.
+<a href="https://terraform.io"><img src="https://rawgit.com/shuaibiyy/awesome-terraform/master/terraform.svg" align="right" width="100"></a>
+Your <a href="https://github.com/shuaibiyy/awesome-terraform/blob/master/contributing.md">contributions</a> are welcome!</p>
+</blockquote>
+<p>Terraform enables you to safely and predictably create, change, and improve production infrastructure. It is an open source tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned.</p>
+<h2>Contents <!-- omit in toc --></h2>
+<ul>
+<li><a href="#legend">Legend</a></li>
+<li><a href="#official-resources">Official Resources</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#learning-and-studying">Learning and Studying</a></li>
+<li><a href="#tutorials-and-blog-posts">Tutorials and Blog Posts</a></li>
+<li><a href="#beginner-guides">Beginner Guides</a></li>
+<li><a href="#writing-custom-providers">Writing Custom Providers</a></li>
+<li><a href="#how-to">How-To</a></li>
+<li><a href="#multi-environment-configuration">Multi-Environment Configuration</a></li>
+<li><a href="#azure">Azure</a></li>
+<li><a href="#aws">AWS</a></li>
+<li><a href="#google-cloud">Google Cloud</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#community-modules">Community Modules</a></li>
+<li><a href="#self-hosted-registries">Self-Hosted Registries</a></li>
+<li><a href="#managed-registries">Managed Registries</a></li>
+<li><a href="#providers">Providers</a></li>
+<li><a href="#hashicorp-supported-providers">Hashicorp supported providers</a></li>
+<li><a href="#vendor-supported-providers">Vendor supported providers</a></li>
+<li><a href="#community-providers">Community providers</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#ci">CI</a></li>
+<li><a href="#ide">IDE</a></li>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#boilerplates">Boilerplates</a></li>
+<li><a href="#self-hosted-terraform-platforms">Self-hosted Terraform Platforms</a></li>
+<li><a href="#managed-terraform-platforms-heavy_dollar_sign">Managed Terraform Platforms :heavy_dollar_sign:</a></li>
+<li><a href="#terraform-enterprise-tooling">Terraform Enterprise Tooling</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#editor-plugins">Editor Plugins</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h2>Legend</h2>
+<ul>
+<li>Not compatible with <em>terraform &gt;= 0.12</em> :ghost:</li>
+<li>Abandoned :skull:</li>
+<li>Monetized :heavy_dollar_sign:</li>
+</ul>
+<h2>Official Resources</h2>
+<ul>
+<li><a href="https://www.hashicorp.com/en/blog/products/terraform">Hashicorp Terraform Blog</a></li>
+<li><a href="https://web.archive.org/web/20251001030259/https://developer.hashicorp.com/terraform/intro">Introduction to Terraform</a></li>
+<li><a href="https://web.archive.org/web/20251003045432/https://developer.hashicorp.com/terraform/docs">Terraform Documentation</a></li>
+<li><a href="https://developer.hashicorp.com/terraform/tutorials">Terraform learn</a></li>
+</ul>
+<h2>Community</h2>
+<ul>
+<li><a href="https://www.weekly.tf/">weekly.tf - Terraform Weekly Newsletter</a> - Various news in the Terraform world (projects, announcements, discussions).</li>
+<li><a href="https://github.com/antonbabenko/terraform-docs-as-pdf">Complete Terraform documentation as PDF files (Updated nightly)</a></li>
+<li><a href="https://github.com/terraform-aws-modules">Terraform AWS Modules</a> + <a href="https://github.com/terraform-aws-modules/meta">meta-configurations repository</a></li>
+<li><a href="https://github.com/hashicorp/terraform/issues">Terraform Bug Tracker</a></li>
+<li><a href="https://github.com/terraform-community-modules">Terraform Community Modules</a></li>
+<li><a href="https://twitter.com/i/communities/1501688565884928007">Terraform Twitter Community</a> <!-- markdown-link-check-disable-line --></li>
+<li><a href="https://discuss.hashicorp.com/c/terraform-core/27">Terraform Discuss</a></li>
+<li><a href="https://registry.terraform.io/">Terraform Provider/Module Registry</a></li>
+<li><a href="https://github.com/dohsimpson/terraform-doc-pdf">Terraform PDF Doc</a> :skull:</li>
+<li><a href="https://roadmap.sh/terraform">Terraform Roadmap</a></li>
+<li><a href="https://github.com/antonbabenko/terragrunt-reference-architecture">Terragrunt Reference Architecture</a></li>
+<li>Language-specific communities:</li>
+<li><a href="https://t.me/terraform_ukraine">Telegram (Ukrainian speak community)</a></li>
+</ul>
+<h2>Books</h2>
+<ul>
+<li><a href="https://www.amazon.com/Big-Little-Book-Terraform-Omos-ebook/dp/B07PWYPNX8/">Big Little Book On Terraform</a></li>
+<li><a href="https://www.manning.com/books/bootstrapping-microservices-second-edition">Bootstrapping Microservices with Docker, Kubernetes, and Terraform, Second Edition</a></li>
+<li><a href="https://link.springer.com/book/10.1007/978-1-4842-7328-9">Deep-Dive Terraform on Azure</a></li>
+<li><a href="https://www.amazon.com/Getting-Started-Terraform-production-infrastructure/dp/1788623533/">Getting Started with Terraform, 2nd ed.</a></li>
+<li><a href="https://www.amazon.com/HashiCorp-Infrastructure-Automation-Certification-Guide-ebook/dp/B092KM7LXC/">HashiCorp Infrastructure Automation Certification Guide</a></li>
+<li><a href="https://product.kyobobook.co.kr/detail/S000202478097">IaC starting with Terraform (Korean)</a></li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Terraform <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <!-- omit in toc --></h1>
+<p><a href="https://github.com/shuaibiyy/awesome-tf/actions/workflows/link-checker.yml"><img alt="Link Checker" src="https://github.com/shuaibiyy/awesome-tf/actions/workflows/link-checker.yml/badge.svg" /></a>
+<a href="https://github.com/shuaibiyy/awesome-tf/actions/workflows/misspell.yml"><img alt="Misspell Check" src="https://github.com/shuaibiyy/awesome-tf/actions/workflows/misspell.yml/badge.svg" /></a>
+<a href="https://github.com/shuaibiyy/awesome-tf/actions/workflows/notfound.yml"><img alt="Not Found Check" src="https://github.com/shuaibiyy/awesome-tf/actions/workflows/notfound.yml/badge.svg" /></a></p>
+<blockquote>
+<p>A curated list of resources on <a href="https://www.terraform.io/">HashiCorp's Terraform</a>.
+<a href="https://terraform.io"><img src="https://rawgit.com/shuaibiyy/awesome-terraform/master/terraform.svg" align="right" width="100"></a>
+Your <a href="https://github.com/shuaibiyy/awesome-terraform/blob/master/contributing.md">contributions</a> are welcome!</p>
+</blockquote>
+<p>Terraform enables you to safely and predictably create, change, and improve production infrastructure. It is an open source tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned.</p>
+<h2>Contents <!-- omit in toc --></h2>
+<ul>
+<li><a href="#legend">Legend</a></li>
+<li><a href="#official-resources">Official Resources</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#learning-and-studying">Learning and Studying</a></li>
+<li><a href="#tutorials-and-blog-posts">Tutorials and Blog Posts</a></li>
+<li><a href="#beginner-guides">Beginner Guides</a></li>
+<li><a href="#writing-custom-providers">Writing Custom Providers</a></li>
+<li><a href="#how-to">How-To</a></li>
+<li><a href="#multi-environment-configuration">Multi-Environment Configuration</a></li>
+<li><a href="#azure">Azure</a></li>
+<li><a href="#aws">AWS</a></li>
+<li><a href="#google-cloud">Google Cloud</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#community-modules">Community Modules</a></li>
+<li><a href="#self-hosted-registries">Self-Hosted Registries</a></li>
+<li><a href="#managed-registries">Managed Registries</a></li>
+<li><a href="#providers">Providers</a></li>
+<li><a href="#hashicorp-supported-providers">Hashicorp supported providers</a></li>
+<li><a href="#vendor-supported-providers">Vendor supported providers</a></li>
+<li><a href="#community-providers">Community providers</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#ci">CI</a></li>
+<li><a href="#ide">IDE</a></li>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#boilerplates">Boilerplates</a></li>
+<li><a href="#self-hosted-terraform-platforms">Self-hosted Terraform Platforms</a></li>
+<li><a href="#managed-terraform-platforms-heavy_dollar_sign">Managed Terraform Platforms :heavy_dollar_sign:</a></li>
+<li><a href="#terraform-enterprise-tooling">Terraform Enterprise Tooling</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#editor-plugins">Editor Plugins</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h2>Legend</h2>
+<ul>
+<li>Not compatible with <em>terraform &gt;= 0.12</em> :ghost:</li>
+<li>Abandoned :skull:</li>
+<li>Monetized :heavy_dollar_sign:</li>
+</ul>
+<h2>Official Resources</h2>
+<ul>
+<li><a href="https://www.hashicorp.com/en/blog/products/terraform">Hashicorp Terraform Blog</a></li>
+<li><a href="https://web.archive.org/web/20251001030259/https://developer.hashicorp.com/terraform/intro">Introduction to Terraform</a></li>
+<li><a href="https://web.archive.org/web/20251003045432/https://developer.hashicorp.com/terraform/docs">Terraform Documentation</a></li>
+<li><a href="https://developer.hashicorp.com/terraform/tutorials">Terraform learn</a></li>
+</ul>
+<h2>Community</h2>
+<ul>
+<li><a href="https://www.weekly.tf/">weekly.tf - Terraform Weekly Newsletter</a> - Various news in the Terraform world (projects, announcements, discussions).</li>
+<li><a href="https://github.com/antonbabenko/terraform-docs-as-pdf">Complete Terraform documentation as PDF files (Updated nightly)</a></li>
+<li><a href="https://github.com/terraform-aws-modules">Terraform AWS Modules</a> + <a href="https://github.com/terraform-aws-modules/meta">meta-configurations repository</a></li>
+<li><a href="https://github.com/hashicorp/terraform/issues">Terraform Bug Tracker</a></li>
+<li><a href="https://github.com/terraform-community-modules">Terraform Community Modules</a></li>
+<li><a href="https://twitter.com/i/communities/1501688565884928007">Terraform Twitter Community</a> <!-- markdown-link-check-disable-line --></li>
+<li><a href="https://discuss.hashicorp.com/c/terraform-core/27">Terraform Discuss</a></li>
+<li><a href="https://registry.terraform.io/">Terraform Provider/Module Registry</a></li>
+<li><a href="https://github.com/dohsimpson/terraform-doc-pdf">Terraform PDF Doc</a> :skull:</li>
+<li><a href="https://roadmap.sh/terraform">Terraform Roadmap</a></li>
+<li><a href="https://github.com/antonbabenko/terragrunt-reference-architecture">Terragrunt Reference Architecture</a></li>
+<li>Language-specific communities:</li>
+<li><a href="https://t.me/terraform_ukraine">Telegram (Ukrainian speak community)</a></li>
+</ul>
+<h2>Books</h2>
+<ul>
+<li><a href="https://www.amazon.com/Big-Little-Book-Terraform-Omos-ebook/dp/B07PWYPNX8/">Big Little Book On Terraform</a></li>
+<li><a href="https://www.manning.com/books/bootstrapping-microservices-second-edition">Bootstrapping Microservices with Docker, Kubernetes, and Terraform, Second Edition</a></li>
+<li><a href="https://link.springer.com/book/10.1007/978-1-4842-7328-9">Deep-Dive Terraform on Azure</a></li>
+<li><a href="https://www.amazon.com/Getting-Started-Terraform-production-infrastructure/dp/1788623533/">Getting Started with Terraform, 2nd ed.</a></li>
+<li><a href="https://www.amazon.com/HashiCorp-Infrastructure-Automation-Certification-Guide-ebook/dp/B092KM7LXC/">HashiCorp Infrastructure Automation Certification Guide</a></li>
+<li><a href="https://product.kyobobook.co.kr/detail/S000202478097">IaC starting with Terraform (Korean)</a></li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'terraform_README.md';
 
         fetch(markdownFile)
@@ -48,21 +207,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

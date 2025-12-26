@@ -8,38 +8,189 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aliesbelik Awesome Gatling - Awesome List Resources">
-    <title>Aliesbelik Awesome Gatling</title>
+    <meta name="description" content="A curated collection of resources covering all aspects of load testing using Gatling and related stuff: plugins, integrations, testing techniques, DevOps...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Gatling [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Gatling <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<!--lint ignore double-link match-punctuation -->
+<p><a href="https://gatling.io/"><img src="assets/images/gatling-logo.svg" align="right" width="260" alt="Gatling"></a></p>
+<!--lint ignore double-link-->
+<p>A curated collection of resources covering all aspects of load testing using <a href="https://gatling.io/">Gatling</a> and related stuff: plugins, integrations, testing techniques, DevOps practices, etc.</p>
+<!--lint ignore double-link-->
+<blockquote>
+<p><a href="https://gatling.io/">Gatling</a> is an open-source load and performance testing framework based on Scala, Akka and Netty.</p>
+</blockquote>
+<h2>Contents</h2>
+<ul>
+<li><a href="#official-resources">Official Resources</a></li>
+<li><a href="#getting-started">Getting Started</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#distributed-testing">Distributed Testing</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#plugins">Plugins</a></li>
+<li><a href="#frameworks">Frameworks</a></li>
+<li><a href="#reporting">Reporting</a></li>
+<li><a href="#sandbox">Sandbox</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#ci">CI</a></li>
+<li><a href="#trainings--courses">Trainings &amp; Courses</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#talks">Talks</a></li>
+<li><a href="#video-tutorials">Video Tutorials</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#related">Related</a></li>
+<li><a href="#awesome-lists">Awesome Lists</a></li>
+<li><a href="#other">Other</a></li>
+</ul>
+<h2>Official Resources</h2>
+<!--lint ignore double-link-->
+<ul>
+<li><a href="https://gatling.io/">Homepage</a></li>
+<li><a href="https://docs.gatling.io/">Documentation</a></li>
+<li><a href="https://github.com/gatling/gatling">Source code</a></li>
+</ul>
+<h2>Getting Started</h2>
+<ul>
+<li><a href="https://callistaenterprise.se/blogg/teknik/2014/04/16/a-first-look-at-gatling-a-dsl-based-load-test-tool/">A first look at Gatling, a DSL based load test tool</a></li>
+<li><a href="https://www.thoughtworks.com/insights/blog/gatling-take-your-performance-tests-next-level">Gatling: Take your performance tests to the next level</a></li>
+<li><a href="https://www.james-willett.com/gatling-load-testing-complete-guide/">Load Testing with Gatling. The Complete Guide</a></li>
+</ul>
+<h2>Tutorials</h2>
+<ul>
+<li><a href="https://medium.com/@georgeleung_7777/load-testing-grpc-services-with-gatling-990025c77055">Load testing gRPC services with Gatling</a></li>
+<li><a href="https://callistaenterprise.se/blogg/teknik/2016/11/26/gatling-custom-protocol/">Creating a custom Gatling protocol for AWS Lambda</a></li>
+<li><a href="https://mintbeans.com/load-testing-zeromq-with-gatling/">Load testing ZeroMQ with a custom DSL for Gatling</a></li>
+</ul>
+<h2>Distributed Testing</h2>
+<ul>
+<li><a href="https://debijenkorf.tech/https-medium-com-annashepeleva-distributed-load-testing-with-gatling-and-kubernetes-93ebce26edbe">Distributed load testing with Gatling and Kubernetes</a></li>
+<li><a href="https://web.archive.org/web/20210625094528/http://www.nimrodstech.com/gatling-cluster-load-testing/">Gatling – Scaling Out Your Load Tests</a></li>
+<li><a href="https://github.com/Abiy/distGatling">Distributed Gatling</a> - Solution to run Gatling simulation tests in a distributed/cluster environment.</li>
+<li><a href="https://github.com/st-tech/gatling-operator">gatling-operator</a> - Automating distributed Gatling load testing using Kubernetes operator.</li>
+</ul>
+<h2>Tools</h2>
+<h3>Plugins</h3>
+<ul>
+<li><a href="https://github.com/gatling/gatling-sbt-plugin">gatling-sbt-plugin</a> - Gatling SBT plugin to integrate Gatling with SBT, allowing to use Gatling as a testing framework.</li>
+<li><a href="https://github.com/gatling/gatling-build-plugin">gatling-build-plugin</a> - An SBT plugin to share common settings across Gatling's projects' builds.</li>
+<li><a href="https://github.com/gatling/gatling-maven-plugin">gatling-maven-plugin</a> - Gatling Maven Extensions.</li>
+<li><a href="https://github.com/gatling/gatling-gradle-plugin">gatling-gradle-plugin</a> - Gatling plugin for Gradle.</li>
+<li><a href="https://github.com/Pravoru/gatling-remote-sbt">gatling-remote-sbt</a> - Remote execution plugin for Gatling load tests.</li>
+<li><a href="https://github.com/Pravoru/gatling-junitrunner">gatling-junitrunner</a> - JUnit wrapper around Gatling simulations.</li>
+<li><a href="https://github.com/phiSgr/gatling-grpc">gatling-grpc</a> - Gatling load test plugin for gRPC.</li>
+<li><a href="https://github.com/callistaenterprise/gatling-aws">gatling-aws</a> - Gatling custom protocol for AWS Lambda.</li>
+<li><a href="https://github.com/TLmaK0/gatling-xmpp-protocol">gatling-xmpp-protocol</a> - XMPP protocol for stress test XMPP servers with Gatling.</li>
+<li><a href="https://bitbucket.org/atlassianlabs/gatling-jwt/">gatling-jwt</a> - An extension to Gatling 2.0 to help make JWT-signed requests.</li>
+<li><a href="https://github.com/mnogu/gatling-mqtt">gatling-mqtt</a> - A Gatling plugin for stress testing MQTT.</li>
+<li><a href="https://github.com/mnogu/gatling-kafka">gatling-kafka</a> - A Gatling plugin for stress testing Apache Kafka protocol.</li>
+<li><a href="https://github.com/Amerousful/gatling-kafka">gatling-kafka</a> - Gatling plugin for Kafka.</li>
+<li><a href="https://github.com/galax-io/gatling-kafka-plugin">gatling-kafka-plugin</a> - Plugin for support Kafka in Gatling.</li>
+<li><a href="https://github.com/galax-io/gatling-amqp-plugin">gatling-amqp-plugin</a> - Plugin for support performance testing with AMQP in Gatling (3.2.x).</li>
+<li><a href="https://github.com/galax-io/gatling-jdbc-plugin">gatling-jdbc-plugin</a> - Simple Gatling plugin for JDBC support.</li>
+<li><a href="https://github.com/galax-io/gatling-picatinny">gatling-picatinny</a> - Library with a bunch of useful functions that extend Gatling DSL.</li>
+<li><a href="https://github.com/tmcgrath/gatling-sql">gatling-sql</a> - Gatling extension for JDBC or Spark Thrift Server stress testing.</li>
+<li><a href="https://github.com/scalecube/gatling-tcp-extensions">gatling-tcp-extensions</a> - TCP extensions for Gatling.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Gatling <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<!--lint ignore double-link match-punctuation -->
+<p><a href="https://gatling.io/"><img src="assets/images/gatling-logo.svg" align="right" width="260" alt="Gatling"></a></p>
+<!--lint ignore double-link-->
+<p>A curated collection of resources covering all aspects of load testing using <a href="https://gatling.io/">Gatling</a> and related stuff: plugins, integrations, testing techniques, DevOps practices, etc.</p>
+<!--lint ignore double-link-->
+<blockquote>
+<p><a href="https://gatling.io/">Gatling</a> is an open-source load and performance testing framework based on Scala, Akka and Netty.</p>
+</blockquote>
+<h2>Contents</h2>
+<ul>
+<li><a href="#official-resources">Official Resources</a></li>
+<li><a href="#getting-started">Getting Started</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#distributed-testing">Distributed Testing</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#plugins">Plugins</a></li>
+<li><a href="#frameworks">Frameworks</a></li>
+<li><a href="#reporting">Reporting</a></li>
+<li><a href="#sandbox">Sandbox</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#ci">CI</a></li>
+<li><a href="#trainings--courses">Trainings &amp; Courses</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#talks">Talks</a></li>
+<li><a href="#video-tutorials">Video Tutorials</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#related">Related</a></li>
+<li><a href="#awesome-lists">Awesome Lists</a></li>
+<li><a href="#other">Other</a></li>
+</ul>
+<h2>Official Resources</h2>
+<!--lint ignore double-link-->
+<ul>
+<li><a href="https://gatling.io/">Homepage</a></li>
+<li><a href="https://docs.gatling.io/">Documentation</a></li>
+<li><a href="https://github.com/gatling/gatling">Source code</a></li>
+</ul>
+<h2>Getting Started</h2>
+<ul>
+<li><a href="https://callistaenterprise.se/blogg/teknik/2014/04/16/a-first-look-at-gatling-a-dsl-based-load-test-tool/">A first look at Gatling, a DSL based load test tool</a></li>
+<li><a href="https://www.thoughtworks.com/insights/blog/gatling-take-your-performance-tests-next-level">Gatling: Take your performance tests to the next level</a></li>
+<li><a href="https://www.james-willett.com/gatling-load-testing-complete-guide/">Load Testing with Gatling. The Complete Guide</a></li>
+</ul>
+<h2>Tutorials</h2>
+<ul>
+<li><a href="https://medium.com/@georgeleung_7777/load-testing-grpc-services-with-gatling-990025c77055">Load testing gRPC services with Gatling</a></li>
+<li><a href="https://callistaenterprise.se/blogg/teknik/2016/11/26/gatling-custom-protocol/">Creating a custom Gatling protocol for AWS Lambda</a></li>
+<li><a href="https://mintbeans.com/load-testing-zeromq-with-gatling/">Load testing ZeroMQ with a custom DSL for Gatling</a></li>
+</ul>
+<h2>Distributed Testing</h2>
+<ul>
+<li><a href="https://debijenkorf.tech/https-medium-com-annashepeleva-distributed-load-testing-with-gatling-and-kubernetes-93ebce26edbe">Distributed load testing with Gatling and Kubernetes</a></li>
+<li><a href="https://web.archive.org/web/20210625094528/http://www.nimrodstech.com/gatling-cluster-load-testing/">Gatling – Scaling Out Your Load Tests</a></li>
+<li><a href="https://github.com/Abiy/distGatling">Distributed Gatling</a> - Solution to run Gatling simulation tests in a distributed/cluster environment.</li>
+<li><a href="https://github.com/st-tech/gatling-operator">gatling-operator</a> - Automating distributed Gatling load testing using Kubernetes operator.</li>
+</ul>
+<h2>Tools</h2>
+<h3>Plugins</h3>
+<ul>
+<li><a href="https://github.com/gatling/gatling-sbt-plugin">gatling-sbt-plugin</a> - Gatling SBT plugin to integrate Gatling with SBT, allowing to use Gatling as a testing framework.</li>
+<li><a href="https://github.com/gatling/gatling-build-plugin">gatling-build-plugin</a> - An SBT plugin to share common settings across Gatling's projects' builds.</li>
+<li><a href="https://github.com/gatling/gatling-maven-plugin">gatling-maven-plugin</a> - Gatling Maven Extensions.</li>
+<li><a href="https://github.com/gatling/gatling-gradle-plugin">gatling-gradle-plugin</a> - Gatling plugin for Gradle.</li>
+<li><a href="https://github.com/Pravoru/gatling-remote-sbt">gatling-remote-sbt</a> - Remote execution plugin for Gatling load tests.</li>
+<li><a href="https://github.com/Pravoru/gatling-junitrunner">gatling-junitrunner</a> - JUnit wrapper around Gatling simulations.</li>
+<li><a href="https://github.com/phiSgr/gatling-grpc">gatling-grpc</a> - Gatling load test plugin for gRPC.</li>
+<li><a href="https://github.com/callistaenterprise/gatling-aws">gatling-aws</a> - Gatling custom protocol for AWS Lambda.</li>
+<li><a href="https://github.com/TLmaK0/gatling-xmpp-protocol">gatling-xmpp-protocol</a> - XMPP protocol for stress test XMPP servers with Gatling.</li>
+<li><a href="https://bitbucket.org/atlassianlabs/gatling-jwt/">gatling-jwt</a> - An extension to Gatling 2.0 to help make JWT-signed requests.</li>
+<li><a href="https://github.com/mnogu/gatling-mqtt">gatling-mqtt</a> - A Gatling plugin for stress testing MQTT.</li>
+<li><a href="https://github.com/mnogu/gatling-kafka">gatling-kafka</a> - A Gatling plugin for stress testing Apache Kafka protocol.</li>
+<li><a href="https://github.com/Amerousful/gatling-kafka">gatling-kafka</a> - Gatling plugin for Kafka.</li>
+<li><a href="https://github.com/galax-io/gatling-kafka-plugin">gatling-kafka-plugin</a> - Plugin for support Kafka in Gatling.</li>
+<li><a href="https://github.com/galax-io/gatling-amqp-plugin">gatling-amqp-plugin</a> - Plugin for support performance testing with AMQP in Gatling (3.2.x).</li>
+<li><a href="https://github.com/galax-io/gatling-jdbc-plugin">gatling-jdbc-plugin</a> - Simple Gatling plugin for JDBC support.</li>
+<li><a href="https://github.com/galax-io/gatling-picatinny">gatling-picatinny</a> - Library with a bunch of useful functions that extend Gatling DSL.</li>
+<li><a href="https://github.com/tmcgrath/gatling-sql">gatling-sql</a> - Gatling extension for JDBC or Spark Thrift Server stress testing.</li>
+<li><a href="https://github.com/scalecube/gatling-tcp-extensions">gatling-tcp-extensions</a> - TCP extensions for Gatling.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'gatling_README.md';
 
         fetch(markdownFile)
@@ -48,21 +199,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

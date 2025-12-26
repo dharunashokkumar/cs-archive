@@ -8,38 +8,279 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Allthingssmitty Css Protips - Awesome List Resources">
-    <title>Allthingssmitty Css Protips</title>
+    <meta name="description" content="A collection of tips to help take your CSS skills pro. > [!TIP] > For other great lists check out @sindresorhus's curated list of awesome lists. - Protips -...">
+    <meta name="robots" content="index, follow">
+    <title>Protips - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <div align="center">
+  <img src="./assets/img/bulb.svg" width="200" alt="light bulb icon">
+</div>
+
+<h1>CSS Protips <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a></h1>
+<p>A collection of tips to help take your CSS skills pro.</p>
+<blockquote>
+<p>[!TIP]
+For other great lists check out <a href="https://github.com/sindresorhus/">@sindresorhus</a>'s curated list of <a href="https://github.com/sindresorhus/awesome/">awesome lists</a>.</p>
+</blockquote>
+<h2>Contents</h2>
+<ul>
+<li><a href="#protips">Protips</a></li>
+<li><a href="#support">Support</a></li>
+<li><a href="#translations">Translations</a></li>
+<li><a href="CONTRIBUTING.md">Contribution Guidelines</a></li>
+</ul>
+<h2>Protips</h2>
+<ol>
+<li><a href="#use-a-css-reset">Use a CSS Reset</a></li>
+<li><a href="#inherit-box-sizing">Inherit <code>box-sizing</code></a></li>
+<li><a href="#use-unset-instead-of-resetting-all-properties">Use <code>unset</code> Instead of Resetting All Properties</a></li>
+<li><a href="#use-not-to-applyunapply-borders-on-navigation">Use <code>:not()</code> to Apply/Unapply Borders on Navigation</a></li>
+<li><a href="#check-if-font-is-installed-locally">Check if Font Is Installed Locally</a></li>
+<li><a href="#add-line-height-to-body">Add <code>line-height</code> to <code>body</code></a></li>
+<li><a href="#set-focus-for-form-elements">Set <code>:focus</code> for Form Elements</a></li>
+<li><a href="#vertically-center-anything">Vertically-Center Anything</a></li>
+<li><a href="#use-aspect-ratio-instead-of-heightwidth">Use <code>aspect-ratio</code> Instead of Height/Width</a></li>
+<li><a href="#comma-separated-lists">Comma-Separated Lists</a></li>
+<li><a href="#select-items-using-negative-nth-child">Select Items Using Negative <code>nth-child</code></a></li>
+<li><a href="#use-svg-for-icons">Use SVG for Icons</a></li>
+<li><a href="#use-the-lobotomized-owl-selector">Use the "Lobotomized Owl" Selector</a></li>
+<li><a href="#use-max-height-for-pure-css-sliders">Use <code>max-height</code> for Pure CSS Sliders</a></li>
+<li><a href="#equal-width-table-cells">Equal-Width Table Cells</a></li>
+<li><a href="#get-rid-of-margin-hacks-with-flexbox">Get Rid of Margin Hacks With Flexbox</a></li>
+<li><a href="#use-attribute-selectors-with-empty-links">Use Attribute Selectors with Empty Links</a></li>
+<li><a href="#control-specificity-better-with-is">Control Specificity Better With <code>:is()</code></a></li>
+<li><a href="#style-default-links">Style "Default" Links</a></li>
+<li><a href="#intrinsic-ratio-boxes">Intrinsic Ratio Boxes</a></li>
+<li><a href="#style-broken-images">Style Broken Images</a></li>
+<li><a href="#use-rem-for-global-sizing-use-em-for-local-sizing">Use <code>rem</code> for Global Sizing; Use <code>em</code> for Local Sizing</a></li>
+<li><a href="#hide-autoplay-videos-that-arent-muted">Hide Autoplay Videos That Aren't Muted</a></li>
+<li><a href="#use-root-for-flexible-type">Use <code>:root</code> for Flexible Type</a></li>
+<li><a href="#set-font-size-on-form-elements-for-a-better-mobile-experience">Set <code>font-size</code> on Form Elements for a Better Mobile Experience</a></li>
+<li><a href="#use-pointer-events-to-control-mouse-events">Use Pointer Events to Control Mouse Events</a></li>
+<li><a href="#set-display-none-on-line-breaks-used-as-spacing">Set <code>display: none</code> on Line Breaks Used as Spacing</a></li>
+<li><a href="#use-empty-to-hide-empty-html-elements">Use <code>:empty</code> to Hide Empty HTML Elements</a></li>
+<li><a href="#use-margin-inline-instead-of-margin">Use <code>margin-inline</code> instead of <code>margin</code></a></li>
+</ol>
+<h3>Use a CSS Reset</h3>
+<p>CSS resets help enforce style consistency across different browsers with a clean slate for styling elements. There are plenty of reset patterns to find, or you can use a more simplified reset approach:</p>
+<pre><code class="language-css">*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+</code></pre>
+<p>Now elements will be stripped of margins and padding, and <code>box-sizing</code> lets you manage layouts with the CSS box model.</p>
+<h4><a href="https://codepen.io/AllThingsSmitty/pen/kkrkLL">Demo</a></h4>
+<blockquote>
+<p>[!TIP]
+If you follow the <a href="#inherit-box-sizing">Inherit <code>box-sizing</code></a> tip below you might opt to not include the <code>box-sizing</code> property in your CSS reset.</p>
+</blockquote>
+<p><sup><a href="#contents">Back to top</a></sup></p>
+<h3>Inherit <code>box-sizing</code></h3>
+<p>Let <code>box-sizing</code> be inherited from <code>html</code>:</p>
+<pre><code class="language-css">html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+</code></pre>
+<p>This makes it easier to change <code>box-sizing</code> in plugins or other components that leverage other behavior.</p>
+<h4><a href="https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/">Demo</a></h4>
+<p><sup><a href="#contents">Back to top</a></sup></p>
+<h3>Use <code>unset</code> Instead of Resetting All Properties</h3>
+<p>When resetting an element's properties, it's not necessary to reset each individual property:</p>
+<pre><code class="language-css">button {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  outline: none;
+  padding: 0;
+}
+</code></pre>
+<p>You can specify all of an element's properties using the <code>all</code> shorthand. Setting the value to <code>unset</code> changes an element's properties to their initial values:</p>
+<pre><code class="language-css">button {
+  all: unset;
+}
+</code></pre>
+<p><sup><a href="#contents">Back to top</a></sup></p>
+<h3>Use <code>:not()</code> to Apply/Unapply Borders on Navigation</h3>
+<p>Instead of putting on the border...</p>
+<pre><code class="language-css">/* add border */
+.nav li {
+  border-right: 1px solid #666;
+}
+</code></pre>
+<p>...and then taking it off the last element...</p>
+<pre><code class="language-css">/* remove border */
+.nav li:last-child {
+  border-right: none;
+}
+</code></pre>
+<p>...use the <code>:not()</code> pseudo-class to only apply to the elements you want:</p>
+<pre><code class="language-css">.nav li:not(:last-child) {
+  border-right: 1px solid #666;
+}
+</code></pre>
+<p>Here, the CSS selector is read as a human would describe it.</p>
+<h4><a href="https://codepen.io/AllThingsSmitty/pen/LkymvO">Demo</a></h4>
+<p><sup><a href="#contents">Back to top</a></sup></p>
+<h3>Check if Font Is Installed Locally</h3>
+<p>You can check if a font is installed locally before fetching it remotely, which is a good performance tip, too.</p>
+<p>```css
+@font-face {
+  font-family: "Dank Mono";
+  src:</p>
+        </noscript>
+        <div id="dynamic-content">
+            <div align="center">
+  <img src="./assets/img/bulb.svg" width="200" alt="light bulb icon">
+</div>
+
+<h1>CSS Protips <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a></h1>
+<p>A collection of tips to help take your CSS skills pro.</p>
+<blockquote>
+<p>[!TIP]
+For other great lists check out <a href="https://github.com/sindresorhus/">@sindresorhus</a>'s curated list of <a href="https://github.com/sindresorhus/awesome/">awesome lists</a>.</p>
+</blockquote>
+<h2>Contents</h2>
+<ul>
+<li><a href="#protips">Protips</a></li>
+<li><a href="#support">Support</a></li>
+<li><a href="#translations">Translations</a></li>
+<li><a href="CONTRIBUTING.md">Contribution Guidelines</a></li>
+</ul>
+<h2>Protips</h2>
+<ol>
+<li><a href="#use-a-css-reset">Use a CSS Reset</a></li>
+<li><a href="#inherit-box-sizing">Inherit <code>box-sizing</code></a></li>
+<li><a href="#use-unset-instead-of-resetting-all-properties">Use <code>unset</code> Instead of Resetting All Properties</a></li>
+<li><a href="#use-not-to-applyunapply-borders-on-navigation">Use <code>:not()</code> to Apply/Unapply Borders on Navigation</a></li>
+<li><a href="#check-if-font-is-installed-locally">Check if Font Is Installed Locally</a></li>
+<li><a href="#add-line-height-to-body">Add <code>line-height</code> to <code>body</code></a></li>
+<li><a href="#set-focus-for-form-elements">Set <code>:focus</code> for Form Elements</a></li>
+<li><a href="#vertically-center-anything">Vertically-Center Anything</a></li>
+<li><a href="#use-aspect-ratio-instead-of-heightwidth">Use <code>aspect-ratio</code> Instead of Height/Width</a></li>
+<li><a href="#comma-separated-lists">Comma-Separated Lists</a></li>
+<li><a href="#select-items-using-negative-nth-child">Select Items Using Negative <code>nth-child</code></a></li>
+<li><a href="#use-svg-for-icons">Use SVG for Icons</a></li>
+<li><a href="#use-the-lobotomized-owl-selector">Use the "Lobotomized Owl" Selector</a></li>
+<li><a href="#use-max-height-for-pure-css-sliders">Use <code>max-height</code> for Pure CSS Sliders</a></li>
+<li><a href="#equal-width-table-cells">Equal-Width Table Cells</a></li>
+<li><a href="#get-rid-of-margin-hacks-with-flexbox">Get Rid of Margin Hacks With Flexbox</a></li>
+<li><a href="#use-attribute-selectors-with-empty-links">Use Attribute Selectors with Empty Links</a></li>
+<li><a href="#control-specificity-better-with-is">Control Specificity Better With <code>:is()</code></a></li>
+<li><a href="#style-default-links">Style "Default" Links</a></li>
+<li><a href="#intrinsic-ratio-boxes">Intrinsic Ratio Boxes</a></li>
+<li><a href="#style-broken-images">Style Broken Images</a></li>
+<li><a href="#use-rem-for-global-sizing-use-em-for-local-sizing">Use <code>rem</code> for Global Sizing; Use <code>em</code> for Local Sizing</a></li>
+<li><a href="#hide-autoplay-videos-that-arent-muted">Hide Autoplay Videos That Aren't Muted</a></li>
+<li><a href="#use-root-for-flexible-type">Use <code>:root</code> for Flexible Type</a></li>
+<li><a href="#set-font-size-on-form-elements-for-a-better-mobile-experience">Set <code>font-size</code> on Form Elements for a Better Mobile Experience</a></li>
+<li><a href="#use-pointer-events-to-control-mouse-events">Use Pointer Events to Control Mouse Events</a></li>
+<li><a href="#set-display-none-on-line-breaks-used-as-spacing">Set <code>display: none</code> on Line Breaks Used as Spacing</a></li>
+<li><a href="#use-empty-to-hide-empty-html-elements">Use <code>:empty</code> to Hide Empty HTML Elements</a></li>
+<li><a href="#use-margin-inline-instead-of-margin">Use <code>margin-inline</code> instead of <code>margin</code></a></li>
+</ol>
+<h3>Use a CSS Reset</h3>
+<p>CSS resets help enforce style consistency across different browsers with a clean slate for styling elements. There are plenty of reset patterns to find, or you can use a more simplified reset approach:</p>
+<pre><code class="language-css">*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+</code></pre>
+<p>Now elements will be stripped of margins and padding, and <code>box-sizing</code> lets you manage layouts with the CSS box model.</p>
+<h4><a href="https://codepen.io/AllThingsSmitty/pen/kkrkLL">Demo</a></h4>
+<blockquote>
+<p>[!TIP]
+If you follow the <a href="#inherit-box-sizing">Inherit <code>box-sizing</code></a> tip below you might opt to not include the <code>box-sizing</code> property in your CSS reset.</p>
+</blockquote>
+<p><sup><a href="#contents">Back to top</a></sup></p>
+<h3>Inherit <code>box-sizing</code></h3>
+<p>Let <code>box-sizing</code> be inherited from <code>html</code>:</p>
+<pre><code class="language-css">html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+</code></pre>
+<p>This makes it easier to change <code>box-sizing</code> in plugins or other components that leverage other behavior.</p>
+<h4><a href="https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/">Demo</a></h4>
+<p><sup><a href="#contents">Back to top</a></sup></p>
+<h3>Use <code>unset</code> Instead of Resetting All Properties</h3>
+<p>When resetting an element's properties, it's not necessary to reset each individual property:</p>
+<pre><code class="language-css">button {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  outline: none;
+  padding: 0;
+}
+</code></pre>
+<p>You can specify all of an element's properties using the <code>all</code> shorthand. Setting the value to <code>unset</code> changes an element's properties to their initial values:</p>
+<pre><code class="language-css">button {
+  all: unset;
+}
+</code></pre>
+<p><sup><a href="#contents">Back to top</a></sup></p>
+<h3>Use <code>:not()</code> to Apply/Unapply Borders on Navigation</h3>
+<p>Instead of putting on the border...</p>
+<pre><code class="language-css">/* add border */
+.nav li {
+  border-right: 1px solid #666;
+}
+</code></pre>
+<p>...and then taking it off the last element...</p>
+<pre><code class="language-css">/* remove border */
+.nav li:last-child {
+  border-right: none;
+}
+</code></pre>
+<p>...use the <code>:not()</code> pseudo-class to only apply to the elements you want:</p>
+<pre><code class="language-css">.nav li:not(:last-child) {
+  border-right: 1px solid #666;
+}
+</code></pre>
+<p>Here, the CSS selector is read as a human would describe it.</p>
+<h4><a href="https://codepen.io/AllThingsSmitty/pen/LkymvO">Demo</a></h4>
+<p><sup><a href="#contents">Back to top</a></sup></p>
+<h3>Check if Font Is Installed Locally</h3>
+<p>You can check if a font is installed locally before fetching it remotely, which is a good performance tip, too.</p>
+<p>```css
+@font-face {
+  font-family: "Dank Mono";
+  src:</p>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'protips_README.md';
 
         fetch(markdownFile)
@@ -48,21 +289,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

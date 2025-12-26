@@ -8,38 +8,253 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rayokota Awesome Hbase - Awesome List Resources">
-    <title>Rayokota Awesome Hbase</title>
+    <meta name="description" content="A curated list of awesome HBase projects and resources. HBase is a distributed, scalable, big data store. - Projects - Clients - Cloud - Frameworks - Datasets...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome HBase [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome HBase <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p><a href="http://hbase.apache.org/"><img src="https://cdn.rawgit.com/rayokota/awesome-hbase/c197f415/hbase_logo_with_orca-2.png" align="right" width="150"></a></p>
+<p>A curated list of awesome HBase projects and resources.</p>
+<p><a href="http://hbase.apache.org">HBase</a> is a distributed, scalable, big data store.</p>
+<h2>Contents</h2>
+<ul>
+<li>
+<p><a href="#projects">Projects</a></p>
+<ul>
+<li><a href="#clients">Clients</a></li>
+<li><a href="#cloud">Cloud</a></li>
+<li><a href="#frameworks">Frameworks</a><ul>
+<li><a href="#datasets">Datasets</a></li>
+<li><a href="#document">Document</a></li>
+<li><a href="#entityjpa">Entity/JPA</a></li>
+<li><a href="#geospatial">Geospatial</a></li>
+<li><a href="#graph">Graph</a></li>
+<li><a href="#sqlolap">SQL/OLAP</a></li>
+<li><a href="#time-series">Time Series</a></li>
+</ul>
+</li>
+<li><a href="#infrastructure">Infrastructure</a><ul>
+<li><a href="#secondary-indices">Secondary Indices</a></li>
+<li><a href="#transactions">Transactions</a></li>
+</ul>
+</li>
+<li><a href="#integrations">Integrations</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#resources">Resources</a></p>
+<ul>
+<li><a href="#books">Books</a></li>
+<li><a href="#papers">Papers</a></li>
+<li><a href="#community">Community</a></li>
+</ul>
+</li>
+</ul>
+<h2>Projects</h2>
+<h3>Clients</h3>
+<ul>
+<li><a href="https://github.com/OpenTSDB/asynchbase">asynchbase</a> - Fully asynchronous, non-blocking HBase client.</li>
+<li><a href="https://github.com/tsuna/gohbase">gohbase</a> - Pure Go client for HBase.</li>
+<li><a href="https://github.com/wbolster/happybase">happybase</a> - Python client for HBase.</li>
+</ul>
+<h3>Cloud</h3>
+<ul>
+<li><a href="https://aws.amazon.com/emr/">Amazon EMR</a> - Amazon's Hadoop/HBase offering on AWS.</li>
+<li><a href="https://azure.microsoft.com/en-us/services/hdinsight/">Azure HDInsight</a> - Microsoft's Hadoop/HBase offering on Azure.</li>
+<li><a href="https://www.cloudera.com/products/product-components/cloudera-director.html">Cloudera Director</a> - Run Hadoop/HBase clusters on AWS, Azure or Google Cloud.</li>
+<li><a href="https://cloud.google.com/bigtable/">Google Cloud Bigtable</a> - High-performance NoSQL database service accessible via HBase client API.</li>
+<li><a href="https://hortonworks.com/open-source/cloudbreak/">Hortonworks Cloudbreak</a> - Provision Hadoop/HBase clusters on AWS, Azure, Google Cloud, or OpenStack.</li>
+</ul>
+<h3>Frameworks</h3>
+<h4>Datasets</h4>
+<ul>
+<li><a href="http://kitesdk.org">Kite</a> - High-level data layer for Hadoop/HBase.</li>
+</ul>
+<h4>Document</h4>
+<ul>
+<li><a href="https://github.com/rayokota/hdocdb">HDocDB</a> - HBase as a JSON document database.</li>
+</ul>
+<h4>Entity/JPA</h4>
+<ul>
+<li><a href="http://www.datanucleus.org">DataNucleus</a> - JPA persistence layer with support for HBase.</li>
+<li><a href="http://gora.apache.org">Gora</a> - Persistence library for big data with support for HBase.</li>
+<li><a href="https://github.com/flipkart-incubator/hbase-orm">HBase ORM</a> - A production-grade HBase ORM library.</li>
+<li><a href="https://github.com/rayokota/hentitydb">HEntityDB</a> - HBase as an entity database.</li>
+<li><a href="https://github.com/impetus-opensource/Kundera">Kundera</a> - JPA client with support for HBase.</li>
+</ul>
+<h4>Geospatial</h4>
+<ul>
+<li><a href="http://www.geomesa.org/">GeoMesa</a> - Spatial-temporal database with support for Accumulo, HBase, Cassandra, and Kafka.</li>
+</ul>
+<h4>Graph</h4>
+<ul>
+<li><a href="https://github.com/dbs-leipzig/gradoop">Gradoop</a> - Research framework for scalable graph analytics built on Flink and HBase.</li>
+<li><a href="https://github.com/rayokota/hgraphdb">HGraphDB</a> - HBase as a TinkerPop graph database.</li>
+<li><a href="https://github.com/apache/incubator-hugegraph">HugeGraph</a> - A graph database that supports more than 10+ billion data, high performance and scalability.</li>
+<li><a href="http://janusgraph.org/">JanusGraph</a> - Scalable graph database with support for Cassandra, HBase, Google Cloud Bigtable, and BerkeleyDB.</li>
+<li><a href="https://github.com/vesoft-inc/nebula">NebulaGraph</a> - A high performance distributed Graph database.</li>
+<li><a href="http://s2graph.incubator.apache.org">S2Graph</a> - High-performance distributed graph database built on HBase.</li>
+</ul>
+<h4>SQL/OLAP</h4>
+<ul>
+<li><a href="http://antsdb.com/">AntsDB</a> - AntsDB is a low latency, high concurrency, MySQL compliant SQL layer for HBase.</li>
+<li><a href="https://esgyn.com/">EsgynDB</a> - Commercial SQL engine providing ACID transactions and BI analytics on top of Hadoop, based on Trafodian.</li>
+<li><a href="http://kylin.apache.org">Kylin</a> - Extreme OLAP engine for big data that stores data in HBase.</li>
+<li><a href="http://www.leanxcale.com">LeanXScale</a> - Commercial full ACID full SQL product built on Hadoop/HBase.</li>
+<li><a href="https://phoenix.apache.org">Phoenix</a> - SQL layer on top of HBase.</li>
+<li><a href="https://www.splicemachine.com">Splice Machine</a> - Commercial RDBMS built on top of HBase.</li>
+<li><a href="http://trafodion.apache.org">Trafodian</a> - Transactional SQL-on-Hadoop/HBase.</li>
+</ul>
+<h4>Time Series</h4>
+<ul>
+<li><a href="http://axibase.com/products/axibase-time-series-database/">Axibase</a> - Distributed time series database built on HBase.</li>
+<li><a href="http://opentsdb.net">OpenTSDB</a> - Scalable time series database built on HBase.</li>
+<li><a href="http://www.warp10.io">Warp 10</a> - Time series database for sensor data.</li>
+</ul>
+<h3>Infrastructure</h3>
+<h4>Secondary Indices</h4>
+<ul>
+<li><a href="https://github.com/Huawei-Hadoop/hindex">hindex</a> - Secondary index for HBase.</li>
+<li><a href="http://ngdata.github.io/hbase-indexer/">Lily HBase Indexer</a> - Quickly and easily search for content stored in HBase.</li>
+</ul>
+<h4>Transactions</h4>
+<ul>
+<li><a href="https://github.com/VCNC/haeinsa">Haeinsa</a> - Multi-row/multi-table transaction library for HBase.</li>
+<li><a href="https://github.com/algarecu/hbase-0.94.8-qod">HBase-QoD</a> - Vector-field consistency for HBase fine-grained transactional inter-DC replication.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome HBase <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p><a href="http://hbase.apache.org/"><img src="https://cdn.rawgit.com/rayokota/awesome-hbase/c197f415/hbase_logo_with_orca-2.png" align="right" width="150"></a></p>
+<p>A curated list of awesome HBase projects and resources.</p>
+<p><a href="http://hbase.apache.org">HBase</a> is a distributed, scalable, big data store.</p>
+<h2>Contents</h2>
+<ul>
+<li>
+<p><a href="#projects">Projects</a></p>
+<ul>
+<li><a href="#clients">Clients</a></li>
+<li><a href="#cloud">Cloud</a></li>
+<li><a href="#frameworks">Frameworks</a><ul>
+<li><a href="#datasets">Datasets</a></li>
+<li><a href="#document">Document</a></li>
+<li><a href="#entityjpa">Entity/JPA</a></li>
+<li><a href="#geospatial">Geospatial</a></li>
+<li><a href="#graph">Graph</a></li>
+<li><a href="#sqlolap">SQL/OLAP</a></li>
+<li><a href="#time-series">Time Series</a></li>
+</ul>
+</li>
+<li><a href="#infrastructure">Infrastructure</a><ul>
+<li><a href="#secondary-indices">Secondary Indices</a></li>
+<li><a href="#transactions">Transactions</a></li>
+</ul>
+</li>
+<li><a href="#integrations">Integrations</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#resources">Resources</a></p>
+<ul>
+<li><a href="#books">Books</a></li>
+<li><a href="#papers">Papers</a></li>
+<li><a href="#community">Community</a></li>
+</ul>
+</li>
+</ul>
+<h2>Projects</h2>
+<h3>Clients</h3>
+<ul>
+<li><a href="https://github.com/OpenTSDB/asynchbase">asynchbase</a> - Fully asynchronous, non-blocking HBase client.</li>
+<li><a href="https://github.com/tsuna/gohbase">gohbase</a> - Pure Go client for HBase.</li>
+<li><a href="https://github.com/wbolster/happybase">happybase</a> - Python client for HBase.</li>
+</ul>
+<h3>Cloud</h3>
+<ul>
+<li><a href="https://aws.amazon.com/emr/">Amazon EMR</a> - Amazon's Hadoop/HBase offering on AWS.</li>
+<li><a href="https://azure.microsoft.com/en-us/services/hdinsight/">Azure HDInsight</a> - Microsoft's Hadoop/HBase offering on Azure.</li>
+<li><a href="https://www.cloudera.com/products/product-components/cloudera-director.html">Cloudera Director</a> - Run Hadoop/HBase clusters on AWS, Azure or Google Cloud.</li>
+<li><a href="https://cloud.google.com/bigtable/">Google Cloud Bigtable</a> - High-performance NoSQL database service accessible via HBase client API.</li>
+<li><a href="https://hortonworks.com/open-source/cloudbreak/">Hortonworks Cloudbreak</a> - Provision Hadoop/HBase clusters on AWS, Azure, Google Cloud, or OpenStack.</li>
+</ul>
+<h3>Frameworks</h3>
+<h4>Datasets</h4>
+<ul>
+<li><a href="http://kitesdk.org">Kite</a> - High-level data layer for Hadoop/HBase.</li>
+</ul>
+<h4>Document</h4>
+<ul>
+<li><a href="https://github.com/rayokota/hdocdb">HDocDB</a> - HBase as a JSON document database.</li>
+</ul>
+<h4>Entity/JPA</h4>
+<ul>
+<li><a href="http://www.datanucleus.org">DataNucleus</a> - JPA persistence layer with support for HBase.</li>
+<li><a href="http://gora.apache.org">Gora</a> - Persistence library for big data with support for HBase.</li>
+<li><a href="https://github.com/flipkart-incubator/hbase-orm">HBase ORM</a> - A production-grade HBase ORM library.</li>
+<li><a href="https://github.com/rayokota/hentitydb">HEntityDB</a> - HBase as an entity database.</li>
+<li><a href="https://github.com/impetus-opensource/Kundera">Kundera</a> - JPA client with support for HBase.</li>
+</ul>
+<h4>Geospatial</h4>
+<ul>
+<li><a href="http://www.geomesa.org/">GeoMesa</a> - Spatial-temporal database with support for Accumulo, HBase, Cassandra, and Kafka.</li>
+</ul>
+<h4>Graph</h4>
+<ul>
+<li><a href="https://github.com/dbs-leipzig/gradoop">Gradoop</a> - Research framework for scalable graph analytics built on Flink and HBase.</li>
+<li><a href="https://github.com/rayokota/hgraphdb">HGraphDB</a> - HBase as a TinkerPop graph database.</li>
+<li><a href="https://github.com/apache/incubator-hugegraph">HugeGraph</a> - A graph database that supports more than 10+ billion data, high performance and scalability.</li>
+<li><a href="http://janusgraph.org/">JanusGraph</a> - Scalable graph database with support for Cassandra, HBase, Google Cloud Bigtable, and BerkeleyDB.</li>
+<li><a href="https://github.com/vesoft-inc/nebula">NebulaGraph</a> - A high performance distributed Graph database.</li>
+<li><a href="http://s2graph.incubator.apache.org">S2Graph</a> - High-performance distributed graph database built on HBase.</li>
+</ul>
+<h4>SQL/OLAP</h4>
+<ul>
+<li><a href="http://antsdb.com/">AntsDB</a> - AntsDB is a low latency, high concurrency, MySQL compliant SQL layer for HBase.</li>
+<li><a href="https://esgyn.com/">EsgynDB</a> - Commercial SQL engine providing ACID transactions and BI analytics on top of Hadoop, based on Trafodian.</li>
+<li><a href="http://kylin.apache.org">Kylin</a> - Extreme OLAP engine for big data that stores data in HBase.</li>
+<li><a href="http://www.leanxcale.com">LeanXScale</a> - Commercial full ACID full SQL product built on Hadoop/HBase.</li>
+<li><a href="https://phoenix.apache.org">Phoenix</a> - SQL layer on top of HBase.</li>
+<li><a href="https://www.splicemachine.com">Splice Machine</a> - Commercial RDBMS built on top of HBase.</li>
+<li><a href="http://trafodion.apache.org">Trafodian</a> - Transactional SQL-on-Hadoop/HBase.</li>
+</ul>
+<h4>Time Series</h4>
+<ul>
+<li><a href="http://axibase.com/products/axibase-time-series-database/">Axibase</a> - Distributed time series database built on HBase.</li>
+<li><a href="http://opentsdb.net">OpenTSDB</a> - Scalable time series database built on HBase.</li>
+<li><a href="http://www.warp10.io">Warp 10</a> - Time series database for sensor data.</li>
+</ul>
+<h3>Infrastructure</h3>
+<h4>Secondary Indices</h4>
+<ul>
+<li><a href="https://github.com/Huawei-Hadoop/hindex">hindex</a> - Secondary index for HBase.</li>
+<li><a href="http://ngdata.github.io/hbase-indexer/">Lily HBase Indexer</a> - Quickly and easily search for content stored in HBase.</li>
+</ul>
+<h4>Transactions</h4>
+<ul>
+<li><a href="https://github.com/VCNC/haeinsa">Haeinsa</a> - Multi-row/multi-table transaction library for HBase.</li>
+<li><a href="https://github.com/algarecu/hbase-0.94.8-qod">HBase-QoD</a> - Vector-field consistency for HBase fine-grained transactional inter-DC replication.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'hbase_README.md';
 
         fetch(markdownFile)
@@ -48,21 +263,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

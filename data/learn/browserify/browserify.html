@@ -8,38 +8,237 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Browserify Awesome Browserify - Awesome List Resources">
-    <title>Browserify Awesome Browserify</title>
+    <meta name="description" content="> :crystal_ball: A curated list of awesome Browserify resources, libraries, and tools. Please help improve this list by contributing! - About - Official...">
+    <meta name="robots" content="index, follow">
+    <title>Browserify - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <div align="center"><img src="browserify.png" alt="Browserify!"></div>
+
+<h1>Awesome Browserify <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<blockquote>
+<p>:crystal_ball: A curated list of awesome <a href="https://github.com/substack/node-browserify">Browserify</a> resources, libraries, and tools.</p>
+</blockquote>
+<p>Please help improve this list by <a href="contributing.md">contributing</a>!</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#official-resources">Official Resources</a></li>
+<li><a href="#community-resources">Community Resources</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#demos">Demos</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#development-servers">Development Servers</a></li>
+<li><a href="#plugins">Plugins</a></li>
+<li><a href="#watchers">Watchers</a></li>
+<li><a href="#css-bundlers">CSS Bundlers</a></li>
+<li><a href="#transforms">Transforms</a></li>
+<li><a href="#node-in-the-browser">Node in the Browser</a></li>
+<li><a href="#production-tools">Production Tools</a></li>
+</ul>
+<h2>About</h2>
+<p>Browserify lets you <code>require('modules')</code> in the browser by bundling up all of your dependencies.</p>
+<p>You can use a node-style <code>require()</code> to organize your browser code and load modules installed by npm. Browserify will recursively analyze all the <code>require()</code> calls in your app in order to build a bundle you can serve up to the browser in a single <code>&lt;script&gt;</code> tag.</p>
+<h2>Official Resources</h2>
+<ul>
+<li><a href="https://github.com/substack/node-browserify#usage">Docs</a></li>
+<li><a href="https://github.com/substack/browserify-handbook">Handbook</a></li>
+<li><a href="https://github.com/substack/node-browserify">Repo</a></li>
+<li><a href="http://browserify.org/">Website</a></li>
+</ul>
+<h2>Community Resources</h2>
+<ul>
+<li><a href="http://webchat.freenode.net/?channels=browserify">IRC</a></li>
+<li><a href="http://twitter.com/browserify">Twitter</a></li>
+<li><a href="http://stackoverflow.com/questions/tagged/browserify">StackOverflow</a></li>
+</ul>
+<h2>Tutorials</h2>
+<ul>
+<li><a href="http://browserify.org/#middle-section">Hello World with Browserify</a></li>
+<li><a href="https://github.com/workshopper/browserify-adventure">Browserify Adventure</a></li>
+<li><a href="https://ponyfoo.com/articles/a-gentle-browserify-walkthrough">A Gentle Browserify Walkthrough</a></li>
+<li><a href="http://zhaoda.net/2015/10/16/browserify-guide/">Browserify guide</a> (Chinese)</li>
+</ul>
+<h2>Articles</h2>
+<ul>
+<li><a href="https://writingjavascript.org/posts/introduction-to-browserify">Introduction to Browserify</a></li>
+<li><a href="http://dontkry.com/posts/code/using-npm-on-the-client-side.html">Using npm on the client side</a></li>
+<li><a href="http://benclinkinbeard.com/posts/how-browserify-works/">How Browserify Works</a></li>
+<li><a href="https://www.viget.com/articles/gulp-browserify-starter-faq">Gulp + Browserify: The Everything Post</a></li>
+<li><a href="http://www.forbeslindesay.co.uk/post/44144487088/browserify-vs-component">Browserify vs Component</a></li>
+<li><a href="https://gist.github.com/substack/68f8d502be42d5cd4942">Browserify for Webpack users</a></li>
+<li><a href="https://mattdesl.svbtle.com/browserify-vs-webpack">Browserify vs. Webpack</a></li>
+</ul>
+<h2>Demos</h2>
+<ul>
+<li><a href="http://requirebin.com/?gist=maxogden/9576799">Canvas Splitter</a> by <a href="http://github.com/hughsk">hughsk</a></li>
+<li><a href="http://requirebin.com/?gist=maxogden/9557700">Infinite 2D Cave Generator</a> by <a href="http://github.com/hughsk">hughsk</a></li>
+<li><a href="http://requirebin.com/?gist=maxogden/9557776">2D Velocity Control</a> by <a href="http://github.com/sethvincent">sethvincent</a></li>
+</ul>
+<h2>Videos</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=DCQNm6yiZh0">James Halliday (substack) - LXJS 2013 - Modularidade para todos</a></li>
+<li><a href="https://www.youtube.com/watch?v=CTAa8IcQh1U">Getting Started with Browserify</a> by <a href="https://github.com/shama/">shama</a></li>
+<li><a href="https://www.youtube.com/watch?v=Uk2bgp8OLT8">Transform your Bundles with Browserify</a> by <a href="https://github.com/shama/">shama</a></li>
+</ul>
+<h2>Tools</h2>
+<h3>Development Servers</h3>
+<ul>
+<li><a href="https://github.com/mattdesl/budo">budo</a> - Dev server for rapid prototyping.</li>
+<li><a href="https://github.com/chrisdickinson/beefy">beefy</a> - Local development server that aims to make using browserify fast and fun.</li>
+<li><a href="https://github.com/maxogden/wzrd">wzrd</a> - Super minimal browserify development server.</li>
+</ul>
+<h3>Plugins</h3>
+<ul>
+<li><a href="https://github.com/AgentME/browserify-hmr">browserify-hmr</a> - Hot Module Replacement plugin for Browserify.</li>
+</ul>
+<h3>Watchers</h3>
+<ul>
+<li><a href="https://github.com/substack/watchify">watchify</a> - Watch mode for browserify builds.</li>
+<li><a href="https://github.com/royriojas/persistify">persistify</a> - Wrapper around <code>browserify</code> to make incremental builds.</li>
+</ul>
+<h3>CSS bundlers</h3>
+<ul>
+<li><a href="https://github.com/stackcss/sheetify">sheetify</a> - Modular CSS bundler for browserify.</li>
+<li><a href="https://github.com/rotundasoftware/parcelify">parcelify</a> - Add css to your npm modules consumed with browserify.</li>
+<li><a href="https://github.com/css-modules/css-modulesify">css-modulesify</a> - Browserify plugin to load CSS Modules.</li>
+</ul>
+<h3>Transforms</h3>
+<ul>
+<li><a href="https://github.com/babel/babelify">babelify</a> - Browserify transform for babel.</li>
+<li><a href="https://github.com/benbria/aliasify">aliasify</a> - Remap require calls at build time.</li>
+<li><a href="https://github.com/substack/brfs">brfs</a> - <code>fs.readFileSync()</code> and <code>fs.readFile()</code> static asset browserify transform.</li>
+</ul>
+<h3>Node in the Browser</h3>
+<ul>
+<li><a href="https://github.com/crypto-browserify/crypto-browserify">crypto-browserify</a> - Port of node's <code>crypto</code> module to the browser.</li>
+<li><a href="https://github.com/substack/stream-browserify">stream-browserify</a> - The <code>stream</code> module from node core, for browsers!</li>
+<li><a href="https://github.com/feross/buffer">buffer</a> - The <code>buffer</code> module from node.js, for the browser.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <div align="center"><img src="browserify.png" alt="Browserify!"></div>
+
+<h1>Awesome Browserify <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<blockquote>
+<p>:crystal_ball: A curated list of awesome <a href="https://github.com/substack/node-browserify">Browserify</a> resources, libraries, and tools.</p>
+</blockquote>
+<p>Please help improve this list by <a href="contributing.md">contributing</a>!</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#official-resources">Official Resources</a></li>
+<li><a href="#community-resources">Community Resources</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#demos">Demos</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#development-servers">Development Servers</a></li>
+<li><a href="#plugins">Plugins</a></li>
+<li><a href="#watchers">Watchers</a></li>
+<li><a href="#css-bundlers">CSS Bundlers</a></li>
+<li><a href="#transforms">Transforms</a></li>
+<li><a href="#node-in-the-browser">Node in the Browser</a></li>
+<li><a href="#production-tools">Production Tools</a></li>
+</ul>
+<h2>About</h2>
+<p>Browserify lets you <code>require('modules')</code> in the browser by bundling up all of your dependencies.</p>
+<p>You can use a node-style <code>require()</code> to organize your browser code and load modules installed by npm. Browserify will recursively analyze all the <code>require()</code> calls in your app in order to build a bundle you can serve up to the browser in a single <code>&lt;script&gt;</code> tag.</p>
+<h2>Official Resources</h2>
+<ul>
+<li><a href="https://github.com/substack/node-browserify#usage">Docs</a></li>
+<li><a href="https://github.com/substack/browserify-handbook">Handbook</a></li>
+<li><a href="https://github.com/substack/node-browserify">Repo</a></li>
+<li><a href="http://browserify.org/">Website</a></li>
+</ul>
+<h2>Community Resources</h2>
+<ul>
+<li><a href="http://webchat.freenode.net/?channels=browserify">IRC</a></li>
+<li><a href="http://twitter.com/browserify">Twitter</a></li>
+<li><a href="http://stackoverflow.com/questions/tagged/browserify">StackOverflow</a></li>
+</ul>
+<h2>Tutorials</h2>
+<ul>
+<li><a href="http://browserify.org/#middle-section">Hello World with Browserify</a></li>
+<li><a href="https://github.com/workshopper/browserify-adventure">Browserify Adventure</a></li>
+<li><a href="https://ponyfoo.com/articles/a-gentle-browserify-walkthrough">A Gentle Browserify Walkthrough</a></li>
+<li><a href="http://zhaoda.net/2015/10/16/browserify-guide/">Browserify guide</a> (Chinese)</li>
+</ul>
+<h2>Articles</h2>
+<ul>
+<li><a href="https://writingjavascript.org/posts/introduction-to-browserify">Introduction to Browserify</a></li>
+<li><a href="http://dontkry.com/posts/code/using-npm-on-the-client-side.html">Using npm on the client side</a></li>
+<li><a href="http://benclinkinbeard.com/posts/how-browserify-works/">How Browserify Works</a></li>
+<li><a href="https://www.viget.com/articles/gulp-browserify-starter-faq">Gulp + Browserify: The Everything Post</a></li>
+<li><a href="http://www.forbeslindesay.co.uk/post/44144487088/browserify-vs-component">Browserify vs Component</a></li>
+<li><a href="https://gist.github.com/substack/68f8d502be42d5cd4942">Browserify for Webpack users</a></li>
+<li><a href="https://mattdesl.svbtle.com/browserify-vs-webpack">Browserify vs. Webpack</a></li>
+</ul>
+<h2>Demos</h2>
+<ul>
+<li><a href="http://requirebin.com/?gist=maxogden/9576799">Canvas Splitter</a> by <a href="http://github.com/hughsk">hughsk</a></li>
+<li><a href="http://requirebin.com/?gist=maxogden/9557700">Infinite 2D Cave Generator</a> by <a href="http://github.com/hughsk">hughsk</a></li>
+<li><a href="http://requirebin.com/?gist=maxogden/9557776">2D Velocity Control</a> by <a href="http://github.com/sethvincent">sethvincent</a></li>
+</ul>
+<h2>Videos</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=DCQNm6yiZh0">James Halliday (substack) - LXJS 2013 - Modularidade para todos</a></li>
+<li><a href="https://www.youtube.com/watch?v=CTAa8IcQh1U">Getting Started with Browserify</a> by <a href="https://github.com/shama/">shama</a></li>
+<li><a href="https://www.youtube.com/watch?v=Uk2bgp8OLT8">Transform your Bundles with Browserify</a> by <a href="https://github.com/shama/">shama</a></li>
+</ul>
+<h2>Tools</h2>
+<h3>Development Servers</h3>
+<ul>
+<li><a href="https://github.com/mattdesl/budo">budo</a> - Dev server for rapid prototyping.</li>
+<li><a href="https://github.com/chrisdickinson/beefy">beefy</a> - Local development server that aims to make using browserify fast and fun.</li>
+<li><a href="https://github.com/maxogden/wzrd">wzrd</a> - Super minimal browserify development server.</li>
+</ul>
+<h3>Plugins</h3>
+<ul>
+<li><a href="https://github.com/AgentME/browserify-hmr">browserify-hmr</a> - Hot Module Replacement plugin for Browserify.</li>
+</ul>
+<h3>Watchers</h3>
+<ul>
+<li><a href="https://github.com/substack/watchify">watchify</a> - Watch mode for browserify builds.</li>
+<li><a href="https://github.com/royriojas/persistify">persistify</a> - Wrapper around <code>browserify</code> to make incremental builds.</li>
+</ul>
+<h3>CSS bundlers</h3>
+<ul>
+<li><a href="https://github.com/stackcss/sheetify">sheetify</a> - Modular CSS bundler for browserify.</li>
+<li><a href="https://github.com/rotundasoftware/parcelify">parcelify</a> - Add css to your npm modules consumed with browserify.</li>
+<li><a href="https://github.com/css-modules/css-modulesify">css-modulesify</a> - Browserify plugin to load CSS Modules.</li>
+</ul>
+<h3>Transforms</h3>
+<ul>
+<li><a href="https://github.com/babel/babelify">babelify</a> - Browserify transform for babel.</li>
+<li><a href="https://github.com/benbria/aliasify">aliasify</a> - Remap require calls at build time.</li>
+<li><a href="https://github.com/substack/brfs">brfs</a> - <code>fs.readFileSync()</code> and <code>fs.readFile()</code> static asset browserify transform.</li>
+</ul>
+<h3>Node in the Browser</h3>
+<ul>
+<li><a href="https://github.com/crypto-browserify/crypto-browserify">crypto-browserify</a> - Port of node's <code>crypto</code> module to the browser.</li>
+<li><a href="https://github.com/substack/stream-browserify">stream-browserify</a> - The <code>stream</code> module from node core, for browsers!</li>
+<li><a href="https://github.com/feross/buffer">buffer</a> - The <code>buffer</code> module from node.js, for the browser.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'browserify_README.md';
 
         fetch(markdownFile)
@@ -48,21 +247,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

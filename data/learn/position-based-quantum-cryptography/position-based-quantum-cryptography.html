@@ -8,38 +8,121 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Renaller Awesome Position Based Quantum Cryptography - Awesome List Resources">
-    <title>Renaller Awesome Position Based Quantum Cryptography</title>
+    <meta name="description" content="This is a curated list of papers on position-based quantum cryptography (PBQC). The goal is to build a categorised community-driven always up-to-date...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Position-Based Quantum Cryptography [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Position-Based Quantum Cryptography <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p>This is a curated list of papers on position-based quantum cryptography (PBQC). The goal is to build a categorised community-driven always up-to-date literature overview of this growing field.</p>
+<p>QPV = Quantum Position Verification</p>
+<p>QPA = Quantum Position-based Authentication</p>
+<p>PB-QKD = Position-based Quantum Key Distribution</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#classical-impossibility">Classical Impossibility</a></li>
+<li><a href="#first-protocols">First Protocols</a></li>
+<li><a href="#universal-attacks-on-qpv">Universal Attacks on QPV</a></li>
+<li><a href="#ways-around-the-universal-attacks-on-qpv">Ways Around the Universal Attacks on QPV</a></li>
+<li><a href="#conjectured-exponential-lower-bound">Conjectured Exponential Lower Bound</a></li>
+<li><a href="#quantum-position-based-authentication">Quantum Position-based Authentication</a></li>
+<li><a href="#towards-understanding-nlqc">Towards Understanding NLQC</a></li>
+<li><a href="#towards-practicality">Towards Practicality</a></li>
+<li><a href="#experiments">Experiments</a></li>
+</ul>
+<h2>Classical Impossibility</h2>
+<ul>
+<li><a href="https://doi.org/10.1007/978-3-642-03356-8_23">Position-based cryptography (2009)</a> - Establishes classical impossibility of position-based cryptography in the vanilla model. Explores possibility in the bounded-storage model.</li>
+</ul>
+<h2>First Protocols</h2>
+<ul>
+<li><a href="https://patents.google.com/patent/US20060022832A1/en">Tagging systems (2006)</a> - Introduces QPV under the name of 'quantum tagging'.</li>
+<li><a href="https://doi.org/10.1103/PhysRevA.81.042319">Location-dependent communications using
+quantum entanglement (2010)</a> - Introduces QPV in the academic literature, but incorrectly claims unconditional security. Studies QPV based on Bell states.</li>
+<li><a href="https://doi.org/10.1109/GLOCOM.2010.5684009">Quantum location verification in noisy channels (2010)</a> - Studies QPV based on Bell states, GHZ states and entanglement swapping. Studies the effect of noise/decoherence.</li>
+<li><a href="https://doi.org/10.1103/PhysRevA.84.012326">Quantum tagging: Authenticating location via quantum information and relativistic signalling constraints (2011)</a> - Introduces a rooster of different QPV protocols like BB84 QPV, $f$-routing, $f$-BB84 QPV and variations of them. Mentions entanglement-based attacks on some of them.</li>
+</ul>
+<h3>BB84 QPV and Generalisations</h3>
+<ul>
+<li><a href="https://doi.org/10.1137/130913687">Position-based quantum cryptography: Impossibility and constructions (2011)</a> - Shows security against unentangled attacks.</li>
+<li><a href="https://doi.org/10.1088/1367-2630/15/10/103002">A monogamy-of-entanglement game with applications to device-independent quantum cryptography (2013)</a> - Shows a tight upper bound for unentangled attacks, parallel repetition and a linear lower bound for the repeated protocol.</li>
+<li><a href="https://doi.org/10.1103/PhysRevA.92.052304">Practical position-based quantum cryptography (2015)</a> - Considers the case where the two input bases are related by a unitary $U$.</li>
+<li><a href="https://arxiv.org/abs/1504.07171">A tight lower bound for the BB84-states quantum-position-verification protocol (2015)</a> - Gives essentially tight lower bound for attacks with classical communication.</li>
+<li><a href="https://doi.org/10.1103/PhysRevA.91.042337">Loss-tolerant position-based quantum cryptography (2015)</a> - Generalises BB84 QPV to more input bases and notes better loss tolerance properties because of it. Also discusses using decoy states and continuous variables for BB84 QPV.</li>
+<li><a href="https://eprints.illc.uva.nl/id/eprint/2138/">Position-based quantum cryptography and catalytic computation (2016)</a> - Chapter 5 independently generalises BB84 QPV to more input bases. Chapter 4 provides an efficient attack on the protocol based on interleaved unitaries.</li>
+<li><a href="https://arxiv.org/abs/2007.15808">Breaking simple quantum position verification protocols with little entanglement (2020)</a> - Considers the case when the input bases are related by different angles and shows dimension-dependent attacks depending on the angle. Notably, they show the angle $\pi/6$ (outside the Clifford hierarchy) can be attacked with a 6-dimensional resource state.</li>
+<li><a href="https://doi.org/10.1103/PhysRevLett.131.140802">Single-qubit loss-tolerant quantum position verification protocol secure against entangled attackers (2023)</a> - Tightly characterises the secure region of the protocol depending on the loss and error rates.</li>
+<li><a href="https://arxiv.org/abs/2308.04166">Security of a continuous-variable based quantum position verification protocol (2023)</a> - Generalises the protocol to continuous variable inputs and shows security against unentangled attacks depending on loss and noise rates.</li>
+<li><a href="https://arxiv.org/abs/2406.20022">Perfect cheating is impossible for single-qubit position verification (2024)</a> - Considers a generalisation where the input qubits are eigenstates of a $\mathbb{C}^2$ projector chosen uniformly at random. Shows that no finite-dimensional resource state can perfectly attack this protocol.</li>
+</ul>
+<h3>$f$-routing</h3>
+<ul>
+<li><a href="https://doi.org/10.1145/2422436.2422455">The garden-hose model (2013)</a> - Studies attacks on $f$-routing and introduces garden-hose complexity to connect attacks on $f$-routing to complexity theory. Provides many first results regarding that connection, for example that any $f \in \mathsf{L}$ (with pre-processing) can be attacked efficiently.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Position-Based Quantum Cryptography <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p>This is a curated list of papers on position-based quantum cryptography (PBQC). The goal is to build a categorised community-driven always up-to-date literature overview of this growing field.</p>
+<p>QPV = Quantum Position Verification</p>
+<p>QPA = Quantum Position-based Authentication</p>
+<p>PB-QKD = Position-based Quantum Key Distribution</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#classical-impossibility">Classical Impossibility</a></li>
+<li><a href="#first-protocols">First Protocols</a></li>
+<li><a href="#universal-attacks-on-qpv">Universal Attacks on QPV</a></li>
+<li><a href="#ways-around-the-universal-attacks-on-qpv">Ways Around the Universal Attacks on QPV</a></li>
+<li><a href="#conjectured-exponential-lower-bound">Conjectured Exponential Lower Bound</a></li>
+<li><a href="#quantum-position-based-authentication">Quantum Position-based Authentication</a></li>
+<li><a href="#towards-understanding-nlqc">Towards Understanding NLQC</a></li>
+<li><a href="#towards-practicality">Towards Practicality</a></li>
+<li><a href="#experiments">Experiments</a></li>
+</ul>
+<h2>Classical Impossibility</h2>
+<ul>
+<li><a href="https://doi.org/10.1007/978-3-642-03356-8_23">Position-based cryptography (2009)</a> - Establishes classical impossibility of position-based cryptography in the vanilla model. Explores possibility in the bounded-storage model.</li>
+</ul>
+<h2>First Protocols</h2>
+<ul>
+<li><a href="https://patents.google.com/patent/US20060022832A1/en">Tagging systems (2006)</a> - Introduces QPV under the name of 'quantum tagging'.</li>
+<li><a href="https://doi.org/10.1103/PhysRevA.81.042319">Location-dependent communications using
+quantum entanglement (2010)</a> - Introduces QPV in the academic literature, but incorrectly claims unconditional security. Studies QPV based on Bell states.</li>
+<li><a href="https://doi.org/10.1109/GLOCOM.2010.5684009">Quantum location verification in noisy channels (2010)</a> - Studies QPV based on Bell states, GHZ states and entanglement swapping. Studies the effect of noise/decoherence.</li>
+<li><a href="https://doi.org/10.1103/PhysRevA.84.012326">Quantum tagging: Authenticating location via quantum information and relativistic signalling constraints (2011)</a> - Introduces a rooster of different QPV protocols like BB84 QPV, $f$-routing, $f$-BB84 QPV and variations of them. Mentions entanglement-based attacks on some of them.</li>
+</ul>
+<h3>BB84 QPV and Generalisations</h3>
+<ul>
+<li><a href="https://doi.org/10.1137/130913687">Position-based quantum cryptography: Impossibility and constructions (2011)</a> - Shows security against unentangled attacks.</li>
+<li><a href="https://doi.org/10.1088/1367-2630/15/10/103002">A monogamy-of-entanglement game with applications to device-independent quantum cryptography (2013)</a> - Shows a tight upper bound for unentangled attacks, parallel repetition and a linear lower bound for the repeated protocol.</li>
+<li><a href="https://doi.org/10.1103/PhysRevA.92.052304">Practical position-based quantum cryptography (2015)</a> - Considers the case where the two input bases are related by a unitary $U$.</li>
+<li><a href="https://arxiv.org/abs/1504.07171">A tight lower bound for the BB84-states quantum-position-verification protocol (2015)</a> - Gives essentially tight lower bound for attacks with classical communication.</li>
+<li><a href="https://doi.org/10.1103/PhysRevA.91.042337">Loss-tolerant position-based quantum cryptography (2015)</a> - Generalises BB84 QPV to more input bases and notes better loss tolerance properties because of it. Also discusses using decoy states and continuous variables for BB84 QPV.</li>
+<li><a href="https://eprints.illc.uva.nl/id/eprint/2138/">Position-based quantum cryptography and catalytic computation (2016)</a> - Chapter 5 independently generalises BB84 QPV to more input bases. Chapter 4 provides an efficient attack on the protocol based on interleaved unitaries.</li>
+<li><a href="https://arxiv.org/abs/2007.15808">Breaking simple quantum position verification protocols with little entanglement (2020)</a> - Considers the case when the input bases are related by different angles and shows dimension-dependent attacks depending on the angle. Notably, they show the angle $\pi/6$ (outside the Clifford hierarchy) can be attacked with a 6-dimensional resource state.</li>
+<li><a href="https://doi.org/10.1103/PhysRevLett.131.140802">Single-qubit loss-tolerant quantum position verification protocol secure against entangled attackers (2023)</a> - Tightly characterises the secure region of the protocol depending on the loss and error rates.</li>
+<li><a href="https://arxiv.org/abs/2308.04166">Security of a continuous-variable based quantum position verification protocol (2023)</a> - Generalises the protocol to continuous variable inputs and shows security against unentangled attacks depending on loss and noise rates.</li>
+<li><a href="https://arxiv.org/abs/2406.20022">Perfect cheating is impossible for single-qubit position verification (2024)</a> - Considers a generalisation where the input qubits are eigenstates of a $\mathbb{C}^2$ projector chosen uniformly at random. Shows that no finite-dimensional resource state can perfectly attack this protocol.</li>
+</ul>
+<h3>$f$-routing</h3>
+<ul>
+<li><a href="https://doi.org/10.1145/2422436.2422455">The garden-hose model (2013)</a> - Studies attacks on $f$-routing and introduces garden-hose complexity to connect attacks on $f$-routing to complexity theory. Provides many first results regarding that connection, for example that any $f \in \mathsf{L}$ (with pre-processing) can be attacked efficiently.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'position-based-quantum-cryptography_README.md';
 
         fetch(markdownFile)
@@ -48,21 +131,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

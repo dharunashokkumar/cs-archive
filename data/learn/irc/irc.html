@@ -8,38 +8,169 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Davisonio Awesome Irc - Awesome List Resources">
-    <title>Davisonio Awesome Irc</title>
+    <meta name="description" content="> A curated list of awesome IRC resources. A list of tools, software & other resources related to the Internet Relay Chat (IRC) protocol. IRC (Internet Relay...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome IRC [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome IRC <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a></h1>
+<blockquote>
+<p>A curated list of awesome <a href="https://en.wikipedia.org/wiki/Internet_Relay_Chat">IRC</a> resources.</p>
+</blockquote>
+<p>A list of tools, software &amp; other resources related to the Internet Relay Chat (IRC) protocol.</p>
+<p>IRC (Internet Relay Chat) is an open source protocol that can be used for multi-user text based communication through channels.</p>
+<h2>Contents</h2>
+<!--lint disable awesome-toc-->
+<!--lint disable awesome-list-item-->
+<!--lint ignore double-link-->
+<ul>
+<li><a href="#clients">Clients</a></li>
+<li><a href="#bouncers">Bouncers</a></li>
+<li><a href="#hosted">Hosted</a></li>
+<li><a href="#self-hosted">Self-hosted</a></li>
+<li><a href="#daemons">Daemons</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#bots">Bots</a></li>
+<li><a href="#frameworks">Frameworks</a></li>
+<li><a href="#bridges">Bridges</a></li>
+<li><a href="#channels">Channels</a></li>
+<li><a href="#discovery">Discovery</a></li>
+<li><a href="#platforms">Platforms</a></li>
+<li><a href="#programming">Programming</a></li>
+<li><a href="#networks">Networks</a></li>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#guides">Guides</a></li>
+<li><a href="#protocol">Protocol</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+</ul>
+<h2>Clients</h2>
+<p><em>You use these to connect to IRC.</em></p>
+<ul>
+<li><a href="https://www.codeux.com/textual/">Textual</a> - Very customizable, ZNC integration, iCloud sync ($4.99). (<a href="https://github.com/Codeux-Software/Textual">source</a>) <code>macOS</code></li>
+<li><a href="http://limechat.net/mac/">LimeChat</a> - One window for multiple servers, keyboard shortcuts, fast &amp; stable. (<a href="https://github.com/psychs/limechat">source</a>) <code>macOS</code> <code>iOS</code></li>
+<li><a href="https://hexchat.github.io">HexChat</a> - Based on XChat, easy to use, spell check &amp; multiple languages. (<a href="https://github.com/hexchat/hexchat">source</a>) <code>Windows</code> <code>macOS</code> <code>Linux</code></li>
+<li><a href="https://sr.ht/~emersion/gamja/">gamja</a> - A simple IRC web client. (<a href="https://git.sr.ht/~emersion/gamja">source</a>) <code>Web</code></li>
+<li><a href="https://kiwiirc.com">Kiwi IRC</a> - Powerful modern IRC messenger for the web. (<a href="https://github.com/kiwiirc/kiwiirc">source</a>, <a href="https://kiwiirc.com/nextclient/">demo</a>) <code>Web</code></li>
+<li><a href="https://flackr.github.io/circ/">CIRC</a> - Uses the chrome.sockets APIs to connect directly to IRC servers without needing a proxy. (<a href="https://github.com/flackr/circ">source</a>) <code>Chrome</code></li>
+<li><a href="https://quassel-irc.org">Quassel</a> - Distributed (clients can attach to and detach from a central core that stays permanently online. (<a href="https://github.com/quassel/quassel">source</a>) <code>Linux</code> <code>macOS</code> <code>Windows</code></li>
+<li><a href="https://www.yaaic.org">Yaaic</a> - Multi-server/channel support, SASL support, Smooth channel scrolling / swiping. (<a href="https://github.com/pocmo/Yaaic">source</a>) <code>Android</code></li>
+<li><a href="https://github.com/Fauntleroy/relay.js">relay.js</a> - Focuses on making IRC less intimidating and easier to use. <code>Web</code></li>
+<li><a href="https://github.com/emacs-circe/circe">Circe</a> - For use in Emacs, sane defaults. <code>Emacs</code></li>
+<li><a href="https://smuxi.im">Smuxi</a> - User-friendly, based on GNOME / GTK+. (<a href="https://github.com/meebey/smuxi">source</a>) <code>Linux</code> <code>Windows</code> <code>macOS</code></li>
+<li><a href="https://www.kvirc.net">KvIRC</a> - Free, portable, based on Qt GUI toolkit. (<a href="https://github.com/kvirc/KVIrc">source</a>) <code>Linux</code> <code>macOS</code> <code>Windows</code></li>
+<li><a href="https://konversation.kde.org">Konversation</a> - User-friendly client built on the KDE Platform. (<a href="https://github.com/KDE/konversation">source</a>) <code>Linux</code></li>
+<li><a href="https://tools.suckless.org/sic/">sic</a> - <strong>S</strong>imple <strong>I</strong>RC <strong>c</strong>lient - a terminal client in less than 250 lines of C. <code>Linux</code></li>
+<li><a href="https://irssi.org">irssi</a> - Terminal client, multi-protocol friendly for module authors, GPLv2. <code>Linux</code> <code>macOS</code> <code>Cygwin</code> <code>BSD</code></li>
+<li><a href="https://github.com/MCMrARM/revolution-irc">Revolution IRC</a> - Feature-full, actively maintained Android IRC client. <code>Android</code></li>
+<li><a href="https://adiirc.com">AdiIRC</a> - Never has a client offered such granular settings for every aspect of the IRC experience. (<a href="https://dev.adiirc.com/projects/adiirc/wiki/Features">features</a>, <a href="https://dev.adiirc.com/projects/adiirc/wiki/Screenshots">screenshots</a>) <code>Windows</code> <code>WINE</code></li>
+<li><a href="https://www.countercultured.net/android/">IRC for Android™</a> - Android/Chrome OS client for power users, with ZNC built-ins, notification logic, reliable DCC, keybinds for hardware keyboards, etc. <code>Android</code> <code>ChromeOS</code></li>
+<li><a href="https://appcenter.elementary.io/com.github.avojak.iridium/">Iridium</a> - Friendly IRC client built in Vala and GTK, designed for elementary OS. (<a href="https://github.com/avojak/iridium">source</a>) <code>Linux</code></li>
+<li><a href="https://sr.ht/~emersion/goguma/">Goguma</a> - An IRC client for mobile devices, from the creator of soju. <code>Android</code> <code>Linux</code></li>
+</ul>
+<!--lint ignore double-link-->
+<p><em>More? Clients that include bouncers are found <a href="#bouncers">below</a>.</em></p>
+<h2>Bouncers</h2>
+<p><em>Useful for disconnecting and reconnecting without losing the chat session.</em></p>
+<h3>Hosted</h3>
+<ul>
+<li><a href="https://www.irccloud.com">IRCCloud</a> - Group chat for teams, friends, and communities. stay connected, chat from anywhere, and never miss a message (+client) (£0-£3.50/month).</li>
+<li><a href="https://github.com/irccloud/ios">iOS App</a> - Official. <code>Objective-C</code></li>
+<li><a href="https://github.com/irccloud/android">Android App</a> - Official. <code>Java</code></li>
+<li><a href="https://github.com/jnordberg/irccloudapp">Nimbus</a> - Standalone client. <code>macOS</code> <code>Objective-C</code></li>
+</ul>
+<h3>Self-hosted</h3>
+<ul>
+<li><a href="https://convos.chat">Convos</a> - Always online web IRC client. (<a href="https://github.com/convos-chat/convos">source</a>) <code>Perl</code> <code>JavaScript</code> <code>Web</code></li>
+<li><a href="https://wiki.znc.in/ZNC">ZNC</a> - Most popular. many different plugins. (<a href="https://github.com/znc/znc">source</a>) <code>C++</code></li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome IRC <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a></h1>
+<blockquote>
+<p>A curated list of awesome <a href="https://en.wikipedia.org/wiki/Internet_Relay_Chat">IRC</a> resources.</p>
+</blockquote>
+<p>A list of tools, software &amp; other resources related to the Internet Relay Chat (IRC) protocol.</p>
+<p>IRC (Internet Relay Chat) is an open source protocol that can be used for multi-user text based communication through channels.</p>
+<h2>Contents</h2>
+<!--lint disable awesome-toc-->
+<!--lint disable awesome-list-item-->
+<!--lint ignore double-link-->
+<ul>
+<li><a href="#clients">Clients</a></li>
+<li><a href="#bouncers">Bouncers</a></li>
+<li><a href="#hosted">Hosted</a></li>
+<li><a href="#self-hosted">Self-hosted</a></li>
+<li><a href="#daemons">Daemons</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#bots">Bots</a></li>
+<li><a href="#frameworks">Frameworks</a></li>
+<li><a href="#bridges">Bridges</a></li>
+<li><a href="#channels">Channels</a></li>
+<li><a href="#discovery">Discovery</a></li>
+<li><a href="#platforms">Platforms</a></li>
+<li><a href="#programming">Programming</a></li>
+<li><a href="#networks">Networks</a></li>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#guides">Guides</a></li>
+<li><a href="#protocol">Protocol</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+</ul>
+<h2>Clients</h2>
+<p><em>You use these to connect to IRC.</em></p>
+<ul>
+<li><a href="https://www.codeux.com/textual/">Textual</a> - Very customizable, ZNC integration, iCloud sync ($4.99). (<a href="https://github.com/Codeux-Software/Textual">source</a>) <code>macOS</code></li>
+<li><a href="http://limechat.net/mac/">LimeChat</a> - One window for multiple servers, keyboard shortcuts, fast &amp; stable. (<a href="https://github.com/psychs/limechat">source</a>) <code>macOS</code> <code>iOS</code></li>
+<li><a href="https://hexchat.github.io">HexChat</a> - Based on XChat, easy to use, spell check &amp; multiple languages. (<a href="https://github.com/hexchat/hexchat">source</a>) <code>Windows</code> <code>macOS</code> <code>Linux</code></li>
+<li><a href="https://sr.ht/~emersion/gamja/">gamja</a> - A simple IRC web client. (<a href="https://git.sr.ht/~emersion/gamja">source</a>) <code>Web</code></li>
+<li><a href="https://kiwiirc.com">Kiwi IRC</a> - Powerful modern IRC messenger for the web. (<a href="https://github.com/kiwiirc/kiwiirc">source</a>, <a href="https://kiwiirc.com/nextclient/">demo</a>) <code>Web</code></li>
+<li><a href="https://flackr.github.io/circ/">CIRC</a> - Uses the chrome.sockets APIs to connect directly to IRC servers without needing a proxy. (<a href="https://github.com/flackr/circ">source</a>) <code>Chrome</code></li>
+<li><a href="https://quassel-irc.org">Quassel</a> - Distributed (clients can attach to and detach from a central core that stays permanently online. (<a href="https://github.com/quassel/quassel">source</a>) <code>Linux</code> <code>macOS</code> <code>Windows</code></li>
+<li><a href="https://www.yaaic.org">Yaaic</a> - Multi-server/channel support, SASL support, Smooth channel scrolling / swiping. (<a href="https://github.com/pocmo/Yaaic">source</a>) <code>Android</code></li>
+<li><a href="https://github.com/Fauntleroy/relay.js">relay.js</a> - Focuses on making IRC less intimidating and easier to use. <code>Web</code></li>
+<li><a href="https://github.com/emacs-circe/circe">Circe</a> - For use in Emacs, sane defaults. <code>Emacs</code></li>
+<li><a href="https://smuxi.im">Smuxi</a> - User-friendly, based on GNOME / GTK+. (<a href="https://github.com/meebey/smuxi">source</a>) <code>Linux</code> <code>Windows</code> <code>macOS</code></li>
+<li><a href="https://www.kvirc.net">KvIRC</a> - Free, portable, based on Qt GUI toolkit. (<a href="https://github.com/kvirc/KVIrc">source</a>) <code>Linux</code> <code>macOS</code> <code>Windows</code></li>
+<li><a href="https://konversation.kde.org">Konversation</a> - User-friendly client built on the KDE Platform. (<a href="https://github.com/KDE/konversation">source</a>) <code>Linux</code></li>
+<li><a href="https://tools.suckless.org/sic/">sic</a> - <strong>S</strong>imple <strong>I</strong>RC <strong>c</strong>lient - a terminal client in less than 250 lines of C. <code>Linux</code></li>
+<li><a href="https://irssi.org">irssi</a> - Terminal client, multi-protocol friendly for module authors, GPLv2. <code>Linux</code> <code>macOS</code> <code>Cygwin</code> <code>BSD</code></li>
+<li><a href="https://github.com/MCMrARM/revolution-irc">Revolution IRC</a> - Feature-full, actively maintained Android IRC client. <code>Android</code></li>
+<li><a href="https://adiirc.com">AdiIRC</a> - Never has a client offered such granular settings for every aspect of the IRC experience. (<a href="https://dev.adiirc.com/projects/adiirc/wiki/Features">features</a>, <a href="https://dev.adiirc.com/projects/adiirc/wiki/Screenshots">screenshots</a>) <code>Windows</code> <code>WINE</code></li>
+<li><a href="https://www.countercultured.net/android/">IRC for Android™</a> - Android/Chrome OS client for power users, with ZNC built-ins, notification logic, reliable DCC, keybinds for hardware keyboards, etc. <code>Android</code> <code>ChromeOS</code></li>
+<li><a href="https://appcenter.elementary.io/com.github.avojak.iridium/">Iridium</a> - Friendly IRC client built in Vala and GTK, designed for elementary OS. (<a href="https://github.com/avojak/iridium">source</a>) <code>Linux</code></li>
+<li><a href="https://sr.ht/~emersion/goguma/">Goguma</a> - An IRC client for mobile devices, from the creator of soju. <code>Android</code> <code>Linux</code></li>
+</ul>
+<!--lint ignore double-link-->
+<p><em>More? Clients that include bouncers are found <a href="#bouncers">below</a>.</em></p>
+<h2>Bouncers</h2>
+<p><em>Useful for disconnecting and reconnecting without losing the chat session.</em></p>
+<h3>Hosted</h3>
+<ul>
+<li><a href="https://www.irccloud.com">IRCCloud</a> - Group chat for teams, friends, and communities. stay connected, chat from anywhere, and never miss a message (+client) (£0-£3.50/month).</li>
+<li><a href="https://github.com/irccloud/ios">iOS App</a> - Official. <code>Objective-C</code></li>
+<li><a href="https://github.com/irccloud/android">Android App</a> - Official. <code>Java</code></li>
+<li><a href="https://github.com/jnordberg/irccloudapp">Nimbus</a> - Standalone client. <code>macOS</code> <code>Objective-C</code></li>
+</ul>
+<h3>Self-hosted</h3>
+<ul>
+<li><a href="https://convos.chat">Convos</a> - Always online web IRC client. (<a href="https://github.com/convos-chat/convos">source</a>) <code>Perl</code> <code>JavaScript</code> <code>Web</code></li>
+<li><a href="https://wiki.znc.in/ZNC">ZNC</a> - Most popular. many different plugins. (<a href="https://github.com/znc/znc">source</a>) <code>C++</code></li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'irc_README.md';
 
         fetch(markdownFile)
@@ -48,21 +179,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

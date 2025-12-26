@@ -8,38 +8,291 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ember Community Russia Awesome Ember - Awesome List Resources">
-    <title>Ember Community Russia Awesome Ember</title>
+    <meta name="description" content="A curated list of delightful Ember.js packages and resources. Ember.js Myths&nbsp;&nbsp;&nbsp; Readers Questions&nbsp;&nbsp;&nbsp; Contribute to Ember.js Just...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Ember.js [![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Ember.js <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<div align="center">
+  <a href="https://emberjs.com"><img width="300" src="media/ember-logo.svg" alt="Ember.js"></a>
+  <br>
+</div>
+
+<p align="center">A curated list of delightful Ember.js <a href="#packages">packages</a> and <a href="#resources">resources</a>.</p>
+
+<p><br></p>
+<p align="center">
+  <a href="ember-myths.md">Ember.js Myths</a>&nbsp;&nbsp;&nbsp;
+  <a href="ember-questions.md">Readers Questions</a>&nbsp;&nbsp;&nbsp;
+  <a href="https://help-wanted.emberjs.com/core">Contribute to Ember.js</a>
+</p>
+
+<p><br></p>
+<p align="center">
+  <sub>Just type <a href="https://ember.cool"><code>ember.cool</code></a> OR <a href="https://ember-community-russia.github.io/awesome-ember/"><code>https://ember-community-russia.github.io/awesome-ember/</code></a> to go here.</sub>
+</p>
+
+<hr />
+<p><a href="https://emberjs.com">Ember.js</a> is a JavaScript framework that greatly reduces the time, effort and resources needed
+to build any web application. It is focused on making you, the developer, as productive as possible by doing all the common, repetitive, yet essential, tasks involved in most web development projects.</p>
+<p><a href="https://emberjs.com">Ember.js</a> also provides access to the most advanced features of JavaScript, HTML and the Browser giving you everything you need to create your next killer web app.</p>
+<hr />
+<p><em>You might also like <a href="https://github.com/sorrycc/awesome-javascript">awesome-javascript</a>.</em>
+<em>Please read the <a href="contributing.md">contribution guidelines</a> before contributing.</em></p>
+<hr />
+<h2>Contents</h2>
+<ul>
+<li>Awesome Ember.js <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></li>
+<li><a href="#contents">Contents</a></li>
+<li><a href="#packages">Packages</a><ul>
+<li><a href="#ast">AST</a></li>
+<li><a href="#a11y">a11y</a></li>
+<li><a href="#adapters">Adapters</a></li>
+<li><a href="#animations">Animations</a></li>
+<li><a href="#authentication">Authentication</a></li>
+<li><a href="#automation">Automation</a></li>
+<li><a href="#benchmarking">Benchmarking</a></li>
+<li><a href="#blogging">Blogging</a></li>
+<li><a href="#babel">Babel</a></li>
+<li><a href="#boilerplating">Boilerplating</a></li>
+<li><a href="#broccoli">Broccoli</a></li>
+<li><a href="#broccoli-read">Broccoli read</a></li>
+<li><a href="#build-tools">Build tools</a></li>
+<li><a href="#charts">Charts</a></li>
+<li><a href="#cicd">CI/CD</a></li>
+<li><a href="#code-splitting">Code Splitting</a></li>
+<li><a href="#codestyle">Codestyle</a></li>
+<li><a href="#command-line-apps">Command-line apps</a></li>
+<li><a href="#command-line-utilities">Command-line utilities</a></li>
+<li><a href="#component-addons">Component addons</a></li>
+<li><a href="#compression">Compression</a></li>
+<li><a href="#content-management-systems">Content management systems</a></li>
+<li><a href="#control-flow">Control flow</a></li>
+<li><a href="#css--etc">CSS &amp; etc</a></li>
+<li><a href="#fonts">Fonts</a></li>
+<li><a href="#state-management">State management</a></li>
+<li><a href="#styling-kits">Styling kits</a></li>
+<li><a href="#data-management">Data Management</a></li>
+<li><a href="#data-manipulation--computed">Data manipulation &amp; Computed</a></li>
+<li><a href="#data-validation">Data validation</a></li>
+<li><a href="#database">Database</a></li>
+<li><a href="#date">Date</a></li>
+<li><a href="#debugging--profiling">Debugging / Profiling</a></li>
+<li><a href="#decorators">Decorators</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#ember-inspector-roadmaps--overview">Ember-inspector roadmaps &amp; overview</a></li>
+<li><a href="#end-user-customization">End-user customization</a></li>
+<li><a href="#es6">ES6</a></li>
+<li><a href="#external-components-integration">External Components Integration</a></li>
+<li><a href="#forms">Forms</a></li>
+<li><a href="#functional-programming">Functional programming</a></li>
+<li><a href="#http">HTTP</a></li>
+<li><a href="#helpers">Helpers</a></li>
+<li><a href="#image">Image</a></li>
+<li><a href="#include-external-js-code">Include external JS code</a></li>
+<li><a href="#infinite-scroll">Infinite Scroll</a></li>
+<li><a href="#internalization--localization">Internalization &amp; Localization</a></li>
+<li><a href="#inputs">Inputs</a></li>
+<li><a href="#job-queues">Job queues</a></li>
+<li><a href="#logging">Logging</a></li>
+<li><a href="#mad-science">Mad science</a></li>
+<li><a href="#math">Math</a></li>
+<li><a href="#metrics">Metrics</a></li>
+<li><a href="#minifiers">Minifiers</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#mobile">Mobile</a></li>
+<li><a href="#modifiers">Modifiers</a></li>
+<li><a href="#parcel">Parcel</a></li>
+<li><a href="#payments">Payments</a></li>
+<li><a href="#polyfills">Polyfills</a></li>
+<li><a href="#pwa">PWA</a></li>
+<li><a href="#query-params">Query Params</a></li>
+<li><a href="#real-time">Real-time</a></li>
+<li><a href="#routing-addons">Routing addons</a></li>
+<li><a href="#resolver-customization">Resolver customization</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#service-workers">Service Workers</a></li>
+<li><a href="#ssr--server-side-rendering">SSR / Server Side Rendering</a></li>
+<li><a href="#static-site-generators--seo">Static site generators &amp; SEO</a></li>
+<li><a href="#styling">Styling</a></li>
+<li><a href="#templating">Templating</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#text">Text</a></li>
+<li><a href="#tree-shaking">Tree Shaking</a></li>
+<li><a href="#typescript">TypeScript</a></li>
+<li><a href="#ui-libs">UI libs</a></li>
+<li><a href="#ui-components">UI components</a></li>
+<li><a href="#ux">UX</a></li>
+<li><a href="#vr">VR</a></li>
+<li><a href="#vs-code-addons">VS Code addons</a></li>
+<li><a href="#atom-addons">Atom addons</a></li>
+<li><a href="#vim">VIM</a></li>
+<li><a href="#web-components">Web Components</a></li>
+<li><a href="#webpack">Webpack</a></li>
+<li><a href="#weird">Weird</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#ember-cli-articles">Ember-Cli Articles</a></li>
+<li><a href="#why-articles">Why Articles</a></li>
+<li><a href="#jump-start-articles">Jump-Start Articles</a></li>
+<li><a href="#articles-glimmer">Articles Glimmer</a></li>
+<li><a href="#articles-engines">Articles Engines</a></li>
+<li><a href="#articles-ember-concurrency">Articles Ember-Concurrency</a></li>
+<li><a href="#articles-es6">Articles ES6</a></li>
+<li><a href="#articles-typescript">Articles TypeScript</a></li>
+</ul>
+</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Ember.js <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<div align="center">
+  <a href="https://emberjs.com"><img width="300" src="media/ember-logo.svg" alt="Ember.js"></a>
+  <br>
+</div>
+
+<p align="center">A curated list of delightful Ember.js <a href="#packages">packages</a> and <a href="#resources">resources</a>.</p>
+
+<p><br></p>
+<p align="center">
+  <a href="ember-myths.md">Ember.js Myths</a>&nbsp;&nbsp;&nbsp;
+  <a href="ember-questions.md">Readers Questions</a>&nbsp;&nbsp;&nbsp;
+  <a href="https://help-wanted.emberjs.com/core">Contribute to Ember.js</a>
+</p>
+
+<p><br></p>
+<p align="center">
+  <sub>Just type <a href="https://ember.cool"><code>ember.cool</code></a> OR <a href="https://ember-community-russia.github.io/awesome-ember/"><code>https://ember-community-russia.github.io/awesome-ember/</code></a> to go here.</sub>
+</p>
+
+<hr />
+<p><a href="https://emberjs.com">Ember.js</a> is a JavaScript framework that greatly reduces the time, effort and resources needed
+to build any web application. It is focused on making you, the developer, as productive as possible by doing all the common, repetitive, yet essential, tasks involved in most web development projects.</p>
+<p><a href="https://emberjs.com">Ember.js</a> also provides access to the most advanced features of JavaScript, HTML and the Browser giving you everything you need to create your next killer web app.</p>
+<hr />
+<p><em>You might also like <a href="https://github.com/sorrycc/awesome-javascript">awesome-javascript</a>.</em>
+<em>Please read the <a href="contributing.md">contribution guidelines</a> before contributing.</em></p>
+<hr />
+<h2>Contents</h2>
+<ul>
+<li>Awesome Ember.js <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></li>
+<li><a href="#contents">Contents</a></li>
+<li><a href="#packages">Packages</a><ul>
+<li><a href="#ast">AST</a></li>
+<li><a href="#a11y">a11y</a></li>
+<li><a href="#adapters">Adapters</a></li>
+<li><a href="#animations">Animations</a></li>
+<li><a href="#authentication">Authentication</a></li>
+<li><a href="#automation">Automation</a></li>
+<li><a href="#benchmarking">Benchmarking</a></li>
+<li><a href="#blogging">Blogging</a></li>
+<li><a href="#babel">Babel</a></li>
+<li><a href="#boilerplating">Boilerplating</a></li>
+<li><a href="#broccoli">Broccoli</a></li>
+<li><a href="#broccoli-read">Broccoli read</a></li>
+<li><a href="#build-tools">Build tools</a></li>
+<li><a href="#charts">Charts</a></li>
+<li><a href="#cicd">CI/CD</a></li>
+<li><a href="#code-splitting">Code Splitting</a></li>
+<li><a href="#codestyle">Codestyle</a></li>
+<li><a href="#command-line-apps">Command-line apps</a></li>
+<li><a href="#command-line-utilities">Command-line utilities</a></li>
+<li><a href="#component-addons">Component addons</a></li>
+<li><a href="#compression">Compression</a></li>
+<li><a href="#content-management-systems">Content management systems</a></li>
+<li><a href="#control-flow">Control flow</a></li>
+<li><a href="#css--etc">CSS &amp; etc</a></li>
+<li><a href="#fonts">Fonts</a></li>
+<li><a href="#state-management">State management</a></li>
+<li><a href="#styling-kits">Styling kits</a></li>
+<li><a href="#data-management">Data Management</a></li>
+<li><a href="#data-manipulation--computed">Data manipulation &amp; Computed</a></li>
+<li><a href="#data-validation">Data validation</a></li>
+<li><a href="#database">Database</a></li>
+<li><a href="#date">Date</a></li>
+<li><a href="#debugging--profiling">Debugging / Profiling</a></li>
+<li><a href="#decorators">Decorators</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#ember-inspector-roadmaps--overview">Ember-inspector roadmaps &amp; overview</a></li>
+<li><a href="#end-user-customization">End-user customization</a></li>
+<li><a href="#es6">ES6</a></li>
+<li><a href="#external-components-integration">External Components Integration</a></li>
+<li><a href="#forms">Forms</a></li>
+<li><a href="#functional-programming">Functional programming</a></li>
+<li><a href="#http">HTTP</a></li>
+<li><a href="#helpers">Helpers</a></li>
+<li><a href="#image">Image</a></li>
+<li><a href="#include-external-js-code">Include external JS code</a></li>
+<li><a href="#infinite-scroll">Infinite Scroll</a></li>
+<li><a href="#internalization--localization">Internalization &amp; Localization</a></li>
+<li><a href="#inputs">Inputs</a></li>
+<li><a href="#job-queues">Job queues</a></li>
+<li><a href="#logging">Logging</a></li>
+<li><a href="#mad-science">Mad science</a></li>
+<li><a href="#math">Math</a></li>
+<li><a href="#metrics">Metrics</a></li>
+<li><a href="#minifiers">Minifiers</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#mobile">Mobile</a></li>
+<li><a href="#modifiers">Modifiers</a></li>
+<li><a href="#parcel">Parcel</a></li>
+<li><a href="#payments">Payments</a></li>
+<li><a href="#polyfills">Polyfills</a></li>
+<li><a href="#pwa">PWA</a></li>
+<li><a href="#query-params">Query Params</a></li>
+<li><a href="#real-time">Real-time</a></li>
+<li><a href="#routing-addons">Routing addons</a></li>
+<li><a href="#resolver-customization">Resolver customization</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#service-workers">Service Workers</a></li>
+<li><a href="#ssr--server-side-rendering">SSR / Server Side Rendering</a></li>
+<li><a href="#static-site-generators--seo">Static site generators &amp; SEO</a></li>
+<li><a href="#styling">Styling</a></li>
+<li><a href="#templating">Templating</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#text">Text</a></li>
+<li><a href="#tree-shaking">Tree Shaking</a></li>
+<li><a href="#typescript">TypeScript</a></li>
+<li><a href="#ui-libs">UI libs</a></li>
+<li><a href="#ui-components">UI components</a></li>
+<li><a href="#ux">UX</a></li>
+<li><a href="#vr">VR</a></li>
+<li><a href="#vs-code-addons">VS Code addons</a></li>
+<li><a href="#atom-addons">Atom addons</a></li>
+<li><a href="#vim">VIM</a></li>
+<li><a href="#web-components">Web Components</a></li>
+<li><a href="#webpack">Webpack</a></li>
+<li><a href="#weird">Weird</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#ember-cli-articles">Ember-Cli Articles</a></li>
+<li><a href="#why-articles">Why Articles</a></li>
+<li><a href="#jump-start-articles">Jump-Start Articles</a></li>
+<li><a href="#articles-glimmer">Articles Glimmer</a></li>
+<li><a href="#articles-engines">Articles Engines</a></li>
+<li><a href="#articles-ember-concurrency">Articles Ember-Concurrency</a></li>
+<li><a href="#articles-es6">Articles ES6</a></li>
+<li><a href="#articles-typescript">Articles TypeScript</a></li>
+</ul>
+</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'ember_README.md';
 
         fetch(markdownFile)
@@ -48,21 +301,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

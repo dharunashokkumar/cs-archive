@@ -8,38 +8,151 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Szenergy Awesome Lidar - Awesome List Resources">
-    <title>Szenergy Awesome Lidar</title>
+    <meta name="description" content="> A curated list of awesome LIDAR sensors and its applications. LIDAR is a remote sensing sensor that uses laser light to measure the surroundings in ~cm...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome LIDAR [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome LIDAR <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a></h1>
+<p><img src="img/lidar.svg" align="right" width="100"></p>
+<blockquote>
+<p>A curated list of awesome LIDAR sensors and its applications.</p>
+</blockquote>
+<p><a href="https://en.wikipedia.org/wiki/Lidar">LIDAR</a> is a remote sensing sensor that uses laser light to measure the surroundings in ~cm accuracy. The sensory data is usually referred as point cloud which means set of data points in 3D or 2D. The list contains hardwares, datasets, point cloud-processing algorithms, point cloud frameworks, simulators etc.</p>
+<p>Contributions are welcome! Please <a href="contributing.md">check out</a> our guidelines.</p>
+<blockquote>
+<p>[!TIP]
+An optional view: <a href="https://www.trackawesomelist.com/szenergy/awesome-lidar/readme/">trackawesomelist.com/szenergy/awesome-lidar</a></p>
+</blockquote>
+<h2>Contents</h2>
+<ul>
+<li><a href="#awesome-lidar-">Awesome LIDAR </a></li>
+<li><a href="#contents">Contents</a></li>
+<li><a href="#conventions">Conventions</a></li>
+<li><a href="#manufacturers">Manufacturers</a></li>
+<li><a href="#datasets">Datasets</a></li>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#frameworks">Frameworks</a></li>
+<li><a href="#algorithms">Algorithms</a><ul>
+<li><a href="#basic-matching-algorithms">Basic matching algorithms</a></li>
+<li><a href="#semantic-segmentation">Semantic segmentation</a></li>
+<li><a href="#ground-segmentation">Ground segmentation</a></li>
+<li><a href="#simultaneous-localization-and-mapping-slam-and-lidar-based-odometry-and-or-mapping-loam">Simultaneous localization and mapping SLAM and LIDAR-based odometry and or mapping LOAM</a></li>
+<li><a href="#object-detection-and-object-tracking">Object detection and object tracking</a></li>
+<li><a href="#lidar-other-sensor-calibration">LIDAR-other-sensor calibration</a></li>
+</ul>
+</li>
+<li><a href="#simulators">Simulators</a></li>
+<li><a href="#related-awesome">Related awesome</a></li>
+<li><a href="#others">Others</a></li>
+</ul>
+<h2>Conventions</h2>
+<ul>
+<li>Any list item with <img alt="" src="https://img.shields.io/badge/github-black?style=flat-square&amp;logo=github" /> badge has a GitHub repo or organization</li>
+<li>Any list item with <img alt="" src="https://img.shields.io/badge/youtube-red?style=flat-square&amp;logo=youtube" /> badge has YouTube videos or channel</li>
+<li>Any list item with <img alt="" src="https://img.shields.io/badge/paper-blue?style=flat-square&amp;logo=semanticscholar" /> badge has a scientific paper or detailed description</li>
+<li>Any list item with <img alt="" src="https://img.shields.io/badge/ROS-2-34aec5?style=flat-square&amp;logo=ros" /> badge is <a href="https://docs.ros.org/"><code>ROS 2</code></a> compatible</li>
+</ul>
+<h2>Manufacturers</h2>
+<ul>
+<li><a href="https://velodynelidar.com/">Velodyne</a> - Ouster and Velodyne announced the successful completion of their <em>merger</em> of equals, effective February 10, 2023. Velodyne was a mechanical and solid-state LIDAR manufacturer. The headquarter is in San Jose, California, USA.</li>
+<li><a href="https://www.youtube.com/user/VelodyneLiDAR">YouTube channel <img alt="" src="https://img.shields.io/badge/youtube-red?style=flat-square&amp;logo=youtube" /></a></li>
+<li><a href="https://github.com/ros-drivers/velodyne">ROS driver <img alt="" src="https://img.shields.io/badge/github-black?style=flat-square&amp;logo=github" /></a></li>
+<li><a href="https://github.com/valgur/velodyne_decoder">C++/Python library <img alt="" src="https://img.shields.io/badge/github-black?style=flat-square&amp;logo=github" /></a></li>
+<li><a href="https://ouster.com/">Ouster</a> - LIDAR manufacturer, specializing in digital-spinning LiDARs. Ouster is headquartered in San Francisco, USA.</li>
+<li><a href="https://www.youtube.com/c/Ouster-lidar">YouTube channel <img alt="" src="https://img.shields.io/badge/youtube-red?style=flat-square&amp;logo=youtube" /></a></li>
+<li><a href="https://github.com/ouster-lidar">GitHub organization <img alt="" src="https://img.shields.io/badge/github-black?style=flat-square&amp;logo=github" /></a> <img alt="" src="https://img.shields.io/badge/ROS-2-34aec5?style=flat-square&amp;logo=ros" /></li>
+<li><a href="https://www.livoxtech.com/">Livox</a> - LIDAR manufacturer.</li>
+<li><a href="https://www.youtube.com/channel/UCnLpB5QxlQUexi40vM12mNQ">YouTube channel <img alt="" src="https://img.shields.io/badge/youtube-red?style=flat-square&amp;logo=youtube" /></a></li>
+<li><a href="https://github.com/Livox-SDK">GitHub organization <img alt="" src="https://img.shields.io/badge/github-black?style=flat-square&amp;logo=github" /></a> <img alt="" src="https://img.shields.io/badge/ROS-2-34aec5?style=flat-square&amp;logo=ros" /></li>
+<li><a href="https://www.sick.com/ag/en/">SICK</a> - Sensor and automation manufacturer, the headquarter is located in Waldkirch, Germany.</li>
+<li><a href="https://www.youtube.com/user/SICKSensors">YouTube channel <img alt="" src="https://img.shields.io/badge/youtube-red?style=flat-square&amp;logo=youtube" /></a></li>
+<li><a href="https://github.com/SICKAG">GitHub organization <img alt="" src="https://img.shields.io/badge/github-black?style=flat-square&amp;logo=github" /></a> <img alt="" src="https://img.shields.io/badge/ROS-2-34aec5?style=flat-square&amp;logo=ros" /></li>
+<li><a href="https://www.hokuyo-aut.jp/">Hokuyo</a> - Sensor and automation manufacturer, headquartered in Osaka, Japan.</li>
+<li><a href="https://www.youtube.com/channel/UCYzJXC82IEy-h-io2REin5g">YouTube channel <img alt="" src="https://img.shields.io/badge/youtube-red?style=flat-square&amp;logo=youtube" /></a></li>
+<li><a href="http://autonomousdriving.pioneer/en/3d-lidar/">Pioneer</a> - LIDAR manufacturer, specializing in MEMS mirror-based raster scanning LiDARs (3D-LiDAR). Pioneer is headquartered in Tokyo, Japan.</li>
+<li><a href="https://www.youtube.com/user/PioneerCorporationPR">YouTube channel <img alt="" src="https://img.shields.io/badge/youtube-red?style=flat-square&amp;logo=youtube" /></a></li>
+<li><a href="https://www.luminartech.com/">Luminar</a> - LIDAR manufacturer focusing on compact, auto-grade sensors. Luminar is headquartered Palo Alto, California, USA.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome LIDAR <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a></h1>
+<p><img src="img/lidar.svg" align="right" width="100"></p>
+<blockquote>
+<p>A curated list of awesome LIDAR sensors and its applications.</p>
+</blockquote>
+<p><a href="https://en.wikipedia.org/wiki/Lidar">LIDAR</a> is a remote sensing sensor that uses laser light to measure the surroundings in ~cm accuracy. The sensory data is usually referred as point cloud which means set of data points in 3D or 2D. The list contains hardwares, datasets, point cloud-processing algorithms, point cloud frameworks, simulators etc.</p>
+<p>Contributions are welcome! Please <a href="contributing.md">check out</a> our guidelines.</p>
+<blockquote>
+<p>[!TIP]
+An optional view: <a href="https://www.trackawesomelist.com/szenergy/awesome-lidar/readme/">trackawesomelist.com/szenergy/awesome-lidar</a></p>
+</blockquote>
+<h2>Contents</h2>
+<ul>
+<li><a href="#awesome-lidar-">Awesome LIDAR </a></li>
+<li><a href="#contents">Contents</a></li>
+<li><a href="#conventions">Conventions</a></li>
+<li><a href="#manufacturers">Manufacturers</a></li>
+<li><a href="#datasets">Datasets</a></li>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#frameworks">Frameworks</a></li>
+<li><a href="#algorithms">Algorithms</a><ul>
+<li><a href="#basic-matching-algorithms">Basic matching algorithms</a></li>
+<li><a href="#semantic-segmentation">Semantic segmentation</a></li>
+<li><a href="#ground-segmentation">Ground segmentation</a></li>
+<li><a href="#simultaneous-localization-and-mapping-slam-and-lidar-based-odometry-and-or-mapping-loam">Simultaneous localization and mapping SLAM and LIDAR-based odometry and or mapping LOAM</a></li>
+<li><a href="#object-detection-and-object-tracking">Object detection and object tracking</a></li>
+<li><a href="#lidar-other-sensor-calibration">LIDAR-other-sensor calibration</a></li>
+</ul>
+</li>
+<li><a href="#simulators">Simulators</a></li>
+<li><a href="#related-awesome">Related awesome</a></li>
+<li><a href="#others">Others</a></li>
+</ul>
+<h2>Conventions</h2>
+<ul>
+<li>Any list item with <img alt="" src="https://img.shields.io/badge/github-black?style=flat-square&amp;logo=github" /> badge has a GitHub repo or organization</li>
+<li>Any list item with <img alt="" src="https://img.shields.io/badge/youtube-red?style=flat-square&amp;logo=youtube" /> badge has YouTube videos or channel</li>
+<li>Any list item with <img alt="" src="https://img.shields.io/badge/paper-blue?style=flat-square&amp;logo=semanticscholar" /> badge has a scientific paper or detailed description</li>
+<li>Any list item with <img alt="" src="https://img.shields.io/badge/ROS-2-34aec5?style=flat-square&amp;logo=ros" /> badge is <a href="https://docs.ros.org/"><code>ROS 2</code></a> compatible</li>
+</ul>
+<h2>Manufacturers</h2>
+<ul>
+<li><a href="https://velodynelidar.com/">Velodyne</a> - Ouster and Velodyne announced the successful completion of their <em>merger</em> of equals, effective February 10, 2023. Velodyne was a mechanical and solid-state LIDAR manufacturer. The headquarter is in San Jose, California, USA.</li>
+<li><a href="https://www.youtube.com/user/VelodyneLiDAR">YouTube channel <img alt="" src="https://img.shields.io/badge/youtube-red?style=flat-square&amp;logo=youtube" /></a></li>
+<li><a href="https://github.com/ros-drivers/velodyne">ROS driver <img alt="" src="https://img.shields.io/badge/github-black?style=flat-square&amp;logo=github" /></a></li>
+<li><a href="https://github.com/valgur/velodyne_decoder">C++/Python library <img alt="" src="https://img.shields.io/badge/github-black?style=flat-square&amp;logo=github" /></a></li>
+<li><a href="https://ouster.com/">Ouster</a> - LIDAR manufacturer, specializing in digital-spinning LiDARs. Ouster is headquartered in San Francisco, USA.</li>
+<li><a href="https://www.youtube.com/c/Ouster-lidar">YouTube channel <img alt="" src="https://img.shields.io/badge/youtube-red?style=flat-square&amp;logo=youtube" /></a></li>
+<li><a href="https://github.com/ouster-lidar">GitHub organization <img alt="" src="https://img.shields.io/badge/github-black?style=flat-square&amp;logo=github" /></a> <img alt="" src="https://img.shields.io/badge/ROS-2-34aec5?style=flat-square&amp;logo=ros" /></li>
+<li><a href="https://www.livoxtech.com/">Livox</a> - LIDAR manufacturer.</li>
+<li><a href="https://www.youtube.com/channel/UCnLpB5QxlQUexi40vM12mNQ">YouTube channel <img alt="" src="https://img.shields.io/badge/youtube-red?style=flat-square&amp;logo=youtube" /></a></li>
+<li><a href="https://github.com/Livox-SDK">GitHub organization <img alt="" src="https://img.shields.io/badge/github-black?style=flat-square&amp;logo=github" /></a> <img alt="" src="https://img.shields.io/badge/ROS-2-34aec5?style=flat-square&amp;logo=ros" /></li>
+<li><a href="https://www.sick.com/ag/en/">SICK</a> - Sensor and automation manufacturer, the headquarter is located in Waldkirch, Germany.</li>
+<li><a href="https://www.youtube.com/user/SICKSensors">YouTube channel <img alt="" src="https://img.shields.io/badge/youtube-red?style=flat-square&amp;logo=youtube" /></a></li>
+<li><a href="https://github.com/SICKAG">GitHub organization <img alt="" src="https://img.shields.io/badge/github-black?style=flat-square&amp;logo=github" /></a> <img alt="" src="https://img.shields.io/badge/ROS-2-34aec5?style=flat-square&amp;logo=ros" /></li>
+<li><a href="https://www.hokuyo-aut.jp/">Hokuyo</a> - Sensor and automation manufacturer, headquartered in Osaka, Japan.</li>
+<li><a href="https://www.youtube.com/channel/UCYzJXC82IEy-h-io2REin5g">YouTube channel <img alt="" src="https://img.shields.io/badge/youtube-red?style=flat-square&amp;logo=youtube" /></a></li>
+<li><a href="http://autonomousdriving.pioneer/en/3d-lidar/">Pioneer</a> - LIDAR manufacturer, specializing in MEMS mirror-based raster scanning LiDARs (3D-LiDAR). Pioneer is headquartered in Tokyo, Japan.</li>
+<li><a href="https://www.youtube.com/user/PioneerCorporationPR">YouTube channel <img alt="" src="https://img.shields.io/badge/youtube-red?style=flat-square&amp;logo=youtube" /></a></li>
+<li><a href="https://www.luminartech.com/">Luminar</a> - LIDAR manufacturer focusing on compact, auto-grade sensors. Luminar is headquartered Palo Alto, California, USA.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'lidar_README.md';
 
         fetch(markdownFile)
@@ -48,21 +161,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

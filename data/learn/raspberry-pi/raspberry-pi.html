@@ -8,38 +8,137 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Thibmaek Awesome Raspberry Pi - Awesome List Resources">
-    <title>Thibmaek Awesome Raspberry Pi</title>
+    <meta name="description" content="> The Raspberry Pi is a series of credit card-sized single-board computers developed in the United Kingdom by the Raspberry Pi Foundation to promote the...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Raspberry Pi - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Raspberry Pi</h1>
+<p><a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a>
+<a href="https://github.com/thibmaek/awesome-raspberry-pi/blob/main/CONTRIBUTORS.md"><img alt="All Contributors" src="https://img.shields.io/badge/all_contributors-43-orange.svg" /></a></p>
+<p><a href="https://www.raspberrypi.org"><img src="https://www.raspberrypi.org/wp-content/uploads/2012/03/raspberry-pi-logo.png" alt="Raspberry Pi Logo" align="left" style="margin-right: 25px" height=150></a></p>
+<blockquote>
+<p>The Raspberry Pi is a series of credit card-sized single-board computers developed in the United Kingdom by the Raspberry Pi Foundation to promote the teaching of basic computer science in schools and developing countries. Official Link: <a href="https://raspberrypi.org">Raspberry Pi Foundation Homepage</a>, <a href="https://www.raspberrypi.com">Raspberry Pi Computer Homepage</a></p>
+</blockquote>
+<p>This list is a collection of tools, projects, images and resources conforming to the <a href="https://github.com/sindresorhus/awesome/blob/main/awesome.md">Awesome Manifesto</a></p>
+<p>Contributions <em>very welcome</em> but first see <a href="#contributing">Contributing</a></p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#models">Models</a></li>
+<li><a href="#os-images">OS Images</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#resources">Resources</a></li>
+</ul>
+<h2>Models</h2>
+<p>The complete collection of (consumer) Raspberry Pi models consist of:</p>
+<ul>
+<li>Raspberry Pi 1, Model A &amp; Model B (2012, discontinued)</li>
+<li><a href="https://www.raspberrypi.org/products/raspberry-pi-1-model-b-plus/">Raspberry Pi 1, Model B+</a> (July, 2014)</li>
+<li><a href="https://www.raspberrypi.org/products/raspberry-pi-1-model-a-plus/">Raspberry Pi 1, Model A+</a> (November, 2014)</li>
+<li><a href="https://www.raspberrypi.org/products/raspberry-pi-2-model-b/">Raspberry Pi 2, Model B</a> (February, 2015)</li>
+<li><a href="https://www.raspberrypi.org/products/raspberry-pi-zero/">Raspberry Pi Zero</a> (November, 2015)</li>
+<li><a href="https://www.raspberrypi.org/products/raspberry-pi-3-model-b/">Raspberry Pi 3, Model B</a> (March, 2016)</li>
+<li><a href="https://www.raspberrypi.org/products/raspberry-pi-zero-w/">Raspberry Pi Zero W</a> (February, 2017)</li>
+<li><a href="https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/">Raspberry Pi 3, Model B+</a> (March, 2018)</li>
+<li><a href="https://www.raspberrypi.org/products/raspberry-pi-3-model-a-plus/">Raspberry Pi 3, Model A+</a> (November, 2018)</li>
+<li><a href="https://www.raspberrypi.org/products/raspberry-pi-4-model-b/">Raspberry Pi 4, Model B</a> (June, 2019)</li>
+<li><a href="https://www.raspberrypi.com/products/raspberry-pi-5/">Raspberry Pi 5</a> (October, 2023)</li>
+<li><a href="https://www.raspberrypi.org/products/raspberry-pi-400/">Raspberry Pi 400</a> (November, 2020)</li>
+<li><a href="https://www.raspberrypi.com/products/raspberry-pi-500/">Raspberry Pi 500</a> (December, 2024)</li>
+<li><a href="https://www.raspberrypi.com/products/raspberry-pi-500-plus/">Raspberry Pi 500+</a> (September, 2025)</li>
+<li><a href="https://www.raspberrypi.com/products/raspberry-pi-pico/?variant=raspberry-pi-pico">Raspberry Pi Pico</a> (January, 2021)</li>
+<li><a href="https://www.raspberrypi.com/products/raspberry-pi-pico-2/">Raspberry Pi Pico 2</a> (August, 2024)</li>
+<li><a href="https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/">Raspberry Pi Zero 2 W</a> (October, 2021)</li>
+<li><a href="https://www.raspberrypi.com/products/raspberry-pi-pico/?variant=raspberry-pi-pico-w">Raspberry Pi Pico W</a> (June, 2022)</li>
+</ul>
+<h2>OS Images</h2>
+<ul>
+<li><a href="https://wiki.alpinelinux.org/wiki/Raspberry_Pi">Alpine Linux</a> - Security-oriented, lightweight Linux distribution based on musl libc and busybox.</li>
+<li><a href="https://archlinuxarm.org/">Arch Linux ARM</a> - Lightweight and flexible Linux distribution that tries to Keep It Simple.</li>
+<li><a href="https://www.armbian.com/rpi4b/">Armbian</a> - A base operating system platform for single board computers (SBCs) that other projects can trust to build upon.</li>
+<li><a href="https://www.balena.io/os/">balenaOS</a> - open source OS to run Docker containers on embedded devices that's been designed for reliability and proven in production.</li>
+<li><a href="http://www.berryterminal.com/doku.php/berryboot">BerryBoot</a> - Bootloader/universal OS installer, with support to VNC and HDMI-CEC.</li>
+<li><a href="https://github.com/futurice/chilipie-kiosk">chilipie-kiosk</a> - Image which boots directly into full-screen Chrome, perfect for dashboards and build monitors. <img alt="Supports Raspberry Pi 2+" src="/media/badges/rpi-2+.png" /></li>
+<li><a href="https://getchannels.com/raspberry-pi/">Channels DVR Server</a> - Custom image for Channels DVR Server which provides a whole home DVR system.</li>
+<li><a href="https://raspi.debian.net">Debian</a> - Unofficial Debian image for Raspberry Pi (maintained by a Debian Developer).</li>
+<li><a href="https://github.com/Fourdee/DietPi">DietPi</a> - Minimal image designed to fit on a 2GB SD card, with tons of configurable settings and scripts.</li>
+<li><a href="https://github.com/seeul8er/DroneBridge">DroneBridge</a> - A WifiBroadcast extension to make for a real alternative to DJI Lightbridge and other similar systems. <img alt="Supports Raspberry Pi 3" src="/media/badges/rpi-3.png" /></li>
+<li><a href="https://github.com/bortek/EZ-WifiBroadcast/wiki">EZ-WifiBroadcast</a> - Affordable Wireless Digital HD Video Transmission made easy. <img alt="Supports Raspberry Pi 3" src="/media/badges/rpi-3.png" /> <img alt="Supports Raspberry Pi Zero" src="/media/badges/rpi-0.png" /></li>
+<li><a href="https://fedoraproject.org/wiki/Raspberry_Pi#Preparing_the_SD_card">Fedora</a> - Linux Fedora distribution built for the Pi. <img alt="Supports Raspberry Pi 2+" src="/media/badges/rpi-2+.png" /></li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Raspberry Pi</h1>
+<p><a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a>
+<a href="https://github.com/thibmaek/awesome-raspberry-pi/blob/main/CONTRIBUTORS.md"><img alt="All Contributors" src="https://img.shields.io/badge/all_contributors-43-orange.svg" /></a></p>
+<p><a href="https://www.raspberrypi.org"><img src="https://www.raspberrypi.org/wp-content/uploads/2012/03/raspberry-pi-logo.png" alt="Raspberry Pi Logo" align="left" style="margin-right: 25px" height=150></a></p>
+<blockquote>
+<p>The Raspberry Pi is a series of credit card-sized single-board computers developed in the United Kingdom by the Raspberry Pi Foundation to promote the teaching of basic computer science in schools and developing countries. Official Link: <a href="https://raspberrypi.org">Raspberry Pi Foundation Homepage</a>, <a href="https://www.raspberrypi.com">Raspberry Pi Computer Homepage</a></p>
+</blockquote>
+<p>This list is a collection of tools, projects, images and resources conforming to the <a href="https://github.com/sindresorhus/awesome/blob/main/awesome.md">Awesome Manifesto</a></p>
+<p>Contributions <em>very welcome</em> but first see <a href="#contributing">Contributing</a></p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#models">Models</a></li>
+<li><a href="#os-images">OS Images</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#resources">Resources</a></li>
+</ul>
+<h2>Models</h2>
+<p>The complete collection of (consumer) Raspberry Pi models consist of:</p>
+<ul>
+<li>Raspberry Pi 1, Model A &amp; Model B (2012, discontinued)</li>
+<li><a href="https://www.raspberrypi.org/products/raspberry-pi-1-model-b-plus/">Raspberry Pi 1, Model B+</a> (July, 2014)</li>
+<li><a href="https://www.raspberrypi.org/products/raspberry-pi-1-model-a-plus/">Raspberry Pi 1, Model A+</a> (November, 2014)</li>
+<li><a href="https://www.raspberrypi.org/products/raspberry-pi-2-model-b/">Raspberry Pi 2, Model B</a> (February, 2015)</li>
+<li><a href="https://www.raspberrypi.org/products/raspberry-pi-zero/">Raspberry Pi Zero</a> (November, 2015)</li>
+<li><a href="https://www.raspberrypi.org/products/raspberry-pi-3-model-b/">Raspberry Pi 3, Model B</a> (March, 2016)</li>
+<li><a href="https://www.raspberrypi.org/products/raspberry-pi-zero-w/">Raspberry Pi Zero W</a> (February, 2017)</li>
+<li><a href="https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/">Raspberry Pi 3, Model B+</a> (March, 2018)</li>
+<li><a href="https://www.raspberrypi.org/products/raspberry-pi-3-model-a-plus/">Raspberry Pi 3, Model A+</a> (November, 2018)</li>
+<li><a href="https://www.raspberrypi.org/products/raspberry-pi-4-model-b/">Raspberry Pi 4, Model B</a> (June, 2019)</li>
+<li><a href="https://www.raspberrypi.com/products/raspberry-pi-5/">Raspberry Pi 5</a> (October, 2023)</li>
+<li><a href="https://www.raspberrypi.org/products/raspberry-pi-400/">Raspberry Pi 400</a> (November, 2020)</li>
+<li><a href="https://www.raspberrypi.com/products/raspberry-pi-500/">Raspberry Pi 500</a> (December, 2024)</li>
+<li><a href="https://www.raspberrypi.com/products/raspberry-pi-500-plus/">Raspberry Pi 500+</a> (September, 2025)</li>
+<li><a href="https://www.raspberrypi.com/products/raspberry-pi-pico/?variant=raspberry-pi-pico">Raspberry Pi Pico</a> (January, 2021)</li>
+<li><a href="https://www.raspberrypi.com/products/raspberry-pi-pico-2/">Raspberry Pi Pico 2</a> (August, 2024)</li>
+<li><a href="https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/">Raspberry Pi Zero 2 W</a> (October, 2021)</li>
+<li><a href="https://www.raspberrypi.com/products/raspberry-pi-pico/?variant=raspberry-pi-pico-w">Raspberry Pi Pico W</a> (June, 2022)</li>
+</ul>
+<h2>OS Images</h2>
+<ul>
+<li><a href="https://wiki.alpinelinux.org/wiki/Raspberry_Pi">Alpine Linux</a> - Security-oriented, lightweight Linux distribution based on musl libc and busybox.</li>
+<li><a href="https://archlinuxarm.org/">Arch Linux ARM</a> - Lightweight and flexible Linux distribution that tries to Keep It Simple.</li>
+<li><a href="https://www.armbian.com/rpi4b/">Armbian</a> - A base operating system platform for single board computers (SBCs) that other projects can trust to build upon.</li>
+<li><a href="https://www.balena.io/os/">balenaOS</a> - open source OS to run Docker containers on embedded devices that's been designed for reliability and proven in production.</li>
+<li><a href="http://www.berryterminal.com/doku.php/berryboot">BerryBoot</a> - Bootloader/universal OS installer, with support to VNC and HDMI-CEC.</li>
+<li><a href="https://github.com/futurice/chilipie-kiosk">chilipie-kiosk</a> - Image which boots directly into full-screen Chrome, perfect for dashboards and build monitors. <img alt="Supports Raspberry Pi 2+" src="/media/badges/rpi-2+.png" /></li>
+<li><a href="https://getchannels.com/raspberry-pi/">Channels DVR Server</a> - Custom image for Channels DVR Server which provides a whole home DVR system.</li>
+<li><a href="https://raspi.debian.net">Debian</a> - Unofficial Debian image for Raspberry Pi (maintained by a Debian Developer).</li>
+<li><a href="https://github.com/Fourdee/DietPi">DietPi</a> - Minimal image designed to fit on a 2GB SD card, with tons of configurable settings and scripts.</li>
+<li><a href="https://github.com/seeul8er/DroneBridge">DroneBridge</a> - A WifiBroadcast extension to make for a real alternative to DJI Lightbridge and other similar systems. <img alt="Supports Raspberry Pi 3" src="/media/badges/rpi-3.png" /></li>
+<li><a href="https://github.com/bortek/EZ-WifiBroadcast/wiki">EZ-WifiBroadcast</a> - Affordable Wireless Digital HD Video Transmission made easy. <img alt="Supports Raspberry Pi 3" src="/media/badges/rpi-3.png" /> <img alt="Supports Raspberry Pi Zero" src="/media/badges/rpi-0.png" /></li>
+<li><a href="https://fedoraproject.org/wiki/Raspberry_Pi#Preparing_the_SD_card">Fedora</a> - Linux Fedora distribution built for the Pi. <img alt="Supports Raspberry Pi 2+" src="/media/badges/rpi-2+.png" /></li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'raspberry-pi_README.md';
 
         fetch(markdownFile)
@@ -48,21 +147,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

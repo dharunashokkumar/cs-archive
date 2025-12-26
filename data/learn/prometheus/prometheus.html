@@ -8,38 +8,165 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Roaldnefs Awesome Prometheus - Awesome List Resources">
-    <title>Roaldnefs Awesome Prometheus</title>
+    <meta name="description" content="> A curated list of awesome Prometheus resources, projects and tools. Prometheus is an open-source systems monitoring and alerting toolkit. - Official...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Prometheus  [![Awesome](https://awesome.re/badge-flat.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Prometheus  <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a></h1>
+<blockquote>
+<p>A curated list of awesome Prometheus resources, projects and tools.</p>
+</blockquote>
+<!--lint ignore double-link-->
+<p><a href="https://prometheus.io/"><img alt="Prometheus" src="media/prometheus.png" /></a></p>
+<p>Prometheus is an open-source systems monitoring and alerting toolkit.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#official-resources">Official resources</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#podcasts-and-interviews">Podcasts and interviews</a></li>
+<li><a href="#presentations">Presentations</a></li>
+<li><a href="#blog-posts-and-opinions">Blog posts and opinions</a></li>
+<li><a href="#deployment-tools">Deployment tools</a></li>
+<li><a href="#dashboards">Dashboards</a></li>
+<li><a href="#exporters">Exporters</a><ul>
+<li><a href="#databases">Databases</a></li>
+<li><a href="#hardware-related">Hardware related</a></li>
+<li><a href="#http">HTTP</a></li>
+<li><a href="#other-monitoring-systems">Other monitoring systems</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+</ul>
+</li>
+<li><a href="#alertmanager">Alertmanager</a></li>
+<li><a href="#proxies">Proxies</a></li>
+<li><a href="#high-availability">High Availability</a></li>
+<li><a href="#uncategorized">Uncategorized</a></li>
+</ul>
+<h2>Official resources</h2>
+<!--lint ignore double-link-->
+<ul>
+<li><a href="https://prometheus.io/">Website</a> - Official Prometheus project website.</li>
+<li><a href="https://github.com/prometheus/prometheus">GitHub repository</a> - Prometheus' source code, issues discussion and collaboration.</li>
+<li><a href="https://prometheus.io/docs/introduction/overview/">Documentation</a> - Official Prometheus documentation.</li>
+<li><a href="https://prometheus.io/blog/">Blog</a> - Official Prometheus blog.</li>
+<li><a href="https://demo.do.prometheus.io">Official Prometheus demo</a> - Official Prometheus demo site managed by Cloud Alchemy Ansible roles updating daily using configuration from <a href="https://github.com/prometheus/demo-site">Prometheus repository</a>.</li>
+</ul>
+<h2>Tutorials</h2>
+<ul>
+<li><a href="https://sysdig.com/blog/kubernetes-monitoring-prometheus/">Kubernetes monitoring with Prometheus, the ultimate guide</a> - Kubernetes monitoring with Prometheus, the ultimate guide by Mateo Burillo.</li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-install-prometheus-using-docker-on-centos-7">How To Install Prometheus using Docker on CentOS 7</a> - Walkthrough on how to install Prometheus on CentOS 7.</li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-use-prometheus-to-monitor-your-centos-7-server">How to Use Prometheus to Monitor Your CentOS 7 Server</a> - Walkthrough on how to monitor a CentOS 7 server using Prometheus.</li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-add-a-prometheus-dashboard-to-grafana">How To Add a Prometheus Dashboard to Grafana</a> - Walkthrough on how to add a Prometheus dashboard to Grafana.</li>
+<li><a href="https://github.com/juliusv/prometheus_workshop">Instructions and example code for a Prometheus workshop</a> - Instructions and example code for a Prometheus workshop by Julius Volz.</li>
+<li><a href="https://www.robustperception.io/checking-if-ssh-is-responding-with-prometheus/">Checking if SSH is responding with Prometheus</a> - Walkthrough on how to use the Blackbox Exporter to check if SSH is responding by Brian Brazil.</li>
+<li><a href="https://www.brianchristner.io/monitor-your-github-repos-with-docker/">Monitor your GitHub Repos with Docker and Prometheus</a> - Monitor your GitHub Repos with Docker and Prometheus.</li>
+<li><a href="https://medium.com/lucjuggery/docker-daemon-metrics-in-prometheus-7c359c7ff550">Docker daemon metrics in Prometheus</a> - Docker daemon metrics in Prometheus by Luc Juggery.</li>
+<li><a href="https://pagertree.com/blog/prometheus-monitoring-tutorial">Prometheus Monitoring Tutorial (10 minutes)</a> - Simple tutorial to create a Prometheus monitoring stack with Grafana, AlertManager, and PagerTree by Austin Miller.</li>
+<li><a href="https://github.com/yolossn/Prometheus-Basics">Prometheus-Basics</a> - Beginner friendly introduction to Prometheus by <a href="https://github.com/yolossn">yolossn</a>.</li>
+<li><a href="https://spacelift.io/blog/prometheus-kubernetes">Setting up Prometheus Monitoring On a Kubernetes Cluster</a> - Setting up Prometheus Monitoring On a Kubernetes Cluster by James Walker.</li>
+</ul>
+<h2>Books</h2>
+<ul>
+<li><a href="https://www.prometheusbook.com/">Monitoring with Prometheus</a> - Monitoring with Prometheus by James Turnbull.</li>
+<li><a href="http://shop.oreilly.com/product/0636920147343.do">Prometheus: Up &amp; Running</a> - Prometheus: Up &amp; Running by Brian Brazil.</li>
+<li><a href="https://www.prombook.info/">Hands-On Infrastructure Monitoring with Prometheus</a> - Hands-On Infrastructure Monitoring with Prometheus by Joel Bastos &amp; Pedro Araújo, reviewed by Brian Brazil.</li>
+</ul>
+<h2>Videos</h2>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLoz-W_CUquUm0r6nxziK9B9LnmNntzctE">PromCon Online 2020</a> - PromCon Online - July 14-16, 2020.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLoz-W_CUquUmIYKS97RBghcWumZIX2kvv">PromCon 2019</a> - PromCon Munich - November 7-8, 2019, PromCon EU 2019.</li>
+<li><a href="https://www.youtube.com/watch?v=5O1djJ13gRU">An Introduction to Systems &amp; Service Monitoring with Prometheus</a> - GOTO 2019: An Introduction to Systems &amp; Service Monitoring with Prometheus - Julius Volz.</li>
+<li><a href="https://vimeo.com/341142428">Explain it Like I'm Five - What I Learned Teaching Observability to My Kids</a> - Monitorama PDX, 2019 - Dave Cadwallader.</li>
+<li><a href="https://www.youtube.com/watch?v=Me-kZi4xkEs">Prometheus Deep Dive</a> - KubeCon - 2017 - GitLab: Prometheus Deep Dive - Ben Kochie.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Prometheus  <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a></h1>
+<blockquote>
+<p>A curated list of awesome Prometheus resources, projects and tools.</p>
+</blockquote>
+<!--lint ignore double-link-->
+<p><a href="https://prometheus.io/"><img alt="Prometheus" src="media/prometheus.png" /></a></p>
+<p>Prometheus is an open-source systems monitoring and alerting toolkit.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#official-resources">Official resources</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#podcasts-and-interviews">Podcasts and interviews</a></li>
+<li><a href="#presentations">Presentations</a></li>
+<li><a href="#blog-posts-and-opinions">Blog posts and opinions</a></li>
+<li><a href="#deployment-tools">Deployment tools</a></li>
+<li><a href="#dashboards">Dashboards</a></li>
+<li><a href="#exporters">Exporters</a><ul>
+<li><a href="#databases">Databases</a></li>
+<li><a href="#hardware-related">Hardware related</a></li>
+<li><a href="#http">HTTP</a></li>
+<li><a href="#other-monitoring-systems">Other monitoring systems</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+</ul>
+</li>
+<li><a href="#alertmanager">Alertmanager</a></li>
+<li><a href="#proxies">Proxies</a></li>
+<li><a href="#high-availability">High Availability</a></li>
+<li><a href="#uncategorized">Uncategorized</a></li>
+</ul>
+<h2>Official resources</h2>
+<!--lint ignore double-link-->
+<ul>
+<li><a href="https://prometheus.io/">Website</a> - Official Prometheus project website.</li>
+<li><a href="https://github.com/prometheus/prometheus">GitHub repository</a> - Prometheus' source code, issues discussion and collaboration.</li>
+<li><a href="https://prometheus.io/docs/introduction/overview/">Documentation</a> - Official Prometheus documentation.</li>
+<li><a href="https://prometheus.io/blog/">Blog</a> - Official Prometheus blog.</li>
+<li><a href="https://demo.do.prometheus.io">Official Prometheus demo</a> - Official Prometheus demo site managed by Cloud Alchemy Ansible roles updating daily using configuration from <a href="https://github.com/prometheus/demo-site">Prometheus repository</a>.</li>
+</ul>
+<h2>Tutorials</h2>
+<ul>
+<li><a href="https://sysdig.com/blog/kubernetes-monitoring-prometheus/">Kubernetes monitoring with Prometheus, the ultimate guide</a> - Kubernetes monitoring with Prometheus, the ultimate guide by Mateo Burillo.</li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-install-prometheus-using-docker-on-centos-7">How To Install Prometheus using Docker on CentOS 7</a> - Walkthrough on how to install Prometheus on CentOS 7.</li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-use-prometheus-to-monitor-your-centos-7-server">How to Use Prometheus to Monitor Your CentOS 7 Server</a> - Walkthrough on how to monitor a CentOS 7 server using Prometheus.</li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-add-a-prometheus-dashboard-to-grafana">How To Add a Prometheus Dashboard to Grafana</a> - Walkthrough on how to add a Prometheus dashboard to Grafana.</li>
+<li><a href="https://github.com/juliusv/prometheus_workshop">Instructions and example code for a Prometheus workshop</a> - Instructions and example code for a Prometheus workshop by Julius Volz.</li>
+<li><a href="https://www.robustperception.io/checking-if-ssh-is-responding-with-prometheus/">Checking if SSH is responding with Prometheus</a> - Walkthrough on how to use the Blackbox Exporter to check if SSH is responding by Brian Brazil.</li>
+<li><a href="https://www.brianchristner.io/monitor-your-github-repos-with-docker/">Monitor your GitHub Repos with Docker and Prometheus</a> - Monitor your GitHub Repos with Docker and Prometheus.</li>
+<li><a href="https://medium.com/lucjuggery/docker-daemon-metrics-in-prometheus-7c359c7ff550">Docker daemon metrics in Prometheus</a> - Docker daemon metrics in Prometheus by Luc Juggery.</li>
+<li><a href="https://pagertree.com/blog/prometheus-monitoring-tutorial">Prometheus Monitoring Tutorial (10 minutes)</a> - Simple tutorial to create a Prometheus monitoring stack with Grafana, AlertManager, and PagerTree by Austin Miller.</li>
+<li><a href="https://github.com/yolossn/Prometheus-Basics">Prometheus-Basics</a> - Beginner friendly introduction to Prometheus by <a href="https://github.com/yolossn">yolossn</a>.</li>
+<li><a href="https://spacelift.io/blog/prometheus-kubernetes">Setting up Prometheus Monitoring On a Kubernetes Cluster</a> - Setting up Prometheus Monitoring On a Kubernetes Cluster by James Walker.</li>
+</ul>
+<h2>Books</h2>
+<ul>
+<li><a href="https://www.prometheusbook.com/">Monitoring with Prometheus</a> - Monitoring with Prometheus by James Turnbull.</li>
+<li><a href="http://shop.oreilly.com/product/0636920147343.do">Prometheus: Up &amp; Running</a> - Prometheus: Up &amp; Running by Brian Brazil.</li>
+<li><a href="https://www.prombook.info/">Hands-On Infrastructure Monitoring with Prometheus</a> - Hands-On Infrastructure Monitoring with Prometheus by Joel Bastos &amp; Pedro Araújo, reviewed by Brian Brazil.</li>
+</ul>
+<h2>Videos</h2>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLoz-W_CUquUm0r6nxziK9B9LnmNntzctE">PromCon Online 2020</a> - PromCon Online - July 14-16, 2020.</li>
+<li><a href="https://www.youtube.com/playlist?list=PLoz-W_CUquUmIYKS97RBghcWumZIX2kvv">PromCon 2019</a> - PromCon Munich - November 7-8, 2019, PromCon EU 2019.</li>
+<li><a href="https://www.youtube.com/watch?v=5O1djJ13gRU">An Introduction to Systems &amp; Service Monitoring with Prometheus</a> - GOTO 2019: An Introduction to Systems &amp; Service Monitoring with Prometheus - Julius Volz.</li>
+<li><a href="https://vimeo.com/341142428">Explain it Like I'm Five - What I Learned Teaching Observability to My Kids</a> - Monitorama PDX, 2019 - Dave Cadwallader.</li>
+<li><a href="https://www.youtube.com/watch?v=Me-kZi4xkEs">Prometheus Deep Dive</a> - KubeCon - 2017 - GitLab: Prometheus Deep Dive - Ben Kochie.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'prometheus_README.md';
 
         fetch(markdownFile)
@@ -48,21 +175,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

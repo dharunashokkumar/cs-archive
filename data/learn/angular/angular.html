@@ -8,38 +8,319 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Patrickjs Awesome Angular - Awesome List Resources">
-    <title>Patrickjs Awesome Angular</title>
+    <meta name="description" content="> logo designed by SAWARATSUKI This is the Awesome list of the Angular framework, and it contains intriguing libraries in the Angular ecosystem for all...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Angular [![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Angular <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p align="center">
+  <a href="https://patrickjs.com" target="_blank">
+    <img src="/media/new/awesome-angular.png" alt="Awesome Angular" />
+  </a>
+</p>
+
+<blockquote>
+<p>logo designed by <a href="https://github.com/SAWARATSUKI/KawaiiLogos">SAWARATSUKI</a></p>
+</blockquote>
+<p>This is the Awesome list of the Angular framework, and it contains intriguing libraries in the Angular ecosystem for all developers. Something missing? <a href="https://github.com/PatrickJS/awesome-angular/edit/gh-pages/README.md">PRs welcomed!</a></p>
+<blockquote>
+<p>Repo maintained by <a href="https://github.com/jdegand">@jdegand</a> and <a href="https://github.com/patrickjs">@patrickjs</a></p>
+</blockquote>
+<p>Current Angular version: <a href="https://www.npmjs.com/~angular"><img alt="npm version" src="https://badge.fury.io/js/%40angular%2Fcore.svg" /></a>  </p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#angular">Angular</a></li>
+<li><a href="#official-resources">Official Resources</a></li>
+<li><a href="#builders">Builders</a></li>
+<li><a href="#cli-tools">CLI Tools</a></li>
+<li><a href="#deployment">Deployment</a></li>
+<li><a href="#desktop-applications">Desktop Applications</a></li>
+<li><a href="#updating-angular">Updating Angular</a></li>
+<li><a href="#angular-pulse">Angular Pulse</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#newsletters">Newsletters</a></li>
+<li><a href="#podcasts">Podcasts</a></li>
+<li><a href="#bluesky">Bluesky</a></li>
+<li><a href="#angular-team-on-x">Angular Team on X</a></li>
+<li><a href="#angular-experts-on-x">Angular Experts on X</a></li>
+<li><a href="#google-developer-experts-on-x">Google Developer Experts on X</a></li>
+<li><a href="#learning-resources">Learning Resources</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#certification-programs">Certification Programs</a></li>
+<li><a href="#cheat-sheets">Cheat Sheets</a></li>
+<li><a href="#exercises">Exercises</a></li>
+<li><a href="#training">Training</a></li>
+<li><a href="#style-guides">Style Guides</a></li>
+<li><a href="#youtube-channels">YouTube Channels</a></li>
+<li><a href="#architecture-and-advanced-topics">Architecture and Advanced Topics</a></li>
+<li><a href="#feature-flags">Feature Flags</a></li>
+<li><a href="#graphql">GraphQL</a></li>
+<li><a href="#http">HTTP</a></li>
+<li><a href="#micro-frontends">Micro-Frontends</a></li>
+<li><a href="#module-federation">Module Federation</a></li>
+<li><a href="#monorepos">Monorepos</a></li>
+<li><a href="#server-side-rendering">Server-Side Rendering</a></li>
+<li><a href="#development-utilities">Development Utilities</a></li>
+<li><a href="#accessibility">Accessibility</a></li>
+<li><a href="#ai">AI</a></li>
+<li><a href="#analytics">Analytics</a></li>
+<li><a href="#developer-tools">Developer Tools</a></li>
+<li><a href="#documentation-tools">Documentation Tools</a></li>
+<li><a href="#generators-and-scaffolding">Generators and Scaffolding</a></li>
+<li><a href="#internationalization">Internationalization</a></li>
+<li><a href="#performance">Performance</a></li>
+<li><a href="#seo">SEO</a></li>
+<li><a href="#styling">Styling</a></li>
+<li><a href="#security-and-authentication">Security and Authentication</a></li>
+<li><a href="#authentication">Authentication</a></li>
+<li><a href="#payments">Payments</a></li>
+<li><a href="#role-based-access-control">Role-Based Access Control</a></li>
+<li><a href="#security-best-practices">Security Best Practices</a></li>
+<li><a href="#state-management">State Management</a></li>
+<li><a href="#ngrx">NgRx</a></li>
+<li><a href="#ngxs">NGXS</a></li>
+<li><a href="#other-state-libraries">Other State Libraries</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#e2e">E2E</a></li>
+<li><a href="#component">Component</a></li>
+<li><a href="#guides">Guides</a></li>
+<li><a href="#helpers">Helpers</a></li>
+<li><a href="#site-templates">Site Templates</a></li>
+<li><a href="#free-templates">Free Templates</a></li>
+<li><a href="#paid-templates">Paid Templates</a></li>
+<li><a href="#third-party-components">Third Party Components</a></li>
+<li><a href="#animations">Animations</a></li>
+<li><a href="#calendars">Calendars</a></li>
+<li><a href="#captcha">Captcha</a></li>
+<li><a href="#carousels">Carousels</a></li>
+<li><a href="#charts">Charts</a></li>
+<li><a href="#cookies">Cookies</a></li>
+<li><a href="#csv">CSV</a></li>
+<li><a href="#data-grids">Data Grids</a></li>
+<li><a href="#dates">Dates</a></li>
+<li><a href="#directives">Directives</a></li>
+<li><a href="#dom">DOM</a></li>
+<li><a href="#drag-and-drop">Drag and Drop</a></li>
+<li><a href="#editor-components">Editor Components</a></li>
+<li><a href="#file-upload">File Upload</a></li>
+<li><a href="#forms">Forms</a></li>
+<li><a href="#form-controls">Form Controls</a></li>
+<li><a href="#json-forms">JSON Forms</a></li>
+<li><a href="#form-validation">Form Validation</a></li>
+<li><a href="#icons">Icons</a></li>
+<li><a href="#images">Images</a></li>
+<li><a href="#keyboard-mouse">Keyboard Mouse</a></li>
+<li><a href="#layout-components">Layout Components</a></li>
+<li><a href="#loaders">Loaders</a></li>
+<li><a href="#loggers">Loggers</a></li>
+<li><a href="#maps">Maps</a></li>
+<li><a href="#markdown">Markdown</a></li>
+<li><a href="#media">Media</a></li>
+<li><a href="#mixed-utilities">Mixed Utilities</a></li>
+<li><a href="#modals">Modals</a></li>
+<li><a href="#notifications">Notifications</a></li>
+<li><a href="#pipes">Pipes</a></li>
+<li><a href="#printing">Printing</a></li>
+<li><a href="#qr-codes">QR Codes</a></li>
+<li><a href="#router">Router</a></li>
+<li><a href="#scroll">Scroll</a></li>
+<li><a href="#storage">Storage</a></li>
+<li><a href="#tooltips">Tooltips</a></li>
+<li><a href="#ui-libraries">UI Libraries</a></li>
+<li><a href="#ui-libraries-built-on-bootstrap">UI Libraries built on Bootstrap</a></li>
+<li><a href="#ui-libraries-built-on-material">UI Libraries built on Material</a></li>
+<li><a href="#ui-libraries-built-on-tailwind-css">UI Libraries built on Tailwind CSS</a></li>
+<li><a href="#ui-library-and-framework-ionic">UI Library and Framework Ionic</a></li>
+<li><a href="#ui-primitives">UI Primitives</a></li>
+<li><a href="#ux-components">UX Components</a></li>
+<li><a href="#viewers">Viewers</a></li>
+<li><a href="#visual-effects">Visual Effects</a></li>
+<li><a href="#underlying-technologies">Underlying Technologies</a></li>
+<li><a href="#rxjs">RxJS</a></li>
+<li><a href="#typescript">TypeScript</a></li>
+<li><a href="#framework-interoperability">Framework Interoperability</a></li>
+<li><a href="#cross-framework-integration">Cross-Framework Integration</a></li>
+<li><a href="#external-integration">External Integration</a></li>
+<li><a href="#wrappers">Wrappers</a></li>
+<li><a href="#angular-inspired-solutions">Angular-Inspired Solutions</a></li>
+<li><a href="#external-lists">External Lists</a></li>
+</ul>
+<h2>Angular</h2>
+<blockquote>
+<p>Angular is a development platform for building mobile and desktop web applications.</p>
+</blockquote>
+<h3>Official Resources</h3>
+<ul>
+<li><a href="https://angular.dev">Site</a></li>
+<li><a href="https://blog.angular.dev/">Blog</a></li>
+<li><a href="https://angular.dev/overview">Documentation</a></li>
+<li><a href="https://angular.dev/tutorials/learn-angular">Getting Started Tutorial</a></li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Angular <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p align="center">
+  <a href="https://patrickjs.com" target="_blank">
+    <img src="/media/new/awesome-angular.png" alt="Awesome Angular" />
+  </a>
+</p>
+
+<blockquote>
+<p>logo designed by <a href="https://github.com/SAWARATSUKI/KawaiiLogos">SAWARATSUKI</a></p>
+</blockquote>
+<p>This is the Awesome list of the Angular framework, and it contains intriguing libraries in the Angular ecosystem for all developers. Something missing? <a href="https://github.com/PatrickJS/awesome-angular/edit/gh-pages/README.md">PRs welcomed!</a></p>
+<blockquote>
+<p>Repo maintained by <a href="https://github.com/jdegand">@jdegand</a> and <a href="https://github.com/patrickjs">@patrickjs</a></p>
+</blockquote>
+<p>Current Angular version: <a href="https://www.npmjs.com/~angular"><img alt="npm version" src="https://badge.fury.io/js/%40angular%2Fcore.svg" /></a>  </p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#angular">Angular</a></li>
+<li><a href="#official-resources">Official Resources</a></li>
+<li><a href="#builders">Builders</a></li>
+<li><a href="#cli-tools">CLI Tools</a></li>
+<li><a href="#deployment">Deployment</a></li>
+<li><a href="#desktop-applications">Desktop Applications</a></li>
+<li><a href="#updating-angular">Updating Angular</a></li>
+<li><a href="#angular-pulse">Angular Pulse</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#newsletters">Newsletters</a></li>
+<li><a href="#podcasts">Podcasts</a></li>
+<li><a href="#bluesky">Bluesky</a></li>
+<li><a href="#angular-team-on-x">Angular Team on X</a></li>
+<li><a href="#angular-experts-on-x">Angular Experts on X</a></li>
+<li><a href="#google-developer-experts-on-x">Google Developer Experts on X</a></li>
+<li><a href="#learning-resources">Learning Resources</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#certification-programs">Certification Programs</a></li>
+<li><a href="#cheat-sheets">Cheat Sheets</a></li>
+<li><a href="#exercises">Exercises</a></li>
+<li><a href="#training">Training</a></li>
+<li><a href="#style-guides">Style Guides</a></li>
+<li><a href="#youtube-channels">YouTube Channels</a></li>
+<li><a href="#architecture-and-advanced-topics">Architecture and Advanced Topics</a></li>
+<li><a href="#feature-flags">Feature Flags</a></li>
+<li><a href="#graphql">GraphQL</a></li>
+<li><a href="#http">HTTP</a></li>
+<li><a href="#micro-frontends">Micro-Frontends</a></li>
+<li><a href="#module-federation">Module Federation</a></li>
+<li><a href="#monorepos">Monorepos</a></li>
+<li><a href="#server-side-rendering">Server-Side Rendering</a></li>
+<li><a href="#development-utilities">Development Utilities</a></li>
+<li><a href="#accessibility">Accessibility</a></li>
+<li><a href="#ai">AI</a></li>
+<li><a href="#analytics">Analytics</a></li>
+<li><a href="#developer-tools">Developer Tools</a></li>
+<li><a href="#documentation-tools">Documentation Tools</a></li>
+<li><a href="#generators-and-scaffolding">Generators and Scaffolding</a></li>
+<li><a href="#internationalization">Internationalization</a></li>
+<li><a href="#performance">Performance</a></li>
+<li><a href="#seo">SEO</a></li>
+<li><a href="#styling">Styling</a></li>
+<li><a href="#security-and-authentication">Security and Authentication</a></li>
+<li><a href="#authentication">Authentication</a></li>
+<li><a href="#payments">Payments</a></li>
+<li><a href="#role-based-access-control">Role-Based Access Control</a></li>
+<li><a href="#security-best-practices">Security Best Practices</a></li>
+<li><a href="#state-management">State Management</a></li>
+<li><a href="#ngrx">NgRx</a></li>
+<li><a href="#ngxs">NGXS</a></li>
+<li><a href="#other-state-libraries">Other State Libraries</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#e2e">E2E</a></li>
+<li><a href="#component">Component</a></li>
+<li><a href="#guides">Guides</a></li>
+<li><a href="#helpers">Helpers</a></li>
+<li><a href="#site-templates">Site Templates</a></li>
+<li><a href="#free-templates">Free Templates</a></li>
+<li><a href="#paid-templates">Paid Templates</a></li>
+<li><a href="#third-party-components">Third Party Components</a></li>
+<li><a href="#animations">Animations</a></li>
+<li><a href="#calendars">Calendars</a></li>
+<li><a href="#captcha">Captcha</a></li>
+<li><a href="#carousels">Carousels</a></li>
+<li><a href="#charts">Charts</a></li>
+<li><a href="#cookies">Cookies</a></li>
+<li><a href="#csv">CSV</a></li>
+<li><a href="#data-grids">Data Grids</a></li>
+<li><a href="#dates">Dates</a></li>
+<li><a href="#directives">Directives</a></li>
+<li><a href="#dom">DOM</a></li>
+<li><a href="#drag-and-drop">Drag and Drop</a></li>
+<li><a href="#editor-components">Editor Components</a></li>
+<li><a href="#file-upload">File Upload</a></li>
+<li><a href="#forms">Forms</a></li>
+<li><a href="#form-controls">Form Controls</a></li>
+<li><a href="#json-forms">JSON Forms</a></li>
+<li><a href="#form-validation">Form Validation</a></li>
+<li><a href="#icons">Icons</a></li>
+<li><a href="#images">Images</a></li>
+<li><a href="#keyboard-mouse">Keyboard Mouse</a></li>
+<li><a href="#layout-components">Layout Components</a></li>
+<li><a href="#loaders">Loaders</a></li>
+<li><a href="#loggers">Loggers</a></li>
+<li><a href="#maps">Maps</a></li>
+<li><a href="#markdown">Markdown</a></li>
+<li><a href="#media">Media</a></li>
+<li><a href="#mixed-utilities">Mixed Utilities</a></li>
+<li><a href="#modals">Modals</a></li>
+<li><a href="#notifications">Notifications</a></li>
+<li><a href="#pipes">Pipes</a></li>
+<li><a href="#printing">Printing</a></li>
+<li><a href="#qr-codes">QR Codes</a></li>
+<li><a href="#router">Router</a></li>
+<li><a href="#scroll">Scroll</a></li>
+<li><a href="#storage">Storage</a></li>
+<li><a href="#tooltips">Tooltips</a></li>
+<li><a href="#ui-libraries">UI Libraries</a></li>
+<li><a href="#ui-libraries-built-on-bootstrap">UI Libraries built on Bootstrap</a></li>
+<li><a href="#ui-libraries-built-on-material">UI Libraries built on Material</a></li>
+<li><a href="#ui-libraries-built-on-tailwind-css">UI Libraries built on Tailwind CSS</a></li>
+<li><a href="#ui-library-and-framework-ionic">UI Library and Framework Ionic</a></li>
+<li><a href="#ui-primitives">UI Primitives</a></li>
+<li><a href="#ux-components">UX Components</a></li>
+<li><a href="#viewers">Viewers</a></li>
+<li><a href="#visual-effects">Visual Effects</a></li>
+<li><a href="#underlying-technologies">Underlying Technologies</a></li>
+<li><a href="#rxjs">RxJS</a></li>
+<li><a href="#typescript">TypeScript</a></li>
+<li><a href="#framework-interoperability">Framework Interoperability</a></li>
+<li><a href="#cross-framework-integration">Cross-Framework Integration</a></li>
+<li><a href="#external-integration">External Integration</a></li>
+<li><a href="#wrappers">Wrappers</a></li>
+<li><a href="#angular-inspired-solutions">Angular-Inspired Solutions</a></li>
+<li><a href="#external-lists">External Lists</a></li>
+</ul>
+<h2>Angular</h2>
+<blockquote>
+<p>Angular is a development platform for building mobile and desktop web applications.</p>
+</blockquote>
+<h3>Official Resources</h3>
+<ul>
+<li><a href="https://angular.dev">Site</a></li>
+<li><a href="https://blog.angular.dev/">Blog</a></li>
+<li><a href="https://angular.dev/overview">Documentation</a></li>
+<li><a href="https://angular.dev/tutorials/learn-angular">Getting Started Tutorial</a></li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'angular_README.md';
 
         fetch(markdownFile)
@@ -48,21 +329,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

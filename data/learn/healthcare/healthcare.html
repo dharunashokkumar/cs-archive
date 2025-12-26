@@ -8,38 +8,183 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kakoni Awesome Healthcare - Awesome List Resources">
-    <title>Kakoni Awesome Healthcare</title>
+    <meta name="description" content="Curated list of awesome open source healthcare software, libraries, tools and resources. Each link has been vetted to ensure the project is active and provides...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Health [![Awesome](https://cdn.jsdelivr.net/gh/sindresorhus/awesome@d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Health <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.jsdelivr.net/gh/sindresorhus/awesome@d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>Curated list of awesome open source healthcare software, libraries, tools and resources. Each link has been vetted to ensure the project is active and provides value to healthcare facilities, providers, developers, policy experts, and/or research scientists.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#ehr">EHR</a></li>
+<li><a href="#specifications">Specifications</a></li>
+<li><a href="#prescribing">Prescribing</a></li>
+<li><a href="#nursing">Nursing</a></li>
+<li><a href="#imaging">Imaging</a></li>
+<li><a href="#dental">Dental</a></li>
+<li><a href="#laboratory">Laboratory</a></li>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#frameworks">Frameworks</a></li>
+<li><a href="#applications">Applications</a></li>
+<li><a href="#phr">Personal Health Record</a></li>
+<li><a href="#telemedicine">Telemedicine</a></li>
+<li><a href="#integration">Integration</a></li>
+<li><a href="#research">Research</a></li>
+<li><a href="#hardware">Hardware</a></li>
+<li><a href="#bioinformatics">Bioinformatics</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#data">Data</a></li>
+<li><a href="#datasets">Datasets</a></li>
+<li><a href="#design">Design</a></li>
+<li><a href="#empi">Enterprise Master Patient Index</a></li>
+<li><a href="#machine-learning">Machine Learning</a></li>
+<li><a href="#compliance">Compliance</a></li>
+<li><a href="#asset-management">Asset Management</a></li>
+<li><a href="#logistics">Logistics</a></li>
+<li><a href="#analytics">Analytics</a></li>
+</ul>
+<h3>EHR</h3>
+<ul>
+<li><a href="https://akello.io">Akello</a> - Integrated Mental Health Infrastructure</li>
+<li><a href="https://www.bahmni.org">Bahmni</a> - Electronic Medical Record and hospital system.</li>
+<li><a href="https://cottagemed.org/p/26/Download-Cottage-Med">Cottage Med</a> - Electronic Medical Record software designed by physicians.</li>
+<li><a href="https://www.gnuhealth.org">GNU Health</a> - Electronic Medical Record, Hospital Management, and Health Information System.</li>
+<li><a href="https://www.gnumed.de/documentation/">GNUmed</a> - Electronic Medical Record software.</li>
+<li><a href="https://ehrbase.org">EHRBase</a> OpenEHR Clinical Data Repository.</li>
+<li><a href="https://github.com/ppazos/cabolabs-ehrserver">EHRServer</a> - CaboLabs EHRServer.</li>
+<li><a href="https://github.com/frappe/erpnext">ERPNext</a> - Modules that help manage patients, appointments, consultations, lab tests, and billing.</li>
+<li><a href="https://freemedforms.com/fr/start">FreeMedForms EMR</a> - Electronic Medical Record software.</li>
+<li><a href="https://hospitalrun.io">HospitalRun</a> - Helps provide the most modern Hospital Information System possible to the least resourced environments.</li>
+<li><a href="https://hosxp.net/wordpress/">HOSxP</a> - Thai Hospital Information System that aims to ease the healthcare workflow of health centers and central hospitals.</li>
+<li><a href="https://librehealth.io/projects/lh-ehr/">LibreHealth EHR</a> - Clinically-focused Electronic Health Record System.</li>
+<li><a href="https://medintux.org/">MedinTux</a> - French Medical Practice Management System.</li>
+<li><a href="https://github.com/medplum/medplum">Medplum</a> - Developer platform that enables flexible and rapid development of healthcare apps.</li>
+<li><a href="https://github.com/OCA/vertical-medical">Odoo Medical</a> - Universal Health and Hospital Information System.</li>
+<li><a href="https://github.com/jact/openclinic">OpenClinic</a> - Medical Records System.</li>
+<li><a href="https://www.open-emr.org">OpenEMR</a> - Electronic Health Records and Medical Practice Management application.</li>
+<li><a href="https://openeyes.apperta.org">OpenEyes</a> - Electronic Medical Record application for ophthalmology.</li>
+<li><a href="https://sourceforge.net/projects/openhospital/">Open Hospital</a> - Electronic Medical Record software for underprivileged rural hospitals.</li>
+<li><a href="https://github.com/IMS-MAXIMS/openMAXIMS">openMAXIMS</a> - Full Patient Administration System designed for the NHS.</li>
+<li><a href="https://openmrs.org">OpenMRS</a> - Enterprise Electronic Medical Record System platform.</li>
+<li><a href="https://bitbucket.org/oscaremr/oscar">OSCAR EMR</a> - OSCAR McMaster Project.</li>
+<li><a href="https://www.ozone-his.com">Ozone HIS</a> - The entreprise-grade integrated health information system built with OpenMRS 3</li>
+<li><a href="https://www.ripple.foundation">Ripple</a> -  NHS-funded, community led initiative working towards an integrated Digital Care Record Platform.</li>
+</ul>
+<h3>Specifications</h3>
+<ul>
+<li><a href="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=7">Continuity of Care Document</a> - Continuity of Care Document specifications</li>
+<li><a href="https://dicom.innolitics.com/ciods">DICOM Standards Browser</a> - Provides an effective way to learn the DICOM standard and inspect DICOM attributes.</li>
+<li><a href="https://www.hl7.org/fhir/">FHIR</a> - Fast Health Interoperability Resources.</li>
+<li><a href="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=185">HL7 Version 2</a> - Specifications for all versions of HL7v2</li>
+<li><a href="https://www.ohdsi.org/data-standardization/">OHDSI OMOP Common Data Model</a> - Standardized data model for many healthcare concepts, awesome Github presence including scripts for many major relational databases.</li>
+<li><a href="https://www.openehr.org">OpenEHR</a> - Open specification upon which software can be built.</li>
+<li><a href="https://www.openmhealth.org">Open mHealth</a> - Open Standard For Mobile Health Data.</li>
+<li><a href="https://docs.smarthealthit.org/">SMART on FHIR</a> - Open standards based technology platform.</li>
+</ul>
+<h3>Prescribing</h3>
+<ul>
+<li><a href="https://github.com/ehrscape/examples/tree/master/openep">OpenEP</a> - Suite of medicines management apps that improve the safety and efficiency of prescribing and medicines management.</li>
+</ul>
+<h3>Nursing</h3>
+<ul>
+<li><a href="https://openeobs.github.io/">open-eObs</a> - Observation and clinical assessment platform that offers a real-time view of all patients across a ward.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Health <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.jsdelivr.net/gh/sindresorhus/awesome@d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>Curated list of awesome open source healthcare software, libraries, tools and resources. Each link has been vetted to ensure the project is active and provides value to healthcare facilities, providers, developers, policy experts, and/or research scientists.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#ehr">EHR</a></li>
+<li><a href="#specifications">Specifications</a></li>
+<li><a href="#prescribing">Prescribing</a></li>
+<li><a href="#nursing">Nursing</a></li>
+<li><a href="#imaging">Imaging</a></li>
+<li><a href="#dental">Dental</a></li>
+<li><a href="#laboratory">Laboratory</a></li>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#frameworks">Frameworks</a></li>
+<li><a href="#applications">Applications</a></li>
+<li><a href="#phr">Personal Health Record</a></li>
+<li><a href="#telemedicine">Telemedicine</a></li>
+<li><a href="#integration">Integration</a></li>
+<li><a href="#research">Research</a></li>
+<li><a href="#hardware">Hardware</a></li>
+<li><a href="#bioinformatics">Bioinformatics</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#data">Data</a></li>
+<li><a href="#datasets">Datasets</a></li>
+<li><a href="#design">Design</a></li>
+<li><a href="#empi">Enterprise Master Patient Index</a></li>
+<li><a href="#machine-learning">Machine Learning</a></li>
+<li><a href="#compliance">Compliance</a></li>
+<li><a href="#asset-management">Asset Management</a></li>
+<li><a href="#logistics">Logistics</a></li>
+<li><a href="#analytics">Analytics</a></li>
+</ul>
+<h3>EHR</h3>
+<ul>
+<li><a href="https://akello.io">Akello</a> - Integrated Mental Health Infrastructure</li>
+<li><a href="https://www.bahmni.org">Bahmni</a> - Electronic Medical Record and hospital system.</li>
+<li><a href="https://cottagemed.org/p/26/Download-Cottage-Med">Cottage Med</a> - Electronic Medical Record software designed by physicians.</li>
+<li><a href="https://www.gnuhealth.org">GNU Health</a> - Electronic Medical Record, Hospital Management, and Health Information System.</li>
+<li><a href="https://www.gnumed.de/documentation/">GNUmed</a> - Electronic Medical Record software.</li>
+<li><a href="https://ehrbase.org">EHRBase</a> OpenEHR Clinical Data Repository.</li>
+<li><a href="https://github.com/ppazos/cabolabs-ehrserver">EHRServer</a> - CaboLabs EHRServer.</li>
+<li><a href="https://github.com/frappe/erpnext">ERPNext</a> - Modules that help manage patients, appointments, consultations, lab tests, and billing.</li>
+<li><a href="https://freemedforms.com/fr/start">FreeMedForms EMR</a> - Electronic Medical Record software.</li>
+<li><a href="https://hospitalrun.io">HospitalRun</a> - Helps provide the most modern Hospital Information System possible to the least resourced environments.</li>
+<li><a href="https://hosxp.net/wordpress/">HOSxP</a> - Thai Hospital Information System that aims to ease the healthcare workflow of health centers and central hospitals.</li>
+<li><a href="https://librehealth.io/projects/lh-ehr/">LibreHealth EHR</a> - Clinically-focused Electronic Health Record System.</li>
+<li><a href="https://medintux.org/">MedinTux</a> - French Medical Practice Management System.</li>
+<li><a href="https://github.com/medplum/medplum">Medplum</a> - Developer platform that enables flexible and rapid development of healthcare apps.</li>
+<li><a href="https://github.com/OCA/vertical-medical">Odoo Medical</a> - Universal Health and Hospital Information System.</li>
+<li><a href="https://github.com/jact/openclinic">OpenClinic</a> - Medical Records System.</li>
+<li><a href="https://www.open-emr.org">OpenEMR</a> - Electronic Health Records and Medical Practice Management application.</li>
+<li><a href="https://openeyes.apperta.org">OpenEyes</a> - Electronic Medical Record application for ophthalmology.</li>
+<li><a href="https://sourceforge.net/projects/openhospital/">Open Hospital</a> - Electronic Medical Record software for underprivileged rural hospitals.</li>
+<li><a href="https://github.com/IMS-MAXIMS/openMAXIMS">openMAXIMS</a> - Full Patient Administration System designed for the NHS.</li>
+<li><a href="https://openmrs.org">OpenMRS</a> - Enterprise Electronic Medical Record System platform.</li>
+<li><a href="https://bitbucket.org/oscaremr/oscar">OSCAR EMR</a> - OSCAR McMaster Project.</li>
+<li><a href="https://www.ozone-his.com">Ozone HIS</a> - The entreprise-grade integrated health information system built with OpenMRS 3</li>
+<li><a href="https://www.ripple.foundation">Ripple</a> -  NHS-funded, community led initiative working towards an integrated Digital Care Record Platform.</li>
+</ul>
+<h3>Specifications</h3>
+<ul>
+<li><a href="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=7">Continuity of Care Document</a> - Continuity of Care Document specifications</li>
+<li><a href="https://dicom.innolitics.com/ciods">DICOM Standards Browser</a> - Provides an effective way to learn the DICOM standard and inspect DICOM attributes.</li>
+<li><a href="https://www.hl7.org/fhir/">FHIR</a> - Fast Health Interoperability Resources.</li>
+<li><a href="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=185">HL7 Version 2</a> - Specifications for all versions of HL7v2</li>
+<li><a href="https://www.ohdsi.org/data-standardization/">OHDSI OMOP Common Data Model</a> - Standardized data model for many healthcare concepts, awesome Github presence including scripts for many major relational databases.</li>
+<li><a href="https://www.openehr.org">OpenEHR</a> - Open specification upon which software can be built.</li>
+<li><a href="https://www.openmhealth.org">Open mHealth</a> - Open Standard For Mobile Health Data.</li>
+<li><a href="https://docs.smarthealthit.org/">SMART on FHIR</a> - Open standards based technology platform.</li>
+</ul>
+<h3>Prescribing</h3>
+<ul>
+<li><a href="https://github.com/ehrscape/examples/tree/master/openep">OpenEP</a> - Suite of medicines management apps that improve the safety and efficiency of prescribing and medicines management.</li>
+</ul>
+<h3>Nursing</h3>
+<ul>
+<li><a href="https://openeobs.github.io/">open-eObs</a> - Observation and clinical assessment platform that offers a real-time view of all patients across a ward.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'healthcare_README.md';
 
         fetch(markdownFile)
@@ -48,21 +193,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

@@ -8,38 +8,199 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hobbyquaker Awesome Mqtt - Awesome List Resources">
-    <title>Hobbyquaker Awesome Mqtt</title>
+    <meta name="description" content="> A curated list of MQTT related stuff. MQTT is a lightweight client-server publish/subscribe messaging protocol, optimized for high-latency or unreliable...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome MQTT - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome MQTT</h1>
+<p><a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></p>
+<blockquote>
+<p>A curated list of MQTT related stuff.</p>
+</blockquote>
+<p>MQTT is a lightweight client-server publish/subscribe messaging protocol, optimized for high-latency or unreliable networks. This protocol is a good choice for Internet of Things applications, Telemetry, Sensor Networks, Smart Metering, Home Automation, Messaging and Notification Services.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#community-resources">Community Resources</a></li>
+<li><a href="#broker">Broker</a></li>
+<li><a href="#cloud">Cloud</a></li>
+<li><a href="#platforms">Platforms</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#clients">Clients</a></li>
+<li><a href="#scripting">Scripting</a></li>
+<li><a href="#interfaces">Interfaces</a><ul>
+<li><a href="#makers">Makers</a></li>
+<li><a href="#industry">Industry</a></li>
+<li><a href="#telephony-pbx">Telephony, PBX</a></li>
+<li><a href="#operating-system">Operating System</a></li>
+<li><a href="#monitoring">Monitoring</a></li>
+<li><a href="#location-tracking">Location Tracking</a></li>
+<li><a href="#logging">Logging</a></li>
+<li><a href="#smart-home-hardware-interfaces">Smart Home Hardware Interfaces</a></li>
+<li><a href="#smart-home-integration-software">Smart Home Integration Software</a></li>
+<li><a href="#lighting">Lighting</a></li>
+<li><a href="#home-entertainment">Home Entertainment</a></li>
+<li><a href="#smart-metering">Smart Metering</a></li>
+<li><a href="#messaging">Messaging</a></li>
+<li><a href="#misc">Misc</a></li>
+</ul>
+</li>
+<li><a href="#visualization-dashboards">Visualization, Dashboards</a></li>
+<li><a href="#architecture-convention">Architecture, Convention</a></li>
+<li><a href="#security-encryption">Security, Encryption</a></li>
+</ul>
+<h3>Community Resources</h3>
+<ul>
+<li><a href="https://mqtt.org/">mqtt.org</a>.</li>
+<li><a href="https://github.com/mqtt/mqtt.org/wiki">MQTT community wiki</a>.</li>
+<li><a href="https://groups.google.com/forum/#!forum/mqtt">Google Groups: MQTT</a>.</li>
+<li><a href="irc://irc.freenode.net/mqtt">IRC channel #mqtt on the freenode network</a>.</li>
+<li><a href="http://moxd.io/2015/10/17/public-mqtt-brokers/">A list of public brokers</a>.</li>
+</ul>
+<h4>Blogs</h4>
+<ul>
+<li><a href="https://www.hardill.me.uk/wordpress/tag/mqtt/">Ben Hardill</a></li>
+<li><a href="http://forkbomb-blog.de/category/mqtt">Dominik Obermaier</a></li>
+<li><a href="https://jpmens.net/">Jan-Piet Mens</a></li>
+<li><a href="https://knolleary.net/">Nick O'Leary</a></li>
+</ul>
+<h4>Talks</h4>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=LKz1jYngpcU">An Introduction to MQTT: Why HTTP isn't the King of the Internet of Things</a> - Shinji Kim, Robert Bird - Akamai, Samsung Developer Conference 2017.</li>
+<li><a href="https://www.youtube.com/watch?v=INYG4-xsa9c">Einführung in MQTT</a> - Dominik Obermaier &amp; Jens Deters, <a href="https://www.buildingiot.de/index.php">Building IoT</a> conference 2016 (German).</li>
+</ul>
+<h3>Broker</h3>
+<ul>
+<li><a href="https://www.ably.io/documentation/mqtt">Ably</a> - MQTT broker service and protocol adapter</li>
+<li><a href="http://activemq.apache.org/">ActiveMQ</a> - A fast Java multiprotocol messaging and Integration Patterns server.</li>
+<li><a href="https://github.com/moscajs/aedes">Aedes</a> - Barebone MQTT broker that can run on any stream server, the node way.</li>
+<li><a href="https://github.com/emitter-io/emitter">Emitter</a> - A distributed, scalable and fault-tolerant publish-subscribe messaging platform based on MQTT protocol and featuring message storage.</li>
+<li><a href="https://github.com/emqx/emqx">EMQ X</a> - Scalable and Reliable Real-time MQTT Messaging Engine for IoT in 5G Era.</li>
+<li><a href="https://github.com/martin-ger/esp_mqtt">esp_uMQTT_broker</a> - A basic MQTT Broker on the ESP8266.</li>
+<li><a href="https://github.com/beerfactory/hbmqtt">hbmqtt</a> - Python MQTT broker using asyncio.</li>
+<li><a href="https://www.hivemq.com/">HiveMQ</a> - Java MQTT Broker that supports MQTT 3.1, 3.1.1 and 5.0. Commercial and open source editions available.</li>
+<li><a href="https://github.com/alsm/hrotti">hrotti</a> - A MQTT broker written in Go.</li>
+<li><a href="https://github.com/davidepianca98/KMQTT">KMQTT</a> - Kotlin Multiplatform MQTT broker, both embeddable and standalone.</li>
+<li><a href="https://github.com/moquette-io/moquette">Moquette</a> - Java MQTT lightweight broker.</li>
+<li><a href="http://www.mosca.io/">Mosca</a> - Mosca is a node.js MQTT broker, which can be used Standalone or Embedded in another Node.js application.</li>
+<li><a href="http://mosquitto.org/">Mosquitto</a> - <em>"</em>The"** Open Source MQTT Broker. <ul>
+<li><a href="https://mqtt.eclipseprojects.io">Free test server</a> hosted by the Eclipse Foundation.</li>
+<li><a href="https://github.com/iegomez/mosquitto-go-auth">Authorization Plugin in Go</a> supports many types of logins.</li>
+<li><a href="https://hub.docker.com/r/pythonlinks/letsencrypt-mosquitto">Let's Encrypt Mosquitto Docker Container</a> makes it easy to encrypt. </li>
+</ul>
+</li>
+<li><a href="https://myqtthub.com">MyQttHub</a> - Cloud MQTT broker.</li>
+<li><a href="https://github.com/TheThingsIndustries/mystique">Mystique</a> - An extendable MQTT broker written in Go, with HTTP capabilities for observability. Implements MQTT v3.1.1.</li>
+<li><a href="https://www.rabbitmq.com/mqtt.html">RabbitMQ</a> - RabbitMQ offers a MQTT Adapter.</li>
+<li><a href="https://zhen.org/categories/surgemq/">SurgeMQ</a> - High Performance MQTT Server and Client Libraries in Go.</li>
+<li><a href="https://vernemq.com/">VerneMQ</a> - an Apache2 licensed distributed MQTT broker, developed in Erlang.</li>
+<li><a href="https://github.com/vert-x3/vertx-mqtt">Vert.x MQTT</a> - Vert.x component to handle connections, communication and messages exchange with remote MQTT clients.</li>
+<li><a href="https://waterstream.io/">Waterstream</a> - MQTT broker leveraging Apache Kafka as its own storage and distribution engine.</li>
+<li><a href="https://github.com/nanomq/nanomq">NanoMQ</a> - A light-weight and Blazing-fast MQTT Broker for IoT Edge platform.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome MQTT</h1>
+<p><a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></p>
+<blockquote>
+<p>A curated list of MQTT related stuff.</p>
+</blockquote>
+<p>MQTT is a lightweight client-server publish/subscribe messaging protocol, optimized for high-latency or unreliable networks. This protocol is a good choice for Internet of Things applications, Telemetry, Sensor Networks, Smart Metering, Home Automation, Messaging and Notification Services.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#community-resources">Community Resources</a></li>
+<li><a href="#broker">Broker</a></li>
+<li><a href="#cloud">Cloud</a></li>
+<li><a href="#platforms">Platforms</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#clients">Clients</a></li>
+<li><a href="#scripting">Scripting</a></li>
+<li><a href="#interfaces">Interfaces</a><ul>
+<li><a href="#makers">Makers</a></li>
+<li><a href="#industry">Industry</a></li>
+<li><a href="#telephony-pbx">Telephony, PBX</a></li>
+<li><a href="#operating-system">Operating System</a></li>
+<li><a href="#monitoring">Monitoring</a></li>
+<li><a href="#location-tracking">Location Tracking</a></li>
+<li><a href="#logging">Logging</a></li>
+<li><a href="#smart-home-hardware-interfaces">Smart Home Hardware Interfaces</a></li>
+<li><a href="#smart-home-integration-software">Smart Home Integration Software</a></li>
+<li><a href="#lighting">Lighting</a></li>
+<li><a href="#home-entertainment">Home Entertainment</a></li>
+<li><a href="#smart-metering">Smart Metering</a></li>
+<li><a href="#messaging">Messaging</a></li>
+<li><a href="#misc">Misc</a></li>
+</ul>
+</li>
+<li><a href="#visualization-dashboards">Visualization, Dashboards</a></li>
+<li><a href="#architecture-convention">Architecture, Convention</a></li>
+<li><a href="#security-encryption">Security, Encryption</a></li>
+</ul>
+<h3>Community Resources</h3>
+<ul>
+<li><a href="https://mqtt.org/">mqtt.org</a>.</li>
+<li><a href="https://github.com/mqtt/mqtt.org/wiki">MQTT community wiki</a>.</li>
+<li><a href="https://groups.google.com/forum/#!forum/mqtt">Google Groups: MQTT</a>.</li>
+<li><a href="irc://irc.freenode.net/mqtt">IRC channel #mqtt on the freenode network</a>.</li>
+<li><a href="http://moxd.io/2015/10/17/public-mqtt-brokers/">A list of public brokers</a>.</li>
+</ul>
+<h4>Blogs</h4>
+<ul>
+<li><a href="https://www.hardill.me.uk/wordpress/tag/mqtt/">Ben Hardill</a></li>
+<li><a href="http://forkbomb-blog.de/category/mqtt">Dominik Obermaier</a></li>
+<li><a href="https://jpmens.net/">Jan-Piet Mens</a></li>
+<li><a href="https://knolleary.net/">Nick O'Leary</a></li>
+</ul>
+<h4>Talks</h4>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=LKz1jYngpcU">An Introduction to MQTT: Why HTTP isn't the King of the Internet of Things</a> - Shinji Kim, Robert Bird - Akamai, Samsung Developer Conference 2017.</li>
+<li><a href="https://www.youtube.com/watch?v=INYG4-xsa9c">Einführung in MQTT</a> - Dominik Obermaier &amp; Jens Deters, <a href="https://www.buildingiot.de/index.php">Building IoT</a> conference 2016 (German).</li>
+</ul>
+<h3>Broker</h3>
+<ul>
+<li><a href="https://www.ably.io/documentation/mqtt">Ably</a> - MQTT broker service and protocol adapter</li>
+<li><a href="http://activemq.apache.org/">ActiveMQ</a> - A fast Java multiprotocol messaging and Integration Patterns server.</li>
+<li><a href="https://github.com/moscajs/aedes">Aedes</a> - Barebone MQTT broker that can run on any stream server, the node way.</li>
+<li><a href="https://github.com/emitter-io/emitter">Emitter</a> - A distributed, scalable and fault-tolerant publish-subscribe messaging platform based on MQTT protocol and featuring message storage.</li>
+<li><a href="https://github.com/emqx/emqx">EMQ X</a> - Scalable and Reliable Real-time MQTT Messaging Engine for IoT in 5G Era.</li>
+<li><a href="https://github.com/martin-ger/esp_mqtt">esp_uMQTT_broker</a> - A basic MQTT Broker on the ESP8266.</li>
+<li><a href="https://github.com/beerfactory/hbmqtt">hbmqtt</a> - Python MQTT broker using asyncio.</li>
+<li><a href="https://www.hivemq.com/">HiveMQ</a> - Java MQTT Broker that supports MQTT 3.1, 3.1.1 and 5.0. Commercial and open source editions available.</li>
+<li><a href="https://github.com/alsm/hrotti">hrotti</a> - A MQTT broker written in Go.</li>
+<li><a href="https://github.com/davidepianca98/KMQTT">KMQTT</a> - Kotlin Multiplatform MQTT broker, both embeddable and standalone.</li>
+<li><a href="https://github.com/moquette-io/moquette">Moquette</a> - Java MQTT lightweight broker.</li>
+<li><a href="http://www.mosca.io/">Mosca</a> - Mosca is a node.js MQTT broker, which can be used Standalone or Embedded in another Node.js application.</li>
+<li><a href="http://mosquitto.org/">Mosquitto</a> - <em>"</em>The"** Open Source MQTT Broker. <ul>
+<li><a href="https://mqtt.eclipseprojects.io">Free test server</a> hosted by the Eclipse Foundation.</li>
+<li><a href="https://github.com/iegomez/mosquitto-go-auth">Authorization Plugin in Go</a> supports many types of logins.</li>
+<li><a href="https://hub.docker.com/r/pythonlinks/letsencrypt-mosquitto">Let's Encrypt Mosquitto Docker Container</a> makes it easy to encrypt. </li>
+</ul>
+</li>
+<li><a href="https://myqtthub.com">MyQttHub</a> - Cloud MQTT broker.</li>
+<li><a href="https://github.com/TheThingsIndustries/mystique">Mystique</a> - An extendable MQTT broker written in Go, with HTTP capabilities for observability. Implements MQTT v3.1.1.</li>
+<li><a href="https://www.rabbitmq.com/mqtt.html">RabbitMQ</a> - RabbitMQ offers a MQTT Adapter.</li>
+<li><a href="https://zhen.org/categories/surgemq/">SurgeMQ</a> - High Performance MQTT Server and Client Libraries in Go.</li>
+<li><a href="https://vernemq.com/">VerneMQ</a> - an Apache2 licensed distributed MQTT broker, developed in Erlang.</li>
+<li><a href="https://github.com/vert-x3/vertx-mqtt">Vert.x MQTT</a> - Vert.x component to handle connections, communication and messages exchange with remote MQTT clients.</li>
+<li><a href="https://waterstream.io/">Waterstream</a> - MQTT broker leveraging Apache Kafka as its own storage and distribution engine.</li>
+<li><a href="https://github.com/nanomq/nanomq">NanoMQ</a> - A light-weight and Blazing-fast MQTT Broker for IoT Edge platform.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'mqtt_README.md';
 
         fetch(markdownFile)
@@ -48,21 +209,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

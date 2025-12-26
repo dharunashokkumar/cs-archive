@@ -8,38 +8,235 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jondot Awesome Devenv - Awesome List Resources">
-    <title>Jondot Awesome Devenv</title>
+    <meta name="description" content="A curated list of awesome tools, resources and workflow tips making an awesome development environment. Inspired by awesome-go, which was in turn inspired by...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Dev Env [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Dev Env <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A curated list of awesome tools, resources and workflow tips making an awesome development environment.</p>
+<p>Inspired by <a href="https://github.com/avelino/awesome-go">awesome-go</a>, which was in turn inspired by <a href="https://github.com/vinta/awesome-python">awesome-python</a>.</p>
+<h3>Contributing</h3>
+<p><a href="https://github.com/jondot/awesome-devenv/blob/master/CONTRIBUTING.md">Guidelines</a> tweaked and adapted from <code>awesome-go</code> - thanks!</p>
+<p>But in short:</p>
+<ul>
+<li>List is alphabetically sorted</li>
+<li>If you think an item shouldn't be here <a href="https://github.com/jondot/awesome-devenv/issues/new">open an issue</a></li>
+</ul>
+<p>Many thanks to everyone on the <a href="https://github.com/jondot/awesome-devenv/graphs/contributors">contributor list</a> :)</p>
+<h1>Content</h1>
+<p><em>Note: for an OS specific tool, please do your best to mark with <code>OSX/WIN/*NIX/LIN</code></em></p>
+<ul>
+<li><a href="#admins">Admins</a></li>
+<li><a href="#benchmarking">Benchmarking</a></li>
+<li><a href="#data">Data</a></li>
+<li><a href="#diagnostics">Diagnostics</a></li>
+<li><a href="#desktop">Desktop</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#dotfiles">Dotfiles</a></li>
+<li><a href="#editors">Editors</a></li>
+<li><a href="#atom">Atom</a></li>
+<li><a href="#sublime-text-3">Sublime Text</a></li>
+<li><a href="#vim">Vim</a></li>
+<li><a href="#intellij">IntelliJ</a></li>
+<li><a href="#visual-studio-code">VSCode</a></li>
+<li><a href="#git">Git</a></li>
+<li><a href="#misc">Misc</a></li>
+<li><a href="#notifications">Notifications</a></li>
+<li><a href="#orchestration">Orchestration</a></li>
+<li><a href="#presentation">Presentation</a></li>
+<li><a href="#shell">Shell</a></li>
+<li><a href="#text">Text</a></li>
+<li><a href="#terminal">Terminal</a></li>
+<li><a href="#workflow">Workflow</a></li>
+</ul>
+<h2>Admins</h2>
+<p><em>Tools to manage databases, permissions, etc.</em></p>
+<ul>
+<li><a href="https://github.com/six-ddc/hss">hss</a> - Never type the annoying ssh commands again.</li>
+<li><a href="https://github.com/fotonauts/MongoHub-Mac/releases">MongoHub</a> - Native OSx client for mongo</li>
+<li><a href="http://robomongo.org/">Robomongo</a> - a cross platform Admin for MongoDB</li>
+</ul>
+<h2>Benchmarking</h2>
+<p><em>Tools to benchmark your code or services</em></p>
+<ul>
+<li><a href="http://httpd.apache.org/docs/2.2/programs/ab.html">apachebench (ab)</a></li>
+<li><a href="https://github.com/rakyll/boom">boom</a></li>
+<li><a href="http://www.hpl.hp.com/research/linux/httperf/">httperf</a></li>
+<li><a href="https://github.com/macbre/phantomas">phantomas</a> - website perf evaluation tool</li>
+<li><a href="http://www.joedog.org/siege-home/">siege</a></li>
+<li><a href="https://github.com/tsenart/vegeta">Vegeta</a></li>
+<li><a href="https://github.com/wg/wrk">wrk</a></li>
+<li><a href="https://github.com/Instagram/redis-faina">redis-faina</a> Instagram's Redis counter/timing stats based on the MONITOR command</li>
+</ul>
+<h2>Data</h2>
+<p><em>Tools for handling online and offline data</em></p>
+<ul>
+<li><a href="https://github.com/s3tools/s3cmd">s3cmd</a> - the S3 CLI tool for Amazon</li>
+</ul>
+<h2>Diagnostics</h2>
+<p><em>Tools for checking diagnosing your system while you work</em></p>
+<ul>
+<li><a href="https://github.com/nicolargo/glances">glances</a></li>
+<li><a href="http://nmon.sourceforge.net/pmwiki.php">nmon</a></li>
+<li><a href="https://github.com/aksakalli/gtop">gtop</a></li>
+</ul>
+<h2>Desktop</h2>
+<p><em>Tools for improving and hacking around with your vanilla desktop</em></p>
+<ul>
+<li><a href="http://www.alfredapp.com/">Alfred</a> - OSX productivity app <code>/OSX/</code></li>
+<li><a href="https://github.com/sdegutis/hydra">hydra</a> - script your desktop
+  <code>/OSX/</code></li>
+<li><a href="https://github.com/sdeken/keycastr">Keycastr</a> - show your keys while
+  presenting/casting <code>/OSX/</code></li>
+</ul>
+<h2>Documentation</h2>
+<p><em>Tools to document your project</em></p>
+<ul>
+<li><a href="https://github.com/thomvaill/log4brains">Log4brains</a> - Docs-as-code knowledge base to manage Architecture Decision Records (ADR) for your project and publish them automatically as a static website.</li>
+</ul>
+<h2>Dotfiles</h2>
+<ul>
+<li><a href="https://dotfiles.github.io/">dotfiles.github.io</a> - Collected dotfile resources. Has sections with dotfile bootstraps and lists of frameworks for various shells and editors.</li>
+<li><a href="https://github.com/holman/dotfiles">Zach Holman's</a> - oh-my-zsh, osx, Zsh, vi, Ruby, Git, and more</li>
+<li><a href="https://github.com/mathiasbynens/dotfiles">Mathias Bynens's</a> - .files, including ~/.osx — sensible hacker defaults for OS X</li>
+<li><a href="https://github.com/thoughtbot/dotfiles">Thoughtbot's</a> - A set of vim, zsh, git, and tmux configuration files</li>
+<li><a href="https://github.com/paulmillr/dotfiles">Paul Miller's</a> - Colourful &amp; robust OS X configuration files and utilities</li>
+</ul>
+<h2>Editors</h2>
+<p><em>Only awesome tools and addons for your favorite editor</em></p>
+<h3>Atom</h3>
+<ul>
+<li><a href="https://github.com/Glavin001/atom-beautify">atom-beautify</a> - Beautify HTML (including Handlebars), CSS (including Sass and Less), JavaScript, and much more in Atom.</li>
+<li><a href="https://github.com/DanBrooker/file-icons">file-icons</a> - Adds file specific icons to atom for improved visual grepping.</li>
+<li><a href="https://github.com/richrace/highlight-selected">highlight-selected</a> - Double click on a word to highlight it throughout the open file.</li>
+<li><a href="https://github.com/atom-minimap/minimap">minimap</a> - A graphical map (preview) of the full source code.</li>
+<li><a href="https://github.com/atom-minimap/minimap-git-diff">minimap-git-diff</a> - A minimap binding for the Atom git-diff package.</li>
+<li><a href="https://github.com/atom-minimap/minimap-highlight-selected">minimap-highlight-selected</a> - A minimap binding for the highlight-selected package.</li>
+<li><a href="https://github.com/danielbrodin/atom-project-manager">atom-project-manager</a> - Get easy access to all your projects and manage them with project specific settings and options.</li>
+<li><a href="https://github.com/subesokun/atom-tree-view-git-status">atom-tree-view-git-status</a> - Show the Git repository status in the Atom tree-view.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Dev Env <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A curated list of awesome tools, resources and workflow tips making an awesome development environment.</p>
+<p>Inspired by <a href="https://github.com/avelino/awesome-go">awesome-go</a>, which was in turn inspired by <a href="https://github.com/vinta/awesome-python">awesome-python</a>.</p>
+<h3>Contributing</h3>
+<p><a href="https://github.com/jondot/awesome-devenv/blob/master/CONTRIBUTING.md">Guidelines</a> tweaked and adapted from <code>awesome-go</code> - thanks!</p>
+<p>But in short:</p>
+<ul>
+<li>List is alphabetically sorted</li>
+<li>If you think an item shouldn't be here <a href="https://github.com/jondot/awesome-devenv/issues/new">open an issue</a></li>
+</ul>
+<p>Many thanks to everyone on the <a href="https://github.com/jondot/awesome-devenv/graphs/contributors">contributor list</a> :)</p>
+<h1>Content</h1>
+<p><em>Note: for an OS specific tool, please do your best to mark with <code>OSX/WIN/*NIX/LIN</code></em></p>
+<ul>
+<li><a href="#admins">Admins</a></li>
+<li><a href="#benchmarking">Benchmarking</a></li>
+<li><a href="#data">Data</a></li>
+<li><a href="#diagnostics">Diagnostics</a></li>
+<li><a href="#desktop">Desktop</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#dotfiles">Dotfiles</a></li>
+<li><a href="#editors">Editors</a></li>
+<li><a href="#atom">Atom</a></li>
+<li><a href="#sublime-text-3">Sublime Text</a></li>
+<li><a href="#vim">Vim</a></li>
+<li><a href="#intellij">IntelliJ</a></li>
+<li><a href="#visual-studio-code">VSCode</a></li>
+<li><a href="#git">Git</a></li>
+<li><a href="#misc">Misc</a></li>
+<li><a href="#notifications">Notifications</a></li>
+<li><a href="#orchestration">Orchestration</a></li>
+<li><a href="#presentation">Presentation</a></li>
+<li><a href="#shell">Shell</a></li>
+<li><a href="#text">Text</a></li>
+<li><a href="#terminal">Terminal</a></li>
+<li><a href="#workflow">Workflow</a></li>
+</ul>
+<h2>Admins</h2>
+<p><em>Tools to manage databases, permissions, etc.</em></p>
+<ul>
+<li><a href="https://github.com/six-ddc/hss">hss</a> - Never type the annoying ssh commands again.</li>
+<li><a href="https://github.com/fotonauts/MongoHub-Mac/releases">MongoHub</a> - Native OSx client for mongo</li>
+<li><a href="http://robomongo.org/">Robomongo</a> - a cross platform Admin for MongoDB</li>
+</ul>
+<h2>Benchmarking</h2>
+<p><em>Tools to benchmark your code or services</em></p>
+<ul>
+<li><a href="http://httpd.apache.org/docs/2.2/programs/ab.html">apachebench (ab)</a></li>
+<li><a href="https://github.com/rakyll/boom">boom</a></li>
+<li><a href="http://www.hpl.hp.com/research/linux/httperf/">httperf</a></li>
+<li><a href="https://github.com/macbre/phantomas">phantomas</a> - website perf evaluation tool</li>
+<li><a href="http://www.joedog.org/siege-home/">siege</a></li>
+<li><a href="https://github.com/tsenart/vegeta">Vegeta</a></li>
+<li><a href="https://github.com/wg/wrk">wrk</a></li>
+<li><a href="https://github.com/Instagram/redis-faina">redis-faina</a> Instagram's Redis counter/timing stats based on the MONITOR command</li>
+</ul>
+<h2>Data</h2>
+<p><em>Tools for handling online and offline data</em></p>
+<ul>
+<li><a href="https://github.com/s3tools/s3cmd">s3cmd</a> - the S3 CLI tool for Amazon</li>
+</ul>
+<h2>Diagnostics</h2>
+<p><em>Tools for checking diagnosing your system while you work</em></p>
+<ul>
+<li><a href="https://github.com/nicolargo/glances">glances</a></li>
+<li><a href="http://nmon.sourceforge.net/pmwiki.php">nmon</a></li>
+<li><a href="https://github.com/aksakalli/gtop">gtop</a></li>
+</ul>
+<h2>Desktop</h2>
+<p><em>Tools for improving and hacking around with your vanilla desktop</em></p>
+<ul>
+<li><a href="http://www.alfredapp.com/">Alfred</a> - OSX productivity app <code>/OSX/</code></li>
+<li><a href="https://github.com/sdegutis/hydra">hydra</a> - script your desktop
+  <code>/OSX/</code></li>
+<li><a href="https://github.com/sdeken/keycastr">Keycastr</a> - show your keys while
+  presenting/casting <code>/OSX/</code></li>
+</ul>
+<h2>Documentation</h2>
+<p><em>Tools to document your project</em></p>
+<ul>
+<li><a href="https://github.com/thomvaill/log4brains">Log4brains</a> - Docs-as-code knowledge base to manage Architecture Decision Records (ADR) for your project and publish them automatically as a static website.</li>
+</ul>
+<h2>Dotfiles</h2>
+<ul>
+<li><a href="https://dotfiles.github.io/">dotfiles.github.io</a> - Collected dotfile resources. Has sections with dotfile bootstraps and lists of frameworks for various shells and editors.</li>
+<li><a href="https://github.com/holman/dotfiles">Zach Holman's</a> - oh-my-zsh, osx, Zsh, vi, Ruby, Git, and more</li>
+<li><a href="https://github.com/mathiasbynens/dotfiles">Mathias Bynens's</a> - .files, including ~/.osx — sensible hacker defaults for OS X</li>
+<li><a href="https://github.com/thoughtbot/dotfiles">Thoughtbot's</a> - A set of vim, zsh, git, and tmux configuration files</li>
+<li><a href="https://github.com/paulmillr/dotfiles">Paul Miller's</a> - Colourful &amp; robust OS X configuration files and utilities</li>
+</ul>
+<h2>Editors</h2>
+<p><em>Only awesome tools and addons for your favorite editor</em></p>
+<h3>Atom</h3>
+<ul>
+<li><a href="https://github.com/Glavin001/atom-beautify">atom-beautify</a> - Beautify HTML (including Handlebars), CSS (including Sass and Less), JavaScript, and much more in Atom.</li>
+<li><a href="https://github.com/DanBrooker/file-icons">file-icons</a> - Adds file specific icons to atom for improved visual grepping.</li>
+<li><a href="https://github.com/richrace/highlight-selected">highlight-selected</a> - Double click on a word to highlight it throughout the open file.</li>
+<li><a href="https://github.com/atom-minimap/minimap">minimap</a> - A graphical map (preview) of the full source code.</li>
+<li><a href="https://github.com/atom-minimap/minimap-git-diff">minimap-git-diff</a> - A minimap binding for the Atom git-diff package.</li>
+<li><a href="https://github.com/atom-minimap/minimap-highlight-selected">minimap-highlight-selected</a> - A minimap binding for the highlight-selected package.</li>
+<li><a href="https://github.com/danielbrodin/atom-project-manager">atom-project-manager</a> - Get easy access to all your projects and manage them with project specific settings and options.</li>
+<li><a href="https://github.com/subesokun/atom-tree-view-git-status">atom-tree-view-git-status</a> - Show the Git repository status in the Atom tree-view.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'dev-env_README.md';
 
         fetch(markdownFile)
@@ -48,21 +245,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

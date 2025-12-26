@@ -8,38 +8,121 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Manuzhang Awesome Streaming - Awesome List Resources">
-    <title>Manuzhang Awesome Streaming</title>
+    <meta name="description" content="A curated list of awesome streaming (stream processing) frameworks, applications, readings and other resources. Inspired by other awesome projects....">
+    <meta name="robots" content="index, follow">
+    <title>Streaming - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h2>Awesome Streaming  <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <a href="https://github.com/manuzhang/awesome-streaming/actions"><img alt="Build Status" src="https://github.com/manuzhang/awesome-streaming/workflows/build/badge.svg" /></a></h2>
+<p>A curated list of awesome <a href="http://radar.oreilly.com/2015/08/the-world-beyond-batch-streaming-101.html">streaming (stream processing)</a> frameworks, applications, readings and other resources. Inspired by <a href="https://github.com/sindresorhus/awesome">other awesome projects</a>. </p>
+<h2>Website</h2>
+<p><a href="https://manuzhang.github.io/awesome-streaming/">https://manuzhang.github.io/awesome-streaming/</a> is a more dynamic website where you can find <strong>updates</strong> of the awesome projects here.</p>
+<h2>Table of Contents</h2>
+<ul>
+<li><a href="#streaming-engine">Streaming Engine</a></li>
+<li><a href="#streaming-library">Streaming Library</a></li>
+<li><a href="#streaming-application">Streaming Application</a></li>
+<li><a href="#iot">IoT</a></li>
+<li><a href="#dsl">DSL</a></li>
+<li><a href="#data-pipeline">Data Pipeline</a></li>
+<li><a href="#online-machine-learning">Online Machine Learning</a></li>
+<li><a href="#streaming-sql">Streaming SQL</a></li>
+<li><a href="#toolkit">Toolkit</a></li>
+<li><a href="#benchmark">Benchmark</a></li>
+<li><a href="#closed-source">Closed Source</a></li>
+<li><a href="#readings">Readings</a></li>
+</ul>
+<h3>Streaming Engine</h3>
+<ul>
+<li><a href="https://github.com/apache/apex-core">Apache Apex</a> [Java] - unified platform for big data stream and batch processing.</li>
+<li><a href="https://github.com/apache/arrow-ballista">Apache Ballista</a> [Rust] - distributed compute platform powered by Apache Arrow.</li>
+<li><a href="https://github.com/apache/flink">Apache Flink</a> [Java] - system for high-throughput, low-latency data stream processing that supports stateful computation, data-driven windowing semantics and iterative stream processing.</li>
+<li><a href="https://github.com/apache/incubator-heron">Apache Heron (incubating)</a> [Java] - a realtime, distributed, fault-tolerant stream processing engine from Twitter.</li>
+<li><a href="https://github.com/apache/samza">Apache Samza</a> [Scala/Java] - distributed stream processing framework that build on Kafka(messaging, storage) and YARN(fault tolerance, processor isolation, security and resource management).</li>
+<li><a href="https://github.com/apache/spark">Apache Spark Streaming</a> [Scala] - makes it easy to build scalable fault-tolerant streaming applications.</li>
+<li><a href="https://github.com/apache/storm">Apache Storm</a> [Clojure/Java] - distributed real-time computation system. Storm is to stream processing what Hadoop is to batch processing.</li>
+<li><a href="https://github.com/arkflow-rs/arkflow">ArkFlow</a> [Rust] - High-performance Rust stream processing engine, providing powerful data stream processing capabilities, supporting multiple input/output sources and processors.</li>
+<li><a href="https://github.com/ArroyoSystems/arroyo">Arroyo</a> [Rust] - a distributed stream processing engine. Supports SQL and Rust pipelines. Scales up to millions of events per second. Supports stateful operations like windows and joins, state checkpointing for fault-tolerance and recovery of pipelines. Uses the Timely Dataflow model.</li>
+<li><a href="https://github.com/uber/AthenaX">AthenaX</a> [Java] - Uber's Stream Analytics Framework used in production</li>
+<li><a href="https://github.com/bytewax/bytewax">Bytewax</a> [Python] - data parallel, distributed, stateful stream processing framework.</li>
+<li><a href="https://github.com/cocoindex-io/cocoindex">CocoIndex</a> [Rust/Python] - ETL framework to build fresh index for AI, with realtime incremental updates.</li>
+<li><a href="https://github.com/robinhood/faust">Faust</a> [Python] - stream processing library, porting the ideas from Kafka Streams to Python</li>
+<li><a href="https://github.com/gearpump/gearpump">Gearpump</a> [Scala] - lightweight real-time distributed streaming engine built on Akka.</li>
+<li><a href="https://github.com/hazelcast/hazelcast-jet">Hazelcast Jet</a> [Java] - A general purpose distributed data processing engine, built on top of Hazelcast.</li>
+<li><a href="https://github.com/hailstorm-hs/hailstorm">hailstorm</a> [Haskell] - distributed stream processing with exactly-once semantics based on Storm.</li>
+<li><a href="https://github.com/maki-nage/makinage">Maki Nage</a> [Python] - A stream processing framework for data scientists, based on Kafka and ReactiveX.</li>
+<li><a href="https://github.com/Netflix/mantis">mantis</a> [Java] - Netflix's platform to build an ecosystem of realtime stream processing applications</li>
+<li><a href="https://github.com/walmartlabs/mupd8">mupd8(muppet)</a> [Scala/Java] - mapReduce-style framework for processing fast/streaming data.</li>
+<li><a href="https://github.com/nebulastream/nebulastream">NebulaStream</a> [C++] - High-performance, general-purpose, end-to-end data-management system for cloud-edge-sensor environments.</li>
+<li><a href="https://github.com/numaproj/numaflow">Numaflow</a> [Java/Python/Go/Rust] - Kubernetes native stream processing platform with language agnostic framework. Scalable and cost-efficient</li>
+<li><a href="https://github.com/onyx-platform/onyx">Onyx</a> [Clojure] - Distributed, masterless, high performance, fault tolerant data processing.</li>
+<li><a href="https://github.com/pathwaycom/pathway">Pathway</a> [Python] - The fastest data processing engine supporting unified workflows for batch, streaming data, and LLM applications.</li>
+<li><a href="https://github.com/apache/incubator-s4">s4</a> [Java] - general-purpose, distributed, scalable, fault-tolerant, pluggable platform that allows programmers to easily develop applications for processing continuous unbounded streams of data.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h2>Awesome Streaming  <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <a href="https://github.com/manuzhang/awesome-streaming/actions"><img alt="Build Status" src="https://github.com/manuzhang/awesome-streaming/workflows/build/badge.svg" /></a></h2>
+<p>A curated list of awesome <a href="http://radar.oreilly.com/2015/08/the-world-beyond-batch-streaming-101.html">streaming (stream processing)</a> frameworks, applications, readings and other resources. Inspired by <a href="https://github.com/sindresorhus/awesome">other awesome projects</a>. </p>
+<h2>Website</h2>
+<p><a href="https://manuzhang.github.io/awesome-streaming/">https://manuzhang.github.io/awesome-streaming/</a> is a more dynamic website where you can find <strong>updates</strong> of the awesome projects here.</p>
+<h2>Table of Contents</h2>
+<ul>
+<li><a href="#streaming-engine">Streaming Engine</a></li>
+<li><a href="#streaming-library">Streaming Library</a></li>
+<li><a href="#streaming-application">Streaming Application</a></li>
+<li><a href="#iot">IoT</a></li>
+<li><a href="#dsl">DSL</a></li>
+<li><a href="#data-pipeline">Data Pipeline</a></li>
+<li><a href="#online-machine-learning">Online Machine Learning</a></li>
+<li><a href="#streaming-sql">Streaming SQL</a></li>
+<li><a href="#toolkit">Toolkit</a></li>
+<li><a href="#benchmark">Benchmark</a></li>
+<li><a href="#closed-source">Closed Source</a></li>
+<li><a href="#readings">Readings</a></li>
+</ul>
+<h3>Streaming Engine</h3>
+<ul>
+<li><a href="https://github.com/apache/apex-core">Apache Apex</a> [Java] - unified platform for big data stream and batch processing.</li>
+<li><a href="https://github.com/apache/arrow-ballista">Apache Ballista</a> [Rust] - distributed compute platform powered by Apache Arrow.</li>
+<li><a href="https://github.com/apache/flink">Apache Flink</a> [Java] - system for high-throughput, low-latency data stream processing that supports stateful computation, data-driven windowing semantics and iterative stream processing.</li>
+<li><a href="https://github.com/apache/incubator-heron">Apache Heron (incubating)</a> [Java] - a realtime, distributed, fault-tolerant stream processing engine from Twitter.</li>
+<li><a href="https://github.com/apache/samza">Apache Samza</a> [Scala/Java] - distributed stream processing framework that build on Kafka(messaging, storage) and YARN(fault tolerance, processor isolation, security and resource management).</li>
+<li><a href="https://github.com/apache/spark">Apache Spark Streaming</a> [Scala] - makes it easy to build scalable fault-tolerant streaming applications.</li>
+<li><a href="https://github.com/apache/storm">Apache Storm</a> [Clojure/Java] - distributed real-time computation system. Storm is to stream processing what Hadoop is to batch processing.</li>
+<li><a href="https://github.com/arkflow-rs/arkflow">ArkFlow</a> [Rust] - High-performance Rust stream processing engine, providing powerful data stream processing capabilities, supporting multiple input/output sources and processors.</li>
+<li><a href="https://github.com/ArroyoSystems/arroyo">Arroyo</a> [Rust] - a distributed stream processing engine. Supports SQL and Rust pipelines. Scales up to millions of events per second. Supports stateful operations like windows and joins, state checkpointing for fault-tolerance and recovery of pipelines. Uses the Timely Dataflow model.</li>
+<li><a href="https://github.com/uber/AthenaX">AthenaX</a> [Java] - Uber's Stream Analytics Framework used in production</li>
+<li><a href="https://github.com/bytewax/bytewax">Bytewax</a> [Python] - data parallel, distributed, stateful stream processing framework.</li>
+<li><a href="https://github.com/cocoindex-io/cocoindex">CocoIndex</a> [Rust/Python] - ETL framework to build fresh index for AI, with realtime incremental updates.</li>
+<li><a href="https://github.com/robinhood/faust">Faust</a> [Python] - stream processing library, porting the ideas from Kafka Streams to Python</li>
+<li><a href="https://github.com/gearpump/gearpump">Gearpump</a> [Scala] - lightweight real-time distributed streaming engine built on Akka.</li>
+<li><a href="https://github.com/hazelcast/hazelcast-jet">Hazelcast Jet</a> [Java] - A general purpose distributed data processing engine, built on top of Hazelcast.</li>
+<li><a href="https://github.com/hailstorm-hs/hailstorm">hailstorm</a> [Haskell] - distributed stream processing with exactly-once semantics based on Storm.</li>
+<li><a href="https://github.com/maki-nage/makinage">Maki Nage</a> [Python] - A stream processing framework for data scientists, based on Kafka and ReactiveX.</li>
+<li><a href="https://github.com/Netflix/mantis">mantis</a> [Java] - Netflix's platform to build an ecosystem of realtime stream processing applications</li>
+<li><a href="https://github.com/walmartlabs/mupd8">mupd8(muppet)</a> [Scala/Java] - mapReduce-style framework for processing fast/streaming data.</li>
+<li><a href="https://github.com/nebulastream/nebulastream">NebulaStream</a> [C++] - High-performance, general-purpose, end-to-end data-management system for cloud-edge-sensor environments.</li>
+<li><a href="https://github.com/numaproj/numaflow">Numaflow</a> [Java/Python/Go/Rust] - Kubernetes native stream processing platform with language agnostic framework. Scalable and cost-efficient</li>
+<li><a href="https://github.com/onyx-platform/onyx">Onyx</a> [Clojure] - Distributed, masterless, high performance, fault tolerant data processing.</li>
+<li><a href="https://github.com/pathwaycom/pathway">Pathway</a> [Python] - The fastest data processing engine supporting unified workflows for batch, streaming data, and LLM applications.</li>
+<li><a href="https://github.com/apache/incubator-s4">s4</a> [Java] - general-purpose, distributed, scalable, fault-tolerant, pluggable platform that allows programmers to easily develop applications for processing continuous unbounded streams of data.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'streaming_README.md';
 
         fetch(markdownFile)
@@ -48,21 +131,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

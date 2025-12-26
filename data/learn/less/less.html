@@ -8,38 +8,179 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Lucasbassetti Awesome Less - Awesome List Resources">
-    <title>Lucasbassetti Awesome Less</title>
+    <meta name="description" content="> Curated list of awesome Less frameworks, libraries, style guides, articles, and resources. The main idea is that everyone can contribute here, so we can...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Less [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Less <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p><a href="http://lesscss.org/"><img src="https://cdn.rawgit.com/LucasBassetti/awesome-less/14437854/less-logo.svg" align="right" height="80"></a></p>
+<blockquote>
+<p>Curated list of awesome Less frameworks, libraries, style guides, articles, and resources. The main idea is that everyone can contribute here, so we can center all the informations about Less and keep up-to-date.</p>
+</blockquote>
+<h2>Contents</h2>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#getting-started">Getting Started</a></li>
+<li><a href="#uitheme-frameworks-and-components">UI/Theme Frameworks and Components</a></li>
+<li><a href="#libraries-and-mixins">Libraries and Mixins</a></li>
+<li><a href="#grid">Grid</a></li>
+<li><a href="#media-queries">Media Queries</a></li>
+<li><a href="#color">Color</a></li>
+<li><a href="#animation">Animation</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#style-guides">Style Guides</a></li>
+<li><a href="#ports-of-less">Ports of Less</a></li>
+<li><a href="#java">Java</a></li>
+<li><a href="#net">.Net</a></li>
+<li><a href="#php">PHP</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#ruby">Ruby</a></li>
+<li><a href="#go">Go</a></li>
+<li><a href="#guis-editors-and-plugins">GUIs, Editors and Plugins</a></li>
+<li><a href="#online-less-compilers">Online Less Compilers</a></li>
+<li><a href="#online-web-idesplaygrounds-with-less-support">Online Web IDEs/Playgrounds with Less support</a></li>
+<li><a href="#translations">Translations</a></li>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#experiments">Experiments</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h2>About</h2>
+<p>Less is a open source dynamic style sheet language that can be compiled into Cascading Style Sheets (CSS) and run on the client side or server side. Designed by Alexis Sellier, Less is influenced by Sass and has influenced the newer "SCSS" syntax of Sass, which adapted its CSS-like block formatting syntax. Less provides the following mechanisms: variables, nesting, mixins, operators and functions; the main difference between Less and other CSS precompilers being that Less allows real-time compilation via Less by the browser. Font: <a href="https://en.wikipedia.org/wiki/Less_(stylesheet_language)">Wikipedia</a></p>
+<p><strong><a href="#contents">Back to top</a></strong></p>
+<h2>Getting Started</h2>
+<ul>
+<li><a href="http://www.hongkiat.com/blog/less-basic/">Beginner's Guide</a></li>
+<li><a href="https://scotch.io/tutorials/getting-started-with-less">Getting Started with Less</a></li>
+<li><a href="http://tutorialzine.com/2015/07/learn-less-in-10-minutes-or-less/">Learn in 10 Minutes</a></li>
+<li><a href="http://lesscss.org/">Official Guide</a></li>
+<li><a href="https://github.com/less/less.js">Official Repository</a></li>
+</ul>
+<p><strong><a href="#contents">Back to top</a></strong></p>
+<h2>UI/Theme Frameworks and Components</h2>
+<ul>
+<li><a href="http://rriepe.github.io/1pxdeep/">1pxdeep</a> - Brings designing by relative visual weight, or designing with color schemes, to Bootstrap.</li>
+<li><a href="https://github.com/ant-design/ant-design/">Ant Design</a> -     An enterprise-class UI design language and React-based implementation.</li>
+<li><a href="https://github.com/bassjobsen/bootstrap-a11y-theme">Bootstrap a11y theme</a> - Makes web accessibility easier for Bootstrap developers.</li>
+<li><a href="http://getbootstrap.com/">Bootstrap 3</a> - Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.</li>
+<li><a href="http://bootswatch.com/">Bootswatch</a> - Collection of free themes for Bootstrap.</li>
+<li><a href="http://cardinalcss.com/">Cardinal</a> - Small "mobile first" CSS framework for front-end developers who build responsive web applications.</li>
+<li><a href="https://github.com/firminoweb/csshorus">CSSHórus</a> -  Library for development of responsive and mobile websites.</li>
+<li><a href="http://designmodo.github.io/Flat-UI/">Flat UI Free</a> - Theme and framework for Bootstrap.</li>
+<li><a href="http://jbst.eu/">JBST</a> - Theme framework that can be used as a standalone website builder or to create WordPress themes.</li>
+<li><a href="https://github.com/metaskills/less-rails">Less Rails</a> - Less for Rails.</li>
+<li><a href="https://github.com/FezVrasta/bootstrap-material-design">Material Design for Bootstrap</a> - Material Design for Bootstrap is a Bootstrap V3 compatible theme; it is an easy way to use the new Material Design guidelines by Google in your Bootstrap 3 based application.</li>
+<li><a href="http://metroui.org.ua/">Metro UI CSS</a> - Set of styles to create a site with an interface similar to Windows 8.</li>
+<li><a href="http://danmalarkey.github.io/schema/">Schema</a> -  Light, responsive, and lean frontend UI framework.</li>
+<li><a href="http://semantic-ui.com/">Semantic UI</a> - UI component framework based around useful principles from natural language.</li>
+<li><a href="https://getuikit.com/">UIkit</a> - Lightweight and modular front-end framework for developing web interfaces.</li>
+<li><a href="https://www.weepower.com/">Wee</a> - Lightweight front-end framework for logically building complex, responsive web projects.</li>
+</ul>
+<p><strong><a href="#contents">Back to top</a></strong></p>
+<h2>Libraries and Mixins</h2>
+<h3>Grid</h3>
+<ul>
+<li><a href="https://github.com/zirafa/bootstrap-grid-only">Bootstrap Grid Only</a> - Bootstrap's responsive grid and responsive utility classes only, without any extras. Lightweight yet still powerful. Style to taste.</li>
+<li><a href="https://github.com/jonikorpi/Less-Framework">Framework</a> - Less Framework is a CSS grid system for designing adaptive web sites. It contains 4 layouts and 3 sets of typography presets, all based on a single grid.</li>
+<li><a href="http://flexible.gs/">Flexible Grid System</a> - This framework will let you create your web applications in a flexible way that you've never experienced before.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Less <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p><a href="http://lesscss.org/"><img src="https://cdn.rawgit.com/LucasBassetti/awesome-less/14437854/less-logo.svg" align="right" height="80"></a></p>
+<blockquote>
+<p>Curated list of awesome Less frameworks, libraries, style guides, articles, and resources. The main idea is that everyone can contribute here, so we can center all the informations about Less and keep up-to-date.</p>
+</blockquote>
+<h2>Contents</h2>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#getting-started">Getting Started</a></li>
+<li><a href="#uitheme-frameworks-and-components">UI/Theme Frameworks and Components</a></li>
+<li><a href="#libraries-and-mixins">Libraries and Mixins</a></li>
+<li><a href="#grid">Grid</a></li>
+<li><a href="#media-queries">Media Queries</a></li>
+<li><a href="#color">Color</a></li>
+<li><a href="#animation">Animation</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#style-guides">Style Guides</a></li>
+<li><a href="#ports-of-less">Ports of Less</a></li>
+<li><a href="#java">Java</a></li>
+<li><a href="#net">.Net</a></li>
+<li><a href="#php">PHP</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#ruby">Ruby</a></li>
+<li><a href="#go">Go</a></li>
+<li><a href="#guis-editors-and-plugins">GUIs, Editors and Plugins</a></li>
+<li><a href="#online-less-compilers">Online Less Compilers</a></li>
+<li><a href="#online-web-idesplaygrounds-with-less-support">Online Web IDEs/Playgrounds with Less support</a></li>
+<li><a href="#translations">Translations</a></li>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#experiments">Experiments</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h2>About</h2>
+<p>Less is a open source dynamic style sheet language that can be compiled into Cascading Style Sheets (CSS) and run on the client side or server side. Designed by Alexis Sellier, Less is influenced by Sass and has influenced the newer "SCSS" syntax of Sass, which adapted its CSS-like block formatting syntax. Less provides the following mechanisms: variables, nesting, mixins, operators and functions; the main difference between Less and other CSS precompilers being that Less allows real-time compilation via Less by the browser. Font: <a href="https://en.wikipedia.org/wiki/Less_(stylesheet_language)">Wikipedia</a></p>
+<p><strong><a href="#contents">Back to top</a></strong></p>
+<h2>Getting Started</h2>
+<ul>
+<li><a href="http://www.hongkiat.com/blog/less-basic/">Beginner's Guide</a></li>
+<li><a href="https://scotch.io/tutorials/getting-started-with-less">Getting Started with Less</a></li>
+<li><a href="http://tutorialzine.com/2015/07/learn-less-in-10-minutes-or-less/">Learn in 10 Minutes</a></li>
+<li><a href="http://lesscss.org/">Official Guide</a></li>
+<li><a href="https://github.com/less/less.js">Official Repository</a></li>
+</ul>
+<p><strong><a href="#contents">Back to top</a></strong></p>
+<h2>UI/Theme Frameworks and Components</h2>
+<ul>
+<li><a href="http://rriepe.github.io/1pxdeep/">1pxdeep</a> - Brings designing by relative visual weight, or designing with color schemes, to Bootstrap.</li>
+<li><a href="https://github.com/ant-design/ant-design/">Ant Design</a> -     An enterprise-class UI design language and React-based implementation.</li>
+<li><a href="https://github.com/bassjobsen/bootstrap-a11y-theme">Bootstrap a11y theme</a> - Makes web accessibility easier for Bootstrap developers.</li>
+<li><a href="http://getbootstrap.com/">Bootstrap 3</a> - Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.</li>
+<li><a href="http://bootswatch.com/">Bootswatch</a> - Collection of free themes for Bootstrap.</li>
+<li><a href="http://cardinalcss.com/">Cardinal</a> - Small "mobile first" CSS framework for front-end developers who build responsive web applications.</li>
+<li><a href="https://github.com/firminoweb/csshorus">CSSHórus</a> -  Library for development of responsive and mobile websites.</li>
+<li><a href="http://designmodo.github.io/Flat-UI/">Flat UI Free</a> - Theme and framework for Bootstrap.</li>
+<li><a href="http://jbst.eu/">JBST</a> - Theme framework that can be used as a standalone website builder or to create WordPress themes.</li>
+<li><a href="https://github.com/metaskills/less-rails">Less Rails</a> - Less for Rails.</li>
+<li><a href="https://github.com/FezVrasta/bootstrap-material-design">Material Design for Bootstrap</a> - Material Design for Bootstrap is a Bootstrap V3 compatible theme; it is an easy way to use the new Material Design guidelines by Google in your Bootstrap 3 based application.</li>
+<li><a href="http://metroui.org.ua/">Metro UI CSS</a> - Set of styles to create a site with an interface similar to Windows 8.</li>
+<li><a href="http://danmalarkey.github.io/schema/">Schema</a> -  Light, responsive, and lean frontend UI framework.</li>
+<li><a href="http://semantic-ui.com/">Semantic UI</a> - UI component framework based around useful principles from natural language.</li>
+<li><a href="https://getuikit.com/">UIkit</a> - Lightweight and modular front-end framework for developing web interfaces.</li>
+<li><a href="https://www.weepower.com/">Wee</a> - Lightweight front-end framework for logically building complex, responsive web projects.</li>
+</ul>
+<p><strong><a href="#contents">Back to top</a></strong></p>
+<h2>Libraries and Mixins</h2>
+<h3>Grid</h3>
+<ul>
+<li><a href="https://github.com/zirafa/bootstrap-grid-only">Bootstrap Grid Only</a> - Bootstrap's responsive grid and responsive utility classes only, without any extras. Lightweight yet still powerful. Style to taste.</li>
+<li><a href="https://github.com/jonikorpi/Less-Framework">Framework</a> - Less Framework is a CSS grid system for designing adaptive web sites. It contains 4 layouts and 3 sets of typography presets, all based on a single grid.</li>
+<li><a href="http://flexible.gs/">Flexible Grid System</a> - This framework will let you create your web applications in a flexible way that you've never experienced before.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'less_README.md';
 
         fetch(markdownFile)
@@ -48,21 +189,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

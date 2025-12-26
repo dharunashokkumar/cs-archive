@@ -8,38 +8,185 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Altamiracorp Awesome Xai - Awesome List Resources">
-    <title>Altamiracorp Awesome Xai</title>
+    <meta name="description" content="A curated list of XAI and Interpretable ML papers, methods, critiques, and resources. Explainable AI (XAI) is a branch of machine learning research which seeks...">
+    <meta name="robots" content="index, follow">
+    <title>Xai - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <div align="center">
+
+<!-- title -->
+<!--lint ignore no-dead-urls-->
+# Awesome XAI [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+
+<!-- subtitle -->
+A curated list of XAI and Interpretable ML papers, methods, critiques, and
+resources.
+
+<!-- image -->
+<img src="https://raw.githubusercontent.com/altamiracorp/awesome-xai/main/images/icon.svg" width="256" style="max-width: 25% !important"/>
+
+<!-- description -->
+Explainable AI (XAI) is a branch of machine learning research which seeks to
+make various machine learning techniques more understandable.
+
+</div>
+
+<!-- TOC -->
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#papers">Papers</a><ul>
+<li><a href="#landmarks">Landmarks</a></li>
+<li><a href="#surveys">Surveys</a></li>
+<li><a href="#evaluations">Evaluations</a></li>
+<li><a href="#xai-methods">XAI Methods</a></li>
+<li><a href="#interpretable-models">Interpretable Models</a></li>
+<li><a href="#critiques">Critiques</a></li>
+</ul>
+</li>
+<li><a href="#repositories">Repositories</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#follow">Follow</a></li>
+</ul>
+<!-- CONTENT -->
+<h2>Papers</h2>
+<h3>Landmarks</h3>
+<p>These are some of our favorite papers. They are helpful to understand the field
+and critical aspects of it. We believe this papers are worth reading in their
+entirety.</p>
+<ul>
+<li><a href="https://arxiv.org/abs/1706.07269">Explanation in Artificial Intelligence: Insights from the Social Sciences</a> - This paper provides an introduction to the social science research into explanations. The author provides 4 major findings: (1) explanations are constrastive, (2) explanations are selected, (3) probabilities probably don't matter, (4) explanations are social. These fit into the general theme that explanations are -contextual-.</li>
+<li><a href="https://arxiv.org/abs/1810.03292">Sanity Checks for Saliency Maps</a> - An important read for anyone using saliency maps. This paper proposes two experiments to determine whether saliency maps are useful: (1) model parameter randomization test compares maps from trained and untrained models, (2) data randomization test compares maps from models trained on the original dataset and models trained on the same dataset with randomized labels. They find that "some widely deployed saliency methods are independent of both the data the model was trained on, and the model parameters".</li>
+</ul>
+<h3>Surveys</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2004.14545">Explainable Deep Learning: A Field Guide for the Uninitiated</a> - An in-depth description of XAI focused on technqiues for deep learning.</li>
+</ul>
+<h3>Evaluations</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2009.02899">Quantifying Explainability of Saliency Methods in Deep Neural Networks</a> - An analysis of how different heatmap-based saliency methods perform based on experimentation with a generated dataset.</li>
+</ul>
+<h3>XAI Methods</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2102.07799">Ada-SISE</a> - Adaptive semantice inpute sampling for explanation.</li>
+<li><a href="https://rss.onlinelibrary.wiley.com/doi/abs/10.1111/rssb.12377">ALE</a> - Accumulated local effects plot.</li>
+<li><a href="https://link.springer.com/chapter/10.1007/978-3-030-33607-3_49">ALIME</a> - Autoencoder Based Approach for Local Interpretability.</li>
+<li><a href="https://ojs.aaai.org/index.php/AAAI/article/view/11491">Anchors</a> - High-Precision Model-Agnostic Explanations.</li>
+<li><a href="https://link.springer.com/article/10.1007/s10115-017-1116-3">Auditing</a> - Auditing black-box models.</li>
+<li><a href="https://arxiv.org/abs/2012.03058">BayLIME</a> - Bayesian local interpretable model-agnostic explanations.</li>
+<li><a href="http://ema.drwhy.ai/breakDown.html#BDMethod">Break Down</a> - Break down plots for additive attributions.</li>
+<li><a href="https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Zhou_Learning_Deep_Features_CVPR_2016_paper.pdf">CAM</a> - Class activation mapping.</li>
+<li><a href="https://ieeexplore.ieee.org/abstract/document/4167900">CDT</a> - Confident interpretation of Bayesian decision tree ensembles.</li>
+<li><a href="https://christophm.github.io/interpretable-ml-book/ice.html">CICE</a> - Centered ICE plot.</li>
+<li><a href="https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.40.2710&amp;rep=rep1&amp;type=pdf">CMM</a> - Combined multiple models metalearner.</li>
+<li><a href="https://www.sciencedirect.com/science/article/pii/B9781558603356500131">Conj Rules</a> - Using sampling and queries to extract rules from trained neural networks.</li>
+<li><a href="https://ieeexplore.ieee.org/abstract/document/6597214">CP</a> - Contribution propogation.</li>
+<li><a href="https://dl.acm.org/doi/abs/10.1145/775047.775113">DecText</a> - Extracting decision trees from trained neural networks.</li>
+<li><a href="https://ieeexplore-ieee-org.ezproxy.libraries.wright.edu/abstract/document/9352498">DeepLIFT</a> - Deep label-specific feature learning for image annotation.</li>
+<li><a href="https://www.sciencedirect.com/science/article/pii/S0031320316303582">DTD</a> - Deep Taylor decomposition.</li>
+<li><a href="https://www.aaai.org/Papers/IAAI/2006/IAAI06-018.pdf">ExplainD</a> - Explanations of evidence in additive classifiers.</li>
+<li><a href="https://link.springer.com/chapter/10.1007/978-3-642-04174-7_45">FIRM</a> - Feature importance ranking measure.</li>
+<li><a href="https://openaccess.thecvf.com/content_iccv_2017/html/Fong_Interpretable_Explanations_of_ICCV_2017_paper.html">Fong, et. al.</a> - Meaninful perturbations model.</li>
+<li><a href="https://www.academia.edu/download/51462700/s0362-546x_2896_2900267-220170122-9600-1njrpyx.pdf">G-REX</a> - Rule extraction using genetic algorithms.</li>
+<li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3977175/">Gibbons, et. al.</a> - Explain random forest using decision tree.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <div align="center">
+
+<!-- title -->
+<!--lint ignore no-dead-urls-->
+# Awesome XAI [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+
+<!-- subtitle -->
+A curated list of XAI and Interpretable ML papers, methods, critiques, and
+resources.
+
+<!-- image -->
+<img src="https://raw.githubusercontent.com/altamiracorp/awesome-xai/main/images/icon.svg" width="256" style="max-width: 25% !important"/>
+
+<!-- description -->
+Explainable AI (XAI) is a branch of machine learning research which seeks to
+make various machine learning techniques more understandable.
+
+</div>
+
+<!-- TOC -->
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#papers">Papers</a><ul>
+<li><a href="#landmarks">Landmarks</a></li>
+<li><a href="#surveys">Surveys</a></li>
+<li><a href="#evaluations">Evaluations</a></li>
+<li><a href="#xai-methods">XAI Methods</a></li>
+<li><a href="#interpretable-models">Interpretable Models</a></li>
+<li><a href="#critiques">Critiques</a></li>
+</ul>
+</li>
+<li><a href="#repositories">Repositories</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#follow">Follow</a></li>
+</ul>
+<!-- CONTENT -->
+<h2>Papers</h2>
+<h3>Landmarks</h3>
+<p>These are some of our favorite papers. They are helpful to understand the field
+and critical aspects of it. We believe this papers are worth reading in their
+entirety.</p>
+<ul>
+<li><a href="https://arxiv.org/abs/1706.07269">Explanation in Artificial Intelligence: Insights from the Social Sciences</a> - This paper provides an introduction to the social science research into explanations. The author provides 4 major findings: (1) explanations are constrastive, (2) explanations are selected, (3) probabilities probably don't matter, (4) explanations are social. These fit into the general theme that explanations are -contextual-.</li>
+<li><a href="https://arxiv.org/abs/1810.03292">Sanity Checks for Saliency Maps</a> - An important read for anyone using saliency maps. This paper proposes two experiments to determine whether saliency maps are useful: (1) model parameter randomization test compares maps from trained and untrained models, (2) data randomization test compares maps from models trained on the original dataset and models trained on the same dataset with randomized labels. They find that "some widely deployed saliency methods are independent of both the data the model was trained on, and the model parameters".</li>
+</ul>
+<h3>Surveys</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2004.14545">Explainable Deep Learning: A Field Guide for the Uninitiated</a> - An in-depth description of XAI focused on technqiues for deep learning.</li>
+</ul>
+<h3>Evaluations</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2009.02899">Quantifying Explainability of Saliency Methods in Deep Neural Networks</a> - An analysis of how different heatmap-based saliency methods perform based on experimentation with a generated dataset.</li>
+</ul>
+<h3>XAI Methods</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2102.07799">Ada-SISE</a> - Adaptive semantice inpute sampling for explanation.</li>
+<li><a href="https://rss.onlinelibrary.wiley.com/doi/abs/10.1111/rssb.12377">ALE</a> - Accumulated local effects plot.</li>
+<li><a href="https://link.springer.com/chapter/10.1007/978-3-030-33607-3_49">ALIME</a> - Autoencoder Based Approach for Local Interpretability.</li>
+<li><a href="https://ojs.aaai.org/index.php/AAAI/article/view/11491">Anchors</a> - High-Precision Model-Agnostic Explanations.</li>
+<li><a href="https://link.springer.com/article/10.1007/s10115-017-1116-3">Auditing</a> - Auditing black-box models.</li>
+<li><a href="https://arxiv.org/abs/2012.03058">BayLIME</a> - Bayesian local interpretable model-agnostic explanations.</li>
+<li><a href="http://ema.drwhy.ai/breakDown.html#BDMethod">Break Down</a> - Break down plots for additive attributions.</li>
+<li><a href="https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Zhou_Learning_Deep_Features_CVPR_2016_paper.pdf">CAM</a> - Class activation mapping.</li>
+<li><a href="https://ieeexplore.ieee.org/abstract/document/4167900">CDT</a> - Confident interpretation of Bayesian decision tree ensembles.</li>
+<li><a href="https://christophm.github.io/interpretable-ml-book/ice.html">CICE</a> - Centered ICE plot.</li>
+<li><a href="https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.40.2710&amp;rep=rep1&amp;type=pdf">CMM</a> - Combined multiple models metalearner.</li>
+<li><a href="https://www.sciencedirect.com/science/article/pii/B9781558603356500131">Conj Rules</a> - Using sampling and queries to extract rules from trained neural networks.</li>
+<li><a href="https://ieeexplore.ieee.org/abstract/document/6597214">CP</a> - Contribution propogation.</li>
+<li><a href="https://dl.acm.org/doi/abs/10.1145/775047.775113">DecText</a> - Extracting decision trees from trained neural networks.</li>
+<li><a href="https://ieeexplore-ieee-org.ezproxy.libraries.wright.edu/abstract/document/9352498">DeepLIFT</a> - Deep label-specific feature learning for image annotation.</li>
+<li><a href="https://www.sciencedirect.com/science/article/pii/S0031320316303582">DTD</a> - Deep Taylor decomposition.</li>
+<li><a href="https://www.aaai.org/Papers/IAAI/2006/IAAI06-018.pdf">ExplainD</a> - Explanations of evidence in additive classifiers.</li>
+<li><a href="https://link.springer.com/chapter/10.1007/978-3-642-04174-7_45">FIRM</a> - Feature importance ranking measure.</li>
+<li><a href="https://openaccess.thecvf.com/content_iccv_2017/html/Fong_Interpretable_Explanations_of_ICCV_2017_paper.html">Fong, et. al.</a> - Meaninful perturbations model.</li>
+<li><a href="https://www.academia.edu/download/51462700/s0362-546x_2896_2900267-220170122-9600-1njrpyx.pdf">G-REX</a> - Rule extraction using genetic algorithms.</li>
+<li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3977175/">Gibbons, et. al.</a> - Explain random forest using decision tree.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'xai_README.md';
 
         fetch(markdownFile)
@@ -48,21 +195,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

@@ -8,38 +8,263 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ziadoz Awesome Php - Awesome List Resources">
-    <title>Ziadoz Awesome Php</title>
+    <meta name="description" content="A curated list of amazingly awesome PHP libraries, resources, and shiny things. Please see CONTRIBUTING, CODE-OF-CONDUCT and COLLABORATING for details. -...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome PHP [![Awesome](https://cdn.jsdelivr.net/gh/sindresorhus/awesome@d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome PHP <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.jsdelivr.net/gh/sindresorhus/awesome@d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A curated list of amazingly awesome PHP libraries, resources, and shiny things.</p>
+<h2>Contributing and Collaborating</h2>
+<p>Please see <a href="https://github.com/ziadoz/awesome-php/blob/master/CONTRIBUTING.md">CONTRIBUTING</a>, <a href="https://github.com/ziadoz/awesome-php/blob/master/CODE-OF-CONDUCT.md">CODE-OF-CONDUCT</a> and <a href="https://github.com/ziadoz/awesome-php/blob/master/COLLABORATING.md">COLLABORATING</a> for details.</p>
+<h2>Table of Contents</h2>
+<ul>
+<li><a href="#awesome-php">Awesome PHP</a></li>
+<li><a href="#composer-repositories">Composer Repositories</a></li>
+<li><a href="#dependency-management">Dependency Management</a></li>
+<li><a href="#dependency-management-extras">Dependency Management Extras</a></li>
+<li><a href="#frameworks">Frameworks</a></li>
+<li><a href="#framework-extras">Framework Extras</a></li>
+<li><a href="#content-management-systems-cms">Content Management Systems</a></li>
+<li><a href="#components">Components</a></li>
+<li><a href="#micro-frameworks">Micro Frameworks</a></li>
+<li><a href="#micro-framework-extras">Micro Framework Extras</a></li>
+<li><a href="#routers">Routers</a></li>
+<li><a href="#templating">Templating</a></li>
+<li><a href="#static-site-generators">Static Site Generators</a></li>
+<li><a href="#http">HTTP</a></li>
+<li><a href="#scraping">Scraping</a></li>
+<li><a href="#middlewares">Middlewares</a></li>
+<li><a href="#url">URL</a></li>
+<li><a href="#email">Email</a></li>
+<li><a href="#Files">Files</a></li>
+<li><a href="#streams">Streams</a></li>
+<li><a href="#dependency-injection">Dependency Injection</a></li>
+<li><a href="#imagery">Imagery</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#continuous-integration">Continuous Integration</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#passwords">Passwords</a></li>
+<li><a href="#code-analysis">Code Analysis</a></li>
+<li><a href="#code-quality">Code Quality</a></li>
+<li><a href="#static-analysis">Static Analysis</a></li>
+<li><a href="#architectural">Architectural</a></li>
+<li><a href="#debugging-and-profiling">Debugging and Profiling</a></li>
+<li><a href="#error-tracking-and-monitoring-services">Error Tracking and Monitoring Services</a></li>
+<li><a href="#build-tools">Build Tools</a></li>
+<li><a href="#task-runners">Task Runners</a></li>
+<li><a href="#navigation">Navigation</a></li>
+<li><a href="#asset-management">Asset Management</a></li>
+<li><a href="#geolocation">Geolocation</a></li>
+<li><a href="#date-and-time">Date and Time</a></li>
+<li><a href="#event">Event</a></li>
+<li><a href="#logging">Logging</a></li>
+<li><a href="#e-commerce">E-commerce</a></li>
+<li><a href="#pdf">PDF</a></li>
+<li><a href="#office">Office</a></li>
+<li><a href="#database">Database</a></li>
+<li><a href="#migrations">Migrations</a></li>
+<li><a href="#nosql">NoSQL</a></li>
+<li><a href="#queue">Queue</a></li>
+<li><a href="#search">Search</a></li>
+<li><a href="#command-line">Command Line</a></li>
+<li><a href="#authentication-and-authorization">Authentication and Authorization</a></li>
+<li><a href="#markup-and-css">Markup and CSS</a></li>
+<li><a href="#json">JSON</a></li>
+<li><a href="#strings">Strings</a></li>
+<li><a href="#numbers">Numbers</a></li>
+<li><a href="#filtering-sanitizing-and-validation">Filtering, Sanitizing and Validation</a></li>
+<li><a href="#api">API</a></li>
+<li><a href="#caching-and-locking">Caching and Locking</a></li>
+<li><a href="#data-structure-and-storage">Data Structure and Storage</a></li>
+<li><a href="#notifications">Notifications</a></li>
+<li><a href="#deployment">Deployment</a></li>
+<li><a href="#internationalisation-and-localisation">Internationalisation and Localisation</a></li>
+<li><a href="#serverless">Serverless</a></li>
+<li><a href="#configuration">Configuration</a></li>
+<li><a href="#llms">LLMs</a></li>
+<li><a href="#third-party-apis">Third Party APIs</a></li>
+<li><a href="#extensions">Extensions</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#software">Software</a></li>
+<li><a href="#php-installation">PHP Installation</a></li>
+<li><a href="#development-environment">Development Environment</a></li>
+<li><a href="#virtual-machines">Virtual Machines</a></li>
+<li><a href="#text-editors-and-ides">Text Editors and IDEs</a></li>
+<li><a href="#web-applications">Web Applications</a></li>
+<li><a href="#infrastructure">Infrastructure</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#php-websites">PHP Websites</a></li>
+<li><a href="#php-books">PHP Books</a></li>
+<li><a href="#php-videos">PHP Videos</a></li>
+<li><a href="#php-conferences">PHP Conferences</a></li>
+<li><a href="#php-podcasts">PHP Podcasts</a></li>
+<li><a href="#php-newsletters">PHP Newsletters</a></li>
+<li><a href="#php-reading">PHP Reading</a></li>
+<li><a href="#php-internals-reading">PHP Internals Reading</a></li>
+</ul>
+<h3>Composer Repositories</h3>
+<p><em>Composer Repositories.</em></p>
+<ul>
+<li><a href="https://packages.firegento.com/">Firegento</a> - Magento Module Composer Repository.</li>
+<li><a href="https://packagist.org/">Packagist</a> - The PHP Package Repository.</li>
+<li><a href="https://packalyst.com/">Packalyst</a> - The Laravel Package Repository</li>
+<li><a href="https://packagist.com/">Private Packagist</a> - Composer package archive as a service for PHP.</li>
+<li><a href="https://wpackagist.org/">WordPress Packagist</a> - Manage your plugins with Composer.</li>
+</ul>
+<h3>Dependency Management</h3>
+<p><em>Libraries for dependency and package management.</em></p>
+<ul>
+<li><a href="https://github.com/composer/installers">Composer Installers</a> - A  multi-framework Composer library installer.</li>
+<li><a href="https://getcomposer.org/">Composer</a> - A package and dependency manager.</li>
+<li><a href="https://github.com/php/pie">Pie</a> - The official PHP installer for extensions.</li>
+<li><a href="https://phar.io/">Phive</a> - A PHAR manager.</li>
+<li><a href="https://github.com/FriendsOfPHP/pickle">Pickle</a> - A PHP extension installer.</li>
+</ul>
+<h3>Dependency Management Extras</h3>
+<p><em>Extras related to dependency management.</em></p>
+<ul>
+<li><a href="https://github.com/joshdifabio/composed">Composed</a> - A library to parse your project's Composer environment at runtime.</li>
+<li><a href="https://github.com/wikimedia/composer-merge-plugin">Composer Merge Plugin</a> - A composer plugin to merge several <code>composer.json</code> files.</li>
+<li><a href="https://github.com/ergebnis/composer-normalize">Composer Normalize</a> - A plugin for normalizing <code>composer.json</code> files.</li>
+<li><a href="https://github.com/cweagans/composer-patches">Composer Patches</a> - A plugin for Composer to apply patches.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome PHP <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.jsdelivr.net/gh/sindresorhus/awesome@d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A curated list of amazingly awesome PHP libraries, resources, and shiny things.</p>
+<h2>Contributing and Collaborating</h2>
+<p>Please see <a href="https://github.com/ziadoz/awesome-php/blob/master/CONTRIBUTING.md">CONTRIBUTING</a>, <a href="https://github.com/ziadoz/awesome-php/blob/master/CODE-OF-CONDUCT.md">CODE-OF-CONDUCT</a> and <a href="https://github.com/ziadoz/awesome-php/blob/master/COLLABORATING.md">COLLABORATING</a> for details.</p>
+<h2>Table of Contents</h2>
+<ul>
+<li><a href="#awesome-php">Awesome PHP</a></li>
+<li><a href="#composer-repositories">Composer Repositories</a></li>
+<li><a href="#dependency-management">Dependency Management</a></li>
+<li><a href="#dependency-management-extras">Dependency Management Extras</a></li>
+<li><a href="#frameworks">Frameworks</a></li>
+<li><a href="#framework-extras">Framework Extras</a></li>
+<li><a href="#content-management-systems-cms">Content Management Systems</a></li>
+<li><a href="#components">Components</a></li>
+<li><a href="#micro-frameworks">Micro Frameworks</a></li>
+<li><a href="#micro-framework-extras">Micro Framework Extras</a></li>
+<li><a href="#routers">Routers</a></li>
+<li><a href="#templating">Templating</a></li>
+<li><a href="#static-site-generators">Static Site Generators</a></li>
+<li><a href="#http">HTTP</a></li>
+<li><a href="#scraping">Scraping</a></li>
+<li><a href="#middlewares">Middlewares</a></li>
+<li><a href="#url">URL</a></li>
+<li><a href="#email">Email</a></li>
+<li><a href="#Files">Files</a></li>
+<li><a href="#streams">Streams</a></li>
+<li><a href="#dependency-injection">Dependency Injection</a></li>
+<li><a href="#imagery">Imagery</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#continuous-integration">Continuous Integration</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#passwords">Passwords</a></li>
+<li><a href="#code-analysis">Code Analysis</a></li>
+<li><a href="#code-quality">Code Quality</a></li>
+<li><a href="#static-analysis">Static Analysis</a></li>
+<li><a href="#architectural">Architectural</a></li>
+<li><a href="#debugging-and-profiling">Debugging and Profiling</a></li>
+<li><a href="#error-tracking-and-monitoring-services">Error Tracking and Monitoring Services</a></li>
+<li><a href="#build-tools">Build Tools</a></li>
+<li><a href="#task-runners">Task Runners</a></li>
+<li><a href="#navigation">Navigation</a></li>
+<li><a href="#asset-management">Asset Management</a></li>
+<li><a href="#geolocation">Geolocation</a></li>
+<li><a href="#date-and-time">Date and Time</a></li>
+<li><a href="#event">Event</a></li>
+<li><a href="#logging">Logging</a></li>
+<li><a href="#e-commerce">E-commerce</a></li>
+<li><a href="#pdf">PDF</a></li>
+<li><a href="#office">Office</a></li>
+<li><a href="#database">Database</a></li>
+<li><a href="#migrations">Migrations</a></li>
+<li><a href="#nosql">NoSQL</a></li>
+<li><a href="#queue">Queue</a></li>
+<li><a href="#search">Search</a></li>
+<li><a href="#command-line">Command Line</a></li>
+<li><a href="#authentication-and-authorization">Authentication and Authorization</a></li>
+<li><a href="#markup-and-css">Markup and CSS</a></li>
+<li><a href="#json">JSON</a></li>
+<li><a href="#strings">Strings</a></li>
+<li><a href="#numbers">Numbers</a></li>
+<li><a href="#filtering-sanitizing-and-validation">Filtering, Sanitizing and Validation</a></li>
+<li><a href="#api">API</a></li>
+<li><a href="#caching-and-locking">Caching and Locking</a></li>
+<li><a href="#data-structure-and-storage">Data Structure and Storage</a></li>
+<li><a href="#notifications">Notifications</a></li>
+<li><a href="#deployment">Deployment</a></li>
+<li><a href="#internationalisation-and-localisation">Internationalisation and Localisation</a></li>
+<li><a href="#serverless">Serverless</a></li>
+<li><a href="#configuration">Configuration</a></li>
+<li><a href="#llms">LLMs</a></li>
+<li><a href="#third-party-apis">Third Party APIs</a></li>
+<li><a href="#extensions">Extensions</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#software">Software</a></li>
+<li><a href="#php-installation">PHP Installation</a></li>
+<li><a href="#development-environment">Development Environment</a></li>
+<li><a href="#virtual-machines">Virtual Machines</a></li>
+<li><a href="#text-editors-and-ides">Text Editors and IDEs</a></li>
+<li><a href="#web-applications">Web Applications</a></li>
+<li><a href="#infrastructure">Infrastructure</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#php-websites">PHP Websites</a></li>
+<li><a href="#php-books">PHP Books</a></li>
+<li><a href="#php-videos">PHP Videos</a></li>
+<li><a href="#php-conferences">PHP Conferences</a></li>
+<li><a href="#php-podcasts">PHP Podcasts</a></li>
+<li><a href="#php-newsletters">PHP Newsletters</a></li>
+<li><a href="#php-reading">PHP Reading</a></li>
+<li><a href="#php-internals-reading">PHP Internals Reading</a></li>
+</ul>
+<h3>Composer Repositories</h3>
+<p><em>Composer Repositories.</em></p>
+<ul>
+<li><a href="https://packages.firegento.com/">Firegento</a> - Magento Module Composer Repository.</li>
+<li><a href="https://packagist.org/">Packagist</a> - The PHP Package Repository.</li>
+<li><a href="https://packalyst.com/">Packalyst</a> - The Laravel Package Repository</li>
+<li><a href="https://packagist.com/">Private Packagist</a> - Composer package archive as a service for PHP.</li>
+<li><a href="https://wpackagist.org/">WordPress Packagist</a> - Manage your plugins with Composer.</li>
+</ul>
+<h3>Dependency Management</h3>
+<p><em>Libraries for dependency and package management.</em></p>
+<ul>
+<li><a href="https://github.com/composer/installers">Composer Installers</a> - A  multi-framework Composer library installer.</li>
+<li><a href="https://getcomposer.org/">Composer</a> - A package and dependency manager.</li>
+<li><a href="https://github.com/php/pie">Pie</a> - The official PHP installer for extensions.</li>
+<li><a href="https://phar.io/">Phive</a> - A PHAR manager.</li>
+<li><a href="https://github.com/FriendsOfPHP/pickle">Pickle</a> - A PHP extension installer.</li>
+</ul>
+<h3>Dependency Management Extras</h3>
+<p><em>Extras related to dependency management.</em></p>
+<ul>
+<li><a href="https://github.com/joshdifabio/composed">Composed</a> - A library to parse your project's Composer environment at runtime.</li>
+<li><a href="https://github.com/wikimedia/composer-merge-plugin">Composer Merge Plugin</a> - A composer plugin to merge several <code>composer.json</code> files.</li>
+<li><a href="https://github.com/ergebnis/composer-normalize">Composer Normalize</a> - A plugin for normalizing <code>composer.json</code> files.</li>
+<li><a href="https://github.com/cweagans/composer-patches">Composer Patches</a> - A plugin for Composer to apply patches.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'php_README.md';
 
         fetch(markdownFile)
@@ -48,21 +273,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

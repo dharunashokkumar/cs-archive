@@ -8,38 +8,483 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Alexk111 Awesome Bitcoin Payment Processors - Awesome List Resources">
-    <title>Alexk111 Awesome Bitcoin Payment Processors</title>
+    <meta name="description" content="A curated list of awesome Bitcoin payment processors enabling merchants, businesses and nonprofits to accept Bitcoin payments. - Self-Hosted Bitcoin Payment...">
+    <meta name="robots" content="index, follow">
+    <title>Bitcoin Payment Processors - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <div align="center">
+<img width="500" src="media/logo.svg" alt="Awesome Bitcoin Payment Processors"/>
+</div>
+
+<h1>Awesome Bitcoin Payment Processors <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a></h1>
+<p>A curated list of awesome Bitcoin payment processors enabling merchants, businesses and nonprofits to accept Bitcoin payments.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#self-hosted-bitcoin-payment-processors">Self-Hosted Bitcoin Payment Processors</a></li>
+<li><a href="#hosted-bitcoin-payment-processors">Hosted Bitcoin Payment Processors</a></li>
+<li><a href="#non-custodial">Non-Custodial</a></li>
+<li><a href="#custodial">Custodial</a></li>
+<li><a href="#backers-">Backers 💝</a></li>
+</ul>
+<h2>Self-Hosted Bitcoin Payment Processors</h2>
+<p>Self-Hosted payment processors run on your server and provide you with a full control over the entire payment process and funds. There's no third-party involvement - that significantly increases the censorship-resistance, privacy, and security for you and your customers. </p>
+<table>
+<thead>
+<tr>
+<th>Processor</th>
+<th style="text-align: center;">Fees</th>
+<th style="text-align: center;">Lightning</th>
+<th style="text-align: center;">Directly to Your Wallet</th>
+<th style="text-align: center;">Conversion to Fiat</th>
+<th>Requirements</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://btcpayserver.org/">BTCPay Server</a></td>
+<td style="text-align: center;">No fees</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Via <a href="https://github.com/Marfusios/strike-btcpayserver-plugin">Strike plugin</a> or <a href="https://redbtc.org/flows/integrations/kraken-exchange/">Exchange Integration</a></td>
+<td>2 GB RAM, 80 GB Storage, Docker</td>
+</tr>
+<tr>
+<td><a href="https://github.com/alexk111/One-Time-Address">One Time Address</a></td>
+<td style="text-align: center;">No fees</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+<td>NodeJS</td>
+</tr>
+<tr>
+<td><a href="https://www.cryptowoo.com/">CryptoWoo</a></td>
+<td style="text-align: center;">$34 - $99 per year</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+<td>PHP 5.6+, Wordpress 4.3+, WooCommerce 3.0+</td>
+</tr>
+<tr>
+<td><a href="https://bitcartcc.com">BitcartCC</a></td>
+<td style="text-align: center;">No fees</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+<td>1 GB RAM, 10 GB Storage, Docker</td>
+</tr>
+<tr>
+<td><a href="https://github.com/bumi/lnme">LnMe</a></td>
+<td style="text-align: center;">No fees</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+<td>LND node</td>
+</tr>
+<tr>
+<td><a href="https://github.com/SatSale/SatSale">SatSale</a></td>
+<td style="text-align: center;">No fees</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Weakhands: <a href="https://github.com/SatSale/SatSale/blob/471c8c03bbc269df1f322f6484b6e7a7364e5b34/config.toml#L101">swap to USDT on Liquid</a>, no-KYC</td>
+<td>Python. Bitcoin node, Lightning node &amp; WooCommerce optional.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/dilan-dio4/Keagate">Keagate</a></td>
+<td style="text-align: center;">No fees</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+<td>1 GB RAM, Unix</td>
+</tr>
+<tr>
+<td><a href="https://github.com/yanascz/lnurld">LNURL Daemon</a></td>
+<td style="text-align: center;">No fees</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+<td>LND node</td>
+</tr>
+</tbody>
+</table>
+<h2>Hosted Bitcoin Payment Processors</h2>
+<p>Hosted payment processors run on someone else's server. This simplifies the initial setup process, but reduces the amount of control you have over the payment process.</p>
+<h3>Non-Custodial</h3>
+<p>These processors use your wallets for receiving payments.</p>
+<table>
+<thead>
+<tr>
+<th>Processor</th>
+<th style="text-align: center;">Fees</th>
+<th style="text-align: center;">Lightning</th>
+<th style="text-align: center;">Directly to Your Wallet</th>
+<th style="text-align: center;">Conversion to Fiat</th>
+<th>Requirements</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.blockonomics.co/merchants">Blockonomics</a></td>
+<td style="text-align: center;">1%</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Via <a href="https://www.blockonomics.co/views/payment_forwarding.html">Payment Forwarding</a></td>
+<td>No</td>
+</tr>
+<tr>
+<td><a href="https://payscrypt.com/">Payscrypt</a></td>
+<td style="text-align: center;">No fees</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+<td>No</td>
+</tr>
+<tr>
+<td><a href="https://bitrequest.io/">Bitrequest</a></td>
+<td style="text-align: center;">No fees</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+<td>No</td>
+</tr>
+<tr>
+<td><a href="https://zaprite.com/">Zaprite</a></td>
+<td style="text-align: center;">$25 per month</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+<td>No</td>
+</tr>
+<tr>
+<td><a href="https://paymento.io/">Paymento</a></td>
+<td style="text-align: center;">0.5%</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+<td>No</td>
+</tr>
+<tr>
+<td><a href="https://paywithflash.com/">Flash</a></td>
+<td style="text-align: center;">1.5%</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<h3>Custodial</h3>
+<p>The following processors use their own wallets, not yours, for receiving payments.</p>
+<p>⚠ They not only collect data about payments, they have full control over the funds. There are many risks associated with custodians, which might end up with lost/locked funds.</p>
+<p>⚠ Most of them have KYB/KYC/AML requirements, which poses a serious threat to your and your customers' privacy.</p>
+<p>⚠ They have country-based restrictions for merchants and merchants' customers.</p>
+<table>
+<thead>
+<tr>
+<th>Processor</th>
+<th style="text-align: center;">Fees</th>
+<th style="text-align: center;">Lightning</th>
+<th style="text-align: center;">Directly to Your Wallet</th>
+<th style="text-align: center;">Conversion to Fiat</th>
+<th>Requirements</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://confirmo.net/">Confirmo</a></td>
+<td style="text-align: center;">1.3% (0.8% invoicing + 0.5% payouts)</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">Yes</td>
+<td>Information about business / website. May require certain documents.</td>
+</tr>
+<tr>
+<td><a href="https://coingate.com/accept">CoinGate</a></td>
+<td style="text-align: center;">1% (merchant) + some <a href="https://support.coingate.com/en/109/why-does-coingate-charge-service-fee">variable service fee</a> (customer)</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">Yes</td>
+<td>Requires <a href="https://blog.coingate.com/2019/05/verify-merchant-account-faq">a lot of information and business documents</a>, officially translated in english.</td>
+</tr>
+<tr>
+<td><a href="https://www.coinpayments.net/">CoinPayments</a></td>
+<td style="text-align: center;">0.5%</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td>On withdrawal may require a number of forms of identification and will require settlement of any outstanding amounts.</td>
+</tr>
+<tr>
+<td><a href="https://www.opennode.co/">OpenNode</a></td>
+<td style="text-align: center;">1%</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">Yes</td>
+<td>Requires <a href="https://help.opennode.com/en/articles/3654899-kyc-and-kyb-requirements">KYC/KYB documents</a></td>
+</tr>
+<tr>
+<td><a href="https://strike.me/business/">Strike</a></td>
+<td style="text-align: center;">1%</td>
+<td style="text-align: center;">Only</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td>Requires <a href="https://strike.me/faq/how-do-i-sign-up-for-a-strike-business-account/">basic business info, documents, identity verifications of owners and operators</a>.</td>
+</tr>
+<tr>
+<td><a href="https://coinremitter.com/">Coinremitter</a></td>
+<td style="text-align: center;">0.23% + 0.0001</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+        </noscript>
+        <div id="dynamic-content">
+            <div align="center">
+<img width="500" src="media/logo.svg" alt="Awesome Bitcoin Payment Processors"/>
+</div>
+
+<h1>Awesome Bitcoin Payment Processors <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a></h1>
+<p>A curated list of awesome Bitcoin payment processors enabling merchants, businesses and nonprofits to accept Bitcoin payments.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#self-hosted-bitcoin-payment-processors">Self-Hosted Bitcoin Payment Processors</a></li>
+<li><a href="#hosted-bitcoin-payment-processors">Hosted Bitcoin Payment Processors</a></li>
+<li><a href="#non-custodial">Non-Custodial</a></li>
+<li><a href="#custodial">Custodial</a></li>
+<li><a href="#backers-">Backers 💝</a></li>
+</ul>
+<h2>Self-Hosted Bitcoin Payment Processors</h2>
+<p>Self-Hosted payment processors run on your server and provide you with a full control over the entire payment process and funds. There's no third-party involvement - that significantly increases the censorship-resistance, privacy, and security for you and your customers. </p>
+<table>
+<thead>
+<tr>
+<th>Processor</th>
+<th style="text-align: center;">Fees</th>
+<th style="text-align: center;">Lightning</th>
+<th style="text-align: center;">Directly to Your Wallet</th>
+<th style="text-align: center;">Conversion to Fiat</th>
+<th>Requirements</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://btcpayserver.org/">BTCPay Server</a></td>
+<td style="text-align: center;">No fees</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Via <a href="https://github.com/Marfusios/strike-btcpayserver-plugin">Strike plugin</a> or <a href="https://redbtc.org/flows/integrations/kraken-exchange/">Exchange Integration</a></td>
+<td>2 GB RAM, 80 GB Storage, Docker</td>
+</tr>
+<tr>
+<td><a href="https://github.com/alexk111/One-Time-Address">One Time Address</a></td>
+<td style="text-align: center;">No fees</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+<td>NodeJS</td>
+</tr>
+<tr>
+<td><a href="https://www.cryptowoo.com/">CryptoWoo</a></td>
+<td style="text-align: center;">$34 - $99 per year</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+<td>PHP 5.6+, Wordpress 4.3+, WooCommerce 3.0+</td>
+</tr>
+<tr>
+<td><a href="https://bitcartcc.com">BitcartCC</a></td>
+<td style="text-align: center;">No fees</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+<td>1 GB RAM, 10 GB Storage, Docker</td>
+</tr>
+<tr>
+<td><a href="https://github.com/bumi/lnme">LnMe</a></td>
+<td style="text-align: center;">No fees</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+<td>LND node</td>
+</tr>
+<tr>
+<td><a href="https://github.com/SatSale/SatSale">SatSale</a></td>
+<td style="text-align: center;">No fees</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Weakhands: <a href="https://github.com/SatSale/SatSale/blob/471c8c03bbc269df1f322f6484b6e7a7364e5b34/config.toml#L101">swap to USDT on Liquid</a>, no-KYC</td>
+<td>Python. Bitcoin node, Lightning node &amp; WooCommerce optional.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/dilan-dio4/Keagate">Keagate</a></td>
+<td style="text-align: center;">No fees</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+<td>1 GB RAM, Unix</td>
+</tr>
+<tr>
+<td><a href="https://github.com/yanascz/lnurld">LNURL Daemon</a></td>
+<td style="text-align: center;">No fees</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+<td>LND node</td>
+</tr>
+</tbody>
+</table>
+<h2>Hosted Bitcoin Payment Processors</h2>
+<p>Hosted payment processors run on someone else's server. This simplifies the initial setup process, but reduces the amount of control you have over the payment process.</p>
+<h3>Non-Custodial</h3>
+<p>These processors use your wallets for receiving payments.</p>
+<table>
+<thead>
+<tr>
+<th>Processor</th>
+<th style="text-align: center;">Fees</th>
+<th style="text-align: center;">Lightning</th>
+<th style="text-align: center;">Directly to Your Wallet</th>
+<th style="text-align: center;">Conversion to Fiat</th>
+<th>Requirements</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.blockonomics.co/merchants">Blockonomics</a></td>
+<td style="text-align: center;">1%</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Via <a href="https://www.blockonomics.co/views/payment_forwarding.html">Payment Forwarding</a></td>
+<td>No</td>
+</tr>
+<tr>
+<td><a href="https://payscrypt.com/">Payscrypt</a></td>
+<td style="text-align: center;">No fees</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+<td>No</td>
+</tr>
+<tr>
+<td><a href="https://bitrequest.io/">Bitrequest</a></td>
+<td style="text-align: center;">No fees</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+<td>No</td>
+</tr>
+<tr>
+<td><a href="https://zaprite.com/">Zaprite</a></td>
+<td style="text-align: center;">$25 per month</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+<td>No</td>
+</tr>
+<tr>
+<td><a href="https://paymento.io/">Paymento</a></td>
+<td style="text-align: center;">0.5%</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+<td>No</td>
+</tr>
+<tr>
+<td><a href="https://paywithflash.com/">Flash</a></td>
+<td style="text-align: center;">1.5%</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<h3>Custodial</h3>
+<p>The following processors use their own wallets, not yours, for receiving payments.</p>
+<p>⚠ They not only collect data about payments, they have full control over the funds. There are many risks associated with custodians, which might end up with lost/locked funds.</p>
+<p>⚠ Most of them have KYB/KYC/AML requirements, which poses a serious threat to your and your customers' privacy.</p>
+<p>⚠ They have country-based restrictions for merchants and merchants' customers.</p>
+<table>
+<thead>
+<tr>
+<th>Processor</th>
+<th style="text-align: center;">Fees</th>
+<th style="text-align: center;">Lightning</th>
+<th style="text-align: center;">Directly to Your Wallet</th>
+<th style="text-align: center;">Conversion to Fiat</th>
+<th>Requirements</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://confirmo.net/">Confirmo</a></td>
+<td style="text-align: center;">1.3% (0.8% invoicing + 0.5% payouts)</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">Yes</td>
+<td>Information about business / website. May require certain documents.</td>
+</tr>
+<tr>
+<td><a href="https://coingate.com/accept">CoinGate</a></td>
+<td style="text-align: center;">1% (merchant) + some <a href="https://support.coingate.com/en/109/why-does-coingate-charge-service-fee">variable service fee</a> (customer)</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">Yes</td>
+<td>Requires <a href="https://blog.coingate.com/2019/05/verify-merchant-account-faq">a lot of information and business documents</a>, officially translated in english.</td>
+</tr>
+<tr>
+<td><a href="https://www.coinpayments.net/">CoinPayments</a></td>
+<td style="text-align: center;">0.5%</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td>On withdrawal may require a number of forms of identification and will require settlement of any outstanding amounts.</td>
+</tr>
+<tr>
+<td><a href="https://www.opennode.co/">OpenNode</a></td>
+<td style="text-align: center;">1%</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">Yes</td>
+<td>Requires <a href="https://help.opennode.com/en/articles/3654899-kyc-and-kyb-requirements">KYC/KYB documents</a></td>
+</tr>
+<tr>
+<td><a href="https://strike.me/business/">Strike</a></td>
+<td style="text-align: center;">1%</td>
+<td style="text-align: center;">Only</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td>Requires <a href="https://strike.me/faq/how-do-i-sign-up-for-a-strike-business-account/">basic business info, documents, identity verifications of owners and operators</a>.</td>
+</tr>
+<tr>
+<td><a href="https://coinremitter.com/">Coinremitter</a></td>
+<td style="text-align: center;">0.23% + 0.0001</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'bitcoin-payment-processors_README.md';
 
         fetch(markdownFile)
@@ -48,21 +493,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

@@ -8,38 +8,165 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Paralax Awesome Honeypots - Awesome List Resources">
-    <title>Paralax Awesome Honeypots</title>
+    <meta name="description" content="A curated list of awesome honeypots, plus related components and much more, divided into categories such as Web, services, and others, with a focus on free and...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Honeypots [![Awesome Honeypots](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Honeypots <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome Honeypots" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A curated list of awesome honeypots, plus related components and much more, divided into categories such as Web, services, and others, with a focus on free and open source projects.</p>
+<p>There is no pre-established order of items in each category, the order is for contribution. If you want to contribute, please read the <a href="CONTRIBUTING.md">guide</a>.</p>
+<p>Discover more awesome lists at <a href="https://github.com/sindresorhus/awesome">sindresorhus/awesome</a>.</p>
+<h1>Contents</h1>
+<ul>
+<li><a href="#awesome-honeypots-">Awesome Honeypots </a></li>
+<li><a href="#contents">Contents</a></li>
+<li><a href="#related-lists">Related Lists</a></li>
+<li><a href="#honeypots">Honeypots</a></li>
+<li><a href="#honeyd-tools">Honeyd Tools</a></li>
+<li><a href="#network-and-artifact-analysis">Network and Artifact Analysis</a></li>
+<li><a href="#data-tools">Data Tools</a></li>
+<li><a href="#guides">Guides</a></li>
+</ul>
+<h2>Related Lists</h2>
+<ul>
+<li><a href="https://github.com/caesar0301/awesome-pcaptools">awesome-pcaptools</a> - Useful in network traffic analysis.</li>
+<li><a href="https://github.com/rshipp/awesome-malware-analysis">awesome-malware-analysis</a> - Some overlap here for artifact analysis.</li>
+</ul>
+<h2>Honeypots</h2>
+<ul>
+<li>
+<p>Database Honeypots</p>
+</li>
+<li>
+<p><a href="https://github.com/SecurityTW/delilah">Delilah</a> - Elasticsearch Honeypot written in Python (originally from Novetta).</p>
+</li>
+<li><a href="https://github.com/mycert/ESPot">ESPot</a> - Elasticsearch honeypot written in NodeJS, to capture every attempts to exploit CVE-2014-3120.</li>
+<li><a href="https://gitlab.com/bontchev/elasticpot">ElasticPot</a> - An Elasticsearch Honeypot.</li>
+<li><a href="https://github.com/jordan-wright/elastichoney">Elastic honey</a> - Simple Elasticsearch Honeypot.</li>
+<li><a href="https://github.com/Plazmaz/MongoDB-HoneyProxy">MongoDB-HoneyProxy</a> - MongoDB honeypot proxy.</li>
+<li><a href="https://github.com/torque59/nosqlpot">NoSQLpot</a> - Honeypot framework built on a NoSQL-style database.</li>
+<li><a href="https://github.com/sjinks/mysql-honeypotd">mysql-honeypotd</a> - Low interaction MySQL honeypot written in C.</li>
+<li><a href="https://github.com/schmalle/MysqlPot">MysqlPot</a> - MySQL honeypot, still very early stage.</li>
+<li><a href="https://github.com/betheroot/pghoney">pghoney</a> - Low-interaction Postgres Honeypot.</li>
+<li><a href="https://github.com/betheroot/sticky_elephant">sticky_elephant</a> - Medium interaction postgresql honeypot.</li>
+<li>
+<p><a href="https://github.com/cypwnpwnsocute/RedisHoneyPot">RedisHoneyPot</a> - High Interaction Honeypot Solution for Redis protocol.</p>
+</li>
+<li>
+<p>Web honeypots</p>
+</li>
+<li>
+<p><a href="https://github.com/SAP/cloud-active-defense?tab=readme-ov-file">Cloud Active Defense</a> - Cloud active defense lets you deploy decoys right into your cloud applications, putting adversaries into a dilemma: to hack or not to hack?</p>
+</li>
+<li><a href="https://github.com/christophe77/express-honeypot">Express honeypot</a> - RFI &amp; LFI honeypot using nodeJS and express.</li>
+<li><a href="https://github.com/eymengunay/EoHoneypotBundle">EoHoneypotBundle</a> - Honeypot type for Symfony2 forms.</li>
+<li><a href="https://github.com/mushorg/glastopf">Glastopf</a> - Web Application Honeypot.</li>
+<li><a href="http://ghh.sourceforge.net">Google Hack Honeypot</a> - Designed to provide reconnaissance against attackers that use search engines as a hacking tool against your resources.</li>
+<li><a href="https://github.com/yunginnanet/HellPot">HellPot</a> - Honeypot that tries to crash the bots and clients that visit it's location.</li>
+<li><a href="https://github.com/msurguy/Honeypot">Laravel Application Honeypot</a> - Simple spam prevention package for Laravel applications.</li>
+<li><a href="https://github.com/mrheinen/lophiid/">Lophiid</a> - Distributed web application honeypot to interact with large scale exploitation attempts.</li>
+<li><a href="https://github.com/schmalle/Nodepot">Nodepot</a> - NodeJS web application honeypot.</li>
+<li><a href="https://github.com/Marist-Innovation-Lab/PasitheaHoneypot">PasitheaHoneypot</a> - RestAPI honeypot.</li>
+<li><a href="https://github.com/schmalle/servletpot">Servletpot</a> - Web application Honeypot.</li>
+<li><a href="https://shadowd.zecure.org/overview/introduction/">Shadow Daemon</a> - Modular Web Application Firewall / High-Interaction Honeypot for PHP, Perl, and Python apps.</li>
+<li><a href="https://github.com/Cymmetria/StrutsHoneypot">StrutsHoneypot</a> - Struts Apache 2 based honeypot as well as a detection module for Apache 2 servers.</li>
+<li><a href="https://github.com/IllusiveNetworks-Labs/WebTrap">WebTrap</a> - Designed to create deceptive webpages to deceive and redirect attackers away from real websites.</li>
+<li><a href="https://github.com/bjeborn/basic-auth-pot">basic-auth-pot (bap)</a> - HTTP Basic Authentication honeypot.</li>
+<li><a href="https://github.com/graneed/bwpot">bwpot</a> - Breakable Web applications honeyPot.</li>
+<li><a href="https://github.com/dmpayton/django-admin-honeypot">django-admin-honeypot</a> - Fake Django admin login screen to notify admins of attempted unauthorized access.</li>
+<li><a href="https://github.com/d1str0/drupot">drupo</a> - Drupal Honeypot.</li>
+<li><a href="https://github.com/0x4D31/galah">galah</a> - an LLM-powered web honeypot using the OpenAI API.</li>
+<li><a href="https://github.com/bocajspear1/honeyhttpd">honeyhttpd</a> - Python-based web server honeypot builder.</li>
+<li><a href="https://github.com/LogoiLab/honeyup">honeyup</a> - An uploader honeypot designed to look like poor website security.</li>
+<li><a href="https://github.com/referefref/modpot">modpot</a> - Modpot is a modular web application honeypot framework and management application written in Golang and making use of gin framework.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Honeypots <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome Honeypots" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A curated list of awesome honeypots, plus related components and much more, divided into categories such as Web, services, and others, with a focus on free and open source projects.</p>
+<p>There is no pre-established order of items in each category, the order is for contribution. If you want to contribute, please read the <a href="CONTRIBUTING.md">guide</a>.</p>
+<p>Discover more awesome lists at <a href="https://github.com/sindresorhus/awesome">sindresorhus/awesome</a>.</p>
+<h1>Contents</h1>
+<ul>
+<li><a href="#awesome-honeypots-">Awesome Honeypots </a></li>
+<li><a href="#contents">Contents</a></li>
+<li><a href="#related-lists">Related Lists</a></li>
+<li><a href="#honeypots">Honeypots</a></li>
+<li><a href="#honeyd-tools">Honeyd Tools</a></li>
+<li><a href="#network-and-artifact-analysis">Network and Artifact Analysis</a></li>
+<li><a href="#data-tools">Data Tools</a></li>
+<li><a href="#guides">Guides</a></li>
+</ul>
+<h2>Related Lists</h2>
+<ul>
+<li><a href="https://github.com/caesar0301/awesome-pcaptools">awesome-pcaptools</a> - Useful in network traffic analysis.</li>
+<li><a href="https://github.com/rshipp/awesome-malware-analysis">awesome-malware-analysis</a> - Some overlap here for artifact analysis.</li>
+</ul>
+<h2>Honeypots</h2>
+<ul>
+<li>
+<p>Database Honeypots</p>
+</li>
+<li>
+<p><a href="https://github.com/SecurityTW/delilah">Delilah</a> - Elasticsearch Honeypot written in Python (originally from Novetta).</p>
+</li>
+<li><a href="https://github.com/mycert/ESPot">ESPot</a> - Elasticsearch honeypot written in NodeJS, to capture every attempts to exploit CVE-2014-3120.</li>
+<li><a href="https://gitlab.com/bontchev/elasticpot">ElasticPot</a> - An Elasticsearch Honeypot.</li>
+<li><a href="https://github.com/jordan-wright/elastichoney">Elastic honey</a> - Simple Elasticsearch Honeypot.</li>
+<li><a href="https://github.com/Plazmaz/MongoDB-HoneyProxy">MongoDB-HoneyProxy</a> - MongoDB honeypot proxy.</li>
+<li><a href="https://github.com/torque59/nosqlpot">NoSQLpot</a> - Honeypot framework built on a NoSQL-style database.</li>
+<li><a href="https://github.com/sjinks/mysql-honeypotd">mysql-honeypotd</a> - Low interaction MySQL honeypot written in C.</li>
+<li><a href="https://github.com/schmalle/MysqlPot">MysqlPot</a> - MySQL honeypot, still very early stage.</li>
+<li><a href="https://github.com/betheroot/pghoney">pghoney</a> - Low-interaction Postgres Honeypot.</li>
+<li><a href="https://github.com/betheroot/sticky_elephant">sticky_elephant</a> - Medium interaction postgresql honeypot.</li>
+<li>
+<p><a href="https://github.com/cypwnpwnsocute/RedisHoneyPot">RedisHoneyPot</a> - High Interaction Honeypot Solution for Redis protocol.</p>
+</li>
+<li>
+<p>Web honeypots</p>
+</li>
+<li>
+<p><a href="https://github.com/SAP/cloud-active-defense?tab=readme-ov-file">Cloud Active Defense</a> - Cloud active defense lets you deploy decoys right into your cloud applications, putting adversaries into a dilemma: to hack or not to hack?</p>
+</li>
+<li><a href="https://github.com/christophe77/express-honeypot">Express honeypot</a> - RFI &amp; LFI honeypot using nodeJS and express.</li>
+<li><a href="https://github.com/eymengunay/EoHoneypotBundle">EoHoneypotBundle</a> - Honeypot type for Symfony2 forms.</li>
+<li><a href="https://github.com/mushorg/glastopf">Glastopf</a> - Web Application Honeypot.</li>
+<li><a href="http://ghh.sourceforge.net">Google Hack Honeypot</a> - Designed to provide reconnaissance against attackers that use search engines as a hacking tool against your resources.</li>
+<li><a href="https://github.com/yunginnanet/HellPot">HellPot</a> - Honeypot that tries to crash the bots and clients that visit it's location.</li>
+<li><a href="https://github.com/msurguy/Honeypot">Laravel Application Honeypot</a> - Simple spam prevention package for Laravel applications.</li>
+<li><a href="https://github.com/mrheinen/lophiid/">Lophiid</a> - Distributed web application honeypot to interact with large scale exploitation attempts.</li>
+<li><a href="https://github.com/schmalle/Nodepot">Nodepot</a> - NodeJS web application honeypot.</li>
+<li><a href="https://github.com/Marist-Innovation-Lab/PasitheaHoneypot">PasitheaHoneypot</a> - RestAPI honeypot.</li>
+<li><a href="https://github.com/schmalle/servletpot">Servletpot</a> - Web application Honeypot.</li>
+<li><a href="https://shadowd.zecure.org/overview/introduction/">Shadow Daemon</a> - Modular Web Application Firewall / High-Interaction Honeypot for PHP, Perl, and Python apps.</li>
+<li><a href="https://github.com/Cymmetria/StrutsHoneypot">StrutsHoneypot</a> - Struts Apache 2 based honeypot as well as a detection module for Apache 2 servers.</li>
+<li><a href="https://github.com/IllusiveNetworks-Labs/WebTrap">WebTrap</a> - Designed to create deceptive webpages to deceive and redirect attackers away from real websites.</li>
+<li><a href="https://github.com/bjeborn/basic-auth-pot">basic-auth-pot (bap)</a> - HTTP Basic Authentication honeypot.</li>
+<li><a href="https://github.com/graneed/bwpot">bwpot</a> - Breakable Web applications honeyPot.</li>
+<li><a href="https://github.com/dmpayton/django-admin-honeypot">django-admin-honeypot</a> - Fake Django admin login screen to notify admins of attempted unauthorized access.</li>
+<li><a href="https://github.com/d1str0/drupot">drupo</a> - Drupal Honeypot.</li>
+<li><a href="https://github.com/0x4D31/galah">galah</a> - an LLM-powered web honeypot using the OpenAI API.</li>
+<li><a href="https://github.com/bocajspear1/honeyhttpd">honeyhttpd</a> - Python-based web server honeypot builder.</li>
+<li><a href="https://github.com/LogoiLab/honeyup">honeyup</a> - An uploader honeypot designed to look like poor website security.</li>
+<li><a href="https://github.com/referefref/modpot">modpot</a> - Modpot is a modular web application honeypot framework and management application written in Golang and making use of gin framework.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'honeypots_README.md';
 
         fetch(markdownFile)
@@ -48,21 +175,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

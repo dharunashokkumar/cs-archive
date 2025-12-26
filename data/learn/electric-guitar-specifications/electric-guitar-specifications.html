@@ -8,38 +8,467 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gitfrage Guitarspecs - Awesome List Resources">
-    <title>Gitfrage Guitarspecs</title>
+    <meta name="description" content="This is a "top-down checklist" for the assembly of a solid-body electric guitar. It can help you to build a guitar with specific sound and playability...">
+    <meta name="robots" content="index, follow">
+    <title>Electric Guitar Specifications - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Electric Guitar Specifications</h1>
+<p>This is a "top-down checklist" for the assembly of a solid-body electric guitar.
+It can help you to build a guitar with specific sound and playability characteristics. Please read <a href="https://github.com/gitfrage/guitarspecs/blob/master/contributing.md">licence and the contribution guidelines</a> before contributing. <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat2.svg" /></a></p>
+<p><img alt="Electric Guitar Specifications" src="./images/Sound-and-Playability.jpg" /></p>
+<h2>Table of Contents</h2>
+<ul>
+<li>
+<p><a href="#sound-and-playability-influencing-factors">Sound and Playability Influencing Factors</a></p>
+</li>
+<li>
+<p><a href="#guitar-necks">Guitar Necks</a></p>
+</li>
+<li><a href="#neck-profile">Neck Profile</a></li>
+<li><a href="#neck-nut-width-and-nut-slot-spacing">Neck Nut Width and Nut Slot Spacing</a></li>
+<li><a href="#neck-heel-width-and-mounting">Neck Heel Width and Mounting</a></li>
+<li><a href="#fretboards-radius">Fretboard’s Radius</a></li>
+<li><a href="#fret-sizes">Fret Sizes</a></li>
+<li><a href="#common-neck-head-shapes">Common Neck Head Shapes</a></li>
+<li>
+<p><a href="#tuner-holes">Tuner Holes</a></p>
+</li>
+<li>
+<p><a href="#guitar-bodies">Guitar Bodies</a></p>
+<ul>
+<li><a href="#body-shapes">Body Shapes</a></li>
+<li><a href="#bridge-and-pickup-routing-overview">Bridge And Pickup Routing Overview</a></li>
+<li><a href="#flat-mount-strat-routing">Flat Mount Strat Routing</a></li>
+<li><a href="#flat-mount-tele-routing">Flat Mount Tele Routing</a></li>
+<li><a href="#flat-mount-schaller-routing">Flat Mount Schaller Routing</a></li>
+<li><a href="#tremolo-routing">Tremolo Routing</a></li>
+<li><a href="#tune-o-matic-gibson-style-routing">Tune-O-Matic Gibson Style Routing</a></li>
+<li><a href="#other-rare-bridge-variants">Other Rare Bridge Variants</a></li>
+<li><a href="#pickup-routing">Pickup Routing</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#tuning-machines">Tuning Machines</a></p>
+</li>
+<li><a href="#bridges">Bridges</a></li>
+<li>
+<p><a href="#hardware-parts-checklist">Hardware Parts Checklist</a></p>
+</li>
+<li>
+<p><a href="#electronics">Electronics</a></p>
+</li>
+<li><a href="#pickup-properties">Pickup Properties</a></li>
+<li><a href="#sound-control-with-switches">Sound Control with Switches</a></li>
+<li><a href="#potentiometer-and-capacitor-values">Potentiometer and Capacitor Values</a></li>
+<li><a href="#volume-and-tone-potentiometer-options">Volume and Tone Potentiometer Options</a></li>
+<li><a href="#potentiometer-knob-styles">Potentiometer Knob Styles</a></li>
+<li><a href="#electronics-wiring-schemas">Electronics Wiring Schemas</a></li>
+<li>
+<p><a href="#active-pickups-electronics">Active Pickups Electronic</a></p>
+</li>
+<li>
+<p><a href="#strings">Strings</a></p>
+</li>
+<li>
+<p><a href="#scale-length">Scale Length</a></p>
+</li>
+<li>
+<p><a href="#woods">Woods</a></p>
+</li>
+</ul>
+<hr />
+<h2>Sound and Playability Influencing Factors</h2>
+<p><img alt="overview" src="./images/clip8_general-pickup.jpg" /></p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Sound*</th>
+<th>Playability*</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#guitar-necks">Guitar Neck</a></td>
+<td>+</td>
+<td>++++</td>
+</tr>
+<tr>
+<td><a href="#guitar-bodies">Guitar Body</a></td>
+<td>+</td>
+<td>++++</td>
+</tr>
+<tr>
+<td><a href="#electronics">Guitar Electronics</a></td>
+<td>+++</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="#strings">Strings</a></td>
+<td>++</td>
+<td>++</td>
+</tr>
+<tr>
+<td><a href="#scale-length">Scale Length</a></td>
+<td>+</td>
+<td>+</td>
+</tr>
+<tr>
+<td><a href="#woods">Woods</a> (Body, Neck and Fretboard)</td>
+<td>+</td>
+<td>+</td>
+</tr>
+</tbody>
+</table>
+<p>*influence ( "-" stands for little,  "++++"  stands for very strong)</p>
+<p>For example, for building a solid-body 'jazz-sounding' guitar you have to choose (top down by importance):</p>
+<ul>
+<li>vintage or jazz pickup with convenient po­ten­tiomet­er and capacitor values</li>
+<li>flatwound strings</li>
+<li>massive neck, hollow body with wood such as mahagony</li>
+<li>shorter scale length</li>
+</ul>
+<hr />
+<h2>Guitar Necks</h2>
+<p><img alt="Guitar Necks" src="./images/clip2_neck.jpg" /></p>
+<p>Neck thickness, neck width, neck contour and fret wire size affect playability and are a matter of personal taste. Important for good playability is balanced interaction of these components. Thicker neck often creates warmer tone.</p>
+<blockquote>
+<p><a href="http://www.usacustomguitars.com/necks">usacustomguitars.com/necks</a> -  many neck shape and thickness combinations  <br />
+<a href="https://musikraft.com/faq-2/">musikraft.com</a> - additional information for understanding of neck features.   </p>
+</blockquote>
+<h3>Neck Profile</h3>
+<p>Neck Profile is the combination of contour (C, U, V , asymmetrc) and thickness (.0750" - 1")</p>
+<table>
+<thead>
+<tr>
+<th>Contour</th>
+<th>Thickness</th>
+<th>Warmoth*</th>
+<th>Fender*</th>
+<th>Gibson*</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D</td>
+<td>thin</td>
+<td>Wizard</td>
+<td>D Shape</td>
+<td></td>
+</tr>
+<tr>
+<td>C</td>
+<td>thin/medium</td>
+<td>Standard Thin</td>
+<td>C Shape (AM Std)</td>
+<td>Traditional C</td>
+</tr>
+<tr>
+<td>C</td>
+<td>medium</td>
+<td>59 Roundback</td>
+<td>Deep C</td>
+<td>Round C (1959 LP)</td>
+</tr>
+<tr>
+<td>U</td>
+<td>thick</td>
+<td>Fatback</td>
+<td>U Shape  (Vintage Tele)</td>
+<td></td>
+</tr>
+<tr>
+<td>V</td>
+<td>thick</td>
+<td>Boatneck</td>
+<td>V Shape (Vintage 52 Tele)</td>
+<td></td>
+</tr>
+<tr>
+<td>asymmetrisch</td>
+<td>medium</td>
+<td>Wolfgang</td>
+<td>Modern C</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><a href="http://www.warmoth.com/Guitar/Necks/BackContours.aspx">*warmoth</a> - Warmoth Neck Profiles  <br />
+<a href="https://shop.fender.com/de-DE/electric-guitars/">*fender</a> - see "NECK SHAPE" Filter   <br />
+<a href="https://forum.gibson.com/topic/74036-gibson-neck-profiles/?tab=comments#comment-1360076">*gibson forum</a> - Gibson Neck Profiles    </p>
+</blockquote>
+<h3>Neck Nut Width and Nut Slot Spacing</h3>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Neck Nut Width</th>
+<th>e1/E6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Many Fenders from Japan</td>
+<td>41 mm (1-5/8")</td>
+<td>approx. 34 mm</td>
+</tr>
+<tr>
+<td>Standard</td>
+<td>42,9 mm (1-11/16")</td>
+<td>approx. 35 mm</td>
+</tr>
+<tr>
+<td>Acoustic analog</td>
+<td>44,5 mm (1-3/4")</td>
+<td>35 mm till 37,5 mm</td>
+</tr>
+<tr>
+<td>Superwide (Warmoth)</td>
+<td>48 mm (1-7/8")</td>
+<td>approx. 40 mm</td>
+</tr>
+</tbody>
+</table>
+<p>The real  e1 to E6 string spread can be controlled not only through nut width, but also by slot spread in the nut.  For example, 44.5 mm wide nut can have e1 to E6 distance between 35 and 37.5 mm.</p>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Electric Guitar Specifications</h1>
+<p>This is a "top-down checklist" for the assembly of a solid-body electric guitar.
+It can help you to build a guitar with specific sound and playability characteristics. Please read <a href="https://github.com/gitfrage/guitarspecs/blob/master/contributing.md">licence and the contribution guidelines</a> before contributing. <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat2.svg" /></a></p>
+<p><img alt="Electric Guitar Specifications" src="./images/Sound-and-Playability.jpg" /></p>
+<h2>Table of Contents</h2>
+<ul>
+<li>
+<p><a href="#sound-and-playability-influencing-factors">Sound and Playability Influencing Factors</a></p>
+</li>
+<li>
+<p><a href="#guitar-necks">Guitar Necks</a></p>
+</li>
+<li><a href="#neck-profile">Neck Profile</a></li>
+<li><a href="#neck-nut-width-and-nut-slot-spacing">Neck Nut Width and Nut Slot Spacing</a></li>
+<li><a href="#neck-heel-width-and-mounting">Neck Heel Width and Mounting</a></li>
+<li><a href="#fretboards-radius">Fretboard’s Radius</a></li>
+<li><a href="#fret-sizes">Fret Sizes</a></li>
+<li><a href="#common-neck-head-shapes">Common Neck Head Shapes</a></li>
+<li>
+<p><a href="#tuner-holes">Tuner Holes</a></p>
+</li>
+<li>
+<p><a href="#guitar-bodies">Guitar Bodies</a></p>
+<ul>
+<li><a href="#body-shapes">Body Shapes</a></li>
+<li><a href="#bridge-and-pickup-routing-overview">Bridge And Pickup Routing Overview</a></li>
+<li><a href="#flat-mount-strat-routing">Flat Mount Strat Routing</a></li>
+<li><a href="#flat-mount-tele-routing">Flat Mount Tele Routing</a></li>
+<li><a href="#flat-mount-schaller-routing">Flat Mount Schaller Routing</a></li>
+<li><a href="#tremolo-routing">Tremolo Routing</a></li>
+<li><a href="#tune-o-matic-gibson-style-routing">Tune-O-Matic Gibson Style Routing</a></li>
+<li><a href="#other-rare-bridge-variants">Other Rare Bridge Variants</a></li>
+<li><a href="#pickup-routing">Pickup Routing</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#tuning-machines">Tuning Machines</a></p>
+</li>
+<li><a href="#bridges">Bridges</a></li>
+<li>
+<p><a href="#hardware-parts-checklist">Hardware Parts Checklist</a></p>
+</li>
+<li>
+<p><a href="#electronics">Electronics</a></p>
+</li>
+<li><a href="#pickup-properties">Pickup Properties</a></li>
+<li><a href="#sound-control-with-switches">Sound Control with Switches</a></li>
+<li><a href="#potentiometer-and-capacitor-values">Potentiometer and Capacitor Values</a></li>
+<li><a href="#volume-and-tone-potentiometer-options">Volume and Tone Potentiometer Options</a></li>
+<li><a href="#potentiometer-knob-styles">Potentiometer Knob Styles</a></li>
+<li><a href="#electronics-wiring-schemas">Electronics Wiring Schemas</a></li>
+<li>
+<p><a href="#active-pickups-electronics">Active Pickups Electronic</a></p>
+</li>
+<li>
+<p><a href="#strings">Strings</a></p>
+</li>
+<li>
+<p><a href="#scale-length">Scale Length</a></p>
+</li>
+<li>
+<p><a href="#woods">Woods</a></p>
+</li>
+</ul>
+<hr />
+<h2>Sound and Playability Influencing Factors</h2>
+<p><img alt="overview" src="./images/clip8_general-pickup.jpg" /></p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Sound*</th>
+<th>Playability*</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#guitar-necks">Guitar Neck</a></td>
+<td>+</td>
+<td>++++</td>
+</tr>
+<tr>
+<td><a href="#guitar-bodies">Guitar Body</a></td>
+<td>+</td>
+<td>++++</td>
+</tr>
+<tr>
+<td><a href="#electronics">Guitar Electronics</a></td>
+<td>+++</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="#strings">Strings</a></td>
+<td>++</td>
+<td>++</td>
+</tr>
+<tr>
+<td><a href="#scale-length">Scale Length</a></td>
+<td>+</td>
+<td>+</td>
+</tr>
+<tr>
+<td><a href="#woods">Woods</a> (Body, Neck and Fretboard)</td>
+<td>+</td>
+<td>+</td>
+</tr>
+</tbody>
+</table>
+<p>*influence ( "-" stands for little,  "++++"  stands for very strong)</p>
+<p>For example, for building a solid-body 'jazz-sounding' guitar you have to choose (top down by importance):</p>
+<ul>
+<li>vintage or jazz pickup with convenient po­ten­tiomet­er and capacitor values</li>
+<li>flatwound strings</li>
+<li>massive neck, hollow body with wood such as mahagony</li>
+<li>shorter scale length</li>
+</ul>
+<hr />
+<h2>Guitar Necks</h2>
+<p><img alt="Guitar Necks" src="./images/clip2_neck.jpg" /></p>
+<p>Neck thickness, neck width, neck contour and fret wire size affect playability and are a matter of personal taste. Important for good playability is balanced interaction of these components. Thicker neck often creates warmer tone.</p>
+<blockquote>
+<p><a href="http://www.usacustomguitars.com/necks">usacustomguitars.com/necks</a> -  many neck shape and thickness combinations  <br />
+<a href="https://musikraft.com/faq-2/">musikraft.com</a> - additional information for understanding of neck features.   </p>
+</blockquote>
+<h3>Neck Profile</h3>
+<p>Neck Profile is the combination of contour (C, U, V , asymmetrc) and thickness (.0750" - 1")</p>
+<table>
+<thead>
+<tr>
+<th>Contour</th>
+<th>Thickness</th>
+<th>Warmoth*</th>
+<th>Fender*</th>
+<th>Gibson*</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D</td>
+<td>thin</td>
+<td>Wizard</td>
+<td>D Shape</td>
+<td></td>
+</tr>
+<tr>
+<td>C</td>
+<td>thin/medium</td>
+<td>Standard Thin</td>
+<td>C Shape (AM Std)</td>
+<td>Traditional C</td>
+</tr>
+<tr>
+<td>C</td>
+<td>medium</td>
+<td>59 Roundback</td>
+<td>Deep C</td>
+<td>Round C (1959 LP)</td>
+</tr>
+<tr>
+<td>U</td>
+<td>thick</td>
+<td>Fatback</td>
+<td>U Shape  (Vintage Tele)</td>
+<td></td>
+</tr>
+<tr>
+<td>V</td>
+<td>thick</td>
+<td>Boatneck</td>
+<td>V Shape (Vintage 52 Tele)</td>
+<td></td>
+</tr>
+<tr>
+<td>asymmetrisch</td>
+<td>medium</td>
+<td>Wolfgang</td>
+<td>Modern C</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><a href="http://www.warmoth.com/Guitar/Necks/BackContours.aspx">*warmoth</a> - Warmoth Neck Profiles  <br />
+<a href="https://shop.fender.com/de-DE/electric-guitars/">*fender</a> - see "NECK SHAPE" Filter   <br />
+<a href="https://forum.gibson.com/topic/74036-gibson-neck-profiles/?tab=comments#comment-1360076">*gibson forum</a> - Gibson Neck Profiles    </p>
+</blockquote>
+<h3>Neck Nut Width and Nut Slot Spacing</h3>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Neck Nut Width</th>
+<th>e1/E6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Many Fenders from Japan</td>
+<td>41 mm (1-5/8")</td>
+<td>approx. 34 mm</td>
+</tr>
+<tr>
+<td>Standard</td>
+<td>42,9 mm (1-11/16")</td>
+<td>approx. 35 mm</td>
+</tr>
+<tr>
+<td>Acoustic analog</td>
+<td>44,5 mm (1-3/4")</td>
+<td>35 mm till 37,5 mm</td>
+</tr>
+<tr>
+<td>Superwide (Warmoth)</td>
+<td>48 mm (1-7/8")</td>
+<td>approx. 40 mm</td>
+</tr>
+</tbody>
+</table>
+<p>The real  e1 to E6 string spread can be controlled not only through nut width, but also by slot spread in the nut.  For example, 44.5 mm wide nut can have e1 to E6 distance between 35 and 37.5 mm.</p>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'electric-guitar-specifications_README.md';
 
         fetch(markdownFile)
@@ -48,21 +477,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

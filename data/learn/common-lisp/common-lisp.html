@@ -8,38 +8,279 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Codyreichert Awesome Cl - Awesome List Resources">
-    <title>Codyreichert Awesome Cl</title>
+    <meta name="description" content="A curated list of _awesome_ Common Lisp libraries. For awesome software, see lisp-lang.org's success stories and the awesome-cl-software list. All libraries...">
+    <meta name="robots" content="index, follow">
+    <title>Common Lisp - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <div align="center">
+  <a href="https://awesome-cl.com" target="_blank">
+    <img src="https://i.imgur.com/jLVXhpc.png">
+  </a>
+</div>
+
+<h1>Awesome Common Lisp <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <a href="https://assertible.com/docs/guide/deployments"><img alt="Assertible status" src="https://assertible.com/apis/102e334d-f9a8-4565-9353-7572de775cae/status?api_token=8b55a286830323effb" /></a></h1>
+<p>A curated list of <em>awesome</em> Common Lisp libraries.</p>
+<p>For awesome <em>software</em>, see <a href="http://lisp-lang.org/success/">lisp-lang.org's success stories</a> and the <a href="https://github.com/azzamsa/awesome-cl-software">awesome-cl-software</a> list.</p>
+<p>All libraries listed here are available from [Quicklisp][16] unless
+stated otherwise. The ones marked with a ⭐ are so widespread and
+solid that they became community standards. You can't be wrong with
+them. This is the case for Quicklisp, BordeauxThreads and
+such. Libraries denoted with a 👍 are the ones we like and want to
+promote here at the Awesome-cl list. They proved solid, they may solve
+a problem better than a community standard but they aren't as
+widespread, or not considered as stable. For example, we prefer
+Spinneret over Cl-Who.</p>
+<p>Add something new! See the <a href="#contributing">contributing</a> section for adding something to the
+list.</p>
+<p>This is released under the GNU Free Documentation License - its text
+is provided in the LICENSE file. This repository is also mirrored on
+<a href="https://notabug.org/CodyReichert/awesome-cl">NotABug</a> - a <strong>fully-free</strong> (as in libre)
+alternative to Github.  Preference is given to [free software][13] and
+sellers who aren't evil for physical resources.</p>
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
+<p><strong>Table of Contents</strong></p>
+<ul>
+<li><a href="#artificial-intelligence-ai-llms">Artificial Intelligence (AI, LLMs)</a></li>
+<li><a href="#machine-learning">Machine Learning</a></li>
+<li><a href="#mcp-servers">MCP servers</a></li>
+<li><a href="#natural-language-processing">Natural Language Processing</a></li>
+<li><a href="#expert-systems">Expert Systems</a></li>
+<li><a href="#audio">Audio</a></li>
+<li><a href="#build-systems">Build Systems</a></li>
+<li><a href="#compilers-code-generators">Compilers, code generators</a></li>
+<li><a href="#apl">APL</a></li>
+<li><a href="#c-c">C, C++</a></li>
+<li><a href="#cryptography">Cryptography</a></li>
+<li><a href="#cryptocurrencies">Cryptocurrencies</a></li>
+<li><a href="#database">Database</a></li>
+<li><a href="#orms">ORMs</a></li>
+<li><a href="#persistent-object-databases">Persistent object databases</a></li>
+<li><a href="#graph-databases">Graph databases</a></li>
+<li><a href="#other-db-wrappers">Other DB wrappers</a></li>
+<li><a href="#migration-tools">Migration tools</a></li>
+<li><a href="#to-third-parties">To third parties</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#data-formats">Data Formats</a></li>
+<li><a href="#csv">CSV</a></li>
+<li><a href="#json">JSON</a></li>
+<li><a href="#toml">TOML</a></li>
+<li><a href="#xml">XML</a></li>
+<li><a href="#yaml">YAML</a></li>
+<li><a href="#data-structures">Data Structures</a></li>
+<li><a href="#docker-images">Docker images</a></li>
+<li><a href="#foreign-function-interface-languages-interop">Foreign Function Interface, languages interop</a></li>
+<li><a href="#c">C</a></li>
+<li><a href="#clojure">Clojure</a></li>
+<li><a href="#erlang">Erlang</a></li>
+<li><a href="#java">Java</a></li>
+<li><a href="#objective-c">Objective-C</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#net-core">.Net Core</a></li>
+<li><a href="#emacs-lisp">Emacs Lisp</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#game-development">Game Development</a></li>
+<li><a href="#graphics">Graphics</a></li>
+<li><a href="#gui">GUI</a></li>
+<li><a href="#web-views">Web views</a></li>
+<li><a href="#mobile">Mobile</a></li>
+<li><a href="#implementations">Implementations</a></li>
+<li><a href="#language-extensions">Language extensions</a></li>
+<li><a href="#pattern-matching">Pattern matching</a></li>
+<li><a href="#portability-layers">Portability layers</a></li>
+<li><a href="#changing-the-syntax">Changing the syntax</a></li>
+<li><a href="#clos-extensions">CLOS extensions</a></li>
+<li><a href="#function-extensions">Function extensions</a></li>
+<li><a href="#iteration">Iteration</a></li>
+<li><a href="#lambda-shorthands">Lambda shorthands</a></li>
+<li><a href="#non-deterministic-logic-programming">Non-deterministic, logic programming</a></li>
+<li><a href="#reactive-programming">Reactive programming</a></li>
+<li><a href="#contract-programming">Contract programming</a></li>
+<li><a href="#typing">Typing</a></li>
+<li><a href="#theorem-provers">Theorem provers</a></li>
+<li><a href="#learning-and-tutorials">Learning and Tutorials</a></li>
+<li><a href="#online">Online</a></li>
+<li><a href="#beginner">Beginner</a></li>
+<li><a href="#intermediate">Intermediate</a></li>
+<li><a href="#advanced">Advanced</a></li>
+<li><a href="#coding-platforms">Coding platforms</a></li>
+<li><a href="#web-development">Web Development</a></li>
+<li><a href="#reference">Reference</a></li>
+<li><a href="#offline">Offline</a></li>
+<li><a href="#beginner-1">Beginner</a></li>
+<li><a href="#intermediate-1">Intermediate</a></li>
+<li><a href="#advanced-1">Advanced</a></li>
+<li><a href="#other-books">Other books</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#library-manager">Library Manager</a></li>
+<li><a href="#interfaces-to-other-package-managers">Interfaces to other package managers</a></li>
+<li><a href="#network-and-internet">Network and Internet</a></li>
+<li><a href="#http-clients">HTTP clients</a></li>
+<li><a href="#http-servers">HTTP Servers</a><ul>
+<li><a href="#hunchentoot-plugins">Hunchentoot plugins</a></li>
+<li><a href="#clack-plugins">Clack plugins</a></li>
+</ul>
+</li>
+<li><a href="#web-frameworks">Web frameworks</a><ul>
+<li><a href="#isomorphic-web-frameworks">Isomorphic web frameworks</a></li>
+</ul>
+</li>
+<li><a href="#parsing-html">Parsing html</a></li>
+<li><a href="#querying-htmldom-web-scraping">Querying HTML/DOM, web scraping</a></li>
+<li><a href="#html-generators-and-templates">HTML generators and templates</a></li>
+<li><a href="#uri-and-ip-handling">URI and IP handling</a></li>
+<li><a href="#javascript">Javascript</a></li>
+<li><a href="#deployment">Deployment</a><ul>
+<li><a href="#hosting-platforms">Hosting platforms</a></li>
+</ul>
+</li>
+<li><a href="#monitoring">Monitoring</a></li>
+<li><a href="#websockets">Websockets</a></li>
+<li><a href="#web-development-utilities">Web development utilities</a></li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <div align="center">
+  <a href="https://awesome-cl.com" target="_blank">
+    <img src="https://i.imgur.com/jLVXhpc.png">
+  </a>
+</div>
+
+<h1>Awesome Common Lisp <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <a href="https://assertible.com/docs/guide/deployments"><img alt="Assertible status" src="https://assertible.com/apis/102e334d-f9a8-4565-9353-7572de775cae/status?api_token=8b55a286830323effb" /></a></h1>
+<p>A curated list of <em>awesome</em> Common Lisp libraries.</p>
+<p>For awesome <em>software</em>, see <a href="http://lisp-lang.org/success/">lisp-lang.org's success stories</a> and the <a href="https://github.com/azzamsa/awesome-cl-software">awesome-cl-software</a> list.</p>
+<p>All libraries listed here are available from [Quicklisp][16] unless
+stated otherwise. The ones marked with a ⭐ are so widespread and
+solid that they became community standards. You can't be wrong with
+them. This is the case for Quicklisp, BordeauxThreads and
+such. Libraries denoted with a 👍 are the ones we like and want to
+promote here at the Awesome-cl list. They proved solid, they may solve
+a problem better than a community standard but they aren't as
+widespread, or not considered as stable. For example, we prefer
+Spinneret over Cl-Who.</p>
+<p>Add something new! See the <a href="#contributing">contributing</a> section for adding something to the
+list.</p>
+<p>This is released under the GNU Free Documentation License - its text
+is provided in the LICENSE file. This repository is also mirrored on
+<a href="https://notabug.org/CodyReichert/awesome-cl">NotABug</a> - a <strong>fully-free</strong> (as in libre)
+alternative to Github.  Preference is given to [free software][13] and
+sellers who aren't evil for physical resources.</p>
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
+<p><strong>Table of Contents</strong></p>
+<ul>
+<li><a href="#artificial-intelligence-ai-llms">Artificial Intelligence (AI, LLMs)</a></li>
+<li><a href="#machine-learning">Machine Learning</a></li>
+<li><a href="#mcp-servers">MCP servers</a></li>
+<li><a href="#natural-language-processing">Natural Language Processing</a></li>
+<li><a href="#expert-systems">Expert Systems</a></li>
+<li><a href="#audio">Audio</a></li>
+<li><a href="#build-systems">Build Systems</a></li>
+<li><a href="#compilers-code-generators">Compilers, code generators</a></li>
+<li><a href="#apl">APL</a></li>
+<li><a href="#c-c">C, C++</a></li>
+<li><a href="#cryptography">Cryptography</a></li>
+<li><a href="#cryptocurrencies">Cryptocurrencies</a></li>
+<li><a href="#database">Database</a></li>
+<li><a href="#orms">ORMs</a></li>
+<li><a href="#persistent-object-databases">Persistent object databases</a></li>
+<li><a href="#graph-databases">Graph databases</a></li>
+<li><a href="#other-db-wrappers">Other DB wrappers</a></li>
+<li><a href="#migration-tools">Migration tools</a></li>
+<li><a href="#to-third-parties">To third parties</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#data-formats">Data Formats</a></li>
+<li><a href="#csv">CSV</a></li>
+<li><a href="#json">JSON</a></li>
+<li><a href="#toml">TOML</a></li>
+<li><a href="#xml">XML</a></li>
+<li><a href="#yaml">YAML</a></li>
+<li><a href="#data-structures">Data Structures</a></li>
+<li><a href="#docker-images">Docker images</a></li>
+<li><a href="#foreign-function-interface-languages-interop">Foreign Function Interface, languages interop</a></li>
+<li><a href="#c">C</a></li>
+<li><a href="#clojure">Clojure</a></li>
+<li><a href="#erlang">Erlang</a></li>
+<li><a href="#java">Java</a></li>
+<li><a href="#objective-c">Objective-C</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#net-core">.Net Core</a></li>
+<li><a href="#emacs-lisp">Emacs Lisp</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#game-development">Game Development</a></li>
+<li><a href="#graphics">Graphics</a></li>
+<li><a href="#gui">GUI</a></li>
+<li><a href="#web-views">Web views</a></li>
+<li><a href="#mobile">Mobile</a></li>
+<li><a href="#implementations">Implementations</a></li>
+<li><a href="#language-extensions">Language extensions</a></li>
+<li><a href="#pattern-matching">Pattern matching</a></li>
+<li><a href="#portability-layers">Portability layers</a></li>
+<li><a href="#changing-the-syntax">Changing the syntax</a></li>
+<li><a href="#clos-extensions">CLOS extensions</a></li>
+<li><a href="#function-extensions">Function extensions</a></li>
+<li><a href="#iteration">Iteration</a></li>
+<li><a href="#lambda-shorthands">Lambda shorthands</a></li>
+<li><a href="#non-deterministic-logic-programming">Non-deterministic, logic programming</a></li>
+<li><a href="#reactive-programming">Reactive programming</a></li>
+<li><a href="#contract-programming">Contract programming</a></li>
+<li><a href="#typing">Typing</a></li>
+<li><a href="#theorem-provers">Theorem provers</a></li>
+<li><a href="#learning-and-tutorials">Learning and Tutorials</a></li>
+<li><a href="#online">Online</a></li>
+<li><a href="#beginner">Beginner</a></li>
+<li><a href="#intermediate">Intermediate</a></li>
+<li><a href="#advanced">Advanced</a></li>
+<li><a href="#coding-platforms">Coding platforms</a></li>
+<li><a href="#web-development">Web Development</a></li>
+<li><a href="#reference">Reference</a></li>
+<li><a href="#offline">Offline</a></li>
+<li><a href="#beginner-1">Beginner</a></li>
+<li><a href="#intermediate-1">Intermediate</a></li>
+<li><a href="#advanced-1">Advanced</a></li>
+<li><a href="#other-books">Other books</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#library-manager">Library Manager</a></li>
+<li><a href="#interfaces-to-other-package-managers">Interfaces to other package managers</a></li>
+<li><a href="#network-and-internet">Network and Internet</a></li>
+<li><a href="#http-clients">HTTP clients</a></li>
+<li><a href="#http-servers">HTTP Servers</a><ul>
+<li><a href="#hunchentoot-plugins">Hunchentoot plugins</a></li>
+<li><a href="#clack-plugins">Clack plugins</a></li>
+</ul>
+</li>
+<li><a href="#web-frameworks">Web frameworks</a><ul>
+<li><a href="#isomorphic-web-frameworks">Isomorphic web frameworks</a></li>
+</ul>
+</li>
+<li><a href="#parsing-html">Parsing html</a></li>
+<li><a href="#querying-htmldom-web-scraping">Querying HTML/DOM, web scraping</a></li>
+<li><a href="#html-generators-and-templates">HTML generators and templates</a></li>
+<li><a href="#uri-and-ip-handling">URI and IP handling</a></li>
+<li><a href="#javascript">Javascript</a></li>
+<li><a href="#deployment">Deployment</a><ul>
+<li><a href="#hosting-platforms">Hosting platforms</a></li>
+</ul>
+</li>
+<li><a href="#monitoring">Monitoring</a></li>
+<li><a href="#websockets">Websockets</a></li>
+<li><a href="#web-development-utilities">Web development utilities</a></li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'common-lisp_README.md';
 
         fetch(markdownFile)
@@ -48,21 +289,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

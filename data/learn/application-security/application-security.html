@@ -8,38 +8,135 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Paragonie Awesome Appsec - Awesome List Resources">
-    <title>Paragonie Awesome Appsec</title>
+    <meta name="description" content="A curated list of resources for learning about application security. Contains books, websites, blog posts, and self-assessment quizzes. Maintained by Paragon...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome AppSec [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome AppSec <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A curated list of resources for learning about application security. Contains books,
+websites, blog posts, and self-assessment quizzes.</p>
+<p>Maintained by <a href="https://paragonie.com">Paragon Initiative Enterprises</a> with
+contributions from the application security and developer communities. We also
+have <a href="https://paragonie.com/projects">other community projects</a> which might be
+useful for tomorrow's application security experts.</p>
+<p>If you are an absolute beginner to the topic of software security, you may benefit
+from reading <a href="https://paragonie.com/blog/2015/08/gentle-introduction-application-security">A Gentle Introduction to Application Security</a>.</p>
+<h1>Contributing</h1>
+<p><a href="CONTRIBUTING.md">Please refer to the contributing guide for details</a>.</p>
+<h1>Application Security Learning Resources</h1>
+<ul>
+<li><a href="#general">General</a><ul>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#how-to-safely-generate-a-random-number-2014">How to Safely Generate a Random Number</a> (2014)</li>
+<li><a href="#salted-password-hashing-doing-it-right-2014">Salted Password Hashing - Doing it Right</a> (2014)</li>
+<li><a href="#a-good-idea-with-bad-usage-devurandom-2014">A good idea with bad usage: /dev/urandom</a> (2014)</li>
+<li><a href="#why-invest-in-application-security-2015">Why Invest in Application Security?</a> (2015)</li>
+<li><a href="#be-wary-of-one-time-pads-and-other-crypto-unicorns-2015">Be wary of one-time pads and other crypto unicorns</a> (2015)</li>
+<li><a href="#books">Books</a></li>
+<li><a href="#-web-application-hackers-handbook-2011">Web Application Hacker's Handbook</a> (2011) <img alt="nonfree" src="img/nonfree.png" /></li>
+<li><a href="#-cryptography-engineering-2010">Cryptography Engineering</a> (2010) <img alt="nonfree" src="img/nonfree.png" /></li>
+<li><a href="#-securing-devops-2018">Securing DevOps</a> (2018) <img alt="nonfree" src="img/nonfree.png" /></li>
+<li><a href="#-gray-hat-python-programming-for-hackers-and-reverse-engineers-2009">Gray Hat Python: Programming for Hackers and Reverse Engineers</a> (2009) <img alt="nonfree" src="img/nonfree.png" /></li>
+<li><a href="#-the-art-of-software-security-assessment-identifying-and-preventing-software-vulnerabilities-2006">The Art of Software Security Assessment: Identifying and Preventing Software Vulnerabilities</a> (2006) <img alt="nonfree" src="img/nonfree.png" /></li>
+<li><a href="#-c-interfaces-and-implementations-techniques-for-creating-reusable-software-1996">C Interfaces and Implementations: Techniques for Creating Reusable Software</a> (1996) <img alt="nonfree" src="img/nonfree.png" /></li>
+<li><a href="#-reversing-secrets-of-reverse-engineering-2005">Reversing: Secrets of Reverse Engineering</a> (2005) <img alt="nonfree" src="img/nonfree.png" /></li>
+<li><a href="#-javascript-the-good-parts-2008">JavaScript: The Good parts</a> (2008) <img alt="nonfree" src="img/nonfree.png" /></li>
+<li><a href="#-windows-internals-including-windows-server-2008-and-windows-vista-fifth-edition-2007">Windows Internals: Including Windows Server 2008 and Windows Vista, Fifth Edition </a> (2007) <img alt="nonfree" src="img/nonfree.png" /></li>
+<li><a href="#-the-mac-hackers-handbook-2009">The Mac Hacker's Handbook</a> (2009) <img alt="nonfree" src="img/nonfree.png" /></li>
+<li><a href="#-the-ida-pro-book-the-unofficial-guide-to-the-worlds-most-popular-disassembler-2008">The IDA Pro Book: The Unofficial Guide to the World's Most Popular Disassembler</a> (2008) <img alt="nonfree" src="img/nonfree.png" /></li>
+<li><a href="#-internetworking-with-tcpip-vol-ii-ansi-c-version-design-implementation-and-internals-3rd-edition-1998">Internetworking with TCP/IP Vol. II: ANSI C Version: Design, Implementation, and Internals (3rd Edition)</a> (1998) <img alt="nonfree" src="img/nonfree.png" /></li>
+<li><a href="#-network-algorithmics-an-interdisciplinary-approach-to-designing-fast-networked-devices-2004">Network Algorithmics,: An Interdisciplinary Approach to Designing Fast Networked Devices</a> (2004) <img alt="nonfree" src="img/nonfree.png" /></li>
+<li><a href="#-computation-structures-mit-electrical-engineering-and-computer-science-1989">Computation Structures (MIT Electrical Engineering and Computer Science)</a> (1989) <img alt="nonfree" src="img/nonfree.png" /></li>
+<li><a href="#-surreptitious-software-obfuscation-watermarking-and-tamperproofing-for-software-protection-2009">Surreptitious Software: Obfuscation, Watermarking, and Tamperproofing for Software Protection</a> (2009) <img alt="nonfree" src="img/nonfree.png" /></li>
+<li><a href="#secure-programming-howto-2015">Secure Programming HOWTO</a> (2015)</li>
+<li><a href="#security-engineering-third-edition-2020">Security Engineering - Third Edition</a> (2020)</li>
+<li><a href="#-bulletproof-ssl-and-tls-2014">Bulletproof SSL and TLS</a> (2014) <img alt="nonfree" src="img/nonfree.png" /></li>
+<li><a href="#holistic-info-sec-for-web-developers-fascicle-0-2016">Holistic Info-Sec for Web Developers (Fascicle 0)</a> (2016)</li>
+<li><a href="#holistic-info-sec-for-web-developers-fascicle-1">Holistic Info-Sec for Web Developers (Fascicle 1)</a></li>
+<li><a href="#classes">Classes</a></li>
+<li><a href="#offensive-computer-security-cis-4930-fsu">Offensive Computer Security (CIS 4930) FSU</a></li>
+<li><a href="#hack-night">Hack Night</a></li>
+<li><a href="#websites">Websites</a></li>
+<li><a href="#hack-this-site">Hack This Site!</a></li>
+<li><a href="#enigma-group">Enigma Group</a></li>
+<li><a href="#web-app-sec-quiz">Web App Sec Quiz</a></li>
+<li><a href="#securepasswords-info">SecurePasswords.info</a></li>
+<li><a href="#security-news-feeds-cheat-sheet">Security News Feeds Cheat-Sheet</a></li>
+</ul>
+</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome AppSec <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A curated list of resources for learning about application security. Contains books,
+websites, blog posts, and self-assessment quizzes.</p>
+<p>Maintained by <a href="https://paragonie.com">Paragon Initiative Enterprises</a> with
+contributions from the application security and developer communities. We also
+have <a href="https://paragonie.com/projects">other community projects</a> which might be
+useful for tomorrow's application security experts.</p>
+<p>If you are an absolute beginner to the topic of software security, you may benefit
+from reading <a href="https://paragonie.com/blog/2015/08/gentle-introduction-application-security">A Gentle Introduction to Application Security</a>.</p>
+<h1>Contributing</h1>
+<p><a href="CONTRIBUTING.md">Please refer to the contributing guide for details</a>.</p>
+<h1>Application Security Learning Resources</h1>
+<ul>
+<li><a href="#general">General</a><ul>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#how-to-safely-generate-a-random-number-2014">How to Safely Generate a Random Number</a> (2014)</li>
+<li><a href="#salted-password-hashing-doing-it-right-2014">Salted Password Hashing - Doing it Right</a> (2014)</li>
+<li><a href="#a-good-idea-with-bad-usage-devurandom-2014">A good idea with bad usage: /dev/urandom</a> (2014)</li>
+<li><a href="#why-invest-in-application-security-2015">Why Invest in Application Security?</a> (2015)</li>
+<li><a href="#be-wary-of-one-time-pads-and-other-crypto-unicorns-2015">Be wary of one-time pads and other crypto unicorns</a> (2015)</li>
+<li><a href="#books">Books</a></li>
+<li><a href="#-web-application-hackers-handbook-2011">Web Application Hacker's Handbook</a> (2011) <img alt="nonfree" src="img/nonfree.png" /></li>
+<li><a href="#-cryptography-engineering-2010">Cryptography Engineering</a> (2010) <img alt="nonfree" src="img/nonfree.png" /></li>
+<li><a href="#-securing-devops-2018">Securing DevOps</a> (2018) <img alt="nonfree" src="img/nonfree.png" /></li>
+<li><a href="#-gray-hat-python-programming-for-hackers-and-reverse-engineers-2009">Gray Hat Python: Programming for Hackers and Reverse Engineers</a> (2009) <img alt="nonfree" src="img/nonfree.png" /></li>
+<li><a href="#-the-art-of-software-security-assessment-identifying-and-preventing-software-vulnerabilities-2006">The Art of Software Security Assessment: Identifying and Preventing Software Vulnerabilities</a> (2006) <img alt="nonfree" src="img/nonfree.png" /></li>
+<li><a href="#-c-interfaces-and-implementations-techniques-for-creating-reusable-software-1996">C Interfaces and Implementations: Techniques for Creating Reusable Software</a> (1996) <img alt="nonfree" src="img/nonfree.png" /></li>
+<li><a href="#-reversing-secrets-of-reverse-engineering-2005">Reversing: Secrets of Reverse Engineering</a> (2005) <img alt="nonfree" src="img/nonfree.png" /></li>
+<li><a href="#-javascript-the-good-parts-2008">JavaScript: The Good parts</a> (2008) <img alt="nonfree" src="img/nonfree.png" /></li>
+<li><a href="#-windows-internals-including-windows-server-2008-and-windows-vista-fifth-edition-2007">Windows Internals: Including Windows Server 2008 and Windows Vista, Fifth Edition </a> (2007) <img alt="nonfree" src="img/nonfree.png" /></li>
+<li><a href="#-the-mac-hackers-handbook-2009">The Mac Hacker's Handbook</a> (2009) <img alt="nonfree" src="img/nonfree.png" /></li>
+<li><a href="#-the-ida-pro-book-the-unofficial-guide-to-the-worlds-most-popular-disassembler-2008">The IDA Pro Book: The Unofficial Guide to the World's Most Popular Disassembler</a> (2008) <img alt="nonfree" src="img/nonfree.png" /></li>
+<li><a href="#-internetworking-with-tcpip-vol-ii-ansi-c-version-design-implementation-and-internals-3rd-edition-1998">Internetworking with TCP/IP Vol. II: ANSI C Version: Design, Implementation, and Internals (3rd Edition)</a> (1998) <img alt="nonfree" src="img/nonfree.png" /></li>
+<li><a href="#-network-algorithmics-an-interdisciplinary-approach-to-designing-fast-networked-devices-2004">Network Algorithmics,: An Interdisciplinary Approach to Designing Fast Networked Devices</a> (2004) <img alt="nonfree" src="img/nonfree.png" /></li>
+<li><a href="#-computation-structures-mit-electrical-engineering-and-computer-science-1989">Computation Structures (MIT Electrical Engineering and Computer Science)</a> (1989) <img alt="nonfree" src="img/nonfree.png" /></li>
+<li><a href="#-surreptitious-software-obfuscation-watermarking-and-tamperproofing-for-software-protection-2009">Surreptitious Software: Obfuscation, Watermarking, and Tamperproofing for Software Protection</a> (2009) <img alt="nonfree" src="img/nonfree.png" /></li>
+<li><a href="#secure-programming-howto-2015">Secure Programming HOWTO</a> (2015)</li>
+<li><a href="#security-engineering-third-edition-2020">Security Engineering - Third Edition</a> (2020)</li>
+<li><a href="#-bulletproof-ssl-and-tls-2014">Bulletproof SSL and TLS</a> (2014) <img alt="nonfree" src="img/nonfree.png" /></li>
+<li><a href="#holistic-info-sec-for-web-developers-fascicle-0-2016">Holistic Info-Sec for Web Developers (Fascicle 0)</a> (2016)</li>
+<li><a href="#holistic-info-sec-for-web-developers-fascicle-1">Holistic Info-Sec for Web Developers (Fascicle 1)</a></li>
+<li><a href="#classes">Classes</a></li>
+<li><a href="#offensive-computer-security-cis-4930-fsu">Offensive Computer Security (CIS 4930) FSU</a></li>
+<li><a href="#hack-night">Hack Night</a></li>
+<li><a href="#websites">Websites</a></li>
+<li><a href="#hack-this-site">Hack This Site!</a></li>
+<li><a href="#enigma-group">Enigma Group</a></li>
+<li><a href="#web-app-sec-quiz">Web App Sec Quiz</a></li>
+<li><a href="#securepasswords-info">SecurePasswords.info</a></li>
+<li><a href="#security-news-feeds-cheat-sheet">Security News Feeds Cheat-Sheet</a></li>
+</ul>
+</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'application-security_README.md';
 
         fetch(markdownFile)
@@ -48,21 +145,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

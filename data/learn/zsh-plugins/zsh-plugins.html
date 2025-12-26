@@ -8,38 +8,293 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Unixorn Awesome Zsh Plugins - Awesome List Resources">
-    <title>Unixorn Awesome Zsh Plugins</title>
+    <meta name="description" content="!Awesomebot !Contributors A collection of ZSH frameworks, plugins, tutorials & themes inspired by the various awesome list collections out there. - Disclaimer...">
+    <meta name="robots" content="index, follow">
+    <title>awesome-zsh-plugins - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>awesome-zsh-plugins</h1>
+<p><a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></p>
+<h2>Status</h2>
+<p><a href="https://opensource.org/license/BSD-3-Clause"><img alt="License" src="https://img.shields.io/github/license/unixorn/awesome-zsh-plugins.svg" /></a>
+<img alt="Awesomebot" src="https://github.com/unixorn/awesome-zsh-plugins/actions/workflows/awesomebot.yml/badge.svg" />
+<a href="https://github.com/unixorn/awesome-zsh-plugins/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/unixorn/awesome-zsh-plugins.svg" /></a>
+<img alt="Contributors" src="https://img.shields.io/github/contributors/unixorn/awesome-zsh-plugins.svg" />
+<a href="https://github.com/unixorn/awesome-zsh-plugins"><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/unixorn/awesome-zsh-plugins/main.svg" /></a>
+<a href="https://www.trackawesomelist.com/unixorn/awesome-zsh-plugins/"><img alt="Track Awesome List" src="https://www.trackawesomelist.com/badge.svg" /></a></p>
+<p>A collection of ZSH frameworks, plugins, tutorials &amp; themes inspired by the various awesome list collections out there.</p>
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+<h2>Table of Contents</h2>
+<ul>
+<li><a href="#disclaimer">Disclaimer</a></li>
+<li><a href="#frameworks">Frameworks</a></li>
+<li><a href="#alf">alf</a></li>
+<li><a href="#ansible-role-zsh">ansible-role-zsh</a></li>
+<li><a href="#ant-zsh">ant-zsh</a></li>
+<li><a href="#antibody">antibody</a></li>
+<li><a href="#antidote">antidote</a></li>
+<li><a href="#antigen-hs">antigen-hs</a></li>
+<li><a href="#antigen">antigen</a></li>
+<li><a href="#awesome-lazy-zsh">awesome-lazy-zsh</a></li>
+<li><a href="#ax-zsh">ax-zsh</a></li>
+<li><a href="#deer">deer</a></li>
+<li><a href="#dotzsh">dotzsh</a></li>
+<li><a href="#fresh">fresh</a></li>
+<li><a href="#gh-source">gh-source</a></li>
+<li><a href="#miniplug">miniplug</a></li>
+<li><a href="#oh-my-zsh">oh-my-zsh</a></li>
+<li><a href="#pms">PMS</a></li>
+<li><a href="#prezto">prezto</a></li>
+<li><a href="#pumice">pumice</a></li>
+<li><a href="#rat">rat</a></li>
+<li><a href="#ryzshrc">ryzshrc</a></li>
+<li><a href="#sheldon">sheldon</a></li>
+<li><a href="#shplug">shplug</a></li>
+<li><a href="#thefly">TheFly</a></li>
+<li><a href="#toasty">Toasty</a></li>
+<li><a href="#usepkg">Usepkg</a></li>
+<li><a href="#uz">uz</a></li>
+<li><a href="#x-cmd">x-cmd</a></li>
+<li><a href="#yazt">yazt</a></li>
+<li><a href="#yzsh">yzsh</a></li>
+<li><a href="#zap">zap</a></li>
+<li><a href="#zapack">zapack</a></li>
+<li><a href="#zcomet">zcomet</a></li>
+<li><a href="#zeesh">zeesh</a></li>
+<li><a href="#zgem">zgem</a></li>
+<li><a href="#zgen">zgen</a></li>
+<li><a href="#zgenom">zgenom</a></li>
+<li><a href="#zilsh">zilsh</a></li>
+<li><a href="#zim">zim</a></li>
+<li><a href="#zinit">Zinit</a></li>
+<li><a href="#zinit-4">zinit-4</a></li>
+<li><a href="#zit">zit</a></li>
+<li><a href="#zlugin">zlugin</a></li>
+<li><a href="#znap">znap</a></li>
+<li><a href="#zoppo">zoppo</a></li>
+<li><a href="#zpacker">zpacker</a></li>
+<li><a href="#zpico">zpico</a></li>
+<li><a href="#zplug">zplug</a></li>
+<li><a href="#zpm">zpm</a></li>
+<li><a href="#zr">zr</a></li>
+<li><a href="#zshing">zshing</a></li>
+<li><a href="#zsh-dot-plugin">zsh-dot-plugin</a></li>
+<li><a href="#zsh-mgr">zsh-mgr</a></li>
+<li><a href="#zsh-unplugged">zsh-unplugged.</a></li>
+<li><a href="#zshplug">zshPlug</a></li>
+<li><a href="#ztanesh">ztanesh</a></li>
+<li><a href="#ztheme">ztheme</a></li>
+<li><a href="#ztupide">ztupide</a></li>
+<li><a href="#zulu">zulu</a></li>
+<li><a href="#zush-%F0%9F%A6%A5---mid-performance-zsh-configuration">zush 🦥 - Mid-Performance ZSH Configuration</a></li>
+<li><a href="#setups">Setups</a></li>
+<li><a href="#zgenom-1">zgenom</a></li>
+<li><a href="#zinit">zinit</a></li>
+<li><a href="#prerequisites">Prerequisites</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#generic-zsh">Generic ZSH</a></li>
+<li><a href="#antigen">Antigen</a></li>
+<li><a href="#oh-my-zsh">Oh-My-Zsh</a></li>
+<li><a href="#prezto">Prezto</a></li>
+<li><a href="#zgen">Zgen</a></li>
+<li><a href="#zinit-n%C3%A9-zplugin">Zinit (né zplugin)</a></li>
+<li><a href="#zsh-on-windows">ZSH on Windows</a><ul>
+<li><a href="#superconsole---windows-only">superconsole - Windows-only</a></li>
+</ul>
+</li>
+<li><a href="#plugins">Plugins</a></li>
+<li><a href="#completions">Completions</a></li>
+<li><a href="#themes">Themes</a></li>
+<li><a href="#fonts">Fonts</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#antigen-1">Antigen</a></li>
+<li><a href="#dotzsh-1">dotzsh</a></li>
+<li><a href="#oh-my-zsh-1">Oh-My-Zsh</a></li>
+<li><a href="#prezto-1">Prezto</a></li>
+<li><a href="#zgen-1">Zgen</a></li>
+<li><a href="#zgenom">Zgenom</a></li>
+<li><a href="#zplug-1">zplug</a></li>
+<li><a href="#zpm-1">zpm</a></li>
+<li><a href="#writing-new-plugins-and-themes">Writing New Plugins and Themes</a></li>
+<li><a href="#other-resources">Other Resources</a></li>
+<li><a href="#zsh-tools">ZSH Tools</a></li>
+<li><a href="#other-useful-lists">Other Useful Lists</a></li>
+<li><a href="#other-references">Other References</a></li>
+<li><a href="#thanks">Thanks</a></li>
+</ul>
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+<p><em>Please read the <a href="Contributing.md">Contributing Guidelines</a> before contributing.</em></p>
+<h2>Disclaimer</h2>
+<p>While I have done my best to not add entries with embedded malicious code, I don't have the time to sift through the source of every entry in the list.</p>
+<p>THIS LIST IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+<h2>Frameworks</h2>
+<p>These frameworks make customizing your ZSH setup easier.</p>
+<p>You can find performance timing comparisons of various frameworks in the following locations.</p>
+<ul>
+<li><a href="https://github.com/rossmacarthur/zsh-plugin-manager-benchmark">rossmacarthur/zsh-plugin-manager-benchmark</a> - Contains performance benchmarks for the most popular ZSH frameworks, including both install time and load time.</li>
+<li><a href="https://github.com/z-shell/pm-perf-test">pm-perf-test</a> - Tooling for running performance tests on multiple ZSH frameworks.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>awesome-zsh-plugins</h1>
+<p><a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></p>
+<h2>Status</h2>
+<p><a href="https://opensource.org/license/BSD-3-Clause"><img alt="License" src="https://img.shields.io/github/license/unixorn/awesome-zsh-plugins.svg" /></a>
+<img alt="Awesomebot" src="https://github.com/unixorn/awesome-zsh-plugins/actions/workflows/awesomebot.yml/badge.svg" />
+<a href="https://github.com/unixorn/awesome-zsh-plugins/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/unixorn/awesome-zsh-plugins.svg" /></a>
+<img alt="Contributors" src="https://img.shields.io/github/contributors/unixorn/awesome-zsh-plugins.svg" />
+<a href="https://github.com/unixorn/awesome-zsh-plugins"><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/unixorn/awesome-zsh-plugins/main.svg" /></a>
+<a href="https://www.trackawesomelist.com/unixorn/awesome-zsh-plugins/"><img alt="Track Awesome List" src="https://www.trackawesomelist.com/badge.svg" /></a></p>
+<p>A collection of ZSH frameworks, plugins, tutorials &amp; themes inspired by the various awesome list collections out there.</p>
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+<h2>Table of Contents</h2>
+<ul>
+<li><a href="#disclaimer">Disclaimer</a></li>
+<li><a href="#frameworks">Frameworks</a></li>
+<li><a href="#alf">alf</a></li>
+<li><a href="#ansible-role-zsh">ansible-role-zsh</a></li>
+<li><a href="#ant-zsh">ant-zsh</a></li>
+<li><a href="#antibody">antibody</a></li>
+<li><a href="#antidote">antidote</a></li>
+<li><a href="#antigen-hs">antigen-hs</a></li>
+<li><a href="#antigen">antigen</a></li>
+<li><a href="#awesome-lazy-zsh">awesome-lazy-zsh</a></li>
+<li><a href="#ax-zsh">ax-zsh</a></li>
+<li><a href="#deer">deer</a></li>
+<li><a href="#dotzsh">dotzsh</a></li>
+<li><a href="#fresh">fresh</a></li>
+<li><a href="#gh-source">gh-source</a></li>
+<li><a href="#miniplug">miniplug</a></li>
+<li><a href="#oh-my-zsh">oh-my-zsh</a></li>
+<li><a href="#pms">PMS</a></li>
+<li><a href="#prezto">prezto</a></li>
+<li><a href="#pumice">pumice</a></li>
+<li><a href="#rat">rat</a></li>
+<li><a href="#ryzshrc">ryzshrc</a></li>
+<li><a href="#sheldon">sheldon</a></li>
+<li><a href="#shplug">shplug</a></li>
+<li><a href="#thefly">TheFly</a></li>
+<li><a href="#toasty">Toasty</a></li>
+<li><a href="#usepkg">Usepkg</a></li>
+<li><a href="#uz">uz</a></li>
+<li><a href="#x-cmd">x-cmd</a></li>
+<li><a href="#yazt">yazt</a></li>
+<li><a href="#yzsh">yzsh</a></li>
+<li><a href="#zap">zap</a></li>
+<li><a href="#zapack">zapack</a></li>
+<li><a href="#zcomet">zcomet</a></li>
+<li><a href="#zeesh">zeesh</a></li>
+<li><a href="#zgem">zgem</a></li>
+<li><a href="#zgen">zgen</a></li>
+<li><a href="#zgenom">zgenom</a></li>
+<li><a href="#zilsh">zilsh</a></li>
+<li><a href="#zim">zim</a></li>
+<li><a href="#zinit">Zinit</a></li>
+<li><a href="#zinit-4">zinit-4</a></li>
+<li><a href="#zit">zit</a></li>
+<li><a href="#zlugin">zlugin</a></li>
+<li><a href="#znap">znap</a></li>
+<li><a href="#zoppo">zoppo</a></li>
+<li><a href="#zpacker">zpacker</a></li>
+<li><a href="#zpico">zpico</a></li>
+<li><a href="#zplug">zplug</a></li>
+<li><a href="#zpm">zpm</a></li>
+<li><a href="#zr">zr</a></li>
+<li><a href="#zshing">zshing</a></li>
+<li><a href="#zsh-dot-plugin">zsh-dot-plugin</a></li>
+<li><a href="#zsh-mgr">zsh-mgr</a></li>
+<li><a href="#zsh-unplugged">zsh-unplugged.</a></li>
+<li><a href="#zshplug">zshPlug</a></li>
+<li><a href="#ztanesh">ztanesh</a></li>
+<li><a href="#ztheme">ztheme</a></li>
+<li><a href="#ztupide">ztupide</a></li>
+<li><a href="#zulu">zulu</a></li>
+<li><a href="#zush-%F0%9F%A6%A5---mid-performance-zsh-configuration">zush 🦥 - Mid-Performance ZSH Configuration</a></li>
+<li><a href="#setups">Setups</a></li>
+<li><a href="#zgenom-1">zgenom</a></li>
+<li><a href="#zinit">zinit</a></li>
+<li><a href="#prerequisites">Prerequisites</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#generic-zsh">Generic ZSH</a></li>
+<li><a href="#antigen">Antigen</a></li>
+<li><a href="#oh-my-zsh">Oh-My-Zsh</a></li>
+<li><a href="#prezto">Prezto</a></li>
+<li><a href="#zgen">Zgen</a></li>
+<li><a href="#zinit-n%C3%A9-zplugin">Zinit (né zplugin)</a></li>
+<li><a href="#zsh-on-windows">ZSH on Windows</a><ul>
+<li><a href="#superconsole---windows-only">superconsole - Windows-only</a></li>
+</ul>
+</li>
+<li><a href="#plugins">Plugins</a></li>
+<li><a href="#completions">Completions</a></li>
+<li><a href="#themes">Themes</a></li>
+<li><a href="#fonts">Fonts</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#antigen-1">Antigen</a></li>
+<li><a href="#dotzsh-1">dotzsh</a></li>
+<li><a href="#oh-my-zsh-1">Oh-My-Zsh</a></li>
+<li><a href="#prezto-1">Prezto</a></li>
+<li><a href="#zgen-1">Zgen</a></li>
+<li><a href="#zgenom">Zgenom</a></li>
+<li><a href="#zplug-1">zplug</a></li>
+<li><a href="#zpm-1">zpm</a></li>
+<li><a href="#writing-new-plugins-and-themes">Writing New Plugins and Themes</a></li>
+<li><a href="#other-resources">Other Resources</a></li>
+<li><a href="#zsh-tools">ZSH Tools</a></li>
+<li><a href="#other-useful-lists">Other Useful Lists</a></li>
+<li><a href="#other-references">Other References</a></li>
+<li><a href="#thanks">Thanks</a></li>
+</ul>
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+<p><em>Please read the <a href="Contributing.md">Contributing Guidelines</a> before contributing.</em></p>
+<h2>Disclaimer</h2>
+<p>While I have done my best to not add entries with embedded malicious code, I don't have the time to sift through the source of every entry in the list.</p>
+<p>THIS LIST IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+<h2>Frameworks</h2>
+<p>These frameworks make customizing your ZSH setup easier.</p>
+<p>You can find performance timing comparisons of various frameworks in the following locations.</p>
+<ul>
+<li><a href="https://github.com/rossmacarthur/zsh-plugin-manager-benchmark">rossmacarthur/zsh-plugin-manager-benchmark</a> - Contains performance benchmarks for the most popular ZSH frameworks, including both install time and load time.</li>
+<li><a href="https://github.com/z-shell/pm-perf-test">pm-perf-test</a> - Tooling for running performance tests on multiple ZSH frameworks.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'zsh-plugins_README.md';
 
         fetch(markdownFile)
@@ -48,21 +303,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

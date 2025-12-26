@@ -8,38 +8,247 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Arbox Nlp With Ruby - Awesome List Resources">
-    <title>Arbox Nlp With Ruby</title>
+    <meta name="description" content="[RubyML | RubyDataScience | RubyInterop] > Useful resources for text processing in Ruby This curated list comprises _awesome_ resources, libraries, information...">
+    <meta name="robots" content="index, follow">
+    <title>Nlp With Ruby - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <p><img src="header.png" align="center"></p>
+<p><a href="https://github.com/sindresorhus/awesome#readme"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a> <a href="https://www.patreon.com/arbox"><img alt="Support Me" src="https://img.shields.io/badge/%F0%9F%92%97-Support%20Me-blue.svg?style=flat-square" /></a></p>
+<p>[<a href="https://github.com/arbox/machine-learning-with-ruby">RubyML</a> |
+ <a href="https://github.com/arbox/data-science-with-ruby">RubyDataScience</a> |
+ <a href="https://github.com/arbox/ruby-interoperability">RubyInterop</a>]</p>
+<h1>Awesome NLP with Ruby [<img src="ruby.jpg" align="left" width="30px" height="30px" />][ruby]</h1>
+<blockquote>
+<p>Useful resources for text processing in Ruby</p>
+</blockquote>
+<p>This curated list comprises <a href="https://github.com/sindresorhus/awesome/blob/master/awesome.md"><em>awesome</em></a>
+resources, libraries, information sources about computational processing of texts
+in human languages with the <a href="ruby">Ruby programming language</a>.
+That field is often referred to as
+<a href="https://en.wikipedia.org/wiki/Natural_language_processing">NLP</a>,
+<a href="https://en.wikipedia.org/wiki/Computational_linguistics">Computational Linguistics</a>,
+<a href="https://en.wikipedia.org/wiki/Language_technology">HLT</a> (Human Language Technology)
+and can be brought in conjunction with
+<a href="https://en.wikipedia.org/wiki/Artificial_intelligence">Artificial Intelligence</a>,
+<a href="https://en.wikipedia.org/wiki/Machine_learning">Machine Learning</a>,
+<a href="https://en.wikipedia.org/wiki/Information_retrieval">Information Retrieval</a>,
+<a href="https://en.wikipedia.org/wiki/Text_mining">Text Mining</a>,
+<a href="https://en.wikipedia.org/wiki/Knowledge_extraction">Knowledge Extraction</a>
+and other related disciplines.</p>
+<p>This list comes from our day to day work on Language Models and NLP Tools.
+Read <a href="motivation.md">why</a> this list is awesome. Our <a href="FAQ.md">FAQ</a> describes the
+important decisions and useful answers you may be interested in.</p>
+<p>:sparkles: Every <a href="#contributing">contribution</a> is welcome! Add links through pull
+requests or create an issue to start a discussion.</p>
+<p>Follow us on <a href="https://twitter.com/NonWebRuby">Twitter</a>
+and please spread the word using the <code>#RubyNLP</code> hash tag!</p>
+<!-- nodoc -->
+<h2>Contents</h2>
+<!-- toc -->
+
+<ul>
+<li><a href="#sparkles-tutorials">:sparkles: Tutorials</a></li>
+<li><a href="#nlp-pipeline-subtasks">NLP Pipeline Subtasks</a></li>
+<li><a href="#pipeline-generation">Pipeline Generation</a></li>
+<li><a href="#multipurpose-engines">Multipurpose Engines</a><ul>
+<li><a href="#on-line-apis">On-line APIs</a></li>
+</ul>
+</li>
+<li><a href="#language-identification">Language Identification</a></li>
+<li><a href="#segmentation">Segmentation</a></li>
+<li><a href="#lexical-processing">Lexical Processing</a><ul>
+<li><a href="#stemming">Stemming</a></li>
+<li><a href="#lemmatization">Lemmatization</a></li>
+<li><a href="#lexical-statistics-counting-types-and-tokens">Lexical Statistics: Counting Types and Tokens</a></li>
+<li><a href="#filtering-stop-words">Filtering Stop Words</a></li>
+</ul>
+</li>
+<li><a href="#phrasal-level-processing">Phrasal Level Processing</a></li>
+<li><a href="#syntactic-processing">Syntactic Processing</a><ul>
+<li><a href="#constituency-parsing">Constituency Parsing</a></li>
+</ul>
+</li>
+<li><a href="#semantic-analysis">Semantic Analysis</a></li>
+<li><a href="#pragmatical-analysis">Pragmatical Analysis</a></li>
+<li><a href="#high-level-tasks">High Level Tasks</a></li>
+<li><a href="#spelling-and-error-correction">Spelling and Error Correction</a></li>
+<li><a href="#text-alignment">Text Alignment</a></li>
+<li><a href="#machine-translation">Machine Translation</a></li>
+<li><a href="#sentiment-analysis">Sentiment Analysis</a></li>
+<li><a href="#numbers-dates-and-time-parsing">Numbers, Dates, and Time Parsing</a></li>
+<li><a href="#named-entity-recognition">Named Entity Recognition</a></li>
+<li><a href="#text-to-speech-to-text">Text-to-Speech-to-Text</a></li>
+<li><a href="#dialog-agents-assistants-and-chatbots">Dialog Agents, Assistants, and Chatbots</a></li>
+<li><a href="#linguistic-resources">Linguistic Resources</a></li>
+<li><a href="#machine-learning-libraries">Machine Learning Libraries</a></li>
+<li><a href="#data-visualization">Data Visualization</a></li>
+<li><a href="#optical-character-recognition">Optical Character Recognition</a></li>
+<li><a href="#text-extraction">Text Extraction</a></li>
+<li><a href="#full-text-search-information-retrieval-indexing">Full Text Search, Information Retrieval, Indexing</a></li>
+<li><a href="#language-aware-string-manipulation">Language Aware String Manipulation</a></li>
+<li><a href="#articles-posts-talks-and-presentations">Articles, Posts, Talks, and Presentations</a></li>
+<li><a href="#projects-and-code-examples">Projects and Code Examples</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#needs-your-help">Needs your Help!</a></li>
+<li><a href="#related-resources">Related Resources</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<!-- tocstop -->
+
+<!-- doc -->
+
+<h2>:sparkles: Tutorials</h2>
+<p>Please help us to fill out this section! :smiley:</p>
+<h2>NLP Pipeline Subtasks</h2>
+<p>An NLP Pipeline starts with a plain text.</p>
+<h3>Pipeline Generation</h3>
+<ul>
+<li><a href="https://github.com/t6d/composable_operations">composable_operations</a> -
+  Definition framework for operation pipelines.</li>
+<li><a href="https://github.com/ondra-m/ruby-spark">ruby-spark</a> -
+  Spark bindings with an easy to understand DSL.</li>
+<li><a href="https://github.com/phobos/phobos">phobos</a> -
+  Simplified Ruby Client for <a href="https://kafka.apache.org/">Apache Kafka</a>.</li>
+<li><a href="https://github.com/grosser/parallel">parallel</a> -
+  Supervisor for parallel execution on multiple CPUs or in many threads.</li>
+<li><a href="https://github.com/masa16/pwrake">pwrake</a> -
+  Rake extensions to run local and remote tasks in parallel.</li>
+</ul>
+<h3>Multipurpose Engines</h3>
+<ul>
+<li><a href="https://github.com/louismullie/open-nlp">open-nlp</a> -
+  Ruby Bindings for the <a href="https://opennlp.apache.org/">OpenNLP</a> Toolkit.</li>
+<li><a href="https://github.com/louismullie/stanford-core-nlp">stanford-core-nlp</a> -</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <p><img src="header.png" align="center"></p>
+<p><a href="https://github.com/sindresorhus/awesome#readme"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a> <a href="https://www.patreon.com/arbox"><img alt="Support Me" src="https://img.shields.io/badge/%F0%9F%92%97-Support%20Me-blue.svg?style=flat-square" /></a></p>
+<p>[<a href="https://github.com/arbox/machine-learning-with-ruby">RubyML</a> |
+ <a href="https://github.com/arbox/data-science-with-ruby">RubyDataScience</a> |
+ <a href="https://github.com/arbox/ruby-interoperability">RubyInterop</a>]</p>
+<h1>Awesome NLP with Ruby [<img src="ruby.jpg" align="left" width="30px" height="30px" />][ruby]</h1>
+<blockquote>
+<p>Useful resources for text processing in Ruby</p>
+</blockquote>
+<p>This curated list comprises <a href="https://github.com/sindresorhus/awesome/blob/master/awesome.md"><em>awesome</em></a>
+resources, libraries, information sources about computational processing of texts
+in human languages with the <a href="ruby">Ruby programming language</a>.
+That field is often referred to as
+<a href="https://en.wikipedia.org/wiki/Natural_language_processing">NLP</a>,
+<a href="https://en.wikipedia.org/wiki/Computational_linguistics">Computational Linguistics</a>,
+<a href="https://en.wikipedia.org/wiki/Language_technology">HLT</a> (Human Language Technology)
+and can be brought in conjunction with
+<a href="https://en.wikipedia.org/wiki/Artificial_intelligence">Artificial Intelligence</a>,
+<a href="https://en.wikipedia.org/wiki/Machine_learning">Machine Learning</a>,
+<a href="https://en.wikipedia.org/wiki/Information_retrieval">Information Retrieval</a>,
+<a href="https://en.wikipedia.org/wiki/Text_mining">Text Mining</a>,
+<a href="https://en.wikipedia.org/wiki/Knowledge_extraction">Knowledge Extraction</a>
+and other related disciplines.</p>
+<p>This list comes from our day to day work on Language Models and NLP Tools.
+Read <a href="motivation.md">why</a> this list is awesome. Our <a href="FAQ.md">FAQ</a> describes the
+important decisions and useful answers you may be interested in.</p>
+<p>:sparkles: Every <a href="#contributing">contribution</a> is welcome! Add links through pull
+requests or create an issue to start a discussion.</p>
+<p>Follow us on <a href="https://twitter.com/NonWebRuby">Twitter</a>
+and please spread the word using the <code>#RubyNLP</code> hash tag!</p>
+<!-- nodoc -->
+<h2>Contents</h2>
+<!-- toc -->
+
+<ul>
+<li><a href="#sparkles-tutorials">:sparkles: Tutorials</a></li>
+<li><a href="#nlp-pipeline-subtasks">NLP Pipeline Subtasks</a></li>
+<li><a href="#pipeline-generation">Pipeline Generation</a></li>
+<li><a href="#multipurpose-engines">Multipurpose Engines</a><ul>
+<li><a href="#on-line-apis">On-line APIs</a></li>
+</ul>
+</li>
+<li><a href="#language-identification">Language Identification</a></li>
+<li><a href="#segmentation">Segmentation</a></li>
+<li><a href="#lexical-processing">Lexical Processing</a><ul>
+<li><a href="#stemming">Stemming</a></li>
+<li><a href="#lemmatization">Lemmatization</a></li>
+<li><a href="#lexical-statistics-counting-types-and-tokens">Lexical Statistics: Counting Types and Tokens</a></li>
+<li><a href="#filtering-stop-words">Filtering Stop Words</a></li>
+</ul>
+</li>
+<li><a href="#phrasal-level-processing">Phrasal Level Processing</a></li>
+<li><a href="#syntactic-processing">Syntactic Processing</a><ul>
+<li><a href="#constituency-parsing">Constituency Parsing</a></li>
+</ul>
+</li>
+<li><a href="#semantic-analysis">Semantic Analysis</a></li>
+<li><a href="#pragmatical-analysis">Pragmatical Analysis</a></li>
+<li><a href="#high-level-tasks">High Level Tasks</a></li>
+<li><a href="#spelling-and-error-correction">Spelling and Error Correction</a></li>
+<li><a href="#text-alignment">Text Alignment</a></li>
+<li><a href="#machine-translation">Machine Translation</a></li>
+<li><a href="#sentiment-analysis">Sentiment Analysis</a></li>
+<li><a href="#numbers-dates-and-time-parsing">Numbers, Dates, and Time Parsing</a></li>
+<li><a href="#named-entity-recognition">Named Entity Recognition</a></li>
+<li><a href="#text-to-speech-to-text">Text-to-Speech-to-Text</a></li>
+<li><a href="#dialog-agents-assistants-and-chatbots">Dialog Agents, Assistants, and Chatbots</a></li>
+<li><a href="#linguistic-resources">Linguistic Resources</a></li>
+<li><a href="#machine-learning-libraries">Machine Learning Libraries</a></li>
+<li><a href="#data-visualization">Data Visualization</a></li>
+<li><a href="#optical-character-recognition">Optical Character Recognition</a></li>
+<li><a href="#text-extraction">Text Extraction</a></li>
+<li><a href="#full-text-search-information-retrieval-indexing">Full Text Search, Information Retrieval, Indexing</a></li>
+<li><a href="#language-aware-string-manipulation">Language Aware String Manipulation</a></li>
+<li><a href="#articles-posts-talks-and-presentations">Articles, Posts, Talks, and Presentations</a></li>
+<li><a href="#projects-and-code-examples">Projects and Code Examples</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#needs-your-help">Needs your Help!</a></li>
+<li><a href="#related-resources">Related Resources</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<!-- tocstop -->
+
+<!-- doc -->
+
+<h2>:sparkles: Tutorials</h2>
+<p>Please help us to fill out this section! :smiley:</p>
+<h2>NLP Pipeline Subtasks</h2>
+<p>An NLP Pipeline starts with a plain text.</p>
+<h3>Pipeline Generation</h3>
+<ul>
+<li><a href="https://github.com/t6d/composable_operations">composable_operations</a> -
+  Definition framework for operation pipelines.</li>
+<li><a href="https://github.com/ondra-m/ruby-spark">ruby-spark</a> -
+  Spark bindings with an easy to understand DSL.</li>
+<li><a href="https://github.com/phobos/phobos">phobos</a> -
+  Simplified Ruby Client for <a href="https://kafka.apache.org/">Apache Kafka</a>.</li>
+<li><a href="https://github.com/grosser/parallel">parallel</a> -
+  Supervisor for parallel execution on multiple CPUs or in many threads.</li>
+<li><a href="https://github.com/masa16/pwrake">pwrake</a> -
+  Rake extensions to run local and remote tasks in parallel.</li>
+</ul>
+<h3>Multipurpose Engines</h3>
+<ul>
+<li><a href="https://github.com/louismullie/open-nlp">open-nlp</a> -
+  Ruby Bindings for the <a href="https://opennlp.apache.org/">OpenNLP</a> Toolkit.</li>
+<li><a href="https://github.com/louismullie/stanford-core-nlp">stanford-core-nlp</a> -</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'nlp-with-ruby_README.md';
 
         fetch(markdownFile)
@@ -48,21 +257,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

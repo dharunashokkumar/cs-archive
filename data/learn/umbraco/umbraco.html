@@ -8,38 +8,175 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Umbraco Community Awesome Umbraco - Awesome List Resources">
-    <title>Umbraco Community Awesome Umbraco</title>
+    <meta name="description" content="> A collection of awesome Umbraco CMS packages, resources and shiny things. Inspired by awesome lists. For general C#/.NET please see the awesome-dotnet...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Umbraco! [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/main/media/badge.svg)](https://github.com/sindresorhus/awesome) [![UmbracoV9](https://img.shields.io/badge/Umbraco-v9-blue)](https://our.umbraco.com/download/releases/900) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Umbraco! <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/main/media/badge.svg" /></a> <a href="https://our.umbraco.com/download/releases/900"><img alt="UmbracoV9" src="https://img.shields.io/badge/Umbraco-v9-blue" /></a></h1>
+<blockquote>
+<p>A collection of awesome <a href="https://github.com/umbraco/Umbraco-CMS/">Umbraco CMS</a> packages, resources and shiny things.</p>
+</blockquote>
+<p>Inspired by <a href="https://github.com/sindresorhus/awesome">awesome lists</a>. For general C#/.NET please see the <a href="https://github.com/quozd/awesome-dotnet/">awesome-dotnet</a> collection!</p>
+<h3>Contributing</h3>
+<p><strong>Contributions are always welcome!</strong> </p>
+<p>Please read the <a href="https://github.com/umbraco-community/awesome-umbraco/blob/master/CONTRIBUTING.md">contribution guidelines and quality standard</a> page before making a pull-request. If you see a resource or package here that is no longer maintained, please submit a pull request to help improve this collection.</p>
+<p>Thank you to all <a href="https://github.com/umbraco-community/awesome-umbraco/graphs/contributors">contributors</a>, you are awesome and this list wouldn't be possible without you! The goal is to build a categorized community-driven collection of very well-known resources.</p>
+<h3>Versions</h3>
+<p>This list is for Umbraco v10 packages. However, we also have lists for older versions! Check them out too.</p>
+<p><a href="UMBRACO-V9.md"><img alt="UmbracoV9" src="https://img.shields.io/badge/Umbraco-v9-blue" /></a>
+<a href="UMBRACO-V8.md"><img alt="UmbracoV8" src="https://img.shields.io/badge/Umbraco-v8-blue" /></a>
+<a href="UMBRACO-V7.md"><img alt="UmbracoV7" src="https://img.shields.io/badge/Umbraco-v7-blue" /></a></p>
+<h3>Contents</h3>
+<ul>
+<li><a href="#official">Official</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#backoffice-extensions">Backoffice extensions</a></li>
+<li><a href="#form-builders">Form Builders</a></li>
+<li><a href="#property-editors">Property Editors</a></li>
+<li><a href="#developer-tools">Developer tools</a></li>
+<li><a href="#deployment">Deployment</a></li>
+<li><a href="#ecommerce--crm">eCommerce &amp; CRM</a></li>
+<li><a href="#starter-kits">Starter Kits</a></li>
+<li><a href="#code-libraries">Code Libraries</a></li>
+</ul>
+<p>Please note * indicates that the package is commercial or may require a license to unlock all features.</p>
+<h2>Official</h2>
+<ul>
+<li><a href="https://umbraco.com">Umbraco website</a></li>
+<li><a href="https://codegarden20.com/">CodeGarden Conference</a></li>
+<li><a href="https://our.umbraco.com/documentation/">Documentation</a></li>
+<li><a href="https://our.umbraco.com/download/">Download</a></li>
+<li><a href="https://our.umbraco.com/forum/">Forum</a></li>
+<li><a href="https://www.meetup.com/pro/umbraco">Meetups</a></li>
+<li><a href="https://www.youtube.com/umbracohq">Official YouTube Channel</a> - tutorials and other helpful videos about Umbraco products.</li>
+</ul>
+<h2>Community</h2>
+<ul>
+<li><a href="https://h5yr.com/">#h5yr</a> - High Five, You Rock!</li>
+<li><a href="https://24days.in/umbraco-cms/">24 Days In Umbraco</a> - yearly advent calendar for Umbraco content.</li>
+<li><a href="https://our.umbraco.com/community/blog-posts/">Blog Posts</a> - blog posts by members of the Umbraco community and Umbraco HQ.</li>
+<li><a href="https://candidcontributions.com/">Candid Contributions</a> - a fortnightly podcast discussing all things Umbraco and open source.</li>
+<li><a href="https://skrift.io/">Skrift</a> - a monthly magazine for sharing knowledge in the Umbraco community.</li>
+<li><a href="https://www.youtube.com/umbracoffee">umbraCoffee</a> - a weekly YouTube series discussing recent Umbraco news.</li>
+<li><a href="https://www.youtube.com/c/umbracocommunity/">Official YouTube Channel</a> - the Umbraco community YouTube channel.</li>
+</ul>
+<hr />
+<h2>Backoffice extensions</h2>
+<ul>
+<li><a href="https://our.umbraco.com/packages/backoffice-extensions/plumber-workflow-for-umbraco/">Plumber</a> - adds a heap of useful bits and pieces to Umbraco, to allow multi-staged workflow approval.</li>
+<li><a href="https://our.umbraco.com/packages/backoffice-extensions/translation-manager/">Translation Manager*</a> - lets you handle all of the steps of the translation process from within Umbraco.</li>
+<li><a href="https://our.umbraco.com/packages/backoffice-extensions/hot-chilli-page-not-found-manager">Page Not Found Manager</a> - Manage your sites 404 page(s) from Umbraco.</li>
+<li><a href="https://our.umbraco.com/packages/backoffice-extensions/contentment/">Contentment</a> - A handy collection of Umbraco components developed for use in your Umbraco projects.</li>
+<li><a href="https://our.umbraco.com/packages/website-utilities/skybrud-redirects/">Skybrud.Umbraco.Redirects</a> - Redirects manager for Umbraco.</li>
+<li><a href="https://our.umbraco.com/packages/backoffice-extensions/simpleredirects/">SimpleRedirects</a> - Redirects manager for Umbraco.</li>
+<li><a href="https://our.umbraco.com/packages/backoffice-extensions/newsletter-studio-the-email-studio/">Newsletter Studio*</a> - Responsive email editor to create emails for all clients.</li>
+<li><a href="https://our.umbraco.com/packages/backoffice-extensions/backoffice-themes/">Backoffice Themes</a> - Allows choosing your own themes for in the backoffice.</li>
+</ul>
+<h3>Form Builders</h3>
+<ul>
+<li><a href="https://umbraco.com/products/umbraco-forms/">Umbraco Forms*</a> - A package to easily add customisable forms to your website. <strong>(Developed by Umbraco HQ)</strong></li>
+</ul>
+<h3>Property Editors</h3>
+<ul>
+<li><a href="https://our.umbraco.com/packages/website-utilities/meganav/">Meganav</a> - A flexible, draggable link picker for constructing site navigation menus, big or small.</li>
+<li><a href="https://our.umbraco.org/projects/backoffice-extensions/ueditornotes/">uEditorNotes</a> - Provides a way to display instructional messages for content editors, at the point of content entry.</li>
+</ul>
+<h3>SEO Tools</h3>
+<ul>
+<li><a href="https://soetemansoftware.nl/seo-checker">SEO Checker*</a> - find common SEO issues in your Umbraco website.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Umbraco! <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/main/media/badge.svg" /></a> <a href="https://our.umbraco.com/download/releases/900"><img alt="UmbracoV9" src="https://img.shields.io/badge/Umbraco-v9-blue" /></a></h1>
+<blockquote>
+<p>A collection of awesome <a href="https://github.com/umbraco/Umbraco-CMS/">Umbraco CMS</a> packages, resources and shiny things.</p>
+</blockquote>
+<p>Inspired by <a href="https://github.com/sindresorhus/awesome">awesome lists</a>. For general C#/.NET please see the <a href="https://github.com/quozd/awesome-dotnet/">awesome-dotnet</a> collection!</p>
+<h3>Contributing</h3>
+<p><strong>Contributions are always welcome!</strong> </p>
+<p>Please read the <a href="https://github.com/umbraco-community/awesome-umbraco/blob/master/CONTRIBUTING.md">contribution guidelines and quality standard</a> page before making a pull-request. If you see a resource or package here that is no longer maintained, please submit a pull request to help improve this collection.</p>
+<p>Thank you to all <a href="https://github.com/umbraco-community/awesome-umbraco/graphs/contributors">contributors</a>, you are awesome and this list wouldn't be possible without you! The goal is to build a categorized community-driven collection of very well-known resources.</p>
+<h3>Versions</h3>
+<p>This list is for Umbraco v10 packages. However, we also have lists for older versions! Check them out too.</p>
+<p><a href="UMBRACO-V9.md"><img alt="UmbracoV9" src="https://img.shields.io/badge/Umbraco-v9-blue" /></a>
+<a href="UMBRACO-V8.md"><img alt="UmbracoV8" src="https://img.shields.io/badge/Umbraco-v8-blue" /></a>
+<a href="UMBRACO-V7.md"><img alt="UmbracoV7" src="https://img.shields.io/badge/Umbraco-v7-blue" /></a></p>
+<h3>Contents</h3>
+<ul>
+<li><a href="#official">Official</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#backoffice-extensions">Backoffice extensions</a></li>
+<li><a href="#form-builders">Form Builders</a></li>
+<li><a href="#property-editors">Property Editors</a></li>
+<li><a href="#developer-tools">Developer tools</a></li>
+<li><a href="#deployment">Deployment</a></li>
+<li><a href="#ecommerce--crm">eCommerce &amp; CRM</a></li>
+<li><a href="#starter-kits">Starter Kits</a></li>
+<li><a href="#code-libraries">Code Libraries</a></li>
+</ul>
+<p>Please note * indicates that the package is commercial or may require a license to unlock all features.</p>
+<h2>Official</h2>
+<ul>
+<li><a href="https://umbraco.com">Umbraco website</a></li>
+<li><a href="https://codegarden20.com/">CodeGarden Conference</a></li>
+<li><a href="https://our.umbraco.com/documentation/">Documentation</a></li>
+<li><a href="https://our.umbraco.com/download/">Download</a></li>
+<li><a href="https://our.umbraco.com/forum/">Forum</a></li>
+<li><a href="https://www.meetup.com/pro/umbraco">Meetups</a></li>
+<li><a href="https://www.youtube.com/umbracohq">Official YouTube Channel</a> - tutorials and other helpful videos about Umbraco products.</li>
+</ul>
+<h2>Community</h2>
+<ul>
+<li><a href="https://h5yr.com/">#h5yr</a> - High Five, You Rock!</li>
+<li><a href="https://24days.in/umbraco-cms/">24 Days In Umbraco</a> - yearly advent calendar for Umbraco content.</li>
+<li><a href="https://our.umbraco.com/community/blog-posts/">Blog Posts</a> - blog posts by members of the Umbraco community and Umbraco HQ.</li>
+<li><a href="https://candidcontributions.com/">Candid Contributions</a> - a fortnightly podcast discussing all things Umbraco and open source.</li>
+<li><a href="https://skrift.io/">Skrift</a> - a monthly magazine for sharing knowledge in the Umbraco community.</li>
+<li><a href="https://www.youtube.com/umbracoffee">umbraCoffee</a> - a weekly YouTube series discussing recent Umbraco news.</li>
+<li><a href="https://www.youtube.com/c/umbracocommunity/">Official YouTube Channel</a> - the Umbraco community YouTube channel.</li>
+</ul>
+<hr />
+<h2>Backoffice extensions</h2>
+<ul>
+<li><a href="https://our.umbraco.com/packages/backoffice-extensions/plumber-workflow-for-umbraco/">Plumber</a> - adds a heap of useful bits and pieces to Umbraco, to allow multi-staged workflow approval.</li>
+<li><a href="https://our.umbraco.com/packages/backoffice-extensions/translation-manager/">Translation Manager*</a> - lets you handle all of the steps of the translation process from within Umbraco.</li>
+<li><a href="https://our.umbraco.com/packages/backoffice-extensions/hot-chilli-page-not-found-manager">Page Not Found Manager</a> - Manage your sites 404 page(s) from Umbraco.</li>
+<li><a href="https://our.umbraco.com/packages/backoffice-extensions/contentment/">Contentment</a> - A handy collection of Umbraco components developed for use in your Umbraco projects.</li>
+<li><a href="https://our.umbraco.com/packages/website-utilities/skybrud-redirects/">Skybrud.Umbraco.Redirects</a> - Redirects manager for Umbraco.</li>
+<li><a href="https://our.umbraco.com/packages/backoffice-extensions/simpleredirects/">SimpleRedirects</a> - Redirects manager for Umbraco.</li>
+<li><a href="https://our.umbraco.com/packages/backoffice-extensions/newsletter-studio-the-email-studio/">Newsletter Studio*</a> - Responsive email editor to create emails for all clients.</li>
+<li><a href="https://our.umbraco.com/packages/backoffice-extensions/backoffice-themes/">Backoffice Themes</a> - Allows choosing your own themes for in the backoffice.</li>
+</ul>
+<h3>Form Builders</h3>
+<ul>
+<li><a href="https://umbraco.com/products/umbraco-forms/">Umbraco Forms*</a> - A package to easily add customisable forms to your website. <strong>(Developed by Umbraco HQ)</strong></li>
+</ul>
+<h3>Property Editors</h3>
+<ul>
+<li><a href="https://our.umbraco.com/packages/website-utilities/meganav/">Meganav</a> - A flexible, draggable link picker for constructing site navigation menus, big or small.</li>
+<li><a href="https://our.umbraco.org/projects/backoffice-extensions/ueditornotes/">uEditorNotes</a> - Provides a way to display instructional messages for content editors, at the point of content entry.</li>
+</ul>
+<h3>SEO Tools</h3>
+<ul>
+<li><a href="https://soetemansoftware.nl/seo-checker">SEO Checker*</a> - find common SEO issues in your Umbraco website.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'umbraco_README.md';
 
         fetch(markdownFile)
@@ -48,21 +185,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

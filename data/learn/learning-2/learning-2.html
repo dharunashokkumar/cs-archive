@@ -8,38 +8,139 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gustavbertram Awesome Common Lisp Learning - Awesome List Resources">
-    <title>Gustavbertram Awesome Common Lisp Learning</title>
+    <meta name="description" content="This list focuses on resources for learning Common Lisp, especially resources that I've found useful. There are other Awesome Common Lisp lists that focus on...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Common Lisp Learning [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Common Lisp Learning <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<div align="center">
+  <img src="LISP_logo_mid.png">
+</div>
+
+<p>This list focuses on resources for learning Common Lisp, especially resources that I've found useful.</p>
+<p>There are other Awesome Common Lisp lists that focus on other topics:
+- <a href="https://github.com/CodyReichert/awesome-cl">Libraries</a>
+  - <a href="https://github.com/vindarel/curated-awesome-cl">Curated Libraries</a> - Forked and updated from the above list.
+- <a href="https://github.com/azzamsa/awesome-cl-software">Software</a></p>
+<p>Contributions are welcome. Please read the <a href="contributing.md">contribution guidelines</a> for details.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#how-to-use">How To Use</a></li>
+<li><a href="#lisp-environments">Lisp Environments</a></li>
+<li><a href="#online-references">Online References</a></li>
+<li><a href="#online-books">Online Books</a></li>
+<li><a href="#offline-books">Offline Books</a></li>
+<li><a href="#online-community">Online Community</a></li>
+<li><a href="#library-management">Library Management</a></li>
+<li><a href="#common-lisp-implementations">Common Lisp Implementations</a></li>
+<li><a href="#credit">Credit</a></li>
+</ul>
+<h2>How To Use</h2>
+<ol>
+<li>Get a Lisp environment.</li>
+<li>Bookmark the <a href="http://www.lispworks.com/documentation/common-lisp.html">The Common Lisp Hyperspec</a>.</li>
+<li>Download and work through a Lisp book of an appropriate level. Type the examples and play with the code. Feel free to switch books and try a different one.</li>
+<li>Try out <a href="https://exercism.org/tracks/common-lisp">Exercism</a>.</li>
+<li>If you get stuck, find an online community and <a href="http://www.catb.org/esr/faqs/smart-questions.html">ask smart questions</a>.</li>
+<li>Learn about <a href="https://www.quicklisp.org/beta/">Quicklisp</a>.</li>
+<li>At some point, read your Lisp implementation's manual.</li>
+</ol>
+<h2>Lisp Environments</h2>
+<p>You can run a Lisp implementation directly, but an editing environment makes the experience easier.
+- Prepackaged environments
+  - <a href="https://shinmera.github.io/portacle/">Portacle</a> - A portable and multiplatform Common Lisp environment. It ships a slightly customized Emacs with SLIME, SBCL (a popular Common Lisp implementation), Quicklisp and Git. No installation needed, so it's a very quick and easy way to get going.
+  - <a href="https://common-lisp.net/project/lispbox/">Lispbox</a> - An IDE (Emacs + SLIME), Common Lisp implementation (Clozure Common Lisp) and library manager (Quicklisp), pre-packaged as archives for Windows, macOS and Linux. Descendant of "Lisp in a Box" <a href="http://www.gigamonkeys.com/book/lather-rinse-repeat-a-tour-of-the-repl.html">mentioned</a> in Practical Common Lisp.
+  - <a href="http://www.lispworks.com/downloads/">Lispworks Personal Edition</a> - A non-Emacs based IDE for LispWorks Lisp, with some restrictions.
+  - <a href="https://franz.com/products/allegrocl/">Allegro Common Lisp</a> - Has a free <a href="https://franz.com/downloads/clp/survey">Express Edition</a> IDE, and <a href="https://www.youtube.com/channel/UCN36UrxtyNBJPaG0kmBJNRw">training videos on YouTube</a>.
+- For advanced users
+  - <a href="http://articulate-lisp.com">Articulate Common Lisp</a> - A HOWTO for putting together a Lisp environment, and has information on <a href="http://articulate-lisp.com/project/abcs.html">useful libraries</a> and how to <a href="http://articulate-lisp.com/project/new-project.html">structure projects</a>.
+  - If you're an experienced <a href="https://www.gnu.org/software/emacs/">Emacs</a> user, you can just install <a href="https://common-lisp.net/project/slime/">SLIME</a> and a <a href="https://common-lisp.net/project/slime/doc/html/Platforms.html#Platforms">supported Common Lisp implementation</a>. See the <a href="https://common-lisp.net/project/slime/doc/html/">SLIME manual</a> for more details.
+  - The Common Lisp Cookbook has more information about <a href="https://lispcookbook.github.io/cl-cookbook/getting-started.html">installing an implementation</a> using an implementation manager like <a href="https://github.com/roswell/roswell/wiki">Roswell</a>, or on Docker.</p>
+<h2>Online References</h2>
+<ul>
+<li><a href="http://www.lispworks.com/documentation/common-lisp.html">The Common Lisp Hyperspec (CLHS)</a> - <em>The</em> language reference document for Common Lisp. Bookmark it now.</li>
+<li><a href="http://www.lispworks.com/documentation/HyperSpec/Body/07_.htm">Chapter 7</a> - Covers the Common Lisp Object System (CLOS).</li>
+<li><a href="http://cberr.us/tech_writings/notes/common_lisp_standard_draft.html">The ANSI Common Lisp Standard Draft</a> - The last draft version of the ANSI INCITS 226-1994 (previously ANSI X3.226-1994) standard.</li>
+<li>The draft is free, the standard isn't.</li>
+<li>It's pretty much the same as the official standard, and some people prefer it to the CLHS.</li>
+<li><a href="http://lispcookbook.github.io/cl-cookbook/">The Common Lisp Cookbook</a> - A list of useful Lisp recipes. Also contains a list of other online sources of CL information.</li>
+<li><a href="https://www.cs.cmu.edu/Groups/AI/html/cltl/cltl2.html">Common Lisp the Language (2nd Edition) by Guy L. Steele</a> - A description of the Common Lisp language from just before it was standardized by ANSI. Don't use it as a reference.</li>
+<li><a href="https://cliki.net/Getting+Started">Cliki on CLtL2</a> - Claims it has more useful descriptions of <a href="http://www.cs.cmu.edu/afs/cs.cmu.edu/project/ai-repository/ai/html/cltl/clm/node235.html#SECTION003000000000000000000">LOOP</a> and <a href="http://www.cs.cmu.edu/afs/cs.cmu.edu/project/ai-repository/ai/html/cltl/clm/node200.html">FORMAT</a> than the CLHS does.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Common Lisp Learning <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<div align="center">
+  <img src="LISP_logo_mid.png">
+</div>
+
+<p>This list focuses on resources for learning Common Lisp, especially resources that I've found useful.</p>
+<p>There are other Awesome Common Lisp lists that focus on other topics:
+- <a href="https://github.com/CodyReichert/awesome-cl">Libraries</a>
+  - <a href="https://github.com/vindarel/curated-awesome-cl">Curated Libraries</a> - Forked and updated from the above list.
+- <a href="https://github.com/azzamsa/awesome-cl-software">Software</a></p>
+<p>Contributions are welcome. Please read the <a href="contributing.md">contribution guidelines</a> for details.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#how-to-use">How To Use</a></li>
+<li><a href="#lisp-environments">Lisp Environments</a></li>
+<li><a href="#online-references">Online References</a></li>
+<li><a href="#online-books">Online Books</a></li>
+<li><a href="#offline-books">Offline Books</a></li>
+<li><a href="#online-community">Online Community</a></li>
+<li><a href="#library-management">Library Management</a></li>
+<li><a href="#common-lisp-implementations">Common Lisp Implementations</a></li>
+<li><a href="#credit">Credit</a></li>
+</ul>
+<h2>How To Use</h2>
+<ol>
+<li>Get a Lisp environment.</li>
+<li>Bookmark the <a href="http://www.lispworks.com/documentation/common-lisp.html">The Common Lisp Hyperspec</a>.</li>
+<li>Download and work through a Lisp book of an appropriate level. Type the examples and play with the code. Feel free to switch books and try a different one.</li>
+<li>Try out <a href="https://exercism.org/tracks/common-lisp">Exercism</a>.</li>
+<li>If you get stuck, find an online community and <a href="http://www.catb.org/esr/faqs/smart-questions.html">ask smart questions</a>.</li>
+<li>Learn about <a href="https://www.quicklisp.org/beta/">Quicklisp</a>.</li>
+<li>At some point, read your Lisp implementation's manual.</li>
+</ol>
+<h2>Lisp Environments</h2>
+<p>You can run a Lisp implementation directly, but an editing environment makes the experience easier.
+- Prepackaged environments
+  - <a href="https://shinmera.github.io/portacle/">Portacle</a> - A portable and multiplatform Common Lisp environment. It ships a slightly customized Emacs with SLIME, SBCL (a popular Common Lisp implementation), Quicklisp and Git. No installation needed, so it's a very quick and easy way to get going.
+  - <a href="https://common-lisp.net/project/lispbox/">Lispbox</a> - An IDE (Emacs + SLIME), Common Lisp implementation (Clozure Common Lisp) and library manager (Quicklisp), pre-packaged as archives for Windows, macOS and Linux. Descendant of "Lisp in a Box" <a href="http://www.gigamonkeys.com/book/lather-rinse-repeat-a-tour-of-the-repl.html">mentioned</a> in Practical Common Lisp.
+  - <a href="http://www.lispworks.com/downloads/">Lispworks Personal Edition</a> - A non-Emacs based IDE for LispWorks Lisp, with some restrictions.
+  - <a href="https://franz.com/products/allegrocl/">Allegro Common Lisp</a> - Has a free <a href="https://franz.com/downloads/clp/survey">Express Edition</a> IDE, and <a href="https://www.youtube.com/channel/UCN36UrxtyNBJPaG0kmBJNRw">training videos on YouTube</a>.
+- For advanced users
+  - <a href="http://articulate-lisp.com">Articulate Common Lisp</a> - A HOWTO for putting together a Lisp environment, and has information on <a href="http://articulate-lisp.com/project/abcs.html">useful libraries</a> and how to <a href="http://articulate-lisp.com/project/new-project.html">structure projects</a>.
+  - If you're an experienced <a href="https://www.gnu.org/software/emacs/">Emacs</a> user, you can just install <a href="https://common-lisp.net/project/slime/">SLIME</a> and a <a href="https://common-lisp.net/project/slime/doc/html/Platforms.html#Platforms">supported Common Lisp implementation</a>. See the <a href="https://common-lisp.net/project/slime/doc/html/">SLIME manual</a> for more details.
+  - The Common Lisp Cookbook has more information about <a href="https://lispcookbook.github.io/cl-cookbook/getting-started.html">installing an implementation</a> using an implementation manager like <a href="https://github.com/roswell/roswell/wiki">Roswell</a>, or on Docker.</p>
+<h2>Online References</h2>
+<ul>
+<li><a href="http://www.lispworks.com/documentation/common-lisp.html">The Common Lisp Hyperspec (CLHS)</a> - <em>The</em> language reference document for Common Lisp. Bookmark it now.</li>
+<li><a href="http://www.lispworks.com/documentation/HyperSpec/Body/07_.htm">Chapter 7</a> - Covers the Common Lisp Object System (CLOS).</li>
+<li><a href="http://cberr.us/tech_writings/notes/common_lisp_standard_draft.html">The ANSI Common Lisp Standard Draft</a> - The last draft version of the ANSI INCITS 226-1994 (previously ANSI X3.226-1994) standard.</li>
+<li>The draft is free, the standard isn't.</li>
+<li>It's pretty much the same as the official standard, and some people prefer it to the CLHS.</li>
+<li><a href="http://lispcookbook.github.io/cl-cookbook/">The Common Lisp Cookbook</a> - A list of useful Lisp recipes. Also contains a list of other online sources of CL information.</li>
+<li><a href="https://www.cs.cmu.edu/Groups/AI/html/cltl/cltl2.html">Common Lisp the Language (2nd Edition) by Guy L. Steele</a> - A description of the Common Lisp language from just before it was standardized by ANSI. Don't use it as a reference.</li>
+<li><a href="https://cliki.net/Getting+Started">Cliki on CLtL2</a> - Claims it has more useful descriptions of <a href="http://www.cs.cmu.edu/afs/cs.cmu.edu/project/ai-repository/ai/html/cltl/clm/node235.html#SECTION003000000000000000000">LOOP</a> and <a href="http://www.cs.cmu.edu/afs/cs.cmu.edu/project/ai-repository/ai/html/cltl/clm/node200.html">FORMAT</a> than the CLHS does.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'learning-2_README.md';
 
         fetch(markdownFile)
@@ -48,21 +149,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

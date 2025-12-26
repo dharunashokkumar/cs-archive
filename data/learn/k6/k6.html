@@ -8,38 +8,135 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Grafana Awesome K6 - Awesome List Resources">
-    <title>Grafana Awesome K6</title>
+    <meta name="description" content="A collection of resources by the community, on (testing with) k6. Contributions are welcome! Read the contribution guidelines first. - Articles - Videos -...">
+    <meta name="robots" content="index, follow">
+    <title>K6 - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <div align="center">
+  <a href="https://k6.io/">
+    <img src="assets/bert.png" alt="k6 mascot" width="300px">
+  </a>
+
+<!--lint disable awesome-heading-->
+# Awesome k6 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+<!--lint enable awesome-heading-->
+
+A collection of resources by the community, on (testing with) <a href="https://k6.io/">k6</a>.
+
+<!-- lint disable double-link -->
+Contributions are welcome! Read the [contribution guidelines](contributing.md) first.
+<!-- lint enable double-link -->
+
+</div>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#examplestemplates">Examples/Templates</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#cicd">CI/CD</a></li>
+<li><a href="#extensions">Extensions</a></li>
+<li><a href="#related">Related</a></li>
+</ul>
+<h2>Articles</h2>
+<ul>
+<li><a href="https://github.com/grafana/k6-learn">k6 Learn</a> - Explanation of the principles of load testing and practical examples for how to do it with k6.</li>
+<li><a href="https://github.com/grafana/k6-oss-workshop">k6 OSS workshop</a> - A 2-3 hour k6 workshop with practical k6 examples using the QuickPizza demo app.</li>
+<li><a href="https://link.medium.com/npI9sjDyyjb">Beginner's guide to load testing with k6</a> - Introductory guide in several parts, helping you get started with k6.</li>
+<li><a href="https://grafana.com/blog/2024/04/30/organizing-your-grafana-k6-performance-testing-suite-best-practices-to-get-started/">Best practices organizing performance testing projects with k6</a> - Guidelines to scale your performance testing across multiple teams and projects.</li>
+<li><a href="https://grafana.com/blog/2024/05/02/setting-up-your-grafana-k6-performance-testing-suite-javascript-tools-shared-libraries-and-more/">Part 2 - JavaScript tools, shared libraries, and TypeScript</a> - Stting up your k6 performance testing suite with JavaScript tools, shared libraries, and TypeScript.</li>
+<li><a href="https://feryn.eu/presentations/distributed-load-testing-k6-confoo23">Distributed load testing with k6</a> - Thijs Feryn presents in ConFoo Montreal 2023.</li>
+<li><a href="https://medium.com/@dan.ryan.emmons/qa-load-testing-with-k6-io-c11c2afced04">Load Testing with k6</a> - Brief overview of features and capabilities of k6.</li>
+<li><a href="https://medium.com/@naoko.reeves/load-test-with-k6-and-visualize-with-influxdb-and-grafana-c6097a6f6d0a">Test and visualize with InfluxDB, Grafana and K6</a> - Setting up load tests and visualizing them using grafana dashboards.</li>
+<li><a href="https://grafana.com/blog/2020/03/03/open-source-load-testing-tool-review/">Open source load testing tool review 2020</a> - Detailed comparison of the most popular open source load testing tools.</li>
+<li><a href="https://k6.io/blog/load-testing-your-api-with-swagger-openapi-and-k6">Load Testing Your API with Swagger/OpenAPI and k6</a> - Generate k6 load test scripts from OpenAPI specifications.</li>
+<li><a href="https://grafana.com/blog/2020/04/19/load-testing-your-api-with-postman/">Load Testing Your API with Postman</a> - How to use Postman collections to load test your API.</li>
+<li><a href="https://medium.com/back-market-engineering/how-back-market-sres-prepared-for-black-friday-5f017f343408">Load Testing &amp; Black Friday capacity planning</a> - How Back Market prepared for Black Friday with k6 based load testing.</li>
+<li><a href="https://grafana.com/blog/2021/07/14/load-testing-sql-databases/">Load Testing SQL Databases with k6</a> - How to use the xk6-sql extension to test SQL databases directly.</li>
+<li><a href="https://dev.to/kwidera/introducing-testrail-in-you-k6-tests-eck">Introducing TestRail in your K6 tests</a> - Reporting k6 output to TestRail.</li>
+<li><a href="https://medium.com/swlh/beautiful-load-testing-with-k6-and-docker-compose-4454edb3a2e3">Beautiful Load Testing With K6 and Docker Compose</a> - How to run load tests using the awesome combination of Docker Compose, K6, InfluxDB and Grafana.</li>
+<li><a href="https://medium.com/microsoftazure/load-testing-with-azure-devops-and-k6-839be039b68a">Load Testing with Azure DevOps and k6</a> - How to setup Azure DevOps to perform automated load tests using k6, handleCallback, and JUnit.</li>
+<li><a href="https://medium.com/geekculture/k6-custom-slack-integration-metrics-are-the-magic-of-tests-527aaf613595">K6 — Custom Slack Integration: Metrics are the Magic of Tests</a> -  How to send k6 output results to Slack using the handleSummary callback.</li>
+<li><a href="https://levelup.gitconnected.com/load-testing-with-k6-48488c7946bb">Load testing with k6</a> - Using k6 for load, soak, stress, spike and smoke testing.</li>
+<li><a href="https://dev.to/tarantool/how-to-write-three-times-fewer-lines-of-code-when-doing-load-testing-9lb">How to write three times fewer lines of code when doing load testing</a> - Building a k6 extension in Go to test Tarantool.</li>
+<li><a href="https://alex-klaus.com/load-test-k6-typescript-azure/">Load Testing. k6 + TypeScript + Azure DevOps</a></li>
+<li><a href="https://blog.shanelee.name/2021/12/15/performance-testing-with-k6/">Performance testing with k6</a> - On API performance testing, with Open API and TypeScript.</li>
+<li><a href="https://grafana.com/blog/2021/11/24/k6-introduces-browser-automation-and-prometheus-support-in-k6-oss/">k6 introduces browser automation and Prometheus support in k6 OSS</a> - From the Grafana blog: feature announcements at ObservabilityCON 2021.</li>
+<li><a href="https://grafana.com/blog/2021/12/06/testing-shift-left-observability-with-the-grafana-stack-opentelemetry-and-k6/">Testing shift left observability with the Grafana Stack, OpenTelemetry, and k6</a> - From the Grafana blog: a summary of Executive Director of Platform Engineering at JPMorgan Chase, Vinodh Ravi's talk at ObservabilityCON 2021.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <div align="center">
+  <a href="https://k6.io/">
+    <img src="assets/bert.png" alt="k6 mascot" width="300px">
+  </a>
+
+<!--lint disable awesome-heading-->
+# Awesome k6 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+<!--lint enable awesome-heading-->
+
+A collection of resources by the community, on (testing with) <a href="https://k6.io/">k6</a>.
+
+<!-- lint disable double-link -->
+Contributions are welcome! Read the [contribution guidelines](contributing.md) first.
+<!-- lint enable double-link -->
+
+</div>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#examplestemplates">Examples/Templates</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#cicd">CI/CD</a></li>
+<li><a href="#extensions">Extensions</a></li>
+<li><a href="#related">Related</a></li>
+</ul>
+<h2>Articles</h2>
+<ul>
+<li><a href="https://github.com/grafana/k6-learn">k6 Learn</a> - Explanation of the principles of load testing and practical examples for how to do it with k6.</li>
+<li><a href="https://github.com/grafana/k6-oss-workshop">k6 OSS workshop</a> - A 2-3 hour k6 workshop with practical k6 examples using the QuickPizza demo app.</li>
+<li><a href="https://link.medium.com/npI9sjDyyjb">Beginner's guide to load testing with k6</a> - Introductory guide in several parts, helping you get started with k6.</li>
+<li><a href="https://grafana.com/blog/2024/04/30/organizing-your-grafana-k6-performance-testing-suite-best-practices-to-get-started/">Best practices organizing performance testing projects with k6</a> - Guidelines to scale your performance testing across multiple teams and projects.</li>
+<li><a href="https://grafana.com/blog/2024/05/02/setting-up-your-grafana-k6-performance-testing-suite-javascript-tools-shared-libraries-and-more/">Part 2 - JavaScript tools, shared libraries, and TypeScript</a> - Stting up your k6 performance testing suite with JavaScript tools, shared libraries, and TypeScript.</li>
+<li><a href="https://feryn.eu/presentations/distributed-load-testing-k6-confoo23">Distributed load testing with k6</a> - Thijs Feryn presents in ConFoo Montreal 2023.</li>
+<li><a href="https://medium.com/@dan.ryan.emmons/qa-load-testing-with-k6-io-c11c2afced04">Load Testing with k6</a> - Brief overview of features and capabilities of k6.</li>
+<li><a href="https://medium.com/@naoko.reeves/load-test-with-k6-and-visualize-with-influxdb-and-grafana-c6097a6f6d0a">Test and visualize with InfluxDB, Grafana and K6</a> - Setting up load tests and visualizing them using grafana dashboards.</li>
+<li><a href="https://grafana.com/blog/2020/03/03/open-source-load-testing-tool-review/">Open source load testing tool review 2020</a> - Detailed comparison of the most popular open source load testing tools.</li>
+<li><a href="https://k6.io/blog/load-testing-your-api-with-swagger-openapi-and-k6">Load Testing Your API with Swagger/OpenAPI and k6</a> - Generate k6 load test scripts from OpenAPI specifications.</li>
+<li><a href="https://grafana.com/blog/2020/04/19/load-testing-your-api-with-postman/">Load Testing Your API with Postman</a> - How to use Postman collections to load test your API.</li>
+<li><a href="https://medium.com/back-market-engineering/how-back-market-sres-prepared-for-black-friday-5f017f343408">Load Testing &amp; Black Friday capacity planning</a> - How Back Market prepared for Black Friday with k6 based load testing.</li>
+<li><a href="https://grafana.com/blog/2021/07/14/load-testing-sql-databases/">Load Testing SQL Databases with k6</a> - How to use the xk6-sql extension to test SQL databases directly.</li>
+<li><a href="https://dev.to/kwidera/introducing-testrail-in-you-k6-tests-eck">Introducing TestRail in your K6 tests</a> - Reporting k6 output to TestRail.</li>
+<li><a href="https://medium.com/swlh/beautiful-load-testing-with-k6-and-docker-compose-4454edb3a2e3">Beautiful Load Testing With K6 and Docker Compose</a> - How to run load tests using the awesome combination of Docker Compose, K6, InfluxDB and Grafana.</li>
+<li><a href="https://medium.com/microsoftazure/load-testing-with-azure-devops-and-k6-839be039b68a">Load Testing with Azure DevOps and k6</a> - How to setup Azure DevOps to perform automated load tests using k6, handleCallback, and JUnit.</li>
+<li><a href="https://medium.com/geekculture/k6-custom-slack-integration-metrics-are-the-magic-of-tests-527aaf613595">K6 — Custom Slack Integration: Metrics are the Magic of Tests</a> -  How to send k6 output results to Slack using the handleSummary callback.</li>
+<li><a href="https://levelup.gitconnected.com/load-testing-with-k6-48488c7946bb">Load testing with k6</a> - Using k6 for load, soak, stress, spike and smoke testing.</li>
+<li><a href="https://dev.to/tarantool/how-to-write-three-times-fewer-lines-of-code-when-doing-load-testing-9lb">How to write three times fewer lines of code when doing load testing</a> - Building a k6 extension in Go to test Tarantool.</li>
+<li><a href="https://alex-klaus.com/load-test-k6-typescript-azure/">Load Testing. k6 + TypeScript + Azure DevOps</a></li>
+<li><a href="https://blog.shanelee.name/2021/12/15/performance-testing-with-k6/">Performance testing with k6</a> - On API performance testing, with Open API and TypeScript.</li>
+<li><a href="https://grafana.com/blog/2021/11/24/k6-introduces-browser-automation-and-prometheus-support-in-k6-oss/">k6 introduces browser automation and Prometheus support in k6 OSS</a> - From the Grafana blog: feature announcements at ObservabilityCON 2021.</li>
+<li><a href="https://grafana.com/blog/2021/12/06/testing-shift-left-observability-with-the-grafana-stack-opentelemetry-and-k6/">Testing shift left observability with the Grafana Stack, OpenTelemetry, and k6</a> - From the Grafana blog: a summary of Executive Director of Platform Engineering at JPMorgan Chase, Vinodh Ravi's talk at ObservabilityCON 2021.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'k6_README.md';
 
         fetch(markdownFile)
@@ -48,21 +145,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

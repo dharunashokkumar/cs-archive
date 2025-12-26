@@ -8,38 +8,179 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fkie Cad Awesome Embedded And Iot Security - Awesome List Resources">
-    <title>Fkie Cad Awesome Embedded And Iot Security</title>
+    <meta name="description" content="> A curated list of awesome resources about embedded and IoT security. The list contains software and hardware tools, books, research papers and more. Botnets...">
+    <meta name="robots" content="index, follow">
+    <title>Embedded And Iot Security - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <!--lint ignore awesome-license-->
+<div align="center">
+    <img width="500" height="350" src="iot_awesome_logo.svg" alt="Awesome">
+  <br />
+</div>
+
+<h1>Awesome Embedded and IoT Security <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<blockquote>
+<p>A curated list of awesome resources about embedded and IoT security. The list contains software and hardware tools, books, research papers and more.</p>
+</blockquote>
+<p>Botnets like <a href="https://en.wikipedia.org/wiki/Mirai_(malware)">Mirai</a> have proven that there is a need for more security in embedded and IoT devices. This list shall help beginners and experts to find helpful resources on the topic.<br />
+If you are a beginner, you should have a look at the <ins><em>Books</em></ins> and <ins><em>Case Studies</em></ins> sections.<br />
+If you want to start right away with your own analysis, you should give the <ins><em>Analysis Frameworks</em></ins> a try.
+They are easy to use and you do not need to be an expert to get first meaningful results.</p>
+<blockquote>
+<p>Items marked with :euro: are comercial products.</p>
+</blockquote>
+<h2>Contents</h2>
+<ul>
+<li><a href="#software-tools">Software Tools</a></li>
+<li><a href="#analysis-frameworks">Analysis Frameworks</a></li>
+<li><a href="#analysis-tools">Analysis Tools</a></li>
+<li><a href="#extraction-tools">Extraction Tools</a></li>
+<li><a href="#support-tools">Support Tools</a></li>
+<li><a href="#misc-tools">Misc Tools</a></li>
+<li><a href="#hardware-tools">Hardware Tools</a></li>
+<li><a href="#bluetooth-ble-tools">Bluetooth BLE Tools</a></li>
+<li><a href="#zigbee-tools">ZigBee Tools</a></li>
+<li><a href="#sdr-tools">SDR Tools</a></li>
+<li><a href="#rfid-nfc-tools">RFID NFC Tools</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#research-papers">Research Papers</a></li>
+<li><a href="#case-studies">Case Studies</a></li>
+<li><a href="#free-training">Free Training</a></li>
+<li><a href="#websites">Websites</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#tutorials-and-technical-background">Tutorials and Technical Background</a></li>
+<li><a href="#youtube-channels">YouTube Channels</a></li>
+<li><a href="#conferences">Conferences</a></li>
+<li><a href="#contribute">Contribute</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h2>Software Tools</h2>
+<p>Software tools for analyzing embedded/IoT devices and firmware.</p>
+<h3>Analysis Frameworks</h3>
+<ul>
+<li><a href="https://gitlab.com/expliot_framework/expliot">EXPLIoT</a> - Pentest framework like Metasploit but specialized for IoT.</li>
+<li><a href="https://fkie-cad.github.io/FACT_core/">FACT - The Firmware Analysis and Comparison Tool</a> - Full-featured static analysis framework including extraction of firmware, analysis utilizing different plug-ins and comparison of different firmware versions.</li>
+<li><a href="https://passthesalt.ubicast.tv/videos/improving-your-firmware-security-analysis-process-with-fact/">Improving your firmware security analysis process with FACT</a> - Conference talk about FACT :tv:.</li>
+<li><a href="https://github.com/cruise-automation/fwanalyzer">FwAnalyzer</a> - Analyze security of firmware based on customized rules. Intended as additional step in DevSecOps, similar to CI.</li>
+<li><a href="https://github.com/emsec/hal">HAL – The Hardware Analyzer</a> - A comprehensive reverse engineering and manipulation framework for gate-level netlists.</li>
+<li><a href="https://github.com/ElevenPaths/HomePWN">HomePWN</a> - Swiss Army Knife for Pentesting of IoT Devices.</li>
+<li><a href="https://gitlab.com/invuls/iot-projects/iotsecfuzz">IoTSecFuzz</a> - Framework for automatisation of IoT layers security analysis: hardware, software and communication.</li>
+<li><a href="https://github.com/riverloopsec/killerbee">Killerbee</a> - Framework for Testing &amp; Auditing ZigBee and IEEE 802.15.4 Networks.</li>
+<li><a href="https://github.com/RUB-NDS/PRET">PRET</a> - Printer Exploitation Toolkit.</li>
+<li><a href="https://github.com/threat9/routersploit">Routersploit</a> - Framework dedicated to exploit embedded devices.</li>
+</ul>
+<h3>Analysis Tools</h3>
+<ul>
+<li><a href="https://github.com/ReFirmLabs/binwalk">Binwalk</a> - Searches a binary for "interesting" stuff, as well as extracts arbitrary files.</li>
+<li><a href="https://github.com/fkie-cad/cwe_checker">cwe_checker</a> - Finds vulnerable patterns in binary executables - ELF support for x86, ARM, and MIPS, experimental bare-metal support.</li>
+<li><a href="https://github.com/e-m-b-a/emba">emba</a> - Analyze Linux-based firmware of embedded devices.</li>
+<li><a href="https://github.com/firmadyne/firmadyne">Firmadyne</a> - Tries to emulate and pentest a firmware.</li>
+<li><a href="https://github.com/craigz28/firmwalker">Firmwalker</a> - Searches extracted firmware images for interesting files and information.</li>
+<li><a href="https://github.com/ChrisTheCoolHut/Firmware_Slap">Firmware Slap</a> - Discovering vulnerabilities in firmware through concolic analysis and function clustering.</li>
+<li><a href="https://ghidra-sre.org/">Ghidra</a> - Software Reverse Engineering suite; handles arbitrary binaries, if you provide CPU architecture and endianness of the binary.</li>
+<li><a href="https://github.com/radare/radare2">Radare2</a> - Software Reverse Engineering framework, also handles popular formats and arbitrary binaries, has an extensive command line toolset.</li>
+<li><a href="https://github.com/CERTCC/trommel">Trommel</a> - Searches extracted firmware images for interesting files and information.</li>
+</ul>
+<h3>Extraction Tools</h3>
+<ul>
+<li><a href="https://github.com/fkie-cad/fact_extractor">FACT Extractor</a> - Detects container format automatically and executes the corresponding extraction tool.</li>
+<li><a href="https://github.com/rampageX/firmware-mod-kit/wiki">Firmware Mod Kit</a> - Extraction tools for several container formats.</li>
+<li><a href="http://srecord.sourceforge.net/">The SRecord package</a> - Collection of tools for manipulating EPROM files (can convert lots of binary formats).</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <!--lint ignore awesome-license-->
+<div align="center">
+    <img width="500" height="350" src="iot_awesome_logo.svg" alt="Awesome">
+  <br />
+</div>
+
+<h1>Awesome Embedded and IoT Security <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<blockquote>
+<p>A curated list of awesome resources about embedded and IoT security. The list contains software and hardware tools, books, research papers and more.</p>
+</blockquote>
+<p>Botnets like <a href="https://en.wikipedia.org/wiki/Mirai_(malware)">Mirai</a> have proven that there is a need for more security in embedded and IoT devices. This list shall help beginners and experts to find helpful resources on the topic.<br />
+If you are a beginner, you should have a look at the <ins><em>Books</em></ins> and <ins><em>Case Studies</em></ins> sections.<br />
+If you want to start right away with your own analysis, you should give the <ins><em>Analysis Frameworks</em></ins> a try.
+They are easy to use and you do not need to be an expert to get first meaningful results.</p>
+<blockquote>
+<p>Items marked with :euro: are comercial products.</p>
+</blockquote>
+<h2>Contents</h2>
+<ul>
+<li><a href="#software-tools">Software Tools</a></li>
+<li><a href="#analysis-frameworks">Analysis Frameworks</a></li>
+<li><a href="#analysis-tools">Analysis Tools</a></li>
+<li><a href="#extraction-tools">Extraction Tools</a></li>
+<li><a href="#support-tools">Support Tools</a></li>
+<li><a href="#misc-tools">Misc Tools</a></li>
+<li><a href="#hardware-tools">Hardware Tools</a></li>
+<li><a href="#bluetooth-ble-tools">Bluetooth BLE Tools</a></li>
+<li><a href="#zigbee-tools">ZigBee Tools</a></li>
+<li><a href="#sdr-tools">SDR Tools</a></li>
+<li><a href="#rfid-nfc-tools">RFID NFC Tools</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#research-papers">Research Papers</a></li>
+<li><a href="#case-studies">Case Studies</a></li>
+<li><a href="#free-training">Free Training</a></li>
+<li><a href="#websites">Websites</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#tutorials-and-technical-background">Tutorials and Technical Background</a></li>
+<li><a href="#youtube-channels">YouTube Channels</a></li>
+<li><a href="#conferences">Conferences</a></li>
+<li><a href="#contribute">Contribute</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h2>Software Tools</h2>
+<p>Software tools for analyzing embedded/IoT devices and firmware.</p>
+<h3>Analysis Frameworks</h3>
+<ul>
+<li><a href="https://gitlab.com/expliot_framework/expliot">EXPLIoT</a> - Pentest framework like Metasploit but specialized for IoT.</li>
+<li><a href="https://fkie-cad.github.io/FACT_core/">FACT - The Firmware Analysis and Comparison Tool</a> - Full-featured static analysis framework including extraction of firmware, analysis utilizing different plug-ins and comparison of different firmware versions.</li>
+<li><a href="https://passthesalt.ubicast.tv/videos/improving-your-firmware-security-analysis-process-with-fact/">Improving your firmware security analysis process with FACT</a> - Conference talk about FACT :tv:.</li>
+<li><a href="https://github.com/cruise-automation/fwanalyzer">FwAnalyzer</a> - Analyze security of firmware based on customized rules. Intended as additional step in DevSecOps, similar to CI.</li>
+<li><a href="https://github.com/emsec/hal">HAL – The Hardware Analyzer</a> - A comprehensive reverse engineering and manipulation framework for gate-level netlists.</li>
+<li><a href="https://github.com/ElevenPaths/HomePWN">HomePWN</a> - Swiss Army Knife for Pentesting of IoT Devices.</li>
+<li><a href="https://gitlab.com/invuls/iot-projects/iotsecfuzz">IoTSecFuzz</a> - Framework for automatisation of IoT layers security analysis: hardware, software and communication.</li>
+<li><a href="https://github.com/riverloopsec/killerbee">Killerbee</a> - Framework for Testing &amp; Auditing ZigBee and IEEE 802.15.4 Networks.</li>
+<li><a href="https://github.com/RUB-NDS/PRET">PRET</a> - Printer Exploitation Toolkit.</li>
+<li><a href="https://github.com/threat9/routersploit">Routersploit</a> - Framework dedicated to exploit embedded devices.</li>
+</ul>
+<h3>Analysis Tools</h3>
+<ul>
+<li><a href="https://github.com/ReFirmLabs/binwalk">Binwalk</a> - Searches a binary for "interesting" stuff, as well as extracts arbitrary files.</li>
+<li><a href="https://github.com/fkie-cad/cwe_checker">cwe_checker</a> - Finds vulnerable patterns in binary executables - ELF support for x86, ARM, and MIPS, experimental bare-metal support.</li>
+<li><a href="https://github.com/e-m-b-a/emba">emba</a> - Analyze Linux-based firmware of embedded devices.</li>
+<li><a href="https://github.com/firmadyne/firmadyne">Firmadyne</a> - Tries to emulate and pentest a firmware.</li>
+<li><a href="https://github.com/craigz28/firmwalker">Firmwalker</a> - Searches extracted firmware images for interesting files and information.</li>
+<li><a href="https://github.com/ChrisTheCoolHut/Firmware_Slap">Firmware Slap</a> - Discovering vulnerabilities in firmware through concolic analysis and function clustering.</li>
+<li><a href="https://ghidra-sre.org/">Ghidra</a> - Software Reverse Engineering suite; handles arbitrary binaries, if you provide CPU architecture and endianness of the binary.</li>
+<li><a href="https://github.com/radare/radare2">Radare2</a> - Software Reverse Engineering framework, also handles popular formats and arbitrary binaries, has an extensive command line toolset.</li>
+<li><a href="https://github.com/CERTCC/trommel">Trommel</a> - Searches extracted firmware images for interesting files and information.</li>
+</ul>
+<h3>Extraction Tools</h3>
+<ul>
+<li><a href="https://github.com/fkie-cad/fact_extractor">FACT Extractor</a> - Detects container format automatically and executes the corresponding extraction tool.</li>
+<li><a href="https://github.com/rampageX/firmware-mod-kit/wiki">Firmware Mod Kit</a> - Extraction tools for several container formats.</li>
+<li><a href="http://srecord.sourceforge.net/">The SRecord package</a> - Collection of tools for manipulating EPROM files (can convert lots of binary formats).</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'embedded-and-iot-security_README.md';
 
         fetch(markdownFile)
@@ -48,21 +189,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

@@ -8,38 +8,239 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Veggiemonk Awesome Docker - Awesome List Resources">
-    <title>Veggiemonk Awesome Docker</title>
+    <meta name="description" content="> A curated list of Docker resources and projects If you would like to contribute, please read [CONTRIBUTING.md][contributing] first. It contains a lot of tips...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Docker [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)][sindresorhus] [![Netlify Status](https://api.netlify.com/api/v1/badges/8ca86717-11ba-46d4-9d0a-700d8527f13b/deploy-status)](https://app.netlify.com/sites/awesome-docker/deploys)[![Track Awesome List](https://www.trackawesomelist.com/badge.svg)](https://www.trackawesomelist.com/veggiemonk/awesome-docker/)[![Last Commit](https://img.shields.io/github/last-commit/veggiemonk/awesome-docker)](https://github.com/veggiemonk/awesome-docker/commits/main)<!-- omit in toc --> - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Docker [<img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" />][sindresorhus] <a href="https://app.netlify.com/sites/awesome-docker/deploys"><img alt="Netlify Status" src="https://api.netlify.com/api/v1/badges/8ca86717-11ba-46d4-9d0a-700d8527f13b/deploy-status" /></a><a href="https://www.trackawesomelist.com/veggiemonk/awesome-docker/"><img alt="Track Awesome List" src="https://www.trackawesomelist.com/badge.svg" /></a><a href="https://github.com/veggiemonk/awesome-docker/commits/main"><img alt="Last Commit" src="https://img.shields.io/github/last-commit/veggiemonk/awesome-docker" /></a><!-- omit in toc --></h1>
+<blockquote>
+<p>A curated list of Docker resources and projects</p>
+</blockquote>
+<p>If you would like to contribute, please read [CONTRIBUTING.md][contributing] first.
+It contains a lot of tips and guidelines to help keep things organized.
+Just click [README.md][editreadme] to submit a [pull request][editreadme].
+If this list is not complete, you can [contribute][editreadme] to make it so. Here is a great video tutorial to learn how to <a href="https://egghead.io/lessons/javascript-identifying-how-to-contribute-to-an-open-source-project-on-github">contribute on Github</a>.</p>
+<blockquote>
+<p><strong>Please</strong>, help organize these resources so that they are <em>easy to find</em> and <em>understand</em> for newcomers. See how to <strong>[Contribute][contributing]</strong> for tips!</p>
+</blockquote>
+<p><strong><em>If you see a link here that is not (any longer) a good fit, you can fix it by submitting a [pull request][editreadme] to improve this file. Thank you!</em></strong></p>
+<p>The creators and maintainers of this list do not receive any form of payment to accept a change made by any contributor. This page is not an official Docker product in any way. It is a list of links to projects and is maintained by volunteers. Everybody is welcome to contribute. The goal of this repo is to index open-source projects, not to advertise for profit.</p>
+<p>All the links are monitored and tested with a home baked <a href="https://github.com/veggiemonk/awesome-docker/blob/master/.github/workflows/pull_request.yml">Node.js script</a></p>
+<h1>Contents <!-- omit in toc --></h1>
+<!-- TOC -->
+
+<ul>
+<li><a href="#legend">Legend</a></li>
+<li><a href="#what-is-docker">What is Docker</a></li>
+<li><a href="#where-to-start">Where to start</a></li>
+<li><a href="#where-to-start-windows">Where to start (Windows)</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#container-operations">Container Operations</a><ul>
+<li><a href="#container-composition">Container Composition</a></li>
+<li><a href="#deployment-and-infrastructure">Deployment and Infrastructure</a></li>
+<li><a href="#monitoring">Monitoring</a></li>
+<li><a href="#networking">Networking</a></li>
+<li><a href="#orchestration">Orchestration</a></li>
+<li><a href="#paas">PaaS</a></li>
+<li><a href="#reverse-proxy">Reverse Proxy</a></li>
+<li><a href="#runtime">Runtime</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#service-discovery">Service Discovery</a></li>
+<li><a href="#volume-management--data">Volume Management / Data</a></li>
+<li><a href="#user-interface">User Interface</a></li>
+<li><a href="#ide-integrations">IDE integrations</a></li>
+<li><a href="#desktop">Desktop</a></li>
+<li><a href="#terminal">Terminal</a><ul>
+<li><a href="#terminal-ui">Terminal UI</a></li>
+<li><a href="#cli-tools">CLI tools</a></li>
+<li><a href="#other">Other</a></li>
+</ul>
+</li>
+<li><a href="#web">Web</a></li>
+</ul>
+</li>
+<li><a href="#docker-images">Docker Images</a><ul>
+<li><a href="#base-tools">Base Tools</a></li>
+<li><a href="#builder">Builder</a></li>
+<li><a href="#dockerfile">Dockerfile</a></li>
+<li><a href="#linter">Linter</a></li>
+<li><a href="#metadata">Metadata</a></li>
+<li><a href="#registry">Registry</a></li>
+</ul>
+</li>
+<li><a href="#development-with-docker">Development with Docker</a><ul>
+<li><a href="#api-client">API Client</a></li>
+<li><a href="#cicd">CI/CD</a></li>
+<li><a href="#development-environment">Development Environment</a></li>
+<li><a href="#garbage-collection">Garbage Collection</a></li>
+<li><a href="#serverless">Serverless</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#wrappers">Wrappers</a></li>
+</ul>
+</li>
+<li><a href="#services-based-on-docker-mostly-heavy_dollar_sign">Services based on Docker (mostly :heavy_dollar_sign:)</a><ul>
+<li><a href="#ci-services">CI Services</a></li>
+<li><a href="#caas">CaaS</a></li>
+<li><a href="#monitoring-services">Monitoring Services</a></li>
+</ul>
+</li>
+<li><a href="#useful-resources">Useful Resources</a></li>
+<li><a href="#awesome-lists">Awesome Lists</a></li>
+<li><a href="#demos-and-examples">Demos and Examples</a></li>
+<li><a href="#good-tips">Good Tips</a></li>
+<li><a href="#raspberry-pi--arm">Raspberry Pi \&amp; ARM</a></li>
+<li><a href="#security-1">Security</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#communities-and-meetups">Communities and Meetups</a></li>
+<li><a href="#brazilian">Brazilian</a></li>
+<li><a href="#chinese">Chinese</a></li>
+<li><a href="#english">English</a></li>
+<li><a href="#russian">Russian</a></li>
+<li><a href="#spanish">Spanish</a></li>
+<li><a href="#stargazers-over-time">Stargazers over time</a></li>
+</ul>
+<!-- /TOC -->
+
+<h1>Legend</h1>
+<ul>
+<li>Abandoned :skull:</li>
+<li>Beta :construction:</li>
+<li>Monetized :heavy_dollar_sign:</li>
+</ul>
+<h1>What is Docker</h1>
+<blockquote>
+<p>Docker is an open platform for developers and sysadmins to build, ship, and run distributed applications. Consisting of Docker Engine, a portable, lightweight runtime and packaging tool, and Docker Hub, a cloud service for sharing applications and automating workflows, Docker enables apps to be quickly assembled from components and eliminates the friction between development, QA, and production environments. As a result, IT can ship faster and run the same app, unchanged, on laptops, data center VMs, and any cloud.</p>
+</blockquote>
+<p><em>Source:</em> <a href="https://www.docker.com/why-docker/">What is Docker</a></p>
+<h1>Where to start</h1>
+<ul>
+<li><a href="https://semaphore.io/blog/docker-benefits">Benefits of using Docker</a> for development and delivery, with a practical roadmap for adoption.</li>
+<li><a href="https://www.manning.com/books/bootstrapping-microservices-with-docker-kubernetes-and-terraform">Bootstrapping Microservices</a> by <a href="https://twitter.com/ashleydavis75">Ashley Davis</a> - A practical and project-based guide to building applications with microservices, starts by building a Docker image for a single microservice and publishing it to a private container registry, finishes by deploying a complete microservices application to a production Kubernetes cluster.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Docker [<img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" />][sindresorhus] <a href="https://app.netlify.com/sites/awesome-docker/deploys"><img alt="Netlify Status" src="https://api.netlify.com/api/v1/badges/8ca86717-11ba-46d4-9d0a-700d8527f13b/deploy-status" /></a><a href="https://www.trackawesomelist.com/veggiemonk/awesome-docker/"><img alt="Track Awesome List" src="https://www.trackawesomelist.com/badge.svg" /></a><a href="https://github.com/veggiemonk/awesome-docker/commits/main"><img alt="Last Commit" src="https://img.shields.io/github/last-commit/veggiemonk/awesome-docker" /></a><!-- omit in toc --></h1>
+<blockquote>
+<p>A curated list of Docker resources and projects</p>
+</blockquote>
+<p>If you would like to contribute, please read [CONTRIBUTING.md][contributing] first.
+It contains a lot of tips and guidelines to help keep things organized.
+Just click [README.md][editreadme] to submit a [pull request][editreadme].
+If this list is not complete, you can [contribute][editreadme] to make it so. Here is a great video tutorial to learn how to <a href="https://egghead.io/lessons/javascript-identifying-how-to-contribute-to-an-open-source-project-on-github">contribute on Github</a>.</p>
+<blockquote>
+<p><strong>Please</strong>, help organize these resources so that they are <em>easy to find</em> and <em>understand</em> for newcomers. See how to <strong>[Contribute][contributing]</strong> for tips!</p>
+</blockquote>
+<p><strong><em>If you see a link here that is not (any longer) a good fit, you can fix it by submitting a [pull request][editreadme] to improve this file. Thank you!</em></strong></p>
+<p>The creators and maintainers of this list do not receive any form of payment to accept a change made by any contributor. This page is not an official Docker product in any way. It is a list of links to projects and is maintained by volunteers. Everybody is welcome to contribute. The goal of this repo is to index open-source projects, not to advertise for profit.</p>
+<p>All the links are monitored and tested with a home baked <a href="https://github.com/veggiemonk/awesome-docker/blob/master/.github/workflows/pull_request.yml">Node.js script</a></p>
+<h1>Contents <!-- omit in toc --></h1>
+<!-- TOC -->
+
+<ul>
+<li><a href="#legend">Legend</a></li>
+<li><a href="#what-is-docker">What is Docker</a></li>
+<li><a href="#where-to-start">Where to start</a></li>
+<li><a href="#where-to-start-windows">Where to start (Windows)</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#container-operations">Container Operations</a><ul>
+<li><a href="#container-composition">Container Composition</a></li>
+<li><a href="#deployment-and-infrastructure">Deployment and Infrastructure</a></li>
+<li><a href="#monitoring">Monitoring</a></li>
+<li><a href="#networking">Networking</a></li>
+<li><a href="#orchestration">Orchestration</a></li>
+<li><a href="#paas">PaaS</a></li>
+<li><a href="#reverse-proxy">Reverse Proxy</a></li>
+<li><a href="#runtime">Runtime</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#service-discovery">Service Discovery</a></li>
+<li><a href="#volume-management--data">Volume Management / Data</a></li>
+<li><a href="#user-interface">User Interface</a></li>
+<li><a href="#ide-integrations">IDE integrations</a></li>
+<li><a href="#desktop">Desktop</a></li>
+<li><a href="#terminal">Terminal</a><ul>
+<li><a href="#terminal-ui">Terminal UI</a></li>
+<li><a href="#cli-tools">CLI tools</a></li>
+<li><a href="#other">Other</a></li>
+</ul>
+</li>
+<li><a href="#web">Web</a></li>
+</ul>
+</li>
+<li><a href="#docker-images">Docker Images</a><ul>
+<li><a href="#base-tools">Base Tools</a></li>
+<li><a href="#builder">Builder</a></li>
+<li><a href="#dockerfile">Dockerfile</a></li>
+<li><a href="#linter">Linter</a></li>
+<li><a href="#metadata">Metadata</a></li>
+<li><a href="#registry">Registry</a></li>
+</ul>
+</li>
+<li><a href="#development-with-docker">Development with Docker</a><ul>
+<li><a href="#api-client">API Client</a></li>
+<li><a href="#cicd">CI/CD</a></li>
+<li><a href="#development-environment">Development Environment</a></li>
+<li><a href="#garbage-collection">Garbage Collection</a></li>
+<li><a href="#serverless">Serverless</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#wrappers">Wrappers</a></li>
+</ul>
+</li>
+<li><a href="#services-based-on-docker-mostly-heavy_dollar_sign">Services based on Docker (mostly :heavy_dollar_sign:)</a><ul>
+<li><a href="#ci-services">CI Services</a></li>
+<li><a href="#caas">CaaS</a></li>
+<li><a href="#monitoring-services">Monitoring Services</a></li>
+</ul>
+</li>
+<li><a href="#useful-resources">Useful Resources</a></li>
+<li><a href="#awesome-lists">Awesome Lists</a></li>
+<li><a href="#demos-and-examples">Demos and Examples</a></li>
+<li><a href="#good-tips">Good Tips</a></li>
+<li><a href="#raspberry-pi--arm">Raspberry Pi \&amp; ARM</a></li>
+<li><a href="#security-1">Security</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#communities-and-meetups">Communities and Meetups</a></li>
+<li><a href="#brazilian">Brazilian</a></li>
+<li><a href="#chinese">Chinese</a></li>
+<li><a href="#english">English</a></li>
+<li><a href="#russian">Russian</a></li>
+<li><a href="#spanish">Spanish</a></li>
+<li><a href="#stargazers-over-time">Stargazers over time</a></li>
+</ul>
+<!-- /TOC -->
+
+<h1>Legend</h1>
+<ul>
+<li>Abandoned :skull:</li>
+<li>Beta :construction:</li>
+<li>Monetized :heavy_dollar_sign:</li>
+</ul>
+<h1>What is Docker</h1>
+<blockquote>
+<p>Docker is an open platform for developers and sysadmins to build, ship, and run distributed applications. Consisting of Docker Engine, a portable, lightweight runtime and packaging tool, and Docker Hub, a cloud service for sharing applications and automating workflows, Docker enables apps to be quickly assembled from components and eliminates the friction between development, QA, and production environments. As a result, IT can ship faster and run the same app, unchanged, on laptops, data center VMs, and any cloud.</p>
+</blockquote>
+<p><em>Source:</em> <a href="https://www.docker.com/why-docker/">What is Docker</a></p>
+<h1>Where to start</h1>
+<ul>
+<li><a href="https://semaphore.io/blog/docker-benefits">Benefits of using Docker</a> for development and delivery, with a practical roadmap for adoption.</li>
+<li><a href="https://www.manning.com/books/bootstrapping-microservices-with-docker-kubernetes-and-terraform">Bootstrapping Microservices</a> by <a href="https://twitter.com/ashleydavis75">Ashley Davis</a> - A practical and project-based guide to building applications with microservices, starts by building a Docker image for a single microservice and publishing it to a private container registry, finishes by deploying a complete microservices application to a production Kubernetes cluster.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'docker_README.md';
 
         fetch(markdownFile)
@@ -48,21 +249,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

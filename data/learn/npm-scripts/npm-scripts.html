@@ -8,38 +8,195 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ryanzim Awesome Npm Scripts - Awesome List Resources">
-    <title>Ryanzim Awesome Npm Scripts</title>
+    <meta name="description" content="> Everything awesome for using npm as a build tool. You might also like awesome-npm. Notice: I'm currently too busy to actively expand this list; therefore,...">
+    <meta name="robots" content="index, follow">
+    <title>Npm Scripts - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <!--lint ignore awesome-heading-->
+<h1>Awesome npm Scripts <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p><a href="https://www.npmjs.com"><img src="npm-logo.png" align="right" width="150"></a></p>
+<blockquote>
+<p>Everything awesome for using npm as a build tool.</p>
+</blockquote>
+<p>You might also like <a href="https://github.com/sindresorhus/awesome-npm">awesome-npm</a>.</p>
+<p><strong>Notice: I'm currently too busy to actively expand this list; therefore, I've decided to make this an <a href="http://openopensource.github.io/">OPEN Open Source Project</a>. Individuals making significant and valuable contributions are given commit-access to the project to contribute as they see fit.</strong></p>
+<h2>Contents</h2>
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+<ul>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#videostalks">Videos/Talks</a></li>
+<li><a href="#task-runners">Task Runners</a></li>
+<li><a href="#file-watchers">File Watchers</a></li>
+<li><a href="#dev-servers">Dev Servers</a></li>
+<li><a href="#cross-platform-utilities">Cross-platform Utilities</a></li>
+<li><a href="#utility-packs">Utility Packs</a></li>
+<li><a href="#other-utilities">Other Utilities</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#cross-platform-shell-reference">Cross-platform Shell Reference</a></li>
+<li><a href="#npm-run-reference"><code>npm run</code> Reference</a></li>
+</ul>
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+<h2>Articles</h2>
+<ul>
+<li><a href="https://www.keithcirkel.co.uk/why-we-should-stop-using-grunt/">Why we should stop using Grunt &amp; Gulp</a> - Blog post by Keith Cirkel.</li>
+<li><a href="https://www.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/">How to Use npm as a Build Tool</a> - Sequel to »Why we should stop using Grunt &amp; Gulp«.</li>
+<li><a href="https://medium.freecodecamp.com/why-i-left-gulp-and-grunt-for-npm-scripts-3d6853dd22b8">Why I Left Gulp and Grunt for npm Scripts</a> -  Article by Cory House.</li>
+<li><a href="http://michael-kuehnel.de/tooling/2018/03/22/helpers-and-tips-for-npm-run-scripts.html">Helpers and tips for npm run scripts</a> - Blog post by Michael Kühnel covering advanced topics.</li>
+<li><a href="https://exploringjs.com/nodejs-shell-scripting/ch_package-scripts.html">Running cross-platform tasks via npm package scripts</a> - The most comprehensive guide to using npm Scripts by Dr. Axel Rauschmayer.</li>
+</ul>
+<h2>Videos/Talks</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=0RYETb9YVrk">Advanced front-end automation with npm scripts</a> - Talk at Nordic.js 2015 by Kate Hudson.</li>
+<li><a href="http://www.penta-code.com/how-to-create-a-build-system-with-npm-scripts/">How to create a build system with npm scripts</a> - Video tutorial series on setting up a front-end build system.</li>
+</ul>
+<h2>Task Runners</h2>
+<p>Tools for running multiple commands or npm scripts in parallel or sequentially.</p>
+<ul>
+<li><a href="https://github.com/paulpflug/script-runner">script-runner</a> - Simple task runner with a terse syntax.</li>
+<li><a href="https://github.com/mysticatea/npm-run-all">npm-run-all</a> - Fully featured task runner.</li>
+<li><a href="https://github.com/coderaiser/redrun">redrun</a> - Expand scripts from package.json to improve execution speed.</li>
+</ul>
+<h2>File Watchers</h2>
+<p>Tools to watch your source files and run a build command whenever any of the files change.</p>
+<ul>
+<li><a href="https://github.com/Qard/onchange">onchange</a> - <code>onchange &lt;glob&gt; -- &lt;command&gt;</code>.</li>
+<li><a href="https://github.com/mikeal/watch">watch</a> - <code>watch &lt;command&gt; &lt;directory&gt;</code>.</li>
+</ul>
+<h2>Dev Servers</h2>
+<ul>
+<li><a href="https://github.com/indexzero/http-server">http-server</a> - Simple zero-configuration command-line http server.</li>
+<li><a href="https://github.com/tapio/live-server">live-server</a> - Simple development http server with live reload capability.</li>
+</ul>
+<h2>Cross-platform Utilities</h2>
+<p>Utilities to perform common command-line tasks without worrying about cross-platform compatibility.</p>
+<ul>
+<li><a href="https://github.com/isaacs/rimraf">rimraf</a> - Delete files or directories; like <code>rm -rf</code>.</li>
+<li><a href="https://github.com/sindresorhus/del-cli">del-cli</a> - Safer file and folder deletion.</li>
+<li><a href="https://github.com/substack/node-mkdirp">mkdirp</a> - Create a directory, creating parent directories if needed; like <code>mkdir -p</code>.</li>
+<li><a href="https://github.com/davglass/cpr">cpr</a> - <code>cp -r</code> for Node.js.</li>
+<li><a href="https://github.com/sindresorhus/cpy-cli">cpy-cli</a> - File/directory copying/renaming.</li>
+<li><a href="https://github.com/calvinmetcalf/copyfiles">copyfiles</a> - Copy a list of files into a directory.</li>
+<li><a href="https://github.com/byteclubfr/node-sync-files">sync-files</a> - <code>rsync</code>-like directory syncing with watch mode.</li>
+<li><a href="https://github.com/iamakulov/echo-cli">echo-cli</a> - Cross-platform <code>echo</code> with JS escape sequence support.</li>
+<li><a href="https://github.com/sindresorhus/clear-cli">clear-cli</a> - Clear the terminal.</li>
+<li><a href="https://github.com/kentcdodds/cross-env">cross-env</a> - Set environment variables for scripts, unix-style.</li>
+<li><a href="https://github.com/milewski/cross-os">cross-os</a> - Run platform-specific npm scripts.</li>
+<li><a href="https://github.com/stefanmaric/ntee">ntee</a> - Utility that reads from standard input and writes to standard output and files; like Unix <code>tee</code>.</li>
+<li><a href="https://github.com/substack/catw">catw</a> - Print a file to stdout, with optional watch mode; sorta like Unix <code>cat</code>.</li>
+</ul>
+<h3>Utility Packs</h3>
+<ul>
+<li><a href="https://github.com/shelljs/shx">shx</a> - Collection of common Unix utilities implemented in Node.js; example usage: <code>shx rm somefile</code>.</li>
+</ul>
+<h2>Other Utilities</h2>
+<ul>
+<li><a href="https://github.com/keithamus/hashmark">hashmark</a> -  Take contents of a file and output as new file with a hash in the name.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <!--lint ignore awesome-heading-->
+<h1>Awesome npm Scripts <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p><a href="https://www.npmjs.com"><img src="npm-logo.png" align="right" width="150"></a></p>
+<blockquote>
+<p>Everything awesome for using npm as a build tool.</p>
+</blockquote>
+<p>You might also like <a href="https://github.com/sindresorhus/awesome-npm">awesome-npm</a>.</p>
+<p><strong>Notice: I'm currently too busy to actively expand this list; therefore, I've decided to make this an <a href="http://openopensource.github.io/">OPEN Open Source Project</a>. Individuals making significant and valuable contributions are given commit-access to the project to contribute as they see fit.</strong></p>
+<h2>Contents</h2>
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+<ul>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#videostalks">Videos/Talks</a></li>
+<li><a href="#task-runners">Task Runners</a></li>
+<li><a href="#file-watchers">File Watchers</a></li>
+<li><a href="#dev-servers">Dev Servers</a></li>
+<li><a href="#cross-platform-utilities">Cross-platform Utilities</a></li>
+<li><a href="#utility-packs">Utility Packs</a></li>
+<li><a href="#other-utilities">Other Utilities</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#cross-platform-shell-reference">Cross-platform Shell Reference</a></li>
+<li><a href="#npm-run-reference"><code>npm run</code> Reference</a></li>
+</ul>
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+<h2>Articles</h2>
+<ul>
+<li><a href="https://www.keithcirkel.co.uk/why-we-should-stop-using-grunt/">Why we should stop using Grunt &amp; Gulp</a> - Blog post by Keith Cirkel.</li>
+<li><a href="https://www.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/">How to Use npm as a Build Tool</a> - Sequel to »Why we should stop using Grunt &amp; Gulp«.</li>
+<li><a href="https://medium.freecodecamp.com/why-i-left-gulp-and-grunt-for-npm-scripts-3d6853dd22b8">Why I Left Gulp and Grunt for npm Scripts</a> -  Article by Cory House.</li>
+<li><a href="http://michael-kuehnel.de/tooling/2018/03/22/helpers-and-tips-for-npm-run-scripts.html">Helpers and tips for npm run scripts</a> - Blog post by Michael Kühnel covering advanced topics.</li>
+<li><a href="https://exploringjs.com/nodejs-shell-scripting/ch_package-scripts.html">Running cross-platform tasks via npm package scripts</a> - The most comprehensive guide to using npm Scripts by Dr. Axel Rauschmayer.</li>
+</ul>
+<h2>Videos/Talks</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=0RYETb9YVrk">Advanced front-end automation with npm scripts</a> - Talk at Nordic.js 2015 by Kate Hudson.</li>
+<li><a href="http://www.penta-code.com/how-to-create-a-build-system-with-npm-scripts/">How to create a build system with npm scripts</a> - Video tutorial series on setting up a front-end build system.</li>
+</ul>
+<h2>Task Runners</h2>
+<p>Tools for running multiple commands or npm scripts in parallel or sequentially.</p>
+<ul>
+<li><a href="https://github.com/paulpflug/script-runner">script-runner</a> - Simple task runner with a terse syntax.</li>
+<li><a href="https://github.com/mysticatea/npm-run-all">npm-run-all</a> - Fully featured task runner.</li>
+<li><a href="https://github.com/coderaiser/redrun">redrun</a> - Expand scripts from package.json to improve execution speed.</li>
+</ul>
+<h2>File Watchers</h2>
+<p>Tools to watch your source files and run a build command whenever any of the files change.</p>
+<ul>
+<li><a href="https://github.com/Qard/onchange">onchange</a> - <code>onchange &lt;glob&gt; -- &lt;command&gt;</code>.</li>
+<li><a href="https://github.com/mikeal/watch">watch</a> - <code>watch &lt;command&gt; &lt;directory&gt;</code>.</li>
+</ul>
+<h2>Dev Servers</h2>
+<ul>
+<li><a href="https://github.com/indexzero/http-server">http-server</a> - Simple zero-configuration command-line http server.</li>
+<li><a href="https://github.com/tapio/live-server">live-server</a> - Simple development http server with live reload capability.</li>
+</ul>
+<h2>Cross-platform Utilities</h2>
+<p>Utilities to perform common command-line tasks without worrying about cross-platform compatibility.</p>
+<ul>
+<li><a href="https://github.com/isaacs/rimraf">rimraf</a> - Delete files or directories; like <code>rm -rf</code>.</li>
+<li><a href="https://github.com/sindresorhus/del-cli">del-cli</a> - Safer file and folder deletion.</li>
+<li><a href="https://github.com/substack/node-mkdirp">mkdirp</a> - Create a directory, creating parent directories if needed; like <code>mkdir -p</code>.</li>
+<li><a href="https://github.com/davglass/cpr">cpr</a> - <code>cp -r</code> for Node.js.</li>
+<li><a href="https://github.com/sindresorhus/cpy-cli">cpy-cli</a> - File/directory copying/renaming.</li>
+<li><a href="https://github.com/calvinmetcalf/copyfiles">copyfiles</a> - Copy a list of files into a directory.</li>
+<li><a href="https://github.com/byteclubfr/node-sync-files">sync-files</a> - <code>rsync</code>-like directory syncing with watch mode.</li>
+<li><a href="https://github.com/iamakulov/echo-cli">echo-cli</a> - Cross-platform <code>echo</code> with JS escape sequence support.</li>
+<li><a href="https://github.com/sindresorhus/clear-cli">clear-cli</a> - Clear the terminal.</li>
+<li><a href="https://github.com/kentcdodds/cross-env">cross-env</a> - Set environment variables for scripts, unix-style.</li>
+<li><a href="https://github.com/milewski/cross-os">cross-os</a> - Run platform-specific npm scripts.</li>
+<li><a href="https://github.com/stefanmaric/ntee">ntee</a> - Utility that reads from standard input and writes to standard output and files; like Unix <code>tee</code>.</li>
+<li><a href="https://github.com/substack/catw">catw</a> - Print a file to stdout, with optional watch mode; sorta like Unix <code>cat</code>.</li>
+</ul>
+<h3>Utility Packs</h3>
+<ul>
+<li><a href="https://github.com/shelljs/shx">shx</a> - Collection of common Unix utilities implemented in Node.js; example usage: <code>shx rm somefile</code>.</li>
+</ul>
+<h2>Other Utilities</h2>
+<ul>
+<li><a href="https://github.com/keithamus/hashmark">hashmark</a> -  Take contents of a file and output as new file with a hash in the name.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'npm-scripts_README.md';
 
         fetch(markdownFile)
@@ -48,21 +205,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

@@ -8,38 +8,205 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Choojs Awesome Choo - Awesome List Resources">
-    <title>Choojs Awesome Choo</title>
+    <meta name="description" content="> choo is a framework for creating > sturdy frontend applications - Official resources - Dependencies - Demos - Community - Plugins and addons - Elements - CLI...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome choo [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) <div align="right">:steam_locomotive::train::train::train::train::train:</div> - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome choo <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <div align="right">:steam_locomotive::train::train::train::train::train:</div></h1>
+<blockquote>
+<p><a href="https://choo.io/">choo</a> is a <code>4kb</code> framework for creating
+sturdy frontend applications</p>
+</blockquote>
+<h2>Contents</h2>
+<ul>
+<li><a href="#official-resources">Official resources</a></li>
+<li><a href="#dependencies">Dependencies</a></li>
+<li><a href="#demos">Demos</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#plugins-and-addons">Plugins and addons</a></li>
+<li><a href="#elements">Elements</a></li>
+<li><a href="#cli-templates">CLI Templates</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#projects-using-choo">Projects using choo</a></li>
+</ul>
+<h3>Official resources</h3>
+<ul>
+<li><a href="https://github.com/yoshuawuyts/choo/blob/master/README.md">Docs</a></li>
+<li><a href="https://github.com/yoshuawuyts/choo-handbook">Handbook</a></li>
+<li><a href="https://github.com/yoshuawuyts/choo">Repo</a></li>
+<li><a href="https://choo.io/">Website</a></li>
+<li><a href="https://twitter.com/yoshuawuyts/status/730087077803528193">Twitter thread</a></li>
+</ul>
+<h3>Dependencies</h3>
+<p><code>choo</code> is a modular framework. These are the dependencies it glues together
+under the hood:</p>
+<ul>
+<li><a href="https://github.com/shama/bel">bel</a> - Create composable DOM elements using
+  template strings.</li>
+<li><a href="https://github.com/substack/hyperx">hyperx</a> - Convert template strings to
+  library backends.</li>
+<li><a href="https://github.com/choojs/nanomorph">nanomorph</a> - Hyper fast diffing algorithm for real DOM nodes.</li>
+<li><a href="https://github.com/yoshuawuyts/nanoraf">nanoraf</a> - Only call RAF when needed.</li>
+<li><a href="https://github.com/choojs/nanorouter">nanorouter</a> - Smol frontend router.</li>
+<li><a href="https://github.com/choojs/nanobus">nanobus</a> - Tiny message bus.</li>
+<li><a href="https://github.com/choojs/nanolocation">nanolocation</a> - Small window.location library.</li>
+<li><a href="https://github.com/choojs/nanohref">nanohref</a> - Tiny href click handler library.</li>
+<li><a href="https://github.com/choojs/nanoquery">nanoquery</a> - Tiny querystring module.</li>
+<li><a href="https://github.com/choojs/nanotiming">nanotiming</a> - Small timing library.</li>
+</ul>
+<h3>Demos</h3>
+<ul>
+<li><a href="http://requirebin.com/?gist=e589473373b3100a6ace29f7bbee3186">Input example</a> - (<a href="https://github.com/yoshuawuyts/choo/tree/master/examples/title">repo</a>)</li>
+<li><a href="https://hyperdev.com/#!/project/fork-fang">HTTP effects</a></li>
+<li><a href="https://github.com/yoshuawuyts/choo/tree/master/examples/mailbox">Mailbox routing</a></li>
+<li><a href="http://shuheikagawa.com/todomvc-choo">TodoMVC</a> - (<a href="https://github.com/shuhei/todomvc-choo">repo</a>)</li>
+<li><a href="https://choo-firebase-2ec21.firebaseapp.com">choo-firebase</a> - (<a href="https://github.com/mw222rs/choo-firebase">repo</a>)</li>
+<li><a href="https://grow.static.land">Grow</a> - (<a href="https://github.com/sethvincent/grow">repo</a>)</li>
+<li><a href="http://chootbot.herokuapp.com">Chatbot</a> - (<a href="https://github.com/plaey/chatbot">repo</a>)</li>
+<li><a href="https://github.com/akiva/chat-random">chat-random</a></li>
+<li><a href="https://github.com/timwis/choo-leaflet-demo">choo-leaflet-demo</a></li>
+<li><a href="https://zhouhansen.github.io/choo-scriber">choo-scriber</a> - (<a href="https://github.com/ZhouHansen/choo-scriber">repo</a>)</li>
+</ul>
+<h3>Community</h3>
+<ul>
+<li><a href="https://webchat.freenode.net/?channels=choo">Freenode</a></li>
+</ul>
+<h3>Plugins and addons</h3>
+<ul>
+<li><a href="https://github.com/bcomnes/choo-location-electron">choo-location-electron</a> - Fix <code>choo</code>'s router in electron.</li>
+<li><a href="https://github.com/yoshuawuyts/choo-log">choo-log</a> - Development logger for choo.</li>
+<li><a href="https://github.com/mantoni/choo-test">choo-test</a> - Easy choo app unit testing.</li>
+<li><a href="https://github.com/yoshuawuyts/choo-persist/">choo-persist</a> - Synchronize choo state with LocalStorage.</li>
+<li><a href="https://github.com/rahatarmanahmed/choo-promise">choo-promise</a> - Use promises in effects and subscriptions.</li>
+<li><a href="https://github.com/yoshuawuyts/choo-pull">choo-pull</a> - Wrap handlers to use pull-stream in a choo plugin.</li>
+<li><a href="https://github.com/yoshuawuyts/choo-redirect">choo-redirect</a> - Redirect a view to another view.</li>
+<li><a href="https://github.com/yoshuawuyts/choo-model">choo-model</a> - Experimental state management lib for choo.</li>
+<li><a href="https://github.com/bengourley/choo-resume">choo-resume</a> - choo-resume + hot-rld = hot app reload in choo.</li>
+<li><a href="https://github.com/graforlock/choo-detached">choo-detached</a> - Use <code>choo</code> as a mountable, simple stand-alone component (no routing).</li>
+<li><a href="https://github.com/choojs/choo-service-worker">choo-service-worker</a> - Service worker loader for <code>choo</code>.</li>
+<li><a href="https://github.com/YerkoPalma/choo-websocket">choo-websocket</a> - Small wraper around WebSocket browser API, for <code>choo</code> apps.</li>
+<li><a href="https://github.com/ungoldman/choo-store">choo-store</a> - Lightweight state structure for choo apps.</li>
+</ul>
+<h3>Elements</h3>
+<ul>
+<li><a href="https://github.com/finnp/dom-notifications">dom-notifications</a> - Atom-inspired notifications component.</li>
+<li><a href="https://github.com/trainyard/choodown">choodown</a> - A simple markdown component for choo.</li>
+<li><a href="https://github.com/dbtek/choo-md-editor">choo-md-editor</a> - Lightweight markdown editor that can be used inside Choo app or as a standalone library.</li>
+<li><a href="https://github.com/rexmortus/choo-chartist">choo-chartist</a> - A little component for using <a href="https://gionkunz.github.io/chartist-js/">Chartist</a> with the choo framework.</li>
+</ul>
+<h3>CLI Templates</h3>
+<p>Templates for <a href="https://github.com/trainyard/choo-cli">choo-cli</a></p>
+<ul>
+<li><a href="https://github.com/trainyard/template-basic">trainyard/template-basic</a></li>
+<li><a href="https://github.com/haroenv/template-webpack">haroenv/template-webpack</a></li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome choo <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <div align="right">:steam_locomotive::train::train::train::train::train:</div></h1>
+<blockquote>
+<p><a href="https://choo.io/">choo</a> is a <code>4kb</code> framework for creating
+sturdy frontend applications</p>
+</blockquote>
+<h2>Contents</h2>
+<ul>
+<li><a href="#official-resources">Official resources</a></li>
+<li><a href="#dependencies">Dependencies</a></li>
+<li><a href="#demos">Demos</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#plugins-and-addons">Plugins and addons</a></li>
+<li><a href="#elements">Elements</a></li>
+<li><a href="#cli-templates">CLI Templates</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#projects-using-choo">Projects using choo</a></li>
+</ul>
+<h3>Official resources</h3>
+<ul>
+<li><a href="https://github.com/yoshuawuyts/choo/blob/master/README.md">Docs</a></li>
+<li><a href="https://github.com/yoshuawuyts/choo-handbook">Handbook</a></li>
+<li><a href="https://github.com/yoshuawuyts/choo">Repo</a></li>
+<li><a href="https://choo.io/">Website</a></li>
+<li><a href="https://twitter.com/yoshuawuyts/status/730087077803528193">Twitter thread</a></li>
+</ul>
+<h3>Dependencies</h3>
+<p><code>choo</code> is a modular framework. These are the dependencies it glues together
+under the hood:</p>
+<ul>
+<li><a href="https://github.com/shama/bel">bel</a> - Create composable DOM elements using
+  template strings.</li>
+<li><a href="https://github.com/substack/hyperx">hyperx</a> - Convert template strings to
+  library backends.</li>
+<li><a href="https://github.com/choojs/nanomorph">nanomorph</a> - Hyper fast diffing algorithm for real DOM nodes.</li>
+<li><a href="https://github.com/yoshuawuyts/nanoraf">nanoraf</a> - Only call RAF when needed.</li>
+<li><a href="https://github.com/choojs/nanorouter">nanorouter</a> - Smol frontend router.</li>
+<li><a href="https://github.com/choojs/nanobus">nanobus</a> - Tiny message bus.</li>
+<li><a href="https://github.com/choojs/nanolocation">nanolocation</a> - Small window.location library.</li>
+<li><a href="https://github.com/choojs/nanohref">nanohref</a> - Tiny href click handler library.</li>
+<li><a href="https://github.com/choojs/nanoquery">nanoquery</a> - Tiny querystring module.</li>
+<li><a href="https://github.com/choojs/nanotiming">nanotiming</a> - Small timing library.</li>
+</ul>
+<h3>Demos</h3>
+<ul>
+<li><a href="http://requirebin.com/?gist=e589473373b3100a6ace29f7bbee3186">Input example</a> - (<a href="https://github.com/yoshuawuyts/choo/tree/master/examples/title">repo</a>)</li>
+<li><a href="https://hyperdev.com/#!/project/fork-fang">HTTP effects</a></li>
+<li><a href="https://github.com/yoshuawuyts/choo/tree/master/examples/mailbox">Mailbox routing</a></li>
+<li><a href="http://shuheikagawa.com/todomvc-choo">TodoMVC</a> - (<a href="https://github.com/shuhei/todomvc-choo">repo</a>)</li>
+<li><a href="https://choo-firebase-2ec21.firebaseapp.com">choo-firebase</a> - (<a href="https://github.com/mw222rs/choo-firebase">repo</a>)</li>
+<li><a href="https://grow.static.land">Grow</a> - (<a href="https://github.com/sethvincent/grow">repo</a>)</li>
+<li><a href="http://chootbot.herokuapp.com">Chatbot</a> - (<a href="https://github.com/plaey/chatbot">repo</a>)</li>
+<li><a href="https://github.com/akiva/chat-random">chat-random</a></li>
+<li><a href="https://github.com/timwis/choo-leaflet-demo">choo-leaflet-demo</a></li>
+<li><a href="https://zhouhansen.github.io/choo-scriber">choo-scriber</a> - (<a href="https://github.com/ZhouHansen/choo-scriber">repo</a>)</li>
+</ul>
+<h3>Community</h3>
+<ul>
+<li><a href="https://webchat.freenode.net/?channels=choo">Freenode</a></li>
+</ul>
+<h3>Plugins and addons</h3>
+<ul>
+<li><a href="https://github.com/bcomnes/choo-location-electron">choo-location-electron</a> - Fix <code>choo</code>'s router in electron.</li>
+<li><a href="https://github.com/yoshuawuyts/choo-log">choo-log</a> - Development logger for choo.</li>
+<li><a href="https://github.com/mantoni/choo-test">choo-test</a> - Easy choo app unit testing.</li>
+<li><a href="https://github.com/yoshuawuyts/choo-persist/">choo-persist</a> - Synchronize choo state with LocalStorage.</li>
+<li><a href="https://github.com/rahatarmanahmed/choo-promise">choo-promise</a> - Use promises in effects and subscriptions.</li>
+<li><a href="https://github.com/yoshuawuyts/choo-pull">choo-pull</a> - Wrap handlers to use pull-stream in a choo plugin.</li>
+<li><a href="https://github.com/yoshuawuyts/choo-redirect">choo-redirect</a> - Redirect a view to another view.</li>
+<li><a href="https://github.com/yoshuawuyts/choo-model">choo-model</a> - Experimental state management lib for choo.</li>
+<li><a href="https://github.com/bengourley/choo-resume">choo-resume</a> - choo-resume + hot-rld = hot app reload in choo.</li>
+<li><a href="https://github.com/graforlock/choo-detached">choo-detached</a> - Use <code>choo</code> as a mountable, simple stand-alone component (no routing).</li>
+<li><a href="https://github.com/choojs/choo-service-worker">choo-service-worker</a> - Service worker loader for <code>choo</code>.</li>
+<li><a href="https://github.com/YerkoPalma/choo-websocket">choo-websocket</a> - Small wraper around WebSocket browser API, for <code>choo</code> apps.</li>
+<li><a href="https://github.com/ungoldman/choo-store">choo-store</a> - Lightweight state structure for choo apps.</li>
+</ul>
+<h3>Elements</h3>
+<ul>
+<li><a href="https://github.com/finnp/dom-notifications">dom-notifications</a> - Atom-inspired notifications component.</li>
+<li><a href="https://github.com/trainyard/choodown">choodown</a> - A simple markdown component for choo.</li>
+<li><a href="https://github.com/dbtek/choo-md-editor">choo-md-editor</a> - Lightweight markdown editor that can be used inside Choo app or as a standalone library.</li>
+<li><a href="https://github.com/rexmortus/choo-chartist">choo-chartist</a> - A little component for using <a href="https://gionkunz.github.io/chartist-js/">Chartist</a> with the choo framework.</li>
+</ul>
+<h3>CLI Templates</h3>
+<p>Templates for <a href="https://github.com/trainyard/choo-cli">choo-cli</a></p>
+<ul>
+<li><a href="https://github.com/trainyard/template-basic">trainyard/template-basic</a></li>
+<li><a href="https://github.com/haroenv/template-webpack">haroenv/template-webpack</a></li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'choo_README.md';
 
         fetch(markdownFile)
@@ -48,21 +215,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

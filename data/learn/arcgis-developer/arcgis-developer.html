@@ -8,38 +8,163 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Esri Awesome Arcgis Developer - Awesome List Resources">
-    <title>Esri Awesome Arcgis Developer</title>
+    <meta name="description" content="> An awesome set of resources to help you develop with ArcGIS Products. ArcGIS products give you access to APIs, location services, and tools to develop your...">
+    <meta name="robots" content="index, follow">
+    <title>Arcgis Developer - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <!--lint disable double-link-->
+<h1>Awesome ArcGIS Developers <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<!--lint disable match-punctuation-->
+<p><img src="esri-logo.png" align="right" width="100"></p>
+<blockquote>
+<p>An awesome set of resources to help you <a href="https://www.esri.com/en-us/arcgis/products/develop-with-arcgis/overview">develop with ArcGIS Products</a>.</p>
+</blockquote>
+<p>ArcGIS products give you access to APIs, location services, and tools to develop your own mapping and spatial analysis applications. Use mapping products to help developers build web, native, offline, desktop, or integrated solutions for yourself, your organization, or other organizations. Access a full suite of location services to provide basemap layers, geocoding and routing capabilities, and other geospatial functionalities. Securely host and manage your data in the ArcGIS cloud.</p>
+<hr />
+<h2>Contents</h2>
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+<ul>
+<li><a href="#apis-and-sdks">APIs and SDKs</a></li>
+<li><a href="#application-generators-and-clis">Application generators and CLIs</a></li>
+<li><a href="#arcgis-location-services">ArcGIS location services</a></li>
+<li><a href="#code-samples-and-snippets">Code samples and snippets</a></li>
+<li><a href="#data-conversion-tools">Data conversion tools</a></li>
+<li><a href="#data-integration-tools">Data integration tools</a></li>
+<li><a href="#debugging-tools">Debugging tools</a></li>
+<li><a href="#design-and-styling">Design and styling</a></li>
+<li><a href="#developer-guides">Developer guides</a></li>
+<li><a href="#helpers">Helpers</a></li>
+<li><a href="#map-and-data-exploration">Map and data exploration</a></li>
+<li><a href="#playgrounds">Playgrounds</a></li>
+<li><a href="#spatial-analysis">Spatial Analysis</a></li>
+<li><a href="#specifications">Specifications</a></li>
+</ul>
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+<hr />
+<h2>APIs and SDKs</h2>
+<ul>
+<li>
+<p>ArcGIS Core APIs &amp; Libraries:</p>
+<ul>
+<li><a href="https://developers.arcgis.com/python/">ArcGIS API for Python</a> - Guides, sample notebooks, and API reference to do mapping, spatial analysis, data science, geospatial AI, and automation using Python.</li>
+<li><a href="https://developers.arcgis.com/rest/">ArcGIS REST APIs</a> - General documentation about ArcGIS REST APIs: location services, content management, portal administration, and more.</li>
+<li><a href="https://github.com/esri-es/ArcGIS-REST-API">ArcGIS REST APIs collections</a> - Postman collections to work with some of the REST APIs: location services, hosted feature layers, ArcGIS Online, ArcGIS Hub, etc.</li>
+<li><a href="https://developers.arcgis.com/arcgis-rest-js/">ArcGIS REST JS</a> - Key concepts, tutorials, and API reference of a collection of JavaScript modules for accessing location services, ArcGIS Online, and ArcGIS Enterprise REST APIs.</li>
+<li><a href="https://developers.arcgis.com/arcgis-urban-api/">ArcGIS Urban API</a> - Public GraphQL web service that can be used to interact with ArcGIS Urban data directly.</li>
+<li><a href="https://pro.arcgis.com/en/pro-app/arcpy/main/arcgis-pro-arcpy-reference.htm">ArcPy</a> - Documentation about the Python package to perform geographic data analysis, data conversion, data management, and map automation in ArcGIS Desktop or ArcGIS Enterprise environments.</li>
+</ul>
+</li>
+<li>
+<p>Esri Client-side SDKs:</p>
+<ul>
+<li><a href="https://developers.arcgis.com/net/">ArcGIS Maps SDK for .NET</a> - Guides, sample codes, and API reference to build desktop and mobile apps using .NET.</li>
+<li><a href="https://developers.arcgis.com/flutter/">ArcGIS Maps SDK for Flutter</a> - Guides, sample codes, and API reference to build desktop and mobile apps using Flutter.</li>
+<li><a href="https://developers.arcgis.com/javascript/latest/">ArcGIS Maps SDK for JavaScript</a> - Guides, sample code, API references, and showcase to build 2D and 3D interactive web apps unlocking geospatial data.</li>
+<li><a href="https://developers.arcgis.com/kotlin/">ArcGIS Maps SDK for Kotlin</a> - Guides, sample codes, and API reference to build mobile apps using Kotlin.</li>
+<li><a href="https://developers.arcgis.com/qt/">ArcGIS Maps SDK for Qt</a> - Guides, sample codes, and API reference to build mobile and desktop apps.</li>
+<li><a href="https://developers.arcgis.com/swift/">ArcGIS Maps SDK for Swift</a> - Guides, sample codes, and API reference to build mobile apps using Swift.</li>
+<li><a href="https://developers.arcgis.com/unity/">ArcGIS Maps SDK for Unity</a> - Guides, API reference, and sample code to use ArcGIS data and services to develop for Unity.</li>
+<li><a href="https://developers.arcgis.com/unreal-engine/">ArcGIS Maps SDK for Unreal Engine</a> - Guides, API reference, and sample code to use ArcGIS data and services to develop for Unreal Engine.</li>
+</ul>
+</li>
+<li>
+<p>Integrations &amp; Plugins (third-party libraries):</p>
+<ul>
+<li><a href="https://developers.arcgis.com/cesiumjs/">ArcGIS integrations with CesiumJS</a> - Guide and tutorials to help you start build mapping applications with CesiumJS and ArcGIS.</li>
+<li><a href="https://developers.arcgis.com/maplibre-gl-js/maplibre-arcgis-plugin/">ArcGIS integrations with MapLibre GL JS</a> - Learn how to connect MapLibre GL JS apps with ArcGIS services using the Esri-maintained ArcGIS MapLibre plugin and ArcGIS REST JS, including tutorials, API references, and sample code.</li>
+<li><a href="https://developers.arcgis.com/openlayers/">ArcGIS integrations with OpenLayers</a> - Guide and tutorials to help you start building web apps with OpenLayers and ArcGIS location services.</li>
+</ul>
+</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <!--lint disable double-link-->
+<h1>Awesome ArcGIS Developers <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<!--lint disable match-punctuation-->
+<p><img src="esri-logo.png" align="right" width="100"></p>
+<blockquote>
+<p>An awesome set of resources to help you <a href="https://www.esri.com/en-us/arcgis/products/develop-with-arcgis/overview">develop with ArcGIS Products</a>.</p>
+</blockquote>
+<p>ArcGIS products give you access to APIs, location services, and tools to develop your own mapping and spatial analysis applications. Use mapping products to help developers build web, native, offline, desktop, or integrated solutions for yourself, your organization, or other organizations. Access a full suite of location services to provide basemap layers, geocoding and routing capabilities, and other geospatial functionalities. Securely host and manage your data in the ArcGIS cloud.</p>
+<hr />
+<h2>Contents</h2>
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+<ul>
+<li><a href="#apis-and-sdks">APIs and SDKs</a></li>
+<li><a href="#application-generators-and-clis">Application generators and CLIs</a></li>
+<li><a href="#arcgis-location-services">ArcGIS location services</a></li>
+<li><a href="#code-samples-and-snippets">Code samples and snippets</a></li>
+<li><a href="#data-conversion-tools">Data conversion tools</a></li>
+<li><a href="#data-integration-tools">Data integration tools</a></li>
+<li><a href="#debugging-tools">Debugging tools</a></li>
+<li><a href="#design-and-styling">Design and styling</a></li>
+<li><a href="#developer-guides">Developer guides</a></li>
+<li><a href="#helpers">Helpers</a></li>
+<li><a href="#map-and-data-exploration">Map and data exploration</a></li>
+<li><a href="#playgrounds">Playgrounds</a></li>
+<li><a href="#spatial-analysis">Spatial Analysis</a></li>
+<li><a href="#specifications">Specifications</a></li>
+</ul>
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+<hr />
+<h2>APIs and SDKs</h2>
+<ul>
+<li>
+<p>ArcGIS Core APIs &amp; Libraries:</p>
+<ul>
+<li><a href="https://developers.arcgis.com/python/">ArcGIS API for Python</a> - Guides, sample notebooks, and API reference to do mapping, spatial analysis, data science, geospatial AI, and automation using Python.</li>
+<li><a href="https://developers.arcgis.com/rest/">ArcGIS REST APIs</a> - General documentation about ArcGIS REST APIs: location services, content management, portal administration, and more.</li>
+<li><a href="https://github.com/esri-es/ArcGIS-REST-API">ArcGIS REST APIs collections</a> - Postman collections to work with some of the REST APIs: location services, hosted feature layers, ArcGIS Online, ArcGIS Hub, etc.</li>
+<li><a href="https://developers.arcgis.com/arcgis-rest-js/">ArcGIS REST JS</a> - Key concepts, tutorials, and API reference of a collection of JavaScript modules for accessing location services, ArcGIS Online, and ArcGIS Enterprise REST APIs.</li>
+<li><a href="https://developers.arcgis.com/arcgis-urban-api/">ArcGIS Urban API</a> - Public GraphQL web service that can be used to interact with ArcGIS Urban data directly.</li>
+<li><a href="https://pro.arcgis.com/en/pro-app/arcpy/main/arcgis-pro-arcpy-reference.htm">ArcPy</a> - Documentation about the Python package to perform geographic data analysis, data conversion, data management, and map automation in ArcGIS Desktop or ArcGIS Enterprise environments.</li>
+</ul>
+</li>
+<li>
+<p>Esri Client-side SDKs:</p>
+<ul>
+<li><a href="https://developers.arcgis.com/net/">ArcGIS Maps SDK for .NET</a> - Guides, sample codes, and API reference to build desktop and mobile apps using .NET.</li>
+<li><a href="https://developers.arcgis.com/flutter/">ArcGIS Maps SDK for Flutter</a> - Guides, sample codes, and API reference to build desktop and mobile apps using Flutter.</li>
+<li><a href="https://developers.arcgis.com/javascript/latest/">ArcGIS Maps SDK for JavaScript</a> - Guides, sample code, API references, and showcase to build 2D and 3D interactive web apps unlocking geospatial data.</li>
+<li><a href="https://developers.arcgis.com/kotlin/">ArcGIS Maps SDK for Kotlin</a> - Guides, sample codes, and API reference to build mobile apps using Kotlin.</li>
+<li><a href="https://developers.arcgis.com/qt/">ArcGIS Maps SDK for Qt</a> - Guides, sample codes, and API reference to build mobile and desktop apps.</li>
+<li><a href="https://developers.arcgis.com/swift/">ArcGIS Maps SDK for Swift</a> - Guides, sample codes, and API reference to build mobile apps using Swift.</li>
+<li><a href="https://developers.arcgis.com/unity/">ArcGIS Maps SDK for Unity</a> - Guides, API reference, and sample code to use ArcGIS data and services to develop for Unity.</li>
+<li><a href="https://developers.arcgis.com/unreal-engine/">ArcGIS Maps SDK for Unreal Engine</a> - Guides, API reference, and sample code to use ArcGIS data and services to develop for Unreal Engine.</li>
+</ul>
+</li>
+<li>
+<p>Integrations &amp; Plugins (third-party libraries):</p>
+<ul>
+<li><a href="https://developers.arcgis.com/cesiumjs/">ArcGIS integrations with CesiumJS</a> - Guide and tutorials to help you start build mapping applications with CesiumJS and ArcGIS.</li>
+<li><a href="https://developers.arcgis.com/maplibre-gl-js/maplibre-arcgis-plugin/">ArcGIS integrations with MapLibre GL JS</a> - Learn how to connect MapLibre GL JS apps with ArcGIS services using the Esri-maintained ArcGIS MapLibre plugin and ArcGIS REST JS, including tutorials, API references, and sample code.</li>
+<li><a href="https://developers.arcgis.com/openlayers/">ArcGIS integrations with OpenLayers</a> - Guide and tutorials to help you start building web apps with OpenLayers and ArcGIS location services.</li>
+</ul>
+</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'arcgis-developer_README.md';
 
         fetch(markdownFile)
@@ -48,21 +173,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

@@ -8,38 +8,149 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fregante Awesome Webextensions - Awesome List Resources">
-    <title>Fregante Awesome Webextensions</title>
+    <meta name="description" content="> A curated list of awesome resources for WebExtensions development. WebExtensions are a cross-browser system for developing browser add-ons. To a large extent...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome WebExtensions [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome WebExtensions <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<blockquote>
+<p>A curated list of awesome resources for WebExtensions development.</p>
+</blockquote>
+<p>WebExtensions are a cross-browser system for developing browser add-ons. To a large extent the system is compatible with the extension API supported by Google Chrome. Extensions written for this browser will in most cases run in Firefox with just <a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Porting_a_Google_Chrome_extension">a few changes</a>.</p>
+<p>Follow <a href="https://fregante.com">@fregante</a> for more webext-related news.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#getting-started">Getting started</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#libraries-and-frameworks">Libraries and Frameworks</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#boilerplates">Boilerplates</a></li>
+<li><a href="#sample-extensions">Sample Extensions</a></li>
+</ul>
+<h2>Getting started</h2>
+<ul>
+<li><a href="https://developer.chrome.com/docs/extensions/reference">Chrome Extensions documentation</a> - Documentation for the original Chrome extension model.</li>
+<li><a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions">Mozilla's WebExtensions documentation</a> - MDN wiki for the WebExtensions API.</li>
+<li><a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Browser_support_for_JavaScript_APIs">Browser support for WebExtensions</a> - Compatibility table for Chrome, Edge, Firefox, and Opera.</li>
+<li><a href="https://developer.apple.com/safari/extensions/">Safari Extensions documentation</a> - Developer documentation on building Safari extensions. Technically not WebExtensions, the API is completely different.</li>
+<li><a href="https://dev.opera.com/extensions/apis/">Opera API support</a> - Detailed WebExtensions support for Opera.</li>
+<li><a href="https://browserext.github.io/browserext/">Browser Extension Standard</a> - Standard for the API, supported by Mozilla, Opera and Microsoft.</li>
+</ul>
+<h2>Community</h2>
+<ul>
+<li><a href="https://groups.google.com/a/chromium.org/forum/#!forum/chromium-extensions">Google Groups</a> - Discussions.</li>
+<li><a href="https://discourse.mozilla.org/c/add-ons">Mozilla Discourse</a> - Discussions.</li>
+<li><a href="https://matrix.to/#/#addons:mozilla.org"><code>#addons:mozilla.org</code></a> - Matrix channel by Mozilla.</li>
+<li><a href="https://stackoverflow.com/questions/tagged/google-chrome-extension"><code>google-chrome-extension</code> tag on Stack Overflow</a> - Relevant questions.</li>
+<li><a href="https://stackoverflow.com/questions/tagged/firefox-addon-webextensions"><code>firefox-addon-webextensions</code> tag on Stack Overflow</a> - Relevant questions.</li>
+<li><a href="https://stackoverflow.com/questions/tagged/microsoft-edge-extension"><code>microsoft-edge-extension</code> tag on Stack Overflow</a> - Relevant questions.</li>
+</ul>
+<h2>Libraries and Frameworks</h2>
+<p>Code meant become part of the extension.</p>
+<ul>
+<li><a href="https://github.com/fregante/webext-options-sync">webext-options-sync</a> - Helps you manage and autosave your extension's options.</li>
+<li><a href="https://github.com/fregante/webext-storage-cache">webext-storage-cache</a> - Map-like promised cache storage with expiration.</li>
+<li><a href="https://github.com/fregante/webext-dynamic-content-scripts">webext-dynamic-content-scripts</a> - Automatically inject your <code>content_scripts</code> on custom domains.</li>
+<li><a href="https://github.com/mozilla/webextension-polyfill">mozilla/webextension-polyfill</a> - Polyfill to support the standardized promise based API in the <code>browser</code> namespace.</li>
+<li><a href="https://www.npmjs.com/package/@types/firefox-webext-browser">@types/firefox-webext-browser</a> - Supplies TypeScript types for the <code>browser</code> namespace.</li>
+<li><a href="https://github.com/ivantsov/redux-webext">redux-webext</a> - Uses Redux for managing the state of your WebExtension.</li>
+<li><a href="https://github.com/Glench/ExtPay">ExtPay</a> - Take secure payments in extensions without needing to run a server backend.</li>
+<li><a href="https://github.com/OlegWock/inject-react-anywhere">inject-react-anywhere</a> - Inject React components into 3rd party sites with convenient API and styles isolation.</li>
+<li><a href="https://github.com/fregante/webext-fun">More…</a></li>
+</ul>
+<h2>Tools</h2>
+<p>Apps that help you manage your extensions.</p>
+<ul>
+<li><a href="https://github.com/fregante/chrome-webstore-upload-cli">Chrome Webstore Upload</a> - Upload the extension to the Chrome Web Store via cli (or on Travis, automatically).</li>
+<li><a href="https://github.com/mozilla/web-ext">mozilla/web-ext</a> - Command line tool to help build, run, and test WebExtensions.</li>
+<li><a href="https://github.com/ZenHubIO/chromepet">chromepet</a> - Get notified when your new version has been published.</li>
+<li><a href="https://github.com/jiripospisil/chrome-ext-downloader">chrome-ext-downloader</a> - Download any extension on Chrome Web Store to see how they do it.</li>
+<li><a href="https://github.com/acvetkov/chrome-store-api">chrome-store-api</a> - Chrome Web Store API wrapper.</li>
+<li><a href="https://github.com/Rob--W/crxviewer">Chrome extension source viewer</a> - WebExtension to view source code of extensions directly on the store.</li>
+<li><a href="https://github.com/LinusU/wext-shipit">@wext/shipit</a> - Tool to automatically publish to Chrome Web Store, Mozilla Addons and Opera Addons.</li>
+<li><a href="https://github.com/abhijithvijayan/wext-manifest-loader">wext-manifest-loader</a> - Webpack loader that lets you specify <code>manifest.json</code> properties to appear only in specific browsers.</li>
+<li><a href="https://github.com/jsmnbom/webextension-manifest-loader">webextension-manifest-loader</a> - Webpack loader that loads browser tailored manifest.json. It also imports all importable properties, allowing you to have 'manifest.json' as your only webpack entry point.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome WebExtensions <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<blockquote>
+<p>A curated list of awesome resources for WebExtensions development.</p>
+</blockquote>
+<p>WebExtensions are a cross-browser system for developing browser add-ons. To a large extent the system is compatible with the extension API supported by Google Chrome. Extensions written for this browser will in most cases run in Firefox with just <a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Porting_a_Google_Chrome_extension">a few changes</a>.</p>
+<p>Follow <a href="https://fregante.com">@fregante</a> for more webext-related news.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#getting-started">Getting started</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#libraries-and-frameworks">Libraries and Frameworks</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#boilerplates">Boilerplates</a></li>
+<li><a href="#sample-extensions">Sample Extensions</a></li>
+</ul>
+<h2>Getting started</h2>
+<ul>
+<li><a href="https://developer.chrome.com/docs/extensions/reference">Chrome Extensions documentation</a> - Documentation for the original Chrome extension model.</li>
+<li><a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions">Mozilla's WebExtensions documentation</a> - MDN wiki for the WebExtensions API.</li>
+<li><a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Browser_support_for_JavaScript_APIs">Browser support for WebExtensions</a> - Compatibility table for Chrome, Edge, Firefox, and Opera.</li>
+<li><a href="https://developer.apple.com/safari/extensions/">Safari Extensions documentation</a> - Developer documentation on building Safari extensions. Technically not WebExtensions, the API is completely different.</li>
+<li><a href="https://dev.opera.com/extensions/apis/">Opera API support</a> - Detailed WebExtensions support for Opera.</li>
+<li><a href="https://browserext.github.io/browserext/">Browser Extension Standard</a> - Standard for the API, supported by Mozilla, Opera and Microsoft.</li>
+</ul>
+<h2>Community</h2>
+<ul>
+<li><a href="https://groups.google.com/a/chromium.org/forum/#!forum/chromium-extensions">Google Groups</a> - Discussions.</li>
+<li><a href="https://discourse.mozilla.org/c/add-ons">Mozilla Discourse</a> - Discussions.</li>
+<li><a href="https://matrix.to/#/#addons:mozilla.org"><code>#addons:mozilla.org</code></a> - Matrix channel by Mozilla.</li>
+<li><a href="https://stackoverflow.com/questions/tagged/google-chrome-extension"><code>google-chrome-extension</code> tag on Stack Overflow</a> - Relevant questions.</li>
+<li><a href="https://stackoverflow.com/questions/tagged/firefox-addon-webextensions"><code>firefox-addon-webextensions</code> tag on Stack Overflow</a> - Relevant questions.</li>
+<li><a href="https://stackoverflow.com/questions/tagged/microsoft-edge-extension"><code>microsoft-edge-extension</code> tag on Stack Overflow</a> - Relevant questions.</li>
+</ul>
+<h2>Libraries and Frameworks</h2>
+<p>Code meant become part of the extension.</p>
+<ul>
+<li><a href="https://github.com/fregante/webext-options-sync">webext-options-sync</a> - Helps you manage and autosave your extension's options.</li>
+<li><a href="https://github.com/fregante/webext-storage-cache">webext-storage-cache</a> - Map-like promised cache storage with expiration.</li>
+<li><a href="https://github.com/fregante/webext-dynamic-content-scripts">webext-dynamic-content-scripts</a> - Automatically inject your <code>content_scripts</code> on custom domains.</li>
+<li><a href="https://github.com/mozilla/webextension-polyfill">mozilla/webextension-polyfill</a> - Polyfill to support the standardized promise based API in the <code>browser</code> namespace.</li>
+<li><a href="https://www.npmjs.com/package/@types/firefox-webext-browser">@types/firefox-webext-browser</a> - Supplies TypeScript types for the <code>browser</code> namespace.</li>
+<li><a href="https://github.com/ivantsov/redux-webext">redux-webext</a> - Uses Redux for managing the state of your WebExtension.</li>
+<li><a href="https://github.com/Glench/ExtPay">ExtPay</a> - Take secure payments in extensions without needing to run a server backend.</li>
+<li><a href="https://github.com/OlegWock/inject-react-anywhere">inject-react-anywhere</a> - Inject React components into 3rd party sites with convenient API and styles isolation.</li>
+<li><a href="https://github.com/fregante/webext-fun">More…</a></li>
+</ul>
+<h2>Tools</h2>
+<p>Apps that help you manage your extensions.</p>
+<ul>
+<li><a href="https://github.com/fregante/chrome-webstore-upload-cli">Chrome Webstore Upload</a> - Upload the extension to the Chrome Web Store via cli (or on Travis, automatically).</li>
+<li><a href="https://github.com/mozilla/web-ext">mozilla/web-ext</a> - Command line tool to help build, run, and test WebExtensions.</li>
+<li><a href="https://github.com/ZenHubIO/chromepet">chromepet</a> - Get notified when your new version has been published.</li>
+<li><a href="https://github.com/jiripospisil/chrome-ext-downloader">chrome-ext-downloader</a> - Download any extension on Chrome Web Store to see how they do it.</li>
+<li><a href="https://github.com/acvetkov/chrome-store-api">chrome-store-api</a> - Chrome Web Store API wrapper.</li>
+<li><a href="https://github.com/Rob--W/crxviewer">Chrome extension source viewer</a> - WebExtension to view source code of extensions directly on the store.</li>
+<li><a href="https://github.com/LinusU/wext-shipit">@wext/shipit</a> - Tool to automatically publish to Chrome Web Store, Mozilla Addons and Opera Addons.</li>
+<li><a href="https://github.com/abhijithvijayan/wext-manifest-loader">wext-manifest-loader</a> - Webpack loader that lets you specify <code>manifest.json</code> properties to appear only in specific browsers.</li>
+<li><a href="https://github.com/jsmnbom/webextension-manifest-loader">webextension-manifest-loader</a> - Webpack loader that loads browser tailored manifest.json. It also imports all importable properties, allowing you to have 'manifest.json' as your only webpack entry point.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'webextensions_README.md';
 
         fetch(markdownFile)
@@ -48,21 +159,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

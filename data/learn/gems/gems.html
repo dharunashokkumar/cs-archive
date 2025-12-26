@@ -8,38 +8,179 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hothero Awesome Rails Gem - Awesome List Resources">
-    <title>Hothero Awesome Rails Gem</title>
+    <meta name="description" content="A collection of awesome Ruby Gems for Rails development. The goal is to help every Rails developer to build an awesome Rails product/service. Rails Gem List...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Rails Gem [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Rails Gem <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A collection of awesome Ruby Gems for Rails development.</p>
+<p>The goal is to help every Rails developer to build an awesome Rails product/service.</p>
+<ul>
+<li><a href="#rails-gem-list">Rails Gem List</a></li>
+<li><a href="#user">User</a></li>
+<li><a href="#active-record">Active Record</a></li>
+<li><a href="#plugins">Plugins</a></li>
+<li><a href="#api">API</a></li>
+<li><a href="#email">Email</a></li>
+<li><a href="#file-uploading">File Uploading</a></li>
+<li><a href="#searching">Searching</a></li>
+<li><a href="#scheduledrecurrence-jobs">Scheduled/Recurrence Jobs</a></li>
+<li><a href="#view-helper">View Helper</a></li>
+<li><a href="#environment-variables">Environment Variables</a></li>
+<li><a href="#admin-panel">Admin Panel</a></li>
+<li><a href="#logging">Logging</a></li>
+<li><a href="#debug">Debug</a></li>
+<li><a href="#coding-style">Coding Style</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#production">Production</a></li>
+<li><a href="#error-logging">Error Logging</a></li>
+<li><a href="#database">Database</a></li>
+</ul>
+<h2>User</h2>
+<h3>Authentication</h3>
+<ul>
+<li><a href="https://github.com/plataformatec/devise/">Devise</a> - Devise is a flexible authentication solution for Rails based on Warden.</li>
+<li><a href="https://github.com/nsarno/knock">Knock</a> - Seamless JWT authentication for Rails API.</li>
+<li><a href="https://github.com/thoughtbot/clearance">Clearance</a> - Rails authentication with email &amp; password.</li>
+<li><a href="https://github.com/lynndylanhurley/devise_token_auth">Devise token auth</a> - Token based authentication for Rails JSON APIs.</li>
+<li><a href="https://github.com/Sorcery/sorcery">Sorcery</a> - Magical Authentication for Rails. Supports ActiveRecord, DataMapper, Mongoid and MongoMapper.</li>
+</ul>
+<h3>Authorization</h3>
+<ul>
+<li><a href="https://github.com/elabs/pundit">Pundit</a> - Pundit provides a set of helpers which guide you in leveraging regular Ruby classes and object oriented design patterns to build a simple, robust and scaleable authorization system.</li>
+<li><a href="https://github.com/CanCanCommunity/cancancan">cancancan</a> - Continuation of CanCan, the authorization Gem for Ruby on Rails.CanCan is an authorization library for Ruby on Rails which restricts what resources a given user is allowed to access. All permissions are defined in a single location (the Ability class) and not duplicated across controllers, views, and database queries.</li>
+<li><a href="https://github.com/RolifyCommunity/rolify">rolify</a> - Role management library with resource scoping.</li>
+<li><a href="https://github.com/be9/acl9/">acl9</a> - Acl9 is a role-based authorization system that provides a concise DSL for securing your Rails application.</li>
+</ul>
+<h3>Omniauth</h3>
+<ul>
+<li><a href="https://github.com/mkdynamic/omniauth-facebook">omniauth-facebook</a></li>
+<li><a href="https://github.com/zquestz/omniauth-google-oauth2">omniauth-google-oauth2</a></li>
+<li><a href="https://github.com/beenhero/omniauth-weibo-oauth2">omniauth-weibo-oauth2</a></li>
+<li><a href="https://github.com/arunagw/omniauth-twitter">omniauth-twitter</a></li>
+<li><a href="https://github.com/intridea/omniauth-github">omniauth-github</a></li>
+<li><a href="https://github.com/decioferreira/omniauth-linkedin-oauth2">omniauth-linkedin-oauth2</a></li>
+</ul>
+<h2>Active Record</h2>
+<ul>
+<li><a href="https://github.com/brainspec/enumerize">Enumerize</a> - Enumerated attributes with I18n and ActiveRecord/Mongoid support. It can be integrated with Simple Form.</li>
+<li><a href="https://github.com/magnusvk/counter_culture">counter_culture</a> - Turbo-charged counter caches for your Rails app. Huge improvements over the Rails standard counter caches.</li>
+<li><a href="https://github.com/cedric/custom_counter_cache">custom_counter_cache</a> - A simple approach to creating a custom counter cache that can be used across multiple models.</li>
+<li><a href="https://github.com/djreimer/sequenced">Sequenced</a> - Sequenced is a simple gem that generates scoped sequential IDs for ActiveRecord models.</li>
+<li><a href="https://github.com/norman/friendly_id">FriendlyId</a> - FriendlyId is the “Swiss Army bulldozer” of slugging and permalink plugins for ActiveRecord. It allows you to create pretty URL’s and work with human-friendly strings as if they were numeric ids for ActiveRecord models.</li>
+<li><a href="https://github.com/aasm/aasm">AASM</a> - State machines for Ruby classes (plain Ruby, Rails Active Record, Mongoid).</li>
+<li><a href="https://github.com/airblade/paper_trail">PaperTrail</a> - PaperTrail lets you track changes to your models' data. It's good for auditing or versioning.</li>
+<li><a href="https://github.com/rubysherpas/paranoia">paranoia</a> - ActiveRecord plugin allowing you to hide and restore records without actually deleting them.</li>
+<li><a href="https://github.com/kaize/validates">Validates</a> - Validates provides collection of useful custom validators for Rails applications, including:</li>
+<li>EmailValidator</li>
+<li>UrlValidator</li>
+<li>SlugValidator</li>
+<li>MoneyValidator</li>
+<li>IpValidator</li>
+<li>AssociationLengthValidator</li>
+<li>AbsolutePathValidator</li>
+<li>UriComponentValidator</li>
+<li>ColorValidator</li>
+<li>EanValidator (EAN-8 &amp; EAN-13)</li>
+<li><a href="https://github.com/globalize/globalize">globalize</a> - Rails I18n de-facto standard library for ActiveRecord model/data translation.</li>
+<li><a href="https://github.com/moiristo/deep_cloneable">deep_cloneable</a> - This gem gives every ActiveRecord::Base object the possibility to do a deep clone that includes user specified associations.</li>
+<li><a href="https://github.com/Timrael/social_shares">social_shares</a> - Check how many times url was shared in social networks.</li>
+<li><a href="https://github.com/chaps-io/public_activity">public_activity</a> - Easy activity tracking for models - similar to Github's Public Activity.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Rails Gem <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A collection of awesome Ruby Gems for Rails development.</p>
+<p>The goal is to help every Rails developer to build an awesome Rails product/service.</p>
+<ul>
+<li><a href="#rails-gem-list">Rails Gem List</a></li>
+<li><a href="#user">User</a></li>
+<li><a href="#active-record">Active Record</a></li>
+<li><a href="#plugins">Plugins</a></li>
+<li><a href="#api">API</a></li>
+<li><a href="#email">Email</a></li>
+<li><a href="#file-uploading">File Uploading</a></li>
+<li><a href="#searching">Searching</a></li>
+<li><a href="#scheduledrecurrence-jobs">Scheduled/Recurrence Jobs</a></li>
+<li><a href="#view-helper">View Helper</a></li>
+<li><a href="#environment-variables">Environment Variables</a></li>
+<li><a href="#admin-panel">Admin Panel</a></li>
+<li><a href="#logging">Logging</a></li>
+<li><a href="#debug">Debug</a></li>
+<li><a href="#coding-style">Coding Style</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#production">Production</a></li>
+<li><a href="#error-logging">Error Logging</a></li>
+<li><a href="#database">Database</a></li>
+</ul>
+<h2>User</h2>
+<h3>Authentication</h3>
+<ul>
+<li><a href="https://github.com/plataformatec/devise/">Devise</a> - Devise is a flexible authentication solution for Rails based on Warden.</li>
+<li><a href="https://github.com/nsarno/knock">Knock</a> - Seamless JWT authentication for Rails API.</li>
+<li><a href="https://github.com/thoughtbot/clearance">Clearance</a> - Rails authentication with email &amp; password.</li>
+<li><a href="https://github.com/lynndylanhurley/devise_token_auth">Devise token auth</a> - Token based authentication for Rails JSON APIs.</li>
+<li><a href="https://github.com/Sorcery/sorcery">Sorcery</a> - Magical Authentication for Rails. Supports ActiveRecord, DataMapper, Mongoid and MongoMapper.</li>
+</ul>
+<h3>Authorization</h3>
+<ul>
+<li><a href="https://github.com/elabs/pundit">Pundit</a> - Pundit provides a set of helpers which guide you in leveraging regular Ruby classes and object oriented design patterns to build a simple, robust and scaleable authorization system.</li>
+<li><a href="https://github.com/CanCanCommunity/cancancan">cancancan</a> - Continuation of CanCan, the authorization Gem for Ruby on Rails.CanCan is an authorization library for Ruby on Rails which restricts what resources a given user is allowed to access. All permissions are defined in a single location (the Ability class) and not duplicated across controllers, views, and database queries.</li>
+<li><a href="https://github.com/RolifyCommunity/rolify">rolify</a> - Role management library with resource scoping.</li>
+<li><a href="https://github.com/be9/acl9/">acl9</a> - Acl9 is a role-based authorization system that provides a concise DSL for securing your Rails application.</li>
+</ul>
+<h3>Omniauth</h3>
+<ul>
+<li><a href="https://github.com/mkdynamic/omniauth-facebook">omniauth-facebook</a></li>
+<li><a href="https://github.com/zquestz/omniauth-google-oauth2">omniauth-google-oauth2</a></li>
+<li><a href="https://github.com/beenhero/omniauth-weibo-oauth2">omniauth-weibo-oauth2</a></li>
+<li><a href="https://github.com/arunagw/omniauth-twitter">omniauth-twitter</a></li>
+<li><a href="https://github.com/intridea/omniauth-github">omniauth-github</a></li>
+<li><a href="https://github.com/decioferreira/omniauth-linkedin-oauth2">omniauth-linkedin-oauth2</a></li>
+</ul>
+<h2>Active Record</h2>
+<ul>
+<li><a href="https://github.com/brainspec/enumerize">Enumerize</a> - Enumerated attributes with I18n and ActiveRecord/Mongoid support. It can be integrated with Simple Form.</li>
+<li><a href="https://github.com/magnusvk/counter_culture">counter_culture</a> - Turbo-charged counter caches for your Rails app. Huge improvements over the Rails standard counter caches.</li>
+<li><a href="https://github.com/cedric/custom_counter_cache">custom_counter_cache</a> - A simple approach to creating a custom counter cache that can be used across multiple models.</li>
+<li><a href="https://github.com/djreimer/sequenced">Sequenced</a> - Sequenced is a simple gem that generates scoped sequential IDs for ActiveRecord models.</li>
+<li><a href="https://github.com/norman/friendly_id">FriendlyId</a> - FriendlyId is the “Swiss Army bulldozer” of slugging and permalink plugins for ActiveRecord. It allows you to create pretty URL’s and work with human-friendly strings as if they were numeric ids for ActiveRecord models.</li>
+<li><a href="https://github.com/aasm/aasm">AASM</a> - State machines for Ruby classes (plain Ruby, Rails Active Record, Mongoid).</li>
+<li><a href="https://github.com/airblade/paper_trail">PaperTrail</a> - PaperTrail lets you track changes to your models' data. It's good for auditing or versioning.</li>
+<li><a href="https://github.com/rubysherpas/paranoia">paranoia</a> - ActiveRecord plugin allowing you to hide and restore records without actually deleting them.</li>
+<li><a href="https://github.com/kaize/validates">Validates</a> - Validates provides collection of useful custom validators for Rails applications, including:</li>
+<li>EmailValidator</li>
+<li>UrlValidator</li>
+<li>SlugValidator</li>
+<li>MoneyValidator</li>
+<li>IpValidator</li>
+<li>AssociationLengthValidator</li>
+<li>AbsolutePathValidator</li>
+<li>UriComponentValidator</li>
+<li>ColorValidator</li>
+<li>EanValidator (EAN-8 &amp; EAN-13)</li>
+<li><a href="https://github.com/globalize/globalize">globalize</a> - Rails I18n de-facto standard library for ActiveRecord model/data translation.</li>
+<li><a href="https://github.com/moiristo/deep_cloneable">deep_cloneable</a> - This gem gives every ActiveRecord::Base object the possibility to do a deep clone that includes user specified associations.</li>
+<li><a href="https://github.com/Timrael/social_shares">social_shares</a> - Check how many times url was shared in social networks.</li>
+<li><a href="https://github.com/chaps-io/public_activity">public_activity</a> - Easy activity tracking for models - similar to Github's Public Activity.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'gems_README.md';
 
         fetch(markdownFile)
@@ -48,21 +189,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

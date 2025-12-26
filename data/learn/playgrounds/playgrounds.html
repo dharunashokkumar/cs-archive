@@ -8,38 +8,185 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Uraimo Awesome Swift Playgrounds - Awesome List Resources">
-    <title>Uraimo Awesome Swift Playgrounds</title>
+    <meta name="description" content="> A curated list of awesome Swift playgrounds. Please take a quick look at the contribution guidelines first. Thanks to all contributors; you rock! If you see...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Swift Playgrounds [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)  ![156 playgrounds](https://img.shields.io/badge/Playgrounds:-156-orange.svg) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Swift Playgrounds <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a>  <img alt="156 playgrounds" src="https://img.shields.io/badge/Playgrounds:-156-orange.svg" /></h1>
+<blockquote>
+<p>A curated list of awesome Swift playgrounds.</p>
+</blockquote>
+<h3>Contributing</h3>
+<p>Please take a quick look at the <a href="https://github.com/uraimo/awesome-swift-playgrounds/blob/master/CONTRIBUTING.md">contribution guidelines</a> first. Thanks to all <a href="https://github.com/uraimo/awesome-swift-playgrounds/graphs/contributors">contributors</a>; you rock!</p>
+<p>If you see a playground here that does not work anymore with the current release of Xcode or is not a good fit, please submit a pull request to improve this file or consider updating it, thank you!</p>
+<h3>Downloading all the playgrounds</h3>
+<p>Unless otherwise indicated, all playgrounds are compatible with Swift 3.</p>
+<p>All the playgrounds are available as submodules in the <code>playgrounds/</code> directory, to download them all in one go, just clone this repository with <code>git clone --recursive https://github.com/uraimo/Awesome-Swift-Playgrounds.git</code> or execute <code>git submodule update --init</code> after you have cloned the repository the usual way. </p>
+<p>Apple's playgrounds distributed as zip archives have to be downloaded manually.</p>
+<h3>Tags</h3>
+<p>🌟 = My personal favorites</p>
+<p>🍁 = Swift 4+ Playground</p>
+<p>⏳ = Pre-Swift 3 Playground</p>
+<h3>Contents</h3>
+<ul>
+<li><a href="#wwdc-students-submissions">WWDC Students Submissions</a></li>
+<li><a href="#playgroundbooks">PlaygroundBooks</a></li>
+<li><a href="#learning-swift">Learning Swift</a></li>
+<li><a href="#learning-swift-advanced-topics">Learning Swift: Advanced Topics</a></li>
+<li><a href="#design-patterns">Design Patterns</a></li>
+<li><a href="#protocol-oriented-programming">Protocol Oriented Programming</a></li>
+<li><a href="#functional-reactive-programming">Functional Reactive Programming</a></li>
+<li><a href="#apples-playgrounds">Apple's Playgrounds</a></li>
+<li><a href="#playgrounds-about-playgrounds">Playgrounds about Playgrounds</a></li>
+<li><a href="#playgrounds-from-playgroundbooks">Playgrounds from Playgroundbooks</a></li>
+<li><a href="#theoretical-computer-science">Theoretical Computer Science</a><ul>
+<li><a href="#algorithms-and-data-structures">Algorithms and Data Structures</a></li>
+<li><a href="#languages">Languages</a></li>
+<li><a href="#machine-learning">Machine Learning</a></li>
+</ul>
+</li>
+<li><a href="#uikit-and-graphics">UIKit And Graphics</a></li>
+<li><a href="#core-image">Core Image</a></li>
+<li><a href="#metal">Metal</a></li>
+<li><a href="#animations">Animations</a></li>
+<li><a href="#spritekit">SpriteKit</a></li>
+<li><a href="#audio">Audio</a></li>
+<li><a href="#mathematics">Mathematics</a></li>
+<li><a href="#libraries-and-apis">Libraries and APIs</a></li>
+<li><a href="#playground-sets">Playground sets</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+</ul>
+<h2>WWDC Students Submissions</h2>
+<p><em>Playgrounds submitted by students for the WWDC scholarship</em></p>
+<ul>
+<li><a href="https://github.com/wwdc/2023">2022</a></li>
+<li><a href="https://github.com/wwdc/2022">2022</a></li>
+<li><a href="https://github.com/wwdc/2021">2021</a></li>
+<li><a href="https://github.com/wwdc/2020">2020</a></li>
+<li><a href="https://github.com/wwdc/2019">2019</a></li>
+<li><a href="https://github.com/wwdc/2018">2018</a></li>
+<li><a href="https://github.com/wwdc/2017">2017</a></li>
+<li><a href="https://github.com/wwdc/2016">2016</a></li>
+<li><a href="https://github.com/wwdc/2015">2015</a></li>
+<li><a href="https://github.com/wwdc/2014">2014</a></li>
+</ul>
+<h2>PlaygroundBooks</h2>
+<p><em>Playgrounds that can be run on your iPad</em></p>
+<ul>
+<li><a href="https://github.com/TheWildHorse/GuillochePlayground">Guilloche Pattern Playground Book</a> - Learn more about this pattern you see every day, but probably never knew it was really carefully designed. 🍁</li>
+<li><a href="https://github.com/xReee/wwdc2018">Accessibility</a> - Accessibility for iOS developers. 🍁 </li>
+<li><a href="https://github.com/jweisz/tjbot-playground">TJBot Playground</a> - Swift Playground for interacting with IBM's TJBot. 🍁</li>
+<li><a href="https://github.com/joelrorseth/Tree-Trouble">Tree Trouble Playbook</a> - An interactive Swift Playground Book about Binary Search Trees.</li>
+<li><a href="https://github.com/cardoso/AutoPong">Auto Pong</a> - A tutorial to implement a pong based on a simple AI.</li>
+<li><a href="https://github.com/hetelek/Neural-Network-Playground">Neural Network Playground</a> - A neural network Swift playground, with no third party dependencies.</li>
+<li><a href="https://github.com/steventroughtonsmith/windowmanager-playgroundbook">Window Manager Playground</a> - Playground for an experimental window manager.</li>
+<li><a href="https://github.com/audiokit/Playgrounds">AudioKit Playground Book</a> - A set of playgrounds using AudioKit designed for the iPad Playgrounds app.</li>
+<li><a href="https://github.com/sonsongithub/numsw">Numsw</a> - A swift playground book that mimics some of the features of numpy and jupyter notebook.</li>
+<li><a href="https://github.com/steventroughtonsmith/files-playgroundbook">File Browser Playground</a> - Simple File Browser for Swift Playgrounds on iOS.</li>
+<li><a href="https://github.com/dbbudd/Geometry-Swift-PlaygroundBook">Geometry with Swift</a> - In this course your students will learn the fundamentals of Swift 3 programming, using geometry as their context for learning. </li>
+<li><a href="https://github.com/lennet/image-filtering">Image Filtering</a> - A Swift playgroundbook about Image Filtering. 🍁🌟</li>
+<li><a href="https://github.com/hollisliu/Spacetime-Rhapsody">Spacetime Rhapsody</a> - A Swift Playground visualizing gravity based on Einstein's Theory of General Relativity. 🌟</li>
+<li><a href="https://github.com/lennet/neuralnetwork">Neural Network</a> - A Swift PlaygroundBook about Neural Networks. 🍁</li>
+<li><a href="https://github.com/kkk669/coreml-playground">coreml-playground</a> - Core ML examples for Swift Playgrounds. 🍁</li>
+<li><a href="https://github.com/kkk669/SF-Symbols-Viewer">SF Symbols Viewer</a> - An SF Symbols Viewer for Swift Playgrounds. 🍁</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Swift Playgrounds <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a>  <img alt="156 playgrounds" src="https://img.shields.io/badge/Playgrounds:-156-orange.svg" /></h1>
+<blockquote>
+<p>A curated list of awesome Swift playgrounds.</p>
+</blockquote>
+<h3>Contributing</h3>
+<p>Please take a quick look at the <a href="https://github.com/uraimo/awesome-swift-playgrounds/blob/master/CONTRIBUTING.md">contribution guidelines</a> first. Thanks to all <a href="https://github.com/uraimo/awesome-swift-playgrounds/graphs/contributors">contributors</a>; you rock!</p>
+<p>If you see a playground here that does not work anymore with the current release of Xcode or is not a good fit, please submit a pull request to improve this file or consider updating it, thank you!</p>
+<h3>Downloading all the playgrounds</h3>
+<p>Unless otherwise indicated, all playgrounds are compatible with Swift 3.</p>
+<p>All the playgrounds are available as submodules in the <code>playgrounds/</code> directory, to download them all in one go, just clone this repository with <code>git clone --recursive https://github.com/uraimo/Awesome-Swift-Playgrounds.git</code> or execute <code>git submodule update --init</code> after you have cloned the repository the usual way. </p>
+<p>Apple's playgrounds distributed as zip archives have to be downloaded manually.</p>
+<h3>Tags</h3>
+<p>🌟 = My personal favorites</p>
+<p>🍁 = Swift 4+ Playground</p>
+<p>⏳ = Pre-Swift 3 Playground</p>
+<h3>Contents</h3>
+<ul>
+<li><a href="#wwdc-students-submissions">WWDC Students Submissions</a></li>
+<li><a href="#playgroundbooks">PlaygroundBooks</a></li>
+<li><a href="#learning-swift">Learning Swift</a></li>
+<li><a href="#learning-swift-advanced-topics">Learning Swift: Advanced Topics</a></li>
+<li><a href="#design-patterns">Design Patterns</a></li>
+<li><a href="#protocol-oriented-programming">Protocol Oriented Programming</a></li>
+<li><a href="#functional-reactive-programming">Functional Reactive Programming</a></li>
+<li><a href="#apples-playgrounds">Apple's Playgrounds</a></li>
+<li><a href="#playgrounds-about-playgrounds">Playgrounds about Playgrounds</a></li>
+<li><a href="#playgrounds-from-playgroundbooks">Playgrounds from Playgroundbooks</a></li>
+<li><a href="#theoretical-computer-science">Theoretical Computer Science</a><ul>
+<li><a href="#algorithms-and-data-structures">Algorithms and Data Structures</a></li>
+<li><a href="#languages">Languages</a></li>
+<li><a href="#machine-learning">Machine Learning</a></li>
+</ul>
+</li>
+<li><a href="#uikit-and-graphics">UIKit And Graphics</a></li>
+<li><a href="#core-image">Core Image</a></li>
+<li><a href="#metal">Metal</a></li>
+<li><a href="#animations">Animations</a></li>
+<li><a href="#spritekit">SpriteKit</a></li>
+<li><a href="#audio">Audio</a></li>
+<li><a href="#mathematics">Mathematics</a></li>
+<li><a href="#libraries-and-apis">Libraries and APIs</a></li>
+<li><a href="#playground-sets">Playground sets</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+</ul>
+<h2>WWDC Students Submissions</h2>
+<p><em>Playgrounds submitted by students for the WWDC scholarship</em></p>
+<ul>
+<li><a href="https://github.com/wwdc/2023">2022</a></li>
+<li><a href="https://github.com/wwdc/2022">2022</a></li>
+<li><a href="https://github.com/wwdc/2021">2021</a></li>
+<li><a href="https://github.com/wwdc/2020">2020</a></li>
+<li><a href="https://github.com/wwdc/2019">2019</a></li>
+<li><a href="https://github.com/wwdc/2018">2018</a></li>
+<li><a href="https://github.com/wwdc/2017">2017</a></li>
+<li><a href="https://github.com/wwdc/2016">2016</a></li>
+<li><a href="https://github.com/wwdc/2015">2015</a></li>
+<li><a href="https://github.com/wwdc/2014">2014</a></li>
+</ul>
+<h2>PlaygroundBooks</h2>
+<p><em>Playgrounds that can be run on your iPad</em></p>
+<ul>
+<li><a href="https://github.com/TheWildHorse/GuillochePlayground">Guilloche Pattern Playground Book</a> - Learn more about this pattern you see every day, but probably never knew it was really carefully designed. 🍁</li>
+<li><a href="https://github.com/xReee/wwdc2018">Accessibility</a> - Accessibility for iOS developers. 🍁 </li>
+<li><a href="https://github.com/jweisz/tjbot-playground">TJBot Playground</a> - Swift Playground for interacting with IBM's TJBot. 🍁</li>
+<li><a href="https://github.com/joelrorseth/Tree-Trouble">Tree Trouble Playbook</a> - An interactive Swift Playground Book about Binary Search Trees.</li>
+<li><a href="https://github.com/cardoso/AutoPong">Auto Pong</a> - A tutorial to implement a pong based on a simple AI.</li>
+<li><a href="https://github.com/hetelek/Neural-Network-Playground">Neural Network Playground</a> - A neural network Swift playground, with no third party dependencies.</li>
+<li><a href="https://github.com/steventroughtonsmith/windowmanager-playgroundbook">Window Manager Playground</a> - Playground for an experimental window manager.</li>
+<li><a href="https://github.com/audiokit/Playgrounds">AudioKit Playground Book</a> - A set of playgrounds using AudioKit designed for the iPad Playgrounds app.</li>
+<li><a href="https://github.com/sonsongithub/numsw">Numsw</a> - A swift playground book that mimics some of the features of numpy and jupyter notebook.</li>
+<li><a href="https://github.com/steventroughtonsmith/files-playgroundbook">File Browser Playground</a> - Simple File Browser for Swift Playgrounds on iOS.</li>
+<li><a href="https://github.com/dbbudd/Geometry-Swift-PlaygroundBook">Geometry with Swift</a> - In this course your students will learn the fundamentals of Swift 3 programming, using geometry as their context for learning. </li>
+<li><a href="https://github.com/lennet/image-filtering">Image Filtering</a> - A Swift playgroundbook about Image Filtering. 🍁🌟</li>
+<li><a href="https://github.com/hollisliu/Spacetime-Rhapsody">Spacetime Rhapsody</a> - A Swift Playground visualizing gravity based on Einstein's Theory of General Relativity. 🌟</li>
+<li><a href="https://github.com/lennet/neuralnetwork">Neural Network</a> - A Swift PlaygroundBook about Neural Networks. 🍁</li>
+<li><a href="https://github.com/kkk669/coreml-playground">coreml-playground</a> - Core ML examples for Swift Playgrounds. 🍁</li>
+<li><a href="https://github.com/kkk669/SF-Symbols-Viewer">SF Symbols Viewer</a> - An SF Symbols Viewer for Swift Playgrounds. 🍁</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'playgrounds_README.md';
 
         fetch(markdownFile)
@@ -48,21 +195,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

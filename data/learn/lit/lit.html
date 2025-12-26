@@ -8,38 +8,209 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Web Padawan Awesome Lit - Awesome List Resources">
-    <title>Web Padawan Awesome Lit</title>
+    <meta name="description" content="> A curated list of awesome Lit resources. Lit — a simple library for building fast, lightweight web components. At Lit's core is a boilerplate-killing...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Lit [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Lit <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<blockquote>
+<p>A curated list of awesome Lit resources.</p>
+</blockquote>
+<p><a href="https://github.com/lit/lit">Lit</a> — a simple library for building fast, lightweight web components.</p>
+<p>At Lit's core is a boilerplate-killing component base class that provides reactive state, scoped styles, and a declarative template system that's tiny, fast and expressive.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#general-resources">General resources</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#starter-templates">Starter Templates</a></li>
+<li><a href="#codelabs">Codelabs</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#examples">Examples</a></li>
+<li><a href="#lit-labs">Lit Labs</a></li>
+<li><a href="#extensions">Extensions</a></li>
+<li><a href="#design-systems">Design Systems</a></li>
+<li><a href="#component-libraries">Component Libraries</a></li>
+<li><a href="#standalone-components">Standalone Components</a></li>
+<li><a href="#meta-frameworks">Meta Frameworks</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#building">Building</a></li>
+<li><a href="#linting">Linting</a></li>
+<li><a href="#ide-plugins">IDE Plugins</a></li>
+<li><a href="#typescript-plugins">TypeScript Plugins</a></li>
+<li><a href="#other-tools">Other Tools</a></li>
+<li><a href="#cdn">CDN</a></li>
+<li><a href="#integrations">Integrations</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#podcasts">Podcasts</a></li>
+<li><a href="#archive">Archive</a></li>
+<li><a href="#similar-libraries">Similar libraries</a></li>
+<li><a href="#other-awesome-resources">Other awesome resources</a></li>
+</ul>
+<h2>General resources</h2>
+<ul>
+<li><a href="https://lit.dev/docs/">Documentation</a></li>
+<li><a href="https://lit.dev/tutorials/">Tutorials</a></li>
+<li><a href="https://lit.dev/playground/">Playground</a></li>
+<li><a href="https://lit.dev/blog/">Blog</a></li>
+</ul>
+<h2>Community</h2>
+<ul>
+<li><a href="https://discord.com/invite/buildWithLit">Discord</a></li>
+<li><a href="https://github.com/lit/lit">GitHub</a></li>
+<li><a href="https://github.com/lit/lit/discussions">GitHub Discussions</a></li>
+<li><a href="https://twitter.com/buildWithLit">Twitter</a></li>
+<li><a href="https://stackoverflow.com/questions/tagged/lit+or+lit-html+or+lit-element">Stack Overflow</a></li>
+<li><a href="https://www.youtube.com/channel/UCok4ZKSzM3jY7JQRMlF-DPg/">YouTube</a></li>
+</ul>
+<h2>Overview</h2>
+<ul>
+<li><a href="https://developers.google.com/web/updates/2019/02/lit-element-and-lit-html">Lightning-fast templates &amp; Web Components: lit-html &amp; LitElement</a></li>
+<li><a href="https://lit.dev/blog/2021-04-21-lit-2.0-meet-lit-all-over-again/">Lit 2.0: Meet Lit, all over again!</a></li>
+<li><a href="https://lit.dev/blog/2021-09-21-announcing-lit-2/">Announcing Lit 2 stable release</a></li>
+</ul>
+<h2>Starter Templates</h2>
+<ul>
+<li><a href="https://github.com/gracile-web/starter-projects">Gracile Starters</a> - Gracile full-stack starter projects (SSR/SSG).</li>
+<li><a href="https://github.com/lit/lit-element-starter-js">LitElement JavaScript starter</a> - Sample component using LitElement with JavaScript.</li>
+<li><a href="https://github.com/lit/lit-element-starter-ts">LitElement TypeScript starter</a> - Sample component using LitElement with TypeScript.</li>
+<li><a href="https://github.com/fernandopasik/hello-web-components">hello-web-components</a> - Simple starter web component written in TypeScript using Lit.</li>
+<li><a href="https://github.com/e111077/lit-sass-js-starter">Lit Sass JavaScript Starter</a> - Project that has a simple setup for SASS + JS + Lit, using Rollup.</li>
+<li><a href="https://github.com/e111077/lit-sass-ts-starter">Lit Sass TypeScript Starter</a> - Project that has a simple setup for SASS + TS + Lit, using Rollup.</li>
+<li><a href="https://github.com/andrewlevada/webpack-lit-template">Lit Webpack Starter</a> - Starter for multipage apps with Lit and Typescript, using Webpack.</li>
+<li><a href="https://open-wc.org/docs/development/generator/">Open Web Components Generator</a> - Starter app based on Open Web Components Recommendations.</li>
+<li><a href="https://github.com/pwa-builder/pwa-starter">pwa-starter</a> - LitElement edition of the PWABuilder pwa-starter.</li>
+<li><a href="https://github.com/IBM/pwa-lit-template">pwa-lit-template</a> - Build Progressive Web Applications following the modern web standards.</li>
+<li><a href="https://github.com/e111077/vite-lit-element-ts-sass">Vite Lit Element TS SASS</a> - Example Vite project using Lit 2, Typescript, and SASS.</li>
+<li><a href="https://github.com/vitejs/vite/tree/main/packages/create-vite/template-lit">Vite Lit Starter</a> - Lit based template preset for Vite.</li>
+<li><a href="https://github.com/vitejs/vite/tree/main/packages/create-vite/template-lit-ts">Vite Lit TS Starter</a> - Lit and TypeScript based template preset for Vite.</li>
+<li><a href="https://github.com/lloydrichards/base_lit-with-tailwind">Vite Lit + Tailwind</a> - Modified Vite + Lit starter to use Tailwind v4.</li>
+</ul>
+<h2>Codelabs</h2>
+<ul>
+<li><a href="https://codelabs.developers.google.com/codelabs/lit-brick-viewer#0">Build a Brick Viewer with lit-element</a></li>
+<li><a href="https://codelabs.developers.google.com/codelabs/lit-story-viewer#0">Build a Story Component with lit-element</a></li>
+<li><a href="https://codelabs.developers.google.com/codelabs/the-lit-path#0">From Web Component to Lit Element</a></li>
+<li><a href="https://open-wc.org/codelabs/basics/lit-html.html#0">lit-html &amp; lit-element: basics</a></li>
+<li><a href="https://open-wc.org/codelabs/intermediate/lit-html.html#0">lit-html &amp; lit-element: intermediate</a></li>
+<li><a href="https://codelabs.developers.google.com/codelabs/lit-2-for-react-devs#0">Lit for React Developers</a></li>
+</ul>
+<h2>Tutorials</h2>
+<ul>
+<li><a href="https://www.smashingmagazine.com/2022/09/building-retro-draggable-web-component-using-lit/">Building A Retro Draggable Web Component Using Lit</a></li>
+<li><a href="https://rodydavis.com/posts/lit-rich-text-editor">Building a Rich Text Editor with Lit</a></li>
+<li><a href="https://rodydavis.com/posts/lit-draggable-dom">Draggable DOM with Lit</a></li>
+<li><a href="https://labs.thisdot.co/blog/getting-started-with-litelement-and-typescript">Getting started with LitElement and TypeScript</a></li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Lit <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<blockquote>
+<p>A curated list of awesome Lit resources.</p>
+</blockquote>
+<p><a href="https://github.com/lit/lit">Lit</a> — a simple library for building fast, lightweight web components.</p>
+<p>At Lit's core is a boilerplate-killing component base class that provides reactive state, scoped styles, and a declarative template system that's tiny, fast and expressive.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#general-resources">General resources</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#starter-templates">Starter Templates</a></li>
+<li><a href="#codelabs">Codelabs</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#examples">Examples</a></li>
+<li><a href="#lit-labs">Lit Labs</a></li>
+<li><a href="#extensions">Extensions</a></li>
+<li><a href="#design-systems">Design Systems</a></li>
+<li><a href="#component-libraries">Component Libraries</a></li>
+<li><a href="#standalone-components">Standalone Components</a></li>
+<li><a href="#meta-frameworks">Meta Frameworks</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#building">Building</a></li>
+<li><a href="#linting">Linting</a></li>
+<li><a href="#ide-plugins">IDE Plugins</a></li>
+<li><a href="#typescript-plugins">TypeScript Plugins</a></li>
+<li><a href="#other-tools">Other Tools</a></li>
+<li><a href="#cdn">CDN</a></li>
+<li><a href="#integrations">Integrations</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#podcasts">Podcasts</a></li>
+<li><a href="#archive">Archive</a></li>
+<li><a href="#similar-libraries">Similar libraries</a></li>
+<li><a href="#other-awesome-resources">Other awesome resources</a></li>
+</ul>
+<h2>General resources</h2>
+<ul>
+<li><a href="https://lit.dev/docs/">Documentation</a></li>
+<li><a href="https://lit.dev/tutorials/">Tutorials</a></li>
+<li><a href="https://lit.dev/playground/">Playground</a></li>
+<li><a href="https://lit.dev/blog/">Blog</a></li>
+</ul>
+<h2>Community</h2>
+<ul>
+<li><a href="https://discord.com/invite/buildWithLit">Discord</a></li>
+<li><a href="https://github.com/lit/lit">GitHub</a></li>
+<li><a href="https://github.com/lit/lit/discussions">GitHub Discussions</a></li>
+<li><a href="https://twitter.com/buildWithLit">Twitter</a></li>
+<li><a href="https://stackoverflow.com/questions/tagged/lit+or+lit-html+or+lit-element">Stack Overflow</a></li>
+<li><a href="https://www.youtube.com/channel/UCok4ZKSzM3jY7JQRMlF-DPg/">YouTube</a></li>
+</ul>
+<h2>Overview</h2>
+<ul>
+<li><a href="https://developers.google.com/web/updates/2019/02/lit-element-and-lit-html">Lightning-fast templates &amp; Web Components: lit-html &amp; LitElement</a></li>
+<li><a href="https://lit.dev/blog/2021-04-21-lit-2.0-meet-lit-all-over-again/">Lit 2.0: Meet Lit, all over again!</a></li>
+<li><a href="https://lit.dev/blog/2021-09-21-announcing-lit-2/">Announcing Lit 2 stable release</a></li>
+</ul>
+<h2>Starter Templates</h2>
+<ul>
+<li><a href="https://github.com/gracile-web/starter-projects">Gracile Starters</a> - Gracile full-stack starter projects (SSR/SSG).</li>
+<li><a href="https://github.com/lit/lit-element-starter-js">LitElement JavaScript starter</a> - Sample component using LitElement with JavaScript.</li>
+<li><a href="https://github.com/lit/lit-element-starter-ts">LitElement TypeScript starter</a> - Sample component using LitElement with TypeScript.</li>
+<li><a href="https://github.com/fernandopasik/hello-web-components">hello-web-components</a> - Simple starter web component written in TypeScript using Lit.</li>
+<li><a href="https://github.com/e111077/lit-sass-js-starter">Lit Sass JavaScript Starter</a> - Project that has a simple setup for SASS + JS + Lit, using Rollup.</li>
+<li><a href="https://github.com/e111077/lit-sass-ts-starter">Lit Sass TypeScript Starter</a> - Project that has a simple setup for SASS + TS + Lit, using Rollup.</li>
+<li><a href="https://github.com/andrewlevada/webpack-lit-template">Lit Webpack Starter</a> - Starter for multipage apps with Lit and Typescript, using Webpack.</li>
+<li><a href="https://open-wc.org/docs/development/generator/">Open Web Components Generator</a> - Starter app based on Open Web Components Recommendations.</li>
+<li><a href="https://github.com/pwa-builder/pwa-starter">pwa-starter</a> - LitElement edition of the PWABuilder pwa-starter.</li>
+<li><a href="https://github.com/IBM/pwa-lit-template">pwa-lit-template</a> - Build Progressive Web Applications following the modern web standards.</li>
+<li><a href="https://github.com/e111077/vite-lit-element-ts-sass">Vite Lit Element TS SASS</a> - Example Vite project using Lit 2, Typescript, and SASS.</li>
+<li><a href="https://github.com/vitejs/vite/tree/main/packages/create-vite/template-lit">Vite Lit Starter</a> - Lit based template preset for Vite.</li>
+<li><a href="https://github.com/vitejs/vite/tree/main/packages/create-vite/template-lit-ts">Vite Lit TS Starter</a> - Lit and TypeScript based template preset for Vite.</li>
+<li><a href="https://github.com/lloydrichards/base_lit-with-tailwind">Vite Lit + Tailwind</a> - Modified Vite + Lit starter to use Tailwind v4.</li>
+</ul>
+<h2>Codelabs</h2>
+<ul>
+<li><a href="https://codelabs.developers.google.com/codelabs/lit-brick-viewer#0">Build a Brick Viewer with lit-element</a></li>
+<li><a href="https://codelabs.developers.google.com/codelabs/lit-story-viewer#0">Build a Story Component with lit-element</a></li>
+<li><a href="https://codelabs.developers.google.com/codelabs/the-lit-path#0">From Web Component to Lit Element</a></li>
+<li><a href="https://open-wc.org/codelabs/basics/lit-html.html#0">lit-html &amp; lit-element: basics</a></li>
+<li><a href="https://open-wc.org/codelabs/intermediate/lit-html.html#0">lit-html &amp; lit-element: intermediate</a></li>
+<li><a href="https://codelabs.developers.google.com/codelabs/lit-2-for-react-devs#0">Lit for React Developers</a></li>
+</ul>
+<h2>Tutorials</h2>
+<ul>
+<li><a href="https://www.smashingmagazine.com/2022/09/building-retro-draggable-web-component-using-lit/">Building A Retro Draggable Web Component Using Lit</a></li>
+<li><a href="https://rodydavis.com/posts/lit-rich-text-editor">Building a Rich Text Editor with Lit</a></li>
+<li><a href="https://rodydavis.com/posts/lit-draggable-dom">Draggable DOM with Lit</a></li>
+<li><a href="https://labs.thisdot.co/blog/getting-started-with-litelement-and-typescript">Getting started with LitElement and TypeScript</a></li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'lit_README.md';
 
         fetch(markdownFile)
@@ -48,21 +219,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

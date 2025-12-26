@@ -8,38 +8,225 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Urigo Awesome Meteor - Awesome List Resources">
-    <title>Urigo Awesome Meteor</title>
+    <meta name="description" content="A curated list of awesome Meteor Packages, libraries and software. The official Meteor resources page can be found here - Awesome Meteor - Getting Started -...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Meteor [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Meteor <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A curated list of awesome Meteor Packages, libraries and software.</p>
+<p>The official Meteor resources page can be found <a href="https://www.meteor.com/tools/resources">here</a></p>
+<ul>
+<li><a href="#awesome-meteor">Awesome Meteor</a></li>
+<li><a href="#getting-started">Getting Started</a></li>
+<li><a href="#collections">Collections</a></li>
+<li><a href="#forms-and-templates">Forms and Templates</a></li>
+<li><a href="#users-and-authentication">Users and Authentication</a></li>
+<li><a href="#rest">REST</a></li>
+<li><a href="#files">Files</a></li>
+<li><a href="#routers">Routers</a></li>
+<li><a href="#debugging-tools">Debugging Tools</a></li>
+<li><a href="#editor-plugins">Editor Plugins</a></li>
+<li><a href="#search-sort-paginate">Search, sort and paginate</a></li>
+<li><a href="#mobile">Mobile</a></li>
+<li><a href="#offline">Offline</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#seo">SEO</a></li>
+<li><a href="#data-visualization">Data Visualization</a></li>
+<li><a href="#analytics">Analytics</a></li>
+<li><a href="#cron-jobs">Cron Jobs</a></li>
+<li><a href="#administration">Administration</a></li>
+<li><a href="#performance">Performance</a></li>
+<li><a href="#monitoring">Monitoring</a></li>
+<li><a href="#deployment">Deployment</a><ul>
+<li><a href="#docker-images">Docker Images</a></li>
+</ul>
+</li>
+<li><a href="#front-end-frameworks">Front End Frameworks</a></li>
+<li><a href="#alternative-databases">Alternative Databases</a></li>
+<li><a href="#boilerplate">Boilerplate</a></li>
+<li><a href="#open-source-apps">Open Source Apps</a></li>
+<li><a href="#internationalization">Internationalization</a></li>
+<li><a href="#scaffolding">Scaffolding</a></li>
+<li><a href="#tooling">Tooling</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#courses">Courses</a><ul>
+<li><a href="#free">Free</a></li>
+<li><a href="#paid">Paid</a></li>
+</ul>
+</li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#websites">Websites</a></li>
+<li><a href="#q&amp;a">Q&amp;A</a></li>
+<li><a href="#community-newsletters">Community Newsletters</a> </li>
+<li><a href="#social">Social</a></li>
+<li><a href="#work-opportunities">Work Opportunities</a></li>
+<li><a href="#related">Related</a></li>
+<li><a href="#built-with-meteor">Built With Meteor</a></li>
+<li><a href="#deprecated">Deprecated</a></li>
+<li><a href="#contributing">Contributing</a></li>
+</ul>
+<hr />
+<h2>Getting Started</h2>
+<p><em>Where to start</em></p>
+<ul>
+<li><a href="https://www.meteor.com/tutorials/react/creating-an-app">Official Meteor tutorial</a></li>
+<li><a href="http://guide.meteor.com/">Official Guide</a></li>
+</ul>
+<h2>Collections</h2>
+<p><em>Helpers and expensions for collections</em></p>
+<ul>
+<li><a href="https://github.com/aldeed/simple-schema-js">simple-schema</a> - A JavaScript schema validation package that supports direct validation of MongoDB update modifier objects.</li>
+<li><a href="https://github.com/aldeed/meteor-collection2/">aldeed:collection2</a> - Automatic validation of insert and update operations on the client and server.</li>
+<li><a href="https://github.com/dburles/meteor-collection-helpers/">dburles:collection-helpers</a> – Transform your collections with helpers that you define.</li>
+<li><a href="https://github.com/Meteor-Community-Packages/meteor-collection-hooks">matb33:collection-hooks</a> - Extends Mongo.Collection with before/after hooks for insert/update/remove/find/findOne.</li>
+<li><a href="https://github.com/Meteor-Community-Packages/meteor-publish-composite">reywood:publish-composite</a> - publish a set of related documents from various collections using a reactive join.</li>
+<li><a href="https://github.com/jagi/meteor-astronomy/">jagi:astronomy</a> - The Model layer for Meteor.</li>
+<li><a href="https://github.com/cult-of-coders/grapher">cultofcoders:grapher</a> - Grapher: Meteor Collection Joins + Reactive GraphQL like queries.</li>
+<li><a href="https://github.com/sakulstra/meteor-aggregate">sakulstra:aggregate</a> - Add proper aggregation support for Meteor.</li>
+<li><a href="https://github.com/quavedev/collections">quave:collections</a> - Create collections in a standard way.</li>
+</ul>
+<h2>REST</h2>
+<p><em>REST support for Meteor</em></p>
+<ul>
+<li><a href="https://atmospherejs.com/maka/rest">maka:rest</a> - automatically make your Meteor app accessible over HTTP and DDP alike.</li>
+<li><a href="https://github.com/vatfree/meteor-restivus">vatfree:restivus</a> - Make REST endpoints for your Meteor app with incredible ease.</li>
+</ul>
+<h2>Forms and Templates</h2>
+<p><em>Helpers for templates</em></p>
+<ul>
+<li><a href="https://github.com/vazco/uniforms">uniforms</a> - Bunch of React components and helpers to easily generate and validate forms. <a href="https://uniforms.tools/docs/installation">Seamlessly integrate with <code>simpl-schema</code></a>.</li>
+<li><a href="https://github.com/aldeed/meteor-autoform">aldeed:autoform</a> - UI components and helpers to easily create basic forms with automatic insert and update events, and automatic reactive validation.</li>
+<li><a href="https://github.com/VeliovGroup/Meteor-Template-helpers">ostrio:templatehelpers</a> - Utility helpers for your Blaze templates.</li>
+<li><a href="https://github.com/aldeed/meteor-template-extension">aldeed:template-extension</a> - A Meteor package: Replace already defined templates, inherit helpers and events from other templates.</li>
+<li><a href="https://github.com/TeamGrid/blaze-layout">kadira:blaze-layout</a> - Layout Manager for Blaze (works well with Meteor FlowRouter)</li>
+</ul>
+<h2>Users and Authentication</h2>
+<p><em>Tools for handling users and authentication</em></p>
+<ul>
+<li><a href="https://github.com/accounts-js/accounts">accounts-js</a> - A suite of packages aims to provide all the tools you need to build a flexible authentication and accounts management solution for your application.</li>
+<li><a href="https://github.com/Meteor-Community-Packages/meteor-roles">alanning:roles</a> - Roles support for the built-in accounts packages.</li>
+<li><a href="https://github.com/Meteor-Community-Packages/meteor-user-status">meteor-user-status</a> - Keeps track of users and their meta data.</li>
+<li><a href="https://github.com/e-Potek/accounts-ui/">accounts-ui</a> - Accounts UI for React in Meteor 1.3+.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Meteor <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A curated list of awesome Meteor Packages, libraries and software.</p>
+<p>The official Meteor resources page can be found <a href="https://www.meteor.com/tools/resources">here</a></p>
+<ul>
+<li><a href="#awesome-meteor">Awesome Meteor</a></li>
+<li><a href="#getting-started">Getting Started</a></li>
+<li><a href="#collections">Collections</a></li>
+<li><a href="#forms-and-templates">Forms and Templates</a></li>
+<li><a href="#users-and-authentication">Users and Authentication</a></li>
+<li><a href="#rest">REST</a></li>
+<li><a href="#files">Files</a></li>
+<li><a href="#routers">Routers</a></li>
+<li><a href="#debugging-tools">Debugging Tools</a></li>
+<li><a href="#editor-plugins">Editor Plugins</a></li>
+<li><a href="#search-sort-paginate">Search, sort and paginate</a></li>
+<li><a href="#mobile">Mobile</a></li>
+<li><a href="#offline">Offline</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#seo">SEO</a></li>
+<li><a href="#data-visualization">Data Visualization</a></li>
+<li><a href="#analytics">Analytics</a></li>
+<li><a href="#cron-jobs">Cron Jobs</a></li>
+<li><a href="#administration">Administration</a></li>
+<li><a href="#performance">Performance</a></li>
+<li><a href="#monitoring">Monitoring</a></li>
+<li><a href="#deployment">Deployment</a><ul>
+<li><a href="#docker-images">Docker Images</a></li>
+</ul>
+</li>
+<li><a href="#front-end-frameworks">Front End Frameworks</a></li>
+<li><a href="#alternative-databases">Alternative Databases</a></li>
+<li><a href="#boilerplate">Boilerplate</a></li>
+<li><a href="#open-source-apps">Open Source Apps</a></li>
+<li><a href="#internationalization">Internationalization</a></li>
+<li><a href="#scaffolding">Scaffolding</a></li>
+<li><a href="#tooling">Tooling</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#courses">Courses</a><ul>
+<li><a href="#free">Free</a></li>
+<li><a href="#paid">Paid</a></li>
+</ul>
+</li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#websites">Websites</a></li>
+<li><a href="#q&amp;a">Q&amp;A</a></li>
+<li><a href="#community-newsletters">Community Newsletters</a> </li>
+<li><a href="#social">Social</a></li>
+<li><a href="#work-opportunities">Work Opportunities</a></li>
+<li><a href="#related">Related</a></li>
+<li><a href="#built-with-meteor">Built With Meteor</a></li>
+<li><a href="#deprecated">Deprecated</a></li>
+<li><a href="#contributing">Contributing</a></li>
+</ul>
+<hr />
+<h2>Getting Started</h2>
+<p><em>Where to start</em></p>
+<ul>
+<li><a href="https://www.meteor.com/tutorials/react/creating-an-app">Official Meteor tutorial</a></li>
+<li><a href="http://guide.meteor.com/">Official Guide</a></li>
+</ul>
+<h2>Collections</h2>
+<p><em>Helpers and expensions for collections</em></p>
+<ul>
+<li><a href="https://github.com/aldeed/simple-schema-js">simple-schema</a> - A JavaScript schema validation package that supports direct validation of MongoDB update modifier objects.</li>
+<li><a href="https://github.com/aldeed/meteor-collection2/">aldeed:collection2</a> - Automatic validation of insert and update operations on the client and server.</li>
+<li><a href="https://github.com/dburles/meteor-collection-helpers/">dburles:collection-helpers</a> – Transform your collections with helpers that you define.</li>
+<li><a href="https://github.com/Meteor-Community-Packages/meteor-collection-hooks">matb33:collection-hooks</a> - Extends Mongo.Collection with before/after hooks for insert/update/remove/find/findOne.</li>
+<li><a href="https://github.com/Meteor-Community-Packages/meteor-publish-composite">reywood:publish-composite</a> - publish a set of related documents from various collections using a reactive join.</li>
+<li><a href="https://github.com/jagi/meteor-astronomy/">jagi:astronomy</a> - The Model layer for Meteor.</li>
+<li><a href="https://github.com/cult-of-coders/grapher">cultofcoders:grapher</a> - Grapher: Meteor Collection Joins + Reactive GraphQL like queries.</li>
+<li><a href="https://github.com/sakulstra/meteor-aggregate">sakulstra:aggregate</a> - Add proper aggregation support for Meteor.</li>
+<li><a href="https://github.com/quavedev/collections">quave:collections</a> - Create collections in a standard way.</li>
+</ul>
+<h2>REST</h2>
+<p><em>REST support for Meteor</em></p>
+<ul>
+<li><a href="https://atmospherejs.com/maka/rest">maka:rest</a> - automatically make your Meteor app accessible over HTTP and DDP alike.</li>
+<li><a href="https://github.com/vatfree/meteor-restivus">vatfree:restivus</a> - Make REST endpoints for your Meteor app with incredible ease.</li>
+</ul>
+<h2>Forms and Templates</h2>
+<p><em>Helpers for templates</em></p>
+<ul>
+<li><a href="https://github.com/vazco/uniforms">uniforms</a> - Bunch of React components and helpers to easily generate and validate forms. <a href="https://uniforms.tools/docs/installation">Seamlessly integrate with <code>simpl-schema</code></a>.</li>
+<li><a href="https://github.com/aldeed/meteor-autoform">aldeed:autoform</a> - UI components and helpers to easily create basic forms with automatic insert and update events, and automatic reactive validation.</li>
+<li><a href="https://github.com/VeliovGroup/Meteor-Template-helpers">ostrio:templatehelpers</a> - Utility helpers for your Blaze templates.</li>
+<li><a href="https://github.com/aldeed/meteor-template-extension">aldeed:template-extension</a> - A Meteor package: Replace already defined templates, inherit helpers and events from other templates.</li>
+<li><a href="https://github.com/TeamGrid/blaze-layout">kadira:blaze-layout</a> - Layout Manager for Blaze (works well with Meteor FlowRouter)</li>
+</ul>
+<h2>Users and Authentication</h2>
+<p><em>Tools for handling users and authentication</em></p>
+<ul>
+<li><a href="https://github.com/accounts-js/accounts">accounts-js</a> - A suite of packages aims to provide all the tools you need to build a flexible authentication and accounts management solution for your application.</li>
+<li><a href="https://github.com/Meteor-Community-Packages/meteor-roles">alanning:roles</a> - Roles support for the built-in accounts packages.</li>
+<li><a href="https://github.com/Meteor-Community-Packages/meteor-user-status">meteor-user-status</a> - Keeps track of users and their meta data.</li>
+<li><a href="https://github.com/e-Potek/accounts-ui/">accounts-ui</a> - Accounts UI for React in Meteor 1.3+.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'meteor_README.md';
 
         fetch(markdownFile)
@@ -48,21 +235,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

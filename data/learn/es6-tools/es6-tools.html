@@ -8,38 +8,173 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Addyosmani Es6 Tools - Awesome List Resources">
-    <title>Addyosmani Es6 Tools</title>
+    <meta name="description" content="Babel - Turn ES6+ code into vanilla ES5 with no runtime Traceur compiler - ES6 features > ES5. Includes classes, generators, promises, destructuring patterns,...">
+    <meta name="robots" content="index, follow">
+    <title><img src="http://i.imgur.com/yy1sACZ.png" width="100px"/> ECMAScript 6 Tools - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1><img src="http://i.imgur.com/yy1sACZ.png" width="100px"/> ECMAScript 6 Tools</h1>
+<h2>Transpilers</h2>
+<ul>
+<li><a href="https://github.com/babel/babel">Babel</a> - Turn ES6+ code into vanilla ES5 with no runtime</li>
+<li><a href="https://github.com/google/traceur-compiler">Traceur compiler</a> - ES6 features &gt; ES5. Includes classes, generators, promises, destructuring patterns, default parameters &amp; more.</li>
+<li><a href="https://github.com/thlorenz/es6ify">es6ify</a> - Traceur compiler wrapped as a <a href="http://browserify.org/">Browserify</a> v2 transform</li>
+<li><a href="https://github.com/babel/babelify">babelify</a> - Babel transpiler wrapped as a <a href="http://browserify.org/">Browserify</a> transform</li>
+<li><a href="https://github.com/termi/es6-transpiler">es6-transpiler</a> - ES6 &gt; ES5. Includes classes, destructuring, default parameters, spread</li>
+<li>Square's <a href="https://github.com/esnext/es6-module-transpiler">es6-module-transpiler</a> - ES6 modules to AMD or CJS</li>
+<li>Facebook's <a href="https://github.com/facebook/regenerator">regenerator</a> - transform ES6 yield/generator functions to ES5</li>
+<li>Facebook's <a href="https://github.com/facebookarchive/jstransform">jstransform</a> - A simple utility for pluggable JS syntax transforms. Comes with a small set of ES6 -&gt; ES5 transforms</li>
+<li><a href="https://github.com/olov/defs">defs</a> - ES6 block-scoped const and let variables to ES3 vars</li>
+<li><a href="https://github.com/DavyJonesLocker/es6_module_transpiler-rails">es6_module_transpiler-rails</a> - ES6 Modules in the Rails Asset Pipeline</li>
+<li><a href="https://github.com/jlongster/es6-macros">Some Sweet.js macros</a> that compile from ES6 to ES5</li>
+<li>Bitovi's <a href="https://github.com/stealjs/transpile">transpile</a> - Converts ES6 to AMD, CJS, and StealJS.</li>
+<li><a href="https://github.com/mathiasbynens/regexpu">regexpu</a> — Transform Unicode-aware ES6 regular expressions to ES5</li>
+<li><a href="https://github.com/mohebifar/lebab">Lebab</a> - Transformations for ES5 code to ES6 (approximates)</li>
+</ul>
+<h2>Build-time transpilation</h2>
+<h3>Gulp Plugins</h3>
+<ul>
+<li>Babel: <a href="https://github.com/babel/gulp-babel">gulp-babel</a></li>
+<li>Traceur: <a href="https://github.com/sindresorhus/gulp-traceur">gulp-traceur</a></li>
+<li>Regenerator: <a href="https://github.com/sindresorhus/gulp-regenerator">gulp-regenerator</a></li>
+<li>ES6 Module Transpiler: <a href="https://github.com/ryanseddon/gulp-es6-module-transpiler">gulp-es6-module-transpiler</a></li>
+<li>es6-transpiler: <a href="https://github.com/sindresorhus/gulp-es6-transpiler">gulp-es6-transpiler</a> - ES6 → ES5</li>
+<li>es6-jstransform: <a href="https://github.com/hemanth/gulp-jstransform">gulp-jstransform</a> - ES6 → ES5 using FB's <a href="https://github.com/facebook/jstransform">jstransform</a></li>
+<li>regexpu: <a href="https://github.com/mathiasbynens/gulp-regexpu">gulp-regexpu</a></li>
+<li>TypeScript: <a href="https://github.com/ivogabe/gulp-typescript">gulp-typescript</a></li>
+</ul>
+<h3>Grunt Tasks</h3>
+<ul>
+<li>Babel: <a href="https://github.com/babel/grunt-babel">grunt-babel</a> - Turn ES6+ code into vanilla ES5 with no runtime</li>
+<li>Traceur: <a href="https://github.com/aaronfrost/grunt-traceur">grunt-traceur</a> ES6 &gt; ES5 transpilation, <a href="https://github.com/tarruda/grunt-traceur-build">grunt-traceur-build</a></li>
+<li>ES6 Module Transpiler: <a href="https://github.com/joefiorini/grunt-es6-module-transpiler">grunt-es6-module-transpiler</a></li>
+<li>Regenerator: <a href="https://github.com/sindresorhus/grunt-regenerator">grunt-regenerator</a> - ES6 generator functions to ES5</li>
+<li><a href="https://github.com/thomasboyt/grunt-microlib">grunt-microlib</a> - tools for libs using ES6 module transpiler (sample <a href="https://github.com/jakearchibald/es6-promise/blob/c3336087fffc52e66cf5398e5b56b23a291080fc/Gruntfile.js">Gruntfile</a>)</li>
+<li><a href="https://github.com/EE/grunt-defs">grunt-defs</a> - ES6 block scoped const and let variables, to ES3</li>
+<li>es6-transpiler: <a href="https://github.com/sindresorhus/grunt-es6-transpiler">grunt-es6-transpiler</a> - ES6 → ES5</li>
+<li>TypeScript: <a href="https://github.com/TypeStrong/grunt-ts">grunt-ts</a> - ES6+ &gt; ES5/ES3 transpilation</li>
+</ul>
+<h3>Broccoli Plugins</h3>
+<ul>
+<li>Babel: <a href="https://github.com/babel/broccoli-babel-transpiler">broccoli-babel-transpiler</a></li>
+<li>Traceur: <a href="https://github.com/sindresorhus/broccoli-traceur">broccoli-traceur</a></li>
+<li>Regenerator: <a href="https://github.com/sindresorhus/broccoli-regenerator">broccoli-regenerator</a></li>
+<li>ES6 Transpiler: <a href="https://github.com/sindresorhus/broccoli-es6-transpiler">broccoli-transpiler</a></li>
+<li>ES6 Module Transpiler: <a href="https://github.com/mmun/broccoli-es6-module-transpiler">broccoli-es6-module-transpiler</a></li>
+<li>ES6 fat arrow transpiler: <a href="https://github.com/hemanth/broccoli-es6-arrow.git">broccoli-es6-arrow</a></li>
+<li>TypeScript: <a href="https://github.com/ngParty/broccoli-tsc">broccoli-tsc</a></li>
+</ul>
+<h3>Brunch Plugins</h3>
+<ul>
+<li>Babel: <a href="https://github.com/babel/babel-brunch">babel-brunch</a></li>
+<li>ES6 Module Transpiler: <a href="https://github.com/gcollazo/es6-module-transpiler-brunch">es6-module-transpiler-brunch</a></li>
+<li>TypeScript: <a href="https://github.com/joshheyse/typescript-brunch">typescript-brunch</a></li>
+</ul>
+<h2>Webpack plugins</h2>
+<ul>
+<li>Babel: <a href="https://github.com/babel/babel-loader">babel-loader</a></li>
+<li>Traceur: <a href="https://github.com/gdi2290/traceur-compiler-loader">traceur-compiler-loader</a></li>
+<li>TypeScript: <a href="https://github.com/s-panferov/awesome-typescript-loader">awesome-typescript-loader</a></li>
+</ul>
+<h2>Duo plugins</h2>
+<ul>
+<li>Babel: <a href="https://github.com/babel/duo-babel">duo-babel</a></li>
+<li>TypeScript: <a href="https://github.com/frankwallis/duo-typescript">duo-typescript</a></li>
+</ul>
+<h2>Connect plugins</h2>
+<ul>
+<li>Babel: <a href="https://github.com/babel/babel-connect">babel-connect</a></li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1><img src="http://i.imgur.com/yy1sACZ.png" width="100px"/> ECMAScript 6 Tools</h1>
+<h2>Transpilers</h2>
+<ul>
+<li><a href="https://github.com/babel/babel">Babel</a> - Turn ES6+ code into vanilla ES5 with no runtime</li>
+<li><a href="https://github.com/google/traceur-compiler">Traceur compiler</a> - ES6 features &gt; ES5. Includes classes, generators, promises, destructuring patterns, default parameters &amp; more.</li>
+<li><a href="https://github.com/thlorenz/es6ify">es6ify</a> - Traceur compiler wrapped as a <a href="http://browserify.org/">Browserify</a> v2 transform</li>
+<li><a href="https://github.com/babel/babelify">babelify</a> - Babel transpiler wrapped as a <a href="http://browserify.org/">Browserify</a> transform</li>
+<li><a href="https://github.com/termi/es6-transpiler">es6-transpiler</a> - ES6 &gt; ES5. Includes classes, destructuring, default parameters, spread</li>
+<li>Square's <a href="https://github.com/esnext/es6-module-transpiler">es6-module-transpiler</a> - ES6 modules to AMD or CJS</li>
+<li>Facebook's <a href="https://github.com/facebook/regenerator">regenerator</a> - transform ES6 yield/generator functions to ES5</li>
+<li>Facebook's <a href="https://github.com/facebookarchive/jstransform">jstransform</a> - A simple utility for pluggable JS syntax transforms. Comes with a small set of ES6 -&gt; ES5 transforms</li>
+<li><a href="https://github.com/olov/defs">defs</a> - ES6 block-scoped const and let variables to ES3 vars</li>
+<li><a href="https://github.com/DavyJonesLocker/es6_module_transpiler-rails">es6_module_transpiler-rails</a> - ES6 Modules in the Rails Asset Pipeline</li>
+<li><a href="https://github.com/jlongster/es6-macros">Some Sweet.js macros</a> that compile from ES6 to ES5</li>
+<li>Bitovi's <a href="https://github.com/stealjs/transpile">transpile</a> - Converts ES6 to AMD, CJS, and StealJS.</li>
+<li><a href="https://github.com/mathiasbynens/regexpu">regexpu</a> — Transform Unicode-aware ES6 regular expressions to ES5</li>
+<li><a href="https://github.com/mohebifar/lebab">Lebab</a> - Transformations for ES5 code to ES6 (approximates)</li>
+</ul>
+<h2>Build-time transpilation</h2>
+<h3>Gulp Plugins</h3>
+<ul>
+<li>Babel: <a href="https://github.com/babel/gulp-babel">gulp-babel</a></li>
+<li>Traceur: <a href="https://github.com/sindresorhus/gulp-traceur">gulp-traceur</a></li>
+<li>Regenerator: <a href="https://github.com/sindresorhus/gulp-regenerator">gulp-regenerator</a></li>
+<li>ES6 Module Transpiler: <a href="https://github.com/ryanseddon/gulp-es6-module-transpiler">gulp-es6-module-transpiler</a></li>
+<li>es6-transpiler: <a href="https://github.com/sindresorhus/gulp-es6-transpiler">gulp-es6-transpiler</a> - ES6 → ES5</li>
+<li>es6-jstransform: <a href="https://github.com/hemanth/gulp-jstransform">gulp-jstransform</a> - ES6 → ES5 using FB's <a href="https://github.com/facebook/jstransform">jstransform</a></li>
+<li>regexpu: <a href="https://github.com/mathiasbynens/gulp-regexpu">gulp-regexpu</a></li>
+<li>TypeScript: <a href="https://github.com/ivogabe/gulp-typescript">gulp-typescript</a></li>
+</ul>
+<h3>Grunt Tasks</h3>
+<ul>
+<li>Babel: <a href="https://github.com/babel/grunt-babel">grunt-babel</a> - Turn ES6+ code into vanilla ES5 with no runtime</li>
+<li>Traceur: <a href="https://github.com/aaronfrost/grunt-traceur">grunt-traceur</a> ES6 &gt; ES5 transpilation, <a href="https://github.com/tarruda/grunt-traceur-build">grunt-traceur-build</a></li>
+<li>ES6 Module Transpiler: <a href="https://github.com/joefiorini/grunt-es6-module-transpiler">grunt-es6-module-transpiler</a></li>
+<li>Regenerator: <a href="https://github.com/sindresorhus/grunt-regenerator">grunt-regenerator</a> - ES6 generator functions to ES5</li>
+<li><a href="https://github.com/thomasboyt/grunt-microlib">grunt-microlib</a> - tools for libs using ES6 module transpiler (sample <a href="https://github.com/jakearchibald/es6-promise/blob/c3336087fffc52e66cf5398e5b56b23a291080fc/Gruntfile.js">Gruntfile</a>)</li>
+<li><a href="https://github.com/EE/grunt-defs">grunt-defs</a> - ES6 block scoped const and let variables, to ES3</li>
+<li>es6-transpiler: <a href="https://github.com/sindresorhus/grunt-es6-transpiler">grunt-es6-transpiler</a> - ES6 → ES5</li>
+<li>TypeScript: <a href="https://github.com/TypeStrong/grunt-ts">grunt-ts</a> - ES6+ &gt; ES5/ES3 transpilation</li>
+</ul>
+<h3>Broccoli Plugins</h3>
+<ul>
+<li>Babel: <a href="https://github.com/babel/broccoli-babel-transpiler">broccoli-babel-transpiler</a></li>
+<li>Traceur: <a href="https://github.com/sindresorhus/broccoli-traceur">broccoli-traceur</a></li>
+<li>Regenerator: <a href="https://github.com/sindresorhus/broccoli-regenerator">broccoli-regenerator</a></li>
+<li>ES6 Transpiler: <a href="https://github.com/sindresorhus/broccoli-es6-transpiler">broccoli-transpiler</a></li>
+<li>ES6 Module Transpiler: <a href="https://github.com/mmun/broccoli-es6-module-transpiler">broccoli-es6-module-transpiler</a></li>
+<li>ES6 fat arrow transpiler: <a href="https://github.com/hemanth/broccoli-es6-arrow.git">broccoli-es6-arrow</a></li>
+<li>TypeScript: <a href="https://github.com/ngParty/broccoli-tsc">broccoli-tsc</a></li>
+</ul>
+<h3>Brunch Plugins</h3>
+<ul>
+<li>Babel: <a href="https://github.com/babel/babel-brunch">babel-brunch</a></li>
+<li>ES6 Module Transpiler: <a href="https://github.com/gcollazo/es6-module-transpiler-brunch">es6-module-transpiler-brunch</a></li>
+<li>TypeScript: <a href="https://github.com/joshheyse/typescript-brunch">typescript-brunch</a></li>
+</ul>
+<h2>Webpack plugins</h2>
+<ul>
+<li>Babel: <a href="https://github.com/babel/babel-loader">babel-loader</a></li>
+<li>Traceur: <a href="https://github.com/gdi2290/traceur-compiler-loader">traceur-compiler-loader</a></li>
+<li>TypeScript: <a href="https://github.com/s-panferov/awesome-typescript-loader">awesome-typescript-loader</a></li>
+</ul>
+<h2>Duo plugins</h2>
+<ul>
+<li>Babel: <a href="https://github.com/babel/duo-babel">duo-babel</a></li>
+<li>TypeScript: <a href="https://github.com/frankwallis/duo-typescript">duo-typescript</a></li>
+</ul>
+<h2>Connect plugins</h2>
+<ul>
+<li>Babel: <a href="https://github.com/babel/babel-connect">babel-connect</a></li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'es6-tools_README.md';
 
         fetch(markdownFile)
@@ -48,21 +183,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

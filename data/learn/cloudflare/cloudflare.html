@@ -8,38 +8,185 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Irazasyed Awesome Cloudflare - Awesome List Resources">
-    <title>Irazasyed Awesome Cloudflare</title>
+    <meta name="description" content="> Curated list of awesome Cloudflare worker recipes, open-source projects, guides, blogs and other resources. Cloudflare provides content delivery network...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Cloudflare [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re) [<img src="media/cf-logo.svg" width="250" align="right" alt="Cloudflare">](https://www.cloudflare.com) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Cloudflare <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a> <a href="https://www.cloudflare.com"><img src="media/cf-logo.svg" width="250" align="right" alt="Cloudflare"></a></h1>
+<blockquote>
+<p>Curated list of awesome <a href="https://www.cloudflare.com">Cloudflare</a> worker recipes, open-source projects, guides, blogs and other resources.</p>
+</blockquote>
+<p>Cloudflare provides content delivery network (CDN) services, DDoS mitigation, Internet security and distributed domain name server (DNS) services, sitting between the visitor and the Cloudflare user's hosting provider, acting as a reverse proxy for websites.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#community">Community</a></li>
+<li><a href="#blog">Blog</a></li>
+<li><a href="#dns">DNS</a></li>
+<li><a href="#developers">Developers</a></li>
+<li><a href="#apps">Apps</a></li>
+<li><a href="#open-source">Open Source</a></li>
+<li><a href="#workers">Workers</a></li>
+<li><a href="#reference">Reference</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#recipes">Recipes</a></li>
+<li><a href="#other">Other</a></li>
+</ul>
+<h2>Community</h2>
+<ul>
+<li><a href="https://community.cloudflare.com">Forum</a></li>
+<li><a href="https://www.reddit.com/r/CloudFlare">Reddit</a></li>
+<li><a href="https://twitter.com/cloudflare"><code>@Cloudflare</code> on Twitter</a></li>
+<li><a href="https://www.facebook.com/Cloudflare">Facebook</a></li>
+<li><a href="https://www.youtube.com/cloudflare-">YouTube</a></li>
+<li><a href="https://github.com/cloudflare">GitHub</a></li>
+<li><a href="https://github.com/topics/cloudflare">GitHub Topic</a></li>
+<li><a href="https://stackexchange.com/search?q=cloudflare">Stack Exchange</a></li>
+<li><a href="https://stackoverflow.com/questions/tagged/cloudflare">Stack Overflow</a></li>
+<li><a href="https://serverfault.com/questions/tagged/cloudflare">Server Fault</a></li>
+</ul>
+<h2>Blog</h2>
+<ul>
+<li><a href="https://blog.cloudflare.com">Official Blog</a></li>
+</ul>
+<h2>DNS</h2>
+<ul>
+<li><a href="https://github.com/irazasyed/dns-zone-files">DNS Zone Files</a> - Ready to import common config zone files for easy configuration of various services.</li>
+<li><a href="https://github.com/AnalogJ/lexicon">Lexicon</a> - CLI tool to manipulate DNS records on various DNS providers in a standardized way.</li>
+<li><a href="https://github.com/Moham3dRiahi/Th3inspector">Th3inspector</a> - All in one CLI tool for information gathering.</li>
+<li><a href="https://github.com/ZE3kr/Cloudflare-CNAME-Setup">Partner Panel</a> - Tool for hosting partners to provide a DNS management panel for customers.</li>
+<li><a href="https://github.com/Netrvin/CFPMP">CFPMP</a> - Partner management panel.</li>
+<li><a href="https://github.com/lfaoro/flares">Flares</a> - DNS backup tool.</li>
+<li><a href="https://github.com/SukkaW/cloudflare-block-bad-bot-ruleset">Block Bad Bot Ruleset</a> - Collection of rulesets to block malicious crawlers with firewall rules.</li>
+<li><a href="https://github.com/oznu/docker-cloudflare-ddns">Docker DDNS</a> - Docker image to use the free DNS Service as a dynamic DNS provider.</li>
+<li><a href="https://github.com/joshuaavalon/SynologyCloudflareDDNS">DDNS script for Synology</a> - DDNS script for Synology NAS.</li>
+<li><a href="https://github.com/yulewang/cloudflare-api-v4-ddns">Dynamic DNS Bash</a> - Dynamic DNS updater in bash script.</li>
+<li><a href="https://github.com/lyoshenka/cloudflare-ddns">Dynamic DNS PHP</a> - Dynamic DNS updater in PHP.</li>
+<li><a href="https://github.com/adrienbrignon/cloudflare-ddns">Dynamic DNS Python</a> - Dynamic DNS updater in python.</li>
+<li><a href="https://github.com/phuslu/ddns">Multi-Provider DDNS Script</a> - Multiple providers ddns script without dependencies.</li>
+<li><a href="https://github.com/cloudflare/cloudflared">Argo Tunnel Client</a> - CLI client for Argo tunnel, a tunneling daemon that proxies any local webserver through the Cloudflare network.</li>
+<li><a href="https://github.com/ostark/upper">Upper</a> - Speeds up craft dramatically using a cache proxy in front of your webserver.</li>
+<li><a href="https://github.com/SageHack/cloud-buster">Cloud Buster</a> - A comprehensive pentest tool that checks sites for origin IP leaks.</li>
+<li><a href="https://github.com/danielpigott/cloudflare-cli">CLI Tool</a> - CLI tool for interacting with Cloudflare.</li>
+<li><a href="https://github.com/k4m4/cloudflare-detect">Detector</a> - Detect whether a site is running behind Cloudflare.</li>
+<li><a href="https://github.com/Anorov/cloudflare-scrape">Scrape</a> - Python module to bypass anti-bot page.</li>
+<li><a href="https://github.com/christophetd/CloudFlair">CloudFlair</a> - Tool to find origin servers of websites protected by CloudFlare who are publicly exposed.</li>
+</ul>
+<h2>Developers</h2>
+<ul>
+<li><a href="https://developers.cloudflare.com">Developers Hub</a> - Developer docs including API reference, articles, and sample code for all products.</li>
+<li><a href="https://cloudflare.github.io">Open Source</a> - Official open-source projects.</li>
+<li><a href="https://api.cloudflare.com">API Docs</a> - API documentation.</li>
+<li><a href="https://www.cloudflare.com/integrations">Integration Resources</a> - Plugins for content management systems, control panels, cloud providers, ecommerce platforms and more.</li>
+<li><a href="https://www.cloudflare.com/technical-resources">Technical Resources</a> - Technical tools and resources.</li>
+<li><a href="https://blog.cloudflare.com/serverlist">The Serverlist Newsletter</a> - The serverlist is a Cloudflare-curated newsletter about all things serverless.</li>
+</ul>
+<h2>Apps</h2>
+<blockquote>
+<p><a href="https://www.cloudflare.com/apps/developers">Cloudflare Apps</a> lets you ship your tool or service to millions of sites. Any Cloudflare customer can preview &amp; install your code on their site in seconds.</p>
+</blockquote>
+<ul>
+<li><a href="https://www.cloudflare.com/apps">Apps Directory</a></li>
+<li><a href="https://www.cloudflare.com/apps/developer/docs/getting-started">Documentation</a></li>
+<li><a href="https://www.cloudflare.com/fund">Developer Fund</a></li>
+<li><a href="https://github.com/cloudflare-apps/ideas">App Ideas</a></li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Cloudflare <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a> <a href="https://www.cloudflare.com"><img src="media/cf-logo.svg" width="250" align="right" alt="Cloudflare"></a></h1>
+<blockquote>
+<p>Curated list of awesome <a href="https://www.cloudflare.com">Cloudflare</a> worker recipes, open-source projects, guides, blogs and other resources.</p>
+</blockquote>
+<p>Cloudflare provides content delivery network (CDN) services, DDoS mitigation, Internet security and distributed domain name server (DNS) services, sitting between the visitor and the Cloudflare user's hosting provider, acting as a reverse proxy for websites.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#community">Community</a></li>
+<li><a href="#blog">Blog</a></li>
+<li><a href="#dns">DNS</a></li>
+<li><a href="#developers">Developers</a></li>
+<li><a href="#apps">Apps</a></li>
+<li><a href="#open-source">Open Source</a></li>
+<li><a href="#workers">Workers</a></li>
+<li><a href="#reference">Reference</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#recipes">Recipes</a></li>
+<li><a href="#other">Other</a></li>
+</ul>
+<h2>Community</h2>
+<ul>
+<li><a href="https://community.cloudflare.com">Forum</a></li>
+<li><a href="https://www.reddit.com/r/CloudFlare">Reddit</a></li>
+<li><a href="https://twitter.com/cloudflare"><code>@Cloudflare</code> on Twitter</a></li>
+<li><a href="https://www.facebook.com/Cloudflare">Facebook</a></li>
+<li><a href="https://www.youtube.com/cloudflare-">YouTube</a></li>
+<li><a href="https://github.com/cloudflare">GitHub</a></li>
+<li><a href="https://github.com/topics/cloudflare">GitHub Topic</a></li>
+<li><a href="https://stackexchange.com/search?q=cloudflare">Stack Exchange</a></li>
+<li><a href="https://stackoverflow.com/questions/tagged/cloudflare">Stack Overflow</a></li>
+<li><a href="https://serverfault.com/questions/tagged/cloudflare">Server Fault</a></li>
+</ul>
+<h2>Blog</h2>
+<ul>
+<li><a href="https://blog.cloudflare.com">Official Blog</a></li>
+</ul>
+<h2>DNS</h2>
+<ul>
+<li><a href="https://github.com/irazasyed/dns-zone-files">DNS Zone Files</a> - Ready to import common config zone files for easy configuration of various services.</li>
+<li><a href="https://github.com/AnalogJ/lexicon">Lexicon</a> - CLI tool to manipulate DNS records on various DNS providers in a standardized way.</li>
+<li><a href="https://github.com/Moham3dRiahi/Th3inspector">Th3inspector</a> - All in one CLI tool for information gathering.</li>
+<li><a href="https://github.com/ZE3kr/Cloudflare-CNAME-Setup">Partner Panel</a> - Tool for hosting partners to provide a DNS management panel for customers.</li>
+<li><a href="https://github.com/Netrvin/CFPMP">CFPMP</a> - Partner management panel.</li>
+<li><a href="https://github.com/lfaoro/flares">Flares</a> - DNS backup tool.</li>
+<li><a href="https://github.com/SukkaW/cloudflare-block-bad-bot-ruleset">Block Bad Bot Ruleset</a> - Collection of rulesets to block malicious crawlers with firewall rules.</li>
+<li><a href="https://github.com/oznu/docker-cloudflare-ddns">Docker DDNS</a> - Docker image to use the free DNS Service as a dynamic DNS provider.</li>
+<li><a href="https://github.com/joshuaavalon/SynologyCloudflareDDNS">DDNS script for Synology</a> - DDNS script for Synology NAS.</li>
+<li><a href="https://github.com/yulewang/cloudflare-api-v4-ddns">Dynamic DNS Bash</a> - Dynamic DNS updater in bash script.</li>
+<li><a href="https://github.com/lyoshenka/cloudflare-ddns">Dynamic DNS PHP</a> - Dynamic DNS updater in PHP.</li>
+<li><a href="https://github.com/adrienbrignon/cloudflare-ddns">Dynamic DNS Python</a> - Dynamic DNS updater in python.</li>
+<li><a href="https://github.com/phuslu/ddns">Multi-Provider DDNS Script</a> - Multiple providers ddns script without dependencies.</li>
+<li><a href="https://github.com/cloudflare/cloudflared">Argo Tunnel Client</a> - CLI client for Argo tunnel, a tunneling daemon that proxies any local webserver through the Cloudflare network.</li>
+<li><a href="https://github.com/ostark/upper">Upper</a> - Speeds up craft dramatically using a cache proxy in front of your webserver.</li>
+<li><a href="https://github.com/SageHack/cloud-buster">Cloud Buster</a> - A comprehensive pentest tool that checks sites for origin IP leaks.</li>
+<li><a href="https://github.com/danielpigott/cloudflare-cli">CLI Tool</a> - CLI tool for interacting with Cloudflare.</li>
+<li><a href="https://github.com/k4m4/cloudflare-detect">Detector</a> - Detect whether a site is running behind Cloudflare.</li>
+<li><a href="https://github.com/Anorov/cloudflare-scrape">Scrape</a> - Python module to bypass anti-bot page.</li>
+<li><a href="https://github.com/christophetd/CloudFlair">CloudFlair</a> - Tool to find origin servers of websites protected by CloudFlare who are publicly exposed.</li>
+</ul>
+<h2>Developers</h2>
+<ul>
+<li><a href="https://developers.cloudflare.com">Developers Hub</a> - Developer docs including API reference, articles, and sample code for all products.</li>
+<li><a href="https://cloudflare.github.io">Open Source</a> - Official open-source projects.</li>
+<li><a href="https://api.cloudflare.com">API Docs</a> - API documentation.</li>
+<li><a href="https://www.cloudflare.com/integrations">Integration Resources</a> - Plugins for content management systems, control panels, cloud providers, ecommerce platforms and more.</li>
+<li><a href="https://www.cloudflare.com/technical-resources">Technical Resources</a> - Technical tools and resources.</li>
+<li><a href="https://blog.cloudflare.com/serverlist">The Serverlist Newsletter</a> - The serverlist is a Cloudflare-curated newsletter about all things serverless.</li>
+</ul>
+<h2>Apps</h2>
+<blockquote>
+<p><a href="https://www.cloudflare.com/apps/developers">Cloudflare Apps</a> lets you ship your tool or service to millions of sites. Any Cloudflare customer can preview &amp; install your code on their site in seconds.</p>
+</blockquote>
+<ul>
+<li><a href="https://www.cloudflare.com/apps">Apps Directory</a></li>
+<li><a href="https://www.cloudflare.com/apps/developer/docs/getting-started">Documentation</a></li>
+<li><a href="https://www.cloudflare.com/fund">Developer Fund</a></li>
+<li><a href="https://github.com/cloudflare-apps/ideas">App Ideas</a></li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'cloudflare_README.md';
 
         fetch(markdownFile)
@@ -48,21 +195,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

@@ -8,38 +8,205 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Krispo Awesome Haskell - Awesome List Resources">
-    <title>Krispo Awesome Haskell</title>
+    <meta name="description" content="Awesome Haskell ============= An auxiliary list of awesome Haskell links, frameworks, libraries and software. The part of the awesome projects line. - Awesome...">
+    <meta name="robots" content="index, follow">
+    <title>Haskell - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Haskell <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>An auxiliary list of awesome Haskell links, frameworks, libraries and software. The part of the <a href="https://github.com/sindresorhus/awesome">awesome</a> projects line.</p>
+<ul>
+<li><a href="#awesome-haskell">Awesome Haskell</a><ul>
+<li><a href="#basics"><em>Basics</em></a></li>
+<li><a href="#algorithmics">Algorithmics</a></li>
+<li><a href="#audio-music--sound">Audio, Music &amp; Sound</a></li>
+<li><a href="#category-theory">Category Theory</a></li>
+<li><a href="#compilers">Compilers</a></li>
+<li><a href="#concurrency--parallelism">Concurrency &amp; Parallelism</a></li>
+<li><a href="#configuration">Configuration</a></li>
+<li><a href="#cryptography--hashing">Cryptography &amp; Hashing</a></li>
+<li><a href="#data-access">Data Access</a></li>
+<li><a href="#data-formats">Data Formats</a></li>
+<li><a href="#data-science">Data Science</a></li>
+<li><a href="#data-structures">Data Structures</a></li>
+<li><a href="#database">Database</a></li>
+<li><a href="#development-tools">Development Tools</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#distributed-computing">Distributed Computing</a></li>
+<li><a href="#editors">Editors</a></li>
+<li><a href="#extensions">Extensions</a></li>
+<li><a href="#games">Games</a></li>
+<li><a href="#gui">GUI</a></li>
+<li><a href="#graphics">Graphics</a></li>
+<li><a href="#network">Network</a></li>
+<li><a href="#number-theory">Number Theory</a></li>
+<li><a href="#web--frameworks">Web / Frameworks</a></li>
+<li><a href="#text-processing">Text Processing</a></li>
+<li><a href="#messaging">Messaging</a></li>
+<li><a href="#languages">Languages</a></li>
+<li><a href="#operating-systems">Operating Systems</a></li>
+<li><a href="#platforms">Platforms</a></li>
+<li><a href="#programming">Programming</a></li>
+<li><a href="#science">Science</a></li>
+<li><a href="#streaming-processing">Streaming Processing</a></li>
+</ul>
+</li>
+<li><a href="#resources">Resources</a><ul>
+<li><a href="#websites">Websites</a></li>
+<li><a href="#bloggers">Bloggers</a>    </li>
+<li><a href="#community">Community</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#courses">Courses</a></li>
+<li><a href="#conferences">Conferences</a></li>
+<li><a href="#packages">Packages</a></li>
+</ul>
+</li>
+<li><a href="#license">License</a></li>
+</ul>
+<h2><em>Basics</em></h2>
+<ul>
+<li><a href="https://www.haskell.org/alex/">Alex</a> - a lexical analyser generator for Haskell.</li>
+<li><a href="https://www.haskell.org/cabal/">Cabal</a> - a system for building and packaging Haskell libraries and programs.</li>
+<li><a href="https://www.haskell.org/ghc/">GHC</a> - the state-of-the-art optimizing native code compiler for Haskell.</li>
+<li><a href="https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/ghci.html">GHCi</a> - a bytecode interpreter and interactive REPL environment for Haskell.</li>
+<li><a href="https://www.haskell.org/ghcup">GHCup</a> - GHCup is the main installer for the general purpose language Haskell.</li>
+<li><a href="http://hackage.haskell.org/">Hackage</a> - the Haskell community's central package archive.</li>
+<li><a href="https://www.haskell.org/haddock/">Haddock</a> - a tool for automatically generating documentation from annotated Haskell source code.</li>
+<li><a href="https://www.haskell.org/happy/">Happy</a> - The Parser Generator for Haskell.</li>
+<li><a href="http://hayoo.fh-wedel.de/">Hayoo</a> - will search all packages from Hackage, including all function and type definitions.</li>
+<li><a href="https://www.haskell.org/hoogle/">Hoogle</a> - a Haskell API search engine, which allows you to search many standard Haskell libraries by either function name, or by approximate type signature.</li>
+<li><a href="https://github.com/Paczesiowa/hsenv/">hsenv</a> - a tool to create isolated Haskell environments. This allows a project to use a GHC version different of the currently installed.</li>
+<li><a href="https://github.com/commercialhaskell/stack">Stack</a> - a cross-platform tool to help on building Haskell projects. It includes support to create isolated Haskell environments and to automatically manage the dependencies of a project.</li>
+<li><a href="https://github.com/fpco/stackage">Stackage</a> - "Stable Hackage," tools for creating a vetted set of packages from Hackage.</li>
+</ul>
+<h2>Algorithmics</h2>
+<ul>
+<li>
+<p><a href="https://wiki.haskell.org/Applications_and_libraries/Theorem_provers">Theorem Provers</a> - Official Website Resources.</p>
+<hr />
+<ul>
+<li><a href="http://hackage.haskell.org/packages/#cat:Algorithm">Algorithm</a> - a collaborative Hackage list.</li>
+<li><a href="http://hackage.haskell.org/packages/#cat:Algorithm%20Visualization">Algorithm Visualization</a> - a collaborative Hackage list.</li>
+<li><a href="http://hackage.haskell.org/packages/#cat:Algorithms">Algorithms</a> - a collaborative Hackage list.</li>
+<li><a href="http://hackage.haskell.org/packages/#cat:Compression">Compression</a> - a collaborative Hackage list.</li>
+<li><a href="http://hackage.haskell.org/packages/#cat:Formal%20Languages">Formal Languages</a> - a collaborative Hackage list.</li>
+<li><a href="http://hackage.haskell.org/packages/#cat:Formal%20Methods">Formal Methods</a> - a collaborative Hackage list.</li>
+<li><a href="http://hackage.haskell.org/packages/#cat:Logic">Logic</a> - a collaborative Hackage list.</li>
+<li><a href="http://hackage.haskell.org/packages/#cat:Logic%20Programming">Logic Programming</a> - a collaborative Hackage list.</li>
+<li><a href="http://hackage.haskell.org/packages/#cat:MapReduce">Map Reduce</a> - a collaborative Hackage list.</li>
+<li><a href="http://hackage.haskell.org/packages/#cat:Graphs">Graphs</a> - a collaborative Hackage list.</li>
+<li><a href="http://hackage.haskell.org/packages/#cat:Optimization">Optimization</a> - a collaborative Hackage list.</li>
+<li><a href="http://hackage.haskell.org/packages/#cat:Simulation">Simulation</a> - a collaborative Hackage list.</li>
+<li><a href="http://hackage.haskell.org/packages/#cat:SMT">SMT</a> - a collaborative Hackage list for Satisfiability Modulo Theories (SMT).</li>
+</ul>
+</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Haskell <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>An auxiliary list of awesome Haskell links, frameworks, libraries and software. The part of the <a href="https://github.com/sindresorhus/awesome">awesome</a> projects line.</p>
+<ul>
+<li><a href="#awesome-haskell">Awesome Haskell</a><ul>
+<li><a href="#basics"><em>Basics</em></a></li>
+<li><a href="#algorithmics">Algorithmics</a></li>
+<li><a href="#audio-music--sound">Audio, Music &amp; Sound</a></li>
+<li><a href="#category-theory">Category Theory</a></li>
+<li><a href="#compilers">Compilers</a></li>
+<li><a href="#concurrency--parallelism">Concurrency &amp; Parallelism</a></li>
+<li><a href="#configuration">Configuration</a></li>
+<li><a href="#cryptography--hashing">Cryptography &amp; Hashing</a></li>
+<li><a href="#data-access">Data Access</a></li>
+<li><a href="#data-formats">Data Formats</a></li>
+<li><a href="#data-science">Data Science</a></li>
+<li><a href="#data-structures">Data Structures</a></li>
+<li><a href="#database">Database</a></li>
+<li><a href="#development-tools">Development Tools</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#distributed-computing">Distributed Computing</a></li>
+<li><a href="#editors">Editors</a></li>
+<li><a href="#extensions">Extensions</a></li>
+<li><a href="#games">Games</a></li>
+<li><a href="#gui">GUI</a></li>
+<li><a href="#graphics">Graphics</a></li>
+<li><a href="#network">Network</a></li>
+<li><a href="#number-theory">Number Theory</a></li>
+<li><a href="#web--frameworks">Web / Frameworks</a></li>
+<li><a href="#text-processing">Text Processing</a></li>
+<li><a href="#messaging">Messaging</a></li>
+<li><a href="#languages">Languages</a></li>
+<li><a href="#operating-systems">Operating Systems</a></li>
+<li><a href="#platforms">Platforms</a></li>
+<li><a href="#programming">Programming</a></li>
+<li><a href="#science">Science</a></li>
+<li><a href="#streaming-processing">Streaming Processing</a></li>
+</ul>
+</li>
+<li><a href="#resources">Resources</a><ul>
+<li><a href="#websites">Websites</a></li>
+<li><a href="#bloggers">Bloggers</a>    </li>
+<li><a href="#community">Community</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#courses">Courses</a></li>
+<li><a href="#conferences">Conferences</a></li>
+<li><a href="#packages">Packages</a></li>
+</ul>
+</li>
+<li><a href="#license">License</a></li>
+</ul>
+<h2><em>Basics</em></h2>
+<ul>
+<li><a href="https://www.haskell.org/alex/">Alex</a> - a lexical analyser generator for Haskell.</li>
+<li><a href="https://www.haskell.org/cabal/">Cabal</a> - a system for building and packaging Haskell libraries and programs.</li>
+<li><a href="https://www.haskell.org/ghc/">GHC</a> - the state-of-the-art optimizing native code compiler for Haskell.</li>
+<li><a href="https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/ghci.html">GHCi</a> - a bytecode interpreter and interactive REPL environment for Haskell.</li>
+<li><a href="https://www.haskell.org/ghcup">GHCup</a> - GHCup is the main installer for the general purpose language Haskell.</li>
+<li><a href="http://hackage.haskell.org/">Hackage</a> - the Haskell community's central package archive.</li>
+<li><a href="https://www.haskell.org/haddock/">Haddock</a> - a tool for automatically generating documentation from annotated Haskell source code.</li>
+<li><a href="https://www.haskell.org/happy/">Happy</a> - The Parser Generator for Haskell.</li>
+<li><a href="http://hayoo.fh-wedel.de/">Hayoo</a> - will search all packages from Hackage, including all function and type definitions.</li>
+<li><a href="https://www.haskell.org/hoogle/">Hoogle</a> - a Haskell API search engine, which allows you to search many standard Haskell libraries by either function name, or by approximate type signature.</li>
+<li><a href="https://github.com/Paczesiowa/hsenv/">hsenv</a> - a tool to create isolated Haskell environments. This allows a project to use a GHC version different of the currently installed.</li>
+<li><a href="https://github.com/commercialhaskell/stack">Stack</a> - a cross-platform tool to help on building Haskell projects. It includes support to create isolated Haskell environments and to automatically manage the dependencies of a project.</li>
+<li><a href="https://github.com/fpco/stackage">Stackage</a> - "Stable Hackage," tools for creating a vetted set of packages from Hackage.</li>
+</ul>
+<h2>Algorithmics</h2>
+<ul>
+<li>
+<p><a href="https://wiki.haskell.org/Applications_and_libraries/Theorem_provers">Theorem Provers</a> - Official Website Resources.</p>
+<hr />
+<ul>
+<li><a href="http://hackage.haskell.org/packages/#cat:Algorithm">Algorithm</a> - a collaborative Hackage list.</li>
+<li><a href="http://hackage.haskell.org/packages/#cat:Algorithm%20Visualization">Algorithm Visualization</a> - a collaborative Hackage list.</li>
+<li><a href="http://hackage.haskell.org/packages/#cat:Algorithms">Algorithms</a> - a collaborative Hackage list.</li>
+<li><a href="http://hackage.haskell.org/packages/#cat:Compression">Compression</a> - a collaborative Hackage list.</li>
+<li><a href="http://hackage.haskell.org/packages/#cat:Formal%20Languages">Formal Languages</a> - a collaborative Hackage list.</li>
+<li><a href="http://hackage.haskell.org/packages/#cat:Formal%20Methods">Formal Methods</a> - a collaborative Hackage list.</li>
+<li><a href="http://hackage.haskell.org/packages/#cat:Logic">Logic</a> - a collaborative Hackage list.</li>
+<li><a href="http://hackage.haskell.org/packages/#cat:Logic%20Programming">Logic Programming</a> - a collaborative Hackage list.</li>
+<li><a href="http://hackage.haskell.org/packages/#cat:MapReduce">Map Reduce</a> - a collaborative Hackage list.</li>
+<li><a href="http://hackage.haskell.org/packages/#cat:Graphs">Graphs</a> - a collaborative Hackage list.</li>
+<li><a href="http://hackage.haskell.org/packages/#cat:Optimization">Optimization</a> - a collaborative Hackage list.</li>
+<li><a href="http://hackage.haskell.org/packages/#cat:Simulation">Simulation</a> - a collaborative Hackage list.</li>
+<li><a href="http://hackage.haskell.org/packages/#cat:SMT">SMT</a> - a collaborative Hackage list for Satisfiability Modulo Theories (SMT).</li>
+</ul>
+</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'haskell_README.md';
 
         fetch(markdownFile)
@@ -48,21 +215,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

@@ -8,38 +8,245 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bubuanabelas Awesome Markdown - Awesome List Resources">
-    <title>Bubuanabelas Awesome Markdown</title>
+    <meta name="description" content="> A curated list of delightful Markdown stuff. Markdown is a markup language created by John Gruber in collaboration with Aaron Swartz. It was designed to be...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Markdown [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Markdown <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Markdown-mark.svg" align="right" width="208"></p>
+<blockquote>
+<p>A curated list of delightful Markdown stuff.</p>
+</blockquote>
+<p>Markdown is a markup language created by John Gruber in collaboration with Aaron Swartz. It was designed to be easily converted to HTML and has been extended into different types of implementations.</p>
+<!--lint disable no-emphasis-as-heading-->
+
+<p><em>Please read the <a href=".github/contributing.md">contribution guidelines</a> before contributing.</em></p>
+<!--lint enable no-emphasis-as-heading-->
+
+<p>:gem: means <strong>really <em>awesome/useful</em></strong>.<br />
+![Globe][globe] means that <strong>it's <em>webapp/webservice</em></strong>.<br />
+![Android OS][android-os] means that <strong>runs on <em>Android</em></strong>.<br />
+![iOS Logo][ios-logo] means that <strong>runs on <em>iOS</em></strong>.<br />
+![Mac OS X][macosx] means that <strong>runs on <em>macOS</em></strong>.<br />
+![Linux][linux] means that <strong>runs on <em>Linux</em></strong>.<br />
+![Windows][windows] means that <strong>runs on <em>Windows</em></strong>.<br /></p>
+<!--lint disable no-paragraph-content-indent-->
+
+<!--lint disable alphabetize-lists-->
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#awesome-markdown-awesomehttpsgithubcomsindresorhusawesome">Awesome Markdown <img alt="Awesome" src="https://github.com/sindresorhus/awesome" /></a></li>
+<li><a href="#contents">Contents</a></li>
+<li><a href="#cms--blogs">CMS / Blogs</a></li>
+<li><a href="#libraries">Libraries</a><ul>
+<li><a href="#c">C</a></li>
+<li><a href="#java">Java</a></li>
+<li><a href="#javascript">JavaScript</a></li>
+<li><a href="#perl">Perl</a></li>
+<li><a href="#php">PHP</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#ruby">Ruby</a></li>
+</ul>
+</li>
+<li><a href="#tools">Tools</a><ul>
+<li><a href="#converters">Converters</a></li>
+<li><a href="#editors">Editors</a></li>
+<li><a href="#linters">Linters</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#presentations">Presentations</a></li>
+</ul>
+</li>
+<li><a href="#services">Services</a></li>
+<li><a href="#resources">Resources</a><ul>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+</ul>
+</li>
+<li><a href="#license">License</a></li>
+</ul>
+<hr />
+<!--lint enable alphabetize-lists-->
+
+<!--lint enable no-paragraph-content-indent-->
+
+<h2>CMS / Blogs</h2>
+<blockquote>
+<p>CMS or Blogs which support Markdown by default.</p>
+</blockquote>
+<ul>
+<li><a href="https://blog.ghost.org/markdown/">Ghost</a> - Publishing platform for professional bloggers.</li>
+<li><a href="https://getgrav.org/">Grav</a> - Modern Flat-File CMS.</li>
+<li><a href="https://hexo.io/">Hexo</a> - A fast, simple &amp; powerful blog framework</li>
+<li><a href="https://gohugo.io/">Hugo</a> - Fast &amp; Modern Static Website Engine.</li>
+<li><a href="https://jekyllrb.com/">Jekyll</a> - Transform your plain text into static websites and blogs.</li>
+<li><a href="https://blog.getpelican.com/">Pelican</a> - Static site generator that requires no database or server-side logic.</li>
+<li><a href="https://svbtle.com/">Svbtle</a> - Blogging platform designed to help you think.</li>
+<li><a href="https://vuepress.vuejs.org/">Vuepress</a> - Minimalistic Vue-powered static site generator.</li>
+<li><a href="https://github.com/spekulatius/laravel-commonmark-blog">Laravel CommonMark Blog</a> - Static-generator to use with Laravel. Utilizes CommonMark and FrontMatter and publishes directly into the <code>public</code>-folder.</li>
+</ul>
+<h2>Libraries</h2>
+<blockquote>
+<p>Libraries for rendering Markdown documents.</p>
+</blockquote>
+<h3>C</h3>
+<ul>
+<li><a href="https://github.com/commonmark/cmark">cmark</a> - CommonMark parsing and rendering library and program in C.</li>
+<li><a href="https://github.com/hoedown/hoedown">Hoedown</a> - Standards compliant, fast, secure Markdown processing library in C (Sundown fork).</li>
+<li><a href="https://github.com/jgm/peg-markdown">peg-markdown</a> - An implementation of Markdown in C, using a PEG grammar.</li>
+<li><a href="https://github.com/vmg/sundown">Sundown</a> - Standards compliant, fast, secure Markdown processing library in C.</li>
+</ul>
+<h3>Java</h3>
+<ul>
+<li><a href="https://github.com/atlassian/commonmark-java">commonmark-java</a> - Java implementation of CommonMark, a specification of the Markdown format.</li>
+<li><a href="https://github.com/vsch/flexmark-java">flexmark-java</a> - Java Implementation of Markdown parser with source level AST.</li>
+<li><a href="https://github.com/sirthias/pegdown">pegdown</a> - A pure-Java Markdown processor based on a parboiled PEG parser supporting a number of extensions.</li>
+</ul>
+<h3>JavaScript</h3>
+<ul>
+<li><a href="https://github.com/markdown-it/markdown-it">markdown-it</a> - Markdown parser, done right. 100% CommonMark support, extensions, syntax plugins &amp; high speed.</li>
+<li><a href="https://github.com/evilstreak/markdown-js">markdown-js</a> - Yet another Markdown parser, this time for JavaScript.</li>
+<li><a href="https://github.com/markedjs/marked">marked</a> - Full-featured Markdown parser and compiler, written in JavaScript. Built for speed.</li>
+<li><a href="https://github.com/albinotonnina/mmarkdown">mmarkdown</a> - Interpret mmd fenced code blocks in a markdown file and generate a cooler version of it.</li>
+<li><a href="https://github.com/showdownjs/showdown">Showdown</a> - Showdown is a JavaScript Markdown to HTML converter, based on the original works by John Gruber.</li>
+<li><a href="https://github.com/developit/snarkdown">Snarkdown</a> - Snarkdown is a dead simple 1kb Markdown parser.</li>
+</ul>
+<h3>Perl</h3>
+<ul>
+<li><a href="https://daringfireball.net/projects/downloads/Markdown_1.0.1.zip">Markdown.pl</a> :gem: <em>John Gruber's original Markdown library.</em></li>
+</ul>
+<h3>PHP</h3>
+<ul>
+<li><a href="https://github.com/thephpleague/commonmark">commonmark</a> - Highly-extensible PHP Markdown parser which fully supports the CommonMark and GFM specs.</li>
+<li><a href="https://github.com/erusev/parsedown">parsedown</a> - Better Markdown Parser in PHP.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Markdown <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Markdown-mark.svg" align="right" width="208"></p>
+<blockquote>
+<p>A curated list of delightful Markdown stuff.</p>
+</blockquote>
+<p>Markdown is a markup language created by John Gruber in collaboration with Aaron Swartz. It was designed to be easily converted to HTML and has been extended into different types of implementations.</p>
+<!--lint disable no-emphasis-as-heading-->
+
+<p><em>Please read the <a href=".github/contributing.md">contribution guidelines</a> before contributing.</em></p>
+<!--lint enable no-emphasis-as-heading-->
+
+<p>:gem: means <strong>really <em>awesome/useful</em></strong>.<br />
+![Globe][globe] means that <strong>it's <em>webapp/webservice</em></strong>.<br />
+![Android OS][android-os] means that <strong>runs on <em>Android</em></strong>.<br />
+![iOS Logo][ios-logo] means that <strong>runs on <em>iOS</em></strong>.<br />
+![Mac OS X][macosx] means that <strong>runs on <em>macOS</em></strong>.<br />
+![Linux][linux] means that <strong>runs on <em>Linux</em></strong>.<br />
+![Windows][windows] means that <strong>runs on <em>Windows</em></strong>.<br /></p>
+<!--lint disable no-paragraph-content-indent-->
+
+<!--lint disable alphabetize-lists-->
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#awesome-markdown-awesomehttpsgithubcomsindresorhusawesome">Awesome Markdown <img alt="Awesome" src="https://github.com/sindresorhus/awesome" /></a></li>
+<li><a href="#contents">Contents</a></li>
+<li><a href="#cms--blogs">CMS / Blogs</a></li>
+<li><a href="#libraries">Libraries</a><ul>
+<li><a href="#c">C</a></li>
+<li><a href="#java">Java</a></li>
+<li><a href="#javascript">JavaScript</a></li>
+<li><a href="#perl">Perl</a></li>
+<li><a href="#php">PHP</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#ruby">Ruby</a></li>
+</ul>
+</li>
+<li><a href="#tools">Tools</a><ul>
+<li><a href="#converters">Converters</a></li>
+<li><a href="#editors">Editors</a></li>
+<li><a href="#linters">Linters</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#presentations">Presentations</a></li>
+</ul>
+</li>
+<li><a href="#services">Services</a></li>
+<li><a href="#resources">Resources</a><ul>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+</ul>
+</li>
+<li><a href="#license">License</a></li>
+</ul>
+<hr />
+<!--lint enable alphabetize-lists-->
+
+<!--lint enable no-paragraph-content-indent-->
+
+<h2>CMS / Blogs</h2>
+<blockquote>
+<p>CMS or Blogs which support Markdown by default.</p>
+</blockquote>
+<ul>
+<li><a href="https://blog.ghost.org/markdown/">Ghost</a> - Publishing platform for professional bloggers.</li>
+<li><a href="https://getgrav.org/">Grav</a> - Modern Flat-File CMS.</li>
+<li><a href="https://hexo.io/">Hexo</a> - A fast, simple &amp; powerful blog framework</li>
+<li><a href="https://gohugo.io/">Hugo</a> - Fast &amp; Modern Static Website Engine.</li>
+<li><a href="https://jekyllrb.com/">Jekyll</a> - Transform your plain text into static websites and blogs.</li>
+<li><a href="https://blog.getpelican.com/">Pelican</a> - Static site generator that requires no database or server-side logic.</li>
+<li><a href="https://svbtle.com/">Svbtle</a> - Blogging platform designed to help you think.</li>
+<li><a href="https://vuepress.vuejs.org/">Vuepress</a> - Minimalistic Vue-powered static site generator.</li>
+<li><a href="https://github.com/spekulatius/laravel-commonmark-blog">Laravel CommonMark Blog</a> - Static-generator to use with Laravel. Utilizes CommonMark and FrontMatter and publishes directly into the <code>public</code>-folder.</li>
+</ul>
+<h2>Libraries</h2>
+<blockquote>
+<p>Libraries for rendering Markdown documents.</p>
+</blockquote>
+<h3>C</h3>
+<ul>
+<li><a href="https://github.com/commonmark/cmark">cmark</a> - CommonMark parsing and rendering library and program in C.</li>
+<li><a href="https://github.com/hoedown/hoedown">Hoedown</a> - Standards compliant, fast, secure Markdown processing library in C (Sundown fork).</li>
+<li><a href="https://github.com/jgm/peg-markdown">peg-markdown</a> - An implementation of Markdown in C, using a PEG grammar.</li>
+<li><a href="https://github.com/vmg/sundown">Sundown</a> - Standards compliant, fast, secure Markdown processing library in C.</li>
+</ul>
+<h3>Java</h3>
+<ul>
+<li><a href="https://github.com/atlassian/commonmark-java">commonmark-java</a> - Java implementation of CommonMark, a specification of the Markdown format.</li>
+<li><a href="https://github.com/vsch/flexmark-java">flexmark-java</a> - Java Implementation of Markdown parser with source level AST.</li>
+<li><a href="https://github.com/sirthias/pegdown">pegdown</a> - A pure-Java Markdown processor based on a parboiled PEG parser supporting a number of extensions.</li>
+</ul>
+<h3>JavaScript</h3>
+<ul>
+<li><a href="https://github.com/markdown-it/markdown-it">markdown-it</a> - Markdown parser, done right. 100% CommonMark support, extensions, syntax plugins &amp; high speed.</li>
+<li><a href="https://github.com/evilstreak/markdown-js">markdown-js</a> - Yet another Markdown parser, this time for JavaScript.</li>
+<li><a href="https://github.com/markedjs/marked">marked</a> - Full-featured Markdown parser and compiler, written in JavaScript. Built for speed.</li>
+<li><a href="https://github.com/albinotonnina/mmarkdown">mmarkdown</a> - Interpret mmd fenced code blocks in a markdown file and generate a cooler version of it.</li>
+<li><a href="https://github.com/showdownjs/showdown">Showdown</a> - Showdown is a JavaScript Markdown to HTML converter, based on the original works by John Gruber.</li>
+<li><a href="https://github.com/developit/snarkdown">Snarkdown</a> - Snarkdown is a dead simple 1kb Markdown parser.</li>
+</ul>
+<h3>Perl</h3>
+<ul>
+<li><a href="https://daringfireball.net/projects/downloads/Markdown_1.0.1.zip">Markdown.pl</a> :gem: <em>John Gruber's original Markdown library.</em></li>
+</ul>
+<h3>PHP</h3>
+<ul>
+<li><a href="https://github.com/thephpleague/commonmark">commonmark</a> - Highly-extensible PHP Markdown parser which fully supports the CommonMark and GFM specs.</li>
+<li><a href="https://github.com/erusev/parsedown">parsedown</a> - Better Markdown Parser in PHP.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'markdown_README.md';
 
         fetch(markdownFile)
@@ -48,21 +255,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

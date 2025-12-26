@@ -8,38 +8,267 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kdeldycke Awesome Iam - Awesome List Resources">
-    <title>Kdeldycke Awesome Iam</title>
+    <meta name="description" content="This list is sponsored[0] by: Drag and drop your auth. Add authentication, user management, and authorization to your app with a few lines of code. Yᴏᴜʀ...">
+    <meta name="robots" content="index, follow">
+    <title>Iam - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <!--lint disable awesome-heading-->
+
+<p align="center">
+  <a href="https://github.com/kdeldycke/awesome-iam#readme">
+    <img src="https://raw.githubusercontent.com/kdeldycke/awesome-iam/main/assets/awesome-iam-header.jpg" alt="Awesome IAM">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/kdeldycke/awesome-iam#readme" hreflang="en"><img src="https://img.shields.io/badge/lang-English-blue?style=flat-square" lang="en" alt="English"></a>
+  <a href="https://github.com/kdeldycke/awesome-iam/blob/main/readme.zh.md" hreflang="zh"><img src="https://img.shields.io/badge/lang-中文-blue?style=flat-square" lang="zh" alt="中文"></a>
+</p>
+
+<p align="center">
+  <sup>This list is <a href="#sponsor-def">sponsored<sup id="sponsor-ref">[0]</sup></a> by:</sup><br>
+</p>
+
+<p align="center">
+  <a href="https://www.descope.com/?utm_source=awesome-iam&utm_medium=referral&utm_campaign=awesome-iam-oss-sponsorship">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kdeldycke/awesome-iam/main/assets/descope-logo-dark-background.svg">
+      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kdeldycke/awesome-iam/main/assets/descope-logo-light-background.svg">
+      <img width="300" src="https://raw.githubusercontent.com/kdeldycke/awesome-iam/main/assets/descope-logo-light-background.svg">
+    </picture>
+    <br/>
+    <strong>Drag and drop your auth.</strong><br/>
+    Add authentication, user management, and authorization to your app with a few lines of code.
+  </a>
+  <br/><br/>
+</p>
+
+<!-- Comment this sponsorship call-to-action if there is a sponsor logo to increase its impact. -->
+
+<!--
+<p align="center">
+  <a href="https://github.com/sponsors/kdeldycke">
+    <strong>Yᴏᴜʀ Iᴅᴇɴᴛɪᴛʏ & Aᴜᴛʜᴇɴᴛɪᴄᴀᴛɪᴏɴ Pʀᴏᴅᴜᴄᴛ ʜᴇʀᴇ!</strong>
+    <br/>
+    <sup>Add a link to your company or project here: back me up via a GitHub sponsorship.</sup>
+  </a>
+  <br/><br/>
+</p>
+-->
+
+<hr />
+<p align="center">
+  <i>Trusting is hard. Knowing who to trust, even harder.</i><br>
+  — Maria V. Snyder<sup id="intro-quote-ref"><a href="#intro-quote-def">[1]</a></sup>
+</p>
+
+<!--lint disable double-link-->
+
+<p><a href="https://en.wikipedia.org/wiki/Identity_management">IAM</a> stands for Identity and Access Management. It is a complex domain which covers <strong>user accounts, authentication, authorization, roles, permissions and privacy</strong>. It is an essential pillar of the cloud stack, where users, products and security meets. The <a href="https://github.com/kdeldycke/awesome-billing/">other pillar being billing &amp; payments 💰</a>.</p>
+<p>This curated <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a> list expose all the technologies, protocols and jargon of the domain in a comprehensive and actionable manner.</p>
+<!--lint enable double-link-->
+
+<h2>Contents</h2>
+<!-- mdformat-toc start --slug=github --no-anchors --maxlevel=6 --minlevel=2 -->
+
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#account-management">Account Management</a></li>
+<li><a href="#cryptography">Cryptography</a></li>
+<li><a href="#identifiers">Identifiers</a></li>
+<li><a href="#zero-trust-network">Zero-trust Network</a></li>
+<li><a href="#authentication">Authentication</a></li>
+<li><a href="#password-based-auth">Password-based auth</a></li>
+<li><a href="#multi-factor-auth">Multi-factor auth</a></li>
+<li><a href="#sms-based">SMS-based</a></li>
+<li><a href="#password-less-auth">Password-less auth</a></li>
+<li><a href="#webauthn">WebAuthn</a></li>
+<li><a href="#security-key">Security key</a></li>
+<li><a href="#public-key-infrastructure-pki">Public-Key Infrastructure (PKI)</a></li>
+<li><a href="#jwt">JWT</a></li>
+<li><a href="#authorization">Authorization</a></li>
+<li><a href="#policy-models">Policy models</a></li>
+<li><a href="#rbac-frameworks">RBAC frameworks</a></li>
+<li><a href="#abac-frameworks">ABAC frameworks</a></li>
+<li><a href="#rebac-frameworks">ReBAC frameworks</a></li>
+<li><a href="#aws-policy-tools">AWS policy tools</a></li>
+<li><a href="#macaroons">Macaroons</a></li>
+<li><a href="#other-tools">Other tools</a></li>
+<li><a href="#oauth2--openid">OAuth2 &amp; OpenID</a></li>
+<li><a href="#saml">SAML</a></li>
+<li><a href="#secret-management">Secret Management</a></li>
+<li><a href="#hardware-security-module-hsm">Hardware Security Module (HSM)</a></li>
+<li><a href="#trust--safety">Trust &amp; Safety</a></li>
+<li><a href="#user-identity">User Identity</a></li>
+<li><a href="#fraud">Fraud</a></li>
+<li><a href="#moderation">Moderation</a></li>
+<li><a href="#threat-intelligence">Threat Intelligence</a></li>
+<li><a href="#captcha">Captcha</a></li>
+<li><a href="#blocklists">Blocklists</a></li>
+<li><a href="#hostnames-and-subdomains">Hostnames and Subdomains</a></li>
+<li><a href="#emails">Emails</a></li>
+<li><a href="#reserved-ids">Reserved IDs</a></li>
+<li><a href="#profanity">Profanity</a></li>
+<li><a href="#privacy">Privacy</a></li>
+<li><a href="#anonymization">Anonymization</a></li>
+<li><a href="#gdpr">GDPR</a></li>
+<li><a href="#uxui">UX/UI</a></li>
+<li><a href="#competitive-analysis">Competitive Analysis</a></li>
+<li><a href="#history">History</a></li>
+</ul>
+<!-- mdformat-toc end -->
+
+<h2>Overview</h2>
+<p><img align="right" width="50%" src="./assets/cloud-software-stack-iam.jpg"/></p>
+<p>In a Stanford class providing an <a href="https://web.stanford.edu/class/cs349d/docs/L01_overview.pdf">overview of cloud computing</a>, the software architecture of the platform is described as in the right diagram →</p>
+<p>Here we set out the big picture: definition and strategic importance of the domain, its place in the larger ecosystem, plus some critical features.</p>
+<ul>
+<li>
+<p><a href="https://www.enterpriseready.io">The EnterpriseReady SaaS Feature Guides</a> - The majority of the features making B2B users happy will be implemented by the IAM perimeter.</p>
+</li>
+<li>
+<p><a href="https://web.archive.org/web/20200809095434/https://twitter.com/kmcquade3/status/1291801858676228098">IAM is hard. It's really hard.</a> - “Overly permissive AWS IAM policies that allowed <code>s3:GetObject</code> to <code>*</code> (all) resources”, led to \$80 million fine for Capital One. The only reason why you can't overlook IAM as a business owner.</p>
+</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <!--lint disable awesome-heading-->
+
+<p align="center">
+  <a href="https://github.com/kdeldycke/awesome-iam#readme">
+    <img src="https://raw.githubusercontent.com/kdeldycke/awesome-iam/main/assets/awesome-iam-header.jpg" alt="Awesome IAM">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/kdeldycke/awesome-iam#readme" hreflang="en"><img src="https://img.shields.io/badge/lang-English-blue?style=flat-square" lang="en" alt="English"></a>
+  <a href="https://github.com/kdeldycke/awesome-iam/blob/main/readme.zh.md" hreflang="zh"><img src="https://img.shields.io/badge/lang-中文-blue?style=flat-square" lang="zh" alt="中文"></a>
+</p>
+
+<p align="center">
+  <sup>This list is <a href="#sponsor-def">sponsored<sup id="sponsor-ref">[0]</sup></a> by:</sup><br>
+</p>
+
+<p align="center">
+  <a href="https://www.descope.com/?utm_source=awesome-iam&utm_medium=referral&utm_campaign=awesome-iam-oss-sponsorship">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kdeldycke/awesome-iam/main/assets/descope-logo-dark-background.svg">
+      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kdeldycke/awesome-iam/main/assets/descope-logo-light-background.svg">
+      <img width="300" src="https://raw.githubusercontent.com/kdeldycke/awesome-iam/main/assets/descope-logo-light-background.svg">
+    </picture>
+    <br/>
+    <strong>Drag and drop your auth.</strong><br/>
+    Add authentication, user management, and authorization to your app with a few lines of code.
+  </a>
+  <br/><br/>
+</p>
+
+<!-- Comment this sponsorship call-to-action if there is a sponsor logo to increase its impact. -->
+
+<!--
+<p align="center">
+  <a href="https://github.com/sponsors/kdeldycke">
+    <strong>Yᴏᴜʀ Iᴅᴇɴᴛɪᴛʏ & Aᴜᴛʜᴇɴᴛɪᴄᴀᴛɪᴏɴ Pʀᴏᴅᴜᴄᴛ ʜᴇʀᴇ!</strong>
+    <br/>
+    <sup>Add a link to your company or project here: back me up via a GitHub sponsorship.</sup>
+  </a>
+  <br/><br/>
+</p>
+-->
+
+<hr />
+<p align="center">
+  <i>Trusting is hard. Knowing who to trust, even harder.</i><br>
+  — Maria V. Snyder<sup id="intro-quote-ref"><a href="#intro-quote-def">[1]</a></sup>
+</p>
+
+<!--lint disable double-link-->
+
+<p><a href="https://en.wikipedia.org/wiki/Identity_management">IAM</a> stands for Identity and Access Management. It is a complex domain which covers <strong>user accounts, authentication, authorization, roles, permissions and privacy</strong>. It is an essential pillar of the cloud stack, where users, products and security meets. The <a href="https://github.com/kdeldycke/awesome-billing/">other pillar being billing &amp; payments 💰</a>.</p>
+<p>This curated <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a> list expose all the technologies, protocols and jargon of the domain in a comprehensive and actionable manner.</p>
+<!--lint enable double-link-->
+
+<h2>Contents</h2>
+<!-- mdformat-toc start --slug=github --no-anchors --maxlevel=6 --minlevel=2 -->
+
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#account-management">Account Management</a></li>
+<li><a href="#cryptography">Cryptography</a></li>
+<li><a href="#identifiers">Identifiers</a></li>
+<li><a href="#zero-trust-network">Zero-trust Network</a></li>
+<li><a href="#authentication">Authentication</a></li>
+<li><a href="#password-based-auth">Password-based auth</a></li>
+<li><a href="#multi-factor-auth">Multi-factor auth</a></li>
+<li><a href="#sms-based">SMS-based</a></li>
+<li><a href="#password-less-auth">Password-less auth</a></li>
+<li><a href="#webauthn">WebAuthn</a></li>
+<li><a href="#security-key">Security key</a></li>
+<li><a href="#public-key-infrastructure-pki">Public-Key Infrastructure (PKI)</a></li>
+<li><a href="#jwt">JWT</a></li>
+<li><a href="#authorization">Authorization</a></li>
+<li><a href="#policy-models">Policy models</a></li>
+<li><a href="#rbac-frameworks">RBAC frameworks</a></li>
+<li><a href="#abac-frameworks">ABAC frameworks</a></li>
+<li><a href="#rebac-frameworks">ReBAC frameworks</a></li>
+<li><a href="#aws-policy-tools">AWS policy tools</a></li>
+<li><a href="#macaroons">Macaroons</a></li>
+<li><a href="#other-tools">Other tools</a></li>
+<li><a href="#oauth2--openid">OAuth2 &amp; OpenID</a></li>
+<li><a href="#saml">SAML</a></li>
+<li><a href="#secret-management">Secret Management</a></li>
+<li><a href="#hardware-security-module-hsm">Hardware Security Module (HSM)</a></li>
+<li><a href="#trust--safety">Trust &amp; Safety</a></li>
+<li><a href="#user-identity">User Identity</a></li>
+<li><a href="#fraud">Fraud</a></li>
+<li><a href="#moderation">Moderation</a></li>
+<li><a href="#threat-intelligence">Threat Intelligence</a></li>
+<li><a href="#captcha">Captcha</a></li>
+<li><a href="#blocklists">Blocklists</a></li>
+<li><a href="#hostnames-and-subdomains">Hostnames and Subdomains</a></li>
+<li><a href="#emails">Emails</a></li>
+<li><a href="#reserved-ids">Reserved IDs</a></li>
+<li><a href="#profanity">Profanity</a></li>
+<li><a href="#privacy">Privacy</a></li>
+<li><a href="#anonymization">Anonymization</a></li>
+<li><a href="#gdpr">GDPR</a></li>
+<li><a href="#uxui">UX/UI</a></li>
+<li><a href="#competitive-analysis">Competitive Analysis</a></li>
+<li><a href="#history">History</a></li>
+</ul>
+<!-- mdformat-toc end -->
+
+<h2>Overview</h2>
+<p><img align="right" width="50%" src="./assets/cloud-software-stack-iam.jpg"/></p>
+<p>In a Stanford class providing an <a href="https://web.stanford.edu/class/cs349d/docs/L01_overview.pdf">overview of cloud computing</a>, the software architecture of the platform is described as in the right diagram →</p>
+<p>Here we set out the big picture: definition and strategic importance of the domain, its place in the larger ecosystem, plus some critical features.</p>
+<ul>
+<li>
+<p><a href="https://www.enterpriseready.io">The EnterpriseReady SaaS Feature Guides</a> - The majority of the features making B2B users happy will be implemented by the IAM perimeter.</p>
+</li>
+<li>
+<p><a href="https://web.archive.org/web/20200809095434/https://twitter.com/kmcquade3/status/1291801858676228098">IAM is hard. It's really hard.</a> - “Overly permissive AWS IAM policies that allowed <code>s3:GetObject</code> to <code>*</code> (all) resources”, led to \$80 million fine for Capital One. The only reason why you can't overlook IAM as a business owner.</p>
+</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'iam_README.md';
 
         fetch(markdownFile)
@@ -48,21 +277,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

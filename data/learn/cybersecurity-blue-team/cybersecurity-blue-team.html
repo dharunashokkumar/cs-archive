@@ -8,38 +8,157 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fabacab Awesome Cybersecurity Blueteam - Awesome List Resources">
-    <title>Fabacab Awesome Cybersecurity Blueteam</title>
+    <meta name="description" content="> A collection of awesome resources, tools, and other shiny things for cybersecurity blue teams. Cybersecurity blue teams) are groups of individuals who...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Cybersecurity Blue Team [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Cybersecurity Blue Team <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat2.svg" /></a></h1>
+<blockquote>
+<p>A collection of awesome resources, tools, and other shiny things for cybersecurity blue teams.</p>
+</blockquote>
+<p><a href="https://en.wikipedia.org/wiki/Blue_team_(computer_security)">Cybersecurity blue teams</a> are groups of individuals who identify security flaws in information technology systems, verify the effectiveness of security measures, and monitor the systems to ensure that implemented defensive measures remain effective in the future. While not exclusive, this list is heavily biased towards <a href="https://www.gnu.org/philosophy/free-sw.html">Free Software</a> projects and against proprietary products or corporate services. For offensive TTPs, please see <a href="https://github.com/fabacab/awesome-pentest">awesome-pentest</a>.</p>
+<p>Your contributions and suggestions are heartily ♥ welcome. (✿◕‿◕). Please check the <a href="CONTRIBUTING.md">Contributing Guidelines</a> for more details. This work is licensed under a <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+<p>Many cybersecurity professionals enable racist state violence, wittingly or unwittingly, by providing services to local, state, and federal policing agencies or otherwise cooperating with similar institutions who do so. This evil most often happens through the coercive mechanism of employment under threat of lack of access to food, shelter, or healthcare. Despite this list's public availability, it is the maintainer's intention and hope that this list supports the people and organizations who work to counter such massive albeit banal evil.</p>
+<p><img alt="Image of a raised fist composed of the names of Black people murdered by taxpayer-funded racist police violence." src="https://web.archive.org/web/20201028021653if_/https://lauerrealtygroup.com/wp-content/uploads/2020/06/BLM-FIST-scaled.jpg" /></p>
+<p><img alt="Image of a &quot;Blue Lives Matter&quot; flag with the thin blue line being peeled away to reveal a Nazi swastika underneath." src="https://web.archive.org/web/20201123181815if_/https://i.redd.it/86pl28p0dl631.jpg" /></p>
+<p><strong><a href="https://defundthepolice.org/">DEFUND THE POLICE.</a></strong></p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#automation-and-convention">Automation and Convention</a></li>
+<li><a href="#code-libraries-and-bindings">Code libraries and bindings</a></li>
+<li><a href="#security-orchestration-automation-and-response-soar">Security Orchestration, Automation, and Response (SOAR)</a></li>
+<li><a href="#cloud-platform-security">Cloud platform security</a></li>
+<li><a href="#distributed-monitoring">Distributed monitoring</a></li>
+<li><a href="#kubernetes">Kubernetes</a></li>
+<li><a href="#service-meshes">Service meshes</a></li>
+<li><a href="#communications-security-comsec">Communications security (COMSEC)</a></li>
+<li><a href="#devsecops">DevSecOps</a></li>
+<li><a href="#application-or-binary-hardening">Application or Binary Hardening</a></li>
+<li><a href="#compliance-testing-and-reporting">Compliance testing and reporting</a></li>
+<li><a href="#dependency-confusion">Dependency confusion</a></li>
+<li><a href="#fuzzing">Fuzzing</a></li>
+<li><a href="#policy-enforcement">Policy enforcement</a></li>
+<li><a href="#supply-chain-security">Supply chain security</a></li>
+<li><a href="#honeypots">Honeypots</a></li>
+<li><a href="#tarpits">Tarpits</a></li>
+<li><a href="#host-based-tools">Host-based tools</a></li>
+<li><a href="#sandboxes">Sandboxes</a></li>
+<li><a href="#identity-and-authnauthz">Identity and AuthN/AuthZ</a></li>
+<li><a href="#incident-response-tools">Incident Response tools</a></li>
+<li><a href="#ir-management-consoles">IR management consoles</a></li>
+<li><a href="#evidence-collection">Evidence collection</a></li>
+<li><a href="#network-perimeter-defenses">Network perimeter defenses</a></li>
+<li><a href="#firewall-appliances-or-distributions">Firewall appliances or distributions</a></li>
+<li><a href="#operating-system-distributions">Operating System distributions</a></li>
+<li><a href="#phishing-awareness-and-reporting">Phishing awareness and reporting</a></li>
+<li><a href="#preparedness-training-and-wargaming">Preparedness training and wargaming</a></li>
+<li><a href="#post-engagement-analysis-and-reporting">Post-engagement analysis and reporting</a></li>
+<li><a href="#security-configurations">Security configurations</a></li>
+<li><a href="#security-monitoring">Security monitoring</a></li>
+<li><a href="#endpoint-detection-and-response-edr">Endpoint Detection and Response (EDR)</a></li>
+<li><a href="#network-security-monitoring-nsm">Network Security Monitoring (NSM)</a></li>
+<li><a href="#security-information-and-event-management-siem">Security Information and Event Management (SIEM)</a></li>
+<li><a href="#service-and-performance-monitoring">Service and performance monitoring</a></li>
+<li><a href="#threat-hunting">Threat hunting</a></li>
+<li><a href="#threat-intelligence">Threat intelligence</a></li>
+<li><a href="#fingerprinting">Fingerprinting</a></li>
+<li><a href="#threat-signature-packages-and-collections">Threat signature packages and collections</a></li>
+<li><a href="#tor-onion-service-defenses">Tor Onion service defenses</a></li>
+<li><a href="#transport-layer-defenses">Transport-layer defenses</a></li>
+<li><a href="#overlay-and-virtual-private-networks-vpns">Overlay and Virtual Private Networks (VPNs)</a></li>
+<li><a href="#macos-based-defenses">macOS-based defenses</a></li>
+<li><a href="#windows-based-defenses">Windows-based defenses</a></li>
+<li><a href="#active-directory">Active Directory</a></li>
+</ul>
+<h2>Automation and Convention</h2>
+<ul>
+<li><a href="https://ansiblelockdown.io/">Ansible Lockdown</a> - Curated collection of information security themed Ansible roles that are both vetted and actively maintained.</li>
+<li><a href="https://github.com/latchset/clevis">Clevis</a> - Plugable framework for automated decryption, often used as a Tang client.</li>
+<li><a href="https://github.com/USArmyResearchLab/Dshell">DShell</a> - Extensible network forensic analysis framework written in Python that enables rapid development of plugins to support the dissection of network packet captures.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Cybersecurity Blue Team <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat2.svg" /></a></h1>
+<blockquote>
+<p>A collection of awesome resources, tools, and other shiny things for cybersecurity blue teams.</p>
+</blockquote>
+<p><a href="https://en.wikipedia.org/wiki/Blue_team_(computer_security)">Cybersecurity blue teams</a> are groups of individuals who identify security flaws in information technology systems, verify the effectiveness of security measures, and monitor the systems to ensure that implemented defensive measures remain effective in the future. While not exclusive, this list is heavily biased towards <a href="https://www.gnu.org/philosophy/free-sw.html">Free Software</a> projects and against proprietary products or corporate services. For offensive TTPs, please see <a href="https://github.com/fabacab/awesome-pentest">awesome-pentest</a>.</p>
+<p>Your contributions and suggestions are heartily ♥ welcome. (✿◕‿◕). Please check the <a href="CONTRIBUTING.md">Contributing Guidelines</a> for more details. This work is licensed under a <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+<p>Many cybersecurity professionals enable racist state violence, wittingly or unwittingly, by providing services to local, state, and federal policing agencies or otherwise cooperating with similar institutions who do so. This evil most often happens through the coercive mechanism of employment under threat of lack of access to food, shelter, or healthcare. Despite this list's public availability, it is the maintainer's intention and hope that this list supports the people and organizations who work to counter such massive albeit banal evil.</p>
+<p><img alt="Image of a raised fist composed of the names of Black people murdered by taxpayer-funded racist police violence." src="https://web.archive.org/web/20201028021653if_/https://lauerrealtygroup.com/wp-content/uploads/2020/06/BLM-FIST-scaled.jpg" /></p>
+<p><img alt="Image of a &quot;Blue Lives Matter&quot; flag with the thin blue line being peeled away to reveal a Nazi swastika underneath." src="https://web.archive.org/web/20201123181815if_/https://i.redd.it/86pl28p0dl631.jpg" /></p>
+<p><strong><a href="https://defundthepolice.org/">DEFUND THE POLICE.</a></strong></p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#automation-and-convention">Automation and Convention</a></li>
+<li><a href="#code-libraries-and-bindings">Code libraries and bindings</a></li>
+<li><a href="#security-orchestration-automation-and-response-soar">Security Orchestration, Automation, and Response (SOAR)</a></li>
+<li><a href="#cloud-platform-security">Cloud platform security</a></li>
+<li><a href="#distributed-monitoring">Distributed monitoring</a></li>
+<li><a href="#kubernetes">Kubernetes</a></li>
+<li><a href="#service-meshes">Service meshes</a></li>
+<li><a href="#communications-security-comsec">Communications security (COMSEC)</a></li>
+<li><a href="#devsecops">DevSecOps</a></li>
+<li><a href="#application-or-binary-hardening">Application or Binary Hardening</a></li>
+<li><a href="#compliance-testing-and-reporting">Compliance testing and reporting</a></li>
+<li><a href="#dependency-confusion">Dependency confusion</a></li>
+<li><a href="#fuzzing">Fuzzing</a></li>
+<li><a href="#policy-enforcement">Policy enforcement</a></li>
+<li><a href="#supply-chain-security">Supply chain security</a></li>
+<li><a href="#honeypots">Honeypots</a></li>
+<li><a href="#tarpits">Tarpits</a></li>
+<li><a href="#host-based-tools">Host-based tools</a></li>
+<li><a href="#sandboxes">Sandboxes</a></li>
+<li><a href="#identity-and-authnauthz">Identity and AuthN/AuthZ</a></li>
+<li><a href="#incident-response-tools">Incident Response tools</a></li>
+<li><a href="#ir-management-consoles">IR management consoles</a></li>
+<li><a href="#evidence-collection">Evidence collection</a></li>
+<li><a href="#network-perimeter-defenses">Network perimeter defenses</a></li>
+<li><a href="#firewall-appliances-or-distributions">Firewall appliances or distributions</a></li>
+<li><a href="#operating-system-distributions">Operating System distributions</a></li>
+<li><a href="#phishing-awareness-and-reporting">Phishing awareness and reporting</a></li>
+<li><a href="#preparedness-training-and-wargaming">Preparedness training and wargaming</a></li>
+<li><a href="#post-engagement-analysis-and-reporting">Post-engagement analysis and reporting</a></li>
+<li><a href="#security-configurations">Security configurations</a></li>
+<li><a href="#security-monitoring">Security monitoring</a></li>
+<li><a href="#endpoint-detection-and-response-edr">Endpoint Detection and Response (EDR)</a></li>
+<li><a href="#network-security-monitoring-nsm">Network Security Monitoring (NSM)</a></li>
+<li><a href="#security-information-and-event-management-siem">Security Information and Event Management (SIEM)</a></li>
+<li><a href="#service-and-performance-monitoring">Service and performance monitoring</a></li>
+<li><a href="#threat-hunting">Threat hunting</a></li>
+<li><a href="#threat-intelligence">Threat intelligence</a></li>
+<li><a href="#fingerprinting">Fingerprinting</a></li>
+<li><a href="#threat-signature-packages-and-collections">Threat signature packages and collections</a></li>
+<li><a href="#tor-onion-service-defenses">Tor Onion service defenses</a></li>
+<li><a href="#transport-layer-defenses">Transport-layer defenses</a></li>
+<li><a href="#overlay-and-virtual-private-networks-vpns">Overlay and Virtual Private Networks (VPNs)</a></li>
+<li><a href="#macos-based-defenses">macOS-based defenses</a></li>
+<li><a href="#windows-based-defenses">Windows-based defenses</a></li>
+<li><a href="#active-directory">Active Directory</a></li>
+</ul>
+<h2>Automation and Convention</h2>
+<ul>
+<li><a href="https://ansiblelockdown.io/">Ansible Lockdown</a> - Curated collection of information security themed Ansible roles that are both vetted and actively maintained.</li>
+<li><a href="https://github.com/latchset/clevis">Clevis</a> - Plugable framework for automated decryption, often used as a Tang client.</li>
+<li><a href="https://github.com/USArmyResearchLab/Dshell">DShell</a> - Extensible network forensic analysis framework written in Python that enables rapid development of plugins to support the dissection of network packet captures.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'cybersecurity-blue-team_README.md';
 
         fetch(markdownFile)
@@ -48,21 +167,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

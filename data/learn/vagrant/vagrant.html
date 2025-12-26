@@ -8,38 +8,143 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ijackua Awesome Vagrant - Awesome List Resources">
-    <title>Ijackua Awesome Vagrant</title>
+    <meta name="description" content="A curated list of awesome Vagrant resources, plugins, tutorials and other nice things. Vagrant site - installation instruction, official manuals and docs....">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Vagrant - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Vagrant</h1>
+<p><a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <a href="https://gitter.im/iJackUA/awesome-vagrant?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge"><img alt="Gitter" src="https://badges.gitter.im/Join%20Chat.svg" /></a> <a href="https://travis-ci.org/iJackUA/awesome-vagrant"><img alt="Build Status" src="https://api.travis-ci.org/iJackUA/awesome-vagrant.svg?branch=master" /></a></p>
+<p>A curated list of awesome Vagrant resources, plugins, tutorials and other nice things.</p>
+<h2>Official resources</h2>
+<ul>
+<li><a href="https://www.vagrantup.com/">Vagrant site</a> - installation instruction, official manuals and docs.</li>
+<li><a href="https://github.com/hashicorp/vagrant">GitHub repo</a> - source code, issues discussion and collaboration.</li>
+</ul>
+<h2>Boxes</h2>
+<p><em>Where to find OS boxes ?</em></p>
+<ul>
+<li><a href="http://www.vagrantbox.es/">Vagrantbox.es</a> - the biggest list of all available boxes, maintained by community via GitHub pull requests.</li>
+<li><a href="https://app.vagrantup.com/boxes/search">Vagrant Cloud</a> - config share, boxes distribution and discovery (also premium features of private collaboration and sharing).</li>
+<li><a href="https://cloud-images.ubuntu.com/vagrant/">Cloud Images Ubuntu.com</a> - "clean" official Ubuntu cloud images.</li>
+<li><a href="https://github.com/chef/bento#current-baseboxes">Baseboxes from Opscode</a> - CentOS, Fedora, Debian, FreeBSD, Ubuntu.</li>
+<li><a href="http://puppet-vagrant-boxes.puppetlabs.com/">Puppet Labs Vagrant Boxes</a> - these boxes are provided to be used by various Puppet projects.</li>
+<li><a href="https://cloudsmith.io">Cloudsmith</a> - A fully managed package management SaaS with support for Vagrant repositories (and many others).</li>
+</ul>
+<h2>Provisioning</h2>
+<ul>
+<li><a href="https://www.vagrantup.com/docs/provisioning">All available build in provisioning providers</a> - official doc.</li>
+<li><a href="http://fideloper.github.io/Vaprobash/index.html">Vaprobash</a> - Vagrant Provisioning Bash Scripts.</li>
+</ul>
+<h2>Notable plugins</h2>
+<p><em>You can install these modules by this command <code>vagrant plugin install MODULE-NAME</code></em></p>
+<ul>
+<li><a href="https://github.com/hashicorp/vagrant/wiki/Available-Vagrant-Plugins">List of available Vagrant plugins from GitHub wiki</a>.</li>
+<li><a href="https://github.com/dotless-de/vagrant-vbguest">vagrant-vbguest</a> - autoupdate VirtualBox guest additions (according to VB version).</li>
+<li><a href="https://github.com/cogitatio/vagrant-hostsupdater">vagrant-hostsupdater</a> - adds an entry to your /etc/hosts file on the host system.</li>
+<li><a href="http://fgrehm.viewdocs.io/vagrant-cachier/">vagrant-cachier</a> - share a common package (apt-get, npm, etc.) cache among similar VM instances.</li>
+<li><a href="https://github.com/phinze/vagrant-host-shell">vagrant-host-shell</a> - a vagrant provisioner to run commands on the host when a VM boots.</li>
+<li><a href="https://github.com/jaugustin/vagrant-ansible-local">vagrant-ansible-local</a>  allow provisioning your VM with ansible playbooks directly from the guest VM.</li>
+<li><a href="https://github.com/jedi4ever/sahara">sahara</a> - easy manage VM state (commit/rollback while experimenting with software stack).</li>
+<li><a href="https://github.com/projectatomic/adb-vagrant-registration">vagrant-registration</a> - add "register" and "unregister" capabilities to Vagrant guests for updates on systems with a subscription model(like Red Hat Enterprise Linux).</li>
+<li><a href="https://github.com/projectatomic/vagrant-service-manager">vagrant-service-manager</a> - enable easier access to the features and services provided by the <a href="https://github.com/projectatomic/adb-atomic-developer-bundle">Atomic Developer Bundle (ADB)</a>.</li>
+<li><a href="https://github.com/invernizzi/vagrant-scp">vagrant-scp</a> - Copy files to a Vagrant VM via SCP.</li>
+</ul>
+<h2>Helpers / Tools</h2>
+<ul>
+<li><a href="https://www.packer.io/">Packer</a> - a tool for creating identical machine images for multiple platforms from a single source configuration. For fast infrastructure deployment with multi-provider portability.</li>
+<li><a href="https://github.com/Thomvaill/tads-boilerplate">T.A.D.S. boilerplate</a> - boilerplate to create, develop and deploy a Docker Swarm environment, using Vagrant to reproduce production environment locally.</li>
+<li><a href="https://github.com/jedi4ever/veewee">Veewee</a> - a tool for easily (and repeatedly) building custom Vagrant base boxes, KVMs, and virtual machine images.</li>
+<li><a href="https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins#vagrant">Vagrant plugin for ZSH shell</a> - auto-complete for commands, task names, box names and built-in documentation.</li>
+<li><a href="https://github.com/MunGell/vgm">CLI Vagrant Manager</a> - simple command-line tool to manage multiple vagrant boxes</li>
+</ul>
+<h2>Desktop tools</h2>
+<ul>
+<li><a href="http://vagrantmanager.com/">Vagrant Manager</a> for OS X.</li>
+</ul>
+<h2>Web services</h2>
+<p><em>To generate Vagrantfile with automated provisioning scripts.</em></p>
+<ul>
+<li><a href="http://phansible.com/">Phansible</a> - provides an easy to use interface that helps you generate Ansible Playbooks for PHP based projects.</li>
+<li><a href="https://puphpet.com/">PuPHPet</a> - a simple GUI to set up virtual machines for <s>PHP</s> Web development.</li>
+<li><a href="http://getprotobox.com/">Protobox</a> - PuPHPet analog, but uses own installer with YAML configuration format to control everything that is installed on the virtual machine.</li>
+<li><a href="http://rove.io/">Rove</a> - a service that allows you to pregenerate typical Vagrant builds.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Vagrant</h1>
+<p><a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <a href="https://gitter.im/iJackUA/awesome-vagrant?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge"><img alt="Gitter" src="https://badges.gitter.im/Join%20Chat.svg" /></a> <a href="https://travis-ci.org/iJackUA/awesome-vagrant"><img alt="Build Status" src="https://api.travis-ci.org/iJackUA/awesome-vagrant.svg?branch=master" /></a></p>
+<p>A curated list of awesome Vagrant resources, plugins, tutorials and other nice things.</p>
+<h2>Official resources</h2>
+<ul>
+<li><a href="https://www.vagrantup.com/">Vagrant site</a> - installation instruction, official manuals and docs.</li>
+<li><a href="https://github.com/hashicorp/vagrant">GitHub repo</a> - source code, issues discussion and collaboration.</li>
+</ul>
+<h2>Boxes</h2>
+<p><em>Where to find OS boxes ?</em></p>
+<ul>
+<li><a href="http://www.vagrantbox.es/">Vagrantbox.es</a> - the biggest list of all available boxes, maintained by community via GitHub pull requests.</li>
+<li><a href="https://app.vagrantup.com/boxes/search">Vagrant Cloud</a> - config share, boxes distribution and discovery (also premium features of private collaboration and sharing).</li>
+<li><a href="https://cloud-images.ubuntu.com/vagrant/">Cloud Images Ubuntu.com</a> - "clean" official Ubuntu cloud images.</li>
+<li><a href="https://github.com/chef/bento#current-baseboxes">Baseboxes from Opscode</a> - CentOS, Fedora, Debian, FreeBSD, Ubuntu.</li>
+<li><a href="http://puppet-vagrant-boxes.puppetlabs.com/">Puppet Labs Vagrant Boxes</a> - these boxes are provided to be used by various Puppet projects.</li>
+<li><a href="https://cloudsmith.io">Cloudsmith</a> - A fully managed package management SaaS with support for Vagrant repositories (and many others).</li>
+</ul>
+<h2>Provisioning</h2>
+<ul>
+<li><a href="https://www.vagrantup.com/docs/provisioning">All available build in provisioning providers</a> - official doc.</li>
+<li><a href="http://fideloper.github.io/Vaprobash/index.html">Vaprobash</a> - Vagrant Provisioning Bash Scripts.</li>
+</ul>
+<h2>Notable plugins</h2>
+<p><em>You can install these modules by this command <code>vagrant plugin install MODULE-NAME</code></em></p>
+<ul>
+<li><a href="https://github.com/hashicorp/vagrant/wiki/Available-Vagrant-Plugins">List of available Vagrant plugins from GitHub wiki</a>.</li>
+<li><a href="https://github.com/dotless-de/vagrant-vbguest">vagrant-vbguest</a> - autoupdate VirtualBox guest additions (according to VB version).</li>
+<li><a href="https://github.com/cogitatio/vagrant-hostsupdater">vagrant-hostsupdater</a> - adds an entry to your /etc/hosts file on the host system.</li>
+<li><a href="http://fgrehm.viewdocs.io/vagrant-cachier/">vagrant-cachier</a> - share a common package (apt-get, npm, etc.) cache among similar VM instances.</li>
+<li><a href="https://github.com/phinze/vagrant-host-shell">vagrant-host-shell</a> - a vagrant provisioner to run commands on the host when a VM boots.</li>
+<li><a href="https://github.com/jaugustin/vagrant-ansible-local">vagrant-ansible-local</a>  allow provisioning your VM with ansible playbooks directly from the guest VM.</li>
+<li><a href="https://github.com/jedi4ever/sahara">sahara</a> - easy manage VM state (commit/rollback while experimenting with software stack).</li>
+<li><a href="https://github.com/projectatomic/adb-vagrant-registration">vagrant-registration</a> - add "register" and "unregister" capabilities to Vagrant guests for updates on systems with a subscription model(like Red Hat Enterprise Linux).</li>
+<li><a href="https://github.com/projectatomic/vagrant-service-manager">vagrant-service-manager</a> - enable easier access to the features and services provided by the <a href="https://github.com/projectatomic/adb-atomic-developer-bundle">Atomic Developer Bundle (ADB)</a>.</li>
+<li><a href="https://github.com/invernizzi/vagrant-scp">vagrant-scp</a> - Copy files to a Vagrant VM via SCP.</li>
+</ul>
+<h2>Helpers / Tools</h2>
+<ul>
+<li><a href="https://www.packer.io/">Packer</a> - a tool for creating identical machine images for multiple platforms from a single source configuration. For fast infrastructure deployment with multi-provider portability.</li>
+<li><a href="https://github.com/Thomvaill/tads-boilerplate">T.A.D.S. boilerplate</a> - boilerplate to create, develop and deploy a Docker Swarm environment, using Vagrant to reproduce production environment locally.</li>
+<li><a href="https://github.com/jedi4ever/veewee">Veewee</a> - a tool for easily (and repeatedly) building custom Vagrant base boxes, KVMs, and virtual machine images.</li>
+<li><a href="https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins#vagrant">Vagrant plugin for ZSH shell</a> - auto-complete for commands, task names, box names and built-in documentation.</li>
+<li><a href="https://github.com/MunGell/vgm">CLI Vagrant Manager</a> - simple command-line tool to manage multiple vagrant boxes</li>
+</ul>
+<h2>Desktop tools</h2>
+<ul>
+<li><a href="http://vagrantmanager.com/">Vagrant Manager</a> for OS X.</li>
+</ul>
+<h2>Web services</h2>
+<p><em>To generate Vagrantfile with automated provisioning scripts.</em></p>
+<ul>
+<li><a href="http://phansible.com/">Phansible</a> - provides an easy to use interface that helps you generate Ansible Playbooks for PHP based projects.</li>
+<li><a href="https://puphpet.com/">PuPHPet</a> - a simple GUI to set up virtual machines for <s>PHP</s> Web development.</li>
+<li><a href="http://getprotobox.com/">Protobox</a> - PuPHPet analog, but uses own installer with YAML configuration format to control everything that is installed on the virtual machine.</li>
+<li><a href="http://rove.io/">Rove</a> - a service that allows you to pregenerate typical Vagrant builds.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'vagrant_README.md';
 
         fetch(markdownFile)
@@ -48,21 +153,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

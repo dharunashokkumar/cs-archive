@@ -8,38 +8,115 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Erwanlemerrer Awesome Audit Algorithms - Awesome List Resources">
-    <title>Erwanlemerrer Awesome Audit Algorithms</title>
+    <meta name="description" content="A curated list of algorithms for auditing black-box algorithms. Nowadays, many algorithms (recommendation, scoring, classification) are operated at third party...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Audit Algorithms [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Audit Algorithms <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a></h1>
+<p>A curated list of algorithms for auditing black-box algorithms.
+Nowadays, many algorithms (recommendation, scoring, classification) are operated at third party providers, without users or institutions having any insights on how they operate on their data. Audit algorithms in this list thus apply to this setup, coined the "black-box" setup, where one auditor wants to get some insight on these remote algorithms.</p>
+<p><img src="https://github.com/erwanlemerrer/awesome-audit-algorithms/blob/main/resources/audit.png" width="600" alt="banner" class="center"></p>
+<blockquote>
+<p>A user queries a remote algorithm (eg, through available APIs), to infer information about that algorithm.</p>
+</blockquote>
+<h2>Contents</h2>
+<ul>
+<li><a href="#papers">Papers</a></li>
+<li><a href="#related-events">Related Events (conferences/workshops)</a></li>
+</ul>
+<h2>Papers</h2>
+<h3>2025</h3>
+<ul>
+<li><a href="https://arxiv.org/pdf/2510.05181">Auditing Pay-Per-Token in Large Language Models</a> - (arXiv) <em>Develops an auditing framework based on martingale theory that enables a trusted third-party auditor who sequentially queries a provider to
+detect token misreporting.</em></li>
+<li><a href="https://arxiv.org/abs/2504.00874">P2NIA: Privacy-Preserving Non-Iterative Auditing</a> - (ECAI) <em>Proposes a mutually beneficial collaboration for both the auditor and the platform: a privacy-preserving and non-iterative audit scheme that enhances fairness assessments using synthetic or local data, avoiding the challenges associated with traditional API-based audits.</em></li>
+<li><a href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/9E8408C67F7CE30505122DD1586D9FA2/S3033373325000080a.pdf/the-fair-game-auditing-and-debiasing-ai-algorithms-over-time.pdf">The Fair Game: Auditing &amp; debiasing AI algorithms overtime</a> - (Cambridge Forum on AI: Law and Governance) <em>Aims to simulate the evolution of ethical and legal frameworks in the society by creating an auditor which sends feedback to a debiasing algorithm deployed around an ML system.</em></li>
+<li><a href="https://arxiv.org/pdf/2505.04796">Robust ML Auditing using Prior Knowledge</a> - (ICML) <em>Formally establishes the conditions under which an auditor can prevent audit manipulations using prior knowledge about the ground truth.</em></li>
+<li><a href="https://arxiv.org/abs/2501.02997">CALM: Curiosity-Driven Auditing for Large Language Models</a> - (AAAI) <em>Auditing as a black-box optimization problem where the goal is to automatically uncover input-output pairs of the target LLMs that exhibit illegal, immoral, or unsafe behaviors.</em></li>
+<li><a href="https://arxiv.org/abs/2412.13021">Queries, Representation &amp; Detection: The Next 100 Model Fingerprinting Schemes</a> - (AAAI) <em>Divides model fingerprinting into three core components, to identify ∼100 previously unexplored combinations of these and gain insights into their performance.</em></li>
+</ul>
+<h3>2024</h3>
+<ul>
+<li><a href="https://arxiv.org/pdf/2411.05197">Hardware and software platform inference</a> - (arXiv) <em>A method for identifying the underlying GPU architecture and software stack of a black-box machine learning model solely based on its input-output behavior.</em></li>
+<li><a href="https://arxiv.org/abs/2407.13281">Auditing Local Explanations is Hard</a> - (NeurIPS) <em>Gives the (prohibitive) query complexity of auditing explanations.</em></li>
+<li><a href="https://arxiv.org/abs/2409.00159">LLMs hallucinate graphs too: a structural perspective</a> - (complex networks) <em>Queries LLMs for known graphs and studies topological hallucinations. Proposes a structural hallucination rank.</em></li>
+<li><a href="https://arxiv.org/pdf/2402.08522">Fairness Auditing with Multi-Agent Collaboration</a> - (ECAI) <em>Considers multiple
+agents working together, each auditing the same platform for different tasks.</em></li>
+<li><a href="https://arxiv.org/pdf/2401.11194">Mapping the Field of Algorithm Auditing: A Systematic Literature Review
+Identifying Research Trends, Linguistic and Geographical Disparities</a> - (Arxiv) <em>Systematic review of algorithm
+auditing studies and identification of trends in their methodological approaches.</em></li>
+<li><a href="https://arxiv.org/pdf/2402.12572v1.pdf">FairProof: Confidential and Certifiable Fairness for Neural Networks</a> - (Arxiv) <em>Proposes an alternative paradigm to traditional auditing using crytographic tools like Zero-Knowledge Proofs; gives a system called FairProof for verifying fairness of small neural networks.</em></li>
+<li><a href="https://grodino.github.io/projects/manipulated-audits/preprint.pdf">Under manipulations, are some AI models harder to audit?</a> - (SATML) <em>Relates the difficulty of black-box audits
+to the capacity of the targeted models, using the Rademacher complexity.</em></li>
+<li><a href="https://arxiv.org/pdf/2310.07219.pdf">Improved Membership Inference Attacks Against Language Classification Models</a> - (ICLR) <em>Presents a framework for running membership inference attacks against classifier, in audit mode.</em></li>
+<li><a href="https://arxiv.org/pdf/2305.17570.pdf">Auditing Fairness by Betting</a> - (Neurips) <a href="https://github.com/bchugg/auditing-fairness">[Code]</a> <em>Sequential methods that allows for the continuous monitoring of incoming data from a black-box classifier or regressor.</em></li>
+</ul>
+<h3>2023</h3>
+<ul>
+<li><a href="https://neurips.cc/virtual/2023/poster/70925">Privacy Auditing with One (1) Training Run</a> - (NeurIPS - best paper) <em>A scheme for auditing differentially private machine learning systems with a single training run.</em></li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Audit Algorithms <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a></h1>
+<p>A curated list of algorithms for auditing black-box algorithms.
+Nowadays, many algorithms (recommendation, scoring, classification) are operated at third party providers, without users or institutions having any insights on how they operate on their data. Audit algorithms in this list thus apply to this setup, coined the "black-box" setup, where one auditor wants to get some insight on these remote algorithms.</p>
+<p><img src="https://github.com/erwanlemerrer/awesome-audit-algorithms/blob/main/resources/audit.png" width="600" alt="banner" class="center"></p>
+<blockquote>
+<p>A user queries a remote algorithm (eg, through available APIs), to infer information about that algorithm.</p>
+</blockquote>
+<h2>Contents</h2>
+<ul>
+<li><a href="#papers">Papers</a></li>
+<li><a href="#related-events">Related Events (conferences/workshops)</a></li>
+</ul>
+<h2>Papers</h2>
+<h3>2025</h3>
+<ul>
+<li><a href="https://arxiv.org/pdf/2510.05181">Auditing Pay-Per-Token in Large Language Models</a> - (arXiv) <em>Develops an auditing framework based on martingale theory that enables a trusted third-party auditor who sequentially queries a provider to
+detect token misreporting.</em></li>
+<li><a href="https://arxiv.org/abs/2504.00874">P2NIA: Privacy-Preserving Non-Iterative Auditing</a> - (ECAI) <em>Proposes a mutually beneficial collaboration for both the auditor and the platform: a privacy-preserving and non-iterative audit scheme that enhances fairness assessments using synthetic or local data, avoiding the challenges associated with traditional API-based audits.</em></li>
+<li><a href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/9E8408C67F7CE30505122DD1586D9FA2/S3033373325000080a.pdf/the-fair-game-auditing-and-debiasing-ai-algorithms-over-time.pdf">The Fair Game: Auditing &amp; debiasing AI algorithms overtime</a> - (Cambridge Forum on AI: Law and Governance) <em>Aims to simulate the evolution of ethical and legal frameworks in the society by creating an auditor which sends feedback to a debiasing algorithm deployed around an ML system.</em></li>
+<li><a href="https://arxiv.org/pdf/2505.04796">Robust ML Auditing using Prior Knowledge</a> - (ICML) <em>Formally establishes the conditions under which an auditor can prevent audit manipulations using prior knowledge about the ground truth.</em></li>
+<li><a href="https://arxiv.org/abs/2501.02997">CALM: Curiosity-Driven Auditing for Large Language Models</a> - (AAAI) <em>Auditing as a black-box optimization problem where the goal is to automatically uncover input-output pairs of the target LLMs that exhibit illegal, immoral, or unsafe behaviors.</em></li>
+<li><a href="https://arxiv.org/abs/2412.13021">Queries, Representation &amp; Detection: The Next 100 Model Fingerprinting Schemes</a> - (AAAI) <em>Divides model fingerprinting into three core components, to identify ∼100 previously unexplored combinations of these and gain insights into their performance.</em></li>
+</ul>
+<h3>2024</h3>
+<ul>
+<li><a href="https://arxiv.org/pdf/2411.05197">Hardware and software platform inference</a> - (arXiv) <em>A method for identifying the underlying GPU architecture and software stack of a black-box machine learning model solely based on its input-output behavior.</em></li>
+<li><a href="https://arxiv.org/abs/2407.13281">Auditing Local Explanations is Hard</a> - (NeurIPS) <em>Gives the (prohibitive) query complexity of auditing explanations.</em></li>
+<li><a href="https://arxiv.org/abs/2409.00159">LLMs hallucinate graphs too: a structural perspective</a> - (complex networks) <em>Queries LLMs for known graphs and studies topological hallucinations. Proposes a structural hallucination rank.</em></li>
+<li><a href="https://arxiv.org/pdf/2402.08522">Fairness Auditing with Multi-Agent Collaboration</a> - (ECAI) <em>Considers multiple
+agents working together, each auditing the same platform for different tasks.</em></li>
+<li><a href="https://arxiv.org/pdf/2401.11194">Mapping the Field of Algorithm Auditing: A Systematic Literature Review
+Identifying Research Trends, Linguistic and Geographical Disparities</a> - (Arxiv) <em>Systematic review of algorithm
+auditing studies and identification of trends in their methodological approaches.</em></li>
+<li><a href="https://arxiv.org/pdf/2402.12572v1.pdf">FairProof: Confidential and Certifiable Fairness for Neural Networks</a> - (Arxiv) <em>Proposes an alternative paradigm to traditional auditing using crytographic tools like Zero-Knowledge Proofs; gives a system called FairProof for verifying fairness of small neural networks.</em></li>
+<li><a href="https://grodino.github.io/projects/manipulated-audits/preprint.pdf">Under manipulations, are some AI models harder to audit?</a> - (SATML) <em>Relates the difficulty of black-box audits
+to the capacity of the targeted models, using the Rademacher complexity.</em></li>
+<li><a href="https://arxiv.org/pdf/2310.07219.pdf">Improved Membership Inference Attacks Against Language Classification Models</a> - (ICLR) <em>Presents a framework for running membership inference attacks against classifier, in audit mode.</em></li>
+<li><a href="https://arxiv.org/pdf/2305.17570.pdf">Auditing Fairness by Betting</a> - (Neurips) <a href="https://github.com/bchugg/auditing-fairness">[Code]</a> <em>Sequential methods that allows for the continuous monitoring of incoming data from a black-box classifier or regressor.</em></li>
+</ul>
+<h3>2023</h3>
+<ul>
+<li><a href="https://neurips.cc/virtual/2023/poster/70925">Privacy Auditing with One (1) Training Run</a> - (NeurIPS - best paper) <em>A scheme for auditing differentially private machine learning systems with a single training run.</em></li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'audit-algorithms_README.md';
 
         fetch(markdownFile)
@@ -48,21 +125,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

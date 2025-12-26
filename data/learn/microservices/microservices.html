@@ -8,38 +8,209 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mfornos Awesome Microservices - Awesome List Resources">
-    <title>Mfornos Awesome Microservices</title>
+    <meta name="description" content="A curated list of Microservice Architecture related principles and technologies. Table of Contents - Platforms - Frameworks / Runtimes - Service Toolkits -...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Microservices [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Microservices <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A curated list of Microservice Architecture related principles and technologies.</p>
+<p><strong>Table of Contents</strong></p>
+<ul>
+<li><a href="#platforms">Platforms</a></li>
+<li><a href="#frameworks--runtimes">Frameworks / Runtimes</a></li>
+<li><a href="#service-toolkits">Service Toolkits</a></li>
+<li><a href="#polyglot">Polyglot</a></li>
+<li><a href="#c">C</a></li>
+<li><a href="#c-1">C++</a></li>
+<li><a href="#csharp">C#</a></li>
+<li><a href="#d">D</a></li>
+<li><a href="#erlang-vm">Erlang VM</a></li>
+<li><a href="#go">Go</a></li>
+<li><a href="#haskell">Haskell</a></li>
+<li><a href="#java-vm">Java VM</a></li>
+<li><a href="#nodejs">Node.js</a></li>
+<li><a href="#perl">Perl</a></li>
+<li><a href="#php">PHP</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#ruby">Ruby</a></li>
+<li><a href="#rust">Rust</a></li>
+<li><a href="#frontend--ui">Frontend / UI</a></li>
+<li><a href="#capabilities">Capabilities</a></li>
+<li><a href="#api-gateways--edge-services">API Gateways / Edge Services</a></li>
+<li><a href="#configuration--discovery">Configuration &amp; Discovery</a></li>
+<li><a href="#workflow-orchestration">Workflow Orchestration</a></li>
+<li><a href="#elasticity">Elasticity</a></li>
+<li><a href="#job-schedulers--workload-automation">Job Schedulers / Workload Automation</a></li>
+<li><a href="#logging">Logging</a></li>
+<li><a href="#messaging">Messaging</a></li>
+<li><a href="#monitoring--debugging">Monitoring &amp; Debugging</a></li>
+<li><a href="#reactivity">Reactivity</a></li>
+<li><a href="#resilience">Resilience</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#serialization">Serialization</a></li>
+<li><a href="#storage">Storage</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#continuous-integration--delivery">Continuous Integration &amp; Delivery</a></li>
+<li><a href="#web-api-modeling--documentation">Web API Modeling &amp; Documentation</a></li>
+<li><a href="#graphql">GraphQL</a></li>
+<li><a href="#json">JSON</a></li>
+<li><a href="#rest">REST</a></li>
+<li><a href="#standards--recommendations">Standards / Recommendations</a></li>
+<li><a href="#world-wide-web">World Wide Web</a></li>
+<li><a href="#self-sovereignty--decentralisation">Self-sovereignty &amp; Decentralisation</a></li>
+<li><a href="#http11">HTTP/1.1</a></li>
+<li><a href="#http2">HTTP/2</a></li>
+<li><a href="#quic">QUIC</a></li>
+<li><a href="#coap">CoAP</a></li>
+<li><a href="#rpc">RPC</a></li>
+<li><a href="#messaging-1">Messaging</a></li>
+<li><a href="#security-1">Security</a></li>
+<li><a href="#service-discovery">Service Discovery</a></li>
+<li><a href="#data-formats">Data Formats</a></li>
+<li><a href="#vocabularies">Vocabularies</a></li>
+<li><a href="#unicode">Unicode</a></li>
+<li><a href="#organization-design--team-dynamics">Organization Design / Team Dynamics</a></li>
+<li><a href="#enterprise--verticals">Enterprise &amp; Verticals</a></li>
+<li><a href="#theory">Theory</a></li>
+<li><a href="#articles--papers">Articles &amp; Papers</a></li>
+<li><a href="#sites--organizations">Sites &amp; Organizations</a></li>
+<li><a href="#license">License</a></li>
+<li><a href="#contributing">Contributing</a></li>
+</ul>
+<h2>Platforms</h2>
+<ul>
+<li><a href="https://jolie-lang.org">Jolie</a> - Open source microservice-oriented programming language.</li>
+<li><a href="https://www.kalix.io/">Kalix (c)</a> - Platform as a Service that abstracts away the complexity of event-driven microservices.</li>
+<li><a href="https://www.lightbend.com/">Lightbend (c)</a> - Platform for building scalable reactive systems on the JVM.</li>
+<li><a href="http://openwhisk.org/">OpenWhisk</a> - Serverless, open source cloud platform that executes functions in response to events at any scale.</li>
+<li><a href="https://pulumi.io/">Pulumi</a> - SDK for cloud native infrastructure as code. Use your favorite language to preview and manage updates to your apps and infrastructure, and continuously deploy to any cloud (no YAML required).</li>
+<li><a href="https://github.com/joyent/triton">Triton</a> - Open-source cloud management platform that delivers next generation, container-based, service-oriented infrastructure across one or more data centers.</li>
+<li><a href="https://www.winglang.io/">Wing</a> - Cloud-oriented programming language. It allows developers to build distributed systems that fully leverage the power of the cloud without having to worry about the underlying infrastructure.</li>
+</ul>
+<h2>Frameworks / Runtimes</h2>
+<ul>
+<li><a href="http://akka.io/">Akka</a> - Toolkit and runtime for building highly concurrent, distributed, and resilient message-driven applications on the JVM.</li>
+<li><a href="https://axoniq.io/">Axon (c)</a> - An end-to-end development and infrastructure platform for easy development and running of any DDD, CQRS and Event Sourcing applications on JVM.</li>
+<li><a href="https://ballerina.io">Ballerina</a> - Cloud native programming language.</li>
+<li><a href="https://bun.sh/">Bun</a> - Fast all-in-one JavaScript runtime.</li>
+<li><a href="https://dapr.io">Dapr</a> - Open source runtime for writing highly performant microservices using any programming language.</li>
+<li><a href="https://deno.land/">Deno</a> - JavaScript, TypeScript, and WebAssembly runtime with secure defaults and a great developer experience.</li>
+<li><a href="https://microprofile.io/">Eclipse Microprofile</a> - An open forum to optimize Enterprise Java for a microservices architecture by innovating across multiple implementations and collaborating on common areas of interest with a goal of standardization.</li>
+<li><a href="https://github.com/erlang/otp">Erlang/OTP</a> - Programming language used to build massively scalable soft real-time systems with requirements on high availability.</li>
+<li><a href="http://twitter.github.io/finagle">Finagle</a> - Extensible RPC system for the JVM, used to construct high-concurrency servers.</li>
+<li><a href="https://gleam.run/">Gleam</a> - A friendly language for building type-safe, scalable systems.</li>
+<li><a href="https://www.graalvm.org/">GraalVM</a> - High-performance runtime that provides significant improvements in application performance and efficiency which is ideal for microservices.</li>
+<li><a href="https://helidon.io/">Helidon</a> - Collection of Java libraries for writing microservices that run on a fast web core powered by Netty.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Microservices <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A curated list of Microservice Architecture related principles and technologies.</p>
+<p><strong>Table of Contents</strong></p>
+<ul>
+<li><a href="#platforms">Platforms</a></li>
+<li><a href="#frameworks--runtimes">Frameworks / Runtimes</a></li>
+<li><a href="#service-toolkits">Service Toolkits</a></li>
+<li><a href="#polyglot">Polyglot</a></li>
+<li><a href="#c">C</a></li>
+<li><a href="#c-1">C++</a></li>
+<li><a href="#csharp">C#</a></li>
+<li><a href="#d">D</a></li>
+<li><a href="#erlang-vm">Erlang VM</a></li>
+<li><a href="#go">Go</a></li>
+<li><a href="#haskell">Haskell</a></li>
+<li><a href="#java-vm">Java VM</a></li>
+<li><a href="#nodejs">Node.js</a></li>
+<li><a href="#perl">Perl</a></li>
+<li><a href="#php">PHP</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#ruby">Ruby</a></li>
+<li><a href="#rust">Rust</a></li>
+<li><a href="#frontend--ui">Frontend / UI</a></li>
+<li><a href="#capabilities">Capabilities</a></li>
+<li><a href="#api-gateways--edge-services">API Gateways / Edge Services</a></li>
+<li><a href="#configuration--discovery">Configuration &amp; Discovery</a></li>
+<li><a href="#workflow-orchestration">Workflow Orchestration</a></li>
+<li><a href="#elasticity">Elasticity</a></li>
+<li><a href="#job-schedulers--workload-automation">Job Schedulers / Workload Automation</a></li>
+<li><a href="#logging">Logging</a></li>
+<li><a href="#messaging">Messaging</a></li>
+<li><a href="#monitoring--debugging">Monitoring &amp; Debugging</a></li>
+<li><a href="#reactivity">Reactivity</a></li>
+<li><a href="#resilience">Resilience</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#serialization">Serialization</a></li>
+<li><a href="#storage">Storage</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#continuous-integration--delivery">Continuous Integration &amp; Delivery</a></li>
+<li><a href="#web-api-modeling--documentation">Web API Modeling &amp; Documentation</a></li>
+<li><a href="#graphql">GraphQL</a></li>
+<li><a href="#json">JSON</a></li>
+<li><a href="#rest">REST</a></li>
+<li><a href="#standards--recommendations">Standards / Recommendations</a></li>
+<li><a href="#world-wide-web">World Wide Web</a></li>
+<li><a href="#self-sovereignty--decentralisation">Self-sovereignty &amp; Decentralisation</a></li>
+<li><a href="#http11">HTTP/1.1</a></li>
+<li><a href="#http2">HTTP/2</a></li>
+<li><a href="#quic">QUIC</a></li>
+<li><a href="#coap">CoAP</a></li>
+<li><a href="#rpc">RPC</a></li>
+<li><a href="#messaging-1">Messaging</a></li>
+<li><a href="#security-1">Security</a></li>
+<li><a href="#service-discovery">Service Discovery</a></li>
+<li><a href="#data-formats">Data Formats</a></li>
+<li><a href="#vocabularies">Vocabularies</a></li>
+<li><a href="#unicode">Unicode</a></li>
+<li><a href="#organization-design--team-dynamics">Organization Design / Team Dynamics</a></li>
+<li><a href="#enterprise--verticals">Enterprise &amp; Verticals</a></li>
+<li><a href="#theory">Theory</a></li>
+<li><a href="#articles--papers">Articles &amp; Papers</a></li>
+<li><a href="#sites--organizations">Sites &amp; Organizations</a></li>
+<li><a href="#license">License</a></li>
+<li><a href="#contributing">Contributing</a></li>
+</ul>
+<h2>Platforms</h2>
+<ul>
+<li><a href="https://jolie-lang.org">Jolie</a> - Open source microservice-oriented programming language.</li>
+<li><a href="https://www.kalix.io/">Kalix (c)</a> - Platform as a Service that abstracts away the complexity of event-driven microservices.</li>
+<li><a href="https://www.lightbend.com/">Lightbend (c)</a> - Platform for building scalable reactive systems on the JVM.</li>
+<li><a href="http://openwhisk.org/">OpenWhisk</a> - Serverless, open source cloud platform that executes functions in response to events at any scale.</li>
+<li><a href="https://pulumi.io/">Pulumi</a> - SDK for cloud native infrastructure as code. Use your favorite language to preview and manage updates to your apps and infrastructure, and continuously deploy to any cloud (no YAML required).</li>
+<li><a href="https://github.com/joyent/triton">Triton</a> - Open-source cloud management platform that delivers next generation, container-based, service-oriented infrastructure across one or more data centers.</li>
+<li><a href="https://www.winglang.io/">Wing</a> - Cloud-oriented programming language. It allows developers to build distributed systems that fully leverage the power of the cloud without having to worry about the underlying infrastructure.</li>
+</ul>
+<h2>Frameworks / Runtimes</h2>
+<ul>
+<li><a href="http://akka.io/">Akka</a> - Toolkit and runtime for building highly concurrent, distributed, and resilient message-driven applications on the JVM.</li>
+<li><a href="https://axoniq.io/">Axon (c)</a> - An end-to-end development and infrastructure platform for easy development and running of any DDD, CQRS and Event Sourcing applications on JVM.</li>
+<li><a href="https://ballerina.io">Ballerina</a> - Cloud native programming language.</li>
+<li><a href="https://bun.sh/">Bun</a> - Fast all-in-one JavaScript runtime.</li>
+<li><a href="https://dapr.io">Dapr</a> - Open source runtime for writing highly performant microservices using any programming language.</li>
+<li><a href="https://deno.land/">Deno</a> - JavaScript, TypeScript, and WebAssembly runtime with secure defaults and a great developer experience.</li>
+<li><a href="https://microprofile.io/">Eclipse Microprofile</a> - An open forum to optimize Enterprise Java for a microservices architecture by innovating across multiple implementations and collaborating on common areas of interest with a goal of standardization.</li>
+<li><a href="https://github.com/erlang/otp">Erlang/OTP</a> - Programming language used to build massively scalable soft real-time systems with requirements on high availability.</li>
+<li><a href="http://twitter.github.io/finagle">Finagle</a> - Extensible RPC system for the JVM, used to construct high-concurrency servers.</li>
+<li><a href="https://gleam.run/">Gleam</a> - A friendly language for building type-safe, scalable systems.</li>
+<li><a href="https://www.graalvm.org/">GraalVM</a> - High-performance runtime that provides significant improvements in application performance and efficiency which is ideal for microservices.</li>
+<li><a href="https://helidon.io/">Helidon</a> - Collection of Java libraries for writing microservices that run on a fast web core powered by Netty.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'microservices_README.md';
 
         fetch(markdownFile)
@@ -48,21 +219,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

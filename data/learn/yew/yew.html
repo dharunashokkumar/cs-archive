@@ -8,38 +8,157 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jetli Awesome Yew - Awesome List Resources">
-    <title>Jetli Awesome Yew</title>
+    <meta name="description" content="> A curated list of awesome things related to Yew. Yew is a modern Rust framework inspired by Elm and React for creating multi-threaded frontend apps with...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Yew [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Yew <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p><a href="https://github.com/yewstack/yew"><img src="logo.svg" align="right" width="100" title="Awesome Yew"></a></p>
+<blockquote>
+<p>A curated list of awesome things related to Yew.</p>
+</blockquote>
+<p><a href="https://github.com/yewstack/yew">Yew</a> is a modern Rust framework inspired by Elm and React for creating multi-threaded frontend apps with WebAssembly.</p>
+<p>Contributions welcome! Read the <a href="CONTRIBUTING.md">contribution guidelines</a> first.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#official">Official</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#templates">Templates</a></li>
+<li><a href="#crates">Crates</a></li>
+<li><a href="#component-libraries">Component Libraries</a></li>
+<li><a href="#components">Components</a></li>
+<li><a href="#hooks">Hooks</a></li>
+<li><a href="#utils">Utils</a></li>
+<li><a href="#wasm">Wasm</a></li>
+<li><a href="#tooling">Tooling</a></li>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#alternatives">Alternatives</a></li>
+<li><a href="#related-lists">Related lists</a></li>
+</ul>
+<h2>Official</h2>
+<ul>
+<li><a href="https://github.com/yewstack/yew">Yew</a> - Rust / WebAssembly framework for building client web apps.</li>
+<li><a href="https://yew-todomvc.netlify.com">Live demo</a> - A todomvc demo.</li>
+<li><a href="https://github.com/yewstack/yew/tree/master/examples">Examples</a> - Smaller examples included in official repo.</li>
+<li><a href="https://docs.rs/yew">API Docs</a> - Docs on docs.rs.</li>
+<li><a href="https://yew.rs/">Website</a> - Official website.</li>
+<li><a href="https://discord.gg/VQck8X4">Chatroom</a> - It is pretty active and is a great place to ask questions.</li>
+<li><a href="https://www.reddit.com/r/yew_web/">Reddit</a> - Dedicated Sub Reddit.</li>
+<li><a href="https://opencollective.com/yew">Financial Contribute</a> - Become a financial contributor and help us sustain our community.</li>
+<li><a href="https://play.yew.rs">Playground</a> - Online playground for Yew.</li>
+</ul>
+<h2>Projects</h2>
+<ul>
+<li><a href="https://github.com/jetli/rust-yew-realworld-example-app">Realworld example</a> - Exemplary real world app built with Rust + Yew + WebAssembly. It utilizes Yew's latest <code>function components</code> and <code>hooks</code>. It also supports desktop application powered by <a href="https://github.com/tauri-apps/tauri">Tauri</a>.</li>
+<li><a href="https://github.com/saschagrunert/webapp.rs">webapp.rs</a> - A web application completely written in Rust, frontend is built with Yew.</li>
+<li><a href="https://github.com/steadylearner/Rust-Full-Stack">Rust-Full-Stack</a> - Easily testable and working Rust codes with blog posts to explain them.</li>
+<li><a href="https://github.com/hgzimmerman/BucketQuestions">Bucket Questions</a> - A webapp written entirely in Rust for a dumb party game.</li>
+<li><a href="https://github.com/Extrawurst/rust-webview-todomvc-yew">web-view todomvc desktop app</a> - Demo how to use yew for a todomvc that compiles to WebAssembly and is bundled as a lightweight(~2mb) desktop app by <a href="https://github.com/Boscop/web-view">web-view</a>, as an alternative to Electron, <a href="https://github.com/Boscop/web-view">web-view</a> also has a <a href="https://github.com/Boscop/web-view/tree/master/examples#todo-yew">demo</a>.</li>
+<li><a href="https://github.com/hobofan/yew-react-example">yew-react-example</a> - This project shows how to create a web app using a React component inside a Yew component.</li>
+<li><a href="https://github.com/stkevintan/Kirk">Kirk</a> - Just A Rust WebAssembly Blog.</li>
+<li><a href="https://github.com/extraymond/rust-async-wasm-demo">rust-async-wasm-demo</a> - Toy project to learn Rust and async that can be deployed to the web.</li>
+<li><a href="https://github.com/tarkah/karaoke-rs">karaoke-rs</a> - A simple, network enabled karaoke player in Rust.</li>
+<li><a href="https://github.com/noc7c9/i-love-hue-rs">I Love Hue! (rs)</a> - A clone of the mobile game I Love Hue in Yew (Rust).</li>
+<li><a href="https://github.com/spielrs/yew-styles-page">yew-styles-page</a> - This is an initial project of a framework style for yew.</li>
+<li><a href="https://github.com/jplatte/caniuse.rs">caniuse.rs</a> - Rust feature search.</li>
+<li><a href="https://github.com/Extrawurst/rust-electron-demo">Rust electron yew demo</a> - An example of building a Rust based web app (Yew) into a native app using electron.</li>
+<li><a href="https://github.com/jbowens/covplot">covplot</a> - Live graphs of worldwide CoVID-19 data.</li>
+<li><a href="https://github.com/jgpaiva/minesweeper">Minesweeper</a> - Minesweeper built with Rust, Yew and WebAssembly.</li>
+<li><a href="https://github.com/Stigjb/freecell">Freecell</a> - A patience game written in Rust and Yew.</li>
+<li><a href="https://github.com/codec-abc/Yew-WebRTC-Chat">Yew-WebRTC-Chat</a> - A simple WebRTC chat made with Yew.</li>
+<li><a href="https://github.com/lukidoescode/yew-fullstack-boilerplate">Yew Fullstack Boilerplate</a> - Highly opinionated boilerplate for creating full stack applications with Rust.</li>
+<li><a href="https://github.com/Stigjb/chord-quiz">Chord Quiz</a> - Practice recognizing chords in this Rust/Yew/WebAssembly app.</li>
+<li><a href="https://github.com/sheshbabu/rustmart-yew-example">RustMart</a> - Single Page Application (SPA) written using Rust, Wasm and Yew.</li>
+<li><a href="https://github.com/alepez/devand">DevAndDev</a> - A website where developers can find pair-programming partners. Written in Rust, Yew frontend.</li>
+<li><a href="https://github.com/io12/yew-octicons">yew-octicons</a> - An easy interface for using Octicons in Yew projects.</li>
+<li><a href="https://github.com/pipe-fun/pipe">Pipe</a> - This is a Rust / Wasm client web app which is a task control center.</li>
+<li><a href="https://github.com/oovm/note-to-yew">note-to-yew</a> - Convert your markups into Yew macro online, which is also made by Yew.</li>
+<li><a href="https://github.com/getreu/ascii-hangman">ASCII-Hangman</a> - Configurable Hangman game for children with ASCII-art rewarding.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Yew <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p><a href="https://github.com/yewstack/yew"><img src="logo.svg" align="right" width="100" title="Awesome Yew"></a></p>
+<blockquote>
+<p>A curated list of awesome things related to Yew.</p>
+</blockquote>
+<p><a href="https://github.com/yewstack/yew">Yew</a> is a modern Rust framework inspired by Elm and React for creating multi-threaded frontend apps with WebAssembly.</p>
+<p>Contributions welcome! Read the <a href="CONTRIBUTING.md">contribution guidelines</a> first.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#official">Official</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#templates">Templates</a></li>
+<li><a href="#crates">Crates</a></li>
+<li><a href="#component-libraries">Component Libraries</a></li>
+<li><a href="#components">Components</a></li>
+<li><a href="#hooks">Hooks</a></li>
+<li><a href="#utils">Utils</a></li>
+<li><a href="#wasm">Wasm</a></li>
+<li><a href="#tooling">Tooling</a></li>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#alternatives">Alternatives</a></li>
+<li><a href="#related-lists">Related lists</a></li>
+</ul>
+<h2>Official</h2>
+<ul>
+<li><a href="https://github.com/yewstack/yew">Yew</a> - Rust / WebAssembly framework for building client web apps.</li>
+<li><a href="https://yew-todomvc.netlify.com">Live demo</a> - A todomvc demo.</li>
+<li><a href="https://github.com/yewstack/yew/tree/master/examples">Examples</a> - Smaller examples included in official repo.</li>
+<li><a href="https://docs.rs/yew">API Docs</a> - Docs on docs.rs.</li>
+<li><a href="https://yew.rs/">Website</a> - Official website.</li>
+<li><a href="https://discord.gg/VQck8X4">Chatroom</a> - It is pretty active and is a great place to ask questions.</li>
+<li><a href="https://www.reddit.com/r/yew_web/">Reddit</a> - Dedicated Sub Reddit.</li>
+<li><a href="https://opencollective.com/yew">Financial Contribute</a> - Become a financial contributor and help us sustain our community.</li>
+<li><a href="https://play.yew.rs">Playground</a> - Online playground for Yew.</li>
+</ul>
+<h2>Projects</h2>
+<ul>
+<li><a href="https://github.com/jetli/rust-yew-realworld-example-app">Realworld example</a> - Exemplary real world app built with Rust + Yew + WebAssembly. It utilizes Yew's latest <code>function components</code> and <code>hooks</code>. It also supports desktop application powered by <a href="https://github.com/tauri-apps/tauri">Tauri</a>.</li>
+<li><a href="https://github.com/saschagrunert/webapp.rs">webapp.rs</a> - A web application completely written in Rust, frontend is built with Yew.</li>
+<li><a href="https://github.com/steadylearner/Rust-Full-Stack">Rust-Full-Stack</a> - Easily testable and working Rust codes with blog posts to explain them.</li>
+<li><a href="https://github.com/hgzimmerman/BucketQuestions">Bucket Questions</a> - A webapp written entirely in Rust for a dumb party game.</li>
+<li><a href="https://github.com/Extrawurst/rust-webview-todomvc-yew">web-view todomvc desktop app</a> - Demo how to use yew for a todomvc that compiles to WebAssembly and is bundled as a lightweight(~2mb) desktop app by <a href="https://github.com/Boscop/web-view">web-view</a>, as an alternative to Electron, <a href="https://github.com/Boscop/web-view">web-view</a> also has a <a href="https://github.com/Boscop/web-view/tree/master/examples#todo-yew">demo</a>.</li>
+<li><a href="https://github.com/hobofan/yew-react-example">yew-react-example</a> - This project shows how to create a web app using a React component inside a Yew component.</li>
+<li><a href="https://github.com/stkevintan/Kirk">Kirk</a> - Just A Rust WebAssembly Blog.</li>
+<li><a href="https://github.com/extraymond/rust-async-wasm-demo">rust-async-wasm-demo</a> - Toy project to learn Rust and async that can be deployed to the web.</li>
+<li><a href="https://github.com/tarkah/karaoke-rs">karaoke-rs</a> - A simple, network enabled karaoke player in Rust.</li>
+<li><a href="https://github.com/noc7c9/i-love-hue-rs">I Love Hue! (rs)</a> - A clone of the mobile game I Love Hue in Yew (Rust).</li>
+<li><a href="https://github.com/spielrs/yew-styles-page">yew-styles-page</a> - This is an initial project of a framework style for yew.</li>
+<li><a href="https://github.com/jplatte/caniuse.rs">caniuse.rs</a> - Rust feature search.</li>
+<li><a href="https://github.com/Extrawurst/rust-electron-demo">Rust electron yew demo</a> - An example of building a Rust based web app (Yew) into a native app using electron.</li>
+<li><a href="https://github.com/jbowens/covplot">covplot</a> - Live graphs of worldwide CoVID-19 data.</li>
+<li><a href="https://github.com/jgpaiva/minesweeper">Minesweeper</a> - Minesweeper built with Rust, Yew and WebAssembly.</li>
+<li><a href="https://github.com/Stigjb/freecell">Freecell</a> - A patience game written in Rust and Yew.</li>
+<li><a href="https://github.com/codec-abc/Yew-WebRTC-Chat">Yew-WebRTC-Chat</a> - A simple WebRTC chat made with Yew.</li>
+<li><a href="https://github.com/lukidoescode/yew-fullstack-boilerplate">Yew Fullstack Boilerplate</a> - Highly opinionated boilerplate for creating full stack applications with Rust.</li>
+<li><a href="https://github.com/Stigjb/chord-quiz">Chord Quiz</a> - Practice recognizing chords in this Rust/Yew/WebAssembly app.</li>
+<li><a href="https://github.com/sheshbabu/rustmart-yew-example">RustMart</a> - Single Page Application (SPA) written using Rust, Wasm and Yew.</li>
+<li><a href="https://github.com/alepez/devand">DevAndDev</a> - A website where developers can find pair-programming partners. Written in Rust, Yew frontend.</li>
+<li><a href="https://github.com/io12/yew-octicons">yew-octicons</a> - An easy interface for using Octicons in Yew projects.</li>
+<li><a href="https://github.com/pipe-fun/pipe">Pipe</a> - This is a Rust / Wasm client web app which is a task control center.</li>
+<li><a href="https://github.com/oovm/note-to-yew">note-to-yew</a> - Convert your markups into Yew macro online, which is also made by Yew.</li>
+<li><a href="https://github.com/getreu/ascii-hangman">ASCII-Hangman</a> - Configurable Hangman game for children with ASCII-art rewarding.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'yew_README.md';
 
         fetch(markdownFile)
@@ -48,21 +167,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

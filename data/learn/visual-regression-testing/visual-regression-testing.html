@@ -8,38 +8,147 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mojoaxel Awesome Regression Testing - Awesome List Resources">
-    <title>Mojoaxel Awesome Regression Testing</title>
+    <meta name="description" content="> Curated list of awesome visual regression testing resources. Regression testing is a type of software testing which verifies that software which was...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Visual Regression Testing [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Visual Regression Testing <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<blockquote>
+<p>Curated list of awesome visual regression testing resources.</p>
+</blockquote>
+<p>Regression testing is a type of software testing which verifies that software which was previously developed and tested still performs the same way after it was changed or interfaced with other software. The purpose of regression testing is to ensure that changes to the software have not introduced new faults.</p>
+<h2>Foreword</h2>
+<p>This is intended to be an <em>incomplete</em> list of resources about visual regression testing. It is not tailored to a specific area or role (Developer/QA/UX-Designer). Note that this is for all areas of regression software testing <em>after</em> the code in question is written. For a awesome list on general software testing see e.g. <a href="https://github.com/TheJambo/awesome-testing">awesome-testing</a>.</p>
+<p>Finally, I'm sure everyone who reads this list has one thing they want to add. Please read the <a href=".github/CONTRIBUTING.md">How to Contribute</a> page and <strong>Feel free to add to the list!!</strong>. If you think this is helpful <strong>Please give a Star ⭐️</strong>.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#general-information">General information</a></li>
+<li><a href="#browser-automation">Browser automation</a></li>
+<li><a href="#tools-and-frameworks">Tools and frameworks</a></li>
+<li><a href="#online-services">Online services</a></li>
+<li><a href="#blog-posts">Blog posts</a></li>
+<li><a href="#slideshows-talks-and-videos">Slideshows, talks and videos</a></li>
+<li><a href="#deprecated">Deprecated</a></li>
+<li><a href="#Miscellaneous">Miscellaneous</a></li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#code-of-conduct">Code of Conduct</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h2>General information</h2>
+<ul>
+<li><a href="https://gist.github.com/cvrebert/adf91e429906a4d746cd">Survey of screenshot-based CSS testing tools</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Regression_testing">Wikipedia: Regression testing</a></li>
+</ul>
+<h2>Browser automation</h2>
+<ul>
+<li><a href="https://www.cypress.io/">Cypress.io</a> - An automation framework that runs in-browser.</li>
+<li><a href="https://github.com/SeleniumHQ/selenium">Selenium</a> - Browser automation framework and ecosystem.</li>
+<li><a href="https://github.com/laurentj/slimerjs">SlimerJS</a> - Scriptable browser like PhantomJS, based on Firefox.</li>
+<li><a href="https://github.com/webdriverio/webdriverio/">Webdriver.io</a> - Node.js bindings implementation for the W3C WebDriver protocol.</li>
+</ul>
+<h2>Tools and frameworks (a-z↓)</h2>
+<ul>
+<li><a href="https://github.com/Cognifide/aet">AET</a> - Scalable testing tool providing visual regression testing, accessibility and performance validation, markup analysis and more.</li>
+<li><a href="https://github.com/newsuk/ayespy">AyeSpy</a> - 44 image comparisons in 90 seconds.</li>
+<li><a href="https://github.com/garris/BackstopJS">BackstopJS</a> - Config-driven automated screenshot test framework.</li>
+<li><a href="https://basset.io">basset</a> - Open source platform for generating and reviewing visual differences. Supports multiple browsers, integrations for github and slack.</li>
+<li><a href="https://github.com/xolvio/chimp">Chimp</a> - Develop acceptance tests &amp; end-to-end tests with realtime feedback.</li>
+<li><a href="https://github.com/codeception/codeceptjs/">CodeceptJS</a> - Modern Era Acceptance Testing Framework for NodeJS.</li>
+<li><a href="https://github.com/wKich/creevey">Creevey</a> - Cross-browser visual testing with magic. Feature-rich tool with UI Runner, Tests Hot Reloading, Docker and Storybook integration.</li>
+<li><a href="https://github.com/cburgmer/csscritic">CSSCritic</a> - Lightweight CSS regression testing.</li>
+<li><a href="https://github.com/NimaSoroush/differencify">Differencify</a> - A library for visual regression testing using <a href="https://github.com/GoogleChrome/puppeteer">Puppeteer</a>.</li>
+<li><a href="https://github.com/Cropster/ember-visual-test">ember-visual-test</a> - Simple visual regression testing for <a href="https://emberjs.com/">Ember</a>.</li>
+<li><a href="https://github.com/bitovi/funcunit">FuncUnit</a> - A functional test suite based on jQuery</li>
+<li><a href="https://github.com/galenframework/galen">Galen</a> - Java framework based on <a href="https://github.com/SeleniumHQ/selenium">Selenium</a>.</li>
+<li><a href="https://github.com/gabrielrotbart/gatling">gatling</a> - Integrated visual RSpec matcher which makes real visual testing easy (Ruby).</li>
+<li><a href="https://github.com/stefanjudis/grunt-photobox">grunt-photobox</a> - Plugin to prevent your project of broken layout via screenshot photo sessions of your site.</li>
+<li><a href="https://github.com/happo/happo.io">Happo</a> - Visual diffing in CI for user interfaces.</li>
+<li><a href="https://github.com/thingsinjars/Hardy">Hardy</a> - Selenium-driven, cucumber-powered CSS testing.</li>
+<li><a href="https://github.com/americanexpress/jest-image-snapshot">jest-image-snapshot</a> - Jest matcher that performs image comparisons using <a href="https://www.npmjs.com/package/pixelmatch">pixelmatch</a></li>
+<li><a href="https://github.com/Hapag-Lloyd/jest-puppeteer-react">jest-puppeteer-react</a> - Visual regression testing with Jest and puppeteer for React components</li>
+<li><a href="http://karma-runner.github.io/latest/index.html">Karma</a> - A test runner by the AngularJS team, that fits all our needs.</li>
+<li><a href="https://github.com/oblador/loki">Loki</a> - Visual regression testing for Storybook using Chrome in docker et al.</li>
+<li><a href="https://github.com/kdzwinel/Look-alike">Look-alike</a> - Chrome Extension for taking and comparing screenshots.</li>
+<li><a href="https://github.com/lost-pixel/lost-pixel">Lost Pixel</a> - Holistic visual regression testing for full pages, components (via Storybook and Ladle integration), and custom shots (e.g. via Cypress).</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Visual Regression Testing <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<blockquote>
+<p>Curated list of awesome visual regression testing resources.</p>
+</blockquote>
+<p>Regression testing is a type of software testing which verifies that software which was previously developed and tested still performs the same way after it was changed or interfaced with other software. The purpose of regression testing is to ensure that changes to the software have not introduced new faults.</p>
+<h2>Foreword</h2>
+<p>This is intended to be an <em>incomplete</em> list of resources about visual regression testing. It is not tailored to a specific area or role (Developer/QA/UX-Designer). Note that this is for all areas of regression software testing <em>after</em> the code in question is written. For a awesome list on general software testing see e.g. <a href="https://github.com/TheJambo/awesome-testing">awesome-testing</a>.</p>
+<p>Finally, I'm sure everyone who reads this list has one thing they want to add. Please read the <a href=".github/CONTRIBUTING.md">How to Contribute</a> page and <strong>Feel free to add to the list!!</strong>. If you think this is helpful <strong>Please give a Star ⭐️</strong>.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#general-information">General information</a></li>
+<li><a href="#browser-automation">Browser automation</a></li>
+<li><a href="#tools-and-frameworks">Tools and frameworks</a></li>
+<li><a href="#online-services">Online services</a></li>
+<li><a href="#blog-posts">Blog posts</a></li>
+<li><a href="#slideshows-talks-and-videos">Slideshows, talks and videos</a></li>
+<li><a href="#deprecated">Deprecated</a></li>
+<li><a href="#Miscellaneous">Miscellaneous</a></li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#code-of-conduct">Code of Conduct</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h2>General information</h2>
+<ul>
+<li><a href="https://gist.github.com/cvrebert/adf91e429906a4d746cd">Survey of screenshot-based CSS testing tools</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Regression_testing">Wikipedia: Regression testing</a></li>
+</ul>
+<h2>Browser automation</h2>
+<ul>
+<li><a href="https://www.cypress.io/">Cypress.io</a> - An automation framework that runs in-browser.</li>
+<li><a href="https://github.com/SeleniumHQ/selenium">Selenium</a> - Browser automation framework and ecosystem.</li>
+<li><a href="https://github.com/laurentj/slimerjs">SlimerJS</a> - Scriptable browser like PhantomJS, based on Firefox.</li>
+<li><a href="https://github.com/webdriverio/webdriverio/">Webdriver.io</a> - Node.js bindings implementation for the W3C WebDriver protocol.</li>
+</ul>
+<h2>Tools and frameworks (a-z↓)</h2>
+<ul>
+<li><a href="https://github.com/Cognifide/aet">AET</a> - Scalable testing tool providing visual regression testing, accessibility and performance validation, markup analysis and more.</li>
+<li><a href="https://github.com/newsuk/ayespy">AyeSpy</a> - 44 image comparisons in 90 seconds.</li>
+<li><a href="https://github.com/garris/BackstopJS">BackstopJS</a> - Config-driven automated screenshot test framework.</li>
+<li><a href="https://basset.io">basset</a> - Open source platform for generating and reviewing visual differences. Supports multiple browsers, integrations for github and slack.</li>
+<li><a href="https://github.com/xolvio/chimp">Chimp</a> - Develop acceptance tests &amp; end-to-end tests with realtime feedback.</li>
+<li><a href="https://github.com/codeception/codeceptjs/">CodeceptJS</a> - Modern Era Acceptance Testing Framework for NodeJS.</li>
+<li><a href="https://github.com/wKich/creevey">Creevey</a> - Cross-browser visual testing with magic. Feature-rich tool with UI Runner, Tests Hot Reloading, Docker and Storybook integration.</li>
+<li><a href="https://github.com/cburgmer/csscritic">CSSCritic</a> - Lightweight CSS regression testing.</li>
+<li><a href="https://github.com/NimaSoroush/differencify">Differencify</a> - A library for visual regression testing using <a href="https://github.com/GoogleChrome/puppeteer">Puppeteer</a>.</li>
+<li><a href="https://github.com/Cropster/ember-visual-test">ember-visual-test</a> - Simple visual regression testing for <a href="https://emberjs.com/">Ember</a>.</li>
+<li><a href="https://github.com/bitovi/funcunit">FuncUnit</a> - A functional test suite based on jQuery</li>
+<li><a href="https://github.com/galenframework/galen">Galen</a> - Java framework based on <a href="https://github.com/SeleniumHQ/selenium">Selenium</a>.</li>
+<li><a href="https://github.com/gabrielrotbart/gatling">gatling</a> - Integrated visual RSpec matcher which makes real visual testing easy (Ruby).</li>
+<li><a href="https://github.com/stefanjudis/grunt-photobox">grunt-photobox</a> - Plugin to prevent your project of broken layout via screenshot photo sessions of your site.</li>
+<li><a href="https://github.com/happo/happo.io">Happo</a> - Visual diffing in CI for user interfaces.</li>
+<li><a href="https://github.com/thingsinjars/Hardy">Hardy</a> - Selenium-driven, cucumber-powered CSS testing.</li>
+<li><a href="https://github.com/americanexpress/jest-image-snapshot">jest-image-snapshot</a> - Jest matcher that performs image comparisons using <a href="https://www.npmjs.com/package/pixelmatch">pixelmatch</a></li>
+<li><a href="https://github.com/Hapag-Lloyd/jest-puppeteer-react">jest-puppeteer-react</a> - Visual regression testing with Jest and puppeteer for React components</li>
+<li><a href="http://karma-runner.github.io/latest/index.html">Karma</a> - A test runner by the AngularJS team, that fits all our needs.</li>
+<li><a href="https://github.com/oblador/loki">Loki</a> - Visual regression testing for Storybook using Chrome in docker et al.</li>
+<li><a href="https://github.com/kdzwinel/Look-alike">Look-alike</a> - Chrome Extension for taking and comparing screenshots.</li>
+<li><a href="https://github.com/lost-pixel/lost-pixel">Lost Pixel</a> - Holistic visual regression testing for full pages, components (via Storybook and Ladle integration), and custom shots (e.g. via Cypress).</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'visual-regression-testing_README.md';
 
         fetch(markdownFile)
@@ -48,21 +157,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

@@ -8,38 +8,205 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Martinmiles Awesome Sitecore - Awesome List Resources">
-    <title>Martinmiles Awesome Sitecore</title>
+    <meta name="description" content="> A curated list of Sitecore-related projects on GitHub. Please contribute! Sitecore is a digital platform that helps manage multiple websites from one place....">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Sitecore [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Sitecore <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p><a href="https://sitecore.com"><img src="sitecore-logo.png" align="right" width="80"></a></p>
+<blockquote>
+<p>A curated list of Sitecore-related projects on GitHub. Please contribute!</p>
+</blockquote>
+<p>Sitecore is a digital platform that helps manage multiple websites from one place. It provides marketing tools that deliver information about customers from different devices (CRMs, tracking, POS, etc.). Sitecore allows creating content to be accessed via different channels (desktops, mobiles, APIs, social media, etc.). The platform is flexible by design, with numerous points of extensions, it can be deployed both on-premise and cloud. The below list classifies extensibility and deployment options for Sitecore developers they can benefit from.</p>
+<p>Contributions welcome. Add links through pull requests or create an issue to start a discussion.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#analytics">Analytics</a></li>
+<li><a href="#audit-and-performance">Audit and performance</a></li>
+<li><a href="#azure">Azure</a></li>
+<li><a href="#cache">Cache</a></li>
+<li><a href="#cdp">CDP</a></li>
+<li><a href="#commerce">Commerce</a></li>
+<li><a href="#configuration">Configuration</a></li>
+<li><a href="#containers">Containers</a></li>
+<li><a href="#content-hub">Content Hub</a></li>
+<li><a href="#content-hub-one">Content Hub One</a></li>
+<li><a href="#content-sdk">Content SDK</a></li>
+<li><a href="#content-search">Content Search</a></li>
+<li><a href="#data">Data</a></li>
+<li><a href="#data-exchange-framework">Data Exchange Framework</a></li>
+<li><a href="#demo">Demo</a></li>
+<li><a href="#deployment">Deployment</a></li>
+<li><a href="#edge">Edge</a></li>
+<li><a href="#editing">Editing</a></li>
+<li><a href="#extending-content-editor">Extending Content Editor</a></li>
+<li><a href="#fields">Fields</a></li>
+<li><a href="#forms">Forms</a></li>
+<li><a href="#frameworks">Frameworks</a></li>
+<li><a href="#graphql">GraphQL</a></li>
+<li><a href="#jamstack">JAMstack</a></li>
+<li><a href="#jss">JSS</a></li>
+<li><a href="#headless">Headless</a></li>
+<li><a href="#helix">Helix</a> </li>
+<li><a href="#icons">Icons</a></li>
+<li><a href="#integration">Integration</a></li>
+<li><a href="#item-resource-files">Item Resource Files</a></li>
+<li><a href="#languages">Languages</a></li>
+<li><a href="#logging">Logging</a></li>
+<li><a href="#maintenance">Maintenance</a></li>
+<li><a href="#marketplace">Marketplace</a></li>
+<li><a href="#media">Media</a></li>
+<li><a href="#net-core-headless">NET Core Headless</a></li>
+<li><a href="#orm">ORM</a> </li>
+<li><a href="#other">Other</a></li>
+<li><a href="#packaging">Packaging</a></li>
+<li><a href="#pipelines">Pipelines</a></li>
+<li><a href="#publishing">Publishing</a></li>
+<li><a href="#rules">Rules</a></li>
+<li><a href="#sdk">SDK</a></li>
+<li><a href="#security">Security</a> </li>
+<li><a href="#seo">SEO</a> </li>
+<li><a href="#serialization">Serialization</a> </li>
+<li><a href="#sitecore-host">Sitecore Host</a></li>
+<li><a href="#sitecore-search">Sitecore Search</a> </li>
+<li><a href="#sitecore-send">Sitecore Send</a> </li>
+<li><a href="#spe-sitecore-powershell-extension">SPE (Sitecore PowerShell Extension)</a></li>
+<li><a href="#speak">SPEAK</a></li>
+<li><a href="#sxa-sitecore-experience-accelerator">SXA (Sitecore Experience Accelerator)</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#templates">Templates</a></li>
+<li><a href="#tooling">Tooling</a></li>
+<li><a href="#universal-tracker">Universal Tracker</a></li>
+<li><a href="#webapi">WebApi</a> </li>
+<li><a href="#workflows">Workflows</a></li>
+<li><a href="#xconnect-and-xdb">xConnect and xDB</a></li>
+<li><a href="#xm-cloud">XM Cloud</a></li>
+</ul>
+<blockquote>
+<p>Please note, <strong>Awesome Sitecore</strong> list only classifies and reviews useful GitHub repositories you may benefit from. </p>
+<p>If you're looking for a more comprehensive list of articles, blog posts, videos, and Q'n'A please refer to the <a href="https://Sitecore.Link">Sitecore Link</a> knowledge base.</p>
+</blockquote>
+<h2>Analytics</h2>
+<ul>
+<li><a href="https://github.com/islaytitans/SitecoreGoalDescription">Sitecore Goal Description</a> - Display the Goal Description in the Experience Profile.</li>
+<li><a href="https://github.com/martinrayenglish/GoalConversions.Demo">Sitecore Goal Conversion Demo</a> - Demonstrate how to obtain goals that were triggered during a visitor's interaction, after their session has ended, this data can be sent to an external system to be used to help marketers by informing them of what customer's and leads are doing on their website.</li>
+<li><a href="https://github.com/coreyasmith/sitecore-custom-timeline-eras">Custom Timeline Eras</a> - Demonstrates how to trigger outcomes and display custom outcomes as eras on the Experience Profile timeline in Sitecore.</li>
+</ul>
+<h2>Audit and performance</h2>
+<ul>
+<li><a href="https://github.com/marek-musielak/Skillcore.Stats">Skillcore.Stats</a> - Collect detailed timing information for all your Sitecore MVC renderings and API calls.</li>
+<li><a href="https://github.com/cardinal252/Sitecore.Boost">Sitecore.Boost</a> - This repository contains a whole wealth of potential patches for the performance Improvements for the Sitecore platform, most of which are running in production instances of Sitecore.</li>
+<li><a href="https://github.com/martinrayenglish/Sitecore.Cleanup">Sitecore.Cleanup</a> - The module consists of 3 agents that will monitor each of the Event Queue, Publish Queue, and History tables to ensure that they don't exceed a set threshold.</li>
+<li><a href="https://github.com/zkniebel/SitecoreDXG">SitecoreDXG: The Documentation Experience Generator</a> - Sitecore template architecture visualization and documentation tool from the SitecoreUML family. Leveraging the open-source APIs associated with StarUML (on which SitecoreUML is also based), SitecoreDXG provides support for generating template data model architecture diagrams and HTML documentation from any existing Sitecore instance (PaaS and non-PaaS both supported) that has the SitecoreUML Service for Sitecore.</li>
+<li><a href="https://github.com/richardszalay/sitecore-assembly-lists">sitecore-assembly-lists</a> - Sitecore started providing assembly list information for Sitecore releases starting at 8.2 Update 5. This project provides tools for validating Sitecore assembly lists, both against an installation and during the development process.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Sitecore <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p><a href="https://sitecore.com"><img src="sitecore-logo.png" align="right" width="80"></a></p>
+<blockquote>
+<p>A curated list of Sitecore-related projects on GitHub. Please contribute!</p>
+</blockquote>
+<p>Sitecore is a digital platform that helps manage multiple websites from one place. It provides marketing tools that deliver information about customers from different devices (CRMs, tracking, POS, etc.). Sitecore allows creating content to be accessed via different channels (desktops, mobiles, APIs, social media, etc.). The platform is flexible by design, with numerous points of extensions, it can be deployed both on-premise and cloud. The below list classifies extensibility and deployment options for Sitecore developers they can benefit from.</p>
+<p>Contributions welcome. Add links through pull requests or create an issue to start a discussion.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#analytics">Analytics</a></li>
+<li><a href="#audit-and-performance">Audit and performance</a></li>
+<li><a href="#azure">Azure</a></li>
+<li><a href="#cache">Cache</a></li>
+<li><a href="#cdp">CDP</a></li>
+<li><a href="#commerce">Commerce</a></li>
+<li><a href="#configuration">Configuration</a></li>
+<li><a href="#containers">Containers</a></li>
+<li><a href="#content-hub">Content Hub</a></li>
+<li><a href="#content-hub-one">Content Hub One</a></li>
+<li><a href="#content-sdk">Content SDK</a></li>
+<li><a href="#content-search">Content Search</a></li>
+<li><a href="#data">Data</a></li>
+<li><a href="#data-exchange-framework">Data Exchange Framework</a></li>
+<li><a href="#demo">Demo</a></li>
+<li><a href="#deployment">Deployment</a></li>
+<li><a href="#edge">Edge</a></li>
+<li><a href="#editing">Editing</a></li>
+<li><a href="#extending-content-editor">Extending Content Editor</a></li>
+<li><a href="#fields">Fields</a></li>
+<li><a href="#forms">Forms</a></li>
+<li><a href="#frameworks">Frameworks</a></li>
+<li><a href="#graphql">GraphQL</a></li>
+<li><a href="#jamstack">JAMstack</a></li>
+<li><a href="#jss">JSS</a></li>
+<li><a href="#headless">Headless</a></li>
+<li><a href="#helix">Helix</a> </li>
+<li><a href="#icons">Icons</a></li>
+<li><a href="#integration">Integration</a></li>
+<li><a href="#item-resource-files">Item Resource Files</a></li>
+<li><a href="#languages">Languages</a></li>
+<li><a href="#logging">Logging</a></li>
+<li><a href="#maintenance">Maintenance</a></li>
+<li><a href="#marketplace">Marketplace</a></li>
+<li><a href="#media">Media</a></li>
+<li><a href="#net-core-headless">NET Core Headless</a></li>
+<li><a href="#orm">ORM</a> </li>
+<li><a href="#other">Other</a></li>
+<li><a href="#packaging">Packaging</a></li>
+<li><a href="#pipelines">Pipelines</a></li>
+<li><a href="#publishing">Publishing</a></li>
+<li><a href="#rules">Rules</a></li>
+<li><a href="#sdk">SDK</a></li>
+<li><a href="#security">Security</a> </li>
+<li><a href="#seo">SEO</a> </li>
+<li><a href="#serialization">Serialization</a> </li>
+<li><a href="#sitecore-host">Sitecore Host</a></li>
+<li><a href="#sitecore-search">Sitecore Search</a> </li>
+<li><a href="#sitecore-send">Sitecore Send</a> </li>
+<li><a href="#spe-sitecore-powershell-extension">SPE (Sitecore PowerShell Extension)</a></li>
+<li><a href="#speak">SPEAK</a></li>
+<li><a href="#sxa-sitecore-experience-accelerator">SXA (Sitecore Experience Accelerator)</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#templates">Templates</a></li>
+<li><a href="#tooling">Tooling</a></li>
+<li><a href="#universal-tracker">Universal Tracker</a></li>
+<li><a href="#webapi">WebApi</a> </li>
+<li><a href="#workflows">Workflows</a></li>
+<li><a href="#xconnect-and-xdb">xConnect and xDB</a></li>
+<li><a href="#xm-cloud">XM Cloud</a></li>
+</ul>
+<blockquote>
+<p>Please note, <strong>Awesome Sitecore</strong> list only classifies and reviews useful GitHub repositories you may benefit from. </p>
+<p>If you're looking for a more comprehensive list of articles, blog posts, videos, and Q'n'A please refer to the <a href="https://Sitecore.Link">Sitecore Link</a> knowledge base.</p>
+</blockquote>
+<h2>Analytics</h2>
+<ul>
+<li><a href="https://github.com/islaytitans/SitecoreGoalDescription">Sitecore Goal Description</a> - Display the Goal Description in the Experience Profile.</li>
+<li><a href="https://github.com/martinrayenglish/GoalConversions.Demo">Sitecore Goal Conversion Demo</a> - Demonstrate how to obtain goals that were triggered during a visitor's interaction, after their session has ended, this data can be sent to an external system to be used to help marketers by informing them of what customer's and leads are doing on their website.</li>
+<li><a href="https://github.com/coreyasmith/sitecore-custom-timeline-eras">Custom Timeline Eras</a> - Demonstrates how to trigger outcomes and display custom outcomes as eras on the Experience Profile timeline in Sitecore.</li>
+</ul>
+<h2>Audit and performance</h2>
+<ul>
+<li><a href="https://github.com/marek-musielak/Skillcore.Stats">Skillcore.Stats</a> - Collect detailed timing information for all your Sitecore MVC renderings and API calls.</li>
+<li><a href="https://github.com/cardinal252/Sitecore.Boost">Sitecore.Boost</a> - This repository contains a whole wealth of potential patches for the performance Improvements for the Sitecore platform, most of which are running in production instances of Sitecore.</li>
+<li><a href="https://github.com/martinrayenglish/Sitecore.Cleanup">Sitecore.Cleanup</a> - The module consists of 3 agents that will monitor each of the Event Queue, Publish Queue, and History tables to ensure that they don't exceed a set threshold.</li>
+<li><a href="https://github.com/zkniebel/SitecoreDXG">SitecoreDXG: The Documentation Experience Generator</a> - Sitecore template architecture visualization and documentation tool from the SitecoreUML family. Leveraging the open-source APIs associated with StarUML (on which SitecoreUML is also based), SitecoreDXG provides support for generating template data model architecture diagrams and HTML documentation from any existing Sitecore instance (PaaS and non-PaaS both supported) that has the SitecoreUML Service for Sitecore.</li>
+<li><a href="https://github.com/richardszalay/sitecore-assembly-lists">sitecore-assembly-lists</a> - Sitecore started providing assembly list information for Sitecore releases starting at 8.2 Update 5. This project provides tools for validating Sitecore assembly lists, both against an installation and during the development process.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'sitecore_README.md';
 
         fetch(markdownFile)
@@ -48,21 +215,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

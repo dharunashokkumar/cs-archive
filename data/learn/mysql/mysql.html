@@ -8,38 +8,213 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Shlomi Noach Awesome Mysql - Awesome List Resources">
-    <title>Shlomi Noach Awesome Mysql</title>
+    <meta name="description" content="A curated list of awesome MySQL free and opensource software, libraries and resources. This list accepts and encourages pull requests. See CONTRIBUTING -...">
+    <meta name="robots" content="index, follow">
+    <title>awesome-mysql - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>awesome-mysql</h1>
+<p>A curated list of awesome MySQL free and opensource software, libraries and resources. <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></p>
+<p>This list accepts and encourages pull requests. See <a href="https://github.com/shlomi-noach/awesome-mysql/blob/master/CONTRIBUTING.md">CONTRIBUTING</a></p>
+<h3>Contents</h3>
+<ul>
+<li>
+<p><a href="#awesome-mysql">Awesome MySQL</a></p>
+<ul>
+<li><a href="#analysis">Analysis</a></li>
+<li><a href="#backup">Backup</a></li>
+<li><a href="#benchmarking">Benchmarking</a></li>
+<li><a href="#binlog-replication">Binlog Replication</a></li>
+<li><a href="#chatops">ChatOps</a></li>
+<li><a href="#configuration">Configuration</a></li>
+<li><a href="#connectors">Connectors</a></li>
+<li><a href="#deployment">Deployment</a></li>
+<li><a href="#development">Development</a></li>
+<li><a href="#gui">GUI</a></li>
+<li><a href="#ha">HA</a></li>
+<li><a href="#mcp">MCP</a></li>
+<li><a href="#proxy">Proxy</a></li>
+<li><a href="#replication">Replication</a></li>
+<li><a href="#schema">Schema</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#server">Server</a></li>
+<li><a href="#sharding">Sharding</a></li>
+<li><a href="#toolkits">Toolkits</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#resources">Resources</a></p>
+<ul>
+<li><a href="#e-books">E-Books</a></li>
+<li><a href="#media">Media</a></li>
+<li><a href="#newsletters">Newsletters</a></li>
+</ul>
+</li>
+</ul>
+<h2>Analysis</h2>
+<p><em>Performance, structure &amp; data analysis tools</em></p>
+<ul>
+<li><a href="https://github.com/box/Anemometer">Anemometer</a> - Box SQL slow query monitor.</li>
+<li><a href="https://github.com/jeremycole/innodb_ruby">innodb-ruby</a> - A parser for InnoDB file formats, in Ruby.</li>
+<li><a href="https://github.com/innotop/innotop">innotop</a> - a 'top' clone for MySQL with many features and flexibility.</li>
+<li><a href="https://github.com/Preetam/explain-analyzer">MySQL Explain Analyzer</a> - A web-based analyzer of <code>EXPLAIN FORMAT=JSON</code> output, providing comments, scalability analysis and permalinks for saved samples.</li>
+<li><a href="https://github.com/db-art/mysql-statsd">mysql-statsd</a> - A Python daemon to collect information from MySQL and send it via StatsD to Graphite.</li>
+<li><a href="https://github.com/major/MySQLTuner-perl">MySQLTuner-perl</a> - A script that allows you to review a MySQL installation quickly and make adjustments to increase performance and stability.</li>
+<li><a href="https://github.com/prometheus/prometheus">Prometheus</a>/<a href="https://github.com/prometheus/mysqld_exporter">mysqld_exporter</a> - Time series database for real-time monitoring and alerting.</li>
+<li><a href="https://github.com/sjmudd/ps-top">pstop</a> - a top-like program for MySQL, collecting, aggregating and displaying information from performance_schema.</li>
+<li><a href="https://gitlab.com/wireshark/wireshark/">Wireshark</a> - a protocol analyzer that can decode the MySQL protocol.</li>
+<li><a href="https://github.com/charles-001/dolphie">Dolphie</a> - a modern terminal tool for real-time analytics into MySQL/MariaDB &amp; ProxySQL</li>
+</ul>
+<h2>Backup</h2>
+<p><em>Backup/restore/recovery tools</em></p>
+<ul>
+<li><a href="https://github.com/pingcap/tidb/tree/master/dumpling">Dumpling</a> - Logical, parallel backup/dumper tool for MySQL/TiDB written in GoLang - support csv format output and integrated as library</li>
+<li><a href="https://github.com/mydumper/mydumper">MyDumper</a> - Logical, parallel backup/dumper tool for MySQL</li>
+<li><a href="https://github.com/percona/percona-xtrabackup">Percona Xtrabackup</a> - an open-source hot backup utility for MySQL - based servers that doesn’t lock your database during the backup.</li>
+</ul>
+<h2>Benchmarking</h2>
+<p><em>Tools to stress your servers</em></p>
+<ul>
+<li><a href="https://github.com/pingcap/go-tpc">go-tpc</a> - A golang port of <a href="http://www.tpc.org/tpcc/">TPCC</a> and <a href="http://www.tpc.org/tpch/">TPCH</a> benchmark for MySQL.</li>
+<li><a href="https://github.com/tmcallaghan/iibench-mysql">iibench-mysql</a> - Java based version of the Index Insertion Benchmark for MySQL/Percona/MariaDB.</li>
+<li><a href="https://github.com/akopytov/sysbench">Sysbench</a> - a modular, cross-platform and multi-threaded benchmark tool.</li>
+<li><a href="https://github.com/Percona-Lab/tpcc-mysql">TPCC-MySQL</a> (archived) - A port of the popular <a href="http://www.tpc.org/tpcc/">TPCC</a> benchmark for MySQL.</li>
+</ul>
+<h2>Binlog-Replication</h2>
+<ul>
+<li><a href="https://github.com/pingcap/tiflow">DM</a> - A High-Availability data migration platform which supports migrating data from MySQL/MariaDB to TiDB and merging shard tables</li>
+<li><a href="https://github.com/flike/kingbus">Kingbus</a> - A distributed MySQL binlog storage system built on Raft</li>
+<li><a href="https://github.com/google/mysql-ripple">mysql-ripple</a> (archived) - Ripple, a server that can serve as a middleman in MySQL replication</li>
+</ul>
+<h2>ChatOps</h2>
+<p><em>Scripts integrated into chat rooms</em></p>
+<ul>
+<li><a href="https://github.com/samlambert/hubot-mysql-chatops">Hubot MySQL ChatOps</a></li>
+</ul>
+<h2>Configuration</h2>
+<p><em>MySQL sample configuration and advisors</em></p>
+<ul>
+<li><a href="https://github.com/morgo/mysql-compatibility-config">mysql-compatibility-config</a> - make MySQL configuration behave more like newer (or older) releases of MySQL.</li>
+</ul>
+<h2>Connectors</h2>
+<p><em>MySQL connectors for various programming languages</em></p>
+<ul>
+<li><a href="https://github.com/ballerina-platform/module-ballerinax-mysql">ballerinax/mysql</a> - Official Ballerina connector for MySQL.</li>
+<li><a href="https://github.com/perl5-dbi/DBD-MariaDB">DBD::MariaDB</a> - MariaDB and MySQL driver for the Perl5 Database Interface.</li>
+<li><a href="https://github.com/perl5-dbi/DBD-mysql">DBD::mysql</a> - MySQL driver for the Perl5 Database Interface.</li>
+<li><a href="https://github.com/go-sql-driver/mysql">go-sql-driver</a> - a lightweight and fast MySQL-Driver for Go's (golang) database/sql package.</li>
+<li><a href="https://github.com/libattachsql/libattachsql">libAttachSQL</a> - libAttachSQL is a lightweight, non-blocking C API for MySQL servers.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>awesome-mysql</h1>
+<p>A curated list of awesome MySQL free and opensource software, libraries and resources. <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></p>
+<p>This list accepts and encourages pull requests. See <a href="https://github.com/shlomi-noach/awesome-mysql/blob/master/CONTRIBUTING.md">CONTRIBUTING</a></p>
+<h3>Contents</h3>
+<ul>
+<li>
+<p><a href="#awesome-mysql">Awesome MySQL</a></p>
+<ul>
+<li><a href="#analysis">Analysis</a></li>
+<li><a href="#backup">Backup</a></li>
+<li><a href="#benchmarking">Benchmarking</a></li>
+<li><a href="#binlog-replication">Binlog Replication</a></li>
+<li><a href="#chatops">ChatOps</a></li>
+<li><a href="#configuration">Configuration</a></li>
+<li><a href="#connectors">Connectors</a></li>
+<li><a href="#deployment">Deployment</a></li>
+<li><a href="#development">Development</a></li>
+<li><a href="#gui">GUI</a></li>
+<li><a href="#ha">HA</a></li>
+<li><a href="#mcp">MCP</a></li>
+<li><a href="#proxy">Proxy</a></li>
+<li><a href="#replication">Replication</a></li>
+<li><a href="#schema">Schema</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#server">Server</a></li>
+<li><a href="#sharding">Sharding</a></li>
+<li><a href="#toolkits">Toolkits</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#resources">Resources</a></p>
+<ul>
+<li><a href="#e-books">E-Books</a></li>
+<li><a href="#media">Media</a></li>
+<li><a href="#newsletters">Newsletters</a></li>
+</ul>
+</li>
+</ul>
+<h2>Analysis</h2>
+<p><em>Performance, structure &amp; data analysis tools</em></p>
+<ul>
+<li><a href="https://github.com/box/Anemometer">Anemometer</a> - Box SQL slow query monitor.</li>
+<li><a href="https://github.com/jeremycole/innodb_ruby">innodb-ruby</a> - A parser for InnoDB file formats, in Ruby.</li>
+<li><a href="https://github.com/innotop/innotop">innotop</a> - a 'top' clone for MySQL with many features and flexibility.</li>
+<li><a href="https://github.com/Preetam/explain-analyzer">MySQL Explain Analyzer</a> - A web-based analyzer of <code>EXPLAIN FORMAT=JSON</code> output, providing comments, scalability analysis and permalinks for saved samples.</li>
+<li><a href="https://github.com/db-art/mysql-statsd">mysql-statsd</a> - A Python daemon to collect information from MySQL and send it via StatsD to Graphite.</li>
+<li><a href="https://github.com/major/MySQLTuner-perl">MySQLTuner-perl</a> - A script that allows you to review a MySQL installation quickly and make adjustments to increase performance and stability.</li>
+<li><a href="https://github.com/prometheus/prometheus">Prometheus</a>/<a href="https://github.com/prometheus/mysqld_exporter">mysqld_exporter</a> - Time series database for real-time monitoring and alerting.</li>
+<li><a href="https://github.com/sjmudd/ps-top">pstop</a> - a top-like program for MySQL, collecting, aggregating and displaying information from performance_schema.</li>
+<li><a href="https://gitlab.com/wireshark/wireshark/">Wireshark</a> - a protocol analyzer that can decode the MySQL protocol.</li>
+<li><a href="https://github.com/charles-001/dolphie">Dolphie</a> - a modern terminal tool for real-time analytics into MySQL/MariaDB &amp; ProxySQL</li>
+</ul>
+<h2>Backup</h2>
+<p><em>Backup/restore/recovery tools</em></p>
+<ul>
+<li><a href="https://github.com/pingcap/tidb/tree/master/dumpling">Dumpling</a> - Logical, parallel backup/dumper tool for MySQL/TiDB written in GoLang - support csv format output and integrated as library</li>
+<li><a href="https://github.com/mydumper/mydumper">MyDumper</a> - Logical, parallel backup/dumper tool for MySQL</li>
+<li><a href="https://github.com/percona/percona-xtrabackup">Percona Xtrabackup</a> - an open-source hot backup utility for MySQL - based servers that doesn’t lock your database during the backup.</li>
+</ul>
+<h2>Benchmarking</h2>
+<p><em>Tools to stress your servers</em></p>
+<ul>
+<li><a href="https://github.com/pingcap/go-tpc">go-tpc</a> - A golang port of <a href="http://www.tpc.org/tpcc/">TPCC</a> and <a href="http://www.tpc.org/tpch/">TPCH</a> benchmark for MySQL.</li>
+<li><a href="https://github.com/tmcallaghan/iibench-mysql">iibench-mysql</a> - Java based version of the Index Insertion Benchmark for MySQL/Percona/MariaDB.</li>
+<li><a href="https://github.com/akopytov/sysbench">Sysbench</a> - a modular, cross-platform and multi-threaded benchmark tool.</li>
+<li><a href="https://github.com/Percona-Lab/tpcc-mysql">TPCC-MySQL</a> (archived) - A port of the popular <a href="http://www.tpc.org/tpcc/">TPCC</a> benchmark for MySQL.</li>
+</ul>
+<h2>Binlog-Replication</h2>
+<ul>
+<li><a href="https://github.com/pingcap/tiflow">DM</a> - A High-Availability data migration platform which supports migrating data from MySQL/MariaDB to TiDB and merging shard tables</li>
+<li><a href="https://github.com/flike/kingbus">Kingbus</a> - A distributed MySQL binlog storage system built on Raft</li>
+<li><a href="https://github.com/google/mysql-ripple">mysql-ripple</a> (archived) - Ripple, a server that can serve as a middleman in MySQL replication</li>
+</ul>
+<h2>ChatOps</h2>
+<p><em>Scripts integrated into chat rooms</em></p>
+<ul>
+<li><a href="https://github.com/samlambert/hubot-mysql-chatops">Hubot MySQL ChatOps</a></li>
+</ul>
+<h2>Configuration</h2>
+<p><em>MySQL sample configuration and advisors</em></p>
+<ul>
+<li><a href="https://github.com/morgo/mysql-compatibility-config">mysql-compatibility-config</a> - make MySQL configuration behave more like newer (or older) releases of MySQL.</li>
+</ul>
+<h2>Connectors</h2>
+<p><em>MySQL connectors for various programming languages</em></p>
+<ul>
+<li><a href="https://github.com/ballerina-platform/module-ballerinax-mysql">ballerinax/mysql</a> - Official Ballerina connector for MySQL.</li>
+<li><a href="https://github.com/perl5-dbi/DBD-MariaDB">DBD::MariaDB</a> - MariaDB and MySQL driver for the Perl5 Database Interface.</li>
+<li><a href="https://github.com/perl5-dbi/DBD-mysql">DBD::mysql</a> - MySQL driver for the Perl5 Database Interface.</li>
+<li><a href="https://github.com/go-sql-driver/mysql">go-sql-driver</a> - a lightweight and fast MySQL-Driver for Go's (golang) database/sql package.</li>
+<li><a href="https://github.com/libattachsql/libattachsql">libAttachSQL</a> - libAttachSQL is a lightweight, non-blocking C API for MySQL servers.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'mysql_README.md';
 
         fetch(markdownFile)
@@ -48,21 +223,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

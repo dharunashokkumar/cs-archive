@@ -8,38 +8,255 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kdeldycke Awesome Billing - Awesome List Resources">
-    <title>Kdeldycke Awesome Billing</title>
+    <meta name="description" content="Yᴏᴜʀ Pʀᴏᴅᴜᴄᴛ ʜᴇʀᴇ! Add a link to your company or project here: purchase a GitHub sponsorship. --- Money is the most universal and most efficient system of...">
+    <meta name="robots" content="index, follow">
+    <title>Billing - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <!--lint disable awesome-heading-->
+
+<p align="center">
+  <a href="https://github.com/kdeldycke/awesome-billing/">
+    <img src="https://github.com/kdeldycke/awesome-billing/raw/main/assets/awesome-billing-header.jpg" alt="💰 Awesome Billing">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/sponsors/kdeldycke">
+    <strong>Yᴏᴜʀ Pʀᴏᴅᴜᴄᴛ ʜᴇʀᴇ!</strong>
+    <br/>
+    <sup>Add a link to your company or project here: purchase a GitHub sponsorship.</sup>
+  </a>
+</p>
+
+<hr />
+<p align="center">
+  <i>Money is the most universal and most efficient system of mutual trust ever devised.</i><br>
+  — Yuval Noah Harari<sup id="intro-quote-ref"><a href="#intro-quote-def">[1]</a></sup>
+</p>
+
+<p>Any company needs at one point to get money from customers. That's when things gets messy for us developers, as we try to reconcile the complexity of the business with our software stack.</p>
+<p>This <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a> list helps software engineers <strong>bootstrap billing &amp; payments systems, and make sense of invoicing, pricing, accounting, marketplace, fraud and business intelligence</strong>.</p>
+<h2>Contents</h2>
+<!-- mdformat-toc start --slug=github --no-anchors --maxlevel=6 --minlevel=2 -->
+
+<ul>
+<li><a href="#basics">Basics</a></li>
+<li><a href="#pricing">Pricing</a></li>
+<li><a href="#usage-based-pricing">Usage-based Pricing</a></li>
+<li><a href="#subscription-plans">Subscription Plans</a></li>
+<li><a href="#hybrid">Hybrid</a></li>
+<li><a href="#strategy">Strategy</a></li>
+<li><a href="#market-research">Market Research</a></li>
+<li><a href="#product-catalog">Product Catalog</a></li>
+<li><a href="#calculator">Calculator</a></li>
+<li><a href="#cost-forecast">Cost Forecast</a></li>
+<li><a href="#marketplace">Marketplace</a></li>
+<li><a href="#cloud-resources">Cloud Resources</a></li>
+<li><a href="#online-ads">Online Ads</a></li>
+<li><a href="#accounting">Accounting</a></li>
+<li><a href="#double-entry-model">Double-Entry Model</a></li>
+<li><a href="#bookkeeping">Bookkeeping</a></li>
+<li><a href="#software-design-and-implementation">Software design and implementation</a></li>
+<li><a href="#currencies">Currencies</a></li>
+<li><a href="#finance">Finance</a></li>
+<li><a href="#contracts">Contracts</a></li>
+<li><a href="#coupons-and-vouchers">Coupons and Vouchers</a></li>
+<li><a href="#taxes">Taxes</a></li>
+<li><a href="#european-vat">European VAT</a></li>
+<li><a href="#invoice">Invoice</a></li>
+<li><a href="#structure">Structure</a></li>
+<li><a href="#integrity">Integrity</a></li>
+<li><a href="#generators">Generators</a></li>
+<li><a href="#extractors">Extractors</a></li>
+<li><a href="#electronic-invoices">Electronic invoices</a></li>
+<li><a href="#payments">Payments</a></li>
+<li><a href="#receipt">Receipt</a></li>
+<li><a href="#credit-cards">Credit Cards</a></li>
+<li><a href="#bank-accounts">Bank Accounts</a></li>
+<li><a href="#online-payments">Online Payments</a></li>
+<li><a href="#fraud">Fraud</a></li>
+<li><a href="#cards">Cards</a></li>
+<li><a href="#trust-score">Trust Score</a></li>
+<li><a href="#statistics">Statistics</a></li>
+<li><a href="#billing">Billing</a></li>
+<li><a href="#uxui">UX/UI</a></li>
+<li><a href="#business-intelligence">Business Intelligence</a></li>
+<li><a href="#metrics">Metrics</a></li>
+<li><a href="#customer-lifetime-value">Customer Lifetime Value</a></li>
+<li><a href="#data-engineering">Data Engineering</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#competitive-analysis">Competitive Analysis</a></li>
+<li><a href="#cloud-providers">Cloud providers</a></li>
+<li><a href="#history">History</a></li>
+<li><a href="#humour">Humour</a></li>
+</ul>
+<!-- mdformat-toc end -->
+
+<h2>Basics</h2>
+<p><img align="right" width="50%" src="./assets/cloud-software-stack-billing.jpg"/></p>
+<p>In a Stanford class providing an <a href="https://web.stanford.edu/class/cs349d/docs/L01_overview.pdf">overview of cloud computing</a>, the software architecture of the platform is described as in the right diagram →</p>
+<!--lint disable double-link-->
+
+<p>Billing is one of the transversal pillar of the ecosystem, where customers, products and business meets. The <a href="https://github.com/kdeldycke/awesome-iam/">other pillar being Identity and Access Management (IAM) 👤</a>.</p>
+<!--lint enable double-link-->
+
+<p>This highlight the strategic importance of the domain, not only for cloud providers but virtually any business, especially those who are software-centric.</p>
+<ul>
+<li>
+<p><a href="https://arnon.dk/5-things-i-learned-developing-billing-system/">5 things I learned while developing a billing system</a> - A great introduction on all the various aspects of a billing system, from currency to invoices, including great illustrations on the logic of changing plans. All these topics are detailed in dedicated sections below.</p>
+</li>
+<li>
+<p><a href="https://github.com/open-guides/og-aws#billing-and-cost-management">Open guide to AWS</a> - Links to the <em>Billing and Cost Management</em> section which details the broad characteristics of billing for a cloud provider.</p>
+</li>
+<li>
+<p><a href="https://xunroll.com/thread/1668082843728367616">Billed for ¥21,120, invoiced at ¥2,112,000 and paid ¥2,112,000</a> - <a href="https://xunroll.com/thread/1599113889093890049">Get rid of integers and floats for monetary values</a>. Use decimals. Or face the risks of anomalous x100 charges.</p>
+</li>
+<li>
+<p>How to recruit software engineers in this domain? “The trick is to make the accounting/billing/payment department the antechamber of data engineering.” (<a href="https://x.com/kdeldycke/status/1422564355799924736">source</a>)</p>
+</li>
+</ul>
+<h2>Pricing</h2>
+<p>From monthly subscription to commodity-like on-the-go consumption, there's plenty of scheme out there to structure your product's pricing. Including the good old shopping-cart funnel.</p>
+<ul>
+<li>
+<p><a href="https://neildavidson.com/downloads/dont-just-roll-the-dice-2.0.0.pdf">Don't just roll the dice – Software pricing guide</a> - Huge and complete collection of pricing scheme, with their psychological effect and impact on revenue model.</p>
+</li>
+<li>
+<p><a href="https://reasonstreet.co/business-model-library/">Business Model Patterns</a> - A list of 15 different ways to sell products and services.</p>
+</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <!--lint disable awesome-heading-->
+
+<p align="center">
+  <a href="https://github.com/kdeldycke/awesome-billing/">
+    <img src="https://github.com/kdeldycke/awesome-billing/raw/main/assets/awesome-billing-header.jpg" alt="💰 Awesome Billing">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/sponsors/kdeldycke">
+    <strong>Yᴏᴜʀ Pʀᴏᴅᴜᴄᴛ ʜᴇʀᴇ!</strong>
+    <br/>
+    <sup>Add a link to your company or project here: purchase a GitHub sponsorship.</sup>
+  </a>
+</p>
+
+<hr />
+<p align="center">
+  <i>Money is the most universal and most efficient system of mutual trust ever devised.</i><br>
+  — Yuval Noah Harari<sup id="intro-quote-ref"><a href="#intro-quote-def">[1]</a></sup>
+</p>
+
+<p>Any company needs at one point to get money from customers. That's when things gets messy for us developers, as we try to reconcile the complexity of the business with our software stack.</p>
+<p>This <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a> list helps software engineers <strong>bootstrap billing &amp; payments systems, and make sense of invoicing, pricing, accounting, marketplace, fraud and business intelligence</strong>.</p>
+<h2>Contents</h2>
+<!-- mdformat-toc start --slug=github --no-anchors --maxlevel=6 --minlevel=2 -->
+
+<ul>
+<li><a href="#basics">Basics</a></li>
+<li><a href="#pricing">Pricing</a></li>
+<li><a href="#usage-based-pricing">Usage-based Pricing</a></li>
+<li><a href="#subscription-plans">Subscription Plans</a></li>
+<li><a href="#hybrid">Hybrid</a></li>
+<li><a href="#strategy">Strategy</a></li>
+<li><a href="#market-research">Market Research</a></li>
+<li><a href="#product-catalog">Product Catalog</a></li>
+<li><a href="#calculator">Calculator</a></li>
+<li><a href="#cost-forecast">Cost Forecast</a></li>
+<li><a href="#marketplace">Marketplace</a></li>
+<li><a href="#cloud-resources">Cloud Resources</a></li>
+<li><a href="#online-ads">Online Ads</a></li>
+<li><a href="#accounting">Accounting</a></li>
+<li><a href="#double-entry-model">Double-Entry Model</a></li>
+<li><a href="#bookkeeping">Bookkeeping</a></li>
+<li><a href="#software-design-and-implementation">Software design and implementation</a></li>
+<li><a href="#currencies">Currencies</a></li>
+<li><a href="#finance">Finance</a></li>
+<li><a href="#contracts">Contracts</a></li>
+<li><a href="#coupons-and-vouchers">Coupons and Vouchers</a></li>
+<li><a href="#taxes">Taxes</a></li>
+<li><a href="#european-vat">European VAT</a></li>
+<li><a href="#invoice">Invoice</a></li>
+<li><a href="#structure">Structure</a></li>
+<li><a href="#integrity">Integrity</a></li>
+<li><a href="#generators">Generators</a></li>
+<li><a href="#extractors">Extractors</a></li>
+<li><a href="#electronic-invoices">Electronic invoices</a></li>
+<li><a href="#payments">Payments</a></li>
+<li><a href="#receipt">Receipt</a></li>
+<li><a href="#credit-cards">Credit Cards</a></li>
+<li><a href="#bank-accounts">Bank Accounts</a></li>
+<li><a href="#online-payments">Online Payments</a></li>
+<li><a href="#fraud">Fraud</a></li>
+<li><a href="#cards">Cards</a></li>
+<li><a href="#trust-score">Trust Score</a></li>
+<li><a href="#statistics">Statistics</a></li>
+<li><a href="#billing">Billing</a></li>
+<li><a href="#uxui">UX/UI</a></li>
+<li><a href="#business-intelligence">Business Intelligence</a></li>
+<li><a href="#metrics">Metrics</a></li>
+<li><a href="#customer-lifetime-value">Customer Lifetime Value</a></li>
+<li><a href="#data-engineering">Data Engineering</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#competitive-analysis">Competitive Analysis</a></li>
+<li><a href="#cloud-providers">Cloud providers</a></li>
+<li><a href="#history">History</a></li>
+<li><a href="#humour">Humour</a></li>
+</ul>
+<!-- mdformat-toc end -->
+
+<h2>Basics</h2>
+<p><img align="right" width="50%" src="./assets/cloud-software-stack-billing.jpg"/></p>
+<p>In a Stanford class providing an <a href="https://web.stanford.edu/class/cs349d/docs/L01_overview.pdf">overview of cloud computing</a>, the software architecture of the platform is described as in the right diagram →</p>
+<!--lint disable double-link-->
+
+<p>Billing is one of the transversal pillar of the ecosystem, where customers, products and business meets. The <a href="https://github.com/kdeldycke/awesome-iam/">other pillar being Identity and Access Management (IAM) 👤</a>.</p>
+<!--lint enable double-link-->
+
+<p>This highlight the strategic importance of the domain, not only for cloud providers but virtually any business, especially those who are software-centric.</p>
+<ul>
+<li>
+<p><a href="https://arnon.dk/5-things-i-learned-developing-billing-system/">5 things I learned while developing a billing system</a> - A great introduction on all the various aspects of a billing system, from currency to invoices, including great illustrations on the logic of changing plans. All these topics are detailed in dedicated sections below.</p>
+</li>
+<li>
+<p><a href="https://github.com/open-guides/og-aws#billing-and-cost-management">Open guide to AWS</a> - Links to the <em>Billing and Cost Management</em> section which details the broad characteristics of billing for a cloud provider.</p>
+</li>
+<li>
+<p><a href="https://xunroll.com/thread/1668082843728367616">Billed for ¥21,120, invoiced at ¥2,112,000 and paid ¥2,112,000</a> - <a href="https://xunroll.com/thread/1599113889093890049">Get rid of integers and floats for monetary values</a>. Use decimals. Or face the risks of anomalous x100 charges.</p>
+</li>
+<li>
+<p>How to recruit software engineers in this domain? “The trick is to make the accounting/billing/payment department the antechamber of data engineering.” (<a href="https://x.com/kdeldycke/status/1422564355799924736">source</a>)</p>
+</li>
+</ul>
+<h2>Pricing</h2>
+<p>From monthly subscription to commodity-like on-the-go consumption, there's plenty of scheme out there to structure your product's pricing. Including the good old shopping-cart funnel.</p>
+<ul>
+<li>
+<p><a href="https://neildavidson.com/downloads/dont-just-roll-the-dice-2.0.0.pdf">Don't just roll the dice – Software pricing guide</a> - Huge and complete collection of pricing scheme, with their psychological effect and impact on revenue model.</p>
+</li>
+<li>
+<p><a href="https://reasonstreet.co/business-model-library/">Business Model Patterns</a> - A list of 15 different ways to sell products and services.</p>
+</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'billing_README.md';
 
         fetch(markdownFile)
@@ -48,21 +265,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

@@ -8,38 +8,145 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Raphamorim Awesome Canvas - Awesome List Resources">
-    <title>Raphamorim Awesome Canvas</title>
+    <meta name="description" content="A curated list of awesome Canvas examples, related articles and posts. Inspired by awesome-python. Please take a quick gander at the contribution guidelines...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Canvas - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Canvas</h1>
+<p><a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></p>
+<p>A curated list of awesome Canvas examples, related articles and posts. Inspired by <a href="https://github.com/vinta/awesome-python">awesome-python</a>.</p>
+<h2>Contributing</h2>
+<p>Please take a quick gander at the <a href="https://github.com/raphamorim/awesome-canvas/blob/master/CONTRIBUTING.md">contribution guidelines</a> first.</p>
+<h2>Summary</h2>
+<ul>
+<li>
+<p><a href="#canvas">Canvas</a></p>
+<ul>
+<li><a href="#definition">Definition</a></li>
+<li><a href="#examples">Examples</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#libraries">Libraries</a></p>
+</li>
+<li>
+<p><a href="#resources">Resources</a></p>
+<ul>
+<li><a href="#talks">Talks</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#twitter">Twitter</a></li>
+<li><a href="#websites-and-tutorials">Websites and Tutorials</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#license">License</a></p>
+</li>
+</ul>
+<h2>Canvas</h2>
+<h3>Definition</h3>
+<p>"Added in HTML5, the HTML &lt;canvas&gt; element can be used to draw graphics via scripting in JavaScript. For example, it can be used to draw graphs, make photo compositions, create animations or even do real-time video processing or rendering." by <a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API">Mozilla Developer Network</a></p>
+<h3>Examples</h3>
+<p><em>Some good examples about creation with canvas.</em></p>
+<ul>
+<li><a href="http://codepen.io/soulwire/full/Ffvlo">30.000 particles</a> [<a href="http://codepen.io/soulwire/pen/Ffvlo">show me the code</a>] • A result of a study creating performant particles with Canvas 2D.</li>
+<li><a href="http://www.effectgames.com/demos/canvascycle/">Canvas Colour Cycling</a> [<a href="http://www.effectgames.com/effect/article.psp.html/joe/Old_School_Color_Cycling_with_HTML5">show me the code</a>] • This demo is an implementation of a full 8-bit color cycling engine, rendered into an HTML5 Canvas in real-time.</li>
+<li><a href="http://cssdeck.com/labs/full/4do6cnjm">Canvas Loader</a> [<a href="http://cssdeck.com/labs/4do6cnjm">show me the code</a>] • Reference to make loaders using canvas.</li>
+<li><a href="http://cssdeck.com/labs/full/zeaklousedit">Circular Rings</a> [<a href="http://cssdeck.com/labs/zeaklousedit">show me the code</a>] • A great example about how to create circular rings using canvas.</li>
+<li><a href="http://gyu.que.jp/jscloth/">Cloth 3D Effect</a> (Google Chrome strongly recommended) • Thid demo renders a 3d model of Apple iPod with sphere environmental mapping technique.</li>
+<li><a href="http://raphamorim.io/canvas-experiments/cloth">Cloth Effect</a> [<a href="https://github.com/raphamorim/canvas-experiments">show me the code</a>] • A cloth 3D effect fork.</li>
+<li><a href="http://raphamorim.io/canvas-experiments/particles">Colorful Particles</a> [<a href="https://github.com/raphamorim/canvas-experiments">show me the code</a>] • Experiment show how to generates random particles. Very simple code for assimilate.</li>
+<li><a href="http://www.kevs3d.co.uk/dev/shaders/distancefield3.html">Distance Field Waves</a> [<a href="https://github.com/kevinroast/webglshaders/blob/master/distancefield3.html">show me the code</a>] • A example about GPU rendering shader experiments with procedural 3D scene generation using ray marching and distance field (also known as 'sphere tracing') rendering techniques.</li>
+<li><a href="http://raphamorim.io/canvas-experiments/draw">Draw Table</a> - [<a href="https://github.com/raphamorim/canvas-experiments">show me the code</a>] • A simple example about events using canvas.</li>
+<li><a href="http://cssdeck.com/labs/full/fibrous">Fibrous Texture</a> [<a href="http://cssdeck.com/labs/fibrous">show me the code</a>] • Simple canvas based animation; draws random lines across the field. Makes an interesting papery pattern that becomes increasingly detailed with each iteration.</li>
+<li><a href="http://cssdeck.com/labs/full/image-nodes">Image Nodes</a> [<a href="http://cssdeck.com/labs/image-nodes">show me the code</a>] • Interactive nodes built from image data. Use the mouse to play.</li>
+<li><a href="http://raphamorim.io/canvas-experiments/inception">Inception</a> [<a href="https://github.com/raphamorim/canvas-experiments">show me the code</a>] • Generates a scrawl of a city, a canvas HTML5 experiment. Based on Inception movie </li>
+<li><a href="http://cssdeck.com/labs/full/js-metaballs">JS Metaballs</a> [<a href="http://cssdeck.com/labs/js-metaballs">show me the code</a>] • Experiment for Chrome. Mix of webkit-filter and canvas for a metaballs effect.</li>
+<li><a href="http://raphamorim.io/just-canvas/">Just Canvas</a> [<a href="https://github.com/raphamorim/just-canvas">show me the code</a>]• This is a JavaScript experiment to capture movements. Just Dance Idea + HTML5 Canvas Implementation.</li>
+<li><a href="http://lab.hakim.se/linjer/">Linjer</a> • Amazing experiment about nodes effects in addition with cloth and animation effect.</li>
+<li><a href="http://spielzeugz.de/html5/liquid-particles.html">Liquid Particles</a> • A good example about Liquid Particles.</li>
+<li><a href="http://www.lucidchart.com/documents/demo">LucidChart</a> • A complete tool to draw diagrams and other geometric forms, made in canvas.</li>
+<li><a href="http://www.kevs3d.co.uk/dev/lsystems/">L-System Turtle Fractal Renderer</a> • A example about fractal renderer using canvas.</li>
+<li><a href="https://matrix.dotglitch.dev/">Matrix Animation</a> [<a href="https://github.com/knackstedt/matrix-animation">show me the code</a>] • A Matrix Rain animation using canvas.</li>
+<li><a href="http://codepen.io/ara_node/full/nuJCG/">Motion Graphic Typeface</a> [<a href="http://codepen.io/ara_node/pen/nuJCG">show me the code</a>] • A example about typeface animation.</li>
+<li><a href="http://cssdeck.com/labs/full/neatnait-canvas-rain">Neatnait Canvas Rain</a> [<a href="http://cssdeck.com/labs/neatnait-canvas-rain">show me the code</a>] • A reference to create rain particles.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Canvas</h1>
+<p><a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></p>
+<p>A curated list of awesome Canvas examples, related articles and posts. Inspired by <a href="https://github.com/vinta/awesome-python">awesome-python</a>.</p>
+<h2>Contributing</h2>
+<p>Please take a quick gander at the <a href="https://github.com/raphamorim/awesome-canvas/blob/master/CONTRIBUTING.md">contribution guidelines</a> first.</p>
+<h2>Summary</h2>
+<ul>
+<li>
+<p><a href="#canvas">Canvas</a></p>
+<ul>
+<li><a href="#definition">Definition</a></li>
+<li><a href="#examples">Examples</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#libraries">Libraries</a></p>
+</li>
+<li>
+<p><a href="#resources">Resources</a></p>
+<ul>
+<li><a href="#talks">Talks</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#twitter">Twitter</a></li>
+<li><a href="#websites-and-tutorials">Websites and Tutorials</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#license">License</a></p>
+</li>
+</ul>
+<h2>Canvas</h2>
+<h3>Definition</h3>
+<p>"Added in HTML5, the HTML &lt;canvas&gt; element can be used to draw graphics via scripting in JavaScript. For example, it can be used to draw graphs, make photo compositions, create animations or even do real-time video processing or rendering." by <a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API">Mozilla Developer Network</a></p>
+<h3>Examples</h3>
+<p><em>Some good examples about creation with canvas.</em></p>
+<ul>
+<li><a href="http://codepen.io/soulwire/full/Ffvlo">30.000 particles</a> [<a href="http://codepen.io/soulwire/pen/Ffvlo">show me the code</a>] • A result of a study creating performant particles with Canvas 2D.</li>
+<li><a href="http://www.effectgames.com/demos/canvascycle/">Canvas Colour Cycling</a> [<a href="http://www.effectgames.com/effect/article.psp.html/joe/Old_School_Color_Cycling_with_HTML5">show me the code</a>] • This demo is an implementation of a full 8-bit color cycling engine, rendered into an HTML5 Canvas in real-time.</li>
+<li><a href="http://cssdeck.com/labs/full/4do6cnjm">Canvas Loader</a> [<a href="http://cssdeck.com/labs/4do6cnjm">show me the code</a>] • Reference to make loaders using canvas.</li>
+<li><a href="http://cssdeck.com/labs/full/zeaklousedit">Circular Rings</a> [<a href="http://cssdeck.com/labs/zeaklousedit">show me the code</a>] • A great example about how to create circular rings using canvas.</li>
+<li><a href="http://gyu.que.jp/jscloth/">Cloth 3D Effect</a> (Google Chrome strongly recommended) • Thid demo renders a 3d model of Apple iPod with sphere environmental mapping technique.</li>
+<li><a href="http://raphamorim.io/canvas-experiments/cloth">Cloth Effect</a> [<a href="https://github.com/raphamorim/canvas-experiments">show me the code</a>] • A cloth 3D effect fork.</li>
+<li><a href="http://raphamorim.io/canvas-experiments/particles">Colorful Particles</a> [<a href="https://github.com/raphamorim/canvas-experiments">show me the code</a>] • Experiment show how to generates random particles. Very simple code for assimilate.</li>
+<li><a href="http://www.kevs3d.co.uk/dev/shaders/distancefield3.html">Distance Field Waves</a> [<a href="https://github.com/kevinroast/webglshaders/blob/master/distancefield3.html">show me the code</a>] • A example about GPU rendering shader experiments with procedural 3D scene generation using ray marching and distance field (also known as 'sphere tracing') rendering techniques.</li>
+<li><a href="http://raphamorim.io/canvas-experiments/draw">Draw Table</a> - [<a href="https://github.com/raphamorim/canvas-experiments">show me the code</a>] • A simple example about events using canvas.</li>
+<li><a href="http://cssdeck.com/labs/full/fibrous">Fibrous Texture</a> [<a href="http://cssdeck.com/labs/fibrous">show me the code</a>] • Simple canvas based animation; draws random lines across the field. Makes an interesting papery pattern that becomes increasingly detailed with each iteration.</li>
+<li><a href="http://cssdeck.com/labs/full/image-nodes">Image Nodes</a> [<a href="http://cssdeck.com/labs/image-nodes">show me the code</a>] • Interactive nodes built from image data. Use the mouse to play.</li>
+<li><a href="http://raphamorim.io/canvas-experiments/inception">Inception</a> [<a href="https://github.com/raphamorim/canvas-experiments">show me the code</a>] • Generates a scrawl of a city, a canvas HTML5 experiment. Based on Inception movie </li>
+<li><a href="http://cssdeck.com/labs/full/js-metaballs">JS Metaballs</a> [<a href="http://cssdeck.com/labs/js-metaballs">show me the code</a>] • Experiment for Chrome. Mix of webkit-filter and canvas for a metaballs effect.</li>
+<li><a href="http://raphamorim.io/just-canvas/">Just Canvas</a> [<a href="https://github.com/raphamorim/just-canvas">show me the code</a>]• This is a JavaScript experiment to capture movements. Just Dance Idea + HTML5 Canvas Implementation.</li>
+<li><a href="http://lab.hakim.se/linjer/">Linjer</a> • Amazing experiment about nodes effects in addition with cloth and animation effect.</li>
+<li><a href="http://spielzeugz.de/html5/liquid-particles.html">Liquid Particles</a> • A good example about Liquid Particles.</li>
+<li><a href="http://www.lucidchart.com/documents/demo">LucidChart</a> • A complete tool to draw diagrams and other geometric forms, made in canvas.</li>
+<li><a href="http://www.kevs3d.co.uk/dev/lsystems/">L-System Turtle Fractal Renderer</a> • A example about fractal renderer using canvas.</li>
+<li><a href="https://matrix.dotglitch.dev/">Matrix Animation</a> [<a href="https://github.com/knackstedt/matrix-animation">show me the code</a>] • A Matrix Rain animation using canvas.</li>
+<li><a href="http://codepen.io/ara_node/full/nuJCG/">Motion Graphic Typeface</a> [<a href="http://codepen.io/ara_node/pen/nuJCG">show me the code</a>] • A example about typeface animation.</li>
+<li><a href="http://cssdeck.com/labs/full/neatnait-canvas-rain">Neatnait Canvas Rain</a> [<a href="http://cssdeck.com/labs/neatnait-canvas-rain">show me the code</a>] • A reference to create rain particles.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'canvas_README.md';
 
         fetch(markdownFile)
@@ -48,21 +155,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

@@ -8,38 +8,141 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pfarb Awesome Crypto Papers - Awesome List Resources">
-    <title>Pfarb Awesome Crypto Papers</title>
+    <meta name="description" content="A curated list of cryptography papers, articles, tutorials and howtos for non-cryptographers. The goal of this list is to provide educational reading material...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Crypto Papers  [![Awesome](https://raw.githubusercontent.com/sindresorhus/awesome/d2005375894e77d69827b0e3c17073bbf6f062d7/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Crypto Papers  <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://raw.githubusercontent.com/sindresorhus/awesome/d2005375894e77d69827b0e3c17073bbf6f062d7/media/badge.svg" /></a></h1>
+<p>A curated list of <a href="https://en.wikipedia.org/wiki/Cryptography">cryptography</a> papers, articles, tutorials and howtos for non-cryptographers.</p>
+<p align="center">
+  <img src="https://github.com/pFarb/awesome-crypto-papers/blob/master/awesome-felix-big.jpg" style="width: 50%">
+</p>
+
+<h3>Notes</h3>
+<p>The goal of this list is to provide educational reading material for different levels of cryptographic knowledge. I started it because my day job onboarding engineers at <a href="https://www.cossacklabs.com">Cossack Labs</a> includes educating them in cryptographic matters and giving advise what to read on specific topics, and that involves finding the same materials repeatedly. Hopefully, it will be useful for someone else as well. </p>
+<p>It is aimed at people who are using cryptography in higher-level security systems to implement database encryption, secure sharing, end-to-end encryption in various schemes, and should understand how it works, how it fails and how it is attacked. It is not a list of notable / important / historically important papers (although many of them are here). It is not aimed at academics (who have better grasp of what they need anyway), nor it is aimed for systematic study of wanna-be cryptographers (who better follow structured approach under professional guidance). </p>
+<p>It will be extended gradually as I find something of "must-have" value. Pull requests are very welcome.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#introducing-people-to-data-security-and-cryptography">Introducing people to data security and cryptography</a>.</li>
+<li><a href="#simple-cryptography-for-non-engineers">Simple: cryptography for non-engineers</a>.</li>
+<li><a href="#brief-engineer-oriented-introductions">Brief engineer-oriented introductions</a>.</li>
+<li><a href="#specific-topcs">Specific topics</a>.</li>
+<li><a href="#hashing">Hashing</a> - important bits on modern and classic hashes.</li>
+<li><a href="#secret-key-cryptography">Secret key cryptography</a> - all things symmetric encryption.</li>
+<li><a href="#cryptanalysis">Cryptanalysis</a> - attacking cryptosystems.</li>
+<li><a href="#public-key-cryptography-general-and-dlp">Public key cryptography: General and DLP</a> - RSA, DH and other classic techniques.</li>
+<li><a href="#public-key-cryptography-elliptic-curve-crypto">Public key cryptography: Elliptic-curve crypto</a> - ECC, with focus on pratcial cryptosystems.</li>
+<li><a href="#zero-knowledge-proofs">Zero Knowledge Proofs</a> - Proofs of knowledge and other non-revealing cryptosystems.</li>
+<li><a href="#math">Math</a> - useful math materials in cryptographic context.</li>
+<li><a href="#post-quantum-cryptography">Post-quantum cryptography</a> - Cryptography in post-quantum period.</li>
+<li><a href="#books">Books</a>.</li>
+<li><a href="#lectures-and-educational-courses">Lectures and educational courses</a>.</li>
+<li><a href="#online-crypto-challenges">Online crypto challenges</a>.</li>
+</ul>
+<h2>The list</h2>
+<h3>Introducing people to data security and cryptography</h3>
+<h4>Simple: cryptography for non-engineers</h4>
+<ul>
+<li><a href="https://www.cs.princeton.edu/~felten/encryption_primer.pdf">Nuts and Bolts of Encryption: A Primer for Policymakers</a>.</li>
+<li><a href="https://dspace.mit.edu/bitstream/handle/1721.1/97690/MIT-CSAIL-TR-2015-026.pdf">Keys under Doormats</a> - Or why cryptography shouldn't be backdoored, by a all-star committee of crypto researches from around the world. </li>
+</ul>
+<h4>Brief introductions</h4>
+<ul>
+<li><a href="http://web.archive.org/web/20220918232416/https://www.garykessler.net/library/crypto.html">An Overview of Cryptography</a> - By Gary C. Kessler.</li>
+<li><a href="http://inst.eecs.berkeley.edu/~cs268/sp02/cached_papers/needham.pdf">Using Encryption for Authentication in Large Networks</a> - By Needham, Schroeder: this is were crypto-based auth starts.</li>
+<li><a href="http://web.archive.org/web/20201112040412/http://netlab.cs.ucla.edu/wiki/files/shannon1949.pdf">Communication Theory of Secrecy Systems</a> - Fundamental cryptography paper by Claude Shannon.</li>
+</ul>
+<h4>General cryptographic interest</h4>
+<ul>
+<li><a href="https://eprint.iacr.org/2004/152.pdf">Another Look at “Provable Security”</a> - Inquiries into formalism and naive intuition behind security proofs, by Neal Koblitz et al.</li>
+<li><a href="https://cryptojedi.org/papers/coolnacl-20120725.pdf">The security impact of a new cryptographic library</a> - Introductory paper on NaCl, discussing important aspects of implementing cryptography and using it as a larger building block in security systems, by Daniel J. Bernstein, Tanja Lange, Peter Schwabe.</li>
+</ul>
+<hr>
+
+<h3>Specific topics</h3>
+<h4>Hashing</h4>
+<ul>
+<li><a href="http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.198-1.pdf">FIPS 198-1: HMACs</a> - The Keyed-Hash Message Authentication Code FIPS document.</li>
+<li><a href="http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf">FIPS 202: SHA3</a> - SHA-3 Standard: Permutation-Based Hash and Extendable-Output Functions.</li>
+<li><a href="https://en.wikipedia.org/wiki/Birthday_problem">Birthday problem</a> - The best simple explanation of math behind <a href="https://en.wikipedia.org/wiki/Birthday_attack">birthday attack</a>.</li>
+<li><a href="https://eprint.iacr.org/2006/187.pdf">On the Security of HMAC and NMAC Based on HAVAL, MD4, MD5, SHA-0 and SHA-1</a> - Security analysis of different legacy HMAC schemes by Jongsung Kim et al. </li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Crypto Papers  <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://raw.githubusercontent.com/sindresorhus/awesome/d2005375894e77d69827b0e3c17073bbf6f062d7/media/badge.svg" /></a></h1>
+<p>A curated list of <a href="https://en.wikipedia.org/wiki/Cryptography">cryptography</a> papers, articles, tutorials and howtos for non-cryptographers.</p>
+<p align="center">
+  <img src="https://github.com/pFarb/awesome-crypto-papers/blob/master/awesome-felix-big.jpg" style="width: 50%">
+</p>
+
+<h3>Notes</h3>
+<p>The goal of this list is to provide educational reading material for different levels of cryptographic knowledge. I started it because my day job onboarding engineers at <a href="https://www.cossacklabs.com">Cossack Labs</a> includes educating them in cryptographic matters and giving advise what to read on specific topics, and that involves finding the same materials repeatedly. Hopefully, it will be useful for someone else as well. </p>
+<p>It is aimed at people who are using cryptography in higher-level security systems to implement database encryption, secure sharing, end-to-end encryption in various schemes, and should understand how it works, how it fails and how it is attacked. It is not a list of notable / important / historically important papers (although many of them are here). It is not aimed at academics (who have better grasp of what they need anyway), nor it is aimed for systematic study of wanna-be cryptographers (who better follow structured approach under professional guidance). </p>
+<p>It will be extended gradually as I find something of "must-have" value. Pull requests are very welcome.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#introducing-people-to-data-security-and-cryptography">Introducing people to data security and cryptography</a>.</li>
+<li><a href="#simple-cryptography-for-non-engineers">Simple: cryptography for non-engineers</a>.</li>
+<li><a href="#brief-engineer-oriented-introductions">Brief engineer-oriented introductions</a>.</li>
+<li><a href="#specific-topcs">Specific topics</a>.</li>
+<li><a href="#hashing">Hashing</a> - important bits on modern and classic hashes.</li>
+<li><a href="#secret-key-cryptography">Secret key cryptography</a> - all things symmetric encryption.</li>
+<li><a href="#cryptanalysis">Cryptanalysis</a> - attacking cryptosystems.</li>
+<li><a href="#public-key-cryptography-general-and-dlp">Public key cryptography: General and DLP</a> - RSA, DH and other classic techniques.</li>
+<li><a href="#public-key-cryptography-elliptic-curve-crypto">Public key cryptography: Elliptic-curve crypto</a> - ECC, with focus on pratcial cryptosystems.</li>
+<li><a href="#zero-knowledge-proofs">Zero Knowledge Proofs</a> - Proofs of knowledge and other non-revealing cryptosystems.</li>
+<li><a href="#math">Math</a> - useful math materials in cryptographic context.</li>
+<li><a href="#post-quantum-cryptography">Post-quantum cryptography</a> - Cryptography in post-quantum period.</li>
+<li><a href="#books">Books</a>.</li>
+<li><a href="#lectures-and-educational-courses">Lectures and educational courses</a>.</li>
+<li><a href="#online-crypto-challenges">Online crypto challenges</a>.</li>
+</ul>
+<h2>The list</h2>
+<h3>Introducing people to data security and cryptography</h3>
+<h4>Simple: cryptography for non-engineers</h4>
+<ul>
+<li><a href="https://www.cs.princeton.edu/~felten/encryption_primer.pdf">Nuts and Bolts of Encryption: A Primer for Policymakers</a>.</li>
+<li><a href="https://dspace.mit.edu/bitstream/handle/1721.1/97690/MIT-CSAIL-TR-2015-026.pdf">Keys under Doormats</a> - Or why cryptography shouldn't be backdoored, by a all-star committee of crypto researches from around the world. </li>
+</ul>
+<h4>Brief introductions</h4>
+<ul>
+<li><a href="http://web.archive.org/web/20220918232416/https://www.garykessler.net/library/crypto.html">An Overview of Cryptography</a> - By Gary C. Kessler.</li>
+<li><a href="http://inst.eecs.berkeley.edu/~cs268/sp02/cached_papers/needham.pdf">Using Encryption for Authentication in Large Networks</a> - By Needham, Schroeder: this is were crypto-based auth starts.</li>
+<li><a href="http://web.archive.org/web/20201112040412/http://netlab.cs.ucla.edu/wiki/files/shannon1949.pdf">Communication Theory of Secrecy Systems</a> - Fundamental cryptography paper by Claude Shannon.</li>
+</ul>
+<h4>General cryptographic interest</h4>
+<ul>
+<li><a href="https://eprint.iacr.org/2004/152.pdf">Another Look at “Provable Security”</a> - Inquiries into formalism and naive intuition behind security proofs, by Neal Koblitz et al.</li>
+<li><a href="https://cryptojedi.org/papers/coolnacl-20120725.pdf">The security impact of a new cryptographic library</a> - Introductory paper on NaCl, discussing important aspects of implementing cryptography and using it as a larger building block in security systems, by Daniel J. Bernstein, Tanja Lange, Peter Schwabe.</li>
+</ul>
+<hr>
+
+<h3>Specific topics</h3>
+<h4>Hashing</h4>
+<ul>
+<li><a href="http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.198-1.pdf">FIPS 198-1: HMACs</a> - The Keyed-Hash Message Authentication Code FIPS document.</li>
+<li><a href="http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf">FIPS 202: SHA3</a> - SHA-3 Standard: Permutation-Based Hash and Extendable-Output Functions.</li>
+<li><a href="https://en.wikipedia.org/wiki/Birthday_problem">Birthday problem</a> - The best simple explanation of math behind <a href="https://en.wikipedia.org/wiki/Birthday_attack">birthday attack</a>.</li>
+<li><a href="https://eprint.iacr.org/2006/187.pdf">On the Security of HMAC and NMAC Based on HAVAL, MD4, MD5, SHA-0 and SHA-1</a> - Security analysis of different legacy HMAC schemes by Jongsung Kim et al. </li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'papers_README.md';
 
         fetch(markdownFile)
@@ -48,21 +151,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

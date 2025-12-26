@@ -8,38 +8,153 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tindzk Awesome Scala Native - Awesome List Resources">
-    <title>Tindzk Awesome Scala Native</title>
+    <meta name="description" content="Scala Native is an optimising ahead-of-time compiler for the Scala programming language. Traditionally, a virtual machine, the JVM, was required to run Scala...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Scala Native [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Scala Native <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p><a href="http://www.scala-native.org/"><img alt="Scala Native" align="right" width="250" height="250" src="logo.png"></a></p>
+<p><a href="http://www.scala-native.org/">Scala Native</a> is an optimising ahead-of-time compiler for the <a href="https://www.scala-lang.org/">Scala programming language</a>. Traditionally, a virtual machine, the <a href="https://en.wikipedia.org/wiki/Java_virtual_machine">JVM</a>, was required to run Scala programs. Scala Native taps into the compiler to emit <a href="http://llvm.org/docs/LangRef.html">LLVM intermediate representation</a> rather than JVM bytecode. Then, the <a href="http://llvm.org/">LLVM</a> compiler infrastructure is used to produce native libraries and executables. Given that Scala Native executables are stand-alone programs, they generally have a shorter start-up time and low memory consumption. This opens up new avenues to deploy Scala programs where previously the virtual machine would be the limiting factor. For example, developers could write programs for the command line or embedded devices.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#awesome-scala-native-">Awesome Scala Native </a></li>
+<li><a href="#contents">Contents</a></li>
+<li><a href="#tutorials-and-examples">Tutorials and Examples</a></li>
+<li><a href="#build-tools">Build Tools</a></li>
+<li><a href="#functional-programming">Functional Programming</a></li>
+<li><a href="#unit-tests">Unit Tests</a></li>
+<li><a href="#bindings">Bindings</a></li>
+<li><a href="#file-formats-and-parsers">File Formats and Parsers</a></li>
+<li><a href="#databases">Databases</a></li>
+<li><a href="#web-development">Web Development</a></li>
+<li><a href="#concurrency">Concurrency</a></li>
+<li><a href="#logging">Logging</a></li>
+<li><a href="#console">Console</a></li>
+<li><a href="#robotics">Robotics</a></li>
+<li><a href="#programs">Programs</a></li>
+<li><a href="#infrastructure">Infrastructure</a></li>
+<li><a href="#licence">Licence</a></li>
+</ul>
+<h2>Tutorials and Examples</h2>
+<ul>
+<li><a href="https://github.com/scala-native/scala-native.g8">Giter8 template for a minimal Scala Native project</a> - Official <a href="http://www.foundweekends.org/giter8/">Giter8</a> template for a minimal Scala Native project.</li>
+<li><a href="https://github.com/MasseGuillaume/hands-on-scala-native">Hands on Scala Native</a> - Tutorial for implementing a bandwidth monitor with Ncurses.</li>
+<li><a href="https://github.com/GnaneshKunal/scala-native-starter">Starter for Scala Native</a> - Scala Native project that links to a custom C library.</li>
+<li><a href="https://github.com/nadavwr/scala-native-sbt-jni-example">Building C code using sbt-jni</a> - Example for compiling C code in a Scala Native project using <a href="https://github.com/jodersky/sbt-jni">sbt-jni</a>.</li>
+<li><a href="https://github.com/lihaoyi/scala-native-example-app">Example project with external dependencies</a> - Example project that uses external dependencies to generate HTML and run a test suite.</li>
+<li><a href="https://github.com/jokade/scalanative-gtk-seed.g8">Starter for Gtk+ Projects</a> - <a href="http://www.foundweekends.org/giter8/">Giter8</a> template for Scala Native GUI projects using <a href="https://developer.gnome.org/gtk3/stable/index.html">Gtk+</a>.</li>
+<li><a href="https://pragprog.com/titles/rwscala/modern-systems-programming-with-scala-native/">Modern systems programming with scala native</a> book.</li>
+<li><a href="https://github.com/ItoYo16u/prettytable-native">Write a simple CLI application in Scala Native</a></li>
+</ul>
+<h2>Build Tools</h2>
+<ul>
+<li><a href="https://www.scala-sbt.org/">sbt</a> - Scala's standard build tool.</li>
+<li><a href="https://github.com/com-lihaoyi/mill">Mill</a> - Build tool striving for simplicity, inspired by <a href="https://www.bazel.build/">Bazel</a>.</li>
+<li><a href="https://github.com/scalacenter/bloop">Bloop</a> - Scala build server and command-line tool for fast developer workflows.</li>
+<li><a href="https://github.com/tindzk/seed">Seed</a> - Build tool based on Bloop. Focuses on user experience and cross-platform builds, inspired by <a href="https://github.com/rust-lang/cargo">Cargo</a>.</li>
+</ul>
+<h2>Functional Programming</h2>
+<ul>
+<li><a href="https://github.com/milessabin/shapeless">Shapeless</a> - Library for generic programming.</li>
+<li><a href="https://github.com/typelevel/squants">Squants</a> - DSL for quantities, units of measure and dimensional analysis.</li>
+<li><a href="https://github.com/scalaz/scalaz">scalaz</a> - Type classes and instances for data structures.</li>
+<li><a href="https://github.com/xuwei-k/nobox">nobox</a> - Immutable primitive array wrapper without boxing.</li>
+<li><a href="https://github.com/lihaoyi/PPrint">PPrint</a> - Pretty-print values and types.</li>
+<li><a href="https://github.com/lihaoyi/sourcecode">SourceCode</a> - Implicits providing meta data similar to <code>__LINE__</code> in C.</li>
+<li><a href="https://github.com/outr/reactify">reactify</a> - Functional Reactive Programming framework for Scala.</li>
+<li><a href="https://github.com/scalalandio/chimney">chimney</a> - Boilerplate-free data transformations.</li>
+<li><a href="https://github.com/softwaremill/quicklens">Quicklens</a> - Modify deeply nested case class fields.</li>
+<li><a href="https://github.com/typelevel/cats">Cats</a> - Abstractions for functional programming in Scala.</li>
+</ul>
+<h2>Unit Tests</h2>
+<ul>
+<li><a href="https://github.com/lihaoyi/utest">µTest</a> - Library for unit tests.</li>
+<li><a href="https://github.com/monix/minitest">minitest</a> - Lightweight testing library.</li>
+<li><a href="https://github.com/scalaprops/scalaprops">scalaprops</a> - Library for property-based testing.</li>
+<li><a href="https://github.com/scalaprops/scalaprops-shapeless">scalaprops-shapeless</a> - Generation of arbitrary ADT instances.</li>
+<li><a href="https://github.com/scalaprops/scalaprops-cross-example">scalaprops-cross-example</a> - Cross-platform example.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Scala Native <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p><a href="http://www.scala-native.org/"><img alt="Scala Native" align="right" width="250" height="250" src="logo.png"></a></p>
+<p><a href="http://www.scala-native.org/">Scala Native</a> is an optimising ahead-of-time compiler for the <a href="https://www.scala-lang.org/">Scala programming language</a>. Traditionally, a virtual machine, the <a href="https://en.wikipedia.org/wiki/Java_virtual_machine">JVM</a>, was required to run Scala programs. Scala Native taps into the compiler to emit <a href="http://llvm.org/docs/LangRef.html">LLVM intermediate representation</a> rather than JVM bytecode. Then, the <a href="http://llvm.org/">LLVM</a> compiler infrastructure is used to produce native libraries and executables. Given that Scala Native executables are stand-alone programs, they generally have a shorter start-up time and low memory consumption. This opens up new avenues to deploy Scala programs where previously the virtual machine would be the limiting factor. For example, developers could write programs for the command line or embedded devices.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#awesome-scala-native-">Awesome Scala Native </a></li>
+<li><a href="#contents">Contents</a></li>
+<li><a href="#tutorials-and-examples">Tutorials and Examples</a></li>
+<li><a href="#build-tools">Build Tools</a></li>
+<li><a href="#functional-programming">Functional Programming</a></li>
+<li><a href="#unit-tests">Unit Tests</a></li>
+<li><a href="#bindings">Bindings</a></li>
+<li><a href="#file-formats-and-parsers">File Formats and Parsers</a></li>
+<li><a href="#databases">Databases</a></li>
+<li><a href="#web-development">Web Development</a></li>
+<li><a href="#concurrency">Concurrency</a></li>
+<li><a href="#logging">Logging</a></li>
+<li><a href="#console">Console</a></li>
+<li><a href="#robotics">Robotics</a></li>
+<li><a href="#programs">Programs</a></li>
+<li><a href="#infrastructure">Infrastructure</a></li>
+<li><a href="#licence">Licence</a></li>
+</ul>
+<h2>Tutorials and Examples</h2>
+<ul>
+<li><a href="https://github.com/scala-native/scala-native.g8">Giter8 template for a minimal Scala Native project</a> - Official <a href="http://www.foundweekends.org/giter8/">Giter8</a> template for a minimal Scala Native project.</li>
+<li><a href="https://github.com/MasseGuillaume/hands-on-scala-native">Hands on Scala Native</a> - Tutorial for implementing a bandwidth monitor with Ncurses.</li>
+<li><a href="https://github.com/GnaneshKunal/scala-native-starter">Starter for Scala Native</a> - Scala Native project that links to a custom C library.</li>
+<li><a href="https://github.com/nadavwr/scala-native-sbt-jni-example">Building C code using sbt-jni</a> - Example for compiling C code in a Scala Native project using <a href="https://github.com/jodersky/sbt-jni">sbt-jni</a>.</li>
+<li><a href="https://github.com/lihaoyi/scala-native-example-app">Example project with external dependencies</a> - Example project that uses external dependencies to generate HTML and run a test suite.</li>
+<li><a href="https://github.com/jokade/scalanative-gtk-seed.g8">Starter for Gtk+ Projects</a> - <a href="http://www.foundweekends.org/giter8/">Giter8</a> template for Scala Native GUI projects using <a href="https://developer.gnome.org/gtk3/stable/index.html">Gtk+</a>.</li>
+<li><a href="https://pragprog.com/titles/rwscala/modern-systems-programming-with-scala-native/">Modern systems programming with scala native</a> book.</li>
+<li><a href="https://github.com/ItoYo16u/prettytable-native">Write a simple CLI application in Scala Native</a></li>
+</ul>
+<h2>Build Tools</h2>
+<ul>
+<li><a href="https://www.scala-sbt.org/">sbt</a> - Scala's standard build tool.</li>
+<li><a href="https://github.com/com-lihaoyi/mill">Mill</a> - Build tool striving for simplicity, inspired by <a href="https://www.bazel.build/">Bazel</a>.</li>
+<li><a href="https://github.com/scalacenter/bloop">Bloop</a> - Scala build server and command-line tool for fast developer workflows.</li>
+<li><a href="https://github.com/tindzk/seed">Seed</a> - Build tool based on Bloop. Focuses on user experience and cross-platform builds, inspired by <a href="https://github.com/rust-lang/cargo">Cargo</a>.</li>
+</ul>
+<h2>Functional Programming</h2>
+<ul>
+<li><a href="https://github.com/milessabin/shapeless">Shapeless</a> - Library for generic programming.</li>
+<li><a href="https://github.com/typelevel/squants">Squants</a> - DSL for quantities, units of measure and dimensional analysis.</li>
+<li><a href="https://github.com/scalaz/scalaz">scalaz</a> - Type classes and instances for data structures.</li>
+<li><a href="https://github.com/xuwei-k/nobox">nobox</a> - Immutable primitive array wrapper without boxing.</li>
+<li><a href="https://github.com/lihaoyi/PPrint">PPrint</a> - Pretty-print values and types.</li>
+<li><a href="https://github.com/lihaoyi/sourcecode">SourceCode</a> - Implicits providing meta data similar to <code>__LINE__</code> in C.</li>
+<li><a href="https://github.com/outr/reactify">reactify</a> - Functional Reactive Programming framework for Scala.</li>
+<li><a href="https://github.com/scalalandio/chimney">chimney</a> - Boilerplate-free data transformations.</li>
+<li><a href="https://github.com/softwaremill/quicklens">Quicklens</a> - Modify deeply nested case class fields.</li>
+<li><a href="https://github.com/typelevel/cats">Cats</a> - Abstractions for functional programming in Scala.</li>
+</ul>
+<h2>Unit Tests</h2>
+<ul>
+<li><a href="https://github.com/lihaoyi/utest">µTest</a> - Library for unit tests.</li>
+<li><a href="https://github.com/monix/minitest">minitest</a> - Lightweight testing library.</li>
+<li><a href="https://github.com/scalaprops/scalaprops">scalaprops</a> - Library for property-based testing.</li>
+<li><a href="https://github.com/scalaprops/scalaprops-shapeless">scalaprops-shapeless</a> - Generation of arbitrary ADT instances.</li>
+<li><a href="https://github.com/scalaprops/scalaprops-cross-example">scalaprops-cross-example</a> - Cross-platform example.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'scala-native_README.md';
 
         fetch(markdownFile)
@@ -48,21 +163,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

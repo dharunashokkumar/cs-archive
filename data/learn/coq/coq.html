@@ -8,38 +8,159 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Coq Community Awesome Coq - Awesome List Resources">
-    <title>Coq Community Awesome Coq</title>
+    <meta name="description" content="> A curated list of awesome Coq libraries, plugins, tools, and resources. The Coq proof assistant provides a formal language to write mathematical definitions,...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Coq [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Coq <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p><a href="https://github.com/coq-community/manifesto"><img src="coq-logo.svg" align="right" width="100" alt="coq-community logo" title="Awesome Coq is a coq-community project"></a></p>
+<blockquote>
+<p>A curated list of awesome Coq libraries, plugins, tools, and resources.</p>
+</blockquote>
+<p>The <a href="https://coq.inria.fr">Coq proof assistant</a> provides a formal language to write mathematical definitions, executable algorithms, and theorems, together with an environment for semi-interactive development of machine-checked proofs.</p>
+<p>Contributions welcome! Read the <a href="https://github.com/coq-community/awesome-coq/blob/master/CONTRIBUTING.md">contribution guidelines</a> first.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#frameworks">Frameworks</a></li>
+<li><a href="#user-interfaces">User Interfaces</a></li>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#package-and-build-management">Package and Build Management</a></li>
+<li><a href="#plugins">Plugins</a></li>
+<li><a href="#puzzles-and-games">Puzzles and Games</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#type-theory-and-mathematics">Type Theory and Mathematics</a></li>
+<li><a href="#verified-software">Verified Software</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#course-material">Course Material</a></li>
+<li><a href="#tutorials-and-hints">Tutorials and Hints</a></li>
+</ul>
+<hr />
+<h2>Projects</h2>
+<h3>Frameworks</h3>
+<ul>
+<li><a href="https://github.com/AU-COBRA/ConCert">ConCert</a> - Framework for smart contract testing and verification featuring a code extraction pipeline to several smart contract languages.</li>
+<li><a href="https://github.com/CoqEAL/CoqEAL">CoqEAL</a> - Framework to ease change of data representations in proofs.</li>
+<li><a href="https://github.com/adampetcher/fcf">FCF</a> - Framework for proofs of cryptography.</li>
+<li><a href="https://github.com/mit-plv/fiat">Fiat</a> - Mostly automated synthesis of correct-by-construction programs.</li>
+<li><a href="https://github.com/lthms/FreeSpec">FreeSpec</a> - Framework for modularly verifying programs with effects and effect handlers.</li>
+<li><a href="https://github.com/imdea-software/htt/">Hoare Type Theory</a> - A shallow embedding of sequential separation logic formulated as a type theory.</li>
+<li><a href="https://www.site.uottawa.ca/~afelty/HybridCoq/">Hybrid</a> - System for reasoning using higher-order abstract syntax representations of object logics.</li>
+<li><a href="https://iris-project.org">Iris</a> - Higher-order concurrent separation logic framework.</li>
+<li><a href="https://github.com/querycert/qcert">Q*cert</a> - Platform for implementing and verifying query compilers.</li>
+<li><a href="https://github.com/SSProve/ssprove">SSProve</a> - Framework for modular cryptographic proofs based on the Mathematical Components library.</li>
+<li><a href="https://github.com/VeriNum/vcfloat">VCFloat</a> - Framework for verifying C programs with floating-point computations.</li>
+<li><a href="https://github.com/uwplse/verdi">Verdi</a> - Framework for formally verifying distributed systems implementations.</li>
+<li><a href="https://vst.cs.princeton.edu">VST</a> - Toolchain for verifying C code inside Coq in a higher-order concurrent, impredicative separation logic that is sound w.r.t. the Clight language of the CompCert compiler.</li>
+</ul>
+<h3>User Interfaces</h3>
+<ul>
+<li><a href="https://coq.inria.fr/refman/practical-tools/coqide.html">CoqIDE</a> - Standalone graphical tool for interacting with Coq.</li>
+<li><a href="https://github.com/whonore/Coqtail">Coqtail</a> - Interface for Coq based on the Vim text editor.</li>
+<li><a href="https://github.com/ejgallego/coq-lsp">Coq LSP</a> - Language server and extension for the Visual Studio Code and VSCodium editors with custom document checking engine.</li>
+<li><a href="https://proofgeneral.github.io">Proof General</a> - Generic interface for proof assistants based on the extensible, customizable text editor Emacs.</li>
+<li><a href="https://github.com/cpitclaudel/company-coq">Company-Coq</a> - IDE extensions for Proof General's Coq mode.</li>
+<li><a href="https://github.com/ProofGeneral/opam-switch-mode">opam-switch-mode</a> - IDE extension for Proof General to locally change or reset the opam switch from a menu or using a command.</li>
+<li><a href="https://github.com/jscoq/jscoq">jsCoq</a> - Port of Coq to JavaScript, which enables running Coq projects in a browser.</li>
+<li><a href="https://github.com/EugeneLoy/coq_jupyter">Jupyter kernel for Coq</a> - Coq support for the Jupyter Notebook web environment.</li>
+<li><a href="https://github.com/coq-community/vscoq">VsCoq</a> - Language server and extension for the Visual Studio Code and VSCodium editors.</li>
+<li><a href="https://github.com/coq-community/vscoq/tree/vscoq1">VsCoq Legacy</a> - Backwards-compatible extension for the Visual Studio Code and VSCodium editors using Coq's legacy XML protocol.</li>
+<li><a href="https://github.com/impermeable/waterproof">Waterproof editor</a> - Educational environment for writing mathematical proofs in interactive notebooks.</li>
+<li><a href="https://github.com/lamg/tree-sitter-rocq">Tree Sitter Rocq</a> - Partial Rocq tree-sitter grammar useful for syntax highlighting in text editors like <a href="https://github.com/helix-editor/helix">Helix</a>, but not recommended for full parsing of Rocq code.</li>
+</ul>
+<h3>Libraries</h3>
+<ul>
+<li><a href="https://github.com/coq-community/alea">ALEA</a> - Library for reasoning on randomized algorithms.</li>
+<li><a href="https://github.com/math-comp/algebra-tactics">Algebra Tactics</a> - Ring and field tactics for Mathematical Components.</li>
+<li><a href="https://github.com/coq/bignums">Bignums</a> - Library of arbitrarily large numbers.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Coq <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p><a href="https://github.com/coq-community/manifesto"><img src="coq-logo.svg" align="right" width="100" alt="coq-community logo" title="Awesome Coq is a coq-community project"></a></p>
+<blockquote>
+<p>A curated list of awesome Coq libraries, plugins, tools, and resources.</p>
+</blockquote>
+<p>The <a href="https://coq.inria.fr">Coq proof assistant</a> provides a formal language to write mathematical definitions, executable algorithms, and theorems, together with an environment for semi-interactive development of machine-checked proofs.</p>
+<p>Contributions welcome! Read the <a href="https://github.com/coq-community/awesome-coq/blob/master/CONTRIBUTING.md">contribution guidelines</a> first.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#frameworks">Frameworks</a></li>
+<li><a href="#user-interfaces">User Interfaces</a></li>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#package-and-build-management">Package and Build Management</a></li>
+<li><a href="#plugins">Plugins</a></li>
+<li><a href="#puzzles-and-games">Puzzles and Games</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#type-theory-and-mathematics">Type Theory and Mathematics</a></li>
+<li><a href="#verified-software">Verified Software</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#course-material">Course Material</a></li>
+<li><a href="#tutorials-and-hints">Tutorials and Hints</a></li>
+</ul>
+<hr />
+<h2>Projects</h2>
+<h3>Frameworks</h3>
+<ul>
+<li><a href="https://github.com/AU-COBRA/ConCert">ConCert</a> - Framework for smart contract testing and verification featuring a code extraction pipeline to several smart contract languages.</li>
+<li><a href="https://github.com/CoqEAL/CoqEAL">CoqEAL</a> - Framework to ease change of data representations in proofs.</li>
+<li><a href="https://github.com/adampetcher/fcf">FCF</a> - Framework for proofs of cryptography.</li>
+<li><a href="https://github.com/mit-plv/fiat">Fiat</a> - Mostly automated synthesis of correct-by-construction programs.</li>
+<li><a href="https://github.com/lthms/FreeSpec">FreeSpec</a> - Framework for modularly verifying programs with effects and effect handlers.</li>
+<li><a href="https://github.com/imdea-software/htt/">Hoare Type Theory</a> - A shallow embedding of sequential separation logic formulated as a type theory.</li>
+<li><a href="https://www.site.uottawa.ca/~afelty/HybridCoq/">Hybrid</a> - System for reasoning using higher-order abstract syntax representations of object logics.</li>
+<li><a href="https://iris-project.org">Iris</a> - Higher-order concurrent separation logic framework.</li>
+<li><a href="https://github.com/querycert/qcert">Q*cert</a> - Platform for implementing and verifying query compilers.</li>
+<li><a href="https://github.com/SSProve/ssprove">SSProve</a> - Framework for modular cryptographic proofs based on the Mathematical Components library.</li>
+<li><a href="https://github.com/VeriNum/vcfloat">VCFloat</a> - Framework for verifying C programs with floating-point computations.</li>
+<li><a href="https://github.com/uwplse/verdi">Verdi</a> - Framework for formally verifying distributed systems implementations.</li>
+<li><a href="https://vst.cs.princeton.edu">VST</a> - Toolchain for verifying C code inside Coq in a higher-order concurrent, impredicative separation logic that is sound w.r.t. the Clight language of the CompCert compiler.</li>
+</ul>
+<h3>User Interfaces</h3>
+<ul>
+<li><a href="https://coq.inria.fr/refman/practical-tools/coqide.html">CoqIDE</a> - Standalone graphical tool for interacting with Coq.</li>
+<li><a href="https://github.com/whonore/Coqtail">Coqtail</a> - Interface for Coq based on the Vim text editor.</li>
+<li><a href="https://github.com/ejgallego/coq-lsp">Coq LSP</a> - Language server and extension for the Visual Studio Code and VSCodium editors with custom document checking engine.</li>
+<li><a href="https://proofgeneral.github.io">Proof General</a> - Generic interface for proof assistants based on the extensible, customizable text editor Emacs.</li>
+<li><a href="https://github.com/cpitclaudel/company-coq">Company-Coq</a> - IDE extensions for Proof General's Coq mode.</li>
+<li><a href="https://github.com/ProofGeneral/opam-switch-mode">opam-switch-mode</a> - IDE extension for Proof General to locally change or reset the opam switch from a menu or using a command.</li>
+<li><a href="https://github.com/jscoq/jscoq">jsCoq</a> - Port of Coq to JavaScript, which enables running Coq projects in a browser.</li>
+<li><a href="https://github.com/EugeneLoy/coq_jupyter">Jupyter kernel for Coq</a> - Coq support for the Jupyter Notebook web environment.</li>
+<li><a href="https://github.com/coq-community/vscoq">VsCoq</a> - Language server and extension for the Visual Studio Code and VSCodium editors.</li>
+<li><a href="https://github.com/coq-community/vscoq/tree/vscoq1">VsCoq Legacy</a> - Backwards-compatible extension for the Visual Studio Code and VSCodium editors using Coq's legacy XML protocol.</li>
+<li><a href="https://github.com/impermeable/waterproof">Waterproof editor</a> - Educational environment for writing mathematical proofs in interactive notebooks.</li>
+<li><a href="https://github.com/lamg/tree-sitter-rocq">Tree Sitter Rocq</a> - Partial Rocq tree-sitter grammar useful for syntax highlighting in text editors like <a href="https://github.com/helix-editor/helix">Helix</a>, but not recommended for full parsing of Rocq code.</li>
+</ul>
+<h3>Libraries</h3>
+<ul>
+<li><a href="https://github.com/coq-community/alea">ALEA</a> - Library for reasoning on randomized algorithms.</li>
+<li><a href="https://github.com/math-comp/algebra-tactics">Algebra Tactics</a> - Ring and field tactics for Mathematical Components.</li>
+<li><a href="https://github.com/coq/bignums">Bignums</a> - Library of arbitrarily large numbers.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'coq_README.md';
 
         fetch(markdownFile)
@@ -48,21 +169,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

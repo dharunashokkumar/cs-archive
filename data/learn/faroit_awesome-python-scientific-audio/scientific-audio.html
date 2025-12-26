@@ -8,38 +8,147 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Faroit Awesome Python Scientific Audio - Awesome List Resources">
-    <title>Faroit Awesome Python Scientific Audio</title>
+    <meta name="description" content="The aim of this repository is to create a comprehensive, curated list of python software/tools related and used for scientific research in audio/music...">
+    <meta name="robots" content="index, follow">
+    <title>Python for Scientific Audio - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Python for Scientific Audio</h1>
+<p><a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <a href="https://github.com/faroit/awesome-python-scientific-audio/actions?query=workflow%3ACI+branch%3Amaster+event%3Apush"><img alt="Build Status" src="https://github.com/faroit/awesome-python-scientific-audio/workflows/CI/badge.svg" /></a></p>
+<p>The aim of this repository is to create a comprehensive, curated list of python software/tools related and used for scientific research in audio/music applications.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#audio-related-packages">Audio Related Packages</a><ul>
+<li><a href="#read-write">Read/Write</a></li>
+<li><a href="#transformations---general-dsp">Transformations - General DSP</a></li>
+<li><a href="#feature-extraction">Feature extraction</a></li>
+<li><a href="#data-augmentation">Data augmentation</a></li>
+<li><a href="#speech-processing">Speech Processing</a></li>
+<li><a href="#environmenta">Environmental Sounds</a></li>
+<li><a href="#perceptial-models---auditory-models">Perceptial Models - Auditory Models</a></li>
+<li><a href="#source-separation">Source Separation</a></li>
+<li><a href="#music-information-retrieval">Music Information Retrieval</a></li>
+<li><a href="#deep-learning">Deep Learning</a></li>
+<li><a href="#symbolic-music---midi---musicology">Symbolic Music - MIDI - Musicology</a></li>
+<li><a href="#realtime-applications">Realtime applications</a></li>
+<li><a href="#web-audio">Web - Audio</a></li>
+<li><a href="#audio-related-apis-and-datasets">Audio related APIs and Datasets</a></li>
+<li><a href="#wrappers-for-audio-plugins">Wrappers for Audio Plugins</a></li>
+</ul>
+</li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#scientific-papers">Scientific Paper</a></li>
+<li><a href="#other-resources">Other Resources</a></li>
+<li><a href="#related-lists">Related lists</a></li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h2>Audio Related Packages</h2>
+<ul>
+<li>Total number of packages: 66</li>
+</ul>
+<h4>Read-Write</h4>
+<ul>
+<li><a href="https://github.com/danilobellini/audiolazy">audiolazy</a> <a href="https://github.com/danilobellini/audiolazy">:octocat:</a> <a href="https://pypi.python.org/pypi/audiolazy/">:package:</a> - Expressive Digital Signal Processing (DSP) package for Python.</li>
+<li><a href="https://github.com/beetbox/audioread">audioread</a> <a href="https://github.com/beetbox/audioread">:octocat:</a> <a href="https://pypi.python.org/pypi/audioread/">:package:</a> - Cross-library (GStreamer + Core Audio + MAD + FFmpeg) audio decoding.</li>
+<li><a href="https://mutagen.readthedocs.io/">mutagen</a> <a href="https://github.com/quodlibet/mutagen">:octocat:</a> <a href="https://pypi.python.org/pypi/mutagen">:package:</a> - Reads and writes all kind of audio metadata for various formats.</li>
+<li><a href="http://docs.mikeboers.com/pyav/">pyAV</a> <a href="https://github.com/mikeboers/PyAV">:octocat:</a> - PyAV is a Pythonic binding for FFmpeg or Libav.</li>
+<li><a href="http://pysoundfile.readthedocs.io/">(Py)Soundfile</a> <a href="https://github.com/bastibe/PySoundFile">:octocat:</a> <a href="https://pypi.python.org/pypi/SoundFile">:package:</a> - Library based on libsndfile, CFFI, and NumPy.</li>
+<li><a href="https://github.com/rabitt/pysox">pySox</a> <a href="https://github.com/rabitt/pysox">:octocat:</a> <a href="https://pypi.python.org/pypi/pysox/">:package:</a> - Wrapper for sox.</li>
+<li><a href="https://github.com/faroit/stempeg">stempeg</a> <a href="https://github.com/faroit/stempeg">:octocat:</a> <a href="https://pypi.python.org/pypi/stempeg/">:package:</a> - read/write of STEMS multistream audio.</li>
+<li><a href="https://github.com/devsnd/tinytag">tinytag</a> <a href="https://github.com/devsnd/tinytag">:octocat:</a> <a href="https://pypi.python.org/pypi/tinytag/">:package:</a> - reading music meta data of MP3, OGG, FLAC and Wave files.</li>
+</ul>
+<h4>Transformations - General DSP</h4>
+<ul>
+<li><a href="http://python-acoustics.github.io/python-acoustics/">acoustics</a> <a href="https://github.com/python-acoustics/python-acoustics/">:octocat:</a> <a href="https://pypi.python.org/pypi/acoustics">:package:</a> - useful tools for acousticians.</li>
+<li><a href="https://github.com/mbrucher/AudioTK">AudioTK</a> <a href="https://github.com/mbrucher/AudioTK">:octocat:</a> - DSP filter toolbox (lots of filters).</li>
+<li><a href="https://audiotsm.readthedocs.io/">AudioTSM</a> <a href="https://github.com/Muges/audiotsm">:octocat:</a> <a href="https://pypi.python.org/pypi/audiotsm/">:package:</a> - real-time audio time-scale modification procedures.</li>
+<li><a href="https://github.com/detly/gammatone">Gammatone</a> <a href="https://github.com/detly/gammatone">:octocat:</a> - Gammatone filterbank implementation.</li>
+<li><a href="http://pyfftw.github.io/pyFFTW/">pyFFTW</a> <a href="https://github.com/pyFFTW/pyFFTW">:octocat:</a> <a href="https://pypi.python.org/pypi/pyFFTW/">:package:</a> - Wrapper for FFTW(3).</li>
+<li><a href="https://grrrr.org/research/software/nsgt/">NSGT</a> <a href="https://github.com/grrrr/nsgt">:octocat:</a> <a href="https://pypi.python.org/pypi/nsgt">:package:</a> - Non-stationary gabor transform, constant-q.</li>
+<li><a href="https://github.com/sergree/matchering">matchering</a> <a href="https://github.com/sergree/matchering">:octocat:</a> <a href="https://pypi.org/project/matchering/">:package:</a> - Automated reference audio mastering.</li>
+<li><a href="https://github.com/nils-werner/mdct">MDCT</a> <a href="https://github.com/nils-werner/mdct">:octocat:</a> <a href="https://pypi.python.org/pypi/mdct">:package:</a> - MDCT transform.</li>
+<li><a href="http://pydub.com">pydub</a> <a href="https://github.com/jiaaro/pydub">:octocat:</a> <a href="https://pypi.python.org/pypi/mdct">:package:</a> - Manipulate audio with a simple and easy high level interface.</li>
+<li><a href="http://tftb.nongnu.org">pytftb</a> <a href="https://github.com/scikit-signal/pytftb">:octocat:</a> - Implementation of the MATLAB Time-Frequency Toolbox.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Python for Scientific Audio</h1>
+<p><a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <a href="https://github.com/faroit/awesome-python-scientific-audio/actions?query=workflow%3ACI+branch%3Amaster+event%3Apush"><img alt="Build Status" src="https://github.com/faroit/awesome-python-scientific-audio/workflows/CI/badge.svg" /></a></p>
+<p>The aim of this repository is to create a comprehensive, curated list of python software/tools related and used for scientific research in audio/music applications.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#audio-related-packages">Audio Related Packages</a><ul>
+<li><a href="#read-write">Read/Write</a></li>
+<li><a href="#transformations---general-dsp">Transformations - General DSP</a></li>
+<li><a href="#feature-extraction">Feature extraction</a></li>
+<li><a href="#data-augmentation">Data augmentation</a></li>
+<li><a href="#speech-processing">Speech Processing</a></li>
+<li><a href="#environmenta">Environmental Sounds</a></li>
+<li><a href="#perceptial-models---auditory-models">Perceptial Models - Auditory Models</a></li>
+<li><a href="#source-separation">Source Separation</a></li>
+<li><a href="#music-information-retrieval">Music Information Retrieval</a></li>
+<li><a href="#deep-learning">Deep Learning</a></li>
+<li><a href="#symbolic-music---midi---musicology">Symbolic Music - MIDI - Musicology</a></li>
+<li><a href="#realtime-applications">Realtime applications</a></li>
+<li><a href="#web-audio">Web - Audio</a></li>
+<li><a href="#audio-related-apis-and-datasets">Audio related APIs and Datasets</a></li>
+<li><a href="#wrappers-for-audio-plugins">Wrappers for Audio Plugins</a></li>
+</ul>
+</li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#scientific-papers">Scientific Paper</a></li>
+<li><a href="#other-resources">Other Resources</a></li>
+<li><a href="#related-lists">Related lists</a></li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h2>Audio Related Packages</h2>
+<ul>
+<li>Total number of packages: 66</li>
+</ul>
+<h4>Read-Write</h4>
+<ul>
+<li><a href="https://github.com/danilobellini/audiolazy">audiolazy</a> <a href="https://github.com/danilobellini/audiolazy">:octocat:</a> <a href="https://pypi.python.org/pypi/audiolazy/">:package:</a> - Expressive Digital Signal Processing (DSP) package for Python.</li>
+<li><a href="https://github.com/beetbox/audioread">audioread</a> <a href="https://github.com/beetbox/audioread">:octocat:</a> <a href="https://pypi.python.org/pypi/audioread/">:package:</a> - Cross-library (GStreamer + Core Audio + MAD + FFmpeg) audio decoding.</li>
+<li><a href="https://mutagen.readthedocs.io/">mutagen</a> <a href="https://github.com/quodlibet/mutagen">:octocat:</a> <a href="https://pypi.python.org/pypi/mutagen">:package:</a> - Reads and writes all kind of audio metadata for various formats.</li>
+<li><a href="http://docs.mikeboers.com/pyav/">pyAV</a> <a href="https://github.com/mikeboers/PyAV">:octocat:</a> - PyAV is a Pythonic binding for FFmpeg or Libav.</li>
+<li><a href="http://pysoundfile.readthedocs.io/">(Py)Soundfile</a> <a href="https://github.com/bastibe/PySoundFile">:octocat:</a> <a href="https://pypi.python.org/pypi/SoundFile">:package:</a> - Library based on libsndfile, CFFI, and NumPy.</li>
+<li><a href="https://github.com/rabitt/pysox">pySox</a> <a href="https://github.com/rabitt/pysox">:octocat:</a> <a href="https://pypi.python.org/pypi/pysox/">:package:</a> - Wrapper for sox.</li>
+<li><a href="https://github.com/faroit/stempeg">stempeg</a> <a href="https://github.com/faroit/stempeg">:octocat:</a> <a href="https://pypi.python.org/pypi/stempeg/">:package:</a> - read/write of STEMS multistream audio.</li>
+<li><a href="https://github.com/devsnd/tinytag">tinytag</a> <a href="https://github.com/devsnd/tinytag">:octocat:</a> <a href="https://pypi.python.org/pypi/tinytag/">:package:</a> - reading music meta data of MP3, OGG, FLAC and Wave files.</li>
+</ul>
+<h4>Transformations - General DSP</h4>
+<ul>
+<li><a href="http://python-acoustics.github.io/python-acoustics/">acoustics</a> <a href="https://github.com/python-acoustics/python-acoustics/">:octocat:</a> <a href="https://pypi.python.org/pypi/acoustics">:package:</a> - useful tools for acousticians.</li>
+<li><a href="https://github.com/mbrucher/AudioTK">AudioTK</a> <a href="https://github.com/mbrucher/AudioTK">:octocat:</a> - DSP filter toolbox (lots of filters).</li>
+<li><a href="https://audiotsm.readthedocs.io/">AudioTSM</a> <a href="https://github.com/Muges/audiotsm">:octocat:</a> <a href="https://pypi.python.org/pypi/audiotsm/">:package:</a> - real-time audio time-scale modification procedures.</li>
+<li><a href="https://github.com/detly/gammatone">Gammatone</a> <a href="https://github.com/detly/gammatone">:octocat:</a> - Gammatone filterbank implementation.</li>
+<li><a href="http://pyfftw.github.io/pyFFTW/">pyFFTW</a> <a href="https://github.com/pyFFTW/pyFFTW">:octocat:</a> <a href="https://pypi.python.org/pypi/pyFFTW/">:package:</a> - Wrapper for FFTW(3).</li>
+<li><a href="https://grrrr.org/research/software/nsgt/">NSGT</a> <a href="https://github.com/grrrr/nsgt">:octocat:</a> <a href="https://pypi.python.org/pypi/nsgt">:package:</a> - Non-stationary gabor transform, constant-q.</li>
+<li><a href="https://github.com/sergree/matchering">matchering</a> <a href="https://github.com/sergree/matchering">:octocat:</a> <a href="https://pypi.org/project/matchering/">:package:</a> - Automated reference audio mastering.</li>
+<li><a href="https://github.com/nils-werner/mdct">MDCT</a> <a href="https://github.com/nils-werner/mdct">:octocat:</a> <a href="https://pypi.python.org/pypi/mdct">:package:</a> - MDCT transform.</li>
+<li><a href="http://pydub.com">pydub</a> <a href="https://github.com/jiaaro/pydub">:octocat:</a> <a href="https://pypi.python.org/pypi/mdct">:package:</a> - Manipulate audio with a simple and easy high level interface.</li>
+<li><a href="http://tftb.nongnu.org">pytftb</a> <a href="https://github.com/scikit-signal/pytftb">:octocat:</a> - Implementation of the MATLAB Time-Frequency Toolbox.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'scientific-audio_README.md';
 
         fetch(markdownFile)
@@ -48,21 +157,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

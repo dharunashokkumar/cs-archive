@@ -8,38 +8,145 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Secretgeek Awesomecsv - Awesome List Resources">
-    <title>Secretgeek Awesomecsv</title>
+    <meta name="description" content="A carefully curated list of CSV-related tools and resources CSV remains the most futuristic data format from the distant past. XML has risen and fallen. JSON...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome CSV [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome CSV <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p><strong>A carefully curated list of CSV-related tools and resources</strong></p>
+<p><a href="https://en.wikipedia.org/wiki/Comma-separated_values">CSV</a> remains the most futuristic data format from the distant past.</p>
+<p>XML has risen and fallen. JSON is just a flash in the pan. YAML is a poisoned chalice. <strong>CSV will outlast them all.</strong></p>
+<p>When the final cockroach breathes her last breath, her dying act will be to scratch her date of death in a CSV file for posterity.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#repair-or-validate-csv">Repair or Validate CSV</a></li>
+<li><a href="#treat-csv-as-sql">Treat CSV as SQL</a></li>
+<li><a href="#convert-to-or-from-csv">Convert to or from CSV</a></li>
+<li><a href="#csv---json">CSV &lt;-&gt; JSON</a></li>
+<li><a href="#essays">Essays</a></li>
+<li><a href="#data">Data</a></li>
+<li><a href="#conferences">Conferences</a></li>
+<li><a href="#standards">Standards</a></li>
+<li><a href="#meta-other-similar-lists">META: Other similar lists</a></li>
+<li><a href="#code-of-conduct">Code of Conduct</a></li>
+<li><a href="#funtribute">Funtribute</a></li>
+<li><a href="#footnotes">Footnotes</a></li>
+</ul>
+<p>Here are some awesome tools for dealing with CSV:</p>
+<h2>Tools</h2>
+<ul>
+<li><a href="https://NimbleText.com/Live">NimbleText/Live</a> - Use patterns to manipulate CSV; the world's simplest code generator *.</li>
+<li><a href="https://www.papaparse.com">PapaParse</a> - A powerful in-browser CSV parser.</li>
+<li><a href="https://github.com/d3/d3-dsv">d3-dsv</a> - d3.js parser and formatter module for delimiter-separated values.</li>
+<li><a href="https://csvkit.readthedocs.io/">CSVKit</a> - CSV utilities that includes csvsql / csvgrep / csvstat and more.</li>
+<li><a href="https://github.com/dathere/qsv">QSV</a> - A fast CSV command-line toolkit written in Rust, (an update to xsv).</li>
+<li><a href="https://www.gnu.org/software/sed/manual/sed.html">sed (gnu tool)</a> - Stream editor.</li>
+<li><a href="https://www.gnu.org/software/gawk/manual/gawk.html">gawk (gnu tool)</a> - Text processing and data extraction using <a href="http://pubs.opengroup.org/onlinepubs/009695399/utilities/awk.html">awk</a>.</li>
+<li><a href="https://github.com/learnbyexample/Command-line-text-processing/blob/master/gnu_awk.md#default-field-separation">awk by example</a> - Comprehensive examples of using awk.</li>
+<li><a href="http://johnkerl.org/miller/doc/">Miller</a> - Like sed / awk / cut / join / sort etc for name-indexed data such as CSV.</li>
+<li><a href="https://github.com/wiseio/paratext">ParaText</a> - CSV parsing at 2.5 GB per second.</li>
+<li><a href="http://github.com/fizx/csvget/tree/master">CSVGet</a> - Get structured data from sites as CSV.</li>
+<li><a href="https://code.google.com/p/csvfix/">CSVfix</a> - A tool for manipulating CSV data.</li>
+<li><a href="https://www.tadviewer.com">Tad</a> - A fast free cross-platform CSV viewer.</li>
+<li><a href="http://blog.tryolabs.com/2015/02/27/nvd3-tags-a-tiny-library-for-making-charts-from-csv-data/">Nvd3-tags</a> - A tiny library for making charts from csv data.</li>
+<li><a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/import-csv">Powershell: Import-CSV</a> - Powerful in-built facility for dealing with CSV (<a href="https://gist.github.com/dfinke/786ba9edae1b0265ada10b36a7a11ba9">example</a>).</li>
+<li><a href="https://onlinecsvtools.com/">CSV Tools</a> - A collection of useful CSV utilities.</li>
+<li><a href="https://github.com/mcastorina/graph-cli">graph-cli</a> - Flexible command line tool to create graphs from CSV data.</li>
+<li><a href="http://www.convertcsv.com/csv-to-sql.htm">CSV to SQL</a> - Online tool to create insert/update/delete etc from CSV data.</li>
+<li><a href="https://github.com/kentcb/KBCsv/blob/master/README.md">C#: kbCSV</a> - An efficient, easy to use .NET parsing and writing library for CSV.</li>
+<li><a href="https://github.com/archiecobbs/csvprintf">csvprintf</a> - UNIX command line utility for parsing and formatting output based on CSV files.</li>
+<li><a href="https://www.ronsplace.eu/Products/RonsDataEdit">Ron's Data Edit</a> (new modern version of <a href="https://www.ronsplace.eu/products/ronseditor">Ron's CSV Editor</a>) - Handles big files, does miraculous things. A timeless editor for a timeless format.</li>
+<li><a href="https://github.com/mechatroner/rainbow_csv#rainbow-csv-in-other-editors">Rainbow CSV plugins</a> - Collection of text editor plugins for CSV/TSV syntax highlighting. Available for <a href="https://github.com/mechatroner/rainbow_csv">Vim</a>, <a href="https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv">VS Code</a>, <a href="https://atom.io/packages/rainbow-csv">Atom</a>, <a href="https://packagecontrol.io/packages/rainbow_csv">Sublime Text</a> and other editors.</li>
+<li><a href="https://extendsclass.com/csv-diff.html">ExtendsClass</a> - A simple CSV comparator.</li>
+<li><a href="https://mightymerge.io/">Mighty Merge</a> - join/union csv files.</li>
+<li><a href="https://www.moderncsv.com/">Modern CSV</a> - A tool for editing CSV files and viewing large files.</li>
+<li><a href="https://github.com/microsoft/vscode-data-wrangler">Data Wrangler</a> - Data Wrangler is a code-centric data cleaning tool that is integrated into VS Code and VS Code Jupyter Notebooks.</li>
+</ul>
+<h3>Repair or Validate CSV</h3>
+<ul>
+<li><a href="https://github.com/Clever/csvlint">Csvlint.go</a> - Command line tool for validating CSV files against RFC 4180.</li>
+<li><a href="http://www.csvstudio.com/">csvstudio</a> - A smart app to repair syntax errors in very large CSV files.</li>
+<li><a href="https://github.com/faradayio/scrubcsv">scrubcsv</a> - Remove bad records from a CSV file and normalize (requires rust)</li>
+<li><a href="https://github.com/OpenRefine/reconcile-csv/blob/master/README.md">reconcile-csv</a> - Find relationships between a set of related CSVs</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome CSV <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p><strong>A carefully curated list of CSV-related tools and resources</strong></p>
+<p><a href="https://en.wikipedia.org/wiki/Comma-separated_values">CSV</a> remains the most futuristic data format from the distant past.</p>
+<p>XML has risen and fallen. JSON is just a flash in the pan. YAML is a poisoned chalice. <strong>CSV will outlast them all.</strong></p>
+<p>When the final cockroach breathes her last breath, her dying act will be to scratch her date of death in a CSV file for posterity.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#repair-or-validate-csv">Repair or Validate CSV</a></li>
+<li><a href="#treat-csv-as-sql">Treat CSV as SQL</a></li>
+<li><a href="#convert-to-or-from-csv">Convert to or from CSV</a></li>
+<li><a href="#csv---json">CSV &lt;-&gt; JSON</a></li>
+<li><a href="#essays">Essays</a></li>
+<li><a href="#data">Data</a></li>
+<li><a href="#conferences">Conferences</a></li>
+<li><a href="#standards">Standards</a></li>
+<li><a href="#meta-other-similar-lists">META: Other similar lists</a></li>
+<li><a href="#code-of-conduct">Code of Conduct</a></li>
+<li><a href="#funtribute">Funtribute</a></li>
+<li><a href="#footnotes">Footnotes</a></li>
+</ul>
+<p>Here are some awesome tools for dealing with CSV:</p>
+<h2>Tools</h2>
+<ul>
+<li><a href="https://NimbleText.com/Live">NimbleText/Live</a> - Use patterns to manipulate CSV; the world's simplest code generator *.</li>
+<li><a href="https://www.papaparse.com">PapaParse</a> - A powerful in-browser CSV parser.</li>
+<li><a href="https://github.com/d3/d3-dsv">d3-dsv</a> - d3.js parser and formatter module for delimiter-separated values.</li>
+<li><a href="https://csvkit.readthedocs.io/">CSVKit</a> - CSV utilities that includes csvsql / csvgrep / csvstat and more.</li>
+<li><a href="https://github.com/dathere/qsv">QSV</a> - A fast CSV command-line toolkit written in Rust, (an update to xsv).</li>
+<li><a href="https://www.gnu.org/software/sed/manual/sed.html">sed (gnu tool)</a> - Stream editor.</li>
+<li><a href="https://www.gnu.org/software/gawk/manual/gawk.html">gawk (gnu tool)</a> - Text processing and data extraction using <a href="http://pubs.opengroup.org/onlinepubs/009695399/utilities/awk.html">awk</a>.</li>
+<li><a href="https://github.com/learnbyexample/Command-line-text-processing/blob/master/gnu_awk.md#default-field-separation">awk by example</a> - Comprehensive examples of using awk.</li>
+<li><a href="http://johnkerl.org/miller/doc/">Miller</a> - Like sed / awk / cut / join / sort etc for name-indexed data such as CSV.</li>
+<li><a href="https://github.com/wiseio/paratext">ParaText</a> - CSV parsing at 2.5 GB per second.</li>
+<li><a href="http://github.com/fizx/csvget/tree/master">CSVGet</a> - Get structured data from sites as CSV.</li>
+<li><a href="https://code.google.com/p/csvfix/">CSVfix</a> - A tool for manipulating CSV data.</li>
+<li><a href="https://www.tadviewer.com">Tad</a> - A fast free cross-platform CSV viewer.</li>
+<li><a href="http://blog.tryolabs.com/2015/02/27/nvd3-tags-a-tiny-library-for-making-charts-from-csv-data/">Nvd3-tags</a> - A tiny library for making charts from csv data.</li>
+<li><a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/import-csv">Powershell: Import-CSV</a> - Powerful in-built facility for dealing with CSV (<a href="https://gist.github.com/dfinke/786ba9edae1b0265ada10b36a7a11ba9">example</a>).</li>
+<li><a href="https://onlinecsvtools.com/">CSV Tools</a> - A collection of useful CSV utilities.</li>
+<li><a href="https://github.com/mcastorina/graph-cli">graph-cli</a> - Flexible command line tool to create graphs from CSV data.</li>
+<li><a href="http://www.convertcsv.com/csv-to-sql.htm">CSV to SQL</a> - Online tool to create insert/update/delete etc from CSV data.</li>
+<li><a href="https://github.com/kentcb/KBCsv/blob/master/README.md">C#: kbCSV</a> - An efficient, easy to use .NET parsing and writing library for CSV.</li>
+<li><a href="https://github.com/archiecobbs/csvprintf">csvprintf</a> - UNIX command line utility for parsing and formatting output based on CSV files.</li>
+<li><a href="https://www.ronsplace.eu/Products/RonsDataEdit">Ron's Data Edit</a> (new modern version of <a href="https://www.ronsplace.eu/products/ronseditor">Ron's CSV Editor</a>) - Handles big files, does miraculous things. A timeless editor for a timeless format.</li>
+<li><a href="https://github.com/mechatroner/rainbow_csv#rainbow-csv-in-other-editors">Rainbow CSV plugins</a> - Collection of text editor plugins for CSV/TSV syntax highlighting. Available for <a href="https://github.com/mechatroner/rainbow_csv">Vim</a>, <a href="https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv">VS Code</a>, <a href="https://atom.io/packages/rainbow-csv">Atom</a>, <a href="https://packagecontrol.io/packages/rainbow_csv">Sublime Text</a> and other editors.</li>
+<li><a href="https://extendsclass.com/csv-diff.html">ExtendsClass</a> - A simple CSV comparator.</li>
+<li><a href="https://mightymerge.io/">Mighty Merge</a> - join/union csv files.</li>
+<li><a href="https://www.moderncsv.com/">Modern CSV</a> - A tool for editing CSV files and viewing large files.</li>
+<li><a href="https://github.com/microsoft/vscode-data-wrangler">Data Wrangler</a> - Data Wrangler is a code-centric data cleaning tool that is integrated into VS Code and VS Code Jupyter Notebooks.</li>
+</ul>
+<h3>Repair or Validate CSV</h3>
+<ul>
+<li><a href="https://github.com/Clever/csvlint">Csvlint.go</a> - Command line tool for validating CSV files against RFC 4180.</li>
+<li><a href="http://www.csvstudio.com/">csvstudio</a> - A smart app to repair syntax errors in very large CSV files.</li>
+<li><a href="https://github.com/faradayio/scrubcsv">scrubcsv</a> - Remove bad records from a CSV file and normalize (requires rust)</li>
+<li><a href="https://github.com/OpenRefine/reconcile-csv/blob/master/README.md">reconcile-csv</a> - Find relationships between a set of related CSVs</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'csv_README.md';
 
         fetch(markdownFile)
@@ -48,21 +155,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

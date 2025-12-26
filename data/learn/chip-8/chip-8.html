@@ -8,38 +8,151 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tobiasvl Awesome Chip 8 - Awesome List Resources">
-    <title>Tobiasvl Awesome Chip 8</title>
+    <meta name="description" content="> Virtual computer game machine from the 70s A curated list of awesome CHIP-8 resources, tools, documentation, related projects and open source ROMs. Created...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome CHIP-8 [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome CHIP-8 <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a></h1>
+<p><a href="https://chip-8.github.io"><img src="c8.png" align="right" width="100"></a></p>
+<blockquote>
+<p>Virtual computer game machine from the 70s </p>
+</blockquote>
+<p>A curated list of awesome CHIP-8 resources, tools, documentation, related projects and open source ROMs.</p>
+<p>Created in 1977, <a href="https://en.wikipedia.org/wiki/CHIP-8">CHIP-8</a> is the original fantasy console. Initially designed to ease game development for the COSMAC VIP kit computer, it has enjoyed several revivals over the decades for new and exciting platforms. Today, creating a CHIP-8 implementation is a rite of passage for anyone interested in learning about emulation.</p>
+<p>To add something to this list, please see the <a href="CONTRIBUTING.md">contribution guidelines</a>.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#community">Community</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#emulatorinterpreter-development">Emulator/interpreter development</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#emulatorsinterpreters">Emulators/interpreters</a></li>
+<li><a href="#software-development">Software development</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#guides-and-snippets">Guides and snippets</a></li>
+<li><a href="#postmortems">Postmortems</a></li>
+<li><a href="#games">Games</a></li>
+</ul>
+<h2>Community</h2>
+<ul>
+<li><a href="https://groups.io/g/cosmacelf">COSMAC Elf Group</a> - Group for discussion of the COSMAC Elf, as well as anything else RCA 1802-related, including COSMAC VIP and CHIP-8.</li>
+<li><a href="https://discordapp.com/invite/Gf7cP3w">#chip8 channel on the Emulation Development Discord server</a> - Chat for discussing development of CHIP-8 emulators/interpreters.</li>
+<li><a href="http://octojam.com/">OctoJam</a> - An Octo-centric game jam held every October.</li>
+</ul>
+<h2>Documentation</h2>
+<ul>
+<li><a href="https://github.com/mattmikolay/chip-8/wiki/Mastering-CHIP%E2%80%908">Mastering CHIP-8</a> - In-depth overview of the CHIP-8 instruction set.</li>
+<li><a href="http://johnearnest.github.io/Octo/docs/chip8ref.pdf">CHIP-8 Instruction Set</a> - Quick cheat sheet for CHIP-8 instructions.</li>
+<li><a href="https://github.com/mattmikolay/chip-8/wiki/CHIP%E2%80%908-Instruction-Set">CHIP-8 Instruction Set</a> - A comprehensive instruction/opcode table.</li>
+<li><a href="https://github.com/mattmikolay/chip-8/wiki/CHIP%E2%80%908-Technical-Reference">CHIP-8 Technical Reference</a> - Overview of how the CHIP-8 interpreter works.</li>
+<li><a href="https://github.com/mattmikolay/chip-8/wiki/CHIP%E2%80%908-Extensions-Reference">CHIP-8 Extensions Reference</a> - A list of CHIP-8 variants and extensions.</li>
+<li><a href="https://laurencescotford.com/chip-8-on-the-cosmac-vip-index/">Chip-8 on the COSMAC VIP</a> - An in-depth disassembly and analysis of the original CHIP-8 interpreter on the COSMAC VIP.</li>
+<li><a href="https://github.com/Chromatophore/HP48-Superchip">HP48-Superchip</a> - An in-depth look at CHIP48 and Super-CHIP for the HP48 calculators, and modifications to make them CHIP-8 compatible.</li>
+<li><a href="http://johnearnest.github.io/Octo/docs/XO-ChipSpecification.html">Octo Extensions</a> - Specification for Octo's XO-CHIP extension.</li>
+</ul>
+<h2>Emulator/interpreter development</h2>
+<ul>
+<li><a href="http://www.multigesture.net/articles/how-to-write-an-emulator-chip-8-interpreter/">How to write an emulator (CHIP-8 interpreter)</a> - A guide to developing a CHIP-8 interpreter in C/C++.</li>
+<li><a href="http://www.emulator101.com/introduction-to-chip-8.html">Emulator 101: CHIP-8</a> - A guide to developing a CHIP-8 disassembler and interpreter in C.</li>
+<li><a href="https://jackson-s.me/2019/07/13/Chip-8-Instruction-Scheduling-and-Frequency.html">Chip 8 Instruction Scheduling and Frequency</a> - Timing of CHIP-8 instructions on the COSMAC VIP.</li>
+<li><a href="https://tobiasvl.github.io/blog/write-a-chip-8-emulator/">High-level guide to making a CHIP-8 emulator</a> - A guide for developing a CHIP-8 interpreter, without code.</li>
+</ul>
+<h3>Testing</h3>
+<ul>
+<li><a href="https://github.com/corax89/chip8-test-rom">chip8-test-rom</a> - corax89's CHIP-8 test program, which tests most instructions for correct (Super-CHIP compliant) behavior.</li>
+<li><a href="https://github.com/Timendus/chip8-test-suite">CHIP-8 test suite</a> - Timendus' collection of tests, including an improved version of corax89's test rom, a test for the behaviour of the flags and a CHIP-8 / Super-CHIP / XO-CHIP quirks test.</li>
+<li><a href="https://github.com/mattmikolay/chip-8/tree/master/delaytimer">Delay timer test</a> - Test program that checks the delay timer's behavior.</li>
+<li><a href="https://github.com/mattmikolay/chip-8/tree/master/randomnumber">Random number test</a> - Test program that checks the spread and mask for random number generation.</li>
+</ul>
+<h2>Emulators/interpreters</h2>
+<ul>
+<li><a href="http://johnearnest.github.io/Octo/">Octo</a> - An IDE for development of CHIP-8, Super-CHIP and XO-Chip games.</li>
+<li><a href="https://www.emma02.hobby-site.com/">Emma02</a> - An emulator for many old microcomputers, including COSMAC VIP, Telmac 1800 and ETI 660, which ran early CHIP-8 interpreters (which are included in the emulator).</li>
+<li><a href="https://github.com/Ersanio/Super-Chip8x">Super-Chip8x</a> - CHIP-8 emulator for the SNES.</li>
+<li><a href="https://github.com/pwmarcz/fpga-chip8">CHIP-8 console on FPGA</a> - A CHIP-8 emulator for the TinyFPGA BX chip.</li>
+<li><a href="http://benryves.com/bin/vinegar/">Vinegar</a> - CHIP-8/Super-CHIP interpreter for TI-83 (Plus) calculators.</li>
+<li><a href="https://lowresnx.inutilis.com/topic.php?id=1648">LowResNX</a> - CHIP-8 interpreter and debugger programmed in BASIC inside another retro fantasy console.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome CHIP-8 <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a></h1>
+<p><a href="https://chip-8.github.io"><img src="c8.png" align="right" width="100"></a></p>
+<blockquote>
+<p>Virtual computer game machine from the 70s </p>
+</blockquote>
+<p>A curated list of awesome CHIP-8 resources, tools, documentation, related projects and open source ROMs.</p>
+<p>Created in 1977, <a href="https://en.wikipedia.org/wiki/CHIP-8">CHIP-8</a> is the original fantasy console. Initially designed to ease game development for the COSMAC VIP kit computer, it has enjoyed several revivals over the decades for new and exciting platforms. Today, creating a CHIP-8 implementation is a rite of passage for anyone interested in learning about emulation.</p>
+<p>To add something to this list, please see the <a href="CONTRIBUTING.md">contribution guidelines</a>.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#community">Community</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#emulatorinterpreter-development">Emulator/interpreter development</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#emulatorsinterpreters">Emulators/interpreters</a></li>
+<li><a href="#software-development">Software development</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#guides-and-snippets">Guides and snippets</a></li>
+<li><a href="#postmortems">Postmortems</a></li>
+<li><a href="#games">Games</a></li>
+</ul>
+<h2>Community</h2>
+<ul>
+<li><a href="https://groups.io/g/cosmacelf">COSMAC Elf Group</a> - Group for discussion of the COSMAC Elf, as well as anything else RCA 1802-related, including COSMAC VIP and CHIP-8.</li>
+<li><a href="https://discordapp.com/invite/Gf7cP3w">#chip8 channel on the Emulation Development Discord server</a> - Chat for discussing development of CHIP-8 emulators/interpreters.</li>
+<li><a href="http://octojam.com/">OctoJam</a> - An Octo-centric game jam held every October.</li>
+</ul>
+<h2>Documentation</h2>
+<ul>
+<li><a href="https://github.com/mattmikolay/chip-8/wiki/Mastering-CHIP%E2%80%908">Mastering CHIP-8</a> - In-depth overview of the CHIP-8 instruction set.</li>
+<li><a href="http://johnearnest.github.io/Octo/docs/chip8ref.pdf">CHIP-8 Instruction Set</a> - Quick cheat sheet for CHIP-8 instructions.</li>
+<li><a href="https://github.com/mattmikolay/chip-8/wiki/CHIP%E2%80%908-Instruction-Set">CHIP-8 Instruction Set</a> - A comprehensive instruction/opcode table.</li>
+<li><a href="https://github.com/mattmikolay/chip-8/wiki/CHIP%E2%80%908-Technical-Reference">CHIP-8 Technical Reference</a> - Overview of how the CHIP-8 interpreter works.</li>
+<li><a href="https://github.com/mattmikolay/chip-8/wiki/CHIP%E2%80%908-Extensions-Reference">CHIP-8 Extensions Reference</a> - A list of CHIP-8 variants and extensions.</li>
+<li><a href="https://laurencescotford.com/chip-8-on-the-cosmac-vip-index/">Chip-8 on the COSMAC VIP</a> - An in-depth disassembly and analysis of the original CHIP-8 interpreter on the COSMAC VIP.</li>
+<li><a href="https://github.com/Chromatophore/HP48-Superchip">HP48-Superchip</a> - An in-depth look at CHIP48 and Super-CHIP for the HP48 calculators, and modifications to make them CHIP-8 compatible.</li>
+<li><a href="http://johnearnest.github.io/Octo/docs/XO-ChipSpecification.html">Octo Extensions</a> - Specification for Octo's XO-CHIP extension.</li>
+</ul>
+<h2>Emulator/interpreter development</h2>
+<ul>
+<li><a href="http://www.multigesture.net/articles/how-to-write-an-emulator-chip-8-interpreter/">How to write an emulator (CHIP-8 interpreter)</a> - A guide to developing a CHIP-8 interpreter in C/C++.</li>
+<li><a href="http://www.emulator101.com/introduction-to-chip-8.html">Emulator 101: CHIP-8</a> - A guide to developing a CHIP-8 disassembler and interpreter in C.</li>
+<li><a href="https://jackson-s.me/2019/07/13/Chip-8-Instruction-Scheduling-and-Frequency.html">Chip 8 Instruction Scheduling and Frequency</a> - Timing of CHIP-8 instructions on the COSMAC VIP.</li>
+<li><a href="https://tobiasvl.github.io/blog/write-a-chip-8-emulator/">High-level guide to making a CHIP-8 emulator</a> - A guide for developing a CHIP-8 interpreter, without code.</li>
+</ul>
+<h3>Testing</h3>
+<ul>
+<li><a href="https://github.com/corax89/chip8-test-rom">chip8-test-rom</a> - corax89's CHIP-8 test program, which tests most instructions for correct (Super-CHIP compliant) behavior.</li>
+<li><a href="https://github.com/Timendus/chip8-test-suite">CHIP-8 test suite</a> - Timendus' collection of tests, including an improved version of corax89's test rom, a test for the behaviour of the flags and a CHIP-8 / Super-CHIP / XO-CHIP quirks test.</li>
+<li><a href="https://github.com/mattmikolay/chip-8/tree/master/delaytimer">Delay timer test</a> - Test program that checks the delay timer's behavior.</li>
+<li><a href="https://github.com/mattmikolay/chip-8/tree/master/randomnumber">Random number test</a> - Test program that checks the spread and mask for random number generation.</li>
+</ul>
+<h2>Emulators/interpreters</h2>
+<ul>
+<li><a href="http://johnearnest.github.io/Octo/">Octo</a> - An IDE for development of CHIP-8, Super-CHIP and XO-Chip games.</li>
+<li><a href="https://www.emma02.hobby-site.com/">Emma02</a> - An emulator for many old microcomputers, including COSMAC VIP, Telmac 1800 and ETI 660, which ran early CHIP-8 interpreters (which are included in the emulator).</li>
+<li><a href="https://github.com/Ersanio/Super-Chip8x">Super-Chip8x</a> - CHIP-8 emulator for the SNES.</li>
+<li><a href="https://github.com/pwmarcz/fpga-chip8">CHIP-8 console on FPGA</a> - A CHIP-8 emulator for the TinyFPGA BX chip.</li>
+<li><a href="http://benryves.com/bin/vinegar/">Vinegar</a> - CHIP-8/Super-CHIP interpreter for TI-83 (Plus) calculators.</li>
+<li><a href="https://lowresnx.inutilis.com/topic.php?id=1648">LowResNX</a> - CHIP-8 interpreter and debugger programmed in BASIC inside another retro fantasy console.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'chip-8_README.md';
 
         fetch(markdownFile)
@@ -48,21 +161,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

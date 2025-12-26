@@ -8,38 +8,165 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Notthetup Awesome Webaudio - Awesome List Resources">
-    <title>Notthetup Awesome Webaudio</title>
+    <meta name="description" content="﻿# Awesome WebAudio > A curated list of awesome WebAudio packages and demos. Inspired by the awesome list thing. Please raise a Pull-Request to add an awesome...">
+    <meta name="robots" content="index, follow">
+    <title>Web Audio - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <p>﻿# Awesome WebAudio</p>
+<p><a href="https://github.com/sindresorhus/awesome#readme"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></p>
+<p><img src="https://raw.githubusercontent.com/voodootikigod/logo.js/master/webaudio/webaudio-js.png" width="200px" alt="WebAudio"></p>
+<blockquote>
+<p>A curated list of awesome <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API">WebAudio</a> <a href="#packages">packages</a> and <a href="#demos">demos</a>.</p>
+</blockquote>
+<p>Inspired by the <a href="https://github.com/sindresorhus/awesome">awesome</a> list thing.</p>
+<p>Please raise a <a href="https://github.com/notthetup/awesome-webaudio/pulls">Pull-Request</a> to add an awesome WebAudio thing to this list.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#packages">Packages</a></li>
+<li><a href="#frameworks">Frameworks</a></li>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#utilities">Utilities</a></li>
+<li><a href="#midi">MIDI</a></li>
+<li><a href="#apps">Apps</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#newsletters">Newsletters</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#obsolete">Obsolete</a></li>
+</ul>
+<h2>Packages</h2>
+<h3>Frameworks</h3>
+<ul>
+<li><a href="https://github.com/Tonejs/Tone.js">Tone.js</a> - A framework for making interactive music in the browser.</li>
+<li><a href="https://github.com/adamrenklint/bap">Bap</a> - A toolkit for making beats and composing sequences, inspired by the classic MPC60/2000.</li>
+<li><a href="https://github.com/GoogleChrome/omnitone">Omnitone</a> - Ambisonic spatial audio on the web.</li>
+<li><a href="https://github.com/Mach1Studios/m1-sdk">Mach1Spatial</a> - Vector based panning spatial audio on the web.</li>
+<li><a href="https://www.elementary.audio/">Elementary</a> – Declarative, functional framework for writing audio software on the web or for native apps</li>
+<li><a href="https://github.com/software-mansion-labs/react-native-audio-api">React Native Audio API</a> - Web Audio API implementation for native apps based on react-native.</li>
+</ul>
+<h3>Libraries</h3>
+<ul>
+<li><a href="https://github.com/notthetup/smoothfade">smoothfade</a> - A library for smoothly fading between two AudioNodes.</li>
+<li><a href="https://github.com/benji6/virtual-audio-graph">virtual-audio-graph</a> - Library for declaratively manipulating the Web Audio API.</li>
+<li><a href="https://xsound.app/">XSound.js</a> - Full stack library.</li>
+<li><a href="https://github.com/kittykatattack/sound.js">Sound.js</a> - A micro-library to load, play and generate sound effects and music for games and interactive applications.</li>
+<li><a href="https://github.com/meyda/meyda">Meyda</a> - Audio feature extraction library including a variety of widely used audio features.</li>
+<li><a href="https://github.com/katspaugh/wavesurfer.js">Wavesurfer.js</a> - Interactive navigable audio visualization using Web Audio and Canvas.</li>
+<li><a href="https://github.com/audiojs/audio">Audiojs</a> - An object that enables you to store, read, and write PCM audio data more easily.</li>
+<li><a href="https://github.com/Theodeus/tuna">Tuna</a> - An audio effects library.</li>
+<li><a href="https://okazari.github.io/Rythm.js/">Rythm.js</a> - A javascript library that makes your page dance.</li>
+<li><a href="https://github.com/goldfire/howler.js">Howler.js</a> - A comprehensive library with a fallback to HTML5 Audio.</li>
+<li><a href="https://github.com/kelvinau/circular-audio-wave">Circular Audio Wave</a> - A JS library for audio visualization in circular wave using Web Audio API and ECharts.</li>
+<li><a href="https://github.com/rserota/wad">Wad</a> - Web Audio DAW. Use the Web Audio API for dynamic sound synthesis. It's like jQuery for your ears.</li>
+<li><a href="https://p5js.org/reference/#/libraries/p5.sound">p5.sound</a> - An extension that adds Web Audio functionality to the creative coding library <a href="https://p5js.org/">p5.js</a>.</li>
+<li><a href="https://github.com/magenta/magenta-js/tree/master/music">@magenta/music</a> - A JavaScript library to use machine learning models and generate music in the browser, by having some neat abstractions over the Webaudio API.</li>
+<li><a href="https://www.npmjs.com/package/soundfont-player">soundfont-player</a> - A soundfont loader/player to play MIDI sounds using WebAudio API.</li>
+<li><a href="https://github.com/cifkao/html-midi-player">html-midi-player</a> - HTML elements for easy MIDI playback and visualization, without the need to write any custom JS code, but scriptable and stylable as needed.</li>
+<li><a href="https://github.com/infojunkie/musicxml-player">MusicXML Player</a> - A TypeScript component that loads and plays MusicXML files in the browser using Web Audio and Web MIDI.</li>
+<li><a href="https://github.com/jerosoler/waveform-path">waveform-path</a> - Library to generate waveforms paths in svg.</li>
+<li><a href="https://github.com/jerosoler/wave-audio-path-player">wave-audio-path-player</a> - Simple audio player webcomponent customizable with waveform.</li>
+<li><a href="https://github.com/NumberOneBot/dsssp">dsssp</a> - React component library for visualizing and managing audio filters with drag-n-drop and transitions support.</li>
+</ul>
+<h3>Utilities</h3>
+<ul>
+<li><a href="https://github.com/google/audion">Audion</a> - Chrome extension that adds a Web Audio panel to Developer Tools.</li>
+<li><a href="https://github.com/ISNIT0/webaudio-generator">web-audio-generator</a> - A UI for generating Web Audio code.</li>
+</ul>
+<h3>MIDI</h3>
+<ul>
+<li><a href="https://github.com/notthetup/midimessage">midimessage</a> - A simple MIDI Message parser.</li>
+<li><a href="https://github.com/jazz-soft/JZZ">JZZ</a> - MIDI library for Node.js and all major browsers.</li>
+<li><a href="https://github.com/jazz-soft/JZZ-midi-Gear">JZZ-midi-Gear</a> - Retrieve your MIDI device model and manufacturer.</li>
+<li><a href="https://webmidijs.org/">WEBMIDI.js</a> - The Web MIDI API made easy.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <p>﻿# Awesome WebAudio</p>
+<p><a href="https://github.com/sindresorhus/awesome#readme"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></p>
+<p><img src="https://raw.githubusercontent.com/voodootikigod/logo.js/master/webaudio/webaudio-js.png" width="200px" alt="WebAudio"></p>
+<blockquote>
+<p>A curated list of awesome <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API">WebAudio</a> <a href="#packages">packages</a> and <a href="#demos">demos</a>.</p>
+</blockquote>
+<p>Inspired by the <a href="https://github.com/sindresorhus/awesome">awesome</a> list thing.</p>
+<p>Please raise a <a href="https://github.com/notthetup/awesome-webaudio/pulls">Pull-Request</a> to add an awesome WebAudio thing to this list.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#packages">Packages</a></li>
+<li><a href="#frameworks">Frameworks</a></li>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#utilities">Utilities</a></li>
+<li><a href="#midi">MIDI</a></li>
+<li><a href="#apps">Apps</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#newsletters">Newsletters</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#obsolete">Obsolete</a></li>
+</ul>
+<h2>Packages</h2>
+<h3>Frameworks</h3>
+<ul>
+<li><a href="https://github.com/Tonejs/Tone.js">Tone.js</a> - A framework for making interactive music in the browser.</li>
+<li><a href="https://github.com/adamrenklint/bap">Bap</a> - A toolkit for making beats and composing sequences, inspired by the classic MPC60/2000.</li>
+<li><a href="https://github.com/GoogleChrome/omnitone">Omnitone</a> - Ambisonic spatial audio on the web.</li>
+<li><a href="https://github.com/Mach1Studios/m1-sdk">Mach1Spatial</a> - Vector based panning spatial audio on the web.</li>
+<li><a href="https://www.elementary.audio/">Elementary</a> – Declarative, functional framework for writing audio software on the web or for native apps</li>
+<li><a href="https://github.com/software-mansion-labs/react-native-audio-api">React Native Audio API</a> - Web Audio API implementation for native apps based on react-native.</li>
+</ul>
+<h3>Libraries</h3>
+<ul>
+<li><a href="https://github.com/notthetup/smoothfade">smoothfade</a> - A library for smoothly fading between two AudioNodes.</li>
+<li><a href="https://github.com/benji6/virtual-audio-graph">virtual-audio-graph</a> - Library for declaratively manipulating the Web Audio API.</li>
+<li><a href="https://xsound.app/">XSound.js</a> - Full stack library.</li>
+<li><a href="https://github.com/kittykatattack/sound.js">Sound.js</a> - A micro-library to load, play and generate sound effects and music for games and interactive applications.</li>
+<li><a href="https://github.com/meyda/meyda">Meyda</a> - Audio feature extraction library including a variety of widely used audio features.</li>
+<li><a href="https://github.com/katspaugh/wavesurfer.js">Wavesurfer.js</a> - Interactive navigable audio visualization using Web Audio and Canvas.</li>
+<li><a href="https://github.com/audiojs/audio">Audiojs</a> - An object that enables you to store, read, and write PCM audio data more easily.</li>
+<li><a href="https://github.com/Theodeus/tuna">Tuna</a> - An audio effects library.</li>
+<li><a href="https://okazari.github.io/Rythm.js/">Rythm.js</a> - A javascript library that makes your page dance.</li>
+<li><a href="https://github.com/goldfire/howler.js">Howler.js</a> - A comprehensive library with a fallback to HTML5 Audio.</li>
+<li><a href="https://github.com/kelvinau/circular-audio-wave">Circular Audio Wave</a> - A JS library for audio visualization in circular wave using Web Audio API and ECharts.</li>
+<li><a href="https://github.com/rserota/wad">Wad</a> - Web Audio DAW. Use the Web Audio API for dynamic sound synthesis. It's like jQuery for your ears.</li>
+<li><a href="https://p5js.org/reference/#/libraries/p5.sound">p5.sound</a> - An extension that adds Web Audio functionality to the creative coding library <a href="https://p5js.org/">p5.js</a>.</li>
+<li><a href="https://github.com/magenta/magenta-js/tree/master/music">@magenta/music</a> - A JavaScript library to use machine learning models and generate music in the browser, by having some neat abstractions over the Webaudio API.</li>
+<li><a href="https://www.npmjs.com/package/soundfont-player">soundfont-player</a> - A soundfont loader/player to play MIDI sounds using WebAudio API.</li>
+<li><a href="https://github.com/cifkao/html-midi-player">html-midi-player</a> - HTML elements for easy MIDI playback and visualization, without the need to write any custom JS code, but scriptable and stylable as needed.</li>
+<li><a href="https://github.com/infojunkie/musicxml-player">MusicXML Player</a> - A TypeScript component that loads and plays MusicXML files in the browser using Web Audio and Web MIDI.</li>
+<li><a href="https://github.com/jerosoler/waveform-path">waveform-path</a> - Library to generate waveforms paths in svg.</li>
+<li><a href="https://github.com/jerosoler/wave-audio-path-player">wave-audio-path-player</a> - Simple audio player webcomponent customizable with waveform.</li>
+<li><a href="https://github.com/NumberOneBot/dsssp">dsssp</a> - React component library for visualizing and managing audio filters with drag-n-drop and transitions support.</li>
+</ul>
+<h3>Utilities</h3>
+<ul>
+<li><a href="https://github.com/google/audion">Audion</a> - Chrome extension that adds a Web Audio panel to Developer Tools.</li>
+<li><a href="https://github.com/ISNIT0/webaudio-generator">web-audio-generator</a> - A UI for generating Web Audio code.</li>
+</ul>
+<h3>MIDI</h3>
+<ul>
+<li><a href="https://github.com/notthetup/midimessage">midimessage</a> - A simple MIDI Message parser.</li>
+<li><a href="https://github.com/jazz-soft/JZZ">JZZ</a> - MIDI library for Node.js and all major browsers.</li>
+<li><a href="https://github.com/jazz-soft/JZZ-midi-Gear">JZZ-midi-Gear</a> - Retrieve your MIDI device model and manufacturer.</li>
+<li><a href="https://webmidijs.org/">WEBMIDI.js</a> - The Web MIDI API made easy.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'web-audio_README.md';
 
         fetch(markdownFile)
@@ -48,21 +175,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

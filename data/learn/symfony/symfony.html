@@ -8,38 +8,193 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sitepoint Editors Awesome Symfony - Awesome List Resources">
-    <title>Sitepoint Editors Awesome Symfony</title>
+    <meta name="description" content="A list of awesome Symfony bundles, utilities and resources. Table of contents: Administration Certification Community Development Distributions Ecommerce Forms...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Symfony [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Symfony <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A list of awesome <a href="http://symfony.com">Symfony</a> bundles, utilities and resources.</p>
+<p>Table of contents:</p>
+<ul>
+<li><a href="#administration">Administration</a></li>
+<li><a href="#certification">Certification</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#development">Development</a></li>
+<li><a href="#distributions">Distributions</a></li>
+<li><a href="#ecommerce">Ecommerce</a></li>
+<li><a href="#forms">Forms</a></li>
+<li><a href="#internationalization">Internationalization</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#monitoring">Monitoring</a></li>
+<li><a href="#payments-management">Payments Management</a></li>
+<li><a href="#queues">Queues</a></li>
+<li><a href="#reading">Reading</a></li>
+<li><a href="#recipes">Recipes</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#service-container">Service Container</a></li>
+<li><a href="#storage">Storage</a></li>
+<li><a href="#template-engine">Template Engine</a></li>
+<li><a href="#third-party-apis">Third Party APIs</a></li>
+<li><a href="#user-management">User Management</a></li>
+<li><a href="#validation">Validation</a></li>
+<li><a href="#web-services">Web Services</a></li>
+</ul>
+<h2>Administration</h2>
+<ul>
+<li><a href="https://github.com/MWSimple/AdminCrudBundle">AdminCrudBundle</a> - AdminCrudBundle - Use SensioGeneratorBundle. Extend controller, add paginator, filter, others.</li>
+<li><a href="https://github.com/symfony2admingenerator/AdmingeneratorGeneratorBundle">AdmingeneratorGeneratorBundle</a> - Admingenerator for Symfony2, parse generator.yml files to build classes</li>
+<li><a href="https://github.com/javiereguiluz/EasyAdminBundle">EasyAdminBundle</a> - Simple admin generator for Symfony applications</li>
+<li><a href="https://github.com/sonata-project/SonataAdminBundle">SonataAdminBundle</a> - AdminBundle - The missing Symfony2 Admin Generator</li>
+<li><a href="https://github.com/kevinpapst/AdminLTEBundle">AdminLTEBundle</a> - Admin theme based on the AdminLTE Template</li>
+<li><a href="https://github.com/acantepie/umbrella">Umbrella framework</a> - Admin components and theme to create administration backends.</li>
+<li><a href="https://github.com/kevinpapst/TablerBundle">TablerBundle</a> - Admin theme based on the Tabler Template. It ships with many twig helpers (functions, filter, embeds, macros and includes).</li>
+</ul>
+<h2>Certification</h2>
+<ul>
+<li><a href="https://github.com/certificationy/certificationy-cli">CLI tool to train certifications</a></li>
+<li><a href="https://github.com/raulconti/symfony-3-certification-guide">Symfony 3 certification guide</a></li>
+<li><a href="https://github.com/ThomasBerends/symfony-certification-preparation-list">Symfony certification preparation list</a></li>
+</ul>
+<h2>Community</h2>
+<ul>
+<li>Facebook - notable, large and active Facebook groups:<ul>
+<li><a href="https://fb.com/groups/7672226565">1</a></li>
+<li><a href="https://fb.com/groups/symfony2.framework">2</a></li>
+</ul>
+</li>
+<li>IRC:<ul>
+<li><a href="http://irc.lc/freenode/symfony">#symfony</a> - Official IRC channel for Symfony support.</li>
+<li><a href="http://irc.lc/freenode/symfony">#symfony-docs</a> - Channel to discuss about the documentation of Symfony.</li>
+</ul>
+</li>
+<li>Local:<ul>
+<li><a href="http://symfony.com/events/">Community events</a> - Find Symfony events near you.</li>
+<li><a href="http://www.meetup.com/topics/symfony/">Meetup</a> - Get involved locally and find Symfony users from your local area.</li>
+</ul>
+</li>
+<li><a href="https://telegram.me/symfony_php">Telegram</a> - Symfony group on Telegram.</li>
+<li><a href="https://www.quora.com/topic/Symfony">Quora</a> - Symfony topics on Quora.</li>
+<li><a href="https://www.reddit.com/r/symfony">Reddit</a> - Ask and answer questions, discussion.</li>
+<li><a href="https://connect.sensiolabs.com/login">SensioLabs Connect</a> - Developer social network, earn achievements for your community involvement and commitment.</li>
+<li><a href="https://symfony.com/slack-invite">Slack</a> - Symfony on Slack, platform for team communication.</li>
+<li><a href="http://stackoverflow.com/questions/tagged/symfony2">Stack Overflow</a> - Symfony support on Stack Overflow.</li>
+<li><a href="https://twitter.com/symfony">Twitter</a> - Keep up with Symfony news in a twitter-like way.</li>
+</ul>
+<h2>Development</h2>
+<ul>
+<li><a href="https://github.com/antares993/AccessibleBundle">AccessibleBundle</a> - Define your class' getters, setters and constructor using powerful annotations.</li>
+<li><a href="https://github.com/M6Web/ApiExceptionBundle">ApiExceptionBundle</a> - Exception API Bundle.</li>
+<li><a href="https://github.com/AppVentus/AvAjaxBundle">AvAjaxBundle</a> - This bundle offers a simple structure to run ajax actions.</li>
+<li><a href="https://github.com/Bee-Lab/BeelabTestBundle">BeelabTestBundle</a> - This bundle contains just an opinionated extension of Symfony WebTestCase.</li>
+<li><a href="https://github.com/yamiko-ninja/CacheAdministrationBundle">CacheAdministrationBundle</a> - This bundle includes a controller with actions to clear the various caches.</li>
+<li><a href="https://github.com/mmoreram/ControllerExtraBundle">ControllerExtraBundle</a> - Set of useful Controller annotations.</li>
+<li><a href="https://github.com/dunglas/DunglasActionBundle">DunglasActionBundle</a> - A replacement for the Symfony controller system based on the Action-Domain-Responder pattern.</li>
+<li><a href="https://github.com/iltar/http-bundle">http-bundle</a> - Provides extra HTTP related functionality.</li>
+<li><a href="http://jmsyst.com/bundles/JMSDebuggingBundle">JMSDebuggingBundle</a> - Provides advanced debugging tools.</li>
+<li><a href="https://github.com/raulfraile/LadybugBundle">LadybugBundle</a> - The Simple and Extensible PHP Dumper.</li>
+<li><a href="https://github.com/liip/LiipCodeBundle">LiipCodeBundle</a> - A set of Symfony2 console commands to help developers deal with the various ways of identifying classes, templates, bundles, services, etc.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Symfony <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A list of awesome <a href="http://symfony.com">Symfony</a> bundles, utilities and resources.</p>
+<p>Table of contents:</p>
+<ul>
+<li><a href="#administration">Administration</a></li>
+<li><a href="#certification">Certification</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#development">Development</a></li>
+<li><a href="#distributions">Distributions</a></li>
+<li><a href="#ecommerce">Ecommerce</a></li>
+<li><a href="#forms">Forms</a></li>
+<li><a href="#internationalization">Internationalization</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#monitoring">Monitoring</a></li>
+<li><a href="#payments-management">Payments Management</a></li>
+<li><a href="#queues">Queues</a></li>
+<li><a href="#reading">Reading</a></li>
+<li><a href="#recipes">Recipes</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#service-container">Service Container</a></li>
+<li><a href="#storage">Storage</a></li>
+<li><a href="#template-engine">Template Engine</a></li>
+<li><a href="#third-party-apis">Third Party APIs</a></li>
+<li><a href="#user-management">User Management</a></li>
+<li><a href="#validation">Validation</a></li>
+<li><a href="#web-services">Web Services</a></li>
+</ul>
+<h2>Administration</h2>
+<ul>
+<li><a href="https://github.com/MWSimple/AdminCrudBundle">AdminCrudBundle</a> - AdminCrudBundle - Use SensioGeneratorBundle. Extend controller, add paginator, filter, others.</li>
+<li><a href="https://github.com/symfony2admingenerator/AdmingeneratorGeneratorBundle">AdmingeneratorGeneratorBundle</a> - Admingenerator for Symfony2, parse generator.yml files to build classes</li>
+<li><a href="https://github.com/javiereguiluz/EasyAdminBundle">EasyAdminBundle</a> - Simple admin generator for Symfony applications</li>
+<li><a href="https://github.com/sonata-project/SonataAdminBundle">SonataAdminBundle</a> - AdminBundle - The missing Symfony2 Admin Generator</li>
+<li><a href="https://github.com/kevinpapst/AdminLTEBundle">AdminLTEBundle</a> - Admin theme based on the AdminLTE Template</li>
+<li><a href="https://github.com/acantepie/umbrella">Umbrella framework</a> - Admin components and theme to create administration backends.</li>
+<li><a href="https://github.com/kevinpapst/TablerBundle">TablerBundle</a> - Admin theme based on the Tabler Template. It ships with many twig helpers (functions, filter, embeds, macros and includes).</li>
+</ul>
+<h2>Certification</h2>
+<ul>
+<li><a href="https://github.com/certificationy/certificationy-cli">CLI tool to train certifications</a></li>
+<li><a href="https://github.com/raulconti/symfony-3-certification-guide">Symfony 3 certification guide</a></li>
+<li><a href="https://github.com/ThomasBerends/symfony-certification-preparation-list">Symfony certification preparation list</a></li>
+</ul>
+<h2>Community</h2>
+<ul>
+<li>Facebook - notable, large and active Facebook groups:<ul>
+<li><a href="https://fb.com/groups/7672226565">1</a></li>
+<li><a href="https://fb.com/groups/symfony2.framework">2</a></li>
+</ul>
+</li>
+<li>IRC:<ul>
+<li><a href="http://irc.lc/freenode/symfony">#symfony</a> - Official IRC channel for Symfony support.</li>
+<li><a href="http://irc.lc/freenode/symfony">#symfony-docs</a> - Channel to discuss about the documentation of Symfony.</li>
+</ul>
+</li>
+<li>Local:<ul>
+<li><a href="http://symfony.com/events/">Community events</a> - Find Symfony events near you.</li>
+<li><a href="http://www.meetup.com/topics/symfony/">Meetup</a> - Get involved locally and find Symfony users from your local area.</li>
+</ul>
+</li>
+<li><a href="https://telegram.me/symfony_php">Telegram</a> - Symfony group on Telegram.</li>
+<li><a href="https://www.quora.com/topic/Symfony">Quora</a> - Symfony topics on Quora.</li>
+<li><a href="https://www.reddit.com/r/symfony">Reddit</a> - Ask and answer questions, discussion.</li>
+<li><a href="https://connect.sensiolabs.com/login">SensioLabs Connect</a> - Developer social network, earn achievements for your community involvement and commitment.</li>
+<li><a href="https://symfony.com/slack-invite">Slack</a> - Symfony on Slack, platform for team communication.</li>
+<li><a href="http://stackoverflow.com/questions/tagged/symfony2">Stack Overflow</a> - Symfony support on Stack Overflow.</li>
+<li><a href="https://twitter.com/symfony">Twitter</a> - Keep up with Symfony news in a twitter-like way.</li>
+</ul>
+<h2>Development</h2>
+<ul>
+<li><a href="https://github.com/antares993/AccessibleBundle">AccessibleBundle</a> - Define your class' getters, setters and constructor using powerful annotations.</li>
+<li><a href="https://github.com/M6Web/ApiExceptionBundle">ApiExceptionBundle</a> - Exception API Bundle.</li>
+<li><a href="https://github.com/AppVentus/AvAjaxBundle">AvAjaxBundle</a> - This bundle offers a simple structure to run ajax actions.</li>
+<li><a href="https://github.com/Bee-Lab/BeelabTestBundle">BeelabTestBundle</a> - This bundle contains just an opinionated extension of Symfony WebTestCase.</li>
+<li><a href="https://github.com/yamiko-ninja/CacheAdministrationBundle">CacheAdministrationBundle</a> - This bundle includes a controller with actions to clear the various caches.</li>
+<li><a href="https://github.com/mmoreram/ControllerExtraBundle">ControllerExtraBundle</a> - Set of useful Controller annotations.</li>
+<li><a href="https://github.com/dunglas/DunglasActionBundle">DunglasActionBundle</a> - A replacement for the Symfony controller system based on the Action-Domain-Responder pattern.</li>
+<li><a href="https://github.com/iltar/http-bundle">http-bundle</a> - Provides extra HTTP related functionality.</li>
+<li><a href="http://jmsyst.com/bundles/JMSDebuggingBundle">JMSDebuggingBundle</a> - Provides advanced debugging tools.</li>
+<li><a href="https://github.com/raulfraile/LadybugBundle">LadybugBundle</a> - The Simple and Extensible PHP Dumper.</li>
+<li><a href="https://github.com/liip/LiipCodeBundle">LiipCodeBundle</a> - A set of Symfony2 console commands to help developers deal with the various ways of identifying classes, templates, bundles, services, etc.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'symfony_README.md';
 
         fetch(markdownFile)
@@ -48,21 +203,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

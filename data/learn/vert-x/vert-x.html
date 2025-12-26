@@ -8,38 +8,179 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Vert X3 Vertx Awesome - Awesome List Resources">
-    <title>Vert X3 Vertx Awesome</title>
+    <meta name="description" content="Awesome Vert.x is a list of awesome frameworks, libraries or other components related to Vert.x. If you want your component to appear here, send a pull request...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Vert.x [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Vert.x <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p><a href="http://vertx.io"><img src="vertx-logo.svg" align="right" width="250" alt="Vert.x logo"></a></p>
+<p><em>Awesome Vert.x</em> is a list of awesome frameworks, libraries or other components related to
+<a href="https://github.com/eclipse/vert.x">Vert.x</a>.</p>
+<p>If you want your component to appear here, send a pull request to this repository to add it.</p>
+<p>Please note that we can't vouch for the stability or production-worthiness of everything on this list unless it has
+the icon <img src="vertx-favicon.svg" alt="(stack)" title="Vert.x Stack" height="16px">
+next to it. This icon means the component is part of the official
+<a href="https://vertx.io/docs/">Vert.x stack</a>.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#books">Books</a></li>
+<li><a href="#build-tools">Build tools</a></li>
+<li><a href="#web-frameworks">Web Frameworks</a></li>
+<li><a href="#authentication-authorisation">Authentication Authorisation</a></li>
+<li><a href="#database-clients">Database Clients</a></li>
+<li><a href="#integration">Integration</a></li>
+<li><a href="#middleware">Middleware</a></li>
+<li><a href="#language-support">Language Support</a></li>
+<li><a href="#reactive">Reactive</a></li>
+<li><a href="#sync-thread-non-block">Sync Thread Non Block</a></li>
+<li><a href="#vertx-event-bus-clients">Vert.x Event Bus Clients</a></li>
+<li><a href="#vertx-event-bus-extensions">Vert.x Event Bus Extensions</a></li>
+<li><a href="#cluster-managers">Cluster Managers</a></li>
+<li><a href="#cloud-support">Cloud Support</a></li>
+<li><a href="#microservices">Microservices</a></li>
+<li><a href="#search-engines">Search Engines</a></li>
+<li><a href="#service-factory">Service Factory</a></li>
+<li><a href="#config">Config</a></li>
+<li><a href="#dependency-injection">Dependency Injection</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#development-tools">Development Tools</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#distribution">Distribution</a></li>
+<li><a href="#examples">Examples</a></li>
+<li><a href="#deployment">Deployment</a></li>
+<li><a href="#utilities">Utilities</a></li>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#front-end">Front-End</a></li>
+</ul>
+<h2>Books</h2>
+<ul>
+<li><a href="https://www.oreilly.com/library/view/building-reactive-microservices/9781491986295/">Building Reactive Microservices in Java</a> by Clément Escoffier</li>
+<li><a href="https://www.manning.com/books/vertx-in-action">Vert.x in Action</a> by Julien Ponge</li>
+</ul>
+<h2>Build tools</h2>
+<ul>
+<li><a href="https://github.com/reactiverse/vertx-maven-plugin">Vert.x Maven plugin</a></li>
+<li><a href="https://plugins.gradle.org/plugin/io.vertx.vertx-plugin">Vert.x Gradle plugin</a></li>
+<li><a href="https://github.com/bulivlad/vertx-codegen-plugin">Vert.x Codegen Gradle plugin</a> - A Gradle plugin to facilitate the codegen usage for Vert.x Java projects.</li>
+</ul>
+<h2>Web Frameworks</h2>
+<ul>
+<li><a href="https://github.com/vert-x3/vertx-web">Vert.x Web</a>  <img src="vertx-favicon.svg" alt="(stack)" title="Vert.x Stack" height="16px"> - Full featured web toolkit for Vert.x.</li>
+<li><a href="https://github.com/englishtown/vertx-jersey">Vert.x Jersey</a> - Create JAX-RS <a href="https://eclipse-ee4j.github.io/jersey/">Jersey</a> resources in Vert.x.</li>
+<li><a href="https://github.com/kohesive/kovert">Kovert</a> - Invisible REST framework for Kotlin + Vert.x Web.</li>
+<li><a href="https://github.com/spriet2000/vertx-handlers-http">Handlers</a> - Open web framework for Vert.x.</li>
+<li><a href="https://github.com/advantageous/qbit">QBit</a> - REST and WebSocket method call marshaling and reactive library.</li>
+<li><a href="https://github.com/swisspush/vertx-rest-storage">vertx-rest-storage</a> - Persistence for REST resources in the filesystem or a redis database.</li>
+<li><a href="https://github.com/isaiah/jubilee">Jubilee</a> - A rack compatible Ruby HTTP server built on Vert.x 3.</li>
+<li><a href="https://github.com/Cognifide/knotx">Knot.x</a> - Efficient &amp; high-performance integration platform for modern websites built on Vert.x 3.</li>
+<li><a href="https://github.com/GreenfieldTech/irked">Irked</a> - Annotations-based configuration for Vert.x Web, with a controller framework and expressive APIs for REST.</li>
+<li><a href="https://github.com/zandero/rest.vertx">REST.VertX</a> - Lightweight JAX-RS (RestEasy) like annotation processor for Vert.x verticals.</li>
+<li><a href="https://github.com/Atmosphere/atmosphere-vertx">Atmosphere Vert.x</a> - Realtime Client Server Framework for the JVM, supporting WebSockets and Server Sent Events with Cross-Browser Fallbacks.</li>
+<li><a href="https://github.com/mcollovati/vertx-vaadin">Vert.x Vaadin</a> - Run Vaadin applications on Vert.x.</li>
+<li><a href="https://github.com/lukehutch/serverx">Serverx</a> - Allows you to quickly and easily set up a Vert.x-powered server using only route handler annotations.</li>
+<li><a href="https://github.com/cloudoptlab/cloudopt-next">Cloudopt Next</a> - Cloudopt Next is a very lightweight and modern, JVM-based, full stack kotlin framework designed for building modular, easily testable JVM applications with support for Java, Kotlin language, crafted from the best of breed Java libraries and standards.</li>
+<li><a href="https://github.com/AppsFlyer/donkey">Donkey</a> - Modern Clojure HTTP server and client built for ease of use and performance.</li>
+<li><a href="https://github.com/scx567888/scx">SCX</a> - An open and easy-to-use web framework, most functions are based on annotations.</li>
+<li><a href="https://github.com/dream11/vertx-rest">vertx-rest</a> - Abstraction over resteasy-vertx to simplify writing a Vert.x REST application based on JAX-RS annotations.</li>
+</ul>
+<h2>Authentication Authorisation</h2>
+<ul>
+<li><a href="https://github.com/eclipse-vertx/vertx-auth">Vert.x Auth SQL</a>  <img src="vertx-favicon.svg" alt="(stack)" title="Vert.x Stack" height="16px"> - Vert.x authentication/authorisation based on the Vert.x SQL client and a relational database.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Vert.x <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p><a href="http://vertx.io"><img src="vertx-logo.svg" align="right" width="250" alt="Vert.x logo"></a></p>
+<p><em>Awesome Vert.x</em> is a list of awesome frameworks, libraries or other components related to
+<a href="https://github.com/eclipse/vert.x">Vert.x</a>.</p>
+<p>If you want your component to appear here, send a pull request to this repository to add it.</p>
+<p>Please note that we can't vouch for the stability or production-worthiness of everything on this list unless it has
+the icon <img src="vertx-favicon.svg" alt="(stack)" title="Vert.x Stack" height="16px">
+next to it. This icon means the component is part of the official
+<a href="https://vertx.io/docs/">Vert.x stack</a>.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#books">Books</a></li>
+<li><a href="#build-tools">Build tools</a></li>
+<li><a href="#web-frameworks">Web Frameworks</a></li>
+<li><a href="#authentication-authorisation">Authentication Authorisation</a></li>
+<li><a href="#database-clients">Database Clients</a></li>
+<li><a href="#integration">Integration</a></li>
+<li><a href="#middleware">Middleware</a></li>
+<li><a href="#language-support">Language Support</a></li>
+<li><a href="#reactive">Reactive</a></li>
+<li><a href="#sync-thread-non-block">Sync Thread Non Block</a></li>
+<li><a href="#vertx-event-bus-clients">Vert.x Event Bus Clients</a></li>
+<li><a href="#vertx-event-bus-extensions">Vert.x Event Bus Extensions</a></li>
+<li><a href="#cluster-managers">Cluster Managers</a></li>
+<li><a href="#cloud-support">Cloud Support</a></li>
+<li><a href="#microservices">Microservices</a></li>
+<li><a href="#search-engines">Search Engines</a></li>
+<li><a href="#service-factory">Service Factory</a></li>
+<li><a href="#config">Config</a></li>
+<li><a href="#dependency-injection">Dependency Injection</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#development-tools">Development Tools</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#distribution">Distribution</a></li>
+<li><a href="#examples">Examples</a></li>
+<li><a href="#deployment">Deployment</a></li>
+<li><a href="#utilities">Utilities</a></li>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#front-end">Front-End</a></li>
+</ul>
+<h2>Books</h2>
+<ul>
+<li><a href="https://www.oreilly.com/library/view/building-reactive-microservices/9781491986295/">Building Reactive Microservices in Java</a> by Clément Escoffier</li>
+<li><a href="https://www.manning.com/books/vertx-in-action">Vert.x in Action</a> by Julien Ponge</li>
+</ul>
+<h2>Build tools</h2>
+<ul>
+<li><a href="https://github.com/reactiverse/vertx-maven-plugin">Vert.x Maven plugin</a></li>
+<li><a href="https://plugins.gradle.org/plugin/io.vertx.vertx-plugin">Vert.x Gradle plugin</a></li>
+<li><a href="https://github.com/bulivlad/vertx-codegen-plugin">Vert.x Codegen Gradle plugin</a> - A Gradle plugin to facilitate the codegen usage for Vert.x Java projects.</li>
+</ul>
+<h2>Web Frameworks</h2>
+<ul>
+<li><a href="https://github.com/vert-x3/vertx-web">Vert.x Web</a>  <img src="vertx-favicon.svg" alt="(stack)" title="Vert.x Stack" height="16px"> - Full featured web toolkit for Vert.x.</li>
+<li><a href="https://github.com/englishtown/vertx-jersey">Vert.x Jersey</a> - Create JAX-RS <a href="https://eclipse-ee4j.github.io/jersey/">Jersey</a> resources in Vert.x.</li>
+<li><a href="https://github.com/kohesive/kovert">Kovert</a> - Invisible REST framework for Kotlin + Vert.x Web.</li>
+<li><a href="https://github.com/spriet2000/vertx-handlers-http">Handlers</a> - Open web framework for Vert.x.</li>
+<li><a href="https://github.com/advantageous/qbit">QBit</a> - REST and WebSocket method call marshaling and reactive library.</li>
+<li><a href="https://github.com/swisspush/vertx-rest-storage">vertx-rest-storage</a> - Persistence for REST resources in the filesystem or a redis database.</li>
+<li><a href="https://github.com/isaiah/jubilee">Jubilee</a> - A rack compatible Ruby HTTP server built on Vert.x 3.</li>
+<li><a href="https://github.com/Cognifide/knotx">Knot.x</a> - Efficient &amp; high-performance integration platform for modern websites built on Vert.x 3.</li>
+<li><a href="https://github.com/GreenfieldTech/irked">Irked</a> - Annotations-based configuration for Vert.x Web, with a controller framework and expressive APIs for REST.</li>
+<li><a href="https://github.com/zandero/rest.vertx">REST.VertX</a> - Lightweight JAX-RS (RestEasy) like annotation processor for Vert.x verticals.</li>
+<li><a href="https://github.com/Atmosphere/atmosphere-vertx">Atmosphere Vert.x</a> - Realtime Client Server Framework for the JVM, supporting WebSockets and Server Sent Events with Cross-Browser Fallbacks.</li>
+<li><a href="https://github.com/mcollovati/vertx-vaadin">Vert.x Vaadin</a> - Run Vaadin applications on Vert.x.</li>
+<li><a href="https://github.com/lukehutch/serverx">Serverx</a> - Allows you to quickly and easily set up a Vert.x-powered server using only route handler annotations.</li>
+<li><a href="https://github.com/cloudoptlab/cloudopt-next">Cloudopt Next</a> - Cloudopt Next is a very lightweight and modern, JVM-based, full stack kotlin framework designed for building modular, easily testable JVM applications with support for Java, Kotlin language, crafted from the best of breed Java libraries and standards.</li>
+<li><a href="https://github.com/AppsFlyer/donkey">Donkey</a> - Modern Clojure HTTP server and client built for ease of use and performance.</li>
+<li><a href="https://github.com/scx567888/scx">SCX</a> - An open and easy-to-use web framework, most functions are based on annotations.</li>
+<li><a href="https://github.com/dream11/vertx-rest">vertx-rest</a> - Abstraction over resteasy-vertx to simplify writing a Vert.x REST application based on JAX-RS annotations.</li>
+</ul>
+<h2>Authentication Authorisation</h2>
+<ul>
+<li><a href="https://github.com/eclipse-vertx/vertx-auth">Vert.x Auth SQL</a>  <img src="vertx-favicon.svg" alt="(stack)" title="Vert.x Stack" height="16px"> - Vert.x authentication/authorisation based on the Vert.x SQL client and a relational database.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'vert-x_README.md';
 
         fetch(markdownFile)
@@ -48,21 +189,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

@@ -8,38 +8,281 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mhinz Vim Galore - Awesome List Resources">
-    <title>Mhinz Vim Galore</title>
+    <meta name="description" content="Chinese | Japanese | Portuguese | Russian | Vietnamese Licensed under CC BY-SA 4.0. - What is Vim? - The Vim Philosophy - First steps - Minimal vimrc - What...">
+    <meta name="robots" content="index, follow">
+    <title>Vim - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <div align='center'>
+  <br /><br /><br />
+  <img src='https://raw.githubusercontent.com/mhinz/vim-galore/master/static/images/logo-vim-galore.png' alt='vim-galore logo' />
+  <br /><br /><br /><br />
+  <div>
+    <a href='https://github.com/wsdjeg/vim-galore-zh_cn'>Chinese</a> |
+    <a href='http://postd.cc/?s=vim-galore'>Japanese</a> |
+    <a href='https://github.com/lsrdg/vim-galore'>Portuguese</a> |
+    <a href='http://givi.olnd.ru/vim-galore/vim-galore-ru.html'>Russian</a> |
+    <a href='https://github.com/kyoz/vim-galore-vi'>Vietnamese</a>
+    <div>
+      <br />
+      <sub>Licensed under <a href='https://creativecommons.org/licenses/by-sa/4.0'>CC BY-SA 4.0<a/>.</sub>
+    </div>
+  </div>
+  <br /><br />
+</div>
+
+<h3><a href="#intro-1">Intro</a></h3>
+<ul>
+<li><a href="#what-is-vim">What is Vim?</a></li>
+<li><a href="#the-vim-philosophy">The Vim Philosophy</a></li>
+<li><a href="#first-steps">First steps</a></li>
+<li><a href="#minimal-vimrc">Minimal vimrc</a></li>
+<li><a href="#what-kind-of-vim-am-i-running">What kind of Vim am I running?</a></li>
+<li><a href="#cheatsheets">Cheatsheets</a></li>
+</ul>
+<h3><a href="#basics-1">Basics</a></h3>
+<ul>
+<li><a href="#buffers-windows-tabs">Buffers, windows, tabs</a></li>
+<li><a href="#active-loaded-listed-named-buffers">Active, loaded, listed, named buffers</a></li>
+<li><a href="#argument-list">Argument list</a></li>
+<li><a href="#mappings">Mappings</a></li>
+<li><a href="#mapleader">Mapleader</a></li>
+<li><a href="#registers">Registers</a></li>
+<li><a href="#ranges">Ranges</a></li>
+<li><a href="#marks">Marks</a></li>
+<li><a href="#completion">Completion</a></li>
+<li><a href="#motions-operators-text-objects">Motions, operators, text objects</a></li>
+<li><a href="#autocmds">Autocmds</a></li>
+<li><a href="#changelist-jumplist">Changelist, jumplist</a></li>
+<li><a href="#undo-tree">Undo tree</a></li>
+<li><a href="#quickfix-and-location-lists">Quickfix and location lists</a></li>
+<li><a href="#macros">Macros</a></li>
+<li><a href="#colorschemes">Colorschemes</a></li>
+<li><a href="#folding">Folding</a></li>
+<li><a href="#sessions">Sessions</a></li>
+<li><a href="#locality">Locality</a></li>
+</ul>
+<h3><a href="#usage-1">Usage</a></h3>
+<ul>
+<li><a href="#getting-help-offline">Getting help offline</a></li>
+<li><a href="#getting-help-offline-alternative">Getting help offline (alternative)</a></li>
+<li><a href="#getting-help-online">Getting help online</a></li>
+<li><a href="#autocmds-in-practice">Autocmds in practice</a></li>
+<li><a href="#user-events">User events</a></li>
+<li><a href="#nested-autocmds">Nested autocmds</a></li>
+<li><a href="#clipboard">Clipboard</a></li>
+<li><a href="#clipboard-usage-windows-macos">Clipboard usage (Windows, macOS)</a></li>
+<li><a href="#clipboard-usage-linux-bsd-">Clipboard usage (Linux, BSD, ...)</a></li>
+<li><a href="#restore-cursor-position-when-opening-file">Restore cursor position when opening file</a></li>
+<li><a href="#temporary-files">Temporary files</a></li>
+<li><a href="#backup-files">Backup files</a></li>
+<li><a href="#swap-files">Swap files</a></li>
+<li><a href="#undo-files">Undo files</a></li>
+<li><a href="#viminfo-files">Viminfo files</a></li>
+<li><a href="#example-configuration-for-temporary-files">Example configuration for temporary files</a></li>
+<li><a href="#editing-remote-files">Editing remote files</a></li>
+<li><a href="#managing-plugins">Managing plugins</a></li>
+<li><a href="#block-insert">Block insert</a></li>
+<li><a href="#running-external-programs-and-using-filters">Running external programs and using filters</a></li>
+<li><a href="#cscope">Cscope</a></li>
+<li><a href="#matchit">MatchIt</a></li>
+<li><a href="#true-colors">True colors</a></li>
+</ul>
+<h3><a href="#tips-1">Tips</a></h3>
+<ul>
+<li><a href="#go-to-other-end-of-selected-text">Go to other end of selected text</a></li>
+<li><a href="#saner-behavior-of-n-and-n">Saner behavior of n and N</a></li>
+<li><a href="#saner-command-line-history">Saner command-line history</a></li>
+<li><a href="#saner-ctrl-l">Saner CTRL-L</a></li>
+<li><a href="#disable-audible-and-visual-bells">Disable audible and visual bells</a></li>
+<li><a href="#quickly-move-current-line">Quickly move current line</a></li>
+<li><a href="#quickly-add-empty-lines">Quickly add empty lines</a></li>
+<li><a href="#quickly-edit-your-macros">Quickly edit your macros</a></li>
+<li><a href="#quickly-jump-to-header-or-source-file">Quickly jump to header or source file</a></li>
+<li><a href="#quickly-change-font-size-in-gui">Quickly change font size in GUI</a></li>
+<li><a href="#change-cursor-style-dependent-on-mode">Change cursor style dependent on mode</a></li>
+<li><a href="#dont-lose-selection-when-shifting-sidewards">Don't lose selection when shifting sidewards</a></li>
+<li><a href="#reload-a-file-on-saving">Reload a file on saving</a></li>
+<li><a href="#smarter-cursorline">Smarter cursorline</a></li>
+<li><a href="#faster-keyword-completion">Faster keyword completion</a></li>
+<li><a href="#cosmetic-changes-to-colorschemes">Cosmetic changes to colorschemes</a></li>
+</ul>
+<h3><a href="#commands-1">Commands</a></h3>
+<ul>
+<li><a href="#global-and-vglobal">:global and :vglobal</a> - Execute a command on all matching lines.</li>
+<li><a href="#normal-and-execute">:normal and :execute</a> - The scripting dream team.</li>
+<li><a href="#redir-and-execute">:redir and execute()</a> - Capture command output.</li>
+</ul>
+<h3><a href="#debugging-1">Debugging</a></h3>
+<ul>
+<li><a href="#general-tips">General tips</a></li>
+<li><a href="#verbosity">Verbosity</a></li>
+<li><a href="#profiling-startup-time">Profiling startup time</a></li>
+<li><a href="#profiling-at-runtime">Profiling at runtime</a></li>
+<li><a href="#debugging-vim-scripts">Debugging Vim scripts</a></li>
+<li><a href="#debugging-syntax-files">Debugging syntax files</a></li>
+</ul>
+<h3><a href="#miscellaneous-1">Miscellaneous</a></h3>
+<ul>
+<li><a href="#additional-resources">Additional resources</a></li>
+<li><a href="#vim-distributions">Vim distributions</a></li>
+<li><a href="#standard-plugins">Standard plugins</a></li>
+<li><a href="#map-capslock-to-control">Map CapsLock to Control</a></li>
+<li><a href="#generating-html-from-buffer">Generating HTML from buffer</a></li>
+<li><a href="#easter-eggs">Easter eggs</a></li>
+<li><a href="#why-hjkl-for-navigation">Why hjkl for navigation?</a></li>
+</ul>
+<h3><a href="#common-problems-1">Common problems</a></h3>
+<ul>
+<li><a href="#editing-small-files-is-slow">Editing small files is slow</a></li>
+<li><a href="#editing-huge-files-is-slow">Editing huge files is slow</a></li>
+<li><a href="#bracketed-paste-or-why-do-i-have-to-set-paste-all-the-time">Bracketed paste (or why do I have to set 'paste' all the time?)</a></li>
+<li><a href="#delays-when-using-escape-key-in-terminal">Delays when using escape key in terminal</a></li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <div align='center'>
+  <br /><br /><br />
+  <img src='https://raw.githubusercontent.com/mhinz/vim-galore/master/static/images/logo-vim-galore.png' alt='vim-galore logo' />
+  <br /><br /><br /><br />
+  <div>
+    <a href='https://github.com/wsdjeg/vim-galore-zh_cn'>Chinese</a> |
+    <a href='http://postd.cc/?s=vim-galore'>Japanese</a> |
+    <a href='https://github.com/lsrdg/vim-galore'>Portuguese</a> |
+    <a href='http://givi.olnd.ru/vim-galore/vim-galore-ru.html'>Russian</a> |
+    <a href='https://github.com/kyoz/vim-galore-vi'>Vietnamese</a>
+    <div>
+      <br />
+      <sub>Licensed under <a href='https://creativecommons.org/licenses/by-sa/4.0'>CC BY-SA 4.0<a/>.</sub>
+    </div>
+  </div>
+  <br /><br />
+</div>
+
+<h3><a href="#intro-1">Intro</a></h3>
+<ul>
+<li><a href="#what-is-vim">What is Vim?</a></li>
+<li><a href="#the-vim-philosophy">The Vim Philosophy</a></li>
+<li><a href="#first-steps">First steps</a></li>
+<li><a href="#minimal-vimrc">Minimal vimrc</a></li>
+<li><a href="#what-kind-of-vim-am-i-running">What kind of Vim am I running?</a></li>
+<li><a href="#cheatsheets">Cheatsheets</a></li>
+</ul>
+<h3><a href="#basics-1">Basics</a></h3>
+<ul>
+<li><a href="#buffers-windows-tabs">Buffers, windows, tabs</a></li>
+<li><a href="#active-loaded-listed-named-buffers">Active, loaded, listed, named buffers</a></li>
+<li><a href="#argument-list">Argument list</a></li>
+<li><a href="#mappings">Mappings</a></li>
+<li><a href="#mapleader">Mapleader</a></li>
+<li><a href="#registers">Registers</a></li>
+<li><a href="#ranges">Ranges</a></li>
+<li><a href="#marks">Marks</a></li>
+<li><a href="#completion">Completion</a></li>
+<li><a href="#motions-operators-text-objects">Motions, operators, text objects</a></li>
+<li><a href="#autocmds">Autocmds</a></li>
+<li><a href="#changelist-jumplist">Changelist, jumplist</a></li>
+<li><a href="#undo-tree">Undo tree</a></li>
+<li><a href="#quickfix-and-location-lists">Quickfix and location lists</a></li>
+<li><a href="#macros">Macros</a></li>
+<li><a href="#colorschemes">Colorschemes</a></li>
+<li><a href="#folding">Folding</a></li>
+<li><a href="#sessions">Sessions</a></li>
+<li><a href="#locality">Locality</a></li>
+</ul>
+<h3><a href="#usage-1">Usage</a></h3>
+<ul>
+<li><a href="#getting-help-offline">Getting help offline</a></li>
+<li><a href="#getting-help-offline-alternative">Getting help offline (alternative)</a></li>
+<li><a href="#getting-help-online">Getting help online</a></li>
+<li><a href="#autocmds-in-practice">Autocmds in practice</a></li>
+<li><a href="#user-events">User events</a></li>
+<li><a href="#nested-autocmds">Nested autocmds</a></li>
+<li><a href="#clipboard">Clipboard</a></li>
+<li><a href="#clipboard-usage-windows-macos">Clipboard usage (Windows, macOS)</a></li>
+<li><a href="#clipboard-usage-linux-bsd-">Clipboard usage (Linux, BSD, ...)</a></li>
+<li><a href="#restore-cursor-position-when-opening-file">Restore cursor position when opening file</a></li>
+<li><a href="#temporary-files">Temporary files</a></li>
+<li><a href="#backup-files">Backup files</a></li>
+<li><a href="#swap-files">Swap files</a></li>
+<li><a href="#undo-files">Undo files</a></li>
+<li><a href="#viminfo-files">Viminfo files</a></li>
+<li><a href="#example-configuration-for-temporary-files">Example configuration for temporary files</a></li>
+<li><a href="#editing-remote-files">Editing remote files</a></li>
+<li><a href="#managing-plugins">Managing plugins</a></li>
+<li><a href="#block-insert">Block insert</a></li>
+<li><a href="#running-external-programs-and-using-filters">Running external programs and using filters</a></li>
+<li><a href="#cscope">Cscope</a></li>
+<li><a href="#matchit">MatchIt</a></li>
+<li><a href="#true-colors">True colors</a></li>
+</ul>
+<h3><a href="#tips-1">Tips</a></h3>
+<ul>
+<li><a href="#go-to-other-end-of-selected-text">Go to other end of selected text</a></li>
+<li><a href="#saner-behavior-of-n-and-n">Saner behavior of n and N</a></li>
+<li><a href="#saner-command-line-history">Saner command-line history</a></li>
+<li><a href="#saner-ctrl-l">Saner CTRL-L</a></li>
+<li><a href="#disable-audible-and-visual-bells">Disable audible and visual bells</a></li>
+<li><a href="#quickly-move-current-line">Quickly move current line</a></li>
+<li><a href="#quickly-add-empty-lines">Quickly add empty lines</a></li>
+<li><a href="#quickly-edit-your-macros">Quickly edit your macros</a></li>
+<li><a href="#quickly-jump-to-header-or-source-file">Quickly jump to header or source file</a></li>
+<li><a href="#quickly-change-font-size-in-gui">Quickly change font size in GUI</a></li>
+<li><a href="#change-cursor-style-dependent-on-mode">Change cursor style dependent on mode</a></li>
+<li><a href="#dont-lose-selection-when-shifting-sidewards">Don't lose selection when shifting sidewards</a></li>
+<li><a href="#reload-a-file-on-saving">Reload a file on saving</a></li>
+<li><a href="#smarter-cursorline">Smarter cursorline</a></li>
+<li><a href="#faster-keyword-completion">Faster keyword completion</a></li>
+<li><a href="#cosmetic-changes-to-colorschemes">Cosmetic changes to colorschemes</a></li>
+</ul>
+<h3><a href="#commands-1">Commands</a></h3>
+<ul>
+<li><a href="#global-and-vglobal">:global and :vglobal</a> - Execute a command on all matching lines.</li>
+<li><a href="#normal-and-execute">:normal and :execute</a> - The scripting dream team.</li>
+<li><a href="#redir-and-execute">:redir and execute()</a> - Capture command output.</li>
+</ul>
+<h3><a href="#debugging-1">Debugging</a></h3>
+<ul>
+<li><a href="#general-tips">General tips</a></li>
+<li><a href="#verbosity">Verbosity</a></li>
+<li><a href="#profiling-startup-time">Profiling startup time</a></li>
+<li><a href="#profiling-at-runtime">Profiling at runtime</a></li>
+<li><a href="#debugging-vim-scripts">Debugging Vim scripts</a></li>
+<li><a href="#debugging-syntax-files">Debugging syntax files</a></li>
+</ul>
+<h3><a href="#miscellaneous-1">Miscellaneous</a></h3>
+<ul>
+<li><a href="#additional-resources">Additional resources</a></li>
+<li><a href="#vim-distributions">Vim distributions</a></li>
+<li><a href="#standard-plugins">Standard plugins</a></li>
+<li><a href="#map-capslock-to-control">Map CapsLock to Control</a></li>
+<li><a href="#generating-html-from-buffer">Generating HTML from buffer</a></li>
+<li><a href="#easter-eggs">Easter eggs</a></li>
+<li><a href="#why-hjkl-for-navigation">Why hjkl for navigation?</a></li>
+</ul>
+<h3><a href="#common-problems-1">Common problems</a></h3>
+<ul>
+<li><a href="#editing-small-files-is-slow">Editing small files is slow</a></li>
+<li><a href="#editing-huge-files-is-slow">Editing huge files is slow</a></li>
+<li><a href="#bracketed-paste-or-why-do-i-have-to-set-paste-all-the-time">Bracketed paste (or why do I have to set 'paste' all the time?)</a></li>
+<li><a href="#delays-when-using-escape-key-in-terminal">Delays when using escape key in terminal</a></li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'vim_README.md';
 
         fetch(markdownFile)
@@ -48,21 +291,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

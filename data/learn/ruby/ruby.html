@@ -8,38 +8,301 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Markets Awesome Ruby - Awesome List Resources">
-    <title>Markets Awesome Ruby</title>
+    <meta name="description" content="Awesome Ruby A categorized community-driven collection of awesome Ruby libraries, tools, frameworks and software. The essential Ruby to build modern Apps and...">
+    <meta name="robots" content="index, follow">
+    <title>Ruby - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <div align="center">
+  <p>
+    <a href="https://awesome-ruby.com"><img src="https://raw.githubusercontent.com/markets/awesome-ruby/gh-pages/images/logo_m.png"></a>
+  </p>
+  <h3><a href="https://awesome-ruby.com">Awesome Ruby</a></h3>
+  <p>
+    <a href="https://github.com/sindresorhus/awesome"><img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg"></a>
+  </p>
+</div>
+
+<p>A categorized community-driven collection of awesome Ruby libraries, tools, frameworks and software. The essential Ruby to build modern Apps and Web Apps.</p>
+<p>Sharing, suggestions and contributions are always welcome! Please take a look at the <a href="https://github.com/markets/awesome-ruby/blob/master/CONTRIBUTING.md">contribution guidelines and quality standard</a> first.</p>
+<p>Thanks to all <a href="https://github.com/markets/awesome-ruby/graphs/contributors">contributors</a>, you're awesome and this wouldn't be possible without you!</p>
+<div align="center">
+  <hr>
+  <sup><b>Sponsored by:</b></sup>
+  <br>
+  <br>
+  <a href="https://betterstack.com">
+    <div>
+      <img src="https://raw.githubusercontent.com/markets/awesome-ruby/master/media/sponsors/betterstack.png" width="200" alt="Better Stack">
+    </div>
+    <div>
+      Better Stack lets you see inside any stack,<br>
+      debug any issue, and resolve any incident.
+    </div>
+  </a>
+  <br>
+  <hr>
+</div>
+
+<ul>
+<li><a href="#admin-interface">Admin Interface</a></li>
+<li><a href="#analytics">Analytics</a></li>
+<li><a href="#api-builder-and-discovery">API Builder and Discovery</a></li>
+<li><a href="#assets">Assets</a></li>
+<li><a href="#authentication-and-oauth">Authentication and OAuth</a></li>
+<li><a href="#authorization">Authorization</a></li>
+<li><a href="#automation">Automation</a></li>
+<li><a href="#breadcrumbs">Breadcrumbs</a></li>
+<li><a href="#boilerplates--ui-kits">Boilerplates &amp; UI Kits</a></li>
+<li><a href="#business-logic">Business logic</a></li>
+<li><a href="#caching">Caching</a></li>
+<li><a href="#captchas-and-anti-spam">Captchas and anti-spam</a></li>
+<li><a href="#cli-builder">CLI Builder</a></li>
+<li><a href="#cli-utilities">CLI Utilities</a></li>
+<li><a href="#cloud">Cloud</a></li>
+<li><a href="#cms">CMS</a></li>
+<li><a href="#code-analysis-and-metrics">Code Analysis and Metrics</a></li>
+<li><a href="#code-formatting">Code Formatting</a></li>
+<li><a href="#code-highlighting">Code Highlighting</a></li>
+<li><a href="#code-loaders">Code Loaders</a></li>
+<li><a href="#coding-style-guides">Coding Style Guides</a></li>
+<li><a href="#concurrency-and-parallelism">Concurrency and Parallelism</a></li>
+<li><a href="#configuration">Configuration</a></li>
+<li><a href="#core-extensions">Core Extensions</a></li>
+<li><a href="#country-data">Country Data</a></li>
+<li><a href="#crm">CRM</a></li>
+<li><a href="#cryptocurrencies-and-blockchains">Cryptocurrencies and Blockchains</a></li>
+<li><a href="#dashboards">Dashboards</a></li>
+<li><a href="#data-processing-and-etl">Data Processing and ETL</a></li>
+<li><a href="#data-visualization">Data Visualization</a></li>
+<li><a href="#database-drivers">Database Drivers</a></li>
+<li><a href="#database-tools">Database Tools</a></li>
+<li><a href="#date-and-time-processing">Date and Time Processing</a></li>
+<li><a href="#debugging-tools">Debugging Tools</a></li>
+<li><a href="#decorators">Decorators</a></li>
+<li><a href="#devops-tools">DevOps Tools</a></li>
+<li><a href="#diff">Diff</a></li>
+<li><a href="#discover">Discover</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#e-commerce-and-payments">E-Commerce and Payments</a></li>
+<li><a href="#ebook">Ebook</a></li>
+<li><a href="#email">Email</a></li>
+<li><a href="#encryption">Encryption</a></li>
+<li><a href="#environment-management">Environment Management</a></li>
+<li><a href="#error-handling">Error Handling</a></li>
+<li><a href="#event-sourcing">Event Sourcing</a></li>
+<li><a href="#feature-flippers-and-ab-testing">Feature Flippers and A/B Testing</a></li>
+<li><a href="#file-upload">File Upload</a></li>
+<li><a href="#file-system-listener">File System Listener</a></li>
+<li><a href="#form-builder">Form Builder</a></li>
+<li><a href="#game-development-and-graphics">Game Development and Graphics</a></li>
+<li><a href="#gem-generators">Gem Generators</a></li>
+<li><a href="#gem-servers">Gem Servers</a></li>
+<li><a href="#geolocation">Geolocation</a></li>
+<li><a href="#git-tools">Git Tools</a></li>
+<li><a href="#graphql">GraphQL</a></li>
+<li><a href="#gui">GUI</a></li>
+<li><a href="#htmlxml-parsing">HTML/XML Parsing</a></li>
+<li><a href="#http-clients-and-tools">HTTP Clients and tools</a></li>
+<li><a href="#image-processing">Image Processing</a></li>
+<li><a href="#implementationscompilers">Implementations/Compilers</a></li>
+<li><a href="#internationalization">Internationalization</a></li>
+<li><a href="#irb">IRB</a></li>
+<li><a href="#logging">Logging</a></li>
+<li><a href="#machine-learning">Machine Learning</a></li>
+<li><a href="#markdown-processors">Markdown Processors</a></li>
+<li><a href="#measurements">Measurements</a></li>
+<li><a href="#mobile-development">Mobile Development</a></li>
+<li><a href="#money">Money</a></li>
+<li><a href="#music-and-sound">Music and Sound</a></li>
+<li><a href="#natural-language-processing">Natural Language Processing</a></li>
+<li><a href="#networking">Networking</a></li>
+<li><a href="#notifications">Notifications</a></li>
+<li><a href="#optimizations">Optimizations</a></li>
+<li><a href="#ormodm">ORM/ODM</a></li>
+<li><a href="#ormodm-extensions">ORM/ODM Extensions</a></li>
+<li><a href="#package-management">Package Management</a></li>
+<li><a href="#pagination">Pagination</a></li>
+<li><a href="#pdf">PDF</a></li>
+<li><a href="#performance-monitoring">Performance Monitoring</a></li>
+<li><a href="#presentation-programs">Presentation Programs</a></li>
+<li><a href="#process-management-and-monitoring">Process Management and Monitoring</a></li>
+<li><a href="#processes">Processes</a></li>
+<li><a href="#profiler-and-optimization">Profiler and Optimization</a></li>
+<li><a href="#qr">QR</a></li>
+<li><a href="#queues-and-messaging">Queues and Messaging</a></li>
+<li><a href="#rails-application-generators">Rails Application Generators</a></li>
+<li><a href="#robotics">Robotics</a></li>
+<li><a href="#rss">RSS</a></li>
+<li><a href="#serverless">Serverless</a></li>
+<li><a href="#scheduling">Scheduling</a></li>
+<li><a href="#scientific">Scientific</a></li>
+<li><a href="#search">Search</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#services-and-apps">Services and Apps</a></li>
+<li><a href="#seo">SEO</a></li>
+<li><a href="#social-networking">Social Networking</a></li>
+<li><a href="#spreadsheets-and-documents">Spreadsheets and Documents</a></li>
+<li><a href="#state-machines">State Machines</a></li>
+<li><a href="#static-site-generation">Static Site Generation</a></li>
+<li><a href="#template-engine">Template Engine</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#third-party-apis">Third-party APIs</a></li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <div align="center">
+  <p>
+    <a href="https://awesome-ruby.com"><img src="https://raw.githubusercontent.com/markets/awesome-ruby/gh-pages/images/logo_m.png"></a>
+  </p>
+  <h3><a href="https://awesome-ruby.com">Awesome Ruby</a></h3>
+  <p>
+    <a href="https://github.com/sindresorhus/awesome"><img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg"></a>
+  </p>
+</div>
+
+<p>A categorized community-driven collection of awesome Ruby libraries, tools, frameworks and software. The essential Ruby to build modern Apps and Web Apps.</p>
+<p>Sharing, suggestions and contributions are always welcome! Please take a look at the <a href="https://github.com/markets/awesome-ruby/blob/master/CONTRIBUTING.md">contribution guidelines and quality standard</a> first.</p>
+<p>Thanks to all <a href="https://github.com/markets/awesome-ruby/graphs/contributors">contributors</a>, you're awesome and this wouldn't be possible without you!</p>
+<div align="center">
+  <hr>
+  <sup><b>Sponsored by:</b></sup>
+  <br>
+  <br>
+  <a href="https://betterstack.com">
+    <div>
+      <img src="https://raw.githubusercontent.com/markets/awesome-ruby/master/media/sponsors/betterstack.png" width="200" alt="Better Stack">
+    </div>
+    <div>
+      Better Stack lets you see inside any stack,<br>
+      debug any issue, and resolve any incident.
+    </div>
+  </a>
+  <br>
+  <hr>
+</div>
+
+<ul>
+<li><a href="#admin-interface">Admin Interface</a></li>
+<li><a href="#analytics">Analytics</a></li>
+<li><a href="#api-builder-and-discovery">API Builder and Discovery</a></li>
+<li><a href="#assets">Assets</a></li>
+<li><a href="#authentication-and-oauth">Authentication and OAuth</a></li>
+<li><a href="#authorization">Authorization</a></li>
+<li><a href="#automation">Automation</a></li>
+<li><a href="#breadcrumbs">Breadcrumbs</a></li>
+<li><a href="#boilerplates--ui-kits">Boilerplates &amp; UI Kits</a></li>
+<li><a href="#business-logic">Business logic</a></li>
+<li><a href="#caching">Caching</a></li>
+<li><a href="#captchas-and-anti-spam">Captchas and anti-spam</a></li>
+<li><a href="#cli-builder">CLI Builder</a></li>
+<li><a href="#cli-utilities">CLI Utilities</a></li>
+<li><a href="#cloud">Cloud</a></li>
+<li><a href="#cms">CMS</a></li>
+<li><a href="#code-analysis-and-metrics">Code Analysis and Metrics</a></li>
+<li><a href="#code-formatting">Code Formatting</a></li>
+<li><a href="#code-highlighting">Code Highlighting</a></li>
+<li><a href="#code-loaders">Code Loaders</a></li>
+<li><a href="#coding-style-guides">Coding Style Guides</a></li>
+<li><a href="#concurrency-and-parallelism">Concurrency and Parallelism</a></li>
+<li><a href="#configuration">Configuration</a></li>
+<li><a href="#core-extensions">Core Extensions</a></li>
+<li><a href="#country-data">Country Data</a></li>
+<li><a href="#crm">CRM</a></li>
+<li><a href="#cryptocurrencies-and-blockchains">Cryptocurrencies and Blockchains</a></li>
+<li><a href="#dashboards">Dashboards</a></li>
+<li><a href="#data-processing-and-etl">Data Processing and ETL</a></li>
+<li><a href="#data-visualization">Data Visualization</a></li>
+<li><a href="#database-drivers">Database Drivers</a></li>
+<li><a href="#database-tools">Database Tools</a></li>
+<li><a href="#date-and-time-processing">Date and Time Processing</a></li>
+<li><a href="#debugging-tools">Debugging Tools</a></li>
+<li><a href="#decorators">Decorators</a></li>
+<li><a href="#devops-tools">DevOps Tools</a></li>
+<li><a href="#diff">Diff</a></li>
+<li><a href="#discover">Discover</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#e-commerce-and-payments">E-Commerce and Payments</a></li>
+<li><a href="#ebook">Ebook</a></li>
+<li><a href="#email">Email</a></li>
+<li><a href="#encryption">Encryption</a></li>
+<li><a href="#environment-management">Environment Management</a></li>
+<li><a href="#error-handling">Error Handling</a></li>
+<li><a href="#event-sourcing">Event Sourcing</a></li>
+<li><a href="#feature-flippers-and-ab-testing">Feature Flippers and A/B Testing</a></li>
+<li><a href="#file-upload">File Upload</a></li>
+<li><a href="#file-system-listener">File System Listener</a></li>
+<li><a href="#form-builder">Form Builder</a></li>
+<li><a href="#game-development-and-graphics">Game Development and Graphics</a></li>
+<li><a href="#gem-generators">Gem Generators</a></li>
+<li><a href="#gem-servers">Gem Servers</a></li>
+<li><a href="#geolocation">Geolocation</a></li>
+<li><a href="#git-tools">Git Tools</a></li>
+<li><a href="#graphql">GraphQL</a></li>
+<li><a href="#gui">GUI</a></li>
+<li><a href="#htmlxml-parsing">HTML/XML Parsing</a></li>
+<li><a href="#http-clients-and-tools">HTTP Clients and tools</a></li>
+<li><a href="#image-processing">Image Processing</a></li>
+<li><a href="#implementationscompilers">Implementations/Compilers</a></li>
+<li><a href="#internationalization">Internationalization</a></li>
+<li><a href="#irb">IRB</a></li>
+<li><a href="#logging">Logging</a></li>
+<li><a href="#machine-learning">Machine Learning</a></li>
+<li><a href="#markdown-processors">Markdown Processors</a></li>
+<li><a href="#measurements">Measurements</a></li>
+<li><a href="#mobile-development">Mobile Development</a></li>
+<li><a href="#money">Money</a></li>
+<li><a href="#music-and-sound">Music and Sound</a></li>
+<li><a href="#natural-language-processing">Natural Language Processing</a></li>
+<li><a href="#networking">Networking</a></li>
+<li><a href="#notifications">Notifications</a></li>
+<li><a href="#optimizations">Optimizations</a></li>
+<li><a href="#ormodm">ORM/ODM</a></li>
+<li><a href="#ormodm-extensions">ORM/ODM Extensions</a></li>
+<li><a href="#package-management">Package Management</a></li>
+<li><a href="#pagination">Pagination</a></li>
+<li><a href="#pdf">PDF</a></li>
+<li><a href="#performance-monitoring">Performance Monitoring</a></li>
+<li><a href="#presentation-programs">Presentation Programs</a></li>
+<li><a href="#process-management-and-monitoring">Process Management and Monitoring</a></li>
+<li><a href="#processes">Processes</a></li>
+<li><a href="#profiler-and-optimization">Profiler and Optimization</a></li>
+<li><a href="#qr">QR</a></li>
+<li><a href="#queues-and-messaging">Queues and Messaging</a></li>
+<li><a href="#rails-application-generators">Rails Application Generators</a></li>
+<li><a href="#robotics">Robotics</a></li>
+<li><a href="#rss">RSS</a></li>
+<li><a href="#serverless">Serverless</a></li>
+<li><a href="#scheduling">Scheduling</a></li>
+<li><a href="#scientific">Scientific</a></li>
+<li><a href="#search">Search</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#services-and-apps">Services and Apps</a></li>
+<li><a href="#seo">SEO</a></li>
+<li><a href="#social-networking">Social Networking</a></li>
+<li><a href="#spreadsheets-and-documents">Spreadsheets and Documents</a></li>
+<li><a href="#state-machines">State Machines</a></li>
+<li><a href="#static-site-generation">Static Site Generation</a></li>
+<li><a href="#template-engine">Template Engine</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#third-party-apis">Third-party APIs</a></li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'ruby_README.md';
 
         fetch(markdownFile)
@@ -48,21 +311,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

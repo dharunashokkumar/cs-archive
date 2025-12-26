@@ -8,38 +8,133 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dspinellis Awesome Msr - Awesome List Resources">
-    <title>Dspinellis Awesome Msr</title>
+    <meta name="description" content="A curated repository of data sets and tools that can be used for conducting evidence-based, data-driven research on software systems. This research approach is...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Empirical Software Engineering [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Empirical Software Engineering <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p>A curated repository of data sets and tools that can be used for conducting evidence-based, data-driven research on software systems.
+This research approach is often termed <a href="https://en.wikipedia.org/wiki/Experimental_software_engineering">experimental, or empirical software engineering</a>.
+Many of the data sets can also be useful in research using <a href="https://en.wikipedia.org/wiki/Search-based_software_engineering">search-based software engineering</a> methods.
+The repository is named after the <a href="https://www.msrconf.org/">Mining Software Repositories (MSR)</a> conference series.
+For examples of such work see the MSR conference's <a href="http://2016.msrconf.org/#/hall-of-fame">Hall of Fame</a>.</p>
+<ul>
+<li>This list requires your input for its continuous improvement.
+  Read the <a href="contributing.md">contribution guide</a> for instructions on how
+  you can contribute.
+  Alternatively, you can send me an <a href="mailto:dds@aueb.gr">email</a>
+  if you find the process too cumbersome or confusing.</li>
+<li>For more awesome lists, see <a href="https://github.com/sindresorhus/awesome">awesome</a>.</li>
+</ul>
+<h2>Contents</h2>
+<ul>
+<li><a href="#repositories">Repositories</a></li>
+<li><a href="#data-sets">Data Sets</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#research-outlets">Research Outlets</a></li>
+</ul>
+<h2>Repositories</h2>
+<ul>
+<li><a href="https://github.com/Derek-Jones/ESEUR-code-data">ESEUR</a> All data used in the openly available book <a href="http://www.knosof.co.uk/ESEUR/index.html">Evidence-based Software Engineering</a></li>
+<li><a href="https://authecesofteng.github.io/directory-msr-datasets/">Directory of MSR Datasets</a></li>
+<li><a href="https://flossmole.org/collection_details">FLOSSmole</a> - Collaborative collection and analysis of free/libre/open source project data.</li>
+<li><a href="http://promise.site.uottawa.ca/SERepository/datasets-page.html">PROMISE</a> - About 20 datasets related to software engineering research.</li>
+<li><a href="http://sir.unl.edu/portal/index.php">SIR</a> - Software-artifact infrastructure repository; Java, C, C++, and C# software together with test suites and fault data.</li>
+<li><a href="http://zenodo.org/">Zenodo</a> - Software data collections in CERN's open-access repository.</li>
+<li><a href="http://zenodo.org/communities/seacraft">Software Engineering Artifacts Can Really Assist Future Tasks</a></li>
+<li><a href="https://zenodo.org/communities/empirical-software-engineering/">Empirical Software Engineering</a></li>
+<li><a href="https://zenodo.org/communities/msr/">Mining Software Repositories</a></li>
+</ul>
+<h2>Data Sets</h2>
+<ul>
+<li><a href="https://androidtimemachine.github.io">AndroidTimeMachine</a> - Graph-based dataset of commit history of 8,431 real-world Android apps.</li>
+<li><a href="https://androzoo.uni.lu/">AndroZoo</a> - Collection of Android Applications.</li>
+<li><a href="http://bug.inf.usi.ch/index.php">Bug Prediction Dataset</a> - Collection of models and metrics from Eclipse JDT Core, PDE UI, Equinox Framework, Lucene, Mylyn, and their histories.</li>
+<li><a href="http://kin-y.github.io/miningReviewRepo/">Code Reviews</a> - Code reviews of OpenStack, LibreOffice, AOSP, Qt, Eclipse.</li>
+<li><a href="http://www.comp.nus.edu.sg/%7Erelease/corebench/">CoREBench</a> - Collection of 70 realistically Complex Regression Errors that were systematically extracted from the repositories and bug reports of four open-source software projects: Make, Grep, Findutils, and Coreutils.</li>
+<li><a href="https://rvantonder.github.io/CryptOSS/">Cryptocurrency GitHub Activity and Market Cap Dataset</a> - Activity such as commits, stars, prices, and market cap of over 200 cryptocurrency projects on GitHub over time. Raw, historic data is also <a href="https://zenodo.org/record/2595588#.XRuzuBNKhSM">available</a>.</li>
+<li><a href="https://github.com/rjust/defects4j">Defects4J</a> - Collection of 395 reproducible bugs collected with the goal of advancing software testing research.</li>
+<li><a href="http://download.eclipse.org/scava/datasets/aeri_stacktraces/aeri_stacktraces.html">Eclipse AERI stacktraces</a> - Collection of stacktraces of Exceptions encountered by users of the Eclipse IDE, as retrieved by the AERI reporting system.</li>
+<li><a href="https://figshare.com/articles/Enron_Spreadsheets_and_Emails/1221767">Enron Spreadsheets and Emails</a> - All the spreadsheets and emails used in the paper 'Enron's Spreadsheets and Related Emails: A Dataset and Analysis'.</li>
+<li><a href="https://github.com/istlab/maven_bug_catalog">Findbugs-maven</a> - Set of FindBugs reports for the Java projects of the <a href="https://maven.apache.org">Maven repository</a>.</li>
+<li><a href="http://ghtorrent.org/">GHTorrent</a> - Scalable, queriable, offline mirror of data offered through the GitHub REST API.</li>
+<li><a href="http://www.inf.u-szeged.hu/~ferenc/papers/GitHubBugDataSet/">GitHub Bug Dataset</a> - Bug Dataset of 15 Java open-source projects characterized by static source code metrics.</li>
+<li><a href="https://cloud.google.com/bigquery/public-data/github">GitHub on Google BigQuery</a> - GitHub data accessible through Google's BigQuery platform.</li>
+<li><a href="http://slebok.github.io/zoo/">Grammar Zoo</a> - Collection of grammars of DSLs and GPLs, some extracted from metamodels and document schemata.</li>
+<li><a href="http://www.kave.cc/datasets">KaVE</a> - Developer tool interaction data.</li>
+<li><a href="https://zenodo.org/record/2652487#.XRnvomUzb0o">Linux Kernel 4.21 Call Graphs</a> - The Linux Kernel 4.21 Call Graphs produced using <a href="https://github.com/dspinellis/cscout/">CScout</a>. </li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Empirical Software Engineering <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p>A curated repository of data sets and tools that can be used for conducting evidence-based, data-driven research on software systems.
+This research approach is often termed <a href="https://en.wikipedia.org/wiki/Experimental_software_engineering">experimental, or empirical software engineering</a>.
+Many of the data sets can also be useful in research using <a href="https://en.wikipedia.org/wiki/Search-based_software_engineering">search-based software engineering</a> methods.
+The repository is named after the <a href="https://www.msrconf.org/">Mining Software Repositories (MSR)</a> conference series.
+For examples of such work see the MSR conference's <a href="http://2016.msrconf.org/#/hall-of-fame">Hall of Fame</a>.</p>
+<ul>
+<li>This list requires your input for its continuous improvement.
+  Read the <a href="contributing.md">contribution guide</a> for instructions on how
+  you can contribute.
+  Alternatively, you can send me an <a href="mailto:dds@aueb.gr">email</a>
+  if you find the process too cumbersome or confusing.</li>
+<li>For more awesome lists, see <a href="https://github.com/sindresorhus/awesome">awesome</a>.</li>
+</ul>
+<h2>Contents</h2>
+<ul>
+<li><a href="#repositories">Repositories</a></li>
+<li><a href="#data-sets">Data Sets</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#research-outlets">Research Outlets</a></li>
+</ul>
+<h2>Repositories</h2>
+<ul>
+<li><a href="https://github.com/Derek-Jones/ESEUR-code-data">ESEUR</a> All data used in the openly available book <a href="http://www.knosof.co.uk/ESEUR/index.html">Evidence-based Software Engineering</a></li>
+<li><a href="https://authecesofteng.github.io/directory-msr-datasets/">Directory of MSR Datasets</a></li>
+<li><a href="https://flossmole.org/collection_details">FLOSSmole</a> - Collaborative collection and analysis of free/libre/open source project data.</li>
+<li><a href="http://promise.site.uottawa.ca/SERepository/datasets-page.html">PROMISE</a> - About 20 datasets related to software engineering research.</li>
+<li><a href="http://sir.unl.edu/portal/index.php">SIR</a> - Software-artifact infrastructure repository; Java, C, C++, and C# software together with test suites and fault data.</li>
+<li><a href="http://zenodo.org/">Zenodo</a> - Software data collections in CERN's open-access repository.</li>
+<li><a href="http://zenodo.org/communities/seacraft">Software Engineering Artifacts Can Really Assist Future Tasks</a></li>
+<li><a href="https://zenodo.org/communities/empirical-software-engineering/">Empirical Software Engineering</a></li>
+<li><a href="https://zenodo.org/communities/msr/">Mining Software Repositories</a></li>
+</ul>
+<h2>Data Sets</h2>
+<ul>
+<li><a href="https://androidtimemachine.github.io">AndroidTimeMachine</a> - Graph-based dataset of commit history of 8,431 real-world Android apps.</li>
+<li><a href="https://androzoo.uni.lu/">AndroZoo</a> - Collection of Android Applications.</li>
+<li><a href="http://bug.inf.usi.ch/index.php">Bug Prediction Dataset</a> - Collection of models and metrics from Eclipse JDT Core, PDE UI, Equinox Framework, Lucene, Mylyn, and their histories.</li>
+<li><a href="http://kin-y.github.io/miningReviewRepo/">Code Reviews</a> - Code reviews of OpenStack, LibreOffice, AOSP, Qt, Eclipse.</li>
+<li><a href="http://www.comp.nus.edu.sg/%7Erelease/corebench/">CoREBench</a> - Collection of 70 realistically Complex Regression Errors that were systematically extracted from the repositories and bug reports of four open-source software projects: Make, Grep, Findutils, and Coreutils.</li>
+<li><a href="https://rvantonder.github.io/CryptOSS/">Cryptocurrency GitHub Activity and Market Cap Dataset</a> - Activity such as commits, stars, prices, and market cap of over 200 cryptocurrency projects on GitHub over time. Raw, historic data is also <a href="https://zenodo.org/record/2595588#.XRuzuBNKhSM">available</a>.</li>
+<li><a href="https://github.com/rjust/defects4j">Defects4J</a> - Collection of 395 reproducible bugs collected with the goal of advancing software testing research.</li>
+<li><a href="http://download.eclipse.org/scava/datasets/aeri_stacktraces/aeri_stacktraces.html">Eclipse AERI stacktraces</a> - Collection of stacktraces of Exceptions encountered by users of the Eclipse IDE, as retrieved by the AERI reporting system.</li>
+<li><a href="https://figshare.com/articles/Enron_Spreadsheets_and_Emails/1221767">Enron Spreadsheets and Emails</a> - All the spreadsheets and emails used in the paper 'Enron's Spreadsheets and Related Emails: A Dataset and Analysis'.</li>
+<li><a href="https://github.com/istlab/maven_bug_catalog">Findbugs-maven</a> - Set of FindBugs reports for the Java projects of the <a href="https://maven.apache.org">Maven repository</a>.</li>
+<li><a href="http://ghtorrent.org/">GHTorrent</a> - Scalable, queriable, offline mirror of data offered through the GitHub REST API.</li>
+<li><a href="http://www.inf.u-szeged.hu/~ferenc/papers/GitHubBugDataSet/">GitHub Bug Dataset</a> - Bug Dataset of 15 Java open-source projects characterized by static source code metrics.</li>
+<li><a href="https://cloud.google.com/bigquery/public-data/github">GitHub on Google BigQuery</a> - GitHub data accessible through Google's BigQuery platform.</li>
+<li><a href="http://slebok.github.io/zoo/">Grammar Zoo</a> - Collection of grammars of DSLs and GPLs, some extracted from metamodels and document schemata.</li>
+<li><a href="http://www.kave.cc/datasets">KaVE</a> - Developer tool interaction data.</li>
+<li><a href="https://zenodo.org/record/2652487#.XRnvomUzb0o">Linux Kernel 4.21 Call Graphs</a> - The Linux Kernel 4.21 Call Graphs produced using <a href="https://github.com/dspinellis/cscout/">CScout</a>. </li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'empirical-software-engineering_README.md';
 
         fetch(markdownFile)
@@ -48,21 +143,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

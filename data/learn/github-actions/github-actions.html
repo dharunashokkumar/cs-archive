@@ -8,38 +8,219 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sdras Awesome Actions - Awesome List Resources">
-    <title>Sdras Awesome Actions</title>
+    <meta name="description" content="> A curated list of awesome things related to GitHub Actions. Actions are triggered by GitHub platform events directly in a repo and run on-demand workflows...">
+    <meta name="robots" content="index, follow">
+    <title>Github Actions - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <p align="center">
+  <br>
+    <img src="awesome-actions.png" width="150"/>
+  <br>
+</p>
+
+<h1>Awesome Actions <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <a href="https://github.com/sdras/awesome-actions/actions?workflow=Lint+Awesome+List"><!--lint ignore no-dead-urls--><img alt="GitHub Actions status | sdras/awesome-actions" src="https://github.com/sdras/awesome-actions/workflows/Lint%20Awesome%20List/badge.svg" /></a></h1>
+<blockquote>
+<p>A curated list of awesome things related to GitHub Actions.</p>
+</blockquote>
+<p>Actions are triggered by GitHub platform events directly in a repo and run on-demand workflows either on Linux, Windows or macOS virtual machines or inside a container in response. With GitHub Actions you can automate your workflow from idea to production.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#official-resources">Official Resources</a></li>
+<li><a href="#workflow-examples">Workflow Examples</a></li>
+<li><a href="#official-actions">Official Actions</a></li>
+<li><a href="#create-your-actions">Create your Actions</a></li>
+<li><a href="#community-resources">Community Resources</a></li>
+<li><a href="#github-tools-and-management">GitHub Tools and Management</a></li>
+<li><a href="#collection-of-actions">Collection of Actions</a></li>
+<li><a href="#utility">Utility</a></li>
+<li><a href="#static-analysis">Static Analysis</a></li>
+<li><a href="#dynamic-analysis">Dynamic Analysis</a></li>
+<li><a href="#monitoring">Monitoring</a></li>
+<li><a href="#pull-requests">Pull Requests</a></li>
+<li><a href="#github-pages">GitHub Pages</a></li>
+<li><a href="#notifications-and-messages">Notifications and Messages</a></li>
+<li><a href="#deployment">Deployment</a></li>
+<li><a href="#external-services">External Services</a></li>
+<li><a href="#frontend-tools">Frontend Tools</a></li>
+<li><a href="#machine-learning-ops">Machine Learning Ops</a></li>
+<li><a href="#build">Build</a></li>
+<li><a href="#database">Database</a></li>
+<li><a href="#networking">Networking</a></li>
+<li><a href="#localization">Localization</a></li>
+<li><a href="#fun">Fun</a></li>
+<li><a href="#cheat-sheet">Cheat Sheet</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+</ul>
+<h2>Official Resources</h2>
+<ul>
+<li><a href="https://github.com/features/actions">Official Site</a></li>
+<li><a href="https://help.github.com/en/actions">Official Documentation</a></li>
+<li><a href="https://github.com/actions">Official Actions organization</a></li>
+<li><a href="https://github.com/actions/virtual-environments">actions/virtual-environments</a> - GitHub Actions virtual environments.</li>
+<li><a href="https://github.com/actions/runner">actions/runner</a> - The Runner for GitHub Actions.</li>
+<li><a href="https://github.blog/2018-10-17-action-demos/">GitHub Blog Announcement</a></li>
+</ul>
+<h3>Workflow Examples</h3>
+<ul>
+<li><a href="https://github.com/actions/starter-workflows">actions/starter-workflows</a> - Starter workflow management.</li>
+<li><a href="https://github.com/actions/example-services">actions/example-services</a> - Example workflows using service containers.</li>
+</ul>
+<h3>Official Actions</h3>
+<!--lint disable no-dead-urls-->
+
+<h4>Workflow Tool Actions</h4>
+<p>Tool actions for your workflow.</p>
+<!--lint ignore awesome-spell-check-->
+
+<ul>
+<li><a href="https://github.com/actions/checkout">actions/checkout</a> - Setup your repository on your workflow.</li>
+<li><a href="https://github.com/actions/upload-artifact">actions/upload-artifact</a> - Upload artifacts from your workflow.</li>
+<li><a href="https://github.com/actions/download-artifact">actions/download-artifact</a> - Download artifacts from your build.</li>
+<li><a href="https://github.com/actions/cache">actions/cache</a> - Cache dependencies and build outputs in GitHub Actions.</li>
+<li><a href="https://github.com/actions/github-script">actions/github-script</a> - Write a script for GitHub API and the workflow contexts.</li>
+</ul>
+<h4>Actions for GitHub Automation</h4>
+<p>Automate management for issues, pull requests, and releases.</p>
+<ul>
+<li><a href="https://github.com/actions/create-release">actions/create-release</a> - An Action to create releases via the GitHub Release API.</li>
+<li><a href="https://github.com/actions/upload-release-asset">actions/upload-release-asset</a> - An Action to upload a release asset via the GitHub Release API.</li>
+<li><a href="https://github.com/actions/first-interaction">actions/first-interaction</a> - An action for filtering pull requests and issues from first-time contributors.</li>
+<li><a href="https://github.com/actions/stale">actions/stale</a> - Marks issues and pull requests that have not had recent interaction.</li>
+<li><a href="https://github.com/actions/labeler">actions/labeler</a> - An action for automatically labelling pull requests.</li>
+<li><a href="https://github.com/actions/delete-package-versions">actions/delete-package-versions</a> - Delete versions of a package from GitHub Packages.</li>
+</ul>
+<h4>Setup Actions</h4>
+<p>Set up your GitHub Actions workflow with a specific version of your programming languages.</p>
+<ul>
+<li><a href="https://github.com/actions/setup-node">actions/setup-node: Node.js</a></li>
+<li><a href="https://github.com/actions/setup-python">actions/setup-python: Python</a></li>
+<li><a href="https://github.com/actions/setup-go">actions/setup-go: Go</a></li>
+<li><a href="https://github.com/actions/setup-dotnet">actions/setup-dotnet: .NET core sdk</a></li>
+<li><a href="https://github.com/actions/setup-haskell">actions/setup-haskell: Haskell (GHC and Cabal)</a></li>
+<li><a href="https://github.com/actions/setup-java">actions/setup-java: Java</a></li>
+<li><a href="https://github.com/actions/setup-ruby">actions/setup-ruby: Ruby</a></li>
+<li><a href="https://github.com/actions/setup-elixir">actions/setup-elixir: Elixir</a></li>
+<li><a href="https://github.com/julia-actions/setup-julia">actions/setup-julia: Julia</a></li>
+</ul>
+<h3>Create your Actions</h3>
+<h4>JavaScript and TypeScript Actions</h4>
+<ul>
+<li><a href="https://github.com/actions/toolkit">actions/toolkit</a> - The GitHub ToolKit for developing GitHub Actions.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <p align="center">
+  <br>
+    <img src="awesome-actions.png" width="150"/>
+  <br>
+</p>
+
+<h1>Awesome Actions <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <a href="https://github.com/sdras/awesome-actions/actions?workflow=Lint+Awesome+List"><!--lint ignore no-dead-urls--><img alt="GitHub Actions status | sdras/awesome-actions" src="https://github.com/sdras/awesome-actions/workflows/Lint%20Awesome%20List/badge.svg" /></a></h1>
+<blockquote>
+<p>A curated list of awesome things related to GitHub Actions.</p>
+</blockquote>
+<p>Actions are triggered by GitHub platform events directly in a repo and run on-demand workflows either on Linux, Windows or macOS virtual machines or inside a container in response. With GitHub Actions you can automate your workflow from idea to production.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#official-resources">Official Resources</a></li>
+<li><a href="#workflow-examples">Workflow Examples</a></li>
+<li><a href="#official-actions">Official Actions</a></li>
+<li><a href="#create-your-actions">Create your Actions</a></li>
+<li><a href="#community-resources">Community Resources</a></li>
+<li><a href="#github-tools-and-management">GitHub Tools and Management</a></li>
+<li><a href="#collection-of-actions">Collection of Actions</a></li>
+<li><a href="#utility">Utility</a></li>
+<li><a href="#static-analysis">Static Analysis</a></li>
+<li><a href="#dynamic-analysis">Dynamic Analysis</a></li>
+<li><a href="#monitoring">Monitoring</a></li>
+<li><a href="#pull-requests">Pull Requests</a></li>
+<li><a href="#github-pages">GitHub Pages</a></li>
+<li><a href="#notifications-and-messages">Notifications and Messages</a></li>
+<li><a href="#deployment">Deployment</a></li>
+<li><a href="#external-services">External Services</a></li>
+<li><a href="#frontend-tools">Frontend Tools</a></li>
+<li><a href="#machine-learning-ops">Machine Learning Ops</a></li>
+<li><a href="#build">Build</a></li>
+<li><a href="#database">Database</a></li>
+<li><a href="#networking">Networking</a></li>
+<li><a href="#localization">Localization</a></li>
+<li><a href="#fun">Fun</a></li>
+<li><a href="#cheat-sheet">Cheat Sheet</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+</ul>
+<h2>Official Resources</h2>
+<ul>
+<li><a href="https://github.com/features/actions">Official Site</a></li>
+<li><a href="https://help.github.com/en/actions">Official Documentation</a></li>
+<li><a href="https://github.com/actions">Official Actions organization</a></li>
+<li><a href="https://github.com/actions/virtual-environments">actions/virtual-environments</a> - GitHub Actions virtual environments.</li>
+<li><a href="https://github.com/actions/runner">actions/runner</a> - The Runner for GitHub Actions.</li>
+<li><a href="https://github.blog/2018-10-17-action-demos/">GitHub Blog Announcement</a></li>
+</ul>
+<h3>Workflow Examples</h3>
+<ul>
+<li><a href="https://github.com/actions/starter-workflows">actions/starter-workflows</a> - Starter workflow management.</li>
+<li><a href="https://github.com/actions/example-services">actions/example-services</a> - Example workflows using service containers.</li>
+</ul>
+<h3>Official Actions</h3>
+<!--lint disable no-dead-urls-->
+
+<h4>Workflow Tool Actions</h4>
+<p>Tool actions for your workflow.</p>
+<!--lint ignore awesome-spell-check-->
+
+<ul>
+<li><a href="https://github.com/actions/checkout">actions/checkout</a> - Setup your repository on your workflow.</li>
+<li><a href="https://github.com/actions/upload-artifact">actions/upload-artifact</a> - Upload artifacts from your workflow.</li>
+<li><a href="https://github.com/actions/download-artifact">actions/download-artifact</a> - Download artifacts from your build.</li>
+<li><a href="https://github.com/actions/cache">actions/cache</a> - Cache dependencies and build outputs in GitHub Actions.</li>
+<li><a href="https://github.com/actions/github-script">actions/github-script</a> - Write a script for GitHub API and the workflow contexts.</li>
+</ul>
+<h4>Actions for GitHub Automation</h4>
+<p>Automate management for issues, pull requests, and releases.</p>
+<ul>
+<li><a href="https://github.com/actions/create-release">actions/create-release</a> - An Action to create releases via the GitHub Release API.</li>
+<li><a href="https://github.com/actions/upload-release-asset">actions/upload-release-asset</a> - An Action to upload a release asset via the GitHub Release API.</li>
+<li><a href="https://github.com/actions/first-interaction">actions/first-interaction</a> - An action for filtering pull requests and issues from first-time contributors.</li>
+<li><a href="https://github.com/actions/stale">actions/stale</a> - Marks issues and pull requests that have not had recent interaction.</li>
+<li><a href="https://github.com/actions/labeler">actions/labeler</a> - An action for automatically labelling pull requests.</li>
+<li><a href="https://github.com/actions/delete-package-versions">actions/delete-package-versions</a> - Delete versions of a package from GitHub Packages.</li>
+</ul>
+<h4>Setup Actions</h4>
+<p>Set up your GitHub Actions workflow with a specific version of your programming languages.</p>
+<ul>
+<li><a href="https://github.com/actions/setup-node">actions/setup-node: Node.js</a></li>
+<li><a href="https://github.com/actions/setup-python">actions/setup-python: Python</a></li>
+<li><a href="https://github.com/actions/setup-go">actions/setup-go: Go</a></li>
+<li><a href="https://github.com/actions/setup-dotnet">actions/setup-dotnet: .NET core sdk</a></li>
+<li><a href="https://github.com/actions/setup-haskell">actions/setup-haskell: Haskell (GHC and Cabal)</a></li>
+<li><a href="https://github.com/actions/setup-java">actions/setup-java: Java</a></li>
+<li><a href="https://github.com/actions/setup-ruby">actions/setup-ruby: Ruby</a></li>
+<li><a href="https://github.com/actions/setup-elixir">actions/setup-elixir: Elixir</a></li>
+<li><a href="https://github.com/julia-actions/setup-julia">actions/setup-julia: Julia</a></li>
+</ul>
+<h3>Create your Actions</h3>
+<h4>JavaScript and TypeScript Actions</h4>
+<ul>
+<li><a href="https://github.com/actions/toolkit">actions/toolkit</a> - The GitHub ToolKit for developing GitHub Actions.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'github-actions_README.md';
 
         fetch(markdownFile)
@@ -48,21 +229,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

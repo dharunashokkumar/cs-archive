@@ -8,38 +8,213 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Egeerardyn Awesome Latex - Awesome List Resources">
-    <title>Egeerardyn Awesome Latex</title>
+    <meta name="description" content="> This is a curated list of awesome stuff for the (La)TeX typesetting system. - Contents - Distributions - Docker Images - Engines - LaTeX formulas on the web...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome LaTeX [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg?style=flat)](LICENSE.md) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome LaTeX <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a> <a href="LICENSE.md"><img alt="License: CC BY-SA 4.0" src="https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg?style=flat" /></a></h1>
+<p><a href="https://www.latex-project.org/"><img alt="LaTeX Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/LaTeX_logo.svg/220px-LaTeX_logo.svg.png" /></a></p>
+<blockquote>
+<p>This is a curated list of awesome stuff for the <a href="https://www.latex-project.org/">(La)TeX typesetting system</a>.</p>
+</blockquote>
+<h2>Contents</h2>
+<!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+<ul>
+<li><a href="#contents">Contents</a></li>
+<li><a href="#distributions">Distributions</a></li>
+<li><a href="#docker-images">Docker Images</a></li>
+<li><a href="#engines">Engines</a><ul>
+<li><a href="#latex-formulas-on-the-web">LaTeX formulas on the web</a></li>
+</ul>
+</li>
+<li><a href="#editors">Editors</a><ul>
+<li><a href="#latex-focused">LaTeX-focused</a></li>
+<li><a href="#general-purpose-text-editors">General purpose text editors</a></li>
+<li><a href="#online-editors">Online editors</a></li>
+</ul>
+</li>
+<li><a href="#bibliography-tools">Bibliography tools</a></li>
+<li><a href="#build-tools">Build Tools</a><ul>
+<li><a href="#github-actions">GitHub Actions</a></li>
+</ul>
+</li>
+<li><a href="#misc-tools">Misc. Tools</a></li>
+<li><a href="#latex-compatible-gui-tools">LaTeX-compatible GUI tools</a></li>
+<li><a href="#packages">Packages</a><ul>
+<li><a href="#references">References</a></li>
+<li><a href="#tables">Tables</a></li>
+<li><a href="#graphics">Graphics</a></li>
+<li><a href="#pstricks">PSTricks</a></li>
+<li><a href="#tikz">TikZ</a></li>
+<li><a href="#source-code">Source Code</a></li>
+<li><a href="#typography">Typography</a></li>
+<li><a href="#presentations-slides">Presentations, Slides</a></li>
+</ul>
+</li>
+<li><a href="#templates">Templates</a></li>
+<li><a href="#symbols">Symbols</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#showcases">Showcases</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#social-media">Social media</a></li>
+<li><a href="#meta-awesome-latex">Meta Awesome-LaTeX</a></li>
+<li><a href="#legend">Legend</a></li>
+</ul>
+<!-- /TOC -->
+
+<h2>Learning LaTeX</h2>
+<p>Guides how to learn LaTeX</p>
+<h2>Distributions</h2>
+<ul>
+<li><a href="https://tug.org/mactex/">MacTeX</a> - Most common LaTeX distribution for macOS, basically TeXLive with some Mac-specific tools added. ![mac]</li>
+<li><a href="https://www.tug.org/texlive/">TeX Live</a> - Most common LaTeX distribution for Unix-like operating systems, including GNU/Linux. Also works on Windows. ![linux] ![windows]</li>
+<li><a href="https://miktex.org">MikTeX</a> - Most common LaTeX distribution for Windows, but also available for Mac, Linux or as Docker image.  ![linux] ![windows] ![mac] ![foss]</li>
+</ul>
+<h2>Docker Images</h2>
+<p>When one aims for a ready-to-run LaTeX environment without installing, Docker images might be the choice.</p>
+<ul>
+<li><a href="https://github.com/reitzig/texlive-docker">reitzig/texlive-docker</a> - minimal TeXLive system with package installation possibility</li>
+<li><a href="https://gitlab.com/islandoftex/images/texlive">Island of TeX/texlive</a> - debian-based full TeXLive system</li>
+<li><a href="https://github.com/dante-ev/docker-texlive">dante-ev/docker-texlive</a> - debian-based full TeXLive system with additions with pandoc, perl, and python pre-installed</li>
+</ul>
+<h2>Engines</h2>
+<ul>
+<li><a href="https://www.tug.org/applications/pdftex/">pdfTeX</a> - TeX compiler that produces PDF files immediately instead of DVI files (nowadays, this is the standard compiler for many users). ![foss]</li>
+<li><a href="http://xetex.sourceforge.net">XeTeX</a> - TeX compiler that provides better unicode and font support than TeX/pdfTeX (i.e. you can use the  fonts of your operating system instead of only TeX fonts). ![foss]</li>
+<li><a href="https://www.luatex.org">LuaTeX</a> - (La)TeX compiler that supports Lua code for scripting and has improved unicode and font support than standard TeX/pdfTeX. ![foss]</li>
+<li><a href="https://tectonic-typesetting.GitHub.io/en-US/">tectonic</a> - Modern, self contained (La)TeX compiler powered by XeTeX and TeXLive. ![foss]</li>
+</ul>
+<h3>LaTeX formulas on the web</h3>
+<ul>
+<li><a href="https://sites.google.com/site/autolatexequations">Auto-LaTeX Equations with Google Docs</a> - Render high-quality math equations directly in Google Docs.</li>
+<li><a href="https://www.mathjax.org">MathJaX</a> - JavaScript engine to render mathematical formulas on the web. The outcome looks really slick. ![foss]</li>
+<li><a href="https://ctan.org/pkg/mimetex">mimeTeX</a> - mimeTeX is a rather old tool to render LaTeX formulas to PNG figures for your web site, without actually needing a LaTeX installation on your server. ![foss]</li>
+<li><a href="https://ctan.org/pkg/mathtex">mathTeX</a> - mathTeX is the successor of mimeTeX: it produces nicer-looking images but it requires LaTeX to be installed on your server. ![foss]</li>
+<li><a href="https://khan.GitHub.io/KaTeX/">KaTeX</a> - KaTeX is a math rendering library made by Khan Academy focusing on fast load times. All output is processed as plain HTML instead of fixed images. ![foss]</li>
+<li><a href="https://franklinjl.org/">Franklin.jl</a> - Static site generator with KaTeX support, code evaluation, LaTeX-like commands and optional pre-rendering, in Julia. ![foss]</li>
+<li><a href="https://github.com/nschloe/xhub">xhub</a> - Browser extension that lets you use LaTeX in GitHub pages. ![foss]</li>
+</ul>
+<h2>Editors</h2>
+<p>Because editing LaTeX code with notepad is not awesome.
+There are many editors out there, below are the most awesome editors.
+A complete list of LaTeX editors is collected at <a href="https://tex.stackexchange.com/">tex.stackexchange.com</a> as <a href="https://tex.stackexchange.com/q/339/9075">big list of LaTeX Editors/IDEs</a>.</p>
+<ul>
+<li><a href="https://tex.stackexchange.com/questions/339/latex-editors-ides">List of popular LaTeX editors</a> - Community-maintained list of popular LaTeX editors including a screenshot and a short description.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome LaTeX <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a> <a href="LICENSE.md"><img alt="License: CC BY-SA 4.0" src="https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg?style=flat" /></a></h1>
+<p><a href="https://www.latex-project.org/"><img alt="LaTeX Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/LaTeX_logo.svg/220px-LaTeX_logo.svg.png" /></a></p>
+<blockquote>
+<p>This is a curated list of awesome stuff for the <a href="https://www.latex-project.org/">(La)TeX typesetting system</a>.</p>
+</blockquote>
+<h2>Contents</h2>
+<!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+<ul>
+<li><a href="#contents">Contents</a></li>
+<li><a href="#distributions">Distributions</a></li>
+<li><a href="#docker-images">Docker Images</a></li>
+<li><a href="#engines">Engines</a><ul>
+<li><a href="#latex-formulas-on-the-web">LaTeX formulas on the web</a></li>
+</ul>
+</li>
+<li><a href="#editors">Editors</a><ul>
+<li><a href="#latex-focused">LaTeX-focused</a></li>
+<li><a href="#general-purpose-text-editors">General purpose text editors</a></li>
+<li><a href="#online-editors">Online editors</a></li>
+</ul>
+</li>
+<li><a href="#bibliography-tools">Bibliography tools</a></li>
+<li><a href="#build-tools">Build Tools</a><ul>
+<li><a href="#github-actions">GitHub Actions</a></li>
+</ul>
+</li>
+<li><a href="#misc-tools">Misc. Tools</a></li>
+<li><a href="#latex-compatible-gui-tools">LaTeX-compatible GUI tools</a></li>
+<li><a href="#packages">Packages</a><ul>
+<li><a href="#references">References</a></li>
+<li><a href="#tables">Tables</a></li>
+<li><a href="#graphics">Graphics</a></li>
+<li><a href="#pstricks">PSTricks</a></li>
+<li><a href="#tikz">TikZ</a></li>
+<li><a href="#source-code">Source Code</a></li>
+<li><a href="#typography">Typography</a></li>
+<li><a href="#presentations-slides">Presentations, Slides</a></li>
+</ul>
+</li>
+<li><a href="#templates">Templates</a></li>
+<li><a href="#symbols">Symbols</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#showcases">Showcases</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#social-media">Social media</a></li>
+<li><a href="#meta-awesome-latex">Meta Awesome-LaTeX</a></li>
+<li><a href="#legend">Legend</a></li>
+</ul>
+<!-- /TOC -->
+
+<h2>Learning LaTeX</h2>
+<p>Guides how to learn LaTeX</p>
+<h2>Distributions</h2>
+<ul>
+<li><a href="https://tug.org/mactex/">MacTeX</a> - Most common LaTeX distribution for macOS, basically TeXLive with some Mac-specific tools added. ![mac]</li>
+<li><a href="https://www.tug.org/texlive/">TeX Live</a> - Most common LaTeX distribution for Unix-like operating systems, including GNU/Linux. Also works on Windows. ![linux] ![windows]</li>
+<li><a href="https://miktex.org">MikTeX</a> - Most common LaTeX distribution for Windows, but also available for Mac, Linux or as Docker image.  ![linux] ![windows] ![mac] ![foss]</li>
+</ul>
+<h2>Docker Images</h2>
+<p>When one aims for a ready-to-run LaTeX environment without installing, Docker images might be the choice.</p>
+<ul>
+<li><a href="https://github.com/reitzig/texlive-docker">reitzig/texlive-docker</a> - minimal TeXLive system with package installation possibility</li>
+<li><a href="https://gitlab.com/islandoftex/images/texlive">Island of TeX/texlive</a> - debian-based full TeXLive system</li>
+<li><a href="https://github.com/dante-ev/docker-texlive">dante-ev/docker-texlive</a> - debian-based full TeXLive system with additions with pandoc, perl, and python pre-installed</li>
+</ul>
+<h2>Engines</h2>
+<ul>
+<li><a href="https://www.tug.org/applications/pdftex/">pdfTeX</a> - TeX compiler that produces PDF files immediately instead of DVI files (nowadays, this is the standard compiler for many users). ![foss]</li>
+<li><a href="http://xetex.sourceforge.net">XeTeX</a> - TeX compiler that provides better unicode and font support than TeX/pdfTeX (i.e. you can use the  fonts of your operating system instead of only TeX fonts). ![foss]</li>
+<li><a href="https://www.luatex.org">LuaTeX</a> - (La)TeX compiler that supports Lua code for scripting and has improved unicode and font support than standard TeX/pdfTeX. ![foss]</li>
+<li><a href="https://tectonic-typesetting.GitHub.io/en-US/">tectonic</a> - Modern, self contained (La)TeX compiler powered by XeTeX and TeXLive. ![foss]</li>
+</ul>
+<h3>LaTeX formulas on the web</h3>
+<ul>
+<li><a href="https://sites.google.com/site/autolatexequations">Auto-LaTeX Equations with Google Docs</a> - Render high-quality math equations directly in Google Docs.</li>
+<li><a href="https://www.mathjax.org">MathJaX</a> - JavaScript engine to render mathematical formulas on the web. The outcome looks really slick. ![foss]</li>
+<li><a href="https://ctan.org/pkg/mimetex">mimeTeX</a> - mimeTeX is a rather old tool to render LaTeX formulas to PNG figures for your web site, without actually needing a LaTeX installation on your server. ![foss]</li>
+<li><a href="https://ctan.org/pkg/mathtex">mathTeX</a> - mathTeX is the successor of mimeTeX: it produces nicer-looking images but it requires LaTeX to be installed on your server. ![foss]</li>
+<li><a href="https://khan.GitHub.io/KaTeX/">KaTeX</a> - KaTeX is a math rendering library made by Khan Academy focusing on fast load times. All output is processed as plain HTML instead of fixed images. ![foss]</li>
+<li><a href="https://franklinjl.org/">Franklin.jl</a> - Static site generator with KaTeX support, code evaluation, LaTeX-like commands and optional pre-rendering, in Julia. ![foss]</li>
+<li><a href="https://github.com/nschloe/xhub">xhub</a> - Browser extension that lets you use LaTeX in GitHub pages. ![foss]</li>
+</ul>
+<h2>Editors</h2>
+<p>Because editing LaTeX code with notepad is not awesome.
+There are many editors out there, below are the most awesome editors.
+A complete list of LaTeX editors is collected at <a href="https://tex.stackexchange.com/">tex.stackexchange.com</a> as <a href="https://tex.stackexchange.com/q/339/9075">big list of LaTeX Editors/IDEs</a>.</p>
+<ul>
+<li><a href="https://tex.stackexchange.com/questions/339/latex-editors-ides">List of popular LaTeX editors</a> - Community-maintained list of popular LaTeX editors including a screenshot and a short description.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'latex_README.md';
 
         fetch(markdownFile)
@@ -48,21 +223,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

@@ -8,38 +8,93 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Likedan Awesome Coreml Models - Awesome List Resources">
-    <title>Likedan Awesome Coreml Models</title>
+    <meta name="description" content="Since iOS 11, Apple released Core ML framework to help developers integrate machine learning models into applications. The official documentation We've put up...">
+    <meta name="robots" content="index, follow">
+    <title>Core Ml Models - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <!--
+Title: Awesome Core ML Models
+Description: A curated list of machine learning models in Core ML format.
+Author: Kedan Li
+-->
+<p align="center">
+<img src="images/coreml.png" width="329" height="295"/>
+</p>
+
+<p>Since iOS 11, Apple released Core ML framework to help developers integrate machine learning models into applications. <a href="https://developer.apple.com/documentation/coreml">The official documentation</a></p>
+<p>We've put up the largest collection of machine learning models in Core ML format, to help  iOS, macOS, tvOS, and watchOS developers experiment with machine learning techniques.</p>
+<p>If you've converted a Core ML model, feel free to submit a <a href="https://github.com/likedan/Awesome-CoreML-Models/compare">pull request</a>.</p>
+<p>Recently, we've included visualization tools. And here's one <a href="https://lutzroeder.github.io/Netron">Netron</a>.</p>
+<p><a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a>
+<a href="http://makeapullrequest.com"><img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" /></a></p>
+<h1>Models</h1>
+<h2>Image - Metadata/Text</h2>
+<p><em>Models that take image data as input and output useful information about the image.</em>
+* <strong>TextDetection</strong> - Detecting text using Vision built-in model in real-time. <a href="">Download</a> | <a href="https://github.com/tucan9389/TextDetection-CoreML">Demo</a> | <a href="https://developer.apple.com/documentation/vision">Reference</a>
+* <strong>PhotoAssessment</strong> - Photo Assessment using Core ML and Metal. <a href="https://github.com/yulingtianxia/PhotoAssessment/blob/master/PhotoAssessment-Sample/Sources/NIMANasnet.mlmodel">Download</a> | <a href="https://github.com/yulingtianxia/PhotoAssessment">Demo</a> | <a href="https://arxiv.org/abs/1709.05424">Reference</a>
+* <strong>PoseEstimation</strong> - Estimating human pose from a picture for mobile. <a href="https://github.com/edvardHua/PoseEstimationForMobile/tree/master/release">Download</a> | <a href="https://github.com/tucan9389/PoseEstimation-CoreML">Demo</a> | <a href="https://github.com/edvardHua/PoseEstimationForMobile">Reference</a>
+* <strong>MobileNet</strong> - Detects the dominant objects present in an image. <a href="https://github.com/hollance/MobileNet-CoreML/raw/master/MobileNet.mlmodel">Download</a> | <a href="https://github.com/hollance/MobileNet-CoreML">Demo</a> | <a href="https://arxiv.org/abs/1704.04861">Reference</a>
+* <strong>Places CNN</strong> - Detects the scene of an image from 205 categories such as bedroom, forest, coast etc. <a href="https://github.com/hollance/MobileNet-CoreML/raw/master/MobileNet.mlmodel">Download</a> | <a href="https://github.com/chenyi1989/CoreMLDemo">Demo</a> | <a href="http://places.csail.mit.edu/index.html">Reference</a>
+* <strong>Inception v3</strong> - Detects the dominant objects present in an image. <a href="https://github.com/yulingtianxia/Core-ML-Sample/blob/master/CoreMLSample/Inceptionv3.mlmodel">Download</a> | <a href="https://github.com/yulingtianxia/Core-ML-Sample/">Demo</a> | <a href="https://arxiv.org/abs/1512.00567">Reference</a>
+* <strong>ResNet50</strong> - Detects the dominant objects present in an image. <a href="https://github.com/ytakzk/CoreML-samples/blob/master/CoreML-samples/Resnet50.mlmodel">Download</a> | <a href="https://github.com/ytakzk/CoreML-samples">Demo</a> | <a href="https://arxiv.org/abs/1512.03385">Reference</a>
+* <strong>VGG16</strong> - Detects the dominant objects present in an image. <a href="https://docs-assets.developer.apple.com/coreml/models/VGG16.mlmodel">Download</a> | <a href="https://github.com/alaphao/CoreMLExample">Demo</a> | <a href="https://arxiv.org/abs/1409.1556">Reference</a>
+* <strong>Car Recognition</strong> - Predict the brand &amp; model of a car. <a href="https://github.com/likedan/Core-ML-Car-Recognition/blob/master/Convert/CarRecognition.mlmodel">Download</a> | <a href="https://github.com/ytakzk/CoreML-samples">Demo</a> | <a href="http://mmlab.ie.cuhk.edu.hk/datasets/comp_cars/index.html">Reference</a>
+* <strong>YOLO</strong> - Recognize what the objects are inside a given image and where they are in the image. <a href="https://github.com/hollance/YOLO-CoreML-MPSNNGraph/blob/master/TinyYOLO-CoreML/TinyYOLO-CoreML/TinyYOLO.mlmodel">Download</a> | <a href="https://github.com/hollance/YOLO-CoreML-MPSNNGraph">Demo</a> | <a href="http://machinethink.net/blog/object-detection-with-yolo">Reference</a>
+* <strong>AgeNet</strong> - Predict a person's age from one's portrait. <a href="https://drive.google.com/file/d/0B1ghKa_MYL6mT1J3T1BEeWx4TWc/view?usp=sharing">Download</a> | <a href="https://github.com/cocoa-ai/FacesVisionDemo">Demo</a> | <a href="http://www.openu.ac.il/home/hassner/projects/cnn_agegender/">Reference</a>
+* <strong>GenderNet</strong> - Predict a person's gender from one's portrait. <a href="https://drive.google.com/file/d/0B1ghKa_MYL6mYkNsZHlyc2ZuaFk/view?usp=sharing">Download</a> | <a href="https://github.com/cocoa-ai/FacesVisionDemo">Demo</a> | <a href="http://www.openu.ac.il/home/hassner/projects/cnn_agegender/">Reference</a>
+* <strong>MNIST</strong> - Predict handwritten (drawn) digits from images. <a href="https://github.com/ph1ps/MNIST-CoreML/raw/master/MNISTPrediction/MNIST.mlmodel">Download</a> | <a href="https://github.com/ph1ps/MNIST-CoreML">Demo</a> | <a href="http://yann.lecun.com/exdb/mnist/">Reference</a>
+* <strong>EmotionNet</strong> - Predict a person's emotion from one's portrait. <a href="https://drive.google.com/file/d/0B1ghKa_MYL6mTlYtRGdXNFlpWDQ/view?usp=sharing">Download</a> | <a href="https://github.com/cocoa-ai/FacesVisionDemo">Demo</a> | <a href="http://www.openu.ac.il/home/hassner/projects/cnn_emotions/">Reference</a></p>
+        </noscript>
+        <div id="dynamic-content">
+            <!--
+Title: Awesome Core ML Models
+Description: A curated list of machine learning models in Core ML format.
+Author: Kedan Li
+-->
+<p align="center">
+<img src="images/coreml.png" width="329" height="295"/>
+</p>
+
+<p>Since iOS 11, Apple released Core ML framework to help developers integrate machine learning models into applications. <a href="https://developer.apple.com/documentation/coreml">The official documentation</a></p>
+<p>We've put up the largest collection of machine learning models in Core ML format, to help  iOS, macOS, tvOS, and watchOS developers experiment with machine learning techniques.</p>
+<p>If you've converted a Core ML model, feel free to submit a <a href="https://github.com/likedan/Awesome-CoreML-Models/compare">pull request</a>.</p>
+<p>Recently, we've included visualization tools. And here's one <a href="https://lutzroeder.github.io/Netron">Netron</a>.</p>
+<p><a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a>
+<a href="http://makeapullrequest.com"><img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" /></a></p>
+<h1>Models</h1>
+<h2>Image - Metadata/Text</h2>
+<p><em>Models that take image data as input and output useful information about the image.</em>
+* <strong>TextDetection</strong> - Detecting text using Vision built-in model in real-time. <a href="">Download</a> | <a href="https://github.com/tucan9389/TextDetection-CoreML">Demo</a> | <a href="https://developer.apple.com/documentation/vision">Reference</a>
+* <strong>PhotoAssessment</strong> - Photo Assessment using Core ML and Metal. <a href="https://github.com/yulingtianxia/PhotoAssessment/blob/master/PhotoAssessment-Sample/Sources/NIMANasnet.mlmodel">Download</a> | <a href="https://github.com/yulingtianxia/PhotoAssessment">Demo</a> | <a href="https://arxiv.org/abs/1709.05424">Reference</a>
+* <strong>PoseEstimation</strong> - Estimating human pose from a picture for mobile. <a href="https://github.com/edvardHua/PoseEstimationForMobile/tree/master/release">Download</a> | <a href="https://github.com/tucan9389/PoseEstimation-CoreML">Demo</a> | <a href="https://github.com/edvardHua/PoseEstimationForMobile">Reference</a>
+* <strong>MobileNet</strong> - Detects the dominant objects present in an image. <a href="https://github.com/hollance/MobileNet-CoreML/raw/master/MobileNet.mlmodel">Download</a> | <a href="https://github.com/hollance/MobileNet-CoreML">Demo</a> | <a href="https://arxiv.org/abs/1704.04861">Reference</a>
+* <strong>Places CNN</strong> - Detects the scene of an image from 205 categories such as bedroom, forest, coast etc. <a href="https://github.com/hollance/MobileNet-CoreML/raw/master/MobileNet.mlmodel">Download</a> | <a href="https://github.com/chenyi1989/CoreMLDemo">Demo</a> | <a href="http://places.csail.mit.edu/index.html">Reference</a>
+* <strong>Inception v3</strong> - Detects the dominant objects present in an image. <a href="https://github.com/yulingtianxia/Core-ML-Sample/blob/master/CoreMLSample/Inceptionv3.mlmodel">Download</a> | <a href="https://github.com/yulingtianxia/Core-ML-Sample/">Demo</a> | <a href="https://arxiv.org/abs/1512.00567">Reference</a>
+* <strong>ResNet50</strong> - Detects the dominant objects present in an image. <a href="https://github.com/ytakzk/CoreML-samples/blob/master/CoreML-samples/Resnet50.mlmodel">Download</a> | <a href="https://github.com/ytakzk/CoreML-samples">Demo</a> | <a href="https://arxiv.org/abs/1512.03385">Reference</a>
+* <strong>VGG16</strong> - Detects the dominant objects present in an image. <a href="https://docs-assets.developer.apple.com/coreml/models/VGG16.mlmodel">Download</a> | <a href="https://github.com/alaphao/CoreMLExample">Demo</a> | <a href="https://arxiv.org/abs/1409.1556">Reference</a>
+* <strong>Car Recognition</strong> - Predict the brand &amp; model of a car. <a href="https://github.com/likedan/Core-ML-Car-Recognition/blob/master/Convert/CarRecognition.mlmodel">Download</a> | <a href="https://github.com/ytakzk/CoreML-samples">Demo</a> | <a href="http://mmlab.ie.cuhk.edu.hk/datasets/comp_cars/index.html">Reference</a>
+* <strong>YOLO</strong> - Recognize what the objects are inside a given image and where they are in the image. <a href="https://github.com/hollance/YOLO-CoreML-MPSNNGraph/blob/master/TinyYOLO-CoreML/TinyYOLO-CoreML/TinyYOLO.mlmodel">Download</a> | <a href="https://github.com/hollance/YOLO-CoreML-MPSNNGraph">Demo</a> | <a href="http://machinethink.net/blog/object-detection-with-yolo">Reference</a>
+* <strong>AgeNet</strong> - Predict a person's age from one's portrait. <a href="https://drive.google.com/file/d/0B1ghKa_MYL6mT1J3T1BEeWx4TWc/view?usp=sharing">Download</a> | <a href="https://github.com/cocoa-ai/FacesVisionDemo">Demo</a> | <a href="http://www.openu.ac.il/home/hassner/projects/cnn_agegender/">Reference</a>
+* <strong>GenderNet</strong> - Predict a person's gender from one's portrait. <a href="https://drive.google.com/file/d/0B1ghKa_MYL6mYkNsZHlyc2ZuaFk/view?usp=sharing">Download</a> | <a href="https://github.com/cocoa-ai/FacesVisionDemo">Demo</a> | <a href="http://www.openu.ac.il/home/hassner/projects/cnn_agegender/">Reference</a>
+* <strong>MNIST</strong> - Predict handwritten (drawn) digits from images. <a href="https://github.com/ph1ps/MNIST-CoreML/raw/master/MNISTPrediction/MNIST.mlmodel">Download</a> | <a href="https://github.com/ph1ps/MNIST-CoreML">Demo</a> | <a href="http://yann.lecun.com/exdb/mnist/">Reference</a>
+* <strong>EmotionNet</strong> - Predict a person's emotion from one's portrait. <a href="https://drive.google.com/file/d/0B1ghKa_MYL6mTlYtRGdXNFlpWDQ/view?usp=sharing">Download</a> | <a href="https://github.com/cocoa-ai/FacesVisionDemo">Demo</a> | <a href="http://www.openu.ac.il/home/hassner/projects/cnn_emotions/">Reference</a></p>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'core-ml-models_README.md';
 
         fetch(markdownFile)
@@ -48,21 +103,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

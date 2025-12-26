@@ -8,38 +8,167 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Christian Bromann Awesome Selenium - Awesome List Resources">
-    <title>Christian Bromann Awesome Selenium</title>
+    <meta name="description" content="> A curated list of delightful Selenium resources. Inspired by the awesome list thing. - Tools - CSS Regression Testing - Containers - Driver - Desktop Tools -...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Selenium [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) [![Test Awesome List](https://github.com/christian-bromann/awesome-selenium/actions/workflows/test.yaml/badge.svg)](https://github.com/christian-bromann/awesome-selenium/actions/workflows/test.yaml) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Selenium <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <a href="https://github.com/christian-bromann/awesome-selenium/actions/workflows/test.yaml"><img alt="Test Awesome List" src="https://github.com/christian-bromann/awesome-selenium/actions/workflows/test.yaml/badge.svg" /></a></h1>
+<blockquote>
+<p>A curated list of delightful <a href="http://www.seleniumhq.org/">Selenium</a> <a href="#resources">resources</a>.</p>
+</blockquote>
+<p>Inspired by the <a href="https://github.com/sindresorhus/awesome">awesome</a> list thing.</p>
+<h2>Resources</h2>
+<ul>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#css-regression-testing">CSS Regression Testing</a></li>
+<li><a href="#containers">Containers</a></li>
+<li><a href="#driver">Driver</a></li>
+<li><a href="#desktop-tools">Desktop Tools</a></li>
+<li><a href="#selenium-grid">Selenium Grid</a></li>
+<li><a href="#cloud-services">Cloud Services</a></li>
+<li><a href="#device-farms">Device Farms</a></li>
+<li><a href="#web-scraping--mining">Web Scraping / Mining</a></li>
+<li><a href="#specifications">Specifications</a></li>
+<li><a href="#blogs">Blogs</a></li>
+</ul>
+<h3>Tools</h3>
+<h4>Javascript</h4>
+<ul>
+<li><a href="https://github.com/SeleniumHQ/selenium/wiki/WebDriverJs">selenium-webdriver</a> - The official WebDriver JavaScript bindings from the Selenium project.</li>
+<li><a href="https://github.com/admc/wd">WD</a> - WebDriver/Selenium 2 node.js client.</li>
+<li><a href="http://webdriver.io">WebdriverIO</a> - better implementation of WebDriver bindings with predefined 50+ actions.</li>
+<li><a href="http://zombie.js.org/">Zombie.js</a> - Insanely fast, headless full-stack testing.</li>
+<li><a href="http://slimerjs.org/">SlimerJS</a> - A scriptable browser for Web developers.</li>
+<li><a href="http://nightwatchjs.org/">Nightwatch</a> - efficient and straightforward Javascript End-to-End tests.</li>
+<li><a href="http://karma-runner.github.io/0.12/index.html">Karma</a> - Brings a productive testing environment to developers for unit testing (mostly AngularJS).</li>
+<li><a href="https://angular.github.io/protractor/">Protractor</a> - Protractor is an end-to-end test framework for AngularJS applications.</li>
+<li><a href="http://codecept.io/">CodeceptJS</a> - Modern Era Acceptance Testing Framework for NodeJS.</li>
+</ul>
+<h4>Ruby</h4>
+<ul>
+<li><a href="http://seleniumhq.github.io/selenium/docs/api/rb/index.html">Selenium with Ruby</a> - Selenium Ruby bindings</li>
+<li><a href="http://watir.github.io">Watir</a> - Automated testing that doesn’t hurt</li>
+<li><a href="https://github.com/chriskite/anemone">Anemone</a> - Anemone web-spider framework.</li>
+<li><a href="http://docs.seattlerb.org/mechanize/">Mechanize</a> - automating interaction with websites.</li>
+<li><a href="https://github.com/postmodern/spidr">Spidr</a> - web spidering library that can spider a site, multiple domains, certain links or infinitely.</li>
+<li><a href="https://rubygems.org/gems/cobweb">cobweb</a> - web crawler that can use resque to cluster crawls to quickly crawl extremely large sites.</li>
+<li><a href="https://rubygems.org/gems/capybara">Capybara</a> - an integration testing tool for rack based web applications. It simulates how a user would interact with a website.</li>
+</ul>
+<h4>PHP</h4>
+<ul>
+<li><a href="https://github.com/facebook/php-webdriver">Facebook WebDriver</a> - A PHP client for webdriver.</li>
+<li><a href="https://github.com/bogdananton/Selenium-Setup">Selenium Setup</a> - A tool for PHP developers to start their own Selenium server.</li>
+<li><a href="https://github.com/lmc-eu/steward">Steward</a> - A test runner integrating php-webdriver with PHPUnit.</li>
+</ul>
+<h4>Python</h4>
+<ul>
+<li><a href="http://selenium-python.readthedocs.io/">Selenium with Python</a> - Selenium Python bindings</li>
+<li><a href="https://github.com/mherrmann/selenium-python-helium">Helium</a> - Helium makes Selenium easier and faster to use</li>
+<li><a href="https://github.com/yashaka/selene">Selene</a> - Selenide-inspired concise and readable automated test framework, supports Ajax well like Selenide.</li>
+<li><a href="http://wwwsearch.sourceforge.net/mechanize/">mechanize</a> - Stateful programmatic web browsing.</li>
+<li><a href="http://robotframework.org/">Robot</a> - Robot Framework is a generic test automation framework for acceptance testing and ATDD.</li>
+<li><a href="https://github.com/spyoungtech/behave-webdriver">behave-webdriver</a> behavior driven testing with Selenium and Python.</li>
+</ul>
+<h4>Java</h4>
+<ul>
+<li><a href="http://seleniumhq.github.io/selenium/docs/api/java/index.html">Selenium with Java</a> - Selenium Java bindings</li>
+<li><a href="http://conductor.ddavison.io">Conductor</a> - Turbo-boosted Selenium framework that makes test writing a breeze.</li>
+<li><a href="https://github.com/darcy-framework/darcy-webdriver">darcy</a> - Page object framework for structured, maintainable automation.</li>
+<li><a href="https://github.com/codeborne/selenide">Selenide</a> - A framework for writing easy-to-read and easy-to-maintain automated tests using a Fluent API. Selenide has a magic trick that resolves most problems with Ajax and timeouts.</li>
+<li><a href="http://galenframework.com/">Galen Framework</a> - Automated testing of look and feel for your responsive websites.</li>
+<li><a href="http://www.thucydides.info/">Serenity</a> - It is an open source library for writing better quality automated acceptance tests faster. (Formerly Thucydides).</li>
+<li><a href="https://github.com/seleniumQuery/seleniumQuery">seleniumQuery</a> - jQuery-like cross-driver interface in Java for WebDriver. Designed as a thin layer, it can be used alone or on top of your favorite framework just to make some cases (e.g. asserting/waiting) simpler when needed.</li>
+<li><a href="https://github.com/bonigarcia/webdrivermanager">WebDriverManager</a> - Automatic management of Selenium WebDriver binaries.</li>
+<li><a href="https://github.com/aerokube/lightning-java">Lightning</a> - Lightweight and lightning fast WebDriver client.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Selenium <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <a href="https://github.com/christian-bromann/awesome-selenium/actions/workflows/test.yaml"><img alt="Test Awesome List" src="https://github.com/christian-bromann/awesome-selenium/actions/workflows/test.yaml/badge.svg" /></a></h1>
+<blockquote>
+<p>A curated list of delightful <a href="http://www.seleniumhq.org/">Selenium</a> <a href="#resources">resources</a>.</p>
+</blockquote>
+<p>Inspired by the <a href="https://github.com/sindresorhus/awesome">awesome</a> list thing.</p>
+<h2>Resources</h2>
+<ul>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#css-regression-testing">CSS Regression Testing</a></li>
+<li><a href="#containers">Containers</a></li>
+<li><a href="#driver">Driver</a></li>
+<li><a href="#desktop-tools">Desktop Tools</a></li>
+<li><a href="#selenium-grid">Selenium Grid</a></li>
+<li><a href="#cloud-services">Cloud Services</a></li>
+<li><a href="#device-farms">Device Farms</a></li>
+<li><a href="#web-scraping--mining">Web Scraping / Mining</a></li>
+<li><a href="#specifications">Specifications</a></li>
+<li><a href="#blogs">Blogs</a></li>
+</ul>
+<h3>Tools</h3>
+<h4>Javascript</h4>
+<ul>
+<li><a href="https://github.com/SeleniumHQ/selenium/wiki/WebDriverJs">selenium-webdriver</a> - The official WebDriver JavaScript bindings from the Selenium project.</li>
+<li><a href="https://github.com/admc/wd">WD</a> - WebDriver/Selenium 2 node.js client.</li>
+<li><a href="http://webdriver.io">WebdriverIO</a> - better implementation of WebDriver bindings with predefined 50+ actions.</li>
+<li><a href="http://zombie.js.org/">Zombie.js</a> - Insanely fast, headless full-stack testing.</li>
+<li><a href="http://slimerjs.org/">SlimerJS</a> - A scriptable browser for Web developers.</li>
+<li><a href="http://nightwatchjs.org/">Nightwatch</a> - efficient and straightforward Javascript End-to-End tests.</li>
+<li><a href="http://karma-runner.github.io/0.12/index.html">Karma</a> - Brings a productive testing environment to developers for unit testing (mostly AngularJS).</li>
+<li><a href="https://angular.github.io/protractor/">Protractor</a> - Protractor is an end-to-end test framework for AngularJS applications.</li>
+<li><a href="http://codecept.io/">CodeceptJS</a> - Modern Era Acceptance Testing Framework for NodeJS.</li>
+</ul>
+<h4>Ruby</h4>
+<ul>
+<li><a href="http://seleniumhq.github.io/selenium/docs/api/rb/index.html">Selenium with Ruby</a> - Selenium Ruby bindings</li>
+<li><a href="http://watir.github.io">Watir</a> - Automated testing that doesn’t hurt</li>
+<li><a href="https://github.com/chriskite/anemone">Anemone</a> - Anemone web-spider framework.</li>
+<li><a href="http://docs.seattlerb.org/mechanize/">Mechanize</a> - automating interaction with websites.</li>
+<li><a href="https://github.com/postmodern/spidr">Spidr</a> - web spidering library that can spider a site, multiple domains, certain links or infinitely.</li>
+<li><a href="https://rubygems.org/gems/cobweb">cobweb</a> - web crawler that can use resque to cluster crawls to quickly crawl extremely large sites.</li>
+<li><a href="https://rubygems.org/gems/capybara">Capybara</a> - an integration testing tool for rack based web applications. It simulates how a user would interact with a website.</li>
+</ul>
+<h4>PHP</h4>
+<ul>
+<li><a href="https://github.com/facebook/php-webdriver">Facebook WebDriver</a> - A PHP client for webdriver.</li>
+<li><a href="https://github.com/bogdananton/Selenium-Setup">Selenium Setup</a> - A tool for PHP developers to start their own Selenium server.</li>
+<li><a href="https://github.com/lmc-eu/steward">Steward</a> - A test runner integrating php-webdriver with PHPUnit.</li>
+</ul>
+<h4>Python</h4>
+<ul>
+<li><a href="http://selenium-python.readthedocs.io/">Selenium with Python</a> - Selenium Python bindings</li>
+<li><a href="https://github.com/mherrmann/selenium-python-helium">Helium</a> - Helium makes Selenium easier and faster to use</li>
+<li><a href="https://github.com/yashaka/selene">Selene</a> - Selenide-inspired concise and readable automated test framework, supports Ajax well like Selenide.</li>
+<li><a href="http://wwwsearch.sourceforge.net/mechanize/">mechanize</a> - Stateful programmatic web browsing.</li>
+<li><a href="http://robotframework.org/">Robot</a> - Robot Framework is a generic test automation framework for acceptance testing and ATDD.</li>
+<li><a href="https://github.com/spyoungtech/behave-webdriver">behave-webdriver</a> behavior driven testing with Selenium and Python.</li>
+</ul>
+<h4>Java</h4>
+<ul>
+<li><a href="http://seleniumhq.github.io/selenium/docs/api/java/index.html">Selenium with Java</a> - Selenium Java bindings</li>
+<li><a href="http://conductor.ddavison.io">Conductor</a> - Turbo-boosted Selenium framework that makes test writing a breeze.</li>
+<li><a href="https://github.com/darcy-framework/darcy-webdriver">darcy</a> - Page object framework for structured, maintainable automation.</li>
+<li><a href="https://github.com/codeborne/selenide">Selenide</a> - A framework for writing easy-to-read and easy-to-maintain automated tests using a Fluent API. Selenide has a magic trick that resolves most problems with Ajax and timeouts.</li>
+<li><a href="http://galenframework.com/">Galen Framework</a> - Automated testing of look and feel for your responsive websites.</li>
+<li><a href="http://www.thucydides.info/">Serenity</a> - It is an open source library for writing better quality automated acceptance tests faster. (Formerly Thucydides).</li>
+<li><a href="https://github.com/seleniumQuery/seleniumQuery">seleniumQuery</a> - jQuery-like cross-driver interface in Java for WebDriver. Designed as a thin layer, it can be used alone or on top of your favorite framework just to make some cases (e.g. asserting/waiting) simpler when needed.</li>
+<li><a href="https://github.com/bonigarcia/webdrivermanager">WebDriverManager</a> - Automatic management of Selenium WebDriver binaries.</li>
+<li><a href="https://github.com/aerokube/lightning-java">Lightning</a> - Lightweight and lightning fast WebDriver client.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'selenium_README.md';
 
         fetch(markdownFile)
@@ -48,21 +177,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

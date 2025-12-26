@@ -8,38 +8,167 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Alebcay Awesome Shell - Awesome List Resources">
-    <title>Alebcay Awesome Shell</title>
+    <meta name="description" content="A curated list of awesome command-line frameworks, toolkits, guides and gizmos. Inspired by awesome-php. This awesome collection is also available on...">
+    <meta name="robots" content="index, follow">
+    <title>Shell - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <pre><code> █████╗ ██╗    ██╗███████╗███████╗ ██████╗ ███╗   ███╗███████╗
+██╔══██╗██║    ██║██╔════╝██╔════╝██╔═══██╗████╗ ████║██╔════╝
+███████║██║ █╗ ██║█████╗  ███████╗██║   ██║██╔████╔██║█████╗
+██╔══██║██║███╗██║██╔══╝  ╚════██║██║   ██║██║╚██╔╝██║██╔══╝
+██║  ██║╚███╔███╔╝███████╗███████║╚██████╔╝██║ ╚═╝ ██║███████╗
+╚═╝  ╚═╝ ╚══╝╚══╝ ╚══════╝╚══════╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝
+███████╗██╗  ██╗███████╗██╗     ██╗
+██╔════╝██║  ██║██╔════╝██║     ██║
+███████╗███████║█████╗  ██║     ██║
+╚════██║██╔══██║██╔══╝  ██║     ██║
+███████║██║  ██║███████╗███████╗███████╗
+╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝
+</code></pre>
+<h1>Awesome Shell [![Awesome][awesome-badge]][awesome-link]</h1>
+<p>A curated list of awesome command-line frameworks, toolkits, guides and gizmos. Inspired by awesome-php. This awesome collection is also available on <a href="https://unix-shell.zeef.com/caleb.xu">Unix-Shell.ZEEF.com</a>.
+- <a href="#shells">Shells</a>
+- <a href="#command-line-productivity">Command-Line Productivity</a>
+  - <a href="#directory-navigation">Directory Navigation</a>
+- <a href="#customization">Customization</a>
+- <a href="#for-developers">For Developers</a>
+- <a href="#system-utilities">System Utilities</a>
+- <a href="#downloading-and-serving">Downloading and Serving</a>
+- <a href="#multimedia-and-file-formats">Multimedia and File Formats</a>
+- <a href="#applications">Applications</a>
+- <a href="#games">Games</a>
+- <a href="#shell-package-management">Shell Package Management</a>
+- <a href="#shell-script-development">Shell Script Development</a>
+- <a href="#guides">Guides</a>
+- [<strong>Awesome Zsh</strong>][awesome-zsh]&nbsp; [![Awesome][awesome-badge]][awesome-zsh]
+- [<strong>Awesome Fish</strong>][awesome-fish] [![Awesome][awesome-badge]][awesome-fish]
+- [<strong>Awesome Bash</strong>][awesome-bash] [![Awesome][awesome-badge]][awesome-bash]
+- <a href="#other-awesome-lists">Other Awesome Lists</a></p>
+<h2>Shells</h2>
+<p><em>Choose your base shell.</em></p>
+<ul>
+<li><a href="https://www.gnu.org/software/bash/">bash</a> - GNU Project's shell (Bourne Again SHell)</li>
+<li><a href="https://elv.sh/">elvish</a> - Friendly, expressive shell features like anonymous functions and data structures</li>
+<li><a href="https://wryun.github.io/es-shell/">es</a> - The extensible shell, based on Plan 9's <a href="https://github.com/rakitzis/rc">rc</a> shell</li>
+<li><a href="https://fishshell.com">fish</a> - Smart and user-friendly command line shell</li>
+<li><a href="https://github.com/redox-os/ion">ion</a> - A modern system shell that features a simple, yet powerful, syntax. It is written entirely in Rust.</li>
+<li><a href="https://github.com/att/ast">ksh93</a> - Korn Shell</li>
+<li><a href="https://github.com/MirBSD/mksh">mksh</a> - MirBSD Korn Shell</li>
+<li><a href="https://github.com/lmorg/murex">murex</a> - A smarter shell and scripting environment with advanced features designed for usability, safety and productivity (eg smarter DevOps tooling)</li>
+<li><a href="https://github.com/ngs-lang/ngs">ngs</a> - Fully featured scripting language created specifically for Ops. REPL is being developed.</li>
+<li><a href="https://github.com/nushell/nushell">nushell</a> - A modern shell written in Rust</li>
+<li><a href="https://github.com/ibara/oksh">oksh</a> - Portable OpenBSD ksh</li>
+<li><a href="https://www.oilshell.org">osh</a> - Bash compatible, with new/modern Unix shell language called Oil</li>
+<li><a href="https://cvsweb.openbsd.org/cgi-bin/cvsweb/src/bin/ksh/">pdksh</a> - Public domain Korn shell</li>
+<li><a href="https://docs.microsoft.com/en-us/powershell/scripting/overview">powershell</a> a cross-platform task automation and configuration management framework, consisting of a command-line shell and scripting language</li>
+<li><a href="https://github.com/alexst07/shell-plus-plus">shell++</a> - Friendly and modern functional and object oriented shell script language</li>
+<li><a href="https://github.com/shenv/shenv">shenv</a> - Simple shell version management</li>
+<li><a href="https://www.tcsh.org/">tcsh</a> - C shell with file name completion and command line editing</li>
+<li><a href="https://xon.sh">xonsh</a> - Python-ish, BASHwards-looking shell language and command prompt</li>
+<li><a href="https://github.com/magicant/yash">yash</a> - A POSIX-compliant command line shell with built-in support for completion and prediction based on command history</li>
+<li><a href="https://www.zsh.org">zsh</a> - Powerful shell with scripting language</li>
+</ul>
+<h2>Command-Line Productivity</h2>
+<p><em>Search, bookmarks, multiplexing, and other tools that make your terminal experience more productive.</em></p>
+<ul>
+<li><a href="https://github.com/tanrax/terminal-AdvancedNewFile">AdvancedNewFile</a> - Fast creation of files and directories in a recursive way. Inspired by the Vim plugin.</li>
+<li><a href="https://github.com/ggreer/the_silver_searcher">ag</a> - Super fast string search through a directory hierarchy</li>
+<li><a href="https://github.com/sebglazebrook/aliases">aliases</a> - Contextual, dynamic, organized aliases for bash</li>
+<li><a href="https://github.com/reportaman/arttime">arttime</a> - Beauty of text art meets functionality of clock, timer, pomodoro++ time manager</li>
+<li><a href="https://github.com/hyperupcall/autoenv">autoenv</a> - Directory-based environments.</li>
+<li><a href="https://github.com/slavaGanzin/await">await</a> - single binary that run list of commands in parallel and waits for their termination</li>
+<li><a href="https://github.com/nikolassv/bartib">bartib</a> - A simple timetracker for the command line. It saves a log of all tracked activities as a plaintext file and allows you to create flexible reports.</li>
+<li><a href="https://github.com/rcaloras/bashhub-client">bashhub</a> - :cloud: Bash history in the cloud. Indexed and searchable.</li>
+<li><a href="https://github.com/tmrts/boilr">boilr</a> - A blazingly fast CLI tool for creating projects from boilerplate templates.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <pre><code> █████╗ ██╗    ██╗███████╗███████╗ ██████╗ ███╗   ███╗███████╗
+██╔══██╗██║    ██║██╔════╝██╔════╝██╔═══██╗████╗ ████║██╔════╝
+███████║██║ █╗ ██║█████╗  ███████╗██║   ██║██╔████╔██║█████╗
+██╔══██║██║███╗██║██╔══╝  ╚════██║██║   ██║██║╚██╔╝██║██╔══╝
+██║  ██║╚███╔███╔╝███████╗███████║╚██████╔╝██║ ╚═╝ ██║███████╗
+╚═╝  ╚═╝ ╚══╝╚══╝ ╚══════╝╚══════╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝
+███████╗██╗  ██╗███████╗██╗     ██╗
+██╔════╝██║  ██║██╔════╝██║     ██║
+███████╗███████║█████╗  ██║     ██║
+╚════██║██╔══██║██╔══╝  ██║     ██║
+███████║██║  ██║███████╗███████╗███████╗
+╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝
+</code></pre>
+<h1>Awesome Shell [![Awesome][awesome-badge]][awesome-link]</h1>
+<p>A curated list of awesome command-line frameworks, toolkits, guides and gizmos. Inspired by awesome-php. This awesome collection is also available on <a href="https://unix-shell.zeef.com/caleb.xu">Unix-Shell.ZEEF.com</a>.
+- <a href="#shells">Shells</a>
+- <a href="#command-line-productivity">Command-Line Productivity</a>
+  - <a href="#directory-navigation">Directory Navigation</a>
+- <a href="#customization">Customization</a>
+- <a href="#for-developers">For Developers</a>
+- <a href="#system-utilities">System Utilities</a>
+- <a href="#downloading-and-serving">Downloading and Serving</a>
+- <a href="#multimedia-and-file-formats">Multimedia and File Formats</a>
+- <a href="#applications">Applications</a>
+- <a href="#games">Games</a>
+- <a href="#shell-package-management">Shell Package Management</a>
+- <a href="#shell-script-development">Shell Script Development</a>
+- <a href="#guides">Guides</a>
+- [<strong>Awesome Zsh</strong>][awesome-zsh]&nbsp; [![Awesome][awesome-badge]][awesome-zsh]
+- [<strong>Awesome Fish</strong>][awesome-fish] [![Awesome][awesome-badge]][awesome-fish]
+- [<strong>Awesome Bash</strong>][awesome-bash] [![Awesome][awesome-badge]][awesome-bash]
+- <a href="#other-awesome-lists">Other Awesome Lists</a></p>
+<h2>Shells</h2>
+<p><em>Choose your base shell.</em></p>
+<ul>
+<li><a href="https://www.gnu.org/software/bash/">bash</a> - GNU Project's shell (Bourne Again SHell)</li>
+<li><a href="https://elv.sh/">elvish</a> - Friendly, expressive shell features like anonymous functions and data structures</li>
+<li><a href="https://wryun.github.io/es-shell/">es</a> - The extensible shell, based on Plan 9's <a href="https://github.com/rakitzis/rc">rc</a> shell</li>
+<li><a href="https://fishshell.com">fish</a> - Smart and user-friendly command line shell</li>
+<li><a href="https://github.com/redox-os/ion">ion</a> - A modern system shell that features a simple, yet powerful, syntax. It is written entirely in Rust.</li>
+<li><a href="https://github.com/att/ast">ksh93</a> - Korn Shell</li>
+<li><a href="https://github.com/MirBSD/mksh">mksh</a> - MirBSD Korn Shell</li>
+<li><a href="https://github.com/lmorg/murex">murex</a> - A smarter shell and scripting environment with advanced features designed for usability, safety and productivity (eg smarter DevOps tooling)</li>
+<li><a href="https://github.com/ngs-lang/ngs">ngs</a> - Fully featured scripting language created specifically for Ops. REPL is being developed.</li>
+<li><a href="https://github.com/nushell/nushell">nushell</a> - A modern shell written in Rust</li>
+<li><a href="https://github.com/ibara/oksh">oksh</a> - Portable OpenBSD ksh</li>
+<li><a href="https://www.oilshell.org">osh</a> - Bash compatible, with new/modern Unix shell language called Oil</li>
+<li><a href="https://cvsweb.openbsd.org/cgi-bin/cvsweb/src/bin/ksh/">pdksh</a> - Public domain Korn shell</li>
+<li><a href="https://docs.microsoft.com/en-us/powershell/scripting/overview">powershell</a> a cross-platform task automation and configuration management framework, consisting of a command-line shell and scripting language</li>
+<li><a href="https://github.com/alexst07/shell-plus-plus">shell++</a> - Friendly and modern functional and object oriented shell script language</li>
+<li><a href="https://github.com/shenv/shenv">shenv</a> - Simple shell version management</li>
+<li><a href="https://www.tcsh.org/">tcsh</a> - C shell with file name completion and command line editing</li>
+<li><a href="https://xon.sh">xonsh</a> - Python-ish, BASHwards-looking shell language and command prompt</li>
+<li><a href="https://github.com/magicant/yash">yash</a> - A POSIX-compliant command line shell with built-in support for completion and prediction based on command history</li>
+<li><a href="https://www.zsh.org">zsh</a> - Powerful shell with scripting language</li>
+</ul>
+<h2>Command-Line Productivity</h2>
+<p><em>Search, bookmarks, multiplexing, and other tools that make your terminal experience more productive.</em></p>
+<ul>
+<li><a href="https://github.com/tanrax/terminal-AdvancedNewFile">AdvancedNewFile</a> - Fast creation of files and directories in a recursive way. Inspired by the Vim plugin.</li>
+<li><a href="https://github.com/ggreer/the_silver_searcher">ag</a> - Super fast string search through a directory hierarchy</li>
+<li><a href="https://github.com/sebglazebrook/aliases">aliases</a> - Contextual, dynamic, organized aliases for bash</li>
+<li><a href="https://github.com/reportaman/arttime">arttime</a> - Beauty of text art meets functionality of clock, timer, pomodoro++ time manager</li>
+<li><a href="https://github.com/hyperupcall/autoenv">autoenv</a> - Directory-based environments.</li>
+<li><a href="https://github.com/slavaGanzin/await">await</a> - single binary that run list of commands in parallel and waits for their termination</li>
+<li><a href="https://github.com/nikolassv/bartib">bartib</a> - A simple timetracker for the command line. It saves a log of all tracked activities as a plaintext file and allows you to create flexible reports.</li>
+<li><a href="https://github.com/rcaloras/bashhub-client">bashhub</a> - :cloud: Bash history in the cloud. Indexed and searchable.</li>
+<li><a href="https://github.com/tmrts/boilr">boilr</a> - A blazingly fast CLI tool for creating projects from boilerplate templates.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'shell_README.md';
 
         fetch(markdownFile)
@@ -48,21 +177,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

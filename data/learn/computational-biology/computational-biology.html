@@ -8,38 +8,193 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Inoue0426 Awesome Computational Biology - Awesome List Resources">
-    <title>Inoue0426 Awesome Computational Biology</title>
+    <meta name="description" content="A knowledge collection of databases, software and papers related to computational biology. > Computational biology involves the development and application of...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Computational Biology [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Computational Biology <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p>A knowledge collection of databases, software and papers related to computational biology.</p>
+<blockquote>
+<p>Computational biology involves the development and application of data-analytical and theoretical methods,
+mathematical modelling and computational simulation techniques to the study of biological, ecological,
+behavioural, and social systems. - <a href="https://en.wikipedia.org/wiki/Computational_biology">Wikipedia</a></p>
+</blockquote>
+<h2>Contents</h2>
+<ul>
+<li><a href="#databases">Databases</a></li>
+<li><a href="#scrna">scRNA</a></li>
+<li><a href="#compound">Compound</a></li>
+<li><a href="#pathway">Pathway</a></li>
+<li><a href="#mass-spectra">Mass Spectra</a></li>
+<li><a href="#protein">Protein</a></li>
+<li><a href="#genome">Genome</a></li>
+<li><a href="#disease">Disease</a></li>
+<li><a href="#interaction">Interaction</a></li>
+<li><a href="#clinical-trial">Clinical Trial</a></li>
+<li><a href="#api">API</a></li>
+<li><a href="#preprocess">Preprocess</a></li>
+<li><a href="#machine-learning-tasks-and-models">Machine Learning Tasks and Models</a></li>
+<li><a href="#drug-response-prediction">Drug Response Prediction</a></li>
+<li><a href="#drug-repurposing">Drug Repurposing</a></li>
+<li><a href="#drug-target-interaction">Drug Target Interaction</a></li>
+<li><a href="#compound-protein-interaction">Compound Protein Interaction</a></li>
+<li><a href="#pre-trained-embedding">Pre-trained embedding</a></li>
+<li><a href="#llm-for-biology">LLM for biology</a></li>
+</ul>
+<h2>Databases</h2>
+<h3>scRNA</h3>
+<ul>
+<li><a href="https://www.ncbi.nlm.nih.gov/geo/">Gene Expression Omnibus</a> - Public functional genemics database.</li>
+<li><a href="https://singlecell.broadinstitute.org/single_cell">Single Cell PORTAL</a> - Public database for single cell RNA.</li>
+<li><a href="https://www.ebi.ac.uk/gxa/sc/home">Single Cell Expression Atlas</a> - Public database for single cell RNA.</li>
+</ul>
+<h3>Compound</h3>
+<ul>
+<li><a href="https://pubchem.ncbi.nlm.nih.gov/">PubChem</a> - One of the biggest chemical database such as compounds, genes and proteins.</li>
+<li><a href="https://www.ebi.ac.uk/chebi/">ChEBI</a> - Chemical database  focused on small chemical compounds.</li>
+<li><a href="https://www.ebi.ac.uk/chembl/">ChEMBL</a> - Database of bioactive molecules with drug-like properties.</li>
+<li><a href="http://www.chemspider.com/">ChemSpider</a> - Chemical structure database.</li>
+<li><a href="https://www.genome.jp/kegg/compound/">KEGG COMPOUND</a> - Collection of small molecules and biopolymers.</li>
+<li><a href="https://www.lipidmaps.org/databases/lmsd/overview">LIPID MAPS</a> - Database of lipids.</li>
+<li><a href="https://www.rhea-db.org/">Rhea</a> - Database of chemical reactions.</li>
+<li><a href="https://repo-hub.broadinstitute.org/repurposing#download-data">Drug Repurposing Hub</a> - Collections of drug repurposing data containing drug, moa, target etc.</li>
+<li><a href="https://idrblab.net/ttd/full-data-download">Therapeutic Target Database</a> - collections of drug-target, target-disease, and drug-disease dataset.</li>
+<li><a href="https://zinc.docking.org/">ZINC ligand discovery database</a> - Free database of commercially-available compounds for virtual screening.</li>
+<li><a href="http://moleculenet.ai/">MoleculeNet</a> - Benchmark for molecular machine learning.</li>
+<li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0166354220302412">Ames Mutagenicity dataset</a> - Dataset for predicting mutagenicity.</li>
+<li><a href="https://www.antibody-drug.com/">ADCdb</a> - Database for antibody-drug conjugates.</li>
+</ul>
+<h3>Pathway</h3>
+<ul>
+<li><a href="https://www.pathwaycommons.org/">PathwayCommons</a> - Database of Pathways and Interactions.</li>
+<li><a href="https://www.genome.jp/kegg/pathway.html">KEGG PATHWAY</a> - Collection fo drawn pathway maps.</li>
+<li><a href="https://wikipathways.org/">WikiPathways</a> - Database of biological pathways.</li>
+</ul>
+<h3>Mass Spectra</h3>
+<ul>
+<li><a href="http://www.massbank.jp/">MassBank</a> - Open souce databases and tools for mass spectrometry reference spectra.</li>
+<li><a href="https://mona.fiehnlab.ucdavis.edu/">MoNA MassBank of North America</a> - Meta database of metabolite mass spectra, metadata and associated compounds.</li>
+</ul>
+<h3>Protein</h3>
+<ul>
+<li><a href="https://www.proteinatlas.org/">THE HUMAN PROTEIN ATLAS</a> - One of the biggest human protein database contained cells, tissues, and organs. </li>
+<li><a href="https://www.rcsb.org/">PROTEIN DATA BANK</a> - Database of the 3D shapes of proteins, nucleic acids, and complex assemblies.</li>
+<li><a href="https://www.uniprot.org/">UniProt</a> - The collection of functional information on proteins.</li>
+<li><a href="https://alphafold.ebi.ac.uk/api-docs">AlphaFold Protein Structure Database</a> - Database of 3D protein structures.</li>
+<li><a href="https://www.rcsb.org/">RCSB Protein Data Bank (PDB)</a> - Repository of 3D structural data of large biological molecules.</li>
+<li><a href="https://predictioncenter.org/">Critical Assessment of Structure Prediction (CASP)</a> - Experiment for advancing the methods of predicting protein structure from sequence.</li>
+<li><a href="https://uniclust.mmseqs.com/">Uniclust</a> - Collection of clustered protein sequence databases.</li>
+<li><a href="https://www.cathdb.info/">CATH database</a> - Hierarchical classification of protein domain structures.</li>
+</ul>
+<h3>Genome</h3>
+<ul>
+<li><a href="https://www.ncbi.nlm.nih.gov/projects/genome/guide/human/index.shtml">Human Genome Resources at NCBI</a> - Database of image, proteomics, transcriptomics and systems biology.</li>
+<li><a href="https://www.ncbi.nlm.nih.gov/genbank/">GenBank</a> - Database of genetic sequence offered by NCBI.</li>
+<li><a href="https://genome.ucsc.edu/">UCSC Genome Browser</a> - Genome blowser offered by UCSC.</li>
+<li><a href="https://www.cbioportal.org/">cBioPortal</a> - Database of Cancer Genomics. This has overall metaview for a lot of patients.</li>
+<li><a href="https://www.10xgenomics.com/resources/datasets">10x Genomics Dataset</a> - Collection of single-cell datasets.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Computational Biology <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p>A knowledge collection of databases, software and papers related to computational biology.</p>
+<blockquote>
+<p>Computational biology involves the development and application of data-analytical and theoretical methods,
+mathematical modelling and computational simulation techniques to the study of biological, ecological,
+behavioural, and social systems. - <a href="https://en.wikipedia.org/wiki/Computational_biology">Wikipedia</a></p>
+</blockquote>
+<h2>Contents</h2>
+<ul>
+<li><a href="#databases">Databases</a></li>
+<li><a href="#scrna">scRNA</a></li>
+<li><a href="#compound">Compound</a></li>
+<li><a href="#pathway">Pathway</a></li>
+<li><a href="#mass-spectra">Mass Spectra</a></li>
+<li><a href="#protein">Protein</a></li>
+<li><a href="#genome">Genome</a></li>
+<li><a href="#disease">Disease</a></li>
+<li><a href="#interaction">Interaction</a></li>
+<li><a href="#clinical-trial">Clinical Trial</a></li>
+<li><a href="#api">API</a></li>
+<li><a href="#preprocess">Preprocess</a></li>
+<li><a href="#machine-learning-tasks-and-models">Machine Learning Tasks and Models</a></li>
+<li><a href="#drug-response-prediction">Drug Response Prediction</a></li>
+<li><a href="#drug-repurposing">Drug Repurposing</a></li>
+<li><a href="#drug-target-interaction">Drug Target Interaction</a></li>
+<li><a href="#compound-protein-interaction">Compound Protein Interaction</a></li>
+<li><a href="#pre-trained-embedding">Pre-trained embedding</a></li>
+<li><a href="#llm-for-biology">LLM for biology</a></li>
+</ul>
+<h2>Databases</h2>
+<h3>scRNA</h3>
+<ul>
+<li><a href="https://www.ncbi.nlm.nih.gov/geo/">Gene Expression Omnibus</a> - Public functional genemics database.</li>
+<li><a href="https://singlecell.broadinstitute.org/single_cell">Single Cell PORTAL</a> - Public database for single cell RNA.</li>
+<li><a href="https://www.ebi.ac.uk/gxa/sc/home">Single Cell Expression Atlas</a> - Public database for single cell RNA.</li>
+</ul>
+<h3>Compound</h3>
+<ul>
+<li><a href="https://pubchem.ncbi.nlm.nih.gov/">PubChem</a> - One of the biggest chemical database such as compounds, genes and proteins.</li>
+<li><a href="https://www.ebi.ac.uk/chebi/">ChEBI</a> - Chemical database  focused on small chemical compounds.</li>
+<li><a href="https://www.ebi.ac.uk/chembl/">ChEMBL</a> - Database of bioactive molecules with drug-like properties.</li>
+<li><a href="http://www.chemspider.com/">ChemSpider</a> - Chemical structure database.</li>
+<li><a href="https://www.genome.jp/kegg/compound/">KEGG COMPOUND</a> - Collection of small molecules and biopolymers.</li>
+<li><a href="https://www.lipidmaps.org/databases/lmsd/overview">LIPID MAPS</a> - Database of lipids.</li>
+<li><a href="https://www.rhea-db.org/">Rhea</a> - Database of chemical reactions.</li>
+<li><a href="https://repo-hub.broadinstitute.org/repurposing#download-data">Drug Repurposing Hub</a> - Collections of drug repurposing data containing drug, moa, target etc.</li>
+<li><a href="https://idrblab.net/ttd/full-data-download">Therapeutic Target Database</a> - collections of drug-target, target-disease, and drug-disease dataset.</li>
+<li><a href="https://zinc.docking.org/">ZINC ligand discovery database</a> - Free database of commercially-available compounds for virtual screening.</li>
+<li><a href="http://moleculenet.ai/">MoleculeNet</a> - Benchmark for molecular machine learning.</li>
+<li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0166354220302412">Ames Mutagenicity dataset</a> - Dataset for predicting mutagenicity.</li>
+<li><a href="https://www.antibody-drug.com/">ADCdb</a> - Database for antibody-drug conjugates.</li>
+</ul>
+<h3>Pathway</h3>
+<ul>
+<li><a href="https://www.pathwaycommons.org/">PathwayCommons</a> - Database of Pathways and Interactions.</li>
+<li><a href="https://www.genome.jp/kegg/pathway.html">KEGG PATHWAY</a> - Collection fo drawn pathway maps.</li>
+<li><a href="https://wikipathways.org/">WikiPathways</a> - Database of biological pathways.</li>
+</ul>
+<h3>Mass Spectra</h3>
+<ul>
+<li><a href="http://www.massbank.jp/">MassBank</a> - Open souce databases and tools for mass spectrometry reference spectra.</li>
+<li><a href="https://mona.fiehnlab.ucdavis.edu/">MoNA MassBank of North America</a> - Meta database of metabolite mass spectra, metadata and associated compounds.</li>
+</ul>
+<h3>Protein</h3>
+<ul>
+<li><a href="https://www.proteinatlas.org/">THE HUMAN PROTEIN ATLAS</a> - One of the biggest human protein database contained cells, tissues, and organs. </li>
+<li><a href="https://www.rcsb.org/">PROTEIN DATA BANK</a> - Database of the 3D shapes of proteins, nucleic acids, and complex assemblies.</li>
+<li><a href="https://www.uniprot.org/">UniProt</a> - The collection of functional information on proteins.</li>
+<li><a href="https://alphafold.ebi.ac.uk/api-docs">AlphaFold Protein Structure Database</a> - Database of 3D protein structures.</li>
+<li><a href="https://www.rcsb.org/">RCSB Protein Data Bank (PDB)</a> - Repository of 3D structural data of large biological molecules.</li>
+<li><a href="https://predictioncenter.org/">Critical Assessment of Structure Prediction (CASP)</a> - Experiment for advancing the methods of predicting protein structure from sequence.</li>
+<li><a href="https://uniclust.mmseqs.com/">Uniclust</a> - Collection of clustered protein sequence databases.</li>
+<li><a href="https://www.cathdb.info/">CATH database</a> - Hierarchical classification of protein domain structures.</li>
+</ul>
+<h3>Genome</h3>
+<ul>
+<li><a href="https://www.ncbi.nlm.nih.gov/projects/genome/guide/human/index.shtml">Human Genome Resources at NCBI</a> - Database of image, proteomics, transcriptomics and systems biology.</li>
+<li><a href="https://www.ncbi.nlm.nih.gov/genbank/">GenBank</a> - Database of genetic sequence offered by NCBI.</li>
+<li><a href="https://genome.ucsc.edu/">UCSC Genome Browser</a> - Genome blowser offered by UCSC.</li>
+<li><a href="https://www.cbioportal.org/">cBioPortal</a> - Database of Cancer Genomics. This has overall metaview for a lot of patients.</li>
+<li><a href="https://www.10xgenomics.com/resources/datasets">10x Genomics Dataset</a> - Collection of single-cell datasets.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'computational-biology_README.md';
 
         fetch(markdownFile)
@@ -48,21 +203,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

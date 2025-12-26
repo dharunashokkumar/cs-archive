@@ -8,38 +8,231 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Web Padawan Awesome Web Components - Awesome List Resources">
-    <title>Web Padawan Awesome Web Components</title>
+    <meta name="description" content="A curated list of awesome Web Components resources. > Note > This project was previously named "Web Components the Right Way" Web Components — a suite of...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Web Components [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Web Components <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p>A curated list of awesome Web Components resources.</p>
+<blockquote>
+<p><strong>Note</strong>
+This project was previously named "Web Components the Right Way"</p>
+</blockquote>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components">Web Components</a> — a suite of different technologies allowing you to create reusable custom elements — with their functionality encapsulated away from the rest of your code — and utilize them in your web apps.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#standards">Standards</a></li>
+<li><a href="#custom-elements">Custom Elements</a></li>
+<li><a href="#shadow-dom">Shadow DOM</a></li>
+<li><a href="#html-templates">HTML Templates</a></li>
+<li><a href="#css-shadow-parts">CSS Shadow Parts</a></li>
+<li><a href="#guides">Guides</a></li>
+<li><a href="#accessibility">Accessibility</a></li>
+<li><a href="#best-practices">Best Practices</a></li>
+<li><a href="#codelabs">Codelabs</a></li>
+<li><a href="#examples">Examples</a></li>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#architecture">Architecture</a></li>
+<li><a href="#interoperability">Interoperability</a></li>
+<li><a href="#limitations">Limitations</a></li>
+<li><a href="#styling">Styling</a></li>
+<li><a href="#real-world">Real World</a></li>
+<li><a href="#case-studies">Case Studies</a></li>
+<li><a href="#components">Components</a></li>
+<li><a href="#component-libraries">Component Libraries</a></li>
+<li><a href="#design-systems">Design Systems</a></li>
+<li><a href="#use-cases">Use Cases</a></li>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#class-based">Class Based</a></li>
+<li><a href="#functional">Functional</a></li>
+<li><a href="#integrations">Integrations</a></li>
+<li><a href="#benchmarks">Benchmarks</a></li>
+<li><a href="#frameworks">Frameworks</a></li>
+<li><a href="#angular">Angular</a></li>
+<li><a href="#react">React</a></li>
+<li><a href="#vue">Vue</a></li>
+<li><a href="#svelte">Svelte</a></li>
+<li><a href="#ecosystem">Ecosystem</a></li>
+<li><a href="#meta-frameworks">Meta Frameworks</a></li>
+<li><a href="#starter-kits">Starter Kits</a></li>
+<li><a href="#testing-solutions">Testing Solutions</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#insights">Insights</a></li>
+<li><a href="#podcasts">Podcasts</a></li>
+<li><a href="#presentations">Presentations</a></li>
+<li><a href="#talks">Talks</a></li>
+<li><a href="#usage-metrics">Usage Metrics</a></li>
+<li><a href="#proposals">Proposals</a></li>
+<li><a href="#form-associated-custom-elements">Form-associated Custom Elements</a></li>
+<li><a href="#constructable-stylesheet-objects">Constructable Stylesheet Objects</a></li>
+<li><a href="#custom-state-pseudo-class">Custom State Pseudo Class</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#archive">Archive</a></li>
+<li><a href="#polyfills">Polyfills</a></li>
+<li><a href="#history">History</a></li>
+<li><a href="#who-to-follow">Who To Follow</a></li>
+<li><a href="#maintainers">Maintainers</a></li>
+</ul>
+<h2>Introduction</h2>
+<ul>
+<li><a href="https://css-tricks.com/an-introduction-to-web-components/">An Introduction to Web Components</a></li>
+<li><a href="https://developer.salesforce.com/blogs/2020/01/intro-to-web-components.html">Intro to Web Components</a></li>
+<li><a href="https://www.smashingmagazine.com/2018/07/reusable-components-custom-elements-shadow-dom-npm/">The Holy Grail Of Reusable Components: Custom Elements, Shadow DOM, And NPM</a></li>
+<li><a href="https://www.thinktecture.com/web-components/introduction-and-motivation/">The Motivation For Using Web Components, an Introduction</a></li>
+<li><a href="https://hacks.mozilla.org/2018/11/the-power-of-web-components/">The Power of Web Components</a></li>
+<li><a href="https://nhswd.com/blog/web-components-101-what-are-web-components/">Web Components 101</a></li>
+<li><a href="https://javascript.info/webcomponents-intro">Web Components: From the orbital height</a></li>
+<li><a href="https://gomakethings.com/what-are-browser-native-web-components/">What are browser-native web components?</a></li>
+<li><a href="https://www.fast.design/docs/resources/why-web-components/">Why Web Components?</a></li>
+</ul>
+<h2>Standards</h2>
+<h3>Custom Elements</h3>
+<p>Custom Elements provide a way for authors to build their own fully-featured DOM elements.</p>
+<ul>
+<li><a href="https://css-tricks.com/a-guide-to-custom-elements-for-react-developers/">A Guide to Custom Elements for React Developers</a></li>
+<li><a href="https://github.com/shawnbot/custom-elements">All about HTML Custom Elements</a></li>
+<li><a href="https://javascript.info/custom-elements">Custom elements</a></li>
+<li><a href="https://web.dev/custom-elements-v1/">Custom Elements v1: Reusable Web Components</a></li>
+<li><a href="https://nolanlawson.com/2021/08/03/handling-properties-in-custom-element-upgrades/">Handling properties in custom element upgrades</a></li>
+<li><a href="https://gist.github.com/WebReflection/ec9f6687842aa385477c4afca625bbf4">Handy Custom Elements' Patterns</a></li>
+<li><a href="https://html.spec.whatwg.org/multipage/custom-elements.html">HTML Living Standard: Custom elements</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements">MDN - Using Custom Elements</a></li>
+<li><a href="https://github.com/web-platform-tests/wpt/tree/master/custom-elements">web-platform-tests</a></li>
+</ul>
+<h3>Shadow DOM</h3>
+<p>Shadow DOM describes a method of combining multiple DOM trees into one hierarchy and how these trees interact with each other within a document, thus enabling better composition of the DOM.</p>
+<ul>
+<li><a href="https://pm.dartus.fr/blog/a-complete-guide-on-shadow-dom-and-event-propagation/">A complete guide on shadow DOM and event propagation</a></li>
+<li><a href="https://dom.spec.whatwg.org/#shadow-trees">DOM Living Standard: Shadow tree</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM">MDN - Using Shadow DOM</a></li>
+<li><a href="https://dev.to/open-wc/mind-the-document-activeelement-2o9a">Mind the document.activeElement!</a></li>
+<li><a href="https://blog.revillweb.com/open-vs-closed-shadow-dom-9f3d7427d1af">Open vs. Closed Shadow DOM</a></li>
+<li><a href="https://javascript.info/shadow-dom">Shadow DOM</a></li>
+<li><a href="https://javascript.info/shadow-dom-events">Shadow DOM and events</a></li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Web Components <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p>A curated list of awesome Web Components resources.</p>
+<blockquote>
+<p><strong>Note</strong>
+This project was previously named "Web Components the Right Way"</p>
+</blockquote>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components">Web Components</a> — a suite of different technologies allowing you to create reusable custom elements — with their functionality encapsulated away from the rest of your code — and utilize them in your web apps.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#standards">Standards</a></li>
+<li><a href="#custom-elements">Custom Elements</a></li>
+<li><a href="#shadow-dom">Shadow DOM</a></li>
+<li><a href="#html-templates">HTML Templates</a></li>
+<li><a href="#css-shadow-parts">CSS Shadow Parts</a></li>
+<li><a href="#guides">Guides</a></li>
+<li><a href="#accessibility">Accessibility</a></li>
+<li><a href="#best-practices">Best Practices</a></li>
+<li><a href="#codelabs">Codelabs</a></li>
+<li><a href="#examples">Examples</a></li>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#architecture">Architecture</a></li>
+<li><a href="#interoperability">Interoperability</a></li>
+<li><a href="#limitations">Limitations</a></li>
+<li><a href="#styling">Styling</a></li>
+<li><a href="#real-world">Real World</a></li>
+<li><a href="#case-studies">Case Studies</a></li>
+<li><a href="#components">Components</a></li>
+<li><a href="#component-libraries">Component Libraries</a></li>
+<li><a href="#design-systems">Design Systems</a></li>
+<li><a href="#use-cases">Use Cases</a></li>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#class-based">Class Based</a></li>
+<li><a href="#functional">Functional</a></li>
+<li><a href="#integrations">Integrations</a></li>
+<li><a href="#benchmarks">Benchmarks</a></li>
+<li><a href="#frameworks">Frameworks</a></li>
+<li><a href="#angular">Angular</a></li>
+<li><a href="#react">React</a></li>
+<li><a href="#vue">Vue</a></li>
+<li><a href="#svelte">Svelte</a></li>
+<li><a href="#ecosystem">Ecosystem</a></li>
+<li><a href="#meta-frameworks">Meta Frameworks</a></li>
+<li><a href="#starter-kits">Starter Kits</a></li>
+<li><a href="#testing-solutions">Testing Solutions</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#insights">Insights</a></li>
+<li><a href="#podcasts">Podcasts</a></li>
+<li><a href="#presentations">Presentations</a></li>
+<li><a href="#talks">Talks</a></li>
+<li><a href="#usage-metrics">Usage Metrics</a></li>
+<li><a href="#proposals">Proposals</a></li>
+<li><a href="#form-associated-custom-elements">Form-associated Custom Elements</a></li>
+<li><a href="#constructable-stylesheet-objects">Constructable Stylesheet Objects</a></li>
+<li><a href="#custom-state-pseudo-class">Custom State Pseudo Class</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#archive">Archive</a></li>
+<li><a href="#polyfills">Polyfills</a></li>
+<li><a href="#history">History</a></li>
+<li><a href="#who-to-follow">Who To Follow</a></li>
+<li><a href="#maintainers">Maintainers</a></li>
+</ul>
+<h2>Introduction</h2>
+<ul>
+<li><a href="https://css-tricks.com/an-introduction-to-web-components/">An Introduction to Web Components</a></li>
+<li><a href="https://developer.salesforce.com/blogs/2020/01/intro-to-web-components.html">Intro to Web Components</a></li>
+<li><a href="https://www.smashingmagazine.com/2018/07/reusable-components-custom-elements-shadow-dom-npm/">The Holy Grail Of Reusable Components: Custom Elements, Shadow DOM, And NPM</a></li>
+<li><a href="https://www.thinktecture.com/web-components/introduction-and-motivation/">The Motivation For Using Web Components, an Introduction</a></li>
+<li><a href="https://hacks.mozilla.org/2018/11/the-power-of-web-components/">The Power of Web Components</a></li>
+<li><a href="https://nhswd.com/blog/web-components-101-what-are-web-components/">Web Components 101</a></li>
+<li><a href="https://javascript.info/webcomponents-intro">Web Components: From the orbital height</a></li>
+<li><a href="https://gomakethings.com/what-are-browser-native-web-components/">What are browser-native web components?</a></li>
+<li><a href="https://www.fast.design/docs/resources/why-web-components/">Why Web Components?</a></li>
+</ul>
+<h2>Standards</h2>
+<h3>Custom Elements</h3>
+<p>Custom Elements provide a way for authors to build their own fully-featured DOM elements.</p>
+<ul>
+<li><a href="https://css-tricks.com/a-guide-to-custom-elements-for-react-developers/">A Guide to Custom Elements for React Developers</a></li>
+<li><a href="https://github.com/shawnbot/custom-elements">All about HTML Custom Elements</a></li>
+<li><a href="https://javascript.info/custom-elements">Custom elements</a></li>
+<li><a href="https://web.dev/custom-elements-v1/">Custom Elements v1: Reusable Web Components</a></li>
+<li><a href="https://nolanlawson.com/2021/08/03/handling-properties-in-custom-element-upgrades/">Handling properties in custom element upgrades</a></li>
+<li><a href="https://gist.github.com/WebReflection/ec9f6687842aa385477c4afca625bbf4">Handy Custom Elements' Patterns</a></li>
+<li><a href="https://html.spec.whatwg.org/multipage/custom-elements.html">HTML Living Standard: Custom elements</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements">MDN - Using Custom Elements</a></li>
+<li><a href="https://github.com/web-platform-tests/wpt/tree/master/custom-elements">web-platform-tests</a></li>
+</ul>
+<h3>Shadow DOM</h3>
+<p>Shadow DOM describes a method of combining multiple DOM trees into one hierarchy and how these trees interact with each other within a document, thus enabling better composition of the DOM.</p>
+<ul>
+<li><a href="https://pm.dartus.fr/blog/a-complete-guide-on-shadow-dom-and-event-propagation/">A complete guide on shadow DOM and event propagation</a></li>
+<li><a href="https://dom.spec.whatwg.org/#shadow-trees">DOM Living Standard: Shadow tree</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM">MDN - Using Shadow DOM</a></li>
+<li><a href="https://dev.to/open-wc/mind-the-document-activeelement-2o9a">Mind the document.activeElement!</a></li>
+<li><a href="https://blog.revillweb.com/open-vs-closed-shadow-dom-9f3d7427d1af">Open vs. Closed Shadow DOM</a></li>
+<li><a href="https://javascript.info/shadow-dom">Shadow DOM</a></li>
+<li><a href="https://javascript.info/shadow-dom-events">Shadow DOM and events</a></li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'web-components_README.md';
 
         fetch(markdownFile)
@@ -48,21 +241,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

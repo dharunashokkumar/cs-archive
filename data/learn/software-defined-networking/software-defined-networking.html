@@ -8,38 +8,169 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sdnds Tw Awesome Sdn - Awesome List Resources">
-    <title>Sdnds Tw Awesome Sdn</title>
+    <meta name="description" content="An awesome list about Software Defined Networks (SDN) - Awesome SDN - Introduction - Network Operating System - Install Environment - Software Switch - Network...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome SDN [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) [![Build Status](https://travis-ci.org/sdnds-tw/awesome-sdn.svg?branch=master)](https://travis-ci.org/sdnds-tw/awesome-sdn) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome SDN <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <a href="https://travis-ci.org/sdnds-tw/awesome-sdn"><img alt="Build Status" src="https://travis-ci.org/sdnds-tw/awesome-sdn.svg?branch=master" /></a></h1>
+<p>An awesome list about Software Defined Networks (SDN)</p>
+<ul>
+<li><a href="#awesome-sdn">Awesome SDN</a></li>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#network-operating-system">Network Operating System</a></li>
+<li><a href="#install-environment">Install Environment</a></li>
+<li><a href="#software-switch">Software Switch</a></li>
+<li><a href="#network-virtualization">Network Virtualization</a></li>
+<li><a href="#protocol">Protocol</a></li>
+<li><a href="#controller">Controller</a></li>
+<li><a href="#simulatoremulator">Simulator/Emulator</a></li>
+<li><a href="#language">Language</a></li>
+<li><a href="#library">Library</a></li>
+<li><a href="#test">Test</a></li>
+<li><a href="#nfv">NFV</a></li>
+<li><a href="#overlay-network">Overlay Network</a></li>
+<li><a href="#router">Router</a></li>
+<li><a href="#misc">Misc</a></li>
+<li><a href="#high-performance-network">High Performacne Network</a></li>
+<li><a href="#userspace-network-stack">Userspace Network Stack</a></li>
+<li><a href="#analytics">Analytics</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#paper">Paper</a></li>
+</ul>
+<h1>Introduction</h1>
+<p>Software-defined networking (SDN) is an approach to computer networking that allows network administrators to manage network services through abstraction of higher-level functionality.
+  Wiki : <a href="https://en.wikipedia.org/wiki/Software-defined_networking">Software-Defined Networking</a></p>
+<h1>Network Operating System</h1>
+<ul>
+<li><a href="https://github.com/beluganos/beluganos">Beluganos</a> - Beluganos is a new network OS designed for white-box switches (OF-DPA), which can apply large-scale networks.</li>
+<li><a href="https://cumulusnetworks.com">Cumulus Linux</a> - Cumulus Linux is a powerful open network operating system that allows you to automate, customize and scale using web-scale principles like the world's largest data centers.</li>
+<li><a href="https://snaproute.com/">FlexSwitch</a> - The first open source network protocol suite offering complete layer2/layer3 functionality for accelerating development and deployment of whitebox networking gear</li>
+<li><a href="https://github.com/opencomputeproject/mion">Mion</a> - A switch OS based on ONLP API and Yocto project.</li>
+<li><a href="https://www.ipinfusion.com/">OcNOS</a> - Extensive switching and routing protocol support with advanced capabilities such as MPLS and SDN</li>
+<li><a href="https://opennetlinux.org">Open Network Linux, ONL</a> - A Linux distribution for "bare metal" switches, that is, network forwarding devices built from commodity components.</li>
+<li><a href="http://www.openswitch.net">OpenSwitch</a> - A linux network operating system from Dell EMC.</li>
+<li><a href="https://openwrt.org/">OpenWrt</a> -  Is a Linux Operating System targeting embedded devices.</li>
+<li><a href="http://www.pica8.com/products/picos">PicOS</a> - A SDN OS for white box switches Layer-2/3 feature set with support for OpenFlow, OVSDB, and other protocols.</li>
+<li><a href="https://azure.github.io/SONiC/">SONiC</a> - Software for Open Networking in the Cloud SONiC</li>
+<li><a href="https://stratumproject.org/">Stratum</a> - An open source, silicon-independent switch operating system for software-defined networks</li>
+</ul>
+<h1>Install Environment</h1>
+<ul>
+<li><a href="http://onie.org/">ONIE</a> - ONIE enables a bare metal network switch ecosystem where end users have a choice among different network operating systems.</li>
+</ul>
+<h1>Software Switch</h1>
+<ul>
+<li><a href="https://github.com/NetSys/bess">BESS</a> - Berkeley Extensible Software Switch, BESS is a modular framework for software switches.</li>
+<li><a href="https://github.com/p4lang/behavioral-model">bmv2</a>-  A P4 software switch which is usually used as a tool to verify the funtions the developers describe in P4 language.</li>
+<li><a href="https://github.com/CPqD/ofsoftswitch13">CPqD</a>- An OpenFlow 1.3 compatible user-space software switch implementation</li>
+<li><a href="https://fd.io/">FD.IO</a> - Relentlessly focused on data IO speed and efficiency for more flexible and scalable networks and storage</li>
+<li><a href="https://github.com/floodlight/indigo">Indigo</a> - Indigo is an open source project aimed at enabling support for OpenFlow on physical and hypervisor switches.</li>
+<li><a href="https://lagopus.github.io">Lagopus</a> - A high-performance software OpenFlow 1.3 switch.</li>
+<li><a href="https://github.com/FlowForwarding/LINC-Switch">LINC-Switch</a> - A pure OpenFlow software switch written in Erlang</li>
+<li><a href="http://openvswitch.org/">Open vSwitch</a> - Open vSwitch is a production quality, multilayer virtual switch.</li>
+<li><a href="https://www.cs.princeton.edu/~jrex/papers/pisces16.pdf">PISCES</a> - A Programmable, Protocol-Independent Software Switch.</li>
+<li><a href="https://github.com/SnabbCo/snabbswitch">snabbswitch</a> - An open source virtualized Ethernet networking stack.</li>
+<li><a href="https://github.com/zerotier/ZeroTierOne">ZeroTier</a> - ZeroTier is a software-based managed Ethernet switch for planet Earth.</li>
+</ul>
+<h1>Network Virtualization</h1>
+<ul>
+<li><a href="https://github.com/opennetworkinglab/flowvisor">FlowVisor</a> - An OpenFlow controller that acts as a hypervisor/proxy between a switch and multiple controllers. Can slice multiple switches in parallel, effectively slicing a network.</li>
+<li><a href="https://github.com/opennetworkinglab/OpenVirteX">OpenVirtex</a> - A network hypervisor that can create multiple virtual and programmable networks on top of a single physical infrastructure.</li>
+</ul>
+<h1>Protocol</h1>
+<ul>
+<li><a href="https://www.opennetworking.org/sdn-resources/openflow">OpenFlow</a> - A communications protocol that gives access to the forwarding plane of a network switch or router over the network.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome SDN <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <a href="https://travis-ci.org/sdnds-tw/awesome-sdn"><img alt="Build Status" src="https://travis-ci.org/sdnds-tw/awesome-sdn.svg?branch=master" /></a></h1>
+<p>An awesome list about Software Defined Networks (SDN)</p>
+<ul>
+<li><a href="#awesome-sdn">Awesome SDN</a></li>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#network-operating-system">Network Operating System</a></li>
+<li><a href="#install-environment">Install Environment</a></li>
+<li><a href="#software-switch">Software Switch</a></li>
+<li><a href="#network-virtualization">Network Virtualization</a></li>
+<li><a href="#protocol">Protocol</a></li>
+<li><a href="#controller">Controller</a></li>
+<li><a href="#simulatoremulator">Simulator/Emulator</a></li>
+<li><a href="#language">Language</a></li>
+<li><a href="#library">Library</a></li>
+<li><a href="#test">Test</a></li>
+<li><a href="#nfv">NFV</a></li>
+<li><a href="#overlay-network">Overlay Network</a></li>
+<li><a href="#router">Router</a></li>
+<li><a href="#misc">Misc</a></li>
+<li><a href="#high-performance-network">High Performacne Network</a></li>
+<li><a href="#userspace-network-stack">Userspace Network Stack</a></li>
+<li><a href="#analytics">Analytics</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#paper">Paper</a></li>
+</ul>
+<h1>Introduction</h1>
+<p>Software-defined networking (SDN) is an approach to computer networking that allows network administrators to manage network services through abstraction of higher-level functionality.
+  Wiki : <a href="https://en.wikipedia.org/wiki/Software-defined_networking">Software-Defined Networking</a></p>
+<h1>Network Operating System</h1>
+<ul>
+<li><a href="https://github.com/beluganos/beluganos">Beluganos</a> - Beluganos is a new network OS designed for white-box switches (OF-DPA), which can apply large-scale networks.</li>
+<li><a href="https://cumulusnetworks.com">Cumulus Linux</a> - Cumulus Linux is a powerful open network operating system that allows you to automate, customize and scale using web-scale principles like the world's largest data centers.</li>
+<li><a href="https://snaproute.com/">FlexSwitch</a> - The first open source network protocol suite offering complete layer2/layer3 functionality for accelerating development and deployment of whitebox networking gear</li>
+<li><a href="https://github.com/opencomputeproject/mion">Mion</a> - A switch OS based on ONLP API and Yocto project.</li>
+<li><a href="https://www.ipinfusion.com/">OcNOS</a> - Extensive switching and routing protocol support with advanced capabilities such as MPLS and SDN</li>
+<li><a href="https://opennetlinux.org">Open Network Linux, ONL</a> - A Linux distribution for "bare metal" switches, that is, network forwarding devices built from commodity components.</li>
+<li><a href="http://www.openswitch.net">OpenSwitch</a> - A linux network operating system from Dell EMC.</li>
+<li><a href="https://openwrt.org/">OpenWrt</a> -  Is a Linux Operating System targeting embedded devices.</li>
+<li><a href="http://www.pica8.com/products/picos">PicOS</a> - A SDN OS for white box switches Layer-2/3 feature set with support for OpenFlow, OVSDB, and other protocols.</li>
+<li><a href="https://azure.github.io/SONiC/">SONiC</a> - Software for Open Networking in the Cloud SONiC</li>
+<li><a href="https://stratumproject.org/">Stratum</a> - An open source, silicon-independent switch operating system for software-defined networks</li>
+</ul>
+<h1>Install Environment</h1>
+<ul>
+<li><a href="http://onie.org/">ONIE</a> - ONIE enables a bare metal network switch ecosystem where end users have a choice among different network operating systems.</li>
+</ul>
+<h1>Software Switch</h1>
+<ul>
+<li><a href="https://github.com/NetSys/bess">BESS</a> - Berkeley Extensible Software Switch, BESS is a modular framework for software switches.</li>
+<li><a href="https://github.com/p4lang/behavioral-model">bmv2</a>-  A P4 software switch which is usually used as a tool to verify the funtions the developers describe in P4 language.</li>
+<li><a href="https://github.com/CPqD/ofsoftswitch13">CPqD</a>- An OpenFlow 1.3 compatible user-space software switch implementation</li>
+<li><a href="https://fd.io/">FD.IO</a> - Relentlessly focused on data IO speed and efficiency for more flexible and scalable networks and storage</li>
+<li><a href="https://github.com/floodlight/indigo">Indigo</a> - Indigo is an open source project aimed at enabling support for OpenFlow on physical and hypervisor switches.</li>
+<li><a href="https://lagopus.github.io">Lagopus</a> - A high-performance software OpenFlow 1.3 switch.</li>
+<li><a href="https://github.com/FlowForwarding/LINC-Switch">LINC-Switch</a> - A pure OpenFlow software switch written in Erlang</li>
+<li><a href="http://openvswitch.org/">Open vSwitch</a> - Open vSwitch is a production quality, multilayer virtual switch.</li>
+<li><a href="https://www.cs.princeton.edu/~jrex/papers/pisces16.pdf">PISCES</a> - A Programmable, Protocol-Independent Software Switch.</li>
+<li><a href="https://github.com/SnabbCo/snabbswitch">snabbswitch</a> - An open source virtualized Ethernet networking stack.</li>
+<li><a href="https://github.com/zerotier/ZeroTierOne">ZeroTier</a> - ZeroTier is a software-based managed Ethernet switch for planet Earth.</li>
+</ul>
+<h1>Network Virtualization</h1>
+<ul>
+<li><a href="https://github.com/opennetworkinglab/flowvisor">FlowVisor</a> - An OpenFlow controller that acts as a hypervisor/proxy between a switch and multiple controllers. Can slice multiple switches in parallel, effectively slicing a network.</li>
+<li><a href="https://github.com/opennetworkinglab/OpenVirteX">OpenVirtex</a> - A network hypervisor that can create multiple virtual and programmable networks on top of a single physical infrastructure.</li>
+</ul>
+<h1>Protocol</h1>
+<ul>
+<li><a href="https://www.opennetworking.org/sdn-resources/openflow">OpenFlow</a> - A communications protocol that gives access to the forwarding plane of a network switch or router over the network.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'software-defined-networking_README.md';
 
         fetch(markdownFile)
@@ -48,21 +179,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

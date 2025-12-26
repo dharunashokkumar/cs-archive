@@ -8,38 +8,161 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Vaticle Typedb Awesome - Awesome List Resources">
-    <title>Vaticle Typedb Awesome</title>
+    <meta name="description" content="A curated list of TypeDB resources. TypeDB is a polymorphic database with a conceptual data model, a strong subtyping system, a symbolic reasoning engine, and...">
+    <meta name="robots" content="index, follow">
+    <title>Typedb - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <p><a href="https://typedb.com"><img alt="TypeDB" src="https://github.com/typedb/typedb/blob/2c5e3114cb4d19085a329b379eef590d7a3e9eda/docs/banner.png" /></a></p>
+<h1>Awesome TypeDB <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p>A curated list of TypeDB resources.</p>
+<p>TypeDB is a <a href="https://typedb.com/features#polymorphic-queries">polymorphic</a> database with a <a href="https://typedb.com/features#conceptual-modeling">conceptual</a> data model, a strong <a href="https://typedb.com/features#strong-type-system">subtyping</a> system, a symbolic <a href="https://typedb.com/features#symbolic-reasoning">reasoning</a> engine, and a beautiful and elegant <a href="https://typedb.com/features#modern-language">type-theoretic</a> language TypeQL.</p>
+<h2>Contributing</h2>
+<p>Want to contribute to the list? Let us know on <a href="https://typedb.com/discord">Discord</a> and open a pull request!</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#open-source-projects-using-typedb">Open source projects using TypeDB</a></li>
+<li><a href="#conferences">Conferences</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#example-projects">Example projects</a></li>
+<li><a href="#blog-posts">Blog posts</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#client-drivers-official">Client Drivers (official)</a></li>
+<li><a href="#client-drivers-community">Client Drivers (community)</a></li>
+<li><a href="#ide-and-editor-support">IDE and editor support</a></li>
+<li><a href="#community">Community</a></li>
+</ul>
+<h2>Open source projects using TypeDB</h2>
+<ul>
+<li><a href="https://github.com/vaticle/typedb-studio"><code>TypeDB Studio - IDE for TypeDB</code></a> - TypeDB Studio is an Integrated Development Environment for TypeDB for performing knowledge engineering.</li>
+<li><a href="https://github.com/Blitzapps/blitz-orm"><code>Blitz-ORM</code></a> - Blitz-ORM is an Object Relational Mapper written in TypeScript and compatible with TypeDB.</li>
+<li><a href="https://github.com/vaticle/typedb-ml"><code>TypeDB-ML</code></a> - TypeDB-ML provides tools to enable graph algorithms and machine learning with TypeDB.</li>
+<li><a href="https://github.com/typedb-osi/typedb-loader"><code>TypeDB Loader</code></a> - An open-source data migrator for loading data into TypeDB at scale.</li>
+<li><a href="https://github.com/typedb-osi/typedb-cti"><code>TypeDB OSI - Cyber Threat Intelligence</code></a> - TypeDB CTI is an open source threat intelligence platform enabling threat intel professionals to bring together their disparate CTI information into one database 
+and find new insights about cyber threats.</li>
+<li><a href="https://github.com/typedb-osi/typedb-bio"><code>TypeDB OSI - Biomedical Knowledge Graph</code></a> - TypeDB Bio is an open source biomedical knowledge graph providing biomedical researchers an intuitive way to query interconnected and heterogeneous biomedical 
+data in one single place.</li>
+<li><a href="https://github.com/sourceplusplus/Assistant"><code>Source++</code></a> - Open-source automated programming assistant with runtime-aware and context-aware functionality.</li>
+<li><a href="https://github.com/RasaHQ/rasa"><code>Rasa</code></a> - Open-source machine learning framework to automate text-and voice-based conversations.</li>
+<li><a href="https://github.com/ds1sqe/type-bridge"><code>TypeBridge</code></a> - A modern, Pythonic ORM for TypeDB with an Attribute-based API that aligns with TypeDB's type system.</li>
+</ul>
+<h2>Conferences</h2>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLtEF8_xCPklY3P5NLSQb1SyIYLhQssxfY">Orbit</a></li>
+</ul>
+<h2>Documentation</h2>
+<ul>
+<li><a href="https://typedb.com/docs">TypeDB Documentation Portal</a></li>
+</ul>
+<h2>Example projects</h2>
+<ul>
+<li><a href="https://github.com/vaticle/typedb-driver-examples"><code>TypeDB Driver Examples</code></a> - This repository includes examples that showcase usage of TypeDB Drivers in reading from and writing to a TypeDB database.</li>
+</ul>
+<h2>Blog posts</h2>
+<ul>
+<li><a href="https://typedb.com/blog/the-need-for-subtyping-and-polymorphism-in-databases">The need for subtyping and polymorphism in databases</a></li>
+<li><a href="https://typedb.com/blog/accelerating-drug-discovery-with-applied-knowledge-engineering-and-typedb">Accelerating drug discovery with applied knowledge engineering and TypeDB</a></li>
+<li><a href="https://typedb.com/blog/modeling-collections-in-databases-relational-sql-vs-typedb">Modeling collections in databases: Relational/SQL vs TypeDB</a></li>
+<li><a href="https://typedb.com/blog/the-age-of-ai-is-upon-us-where-are-the-smart-databases">The age of AI is upon us - where are the smart databases?</a></li>
+<li><a href="https://typedb.com/blog/building-a-cyber-threat-intelligence-database-with-typedb">Building a Cyber Threat Intelligence database with TypeDB</a></li>
+<li><a href="https://typedb.com/blog/inheritance-and-polymorphism-where-the-cracks-in-sql-begin-to-show">Inheritance and polymorphism: where the cracks in SQL begin to show</a></li>
+<li><a href="https://typedb.com/blog/identity-and-access-management-with-typedb-part-i-polymorphism">Identity and access management with TypeDB: Part I, polymorphism</a></li>
+<li><a href="https://typedb.com/blog/a-new-era-for-typedb">A New Era for TypeDB</a></li>
+<li><a href="https://typedb.com/blog/inference-in-typedb">Inference in TypeDB</a></li>
+</ul>
+<h2>Videos</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=e0lmTSb-rzY">Introduction to TypeDB and TypeQL</a></li>
+<li><a href="https://www.youtube.com/watch?v=DbnS1feTyOs">TypeDB 2.0: A Database Evolution</a></li>
+<li><a href="https://www.youtube.com/watch?v=xuiYorG8-1Q">Building an Open Source Threat Intelligence Platform with STIX</a></li>
+<li><a href="https://www.youtube.com/watch?v=ESupDcw70kQ">TypeDB Community Project - NodeLab: An Advanced TypeDB GUI</a></li>
+<li><a href="https://www.youtube.com/watch?v=9EaxwUG9vAg">Pandora Paper Leaks with TypeDB</a></li>
+<li><a href="https://www.youtube.com/watch?v=oS42lN4qSJ4">Building a Distributed Database With the Raft Replication Algorithm</a></li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <p><a href="https://typedb.com"><img alt="TypeDB" src="https://github.com/typedb/typedb/blob/2c5e3114cb4d19085a329b379eef590d7a3e9eda/docs/banner.png" /></a></p>
+<h1>Awesome TypeDB <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p>A curated list of TypeDB resources.</p>
+<p>TypeDB is a <a href="https://typedb.com/features#polymorphic-queries">polymorphic</a> database with a <a href="https://typedb.com/features#conceptual-modeling">conceptual</a> data model, a strong <a href="https://typedb.com/features#strong-type-system">subtyping</a> system, a symbolic <a href="https://typedb.com/features#symbolic-reasoning">reasoning</a> engine, and a beautiful and elegant <a href="https://typedb.com/features#modern-language">type-theoretic</a> language TypeQL.</p>
+<h2>Contributing</h2>
+<p>Want to contribute to the list? Let us know on <a href="https://typedb.com/discord">Discord</a> and open a pull request!</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#open-source-projects-using-typedb">Open source projects using TypeDB</a></li>
+<li><a href="#conferences">Conferences</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#example-projects">Example projects</a></li>
+<li><a href="#blog-posts">Blog posts</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#client-drivers-official">Client Drivers (official)</a></li>
+<li><a href="#client-drivers-community">Client Drivers (community)</a></li>
+<li><a href="#ide-and-editor-support">IDE and editor support</a></li>
+<li><a href="#community">Community</a></li>
+</ul>
+<h2>Open source projects using TypeDB</h2>
+<ul>
+<li><a href="https://github.com/vaticle/typedb-studio"><code>TypeDB Studio - IDE for TypeDB</code></a> - TypeDB Studio is an Integrated Development Environment for TypeDB for performing knowledge engineering.</li>
+<li><a href="https://github.com/Blitzapps/blitz-orm"><code>Blitz-ORM</code></a> - Blitz-ORM is an Object Relational Mapper written in TypeScript and compatible with TypeDB.</li>
+<li><a href="https://github.com/vaticle/typedb-ml"><code>TypeDB-ML</code></a> - TypeDB-ML provides tools to enable graph algorithms and machine learning with TypeDB.</li>
+<li><a href="https://github.com/typedb-osi/typedb-loader"><code>TypeDB Loader</code></a> - An open-source data migrator for loading data into TypeDB at scale.</li>
+<li><a href="https://github.com/typedb-osi/typedb-cti"><code>TypeDB OSI - Cyber Threat Intelligence</code></a> - TypeDB CTI is an open source threat intelligence platform enabling threat intel professionals to bring together their disparate CTI information into one database 
+and find new insights about cyber threats.</li>
+<li><a href="https://github.com/typedb-osi/typedb-bio"><code>TypeDB OSI - Biomedical Knowledge Graph</code></a> - TypeDB Bio is an open source biomedical knowledge graph providing biomedical researchers an intuitive way to query interconnected and heterogeneous biomedical 
+data in one single place.</li>
+<li><a href="https://github.com/sourceplusplus/Assistant"><code>Source++</code></a> - Open-source automated programming assistant with runtime-aware and context-aware functionality.</li>
+<li><a href="https://github.com/RasaHQ/rasa"><code>Rasa</code></a> - Open-source machine learning framework to automate text-and voice-based conversations.</li>
+<li><a href="https://github.com/ds1sqe/type-bridge"><code>TypeBridge</code></a> - A modern, Pythonic ORM for TypeDB with an Attribute-based API that aligns with TypeDB's type system.</li>
+</ul>
+<h2>Conferences</h2>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLtEF8_xCPklY3P5NLSQb1SyIYLhQssxfY">Orbit</a></li>
+</ul>
+<h2>Documentation</h2>
+<ul>
+<li><a href="https://typedb.com/docs">TypeDB Documentation Portal</a></li>
+</ul>
+<h2>Example projects</h2>
+<ul>
+<li><a href="https://github.com/vaticle/typedb-driver-examples"><code>TypeDB Driver Examples</code></a> - This repository includes examples that showcase usage of TypeDB Drivers in reading from and writing to a TypeDB database.</li>
+</ul>
+<h2>Blog posts</h2>
+<ul>
+<li><a href="https://typedb.com/blog/the-need-for-subtyping-and-polymorphism-in-databases">The need for subtyping and polymorphism in databases</a></li>
+<li><a href="https://typedb.com/blog/accelerating-drug-discovery-with-applied-knowledge-engineering-and-typedb">Accelerating drug discovery with applied knowledge engineering and TypeDB</a></li>
+<li><a href="https://typedb.com/blog/modeling-collections-in-databases-relational-sql-vs-typedb">Modeling collections in databases: Relational/SQL vs TypeDB</a></li>
+<li><a href="https://typedb.com/blog/the-age-of-ai-is-upon-us-where-are-the-smart-databases">The age of AI is upon us - where are the smart databases?</a></li>
+<li><a href="https://typedb.com/blog/building-a-cyber-threat-intelligence-database-with-typedb">Building a Cyber Threat Intelligence database with TypeDB</a></li>
+<li><a href="https://typedb.com/blog/inheritance-and-polymorphism-where-the-cracks-in-sql-begin-to-show">Inheritance and polymorphism: where the cracks in SQL begin to show</a></li>
+<li><a href="https://typedb.com/blog/identity-and-access-management-with-typedb-part-i-polymorphism">Identity and access management with TypeDB: Part I, polymorphism</a></li>
+<li><a href="https://typedb.com/blog/a-new-era-for-typedb">A New Era for TypeDB</a></li>
+<li><a href="https://typedb.com/blog/inference-in-typedb">Inference in TypeDB</a></li>
+</ul>
+<h2>Videos</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=e0lmTSb-rzY">Introduction to TypeDB and TypeQL</a></li>
+<li><a href="https://www.youtube.com/watch?v=DbnS1feTyOs">TypeDB 2.0: A Database Evolution</a></li>
+<li><a href="https://www.youtube.com/watch?v=xuiYorG8-1Q">Building an Open Source Threat Intelligence Platform with STIX</a></li>
+<li><a href="https://www.youtube.com/watch?v=ESupDcw70kQ">TypeDB Community Project - NodeLab: An Advanced TypeDB GUI</a></li>
+<li><a href="https://www.youtube.com/watch?v=9EaxwUG9vAg">Pandora Paper Leaks with TypeDB</a></li>
+<li><a href="https://www.youtube.com/watch?v=oS42lN4qSJ4">Building a Distributed Database With the Raft Replication Algorithm</a></li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'typedb_README.md';
 
         fetch(markdownFile)
@@ -48,21 +171,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

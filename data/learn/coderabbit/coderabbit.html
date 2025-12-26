@@ -8,38 +8,227 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Coderabbitai Awesome Coderabbit - Awesome List Resources">
-    <title>Coderabbitai Awesome Coderabbit</title>
+    <meta name="description" content="CodeRabbit is an AI-powered code review tool that helps development teams improve code quality and accelerate the review process. It integrates with popular...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome CodeRabbit [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome CodeRabbit <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a></h1>
+<p><a href="https://www.coderabbit.ai">CodeRabbit</a> is an AI-powered code review tool that helps development teams improve code quality and accelerate the review process. It integrates with popular version control platforms and provides intelligent feedback on code changes.</p>
+<p>This curated list covers the best resources, tutorials, and community content related to CodeRabbit 🐰</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#official-resources">Official Resources</a></li>
+<li><a href="#getting-started">Getting Started</a></li>
+<li><a href="#api-reference">API Reference</a></li>
+<li><a href="#configuration-examples">Configuration Examples</a></li>
+<li><a href="#integration-guides">Integration Guides</a></li>
+<li><a href="#video-tutorials">Video Tutorials</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#media-coverage">Media Coverage</a></li>
+<li><a href="#community-reviews">Community Reviews</a></li>
+<li><a href="#projects-using-coderabbit">Projects Using CodeRabbit</a></li>
+</ul>
+<h2>Official Resources</h2>
+<ul>
+<li><a href="https://docs.coderabbit.ai">Documentation</a> - Comprehensive docs covering all aspects of CodeRabbit.</li>
+<li><a href="https://www.coderabbit.ai/blog">Blog</a> - Official blog featuring updates, tutorials, and best practices.</li>
+<li><a href="https://www.coderabbit.ai/faq">FAQ</a> - Frequently asked questions about CodeRabbit.</li>
+<li><a href="https://github.com/coderabbitai/ai-pr-reviewer">GitHub Repository</a> - Official AI PR Reviewer repository.</li>
+<li><a href="https://www.linkedin.com/company/coderabbitai/">LinkedIn</a> - Official LinkedIn presence.</li>
+<li><a href="https://x.com/coderabbitai">Twitter</a> - Official Twitter/X account.</li>
+<li><a href="https://www.youtube.com/@CodeRabbitAI">YouTube Channel</a> - Official YouTube channel with tutorials and updates.</li>
+</ul>
+<h2>Getting Started</h2>
+<ul>
+<li><a href="https://www.coderabbit.ai/blog/coderabbit-startup-program">CodeRabbit Startup Program</a> - Special program for startups.</li>
+<li><a href="https://www.coderabbit.ai/blog/how-to-use-an-ai-code-reviewer-on-github-in-4-examples">AI Code Reviewer Examples</a> - Four practical examples of using CodeRabbit.</li>
+</ul>
+<h2>API Reference</h2>
+<ul>
+<li><a href="https://docs.coderabbit.ai/api-reference/">OpenAPI Documentation</a> - Complete Swagger documentation for CodeRabbit's REST API endpoints.</li>
+</ul>
+<h2>Configuration Examples</h2>
+<h3>Enterprise Configuration Example</h3>
+<p>Explore real-world CodeRabbit configurations from various projects.</p>
+<pre><code class="language-yaml"># yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+language: &quot;en-US&quot;
+early_access: false
+tone_instructions: 'You are an expert code reviewer in Java, TypeScript, JavaScript, and NodeJS. You work in an enterprise software developer team, providing concise and clear code review advice. You only elaborate or provide detailed explanations when requested.'
+reviews:
+  profile: &quot;chill&quot;
+  request_changes_workflow: false
+  high_level_summary: true
+  poem: true
+  review_status: true
+  collapse_walkthrough: false
+  auto_review:
+    enabled: true
+    drafts: false
+    base_branches: [&quot;pg&quot;, &quot;release&quot;]
+  path_instructions:
+    - path: &quot;app/client/cypress/**/**.*&quot;
+      instructions: |
+        Review the following e2e test code written using the Cypress test library. Ensure that:
+        - Follow best practices for Cypress code and e2e automation
+        - Avoid using cy.wait in code
+        - Avoid using cy.pause in code
+        - Avoid using agHelper.sleep()
+        - Use locator variables for locators
+        - Use data-* attributes for selectors
+        - Avoid Xpaths, Attributes and CSS path
+        - Avoid selectors like .btn.submit
+        - Perform logins via API
+        - Avoid using it.only
+        - Use multiple assertions
+        - Avoid string assertions
+        - Ensure unique filenames
+chat:
+  auto_reply: true
+</code></pre>
+<p>Find more examples in the <a href="configs/"><code>configs/</code></a> directory, organized by language:</p>
+<pre><code>configs/
+├── javascript/   # JavaScript project configurations
+├── typescript/   # TypeScript project configurations
+├── python/       # Python project configurations
+├── go/          # Go project configurations
+└── multi-language/ # Full-stack project configurations
+</code></pre>
+<h2>Integration Guides</h2>
+<ul>
+<li><a href="https://www.coderabbit.ai/blog/getting-started-with-coderabbit-using-azure-devops">Azure DevOps Integration</a> - Guide for integrating with Azure DevOps.</li>
+<li><a href="https://www.coderabbit.ai/blog/how-to-run-static-analysis-on-your-ci-cd-pipelines-using-ai">CI/CD Pipeline Integration</a> - Adding AI-powered static analysis to CI/CD pipelines.</li>
+<li><a href="https://www.coderabbit.ai/blog/how-to-use-coderabbit-to-validate-issues-against-linear-board">Linear Board Integration</a> - Guide for Linear board integration.</li>
+<li><a href="https://www.coderabbit.ai/blog/how-to-integrate-ai-code-review-into-your-devops-pipeline">DevOps Pipeline Integration</a> - Comprehensive DevOps integration guide.</li>
+</ul>
+<h2>Video Tutorials</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=3SyUOSebG7E">Getting Started Tutorial</a> - Official step-by-step guide for new users.</li>
+</ul>
+<h2>Blogs</h2>
+<ul>
+<li><a href="https://tomaszs2.medium.com/ai-can-make-a-code-review-for-free-a559cf74efa5">AI Can Make a Code Review for Free</a></li>
+<li><a href="https://www.coderabbit.ai/blog/coderabbit-deep-dive">CodeRabbit Deep Dive</a></li>
+<li><a href="https://www.devtoolsacademy.com/blog/coderabbit-vs-others-ai-code-review-tools">CodeRabbit vs Others: AI Code Review Tools</a></li>
+<li><a href="https://www.coderabbit.ai/blog/why-developers-hate-linters">Why Developers Hate Linters</a></li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome CodeRabbit <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a></h1>
+<p><a href="https://www.coderabbit.ai">CodeRabbit</a> is an AI-powered code review tool that helps development teams improve code quality and accelerate the review process. It integrates with popular version control platforms and provides intelligent feedback on code changes.</p>
+<p>This curated list covers the best resources, tutorials, and community content related to CodeRabbit 🐰</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#official-resources">Official Resources</a></li>
+<li><a href="#getting-started">Getting Started</a></li>
+<li><a href="#api-reference">API Reference</a></li>
+<li><a href="#configuration-examples">Configuration Examples</a></li>
+<li><a href="#integration-guides">Integration Guides</a></li>
+<li><a href="#video-tutorials">Video Tutorials</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#media-coverage">Media Coverage</a></li>
+<li><a href="#community-reviews">Community Reviews</a></li>
+<li><a href="#projects-using-coderabbit">Projects Using CodeRabbit</a></li>
+</ul>
+<h2>Official Resources</h2>
+<ul>
+<li><a href="https://docs.coderabbit.ai">Documentation</a> - Comprehensive docs covering all aspects of CodeRabbit.</li>
+<li><a href="https://www.coderabbit.ai/blog">Blog</a> - Official blog featuring updates, tutorials, and best practices.</li>
+<li><a href="https://www.coderabbit.ai/faq">FAQ</a> - Frequently asked questions about CodeRabbit.</li>
+<li><a href="https://github.com/coderabbitai/ai-pr-reviewer">GitHub Repository</a> - Official AI PR Reviewer repository.</li>
+<li><a href="https://www.linkedin.com/company/coderabbitai/">LinkedIn</a> - Official LinkedIn presence.</li>
+<li><a href="https://x.com/coderabbitai">Twitter</a> - Official Twitter/X account.</li>
+<li><a href="https://www.youtube.com/@CodeRabbitAI">YouTube Channel</a> - Official YouTube channel with tutorials and updates.</li>
+</ul>
+<h2>Getting Started</h2>
+<ul>
+<li><a href="https://www.coderabbit.ai/blog/coderabbit-startup-program">CodeRabbit Startup Program</a> - Special program for startups.</li>
+<li><a href="https://www.coderabbit.ai/blog/how-to-use-an-ai-code-reviewer-on-github-in-4-examples">AI Code Reviewer Examples</a> - Four practical examples of using CodeRabbit.</li>
+</ul>
+<h2>API Reference</h2>
+<ul>
+<li><a href="https://docs.coderabbit.ai/api-reference/">OpenAPI Documentation</a> - Complete Swagger documentation for CodeRabbit's REST API endpoints.</li>
+</ul>
+<h2>Configuration Examples</h2>
+<h3>Enterprise Configuration Example</h3>
+<p>Explore real-world CodeRabbit configurations from various projects.</p>
+<pre><code class="language-yaml"># yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+language: &quot;en-US&quot;
+early_access: false
+tone_instructions: 'You are an expert code reviewer in Java, TypeScript, JavaScript, and NodeJS. You work in an enterprise software developer team, providing concise and clear code review advice. You only elaborate or provide detailed explanations when requested.'
+reviews:
+  profile: &quot;chill&quot;
+  request_changes_workflow: false
+  high_level_summary: true
+  poem: true
+  review_status: true
+  collapse_walkthrough: false
+  auto_review:
+    enabled: true
+    drafts: false
+    base_branches: [&quot;pg&quot;, &quot;release&quot;]
+  path_instructions:
+    - path: &quot;app/client/cypress/**/**.*&quot;
+      instructions: |
+        Review the following e2e test code written using the Cypress test library. Ensure that:
+        - Follow best practices for Cypress code and e2e automation
+        - Avoid using cy.wait in code
+        - Avoid using cy.pause in code
+        - Avoid using agHelper.sleep()
+        - Use locator variables for locators
+        - Use data-* attributes for selectors
+        - Avoid Xpaths, Attributes and CSS path
+        - Avoid selectors like .btn.submit
+        - Perform logins via API
+        - Avoid using it.only
+        - Use multiple assertions
+        - Avoid string assertions
+        - Ensure unique filenames
+chat:
+  auto_reply: true
+</code></pre>
+<p>Find more examples in the <a href="configs/"><code>configs/</code></a> directory, organized by language:</p>
+<pre><code>configs/
+├── javascript/   # JavaScript project configurations
+├── typescript/   # TypeScript project configurations
+├── python/       # Python project configurations
+├── go/          # Go project configurations
+└── multi-language/ # Full-stack project configurations
+</code></pre>
+<h2>Integration Guides</h2>
+<ul>
+<li><a href="https://www.coderabbit.ai/blog/getting-started-with-coderabbit-using-azure-devops">Azure DevOps Integration</a> - Guide for integrating with Azure DevOps.</li>
+<li><a href="https://www.coderabbit.ai/blog/how-to-run-static-analysis-on-your-ci-cd-pipelines-using-ai">CI/CD Pipeline Integration</a> - Adding AI-powered static analysis to CI/CD pipelines.</li>
+<li><a href="https://www.coderabbit.ai/blog/how-to-use-coderabbit-to-validate-issues-against-linear-board">Linear Board Integration</a> - Guide for Linear board integration.</li>
+<li><a href="https://www.coderabbit.ai/blog/how-to-integrate-ai-code-review-into-your-devops-pipeline">DevOps Pipeline Integration</a> - Comprehensive DevOps integration guide.</li>
+</ul>
+<h2>Video Tutorials</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=3SyUOSebG7E">Getting Started Tutorial</a> - Official step-by-step guide for new users.</li>
+</ul>
+<h2>Blogs</h2>
+<ul>
+<li><a href="https://tomaszs2.medium.com/ai-can-make-a-code-review-for-free-a559cf74efa5">AI Can Make a Code Review for Free</a></li>
+<li><a href="https://www.coderabbit.ai/blog/coderabbit-deep-dive">CodeRabbit Deep Dive</a></li>
+<li><a href="https://www.devtoolsacademy.com/blog/coderabbit-vs-others-ai-code-review-tools">CodeRabbit vs Others: AI Code Review Tools</a></li>
+<li><a href="https://www.coderabbit.ai/blog/why-developers-hate-linters">Why Developers Hate Linters</a></li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'coderabbit_README.md';
 
         fetch(markdownFile)
@@ -48,21 +237,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

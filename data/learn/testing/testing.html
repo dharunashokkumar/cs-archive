@@ -8,38 +8,155 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Thejambo Awesome Testing - Awesome List Resources">
-    <title>Thejambo Awesome Testing</title>
+    <meta name="description" content="> A curated list of testing software, extensions and resources This is intended to be a curation of resources for the new among the software testing community....">
+    <meta name="robots" content="index, follow">
+    <title>Testing - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <p><img alt="" src="https://github.com/TheJambo/awesome-testing/blob/master/AwesomeTesting.jpg?raw=true" /></p>
+<h1>Awesome Testing <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <a href="https://github.com/TheJambo/awesome-testing/actions/workflows/404-links.yml"><img alt="Dead link checker" src="https://github.com/TheJambo/awesome-testing/actions/workflows/404-links.yml/badge.svg" /></a></h1>
+<blockquote>
+<p>A curated list of testing software, extensions and resources</p>
+</blockquote>
+<h2>Foreword</h2>
+<p>This is intended to be a curation of resources for the new among the software testing community. It is not tailored to a specific area (Usability/Performance) or role (Automation/Management). The idea is that you could hand this list to a CS graduate and it would greatly improve their testing skills, efficiency and overall breadth of knowledge. Note that this is for all areas of software testing after the code in question is written (no unit tests/static analysis!).</p>
+<p>Finally, I'm sure everyone who reads this list has one thing they want to add. Please read the <a href="https://github.com/TheJambo/awesome-testing/blob/master/CONTRIBUTING.md">How to Contribute</a> page and add to the list. :)</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#software">Software</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#training-includes-developer-training-for-automation-testers">Training</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#newsletters">Newsletters</a></li>
+<li><a href="#suggested-awesome-lists">Suggested Awesome Lists</a></li>
+<li><a href="#qa-and-testing-road-map">QA &amp; Testing Road Map</a></li>
+<li><a href="#others">Others</a></li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#code-of-conduct">Code of Conduct</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h2>Software</h2>
+<h3>API Testing</h3>
+<ul>
+<li><a href="https://bitdive.io/">BitDive</a> - Zero-code API testing platform for Java/Kotlin. Captures deep runtime context (HTTP, SQL, methods), auto-generates mocks from real traffic, and enables Live Context Replay for E2E testing and debugging.</li>
+<li><a href="https://cors-error.dev/cors-tester/">CORS Tester</a> - A tool for developers and API testers to check if an API is CORS-enabled for a given domain and identify gaps.</li>
+<li><a href="https://www.httpmaster.net">HttpMaster</a> - Professional software tool for HTTP testing and debugging.</li>
+<li><a href="https://github.com/keploy/keploy">Keploy</a> - API Testing Platform that automatically generates unit test cases along with dependency mocks.</li>
+<li><a href="https://github.com/restqa/restqa">RestQA</a> - REST API testing framework based on Gherkin.</li>
+<li><a href="https://github.com/justiceo/spectest">SpecTest</a> - Truly declarative API testing framework in Js, or plain JSON.</li>
+<li><a href="https://zato.io/en/docs/3.2/api-testing/index.html">Zato API Test</a> - API testing in plain English with extendable Python implementation.</li>
+<li><a href="https://github.com/Nikita-Filonov/tests-coverage-tool">Tests Coverage Tool</a> - Ultimate tool to measure gRPC service coverage from tests.</li>
+<li><a href="https://github.com/Nikita-Filonov/swagger-coverage-tool">Swagger Coverage Tool</a> - The Swagger Coverage Tool is designed to measure API test coverage based on Swagger documentation. It provides automated tracking and reporting of test coverage for APIs, helping ensure that your endpoints and services are well-tested.</li>
+</ul>
+<h3>Security Testing</h3>
+<ul>
+<li><a href="http://beefproject.com/">BeEF</a> - Manipulate the browser by exploiting any XSS vulnerabilities you find.</li>
+<li><a href="https://github.com/zaproxy/zaproxy">OWASP ZAP</a> - Intercepting proxy for HTTP traffic manipulation, security scanning, and exploitation.</li>
+</ul>
+<h3>Service Virtualization</h3>
+<ul>
+<li><a href="https://beeceptor.com/">Beeceptor</a> - Easy to use no-code mock servers for service virtualization. Rest, SOAP, GraphQL supported. Create an API mock server from OpenAPI Specification or Postman collection.</li>
+<li><a href="https://github.com/xnbox/DeepfakeHTTP">DeepfakeHTTP</a> - Web server using HTTP dumps as a response source for API simulation.</li>
+<li><a href="https://github.com/wiremock/wiremock">WireMock</a> - Open source HTTP mock engine written in Java. Embed in your test code, run as a standalone process, or deploy via Docker.</li>
+</ul>
+<h3>Visual Testing</h3>
+<ul>
+<li><a href="https://fluxguard.com">Fluxguard</a> - Screenshot pixel and DOM change comparisons.</li>
+<li><a href="https://github.com/dashcamio/goodlooks">GoodLooks</a> - AI-powered visual validation for Playwright tests.</li>
+<li><a href="https://happo.io">Happo</a> - Cross-browser screenshot and visual regression testing service, integrates with tools like Storybook, Playwright, and Cypress.</li>
+<li><a href="https://testingbot.com">TestingBot</a> - Supports automated, manual, and visual testing.</li>
+<li><a href="https://github.com/retest/recheck-web">recheck-web</a> - Change comparison tool with Golden Masters and "unbreakable Selenium" tests.</li>
+<li><a href="https://wopee.io/">wopee.io</a> - Autonomous visual regression testing platform.</li>
+</ul>
+<h3>UI &amp; End-to-End Testing</h3>
+<ul>
+<li><a href="https://bugbug.io">BugBug</a> - No-code test automation tool for web applications.</li>
+<li><a href="https://courgette-testing.com">Courgette</a> - Declarative BDD UI testing with Gherkin.</li>
+<li><a href="https://github.com/rubycdp/ferrum">Ferrum</a> - Chrome automation via CDP with a high-level Ruby API.</li>
+<li><a href="https://hyperbrowser.ai">Hyperbrowser</a> - Scalable headless browser testing with built-in session recording.</li>
+<li><a href="https://github.com/test-zeus-ai/testzeus-hercules">Hercules</a> - Open-source end-to-end testing agent.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <p><img alt="" src="https://github.com/TheJambo/awesome-testing/blob/master/AwesomeTesting.jpg?raw=true" /></p>
+<h1>Awesome Testing <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <a href="https://github.com/TheJambo/awesome-testing/actions/workflows/404-links.yml"><img alt="Dead link checker" src="https://github.com/TheJambo/awesome-testing/actions/workflows/404-links.yml/badge.svg" /></a></h1>
+<blockquote>
+<p>A curated list of testing software, extensions and resources</p>
+</blockquote>
+<h2>Foreword</h2>
+<p>This is intended to be a curation of resources for the new among the software testing community. It is not tailored to a specific area (Usability/Performance) or role (Automation/Management). The idea is that you could hand this list to a CS graduate and it would greatly improve their testing skills, efficiency and overall breadth of knowledge. Note that this is for all areas of software testing after the code in question is written (no unit tests/static analysis!).</p>
+<p>Finally, I'm sure everyone who reads this list has one thing they want to add. Please read the <a href="https://github.com/TheJambo/awesome-testing/blob/master/CONTRIBUTING.md">How to Contribute</a> page and add to the list. :)</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#software">Software</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#training-includes-developer-training-for-automation-testers">Training</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#newsletters">Newsletters</a></li>
+<li><a href="#suggested-awesome-lists">Suggested Awesome Lists</a></li>
+<li><a href="#qa-and-testing-road-map">QA &amp; Testing Road Map</a></li>
+<li><a href="#others">Others</a></li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#code-of-conduct">Code of Conduct</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h2>Software</h2>
+<h3>API Testing</h3>
+<ul>
+<li><a href="https://bitdive.io/">BitDive</a> - Zero-code API testing platform for Java/Kotlin. Captures deep runtime context (HTTP, SQL, methods), auto-generates mocks from real traffic, and enables Live Context Replay for E2E testing and debugging.</li>
+<li><a href="https://cors-error.dev/cors-tester/">CORS Tester</a> - A tool for developers and API testers to check if an API is CORS-enabled for a given domain and identify gaps.</li>
+<li><a href="https://www.httpmaster.net">HttpMaster</a> - Professional software tool for HTTP testing and debugging.</li>
+<li><a href="https://github.com/keploy/keploy">Keploy</a> - API Testing Platform that automatically generates unit test cases along with dependency mocks.</li>
+<li><a href="https://github.com/restqa/restqa">RestQA</a> - REST API testing framework based on Gherkin.</li>
+<li><a href="https://github.com/justiceo/spectest">SpecTest</a> - Truly declarative API testing framework in Js, or plain JSON.</li>
+<li><a href="https://zato.io/en/docs/3.2/api-testing/index.html">Zato API Test</a> - API testing in plain English with extendable Python implementation.</li>
+<li><a href="https://github.com/Nikita-Filonov/tests-coverage-tool">Tests Coverage Tool</a> - Ultimate tool to measure gRPC service coverage from tests.</li>
+<li><a href="https://github.com/Nikita-Filonov/swagger-coverage-tool">Swagger Coverage Tool</a> - The Swagger Coverage Tool is designed to measure API test coverage based on Swagger documentation. It provides automated tracking and reporting of test coverage for APIs, helping ensure that your endpoints and services are well-tested.</li>
+</ul>
+<h3>Security Testing</h3>
+<ul>
+<li><a href="http://beefproject.com/">BeEF</a> - Manipulate the browser by exploiting any XSS vulnerabilities you find.</li>
+<li><a href="https://github.com/zaproxy/zaproxy">OWASP ZAP</a> - Intercepting proxy for HTTP traffic manipulation, security scanning, and exploitation.</li>
+</ul>
+<h3>Service Virtualization</h3>
+<ul>
+<li><a href="https://beeceptor.com/">Beeceptor</a> - Easy to use no-code mock servers for service virtualization. Rest, SOAP, GraphQL supported. Create an API mock server from OpenAPI Specification or Postman collection.</li>
+<li><a href="https://github.com/xnbox/DeepfakeHTTP">DeepfakeHTTP</a> - Web server using HTTP dumps as a response source for API simulation.</li>
+<li><a href="https://github.com/wiremock/wiremock">WireMock</a> - Open source HTTP mock engine written in Java. Embed in your test code, run as a standalone process, or deploy via Docker.</li>
+</ul>
+<h3>Visual Testing</h3>
+<ul>
+<li><a href="https://fluxguard.com">Fluxguard</a> - Screenshot pixel and DOM change comparisons.</li>
+<li><a href="https://github.com/dashcamio/goodlooks">GoodLooks</a> - AI-powered visual validation for Playwright tests.</li>
+<li><a href="https://happo.io">Happo</a> - Cross-browser screenshot and visual regression testing service, integrates with tools like Storybook, Playwright, and Cypress.</li>
+<li><a href="https://testingbot.com">TestingBot</a> - Supports automated, manual, and visual testing.</li>
+<li><a href="https://github.com/retest/recheck-web">recheck-web</a> - Change comparison tool with Golden Masters and "unbreakable Selenium" tests.</li>
+<li><a href="https://wopee.io/">wopee.io</a> - Autonomous visual regression testing platform.</li>
+</ul>
+<h3>UI &amp; End-to-End Testing</h3>
+<ul>
+<li><a href="https://bugbug.io">BugBug</a> - No-code test automation tool for web applications.</li>
+<li><a href="https://courgette-testing.com">Courgette</a> - Declarative BDD UI testing with Gherkin.</li>
+<li><a href="https://github.com/rubycdp/ferrum">Ferrum</a> - Chrome automation via CDP with a high-level Ruby API.</li>
+<li><a href="https://hyperbrowser.ai">Hyperbrowser</a> - Scalable headless browser testing with built-in session recording.</li>
+<li><a href="https://github.com/test-zeus-ai/testzeus-hercules">Hercules</a> - Open-source end-to-end testing agent.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'testing_README.md';
 
         fetch(markdownFile)
@@ -48,21 +165,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

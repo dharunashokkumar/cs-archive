@@ -8,38 +8,185 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Thoughtspile Awesome Tiny Js - Awesome List Resources">
-    <title>Thoughtspile Awesome Tiny Js</title>
+    <meta name="description" content="A collection of tiny JS libraries to put your bundle on a diet. Curated by Vladimir Klepov Rules: - Size is under 2Kb-ish, min + gzip, with all deps, except...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Tiny JS [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Tiny JS <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a></h1>
+<p>A collection of tiny JS libraries to put your bundle on a diet. Curated by <a href="https://blog.thoughtspile.tech">Vladimir Klepov</a> Rules:</p>
+<ul>
+<li>Size is under 2Kb-ish, min + gzip, with all deps, except where noted.</li>
+<li>For multi-purpose libraries, the size of a useful subset must be under 2Kb-ish.</li>
+<li>Second-level libraries only allowed for React, Vue, Angular, svelte. </li>
+<li>Useful client-side. I haven't figured out participation rules for node-only libraries, and I'm not too worried about them.</li>
+<li>100+ GitHub stars. Adding every obsure library will dilute the list.</li>
+<li>No zero-JS (CSS- or type-only) libraries. It's not awesome-css or something.</li>
+</ul>
+<p>Disclaimers:</p>
+<ul>
+<li>Most framework-specific libraries are for React, because that's what I'm familiar with.</li>
+</ul>
+<h2>Contents</h2>
+<ul>
+<li><a href="#ui-frameworks">UI Frameworks</a></li>
+<li><a href="#event-emitters">Event Emitters</a></li>
+<li><a href="#reactive-programming">Reactive Programming</a></li>
+<li><a href="#state-managers">State Managers</a></li>
+<li><a href="#routers-and-url-utils">Routers and URL Utils</a></li>
+<li><a href="#api-layer">API Layer</a></li>
+<li><a href="#i18n">I18N</a></li>
+<li><a href="#dates-and-time">Dates and Time</a></li>
+<li><a href="#generic-utilities">Generic Utilities</a></li>
+<li><a href="#unique-id-generation">Unique ID Generation</a></li>
+<li><a href="#colors">Colors</a></li>
+<li><a href="#to-be-continued">To be Continued</a></li>
+</ul>
+<h2>UI Frameworks</h2>
+<p>UI frameworks (libraries?) provide declarative templates, event bindings, and observable state to update the view. I've been generous and expanded the size limit for this category to 4Kb, but also increased the star limit to 3K. </p>
+<ul>
+<li><a href="https://github.com/preactjs/preact">preact</a> - React-like API (pre-hooks) in 4Kb. Cool ecosystem of similarly tiny tools and components. Highly recommended.</li>
+</ul>
+<p>The following libraries are small and cool, but note they're about <a href="https://npmtrends.com/fre-vs-hyperapp-vs-million-vs-preact-vs-redom-vs-riot">500x less popular than preact.</a> Kudos for deconstrucing the very essence of a "framework":</p>
+<ul>
+<li><a href="https://github.com/aidenybai/million">million</a> - Marketed as a <em>drop-in replacement for React,</em> but in under 2Kb.</li>
+<li><a href="https://github.com/frejs/fre">fre</a> - React-like library with hooks and concurrency, 1–3Kb.</li>
+<li><a href="https://github.com/jorgebucaran/hyperapp">hyperapp</a> - Declarative UI with pure JS syntax and immutable state, under 2Kb.</li>
+<li><a href="https://github.com/redom/redom">redom</a> - Hyperapp-style templates with <em>imperative</em> event listeners and updates, around 2Kb.</li>
+</ul>
+<p>And if being declarative is not your thing:</p>
+<ul>
+<li><a href="https://github.com/franciscop/umbrella">umbrella</a> - jQuery-style DOM manipulation library in 3Kb.</li>
+</ul>
+<h2>Event Emitters</h2>
+<p>Event emitter pattern is fairly easy to implement yourself, but why bother when you have these cool tools? With an arms race to build the smallest one, the limit is 0.5Kb.</p>
+<ul>
+<li><a href="https://github.com/developit/mitt">mitt</a> - 200-byte emitter. I use it on most projects.</li>
+<li><a href="https://github.com/ai/nanoevents">nanoevents</a> - Smaller and with nicer unsubscribe API, but no '*' event.</li>
+<li><a href="https://github.com/chrisdavies/eev">eev</a> - More of the same in 500b.</li>
+<li><a href="https://github.com/hustcc/onfire.js">onfire.js</a> - 500b, but has <code>.once</code>.</li>
+</ul>
+<h2>Reactive Programming</h2>
+<p>A step up from a raw event emitter, reactive libraries can build chains of event transforms, filters, and side-effects. You can already use these to build UIs by manually updating DOM on state change:</p>
+<ul>
+<li><a href="https://github.com/paldepind/flyd">flyd</a> - Rx-styled event streams in a 2Kb-ish package.</li>
+<li><a href="https://github.com/elbywan/hyperactiv">hyperactiv</a> - 4 functions to make objects observable and listen to changes, in 1Kb.</li>
+<li><a href="https://github.com/fabiospampinato/flimsy">flimsy</a> - 1Kb reactive core of solid.js that <em>almost</em> fit into UI frameworks category. Author warning: <em>is probably buggier.</em></li>
+</ul>
+<p>Honorable mentions: <a href="https://github.com/staltz/callbag-basics">callbag-basics</a> and <a href="https://github.com/vobyjs/oby">oby</a> <em>could</em> make it <em>if</em> they had tree-shaking, but otherwise are around 7Kb.</p>
+<h2>State Managers</h2>
+<p>State managers combine observable state with actions and framework bindings, intended for app-wide state.</p>
+<ul>
+<li><a href="https://github.com/pmndrs/zustand">zustand</a> - ~1Kb store with pleasant actions and selectors. React / vanilla.</li>
+<li><a href="https://github.com/nanostores/nanostores">nanostores</a> - Modular store in sub-1Kb with lots of framework connectors.</li>
+<li><a href="https://github.com/artalar/reatom">reatom</a> — Reactive stores with a 2Kb core. React / svelte connectors cost extra.</li>
+<li><a href="https://github.com/storeon/storeon">storeon</a> - Minimal 400-byte redux-styled store. (p)react, has third-party connectors.</li>
+<li><a href="https://github.com/developit/unistore">unistore</a> - Sub-1Kb store with actions from preact developers, (p)react support.</li>
+<li><a href="https://github.com/teafuljs/teaful">teaful</a> - (p)react store with useState-like API in 1Kb.</li>
+</ul>
+<h2>Routers and URL Utils</h2>
+<p>Do stuff on URL / history changes, with path matching and parsing:</p>
+<ul>
+<li><a href="https://github.com/molefrog/wouter">wouter</a> - Declarative routes for (p)react in 1.5Kb, or a 400-byte hook.</li>
+<li><a href="https://github.com/nanostores/router">@nanostores/router</a> - Routes as a nanostores store (framework-agnostic), sub-1Kb.</li>
+<li><a href="https://github.com/lukeed/navaid">navaid</a> - History-based observable router, sub-1Kb.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Tiny JS <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a></h1>
+<p>A collection of tiny JS libraries to put your bundle on a diet. Curated by <a href="https://blog.thoughtspile.tech">Vladimir Klepov</a> Rules:</p>
+<ul>
+<li>Size is under 2Kb-ish, min + gzip, with all deps, except where noted.</li>
+<li>For multi-purpose libraries, the size of a useful subset must be under 2Kb-ish.</li>
+<li>Second-level libraries only allowed for React, Vue, Angular, svelte. </li>
+<li>Useful client-side. I haven't figured out participation rules for node-only libraries, and I'm not too worried about them.</li>
+<li>100+ GitHub stars. Adding every obsure library will dilute the list.</li>
+<li>No zero-JS (CSS- or type-only) libraries. It's not awesome-css or something.</li>
+</ul>
+<p>Disclaimers:</p>
+<ul>
+<li>Most framework-specific libraries are for React, because that's what I'm familiar with.</li>
+</ul>
+<h2>Contents</h2>
+<ul>
+<li><a href="#ui-frameworks">UI Frameworks</a></li>
+<li><a href="#event-emitters">Event Emitters</a></li>
+<li><a href="#reactive-programming">Reactive Programming</a></li>
+<li><a href="#state-managers">State Managers</a></li>
+<li><a href="#routers-and-url-utils">Routers and URL Utils</a></li>
+<li><a href="#api-layer">API Layer</a></li>
+<li><a href="#i18n">I18N</a></li>
+<li><a href="#dates-and-time">Dates and Time</a></li>
+<li><a href="#generic-utilities">Generic Utilities</a></li>
+<li><a href="#unique-id-generation">Unique ID Generation</a></li>
+<li><a href="#colors">Colors</a></li>
+<li><a href="#to-be-continued">To be Continued</a></li>
+</ul>
+<h2>UI Frameworks</h2>
+<p>UI frameworks (libraries?) provide declarative templates, event bindings, and observable state to update the view. I've been generous and expanded the size limit for this category to 4Kb, but also increased the star limit to 3K. </p>
+<ul>
+<li><a href="https://github.com/preactjs/preact">preact</a> - React-like API (pre-hooks) in 4Kb. Cool ecosystem of similarly tiny tools and components. Highly recommended.</li>
+</ul>
+<p>The following libraries are small and cool, but note they're about <a href="https://npmtrends.com/fre-vs-hyperapp-vs-million-vs-preact-vs-redom-vs-riot">500x less popular than preact.</a> Kudos for deconstrucing the very essence of a "framework":</p>
+<ul>
+<li><a href="https://github.com/aidenybai/million">million</a> - Marketed as a <em>drop-in replacement for React,</em> but in under 2Kb.</li>
+<li><a href="https://github.com/frejs/fre">fre</a> - React-like library with hooks and concurrency, 1–3Kb.</li>
+<li><a href="https://github.com/jorgebucaran/hyperapp">hyperapp</a> - Declarative UI with pure JS syntax and immutable state, under 2Kb.</li>
+<li><a href="https://github.com/redom/redom">redom</a> - Hyperapp-style templates with <em>imperative</em> event listeners and updates, around 2Kb.</li>
+</ul>
+<p>And if being declarative is not your thing:</p>
+<ul>
+<li><a href="https://github.com/franciscop/umbrella">umbrella</a> - jQuery-style DOM manipulation library in 3Kb.</li>
+</ul>
+<h2>Event Emitters</h2>
+<p>Event emitter pattern is fairly easy to implement yourself, but why bother when you have these cool tools? With an arms race to build the smallest one, the limit is 0.5Kb.</p>
+<ul>
+<li><a href="https://github.com/developit/mitt">mitt</a> - 200-byte emitter. I use it on most projects.</li>
+<li><a href="https://github.com/ai/nanoevents">nanoevents</a> - Smaller and with nicer unsubscribe API, but no '*' event.</li>
+<li><a href="https://github.com/chrisdavies/eev">eev</a> - More of the same in 500b.</li>
+<li><a href="https://github.com/hustcc/onfire.js">onfire.js</a> - 500b, but has <code>.once</code>.</li>
+</ul>
+<h2>Reactive Programming</h2>
+<p>A step up from a raw event emitter, reactive libraries can build chains of event transforms, filters, and side-effects. You can already use these to build UIs by manually updating DOM on state change:</p>
+<ul>
+<li><a href="https://github.com/paldepind/flyd">flyd</a> - Rx-styled event streams in a 2Kb-ish package.</li>
+<li><a href="https://github.com/elbywan/hyperactiv">hyperactiv</a> - 4 functions to make objects observable and listen to changes, in 1Kb.</li>
+<li><a href="https://github.com/fabiospampinato/flimsy">flimsy</a> - 1Kb reactive core of solid.js that <em>almost</em> fit into UI frameworks category. Author warning: <em>is probably buggier.</em></li>
+</ul>
+<p>Honorable mentions: <a href="https://github.com/staltz/callbag-basics">callbag-basics</a> and <a href="https://github.com/vobyjs/oby">oby</a> <em>could</em> make it <em>if</em> they had tree-shaking, but otherwise are around 7Kb.</p>
+<h2>State Managers</h2>
+<p>State managers combine observable state with actions and framework bindings, intended for app-wide state.</p>
+<ul>
+<li><a href="https://github.com/pmndrs/zustand">zustand</a> - ~1Kb store with pleasant actions and selectors. React / vanilla.</li>
+<li><a href="https://github.com/nanostores/nanostores">nanostores</a> - Modular store in sub-1Kb with lots of framework connectors.</li>
+<li><a href="https://github.com/artalar/reatom">reatom</a> — Reactive stores with a 2Kb core. React / svelte connectors cost extra.</li>
+<li><a href="https://github.com/storeon/storeon">storeon</a> - Minimal 400-byte redux-styled store. (p)react, has third-party connectors.</li>
+<li><a href="https://github.com/developit/unistore">unistore</a> - Sub-1Kb store with actions from preact developers, (p)react support.</li>
+<li><a href="https://github.com/teafuljs/teaful">teaful</a> - (p)react store with useState-like API in 1Kb.</li>
+</ul>
+<h2>Routers and URL Utils</h2>
+<p>Do stuff on URL / history changes, with path matching and parsing:</p>
+<ul>
+<li><a href="https://github.com/molefrog/wouter">wouter</a> - Declarative routes for (p)react in 1.5Kb, or a 400-byte hook.</li>
+<li><a href="https://github.com/nanostores/router">@nanostores/router</a> - Routes as a nanostores store (framework-agnostic), sub-1Kb.</li>
+<li><a href="https://github.com/lukeed/navaid">navaid</a> - History-based observable router, sub-1Kb.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'tiny-js_README.md';
 
         fetch(markdownFile)
@@ -48,21 +195,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

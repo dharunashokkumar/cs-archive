@@ -8,38 +8,203 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nix Community Awesome Nix - Awesome List Resources">
-    <title>Nix Community Awesome Nix</title>
+    <meta name="description" content="> A curated list of the best resources in the Nix community. Nix is a powerful package manager for Linux and other Unix systems that makes package management...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Nix [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Nix <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p><a href="https://nixos.org">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/NixOS/nixos-artwork/master/logo/nixos.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/NixOS/nixos-artwork/master/logo/nixos-white.png">
+    <img src="https://raw.githubusercontent.com/NixOS/nixos-artwork/master/logo/nixos.svg" align="right" width="250" alt="NixOS logo">
+  </picture>
+</a></p>
+<blockquote>
+<p>A curated list of the best resources in the Nix community.</p>
+</blockquote>
+<p><br></p>
+<p><a href="https://github.com/nixos/nix">Nix</a> is a powerful package manager for Linux and other Unix systems that makes package management reliable and reproducible.</p>
+<p><em>Please read the <a href="CONTRIBUTING.md">contribution guidelines</a> before contributing.</em></p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#resources">Resources</a><ul>
+<li><a href="#learning">Learning</a></li>
+<li><a href="#discovery">Discovery</a></li>
+</ul>
+</li>
+<li><a href="#installation-media">Installation Media</a></li>
+<li><a href="#channel-history">Channel History</a></li>
+<li><a href="#deployment-tools">Deployment Tools</a></li>
+<li><a href="#virtualisation">Virtualisation</a></li>
+<li><a href="#command-line-tools">Command-Line Tools</a></li>
+<li><a href="#development">Development</a></li>
+<li><a href="#devops">DevOps</a></li>
+<li><a href="#programming-languages">Programming Languages</a><ul>
+<li><a href="#arduino">Arduino</a></li>
+<li><a href="#clojure">Clojure</a></li>
+<li><a href="#crystal">Crystal</a></li>
+<li><a href="#elm">Elm</a></li>
+<li><a href="#gleam">Gleam</a></li>
+<li><a href="#haskell">Haskell</a></li>
+<li><a href="#haxe">Haxe</a></li>
+<li><a href="#julia">Julia</a></li>
+<li><a href="#lean">Lean</a></li>
+<li><a href="#nodejs">Node.js</a></li>
+<li><a href="#ocaml">OCaml</a></li>
+<li><a href="#php">PHP</a></li>
+<li><a href="#purescript">PureScript</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#ruby">Ruby</a></li>
+<li><a href="#rust">Rust</a></li>
+<li><a href="#scala">Scala</a></li>
+<li><a href="#zig">Zig</a></li>
+</ul>
+</li>
+<li><a href="#nixos-modules">NixOS Modules</a></li>
+<li><a href="#nixos-configuration-editors">NixOS Configuration Editors</a></li>
+<li><a href="#overlays">Overlays</a></li>
+<li><a href="#distributions">Distributions</a></li>
+<li><a href="#community">Community</a></li>
+</ul>
+<h2>Resources</h2>
+<h3>Learning</h3>
+<ul>
+<li><a href="https://fasterthanli.me/series/building-a-rust-service-with-nix">Building a Rust service with Nix</a> - An in-depth blog series about creating a Rust application with Nix.</li>
+<li><a href="https://zaynetro.com/explainix">Explainix</a> - Explain Nix syntax visually.</li>
+<li><a href="https://ianthehenry.com/posts/how-to-learn-nix/">How to Learn Nix</a> - It's like a Let's Play, but for obscure software documentation.</li>
+<li><a href="https://code.tvl.fyi/about/nix/nix-1p">Nix - A One Pager</a> - A one page introduction to the Nix language.</li>
+<li><a href="https://tonyfinn.com/blog/nix-from-first-principles-flake-edition/">Nix from First Principles: Flake Edition</a> - A modern crash-course to using Nix features, Flakes, and developing with Nix.</li>
+<li><a href="https://www.youtube.com/watch?v=FJVFXsNzYZQ">Nix in 100 Seconds</a> - A YouTube video from Fireship presenting Nix in 100 seconds.</li>
+<li><a href="https://github.com/noteed/nix-notes">Nix Notes</a> - A collection of short notes about Nix, each contributing to the same virtual machine image.</li>
+<li><a href="https://nixos.org/guides/nix-pills/">Nix Pills</a> - The best way to learn, with examples.</li>
+<li><a href="https://github.com/alper/nix-shorts">Nix Shorts</a> - A collection of short notes about how to use Nix, updated for Nix Flakes.</li>
+<li><a href="https://github.com/Misterio77/nix-starter-configs">Nix Starter Config</a> - A few simple Nix Flake templates for getting started with NixOS + home-manager.</li>
+<li><a href="https://nix.dev/">nix.dev</a> - An opinionated guide for developers about getting things done using the Nix ecosystem.</li>
+<li><a href="https://github.com/ryan4yin/nixos-and-flakes-book">NixOS &amp; Flakes Book</a> - An unofficial and opinionated NixOS &amp; Flakes book for beginners.</li>
+<li><a href="https://nixos.asia/en/tutorial">NixOS Asia Tutorial Series</a> - A series of high-level tutorials on using Nix Flakes, NixOS, home-manager, etc.</li>
+<li><a href="https://leanpub.com/nixos-in-production">NixOS in Production</a> - Free (pay-what-you-want) book in pdf format.</li>
+<li><a href="https://nixos.org/manual/nix/stable">Official Nix manual</a> - Latest stable version of the official Nix manual, best used as reference guide. Receives updates when available.</li>
+<li><a href="https://nixos.org/manual/nixos/stable">Official NixOS manual</a> - Latest stable version of the official NixOS manual, mix of tutorial and reference guide. Receives updates when available.</li>
+<li><a href="https://nixos.org/manual/nixpkgs/stable">Official Nixpkgs manual</a> - Latest stable version of the official Nixpkgs reference manual. Receives updates when available.</li>
+<li><a href="https://nixcloud.io/tour/">Tour of Nix</a> - An online interactive tutorial on Nix language constructs.</li>
+<li><a href="https://mhwombat.codeberg.page/nix-book/">Wombat's Book of Nix</a> - A book-length introduction to Nix and flakes.</li>
+<li><a href="https://zero-to-nix.com/">Zero to Nix</a> - A flake-centric guide to Nix and its concepts created by Determinate Systems to quickly onboard beginners.</li>
+</ul>
+<h3>Discovery</h3>
+<ul>
+<li><a href="https://mipmip.github.io/home-manager-option-search/">Home Manager Option Search</a> - Search through all 2000+ Home Manager options and read how to use them.</li>
+</ul>
+<!-- * [Hound](https://search.nix.gsc.io) - Handily search across all or selected Nix-related repositories. -->
+<ul>
+<li><a href="https://lazamar.co.uk/nix-versions/">Nix Package Versions</a> - Find all versions of a package that were available in a channel and the revision you can download it from.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Nix <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p><a href="https://nixos.org">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/NixOS/nixos-artwork/master/logo/nixos.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/NixOS/nixos-artwork/master/logo/nixos-white.png">
+    <img src="https://raw.githubusercontent.com/NixOS/nixos-artwork/master/logo/nixos.svg" align="right" width="250" alt="NixOS logo">
+  </picture>
+</a></p>
+<blockquote>
+<p>A curated list of the best resources in the Nix community.</p>
+</blockquote>
+<p><br></p>
+<p><a href="https://github.com/nixos/nix">Nix</a> is a powerful package manager for Linux and other Unix systems that makes package management reliable and reproducible.</p>
+<p><em>Please read the <a href="CONTRIBUTING.md">contribution guidelines</a> before contributing.</em></p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#resources">Resources</a><ul>
+<li><a href="#learning">Learning</a></li>
+<li><a href="#discovery">Discovery</a></li>
+</ul>
+</li>
+<li><a href="#installation-media">Installation Media</a></li>
+<li><a href="#channel-history">Channel History</a></li>
+<li><a href="#deployment-tools">Deployment Tools</a></li>
+<li><a href="#virtualisation">Virtualisation</a></li>
+<li><a href="#command-line-tools">Command-Line Tools</a></li>
+<li><a href="#development">Development</a></li>
+<li><a href="#devops">DevOps</a></li>
+<li><a href="#programming-languages">Programming Languages</a><ul>
+<li><a href="#arduino">Arduino</a></li>
+<li><a href="#clojure">Clojure</a></li>
+<li><a href="#crystal">Crystal</a></li>
+<li><a href="#elm">Elm</a></li>
+<li><a href="#gleam">Gleam</a></li>
+<li><a href="#haskell">Haskell</a></li>
+<li><a href="#haxe">Haxe</a></li>
+<li><a href="#julia">Julia</a></li>
+<li><a href="#lean">Lean</a></li>
+<li><a href="#nodejs">Node.js</a></li>
+<li><a href="#ocaml">OCaml</a></li>
+<li><a href="#php">PHP</a></li>
+<li><a href="#purescript">PureScript</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#ruby">Ruby</a></li>
+<li><a href="#rust">Rust</a></li>
+<li><a href="#scala">Scala</a></li>
+<li><a href="#zig">Zig</a></li>
+</ul>
+</li>
+<li><a href="#nixos-modules">NixOS Modules</a></li>
+<li><a href="#nixos-configuration-editors">NixOS Configuration Editors</a></li>
+<li><a href="#overlays">Overlays</a></li>
+<li><a href="#distributions">Distributions</a></li>
+<li><a href="#community">Community</a></li>
+</ul>
+<h2>Resources</h2>
+<h3>Learning</h3>
+<ul>
+<li><a href="https://fasterthanli.me/series/building-a-rust-service-with-nix">Building a Rust service with Nix</a> - An in-depth blog series about creating a Rust application with Nix.</li>
+<li><a href="https://zaynetro.com/explainix">Explainix</a> - Explain Nix syntax visually.</li>
+<li><a href="https://ianthehenry.com/posts/how-to-learn-nix/">How to Learn Nix</a> - It's like a Let's Play, but for obscure software documentation.</li>
+<li><a href="https://code.tvl.fyi/about/nix/nix-1p">Nix - A One Pager</a> - A one page introduction to the Nix language.</li>
+<li><a href="https://tonyfinn.com/blog/nix-from-first-principles-flake-edition/">Nix from First Principles: Flake Edition</a> - A modern crash-course to using Nix features, Flakes, and developing with Nix.</li>
+<li><a href="https://www.youtube.com/watch?v=FJVFXsNzYZQ">Nix in 100 Seconds</a> - A YouTube video from Fireship presenting Nix in 100 seconds.</li>
+<li><a href="https://github.com/noteed/nix-notes">Nix Notes</a> - A collection of short notes about Nix, each contributing to the same virtual machine image.</li>
+<li><a href="https://nixos.org/guides/nix-pills/">Nix Pills</a> - The best way to learn, with examples.</li>
+<li><a href="https://github.com/alper/nix-shorts">Nix Shorts</a> - A collection of short notes about how to use Nix, updated for Nix Flakes.</li>
+<li><a href="https://github.com/Misterio77/nix-starter-configs">Nix Starter Config</a> - A few simple Nix Flake templates for getting started with NixOS + home-manager.</li>
+<li><a href="https://nix.dev/">nix.dev</a> - An opinionated guide for developers about getting things done using the Nix ecosystem.</li>
+<li><a href="https://github.com/ryan4yin/nixos-and-flakes-book">NixOS &amp; Flakes Book</a> - An unofficial and opinionated NixOS &amp; Flakes book for beginners.</li>
+<li><a href="https://nixos.asia/en/tutorial">NixOS Asia Tutorial Series</a> - A series of high-level tutorials on using Nix Flakes, NixOS, home-manager, etc.</li>
+<li><a href="https://leanpub.com/nixos-in-production">NixOS in Production</a> - Free (pay-what-you-want) book in pdf format.</li>
+<li><a href="https://nixos.org/manual/nix/stable">Official Nix manual</a> - Latest stable version of the official Nix manual, best used as reference guide. Receives updates when available.</li>
+<li><a href="https://nixos.org/manual/nixos/stable">Official NixOS manual</a> - Latest stable version of the official NixOS manual, mix of tutorial and reference guide. Receives updates when available.</li>
+<li><a href="https://nixos.org/manual/nixpkgs/stable">Official Nixpkgs manual</a> - Latest stable version of the official Nixpkgs reference manual. Receives updates when available.</li>
+<li><a href="https://nixcloud.io/tour/">Tour of Nix</a> - An online interactive tutorial on Nix language constructs.</li>
+<li><a href="https://mhwombat.codeberg.page/nix-book/">Wombat's Book of Nix</a> - A book-length introduction to Nix and flakes.</li>
+<li><a href="https://zero-to-nix.com/">Zero to Nix</a> - A flake-centric guide to Nix and its concepts created by Determinate Systems to quickly onboard beginners.</li>
+</ul>
+<h3>Discovery</h3>
+<ul>
+<li><a href="https://mipmip.github.io/home-manager-option-search/">Home Manager Option Search</a> - Search through all 2000+ Home Manager options and read how to use them.</li>
+</ul>
+<!-- * [Hound](https://search.nix.gsc.io) - Handily search across all or selected Nix-related repositories. -->
+<ul>
+<li><a href="https://lazamar.co.uk/nix-versions/">Nix Package Versions</a> - Find all versions of a package that were available in a channel and the revision you can download it from.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'nix_README.md';
 
         fetch(markdownFile)
@@ -48,21 +213,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

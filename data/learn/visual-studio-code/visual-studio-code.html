@@ -8,38 +8,371 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Viatsko Awesome Vscode - Awesome List Resources">
-    <title>Viatsko Awesome Vscode</title>
+    <meta name="description" content="A curated list of delightful Visual Studio Code packages and resources. For more awesomeness, check out awesome. - Table of Contents - Official - Syntax -...">
+    <meta name="robots" content="index, follow">
+    <title>Visual Studio Code - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <p><br/></p>
+<div align="center">
+  <img width="380px" src="https://raw.githubusercontent.com/viatsko/awesome-vscode/master/awesome-vscode-logo.png">
+</div>
+<p><br/></p>
+<div align="center">
+
+A curated list of delightful <a href="https://code.visualstudio.com/">Visual Studio Code</a>
+packages and resources. For more awesomeness, check
+out <a href="https://github.com/sindresorhus/awesome">awesome</a>.
+<br/>
+<br/>
+<img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome"/>
+<img src="https://travis-ci.org/viatsko/awesome-vscode.svg" alt="Build Status"/>
+</div>
+<p><br/></p>
+<h1>Table of Contents</h1>
+<ul>
+<li><a href="#table-of-contents">Table of Contents</a></li>
+<li><a href="#official">Official</a></li>
+<li><a href="#syntax">Syntax</a></li>
+<li><a href="#migrating-from-other-editors">Migrating from other editors</a></li>
+<li><a href="#migrating-from-vim">Migrating from Vim</a></li>
+<li><a href="#migrating-from-atom">Migrating from Atom</a></li>
+<li><a href="#migrating-from-sublime-text">Migrating from Sublime Text</a></li>
+<li><a href="#migrating-from-visual-studio">Migrating from Visual Studio</a></li>
+<li><a href="#migrating-from-intellij-idea">Migrating from Intellij IDEA</a></li>
+<li><a href="#camel-humps">Camel Humps</a></li>
+<li><a href="#using-vs-code-with-particular-technologies">Using VS Code with particular technologies</a></li>
+<li><a href="#lint-and-intellisense">Lint and IntelliSense</a></li>
+<li><a href="#1c">1C</a></li>
+<li><a href="#autohotkey">AutoHotkey</a><ul>
+<li><a href="#autohotkey-plus">AutoHotkey Plus</a></li>
+</ul>
+</li>
+<li><a href="#bash">Bash</a><ul>
+<li><a href="#bash-ide">Bash IDE</a></li>
+<li><a href="#bash-debug">Bash Debug</a></li>
+<li><a href="#shellman">Shellman</a></li>
+</ul>
+</li>
+<li><a href="#c">C++</a><ul>
+<li><a href="#more">More</a></li>
+</ul>
+</li>
+<li><a href="#c-asp-net-and-net-core">C#, ASP .NET and .NET Core</a></li>
+<li><a href="#clojure">Clojure</a><ul>
+<li><a href="#calva">Calva</a></li>
+</ul>
+</li>
+<li><a href="#css">CSS</a><ul>
+<li><a href="#css-peek">CSS Peek</a></li>
+</ul>
+</li>
+<li><a href="#go">Go</a></li>
+<li><a href="#groovy">Groovy</a></li>
+<li><a href="#haskell">Haskell</a></li>
+<li><a href="#hlsl">HLSL</a></li>
+<li><a href="#shell">Shell</a></li>
+<li><a href="#java">Java</a></li>
+<li><a href="#javascript">JavaScript</a><ul>
+<li><a href="#linters">Linters</a></li>
+<li><a href="#framework-specific">Framework-specific</a></li>
+<li><a href="#debugger-for-chrome">Debugger for Chrome</a></li>
+<li><a href="#facebook-flow">Facebook Flow</a></li>
+<li><a href="#typescript">TypeScript</a></li>
+<li><a href="#debugger-for-chrome-1">Debugger for Chrome</a></li>
+</ul>
+</li>
+<li><a href="#matlab">MATLAB</a></li>
+<li><a href="#markdown">Markdown</a><ul>
+<li><a href="#markdownlint">markdownlint</a></li>
+<li><a href="#markdown-all-in-one">Markdown All in One</a></li>
+<li><a href="#markdown-emoji">Markdown Emoji</a></li>
+</ul>
+</li>
+<li><a href="#php">PHP</a><ul>
+<li><a href="#php-tools">PHP Tools</a></li>
+<li><a href="#intellisense">IntelliSense</a></li>
+<li><a href="#laravel">Laravel</a></li>
+<li><a href="#twig">Twig</a></li>
+<li><a href="#smarty">Smarty</a></li>
+<li><a href="#smarty-template-support">Smarty Template Support</a></li>
+<li><a href="#other-extensions">Other extensions</a></li>
+<li><a href="#read-more">Read more</a></li>
+</ul>
+</li>
+<li><a href="#pov-ray">POV-Ray</a></li>
+<li><a href="#python">Python</a><ul>
+<li><a href="#tensorflow">TensorFlow</a></li>
+</ul>
+</li>
+<li><a href="#reasonml">ReasonML</a></li>
+<li><a href="#rust">Rust</a></li>
+<li><a href="#terraform">Terraform</a></li>
+<li><a href="#github">GitHub</a></li>
+<li><a href="#github-1">GitHub</a></li>
+<li><a href="#github-pull-requests-and-issues">GitHub Pull Requests and Issues</a></li>
+<li><a href="#gistpad">GistPad</a></li>
+<li><a href="#github-actions">GitHub Actions</a></li>
+<li><a href="#github-repositories">GitHub Repositories</a></li>
+<li><a href="#github-pull-request-monitor">GitHub Pull Request Monitor</a></li>
+<li><a href="#productivity">Productivity</a></li>
+<li><a href="#arm-template-viewer">ARM Template Viewer</a></li>
+<li><a href="#azure-cosmos-db">Azure Cosmos DB</a></li>
+<li><a href="#azure-iot-toolkit">Azure IoT Toolkit</a></li>
+<li><a href="#bookmarks">Bookmarks</a></li>
+<li><a href="#browser-preview">Browser Preview (deprecated)</a></li>
+<li><a href="#color-tabs">Color Tabs</a></li>
+<li><a href="#create-tests">Create tests</a></li>
+<li><a href="#dendron">Dendron</a></li>
+<li><a href="#deploy">Deploy</a></li>
+<li><a href="#duplicate-action">Duplicate Action</a></li>
+<li><a href="#error-lens">Error Lens</a></li>
+<li><a href="#toggle">Toggle</a></li>
+<li><a href="#es7-reactreduxgraphqlreact-native-snippets">ES7 React/Redux/GraphQL/React-Native snippets</a><ul>
+<li><a href="#gi">Gi</a></li>
+</ul>
+</li>
+<li><a href="#git-history">Git History</a></li>
+<li><a href="#git-project-manager">Git Project Manager</a></li>
+<li><a href="#gitlink">GitLink</a></li>
+<li><a href="#gitlens">GitLens</a></li>
+<li><a href="#git-indicators">Git Indicators</a></li>
+<li><a href="#gitlab-workflow">GitLab Workflow</a><ul>
+<li><a href="#gradle-tasks">Gradle Tasks</a></li>
+</ul>
+</li>
+<li><a href="#icon-fonts">Icon Fonts</a></li>
+<li><a href="#import-cost">Import Cost</a></li>
+<li><a href="#jira-and-bitbucket">Jira and Bitbucket</a></li>
+<li><a href="#js-parameter-annotations">JS Parameter Annotations</a></li>
+<li><a href="#jumpy">Jumpy</a></li>
+<li><a href="#kanban">Kanban</a></li>
+<li><a href="#live-server">Live Server</a></li>
+<li><a href="#multiple-clipboards">Multiple clipboards</a></li>
+<li><a href="#ngrok-for-vscode">ngrok for VSCode</a></li>
+<li><a href="#dotnet-core-test-explorer">Dotnet Core Test Explorer</a></li>
+<li><a href="#i18n-ally">i18n Ally</a></li>
+<li><a href="#instant-markdown">Instant Markdown</a></li>
+<li><a href="#npm-intellisense">npm Intellisense</a></li>
+<li><a href="#parameter-hints">Parameter Hints</a></li>
+<li><a href="#partial-diff">Partial Diff</a><ul>
+<li><a href="#paste-json-as-code">Paste JSON as Code</a></li>
+</ul>
+</li>
+<li><a href="#path-autocomplete">Path Autocomplete</a></li>
+<li><a href="#path-intellisense">Path IntelliSense</a></li>
+<li><a href="#power-tools">Power Tools</a></li>
+<li><a href="#printcode">PrintCode</a></li>
+<li><a href="#project-manager">Project Manager</a></li>
+<li><a href="#project-dashboard">Project Dashboard</a></li>
+<li><a href="#rainbow-csv">Rainbow CSV</a></li>
+<li><a href="#remote-development">Remote Development</a></li>
+<li><a href="#remote-vscode">Remote VSCode</a></li>
+<li><a href="#rest-client">REST Client</a></li>
+<li><a href="#text-power-tools">Text Power Tools</a></li>
+<li><a href="#todo-tree">Todo Tree</a></li>
+<li><a href="#toggle-quotes">Toggle Quotes</a></li>
+<li><a href="#typescript-destructure">Typescript Destructure</a></li>
+<li><a href="#wakatime">WakaTime</a></li>
+<li><a href="#yo">Yo</a></li>
+<li><a href="#timing">Timing</a></li>
+<li><a href="#formatting--beautification">Formatting &amp; Beautification</a></li>
+<li><a href="#better-align">Better Align</a></li>
+<li><a href="#auto-rename-tag">Auto Rename Tag</a></li>
+<li><a href="#beautify">beautify</a><ul>
+<li><a href="#html2pug">html2pug</a></li>
+</ul>
+</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <p><br/></p>
+<div align="center">
+  <img width="380px" src="https://raw.githubusercontent.com/viatsko/awesome-vscode/master/awesome-vscode-logo.png">
+</div>
+<p><br/></p>
+<div align="center">
+
+A curated list of delightful <a href="https://code.visualstudio.com/">Visual Studio Code</a>
+packages and resources. For more awesomeness, check
+out <a href="https://github.com/sindresorhus/awesome">awesome</a>.
+<br/>
+<br/>
+<img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome"/>
+<img src="https://travis-ci.org/viatsko/awesome-vscode.svg" alt="Build Status"/>
+</div>
+<p><br/></p>
+<h1>Table of Contents</h1>
+<ul>
+<li><a href="#table-of-contents">Table of Contents</a></li>
+<li><a href="#official">Official</a></li>
+<li><a href="#syntax">Syntax</a></li>
+<li><a href="#migrating-from-other-editors">Migrating from other editors</a></li>
+<li><a href="#migrating-from-vim">Migrating from Vim</a></li>
+<li><a href="#migrating-from-atom">Migrating from Atom</a></li>
+<li><a href="#migrating-from-sublime-text">Migrating from Sublime Text</a></li>
+<li><a href="#migrating-from-visual-studio">Migrating from Visual Studio</a></li>
+<li><a href="#migrating-from-intellij-idea">Migrating from Intellij IDEA</a></li>
+<li><a href="#camel-humps">Camel Humps</a></li>
+<li><a href="#using-vs-code-with-particular-technologies">Using VS Code with particular technologies</a></li>
+<li><a href="#lint-and-intellisense">Lint and IntelliSense</a></li>
+<li><a href="#1c">1C</a></li>
+<li><a href="#autohotkey">AutoHotkey</a><ul>
+<li><a href="#autohotkey-plus">AutoHotkey Plus</a></li>
+</ul>
+</li>
+<li><a href="#bash">Bash</a><ul>
+<li><a href="#bash-ide">Bash IDE</a></li>
+<li><a href="#bash-debug">Bash Debug</a></li>
+<li><a href="#shellman">Shellman</a></li>
+</ul>
+</li>
+<li><a href="#c">C++</a><ul>
+<li><a href="#more">More</a></li>
+</ul>
+</li>
+<li><a href="#c-asp-net-and-net-core">C#, ASP .NET and .NET Core</a></li>
+<li><a href="#clojure">Clojure</a><ul>
+<li><a href="#calva">Calva</a></li>
+</ul>
+</li>
+<li><a href="#css">CSS</a><ul>
+<li><a href="#css-peek">CSS Peek</a></li>
+</ul>
+</li>
+<li><a href="#go">Go</a></li>
+<li><a href="#groovy">Groovy</a></li>
+<li><a href="#haskell">Haskell</a></li>
+<li><a href="#hlsl">HLSL</a></li>
+<li><a href="#shell">Shell</a></li>
+<li><a href="#java">Java</a></li>
+<li><a href="#javascript">JavaScript</a><ul>
+<li><a href="#linters">Linters</a></li>
+<li><a href="#framework-specific">Framework-specific</a></li>
+<li><a href="#debugger-for-chrome">Debugger for Chrome</a></li>
+<li><a href="#facebook-flow">Facebook Flow</a></li>
+<li><a href="#typescript">TypeScript</a></li>
+<li><a href="#debugger-for-chrome-1">Debugger for Chrome</a></li>
+</ul>
+</li>
+<li><a href="#matlab">MATLAB</a></li>
+<li><a href="#markdown">Markdown</a><ul>
+<li><a href="#markdownlint">markdownlint</a></li>
+<li><a href="#markdown-all-in-one">Markdown All in One</a></li>
+<li><a href="#markdown-emoji">Markdown Emoji</a></li>
+</ul>
+</li>
+<li><a href="#php">PHP</a><ul>
+<li><a href="#php-tools">PHP Tools</a></li>
+<li><a href="#intellisense">IntelliSense</a></li>
+<li><a href="#laravel">Laravel</a></li>
+<li><a href="#twig">Twig</a></li>
+<li><a href="#smarty">Smarty</a></li>
+<li><a href="#smarty-template-support">Smarty Template Support</a></li>
+<li><a href="#other-extensions">Other extensions</a></li>
+<li><a href="#read-more">Read more</a></li>
+</ul>
+</li>
+<li><a href="#pov-ray">POV-Ray</a></li>
+<li><a href="#python">Python</a><ul>
+<li><a href="#tensorflow">TensorFlow</a></li>
+</ul>
+</li>
+<li><a href="#reasonml">ReasonML</a></li>
+<li><a href="#rust">Rust</a></li>
+<li><a href="#terraform">Terraform</a></li>
+<li><a href="#github">GitHub</a></li>
+<li><a href="#github-1">GitHub</a></li>
+<li><a href="#github-pull-requests-and-issues">GitHub Pull Requests and Issues</a></li>
+<li><a href="#gistpad">GistPad</a></li>
+<li><a href="#github-actions">GitHub Actions</a></li>
+<li><a href="#github-repositories">GitHub Repositories</a></li>
+<li><a href="#github-pull-request-monitor">GitHub Pull Request Monitor</a></li>
+<li><a href="#productivity">Productivity</a></li>
+<li><a href="#arm-template-viewer">ARM Template Viewer</a></li>
+<li><a href="#azure-cosmos-db">Azure Cosmos DB</a></li>
+<li><a href="#azure-iot-toolkit">Azure IoT Toolkit</a></li>
+<li><a href="#bookmarks">Bookmarks</a></li>
+<li><a href="#browser-preview">Browser Preview (deprecated)</a></li>
+<li><a href="#color-tabs">Color Tabs</a></li>
+<li><a href="#create-tests">Create tests</a></li>
+<li><a href="#dendron">Dendron</a></li>
+<li><a href="#deploy">Deploy</a></li>
+<li><a href="#duplicate-action">Duplicate Action</a></li>
+<li><a href="#error-lens">Error Lens</a></li>
+<li><a href="#toggle">Toggle</a></li>
+<li><a href="#es7-reactreduxgraphqlreact-native-snippets">ES7 React/Redux/GraphQL/React-Native snippets</a><ul>
+<li><a href="#gi">Gi</a></li>
+</ul>
+</li>
+<li><a href="#git-history">Git History</a></li>
+<li><a href="#git-project-manager">Git Project Manager</a></li>
+<li><a href="#gitlink">GitLink</a></li>
+<li><a href="#gitlens">GitLens</a></li>
+<li><a href="#git-indicators">Git Indicators</a></li>
+<li><a href="#gitlab-workflow">GitLab Workflow</a><ul>
+<li><a href="#gradle-tasks">Gradle Tasks</a></li>
+</ul>
+</li>
+<li><a href="#icon-fonts">Icon Fonts</a></li>
+<li><a href="#import-cost">Import Cost</a></li>
+<li><a href="#jira-and-bitbucket">Jira and Bitbucket</a></li>
+<li><a href="#js-parameter-annotations">JS Parameter Annotations</a></li>
+<li><a href="#jumpy">Jumpy</a></li>
+<li><a href="#kanban">Kanban</a></li>
+<li><a href="#live-server">Live Server</a></li>
+<li><a href="#multiple-clipboards">Multiple clipboards</a></li>
+<li><a href="#ngrok-for-vscode">ngrok for VSCode</a></li>
+<li><a href="#dotnet-core-test-explorer">Dotnet Core Test Explorer</a></li>
+<li><a href="#i18n-ally">i18n Ally</a></li>
+<li><a href="#instant-markdown">Instant Markdown</a></li>
+<li><a href="#npm-intellisense">npm Intellisense</a></li>
+<li><a href="#parameter-hints">Parameter Hints</a></li>
+<li><a href="#partial-diff">Partial Diff</a><ul>
+<li><a href="#paste-json-as-code">Paste JSON as Code</a></li>
+</ul>
+</li>
+<li><a href="#path-autocomplete">Path Autocomplete</a></li>
+<li><a href="#path-intellisense">Path IntelliSense</a></li>
+<li><a href="#power-tools">Power Tools</a></li>
+<li><a href="#printcode">PrintCode</a></li>
+<li><a href="#project-manager">Project Manager</a></li>
+<li><a href="#project-dashboard">Project Dashboard</a></li>
+<li><a href="#rainbow-csv">Rainbow CSV</a></li>
+<li><a href="#remote-development">Remote Development</a></li>
+<li><a href="#remote-vscode">Remote VSCode</a></li>
+<li><a href="#rest-client">REST Client</a></li>
+<li><a href="#text-power-tools">Text Power Tools</a></li>
+<li><a href="#todo-tree">Todo Tree</a></li>
+<li><a href="#toggle-quotes">Toggle Quotes</a></li>
+<li><a href="#typescript-destructure">Typescript Destructure</a></li>
+<li><a href="#wakatime">WakaTime</a></li>
+<li><a href="#yo">Yo</a></li>
+<li><a href="#timing">Timing</a></li>
+<li><a href="#formatting--beautification">Formatting &amp; Beautification</a></li>
+<li><a href="#better-align">Better Align</a></li>
+<li><a href="#auto-rename-tag">Auto Rename Tag</a></li>
+<li><a href="#beautify">beautify</a><ul>
+<li><a href="#html2pug">html2pug</a></li>
+</ul>
+</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'visual-studio-code_README.md';
 
         fetch(markdownFile)
@@ -48,21 +381,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

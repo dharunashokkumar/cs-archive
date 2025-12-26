@@ -8,38 +8,251 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Allthingssmitty Jquery Tips Everyone Should Know - Awesome List Resources">
-    <title>Allthingssmitty Jquery Tips Everyone Should Know</title>
+    <meta name="description" content="A collection of simple tips to help up your jQuery game. > [!TIP] > For other great lists check out @sindresorhus's curated list of awesome lists. - Tips -...">
+    <meta name="robots" content="index, follow">
+    <title>jQuery Tips Everyone Should Know [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>jQuery Tips Everyone Should Know <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a></h1>
+<p>A collection of simple tips to help up your jQuery game.</p>
+<blockquote>
+<p>[!TIP]
+For other great lists check out <a href="https://github.com/sindresorhus/">@sindresorhus</a>'s curated list of <a href="https://github.com/sindresorhus/awesome/">awesome lists</a>.</p>
+</blockquote>
+<h2>Table of Contents</h2>
+<ul>
+<li><a href="#tips">Tips</a></li>
+<li><a href="#support">Support</a></li>
+<li><a href="#translations">Translations</a></li>
+<li><a href="CONTRIBUTING.md">Contribution Guidelines</a></li>
+</ul>
+<h2>Tips</h2>
+<ol>
+<li><a href="#use-noconflict">Use <code>noConflict()</code></a></li>
+<li><a href="#checking-if-jquery-loaded">Checking If jQuery Loaded</a></li>
+<li><a href="#check-whether-an-element-exists">Check Whether an Element Exists</a></li>
+<li><a href="#use-on-binding-instead-of-click">Use <code>.on()</code> Binding Instead of <code>.click()</code></a></li>
+<li><a href="#back-to-top-button">Back to Top Button</a></li>
+<li><a href="#preload-images">Preload Images</a></li>
+<li><a href="#checking-if-images-are-loaded">Checking If Images Are Loaded</a></li>
+<li><a href="#fix-broken-images-automatically">Fix Broken Images Automatically</a></li>
+<li><a href="#post-a-form-with-ajax">Post a Form with AJAX</a></li>
+<li><a href="#toggle-classes-on-hover">Toggle Classes on Hover</a></li>
+<li><a href="#disabling-input-fields">Disabling Input Fields</a></li>
+<li><a href="#stop-the-loading-of-links">Stop the Loading of Links</a></li>
+<li><a href="#cache-jquery-selectors">Cache jQuery Selectors</a></li>
+<li><a href="#toggle-fadeslide">Toggle Fade/Slide</a></li>
+<li><a href="#simple-accordion">Simple Accordion</a></li>
+<li><a href="#make-two-divs-the-same-height">Make Two Divs the Same Height</a></li>
+<li><a href="#open-external-links-in-new-tabwindow">Open External Links in New Tab/Window</a></li>
+<li><a href="#find-element-by-text">Find Element By Text</a></li>
+<li><a href="#trigger-on-visibility-change">Trigger on Visibility Change</a></li>
+<li><a href="#ajax-call-error-handling">AJAX Call Error Handling</a></li>
+<li><a href="#chain-plugin-calls">Chain Plugin Calls</a></li>
+<li><a href="#sort-list-items-alphabetically">Sort List Items Alphabetically</a></li>
+<li><a href="#disable-right-click">Disable Right-Click</a></li>
+</ol>
+<h3>Use <code>noConflict()</code></h3>
+<p>The <code>$</code> alias used by jQuery is also used by other JavaScript libraries. To ensure that jQuery doesn't conflict with the <code>$</code> object of different libraries, use the <code>noConflict()</code> method at the start of the document:</p>
+<pre><code class="language-javascript">jQuery.noConflict();
+</code></pre>
+<p>Now you'll reference the jQuery object using the <code>jQuery</code> variable name instead of <code>$</code> (e.g., <code>jQuery('div p').hide()</code>). If you have multiple versions of jQuery on the same page (not recommended), you can use <code>noConflict()</code> to set an alias to a specific version:</p>
+<pre><code class="language-javascript">let $x = jQuery.noConflict();
+</code></pre>
+<p><sup><a href="#table-of-contents">back to table of contents</a></sup></p>
+<h3>Checking If jQuery Loaded</h3>
+<p>Before you can do anything with jQuery you first need to make certain it has loaded:</p>
+<pre><code class="language-javascript">if (typeof jQuery == &quot;undefined&quot;) {
+  console.log(&quot;jQuery hasn't loaded&quot;);
+} else {
+  console.log(&quot;jQuery has loaded&quot;);
+}
+</code></pre>
+<p>Now you're off...</p>
+<p><sup><a href="#table-of-contents">back to table of contents</a></sup></p>
+<h3>Check Whether an Element Exists</h3>
+<p>Prior using a HTML element you need to ensure it's part of DOM.</p>
+<pre><code class="language-javascript">if ($(&quot;#selector&quot;).length) {
+  //do something with element
+}
+</code></pre>
+<p><sup><a href="#table-of-contents">back to table of contents</a></sup></p>
+<h3>Use <code>.on()</code> Binding Instead of <code>.click()</code></h3>
+<p>Using <code>.on()</code> gives you several advantages over using <code>.click()</code>, such as the ability to add multiple events...</p>
+<pre><code class="language-javascript">.on('click tap hover')
+</code></pre>
+<p>...a binding applies to dynamically created elements, as well (there's no need to manually bind every single element dynamically added to a DOM element)...</p>
+<p>...and the possibility to set a namespace:</p>
+<pre><code class="language-javascript">.on('click.menuOpening')
+</code></pre>
+<p>Namespaces give you the power to unbind a specific event (e.g., <code>.off('click.menuOpening')</code>).</p>
+<p><sup><a href="#table-of-contents">back to table of contents</a></sup></p>
+<h3>Back to Top Button</h3>
+<p>By using the <code>animate</code> and <code>scrollTop</code> methods in jQuery you don't need a plugin to create a simple scroll-to-top animation:</p>
+<pre><code class="language-javascript">// Back to top
+$(&quot;.container&quot;).on(&quot;click&quot;, &quot;.back-to-top&quot;, function (e) {
+  e.preventDefault();
+  $(&quot;html, body&quot;).animate({ scrollTop: 0 }, 800);
+});
+</code></pre>
+<pre><code class="language-html">&lt;!-- Create an anchor tag --&gt;
+&lt;div class=&quot;container&quot;&gt;
+  &lt;a href=&quot;#&quot; class=&quot;back-to-top&quot;&gt;Back to top&lt;/a&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Changing the <code>scrollTop</code> value changes where you wants the scrollbar to land. All you're really doing is animating the body of the document throughout the course of 800 milliseconds until it scrolls to the top of the document.</p>
+<blockquote>
+<p>[!NOTE]
+Watch for some <a href="https://github.com/jquery/api.jquery.com/issues/417">buggy behavior</a> with <code>scrollTop</code>.</p>
+</blockquote>
+<p><sup><a href="#table-of-contents">back to table of contents</a></sup></p>
+<h3>Preload Images</h3>
+<p>If your web page uses a lot of images that aren't visible initially (e.g., on hover) it makes sense to preload them:</p>
+<pre><code class="language-javascript">$.preloadImages = function () {
+  for (var i = 0; i &lt; arguments.length; i++) {
+    $(&quot;&lt;img&gt;&quot;).attr(&quot;src&quot;, arguments[i]);
+  }
+};
+
+$.preloadImages(&quot;img/hover-on.png&quot;, &quot;img/hover-off.png&quot;);
+</code></pre>
+<p><sup><a href="#table-of-contents">back to table of contents</a></sup></p>
+<h3>Checking If Images Are Loaded</h3>
+<p>Sometimes you might need to check if your images have fully loaded in order to continue on with your scripts:</p>
+<pre><code class="language-javascript">$(&quot;img&quot;).on(&quot;load&quot;, function () {
+  console.log(&quot;image load successful&quot;);
+});
+</code></pre>
+<p>You can also check if one particular image has loaded by replacing the <code>&lt;img&gt;</code> tag with an ID or class.</p>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>jQuery Tips Everyone Should Know <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a></h1>
+<p>A collection of simple tips to help up your jQuery game.</p>
+<blockquote>
+<p>[!TIP]
+For other great lists check out <a href="https://github.com/sindresorhus/">@sindresorhus</a>'s curated list of <a href="https://github.com/sindresorhus/awesome/">awesome lists</a>.</p>
+</blockquote>
+<h2>Table of Contents</h2>
+<ul>
+<li><a href="#tips">Tips</a></li>
+<li><a href="#support">Support</a></li>
+<li><a href="#translations">Translations</a></li>
+<li><a href="CONTRIBUTING.md">Contribution Guidelines</a></li>
+</ul>
+<h2>Tips</h2>
+<ol>
+<li><a href="#use-noconflict">Use <code>noConflict()</code></a></li>
+<li><a href="#checking-if-jquery-loaded">Checking If jQuery Loaded</a></li>
+<li><a href="#check-whether-an-element-exists">Check Whether an Element Exists</a></li>
+<li><a href="#use-on-binding-instead-of-click">Use <code>.on()</code> Binding Instead of <code>.click()</code></a></li>
+<li><a href="#back-to-top-button">Back to Top Button</a></li>
+<li><a href="#preload-images">Preload Images</a></li>
+<li><a href="#checking-if-images-are-loaded">Checking If Images Are Loaded</a></li>
+<li><a href="#fix-broken-images-automatically">Fix Broken Images Automatically</a></li>
+<li><a href="#post-a-form-with-ajax">Post a Form with AJAX</a></li>
+<li><a href="#toggle-classes-on-hover">Toggle Classes on Hover</a></li>
+<li><a href="#disabling-input-fields">Disabling Input Fields</a></li>
+<li><a href="#stop-the-loading-of-links">Stop the Loading of Links</a></li>
+<li><a href="#cache-jquery-selectors">Cache jQuery Selectors</a></li>
+<li><a href="#toggle-fadeslide">Toggle Fade/Slide</a></li>
+<li><a href="#simple-accordion">Simple Accordion</a></li>
+<li><a href="#make-two-divs-the-same-height">Make Two Divs the Same Height</a></li>
+<li><a href="#open-external-links-in-new-tabwindow">Open External Links in New Tab/Window</a></li>
+<li><a href="#find-element-by-text">Find Element By Text</a></li>
+<li><a href="#trigger-on-visibility-change">Trigger on Visibility Change</a></li>
+<li><a href="#ajax-call-error-handling">AJAX Call Error Handling</a></li>
+<li><a href="#chain-plugin-calls">Chain Plugin Calls</a></li>
+<li><a href="#sort-list-items-alphabetically">Sort List Items Alphabetically</a></li>
+<li><a href="#disable-right-click">Disable Right-Click</a></li>
+</ol>
+<h3>Use <code>noConflict()</code></h3>
+<p>The <code>$</code> alias used by jQuery is also used by other JavaScript libraries. To ensure that jQuery doesn't conflict with the <code>$</code> object of different libraries, use the <code>noConflict()</code> method at the start of the document:</p>
+<pre><code class="language-javascript">jQuery.noConflict();
+</code></pre>
+<p>Now you'll reference the jQuery object using the <code>jQuery</code> variable name instead of <code>$</code> (e.g., <code>jQuery('div p').hide()</code>). If you have multiple versions of jQuery on the same page (not recommended), you can use <code>noConflict()</code> to set an alias to a specific version:</p>
+<pre><code class="language-javascript">let $x = jQuery.noConflict();
+</code></pre>
+<p><sup><a href="#table-of-contents">back to table of contents</a></sup></p>
+<h3>Checking If jQuery Loaded</h3>
+<p>Before you can do anything with jQuery you first need to make certain it has loaded:</p>
+<pre><code class="language-javascript">if (typeof jQuery == &quot;undefined&quot;) {
+  console.log(&quot;jQuery hasn't loaded&quot;);
+} else {
+  console.log(&quot;jQuery has loaded&quot;);
+}
+</code></pre>
+<p>Now you're off...</p>
+<p><sup><a href="#table-of-contents">back to table of contents</a></sup></p>
+<h3>Check Whether an Element Exists</h3>
+<p>Prior using a HTML element you need to ensure it's part of DOM.</p>
+<pre><code class="language-javascript">if ($(&quot;#selector&quot;).length) {
+  //do something with element
+}
+</code></pre>
+<p><sup><a href="#table-of-contents">back to table of contents</a></sup></p>
+<h3>Use <code>.on()</code> Binding Instead of <code>.click()</code></h3>
+<p>Using <code>.on()</code> gives you several advantages over using <code>.click()</code>, such as the ability to add multiple events...</p>
+<pre><code class="language-javascript">.on('click tap hover')
+</code></pre>
+<p>...a binding applies to dynamically created elements, as well (there's no need to manually bind every single element dynamically added to a DOM element)...</p>
+<p>...and the possibility to set a namespace:</p>
+<pre><code class="language-javascript">.on('click.menuOpening')
+</code></pre>
+<p>Namespaces give you the power to unbind a specific event (e.g., <code>.off('click.menuOpening')</code>).</p>
+<p><sup><a href="#table-of-contents">back to table of contents</a></sup></p>
+<h3>Back to Top Button</h3>
+<p>By using the <code>animate</code> and <code>scrollTop</code> methods in jQuery you don't need a plugin to create a simple scroll-to-top animation:</p>
+<pre><code class="language-javascript">// Back to top
+$(&quot;.container&quot;).on(&quot;click&quot;, &quot;.back-to-top&quot;, function (e) {
+  e.preventDefault();
+  $(&quot;html, body&quot;).animate({ scrollTop: 0 }, 800);
+});
+</code></pre>
+<pre><code class="language-html">&lt;!-- Create an anchor tag --&gt;
+&lt;div class=&quot;container&quot;&gt;
+  &lt;a href=&quot;#&quot; class=&quot;back-to-top&quot;&gt;Back to top&lt;/a&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Changing the <code>scrollTop</code> value changes where you wants the scrollbar to land. All you're really doing is animating the body of the document throughout the course of 800 milliseconds until it scrolls to the top of the document.</p>
+<blockquote>
+<p>[!NOTE]
+Watch for some <a href="https://github.com/jquery/api.jquery.com/issues/417">buggy behavior</a> with <code>scrollTop</code>.</p>
+</blockquote>
+<p><sup><a href="#table-of-contents">back to table of contents</a></sup></p>
+<h3>Preload Images</h3>
+<p>If your web page uses a lot of images that aren't visible initially (e.g., on hover) it makes sense to preload them:</p>
+<pre><code class="language-javascript">$.preloadImages = function () {
+  for (var i = 0; i &lt; arguments.length; i++) {
+    $(&quot;&lt;img&gt;&quot;).attr(&quot;src&quot;, arguments[i]);
+  }
+};
+
+$.preloadImages(&quot;img/hover-on.png&quot;, &quot;img/hover-off.png&quot;);
+</code></pre>
+<p><sup><a href="#table-of-contents">back to table of contents</a></sup></p>
+<h3>Checking If Images Are Loaded</h3>
+<p>Sometimes you might need to check if your images have fully loaded in order to continue on with your scripts:</p>
+<pre><code class="language-javascript">$(&quot;img&quot;).on(&quot;load&quot;, function () {
+  console.log(&quot;image load successful&quot;);
+});
+</code></pre>
+<p>You can also check if one particular image has loaded by replacing the <code>&lt;img&gt;</code> tag with an ID or class.</p>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'tips-2_README.md';
 
         fetch(markdownFile)
@@ -48,21 +261,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

@@ -8,38 +8,209 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Datadaode Awesome Foss Apps - Awesome List Resources">
-    <title>Datadaode Awesome Foss Apps</title>
+    <meta name="description" content="> A curated list of awesome production grade free and open source software organized by category. This list is for developers who are looking for non-trivial...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome FOSS apps [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome FOSS apps <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<blockquote>
+<p>A curated list of awesome production grade free and open source software organized by category.</p>
+</blockquote>
+<p>This list is for developers who are looking for non-trivial quality applications they can analyze and learn from.</p>
+<p><em>Inspired by Sindre Sorhus's <a href="https://github.com/sindresorhus/awesome">awesome</a>.</em></p>
+<h2>TOC</h2>
+<ul>
+<li><a href="#web-apps-frontend-only">Webapps (frontend only)</a></li>
+<li><a href="#web-apps-fullstack">Webapps (fullstack)</a></li>
+<li><a href="#desktop-apps">Desktop Apps</a></li>
+<li><a href="#mobile-apps">Mobile Apps</a></li>
+<li><a href="#games">Games</a></li>
+</ul>
+<h2>Web Apps (frontend only)</h2>
+<hr />
+<h3><a href="https://github.com/CompuIves/codesandbox-client">Codesandbox</a></h3>
+<ul>
+<li>react, nginx, phoenix</li>
+<li>GNU General Public License</li>
+</ul>
+<blockquote>
+<p>Codesandbox is an online IDE for web developers to quickly prototype and implement frontend applications using modern javascript frameworks like Vue, Preact, React etc Or even vanilla javascript.  </p>
+</blockquote>
+<h3><a href="https://github.com/circleci/frontend">CircleCI</a></h3>
+<ul>
+<li>clojurescript, om, react</li>
+<li>Eclipse Public License</li>
+</ul>
+<blockquote>
+<p>CircleCI provides a continuous integration and deployment platform. The frontend is an impressive example of a large application built with the immutable data structures of clojurescript. The frontend integrates with pusher, intercom, d3, and google analytics and has a great example of navigation routing and communication via real-time events, websockets, and backend API servers. Its test suite is not that extensive but does provide a good example of how to test clojurescript/om apps using karma.</p>
+</blockquote>
+<h3><a href="https://github.com/PrecursorApp/precursor">Precursor App</a></h3>
+<ul>
+<li>clojurescript, om, react</li>
+<li>Eclipse Public License</li>
+</ul>
+<blockquote>
+<p>Precursor is a highly interactive prototyping webapp. Its frontend is built from the ground up with clojurescript. The project has a simple enough routing and event passing system such that newer clojurescript developers could easily understand how routing in clojurescript applications can work. It is also full of many examples of how to build a component based frontend architecture that is part of an interactive graphics application i.e. where many components manipulate the HTML5 canvas or work with HTML5 APIs. </p>
+</blockquote>
+<h3><a href="https://github.com/guardian/frontend">The Guardian</a></h3>
+<ul>
+<li>play2, scala, node</li>
+<li>Apache 2.0 License</li>
+</ul>
+<blockquote>
+<p>The guardian is a news site with subscriptions, sign in, search, an admin interface and a series of middleman scala apps that handle communication between the static frontends and backend APIs. Its very fast and has a comprehensive test suite plus great examples of how to optimize large traditional websites for speed.</p>
+</blockquote>
+<h3>Web Apps (fullstack)</h3>
+<hr />
+<h3><a href="https://github.com/TryGhost/Ghost">Ghost</a></h3>
+<ul>
+<li>node, express, ember</li>
+<li>MIT License</li>
+</ul>
+<blockquote>
+<p>Ghost provides a simple publishing platform for bloggers. The code contains an emberjs client and node server backend that handle authorization, role management, tagging, blog posting, data persistence, and most things you'd expect from a quality blogging platform. The only thing that Ghost doesn't handle is i18n. It also contains a comprehensive test suite with both integration and unit tests that hit the whole ember/node stack.</p>
+</blockquote>
+<h3><a href="https://github.com/gitlabhq/gitlabhq">Gitlab</a></h3>
+<ul>
+<li>ruby, rails, coffescript, redis, sidekiq,</li>
+<li>MIT License</li>
+</ul>
+<blockquote>
+<p>Gitlab is a code collaboration tool. It is used by more than 100,000 organizations. It has just about everything you could imagine in a webapp, user management, user roles, OAuth, i18n, many modules designed for integrating with third-parties, deep git integration, and an extensive asynchronous task system using Sidekiq. It has an exemplary test suite using cucumber and rspec.</p>
+</blockquote>
+<h3><a href="https://github.com/discourse/discourse">Discourse</a></h3>
+<ul>
+<li>ruby, rails, ember</li>
+<li>GPLv2 License</li>
+</ul>
+<blockquote>
+<p>Discourse is a discussion platform or a modern take on the web forum. It has a very modular system built on top of rails and contains great examples of how to build an interactive frontend in ember within a rails application. It has an admin interface, signup/sign-in with Oauth for Google, Facebook, Twitter, Yahoo, and Github. It has extensive i18n, real time notifications, a plugin ecosystem, is SEO optimized, and is designed for tablet and mobile devices.</p>
+</blockquote>
+<h3><a href="https://github.com/reddit">Reddit</a></h3>
+<ul>
+<li>python, pylons, node, react, rabbitmq, postgresql</li>
+<li>Common Public Attribution License Version 1.0</li>
+</ul>
+<blockquote>
+<p>Reddit is a news platform for what's new and popular on the web. It is built in python and integrates with a lot of third party services: rabbitmq, memcached, cassandra, solr, and postgresql to name a few. The code provides a good example of a large pylons project and shines when it comes to the code that integrates with many other services.</p>
+</blockquote>
+<h3><a href="https://github.com/taigaio">Taiga</a></h3>
+<ul>
+<li>python3, django, coffeescript, angular</li>
+<li>GNU Affero License</li>
+</ul>
+<blockquote>
+<p>Taiga is a project management tool. It is an incredible example of a modular architecture. Its interface is clean, very well-designed, responsive, and fast, and the modern backend code written in python3 is a great example of a well written django app. It also has an extensive test suite with both integration and unit tests using pytest.</p>
+</blockquote>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome FOSS apps <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<blockquote>
+<p>A curated list of awesome production grade free and open source software organized by category.</p>
+</blockquote>
+<p>This list is for developers who are looking for non-trivial quality applications they can analyze and learn from.</p>
+<p><em>Inspired by Sindre Sorhus's <a href="https://github.com/sindresorhus/awesome">awesome</a>.</em></p>
+<h2>TOC</h2>
+<ul>
+<li><a href="#web-apps-frontend-only">Webapps (frontend only)</a></li>
+<li><a href="#web-apps-fullstack">Webapps (fullstack)</a></li>
+<li><a href="#desktop-apps">Desktop Apps</a></li>
+<li><a href="#mobile-apps">Mobile Apps</a></li>
+<li><a href="#games">Games</a></li>
+</ul>
+<h2>Web Apps (frontend only)</h2>
+<hr />
+<h3><a href="https://github.com/CompuIves/codesandbox-client">Codesandbox</a></h3>
+<ul>
+<li>react, nginx, phoenix</li>
+<li>GNU General Public License</li>
+</ul>
+<blockquote>
+<p>Codesandbox is an online IDE for web developers to quickly prototype and implement frontend applications using modern javascript frameworks like Vue, Preact, React etc Or even vanilla javascript.  </p>
+</blockquote>
+<h3><a href="https://github.com/circleci/frontend">CircleCI</a></h3>
+<ul>
+<li>clojurescript, om, react</li>
+<li>Eclipse Public License</li>
+</ul>
+<blockquote>
+<p>CircleCI provides a continuous integration and deployment platform. The frontend is an impressive example of a large application built with the immutable data structures of clojurescript. The frontend integrates with pusher, intercom, d3, and google analytics and has a great example of navigation routing and communication via real-time events, websockets, and backend API servers. Its test suite is not that extensive but does provide a good example of how to test clojurescript/om apps using karma.</p>
+</blockquote>
+<h3><a href="https://github.com/PrecursorApp/precursor">Precursor App</a></h3>
+<ul>
+<li>clojurescript, om, react</li>
+<li>Eclipse Public License</li>
+</ul>
+<blockquote>
+<p>Precursor is a highly interactive prototyping webapp. Its frontend is built from the ground up with clojurescript. The project has a simple enough routing and event passing system such that newer clojurescript developers could easily understand how routing in clojurescript applications can work. It is also full of many examples of how to build a component based frontend architecture that is part of an interactive graphics application i.e. where many components manipulate the HTML5 canvas or work with HTML5 APIs. </p>
+</blockquote>
+<h3><a href="https://github.com/guardian/frontend">The Guardian</a></h3>
+<ul>
+<li>play2, scala, node</li>
+<li>Apache 2.0 License</li>
+</ul>
+<blockquote>
+<p>The guardian is a news site with subscriptions, sign in, search, an admin interface and a series of middleman scala apps that handle communication between the static frontends and backend APIs. Its very fast and has a comprehensive test suite plus great examples of how to optimize large traditional websites for speed.</p>
+</blockquote>
+<h3>Web Apps (fullstack)</h3>
+<hr />
+<h3><a href="https://github.com/TryGhost/Ghost">Ghost</a></h3>
+<ul>
+<li>node, express, ember</li>
+<li>MIT License</li>
+</ul>
+<blockquote>
+<p>Ghost provides a simple publishing platform for bloggers. The code contains an emberjs client and node server backend that handle authorization, role management, tagging, blog posting, data persistence, and most things you'd expect from a quality blogging platform. The only thing that Ghost doesn't handle is i18n. It also contains a comprehensive test suite with both integration and unit tests that hit the whole ember/node stack.</p>
+</blockquote>
+<h3><a href="https://github.com/gitlabhq/gitlabhq">Gitlab</a></h3>
+<ul>
+<li>ruby, rails, coffescript, redis, sidekiq,</li>
+<li>MIT License</li>
+</ul>
+<blockquote>
+<p>Gitlab is a code collaboration tool. It is used by more than 100,000 organizations. It has just about everything you could imagine in a webapp, user management, user roles, OAuth, i18n, many modules designed for integrating with third-parties, deep git integration, and an extensive asynchronous task system using Sidekiq. It has an exemplary test suite using cucumber and rspec.</p>
+</blockquote>
+<h3><a href="https://github.com/discourse/discourse">Discourse</a></h3>
+<ul>
+<li>ruby, rails, ember</li>
+<li>GPLv2 License</li>
+</ul>
+<blockquote>
+<p>Discourse is a discussion platform or a modern take on the web forum. It has a very modular system built on top of rails and contains great examples of how to build an interactive frontend in ember within a rails application. It has an admin interface, signup/sign-in with Oauth for Google, Facebook, Twitter, Yahoo, and Github. It has extensive i18n, real time notifications, a plugin ecosystem, is SEO optimized, and is designed for tablet and mobile devices.</p>
+</blockquote>
+<h3><a href="https://github.com/reddit">Reddit</a></h3>
+<ul>
+<li>python, pylons, node, react, rabbitmq, postgresql</li>
+<li>Common Public Attribution License Version 1.0</li>
+</ul>
+<blockquote>
+<p>Reddit is a news platform for what's new and popular on the web. It is built in python and integrates with a lot of third party services: rabbitmq, memcached, cassandra, solr, and postgresql to name a few. The code provides a good example of a large pylons project and shines when it comes to the code that integrates with many other services.</p>
+</blockquote>
+<h3><a href="https://github.com/taigaio">Taiga</a></h3>
+<ul>
+<li>python3, django, coffeescript, angular</li>
+<li>GNU Affero License</li>
+</ul>
+<blockquote>
+<p>Taiga is a project management tool. It is an incredible example of a modular architecture. Its interface is clean, very well-designed, responsive, and fast, and the modern backend code written in python3 is a great example of a well written django app. It also has an extensive test suite with both integration and unit tests using pytest.</p>
+</blockquote>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'foss-production-apps_README.md';
 
         fetch(markdownFile)
@@ -48,21 +219,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

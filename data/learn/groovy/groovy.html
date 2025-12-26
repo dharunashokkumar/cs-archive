@@ -8,38 +8,185 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kdabir Awesome Groovy - Awesome List Resources">
-    <title>Kdabir Awesome Groovy</title>
+    <meta name="description" content="Awesome Groovy ============== Curated list of awesome groovy libraries, frameworks and resources. Inspired by many other awesome- repositories. - Awesome...">
+    <meta name="robots" content="index, follow">
+    <title>Groovy - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Groovy <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>Curated list of awesome groovy libraries, frameworks and resources. Inspired by many other awesome-* repositories.</p>
+<ul>
+<li><a href="#awesome-groovy">Awesome Groovy</a><ul>
+<li><a href="#build-tools-setup-and-ci">Build Tools, Setup and CI</a></li>
+<li><a href="#concurrency">Concurrency</a></li>
+<li><a href="#database">Database</a></li>
+<li><a href="#rich-applications">Desktop App Frameworks</a></li>
+<li><a href="#http">HTTP</a></li>
+<li><a href="#ide-and-editor-support">IDE and Editor Support</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#code-analysis">Code analysis</a></li>
+<li><a href="#web-frameworks">Web Frameworks</a></li>
+<li><a href="#transpilers">Transpilers</a></li>
+<li><a href="#static-web">Static Web</a></li>
+<li><a href="#language-utilities">Language Utilities</a></li>
+<li><a href="#file-system-utilities">File System Utilities</a></li>
+<li><a href="#file-format-dsl">File Format DSL</a></li>
+<li><a href="#scripting-tools">Scripting Tools</a></li>
+<li><a href="#rule-engines">Rule Engines</a></li>
+</ul>
+</li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#credits">Credits</a></li>
+</ul>
+<h2>Build tools, setup and CI</h2>
+<ul>
+<li><a href="https://www.gradle.org/">Gradle</a> - A powerful build system for the JVM</li>
+<li><a href="https://github.com/groovy/GMavenPlus">GMavenPlus</a> - A rewrite of GMaven, a Maven plugin for Groovy</li>
+<li><a href="https://sdkman.io">SDKMAN</a> - The Software Development Kit Manager (Previously known as GVM)</li>
+<li><a href="https://github.com/cbmarcum/skeletal">skeletal</a> - A simple project creation tool that uses packaged templates (successor of Lazybones)</li>
+<li><a href="https://github.com/pledbrook/lazybones">Lazybones</a> - A simple project creation tool that uses packaged project templates.</li>
+<li><a href="https://github.com/jenkinsci/job-dsl-plugin">Jenkins job-dsl-plugin</a> - A Groovy DSL for Jenkins Jobs</li>
+<li><a href="https://github.com/kdabir/travis-groovy">travis-groovy</a> - execute groovy scripts on travis-ci</li>
+<li><a href="https://play.google.com/store/apps/details?id=com.tambapps.android.grooidshell">Android Groovy Shell</a> - code and execute groovy scripts directly on your smartphone</li>
+</ul>
+<h2>IDE and Editor Support</h2>
+<ul>
+<li><a href="http://www.jetbrains.com/idea/">IntelliJ IDEA</a> - The Most Intelligent IDE for the Java Platform</li>
+<li><a href="https://marketplace.eclipse.org/content/groovygrails-tool-suite-ggts-eclipse">Groovy Grails Tool Suite</a> -  Eclipse-based IDE optimized for developing, debugging and executing Groovy and Grails applications</li>
+<li><a href="http://groovyconsole.appspot.com">Groovy Web Console</a> - The online Groovy console</li>
+<li><a href="https://github.com/rundis/LightTable-Groovy">LightTable Plugin</a> - LightTable Support</li>
+<li><a href="https://spacevim.org/layers/lang/groovy/">SpaceVim</a> - SpaceVim <code>lang#groovy</code> layer</li>
+<li><a href="https://gist.github.com/kdabir/2203530">Sublime Text 2/3</a> - Run groovy scripts from Sublime Text</li>
+</ul>
+<h2>Web Frameworks</h2>
+<ul>
+<li><a href="https://github.com/grails/grails">Grails</a> - A powerful web application framework based on the Groovy language</li>
+<li><a href="http://micronaut.io/">Micronaut</a> - A brand new microservices framework created by the Grails team</li>
+<li><a href="https://projects.spring.io/spring-boot">Spring-Boot</a> - Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that can you can "just run". Use Groovy as your coding language.</li>
+<li><a href="https://github.com/gaelyk/gaelyk">Gaelyk</a> - A lightweight Groovy toolkit for Google App Engine Java</li>
+<li><a href="https://github.com/kdabir/glide">Glide</a> - Create awesome apps on Google App Engine in a snap</li>
+<li><a href="https://github.com/ratpack/ratpack">Ratpack</a> - A toolkit for JVM web applications</li>
+<li><a href="https://github.com/javaConductor/gserv">gServ</a> - A Groovy toolkit for creating SPAs and REST based micro-services without the need for a container (Tomcat, JBoss, etc.).</li>
+</ul>
+<h2>Database</h2>
+<ul>
+<li><a href="https://gorm.grails.org">GORM</a> - Grails ORM, but can be used stand-alone without Grails</li>
+<li><a href="https://github.com/poiati/gmongo">Gmongo</a> - A Groovy wrapper to the mongodb Java driver</li>
+<li><a href="https://github.com/kdabir/gstorm">Gstorm</a> - A simple ORM for simple databases and CSV files to be used in groovy scripts</li>
+<li><a href="https://github.com/EqualExperts/Tayra">Tayra</a> - Incremental backup tool for MongoDB</li>
+<li><a href="https://github.com/tlberglund/groovy-liquibase">Groovy-liquibase</a> - Yet Another Groovy DSL for Liquibase</li>
+<li><a href="https://github.com/cjstehno/effigy">Effigy</a> - Groovy annotation-driven JDBC row mapping framework (abandoned)</li>
+<li><a href="https://github.com/elastic/elasticsearch-groovy">elasticsearch-groovy</a> - Elasticsearch Groovy client</li>
+</ul>
+<h2>Rich Application</h2>
+<ul>
+<li><a href="http://griffon-framework.org/">Griffon</a> - Griffon is an application framework for developing desktop applications in the JVM</li>
+<li><a href="http://groovyfx.org/">GroovyFx</a> - GroovyFX provides a Groovy binding for JavaFX 2.0.</li>
+</ul>
+<h2>HTTP</h2>
+<ul>
+<li><a href="https://github.com/jgritman/httpbuilder">Http-Builder</a> - HTTPBuilder is the easiest way to manipulate HTTP-based resources from the JVM</li>
+<li><a href="https://github.com/http-builder-ng/http-builder-ng">HTTP Builder NG</a> - HTTP Builder NG is a modern Groovy DSL for making http requests.</li>
+<li><a href="https://github.com/http-builder-ng/gradle-http-plugin">HTTP Builder NG Gradle Plugin</a> - Gradle plugin providing HTTP Builder NG support in a Gradle build configuration.</li>
+<li><a href="https://github.com/eginez/AsyncRestClient">AsyncRestClient</a> - Combine the power of RESTClient with RxGroovy for async http calls</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Groovy <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>Curated list of awesome groovy libraries, frameworks and resources. Inspired by many other awesome-* repositories.</p>
+<ul>
+<li><a href="#awesome-groovy">Awesome Groovy</a><ul>
+<li><a href="#build-tools-setup-and-ci">Build Tools, Setup and CI</a></li>
+<li><a href="#concurrency">Concurrency</a></li>
+<li><a href="#database">Database</a></li>
+<li><a href="#rich-applications">Desktop App Frameworks</a></li>
+<li><a href="#http">HTTP</a></li>
+<li><a href="#ide-and-editor-support">IDE and Editor Support</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#code-analysis">Code analysis</a></li>
+<li><a href="#web-frameworks">Web Frameworks</a></li>
+<li><a href="#transpilers">Transpilers</a></li>
+<li><a href="#static-web">Static Web</a></li>
+<li><a href="#language-utilities">Language Utilities</a></li>
+<li><a href="#file-system-utilities">File System Utilities</a></li>
+<li><a href="#file-format-dsl">File Format DSL</a></li>
+<li><a href="#scripting-tools">Scripting Tools</a></li>
+<li><a href="#rule-engines">Rule Engines</a></li>
+</ul>
+</li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#credits">Credits</a></li>
+</ul>
+<h2>Build tools, setup and CI</h2>
+<ul>
+<li><a href="https://www.gradle.org/">Gradle</a> - A powerful build system for the JVM</li>
+<li><a href="https://github.com/groovy/GMavenPlus">GMavenPlus</a> - A rewrite of GMaven, a Maven plugin for Groovy</li>
+<li><a href="https://sdkman.io">SDKMAN</a> - The Software Development Kit Manager (Previously known as GVM)</li>
+<li><a href="https://github.com/cbmarcum/skeletal">skeletal</a> - A simple project creation tool that uses packaged templates (successor of Lazybones)</li>
+<li><a href="https://github.com/pledbrook/lazybones">Lazybones</a> - A simple project creation tool that uses packaged project templates.</li>
+<li><a href="https://github.com/jenkinsci/job-dsl-plugin">Jenkins job-dsl-plugin</a> - A Groovy DSL for Jenkins Jobs</li>
+<li><a href="https://github.com/kdabir/travis-groovy">travis-groovy</a> - execute groovy scripts on travis-ci</li>
+<li><a href="https://play.google.com/store/apps/details?id=com.tambapps.android.grooidshell">Android Groovy Shell</a> - code and execute groovy scripts directly on your smartphone</li>
+</ul>
+<h2>IDE and Editor Support</h2>
+<ul>
+<li><a href="http://www.jetbrains.com/idea/">IntelliJ IDEA</a> - The Most Intelligent IDE for the Java Platform</li>
+<li><a href="https://marketplace.eclipse.org/content/groovygrails-tool-suite-ggts-eclipse">Groovy Grails Tool Suite</a> -  Eclipse-based IDE optimized for developing, debugging and executing Groovy and Grails applications</li>
+<li><a href="http://groovyconsole.appspot.com">Groovy Web Console</a> - The online Groovy console</li>
+<li><a href="https://github.com/rundis/LightTable-Groovy">LightTable Plugin</a> - LightTable Support</li>
+<li><a href="https://spacevim.org/layers/lang/groovy/">SpaceVim</a> - SpaceVim <code>lang#groovy</code> layer</li>
+<li><a href="https://gist.github.com/kdabir/2203530">Sublime Text 2/3</a> - Run groovy scripts from Sublime Text</li>
+</ul>
+<h2>Web Frameworks</h2>
+<ul>
+<li><a href="https://github.com/grails/grails">Grails</a> - A powerful web application framework based on the Groovy language</li>
+<li><a href="http://micronaut.io/">Micronaut</a> - A brand new microservices framework created by the Grails team</li>
+<li><a href="https://projects.spring.io/spring-boot">Spring-Boot</a> - Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that can you can "just run". Use Groovy as your coding language.</li>
+<li><a href="https://github.com/gaelyk/gaelyk">Gaelyk</a> - A lightweight Groovy toolkit for Google App Engine Java</li>
+<li><a href="https://github.com/kdabir/glide">Glide</a> - Create awesome apps on Google App Engine in a snap</li>
+<li><a href="https://github.com/ratpack/ratpack">Ratpack</a> - A toolkit for JVM web applications</li>
+<li><a href="https://github.com/javaConductor/gserv">gServ</a> - A Groovy toolkit for creating SPAs and REST based micro-services without the need for a container (Tomcat, JBoss, etc.).</li>
+</ul>
+<h2>Database</h2>
+<ul>
+<li><a href="https://gorm.grails.org">GORM</a> - Grails ORM, but can be used stand-alone without Grails</li>
+<li><a href="https://github.com/poiati/gmongo">Gmongo</a> - A Groovy wrapper to the mongodb Java driver</li>
+<li><a href="https://github.com/kdabir/gstorm">Gstorm</a> - A simple ORM for simple databases and CSV files to be used in groovy scripts</li>
+<li><a href="https://github.com/EqualExperts/Tayra">Tayra</a> - Incremental backup tool for MongoDB</li>
+<li><a href="https://github.com/tlberglund/groovy-liquibase">Groovy-liquibase</a> - Yet Another Groovy DSL for Liquibase</li>
+<li><a href="https://github.com/cjstehno/effigy">Effigy</a> - Groovy annotation-driven JDBC row mapping framework (abandoned)</li>
+<li><a href="https://github.com/elastic/elasticsearch-groovy">elasticsearch-groovy</a> - Elasticsearch Groovy client</li>
+</ul>
+<h2>Rich Application</h2>
+<ul>
+<li><a href="http://griffon-framework.org/">Griffon</a> - Griffon is an application framework for developing desktop applications in the JVM</li>
+<li><a href="http://groovyfx.org/">GroovyFx</a> - GroovyFX provides a Groovy binding for JavaFX 2.0.</li>
+</ul>
+<h2>HTTP</h2>
+<ul>
+<li><a href="https://github.com/jgritman/httpbuilder">Http-Builder</a> - HTTPBuilder is the easiest way to manipulate HTTP-based resources from the JVM</li>
+<li><a href="https://github.com/http-builder-ng/http-builder-ng">HTTP Builder NG</a> - HTTP Builder NG is a modern Groovy DSL for making http requests.</li>
+<li><a href="https://github.com/http-builder-ng/gradle-http-plugin">HTTP Builder NG Gradle Plugin</a> - Gradle plugin providing HTTP Builder NG support in a Gradle build configuration.</li>
+<li><a href="https://github.com/eginez/AsyncRestClient">AsyncRestClient</a> - Combine the power of RESTClient with RxGroovy for async http calls</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'groovy_README.md';
 
         fetch(markdownFile)
@@ -48,21 +195,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

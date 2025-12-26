@@ -8,38 +8,143 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Eug Awesome Opengl - Awesome List Resources">
-    <title>Eug Awesome Opengl</title>
+    <meta name="description" content="A curated list of awesome OpenGL libraries, debuggers and resources. Articles Books Debug GLSL Editors Libraries Profile Loaders References Talks Videos...">
+    <meta name="robots" content="index, follow">
+    <title>awesome-opengl [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>awesome-opengl <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p><a href="https://www.opengl.org"><img src="https://rawgit.com/eug/awesome-opengl/master/opengl-logo.svg" align="right" width="140"></a></p>
+<p>A curated list of awesome OpenGL libraries, debuggers and resources.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#debug">Debug</a></li>
+<li><a href="#glsl-editors">GLSL Editors</a></li>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#profile-loaders">Profile Loaders</a></li>
+<li><a href="#references">References</a></li>
+<li><a href="#talks">Talks</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#websites">Websites</a></li>
+</ul>
+<h2>Articles</h2>
+<p><em>OpenGL articles (non-tutorials)</em></p>
+<ul>
+<li><a href="https://github.com/LWJGL/lwjgl3-wiki/wiki/2.6.1.-Ray-tracing-with-OpenGL-Compute-Shaders-%28Part-I%29">(2014) Ray tracing with OpenGL Compute Shaders</a> by <strong>Kai Burjack</strong> - Detailed tutorial series about ray tracing using OpenGL (LWJGL).</li>
+<li><a href="http://richg42.blogspot.com.au/2014/05/things-that-drive-me-nuts-about-opengl.html">(2014) Things that drive me nuts about OpenGL</a> by <strong>Rich Geldreich</strong> - Constructive (or not) criticism of GL API.</li>
+<li><a href="https://fgiesen.wordpress.com/2011/07/09/a-trip-through-the-graphics-pipeline-2011-index">(2011) A trip through the graphics pipeline</a> by <strong>Fabian Giesen</strong> - Comprehensive and rich series about the D3D/OpenGL graphics pipeline.</li>
+<li><a href="http://duriansoftware.com/joe/An-intro-to-modern-OpenGL.-Chapter-1:-The-Graphics-Pipeline.html">(2010) What is OpenGL?</a> by <strong>Joe Groff</strong> - Brief introduction to the building blocks of OpenGL.</li>
+</ul>
+<h2>Books</h2>
+<p><em>Popular books about OpenGL</em></p>
+<ul>
+<li><a href="http://www.amazon.com/dp/1558603875">A Trip Down the Graphics Pipeline</a> by <strong>Jim Blinn</strong> - Popular book that contains wealth information about the graphics pipeline, and of the best sources to learn the core concepts of Computer Graphics.</li>
+<li><a href="http://www.amazon.com/dp/0321399528">Computer Graphics</a> by <strong>John F. Hughes, et al.</strong> - Computer Graphics is indeed a must for anyone being involved in the design and implementation of Computer Graphics algorithms. However, this is not a OpenGL focused book, but contains valuable demonstrations of the technology.</li>
+<li><a href="http://www.amazon.com/dp/0132545233">Interactive Computer Graphics</a> by <strong>Edward Angel and Dave Shreiner</strong> - It provides several examples using OpenGL and it covers several aspects at once, but if you are trying to learn OpenGL on your own you might not find this helpful.</li>
+<li><a href="http://www.amazon.com/dp/0321933885">OpenGL ES 3.0 Programming Guide</a> by <strong>Dan Ginsburg, et al.</strong> - It presents all the necessary information to use the OpenGL ES 3.0 API in a clear manner.</li>
+<li><a href="http://www.amazon.com/dp/1439893764">OpenGL Insights</a> by <strong>Patrick Cozzi, Christophe Riccio</strong> - Rich and comprehensive resource to learn techniques and tips, covering several advanced topics of OpenGL.</li>
+<li><a href="http://www.amazon.com/dp/0321773039">OpenGL Programming Guide</a> by <strong>Dave Shreiner, et al.</strong> - It does a good job covering the basics and providing clear reference of the API.</li>
+<li><a href="http://www.amazon.com/dp/0321637631">OpenGL Shading Language</a> by <strong>Randi J. Rost, et al.</strong> - Very clear and well written book about Shading Language. Also, it provides several explanations of writing shaders.</li>
+<li><a href="http://www.amazon.com/dp/0321712617">OpenGL SuperBible</a> by <strong>Richard S. Wright, et al.</strong> - It covers the basic concepts of computer graphics and provides clear examples using OpenGL. Definitely, it is a must for beginners.</li>
+<li><a href="http://www.amazon.com/dp/1568814240">Real-Time Rendering</a> by <strong>Tomas Akenine-Moller, Eric Haines and Naty Hoffman</strong> - It does a good job at explaining concepts for game engine, basis for game client programming as well as the necessary knowledge for understanding DirectX and OpenGL.</li>
+</ul>
+<h2>Debug</h2>
+<p><em>Debugging and profiling libraries</em></p>
+<ul>
+<li><a href="http://apitrace.github.io">apitrace</a> - Tools for tracing OpenGL, Direct3D, and other graphics APIs.</li>
+<li><a href="https://github.com/GPUOpen-Tools/CodeXL">CodeXL</a> - AMD's tool suite that includes debugger, profiler and frame/shader analysis.</li>
+<li><a href="http://glsl-debugger.github.io">GL-SL Debugger</a> - Tool for debugging OpenGL programs.</li>
+<li><a href="https://github.com/dtrebilco/glintercept">GLIntercept</a> - OpenGL function call interceptor for Windows.</li>
+<li><a href="https://software.intel.com/en-us/gpa">Intel-GPA</a> - Intel's OpenGL Graphics Performance Analyzer.</li>
+<li><a href="https://developer.nvidia.com/nvidia-nsight-visual-studio-edition">NVIDIA® Nsight™</a> - Development platform for graphics applications.</li>
+<li><a href="https://github.com/baldurk/renderdoc">RenderDoc</a> - RenderDoc is a stand-alone graphics debugging tool.</li>
+<li><a href="https://github.com/wolfpld/tracy">tracy</a> - A real time remote telemetry frame profiler for games and other applications.</li>
+<li><a href="https://github.com/ValveSoftware/vogl">vogl</a> - OpenGL capture and playback debugger developed by Valve.</li>
+</ul>
+<h2>GLSL Editors</h2>
+<p><em>Online GLSL Editors</em></p>
+<ul>
+<li><a href="http://glslsandbox.com">GLSL Sandbox</a> - Online live editor for fragment shaders.</li>
+<li><a href="http://glslb.in">GLSLbin</a> - Fragment shader sandbox supporting <a href="https://github.com/stackgl/glslify">glslify</a>.</li>
+<li><a href="http://shdr.bkcore.com">SHDR Editor</a> - Live GLSL shader editor, viewer and validator.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>awesome-opengl <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p><a href="https://www.opengl.org"><img src="https://rawgit.com/eug/awesome-opengl/master/opengl-logo.svg" align="right" width="140"></a></p>
+<p>A curated list of awesome OpenGL libraries, debuggers and resources.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#debug">Debug</a></li>
+<li><a href="#glsl-editors">GLSL Editors</a></li>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#profile-loaders">Profile Loaders</a></li>
+<li><a href="#references">References</a></li>
+<li><a href="#talks">Talks</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#websites">Websites</a></li>
+</ul>
+<h2>Articles</h2>
+<p><em>OpenGL articles (non-tutorials)</em></p>
+<ul>
+<li><a href="https://github.com/LWJGL/lwjgl3-wiki/wiki/2.6.1.-Ray-tracing-with-OpenGL-Compute-Shaders-%28Part-I%29">(2014) Ray tracing with OpenGL Compute Shaders</a> by <strong>Kai Burjack</strong> - Detailed tutorial series about ray tracing using OpenGL (LWJGL).</li>
+<li><a href="http://richg42.blogspot.com.au/2014/05/things-that-drive-me-nuts-about-opengl.html">(2014) Things that drive me nuts about OpenGL</a> by <strong>Rich Geldreich</strong> - Constructive (or not) criticism of GL API.</li>
+<li><a href="https://fgiesen.wordpress.com/2011/07/09/a-trip-through-the-graphics-pipeline-2011-index">(2011) A trip through the graphics pipeline</a> by <strong>Fabian Giesen</strong> - Comprehensive and rich series about the D3D/OpenGL graphics pipeline.</li>
+<li><a href="http://duriansoftware.com/joe/An-intro-to-modern-OpenGL.-Chapter-1:-The-Graphics-Pipeline.html">(2010) What is OpenGL?</a> by <strong>Joe Groff</strong> - Brief introduction to the building blocks of OpenGL.</li>
+</ul>
+<h2>Books</h2>
+<p><em>Popular books about OpenGL</em></p>
+<ul>
+<li><a href="http://www.amazon.com/dp/1558603875">A Trip Down the Graphics Pipeline</a> by <strong>Jim Blinn</strong> - Popular book that contains wealth information about the graphics pipeline, and of the best sources to learn the core concepts of Computer Graphics.</li>
+<li><a href="http://www.amazon.com/dp/0321399528">Computer Graphics</a> by <strong>John F. Hughes, et al.</strong> - Computer Graphics is indeed a must for anyone being involved in the design and implementation of Computer Graphics algorithms. However, this is not a OpenGL focused book, but contains valuable demonstrations of the technology.</li>
+<li><a href="http://www.amazon.com/dp/0132545233">Interactive Computer Graphics</a> by <strong>Edward Angel and Dave Shreiner</strong> - It provides several examples using OpenGL and it covers several aspects at once, but if you are trying to learn OpenGL on your own you might not find this helpful.</li>
+<li><a href="http://www.amazon.com/dp/0321933885">OpenGL ES 3.0 Programming Guide</a> by <strong>Dan Ginsburg, et al.</strong> - It presents all the necessary information to use the OpenGL ES 3.0 API in a clear manner.</li>
+<li><a href="http://www.amazon.com/dp/1439893764">OpenGL Insights</a> by <strong>Patrick Cozzi, Christophe Riccio</strong> - Rich and comprehensive resource to learn techniques and tips, covering several advanced topics of OpenGL.</li>
+<li><a href="http://www.amazon.com/dp/0321773039">OpenGL Programming Guide</a> by <strong>Dave Shreiner, et al.</strong> - It does a good job covering the basics and providing clear reference of the API.</li>
+<li><a href="http://www.amazon.com/dp/0321637631">OpenGL Shading Language</a> by <strong>Randi J. Rost, et al.</strong> - Very clear and well written book about Shading Language. Also, it provides several explanations of writing shaders.</li>
+<li><a href="http://www.amazon.com/dp/0321712617">OpenGL SuperBible</a> by <strong>Richard S. Wright, et al.</strong> - It covers the basic concepts of computer graphics and provides clear examples using OpenGL. Definitely, it is a must for beginners.</li>
+<li><a href="http://www.amazon.com/dp/1568814240">Real-Time Rendering</a> by <strong>Tomas Akenine-Moller, Eric Haines and Naty Hoffman</strong> - It does a good job at explaining concepts for game engine, basis for game client programming as well as the necessary knowledge for understanding DirectX and OpenGL.</li>
+</ul>
+<h2>Debug</h2>
+<p><em>Debugging and profiling libraries</em></p>
+<ul>
+<li><a href="http://apitrace.github.io">apitrace</a> - Tools for tracing OpenGL, Direct3D, and other graphics APIs.</li>
+<li><a href="https://github.com/GPUOpen-Tools/CodeXL">CodeXL</a> - AMD's tool suite that includes debugger, profiler and frame/shader analysis.</li>
+<li><a href="http://glsl-debugger.github.io">GL-SL Debugger</a> - Tool for debugging OpenGL programs.</li>
+<li><a href="https://github.com/dtrebilco/glintercept">GLIntercept</a> - OpenGL function call interceptor for Windows.</li>
+<li><a href="https://software.intel.com/en-us/gpa">Intel-GPA</a> - Intel's OpenGL Graphics Performance Analyzer.</li>
+<li><a href="https://developer.nvidia.com/nvidia-nsight-visual-studio-edition">NVIDIA® Nsight™</a> - Development platform for graphics applications.</li>
+<li><a href="https://github.com/baldurk/renderdoc">RenderDoc</a> - RenderDoc is a stand-alone graphics debugging tool.</li>
+<li><a href="https://github.com/wolfpld/tracy">tracy</a> - A real time remote telemetry frame profiler for games and other applications.</li>
+<li><a href="https://github.com/ValveSoftware/vogl">vogl</a> - OpenGL capture and playback debugger developed by Valve.</li>
+</ul>
+<h2>GLSL Editors</h2>
+<p><em>Online GLSL Editors</em></p>
+<ul>
+<li><a href="http://glslsandbox.com">GLSL Sandbox</a> - Online live editor for fragment shaders.</li>
+<li><a href="http://glslb.in">GLSLbin</a> - Fragment shader sandbox supporting <a href="https://github.com/stackgl/glslify">glslify</a>.</li>
+<li><a href="http://shdr.bkcore.com">SHDR Editor</a> - Live GLSL shader editor, viewer and validator.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'opengl_README.md';
 
         fetch(markdownFile)
@@ -48,21 +153,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

@@ -8,38 +8,181 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ansible Community Awesome Ansible - Awesome List Resources">
-    <title>Ansible Community Awesome Ansible</title>
+    <meta name="description" content="This is a collaborative community curated list of awesome Ansible resources, tools, Roles, tutorials and other related stuff. Ansible is an open source...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Ansible [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Ansible <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<!--lint disable double-link-->
+<p><a href="https://www.ansible.com/"><img src="ansible_logo.svg" align="right" width="90"></a></p>
+<p>This is a collaborative community curated list of awesome Ansible resources, tools, Roles, tutorials and other related stuff.</p>
+<p><a href="https://www.ansible.com/">Ansible</a> is an open source toolkit, written in Python, it is used for  configuration management, application deployment, continuous delivery, IT infrastructure automation and automation in general.</p>
+<p>:warning: Before editing the list to add your project, take a look at the <a href="https://docs.ansible.com/ansible/devel/community/ecosystem_project_resources.html">Ansible ecosystem project development resources</a>. Let's make sure our users, contributors, and maintainers have the best possible experience!</p>
+<!--lint enable double-link-->
+<!--lint disable-->
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#awesome-ansible-">Awesome Ansible </a></li>
+<li><a href="#contents">Contents</a></li>
+<li><a href="#official-resources">Official resources</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#blog-posts-and-opinions">Blog posts and opinions</a><ul>
+<li><a href="#german">German</a></li>
+<li><a href="#french">French</a></li>
+</ul>
+</li>
+<li><a href="#playbooks-roles-and-collections">Playbooks, Roles and Collections</a></li>
+<li><a href="#editor-and-ide-integrations">Editor and IDE Integrations</a></li>
+</ul>
+<!--lint enable-->
+
+<h2>Official resources</h2>
+<blockquote>
+<p>Official resources by and for Ansible.</p>
+</blockquote>
+<ul>
+<li><a href="https://docs.ansible.com/ansible/latest/user_guide/index.html">Latest Ansible Documentation</a> - Latest user guide and documentation for Ansible.</li>
+<li><a href="https://galaxy.ansible.com/">Ansible Galaxy Website</a> - Official repository and community site for Ansible Roles.</li>
+<li><a href="https://www.ansible.com/blog">Ansible Blog</a> - Official Ansible blog.</li>
+</ul>
+<h2>Community</h2>
+<p>Join the Ansible forum:</p>
+<!--lint disable double-link-->
+<ul>
+<li><a href="https://forum.ansible.com/c/help/6">Get Help</a> - Get help or help others. Please add appropriate tags if you start new discussions.</li>
+<li><a href="https://docs.ansible.com/ansible/devel/community/communication.html#the-bullhorn">Bullhorn newsletter</a> - Used to announce releases and important changes.</li>
+<li><a href="https://forum.ansible.com/c/chat/4">Social Spaces</a> - Gather and interact with fellow enthusiasts.</li>
+<li><a href="https://forum.ansible.com/c/news/5">News &amp; Announcements</a> - Track project-wide announcements including social events.</li>
+</ul>
+<p>For more information about communication, see the <a href="https://docs.ansible.com/ansible/devel/community/communication.html">Ansible communication guide</a>.</p>
+<!--lint enable double-link-->
+
+<h2>Tutorials</h2>
+<blockquote>
+<p>Tutorials and courses to learn Ansible.</p>
+</blockquote>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorial_series/how-to-manage-remote-servers-with-ansible">How To Manage Remote Servers with Ansible</a> - This Tutorial goes over how to use Ansible to manage remote servers.</li>
+<li><a href="https://github.com/leucos/ansible-tuto">Ansible Tutorial by leucos</a> - 12 Step Tutorial for Ansible.</li>
+<li><a href="https://hackr.io/tutorials/learn-ansible">Programming Community Curated Resources for learning Ansible</a> - A list of recommended resources.</li>
+<li><a href="https://www.toptechskills.com/ansible-tutorials-courses/">Ansible TopTechSkills.com Tutorial Series on Ansible</a> - Tutorials on how to Install and use Ansible.</li>
+<li><a href="https://ansible.github.io/workshops/exercises/ansible_rhel/">Official Ansible labs by Red Hat</a> - Training Course for Ansible Automation Platform.</li>
+<li><a href="https://www.digitalocean.com/community/tags/ansible?subtype=tutorial">Ansible Tutorials on DigitalOcean</a> - Basic tutorials on DigitalOcean.com.</li>
+<li><a href="http://bluebanquise.com/documentation/releases/1.5.0/training_ansible.html">Ansible Tutorial by BlueBanquise team</a> - Basic Ansible tutorial.</li>
+<li><a href="https://spacelift.io/blog/ansible-tutorial">Ansible Tutorial for Beginners: Playbook &amp; Examples</a> - Introduction to Ansible for beginners.</li>
+<li><a href="https://ansible.puzzle.ch/">Ansible Tutorials for Beginners and Advanced</a> - Workshop on multiple topics with different levels of difficulty.</li>
+<li><a href="https://github.com/geerlingguy/ansible-for-devops">Ansible For DevOps</a> - This repository contains Ansible examples developed to support different sections of <code>Ansible for DevOps</code> by Jeff Geerling, which is listed in the following section of books about Ansible.</li>
+</ul>
+<h2>Books</h2>
+<blockquote>
+<p>Books about Ansible.</p>
+</blockquote>
+<ul>
+<li><a href="https://www.ansiblefordevops.com/">Ansible for DevOps</a> - This book helps to start using Ansible to provision and manage anywhere from one to thousands of servers. Free sample can be read <a href="https://leanpub.com/ansible-for-devops/read_sample">here</a>.</li>
+<li><a href="https://www.ansibleforkubernetes.com/">Ansible for Kubernetes</a> - Deploy and maintain real-world massively-scalable and high-available applications with Ansible.</li>
+<li><a href="https://www.digitalocean.com/community/books/how-to-manage-remote-servers-with-ansible-ebook">How To Manage Remote Servers with Ansible eBook</a> - This book is based on the "How To Manage Remote Servers with Ansible" tutorial series.</li>
+<li><a href="https://www.amazon.co.uk/Tao-Ansible-Mastering-Automation-Simplicity/dp/B0DTTTM3XG">The Tao of Ansible: Mastering Automation with Simplicity and Grace</a> - A guide to Ansible that emphasizes simplicity, elegance, and the philosophy of automation without complexity.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Ansible <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<!--lint disable double-link-->
+<p><a href="https://www.ansible.com/"><img src="ansible_logo.svg" align="right" width="90"></a></p>
+<p>This is a collaborative community curated list of awesome Ansible resources, tools, Roles, tutorials and other related stuff.</p>
+<p><a href="https://www.ansible.com/">Ansible</a> is an open source toolkit, written in Python, it is used for  configuration management, application deployment, continuous delivery, IT infrastructure automation and automation in general.</p>
+<p>:warning: Before editing the list to add your project, take a look at the <a href="https://docs.ansible.com/ansible/devel/community/ecosystem_project_resources.html">Ansible ecosystem project development resources</a>. Let's make sure our users, contributors, and maintainers have the best possible experience!</p>
+<!--lint enable double-link-->
+<!--lint disable-->
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#awesome-ansible-">Awesome Ansible </a></li>
+<li><a href="#contents">Contents</a></li>
+<li><a href="#official-resources">Official resources</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#blog-posts-and-opinions">Blog posts and opinions</a><ul>
+<li><a href="#german">German</a></li>
+<li><a href="#french">French</a></li>
+</ul>
+</li>
+<li><a href="#playbooks-roles-and-collections">Playbooks, Roles and Collections</a></li>
+<li><a href="#editor-and-ide-integrations">Editor and IDE Integrations</a></li>
+</ul>
+<!--lint enable-->
+
+<h2>Official resources</h2>
+<blockquote>
+<p>Official resources by and for Ansible.</p>
+</blockquote>
+<ul>
+<li><a href="https://docs.ansible.com/ansible/latest/user_guide/index.html">Latest Ansible Documentation</a> - Latest user guide and documentation for Ansible.</li>
+<li><a href="https://galaxy.ansible.com/">Ansible Galaxy Website</a> - Official repository and community site for Ansible Roles.</li>
+<li><a href="https://www.ansible.com/blog">Ansible Blog</a> - Official Ansible blog.</li>
+</ul>
+<h2>Community</h2>
+<p>Join the Ansible forum:</p>
+<!--lint disable double-link-->
+<ul>
+<li><a href="https://forum.ansible.com/c/help/6">Get Help</a> - Get help or help others. Please add appropriate tags if you start new discussions.</li>
+<li><a href="https://docs.ansible.com/ansible/devel/community/communication.html#the-bullhorn">Bullhorn newsletter</a> - Used to announce releases and important changes.</li>
+<li><a href="https://forum.ansible.com/c/chat/4">Social Spaces</a> - Gather and interact with fellow enthusiasts.</li>
+<li><a href="https://forum.ansible.com/c/news/5">News &amp; Announcements</a> - Track project-wide announcements including social events.</li>
+</ul>
+<p>For more information about communication, see the <a href="https://docs.ansible.com/ansible/devel/community/communication.html">Ansible communication guide</a>.</p>
+<!--lint enable double-link-->
+
+<h2>Tutorials</h2>
+<blockquote>
+<p>Tutorials and courses to learn Ansible.</p>
+</blockquote>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorial_series/how-to-manage-remote-servers-with-ansible">How To Manage Remote Servers with Ansible</a> - This Tutorial goes over how to use Ansible to manage remote servers.</li>
+<li><a href="https://github.com/leucos/ansible-tuto">Ansible Tutorial by leucos</a> - 12 Step Tutorial for Ansible.</li>
+<li><a href="https://hackr.io/tutorials/learn-ansible">Programming Community Curated Resources for learning Ansible</a> - A list of recommended resources.</li>
+<li><a href="https://www.toptechskills.com/ansible-tutorials-courses/">Ansible TopTechSkills.com Tutorial Series on Ansible</a> - Tutorials on how to Install and use Ansible.</li>
+<li><a href="https://ansible.github.io/workshops/exercises/ansible_rhel/">Official Ansible labs by Red Hat</a> - Training Course for Ansible Automation Platform.</li>
+<li><a href="https://www.digitalocean.com/community/tags/ansible?subtype=tutorial">Ansible Tutorials on DigitalOcean</a> - Basic tutorials on DigitalOcean.com.</li>
+<li><a href="http://bluebanquise.com/documentation/releases/1.5.0/training_ansible.html">Ansible Tutorial by BlueBanquise team</a> - Basic Ansible tutorial.</li>
+<li><a href="https://spacelift.io/blog/ansible-tutorial">Ansible Tutorial for Beginners: Playbook &amp; Examples</a> - Introduction to Ansible for beginners.</li>
+<li><a href="https://ansible.puzzle.ch/">Ansible Tutorials for Beginners and Advanced</a> - Workshop on multiple topics with different levels of difficulty.</li>
+<li><a href="https://github.com/geerlingguy/ansible-for-devops">Ansible For DevOps</a> - This repository contains Ansible examples developed to support different sections of <code>Ansible for DevOps</code> by Jeff Geerling, which is listed in the following section of books about Ansible.</li>
+</ul>
+<h2>Books</h2>
+<blockquote>
+<p>Books about Ansible.</p>
+</blockquote>
+<ul>
+<li><a href="https://www.ansiblefordevops.com/">Ansible for DevOps</a> - This book helps to start using Ansible to provision and manage anywhere from one to thousands of servers. Free sample can be read <a href="https://leanpub.com/ansible-for-devops/read_sample">here</a>.</li>
+<li><a href="https://www.ansibleforkubernetes.com/">Ansible for Kubernetes</a> - Deploy and maintain real-world massively-scalable and high-available applications with Ansible.</li>
+<li><a href="https://www.digitalocean.com/community/books/how-to-manage-remote-servers-with-ansible-ebook">How To Manage Remote Servers with Ansible eBook</a> - This book is based on the "How To Manage Remote Servers with Ansible" tutorial series.</li>
+<li><a href="https://www.amazon.co.uk/Tao-Ansible-Mastering-Automation-Simplicity/dp/B0DTTTM3XG">The Tao of Ansible: Mastering Automation with Simplicity and Grace</a> - A guide to Ansible that emphasizes simplicity, elegance, and the philosophy of automation without complexity.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'ansible_README.md';
 
         fetch(markdownFile)
@@ -48,21 +191,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

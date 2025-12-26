@@ -8,38 +8,211 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sobolevn Awesome Cryptography - Awesome List Resources">
-    <title>Sobolevn Awesome Cryptography</title>
+    <meta name="description" content="A curated list of cryptography resources and links. - Theory - Algorithms - Symmetric encryption - Asymmetric encryption - Hash functions - Articles - Books -...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Cryptography [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Cryptography <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p align="center">
+  <img src="https://github.com/sobolevn/awesome-cryptography/blob/master/awesome-crypto.png?raw=true" alt="Awesome Cryptography">
+</p>
+
+<p><a href="https://twitter.com/awe_crypto_bot"><img alt="Follow us on twitter" src="https://img.shields.io/twitter/follow/awe_crypto_bot.svg?style=social&amp;maxAge=0" /></a></p>
+<p>A curated list of cryptography resources and links.</p>
+<h2>Contents</h2>
+<!--lint disable no-missing-blank-lines alphabetize-lists list-item-punctuation-->
+
+<ul>
+<li><a href="#theory">Theory</a></li>
+<li><a href="#algorithms">Algorithms</a><ul>
+<li><a href="#symmetric-encryption">Symmetric encryption</a></li>
+<li><a href="#asymmetric-encryption">Asymmetric encryption</a></li>
+<li><a href="#hash-functions">Hash functions</a></li>
+</ul>
+</li>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#courses">Courses</a></li>
+<li><a href="#other-lists">Other lists</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#standalone">Standalone</a></li>
+<li><a href="#plugins">Plugins</a><ul>
+<li><a href="#git">Git</a></li>
+</ul>
+</li>
+<li><a href="#playgrounds">Playgrounds</a></li>
+<li><a href="#frameworks-and-libs">Frameworks and Libs</a></li>
+<li><a href="#c">C</a></li>
+<li><a href="#c-sharp">C#</a></li>
+<li><a href="#c-1">C++</a></li>
+<li><a href="#clojure">Clojure</a></li>
+<li><a href="#common-lisp">Common Lisp</a></li>
+<li><a href="#delphi">Delphi</a></li>
+<li><a href="#elixir">Elixir</a></li>
+<li><a href="#erlang">Erlang</a></li>
+<li><a href="#go">Golang</a></li>
+<li><a href="#haskell">Haskell</a></li>
+<li><a href="#haxe">Haxe</a></li>
+<li><a href="#java">Java</a></li>
+<li><a href="#javascript">JavaScript</a></li>
+<li><a href="#julia">Julia</a></li>
+<li><a href="#lua">Lua</a></li>
+<li><a href="#ocaml">OCaml</a></li>
+<li><a href="#objective-c">Objective-C</a></li>
+<li><a href="#php">PHP</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#r">R</a></li>
+<li><a href="#ruby">Ruby</a></li>
+<li><a href="#rust">Rust</a></li>
+<li><a href="#scala">Scala</a></li>
+<li><a href="#scheme">Scheme</a></li>
+<li><a href="#swift">Swift</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#mailing-lists">Mailing lists</a></li>
+<li><a href="#web-tools">Web-tools</a></li>
+<li><a href="#web-sites">Web-sites</a></li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<!--lint enable no-missing-blank-lines alphabetize-lists list-item-punctuation-->
+
+<hr />
+<h2>Theory</h2>
+<h3>Algorithms</h3>
+<h4>Symmetric encryption</h4>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Triple_DES">3DES</a> - Symmetric-key block cipher (or Triple Data Encryption Algorithm (TDEA or Triple DEA), which applies the Data Encryption Standard (DES) cipher algorithm three times to each data block.</li>
+<li><a href="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard">AES</a> - Symmetric-key block cipher algorithm and U.S. government standard for secure and classified data encryption and decryption (also known as Rijndael).</li>
+<li><a href="https://en.wikipedia.org/wiki/Blowfish_(cipher)">Blowfish</a> - Symmetric-key block cipher, designed in 1993 by Bruce Schneier. Notable features of the design include key-dependent S-boxes and a highly complex key schedule.</li>
+</ul>
+<h4>Asymmetric encryption</h4>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange">DH</a> - A method of exchanging cryptographic keys securely over a public channel. Unlike RSA, the Diffie-Hellman Key Exchange is not encryption, and is only a way for two parties to agree on a shared secret value. Since the keys generated are completely pseudo-random, DH key exchanges can provide forward secrecy (https://en.wikipedia.org/wiki/Forward_secrecy).</li>
+<li><a href="https://en.wikipedia.org/wiki/Elliptic-curve_cryptography">ECC</a> - Public-key cryptosystems based on the algebraic structure of elliptic curves over finite fields.</li>
+<li><a href="https://en.wikipedia.org/wiki/RSA_(cryptosystem)">RSA</a> - One of the first practical public-key cryptosystems and is widely used for secure data transmission. In RSA, this asymmetry is based on the practical difficulty of factoring the product of two large prime numbers, the factoring problem.</li>
+</ul>
+<h4>Transform Encryption</h4>
+<ul>
+<li><a href="https://docs.ironcorelabs.com/concepts/transform-encryption">Transform Encryption (aka Proxy Re-Encryption)</a> - Transform encryption uses three  mathematically related keys: one to encrypt plaintext to a recipient, a second to decrypt the ciphertext, and a third to transform ciphertext encrypted to one recipient so it can be decrypted by a different recipient.</li>
+</ul>
+<h4>Hash functions</h4>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/MD5">MD5</a> - Widely used hash function producing a 128-bit hash value. MD5 was initially designed to be used as a cryptographic hash function, but it has been found to suffer from extensive vulnerabilities. It can still be used as a checksum to verify data integrity, but only against unintentional corruption.</li>
+<li><a href="https://en.wikipedia.org/wiki/SHA-1">SHA1</a> -  Cryptographic hash function designed by the NSA. SHA-1 produces a 160-bit hash value known as a message digest. SHA-1 is no longer considered secure against well-funded opponents.</li>
+<li><a href="https://en.wikipedia.org/wiki/SHA-2">SHA2</a> - Set of hash functions designed by the NSA. SHA-256 and SHA-512 are novel hash functions computed with 32-bit and 64-bit words, respectively. They use different shift amounts and additive constants, but their structures are otherwise virtually identical, differing only in the number of rounds.</li>
+<li><a href="https://en.wikipedia.org/wiki/SHA-3">SHA3</a> - Cryptographic hash function that produces a fixed-size output, typically 224, 256, 384, or 512 bits, from variable-size input data. It is part of the SHA-3 family of cryptographic algorithms designed to resist attacks from quantum computers and offers security properties such as pre-image resistance, second pre-image resistance, and collision resistance.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Cryptography <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p align="center">
+  <img src="https://github.com/sobolevn/awesome-cryptography/blob/master/awesome-crypto.png?raw=true" alt="Awesome Cryptography">
+</p>
+
+<p><a href="https://twitter.com/awe_crypto_bot"><img alt="Follow us on twitter" src="https://img.shields.io/twitter/follow/awe_crypto_bot.svg?style=social&amp;maxAge=0" /></a></p>
+<p>A curated list of cryptography resources and links.</p>
+<h2>Contents</h2>
+<!--lint disable no-missing-blank-lines alphabetize-lists list-item-punctuation-->
+
+<ul>
+<li><a href="#theory">Theory</a></li>
+<li><a href="#algorithms">Algorithms</a><ul>
+<li><a href="#symmetric-encryption">Symmetric encryption</a></li>
+<li><a href="#asymmetric-encryption">Asymmetric encryption</a></li>
+<li><a href="#hash-functions">Hash functions</a></li>
+</ul>
+</li>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#courses">Courses</a></li>
+<li><a href="#other-lists">Other lists</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#standalone">Standalone</a></li>
+<li><a href="#plugins">Plugins</a><ul>
+<li><a href="#git">Git</a></li>
+</ul>
+</li>
+<li><a href="#playgrounds">Playgrounds</a></li>
+<li><a href="#frameworks-and-libs">Frameworks and Libs</a></li>
+<li><a href="#c">C</a></li>
+<li><a href="#c-sharp">C#</a></li>
+<li><a href="#c-1">C++</a></li>
+<li><a href="#clojure">Clojure</a></li>
+<li><a href="#common-lisp">Common Lisp</a></li>
+<li><a href="#delphi">Delphi</a></li>
+<li><a href="#elixir">Elixir</a></li>
+<li><a href="#erlang">Erlang</a></li>
+<li><a href="#go">Golang</a></li>
+<li><a href="#haskell">Haskell</a></li>
+<li><a href="#haxe">Haxe</a></li>
+<li><a href="#java">Java</a></li>
+<li><a href="#javascript">JavaScript</a></li>
+<li><a href="#julia">Julia</a></li>
+<li><a href="#lua">Lua</a></li>
+<li><a href="#ocaml">OCaml</a></li>
+<li><a href="#objective-c">Objective-C</a></li>
+<li><a href="#php">PHP</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#r">R</a></li>
+<li><a href="#ruby">Ruby</a></li>
+<li><a href="#rust">Rust</a></li>
+<li><a href="#scala">Scala</a></li>
+<li><a href="#scheme">Scheme</a></li>
+<li><a href="#swift">Swift</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#mailing-lists">Mailing lists</a></li>
+<li><a href="#web-tools">Web-tools</a></li>
+<li><a href="#web-sites">Web-sites</a></li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<!--lint enable no-missing-blank-lines alphabetize-lists list-item-punctuation-->
+
+<hr />
+<h2>Theory</h2>
+<h3>Algorithms</h3>
+<h4>Symmetric encryption</h4>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Triple_DES">3DES</a> - Symmetric-key block cipher (or Triple Data Encryption Algorithm (TDEA or Triple DEA), which applies the Data Encryption Standard (DES) cipher algorithm three times to each data block.</li>
+<li><a href="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard">AES</a> - Symmetric-key block cipher algorithm and U.S. government standard for secure and classified data encryption and decryption (also known as Rijndael).</li>
+<li><a href="https://en.wikipedia.org/wiki/Blowfish_(cipher)">Blowfish</a> - Symmetric-key block cipher, designed in 1993 by Bruce Schneier. Notable features of the design include key-dependent S-boxes and a highly complex key schedule.</li>
+</ul>
+<h4>Asymmetric encryption</h4>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange">DH</a> - A method of exchanging cryptographic keys securely over a public channel. Unlike RSA, the Diffie-Hellman Key Exchange is not encryption, and is only a way for two parties to agree on a shared secret value. Since the keys generated are completely pseudo-random, DH key exchanges can provide forward secrecy (https://en.wikipedia.org/wiki/Forward_secrecy).</li>
+<li><a href="https://en.wikipedia.org/wiki/Elliptic-curve_cryptography">ECC</a> - Public-key cryptosystems based on the algebraic structure of elliptic curves over finite fields.</li>
+<li><a href="https://en.wikipedia.org/wiki/RSA_(cryptosystem)">RSA</a> - One of the first practical public-key cryptosystems and is widely used for secure data transmission. In RSA, this asymmetry is based on the practical difficulty of factoring the product of two large prime numbers, the factoring problem.</li>
+</ul>
+<h4>Transform Encryption</h4>
+<ul>
+<li><a href="https://docs.ironcorelabs.com/concepts/transform-encryption">Transform Encryption (aka Proxy Re-Encryption)</a> - Transform encryption uses three  mathematically related keys: one to encrypt plaintext to a recipient, a second to decrypt the ciphertext, and a third to transform ciphertext encrypted to one recipient so it can be decrypted by a different recipient.</li>
+</ul>
+<h4>Hash functions</h4>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/MD5">MD5</a> - Widely used hash function producing a 128-bit hash value. MD5 was initially designed to be used as a cryptographic hash function, but it has been found to suffer from extensive vulnerabilities. It can still be used as a checksum to verify data integrity, but only against unintentional corruption.</li>
+<li><a href="https://en.wikipedia.org/wiki/SHA-1">SHA1</a> -  Cryptographic hash function designed by the NSA. SHA-1 produces a 160-bit hash value known as a message digest. SHA-1 is no longer considered secure against well-funded opponents.</li>
+<li><a href="https://en.wikipedia.org/wiki/SHA-2">SHA2</a> - Set of hash functions designed by the NSA. SHA-256 and SHA-512 are novel hash functions computed with 32-bit and 64-bit words, respectively. They use different shift amounts and additive constants, but their structures are otherwise virtually identical, differing only in the number of rounds.</li>
+<li><a href="https://en.wikipedia.org/wiki/SHA-3">SHA3</a> - Cryptographic hash function that produces a fixed-size output, typically 224, 256, 384, or 512 bits, from variable-size input data. It is part of the SHA-3 family of cryptographic algorithms designed to resist attacks from quantum computers and offers security properties such as pre-image resistance, second pre-image resistance, and collision resistance.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'cryptography_README.md';
 
         fetch(markdownFile)
@@ -48,21 +221,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

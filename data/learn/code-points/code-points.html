@@ -8,38 +8,279 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Codepoints Awesome Codepoints - Awesome List Resources">
-    <title>Codepoints Awesome Codepoints</title>
+    <meta name="description" content="This is a curated list of characters in Unicode, that have interesting (and maybe not widely known) features or are awesome in some other way. 1. Standalone...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Code Points [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Code Points <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>This is a curated list of characters in Unicode, that have interesting (and
+maybe not widely known) features or are awesome in some other way.</p>
+<h2>Table of Contents</h2>
+<ol>
+<li><a href="#standalone-code-points">Standalone code points</a></li>
+<li><a href="#code-points-that-affect-others">Code points that affect others</a><ol>
+<li><a href="#breaking-and-gluing-other-characters">Breaking and Gluing other characters</a></li>
+</ol>
+</li>
+<li><a href="#record-holders-and-extremes">Record holders and extremes</a></li>
+<li><a href="#for-funsies">For funsies</a><ol>
+<li><a href="#games">Games</a></li>
+</ol>
+</li>
+<li><a href="#other-lists-of-code-points">Other Lists of Code Points</a></li>
+<li><a href="#contributing-your-code-points">Contributing</a></li>
+<li><a href="#license">License</a></li>
+</ol>
+<h2>Standalone Code Points</h2>
+<ul>
+<li>The code points of the Unicode blocks <a href="https://codepoints.net/box_drawing">Box
+    Drawing</a> (U+2500 to U+257F) and <a href="https://codepoints.net/block_elements">Block
+    Elements</a> (U+2580 to U+259F) cover
+    most of your monospace command-line visualization needs.<pre><code>╭───────╮
+│Unicode│
+│rules! │
+╰┬─────┬╯
+</code></pre>
+<ul>
+<li><a href="https://codepoints.net/U+2E2E">U+2E2E</a> REVERSED QUESTION MARK - the “irony
+mark” to express irony/sarcasm. A useful character&#x2E2E;</li>
+<li><a href="https://codepoints.net/U+D800">U+D800</a> to
+<a href="https://codepoints.net/U+DFFF">U+DFFF</a> - surrogate code points. They are
+only reserved to ease <a href="https://en.wikipedia.org/wiki/UTF-16">UTF-16
+encoding</a>.</li>
+<li><a href="https://codepoints.net/U+FEFF">U+FEFF</a> ZERO WIDTH NO-BREAK SPACE - it’s name
+suggests, that it can be used like U+2060 WORD JOINER. And in fact the
+latter was introduced to inherit its semantics. This is because U+FEFF had
+become a special beacon called the <a href="https://en.wikipedia.org/wiki/Byte_order_mark">byte order
+mark</a>, that was placed on
+the beginning of some UTF-8 files. In complying software (including many
+text editors) this character is stripped from the start of a file and
+handled as metadata. In non-complying software (like the PHP interpreter)
+this leads to all sorts of fun behaviour.</li>
+<li><a href="https://codepoints.net/U+FFFD">U+FFFD</a> REPLACEMENT CHARACTER - when a
+character cannot be displayed (e.g., decoding an erroneous UTF-8 sequency),
+this code point steps into the breach.</li>
+<li><a href="https://codepoints.net/U+1D455">U+1D455</a> is missing. It would be an italic
+small “h”. It was not encoded, because it would be identical to the Planck
+constant ℎ (<a href="https://codepoints.net/U+210E">U+210E</a>).</li>
+<li><a href="https://codepoints.net/U+FF03">U+FF03</a> FULLWIDTH NUMBER SIGN - it is the 
+"Japanese Hashtag" <code>＃</code>. Sites like Twitter accept it as equivalent to the 
+regular <code>#</code> (<a href="https://codepoints.net/U+0023">U+0023</a>).</li>
+</ul>
+</li>
+</ul>
+<h2>Code Points that Affect Others</h2>
+<ul>
+<li>
+<p><a href="https://codepoints.net/U+202D">U+202D</a> and
+    <a href="https://codepoints.net/U+202E">U+202E</a> - change the text direction.
+    Relevant XKCD:</p>
+<p><a href="https://xkcd.com/1137/"><img alt="" src="http://imgs.xkcd.com/comics/rtl.png" /></a>
+* <a href="https://codepoints.net/U+FE0E">U+FE0E</a> VARIATION SELECTOR-15 - force
+black-<em>&amp;</em>-white emoji. If this code point follows an emoji, an explicit
+monochrome rendering of the emoji is requested (if the client supports it).
+* <a href="https://codepoints.net/U+FE0F">U+FE0F</a> VARIATION SELECTOR-16 - force
+colorful emoji. If this code point follows an emoji, an explicit colorful
+rendering of the emoji is requested (if the client supports it).
+* Diacritics and combining marks: There is a <a href="https://codepoints.net/search?gc=Mn">host of
+characters</a>, that add
+to the characters before. Those are called Combining Marks. Unicode
+provides a <a href="http://unicode.org/faq/char_combmark.html">handy FAQ</a> on the
+details, but in a nutshell: If you add one after a character, it is placed
+on top of that previous one. So, <code>a + ̊ = å</code>. This <em>may</em> lead to all kinds
+of funny problems, because for some combinations there are pre-composed
+characters. Our little <code>å</code> here can also be encoded as U+00E5. You might
+note, that while this has a length of one character, the combination of <code>a</code>
+and combining ring has a length of two characters.</p>
+<p>Of course, one can also do fun things with those characters like
+<a href="http://stackoverflow.com/a/1732454/113195">this answer</a> on StackOverflow.
+* The <a href="https://codepoints.net/U+1F1E6..U+1F1FF">Regional Indicator Symbols</a>
+U+1F1E6 to U+1F1FF resemble the 26 latin characters. They are used to
+create flag emoji. Since the Unicode consortium didn’t feel like getting on
+board with international politics, the solution to flags is to combine
+these 26 characters to the respective ISO code for a country. Examples:</p>
+<table>
+<thead>
+<tr>
+<th>Country</th>
+<th>ISO Code</th>
+<th>Code Points</th>
+<th>Emoji (if supported)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>USA</td>
+<td>US</td>
+<td>U+1F1FA + U+1F1F8</td>
+<td>&#x1F1FA;&#x1F1F8;</td>
+</tr>
+<tr>
+<td>Germany</td>
+<td>DE</td>
+<td>U+1F1E9 + U+1F1EA</td>
+<td>&#x1F1E9;&#x1F1EA;</td>
+</tr>
+<tr>
+<td>China</td>
+<td>CN</td>
+<td>U+1F1E8 + U+1F1F3</td>
+<td>&#x1F1E8;&#x1F1F3;</td>
+</tr>
+<tr>
+<td>* Skin color of emoji: There are five code points, that control the skin color</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Code Points <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>This is a curated list of characters in Unicode, that have interesting (and
+maybe not widely known) features or are awesome in some other way.</p>
+<h2>Table of Contents</h2>
+<ol>
+<li><a href="#standalone-code-points">Standalone code points</a></li>
+<li><a href="#code-points-that-affect-others">Code points that affect others</a><ol>
+<li><a href="#breaking-and-gluing-other-characters">Breaking and Gluing other characters</a></li>
+</ol>
+</li>
+<li><a href="#record-holders-and-extremes">Record holders and extremes</a></li>
+<li><a href="#for-funsies">For funsies</a><ol>
+<li><a href="#games">Games</a></li>
+</ol>
+</li>
+<li><a href="#other-lists-of-code-points">Other Lists of Code Points</a></li>
+<li><a href="#contributing-your-code-points">Contributing</a></li>
+<li><a href="#license">License</a></li>
+</ol>
+<h2>Standalone Code Points</h2>
+<ul>
+<li>The code points of the Unicode blocks <a href="https://codepoints.net/box_drawing">Box
+    Drawing</a> (U+2500 to U+257F) and <a href="https://codepoints.net/block_elements">Block
+    Elements</a> (U+2580 to U+259F) cover
+    most of your monospace command-line visualization needs.<pre><code>╭───────╮
+│Unicode│
+│rules! │
+╰┬─────┬╯
+</code></pre>
+<ul>
+<li><a href="https://codepoints.net/U+2E2E">U+2E2E</a> REVERSED QUESTION MARK - the “irony
+mark” to express irony/sarcasm. A useful character&#x2E2E;</li>
+<li><a href="https://codepoints.net/U+D800">U+D800</a> to
+<a href="https://codepoints.net/U+DFFF">U+DFFF</a> - surrogate code points. They are
+only reserved to ease <a href="https://en.wikipedia.org/wiki/UTF-16">UTF-16
+encoding</a>.</li>
+<li><a href="https://codepoints.net/U+FEFF">U+FEFF</a> ZERO WIDTH NO-BREAK SPACE - it’s name
+suggests, that it can be used like U+2060 WORD JOINER. And in fact the
+latter was introduced to inherit its semantics. This is because U+FEFF had
+become a special beacon called the <a href="https://en.wikipedia.org/wiki/Byte_order_mark">byte order
+mark</a>, that was placed on
+the beginning of some UTF-8 files. In complying software (including many
+text editors) this character is stripped from the start of a file and
+handled as metadata. In non-complying software (like the PHP interpreter)
+this leads to all sorts of fun behaviour.</li>
+<li><a href="https://codepoints.net/U+FFFD">U+FFFD</a> REPLACEMENT CHARACTER - when a
+character cannot be displayed (e.g., decoding an erroneous UTF-8 sequency),
+this code point steps into the breach.</li>
+<li><a href="https://codepoints.net/U+1D455">U+1D455</a> is missing. It would be an italic
+small “h”. It was not encoded, because it would be identical to the Planck
+constant ℎ (<a href="https://codepoints.net/U+210E">U+210E</a>).</li>
+<li><a href="https://codepoints.net/U+FF03">U+FF03</a> FULLWIDTH NUMBER SIGN - it is the 
+"Japanese Hashtag" <code>＃</code>. Sites like Twitter accept it as equivalent to the 
+regular <code>#</code> (<a href="https://codepoints.net/U+0023">U+0023</a>).</li>
+</ul>
+</li>
+</ul>
+<h2>Code Points that Affect Others</h2>
+<ul>
+<li>
+<p><a href="https://codepoints.net/U+202D">U+202D</a> and
+    <a href="https://codepoints.net/U+202E">U+202E</a> - change the text direction.
+    Relevant XKCD:</p>
+<p><a href="https://xkcd.com/1137/"><img alt="" src="http://imgs.xkcd.com/comics/rtl.png" /></a>
+* <a href="https://codepoints.net/U+FE0E">U+FE0E</a> VARIATION SELECTOR-15 - force
+black-<em>&amp;</em>-white emoji. If this code point follows an emoji, an explicit
+monochrome rendering of the emoji is requested (if the client supports it).
+* <a href="https://codepoints.net/U+FE0F">U+FE0F</a> VARIATION SELECTOR-16 - force
+colorful emoji. If this code point follows an emoji, an explicit colorful
+rendering of the emoji is requested (if the client supports it).
+* Diacritics and combining marks: There is a <a href="https://codepoints.net/search?gc=Mn">host of
+characters</a>, that add
+to the characters before. Those are called Combining Marks. Unicode
+provides a <a href="http://unicode.org/faq/char_combmark.html">handy FAQ</a> on the
+details, but in a nutshell: If you add one after a character, it is placed
+on top of that previous one. So, <code>a + ̊ = å</code>. This <em>may</em> lead to all kinds
+of funny problems, because for some combinations there are pre-composed
+characters. Our little <code>å</code> here can also be encoded as U+00E5. You might
+note, that while this has a length of one character, the combination of <code>a</code>
+and combining ring has a length of two characters.</p>
+<p>Of course, one can also do fun things with those characters like
+<a href="http://stackoverflow.com/a/1732454/113195">this answer</a> on StackOverflow.
+* The <a href="https://codepoints.net/U+1F1E6..U+1F1FF">Regional Indicator Symbols</a>
+U+1F1E6 to U+1F1FF resemble the 26 latin characters. They are used to
+create flag emoji. Since the Unicode consortium didn’t feel like getting on
+board with international politics, the solution to flags is to combine
+these 26 characters to the respective ISO code for a country. Examples:</p>
+<table>
+<thead>
+<tr>
+<th>Country</th>
+<th>ISO Code</th>
+<th>Code Points</th>
+<th>Emoji (if supported)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>USA</td>
+<td>US</td>
+<td>U+1F1FA + U+1F1F8</td>
+<td>&#x1F1FA;&#x1F1F8;</td>
+</tr>
+<tr>
+<td>Germany</td>
+<td>DE</td>
+<td>U+1F1E9 + U+1F1EA</td>
+<td>&#x1F1E9;&#x1F1EA;</td>
+</tr>
+<tr>
+<td>China</td>
+<td>CN</td>
+<td>U+1F1E8 + U+1F1F3</td>
+<td>&#x1F1E8;&#x1F1F3;</td>
+</tr>
+<tr>
+<td>* Skin color of emoji: There are five code points, that control the skin color</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'code-points_README.md';
 
         fetch(markdownFile)
@@ -48,21 +289,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

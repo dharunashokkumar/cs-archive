@@ -8,38 +8,155 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Beardicus Awesome Plotters - Awesome List Resources">
-    <title>Beardicus Awesome Plotters</title>
+    <meta name="description" content="A curated list of code and resources for computer-controlled drawing machines and other visual art robots. - Getting Started - Hardware - Plotters - Motor...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Plotters [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Plotters <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p>A curated list of code and resources for computer-controlled drawing machines and other visual art robots.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#getting-started">Getting Started</a></li>
+<li><a href="#hardware">Hardware</a></li>
+<li><a href="#plotters">Plotters</a></li>
+<li><a href="#motor-controllers">Motor Controllers</a></li>
+<li><a href="#accessories-and-adapters">Accessories and Adapters</a></li>
+<li><a href="#pens">Pens</a></li>
+<li><a href="#software">Software</a></li>
+<li><a href="#hpgl">HPGL</a></li>
+<li><a href="#g-code">G-code</a></li>
+<li><a href="#plotter-control">Plotter Control</a></li>
+<li><a href="#vector-creation">Vector Creation</a></li>
+<li><a href="#vector-utilities">Vector Utilities</a></li>
+<li><a href="#fonts">Fonts</a></li>
+<li><a href="#inspiration-instruction-and-research">Inspiration, Instruction, and Research</a></li>
+<li><a href="#manuals-ephemera-papers-and-patents">Manuals, Ephemera, Papers, and Patents</a></li>
+<li><a href="#manuals">Manuals</a></li>
+<li><a href="#ephemera">Ephemera</a></li>
+<li><a href="#papers">Papers</a></li>
+<li><a href="#patents">Patents</a></li>
+<li><a href="#courses">Courses</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#plotter-art-for-sale">Plotter Art For Sale</a></li>
+<li><a href="#other-awesomes">Other Awesomes</a></li>
+</ul>
+<h2>Getting Started</h2>
+<p>A short selection of resources to help you get started with pen plotters.</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=J1NpYzETm3M">What is a pen plotter 2022?</a> - Nice video introduction to modern plotters in 2022.</li>
+<li><a href="https://medium.com/quarterstudio/an-intro-to-pen-plotters-29b6bd4327ba">An Intro to Pen Plotters</a> - Good info on getting started with old HPGL plotters.</li>
+<li><a href="https://mrmrs.cc/writing/pen-plotting-intro/">An Introduction to Pen Plotting</a> - Another getting started article with modern pen plotters.</li>
+<li><a href="https://medium.com/@fogleman/pen-plotter-programming-the-basics-ec0407ab5929">Pen Plotter Programming: The Basics</a> - Some basics of programming vector paths, including sorting, joining, and simplifying.</li>
+<li><a href="https://mattdesl.svbtle.com/pen-plotter-1">Pen Plotter Art &amp; Algorithms</a> - A two-part intro to creating generative graphics for plotting.</li>
+<li><a href="https://www.dirtalleydesign.com/blogs/news/how-to-draw-prints-with-an-axidraw-pen-plotter">How to Draw Generative Art with an Axidraw Pen Plotter</a> - Lots of nice tips, not all specific to the Axidraw, plus some pen reviews and handy 3d-printed tools.</li>
+</ul>
+<h2>Hardware</h2>
+<h3>Plotters</h3>
+<p>Pen plotters available to build or purchase, historical information, and restoration projects.</p>
+<ul>
+<li><a href="https://shop.evilmadscientist.com/productsmenu/846">AxiDraw</a> - Pen plotter from Evil Mad Scientist.</li>
+<li><a href="https://bantamtools.com/collections/bantam-tools-nextdraw">NextDraw</a> - The new AxiDraw, now from Bantam Tools.</li>
+<li><a href="https://bantamtools.com/collections/artframe">ArtFrame</a> - Beefy flatbed pen plotters from Bantam Tools.</li>
+<li><a href="https://www.line-us.com">Line-us</a> - A cute little kickstarted robotic drawing arm.</li>
+<li><a href="https://www.thingiverse.com/thing:2349232">Drawing Robot</a> - 3d-Printable AxiDraw clone w/ Arduino CNC Shield controller running grbl firmware.</li>
+<li><a href="https://www.instructables.com/id/4xiDraw/">4xiDraw</a> - Yet another 3d-printable AxiDraw clone w/ Arduino CNC Shield controller running grbl firmware.</li>
+<li><a href="https://watercolorbot.com">WaterColorBot</a> - XY art robot and software to plot with watercolor paints.</li>
+<li><a href="https://egg-bot.com">EggBot</a> - Pen plotter for egg-shaped and spherical objects.</li>
+<li><a href="https://www.hpmuseum.net/exhibit.php?class=4&amp;cat=24">HP Pen Plotters</a> - Vintage desktop and floor-standing pen plotters from the creator of the HPGL standard. Model 7475A is very common and can usually be found on eBay.</li>
+<li><a href="https://www.youtube.com/watch?v=6_pwzqPk6Gg">Roland Pen Plotters</a> - Vintage flatbed HPGL pen plotters. Search eBay for "roland dxy".</li>
+<li><a href="https://blot.hackclub.com">Blot</a> - An open-source DIY pen plotter from Hack Club with a browser-based editor for generative art.</li>
+<li><a href="https://www.brachiograph.art">BrachioGraph</a> - A cheap and simple plotter made from sticks, servos, and a Raspberry Pi running Python. Here's <a href="https://www.youtube.com/watch?v=u4Jh1daCl60">video of a BrachioGraph talk at PyCon UK</a> from the creator.</li>
+<li><a href="https://www.diymachines.co.uk/arduino-cnc-drawing-machine">Arduino CNC Drawing Machine</a> - A fairly simple 3d-printed AxiDraw-style plotter with good video documentation.</li>
+<li><a href="https://github.com/jamescarruthers/PlotterXY">PlotterXY</a> - A coreXY plotter made from extrusion, 3d-printed parts, and an inexpensive 3d-printer control board.</li>
+<li><a href="https://store.bantamtools.com/collections/bantam-tools-nextdraw">NextDraw</a> - The <a href="https://www.bantamtools.com">Bantam Tools</a> successor to the popular AxiDraw pen plotter.</li>
+<li><a href="https://github.com/openBrushograph/openBrushograph_hardware">openBrushograph</a> - Open source 3d-printable XY gantry and Z-stage designed for automated brush and pen painting.</li>
+<li><a href="https://github.com/Jormono1/Lego-Pen-Plotter">Lego-Pen-Plotter</a> - Pen plotter built entirely of LEGO and programmed with PyBricks and Python.</li>
+<li><a href="https://www.marginallyclever.com/products/makelangelo-5/">Makelangelo 5</a> - Polargraph robot that draws on a wall, window, or easel.</li>
+<li><a href="https://www.nycresistor.com/2017/12/13/reviving-the-apple-410-color-plotter/">Reviving the Apple 410 Color Plotter</a></li>
+<li><a href="https://github.com/phooky/Apple-410">Apple-410</a> - Apple 410 Color Plotter documentation, drivers, and ROM dumps.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Plotters <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p>A curated list of code and resources for computer-controlled drawing machines and other visual art robots.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#getting-started">Getting Started</a></li>
+<li><a href="#hardware">Hardware</a></li>
+<li><a href="#plotters">Plotters</a></li>
+<li><a href="#motor-controllers">Motor Controllers</a></li>
+<li><a href="#accessories-and-adapters">Accessories and Adapters</a></li>
+<li><a href="#pens">Pens</a></li>
+<li><a href="#software">Software</a></li>
+<li><a href="#hpgl">HPGL</a></li>
+<li><a href="#g-code">G-code</a></li>
+<li><a href="#plotter-control">Plotter Control</a></li>
+<li><a href="#vector-creation">Vector Creation</a></li>
+<li><a href="#vector-utilities">Vector Utilities</a></li>
+<li><a href="#fonts">Fonts</a></li>
+<li><a href="#inspiration-instruction-and-research">Inspiration, Instruction, and Research</a></li>
+<li><a href="#manuals-ephemera-papers-and-patents">Manuals, Ephemera, Papers, and Patents</a></li>
+<li><a href="#manuals">Manuals</a></li>
+<li><a href="#ephemera">Ephemera</a></li>
+<li><a href="#papers">Papers</a></li>
+<li><a href="#patents">Patents</a></li>
+<li><a href="#courses">Courses</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#plotter-art-for-sale">Plotter Art For Sale</a></li>
+<li><a href="#other-awesomes">Other Awesomes</a></li>
+</ul>
+<h2>Getting Started</h2>
+<p>A short selection of resources to help you get started with pen plotters.</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=J1NpYzETm3M">What is a pen plotter 2022?</a> - Nice video introduction to modern plotters in 2022.</li>
+<li><a href="https://medium.com/quarterstudio/an-intro-to-pen-plotters-29b6bd4327ba">An Intro to Pen Plotters</a> - Good info on getting started with old HPGL plotters.</li>
+<li><a href="https://mrmrs.cc/writing/pen-plotting-intro/">An Introduction to Pen Plotting</a> - Another getting started article with modern pen plotters.</li>
+<li><a href="https://medium.com/@fogleman/pen-plotter-programming-the-basics-ec0407ab5929">Pen Plotter Programming: The Basics</a> - Some basics of programming vector paths, including sorting, joining, and simplifying.</li>
+<li><a href="https://mattdesl.svbtle.com/pen-plotter-1">Pen Plotter Art &amp; Algorithms</a> - A two-part intro to creating generative graphics for plotting.</li>
+<li><a href="https://www.dirtalleydesign.com/blogs/news/how-to-draw-prints-with-an-axidraw-pen-plotter">How to Draw Generative Art with an Axidraw Pen Plotter</a> - Lots of nice tips, not all specific to the Axidraw, plus some pen reviews and handy 3d-printed tools.</li>
+</ul>
+<h2>Hardware</h2>
+<h3>Plotters</h3>
+<p>Pen plotters available to build or purchase, historical information, and restoration projects.</p>
+<ul>
+<li><a href="https://shop.evilmadscientist.com/productsmenu/846">AxiDraw</a> - Pen plotter from Evil Mad Scientist.</li>
+<li><a href="https://bantamtools.com/collections/bantam-tools-nextdraw">NextDraw</a> - The new AxiDraw, now from Bantam Tools.</li>
+<li><a href="https://bantamtools.com/collections/artframe">ArtFrame</a> - Beefy flatbed pen plotters from Bantam Tools.</li>
+<li><a href="https://www.line-us.com">Line-us</a> - A cute little kickstarted robotic drawing arm.</li>
+<li><a href="https://www.thingiverse.com/thing:2349232">Drawing Robot</a> - 3d-Printable AxiDraw clone w/ Arduino CNC Shield controller running grbl firmware.</li>
+<li><a href="https://www.instructables.com/id/4xiDraw/">4xiDraw</a> - Yet another 3d-printable AxiDraw clone w/ Arduino CNC Shield controller running grbl firmware.</li>
+<li><a href="https://watercolorbot.com">WaterColorBot</a> - XY art robot and software to plot with watercolor paints.</li>
+<li><a href="https://egg-bot.com">EggBot</a> - Pen plotter for egg-shaped and spherical objects.</li>
+<li><a href="https://www.hpmuseum.net/exhibit.php?class=4&amp;cat=24">HP Pen Plotters</a> - Vintage desktop and floor-standing pen plotters from the creator of the HPGL standard. Model 7475A is very common and can usually be found on eBay.</li>
+<li><a href="https://www.youtube.com/watch?v=6_pwzqPk6Gg">Roland Pen Plotters</a> - Vintage flatbed HPGL pen plotters. Search eBay for "roland dxy".</li>
+<li><a href="https://blot.hackclub.com">Blot</a> - An open-source DIY pen plotter from Hack Club with a browser-based editor for generative art.</li>
+<li><a href="https://www.brachiograph.art">BrachioGraph</a> - A cheap and simple plotter made from sticks, servos, and a Raspberry Pi running Python. Here's <a href="https://www.youtube.com/watch?v=u4Jh1daCl60">video of a BrachioGraph talk at PyCon UK</a> from the creator.</li>
+<li><a href="https://www.diymachines.co.uk/arduino-cnc-drawing-machine">Arduino CNC Drawing Machine</a> - A fairly simple 3d-printed AxiDraw-style plotter with good video documentation.</li>
+<li><a href="https://github.com/jamescarruthers/PlotterXY">PlotterXY</a> - A coreXY plotter made from extrusion, 3d-printed parts, and an inexpensive 3d-printer control board.</li>
+<li><a href="https://store.bantamtools.com/collections/bantam-tools-nextdraw">NextDraw</a> - The <a href="https://www.bantamtools.com">Bantam Tools</a> successor to the popular AxiDraw pen plotter.</li>
+<li><a href="https://github.com/openBrushograph/openBrushograph_hardware">openBrushograph</a> - Open source 3d-printable XY gantry and Z-stage designed for automated brush and pen painting.</li>
+<li><a href="https://github.com/Jormono1/Lego-Pen-Plotter">Lego-Pen-Plotter</a> - Pen plotter built entirely of LEGO and programmed with PyBricks and Python.</li>
+<li><a href="https://www.marginallyclever.com/products/makelangelo-5/">Makelangelo 5</a> - Polargraph robot that draws on a wall, window, or easel.</li>
+<li><a href="https://www.nycresistor.com/2017/12/13/reviving-the-apple-410-color-plotter/">Reviving the Apple 410 Color Plotter</a></li>
+<li><a href="https://github.com/phooky/Apple-410">Apple-410</a> - Apple 410 Color Plotter documentation, drivers, and ROM dumps.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'plotters_README.md';
 
         fetch(markdownFile)
@@ -48,21 +165,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

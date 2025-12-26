@@ -8,38 +8,193 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Seancoyne Awesome Coldfusion - Awesome List Resources">
-    <title>Seancoyne Awesome Coldfusion</title>
+    <meta name="description" content="A curated list of awesome ColdFusion frameworks, libraries and software. Inspired by awesome-javascript. Pull requests very welcome. Awesome ColdFusion Engines...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome ColdFusion [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome ColdFusion <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A curated list of awesome ColdFusion frameworks, libraries and software. Inspired by <a href="https://github.com/sorrycc/awesome-javascript">awesome-javascript</a>.</p>
+<p>Pull requests very welcome.</p>
+<ul>
+<li><a href="https://github.com/seancoyne/awesome-coldfusion">Awesome ColdFusion</a><ul>
+<li><a href="#engines">Engines</a></li>
+<li><a href="#application-frameworks">Application Frameworks</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#dependency-injection">Dependency Injection</a></li>
+<li><a href="#cms">Content Management Systems</a></li>
+<li><a href="#nosql">NoSQL</a></li>
+<li><a href="#rest">REST</a></li>
+<li><a href="#other-libraries">Other Libraries</a></li>
+<li><a href="#editors">Editors</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#references">References</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#documentation">Documentation</a></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2>Engines</h2>
+<ul>
+<li><a href="http://www.adobe.com/products/coldfusion-family.html">Adobe ColdFusion</a></li>
+<li><a href="http://lucee.org/">Lucee</a> - Free, Open Source CFML Engine</li>
+</ul>
+<h2>Application Frameworks</h2>
+<ul>
+<li><a href="https://cfwheels.org">CFWheels</a> - An open source CFML framework inspired by Ruby on Rails.</li>
+<li><a href="http://www.coldbox.org">ColdBox</a> - The Enterprise ColdFusion MVC Development Platform</li>
+<li><a href="http://www.farcrycore.org">FarCry</a> - FarCry Core is a web application framework that helps CFML developers build tailor-made content solutions, fast.</li>
+<li><a href="https://github.com/framework-one/fw1">FW/1 - Framework One</a> - a lightweight, convention over configuration, MVC application framework</li>
+</ul>
+<h2>Testing</h2>
+<ul>
+<li><a href="https://github.com/teamcfadvance/CFSelenium">CFSelenium</a> - A native Selenium RC binding for ColdFusion</li>
+<li><a href="https://testbox.ortusbooks.com/mocking/mockbox">MockBox</a> - The ColdFusion Mocking/Stubbing Framework</li>
+<li><a href="https://github.com/mxunit/mxunit">MXUnit</a> - xUnit style unit testing framework</li>
+<li><a href="https://github.com/atuttle/mxunit-watch">mxunit-watch</a> - watch a directory for file changes (.cfc, .cfm, .xml) to trigger mxunit test suite full run, displaying results in the console</li>
+<li><a href="https://github.com/Ortus-Solutions/TestBox">TestBox</a> - BDD style unit testing framework</li>
+</ul>
+<h2>Dependency Injection</h2>
+<ul>
+<li><a href="https://github.com/coldspringframework/coldspring1">ColdSpring</a> - ColdSpring makes the configuration and dependencies of your CFCs easier to manage. ColdSpring brings the power of the popular Spring framework for Java to ColdFusion.</li>
+<li><a href="https://github.com/framework-one/di1">DI/1 - Inject One</a> - a very lightweight, convention over configuration, dependency injection (inversion of control) framework</li>
+<li><a href="https://wirebox.ortusbooks.com/">Wirebox</a> - The Enterprise Dependency Injection Framework</li>
+</ul>
+<h2>CMS</h2>
+<ul>
+<li><a href="http://www.contens.com/">CONTENS CMS</a> - Professional Content Management</li>
+<li><a href="https://github.com/Ortus-Solutions/ContentBox">ContentBox</a> - A powerful modular content management engine</li>
+<li><a href="https://github.com/farcrycore/plugin-farcrycms">FarCry CMS</a></li>
+<li><a href="https://www.murasoftware.com/">Mura</a></li>
+<li><a href="https://github.com/pixl8/Preside-CMS">Preside CMS</a> - an open source CMS for the Railo language</li>
+<li><a href="https://www.slatwallcommerce.com/">Slatwall</a> - An Open Source Commerce Platform</li>
+</ul>
+<h2>NoSQL</h2>
+<ul>
+<li><a href="https://github.com/dajester2013/CFArango">CFArango</a> - ArangoDB client for ColdFusion</li>
+<li><a href="https://github.com/Ortus-Solutions/cfcouchbase-sdk">CFCouchbase</a> - Couchbase NoSQL and caching client wrapper for ColdFusion</li>
+<li><a href="https://github.com/marcesher/cfmongodb">cfmongodb</a> - MongoDB client wrapper for ColdFusion</li>
+</ul>
+<h2>REST</h2>
+<ul>
+<li><a href="https://coldbox.ortusbooks.com/digging-deeper/recipes/building-rest-apis">ColdBox REST</a> - Native REST routing and rendering capababilities</li>
+<li><a href="https://github.com/framework-one/fw1/wiki/Developing-Applications-Manual#controllers-for-rest-apis">FW/1 REST</a> - Native REST routing and rendering capababilities</li>
+<li><a href="http://taffy.io">Taffy</a> - The REST Web Service framework for ColdFusion and Railo</li>
+<li><a href="https://guides.cfwheels.org/docs/routing">CFWheels RESTful</a> - CFWheels encourages a conventional RESTful and resourceful style of request handling.</li>
+</ul>
+<h2>Other Libraries</h2>
+<ul>
+<li><a href="https://cachebox.ortusbooks.com/">CacheBox</a> - The Enterprise ColdFusion Caching Engine, Aggregator and API</li>
+<li><a href="https://github.com/misterdai/cfbackport">cfbackport</a> - Back porting features contained in newer versions of ColdFusion.</li>
+<li><a href="https://github.com/ghidinelli/cfpayment">cfpayment</a> - ColdFusion payment processing library makes plumbing e-commerce apps easy. Charging credit cards has never been easier. Inspired by Ruby's ActiveMerchant.</li>
+<li><a href="https://github.com/oarevalo/BugLogHQ">BugLogHQ</a> - Exception Tracking</li>
+<li><a href="https://github.com/markmandel/JavaLoader">JavaLoader</a> - JavaLoader is a library that has been built to ease the use, development and integration of Java within ColdFusion applications.</li>
+<li><a href="https://logbox.ortusbooks.com/">LogBox</a> - The Enterprise ColdFusion Logging Library</li>
+<li><a href="https://github.com/AlumnIQ/momentcfc">Moment.cfc</a> - Moment.js inspired date/time manipulation library for CFML (not a direct port)</li>
+<li><a href="https://github.com/rip747/Mustache.cfc">Mustache.cfc</a> - <a href="http://mustache.github.io">{{ mustache }}</a> for ColdFusion</li>
+<li><a href="https://github.com/russplaysguitar/UnderscoreCF">UnderscoreCF</a> - An UnderscoreJS port for Coldfusion. Functional programming library.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome ColdFusion <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A curated list of awesome ColdFusion frameworks, libraries and software. Inspired by <a href="https://github.com/sorrycc/awesome-javascript">awesome-javascript</a>.</p>
+<p>Pull requests very welcome.</p>
+<ul>
+<li><a href="https://github.com/seancoyne/awesome-coldfusion">Awesome ColdFusion</a><ul>
+<li><a href="#engines">Engines</a></li>
+<li><a href="#application-frameworks">Application Frameworks</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#dependency-injection">Dependency Injection</a></li>
+<li><a href="#cms">Content Management Systems</a></li>
+<li><a href="#nosql">NoSQL</a></li>
+<li><a href="#rest">REST</a></li>
+<li><a href="#other-libraries">Other Libraries</a></li>
+<li><a href="#editors">Editors</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#references">References</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#documentation">Documentation</a></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2>Engines</h2>
+<ul>
+<li><a href="http://www.adobe.com/products/coldfusion-family.html">Adobe ColdFusion</a></li>
+<li><a href="http://lucee.org/">Lucee</a> - Free, Open Source CFML Engine</li>
+</ul>
+<h2>Application Frameworks</h2>
+<ul>
+<li><a href="https://cfwheels.org">CFWheels</a> - An open source CFML framework inspired by Ruby on Rails.</li>
+<li><a href="http://www.coldbox.org">ColdBox</a> - The Enterprise ColdFusion MVC Development Platform</li>
+<li><a href="http://www.farcrycore.org">FarCry</a> - FarCry Core is a web application framework that helps CFML developers build tailor-made content solutions, fast.</li>
+<li><a href="https://github.com/framework-one/fw1">FW/1 - Framework One</a> - a lightweight, convention over configuration, MVC application framework</li>
+</ul>
+<h2>Testing</h2>
+<ul>
+<li><a href="https://github.com/teamcfadvance/CFSelenium">CFSelenium</a> - A native Selenium RC binding for ColdFusion</li>
+<li><a href="https://testbox.ortusbooks.com/mocking/mockbox">MockBox</a> - The ColdFusion Mocking/Stubbing Framework</li>
+<li><a href="https://github.com/mxunit/mxunit">MXUnit</a> - xUnit style unit testing framework</li>
+<li><a href="https://github.com/atuttle/mxunit-watch">mxunit-watch</a> - watch a directory for file changes (.cfc, .cfm, .xml) to trigger mxunit test suite full run, displaying results in the console</li>
+<li><a href="https://github.com/Ortus-Solutions/TestBox">TestBox</a> - BDD style unit testing framework</li>
+</ul>
+<h2>Dependency Injection</h2>
+<ul>
+<li><a href="https://github.com/coldspringframework/coldspring1">ColdSpring</a> - ColdSpring makes the configuration and dependencies of your CFCs easier to manage. ColdSpring brings the power of the popular Spring framework for Java to ColdFusion.</li>
+<li><a href="https://github.com/framework-one/di1">DI/1 - Inject One</a> - a very lightweight, convention over configuration, dependency injection (inversion of control) framework</li>
+<li><a href="https://wirebox.ortusbooks.com/">Wirebox</a> - The Enterprise Dependency Injection Framework</li>
+</ul>
+<h2>CMS</h2>
+<ul>
+<li><a href="http://www.contens.com/">CONTENS CMS</a> - Professional Content Management</li>
+<li><a href="https://github.com/Ortus-Solutions/ContentBox">ContentBox</a> - A powerful modular content management engine</li>
+<li><a href="https://github.com/farcrycore/plugin-farcrycms">FarCry CMS</a></li>
+<li><a href="https://www.murasoftware.com/">Mura</a></li>
+<li><a href="https://github.com/pixl8/Preside-CMS">Preside CMS</a> - an open source CMS for the Railo language</li>
+<li><a href="https://www.slatwallcommerce.com/">Slatwall</a> - An Open Source Commerce Platform</li>
+</ul>
+<h2>NoSQL</h2>
+<ul>
+<li><a href="https://github.com/dajester2013/CFArango">CFArango</a> - ArangoDB client for ColdFusion</li>
+<li><a href="https://github.com/Ortus-Solutions/cfcouchbase-sdk">CFCouchbase</a> - Couchbase NoSQL and caching client wrapper for ColdFusion</li>
+<li><a href="https://github.com/marcesher/cfmongodb">cfmongodb</a> - MongoDB client wrapper for ColdFusion</li>
+</ul>
+<h2>REST</h2>
+<ul>
+<li><a href="https://coldbox.ortusbooks.com/digging-deeper/recipes/building-rest-apis">ColdBox REST</a> - Native REST routing and rendering capababilities</li>
+<li><a href="https://github.com/framework-one/fw1/wiki/Developing-Applications-Manual#controllers-for-rest-apis">FW/1 REST</a> - Native REST routing and rendering capababilities</li>
+<li><a href="http://taffy.io">Taffy</a> - The REST Web Service framework for ColdFusion and Railo</li>
+<li><a href="https://guides.cfwheels.org/docs/routing">CFWheels RESTful</a> - CFWheels encourages a conventional RESTful and resourceful style of request handling.</li>
+</ul>
+<h2>Other Libraries</h2>
+<ul>
+<li><a href="https://cachebox.ortusbooks.com/">CacheBox</a> - The Enterprise ColdFusion Caching Engine, Aggregator and API</li>
+<li><a href="https://github.com/misterdai/cfbackport">cfbackport</a> - Back porting features contained in newer versions of ColdFusion.</li>
+<li><a href="https://github.com/ghidinelli/cfpayment">cfpayment</a> - ColdFusion payment processing library makes plumbing e-commerce apps easy. Charging credit cards has never been easier. Inspired by Ruby's ActiveMerchant.</li>
+<li><a href="https://github.com/oarevalo/BugLogHQ">BugLogHQ</a> - Exception Tracking</li>
+<li><a href="https://github.com/markmandel/JavaLoader">JavaLoader</a> - JavaLoader is a library that has been built to ease the use, development and integration of Java within ColdFusion applications.</li>
+<li><a href="https://logbox.ortusbooks.com/">LogBox</a> - The Enterprise ColdFusion Logging Library</li>
+<li><a href="https://github.com/AlumnIQ/momentcfc">Moment.cfc</a> - Moment.js inspired date/time manipulation library for CFML (not a direct port)</li>
+<li><a href="https://github.com/rip747/Mustache.cfc">Mustache.cfc</a> - <a href="http://mustache.github.io">{{ mustache }}</a> for ColdFusion</li>
+<li><a href="https://github.com/russplaysguitar/UnderscoreCF">UnderscoreCF</a> - An UnderscoreJS port for Coldfusion. Functional programming library.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'coldfusion_README.md';
 
         fetch(markdownFile)
@@ -48,21 +203,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

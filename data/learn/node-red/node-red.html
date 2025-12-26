@@ -8,38 +8,177 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Naimo84 Awesome Nodered - Awesome List Resources">
-    <title>Naimo84 Awesome Nodered</title>
+    <meta name="description" content="> Curated list of useful resources for Node-RED. Node-RED is a programming tool for wiring together hardware devices, APIs and online services in new and...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Node-RED [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) <a href="https://nodered.org/"><img src="https://nodered.org/about/resources/media/node-red-hexagon.png" width="200" align="right" alt="Node-RED"></a> - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Node-RED <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a> <a href="https://nodered.org/"><img src="https://nodered.org/about/resources/media/node-red-hexagon.png" width="200" align="right" alt="Node-RED"></a></h1>
+<blockquote>
+<p>Curated list of useful resources for Node-RED.</p>
+</blockquote>
+<p><a href="https://nodered.org/">Node-RED</a> is a programming tool for wiring together hardware devices, APIs and online services in new and interesting ways.</p>
+<p>It provides a browser-based editor that makes it easy to wire together flows using the wide range of nodes in the palette that can be deployed to its runtime in a single-click.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#nodes">Nodes</a><ul>
+<li><a href="#analysis">Analysis</a></li>
+<li><a href="#database">Database</a></li>
+<li><a href="#development">Development</a></li>
+<li><a href="#function">Function</a></li>
+<li><a href="#hardware">Hardware</a></li>
+<li><a href="#io">I/O</a></li>
+<li><a href="#image-processing">Image processing</a></li>
+<li><a href="#parsers">Parsers</a></li>
+<li><a href="#smarthome">Smarthome</a></li>
+<li><a href="#social">Social</a></li>
+<li><a href="#system">System</a></li>
+<li><a href="#time">Time</a></li>
+<li><a href="#utility">Utility</a></li>
+<li><a href="#ui">UI</a></li>
+</ul>
+</li>
+<li><a href="#community">Community</a></li>
+</ul>
+<h2>Installation</h2>
+<ul>
+<li><a href="https://nodered.org/docs/getting-started/local">Running locally</a></li>
+<li><a href="https://github.com/node-red/node-red-docker">Running under Docker</a></li>
+<li><a href="https://github.com/ct-Open-Source/ct-Smart-Home">c't-Smart-Home</a> - A ready-to-use setup for home automation maintained by <a href="https://www.ct.de/smarthome">german computer magazine c't</a>.</li>
+<li><a href="https://community.home-assistant.io/t/home-assistant-community-add-on-node-red/55023">Home Assistant Community Add-on</a> - Starts an instance within Home Assistant and communicates with it.</li>
+<li><a href="https://github.com/ioBroker/ioBroker.node-red">ioBroker node-red Adapter</a> - Starts an instance within ioBroker and communicates with it.</li>
+<li><a href="https://www.openhab.org/docs/installation/openhabian.html#optional-components">openHAB running on openHABian</a> - Install Node-RED using openhab-config from command line, choose it from "Optional Components".</li>
+<li><a href="https://github.com/rdmtc/RedMatic/wiki/Installation">RedMatic</a> - Install Node-RED on a CCU3, smart home automation hardware from the manufacturer eQ-3, popular especially in Germany.</li>
+</ul>
+<h2>Documentation</h2>
+<ul>
+<li><a href="https://nodered.org/docs/getting-started/">Getting Started</a></li>
+<li><a href="https://nodered.org/docs/faq/">FAQ</a></li>
+<li><a href="https://nodered.org/docs/tutorials/">Tutorials</a></li>
+<li><a href="https://nodered.org/docs/user-guide/">User Guide</a></li>
+</ul>
+<h2>Nodes</h2>
+<h3>Analysis</h3>
+<ul>
+<li><a href="https://github.com/node-red/node-red-nodes/tree/master/analysis/swearfilter">badwords</a> - Analyses the payload and tries to filter out any messages containing bad swear words. This only operates on payloads of type string. Everything else is blocked.</li>
+<li><a href="https://github.com/node-red/node-red-nodes/tree/master/analysis/wordpos">wordpos</a> - Analyses the payload and classifies the part-of-speech of each word. The resulting message has msg.pos added with the results. A word may appear in multiple categories (eg, 'great' is both a noun and an adjective).</li>
+</ul>
+<h3>Database</h3>
+<ul>
+<li><a href="https://github.com/mblackstock/node-red-contrib-influxdb">influxdb</a> - Save and query data from an InfluxDB time series database.</li>
+<li><a href="https://github.com/bestlong/node-red-contrib-mssql-plus">mssql-plus</a> - Execute queries, stored procedures and bulk inserts in Microsoft SQL Server and Azure Databases SQL2000 ~ SQL2019.</li>
+<li><a href="https://github.com/stackhero-io/node-red-contrib-stackhero-influxdb-v2">stackhero-influxdb-v2</a> - Save and query data from an InfluxDB v2 time series database.</li>
+<li><a href="https://github.com/stackhero-io/node-red-contrib-stackhero-mysql">stackhero-mysql</a> - Connect to a MySQL or a MariaDB database, using TLS (SSL) and compatible with "Caching SHA2 password" authentication method (MySQL &gt;= 8).</li>
+<li><a href="https://github.com/node-red/node-red-nodes/tree/master/storage/leveldb">leveldb</a> - Uses LevelDB for a simple key value pair database.</li>
+<li><a href="https://github.com/node-red/node-red-nodes/tree/master/storage/mysql">mysql</a> - Allows basic access to a MySQL database. </li>
+<li><a href="https://github.com/node-red/node-red-nodes/tree/master/storage/sqlite">sqlite</a> - Supports read and write to a local sqlite database.</li>
+</ul>
+<h3>Development</h3>
+<ul>
+<li><a href="https://github.com/alexk111/node-red-node-typescript-starter">typescript-starter</a> - Quick-start template repository for creating new node sets in TypeScript.</li>
+</ul>
+<h3>Function</h3>
+<ul>
+<li><a href="https://github.com/node-red/node-red-nodes/tree/master/function/datagenerator">datagenerater</a> - Generate dummy data in various formats, names, addresses, emails, numbers, words, etc.</li>
+<li><a href="https://github.com/node-red/node-red-nodes/tree/master/function/PID">pidcontrol</a> - A PID control node for numeric inputs - provides simple controll loop feedback capability.</li>
+<li><a href="https://github.com/node-red/node-red-nodes/tree/master/function/random">random</a> - Random number generator - can generate integers for x to y - or floats between x and y.</li>
+<li><a href="https://github.com/node-red/node-red-nodes/tree/master/function/rbe">rbe</a> - Provide report by exception and deadband / bandgap capability for simple inputs.</li>
+<li><a href="https://github.com/node-red/node-red-nodes/tree/master/function/smooth">smooth</a> - Provide various functions across several previous values, including max, min, mean, high and low pass filters.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Node-RED <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a> <a href="https://nodered.org/"><img src="https://nodered.org/about/resources/media/node-red-hexagon.png" width="200" align="right" alt="Node-RED"></a></h1>
+<blockquote>
+<p>Curated list of useful resources for Node-RED.</p>
+</blockquote>
+<p><a href="https://nodered.org/">Node-RED</a> is a programming tool for wiring together hardware devices, APIs and online services in new and interesting ways.</p>
+<p>It provides a browser-based editor that makes it easy to wire together flows using the wide range of nodes in the palette that can be deployed to its runtime in a single-click.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#nodes">Nodes</a><ul>
+<li><a href="#analysis">Analysis</a></li>
+<li><a href="#database">Database</a></li>
+<li><a href="#development">Development</a></li>
+<li><a href="#function">Function</a></li>
+<li><a href="#hardware">Hardware</a></li>
+<li><a href="#io">I/O</a></li>
+<li><a href="#image-processing">Image processing</a></li>
+<li><a href="#parsers">Parsers</a></li>
+<li><a href="#smarthome">Smarthome</a></li>
+<li><a href="#social">Social</a></li>
+<li><a href="#system">System</a></li>
+<li><a href="#time">Time</a></li>
+<li><a href="#utility">Utility</a></li>
+<li><a href="#ui">UI</a></li>
+</ul>
+</li>
+<li><a href="#community">Community</a></li>
+</ul>
+<h2>Installation</h2>
+<ul>
+<li><a href="https://nodered.org/docs/getting-started/local">Running locally</a></li>
+<li><a href="https://github.com/node-red/node-red-docker">Running under Docker</a></li>
+<li><a href="https://github.com/ct-Open-Source/ct-Smart-Home">c't-Smart-Home</a> - A ready-to-use setup for home automation maintained by <a href="https://www.ct.de/smarthome">german computer magazine c't</a>.</li>
+<li><a href="https://community.home-assistant.io/t/home-assistant-community-add-on-node-red/55023">Home Assistant Community Add-on</a> - Starts an instance within Home Assistant and communicates with it.</li>
+<li><a href="https://github.com/ioBroker/ioBroker.node-red">ioBroker node-red Adapter</a> - Starts an instance within ioBroker and communicates with it.</li>
+<li><a href="https://www.openhab.org/docs/installation/openhabian.html#optional-components">openHAB running on openHABian</a> - Install Node-RED using openhab-config from command line, choose it from "Optional Components".</li>
+<li><a href="https://github.com/rdmtc/RedMatic/wiki/Installation">RedMatic</a> - Install Node-RED on a CCU3, smart home automation hardware from the manufacturer eQ-3, popular especially in Germany.</li>
+</ul>
+<h2>Documentation</h2>
+<ul>
+<li><a href="https://nodered.org/docs/getting-started/">Getting Started</a></li>
+<li><a href="https://nodered.org/docs/faq/">FAQ</a></li>
+<li><a href="https://nodered.org/docs/tutorials/">Tutorials</a></li>
+<li><a href="https://nodered.org/docs/user-guide/">User Guide</a></li>
+</ul>
+<h2>Nodes</h2>
+<h3>Analysis</h3>
+<ul>
+<li><a href="https://github.com/node-red/node-red-nodes/tree/master/analysis/swearfilter">badwords</a> - Analyses the payload and tries to filter out any messages containing bad swear words. This only operates on payloads of type string. Everything else is blocked.</li>
+<li><a href="https://github.com/node-red/node-red-nodes/tree/master/analysis/wordpos">wordpos</a> - Analyses the payload and classifies the part-of-speech of each word. The resulting message has msg.pos added with the results. A word may appear in multiple categories (eg, 'great' is both a noun and an adjective).</li>
+</ul>
+<h3>Database</h3>
+<ul>
+<li><a href="https://github.com/mblackstock/node-red-contrib-influxdb">influxdb</a> - Save and query data from an InfluxDB time series database.</li>
+<li><a href="https://github.com/bestlong/node-red-contrib-mssql-plus">mssql-plus</a> - Execute queries, stored procedures and bulk inserts in Microsoft SQL Server and Azure Databases SQL2000 ~ SQL2019.</li>
+<li><a href="https://github.com/stackhero-io/node-red-contrib-stackhero-influxdb-v2">stackhero-influxdb-v2</a> - Save and query data from an InfluxDB v2 time series database.</li>
+<li><a href="https://github.com/stackhero-io/node-red-contrib-stackhero-mysql">stackhero-mysql</a> - Connect to a MySQL or a MariaDB database, using TLS (SSL) and compatible with "Caching SHA2 password" authentication method (MySQL &gt;= 8).</li>
+<li><a href="https://github.com/node-red/node-red-nodes/tree/master/storage/leveldb">leveldb</a> - Uses LevelDB for a simple key value pair database.</li>
+<li><a href="https://github.com/node-red/node-red-nodes/tree/master/storage/mysql">mysql</a> - Allows basic access to a MySQL database. </li>
+<li><a href="https://github.com/node-red/node-red-nodes/tree/master/storage/sqlite">sqlite</a> - Supports read and write to a local sqlite database.</li>
+</ul>
+<h3>Development</h3>
+<ul>
+<li><a href="https://github.com/alexk111/node-red-node-typescript-starter">typescript-starter</a> - Quick-start template repository for creating new node sets in TypeScript.</li>
+</ul>
+<h3>Function</h3>
+<ul>
+<li><a href="https://github.com/node-red/node-red-nodes/tree/master/function/datagenerator">datagenerater</a> - Generate dummy data in various formats, names, addresses, emails, numbers, words, etc.</li>
+<li><a href="https://github.com/node-red/node-red-nodes/tree/master/function/PID">pidcontrol</a> - A PID control node for numeric inputs - provides simple controll loop feedback capability.</li>
+<li><a href="https://github.com/node-red/node-red-nodes/tree/master/function/random">random</a> - Random number generator - can generate integers for x to y - or floats between x and y.</li>
+<li><a href="https://github.com/node-red/node-red-nodes/tree/master/function/rbe">rbe</a> - Provide report by exception and deadband / bandgap capability for simple inputs.</li>
+<li><a href="https://github.com/node-red/node-red-nodes/tree/master/function/smooth">smooth</a> - Provide various functions across several previous values, including max, min, mean, high and low pass filters.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'node-red_README.md';
 
         fetch(markdownFile)
@@ -48,21 +187,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

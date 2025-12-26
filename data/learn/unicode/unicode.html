@@ -8,38 +8,169 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jagracey Awesome Unicode - Awesome List Resources">
-    <title>Jagracey Awesome Unicode</title>
+    <meta name="description" content="> A curated list of delightful Unicode tidbits, packages and resources. Please read the contribution guidelines before contributing. Key Unicode terminology is...">
+    <meta name="robots" content="index, follow">
+    <title>Unicode - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <p><img alt="" src="https://raw.githubusercontent.com/jagracey/Awesome-Unicode/58f28d08aef7f36eb6cdca22d25e7654cd8de5ae/resources/banner.jpg" /></p>
+<h1>Awesome Unicode <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<blockquote>
+<p>A curated list of delightful Unicode tidbits, packages and resources.</p>
+</blockquote>
+<p><em>Please read the <a href="CONTRIBUTING.md">contribution guidelines</a> before contributing.</em>
+<em>Key Unicode terminology is defined in the <a href="GLOSSARY.md">glossary</a>.</em></p>
+<p><em>Cross posted to <a href="https://wisdom.engineering/awesome-unicode/">Wisdom's Dev Blog</a></em></p>
+<p><br><br></p>
+<h1>Foreword</h1>
+<p>Unicode is Awesome! Prior to Unicode, international communication was grueling- everyone had defined their separate extended character set in the upperhalf of ASCII (called Code Pages) that would conflict- Just think, German speakers coordinating with Korean speakers over which 127 character Code Page to use. Thankfully the Unicode standard caught on and unified communication. Unicode 8.0 standardizes over 120,000 characters from over 129 scripts - some modern, some ancient, and some still undeciphered. Unicode handles left-to-right and right-to-left text, combining marks, and includes diverse cultural, political, religious characters and emojis. Unicode is awesomely human - and ultimately underappreciated.</p>
+<p><br></p>
+<h1>Contents</h1>
+<ul>
+<li><a href="#quick-unicode-background">Quick Unicode Background</a><ul>
+<li><a href="#what-characters-does-the-unicode-standard-include">What Characters Does the Unicode Standard Include?</a></li>
+<li><a href="#unicode-character-encodings">Unicode Character Encodings</a></li>
+<li><a href="#lets-talk-numbers">Lets talk Numbers</a></li>
+<li><a href="#utf-16-surrogate-pairs">UTF-16 Surrogate Pairs</a></li>
+<li><a href="#calculating-surrogate-pairs">Calculating Surrogate Pairs</a></li>
+<li><a href="#composing--decomposing">Composing &amp; Decomposing</a></li>
+<li><a href="#myths-of-unicode">Myths of Unicode</a></li>
+<li><a href="#applied-unicode-encodings">Applied Unicode Encodings</a></li>
+<li><a href="#source-code">Source Code</a></li>
+</ul>
+</li>
+<li><a href="#awesome-characters-list">Awesome Characters List</a><ul>
+<li><a href="#special-characters">Special Characters</a></li>
+<li><a href="#variable-identifiers-can-effectively-include-whitespace">Variable identifiers can effectively include whitespace!</a></li>
+<li><a href="#modifiers">Modifiers</a></li>
+<li><a href="#collision-uppercase-transformation-collisions">Uppercase Transformation Collisions</a></li>
+<li><a href="#collision-lowercase-transformation-collisions">Lowercase Transformation Collisions</a></li>
+</ul>
+</li>
+<li><a href="#quirks-and-troubleshooting">Quirks and Troubleshooting</a><ul>
+<li><a href="#one-to-many-case-mappings">One-To-Many Case Mappings</a></li>
+</ul>
+</li>
+<li><a href="#awesome-packages--libraries">Awesome Packages &amp; Libraries</a></li>
+<li><a href="#emojis">Emojis</a><ul>
+<li><a href="#diversity">Diversity</a></li>
+</ul>
+</li>
+<li><a href="#creatively-naming-variables-and-methods">Creatively Naming Variables and Methods</a><ul>
+<li><a href="#recursive-html-tag-renaming-script">Recursive HTML Tag Renaming Script</a></li>
+</ul>
+</li>
+<li><a href="#unicode-fonts">Unicode Fonts</a></li>
+<li><a href="#more-reading">More Reading</a></li>
+<li><a href="#exploring-deeper-into-unicode-yourself">Exploring Deeper into Unicode Yourself</a></li>
+<li><a href="#overview-map">Overview Map</a><ul>
+<li><a href="#a-map-of-the-basic-multilingual-plane">A map of the Basic Multilingual Plane</a></li>
+<li><a href="#unicode-blocks">Unicode Blocks</a></li>
+</ul>
+</li>
+<li><a href="#principles-of-the-unicode-standard">Principles of the Unicode Standard</a></li>
+<li><a href="#unicode-versions">Unicode Versions</a></li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#code-of-conduct">Code of Conduct</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h1>Quick Unicode Background</h1>
+<h2>What Characters Does the Unicode Standard Include?</h2>
+<p>The Unicode Standard defines codes for characters used in all the major languages written today. Scripts include the European alphabetic scripts, Middle Eastern right-to-left scripts, and many scripts of Asia.</p>
+<p>The Unicode Standard further includes punctuation marks, diacritics, mathematical symbols, technical symbols, arrows, dingbats, emoji, etc. It provides codes for diacritics, which are modifying character marks such as the tilde (~), that are used in conjunction with base characters to represent accented letters (ñ, for example). In all, the Unicode Standard, Version 9.0 provides codes for 128,172 characters from the world's alphabets, ideograph sets, and symbol collections.</p>
+<p>The majority of common-use characters fit into the first 64K code points, an area of the codespace that is called the basic multilingual plane, or BMP for short. There are sixteen other supplementary planes available for encoding other characters, with currently over 850,000 unused code points. More characters are under consideration for addition to future versions of the standard.</p>
+<p>The Unicode Standard also reserves code points for private use. Vendors or end users can assign these internally for their own characters and symbols, or use them with specialized fonts. There are 6,400 private use code points on the BMP and another 131,068 supplementary private use code points, should 6,400 be insufficient for particular applications.</p>
+<h2>Unicode Character Encodings</h2>
+<p>Character encoding standards define not only the identity of each character and its numeric value, or code point, but also how this value is represented in bits.</p>
+<p>The Unicode Standard defines three encoding forms that allow the same data to be transmitted in a byte, word or double word oriented format (i.e. in 8, 16 or 32-bits per code unit). All three encoding forms encode the same common character repertoire and can be efficiently transformed into one another without loss of data. The Unicode Consortium fully endorses the use of any of these encoding forms as a conformant way of implementing the Unicode Standard.</p>
+        </noscript>
+        <div id="dynamic-content">
+            <p><img alt="" src="https://raw.githubusercontent.com/jagracey/Awesome-Unicode/58f28d08aef7f36eb6cdca22d25e7654cd8de5ae/resources/banner.jpg" /></p>
+<h1>Awesome Unicode <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<blockquote>
+<p>A curated list of delightful Unicode tidbits, packages and resources.</p>
+</blockquote>
+<p><em>Please read the <a href="CONTRIBUTING.md">contribution guidelines</a> before contributing.</em>
+<em>Key Unicode terminology is defined in the <a href="GLOSSARY.md">glossary</a>.</em></p>
+<p><em>Cross posted to <a href="https://wisdom.engineering/awesome-unicode/">Wisdom's Dev Blog</a></em></p>
+<p><br><br></p>
+<h1>Foreword</h1>
+<p>Unicode is Awesome! Prior to Unicode, international communication was grueling- everyone had defined their separate extended character set in the upperhalf of ASCII (called Code Pages) that would conflict- Just think, German speakers coordinating with Korean speakers over which 127 character Code Page to use. Thankfully the Unicode standard caught on and unified communication. Unicode 8.0 standardizes over 120,000 characters from over 129 scripts - some modern, some ancient, and some still undeciphered. Unicode handles left-to-right and right-to-left text, combining marks, and includes diverse cultural, political, religious characters and emojis. Unicode is awesomely human - and ultimately underappreciated.</p>
+<p><br></p>
+<h1>Contents</h1>
+<ul>
+<li><a href="#quick-unicode-background">Quick Unicode Background</a><ul>
+<li><a href="#what-characters-does-the-unicode-standard-include">What Characters Does the Unicode Standard Include?</a></li>
+<li><a href="#unicode-character-encodings">Unicode Character Encodings</a></li>
+<li><a href="#lets-talk-numbers">Lets talk Numbers</a></li>
+<li><a href="#utf-16-surrogate-pairs">UTF-16 Surrogate Pairs</a></li>
+<li><a href="#calculating-surrogate-pairs">Calculating Surrogate Pairs</a></li>
+<li><a href="#composing--decomposing">Composing &amp; Decomposing</a></li>
+<li><a href="#myths-of-unicode">Myths of Unicode</a></li>
+<li><a href="#applied-unicode-encodings">Applied Unicode Encodings</a></li>
+<li><a href="#source-code">Source Code</a></li>
+</ul>
+</li>
+<li><a href="#awesome-characters-list">Awesome Characters List</a><ul>
+<li><a href="#special-characters">Special Characters</a></li>
+<li><a href="#variable-identifiers-can-effectively-include-whitespace">Variable identifiers can effectively include whitespace!</a></li>
+<li><a href="#modifiers">Modifiers</a></li>
+<li><a href="#collision-uppercase-transformation-collisions">Uppercase Transformation Collisions</a></li>
+<li><a href="#collision-lowercase-transformation-collisions">Lowercase Transformation Collisions</a></li>
+</ul>
+</li>
+<li><a href="#quirks-and-troubleshooting">Quirks and Troubleshooting</a><ul>
+<li><a href="#one-to-many-case-mappings">One-To-Many Case Mappings</a></li>
+</ul>
+</li>
+<li><a href="#awesome-packages--libraries">Awesome Packages &amp; Libraries</a></li>
+<li><a href="#emojis">Emojis</a><ul>
+<li><a href="#diversity">Diversity</a></li>
+</ul>
+</li>
+<li><a href="#creatively-naming-variables-and-methods">Creatively Naming Variables and Methods</a><ul>
+<li><a href="#recursive-html-tag-renaming-script">Recursive HTML Tag Renaming Script</a></li>
+</ul>
+</li>
+<li><a href="#unicode-fonts">Unicode Fonts</a></li>
+<li><a href="#more-reading">More Reading</a></li>
+<li><a href="#exploring-deeper-into-unicode-yourself">Exploring Deeper into Unicode Yourself</a></li>
+<li><a href="#overview-map">Overview Map</a><ul>
+<li><a href="#a-map-of-the-basic-multilingual-plane">A map of the Basic Multilingual Plane</a></li>
+<li><a href="#unicode-blocks">Unicode Blocks</a></li>
+</ul>
+</li>
+<li><a href="#principles-of-the-unicode-standard">Principles of the Unicode Standard</a></li>
+<li><a href="#unicode-versions">Unicode Versions</a></li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#code-of-conduct">Code of Conduct</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h1>Quick Unicode Background</h1>
+<h2>What Characters Does the Unicode Standard Include?</h2>
+<p>The Unicode Standard defines codes for characters used in all the major languages written today. Scripts include the European alphabetic scripts, Middle Eastern right-to-left scripts, and many scripts of Asia.</p>
+<p>The Unicode Standard further includes punctuation marks, diacritics, mathematical symbols, technical symbols, arrows, dingbats, emoji, etc. It provides codes for diacritics, which are modifying character marks such as the tilde (~), that are used in conjunction with base characters to represent accented letters (ñ, for example). In all, the Unicode Standard, Version 9.0 provides codes for 128,172 characters from the world's alphabets, ideograph sets, and symbol collections.</p>
+<p>The majority of common-use characters fit into the first 64K code points, an area of the codespace that is called the basic multilingual plane, or BMP for short. There are sixteen other supplementary planes available for encoding other characters, with currently over 850,000 unused code points. More characters are under consideration for addition to future versions of the standard.</p>
+<p>The Unicode Standard also reserves code points for private use. Vendors or end users can assign these internally for their own characters and symbols, or use them with specialized fonts. There are 6,400 private use code points on the BMP and another 131,068 supplementary private use code points, should 6,400 be insufficient for particular applications.</p>
+<h2>Unicode Character Encodings</h2>
+<p>Character encoding standards define not only the identity of each character and its numeric value, or code point, but also how this value is represented in bits.</p>
+<p>The Unicode Standard defines three encoding forms that allow the same data to be transmitted in a byte, word or double word oriented format (i.e. in 8, 16 or 32-bits per code unit). All three encoding forms encode the same common character repertoire and can be efficiently transformed into one another without loss of data. The Unicode Consortium fully endorses the use of any of these encoding forms as a conformant way of implementing the Unicode Standard.</p>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'unicode_README.md';
 
         fetch(markdownFile)
@@ -48,21 +179,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

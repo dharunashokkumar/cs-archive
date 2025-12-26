@@ -8,38 +8,145 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Collective Awesome Plone - Awesome List Resources">
-    <title>Collective Awesome Plone</title>
+    <meta name="description" content="> A community-curated list of _awesome_ Plone add-ons. Plone is a open source CMS written in Python with a focus on functionality, customizability and security...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Plone [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Plone <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<!--lint ignore double-link-->
+<p><a href="https://plone.org"><img align="right" src="logo.png" height="64"></a></p>
+<blockquote>
+<p>A community-curated list of <em>awesome</em> Plone add-ons.</p>
+</blockquote>
+<!--lint ignore double-link-->
+<p><a href="https://plone.org">Plone</a> is a open source CMS written in Python with a focus on functionality, customizability and security out of the box.</p>
+<!--lint ignore double-link-->
+<p>There are over 3000 add-ons for <a href="https://pypi.org/search/?q=&amp;o=&amp;c=Framework+%3A%3A+Plone">Plone on PyPi</a> and over 1500 repositories in the <a href="https://github.com/collective">Collective</a> organization on GitHub. If you want to know if there is already a add-on for Plone that fits your needs, searching for it on GitHub or PyPi can be hard. It's hard to understand which one could be a good solution or not.</p>
+<p>This list is intended to fill that gap, and create a shared knowledge about common products and techniques.</p>
+<p>For a filterable list of addons aggreating all Plone related packages from PyPi see https://pag.derico.tech.</p>
+<p>This list only covers add-ons that work with the latest major versions of Plone (currently 5.2 and 6) and only those that support Python 3.</p>
+<p>Plone 6 comes with a new default frontend called Volto, which is written in React and uses <code>plone.restapi</code> to communicate with Plone. Volto is very extendable in itself. Checkout the <a href="https://github.com/collective/awesome-volto">awesome-volto list</a> for add-ons to Volto.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#content-and-utilities-for-content">Content and utilities for content</a></li>
+<li><a href="#searching-and-categorizing">Searching and Categorizing</a></li>
+<li><a href="#layout">Layout</a></li>
+<li><a href="#tiles">Tiles</a></li>
+<li><a href="#events">Events</a></li>
+<li><a href="#forms">Forms</a></li>
+<li><a href="#multilingual">Multilingual</a></li>
+<li><a href="#media">Media</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#seo">SEO</a></li>
+<li><a href="#authentication">Authentication</a></li>
+<li><a href="#shop">Shop</a></li>
+<li><a href="#export-import-and-migrations">Export, Import and Migrations</a></li>
+<li><a href="#themes">Themes</a></li>
+<li><a href="#develop">Develop</a></li>
+<li><a href="#sysadmin">Sysadmin</a></li>
+<li><a href="#finding-more-add-ons">Finding more add-ons</a></li>
+<li><a href="#official-resources">Official resources</a></li>
+</ul>
+<hr />
+<h2>Content and utilities for content</h2>
+<p><em>Add-ons that provide content-types or additional functionality for content</em></p>
+<ul>
+<li><a href="https://github.com/collective/collective.a11ycheck">collective.a11ycheck</a> - Reports accessibility issues to your site editors when a page is saved.</li>
+<li><a href="https://github.com/collective/collective.bbcodesnippets">collective.bbcodesnippets</a> - Provides generic and extensible BBCode markup integration for Plone.</li>
+<li><a href="https://github.com/collective/collective.consent">collective.consent</a> - Ask users for consent to different topics, before they can continue.</li>
+<li><a href="https://github.com/collective/collective.dexteritytextindexer">collective.dexteritytextindexer</a> - Dynamic SearchableText index for dexterity content types. For Plone 6 this was merged into Plone core.</li>
+<li><a href="https://github.com/collective/collective.documentgenerator">collective.documentgenerator</a> - Generate Documents (.odt, .pdf, .doc) from content based on appy framework (https://appyframe.work/) and OpenOffice/LibreOffice.</li>
+<li><a href="https://github.com/collective/collective.documentviewer">collective.documentviewer</a> - Very nice document viewer that integrates DocumentCloud viewer and PDF processing into Plone.</li>
+<li><a href="https://github.com/collective/collective.easyformplugin.createdx">collective.easyformplugin.createdx</a> - Creates Plone content objects from EasyForm submissions.</li>
+<li><a href="https://github.com/collective/collective.embeddedpage">collective.embeddedpage</a> - A content type to embed remote HTML pages in Plone Classic and Volto.</li>
+<li><a href="https://github.com/collective/collective.folderishtraverse">collective.folderishtraverse</a> - Traverse to first item in folder.</li>
+<li><a href="https://github.com/collective/collective.folderishtypes">collective.folderishtypes</a> - Provides the types "Folderish Event", "Folderish News Item" and "Folderish Document" as replacements for default types. Those types are able to hold any other content, like a Folder.</li>
+<li><a href="https://github.com/collective/collective.geolocationbehavior">collective.geolocationbehavior</a> - Geotagging for Plone content using LeafletJS.</li>
+<li><a href="https://github.com/collective/collective.glossary">collective.glossary</a> - Content type to define a glossary and its terms.</li>
+<li><a href="https://github.com/collective/collective.immediatecreate">collective.immediatecreate</a> - Create content immediatly and skip the add form.</li>
+<li><a href="https://github.com/collective/collective.lineage">collective.lineage</a> - Subsites: Turns subfolders of a Plone site to appear as autonomous Plone sites. There is also a whole ecosystem off addons specific to subsites.</li>
+<li><a href="https://github.com/collective/collective.mailchimp">collective.mailchimp</a> - MailChimp newsletter integration for Plone.</li>
+<li><a href="https://github.com/collective/collective.mirror">collective.mirror</a> - A content type that mirrors the content of any other container.</li>
+<li><a href="https://github.com/collective/collective.mustread">collective.mustread</a> - Tracking user views on content that are marked as must-read.</li>
+<li><a href="https://github.com/collective/collective.remoteproxy">collective.remoteproxy</a> - Proxy for remote content. All remote URLs for which a local proxy was created are replaced in the resulting content.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Plone <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<!--lint ignore double-link-->
+<p><a href="https://plone.org"><img align="right" src="logo.png" height="64"></a></p>
+<blockquote>
+<p>A community-curated list of <em>awesome</em> Plone add-ons.</p>
+</blockquote>
+<!--lint ignore double-link-->
+<p><a href="https://plone.org">Plone</a> is a open source CMS written in Python with a focus on functionality, customizability and security out of the box.</p>
+<!--lint ignore double-link-->
+<p>There are over 3000 add-ons for <a href="https://pypi.org/search/?q=&amp;o=&amp;c=Framework+%3A%3A+Plone">Plone on PyPi</a> and over 1500 repositories in the <a href="https://github.com/collective">Collective</a> organization on GitHub. If you want to know if there is already a add-on for Plone that fits your needs, searching for it on GitHub or PyPi can be hard. It's hard to understand which one could be a good solution or not.</p>
+<p>This list is intended to fill that gap, and create a shared knowledge about common products and techniques.</p>
+<p>For a filterable list of addons aggreating all Plone related packages from PyPi see https://pag.derico.tech.</p>
+<p>This list only covers add-ons that work with the latest major versions of Plone (currently 5.2 and 6) and only those that support Python 3.</p>
+<p>Plone 6 comes with a new default frontend called Volto, which is written in React and uses <code>plone.restapi</code> to communicate with Plone. Volto is very extendable in itself. Checkout the <a href="https://github.com/collective/awesome-volto">awesome-volto list</a> for add-ons to Volto.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#content-and-utilities-for-content">Content and utilities for content</a></li>
+<li><a href="#searching-and-categorizing">Searching and Categorizing</a></li>
+<li><a href="#layout">Layout</a></li>
+<li><a href="#tiles">Tiles</a></li>
+<li><a href="#events">Events</a></li>
+<li><a href="#forms">Forms</a></li>
+<li><a href="#multilingual">Multilingual</a></li>
+<li><a href="#media">Media</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#seo">SEO</a></li>
+<li><a href="#authentication">Authentication</a></li>
+<li><a href="#shop">Shop</a></li>
+<li><a href="#export-import-and-migrations">Export, Import and Migrations</a></li>
+<li><a href="#themes">Themes</a></li>
+<li><a href="#develop">Develop</a></li>
+<li><a href="#sysadmin">Sysadmin</a></li>
+<li><a href="#finding-more-add-ons">Finding more add-ons</a></li>
+<li><a href="#official-resources">Official resources</a></li>
+</ul>
+<hr />
+<h2>Content and utilities for content</h2>
+<p><em>Add-ons that provide content-types or additional functionality for content</em></p>
+<ul>
+<li><a href="https://github.com/collective/collective.a11ycheck">collective.a11ycheck</a> - Reports accessibility issues to your site editors when a page is saved.</li>
+<li><a href="https://github.com/collective/collective.bbcodesnippets">collective.bbcodesnippets</a> - Provides generic and extensible BBCode markup integration for Plone.</li>
+<li><a href="https://github.com/collective/collective.consent">collective.consent</a> - Ask users for consent to different topics, before they can continue.</li>
+<li><a href="https://github.com/collective/collective.dexteritytextindexer">collective.dexteritytextindexer</a> - Dynamic SearchableText index for dexterity content types. For Plone 6 this was merged into Plone core.</li>
+<li><a href="https://github.com/collective/collective.documentgenerator">collective.documentgenerator</a> - Generate Documents (.odt, .pdf, .doc) from content based on appy framework (https://appyframe.work/) and OpenOffice/LibreOffice.</li>
+<li><a href="https://github.com/collective/collective.documentviewer">collective.documentviewer</a> - Very nice document viewer that integrates DocumentCloud viewer and PDF processing into Plone.</li>
+<li><a href="https://github.com/collective/collective.easyformplugin.createdx">collective.easyformplugin.createdx</a> - Creates Plone content objects from EasyForm submissions.</li>
+<li><a href="https://github.com/collective/collective.embeddedpage">collective.embeddedpage</a> - A content type to embed remote HTML pages in Plone Classic and Volto.</li>
+<li><a href="https://github.com/collective/collective.folderishtraverse">collective.folderishtraverse</a> - Traverse to first item in folder.</li>
+<li><a href="https://github.com/collective/collective.folderishtypes">collective.folderishtypes</a> - Provides the types "Folderish Event", "Folderish News Item" and "Folderish Document" as replacements for default types. Those types are able to hold any other content, like a Folder.</li>
+<li><a href="https://github.com/collective/collective.geolocationbehavior">collective.geolocationbehavior</a> - Geotagging for Plone content using LeafletJS.</li>
+<li><a href="https://github.com/collective/collective.glossary">collective.glossary</a> - Content type to define a glossary and its terms.</li>
+<li><a href="https://github.com/collective/collective.immediatecreate">collective.immediatecreate</a> - Create content immediatly and skip the add form.</li>
+<li><a href="https://github.com/collective/collective.lineage">collective.lineage</a> - Subsites: Turns subfolders of a Plone site to appear as autonomous Plone sites. There is also a whole ecosystem off addons specific to subsites.</li>
+<li><a href="https://github.com/collective/collective.mailchimp">collective.mailchimp</a> - MailChimp newsletter integration for Plone.</li>
+<li><a href="https://github.com/collective/collective.mirror">collective.mirror</a> - A content type that mirrors the content of any other container.</li>
+<li><a href="https://github.com/collective/collective.mustread">collective.mustread</a> - Tracking user views on content that are marked as must-read.</li>
+<li><a href="https://github.com/collective/collective.remoteproxy">collective.remoteproxy</a> - Proxy for remote content. All remote URLs for which a local proxy was created are replaced in the resulting content.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'plone_README.md';
 
         fetch(markdownFile)
@@ -48,21 +155,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

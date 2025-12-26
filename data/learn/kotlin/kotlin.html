@@ -8,38 +8,53 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kotlinby Awesome Kotlin - Awesome List Resources">
-    <title>Kotlinby Awesome Kotlin</title>
+    <meta name="description" content="A curated list of awesome Kotlin related stuff inspired by awesome-java. :octocat: Discuss this project in Kotlin Slack, channel: # awesome-kotlin :newspaper:...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Kotlin ([https://kotlin.link](https://kotlin.link)) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Kotlin (<a href="https://kotlin.link">https://kotlin.link</a>)</h1>
+<p>A curated list of awesome Kotlin related stuff inspired by awesome-java. :octocat:</p>
+<p>Discuss this project in <a href="http://slack.kotlinlang.org/">Kotlin Slack</a>, channel: <strong># awesome-kotlin</strong></p>
+<p><a href="https://github.com/sindresorhus/awesome"><img alt="List of Awesome List Badge" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <a href="https://github.com/Heapy/awesome-kotlin/actions/workflows/build.yml"><img alt="Build" src="https://github.com/Heapy/awesome-kotlin/actions/workflows/build.yml/badge.svg" /></a> <a href="https://github.com/Heapy/awesome-kotlin"><img alt="Awesome Kotlin Badge" src="https://kotlin.link/awesome-kotlin.svg" /></a></p>
+<p>:newspaper: <a href="http://kotlin.link/rss.xml">RSS Feed of articles, videos, slides, updates (20 latest articles)</a></p>
+<p>:newspaper: <a href="http://kotlin.link/rss-full.xml">RSS Feed of articles, videos, slides, updates (full archive)</a></p>
+<p>:octocat: <a href="https://github.com/Heapy/awesome-kotlin/blob/readme/README.md">Awesome Kotlin - README.md</a> - README with links</p>
+<h2>Spread Awesome Kotlin!</h2>
+<p>Here is the awesome badge for your project:</p>
+<pre><code class="language-markdown">[![Awesome Kotlin Badge](https://kotlin.link/awesome-kotlin.svg)](https://github.com/Heapy/awesome-kotlin)
+</code></pre>
+<p>To contribute, check <a href="https://github.com/Heapy/awesome-kotlin/blob/main/.github/contributing.md">CONTRIBUTING.md</a>.</p>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Kotlin (<a href="https://kotlin.link">https://kotlin.link</a>)</h1>
+<p>A curated list of awesome Kotlin related stuff inspired by awesome-java. :octocat:</p>
+<p>Discuss this project in <a href="http://slack.kotlinlang.org/">Kotlin Slack</a>, channel: <strong># awesome-kotlin</strong></p>
+<p><a href="https://github.com/sindresorhus/awesome"><img alt="List of Awesome List Badge" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <a href="https://github.com/Heapy/awesome-kotlin/actions/workflows/build.yml"><img alt="Build" src="https://github.com/Heapy/awesome-kotlin/actions/workflows/build.yml/badge.svg" /></a> <a href="https://github.com/Heapy/awesome-kotlin"><img alt="Awesome Kotlin Badge" src="https://kotlin.link/awesome-kotlin.svg" /></a></p>
+<p>:newspaper: <a href="http://kotlin.link/rss.xml">RSS Feed of articles, videos, slides, updates (20 latest articles)</a></p>
+<p>:newspaper: <a href="http://kotlin.link/rss-full.xml">RSS Feed of articles, videos, slides, updates (full archive)</a></p>
+<p>:octocat: <a href="https://github.com/Heapy/awesome-kotlin/blob/readme/README.md">Awesome Kotlin - README.md</a> - README with links</p>
+<h2>Spread Awesome Kotlin!</h2>
+<p>Here is the awesome badge for your project:</p>
+<pre><code class="language-markdown">[![Awesome Kotlin Badge](https://kotlin.link/awesome-kotlin.svg)](https://github.com/Heapy/awesome-kotlin)
+</code></pre>
+<p>To contribute, check <a href="https://github.com/Heapy/awesome-kotlin/blob/main/.github/contributing.md">CONTRIBUTING.md</a>.</p>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'kotlin_README.md';
 
         fetch(markdownFile)
@@ -48,21 +63,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

@@ -8,38 +8,185 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hsiaoyi0504 Awesome Cheminformatics - Awesome List Resources">
-    <title>Hsiaoyi0504 Awesome Cheminformatics</title>
+    <meta name="description" content="> Cheminformatics (also known as chemoinformatics, chemioinformatics and chemical informatics) is the use of computer and informational techniques applied to a...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Cheminformatics [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Cheminformatics <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<blockquote>
+<p>Cheminformatics (also known as chemoinformatics, chemioinformatics and chemical informatics) is the use of computer and informational techniques applied to a range of problems in the field of chemistry.— <a href="https://en.wikipedia.org/wiki/Cheminformatics">Wikipedia</a></p>
+</blockquote>
+<p>A curated list of awesome Cheminformatics software, resources, and libraries. Mostly command line based, and free or open-source. Please feel free to <a href="CONTRIBUTING.md">contribute</a> !</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#applications">Applications</a></li>
+<li><a href="#app-visualization">Visualization</a></li>
+<li><a href="#app-cmd">Command Line Tools</a></li>
+<li><a href="#app-docking">Docking</a></li>
+<li><a href="#app-virtual">Virtual Machine</a></li>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#lib-general">General Purpose</a></li>
+<li><a href="#lib-visualization">Visualization</a></li>
+<li><a href="#lib-format">Command Line Tools</a></li>
+<li><a href="#lib-dock">Docking</a></li>
+<li><a href="#lib-des">Molecular Descriptors</a></li>
+<li><a href="#lib-ml">Machine Learning</a></li>
+<li><a href="#lib-web">Web APIs</a></li>
+<li><a href="#lib-db">Databases</a></li>
+<li><a href="#lib-others">Others</a></li>
+<li><a href="#journals">Journals</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#courses">Courses</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#see-also">See Also</a></li>
+</ul>
+<h2>Applications</h2>
+<p><a id="app-visualization"></a></p>
+<h3>Visualization</h3>
+<ul>
+<li><a href="https://sourceforge.net/projects/pymol/">PyMOL</a> - Python-enhanced molecular graphics tool.</li>
+<li><a href="http://jmol.sourceforge.net/">Jmol</a> - Browser-based HTML5 viewer and stand-alone Java viewer for chemical structures in 3D.</li>
+<li><a href="http://www.ks.uiuc.edu/Research/vmd/">VMD</a> - Molecular visualization program for displaying, animating, and analyzing large biomolecular systems using 3-D graphics and built-in scripting.</li>
+<li><a href="https://www.cgl.ucsf.edu/chimera/">Chimera</a> - Highly extensible program for interactive molecular visualization and analysis. <a href="https://www.cgl.ucsf.edu/chimera/docs/sourcecode.html">Source</a> is available.</li>
+<li><a href="https://www.cgl.ucsf.edu/chimerax/">ChimeraX</a> - The next-generation molecular visualization program, following UCSF Chimera. Source is available <a href="https://www.cgl.ucsf.edu/chimerax/docs/devel/conventions.html">here</a>.</li>
+<li><a href="http://www.openmolecules.org/datawarrior/index.html">DataWarrior</a> - A program for data Visualization and analysis which combines dynamic graphical views and interactive row filtering with chemical intelligence.</li>
+</ul>
+<p><a id="app-cmd"></a></p>
+<h3>Command Line Tools</h3>
+<ul>
+<li><a href="http://openbabel.org/wiki/Main_Page">Open Babel</a> - Chemical toolbox designed to speak the many languages of chemical data.</li>
+<li><a href="http://www.mayachemtools.org/index.html">MayaChemTools</a> - Collection of Perl and Python scripts, modules, and classes that support day-to-day computational discovery needs.</li>
+<li><a href="http://m3g.iqm.unicamp.br/packmol/home.shtml">Packmol</a> - Initial configurations for molecular dynamics simulations by packing optimization.</li>
+<li><a href="http://meilerlab.org/index.php/bclcommons/show/b_apps_id/1">BCL::Commons</a></li>
+</ul>
+<p><a id="app-docking"></a></p>
+<h3>Docking</h3>
+<ul>
+<li><a href="http://vina.scripps.edu/">AutoDock Vina</a> - Molecular docking and virtual screening.</li>
+<li><a href="https://sourceforge.net/projects/smina/">smina</a> - Customized <a href="http://vina.scripps.edu/">AutoDock Vina</a> to better support scoring function development and high-performance energy minimization.</li>
+</ul>
+<p><a id="app-virtual"></a></p>
+<h3>Virtual Machine</h3>
+<ul>
+<li><a href="http://chembl.blogspot.com/2015/07/mychembl-20-has-landed.html">myChEMBL</a> - A version of ChEMBL built using Open Source software (Ubuntu, PostgreSQL, RDKit)</li>
+<li><a href="https://github.com/3D-e-Chem/3D-e-Chem-VM">3D e-Chem Virtual Machine</a> - Virtual machine with all software and sample data to run 3D-e-Chem Knime workflows</li>
+</ul>
+<h2>Libraries</h2>
+<p><a id="lib-general"></a></p>
+<h3>General Purpose</h3>
+<ul>
+<li><a href="http://www.rdkit.org/">RDKit</a> - Collection of cheminformatics and machine-learning software written in C++ and Python.</li>
+<li><a href="https://github.com/epam/Indigo">Indigo</a> - Universal molecular toolkit that can be used for molecular fingerprinting, substructure search, and molecular visualization written in C++ package, with Java, C#, and Python wrappers.</li>
+<li><a href="https://sourceforge.net/projects/cdk/">CDK (Chemistry Development Kit)</a> - Algorithms for structural chemo- and bioinformatics, implemented in Java.</li>
+<li><a href="https://www.bioconductor.org/packages/release/bioc/vignettes/ChemmineR/inst/doc/ChemmineR.html">ChemmineR</a> - Cheminformatics package for analyzing drug-like small molecule data in R.</li>
+<li><a href="https://github.com/bjodah/chempy">ChemPy</a> - A Python package useful for chemistry (mainly physical/inorganic/analytical chemistry)</li>
+<li><a href="https://github.com/mojaie/MolecularGraph.jl">MolecularGraph.jl</a> - A graph-based molecule modeling and chemoinformatics analysis toolkit fully implemented in Julia</li>
+<li><a href="https://github.com/datamol-org/datamol">datamol</a>: - Molecular Manipulation Made Easy. A light wrapper build on top of RDKit.</li>
+<li><a href="https://github.com/cimm-kzn/CGRtools">CGRtools</a> - Toolkit for processing molecules, reactions and condensed graphs of reactions. Can be used for chemical standardization, MCS search, tautomers generation with backward compatibility to RDKit and NetworkX.</li>
+</ul>
+<p><a id="lib-format"></a></p>
+<h3>Format Checking</h3>
+<ul>
+<li><a href="https://github.com/chembl/ChEMBL_Structure_Pipeline">ChEMBL_Structure_Pipeline (formerly standardiser)</a> - Tool designed to provide a simple way of standardising molecules as a prelude to e.g. molecular modelling exercises.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Cheminformatics <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<blockquote>
+<p>Cheminformatics (also known as chemoinformatics, chemioinformatics and chemical informatics) is the use of computer and informational techniques applied to a range of problems in the field of chemistry.— <a href="https://en.wikipedia.org/wiki/Cheminformatics">Wikipedia</a></p>
+</blockquote>
+<p>A curated list of awesome Cheminformatics software, resources, and libraries. Mostly command line based, and free or open-source. Please feel free to <a href="CONTRIBUTING.md">contribute</a> !</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#applications">Applications</a></li>
+<li><a href="#app-visualization">Visualization</a></li>
+<li><a href="#app-cmd">Command Line Tools</a></li>
+<li><a href="#app-docking">Docking</a></li>
+<li><a href="#app-virtual">Virtual Machine</a></li>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#lib-general">General Purpose</a></li>
+<li><a href="#lib-visualization">Visualization</a></li>
+<li><a href="#lib-format">Command Line Tools</a></li>
+<li><a href="#lib-dock">Docking</a></li>
+<li><a href="#lib-des">Molecular Descriptors</a></li>
+<li><a href="#lib-ml">Machine Learning</a></li>
+<li><a href="#lib-web">Web APIs</a></li>
+<li><a href="#lib-db">Databases</a></li>
+<li><a href="#lib-others">Others</a></li>
+<li><a href="#journals">Journals</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#courses">Courses</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#see-also">See Also</a></li>
+</ul>
+<h2>Applications</h2>
+<p><a id="app-visualization"></a></p>
+<h3>Visualization</h3>
+<ul>
+<li><a href="https://sourceforge.net/projects/pymol/">PyMOL</a> - Python-enhanced molecular graphics tool.</li>
+<li><a href="http://jmol.sourceforge.net/">Jmol</a> - Browser-based HTML5 viewer and stand-alone Java viewer for chemical structures in 3D.</li>
+<li><a href="http://www.ks.uiuc.edu/Research/vmd/">VMD</a> - Molecular visualization program for displaying, animating, and analyzing large biomolecular systems using 3-D graphics and built-in scripting.</li>
+<li><a href="https://www.cgl.ucsf.edu/chimera/">Chimera</a> - Highly extensible program for interactive molecular visualization and analysis. <a href="https://www.cgl.ucsf.edu/chimera/docs/sourcecode.html">Source</a> is available.</li>
+<li><a href="https://www.cgl.ucsf.edu/chimerax/">ChimeraX</a> - The next-generation molecular visualization program, following UCSF Chimera. Source is available <a href="https://www.cgl.ucsf.edu/chimerax/docs/devel/conventions.html">here</a>.</li>
+<li><a href="http://www.openmolecules.org/datawarrior/index.html">DataWarrior</a> - A program for data Visualization and analysis which combines dynamic graphical views and interactive row filtering with chemical intelligence.</li>
+</ul>
+<p><a id="app-cmd"></a></p>
+<h3>Command Line Tools</h3>
+<ul>
+<li><a href="http://openbabel.org/wiki/Main_Page">Open Babel</a> - Chemical toolbox designed to speak the many languages of chemical data.</li>
+<li><a href="http://www.mayachemtools.org/index.html">MayaChemTools</a> - Collection of Perl and Python scripts, modules, and classes that support day-to-day computational discovery needs.</li>
+<li><a href="http://m3g.iqm.unicamp.br/packmol/home.shtml">Packmol</a> - Initial configurations for molecular dynamics simulations by packing optimization.</li>
+<li><a href="http://meilerlab.org/index.php/bclcommons/show/b_apps_id/1">BCL::Commons</a></li>
+</ul>
+<p><a id="app-docking"></a></p>
+<h3>Docking</h3>
+<ul>
+<li><a href="http://vina.scripps.edu/">AutoDock Vina</a> - Molecular docking and virtual screening.</li>
+<li><a href="https://sourceforge.net/projects/smina/">smina</a> - Customized <a href="http://vina.scripps.edu/">AutoDock Vina</a> to better support scoring function development and high-performance energy minimization.</li>
+</ul>
+<p><a id="app-virtual"></a></p>
+<h3>Virtual Machine</h3>
+<ul>
+<li><a href="http://chembl.blogspot.com/2015/07/mychembl-20-has-landed.html">myChEMBL</a> - A version of ChEMBL built using Open Source software (Ubuntu, PostgreSQL, RDKit)</li>
+<li><a href="https://github.com/3D-e-Chem/3D-e-Chem-VM">3D e-Chem Virtual Machine</a> - Virtual machine with all software and sample data to run 3D-e-Chem Knime workflows</li>
+</ul>
+<h2>Libraries</h2>
+<p><a id="lib-general"></a></p>
+<h3>General Purpose</h3>
+<ul>
+<li><a href="http://www.rdkit.org/">RDKit</a> - Collection of cheminformatics and machine-learning software written in C++ and Python.</li>
+<li><a href="https://github.com/epam/Indigo">Indigo</a> - Universal molecular toolkit that can be used for molecular fingerprinting, substructure search, and molecular visualization written in C++ package, with Java, C#, and Python wrappers.</li>
+<li><a href="https://sourceforge.net/projects/cdk/">CDK (Chemistry Development Kit)</a> - Algorithms for structural chemo- and bioinformatics, implemented in Java.</li>
+<li><a href="https://www.bioconductor.org/packages/release/bioc/vignettes/ChemmineR/inst/doc/ChemmineR.html">ChemmineR</a> - Cheminformatics package for analyzing drug-like small molecule data in R.</li>
+<li><a href="https://github.com/bjodah/chempy">ChemPy</a> - A Python package useful for chemistry (mainly physical/inorganic/analytical chemistry)</li>
+<li><a href="https://github.com/mojaie/MolecularGraph.jl">MolecularGraph.jl</a> - A graph-based molecule modeling and chemoinformatics analysis toolkit fully implemented in Julia</li>
+<li><a href="https://github.com/datamol-org/datamol">datamol</a>: - Molecular Manipulation Made Easy. A light wrapper build on top of RDKit.</li>
+<li><a href="https://github.com/cimm-kzn/CGRtools">CGRtools</a> - Toolkit for processing molecules, reactions and condensed graphs of reactions. Can be used for chemical standardization, MCS search, tautomers generation with backward compatibility to RDKit and NetworkX.</li>
+</ul>
+<p><a id="lib-format"></a></p>
+<h3>Format Checking</h3>
+<ul>
+<li><a href="https://github.com/chembl/ChEMBL_Structure_Pipeline">ChEMBL_Structure_Pipeline (formerly standardiser)</a> - Tool designed to provide a simple way of standardising molecules as a prelude to e.g. molecular modelling exercises.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'cheminformatics_README.md';
 
         fetch(markdownFile)
@@ -48,21 +195,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

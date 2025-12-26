@@ -8,38 +8,233 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sindresorhus Awesome Whisper - Awesome List Resources">
-    <title>Sindresorhus Awesome Whisper</title>
+    <meta name="description" content="Whisper is an open-source AI-powered speech recognition system developed by OpenAI - Official - Model variants - Apps - Web apps - CLI tools - Playgrounds -...">
+    <meta name="robots" content="index, follow">
+    <title>Whisper - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <div align="center">
+    <br>
+    <br>
+    <div>
+        <img src="media/logo.png" alt="Awesome Whisper">
+        <br>
+    </div>
+    <br>
+    <p>
+        <a href="https://openai.com/research/whisper">Whisper</a> is an open-source AI-powered speech recognition system developed by <a href="https://openai.com">OpenAI</a>
+    </p>
+    <br>
+    <a href="https://awesome.re">
+        <img src="https://awesome.re/badge-flat2.svg" alt="Awesome">
+    </a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#official">Official</a></li>
+<li><a href="#model-variants">Model variants</a></li>
+<li><a href="#apps">Apps</a></li>
+<li><a href="#web-apps">Web apps</a></li>
+<li><a href="#cli-tools">CLI tools</a></li>
+<li><a href="#playgrounds">Playgrounds</a></li>
+<li><a href="#packages">Packages</a></li>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#third-party-apis">Third-party APIs</a></li>
+<li><a href="#related-lists">Related lists</a></li>
+</ul>
+<h2>Official</h2>
+<ul>
+<li><a href="https://openai.com/research/whisper">Introduction</a></li>
+<li><a href="https://github.com/openai/whisper">Source code</a></li>
+<li><a href="https://cdn.openai.com/papers/whisper.pdf">White paper</a></li>
+</ul>
+<h2>Model variants</h2>
+<ul>
+<li><a href="https://github.com/ggerganov/whisper.cpp">Whisper.cpp</a> - Port of Whisper in C++.<ul>
+<li><a href="https://github.com/ggerganov/whisper.cpp#bindings">Bindings for many languages</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/m-bain/whisperX">WhisperX</a> - Adds fast automatic speaker recognition with word-level timestamps and speaker diarization.</li>
+<li><a href="https://github.com/guillaumekln/faster-whisper">faster-whisper</a> - Faster reimplementation of Whisper using CTranslate2.</li>
+<li><a href="https://github.com/sanchit-gandhi/whisper-jax">Whisper JAX</a> - JAX implementation of Whisper for up to 70x speed-up on TPU.</li>
+<li><a href="https://github.com/linto-ai/whisper-timestamped">whisper-timestamped</a> - Adds word-level timestamps and confidence scores.</li>
+<li><a href="https://github.com/zhuzilin/whisper-openvino">whisper-openvino</a> - Whisper running on OpenVINO.</li>
+<li><a href="https://github.com/usefulsensors/openai-whisper">whisper.tflite</a> - Whisper running on TensorFlow Lite.</li>
+<li><a href="https://huggingface.co/models?other=whisper">Whisper variants</a> - Various Whisper variants on Hugging Faces.</li>
+<li><a href="https://github.com/YuanGongND/whisper-at">Whisper-AT</a> - Whisper that can recognize non-speech audio events in addition to speech.</li>
+</ul>
+<h2>Apps</h2>
+<ul>
+<li><a href="https://sindresorhus.com/aiko">Aiko</a> - Audio transcription iOS and macOS app.</li>
+<li><a href="https://goodsnooze.gumroad.com/l/macwhisper">MacWhisper</a> - Audio transcription macOS app. (Freemium)</li>
+<li><a href="https://apps.apple.com/app/id6443658039">Whisper Memos</a> - Audio transcription iOS app. (Freemium)</li>
+<li><a href="https://apps.apple.com/app/id1671616134">FourYou</a> - Audio journal iOS app.</li>
+<li><a href="https://apps.apple.com/app/id1659864300">Jojo Transcribe</a> - Audio transcription macOS app.</li>
+<li><a href="https://github.com/chidiwilliams/Buzz">Buzz</a> - Audio transcription and translation macOS app.</li>
+<li><a href="https://store.getwavery.com/l/whisperscript">WhisperScript</a> - Audio transcription macOS app. (Freemium · Electron)</li>
+<li><a href="https://apps.apple.com/app/id6449008295">Audio Podium</a> - Audio/video management macOS app.</li>
+<li><a href="https://superwhisper.com">superwhisper</a> - Global audio transcription macOS menu bar app.</li>
+<li><a href="https://github.com/mkiol/dsnote">Speech Note</a> - Audio transcription Linux app.</li>
+<li><a href="https://www.fridaygpt.app">FridayGPT</a> - Dictation macOS app powered by OpenAI API.</li>
+<li><a href="https://easywhisper.io">EasyWhisper</a> - Windows and macOS app for audio transcription and speaker diarization. (Freemium)</li>
+<li><a href="https://audionote.app">Audio Note</a> - Real-time audio transcription on macOS and Windows. (Freemium · Electron)</li>
+<li><a href="https://github.com/woheller69/whisperIME">Whisper</a> - Android app for transcription and translation. (FOSS)</li>
+<li><a href="https://github.com/Beingpax/VoiceInk">VoiceInk</a> - Dictation and transcription macOS app. (FOSS)</li>
+<li><a href="https://github.com/heyito/ito">Ito AI</a> - AI voice dictation for Mac. (FOSS)</li>
+<li><a href="https://github.com/Starmel/OpenSuperWhisper">OpenSuperWhisper</a> - Dictation app for macOS (FOSS).</li>
+</ul>
+<h2>Web apps</h2>
+<!-- ### Hosted and self-hosted -->
+
+<h3>Hosted</h3>
+<ul>
+<li><a href="https://bigwav.app">bigWav</a> - Audio transcription and annotation tool.</li>
+<li><a href="https://freepodcasttranscription.com">Free Podcast Transcription</a> - Runs locally in your browser.</li>
+<li><a href="https://www.gladia.io">Gladia</a> - Transcription with real-time processing.</li>
+</ul>
+<h3>Self-hosted</h3>
+<ul>
+<li><a href="https://github.com/abdeladim-s/subsai">Subs AI</a> - Subtitle generation.</li>
+<li><a href="https://github.com/schibsted/WAAS">WaaS</a> - GUI and API for Whisper.</li>
+<li><a href="https://github.com/beyondcode/writeout.ai">writeout.ai</a> - Laravel app to transcribe and translate audio files.</li>
+<li><a href="https://github.com/pas1ko/meeper">Meeper</a> - Transcriptions, summary and more for meetings and any browser tab. (Chrome app)</li>
+</ul>
+<h2>CLI tools</h2>
+<ul>
+<li><a href="https://github.com/m1guelpf/yt-whisper">yt-whisper</a> - YouTube subtitle generation.</li>
+<li><a href="https://github.com/platisd/phonix">phonix</a> - Generate captions for videos.</li>
+<li><a href="https://github.com/Purfview/whisper-standalone-win">whisper-standalone-win</a> - Standalone Windows executable for Whisper and Faster Whisper.</li>
+<li><a href="https://github.com/Softcatala/whisper-ctranslate2">whisper-ctranslate2</a> - Whisper command-line tool based on CTranslate2, compatible with the original.</li>
+<li><a href="https://github.com/ochen1/insanely-fast-whisper-cli">insanely-fast-whisper-cli</a> - Achieve transcription speeds near 30x real-time with several optimizations.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <div align="center">
+    <br>
+    <br>
+    <div>
+        <img src="media/logo.png" alt="Awesome Whisper">
+        <br>
+    </div>
+    <br>
+    <p>
+        <a href="https://openai.com/research/whisper">Whisper</a> is an open-source AI-powered speech recognition system developed by <a href="https://openai.com">OpenAI</a>
+    </p>
+    <br>
+    <a href="https://awesome.re">
+        <img src="https://awesome.re/badge-flat2.svg" alt="Awesome">
+    </a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#official">Official</a></li>
+<li><a href="#model-variants">Model variants</a></li>
+<li><a href="#apps">Apps</a></li>
+<li><a href="#web-apps">Web apps</a></li>
+<li><a href="#cli-tools">CLI tools</a></li>
+<li><a href="#playgrounds">Playgrounds</a></li>
+<li><a href="#packages">Packages</a></li>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#third-party-apis">Third-party APIs</a></li>
+<li><a href="#related-lists">Related lists</a></li>
+</ul>
+<h2>Official</h2>
+<ul>
+<li><a href="https://openai.com/research/whisper">Introduction</a></li>
+<li><a href="https://github.com/openai/whisper">Source code</a></li>
+<li><a href="https://cdn.openai.com/papers/whisper.pdf">White paper</a></li>
+</ul>
+<h2>Model variants</h2>
+<ul>
+<li><a href="https://github.com/ggerganov/whisper.cpp">Whisper.cpp</a> - Port of Whisper in C++.<ul>
+<li><a href="https://github.com/ggerganov/whisper.cpp#bindings">Bindings for many languages</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/m-bain/whisperX">WhisperX</a> - Adds fast automatic speaker recognition with word-level timestamps and speaker diarization.</li>
+<li><a href="https://github.com/guillaumekln/faster-whisper">faster-whisper</a> - Faster reimplementation of Whisper using CTranslate2.</li>
+<li><a href="https://github.com/sanchit-gandhi/whisper-jax">Whisper JAX</a> - JAX implementation of Whisper for up to 70x speed-up on TPU.</li>
+<li><a href="https://github.com/linto-ai/whisper-timestamped">whisper-timestamped</a> - Adds word-level timestamps and confidence scores.</li>
+<li><a href="https://github.com/zhuzilin/whisper-openvino">whisper-openvino</a> - Whisper running on OpenVINO.</li>
+<li><a href="https://github.com/usefulsensors/openai-whisper">whisper.tflite</a> - Whisper running on TensorFlow Lite.</li>
+<li><a href="https://huggingface.co/models?other=whisper">Whisper variants</a> - Various Whisper variants on Hugging Faces.</li>
+<li><a href="https://github.com/YuanGongND/whisper-at">Whisper-AT</a> - Whisper that can recognize non-speech audio events in addition to speech.</li>
+</ul>
+<h2>Apps</h2>
+<ul>
+<li><a href="https://sindresorhus.com/aiko">Aiko</a> - Audio transcription iOS and macOS app.</li>
+<li><a href="https://goodsnooze.gumroad.com/l/macwhisper">MacWhisper</a> - Audio transcription macOS app. (Freemium)</li>
+<li><a href="https://apps.apple.com/app/id6443658039">Whisper Memos</a> - Audio transcription iOS app. (Freemium)</li>
+<li><a href="https://apps.apple.com/app/id1671616134">FourYou</a> - Audio journal iOS app.</li>
+<li><a href="https://apps.apple.com/app/id1659864300">Jojo Transcribe</a> - Audio transcription macOS app.</li>
+<li><a href="https://github.com/chidiwilliams/Buzz">Buzz</a> - Audio transcription and translation macOS app.</li>
+<li><a href="https://store.getwavery.com/l/whisperscript">WhisperScript</a> - Audio transcription macOS app. (Freemium · Electron)</li>
+<li><a href="https://apps.apple.com/app/id6449008295">Audio Podium</a> - Audio/video management macOS app.</li>
+<li><a href="https://superwhisper.com">superwhisper</a> - Global audio transcription macOS menu bar app.</li>
+<li><a href="https://github.com/mkiol/dsnote">Speech Note</a> - Audio transcription Linux app.</li>
+<li><a href="https://www.fridaygpt.app">FridayGPT</a> - Dictation macOS app powered by OpenAI API.</li>
+<li><a href="https://easywhisper.io">EasyWhisper</a> - Windows and macOS app for audio transcription and speaker diarization. (Freemium)</li>
+<li><a href="https://audionote.app">Audio Note</a> - Real-time audio transcription on macOS and Windows. (Freemium · Electron)</li>
+<li><a href="https://github.com/woheller69/whisperIME">Whisper</a> - Android app for transcription and translation. (FOSS)</li>
+<li><a href="https://github.com/Beingpax/VoiceInk">VoiceInk</a> - Dictation and transcription macOS app. (FOSS)</li>
+<li><a href="https://github.com/heyito/ito">Ito AI</a> - AI voice dictation for Mac. (FOSS)</li>
+<li><a href="https://github.com/Starmel/OpenSuperWhisper">OpenSuperWhisper</a> - Dictation app for macOS (FOSS).</li>
+</ul>
+<h2>Web apps</h2>
+<!-- ### Hosted and self-hosted -->
+
+<h3>Hosted</h3>
+<ul>
+<li><a href="https://bigwav.app">bigWav</a> - Audio transcription and annotation tool.</li>
+<li><a href="https://freepodcasttranscription.com">Free Podcast Transcription</a> - Runs locally in your browser.</li>
+<li><a href="https://www.gladia.io">Gladia</a> - Transcription with real-time processing.</li>
+</ul>
+<h3>Self-hosted</h3>
+<ul>
+<li><a href="https://github.com/abdeladim-s/subsai">Subs AI</a> - Subtitle generation.</li>
+<li><a href="https://github.com/schibsted/WAAS">WaaS</a> - GUI and API for Whisper.</li>
+<li><a href="https://github.com/beyondcode/writeout.ai">writeout.ai</a> - Laravel app to transcribe and translate audio files.</li>
+<li><a href="https://github.com/pas1ko/meeper">Meeper</a> - Transcriptions, summary and more for meetings and any browser tab. (Chrome app)</li>
+</ul>
+<h2>CLI tools</h2>
+<ul>
+<li><a href="https://github.com/m1guelpf/yt-whisper">yt-whisper</a> - YouTube subtitle generation.</li>
+<li><a href="https://github.com/platisd/phonix">phonix</a> - Generate captions for videos.</li>
+<li><a href="https://github.com/Purfview/whisper-standalone-win">whisper-standalone-win</a> - Standalone Windows executable for Whisper and Faster Whisper.</li>
+<li><a href="https://github.com/Softcatala/whisper-ctranslate2">whisper-ctranslate2</a> - Whisper command-line tool based on CTranslate2, compatible with the original.</li>
+<li><a href="https://github.com/ochen1/insanely-fast-whisper-cli">insanely-fast-whisper-cli</a> - Achieve transcription speeds near 30x real-time with several optimizations.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'whisper_README.md';
 
         fetch(markdownFile)
@@ -48,21 +243,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

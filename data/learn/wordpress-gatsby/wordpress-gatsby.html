@@ -8,38 +8,185 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Henrikwirth Awesome Wordpress Gatsby - Awesome List Resources">
-    <title>Henrikwirth Awesome Wordpress Gatsby</title>
+    <meta name="description" content="A curated list of resources about WordPress as a headless CMS with Gatsby as a Static Site Generator (SSG). A headless CMS is a back-end only content...">
+    <meta name="robots" content="index, follow">
+    <title>Wordpress Gatsby - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <div align="center">
+  <br /><br />
+  <a href="https://awesome.re"><img src="https://awesome.re/badge-flat.svg" /></a>
+  <br /><br /><br />
+  <a href="https://wordpress.org/"><img width="150" height="150" align="center" src="media/wordpress-logo.svg" alt="WordPress"></a>
+      <a href="https://www.gatsbyjs.org/"><img width="150" height="150" align="center" src="media/gatsby-logo.svg" alt="Gatsby"></a>
+  <br /><br />
+  <p>
+    <b>
+      A curated list of resources about WordPress as a headless CMS with Gatsby as a Static Site Generator (SSG).
+    </b>
+  </p>
+  <br />
+</div>
+
+<p>A <strong>headless CMS</strong> is a back-end only content management system (CMS). Its purpose is to serve content and make it accessible via an API (e.g. REST or GraphQL).</p>
+<p>A <strong>Static Site Generator (SSG)</strong> is a framework or setup, that helps you to generate static websites (HTML/CSS/JS). The source of your data can be anything from local files (e.g. text files or markdown) to APIs (e.g. REST, GraphQL).</p>
+<p><br /></p>
+<p><strong>Why Gatsby and WordPress?</strong></p>
+<p>WordPress is one of the <strong>most used CMS in the world</strong> and therefore many people already know how to work with it. The typical front-end approach with PHP-based templates is getting more and more problematic in an environment where performance is key. The approach to use WordPress as a headless CMS with normal API calls through JavaScript already exists, but also has the downside of having to make requests to the server and rendering depending on the response. This adds time to load. <strong>Gatsby instead, pre-renders the whole site at compile time</strong> and therefore the user gets a <strong>fully prepared static site on their first request</strong>, making it one of the <strong>best approaches for performance</strong>. Another huge benefit is <strong>security</strong>, as your WordPress instance can be anywhere, even locally and you don't need to expose any of it to the user. <strong>The static Gatsby site therefore, is not hackable.</strong> Find further arguments for pros and cons in the resources below.</p>
+<h2>Contents</h2>
+<!-- TOC -->
+<ul>
+<li><a href="#communities">Communities</a></li>
+<li><a href="#articles-and-talks">Articles and Talks</a></li>
+<li><a href="#plugins">Plugins</a><ul>
+<li><a href="#wordpress">WordPress</a></li>
+<li><a href="#gatsby">Gatsby</a></li>
+</ul>
+</li>
+<li><a href="#free-tutorials--courses">Free Tutorials / Courses</a><ul>
+<li><a href="#written-tutorials">Written Tutorials</a></li>
+<li><a href="#video-tutorials">Video Tutorials</a></li>
+</ul>
+</li>
+<li><a href="#paid-tutorials--courses">Paid Tutorials / Courses</a></li>
+<li><a href="#starters">Starters</a></li>
+<li><a href="#themes">Themes</a></li>
+</ul>
+<!-- /TOC -->
+
+<h2>Communities</h2>
+<p>If you need help with anything, there are some highly active communities.</p>
+<p><strong>WPGraphQL</strong>
+- <a href="https://wpgql-slack.herokuapp.com/">Slack Chat</a>
+- <a href="https://spectrum.chat/wpgraphql">Spectrum Chat</a>
+- <a href="https://twitter.com/wpgraphql">Twitter</a></p>
+<p><strong>Gatsby</strong>
+- <a href="https://gatsby.dev/discord">Discord Chat</a>
+- <a href="https://www.reddit.com/r/gatsbyjs/">Reddit</a>
+- <a href="https://stackoverflow.com/questions/tagged/gatsby">Stack Overflow</a></p>
+<h2>Articles and Talks</h2>
+<p>List of articles and talks that elaborate on the technology stack in general.</p>
+<ul>
+<li>2021.02: <a href="https://www.gatsbyjs.com/blog/wordpress-integration">Announcing Gatsby’s New WordPress Integration</a></li>
+<li>2021.02: <a href="https://www.youtube.com/watch?v=Me_A0HBYXx8">Jason Bahl of WPGraphQL's role in the operating system for the web</a></li>
+<li>2021.02: <a href="https://www.youtube.com/watch?v=8SAdtU8HAwM">Torque News Drop: Jason Bahl and WPGraphQL</a></li>
+<li>2021.02: <a href="https://wptavern.com/gatsby-launches-new-wordpress-integration-expanding-support-for-headless-architecture">Gatsby Launches New WordPress Integration, Expanding Support for Headless Architecture</a></li>
+<li>2020.11: <a href="https://www.wpgraphql.com/2020/11/16/announcing-wpgraphql-v1/">Announcing WPGraphQL v1.0</a></li>
+<li>2020.07: <a href="https://css-tricks.com/my-long-journey-to-a-decoupled-wordpress-gatsby-site/">My Long Journey to a Decoupled WordPress Gatsby Site</a></li>
+<li>2019.06: <a href="https://www.netlify.com/oreilly-jamstack/">Modern Web Development on the JAMstack
+  </a> - A report from Netlify about Modern Web Development on the JAMStack, published by O'REILLY.</li>
+</ul>
+<h2>Plugins</h2>
+<p>List of useful plugins to make WordPress and Gatsby work together. Ordered alphabetically.</p>
+<h3>WordPress</h3>
+<h4>Essential Plugins</h4>
+<ul>
+<li><a href="https://github.com/wp-graphql/wp-graphql">WPGraphQL</a> - <a href="https://docs.wpgraphql.com/">Documentation</a> - WPGraphQL brings the power of GraphQL to your WordPress site.</li>
+<li><a href="https://wordpress.org/plugins/wp-gatsby/">WPGatsby</a> - This plugin configures your WordPress site to be an optimized source for Gatsby.</li>
+</ul>
+<h4>WPGraphQL Extensions</h4>
+<ul>
+<li><a href="https://github.com/funkhaus/wp-graphql-cors">WPGraphQL Cors</a> - This FREE plugin from @kidunot89 and @byfunkhaus claims to enable authentication with WPGraphQL to “just work” by allowing you to set CORS headers that GraphQL will accept, which means WordPress default auth cookies can be accepted.</li>
+<li><a href="https://github.com/builtbycactus/total-counts-for-wp-graphql">Total Counts for WPGraphQL</a> - This FREE plugin from @builtbycactus exposes total counts to connections in the WPGraphQL Schema.</li>
+<li><a href="https://github.com/pristas-peter/wp-graphql-gutenberg">WPGraphQL Gutenberg</a> - Exposes Gutenberg blocks to the WPGraphQL API.</li>
+<li><a href="https://github.com/wp-graphql/wp-graphql-jwt-authentication">WPGraphQL JWT Authentication</a> - Extends the WPGraphQL plugin to provide authentication using JWT (JSON Web Tokens).</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <div align="center">
+  <br /><br />
+  <a href="https://awesome.re"><img src="https://awesome.re/badge-flat.svg" /></a>
+  <br /><br /><br />
+  <a href="https://wordpress.org/"><img width="150" height="150" align="center" src="media/wordpress-logo.svg" alt="WordPress"></a>
+      <a href="https://www.gatsbyjs.org/"><img width="150" height="150" align="center" src="media/gatsby-logo.svg" alt="Gatsby"></a>
+  <br /><br />
+  <p>
+    <b>
+      A curated list of resources about WordPress as a headless CMS with Gatsby as a Static Site Generator (SSG).
+    </b>
+  </p>
+  <br />
+</div>
+
+<p>A <strong>headless CMS</strong> is a back-end only content management system (CMS). Its purpose is to serve content and make it accessible via an API (e.g. REST or GraphQL).</p>
+<p>A <strong>Static Site Generator (SSG)</strong> is a framework or setup, that helps you to generate static websites (HTML/CSS/JS). The source of your data can be anything from local files (e.g. text files or markdown) to APIs (e.g. REST, GraphQL).</p>
+<p><br /></p>
+<p><strong>Why Gatsby and WordPress?</strong></p>
+<p>WordPress is one of the <strong>most used CMS in the world</strong> and therefore many people already know how to work with it. The typical front-end approach with PHP-based templates is getting more and more problematic in an environment where performance is key. The approach to use WordPress as a headless CMS with normal API calls through JavaScript already exists, but also has the downside of having to make requests to the server and rendering depending on the response. This adds time to load. <strong>Gatsby instead, pre-renders the whole site at compile time</strong> and therefore the user gets a <strong>fully prepared static site on their first request</strong>, making it one of the <strong>best approaches for performance</strong>. Another huge benefit is <strong>security</strong>, as your WordPress instance can be anywhere, even locally and you don't need to expose any of it to the user. <strong>The static Gatsby site therefore, is not hackable.</strong> Find further arguments for pros and cons in the resources below.</p>
+<h2>Contents</h2>
+<!-- TOC -->
+<ul>
+<li><a href="#communities">Communities</a></li>
+<li><a href="#articles-and-talks">Articles and Talks</a></li>
+<li><a href="#plugins">Plugins</a><ul>
+<li><a href="#wordpress">WordPress</a></li>
+<li><a href="#gatsby">Gatsby</a></li>
+</ul>
+</li>
+<li><a href="#free-tutorials--courses">Free Tutorials / Courses</a><ul>
+<li><a href="#written-tutorials">Written Tutorials</a></li>
+<li><a href="#video-tutorials">Video Tutorials</a></li>
+</ul>
+</li>
+<li><a href="#paid-tutorials--courses">Paid Tutorials / Courses</a></li>
+<li><a href="#starters">Starters</a></li>
+<li><a href="#themes">Themes</a></li>
+</ul>
+<!-- /TOC -->
+
+<h2>Communities</h2>
+<p>If you need help with anything, there are some highly active communities.</p>
+<p><strong>WPGraphQL</strong>
+- <a href="https://wpgql-slack.herokuapp.com/">Slack Chat</a>
+- <a href="https://spectrum.chat/wpgraphql">Spectrum Chat</a>
+- <a href="https://twitter.com/wpgraphql">Twitter</a></p>
+<p><strong>Gatsby</strong>
+- <a href="https://gatsby.dev/discord">Discord Chat</a>
+- <a href="https://www.reddit.com/r/gatsbyjs/">Reddit</a>
+- <a href="https://stackoverflow.com/questions/tagged/gatsby">Stack Overflow</a></p>
+<h2>Articles and Talks</h2>
+<p>List of articles and talks that elaborate on the technology stack in general.</p>
+<ul>
+<li>2021.02: <a href="https://www.gatsbyjs.com/blog/wordpress-integration">Announcing Gatsby’s New WordPress Integration</a></li>
+<li>2021.02: <a href="https://www.youtube.com/watch?v=Me_A0HBYXx8">Jason Bahl of WPGraphQL's role in the operating system for the web</a></li>
+<li>2021.02: <a href="https://www.youtube.com/watch?v=8SAdtU8HAwM">Torque News Drop: Jason Bahl and WPGraphQL</a></li>
+<li>2021.02: <a href="https://wptavern.com/gatsby-launches-new-wordpress-integration-expanding-support-for-headless-architecture">Gatsby Launches New WordPress Integration, Expanding Support for Headless Architecture</a></li>
+<li>2020.11: <a href="https://www.wpgraphql.com/2020/11/16/announcing-wpgraphql-v1/">Announcing WPGraphQL v1.0</a></li>
+<li>2020.07: <a href="https://css-tricks.com/my-long-journey-to-a-decoupled-wordpress-gatsby-site/">My Long Journey to a Decoupled WordPress Gatsby Site</a></li>
+<li>2019.06: <a href="https://www.netlify.com/oreilly-jamstack/">Modern Web Development on the JAMstack
+  </a> - A report from Netlify about Modern Web Development on the JAMStack, published by O'REILLY.</li>
+</ul>
+<h2>Plugins</h2>
+<p>List of useful plugins to make WordPress and Gatsby work together. Ordered alphabetically.</p>
+<h3>WordPress</h3>
+<h4>Essential Plugins</h4>
+<ul>
+<li><a href="https://github.com/wp-graphql/wp-graphql">WPGraphQL</a> - <a href="https://docs.wpgraphql.com/">Documentation</a> - WPGraphQL brings the power of GraphQL to your WordPress site.</li>
+<li><a href="https://wordpress.org/plugins/wp-gatsby/">WPGatsby</a> - This plugin configures your WordPress site to be an optimized source for Gatsby.</li>
+</ul>
+<h4>WPGraphQL Extensions</h4>
+<ul>
+<li><a href="https://github.com/funkhaus/wp-graphql-cors">WPGraphQL Cors</a> - This FREE plugin from @kidunot89 and @byfunkhaus claims to enable authentication with WPGraphQL to “just work” by allowing you to set CORS headers that GraphQL will accept, which means WordPress default auth cookies can be accepted.</li>
+<li><a href="https://github.com/builtbycactus/total-counts-for-wp-graphql">Total Counts for WPGraphQL</a> - This FREE plugin from @builtbycactus exposes total counts to connections in the WPGraphQL Schema.</li>
+<li><a href="https://github.com/pristas-peter/wp-graphql-gutenberg">WPGraphQL Gutenberg</a> - Exposes Gutenberg blocks to the WPGraphQL API.</li>
+<li><a href="https://github.com/wp-graphql/wp-graphql-jwt-authentication">WPGraphQL JWT Authentication</a> - Extends the WPGraphQL plugin to provide authentication using JWT (JSON Web Tokens).</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'wordpress-gatsby_README.md';
 
         fetch(markdownFile)
@@ -48,21 +195,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

@@ -8,38 +8,165 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Marmelab Awesome Rest - Awesome List Resources">
-    <title>Marmelab Awesome Rest</title>
+    <meta name="description" content="A collaborative list of great resources about RESTful API architecture, development, test, and performance. Feel free to contribute to this on-going list....">
+    <meta name="robots" content="index, follow">
+    <title>Awesome REST [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome REST <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A collaborative list of great resources about RESTful API architecture, development, test, and performance. Feel free to contribute to this on-going list.</p>
+<ul>
+<li><a href="#design">Design</a></li>
+<li><a href="#guidelines">Guidelines</a></li>
+<li><a href="#standards">Standards</a></li>
+<li><a href="#clients">Clients</a></li>
+<li><a href="#php-clients">PHP</a></li>
+<li><a href="#javascript-clients">Client-side JavaScript</a></li>
+<li><a href="#nodejs-clients">Node.js</a></li>
+<li><a href="#ruby-clients">Ruby</a></li>
+<li><a href="#go-clients">Go</a></li>
+<li><a href="#net-clients">.Net</a></li>
+<li><a href="#generators">Generators</a></li>
+<li><a href="#servers">Servers</a></li>
+<li><a href="#directly-on-top-of-a-rmdb">Directly On Top Of A RMDB</a></li>
+<li><a href="#nodejs">Node.js</a></li>
+<li><a href="#php">PHP</a></li>
+<li><a href="#symfony2">Symfony2</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#ruby">Ruby</a></li>
+<li><a href="#go">Go</a></li>
+<li><a href="#java">Java</a></li>
+<li><a href="#haskell">Haskell</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#querying">Querying</a></li>
+<li><a href="#mocking">Mocking</a></li>
+<li><a href="#public-rest-apis-to-use-in-tests">Public REST APIs To Use In Tests</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#api-gateway">API Gateway</a></li>
+<li><a href="#saas-tools">SaaS Tools</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+</ul>
+<h2>Design</h2>
+<ul>
+<li><a href="https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm">Architectural Styles and
+the Design of Network-based Software Architectures</a> - Roy Fielding's dissertation defining REST</li>
+<li><a href="https://github.com/interagent/http-api-design">HTTP API design guide extracted from work on the Heroku Platform API</a></li>
+<li><a href="https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api">Best Practices for Designing a Pragmatic RESTful API</a></li>
+<li><a href="https://blog.octo.com/en/design-a-rest-api/">How to design a REST API?</a> - Full guide tackling security, pagination, filtering, versioning, partial answers, CORS, etc.</li>
+<li><a href="https://martinfowler.com/articles/richardsonMaturityModel.html">Richardson Maturity Model</a> - Explained by Martin Fowler, originally presented by Leonard Richardson at the <a href="https://www.crummy.com/writing/speaking/2008-QCon/act3.html">QCon 2008</a>.</li>
+<li><a href="https://martinfowler.com/articles/enterpriseREST.html">Enterprise Integration Using REST</a> - Discusses the constraints and flexibility that you have with nonpublic APIs, and lessons learned from doing large scale RESTful integration across multiple teams.</li>
+<li><a href="https://web.archive.org/web/20201111235328/timelessrepo.com/haters-gonna-hateoas">HATEOAS</a> - Clear explanation on what HATEOAS is, and why you should use it.</li>
+<li><a href="https://www.infoq.com/articles/webber-rest-workflow/">How to GET a cup of coffee</a></li>
+<li><a href="https://www.restapitutorial.com/">REST API Tutorial</a> - RestApiTutorial.com is dedicated to tracking REST API best practices and making resources available to enable quick reference and self education for the development crafts-person.</li>
+<li><a href="https://github.com/shieldfy/API-Security-Checklist">API-Security-Checklist</a> - Best practices about REST API security</li>
+</ul>
+<h3>Guidelines</h3>
+<ul>
+<li><a href="https://github.com/adidas/api-guidelines/blob/master/rest-api-guidelines/rest.md">Adidas REST API Guidelines</a> - Adidas REST API Guidelines define standards and guidelines for building REST APIs at adidas.</li>
+<li><a href="https://developer.atlassian.com/server/framework/atlassian-sdk/atlassian-rest-api-design-guidelines-version-1/">Atlassian REST API design guidelines version 1</a> - This document provides guidelines to Atlassian developers who are designing REST APIs for Atlassian applications.</li>
+<li><a href="https://github.com/CiscoDevNet/api-design-guide">Cisco REST API Guide</a> - Guidelines for designing REST APIs at Cisco.</li>
+<li><a href="https://cloud.google.com/apis/design/">Google Cloud API design guide</a> - Guidelines Google follows when designing Cloud APIs and other Google APIs (REST APIs and gRPC APIs).</li>
+<li><a href="https://github.com/Haufe-Lexware/api-style-guide">Haufe API Style Guide</a> - Guidelines created by Haufe-Lexware CTO team.</li>
+<li><a href="https://github.com/Microsoft/api-guidelines/blob/vNext/Guidelines.md#readme">Microsoft REST API Guidelines</a> - The Microsoft REST API Guidelines, as a design principle, encourages application developers to have resources accessible to them via a RESTful HTTP interface.</li>
+<li><a href="https://github.com/zalando/restful-api-guidelines">Restful API Guidelines by Zalando</a> - Developing Restful APIs: A Comprehensive Set of Guidelines.</li>
+</ul>
+<h2>Standards</h2>
+<ul>
+<li><a href="https://jsonapi.org/">JSON API</a> - Standard for building APIs in JSON.</li>
+<li><a href="https://raml.org/">RAML</a> - Simple and succinct way to describe RESTful API.</li>
+<li><a href="https://github.com/omniti-labs/jsend">JSend</a> - Simple specification that lays down some rules for how JSON responses from web servers should be formatted.</li>
+<li><a href="https://www.odata.org/">OData</a> - Open protocol to allow the creation and consumption of queryable and interoperable RESTful APIs. Quite complex.</li>
+<li><a href="https://tools.ietf.org/html/draft-kelly-json-hal-06">HAL</a> - Simple format that gives a consistent and easy way to hyperlink between resources in your API.</li>
+<li><a href="https://json-ld.org/">JSON-LD</a> - Standard for describing Linked Data and hypermedia relations in JSON (W3C).</li>
+<li><a href="https://www.hydra-cg.com/">Hydra</a> - Vocabulary for Hypermedia-Driven Web APIs (W3C).</li>
+<li><a href="https://schema.org">Schema.org</a> - Collection of schemas describing common data models.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome REST <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A collaborative list of great resources about RESTful API architecture, development, test, and performance. Feel free to contribute to this on-going list.</p>
+<ul>
+<li><a href="#design">Design</a></li>
+<li><a href="#guidelines">Guidelines</a></li>
+<li><a href="#standards">Standards</a></li>
+<li><a href="#clients">Clients</a></li>
+<li><a href="#php-clients">PHP</a></li>
+<li><a href="#javascript-clients">Client-side JavaScript</a></li>
+<li><a href="#nodejs-clients">Node.js</a></li>
+<li><a href="#ruby-clients">Ruby</a></li>
+<li><a href="#go-clients">Go</a></li>
+<li><a href="#net-clients">.Net</a></li>
+<li><a href="#generators">Generators</a></li>
+<li><a href="#servers">Servers</a></li>
+<li><a href="#directly-on-top-of-a-rmdb">Directly On Top Of A RMDB</a></li>
+<li><a href="#nodejs">Node.js</a></li>
+<li><a href="#php">PHP</a></li>
+<li><a href="#symfony2">Symfony2</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#ruby">Ruby</a></li>
+<li><a href="#go">Go</a></li>
+<li><a href="#java">Java</a></li>
+<li><a href="#haskell">Haskell</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#querying">Querying</a></li>
+<li><a href="#mocking">Mocking</a></li>
+<li><a href="#public-rest-apis-to-use-in-tests">Public REST APIs To Use In Tests</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#api-gateway">API Gateway</a></li>
+<li><a href="#saas-tools">SaaS Tools</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+</ul>
+<h2>Design</h2>
+<ul>
+<li><a href="https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm">Architectural Styles and
+the Design of Network-based Software Architectures</a> - Roy Fielding's dissertation defining REST</li>
+<li><a href="https://github.com/interagent/http-api-design">HTTP API design guide extracted from work on the Heroku Platform API</a></li>
+<li><a href="https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api">Best Practices for Designing a Pragmatic RESTful API</a></li>
+<li><a href="https://blog.octo.com/en/design-a-rest-api/">How to design a REST API?</a> - Full guide tackling security, pagination, filtering, versioning, partial answers, CORS, etc.</li>
+<li><a href="https://martinfowler.com/articles/richardsonMaturityModel.html">Richardson Maturity Model</a> - Explained by Martin Fowler, originally presented by Leonard Richardson at the <a href="https://www.crummy.com/writing/speaking/2008-QCon/act3.html">QCon 2008</a>.</li>
+<li><a href="https://martinfowler.com/articles/enterpriseREST.html">Enterprise Integration Using REST</a> - Discusses the constraints and flexibility that you have with nonpublic APIs, and lessons learned from doing large scale RESTful integration across multiple teams.</li>
+<li><a href="https://web.archive.org/web/20201111235328/timelessrepo.com/haters-gonna-hateoas">HATEOAS</a> - Clear explanation on what HATEOAS is, and why you should use it.</li>
+<li><a href="https://www.infoq.com/articles/webber-rest-workflow/">How to GET a cup of coffee</a></li>
+<li><a href="https://www.restapitutorial.com/">REST API Tutorial</a> - RestApiTutorial.com is dedicated to tracking REST API best practices and making resources available to enable quick reference and self education for the development crafts-person.</li>
+<li><a href="https://github.com/shieldfy/API-Security-Checklist">API-Security-Checklist</a> - Best practices about REST API security</li>
+</ul>
+<h3>Guidelines</h3>
+<ul>
+<li><a href="https://github.com/adidas/api-guidelines/blob/master/rest-api-guidelines/rest.md">Adidas REST API Guidelines</a> - Adidas REST API Guidelines define standards and guidelines for building REST APIs at adidas.</li>
+<li><a href="https://developer.atlassian.com/server/framework/atlassian-sdk/atlassian-rest-api-design-guidelines-version-1/">Atlassian REST API design guidelines version 1</a> - This document provides guidelines to Atlassian developers who are designing REST APIs for Atlassian applications.</li>
+<li><a href="https://github.com/CiscoDevNet/api-design-guide">Cisco REST API Guide</a> - Guidelines for designing REST APIs at Cisco.</li>
+<li><a href="https://cloud.google.com/apis/design/">Google Cloud API design guide</a> - Guidelines Google follows when designing Cloud APIs and other Google APIs (REST APIs and gRPC APIs).</li>
+<li><a href="https://github.com/Haufe-Lexware/api-style-guide">Haufe API Style Guide</a> - Guidelines created by Haufe-Lexware CTO team.</li>
+<li><a href="https://github.com/Microsoft/api-guidelines/blob/vNext/Guidelines.md#readme">Microsoft REST API Guidelines</a> - The Microsoft REST API Guidelines, as a design principle, encourages application developers to have resources accessible to them via a RESTful HTTP interface.</li>
+<li><a href="https://github.com/zalando/restful-api-guidelines">Restful API Guidelines by Zalando</a> - Developing Restful APIs: A Comprehensive Set of Guidelines.</li>
+</ul>
+<h2>Standards</h2>
+<ul>
+<li><a href="https://jsonapi.org/">JSON API</a> - Standard for building APIs in JSON.</li>
+<li><a href="https://raml.org/">RAML</a> - Simple and succinct way to describe RESTful API.</li>
+<li><a href="https://github.com/omniti-labs/jsend">JSend</a> - Simple specification that lays down some rules for how JSON responses from web servers should be formatted.</li>
+<li><a href="https://www.odata.org/">OData</a> - Open protocol to allow the creation and consumption of queryable and interoperable RESTful APIs. Quite complex.</li>
+<li><a href="https://tools.ietf.org/html/draft-kelly-json-hal-06">HAL</a> - Simple format that gives a consistent and easy way to hyperlink between resources in your API.</li>
+<li><a href="https://json-ld.org/">JSON-LD</a> - Standard for describing Linked Data and hypermedia relations in JSON (W3C).</li>
+<li><a href="https://www.hydra-cg.com/">Hydra</a> - Vocabulary for Hypermedia-Driven Web APIs (W3C).</li>
+<li><a href="https://schema.org">Schema.org</a> - Collection of schemas describing common data models.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'rest_README.md';
 
         fetch(markdownFile)
@@ -48,21 +175,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

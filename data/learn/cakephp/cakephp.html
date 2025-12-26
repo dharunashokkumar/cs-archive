@@ -8,38 +8,243 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Friendsofcake Awesome Cakephp - Awesome List Resources">
-    <title>Friendsofcake Awesome Cakephp</title>
+    <meta name="description" content="A curated list of amazingly awesome CakePHP 5.x+ plugins, resources and shiny things. If you are looking for previous CakePHP resources please visit: - the...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome CakePHP [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome CakePHP <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A curated list of amazingly awesome <strong>CakePHP 5.x+</strong> plugins, resources and shiny things.</p>
+<p>If you are looking for previous CakePHP resources please visit:
+- the <a href="https://github.com/FriendsOfCake/awesome-cakephp/tree/cake2">CakePHP 2.x version</a> of this awesome list
+- the <a href="https://github.com/FriendsOfCake/awesome-cakephp/tree/cake3">CakePHP 3.x version</a> of this awesome list
+- the <a href="https://github.com/FriendsOfCake/awesome-cakephp/tree/cake4">CakePHP 4.x version</a> of this awesome list
+- this wiki with a <a href="https://github.com/FriendsOfCake/awesome-cakephp/wiki#plugins-not-yet-upgraded-from-2x-to-3x">list of not-yet upgraded plugins</a></p>
+<p>Additional lists you might find useful:
+- <a href="https://plugins.cakephp.org">CakePHP Plugins</a>
+- <a href="https://github.com/ziadoz/awesome-php">Awesome PHP</a>
+- <a href="https://github.com/bayandin/awesome-awesomeness">Awesome Awesomeness</a></p>
+<blockquote>
+<p>For those wondering; this list differs from plugins.cakephp.org by supporting
+plugin subparts (instead of only the whole plugin/repo), more granular
+grouping and the primary focus on task-specific functionality.</p>
+</blockquote>
+<h2>Table of Contents</h2>
+<ul>
+<li><a href="#plugins">Plugins</a><ul>
+<li><a href="#ai-tools">AI Tools</a></li>
+<li><a href="#architecture">Architecture</a></li>
+<li><a href="#asset-management">Asset Management</a></li>
+<li><a href="#auditing--logging">Auditing / Logging</a></li>
+<li><a href="#authentication-and-authorization">Authentication and Authorization</a></li>
+<li><a href="#caching">Caching</a></li>
+<li><a href="#code-analysis">Code Analysis</a></li>
+<li><a href="#console">Console</a></li>
+<li><a href="#debugging">Debugging</a></li>
+<li><a href="#email">Email</a></li>
+<li><a href="#file-manipulation">File Manipulation</a></li>
+<li><a href="#filtering-and-validation">Filtering and Validation</a></li>
+<li><a href="#geolocation">Geolocation</a></li>
+<li><a href="#i18n">I18n</a></li>
+<li><a href="#imagery">Imagery</a></li>
+<li><a href="#libs">Libs</a></li>
+<li><a href="#markup">Markup</a></li>
+<li><a href="#migration">Migration</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#navigation">Navigation</a></li>
+<li><a href="#notifications-and-real-time-communication">Notifications and Real-time Communication</a></li>
+<li><a href="#orm--database--datamapping">ORM / Database / Datamapping</a></li>
+<li><a href="#pdf">PDF</a></li>
+<li><a href="#queue">Queue</a></li>
+<li><a href="#rest-and-api">REST and API</a></li>
+<li><a href="#search">Search</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#seo">SEO</a></li>
+<li><a href="#skeleton">Skeleton</a></li>
+<li><a href="#social">Social</a></li>
+<li><a href="#templating">Templating</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#third-party-apis">Third Party APIs</a></li>
+</ul>
+</li>
+<li><a href="#software">Software</a><ul>
+<li><a href="#development-environment">Development Environment</a></li>
+</ul>
+</li>
+<li><a href="#web-applications">Web Applications</a><ul>
+<li><a href="#cms-and-applications-built-on-cakephp">CMS and applications built on CakePHP</a></li>
+<li><a href="#demo">Demo</a></li>
+</ul>
+</li>
+<li><a href="#resources">Resources</a><ul>
+<li><a href="#help">Help</a></li>
+<li><a href="#cakephp-websites">CakePHP Websites</a></li>
+<li><a href="#cakephp-books-and-articles">CakePHP Books and Articles</a></li>
+<li><a href="#cakephp-videos">CakePHP Videos</a></li>
+<li><a href="#cakephp-tutorials">CakePHP Tutorials</a></li>
+<li><a href="#cakephp-reading-and-listening">CakePHP Reading and Listening</a></li>
+<li><a href="#cakephp-internals-reading">CakePHP Internals Reading</a></li>
+</ul>
+</li>
+<li><a href="#conferences">Conferences</a></li>
+<li><a href="#contributing">Contributing</a></li>
+</ul>
+<h1>Plugins</h1>
+<h2>AI Tools</h2>
+<p><em>Plugins and libraries for integrating artificial intelligence and machine learning tools.</em></p>
+<ul>
+<li><a href="https://github.com/josbeir/cakephp-synapse">Synapse plugin</a> - Expose your application functionality via MCP, with built-in tools and documentation search to help you discover and interact with your app's capabilities.</li>
+</ul>
+<h2>Architecture</h2>
+<ul>
+<li><a href="https://github.com/burzum/cakephp-service-layer">Burzum/CakeServiceLayer plugin</a> - Service layer and domain/business model implementation.</li>
+</ul>
+<h2>Asset Management</h2>
+<p><em>Managing, compressing and minifying website assets.</em></p>
+<ul>
+<li><a href="https://github.com/markstory/asset_compress">AssetCompress plugin</a> - A complete asset manager for CakePHP.</li>
+<li><a href="https://github.com/ishanvyas22/asset-mix">AssetMix plugin</a> - Provides integration with <a href="https://laravel-mix.com">Laravel Mix</a> asset compilation.</li>
+<li><a href="https://github.com/brandcom/cakephp-vite">ViteHelper plugin</a> - Provides integration with <a href="https://vite.dev/">Vite</a> asset compilation.</li>
+</ul>
+<h2>Auditing / Logging</h2>
+<p><em>Tracking changes and events in your app.</em></p>
+<ul>
+<li><a href="https://github.com/dereuromark/cakephp-audit-stash">AuditStash plugin</a> - Flexible and rock solid audit log tracking.</li>
+<li><a href="https://github.com/dereuromark/cakephp-bouncer">Bouncer plugin</a> - The pendant to AuditStash, allow moderation and approval of add/edit/delete actions before the actual change is applied.</li>
+<li><a href="https://github.com/dereuromark/CakePHP-DatabaseLog">DatabaseLog plugin</a> - Simple and stand-alone logging to database instead of files.</li>
+<li><a href="https://github.com/UseMuffin/Footprint">Muffin/Footprint plugin</a> - Plugin to allow passing currently logged in user to model layer.</li>
+<li><a href="https://github.com/josegonzalez/cakephp-version">Version plugin</a> - A plugin that facilitates versioned database entities.</li>
+</ul>
+<h2>Authentication and Authorization</h2>
+<p><em>Plugins and libraries for implementing authentication and authorization.</em></p>
+<ul>
+<li><a href="https://github.com/ADmad/cakephp-social-auth">ADmad/SocialAuth plugin</a> - A plugin which allows you to authenticate using social providers like Facebook/Google/Twitter etc. using <a href="https://github.com/SocialConnect/auth">SocialConnect/auth</a> social sign on library.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome CakePHP <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A curated list of amazingly awesome <strong>CakePHP 5.x+</strong> plugins, resources and shiny things.</p>
+<p>If you are looking for previous CakePHP resources please visit:
+- the <a href="https://github.com/FriendsOfCake/awesome-cakephp/tree/cake2">CakePHP 2.x version</a> of this awesome list
+- the <a href="https://github.com/FriendsOfCake/awesome-cakephp/tree/cake3">CakePHP 3.x version</a> of this awesome list
+- the <a href="https://github.com/FriendsOfCake/awesome-cakephp/tree/cake4">CakePHP 4.x version</a> of this awesome list
+- this wiki with a <a href="https://github.com/FriendsOfCake/awesome-cakephp/wiki#plugins-not-yet-upgraded-from-2x-to-3x">list of not-yet upgraded plugins</a></p>
+<p>Additional lists you might find useful:
+- <a href="https://plugins.cakephp.org">CakePHP Plugins</a>
+- <a href="https://github.com/ziadoz/awesome-php">Awesome PHP</a>
+- <a href="https://github.com/bayandin/awesome-awesomeness">Awesome Awesomeness</a></p>
+<blockquote>
+<p>For those wondering; this list differs from plugins.cakephp.org by supporting
+plugin subparts (instead of only the whole plugin/repo), more granular
+grouping and the primary focus on task-specific functionality.</p>
+</blockquote>
+<h2>Table of Contents</h2>
+<ul>
+<li><a href="#plugins">Plugins</a><ul>
+<li><a href="#ai-tools">AI Tools</a></li>
+<li><a href="#architecture">Architecture</a></li>
+<li><a href="#asset-management">Asset Management</a></li>
+<li><a href="#auditing--logging">Auditing / Logging</a></li>
+<li><a href="#authentication-and-authorization">Authentication and Authorization</a></li>
+<li><a href="#caching">Caching</a></li>
+<li><a href="#code-analysis">Code Analysis</a></li>
+<li><a href="#console">Console</a></li>
+<li><a href="#debugging">Debugging</a></li>
+<li><a href="#email">Email</a></li>
+<li><a href="#file-manipulation">File Manipulation</a></li>
+<li><a href="#filtering-and-validation">Filtering and Validation</a></li>
+<li><a href="#geolocation">Geolocation</a></li>
+<li><a href="#i18n">I18n</a></li>
+<li><a href="#imagery">Imagery</a></li>
+<li><a href="#libs">Libs</a></li>
+<li><a href="#markup">Markup</a></li>
+<li><a href="#migration">Migration</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#navigation">Navigation</a></li>
+<li><a href="#notifications-and-real-time-communication">Notifications and Real-time Communication</a></li>
+<li><a href="#orm--database--datamapping">ORM / Database / Datamapping</a></li>
+<li><a href="#pdf">PDF</a></li>
+<li><a href="#queue">Queue</a></li>
+<li><a href="#rest-and-api">REST and API</a></li>
+<li><a href="#search">Search</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#seo">SEO</a></li>
+<li><a href="#skeleton">Skeleton</a></li>
+<li><a href="#social">Social</a></li>
+<li><a href="#templating">Templating</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#third-party-apis">Third Party APIs</a></li>
+</ul>
+</li>
+<li><a href="#software">Software</a><ul>
+<li><a href="#development-environment">Development Environment</a></li>
+</ul>
+</li>
+<li><a href="#web-applications">Web Applications</a><ul>
+<li><a href="#cms-and-applications-built-on-cakephp">CMS and applications built on CakePHP</a></li>
+<li><a href="#demo">Demo</a></li>
+</ul>
+</li>
+<li><a href="#resources">Resources</a><ul>
+<li><a href="#help">Help</a></li>
+<li><a href="#cakephp-websites">CakePHP Websites</a></li>
+<li><a href="#cakephp-books-and-articles">CakePHP Books and Articles</a></li>
+<li><a href="#cakephp-videos">CakePHP Videos</a></li>
+<li><a href="#cakephp-tutorials">CakePHP Tutorials</a></li>
+<li><a href="#cakephp-reading-and-listening">CakePHP Reading and Listening</a></li>
+<li><a href="#cakephp-internals-reading">CakePHP Internals Reading</a></li>
+</ul>
+</li>
+<li><a href="#conferences">Conferences</a></li>
+<li><a href="#contributing">Contributing</a></li>
+</ul>
+<h1>Plugins</h1>
+<h2>AI Tools</h2>
+<p><em>Plugins and libraries for integrating artificial intelligence and machine learning tools.</em></p>
+<ul>
+<li><a href="https://github.com/josbeir/cakephp-synapse">Synapse plugin</a> - Expose your application functionality via MCP, with built-in tools and documentation search to help you discover and interact with your app's capabilities.</li>
+</ul>
+<h2>Architecture</h2>
+<ul>
+<li><a href="https://github.com/burzum/cakephp-service-layer">Burzum/CakeServiceLayer plugin</a> - Service layer and domain/business model implementation.</li>
+</ul>
+<h2>Asset Management</h2>
+<p><em>Managing, compressing and minifying website assets.</em></p>
+<ul>
+<li><a href="https://github.com/markstory/asset_compress">AssetCompress plugin</a> - A complete asset manager for CakePHP.</li>
+<li><a href="https://github.com/ishanvyas22/asset-mix">AssetMix plugin</a> - Provides integration with <a href="https://laravel-mix.com">Laravel Mix</a> asset compilation.</li>
+<li><a href="https://github.com/brandcom/cakephp-vite">ViteHelper plugin</a> - Provides integration with <a href="https://vite.dev/">Vite</a> asset compilation.</li>
+</ul>
+<h2>Auditing / Logging</h2>
+<p><em>Tracking changes and events in your app.</em></p>
+<ul>
+<li><a href="https://github.com/dereuromark/cakephp-audit-stash">AuditStash plugin</a> - Flexible and rock solid audit log tracking.</li>
+<li><a href="https://github.com/dereuromark/cakephp-bouncer">Bouncer plugin</a> - The pendant to AuditStash, allow moderation and approval of add/edit/delete actions before the actual change is applied.</li>
+<li><a href="https://github.com/dereuromark/CakePHP-DatabaseLog">DatabaseLog plugin</a> - Simple and stand-alone logging to database instead of files.</li>
+<li><a href="https://github.com/UseMuffin/Footprint">Muffin/Footprint plugin</a> - Plugin to allow passing currently logged in user to model layer.</li>
+<li><a href="https://github.com/josegonzalez/cakephp-version">Version plugin</a> - A plugin that facilitates versioned database entities.</li>
+</ul>
+<h2>Authentication and Authorization</h2>
+<p><em>Plugins and libraries for implementing authentication and authorization.</em></p>
+<ul>
+<li><a href="https://github.com/ADmad/cakephp-social-auth">ADmad/SocialAuth plugin</a> - A plugin which allows you to authenticate using social providers like Facebook/Google/Twitter etc. using <a href="https://github.com/SocialConnect/auth">SocialConnect/auth</a> social sign on library.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'cakephp_README.md';
 
         fetch(markdownFile)
@@ -48,21 +253,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

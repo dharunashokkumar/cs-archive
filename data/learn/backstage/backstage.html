@@ -8,38 +8,137 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Shano Awesome Backstage - Awesome List Resources">
-    <title>Shano Awesome Backstage</title>
+    <meta name="description" content="A curated list of awesome Backstage resources, plugins, tech docs, and more! Backstage is an open-source platform that helps developers build, test, and...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Backstage [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Backstage <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p><a href="https://backstage.io"><img src="backstage-logo.svg" align="right" width="100"></a></p>
+<p>A curated list of awesome <a href="https://backstage.io/">Backstage</a> resources, plugins, tech docs, and more! Backstage is an open-source platform that helps developers build, test, and maintain software with ease. This repository aims to provide a comprehensive collection of resources and tools for using Backstage effectively.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#official-resources">Official Resources</a></li>
+<li><a href="#plugins">Plugins</a></li>
+<li><a href="#tutorials-and-guides">Tutorials and Guides</a></li>
+<li><a href="#tools-and-integrations">Tools and Integrations</a></li>
+<li><a href="#community-and-contributions">Community and Contributions</a></li>
+<li><a href="#articles-and-presentations">Articles and Presentations</a></li>
+<li><a href="#related-projects">Related Projects</a></li>
+</ul>
+<h2>Official Resources</h2>
+<ul>
+<li><a href="https://github.com/backstage/backstage">GitHub Repository</a></li>
+<li><a href="https://backstage.io/docs/">Documentation</a></li>
+<li><a href="https://backstage.io/blog/">Blog</a></li>
+<li><a href="https://demo.backstage.io/">Demo</a></li>
+</ul>
+<h2>Plugins</h2>
+<p>A collection of awesome Backstage plugins to enhance your platform's capabilities.</p>
+<h3>Core Plugins</h3>
+<ul>
+<li><a href="https://github.com/backstage/backstage/tree/master/plugins/catalog">Catalog</a> - Provides an inventory of all components in your ecosystem.</li>
+<li><a href="https://github.com/backstage/backstage/tree/master/plugins/techdocs">TechDocs</a> - Manage and display technical documentation for your components.</li>
+<li><a href="https://github.com/backstage/backstage/tree/master/plugins/scaffolder">Scaffolder</a> - Create new components using templates.</li>
+<li><a href="https://github.com/backstage/community-plugins/tree/main/workspaces/cost-insights/plugins/cost-insights">Cost Insights</a> - Gain insights into your cloud costs.</li>
+</ul>
+<h3>Community Plugins</h3>
+<ul>
+<li><a href="https://github.com/backstage/community-plugins">Community Plugins</a> - Where Backstage maintains the list of community plugins available.</li>
+<li><a href="https://roadie.io/backstage/plugins/github-actions/">GitHub Actions</a> - Monitor your GitHub Actions workflows.</li>
+<li><a href="https://roadie.io/backstage/plugins/jenkins/">Jenkins</a> - Integrate Jenkins for CI/CD.</li>
+<li><a href="https://roadie.io/backstage/plugins/sonarqube/">SonarQube</a> - Analyze and monitor code quality with SonarQube.</li>
+<li><a href="https://roadie.io/backstage/plugins/circle-ci/">CircleCI</a> - Monitor your CircleCI builds.</li>
+<li><a href="https://roadie.io/backstage/plugins/prometheus/">Prometheus</a> - Monitor application performance using Prometheus.</li>
+<li><a href="https://github.com/backstage/community-plugins/tree/main/workspaces/bazaar/plugins/bazaar">Bazaar</a> - Discover and collaborate on internal projects within your organization.</li>
+<li><a href="https://github.com/purple-technology/backstage-aws-cloudformation-plugin">backstage-aws-cloudformation-plugin</a> - Manage AWS CloudFormation stacks.</li>
+<li><a href="https://roadie.io/backstage/plugins/aws-lambda/">aws-lambda</a> - Manage and monitor your AWS Lambda functions.</li>
+<li><a href="https://backstage.spotify.com/discover/blog/aika-data-plugins-coming-to-portal/">AiKA</a> - AI-powered assistant for context-aware answers from your internal docs and APIs.</li>
+<li><a href="https://www.opslevel.com/resources/top-10-backstage-plugins-for-2025">RAG AI Plugin</a> - Adds retrieval-augmented generation using LLMs for your internal knowledge.</li>
+<li><a href="https://www.npmjs.com/package/@backstage-community/plugin-announcements">Announcements Plugin</a> - Create and manage internal announcements directly in Backstage.</li>
+<li><a href="https://backstage.spotify.com/partners/spotify/plugin/git-release-manager/">Git Release Manager</a> - Automate GitHub release workflows from within Backstage.</li>
+<li><a href="https://www.port.io/blog/top-5-backstage-plugins">Port Plugin</a> - Sync data from across your stack into scorecards and dashboards.</li>
+<li><a href="https://www.env0.com/blog/new-backstage-plugin-manage-and-deploy-iac-from-your-internal-developer-portal">Env0 Plugin</a> - Manage Infrastructure as Code (IaC) workflows and self-service provisioning.</li>
+<li><a href="https://roadie.io/backstage/plugins/tech-insights/">Tech Insights Scorecards</a> - Automate service maturity scorecards with centralized checks across your catalog.</li>
+<li><a href="https://www.npmjs.com/package/@backstage/plugin-scaffolder-backend-module-yeoman">Scaffolder Yeoman Module</a> - Extend golden paths with Yeoman blueprints and new template actions like GitHub Issues or Terraform Cloud.</li>
+<li><a href="https://www.npmjs.com/package/@backstage/plugin-catalog-backend-module-msgraph">Microsoft Graph Catalog Module</a> - Synchronize Azure AD users and groups as Backstage entities.</li>
+<li><a href="https://www.npmjs.com/package/@backstage/plugin-catalog-backend-module-azure">Azure DevOps Catalog Modules</a> - Bring Azure Repos, Boards, and Pipelines metadata into the catalog backend.</li>
+<li><a href="https://www.npmjs.com/package/@backstage/plugin-search-backend-module-elasticsearch">Search Backend Modules</a> - Unlock faster, filtered search with Elasticsearch or Lunr-powered hybrid indexing.</li>
+<li><a href="https://www.npmjs.com/package/@backstage-community/plugin-github-projects">GitHub Projects</a> - Manage and triage GitHub Projects (v2) without leaving Backstage.</li>
+<li><a href="https://www.npmjs.com/package/@backstage-community/plugin-newrelic">New Relic</a> - Jump straight from service catalog entries to New Relic dashboards.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Backstage <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p><a href="https://backstage.io"><img src="backstage-logo.svg" align="right" width="100"></a></p>
+<p>A curated list of awesome <a href="https://backstage.io/">Backstage</a> resources, plugins, tech docs, and more! Backstage is an open-source platform that helps developers build, test, and maintain software with ease. This repository aims to provide a comprehensive collection of resources and tools for using Backstage effectively.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#official-resources">Official Resources</a></li>
+<li><a href="#plugins">Plugins</a></li>
+<li><a href="#tutorials-and-guides">Tutorials and Guides</a></li>
+<li><a href="#tools-and-integrations">Tools and Integrations</a></li>
+<li><a href="#community-and-contributions">Community and Contributions</a></li>
+<li><a href="#articles-and-presentations">Articles and Presentations</a></li>
+<li><a href="#related-projects">Related Projects</a></li>
+</ul>
+<h2>Official Resources</h2>
+<ul>
+<li><a href="https://github.com/backstage/backstage">GitHub Repository</a></li>
+<li><a href="https://backstage.io/docs/">Documentation</a></li>
+<li><a href="https://backstage.io/blog/">Blog</a></li>
+<li><a href="https://demo.backstage.io/">Demo</a></li>
+</ul>
+<h2>Plugins</h2>
+<p>A collection of awesome Backstage plugins to enhance your platform's capabilities.</p>
+<h3>Core Plugins</h3>
+<ul>
+<li><a href="https://github.com/backstage/backstage/tree/master/plugins/catalog">Catalog</a> - Provides an inventory of all components in your ecosystem.</li>
+<li><a href="https://github.com/backstage/backstage/tree/master/plugins/techdocs">TechDocs</a> - Manage and display technical documentation for your components.</li>
+<li><a href="https://github.com/backstage/backstage/tree/master/plugins/scaffolder">Scaffolder</a> - Create new components using templates.</li>
+<li><a href="https://github.com/backstage/community-plugins/tree/main/workspaces/cost-insights/plugins/cost-insights">Cost Insights</a> - Gain insights into your cloud costs.</li>
+</ul>
+<h3>Community Plugins</h3>
+<ul>
+<li><a href="https://github.com/backstage/community-plugins">Community Plugins</a> - Where Backstage maintains the list of community plugins available.</li>
+<li><a href="https://roadie.io/backstage/plugins/github-actions/">GitHub Actions</a> - Monitor your GitHub Actions workflows.</li>
+<li><a href="https://roadie.io/backstage/plugins/jenkins/">Jenkins</a> - Integrate Jenkins for CI/CD.</li>
+<li><a href="https://roadie.io/backstage/plugins/sonarqube/">SonarQube</a> - Analyze and monitor code quality with SonarQube.</li>
+<li><a href="https://roadie.io/backstage/plugins/circle-ci/">CircleCI</a> - Monitor your CircleCI builds.</li>
+<li><a href="https://roadie.io/backstage/plugins/prometheus/">Prometheus</a> - Monitor application performance using Prometheus.</li>
+<li><a href="https://github.com/backstage/community-plugins/tree/main/workspaces/bazaar/plugins/bazaar">Bazaar</a> - Discover and collaborate on internal projects within your organization.</li>
+<li><a href="https://github.com/purple-technology/backstage-aws-cloudformation-plugin">backstage-aws-cloudformation-plugin</a> - Manage AWS CloudFormation stacks.</li>
+<li><a href="https://roadie.io/backstage/plugins/aws-lambda/">aws-lambda</a> - Manage and monitor your AWS Lambda functions.</li>
+<li><a href="https://backstage.spotify.com/discover/blog/aika-data-plugins-coming-to-portal/">AiKA</a> - AI-powered assistant for context-aware answers from your internal docs and APIs.</li>
+<li><a href="https://www.opslevel.com/resources/top-10-backstage-plugins-for-2025">RAG AI Plugin</a> - Adds retrieval-augmented generation using LLMs for your internal knowledge.</li>
+<li><a href="https://www.npmjs.com/package/@backstage-community/plugin-announcements">Announcements Plugin</a> - Create and manage internal announcements directly in Backstage.</li>
+<li><a href="https://backstage.spotify.com/partners/spotify/plugin/git-release-manager/">Git Release Manager</a> - Automate GitHub release workflows from within Backstage.</li>
+<li><a href="https://www.port.io/blog/top-5-backstage-plugins">Port Plugin</a> - Sync data from across your stack into scorecards and dashboards.</li>
+<li><a href="https://www.env0.com/blog/new-backstage-plugin-manage-and-deploy-iac-from-your-internal-developer-portal">Env0 Plugin</a> - Manage Infrastructure as Code (IaC) workflows and self-service provisioning.</li>
+<li><a href="https://roadie.io/backstage/plugins/tech-insights/">Tech Insights Scorecards</a> - Automate service maturity scorecards with centralized checks across your catalog.</li>
+<li><a href="https://www.npmjs.com/package/@backstage/plugin-scaffolder-backend-module-yeoman">Scaffolder Yeoman Module</a> - Extend golden paths with Yeoman blueprints and new template actions like GitHub Issues or Terraform Cloud.</li>
+<li><a href="https://www.npmjs.com/package/@backstage/plugin-catalog-backend-module-msgraph">Microsoft Graph Catalog Module</a> - Synchronize Azure AD users and groups as Backstage entities.</li>
+<li><a href="https://www.npmjs.com/package/@backstage/plugin-catalog-backend-module-azure">Azure DevOps Catalog Modules</a> - Bring Azure Repos, Boards, and Pipelines metadata into the catalog backend.</li>
+<li><a href="https://www.npmjs.com/package/@backstage/plugin-search-backend-module-elasticsearch">Search Backend Modules</a> - Unlock faster, filtered search with Elasticsearch or Lunr-powered hybrid indexing.</li>
+<li><a href="https://www.npmjs.com/package/@backstage-community/plugin-github-projects">GitHub Projects</a> - Manage and triage GitHub Projects (v2) without leaving Backstage.</li>
+<li><a href="https://www.npmjs.com/package/@backstage-community/plugin-newrelic">New Relic</a> - Jump straight from service catalog entries to New Relic dashboards.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'backstage_README.md';
 
         fetch(markdownFile)
@@ -48,21 +147,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

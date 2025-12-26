@@ -8,38 +8,197 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Springload Awesome Wagtail - Awesome List Resources">
-    <title>Springload Awesome Wagtail</title>
+    <meta name="description" content="Awesome Wagtail =============== > A curated list of awesome packages, articles, and other cool resources from the Wagtail community. > Wagtail is a Python CMS...">
+    <meta name="robots" content="index, follow">
+    <title>Wagtail - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Wagtail <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <a href="https://wagtail.org/"><img src="https://cdn.rawgit.com/springload/awesome-wagtail/ac912cc661a7099813f90545adffa6bb3e75216c/logo.svg" width="104" align="right" alt="Wagtail"></a></h1>
+<blockquote>
+<p>A curated list of awesome packages, articles, and other cool resources from the Wagtail community.
+<a href="https://wagtail.org/">Wagtail</a> is a Python CMS powered by Django, focusing on flexibility and user experience.</p>
+</blockquote>
+<p><em>You might also like <a href="https://github.com/wsvincent/awesome-django">Awesome Django</a> and <a href="https://github.com/vinta/awesome-python">Awesome Python</a>. :snake:</em></p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#general-resources">General resources</a></li>
+<li><a href="#apps">Apps</a></li>
+<li><a href="#bloggingnews">Blogging/news</a></li>
+<li><a href="#rich-text-editor-extensions">Rich text editor extensions</a></li>
+<li><a href="#widgets">Widgets</a></li>
+<li><a href="#streamfield">StreamField</a></li>
+<li><a href="#static-site-generation">Static site generation</a></li>
+<li><a href="#settings-management">Settings management</a></li>
+<li><a href="#e-commerce">E-commerce</a></li>
+<li><a href="#seo-and-smo">SEO and SMO</a></li>
+<li><a href="#analytics">Analytics</a></li>
+<li><a href="#customer-experience">Customer experience</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#media">Media</a></li>
+<li><a href="#translations">Translations</a></li>
+<li><a href="#forms">Forms</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#modeladmin">Modeladmin</a></li>
+<li><a href="#asynchronous-tasks">Asynchronous (tasks)</a></li>
+<li><a href="#content-management">Content Management</a></li>
+<li><a href="#misc">Misc</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#templates--starter-kits">Templates &amp; Starter Kits</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#getting-started">Getting started</a></li>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#recipes">Recipes</a></li>
+<li><a href="#presentations">Presentations</a></li>
+<li><a href="#podcasts">Podcasts</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#showcases">Showcases</a></li>
+<li><a href="#lists">Lists</a></li>
+<li><a href="#for-editors">For editors</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#open-source-sites">Open-source sites</a></li>
+</ul>
+<h2>General resources</h2>
+<ul>
+<li><a href="https://wagtail.org/">Official site</a></li>
+<li><a href="https://github.com/wagtail/wagtail">GitHub repository</a></li>
+<li><a href="https://twitter.com/wagtailcms">Twitter account</a></li>
+<li><a href="https://wagtail.org/roadmap/">Roadmap</a></li>
+<li><a href="https://pypi.org/pypi?%3Aaction=list_classifiers">PyPI classifiers for Wagtail</a></li>
+<li><a href="#resources">Other resources</a></li>
+</ul>
+<h2>Apps</h2>
+<h3>Blogging/news</h3>
+<ul>
+<li><a href="https://puput.readthedocs.org/">Puput</a> - Puput is a powerful and simple Django app to manage a blog. It uses the awesome Wagtail CMS as content management system.</li>
+<li><a href="https://gitlab.com/thelabnyc/wagtail_blog">wagtail_blog</a> - A WordPress-like blog app implemented in Wagtail.</li>
+<li><a href="https://github.com/takeflight/wagtailnews">wagtailnews</a> - A plugin for Wagtail that provides news / blogging functionality.</li>
+<li><a href="https://github.com/Tivix/wagtail-blog-app">wagtail-blog-app</a> - A blog application for the Wagtail Django CMS.</li>
+<li><a href="https://github.com/chrisdev/django-wagtail-feeds">Django Wagtail Feeds</a> - Add support for RSS Feeds, Facebook Instant Articles and Apple News Publisher to your Wagtail CMS Projects.</li>
+<li><a href="https://github.com/olopost/snotra_rss">Snotra_RSS</a> - Snotra_RSS is an Atom and RSS news aggregator app for Wagtail.</li>
+<li><a href="https://github.com/wagtail/wagtail-live">wagtail-live</a> - Build live blogs with Wagtail.</li>
+</ul>
+<h3>Rich text editor extensions</h3>
+<ul>
+<li><a href="https://github.com/takeflight/wagtail-readability">wagtail-readability</a> - Test how readable the content you enter into Wagtail is.</li>
+<li><a href="https://github.com/springload/wagtailembedder">wagtailembedder</a> - Snippets embedder for Wagtail richtext fields.</li>
+<li><a href="https://github.com/isotoma/wagtailtinymce">Wagtail TinyMCE</a> - A TinyMCE editor integration for Wagtail.</li>
+<li><a href="https://github.com/jaydensmith/wagtailfroala">Wagtail Froala</a> - Extends Wagtail to use the Froala WYSIWYG editor in RichTextField/RichTextBlock.</li>
+<li><a href="https://github.com/dperetti/Django-wagtailmedium">Wagtail Medium Editor</a> - A customizable Medium Editor for Wagtail, with link anchors support.</li>
+<li><a href="https://github.com/springload/wagtaildraftail">WagtailDraftail</a> – Draft.js editor for Wagtail, built upon <a href="https://github.com/springload/draftail">Draftail</a> and <a href="https://github.com/springload/draftjs_exporter">draftjs_exporter</a>.</li>
+<li><a href="https://github.com/vixdigital/wagtail-readinglevel">wagtail-readinglevel</a> – Wagtail plugin to determine the reading level of text input into a rich text field.</li>
+<li><a href="https://github.com/Nigel2392/wagtail_editorjs">Wagtail EditorJS</a> - An <a href="https://editorjs.io/">EditorJS</a> widget with great support for Wagtail's page, image and document choosers.</li>
+<li><a href="https://github.com/smark-1/wagtailterms">Wagtail Terms</a> - A plugin to add a glossary terms entity to the Draftail editor.</li>
+<li><a href="https://github.com/Nigel2392/wagtail_text_alignment">Wagtail Text Alignment</a> - Align text, headings and more in your Wagtail richtext editor.</li>
+<li><a href="https://github.com/TheBestDestroyer/wagtailmdx">wagtailmdx</a> - A <a href="https://github.com/mdx-editor/editor">MDXEditor</a> integration for Wagtail as textfield widget.</li>
+</ul>
+<h3>Widgets</h3>
+<ul>
+<li><a href="https://github.com/springload/wagtailgmaps">wagtailgmaps</a> - Simple Google Maps address formatter for Wagtail fields.</li>
+<li><a href="https://github.com/Frojd/wagtail-geo-widget">Wagtail-Geo-Widget</a> - Google Maps widget for the GeoDjango PointField field in Wagtail.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Wagtail <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <a href="https://wagtail.org/"><img src="https://cdn.rawgit.com/springload/awesome-wagtail/ac912cc661a7099813f90545adffa6bb3e75216c/logo.svg" width="104" align="right" alt="Wagtail"></a></h1>
+<blockquote>
+<p>A curated list of awesome packages, articles, and other cool resources from the Wagtail community.
+<a href="https://wagtail.org/">Wagtail</a> is a Python CMS powered by Django, focusing on flexibility and user experience.</p>
+</blockquote>
+<p><em>You might also like <a href="https://github.com/wsvincent/awesome-django">Awesome Django</a> and <a href="https://github.com/vinta/awesome-python">Awesome Python</a>. :snake:</em></p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#general-resources">General resources</a></li>
+<li><a href="#apps">Apps</a></li>
+<li><a href="#bloggingnews">Blogging/news</a></li>
+<li><a href="#rich-text-editor-extensions">Rich text editor extensions</a></li>
+<li><a href="#widgets">Widgets</a></li>
+<li><a href="#streamfield">StreamField</a></li>
+<li><a href="#static-site-generation">Static site generation</a></li>
+<li><a href="#settings-management">Settings management</a></li>
+<li><a href="#e-commerce">E-commerce</a></li>
+<li><a href="#seo-and-smo">SEO and SMO</a></li>
+<li><a href="#analytics">Analytics</a></li>
+<li><a href="#customer-experience">Customer experience</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#media">Media</a></li>
+<li><a href="#translations">Translations</a></li>
+<li><a href="#forms">Forms</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#modeladmin">Modeladmin</a></li>
+<li><a href="#asynchronous-tasks">Asynchronous (tasks)</a></li>
+<li><a href="#content-management">Content Management</a></li>
+<li><a href="#misc">Misc</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#templates--starter-kits">Templates &amp; Starter Kits</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#getting-started">Getting started</a></li>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#recipes">Recipes</a></li>
+<li><a href="#presentations">Presentations</a></li>
+<li><a href="#podcasts">Podcasts</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#showcases">Showcases</a></li>
+<li><a href="#lists">Lists</a></li>
+<li><a href="#for-editors">For editors</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#open-source-sites">Open-source sites</a></li>
+</ul>
+<h2>General resources</h2>
+<ul>
+<li><a href="https://wagtail.org/">Official site</a></li>
+<li><a href="https://github.com/wagtail/wagtail">GitHub repository</a></li>
+<li><a href="https://twitter.com/wagtailcms">Twitter account</a></li>
+<li><a href="https://wagtail.org/roadmap/">Roadmap</a></li>
+<li><a href="https://pypi.org/pypi?%3Aaction=list_classifiers">PyPI classifiers for Wagtail</a></li>
+<li><a href="#resources">Other resources</a></li>
+</ul>
+<h2>Apps</h2>
+<h3>Blogging/news</h3>
+<ul>
+<li><a href="https://puput.readthedocs.org/">Puput</a> - Puput is a powerful and simple Django app to manage a blog. It uses the awesome Wagtail CMS as content management system.</li>
+<li><a href="https://gitlab.com/thelabnyc/wagtail_blog">wagtail_blog</a> - A WordPress-like blog app implemented in Wagtail.</li>
+<li><a href="https://github.com/takeflight/wagtailnews">wagtailnews</a> - A plugin for Wagtail that provides news / blogging functionality.</li>
+<li><a href="https://github.com/Tivix/wagtail-blog-app">wagtail-blog-app</a> - A blog application for the Wagtail Django CMS.</li>
+<li><a href="https://github.com/chrisdev/django-wagtail-feeds">Django Wagtail Feeds</a> - Add support for RSS Feeds, Facebook Instant Articles and Apple News Publisher to your Wagtail CMS Projects.</li>
+<li><a href="https://github.com/olopost/snotra_rss">Snotra_RSS</a> - Snotra_RSS is an Atom and RSS news aggregator app for Wagtail.</li>
+<li><a href="https://github.com/wagtail/wagtail-live">wagtail-live</a> - Build live blogs with Wagtail.</li>
+</ul>
+<h3>Rich text editor extensions</h3>
+<ul>
+<li><a href="https://github.com/takeflight/wagtail-readability">wagtail-readability</a> - Test how readable the content you enter into Wagtail is.</li>
+<li><a href="https://github.com/springload/wagtailembedder">wagtailembedder</a> - Snippets embedder for Wagtail richtext fields.</li>
+<li><a href="https://github.com/isotoma/wagtailtinymce">Wagtail TinyMCE</a> - A TinyMCE editor integration for Wagtail.</li>
+<li><a href="https://github.com/jaydensmith/wagtailfroala">Wagtail Froala</a> - Extends Wagtail to use the Froala WYSIWYG editor in RichTextField/RichTextBlock.</li>
+<li><a href="https://github.com/dperetti/Django-wagtailmedium">Wagtail Medium Editor</a> - A customizable Medium Editor for Wagtail, with link anchors support.</li>
+<li><a href="https://github.com/springload/wagtaildraftail">WagtailDraftail</a> – Draft.js editor for Wagtail, built upon <a href="https://github.com/springload/draftail">Draftail</a> and <a href="https://github.com/springload/draftjs_exporter">draftjs_exporter</a>.</li>
+<li><a href="https://github.com/vixdigital/wagtail-readinglevel">wagtail-readinglevel</a> – Wagtail plugin to determine the reading level of text input into a rich text field.</li>
+<li><a href="https://github.com/Nigel2392/wagtail_editorjs">Wagtail EditorJS</a> - An <a href="https://editorjs.io/">EditorJS</a> widget with great support for Wagtail's page, image and document choosers.</li>
+<li><a href="https://github.com/smark-1/wagtailterms">Wagtail Terms</a> - A plugin to add a glossary terms entity to the Draftail editor.</li>
+<li><a href="https://github.com/Nigel2392/wagtail_text_alignment">Wagtail Text Alignment</a> - Align text, headings and more in your Wagtail richtext editor.</li>
+<li><a href="https://github.com/TheBestDestroyer/wagtailmdx">wagtailmdx</a> - A <a href="https://github.com/mdx-editor/editor">MDXEditor</a> integration for Wagtail as textfield widget.</li>
+</ul>
+<h3>Widgets</h3>
+<ul>
+<li><a href="https://github.com/springload/wagtailgmaps">wagtailgmaps</a> - Simple Google Maps address formatter for Wagtail fields.</li>
+<li><a href="https://github.com/Frojd/wagtail-geo-widget">Wagtail-Geo-Widget</a> - Google Maps widget for the GeoDjango PointField field in Wagtail.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'wagtail_README.md';
 
         fetch(markdownFile)
@@ -48,21 +207,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

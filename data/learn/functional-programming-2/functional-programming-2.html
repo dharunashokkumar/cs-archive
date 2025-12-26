@@ -8,38 +8,153 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Lucasviola Awesome Functional Programming - Awesome List Resources">
-    <title>Lucasviola Awesome Functional Programming</title>
+    <meta name="description" content="Based on the Awesome project On the last decade, functional programming has gained a new found power due to its declarative characteristics which, some would...">
+    <meta name="robots" content="index, follow">
+    <title>Functional Programming 2 - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h2>Awesome Functional Programming <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h2>
+<p>Based on the <a href="https://github.com/sindresorhus/awesome/">Awesome</a> project</p>
+<h2>What is this about?</h2>
+<p>On the last decade, functional programming has gained a new found power due to its
+declarative characteristics which, some would say, are very effective for parallel computing
+and for the whole usage of <a href="https://en.wikipedia.org/wiki/Moore%27s_law">Moores Law</a>.</p>
+<p>This repo gathers some material on Functional Programming such as blog posts, papers, videos,
+tools, etc. and also aims to clarify some of the theoretical subjects behind it.</p>
+<p>Want to contribute? Please refer to <a href="https://github.com/lucasviola/awesome-functional-programming/blob/master/contributing.md">this</a> first.</p>
+<h2>Table of Contents</h2>
+<ul>
+<li><a href="#blog-posts">Blog Posts</a></li>
+<li><a href="#papers">Papers</a></li>
+<li><a href="#wikis">Wikis</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#communities">Communities</a></li>
+<li><a href="#discussions-quora-stack-overflow-reddit-etc">Discussions</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#lectures">Lectures</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#repos">Repos</a></li>
+<li><a href="#people">People</a></li>
+</ul>
+<h3>Blog posts</h3>
+<ul>
+<li><a href="http://www.akitaonrails.com/2015/10/28/personal-thoughts-on-the-current-functional-programming-bandwagon">Personal thoughts on the current functional programming bandwagon</a> 
+Despite the name, this post actually clarifies some baisc concepts on Functional Programming, explains some of the History of FP and the implementation of FPs features on imperative languages and talks about all the fuss on declarative programming and why it has become so popular in the last few years.</li>
+<li><a href="http://robotlolita.me/2014/03/20/a-monad-in-practicality-controlling-time.html">A Monad in Practicality - Controlling Time</a></li>
+<li><a href="http://robotlolita.me/2013/12/08/a-monad-in-practicality-first-class-failures.html">A Monad in Practicality - First Class Failures</a></li>
+<li><a href="http://www.haskellforall.com/2014/10/how-to-desugar-haskell-code.html">How to desugar Haskell Code</a></li>
+<li><a href="http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html">Functors, Applicatives, And Monads In Pictures</a></li>
+<li><a href="http://www.stephendiehl.com/posts/monads.html">Monads Made Difficult</a></li>
+<li><a href="https://medium.com/@lettier/your-easy-guide-to-monads-applicatives-functors-862048d61610">Your easy guide to Monads, Applicatives, &amp; Functors</a></li>
+<li><a href="https://freecontent.manning.com/async-streams-in-c/">Async Streams in C#</a></li>
+<li><a href="https://doordash.engineering/2022/03/22/how-to-leverage-functional-programming-in-kotlin-to-write-better-cleaner-code/">How to leverage functional programming in Kotlin to write better, cleaner code</a></li>
+</ul>
+<h3>Papers</h3>
+<ul>
+<li><a href="http://lambda-the-ultimate.org/node/1180">Tradeoffs between Unique Types and Monads</a> </li>
+<li><a href="http://research.microsoft.com/en-us/um/people/simonpj/papers/slpj-book-1987/start.htm">The implementation of Functional Programming Languages</a> - A paper by Simon Peyton Jones</li>
+<li><a href="http://research.microsoft.com/en-us/um/people/simonpj/papers/fd-chr/esop04.pdf">Sound and Decidable Type Inference for Functional Dependencies</a> - Another very famous paper on Type Inference by the main creator of Haskell and GHC</li>
+<li><a href="http://research.microsoft.com/en-us/um/people/simonpj/papers/meta-haskell/meta-haskell.pdf">Template Meta-Programming for Haskell</a> - Paper about generating code at compile-time in Haskell</li>
+<li><a href="http://www.cs.kent.ac.uk/people/staff/dat/miranda/whyfp90.pdf">Why Functional Programming Matters</a></li>
+<li><a href="http://isabelle.in.tum.de/~haftmann/pdf/from_hol_to_haskell_haftmann.pdf">From Higher-Order Logic to Haskell: There and Back Again</a></li>
+<li><a href="http://es.cs.uni-kl.de/events/TPHOLs-2007/proceedings/B-178.pdf">Translating Haskell to Isabelle</a></li>
+</ul>
+<h3>Wikis</h3>
+<ul>
+<li><a href="http://ncatlab.org/nlab/show/HomePage">nLab</a> - A wiki-lab with articles, discussion and tools from the point of view of category theory, which is the main math behind FP.</li>
+<li><a href="https://en.wikibooks.org/wiki/Haskell/Category_theory">Haskell/Category Theory</a> - A good overview on Category Theory applied to Haskell from Wikibooks.</li>
+<li><a href="https://wiki.haskell.org/Haskell">Haskell Wiki</a></li>
+</ul>
+<h3>Books</h3>
+<ul>
+<li><a href="http://learnyouahaskell.com/">Learn you a Haskell</a> - Book, but you can read it online for free as well. Very beginner friendly.</li>
+<li><a href="https://books.google.com.br/books?id=I9E_CgAAQBAJ&amp;pg=PR13#v=onepage&amp;q&amp;f=false">The Little Prover</a> - Talks about
+a theorem prover called JBob for writing proofs in LISP.</li>
+<li><a href="http://isabelle.in.tum.de/doc/tutorial.pdf">Isabelle/HOL - A Proof Assistant for Higher-Order Logic</a> - A Book on implementing logical formalisms in Isabelle/HOL.</li>
+<li><a href="http://www.ccs.neu.edu/home/matthias/BTML/">The Little MLer</a> - A book focused on teaching types, recursive thinking and other important subjects in Standard ML. </li>
+<li><a href="http://catalogue.pearsoned.co.uk/educator/product/Introduction-to-Programming-using-SML/9780201398205.page">Introduction to Programming using SML</a> - Introduces you to programming design in a very mathematical way. </li>
+<li><a href="http://www.htdp.org/">How to Design Programs</a> / <a href="http://www.ccs.neu.edu/home/matthias/HtDP2e/">Second Edition</a></li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h2>Awesome Functional Programming <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h2>
+<p>Based on the <a href="https://github.com/sindresorhus/awesome/">Awesome</a> project</p>
+<h2>What is this about?</h2>
+<p>On the last decade, functional programming has gained a new found power due to its
+declarative characteristics which, some would say, are very effective for parallel computing
+and for the whole usage of <a href="https://en.wikipedia.org/wiki/Moore%27s_law">Moores Law</a>.</p>
+<p>This repo gathers some material on Functional Programming such as blog posts, papers, videos,
+tools, etc. and also aims to clarify some of the theoretical subjects behind it.</p>
+<p>Want to contribute? Please refer to <a href="https://github.com/lucasviola/awesome-functional-programming/blob/master/contributing.md">this</a> first.</p>
+<h2>Table of Contents</h2>
+<ul>
+<li><a href="#blog-posts">Blog Posts</a></li>
+<li><a href="#papers">Papers</a></li>
+<li><a href="#wikis">Wikis</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#communities">Communities</a></li>
+<li><a href="#discussions-quora-stack-overflow-reddit-etc">Discussions</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#lectures">Lectures</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#repos">Repos</a></li>
+<li><a href="#people">People</a></li>
+</ul>
+<h3>Blog posts</h3>
+<ul>
+<li><a href="http://www.akitaonrails.com/2015/10/28/personal-thoughts-on-the-current-functional-programming-bandwagon">Personal thoughts on the current functional programming bandwagon</a> 
+Despite the name, this post actually clarifies some baisc concepts on Functional Programming, explains some of the History of FP and the implementation of FPs features on imperative languages and talks about all the fuss on declarative programming and why it has become so popular in the last few years.</li>
+<li><a href="http://robotlolita.me/2014/03/20/a-monad-in-practicality-controlling-time.html">A Monad in Practicality - Controlling Time</a></li>
+<li><a href="http://robotlolita.me/2013/12/08/a-monad-in-practicality-first-class-failures.html">A Monad in Practicality - First Class Failures</a></li>
+<li><a href="http://www.haskellforall.com/2014/10/how-to-desugar-haskell-code.html">How to desugar Haskell Code</a></li>
+<li><a href="http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html">Functors, Applicatives, And Monads In Pictures</a></li>
+<li><a href="http://www.stephendiehl.com/posts/monads.html">Monads Made Difficult</a></li>
+<li><a href="https://medium.com/@lettier/your-easy-guide-to-monads-applicatives-functors-862048d61610">Your easy guide to Monads, Applicatives, &amp; Functors</a></li>
+<li><a href="https://freecontent.manning.com/async-streams-in-c/">Async Streams in C#</a></li>
+<li><a href="https://doordash.engineering/2022/03/22/how-to-leverage-functional-programming-in-kotlin-to-write-better-cleaner-code/">How to leverage functional programming in Kotlin to write better, cleaner code</a></li>
+</ul>
+<h3>Papers</h3>
+<ul>
+<li><a href="http://lambda-the-ultimate.org/node/1180">Tradeoffs between Unique Types and Monads</a> </li>
+<li><a href="http://research.microsoft.com/en-us/um/people/simonpj/papers/slpj-book-1987/start.htm">The implementation of Functional Programming Languages</a> - A paper by Simon Peyton Jones</li>
+<li><a href="http://research.microsoft.com/en-us/um/people/simonpj/papers/fd-chr/esop04.pdf">Sound and Decidable Type Inference for Functional Dependencies</a> - Another very famous paper on Type Inference by the main creator of Haskell and GHC</li>
+<li><a href="http://research.microsoft.com/en-us/um/people/simonpj/papers/meta-haskell/meta-haskell.pdf">Template Meta-Programming for Haskell</a> - Paper about generating code at compile-time in Haskell</li>
+<li><a href="http://www.cs.kent.ac.uk/people/staff/dat/miranda/whyfp90.pdf">Why Functional Programming Matters</a></li>
+<li><a href="http://isabelle.in.tum.de/~haftmann/pdf/from_hol_to_haskell_haftmann.pdf">From Higher-Order Logic to Haskell: There and Back Again</a></li>
+<li><a href="http://es.cs.uni-kl.de/events/TPHOLs-2007/proceedings/B-178.pdf">Translating Haskell to Isabelle</a></li>
+</ul>
+<h3>Wikis</h3>
+<ul>
+<li><a href="http://ncatlab.org/nlab/show/HomePage">nLab</a> - A wiki-lab with articles, discussion and tools from the point of view of category theory, which is the main math behind FP.</li>
+<li><a href="https://en.wikibooks.org/wiki/Haskell/Category_theory">Haskell/Category Theory</a> - A good overview on Category Theory applied to Haskell from Wikibooks.</li>
+<li><a href="https://wiki.haskell.org/Haskell">Haskell Wiki</a></li>
+</ul>
+<h3>Books</h3>
+<ul>
+<li><a href="http://learnyouahaskell.com/">Learn you a Haskell</a> - Book, but you can read it online for free as well. Very beginner friendly.</li>
+<li><a href="https://books.google.com.br/books?id=I9E_CgAAQBAJ&amp;pg=PR13#v=onepage&amp;q&amp;f=false">The Little Prover</a> - Talks about
+a theorem prover called JBob for writing proofs in LISP.</li>
+<li><a href="http://isabelle.in.tum.de/doc/tutorial.pdf">Isabelle/HOL - A Proof Assistant for Higher-Order Logic</a> - A Book on implementing logical formalisms in Isabelle/HOL.</li>
+<li><a href="http://www.ccs.neu.edu/home/matthias/BTML/">The Little MLer</a> - A book focused on teaching types, recursive thinking and other important subjects in Standard ML. </li>
+<li><a href="http://catalogue.pearsoned.co.uk/educator/product/Introduction-to-Programming-using-SML/9780201398205.page">Introduction to Programming using SML</a> - Introduces you to programming design in a very mathematical way. </li>
+<li><a href="http://www.htdp.org/">How to Design Programs</a> / <a href="http://www.ccs.neu.edu/home/matthias/HtDP2e/">Second Edition</a></li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'functional-programming-2_README.md';
 
         fetch(markdownFile)
@@ -48,21 +163,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

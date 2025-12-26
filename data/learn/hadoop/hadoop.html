@@ -8,38 +8,171 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Youngwookim Awesome Hadoop - Awesome List Resources">
-    <title>Youngwookim Awesome Hadoop</title>
+    <meta name="description" content="A curated list of amazingly awesome Hadoop and Hadoop ecosystem resources. Inspired by Awesome PHP, Awesome Python and Awesome Sysadmin - Awesome Hadoop -...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Hadoop [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Hadoop <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A curated list of amazingly awesome Hadoop and Hadoop ecosystem resources. Inspired by <a href="https://github.com/ziadoz/awesome-php">Awesome PHP</a>, <a href="https://github.com/vinta/awesome-python">Awesome Python</a> and <a href="https://github.com/kahun/awesome-sysadmin">Awesome Sysadmin</a></p>
+<ul>
+<li><a href="#awesome-hadoop">Awesome Hadoop</a><ul>
+<li><a href="#hadoop">Hadoop</a></li>
+<li><a href="#yarn">YARN</a></li>
+<li><a href="#nosql">NoSQL</a></li>
+<li><a href="#sql-on-hadoop">SQL on Hadoop</a></li>
+<li><a href="#data-management">Data Management</a></li>
+<li><a href="#workflow-lifecycle-and-governance">Workflow, Lifecycle and Governance</a></li>
+<li><a href="#data-ingestion-and-integration">Data Ingestion and Integration</a></li>
+<li><a href="#dsl">DSL</a></li>
+<li><a href="#libraries-and-tools">Libraries and Tools</a></li>
+<li><a href="#realtime-data-processing">Realtime Data Processing</a></li>
+<li><a href="#distributed-computing-and-programming">Distributed Computing and Programming</a></li>
+<li><a href="#packaging-provisioning-and-monitoring">Packaging, Provisioning and Monitoring</a></li>
+<li><a href="#monitoring">Monitoring</a></li>
+<li><a href="#search">Search</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#benchmark">Benchmark</a></li>
+<li><a href="#machine-learning-and-big-data-analytics">Machine learning and Big Data analytics</a></li>
+<li><a href="#misc">Misc.</a></li>
+</ul>
+</li>
+<li><a href="#resources">Resources</a><ul>
+<li><a href="#websites">Websites</a></li>
+<li><a href="#presentations">Presentations</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#hadoop-and-big-data-events">Hadoop and Big Data Events</a></li>
+</ul>
+</li>
+<li><a href="#other-awesome-lists">Other Awesome Lists</a></li>
+</ul>
+<h2>Hadoop</h2>
+<ul>
+<li><a href="http://hadoop.apache.org/">Apache Hadoop</a> - Apache Hadoop</li>
+<li><a href="http://hadoop.apache.org/ozone/">Apache Hadoop Ozone</a> - An Object Store for Apache Hadoop</li>
+<li><a href="http://tez.apache.org/">Apache Tez</a> - A Framework for YARN-based, Data Processing Applications In Hadoop</li>
+<li><a href="http://spatialhadoop.cs.umn.edu/">SpatialHadoop</a> - SpatialHadoop is a MapReduce extension to Apache Hadoop designed specially to work with spatial data. </li>
+<li><a href="http://esri.github.io/gis-tools-for-hadoop/">GIS Tools for Hadoop</a> - Big Data Spatial Analytics for the Hadoop Framework</li>
+<li><a href="https://github.com/elastic/elasticsearch-hadoop">Elasticsearch Hadoop</a> - Elasticsearch real-time search and analytics natively integrated with Hadoop. Supports Map/Reduce, Cascading, Apache Hive and Apache Pig.</li>
+<li><a href="https://github.com/bwhite/hadoopy">hadoopy</a> - Python MapReduce library written in Cython. </li>
+<li><a href="https://github.com/Yelp/mrjob/">mrjob</a> - mrjob is a Python 2.5+ package that helps you write and run Hadoop Streaming jobs.</li>
+<li><a href="http://pydoop.sourceforge.net/">pydoop</a> - Pydoop is a package that provides a Python API for Hadoop.</li>
+<li><a href="https://github.com/twitter/hdfs-du">hdfs-du</a> - HDFS-DU is an interactive visualization of the Hadoop distributed file system. </li>
+<li><a href="https://github.com/linkedin/white-elephant">White Elephant</a> - Hadoop log aggregator and dashboard</li>
+<li><a href="https://github.com/Netflix/genie">Genie</a> - Genie provides REST-ful APIs to run Hadoop, Hive and Pig jobs, and to manage multiple Hadoop resources and perform job submissions across them.</li>
+<li><a href="http://kylin.incubator.apache.org/">Apache Kylin</a> - Apache Kylin is an open source Distributed Analytics Engine from eBay Inc. that provides SQL interface and multi-dimensional analysis (OLAP) on Hadoop supporting extremely large datasets</li>
+<li><a href="https://github.com/jondot/crunch">Crunch</a> - Go-based toolkit for ETL and feature extraction on Hadoop</li>
+<li><a href="http://ignite.apache.org/">Apache Ignite</a> - Distributed in-memory platform</li>
+</ul>
+<h2>YARN</h2>
+<ul>
+<li><a href="http://slider.incubator.apache.org/">Apache Slider</a> - Apache Slider is a project in incubation at the Apache Software Foundation with the goal of making it possible and easy to deploy existing applications onto a YARN cluster.</li>
+<li><a href="http://twill.incubator.apache.org/">Apache Twill</a> - Apache Twill is an abstraction over Apache Hadoop® YARN that reduces the complexity of developing distributed applications, allowing developers to focus more on their application logic.</li>
+<li><a href="https://github.com/alibaba/mpich2-yarn">mpich2-yarn</a> - Running MPICH2 on Yarn</li>
+</ul>
+<h2>NoSQL</h2>
+<p><em>Next Generation Databases mostly addressing some of the points: being non-relational, distributed, open-source and horizontally scalable.</em></p>
+<ul>
+<li><a href="http://hbase.apache.org">Apache HBase</a> - Apache HBase</li>
+<li><a href="http://phoenix.apache.org/">Apache Phoenix</a> - A SQL skin over HBase supporting secondary indices</li>
+<li><a href="https://github.com/wbolster/happybase">happybase</a> - A developer-friendly Python library to interact with Apache HBase.</li>
+<li><a href="https://github.com/sentric/hannibal">Hannibal</a> - Hannibal is tool to help monitor and maintain HBase-Clusters that are configured for manual splitting.</li>
+<li><a href="https://github.com/VCNC/haeinsa">Haeinsa</a> - Haeinsa is linearly scalable multi-row, multi-table transaction library for HBase</li>
+<li><a href="https://github.com/Huawei-Hadoop/hindex">hindex</a> - Secondary Index for HBase</li>
+<li><a href="https://accumulo.apache.org/">Apache Accumulo</a> - The Apache Accumulo™ sorted, distributed key/value store is a robust, scalable, high performance data storage and retrieval system.</li>
+<li><a href="http://opentsdb.net/">OpenTSDB</a> - The Scalable Time Series Database</li>
+<li><a href="http://cassandra.apache.org/">Apache Cassandra</a></li>
+</ul>
+<h2>SQL on Hadoop</h2>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Hadoop <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A curated list of amazingly awesome Hadoop and Hadoop ecosystem resources. Inspired by <a href="https://github.com/ziadoz/awesome-php">Awesome PHP</a>, <a href="https://github.com/vinta/awesome-python">Awesome Python</a> and <a href="https://github.com/kahun/awesome-sysadmin">Awesome Sysadmin</a></p>
+<ul>
+<li><a href="#awesome-hadoop">Awesome Hadoop</a><ul>
+<li><a href="#hadoop">Hadoop</a></li>
+<li><a href="#yarn">YARN</a></li>
+<li><a href="#nosql">NoSQL</a></li>
+<li><a href="#sql-on-hadoop">SQL on Hadoop</a></li>
+<li><a href="#data-management">Data Management</a></li>
+<li><a href="#workflow-lifecycle-and-governance">Workflow, Lifecycle and Governance</a></li>
+<li><a href="#data-ingestion-and-integration">Data Ingestion and Integration</a></li>
+<li><a href="#dsl">DSL</a></li>
+<li><a href="#libraries-and-tools">Libraries and Tools</a></li>
+<li><a href="#realtime-data-processing">Realtime Data Processing</a></li>
+<li><a href="#distributed-computing-and-programming">Distributed Computing and Programming</a></li>
+<li><a href="#packaging-provisioning-and-monitoring">Packaging, Provisioning and Monitoring</a></li>
+<li><a href="#monitoring">Monitoring</a></li>
+<li><a href="#search">Search</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#benchmark">Benchmark</a></li>
+<li><a href="#machine-learning-and-big-data-analytics">Machine learning and Big Data analytics</a></li>
+<li><a href="#misc">Misc.</a></li>
+</ul>
+</li>
+<li><a href="#resources">Resources</a><ul>
+<li><a href="#websites">Websites</a></li>
+<li><a href="#presentations">Presentations</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#hadoop-and-big-data-events">Hadoop and Big Data Events</a></li>
+</ul>
+</li>
+<li><a href="#other-awesome-lists">Other Awesome Lists</a></li>
+</ul>
+<h2>Hadoop</h2>
+<ul>
+<li><a href="http://hadoop.apache.org/">Apache Hadoop</a> - Apache Hadoop</li>
+<li><a href="http://hadoop.apache.org/ozone/">Apache Hadoop Ozone</a> - An Object Store for Apache Hadoop</li>
+<li><a href="http://tez.apache.org/">Apache Tez</a> - A Framework for YARN-based, Data Processing Applications In Hadoop</li>
+<li><a href="http://spatialhadoop.cs.umn.edu/">SpatialHadoop</a> - SpatialHadoop is a MapReduce extension to Apache Hadoop designed specially to work with spatial data. </li>
+<li><a href="http://esri.github.io/gis-tools-for-hadoop/">GIS Tools for Hadoop</a> - Big Data Spatial Analytics for the Hadoop Framework</li>
+<li><a href="https://github.com/elastic/elasticsearch-hadoop">Elasticsearch Hadoop</a> - Elasticsearch real-time search and analytics natively integrated with Hadoop. Supports Map/Reduce, Cascading, Apache Hive and Apache Pig.</li>
+<li><a href="https://github.com/bwhite/hadoopy">hadoopy</a> - Python MapReduce library written in Cython. </li>
+<li><a href="https://github.com/Yelp/mrjob/">mrjob</a> - mrjob is a Python 2.5+ package that helps you write and run Hadoop Streaming jobs.</li>
+<li><a href="http://pydoop.sourceforge.net/">pydoop</a> - Pydoop is a package that provides a Python API for Hadoop.</li>
+<li><a href="https://github.com/twitter/hdfs-du">hdfs-du</a> - HDFS-DU is an interactive visualization of the Hadoop distributed file system. </li>
+<li><a href="https://github.com/linkedin/white-elephant">White Elephant</a> - Hadoop log aggregator and dashboard</li>
+<li><a href="https://github.com/Netflix/genie">Genie</a> - Genie provides REST-ful APIs to run Hadoop, Hive and Pig jobs, and to manage multiple Hadoop resources and perform job submissions across them.</li>
+<li><a href="http://kylin.incubator.apache.org/">Apache Kylin</a> - Apache Kylin is an open source Distributed Analytics Engine from eBay Inc. that provides SQL interface and multi-dimensional analysis (OLAP) on Hadoop supporting extremely large datasets</li>
+<li><a href="https://github.com/jondot/crunch">Crunch</a> - Go-based toolkit for ETL and feature extraction on Hadoop</li>
+<li><a href="http://ignite.apache.org/">Apache Ignite</a> - Distributed in-memory platform</li>
+</ul>
+<h2>YARN</h2>
+<ul>
+<li><a href="http://slider.incubator.apache.org/">Apache Slider</a> - Apache Slider is a project in incubation at the Apache Software Foundation with the goal of making it possible and easy to deploy existing applications onto a YARN cluster.</li>
+<li><a href="http://twill.incubator.apache.org/">Apache Twill</a> - Apache Twill is an abstraction over Apache Hadoop® YARN that reduces the complexity of developing distributed applications, allowing developers to focus more on their application logic.</li>
+<li><a href="https://github.com/alibaba/mpich2-yarn">mpich2-yarn</a> - Running MPICH2 on Yarn</li>
+</ul>
+<h2>NoSQL</h2>
+<p><em>Next Generation Databases mostly addressing some of the points: being non-relational, distributed, open-source and horizontally scalable.</em></p>
+<ul>
+<li><a href="http://hbase.apache.org">Apache HBase</a> - Apache HBase</li>
+<li><a href="http://phoenix.apache.org/">Apache Phoenix</a> - A SQL skin over HBase supporting secondary indices</li>
+<li><a href="https://github.com/wbolster/happybase">happybase</a> - A developer-friendly Python library to interact with Apache HBase.</li>
+<li><a href="https://github.com/sentric/hannibal">Hannibal</a> - Hannibal is tool to help monitor and maintain HBase-Clusters that are configured for manual splitting.</li>
+<li><a href="https://github.com/VCNC/haeinsa">Haeinsa</a> - Haeinsa is linearly scalable multi-row, multi-table transaction library for HBase</li>
+<li><a href="https://github.com/Huawei-Hadoop/hindex">hindex</a> - Secondary Index for HBase</li>
+<li><a href="https://accumulo.apache.org/">Apache Accumulo</a> - The Apache Accumulo™ sorted, distributed key/value store is a robust, scalable, high performance data storage and retrieval system.</li>
+<li><a href="http://opentsdb.net/">OpenTSDB</a> - The Scalable Time Series Database</li>
+<li><a href="http://cassandra.apache.org/">Apache Cassandra</a></li>
+</ul>
+<h2>SQL on Hadoop</h2>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'hadoop_README.md';
 
         fetch(markdownFile)
@@ -48,21 +181,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

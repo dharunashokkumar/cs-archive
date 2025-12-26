@@ -8,38 +8,145 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Vitalets Awesome Smart Tv - Awesome List Resources">
-    <title>Vitalets Awesome Smart Tv</title>
+    <meta name="description" content="> A curated list of awesome resources for building Smart TV apps Smart TV is a growing platform of TVs having access to the internet and allowing to browse...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Smart TV [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Smart TV <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<blockquote>
+<p>A curated list of awesome resources for building Smart TV apps</p>
+</blockquote>
+<p><a href="https://github.com/vitalets/awesome-smart-tv"><img align="right" width="150" src="https://user-images.githubusercontent.com/1473072/27913047-7c3a5e60-6267-11e7-8bd1-bef2bf3cd753.png"/></a></p>
+<p><a href="https://en.wikipedia.org/wiki/Smart_TV">Smart TV</a> is a growing platform of TVs having access to the internet and allowing to browse web-sites and install applications. It has own ecosystem with main players like Samsung, LG, Android TV and Apple TV. In this list you will find official and third-party resources for developing Smart TV apps and communicating with TV from remote devices.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#platforms">Platforms</a></li>
+<li><a href="#samsung-tizen">Samsung Tizen</a></li>
+<li><a href="#lg-webos">LG webOS</a></li>
+<li><a href="#android-tv">Android TV</a></li>
+<li><a href="#apple-tvos">Apple tvOS</a></li>
+<li><a href="#google-chromecast">Google Chromecast</a></li>
+<li><a href="#cross-platform-frameworks">Cross-platform frameworks</a></li>
+<li><a href="#remote-control-protocols">Remote control protocols</a></li>
+<li><a href="#navigation-libraries">Navigation libraries</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#misc">Misc</a></li>
+<li><a href="#community">Community</a></li>
+</ul>
+<h2>Platforms</h2>
+<p>Below are the most popular platforms for Smart TV. The full list is <a href="https://en.wikipedia.org/wiki/List_of_smart_TV_platforms_and_middleware_software">here</a>.</p>
+<h3>Samsung Tizen</h3>
+<h4>Official resources</h4>
+<ul>
+<li><a href="http://developer.samsung.com/tv">Samsung TV Developers site</a> - News, documentation and SDK downloads.</li>
+<li><a href="https://developer.tizen.org/tizen/tv">Tizen TV Developers site</a> - Full API documentation and guides for developing Tizen TV apps.</li>
+<li><a href="https://developer.tizen.org/development/tizen-studio/download">Tizen Studio</a> - IDE for TV apps development including Tizen TV Emulator.</li>
+<li><a href="http://developer.samsung.com/tv/develop/extension-libraries/smart-view-sdk/download/">Smart View SDK</a> - Official Android, IOS and JavaScript SDK for communication between remote device and Samsung Smart TV.</li>
+<li><a href="http://developer.samsung.com/forum/?topCtgy=06">Samsung TV Developers Forum</a> - Ask questions and share tips when developing apps with Samsung SDKs.</li>
+<li><a href="https://samsungtvbounty.com">Samsung Smart TV Bug Bounty</a> - If you find bug in Samsung TV, submit it here and get a reward $1000+.</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=tizensdk.tizentv">vscode-extension-tizentv</a> - A Visual Studio Code extension that provides a lightweight IDE for Tizen application developers.</li>
+<li><a href="https://github.com/Samsung/Wits">Wits</a> - A tool for reloading tv app's JavaScript/CSS without reinstalling the app every time you make a change.</li>
+</ul>
+<h4>Third-party remote control libraries</h4>
+<ul>
+<li><a href="https://github.com/Ape/samsungctl">samsungctl</a> - Library and command line tool for remote controlling Samsung televisions via a TCP/IP connection. It currently supports both pre-2016 TVs as well most of the modern Tizen-OS TVs with Ethernet or Wi-Fi connectivity (Python).</li>
+<li><a href="https://github.com/Badisi/samsung-tv-remote">samsung-tv-remote</a> - Node.js module to remotely control Samsung Smart TV starting from 2016 (JavaScript).</li>
+<li><a href="https://github.com/kyleaa/homebridge-samsungtv2016">homebridge-samsungtv2016</a> - A plugin for <a href="https://github.com/nfarina/homebridge">Homebridge</a> that allows you to control your 2016 Samsung TV with HomeKit and Siri (JavaScript).</li>
+<li><a href="https://github.com/tavicu/homebridge-samsung-tizen">homebridge-samsung-tizen</a> - A plugin for <a href="https://github.com/nfarina/homebridge">Homebridge</a> that allows you to control your Samsung Tizen TV with HomeKit and Siri (JavaScript).</li>
+<li><a href="https://github.com/tdudek/samsung-remote-models-2014-and-newer">samsung-remote-models-2014-and-newer</a> - Encrypted communication with the internal web service of Samsung TV models 2014+.</li>
+<li><a href="https://github.com/sectroyer/SmartCrypto">SmartCrypto</a> - SmartView2 encrypted handshake API implementation in C/Python.</li>
+<li><a href="https://github.com/shantanugoel/samsung-messagebox">samsung-messagebox</a> - Python script to show notifications on Samsung TVs.</li>
+<li><a href="https://github.com/Toxblh/samsung-tv-control">samsung-tv-control</a> - Library for remote control Samsung TV in your Node.js</li>
+</ul>
+<h4>Other</h4>
+<ul>
+<li><a href="http://en.tab-tv.com/?page_id=7123">Identification of Samsung TV models 2008-2017</a> - How to get screen size, matrix type, year of development, series and other parameters from Samsung TV model name.</li>
+<li><a href="https://github.com/claromes/tizenstudio">Tizen Studio development references</a> - Documents focused on web apps for Smart TVs e Professional Monitors, based in personal researches.</li>
+<li>[TizenBrew] (https://github.com/reisxd/TizenBrew) - A way to experience modded websites and you can install newer apps without fighting with Tizen Studio</li>
+<li>[TizenTube] (https://github.com/reisxd/TizenTube) - A TizenBrew module that enhances your favourite streaming websites viewing experience by removing ads and adding support for Sponsorblock.</li>
+</ul>
+<h3>LG webOS</h3>
+<h4>Official resources</h4>
+<ul>
+<li><a href="http://webostv.developer.lge.com">webOS TV Developers Site</a> - WebOS TV apps development principles, tutorials, API documentation and packaging tools.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Smart TV <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<blockquote>
+<p>A curated list of awesome resources for building Smart TV apps</p>
+</blockquote>
+<p><a href="https://github.com/vitalets/awesome-smart-tv"><img align="right" width="150" src="https://user-images.githubusercontent.com/1473072/27913047-7c3a5e60-6267-11e7-8bd1-bef2bf3cd753.png"/></a></p>
+<p><a href="https://en.wikipedia.org/wiki/Smart_TV">Smart TV</a> is a growing platform of TVs having access to the internet and allowing to browse web-sites and install applications. It has own ecosystem with main players like Samsung, LG, Android TV and Apple TV. In this list you will find official and third-party resources for developing Smart TV apps and communicating with TV from remote devices.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#platforms">Platforms</a></li>
+<li><a href="#samsung-tizen">Samsung Tizen</a></li>
+<li><a href="#lg-webos">LG webOS</a></li>
+<li><a href="#android-tv">Android TV</a></li>
+<li><a href="#apple-tvos">Apple tvOS</a></li>
+<li><a href="#google-chromecast">Google Chromecast</a></li>
+<li><a href="#cross-platform-frameworks">Cross-platform frameworks</a></li>
+<li><a href="#remote-control-protocols">Remote control protocols</a></li>
+<li><a href="#navigation-libraries">Navigation libraries</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#misc">Misc</a></li>
+<li><a href="#community">Community</a></li>
+</ul>
+<h2>Platforms</h2>
+<p>Below are the most popular platforms for Smart TV. The full list is <a href="https://en.wikipedia.org/wiki/List_of_smart_TV_platforms_and_middleware_software">here</a>.</p>
+<h3>Samsung Tizen</h3>
+<h4>Official resources</h4>
+<ul>
+<li><a href="http://developer.samsung.com/tv">Samsung TV Developers site</a> - News, documentation and SDK downloads.</li>
+<li><a href="https://developer.tizen.org/tizen/tv">Tizen TV Developers site</a> - Full API documentation and guides for developing Tizen TV apps.</li>
+<li><a href="https://developer.tizen.org/development/tizen-studio/download">Tizen Studio</a> - IDE for TV apps development including Tizen TV Emulator.</li>
+<li><a href="http://developer.samsung.com/tv/develop/extension-libraries/smart-view-sdk/download/">Smart View SDK</a> - Official Android, IOS and JavaScript SDK for communication between remote device and Samsung Smart TV.</li>
+<li><a href="http://developer.samsung.com/forum/?topCtgy=06">Samsung TV Developers Forum</a> - Ask questions and share tips when developing apps with Samsung SDKs.</li>
+<li><a href="https://samsungtvbounty.com">Samsung Smart TV Bug Bounty</a> - If you find bug in Samsung TV, submit it here and get a reward $1000+.</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=tizensdk.tizentv">vscode-extension-tizentv</a> - A Visual Studio Code extension that provides a lightweight IDE for Tizen application developers.</li>
+<li><a href="https://github.com/Samsung/Wits">Wits</a> - A tool for reloading tv app's JavaScript/CSS without reinstalling the app every time you make a change.</li>
+</ul>
+<h4>Third-party remote control libraries</h4>
+<ul>
+<li><a href="https://github.com/Ape/samsungctl">samsungctl</a> - Library and command line tool for remote controlling Samsung televisions via a TCP/IP connection. It currently supports both pre-2016 TVs as well most of the modern Tizen-OS TVs with Ethernet or Wi-Fi connectivity (Python).</li>
+<li><a href="https://github.com/Badisi/samsung-tv-remote">samsung-tv-remote</a> - Node.js module to remotely control Samsung Smart TV starting from 2016 (JavaScript).</li>
+<li><a href="https://github.com/kyleaa/homebridge-samsungtv2016">homebridge-samsungtv2016</a> - A plugin for <a href="https://github.com/nfarina/homebridge">Homebridge</a> that allows you to control your 2016 Samsung TV with HomeKit and Siri (JavaScript).</li>
+<li><a href="https://github.com/tavicu/homebridge-samsung-tizen">homebridge-samsung-tizen</a> - A plugin for <a href="https://github.com/nfarina/homebridge">Homebridge</a> that allows you to control your Samsung Tizen TV with HomeKit and Siri (JavaScript).</li>
+<li><a href="https://github.com/tdudek/samsung-remote-models-2014-and-newer">samsung-remote-models-2014-and-newer</a> - Encrypted communication with the internal web service of Samsung TV models 2014+.</li>
+<li><a href="https://github.com/sectroyer/SmartCrypto">SmartCrypto</a> - SmartView2 encrypted handshake API implementation in C/Python.</li>
+<li><a href="https://github.com/shantanugoel/samsung-messagebox">samsung-messagebox</a> - Python script to show notifications on Samsung TVs.</li>
+<li><a href="https://github.com/Toxblh/samsung-tv-control">samsung-tv-control</a> - Library for remote control Samsung TV in your Node.js</li>
+</ul>
+<h4>Other</h4>
+<ul>
+<li><a href="http://en.tab-tv.com/?page_id=7123">Identification of Samsung TV models 2008-2017</a> - How to get screen size, matrix type, year of development, series and other parameters from Samsung TV model name.</li>
+<li><a href="https://github.com/claromes/tizenstudio">Tizen Studio development references</a> - Documents focused on web apps for Smart TVs e Professional Monitors, based in personal researches.</li>
+<li>[TizenBrew] (https://github.com/reisxd/TizenBrew) - A way to experience modded websites and you can install newer apps without fighting with Tizen Studio</li>
+<li>[TizenTube] (https://github.com/reisxd/TizenTube) - A TizenBrew module that enhances your favourite streaming websites viewing experience by removing ads and adding support for Sponsorblock.</li>
+</ul>
+<h3>LG webOS</h3>
+<h4>Official resources</h4>
+<ul>
+<li><a href="http://webostv.developer.lge.com">webOS TV Developers Site</a> - WebOS TV apps development principles, tutorials, API documentation and packaging tools.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'smart-tv_README.md';
 
         fetch(markdownFile)
@@ -48,21 +155,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

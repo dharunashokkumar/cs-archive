@@ -8,38 +8,143 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kareniel Awesome Evm Security - Awesome List Resources">
-    <title>Kareniel Awesome Evm Security</title>
+    <meta name="description" content="EVM stands for "Ethereum Virtual Machine". The EVM powers the Ethereum mainnet, but also Layer 2 protocols, sidechains, and EVM-compatible chains. This list is...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome EVM Security [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome EVM Security <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p><a href="https://github.com/kareniel/awesome-evm-security#readme"><img alt="Awesome EVM Security" src="awesome-evm-security.png" /></a></p>
+<p><a href="https://ethereum.org/en/developers/docs/evm/">EVM</a> stands for "Ethereum Virtual Machine". The EVM powers the Ethereum mainnet, but also Layer 2 protocols, sidechains, and EVM-compatible chains.</p>
+<p>This list is an overview of the EVM ecosystem from an information security management perspective.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#guides">Guides</a></li>
+<li><a href="#governance">Governance</a></li>
+<li><a href="#architecture">Architecture</a></li>
+<li><a href="#standards">Standards</a></li>
+<li><a href="#system-assets">System Assets</a></li>
+<li><a href="#threats">Threats</a></li>
+<li><a href="#vulnerabilities">Vulnerabilities</a></li>
+<li><a href="#controls">Controls</a></li>
+<li><a href="#ecosystem">Ecosystem</a></li>
+</ul>
+<h2>Guides</h2>
+<ul>
+<li><a href="https://cryptosec.info/">CryptoSec.info</a> - Information to help beginners learn how to protect their funds against hackers and scammers.</li>
+<li><a href="https://devansh.xyz/blockchain-security/2021/09/17/genesis-0x01.html">Simplified Roadmap for Blockchain Security</a> - Covers all rudimentary topics that one needs to know in order to get into the field of Blockchain Security.</li>
+<li><a href="https://cmichel.io/how-to-become-a-smart-contract-auditor/">How to become a smart contract auditor</a> - Frequently asked questions that are related to auditing and auditors can get their first job.</li>
+</ul>
+<h2>Governance</h2>
+<ul>
+<li><a href="https://linda.mirror.xyz/Vh8K4leCGEO06_qSGx-vS5lvgUqhqkCz9ut81WwCP2o">A beginner's guide to DAOs</a> - Gives a high level overview of what DAOs are, why they are interesting and some of their use cases.</li>
+<li><a href="https://deepdao.io/#/deepdao/dashboard">Deep DAO</a> - Lists, ranks and analyzes top DAOs across multiple metrics.</li>
+<li><a href="https://saftproject.com/">SAFT Agreements</a> - A commercial instrument used to convey rights in tokens prior to the development of the tokens' functionality.</li>
+<li><a href="https://medium.com/daostack/voting-options-in-daos-b86e5c69a3e3">Voting Options in DAOs</a> - Voting Options in DAOs.</li>
+<li><a href="https://twitter.com/awrigh01/status/1369328856260354051">The Wyoming DAO bill</a> - A thread about Wyoming DAOs .</li>
+<li><a href="https://medium.com/primedao/it-takes-a-cryptonetwork-2ae9ab541c17">It Takes a Cryptonetwork</a> - Prime's Strategy for DAO to DAO Relations.</li>
+<li><a href="https://merkle.com/papers/DAOdemocracyDraft.pdf">DAOs, Democracy and Governance</a> - A paper by Ralph Merkle about DAOs.</li>
+</ul>
+<h2>Architecture</h2>
+<ul>
+<li><a href="https://nakamotoinstitute.org/shelling-out/">Shelling Out: The Origins of Money</a> - Illustrates the value of collectibles in reducing social transaction costs.</li>
+<li><a href="https://epub.wu.ac.at/7309/8/Foundations%20of%20Cryptoeconomic%20Systems.pdf">Foundations of Cryptoeconomic Systems</a> - This paper explores why the term
+"cryptoeconomics" is context dependent and proposes complementary micro, meso and macro definitions of the term.</li>
+<li><a href="https://blog.oceanprotocol.com/towards-a-practice-of-token-engineering-b02feeeff7ca">Towards a Practice of Token Engineering</a> - How do we design tokenized ecosystems, their incentives and how do we analyze or verify them?</li>
+<li><a href="https://medium.com/blockchannel/a-crash-course-in-mechanism-design-for-cryptoeconomic-applications-a9f06ab6a976">A Crash Course in Mechanism Design for Cryptoeconomic Applications</a> - Introduces the basic concepts of mechanism design, and gives a taste for their usefulness in the cryptocurrency world.</li>
+<li><a href="https://wtfisqf.com/?grant=&amp;grant=&amp;grant=&amp;grant=&amp;match=1000">WTF Is QF</a> - A simple explanation of quadratic funding.</li>
+<li><a href="https://yos.io/2018/11/10/bonding-curves">Bonding Curves Explained</a> - What bonding curves are and their potential applications.</li>
+</ul>
+<h2>Standards</h2>
+<ul>
+<li><a href="https://www.defisafety.com/">DeFi Safety</a> - Best practices security score reviews.</li>
+<li><a href="https://dasp.co/">DASP Top 10 of 2018</a> - Decentralized Application Security Project Top 10 vulnerabilities.</li>
+<li><a href="https://immunefi.com/severity-updated/">IVSCS</a> - Immunefi Vulnerability Severity Classification System.</li>
+<li><a href="https://securing.github.io/SCSVS/">Smart Contract Security Verification Standard</a> - A free 14-part checklist created to standardize the security of smart contracts for developers, architects, security reviewers and vendors.</li>
+<li><a href="https://guidelines.secureth.org/">Secureth guidelines</a> - Aid you in formulating your own software engineering process by giving a complete picture of all the different concerns and expectations in your software projects.</li>
+<li><a href="https://cryptoconsortium.github.io/CCSS/">CryptoCurrency Security Standard (CCSS)</a> - A set of requirements for all information systems that make use of cryptocurrencies, including exchanges, web applications, and cryptocurrency storage solutions.</li>
+<li><a href="https://github.com/Rari-Capital/solcurity">The Solcurity Standard</a> - Opinionated security and code quality standard for Solidity smart contracts.</li>
+</ul>
+<h2>System Assets</h2>
+<ul>
+<li><a href="https://docs.soliditylang.org/en/v0.8.6/security-considerations.html">Security Considerations in the Solidity documentation</a> - Lists some pitfalls and general security recommendations.</li>
+<li><a href="https://leastauthority.com/static/publications/LeastAuthority-Ethereum-2.0-Specifications-Audit-Report.pdf">Ethereum 2.0 Specifications Security Audit Report</a> - Security Audit Report of the Eth2.0 spec by Least Authority.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome EVM Security <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p><a href="https://github.com/kareniel/awesome-evm-security#readme"><img alt="Awesome EVM Security" src="awesome-evm-security.png" /></a></p>
+<p><a href="https://ethereum.org/en/developers/docs/evm/">EVM</a> stands for "Ethereum Virtual Machine". The EVM powers the Ethereum mainnet, but also Layer 2 protocols, sidechains, and EVM-compatible chains.</p>
+<p>This list is an overview of the EVM ecosystem from an information security management perspective.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#guides">Guides</a></li>
+<li><a href="#governance">Governance</a></li>
+<li><a href="#architecture">Architecture</a></li>
+<li><a href="#standards">Standards</a></li>
+<li><a href="#system-assets">System Assets</a></li>
+<li><a href="#threats">Threats</a></li>
+<li><a href="#vulnerabilities">Vulnerabilities</a></li>
+<li><a href="#controls">Controls</a></li>
+<li><a href="#ecosystem">Ecosystem</a></li>
+</ul>
+<h2>Guides</h2>
+<ul>
+<li><a href="https://cryptosec.info/">CryptoSec.info</a> - Information to help beginners learn how to protect their funds against hackers and scammers.</li>
+<li><a href="https://devansh.xyz/blockchain-security/2021/09/17/genesis-0x01.html">Simplified Roadmap for Blockchain Security</a> - Covers all rudimentary topics that one needs to know in order to get into the field of Blockchain Security.</li>
+<li><a href="https://cmichel.io/how-to-become-a-smart-contract-auditor/">How to become a smart contract auditor</a> - Frequently asked questions that are related to auditing and auditors can get their first job.</li>
+</ul>
+<h2>Governance</h2>
+<ul>
+<li><a href="https://linda.mirror.xyz/Vh8K4leCGEO06_qSGx-vS5lvgUqhqkCz9ut81WwCP2o">A beginner's guide to DAOs</a> - Gives a high level overview of what DAOs are, why they are interesting and some of their use cases.</li>
+<li><a href="https://deepdao.io/#/deepdao/dashboard">Deep DAO</a> - Lists, ranks and analyzes top DAOs across multiple metrics.</li>
+<li><a href="https://saftproject.com/">SAFT Agreements</a> - A commercial instrument used to convey rights in tokens prior to the development of the tokens' functionality.</li>
+<li><a href="https://medium.com/daostack/voting-options-in-daos-b86e5c69a3e3">Voting Options in DAOs</a> - Voting Options in DAOs.</li>
+<li><a href="https://twitter.com/awrigh01/status/1369328856260354051">The Wyoming DAO bill</a> - A thread about Wyoming DAOs .</li>
+<li><a href="https://medium.com/primedao/it-takes-a-cryptonetwork-2ae9ab541c17">It Takes a Cryptonetwork</a> - Prime's Strategy for DAO to DAO Relations.</li>
+<li><a href="https://merkle.com/papers/DAOdemocracyDraft.pdf">DAOs, Democracy and Governance</a> - A paper by Ralph Merkle about DAOs.</li>
+</ul>
+<h2>Architecture</h2>
+<ul>
+<li><a href="https://nakamotoinstitute.org/shelling-out/">Shelling Out: The Origins of Money</a> - Illustrates the value of collectibles in reducing social transaction costs.</li>
+<li><a href="https://epub.wu.ac.at/7309/8/Foundations%20of%20Cryptoeconomic%20Systems.pdf">Foundations of Cryptoeconomic Systems</a> - This paper explores why the term
+"cryptoeconomics" is context dependent and proposes complementary micro, meso and macro definitions of the term.</li>
+<li><a href="https://blog.oceanprotocol.com/towards-a-practice-of-token-engineering-b02feeeff7ca">Towards a Practice of Token Engineering</a> - How do we design tokenized ecosystems, their incentives and how do we analyze or verify them?</li>
+<li><a href="https://medium.com/blockchannel/a-crash-course-in-mechanism-design-for-cryptoeconomic-applications-a9f06ab6a976">A Crash Course in Mechanism Design for Cryptoeconomic Applications</a> - Introduces the basic concepts of mechanism design, and gives a taste for their usefulness in the cryptocurrency world.</li>
+<li><a href="https://wtfisqf.com/?grant=&amp;grant=&amp;grant=&amp;grant=&amp;match=1000">WTF Is QF</a> - A simple explanation of quadratic funding.</li>
+<li><a href="https://yos.io/2018/11/10/bonding-curves">Bonding Curves Explained</a> - What bonding curves are and their potential applications.</li>
+</ul>
+<h2>Standards</h2>
+<ul>
+<li><a href="https://www.defisafety.com/">DeFi Safety</a> - Best practices security score reviews.</li>
+<li><a href="https://dasp.co/">DASP Top 10 of 2018</a> - Decentralized Application Security Project Top 10 vulnerabilities.</li>
+<li><a href="https://immunefi.com/severity-updated/">IVSCS</a> - Immunefi Vulnerability Severity Classification System.</li>
+<li><a href="https://securing.github.io/SCSVS/">Smart Contract Security Verification Standard</a> - A free 14-part checklist created to standardize the security of smart contracts for developers, architects, security reviewers and vendors.</li>
+<li><a href="https://guidelines.secureth.org/">Secureth guidelines</a> - Aid you in formulating your own software engineering process by giving a complete picture of all the different concerns and expectations in your software projects.</li>
+<li><a href="https://cryptoconsortium.github.io/CCSS/">CryptoCurrency Security Standard (CCSS)</a> - A set of requirements for all information systems that make use of cryptocurrencies, including exchanges, web applications, and cryptocurrency storage solutions.</li>
+<li><a href="https://github.com/Rari-Capital/solcurity">The Solcurity Standard</a> - Opinionated security and code quality standard for Solidity smart contracts.</li>
+</ul>
+<h2>System Assets</h2>
+<ul>
+<li><a href="https://docs.soliditylang.org/en/v0.8.6/security-considerations.html">Security Considerations in the Solidity documentation</a> - Lists some pitfalls and general security recommendations.</li>
+<li><a href="https://leastauthority.com/static/publications/LeastAuthority-Ethereum-2.0-Specifications-Audit-Report.pdf">Ethereum 2.0 Specifications Security Audit Report</a> - Security Audit Report of the Eth2.0 spec by Least Authority.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'evm-security_README.md';
 
         fetch(markdownFile)
@@ -48,21 +153,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

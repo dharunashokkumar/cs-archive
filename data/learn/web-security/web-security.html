@@ -8,38 +8,265 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Qazbnm456 Awesome Web Security - Awesome List Resources">
-    <title>Qazbnm456 Awesome Web Security</title>
+    <meta name="description" content="> [!IMPORTANT] > My Web Pentest Training is accepted by Black Hat 2025 🎉🎉🎉 Please come and join the course with me 🤓 > > To celebrate this unforgettable moment...">
+    <meta name="robots" content="index, follow">
+    <title>Web Security - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <blockquote>
+<p>[!IMPORTANT]<br />
+My Web Pentest Training is accepted by <a href="https://www.blackhat.com/us-25/training/schedule/index.html#web-hacking-from--to--44516">Black Hat 2025</a> 🎉🎉🎉 Please come and join the course with me 🤓</p>
+<p>To celebrate this unforgettable moment (and sorry for not updating the repo since a while), I'll do a complete revamp of all the contents of this long-lasting repository in the coming weeks to catch up with the knowledge and tricks that have happened over these years.</p>
+</blockquote>
+<h1>Awesome Web Security <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p><a href="https://www.w3.org/TR/html5/"><img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" align="right" width="70"></a></p>
+<blockquote>
+<p>🐶 Curated list of Web Security materials and resources.</p>
+</blockquote>
+<p>Needless to say, most websites suffer from various types of bugs which may eventually lead to vulnerabilities. Why would this happen so often? There can be many factors involved including misconfiguration, shortage of engineers' security skills, etc. To combat this, here is a curated list of Web Security materials and resources for learning cutting edge penetration techniques, and I highly encourage you to read this article "<a href="https://portswigger.net/blog/so-you-want-to-be-a-web-security-researcher">So you want to be a web security researcher?</a>" first.</p>
+<p><em>Please read the <a href="CONTRIBUTING.md">contribution guidelines</a> before contributing.</em></p>
+<hr />
+<p align="center"><b>🌈 Want to strengthen your penetration skills?</b><br>I would recommend playing some <a href="https://github.com/apsdehal/awesome-ctf" target="_blank">awesome-ctf</a>s.</p>
+
+<hr />
+<p>If you enjoy this awesome list and would like to support it, check out my <a href="https://www.patreon.com/boik">Patreon</a> page :)<br>Also, don't forget to check out my <a href="https://github.com/qazbnm456">repos</a> 🐾 or say <em>hi</em> on my <a href="https://twitter.com/qazbnm456">Twitter</a>!</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#digests">Digests</a></li>
+<li><a href="#forums">Forums</a></li>
+<li><a href="#intro">Introduction</a></li>
+<li><a href="#xss---cross-site-scripting">XSS</a></li>
+<li><a href="#prototype-pollution">Prototype Pollution</a></li>
+<li><a href="#csv-injection">CSV Injection</a></li>
+<li><a href="#sql-injection">SQL Injection</a></li>
+<li><a href="#command-injection">Command Injection</a></li>
+<li><a href="#orm-injection">ORM Injection</a></li>
+<li><a href="#ftp-injection">FTP Injection</a></li>
+<li><a href="#xxe---xml-external-entity">XXE</a></li>
+<li><a href="#csrf---cross-site-request-forgery">CSRF</a></li>
+<li><a href="#clickjacking">Clickjacking</a></li>
+<li><a href="#ssrf---server-side-request-forgery">SSRF</a></li>
+<li><a href="#web-cache-poisoning">Web Cache Poisoning</a></li>
+<li><a href="#relative-path-overwrite">Relative Path Overwrite</a></li>
+<li><a href="#open-redirect">Open Redirect</a></li>
+<li><a href="#saml">SAML</a></li>
+<li><a href="#upload">Upload</a></li>
+<li><a href="#rails">Rails</a></li>
+<li><a href="#angularjs">AngularJS</a></li>
+<li><a href="#reactjs">ReactJS</a></li>
+<li><a href="#ssltls">SSL/TLS</a></li>
+<li><a href="#webmail">Webmail</a></li>
+<li><a href="#nfs">NFS</a></li>
+<li><a href="#aws">AWS</a></li>
+<li><a href="#azure">Azure</a></li>
+<li><a href="#fingerprint">Fingerprint</a></li>
+<li><a href="#sub-domain-enumeration">Sub Domain Enumeration</a></li>
+<li><a href="#crypto">Crypto</a></li>
+<li><a href="#web-shell">Web Shell</a></li>
+<li><a href="#osint">OSINT</a></li>
+<li><a href="#dns-rebinding">DNS Rebinding</a></li>
+<li><a href="#deserialization">Deserialization</a></li>
+<li><a href="#oauth">OAuth</a></li>
+<li><a href="#jwt">JWT</a></li>
+<li><a href="#evasions">Evasions</a></li>
+<li><a href="#evasions-xxe">XXE</a></li>
+<li><a href="#evasions-csp">CSP</a></li>
+<li><a href="#evasions-waf">WAF</a></li>
+<li><a href="#evasions-jsmvc">JSMVC</a></li>
+<li><a href="#evasions-authentication">Authentication</a></li>
+<li><a href="#tricks">Tricks</a></li>
+<li><a href="#tricks-csrf">CSRF</a></li>
+<li><a href="#tricks-clickjacking">Clickjacking</a></li>
+<li><a href="#tricks-rce">Remote Code Execution</a></li>
+<li><a href="#tricks-xss">XSS</a></li>
+<li><a href="#tricks-sql-injection">SQL Injection</a></li>
+<li><a href="#tricks-nosql-injection">NoSQL Injection</a></li>
+<li><a href="#tricks-ftp-injection">FTP Injection</a></li>
+<li><a href="#tricks-xxe">XXE</a></li>
+<li><a href="#tricks-ssrf">SSRF</a></li>
+<li><a href="#tricks-web-cache-poisoning">Web Cache Poisoning</a></li>
+<li><a href="#tricks-header-injection">Header Injection</a></li>
+<li><a href="#tricks-url">URL</a></li>
+<li><a href="#tricks-deserialization">Deserialization</a></li>
+<li><a href="#tricks-oauth">OAuth</a></li>
+<li><a href="#tricks-others">Others</a></li>
+<li><a href="#browser-exploitation">Browser Exploitation</a></li>
+<li><a href="#pocs">PoCs</a></li>
+<li><a href="#pocs-database">Database</a></li>
+<li><a href="#cheetsheets">Cheetsheets</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#tools-auditing">Auditing</a></li>
+<li><a href="#tools-command-injection">Command Injection</a></li>
+<li><a href="#tools-reconnaissance">Reconnaissance</a><ul>
+<li><a href="#tools-osint">OSINT</a></li>
+<li><a href="#tools-sub-domain-enumeration">Sub Domain Enumeration</a></li>
+</ul>
+</li>
+<li><a href="#tools-code-generating">Code Generating</a></li>
+<li><a href="#tools-fuzzing">Fuzzing</a></li>
+<li><a href="#tools-scanning">Scanning</a></li>
+<li><a href="#tools-penetration-testing">Penetration Testing</a></li>
+<li><a href="#tools-leaking">Leaking</a></li>
+<li><a href="#tools-offensive">Offensive</a><ul>
+<li><a href="#tools-xss">XSS</a></li>
+<li><a href="#tools-sql-injection">SQL Injection</a></li>
+<li><a href="#tools-template-injection">Template Injection</a></li>
+<li><a href="#tools-xxe">XXE</a></li>
+<li><a href="#tools-csrf">CSRF</a></li>
+<li><a href="#tools-ssrf">SSRF</a></li>
+</ul>
+</li>
+<li><a href="#tools-detecting">Detecting</a></li>
+<li><a href="#tools-preventing">Preventing</a></li>
+<li><a href="#tools-proxy">Proxy</a></li>
+<li><a href="#tools-webshell">Webshell</a></li>
+<li><a href="#tools-disassembler">Disassembler</a></li>
+<li><a href="#tools-decompiler">Decompiler</a></li>
+<li><a href="#tools-dns-rebinding">DNS Rebinding</a></li>
+<li><a href="#tools-others">Others</a></li>
+<li><a href="#social-engineering-database">Social Engineering Database</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#twitter-users">Twitter Users</a></li>
+<li><a href="#practices">Practices</a></li>
+<li><a href="#practices-application">Application</a></li>
+<li><a href="#practices-aws">AWS</a></li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <blockquote>
+<p>[!IMPORTANT]<br />
+My Web Pentest Training is accepted by <a href="https://www.blackhat.com/us-25/training/schedule/index.html#web-hacking-from--to--44516">Black Hat 2025</a> 🎉🎉🎉 Please come and join the course with me 🤓</p>
+<p>To celebrate this unforgettable moment (and sorry for not updating the repo since a while), I'll do a complete revamp of all the contents of this long-lasting repository in the coming weeks to catch up with the knowledge and tricks that have happened over these years.</p>
+</blockquote>
+<h1>Awesome Web Security <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p><a href="https://www.w3.org/TR/html5/"><img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" align="right" width="70"></a></p>
+<blockquote>
+<p>🐶 Curated list of Web Security materials and resources.</p>
+</blockquote>
+<p>Needless to say, most websites suffer from various types of bugs which may eventually lead to vulnerabilities. Why would this happen so often? There can be many factors involved including misconfiguration, shortage of engineers' security skills, etc. To combat this, here is a curated list of Web Security materials and resources for learning cutting edge penetration techniques, and I highly encourage you to read this article "<a href="https://portswigger.net/blog/so-you-want-to-be-a-web-security-researcher">So you want to be a web security researcher?</a>" first.</p>
+<p><em>Please read the <a href="CONTRIBUTING.md">contribution guidelines</a> before contributing.</em></p>
+<hr />
+<p align="center"><b>🌈 Want to strengthen your penetration skills?</b><br>I would recommend playing some <a href="https://github.com/apsdehal/awesome-ctf" target="_blank">awesome-ctf</a>s.</p>
+
+<hr />
+<p>If you enjoy this awesome list and would like to support it, check out my <a href="https://www.patreon.com/boik">Patreon</a> page :)<br>Also, don't forget to check out my <a href="https://github.com/qazbnm456">repos</a> 🐾 or say <em>hi</em> on my <a href="https://twitter.com/qazbnm456">Twitter</a>!</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#digests">Digests</a></li>
+<li><a href="#forums">Forums</a></li>
+<li><a href="#intro">Introduction</a></li>
+<li><a href="#xss---cross-site-scripting">XSS</a></li>
+<li><a href="#prototype-pollution">Prototype Pollution</a></li>
+<li><a href="#csv-injection">CSV Injection</a></li>
+<li><a href="#sql-injection">SQL Injection</a></li>
+<li><a href="#command-injection">Command Injection</a></li>
+<li><a href="#orm-injection">ORM Injection</a></li>
+<li><a href="#ftp-injection">FTP Injection</a></li>
+<li><a href="#xxe---xml-external-entity">XXE</a></li>
+<li><a href="#csrf---cross-site-request-forgery">CSRF</a></li>
+<li><a href="#clickjacking">Clickjacking</a></li>
+<li><a href="#ssrf---server-side-request-forgery">SSRF</a></li>
+<li><a href="#web-cache-poisoning">Web Cache Poisoning</a></li>
+<li><a href="#relative-path-overwrite">Relative Path Overwrite</a></li>
+<li><a href="#open-redirect">Open Redirect</a></li>
+<li><a href="#saml">SAML</a></li>
+<li><a href="#upload">Upload</a></li>
+<li><a href="#rails">Rails</a></li>
+<li><a href="#angularjs">AngularJS</a></li>
+<li><a href="#reactjs">ReactJS</a></li>
+<li><a href="#ssltls">SSL/TLS</a></li>
+<li><a href="#webmail">Webmail</a></li>
+<li><a href="#nfs">NFS</a></li>
+<li><a href="#aws">AWS</a></li>
+<li><a href="#azure">Azure</a></li>
+<li><a href="#fingerprint">Fingerprint</a></li>
+<li><a href="#sub-domain-enumeration">Sub Domain Enumeration</a></li>
+<li><a href="#crypto">Crypto</a></li>
+<li><a href="#web-shell">Web Shell</a></li>
+<li><a href="#osint">OSINT</a></li>
+<li><a href="#dns-rebinding">DNS Rebinding</a></li>
+<li><a href="#deserialization">Deserialization</a></li>
+<li><a href="#oauth">OAuth</a></li>
+<li><a href="#jwt">JWT</a></li>
+<li><a href="#evasions">Evasions</a></li>
+<li><a href="#evasions-xxe">XXE</a></li>
+<li><a href="#evasions-csp">CSP</a></li>
+<li><a href="#evasions-waf">WAF</a></li>
+<li><a href="#evasions-jsmvc">JSMVC</a></li>
+<li><a href="#evasions-authentication">Authentication</a></li>
+<li><a href="#tricks">Tricks</a></li>
+<li><a href="#tricks-csrf">CSRF</a></li>
+<li><a href="#tricks-clickjacking">Clickjacking</a></li>
+<li><a href="#tricks-rce">Remote Code Execution</a></li>
+<li><a href="#tricks-xss">XSS</a></li>
+<li><a href="#tricks-sql-injection">SQL Injection</a></li>
+<li><a href="#tricks-nosql-injection">NoSQL Injection</a></li>
+<li><a href="#tricks-ftp-injection">FTP Injection</a></li>
+<li><a href="#tricks-xxe">XXE</a></li>
+<li><a href="#tricks-ssrf">SSRF</a></li>
+<li><a href="#tricks-web-cache-poisoning">Web Cache Poisoning</a></li>
+<li><a href="#tricks-header-injection">Header Injection</a></li>
+<li><a href="#tricks-url">URL</a></li>
+<li><a href="#tricks-deserialization">Deserialization</a></li>
+<li><a href="#tricks-oauth">OAuth</a></li>
+<li><a href="#tricks-others">Others</a></li>
+<li><a href="#browser-exploitation">Browser Exploitation</a></li>
+<li><a href="#pocs">PoCs</a></li>
+<li><a href="#pocs-database">Database</a></li>
+<li><a href="#cheetsheets">Cheetsheets</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#tools-auditing">Auditing</a></li>
+<li><a href="#tools-command-injection">Command Injection</a></li>
+<li><a href="#tools-reconnaissance">Reconnaissance</a><ul>
+<li><a href="#tools-osint">OSINT</a></li>
+<li><a href="#tools-sub-domain-enumeration">Sub Domain Enumeration</a></li>
+</ul>
+</li>
+<li><a href="#tools-code-generating">Code Generating</a></li>
+<li><a href="#tools-fuzzing">Fuzzing</a></li>
+<li><a href="#tools-scanning">Scanning</a></li>
+<li><a href="#tools-penetration-testing">Penetration Testing</a></li>
+<li><a href="#tools-leaking">Leaking</a></li>
+<li><a href="#tools-offensive">Offensive</a><ul>
+<li><a href="#tools-xss">XSS</a></li>
+<li><a href="#tools-sql-injection">SQL Injection</a></li>
+<li><a href="#tools-template-injection">Template Injection</a></li>
+<li><a href="#tools-xxe">XXE</a></li>
+<li><a href="#tools-csrf">CSRF</a></li>
+<li><a href="#tools-ssrf">SSRF</a></li>
+</ul>
+</li>
+<li><a href="#tools-detecting">Detecting</a></li>
+<li><a href="#tools-preventing">Preventing</a></li>
+<li><a href="#tools-proxy">Proxy</a></li>
+<li><a href="#tools-webshell">Webshell</a></li>
+<li><a href="#tools-disassembler">Disassembler</a></li>
+<li><a href="#tools-decompiler">Decompiler</a></li>
+<li><a href="#tools-dns-rebinding">DNS Rebinding</a></li>
+<li><a href="#tools-others">Others</a></li>
+<li><a href="#social-engineering-database">Social Engineering Database</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#twitter-users">Twitter Users</a></li>
+<li><a href="#practices">Practices</a></li>
+<li><a href="#practices-application">Application</a></li>
+<li><a href="#practices-aws">AWS</a></li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'web-security_README.md';
 
         fetch(markdownFile)
@@ -48,21 +275,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

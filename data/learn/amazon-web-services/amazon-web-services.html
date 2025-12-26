@@ -8,38 +8,289 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Donnemartin Awesome Aws - Awesome List Resources">
-    <title>Donnemartin Awesome Aws</title>
+    <meta name="description" content="A curated list of awesome AWS libraries, open source repos, guides, blogs, and other resources. Inspired by the awesome list. Repo with 0100+ Stars: :fire:...">
+    <meta name="robots" content="index, follow">
+    <title>Amazon Web Services - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <p><br/></p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/donnemartin/data-science-ipython-notebooks/master/images/aws.png">
+</p>
+<p><br/></p>
+<h1>Awesome AWS <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A curated list of awesome AWS libraries, open source repos, guides, blogs, and other resources.</p>
+<p>Inspired by the <a href="https://github.com/sindresorhus/awesome">awesome</a> list.</p>
+<h2>The Fiery Meter of AWSome</h2>
+<ul>
+<li>Repo with 0100+ Stars: :fire:</li>
+<li>Repo with 0200+ Stars: :fire::fire:</li>
+<li>Repo with 0500+ Stars: :fire::fire::fire:</li>
+<li>Repo with 1000+ Stars: :fire::fire::fire::fire:</li>
+<li>Repo with 2000+ Stars: :fire::fire::fire::fire::fire:</li>
+</ul>
+<p>Repos not on <code>The Fiery Meter of AWSome</code> can still be awesome, see <a href="https://github.com/donnemartin/awesome-aws/blob/master/CONTRIBUTING.md#a-note-on-repo-awsomeness">A Note on Repo AWSomeness</a>.</p>
+<h3><code>awesome-aws</code> Python Module</h3>
+<p><a href="https://travis-ci.org/donnemartin/awesome-aws"><img alt="Build Status" src="https://travis-ci.org/donnemartin/awesome-aws.svg?branch=master" /></a> <a href="https://codecov.io/github/donnemartin/awesome-aws"><img alt="Codecov" src="https://img.shields.io/codecov/c/github/donnemartin/awesome-aws.svg" /></a> <a href="http://badge.fury.io/py/awesome-aws"><img alt="PyPI version" src="https://badge.fury.io/py/awesome-aws.svg" /></a></p>
+<p>The Python module <a href="https://github.com/donnemartin/awesome-aws/tree/master/awesome"><code>awesome-aws</code></a> regularly scans repos on <a href="https://github.com/donnemartin/awesome-aws">Awesome AWS</a> to maintain the accuracy of the <code>Fiery Meter of AWSome</code>.</p>
+<h2>Contributing</h2>
+<p>Contributions are welcome!</p>
+<p>Review the <a href="https://github.com/donnemartin/awesome-aws/blob/master/CONTRIBUTING.md">Contributing Guidelines</a>.</p>
+<p>Also check out the <a href="https://github.com/donnemartin/awesome-aws/issues/34">Watch List</a>.</p>
+<h2>Index</h2>
+<ul>
+<li><a href="#sdks-and-samples">SDKs and Samples</a><ul>
+<li><a href="#android-sdk">Android</a></li>
+<li><a href="#c-sdk">C++</a></li>
+<li><a href="#clojure-sdk">Clojure</a></li>
+<li><a href="#go-sdk">Go</a></li>
+<li><a href="#ios-sdk">iOS</a></li>
+<li><a href="#iot-sdk">IoT</a></li>
+<li><a href="#java-sdk">Java</a></li>
+<li><a href="#javascript-sdk">JavaScript</a></li>
+<li><a href="#haskell-sdk">Haskell</a></li>
+<li><a href="#perl-sdk">Perl</a></li>
+<li><a href="#php-sdk">PHP</a></li>
+<li><a href="#python-sdk">Python</a></li>
+<li><a href="#ruby-sdk">Ruby</a></li>
+<li><a href="#rust-sdk">Rust</a></li>
+<li><a href="#scala-sdk">Scala</a></li>
+<li><a href="#xamarin-sdk">Xamarin</a></li>
+<li><a href="#unity-sdk">Unity</a></li>
+<li><a href="#net-sdk">.NET</a></li>
+</ul>
+</li>
+<li><a href="#command-line-tools">Command Line Tools</a><ul>
+<li><a href="#universal-command-line-interface">Universal Command Line Interface</a></li>
+<li><a href="#windows-powershell">Windows PowerShell</a></li>
+</ul>
+</li>
+<li><a href="#ide-toolkits">IDE Toolkits</a><ul>
+<li><a href="#eclipse-toolkit">Eclipse Toolkit</a></li>
+<li><a href="#visual-studio-toolkit">Visual Studio Toolkit</a></li>
+</ul>
+</li>
+<li><a href="#open-source-repos">Open Source Repos</a><ul>
+<li><a href="#api-gateway">API Gateway</a></li>
+<li><a href="#cli">CLI</a></li>
+<li><a href="#cloudformation">CloudFormation</a></li>
+<li><a href="#cloudsearch">CloudSearch</a></li>
+<li><a href="#cloudtrail">CloudTrail</a></li>
+<li><a href="#cloudwatch">CloudWatch</a></li>
+<li><a href="#code-deploy">Code Deploy</a></li>
+<li><a href="#code-pipeline">Code Pipeline</a></li>
+<li><a href="#cognito">Cognito</a></li>
+<li><a href="#data-pipeline">Data Pipeline</a></li>
+<li><a href="#device-farm">Device Farm</a></li>
+<li><a href="#dynamodb">DynamoDB</a></li>
+<li><a href="#elastic-beanstalk">Elastic Beanstalk</a></li>
+<li><a href="#elastic-container-service">Elastic Container Service</a></li>
+<li><a href="#elastic-file-system">Elastic File System</a></li>
+<li><a href="#elastic-mapreduce">Elastic MapReduce</a></li>
+<li><a href="#elastic-search">Elastic Search</a></li>
+<li><a href="#elasticache">Elasticache</a></li>
+<li><a href="#glacier">Glacier</a></li>
+<li><a href="#kinesis">Kinesis</a></li>
+<li><a href="#lambda">Lambda</a></li>
+<li><a href="#machine-learning">Machine Learning</a></li>
+<li><a href="#mobile-analytics">Mobile Analytics</a></li>
+<li><a href="#opsworks">OpsWorks</a></li>
+<li><a href="#redshift">Redshift</a></li>
+<li><a href="#route-53">Route 53</a></li>
+<li><a href="#s3">S3</a></li>
+<li><a href="#sns">SNS</a></li>
+<li><a href="#sqs">SQS</a></li>
+<li><a href="#data">Data</a></li>
+<li><a href="#devops">DevOps</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#accompanying-repos">Accompanying</a></li>
+<li><a href="#miscellaneous-repos">Miscellaneous</a></li>
+</ul>
+</li>
+<li><a href="#guides-books-documentation-and-training">Guides, Books, Documentation, and Training</a><ul>
+<li><a href="#getting-started-guides">Getting Started Guides</a></li>
+<li><a href="#general-guides">General Guides</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#whitepapers">Whitepapers</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#training">Training</a></li>
+<li><a href="#case-studies-powered-by-aws">Case Studies: Powered by AWS</a></li>
+</ul>
+</li>
+<li><a href="#social">Social</a><ul>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#twitter-influencers">Twitter Influencers</a></li>
+<li><a href="#facebook-pages">Facebook Pages</a></li>
+<li><a href="#youtube-channels">YouTube Channels</a></li>
+<li><a href="#linkedin-groups">LinkedIn Groups</a></li>
+<li><a href="#subreddits">Subreddits</a></li>
+<li><a href="#conferences">Conferences</a></li>
+</ul>
+</li>
+<li><a href="#latest-kpis-and-stats">Latest KPIs and Stats</a></li>
+<li><a href="#appendix-of-core-services">Appendix of Core Services</a><ul>
+<li><a href="#services-in-plain-english">Services in Plain English</a></li>
+<li><a href="#compute-services">Compute</a></li>
+<li><a href="#networking-services">Networking</a></li>
+<li><a href="#enterprise-applications">Enterprise Applications</a></li>
+<li><a href="#analytics-services">Analytics</a></li>
+<li><a href="#artificial-intelligence">Artificial Intelligence</a></li>
+<li><a href="#management-tools">Management Tools</a></li>
+<li><a href="#security-and-identity-services">Security and Identity</a></li>
+<li><a href="#internet-of-things-service">Internet of Things</a></li>
+<li><a href="#mobile-services">Mobile Services</a></li>
+<li><a href="#storage-and-content-delivery-services">Storage and Content Delivery</a></li>
+</ul>
+</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <p><br/></p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/donnemartin/data-science-ipython-notebooks/master/images/aws.png">
+</p>
+<p><br/></p>
+<h1>Awesome AWS <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A curated list of awesome AWS libraries, open source repos, guides, blogs, and other resources.</p>
+<p>Inspired by the <a href="https://github.com/sindresorhus/awesome">awesome</a> list.</p>
+<h2>The Fiery Meter of AWSome</h2>
+<ul>
+<li>Repo with 0100+ Stars: :fire:</li>
+<li>Repo with 0200+ Stars: :fire::fire:</li>
+<li>Repo with 0500+ Stars: :fire::fire::fire:</li>
+<li>Repo with 1000+ Stars: :fire::fire::fire::fire:</li>
+<li>Repo with 2000+ Stars: :fire::fire::fire::fire::fire:</li>
+</ul>
+<p>Repos not on <code>The Fiery Meter of AWSome</code> can still be awesome, see <a href="https://github.com/donnemartin/awesome-aws/blob/master/CONTRIBUTING.md#a-note-on-repo-awsomeness">A Note on Repo AWSomeness</a>.</p>
+<h3><code>awesome-aws</code> Python Module</h3>
+<p><a href="https://travis-ci.org/donnemartin/awesome-aws"><img alt="Build Status" src="https://travis-ci.org/donnemartin/awesome-aws.svg?branch=master" /></a> <a href="https://codecov.io/github/donnemartin/awesome-aws"><img alt="Codecov" src="https://img.shields.io/codecov/c/github/donnemartin/awesome-aws.svg" /></a> <a href="http://badge.fury.io/py/awesome-aws"><img alt="PyPI version" src="https://badge.fury.io/py/awesome-aws.svg" /></a></p>
+<p>The Python module <a href="https://github.com/donnemartin/awesome-aws/tree/master/awesome"><code>awesome-aws</code></a> regularly scans repos on <a href="https://github.com/donnemartin/awesome-aws">Awesome AWS</a> to maintain the accuracy of the <code>Fiery Meter of AWSome</code>.</p>
+<h2>Contributing</h2>
+<p>Contributions are welcome!</p>
+<p>Review the <a href="https://github.com/donnemartin/awesome-aws/blob/master/CONTRIBUTING.md">Contributing Guidelines</a>.</p>
+<p>Also check out the <a href="https://github.com/donnemartin/awesome-aws/issues/34">Watch List</a>.</p>
+<h2>Index</h2>
+<ul>
+<li><a href="#sdks-and-samples">SDKs and Samples</a><ul>
+<li><a href="#android-sdk">Android</a></li>
+<li><a href="#c-sdk">C++</a></li>
+<li><a href="#clojure-sdk">Clojure</a></li>
+<li><a href="#go-sdk">Go</a></li>
+<li><a href="#ios-sdk">iOS</a></li>
+<li><a href="#iot-sdk">IoT</a></li>
+<li><a href="#java-sdk">Java</a></li>
+<li><a href="#javascript-sdk">JavaScript</a></li>
+<li><a href="#haskell-sdk">Haskell</a></li>
+<li><a href="#perl-sdk">Perl</a></li>
+<li><a href="#php-sdk">PHP</a></li>
+<li><a href="#python-sdk">Python</a></li>
+<li><a href="#ruby-sdk">Ruby</a></li>
+<li><a href="#rust-sdk">Rust</a></li>
+<li><a href="#scala-sdk">Scala</a></li>
+<li><a href="#xamarin-sdk">Xamarin</a></li>
+<li><a href="#unity-sdk">Unity</a></li>
+<li><a href="#net-sdk">.NET</a></li>
+</ul>
+</li>
+<li><a href="#command-line-tools">Command Line Tools</a><ul>
+<li><a href="#universal-command-line-interface">Universal Command Line Interface</a></li>
+<li><a href="#windows-powershell">Windows PowerShell</a></li>
+</ul>
+</li>
+<li><a href="#ide-toolkits">IDE Toolkits</a><ul>
+<li><a href="#eclipse-toolkit">Eclipse Toolkit</a></li>
+<li><a href="#visual-studio-toolkit">Visual Studio Toolkit</a></li>
+</ul>
+</li>
+<li><a href="#open-source-repos">Open Source Repos</a><ul>
+<li><a href="#api-gateway">API Gateway</a></li>
+<li><a href="#cli">CLI</a></li>
+<li><a href="#cloudformation">CloudFormation</a></li>
+<li><a href="#cloudsearch">CloudSearch</a></li>
+<li><a href="#cloudtrail">CloudTrail</a></li>
+<li><a href="#cloudwatch">CloudWatch</a></li>
+<li><a href="#code-deploy">Code Deploy</a></li>
+<li><a href="#code-pipeline">Code Pipeline</a></li>
+<li><a href="#cognito">Cognito</a></li>
+<li><a href="#data-pipeline">Data Pipeline</a></li>
+<li><a href="#device-farm">Device Farm</a></li>
+<li><a href="#dynamodb">DynamoDB</a></li>
+<li><a href="#elastic-beanstalk">Elastic Beanstalk</a></li>
+<li><a href="#elastic-container-service">Elastic Container Service</a></li>
+<li><a href="#elastic-file-system">Elastic File System</a></li>
+<li><a href="#elastic-mapreduce">Elastic MapReduce</a></li>
+<li><a href="#elastic-search">Elastic Search</a></li>
+<li><a href="#elasticache">Elasticache</a></li>
+<li><a href="#glacier">Glacier</a></li>
+<li><a href="#kinesis">Kinesis</a></li>
+<li><a href="#lambda">Lambda</a></li>
+<li><a href="#machine-learning">Machine Learning</a></li>
+<li><a href="#mobile-analytics">Mobile Analytics</a></li>
+<li><a href="#opsworks">OpsWorks</a></li>
+<li><a href="#redshift">Redshift</a></li>
+<li><a href="#route-53">Route 53</a></li>
+<li><a href="#s3">S3</a></li>
+<li><a href="#sns">SNS</a></li>
+<li><a href="#sqs">SQS</a></li>
+<li><a href="#data">Data</a></li>
+<li><a href="#devops">DevOps</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#accompanying-repos">Accompanying</a></li>
+<li><a href="#miscellaneous-repos">Miscellaneous</a></li>
+</ul>
+</li>
+<li><a href="#guides-books-documentation-and-training">Guides, Books, Documentation, and Training</a><ul>
+<li><a href="#getting-started-guides">Getting Started Guides</a></li>
+<li><a href="#general-guides">General Guides</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#whitepapers">Whitepapers</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#training">Training</a></li>
+<li><a href="#case-studies-powered-by-aws">Case Studies: Powered by AWS</a></li>
+</ul>
+</li>
+<li><a href="#social">Social</a><ul>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#twitter-influencers">Twitter Influencers</a></li>
+<li><a href="#facebook-pages">Facebook Pages</a></li>
+<li><a href="#youtube-channels">YouTube Channels</a></li>
+<li><a href="#linkedin-groups">LinkedIn Groups</a></li>
+<li><a href="#subreddits">Subreddits</a></li>
+<li><a href="#conferences">Conferences</a></li>
+</ul>
+</li>
+<li><a href="#latest-kpis-and-stats">Latest KPIs and Stats</a></li>
+<li><a href="#appendix-of-core-services">Appendix of Core Services</a><ul>
+<li><a href="#services-in-plain-english">Services in Plain English</a></li>
+<li><a href="#compute-services">Compute</a></li>
+<li><a href="#networking-services">Networking</a></li>
+<li><a href="#enterprise-applications">Enterprise Applications</a></li>
+<li><a href="#analytics-services">Analytics</a></li>
+<li><a href="#artificial-intelligence">Artificial Intelligence</a></li>
+<li><a href="#management-tools">Management Tools</a></li>
+<li><a href="#security-and-identity-services">Security and Identity</a></li>
+<li><a href="#internet-of-things-service">Internet of Things</a></li>
+<li><a href="#mobile-services">Mobile Services</a></li>
+<li><a href="#storage-and-content-delivery-services">Storage and Content Delivery</a></li>
+</ul>
+</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'amazon-web-services_README.md';
 
         fetch(markdownFile)
@@ -48,21 +299,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

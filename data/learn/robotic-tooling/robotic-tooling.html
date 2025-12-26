@@ -8,38 +8,193 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Protontypes Awesome Robotic Tooling - Awesome List Resources">
-    <title>Protontypes Awesome Robotic Tooling</title>
+    <meta name="description" content="A curated list of tooling for professional robotic development in C++ and Python with a touch of ROS, autonomous driving and aerospace > To stop reinventing...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Robotic Tooling [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Robotic Tooling <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p><strong>A curated list of tooling for professional robotic development in C++ and Python with a touch of ROS, autonomous driving and aerospace</strong></p>
+<blockquote>
+<p>To stop reinventing the wheel you need to know about the wheel. This list is an attempt to show the variety of open and free tools in software and hardware development, which are useful in professional robotic development.</p>
+</blockquote>
+<p>Your contribution is necessary to keep this list alive, increase the quality and to expand it. You can read more about it's origin and how you can participate in the <a href="CONTRIBUTING.md">contribution guide</a> and related <a href="https://rosindustrial.org/news/2020/5/11/guest-article-on-the-story-of-the-autonomous-logistics">blog post</a>. All new project entries will have a tweet from <a href="https://twitter.com/protontypes">protontypes</a>.</p>
+<!--lint ignore double-link-->
+<p><a href="https://github.com/leggedrobotics/xpp"><img src="https://i.imgur.com/qI1Jfyl.gif" align="right" width="60%" /></a></p>
+<!--lint ignore double-link-->
+<p><a href="https://twitter.com/intent/follow?screen_name=protontypes"><img alt="" src="https://img.shields.io/twitter/follow/protontypes?style=social" /></a> <a href="https://gitter.im/protontypes/community?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img alt="Join the chat at https://gitter.im/protontypes/community" src="https://badges.gitter.im/protontypes/community.svg" /></a></p>
+<!--toc-->
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#communication-and-coordination">Communication and Coordination</a></li>
+<li><a href="#documentation-and-presentation">Documentation and Presentation</a></li>
+<li><a href="#requirements-and-safety">Requirements and Safety</a></li>
+<li><a href="#architecture-and-design">Architecture and Design</a></li>
+<li><a href="#frameworks-and-stacks">Frameworks and Stacks</a></li>
+<li><a href="#development-environment">Development Environment</a></li>
+<li><a href="#code-and-run">Code and Run</a></li>
+<li><a href="#template">Template</a></li>
+<li><a href="#build-and-deploy">Build and Deploy</a></li>
+<li><a href="#unit-and-integration-test">Unit and Integration Test</a></li>
+<li><a href="#lint-and-format">Lint and Format</a></li>
+<li><a href="#debugging-and-tracing">Debugging and Tracing</a></li>
+<li><a href="#version-control">Version Control</a></li>
+<li><a href="#simulation">Simulation</a></li>
+<li><a href="#electronics-and-mechanics">Electronics and Mechanics</a></li>
+<li><a href="#sensor-processing">Sensor Processing</a></li>
+<li><a href="#calibration-and-transformation">Calibration and Transformation</a></li>
+<li><a href="#perception-pipeline">Perception Pipeline</a></li>
+<li><a href="#machine-learning">Machine Learning</a></li>
+<li><a href="#parallel-processing">Parallel Processing</a></li>
+<li><a href="#image-processing">Image Processing</a></li>
+<li><a href="#radar-processing">Radar Processing</a></li>
+<li><a href="#lidar-and-point-cloud-processing">Lidar and Point Cloud Processing</a></li>
+<li><a href="#localization-and-state-estimation">Localization and State Estimation</a></li>
+<li><a href="#simultaneous-localization-and-mapping">Simultaneous Localization and Mapping</a></li>
+<li><a href="#lidar">Lidar</a></li>
+<li><a href="#visual">Visual</a></li>
+<li><a href="#vector-map">Vector Map</a></li>
+<li><a href="#prediction">Prediction</a></li>
+<li><a href="#behavior-and-decision">Behavior and Decision</a></li>
+<li><a href="#planning-and-control">Planning and Control</a></li>
+<li><a href="#user-interaction">User Interaction</a></li>
+<li><a href="#graphical-user-interface">Graphical User Interface</a></li>
+<li><a href="#acoustic-user-interface">Acoustic User Interface</a></li>
+<li><a href="#command-line-interface">Command Line Interface</a></li>
+<li><a href="#data-visualization-and-mission-control">Data Visualization and Mission Control</a></li>
+<li><a href="#annotation">Annotation</a></li>
+<li><a href="#point-cloud">Point Cloud</a></li>
+<li><a href="#rviz">RViz</a></li>
+<li><a href="#operation-system">Operation System</a></li>
+<li><a href="#monitoring">Monitoring</a></li>
+<li><a href="#database-and-record">Database and Record</a></li>
+<li><a href="#network-distributed-file-system">Network Distributed File System</a></li>
+<li><a href="#server-infrastructure-and-high-performance-computing">Server Infrastructure and High Performance Computing</a></li>
+<li><a href="#embedded-operation-system">Embedded Operation System</a></li>
+<li><a href="#real-time-kernel">Real-Time Kernel</a></li>
+<li><a href="#network-and-middleware">Network and Middleware</a></li>
+<li><a href="#ethernet-and-wireless-networking">Ethernet and Wireless Networking</a></li>
+<li><a href="#controller-area-network">Controller Area Network</a></li>
+<li><a href="#sensor-and-acuator-interfaces">Sensor and Acuator Interfaces</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#datasets">Datasets</a></li>
+</ul>
+<!--toc_end-->
+
+<h2>Communication and Coordination</h2>
+<ul>
+<li><a href="https://agilemanifesto.org/">Agile Development</a> - Manifesto for Agile Software Development.</li>
+<li><a href="https://github.com/nvie/gitflow">Gitflow</a> - Makes parallel development very easy, by isolating new development from finished work.</li>
+<li><a href="https://github.com/uinput/deeplator">DeepL</a> - An online translator that outperforms Google, Microsoft and Facebook.</li>
+<li><a href="https://github.com/benhutchins/docker-taiga">Taiga</a> - Agile Projectmanagment Tool.</li>
+<li><a href="https://github.com/kanboard/kanboard">Kanboard</a> - Minimalistic Kanban Board.</li>
+<li><a href="https://gitlab.com/leanlabsio/kanban">kanban</a> - Free, open source, self-hosted, Kanban board for GitLab issues.</li>
+<li><a href="https://github.com/sameersbn/docker-gitlab">Gitlab</a> - Simple Selfhosted Gitlab Server with Docker.</li>
+<li><a href="https://github.com/gogs/gogs">Gogs</a> - Build a simple, stable and extensible self-hosted Git service that can be setup in the most painless way.</li>
+<li><a href="https://github.com/wekan/wekan">Wekan</a> - Meteor based Kanban Board.</li>
+<li><a href="https://github.com/pycontribs/jira">JIRA API</a> - Python Library for REST API of Jira.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Robotic Tooling <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p><strong>A curated list of tooling for professional robotic development in C++ and Python with a touch of ROS, autonomous driving and aerospace</strong></p>
+<blockquote>
+<p>To stop reinventing the wheel you need to know about the wheel. This list is an attempt to show the variety of open and free tools in software and hardware development, which are useful in professional robotic development.</p>
+</blockquote>
+<p>Your contribution is necessary to keep this list alive, increase the quality and to expand it. You can read more about it's origin and how you can participate in the <a href="CONTRIBUTING.md">contribution guide</a> and related <a href="https://rosindustrial.org/news/2020/5/11/guest-article-on-the-story-of-the-autonomous-logistics">blog post</a>. All new project entries will have a tweet from <a href="https://twitter.com/protontypes">protontypes</a>.</p>
+<!--lint ignore double-link-->
+<p><a href="https://github.com/leggedrobotics/xpp"><img src="https://i.imgur.com/qI1Jfyl.gif" align="right" width="60%" /></a></p>
+<!--lint ignore double-link-->
+<p><a href="https://twitter.com/intent/follow?screen_name=protontypes"><img alt="" src="https://img.shields.io/twitter/follow/protontypes?style=social" /></a> <a href="https://gitter.im/protontypes/community?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img alt="Join the chat at https://gitter.im/protontypes/community" src="https://badges.gitter.im/protontypes/community.svg" /></a></p>
+<!--toc-->
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#communication-and-coordination">Communication and Coordination</a></li>
+<li><a href="#documentation-and-presentation">Documentation and Presentation</a></li>
+<li><a href="#requirements-and-safety">Requirements and Safety</a></li>
+<li><a href="#architecture-and-design">Architecture and Design</a></li>
+<li><a href="#frameworks-and-stacks">Frameworks and Stacks</a></li>
+<li><a href="#development-environment">Development Environment</a></li>
+<li><a href="#code-and-run">Code and Run</a></li>
+<li><a href="#template">Template</a></li>
+<li><a href="#build-and-deploy">Build and Deploy</a></li>
+<li><a href="#unit-and-integration-test">Unit and Integration Test</a></li>
+<li><a href="#lint-and-format">Lint and Format</a></li>
+<li><a href="#debugging-and-tracing">Debugging and Tracing</a></li>
+<li><a href="#version-control">Version Control</a></li>
+<li><a href="#simulation">Simulation</a></li>
+<li><a href="#electronics-and-mechanics">Electronics and Mechanics</a></li>
+<li><a href="#sensor-processing">Sensor Processing</a></li>
+<li><a href="#calibration-and-transformation">Calibration and Transformation</a></li>
+<li><a href="#perception-pipeline">Perception Pipeline</a></li>
+<li><a href="#machine-learning">Machine Learning</a></li>
+<li><a href="#parallel-processing">Parallel Processing</a></li>
+<li><a href="#image-processing">Image Processing</a></li>
+<li><a href="#radar-processing">Radar Processing</a></li>
+<li><a href="#lidar-and-point-cloud-processing">Lidar and Point Cloud Processing</a></li>
+<li><a href="#localization-and-state-estimation">Localization and State Estimation</a></li>
+<li><a href="#simultaneous-localization-and-mapping">Simultaneous Localization and Mapping</a></li>
+<li><a href="#lidar">Lidar</a></li>
+<li><a href="#visual">Visual</a></li>
+<li><a href="#vector-map">Vector Map</a></li>
+<li><a href="#prediction">Prediction</a></li>
+<li><a href="#behavior-and-decision">Behavior and Decision</a></li>
+<li><a href="#planning-and-control">Planning and Control</a></li>
+<li><a href="#user-interaction">User Interaction</a></li>
+<li><a href="#graphical-user-interface">Graphical User Interface</a></li>
+<li><a href="#acoustic-user-interface">Acoustic User Interface</a></li>
+<li><a href="#command-line-interface">Command Line Interface</a></li>
+<li><a href="#data-visualization-and-mission-control">Data Visualization and Mission Control</a></li>
+<li><a href="#annotation">Annotation</a></li>
+<li><a href="#point-cloud">Point Cloud</a></li>
+<li><a href="#rviz">RViz</a></li>
+<li><a href="#operation-system">Operation System</a></li>
+<li><a href="#monitoring">Monitoring</a></li>
+<li><a href="#database-and-record">Database and Record</a></li>
+<li><a href="#network-distributed-file-system">Network Distributed File System</a></li>
+<li><a href="#server-infrastructure-and-high-performance-computing">Server Infrastructure and High Performance Computing</a></li>
+<li><a href="#embedded-operation-system">Embedded Operation System</a></li>
+<li><a href="#real-time-kernel">Real-Time Kernel</a></li>
+<li><a href="#network-and-middleware">Network and Middleware</a></li>
+<li><a href="#ethernet-and-wireless-networking">Ethernet and Wireless Networking</a></li>
+<li><a href="#controller-area-network">Controller Area Network</a></li>
+<li><a href="#sensor-and-acuator-interfaces">Sensor and Acuator Interfaces</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#datasets">Datasets</a></li>
+</ul>
+<!--toc_end-->
+
+<h2>Communication and Coordination</h2>
+<ul>
+<li><a href="https://agilemanifesto.org/">Agile Development</a> - Manifesto for Agile Software Development.</li>
+<li><a href="https://github.com/nvie/gitflow">Gitflow</a> - Makes parallel development very easy, by isolating new development from finished work.</li>
+<li><a href="https://github.com/uinput/deeplator">DeepL</a> - An online translator that outperforms Google, Microsoft and Facebook.</li>
+<li><a href="https://github.com/benhutchins/docker-taiga">Taiga</a> - Agile Projectmanagment Tool.</li>
+<li><a href="https://github.com/kanboard/kanboard">Kanboard</a> - Minimalistic Kanban Board.</li>
+<li><a href="https://gitlab.com/leanlabsio/kanban">kanban</a> - Free, open source, self-hosted, Kanban board for GitLab issues.</li>
+<li><a href="https://github.com/sameersbn/docker-gitlab">Gitlab</a> - Simple Selfhosted Gitlab Server with Docker.</li>
+<li><a href="https://github.com/gogs/gogs">Gogs</a> - Build a simple, stable and extensible self-hosted Git service that can be setup in the most painless way.</li>
+<li><a href="https://github.com/wekan/wekan">Wekan</a> - Meteor based Kanban Board.</li>
+<li><a href="https://github.com/pycontribs/jira">JIRA API</a> - Python Library for REST API of Jira.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'robotic-tooling_README.md';
 
         fetch(markdownFile)
@@ -48,21 +203,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

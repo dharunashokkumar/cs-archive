@@ -8,38 +8,199 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Slevithan Awesome Regex - Awesome List Resources">
-    <title>Slevithan Awesome Regex</title>
+    <meta name="description" content="&nbsp;Shortcut URL: Awesome Regex curates the best regular expression tools, tutorials, libraries, and other resources, covering all major regex flavors. >...">
+    <meta name="robots" content="index, follow">
+    <title>Regex - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <!--lint ignore awesome-heading-->
+<div align="center">
+
+[![Awesome Regex](media/awesome-regex-banner.svg)](https://github.com/slevithan/awesome-regex)
+
+[![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re) &nbsp;<sup>Shortcut URL: [`regex.cool`](https://regex.cool/)</sup>
+</div>
+
+<p>Awesome Regex curates the best regular expression tools, tutorials, libraries, and other resources, covering all major regex flavors.</p>
+<blockquote>
+<p>Regular expressions (regex or regexp) are a powerful and concise way to search, parse, and process text. They're built into many programming languages, text editors, IDEs, database engines, word processors, and other tools.</p>
+</blockquote>
+<p>Contributions are welcome. Add links through pull requests (<a href="CONTRIBUTING.md">guidelines</a>).</p>
+<details>
+  <summary>📖 <b>Glossary</b></summary>
+  <br>
+
+*A brief glossary of regular expression terms as used in this list.*
+
+- **Regex engine:** Software that interprets and executes regular expressions, either built into a programming language or as a standalone library.
+- **Regex flavor:** A unique set of regex syntax and behavior. Basic syntax is typically shared across flavors, but more advanced features often vary, sometimes in subtle or incompatible ways. A flavor might be shared across multiple implementations or programming languages.
+  - Ex: The “JavaScript” flavor is defined by the ECMAScript spec; implemented by multiple engines (V8, etc.).
+  - Ex: The “PCRE” flavor is the PCRE2 library, used by numerous programming languages and tools.
+  - Ex: Ruby swapped its regex implementation twice from version 1.8 → 1.9 → 2.0, so each used a distinct flavor. The Ruby 2.0+ flavor is referred to here as either “Ruby” or “Onigmo” (the underlying regex library).
+- **Non-backtracking engine:** A regex implementation that uses a non-backtracking algorithm and runs in linear time. This rules out worst case performance from superlinear backtracking, but it's slower with some patterns and precludes some useful features like backreferences.
+</details>
+
+<h3>Featured resource</h3>
+<p><a href="https://github.com/slevithan/regex">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/slevithan/regex@6.1.0/media/logo-dark.svg">
+    <img alt="Regex+ logo" height="100" width="225" align="right" src="https://cdn.jsdelivr.net/gh/slevithan/regex@6.1.0/media/logo.svg">
+  </picture>
+</a></p>
+<p><a href="https://github.com/slevithan/regex">Regex+</a> is a lightweight JavaScript library for more readable, high-performance, native JavaScript regexes with powerful features including free spacing, atomic groups, possessive quantifiers, subroutines, definition groups, and context-aware interpolation.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#testers">Testers</a></li>
+<li><a href="#syntax-free-regex-builders">Syntax-free regex builders</a></li>
+<li><a href="#visualizers">Visualizers</a></li>
+<li><a href="#grep-like-tools">Grep-like tools</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#regex-engines">Regex engines</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#source-code">Source code</a></li>
+<li><a href="#flavor-differences">Flavor differences</a></li>
+<li><a href="#performance">Performance</a></li>
+<li><a href="#collections-of-patterns">Collections of patterns</a></li>
+<li><a href="#javascript-regex-libraries">JavaScript regex libraries</a></li>
+<li><a href="#javascript-regex-evolution">JavaScript regex evolution</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#communities">Communities</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+</ul>
+<h2>Testers</h2>
+<p><em>For building, testing, and playing with regexes.</em></p>
+<ul>
+<li><a href="https://regex101.com/">regex101</a> - <strong>Best free and best web-based tester</strong>.</li>
+<li>Flavors: Java, JavaScript, .NET, PCRE, RE2, Rust, and emulates Python.</li>
+<li>Includes regex debugger (PCRE only).</li>
+<li><a href="https://www.regexbuddy.com/">RegexBuddy</a> (Windows, $40) - <strong>Best tester</strong>.</li>
+<li>Flavors: Emulates hundreds of flavors/versions, with deep knowledge of differences.</li>
+<li>Includes regex debugger.</li>
+<li><a href="https://regexr.com/">RegExr</a> [<a href="https://github.com/gskinner/regexr/"><em>GitHub</em></a>] - <strong>Best open source tester</strong>.</li>
+<li>Flavors: JavaScript, PCRE.</li>
+<li>Languages: 🇺🇸, 🇨🇳 (<a href="https://regexr-cn.com/">fork</a>).</li>
+<li><a href="https://regexlearn.com/playground">RegexLearn</a> [<a href="https://github.com/aykutkardas/regexlearn.com/blob/develop/src/pages/%5Blang%5D/playground.tsx"><em>GitHub</em></a>] - <strong>Best multilingual tester</strong> (JavaScript).</li>
+<li>Languages: 🇺🇸, 🇹🇷, 🇷🇺, 🇪🇸, 🇨🇳, 🇩🇪, 🇺🇦, 🇫🇷, 🇵🇱, 🇰🇷, 🇧🇷, 🇨🇿, 🇬🇪.</li>
+<li><a href="https://regexplained.com/">regexplained</a> [<a href="https://github.com/LeaVerou/regexplained"><em>GitHub</em></a>] - <strong>Best tester for presentations</strong> (JavaScript).</li>
+</ul>
+<details>
+  <summary>✳️ <b>Notable mentions</b></summary>
+  <br>
+
+**Command line**
+
+- [pcre2test](https://pcre2project.github.io/pcre2/doc/pcre2test/) - Includes regex debugger. Flavor: PCRE.
+- [rxrx](https://metacpan.org/dist/Regexp-Debugger/view/bin/rxrx) - Includes regex debugger ([video intro](https://www.youtube.com/watch?v=zcSFIUiMgAs)). Flavor: Perl.
+
+**By flavor**
+
+- fancy-regex (Rust library): [fancy-regex playground](https://fancy-regex.github.io/fancy-regex/) \[[*GitHub*](https://github.com/fancy-regex/fancy-regex/tree/main/playground)].
+- JavaScript: [RegViz](http://regviz.org/).
+- .NET: [Regex Storm](http://regexstorm.net/tester) \[[*GitHub*](https://github.com/lonekorean/regex-storm)].
+        </noscript>
+        <div id="dynamic-content">
+            <!--lint ignore awesome-heading-->
+<div align="center">
+
+[![Awesome Regex](media/awesome-regex-banner.svg)](https://github.com/slevithan/awesome-regex)
+
+[![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re) &nbsp;<sup>Shortcut URL: [`regex.cool`](https://regex.cool/)</sup>
+</div>
+
+<p>Awesome Regex curates the best regular expression tools, tutorials, libraries, and other resources, covering all major regex flavors.</p>
+<blockquote>
+<p>Regular expressions (regex or regexp) are a powerful and concise way to search, parse, and process text. They're built into many programming languages, text editors, IDEs, database engines, word processors, and other tools.</p>
+</blockquote>
+<p>Contributions are welcome. Add links through pull requests (<a href="CONTRIBUTING.md">guidelines</a>).</p>
+<details>
+  <summary>📖 <b>Glossary</b></summary>
+  <br>
+
+*A brief glossary of regular expression terms as used in this list.*
+
+- **Regex engine:** Software that interprets and executes regular expressions, either built into a programming language or as a standalone library.
+- **Regex flavor:** A unique set of regex syntax and behavior. Basic syntax is typically shared across flavors, but more advanced features often vary, sometimes in subtle or incompatible ways. A flavor might be shared across multiple implementations or programming languages.
+  - Ex: The “JavaScript” flavor is defined by the ECMAScript spec; implemented by multiple engines (V8, etc.).
+  - Ex: The “PCRE” flavor is the PCRE2 library, used by numerous programming languages and tools.
+  - Ex: Ruby swapped its regex implementation twice from version 1.8 → 1.9 → 2.0, so each used a distinct flavor. The Ruby 2.0+ flavor is referred to here as either “Ruby” or “Onigmo” (the underlying regex library).
+- **Non-backtracking engine:** A regex implementation that uses a non-backtracking algorithm and runs in linear time. This rules out worst case performance from superlinear backtracking, but it's slower with some patterns and precludes some useful features like backreferences.
+</details>
+
+<h3>Featured resource</h3>
+<p><a href="https://github.com/slevithan/regex">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/slevithan/regex@6.1.0/media/logo-dark.svg">
+    <img alt="Regex+ logo" height="100" width="225" align="right" src="https://cdn.jsdelivr.net/gh/slevithan/regex@6.1.0/media/logo.svg">
+  </picture>
+</a></p>
+<p><a href="https://github.com/slevithan/regex">Regex+</a> is a lightweight JavaScript library for more readable, high-performance, native JavaScript regexes with powerful features including free spacing, atomic groups, possessive quantifiers, subroutines, definition groups, and context-aware interpolation.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#testers">Testers</a></li>
+<li><a href="#syntax-free-regex-builders">Syntax-free regex builders</a></li>
+<li><a href="#visualizers">Visualizers</a></li>
+<li><a href="#grep-like-tools">Grep-like tools</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#regex-engines">Regex engines</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#source-code">Source code</a></li>
+<li><a href="#flavor-differences">Flavor differences</a></li>
+<li><a href="#performance">Performance</a></li>
+<li><a href="#collections-of-patterns">Collections of patterns</a></li>
+<li><a href="#javascript-regex-libraries">JavaScript regex libraries</a></li>
+<li><a href="#javascript-regex-evolution">JavaScript regex evolution</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#communities">Communities</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+</ul>
+<h2>Testers</h2>
+<p><em>For building, testing, and playing with regexes.</em></p>
+<ul>
+<li><a href="https://regex101.com/">regex101</a> - <strong>Best free and best web-based tester</strong>.</li>
+<li>Flavors: Java, JavaScript, .NET, PCRE, RE2, Rust, and emulates Python.</li>
+<li>Includes regex debugger (PCRE only).</li>
+<li><a href="https://www.regexbuddy.com/">RegexBuddy</a> (Windows, $40) - <strong>Best tester</strong>.</li>
+<li>Flavors: Emulates hundreds of flavors/versions, with deep knowledge of differences.</li>
+<li>Includes regex debugger.</li>
+<li><a href="https://regexr.com/">RegExr</a> [<a href="https://github.com/gskinner/regexr/"><em>GitHub</em></a>] - <strong>Best open source tester</strong>.</li>
+<li>Flavors: JavaScript, PCRE.</li>
+<li>Languages: 🇺🇸, 🇨🇳 (<a href="https://regexr-cn.com/">fork</a>).</li>
+<li><a href="https://regexlearn.com/playground">RegexLearn</a> [<a href="https://github.com/aykutkardas/regexlearn.com/blob/develop/src/pages/%5Blang%5D/playground.tsx"><em>GitHub</em></a>] - <strong>Best multilingual tester</strong> (JavaScript).</li>
+<li>Languages: 🇺🇸, 🇹🇷, 🇷🇺, 🇪🇸, 🇨🇳, 🇩🇪, 🇺🇦, 🇫🇷, 🇵🇱, 🇰🇷, 🇧🇷, 🇨🇿, 🇬🇪.</li>
+<li><a href="https://regexplained.com/">regexplained</a> [<a href="https://github.com/LeaVerou/regexplained"><em>GitHub</em></a>] - <strong>Best tester for presentations</strong> (JavaScript).</li>
+</ul>
+<details>
+  <summary>✳️ <b>Notable mentions</b></summary>
+  <br>
+
+**Command line**
+
+- [pcre2test](https://pcre2project.github.io/pcre2/doc/pcre2test/) - Includes regex debugger. Flavor: PCRE.
+- [rxrx](https://metacpan.org/dist/Regexp-Debugger/view/bin/rxrx) - Includes regex debugger ([video intro](https://www.youtube.com/watch?v=zcSFIUiMgAs)). Flavor: Perl.
+
+**By flavor**
+
+- fancy-regex (Rust library): [fancy-regex playground](https://fancy-regex.github.io/fancy-regex/) \[[*GitHub*](https://github.com/fancy-regex/fancy-regex/tree/main/playground)].
+- JavaScript: [RegViz](http://regviz.org/).
+- .NET: [Regex Storm](http://regexstorm.net/tester) \[[*GitHub*](https://github.com/lonekorean/regex-storm)].
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'regex_README.md';
 
         fetch(markdownFile)
@@ -48,21 +209,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

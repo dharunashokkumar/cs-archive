@@ -8,38 +8,167 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Owainlewis Awesome Artificial Intelligence - Awesome List Resources">
-    <title>Owainlewis Awesome Artificial Intelligence</title>
+    <meta name="description" content="A curated collection of must-use, actively maintained resources for building and shipping AI systems. Focus: AI engineering (RAG, agents, evals, guardrails,...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Artificial Intelligence - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Artificial Intelligence</h1>
+<p>A curated collection of <strong>must-use, actively maintained resources</strong> for building and shipping AI systems.  </p>
+<p>Focus: <strong>AI engineering</strong> (RAG, agents, evals, guardrails, deploy) plus the best books, guides, papers, and a <em>carefully selected</em> set of tools.</p>
+<p><img alt="" src="https://media.giphy.com/media/jeAQYN9FfROX6/giphy.gif" /></p>
+<hr />
+<h2>🏛 Core Resources (Evergreen)</h2>
+<p><em>The foundations — these will still be valuable five years from now, even if today’s tools are gone.</em></p>
+<h3>📚 Books</h3>
+<p><strong>Modern &amp; Practical</strong>
+- <a href="https://www.oreilly.com/library/view/designing-machine-learning/9781098107956/">Designing Machine Learning Systems</a> — Scalable, maintainable ML pipelines (Chip Huyen).
+- <a href="https://www.oreilly.com/library/view/generative-deep-learning/9781098134174/">Generative Deep Learning (2nd Edition)</a> — GANs, VAEs, diffusion models (David Foster).
+- <a href="https://www.oreilly.com/library/view/ai-engineering/9781098166298/">AI Engineering</a> — End-to-end AI product building (Chip Huyen).
+- <a href="https://www.thelmbook.com/">100 Page Language Models Book</a> — This book guides you through the evolution of language models, starting from machine learning fundamentals.</p>
+<p><strong>Foundational</strong>
+- <a href="https://aima.cs.berkeley.edu/">Artificial Intelligence: A Modern Approach</a> — Comprehensive AI theory (Russell &amp; Norvig).
+- <a href="https://www.deeplearningbook.org/">Deep Learning</a> — Neural networks &amp; architectures (Goodfellow, Bengio, Courville).
+- <a href="https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf">Reinforcement Learning: An Introduction (2nd Edition)</a> — RL fundamentals (Sutton &amp; Barto).</p>
+<hr />
+<h3>🏗 AI Engineering</h3>
+<p><em>Frameworks and design patterns for building robust, production-grade AI systems.</em><br />
+<em>Personal note: you don't need tons of frameworks — start with simple LLM calls and work up.</em></p>
+<h4>📖 Guides &amp; Playbooks</h4>
+<ul>
+<li><strong><a href="https://www.anthropic.com/engineering/building-effective-agents">Building Effective Agents (Anthropic)</a></strong> — ⭐ Patterns, pitfalls, and tradeoffs for designing AI agents.</li>
+<li><a href="https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf">OpenAI Agents Guide</a> — Practical guide on building agents</li>
+<li><a href="https://www.kaggle.com/whitepaper-agents">Google AI Agents Paper</a> - Practical guide to building AI agents from Google</li>
+<li><a href="https://www.kaggle.com/whitepaper-agent-companion">Google Agents Companion Paper</a> - Guide from Google</li>
+<li><a href="https://cookbook.openai.com/">OpenAI Cookbook</a> — Example code, recipes, and best practices for working with OpenAI APIs.</li>
+<li><a href="https://github.com/SylphAI-Inc/LLM-engineer-handbook">LLM Engineer Handbook</a> — A goldmine of useful links for AI engineers</li>
+</ul>
+<h4>🤖 Frameworks</h4>
+<ul>
+<li><a href="https://the-pocket.github.io/PocketFlow/">PocketFlow</a> — Extremely minimalist AI agent framework in just 100 lines of code. Fantastic way to learn.</li>
+<li><a href="https://google.github.io/adk-docs/">Google ADK</a> — Google's Agent Development Kit (Python, Java). Great local development experience + A2A + MCP.</li>
+<li><a href="https://ai.pydantic.dev/">Pydantic-AI</a> — Typed, structured LLM orchestration framework built on Pydantic models for safe, predictable outputs.</li>
+<li><a href="https://www.langchain.com/langgraph">LangGraph</a> — Build multi-agent workflows with stateful graphs on top of LangChain.</li>
+<li><a href="https://www.crewai.com/">CrewAI</a> — Agent orchestration with structured tasks and human-in-the-loop controls.</li>
+<li><a href="https://microsoft.github.io/autogen/">AutoGen</a> — Microsoft’s framework for multi-agent conversation and collaboration.</li>
+</ul>
+<h4>📦 Retrieval-Augmented Generation (RAG)</h4>
+<ul>
+<li><a href="https://www.llamaindex.ai/">LlamaIndex</a> — Data framework for ingesting, indexing, and querying private data with LLMs.</li>
+<li><a href="https://haystack.deepset.ai/">Haystack</a> — Open-source search/RAG framework with modular pipelines.</li>
+<li><a href="https://github.com/docling-project/docling">Docling</a> — Great library for ingesting any kind of document for RAG ⭐</li>
+</ul>
+<h4>Evals</h4>
+<ul>
+<li><a href="https://github.com/openai/evals">OpenAI Evals</a> — OpenAI's framework for writing evals</li>
+</ul>
+<hr />
+<h3>📄 Landmark Papers</h3>
+<p><em>Research that shaped modern AI — worth reading to understand the "why" behind today’s architectures.</em>
+- <a href="https://arxiv.org/abs/1706.03762">Attention Is All You Need</a> — Transformer architecture.
+- <a href="https://arxiv.org/abs/2001.08361">Scaling Laws for Neural Language Models</a> — Model/data/compute scaling.
+- <a href="https://arxiv.org/abs/2005.14165">Language Models are Few-Shot Learners</a> — GPT-3 capabilities.
+- <a href="https://arxiv.org/abs/2212.08073">Constitutional AI</a> — Safer model alignment.</p>
+<hr />
+<h2>🎓 Courses</h2>
+<p><em>Learn from the best — structured content for every level.</em></p>
+<p><strong>Beginner</strong>
+- <a href="https://www.cloudskillsboost.google/paths/118">Google Generative AI Learning Path</a>
+- <a href="https://huggingface.co/learn/llm-course/chapter1/1">Hugging Face LLM Course</a>
+- <a href="https://course.fast.ai/">Fast.ai — Practical Deep Learning</a></p>
+<p><strong>Intermediate / Advanced</strong>
+- <a href="https://stanford-cs324.github.io/winter2022/">Stanford CS324: Large Language Models</a>
+- <a href="https://fullstackdeeplearning.com/">Full Stack Deep Learning</a>
+- <a href="https://introtodeeplearning.com/">MIT 6.S191: Intro to Deep Learning</a></p>
+<p><strong>Focused</strong>
+- <a href="https://learn.deeplearning.ai/">DeepLearning.AI Short Courses</a></p>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Artificial Intelligence</h1>
+<p>A curated collection of <strong>must-use, actively maintained resources</strong> for building and shipping AI systems.  </p>
+<p>Focus: <strong>AI engineering</strong> (RAG, agents, evals, guardrails, deploy) plus the best books, guides, papers, and a <em>carefully selected</em> set of tools.</p>
+<p><img alt="" src="https://media.giphy.com/media/jeAQYN9FfROX6/giphy.gif" /></p>
+<hr />
+<h2>🏛 Core Resources (Evergreen)</h2>
+<p><em>The foundations — these will still be valuable five years from now, even if today’s tools are gone.</em></p>
+<h3>📚 Books</h3>
+<p><strong>Modern &amp; Practical</strong>
+- <a href="https://www.oreilly.com/library/view/designing-machine-learning/9781098107956/">Designing Machine Learning Systems</a> — Scalable, maintainable ML pipelines (Chip Huyen).
+- <a href="https://www.oreilly.com/library/view/generative-deep-learning/9781098134174/">Generative Deep Learning (2nd Edition)</a> — GANs, VAEs, diffusion models (David Foster).
+- <a href="https://www.oreilly.com/library/view/ai-engineering/9781098166298/">AI Engineering</a> — End-to-end AI product building (Chip Huyen).
+- <a href="https://www.thelmbook.com/">100 Page Language Models Book</a> — This book guides you through the evolution of language models, starting from machine learning fundamentals.</p>
+<p><strong>Foundational</strong>
+- <a href="https://aima.cs.berkeley.edu/">Artificial Intelligence: A Modern Approach</a> — Comprehensive AI theory (Russell &amp; Norvig).
+- <a href="https://www.deeplearningbook.org/">Deep Learning</a> — Neural networks &amp; architectures (Goodfellow, Bengio, Courville).
+- <a href="https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf">Reinforcement Learning: An Introduction (2nd Edition)</a> — RL fundamentals (Sutton &amp; Barto).</p>
+<hr />
+<h3>🏗 AI Engineering</h3>
+<p><em>Frameworks and design patterns for building robust, production-grade AI systems.</em><br />
+<em>Personal note: you don't need tons of frameworks — start with simple LLM calls and work up.</em></p>
+<h4>📖 Guides &amp; Playbooks</h4>
+<ul>
+<li><strong><a href="https://www.anthropic.com/engineering/building-effective-agents">Building Effective Agents (Anthropic)</a></strong> — ⭐ Patterns, pitfalls, and tradeoffs for designing AI agents.</li>
+<li><a href="https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf">OpenAI Agents Guide</a> — Practical guide on building agents</li>
+<li><a href="https://www.kaggle.com/whitepaper-agents">Google AI Agents Paper</a> - Practical guide to building AI agents from Google</li>
+<li><a href="https://www.kaggle.com/whitepaper-agent-companion">Google Agents Companion Paper</a> - Guide from Google</li>
+<li><a href="https://cookbook.openai.com/">OpenAI Cookbook</a> — Example code, recipes, and best practices for working with OpenAI APIs.</li>
+<li><a href="https://github.com/SylphAI-Inc/LLM-engineer-handbook">LLM Engineer Handbook</a> — A goldmine of useful links for AI engineers</li>
+</ul>
+<h4>🤖 Frameworks</h4>
+<ul>
+<li><a href="https://the-pocket.github.io/PocketFlow/">PocketFlow</a> — Extremely minimalist AI agent framework in just 100 lines of code. Fantastic way to learn.</li>
+<li><a href="https://google.github.io/adk-docs/">Google ADK</a> — Google's Agent Development Kit (Python, Java). Great local development experience + A2A + MCP.</li>
+<li><a href="https://ai.pydantic.dev/">Pydantic-AI</a> — Typed, structured LLM orchestration framework built on Pydantic models for safe, predictable outputs.</li>
+<li><a href="https://www.langchain.com/langgraph">LangGraph</a> — Build multi-agent workflows with stateful graphs on top of LangChain.</li>
+<li><a href="https://www.crewai.com/">CrewAI</a> — Agent orchestration with structured tasks and human-in-the-loop controls.</li>
+<li><a href="https://microsoft.github.io/autogen/">AutoGen</a> — Microsoft’s framework for multi-agent conversation and collaboration.</li>
+</ul>
+<h4>📦 Retrieval-Augmented Generation (RAG)</h4>
+<ul>
+<li><a href="https://www.llamaindex.ai/">LlamaIndex</a> — Data framework for ingesting, indexing, and querying private data with LLMs.</li>
+<li><a href="https://haystack.deepset.ai/">Haystack</a> — Open-source search/RAG framework with modular pipelines.</li>
+<li><a href="https://github.com/docling-project/docling">Docling</a> — Great library for ingesting any kind of document for RAG ⭐</li>
+</ul>
+<h4>Evals</h4>
+<ul>
+<li><a href="https://github.com/openai/evals">OpenAI Evals</a> — OpenAI's framework for writing evals</li>
+</ul>
+<hr />
+<h3>📄 Landmark Papers</h3>
+<p><em>Research that shaped modern AI — worth reading to understand the "why" behind today’s architectures.</em>
+- <a href="https://arxiv.org/abs/1706.03762">Attention Is All You Need</a> — Transformer architecture.
+- <a href="https://arxiv.org/abs/2001.08361">Scaling Laws for Neural Language Models</a> — Model/data/compute scaling.
+- <a href="https://arxiv.org/abs/2005.14165">Language Models are Few-Shot Learners</a> — GPT-3 capabilities.
+- <a href="https://arxiv.org/abs/2212.08073">Constitutional AI</a> — Safer model alignment.</p>
+<hr />
+<h2>🎓 Courses</h2>
+<p><em>Learn from the best — structured content for every level.</em></p>
+<p><strong>Beginner</strong>
+- <a href="https://www.cloudskillsboost.google/paths/118">Google Generative AI Learning Path</a>
+- <a href="https://huggingface.co/learn/llm-course/chapter1/1">Hugging Face LLM Course</a>
+- <a href="https://course.fast.ai/">Fast.ai — Practical Deep Learning</a></p>
+<p><strong>Intermediate / Advanced</strong>
+- <a href="https://stanford-cs324.github.io/winter2022/">Stanford CS324: Large Language Models</a>
+- <a href="https://fullstackdeeplearning.com/">Full Stack Deep Learning</a>
+- <a href="https://introtodeeplearning.com/">MIT 6.S191: Intro to Deep Learning</a></p>
+<p><strong>Focused</strong>
+- <a href="https://learn.deeplearning.ai/">DeepLearning.AI Short Courses</a></p>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'artificial-intelligence_README.md';
 
         fetch(markdownFile)
@@ -48,21 +177,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

@@ -8,38 +8,353 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Vsouza Awesome Ios - Awesome List Resources">
-    <title>Vsouza Awesome Ios</title>
+    <meta name="description" content="This project is supported by: Please see CONTRIBUTING and CODE-OF-CONDUCT for details. - Analytics - App Routing - Apple TV - App Store - Architecture Patterns...">
+    <meta name="robots" content="index, follow">
+    <title>Ios - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <div align="center">
+    <img src="https://github.com/vsouza/awesome-ios/blob/master/header.png?raw=true" alt="Awesome">
+</div>
+
+<p align="center">
+    <img alt="awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" />
+    <a href="https://ko-fi.com/M4M3WPRD"><img width="110" alt="Buy Me a Coffee" src="buy_me_a_coffee.png" /></a>
+</p>
+
+<p align="center">This project is supported by:
+    <a href="https://www.digitalocean.com/?utm_medium=opensource&utm_source=awesome-ios">
+    <img src="https://opensource.nyc3.cdn.digitaloceanspaces.com/attribution/assets/SVG/DO_Logo_horizontal_blue.svg" width="201px">
+  </a>
+<p>
+
+</p>
+
+## Contributing and Collaborating
+
+Please see [CONTRIBUTING](https://github.com/vsouza/awesome-ios/blob/master/.github/CONTRIBUTING.md) and [CODE-OF-CONDUCT](https://github.com/vsouza/awesome-ios/blob/master/CODE_OF_CONDUCT.md) for details.
+
+## Contents
+
+- [Analytics](#analytics)
+- [App Routing](#app-routing)
+- [Apple TV](#apple-tv)
+- [App Store](#app-store)
+- [Architecture Patterns](#architecture-patterns)
+- [ARKit](#arkit)
+- [Authentication](#authentication)
+- [Blockchain](#blockchain)
+- [Books](#books)
+- [Cache](#cache)
+- [Charts](#charts)
+- [Code Injection](#code-injection)
+- [Code Quality](#code-quality)
+    - [Linter](#linter)
+- [Color](#color)
+- [Command Line](#command-line)
+- [Concurrency](#concurrency)
+- [Core Data](#core-data)
+- [Courses](#courses)
+    - [Getting Started](#getting-started)
+- [Database](#database)
+- [Data Structures / Algorithms](#data-structures--algorithms)
+- [Date & Time](#date--time)
+- [Debugging](#debugging)
+- [Dependency Injection](#dependency-injection)
+- [Dependency / Package Manager](#dependency--package-manager)
+- [Deployment / Distribution](#deployment--distribution)
+- [EventBus](#eventbus)
+- [Files](#files)
+- [Functional Programming](#functional-programming)
+- [Games](#games)
+- [GCD](#gcd)
+- [Gesture](#gesture)
+- [Graphics](#graphics)
+- [Hardware](#hardware)
+    - [Bluetooth](#bluetooth)
+    - [Camera](#camera)
+    - [Force Touch](#force-touch)
+    - [iBeacon](#ibeacon)
+    - [Location](#location)
+    - [Other Hardware](#other-hardware)
+- [Layout](#layout)
+- [Localization](#localization)
+- [Logging](#logging)
+- [Machine Learning](#machine-learning)
+- [Maps](#maps)
+- [Math](#math)
+- [Media](#media)
+    - [Audio](#audio)
+    - [GIF](#gif)
+    - [Image](#image)
+    - [Media Processing](#media-processing)
+    - [PDF](#pdf)
+    - [Streaming](#streaming)
+    - [Video](#video)
+- [Messaging](#messaging)
+- [Networking](#networking)
+- [Newsletters](#newsletters)
+- [Notifications](#notifications)
+    - [Push Notifications](#push-notifications)
+    - [Push Notification Providers](#push-notification-providers)
+- [Objective-C Runtime](#objective-c-runtime)
+- [Optimization](#optimization)
+- [Other Awesome Lists](#other-awesome-lists)
+- [Parsing](#parsing)
+    - [CSV](#csv)
+    - [JSON](#json)
+    - [XML & HTML](#xml--html)
+    - [Other Parsing](#other-parsing)
+- [Passbook](#passbook)
+- [Payments](#payments)
+- [Permissions](#permissions)
+- [Podcasts](#podcasts)
+- [Project setup](#project-setup)
+- [Prototyping](#prototyping)
+- [Rapid Development](#rapid-development)
+- [Reactive Programming](#reactive-programming)
+    - [React-Like](#react-like)
+- [Reference](#reference)
+- [Reflection](#reflection)
+- [Regex](#regex)
+- [SDK](#sdk)
+    - [Official](#official)
+    - [Unofficial](#unofficial)
+- [Security](#security)
+    - [Encryption](#encryption)
+    - [Keychain](#keychain)
+- [Server](#server)
+- [Style Guides](#style-guides)
+- [Testing](#testing)
+    - [TDD / BDD](#tdd--bdd)
+    - [A/B Testing](#ab-testing)
+    - [UI Testing](#ui-testing)
+    - [Other Testing](#other-testing)
+- [Text](#text)
+    - [Font](#font)
+- [UI](#ui)
+    - [Activity Indicator](#activity-indicator)
+    - [Alert & Action Sheet](#alert--action-sheet)
+    - [Animation](#animation)
+    - [Transition](#transition)
+    - [Badge](#badge)
+    - [Button](#button)
+    - [Calendar](#calendar)
+    - [Cards](#cards)
+    - [Form & Settings](#form--settings)
+    - [Keyboard](#keyboard)
+    - [Label](#label)
+    - [Login](#login)
+    - [Menu](#menu)
+    - [Navigation Bar](#navigation-bar)
+    - [PickerView](#pickerview)
+    - [Popup](#popup)
+    - [Progress View](#progress-view)
+    - [Pull to Refresh](#pull-to-refresh)
+    - [Rating Stars](#rating-stars)
+    - [ScrollView](#scrollview)
+    - [Segmented Control](#segmented-control)
+    - [Slider](#slider)
+    - [Splash View](#splash-view)
+    - [Status Bar](#status-bar)
+    - [Stepper](#stepper)
+    - [Switch](#switch)
+    - [Tab Bar](#tab-bar)
+    - [Table View / Collection View](#table-view--collection-view)
+      - [Table View](#table-view)
+      - [Collection View](#collection-view)
+      - [Expandable Cell](#expandable-cell)
+      - [Header](#header)
+      - [Placeholder](#placeholder)
+      - [Collection View Layout](#collection-view-layout)
+    - [Tag](#tag)
+    - [TextField & TextView](#textfield--textview)
+    - [UIPageControl](#uipagecontrol)
+    - [Web View](#web-view)
+- [Utility](#utility)
+- [User Consent](#user-consent)
+- [VR](#vr)
+- [Walkthrough / Intro / Tutorial](#walkthrough--intro--tutorial)
+        </noscript>
+        <div id="dynamic-content">
+            <div align="center">
+    <img src="https://github.com/vsouza/awesome-ios/blob/master/header.png?raw=true" alt="Awesome">
+</div>
+
+<p align="center">
+    <img alt="awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" />
+    <a href="https://ko-fi.com/M4M3WPRD"><img width="110" alt="Buy Me a Coffee" src="buy_me_a_coffee.png" /></a>
+</p>
+
+<p align="center">This project is supported by:
+    <a href="https://www.digitalocean.com/?utm_medium=opensource&utm_source=awesome-ios">
+    <img src="https://opensource.nyc3.cdn.digitaloceanspaces.com/attribution/assets/SVG/DO_Logo_horizontal_blue.svg" width="201px">
+  </a>
+<p>
+
+</p>
+
+## Contributing and Collaborating
+
+Please see [CONTRIBUTING](https://github.com/vsouza/awesome-ios/blob/master/.github/CONTRIBUTING.md) and [CODE-OF-CONDUCT](https://github.com/vsouza/awesome-ios/blob/master/CODE_OF_CONDUCT.md) for details.
+
+## Contents
+
+- [Analytics](#analytics)
+- [App Routing](#app-routing)
+- [Apple TV](#apple-tv)
+- [App Store](#app-store)
+- [Architecture Patterns](#architecture-patterns)
+- [ARKit](#arkit)
+- [Authentication](#authentication)
+- [Blockchain](#blockchain)
+- [Books](#books)
+- [Cache](#cache)
+- [Charts](#charts)
+- [Code Injection](#code-injection)
+- [Code Quality](#code-quality)
+    - [Linter](#linter)
+- [Color](#color)
+- [Command Line](#command-line)
+- [Concurrency](#concurrency)
+- [Core Data](#core-data)
+- [Courses](#courses)
+    - [Getting Started](#getting-started)
+- [Database](#database)
+- [Data Structures / Algorithms](#data-structures--algorithms)
+- [Date & Time](#date--time)
+- [Debugging](#debugging)
+- [Dependency Injection](#dependency-injection)
+- [Dependency / Package Manager](#dependency--package-manager)
+- [Deployment / Distribution](#deployment--distribution)
+- [EventBus](#eventbus)
+- [Files](#files)
+- [Functional Programming](#functional-programming)
+- [Games](#games)
+- [GCD](#gcd)
+- [Gesture](#gesture)
+- [Graphics](#graphics)
+- [Hardware](#hardware)
+    - [Bluetooth](#bluetooth)
+    - [Camera](#camera)
+    - [Force Touch](#force-touch)
+    - [iBeacon](#ibeacon)
+    - [Location](#location)
+    - [Other Hardware](#other-hardware)
+- [Layout](#layout)
+- [Localization](#localization)
+- [Logging](#logging)
+- [Machine Learning](#machine-learning)
+- [Maps](#maps)
+- [Math](#math)
+- [Media](#media)
+    - [Audio](#audio)
+    - [GIF](#gif)
+    - [Image](#image)
+    - [Media Processing](#media-processing)
+    - [PDF](#pdf)
+    - [Streaming](#streaming)
+    - [Video](#video)
+- [Messaging](#messaging)
+- [Networking](#networking)
+- [Newsletters](#newsletters)
+- [Notifications](#notifications)
+    - [Push Notifications](#push-notifications)
+    - [Push Notification Providers](#push-notification-providers)
+- [Objective-C Runtime](#objective-c-runtime)
+- [Optimization](#optimization)
+- [Other Awesome Lists](#other-awesome-lists)
+- [Parsing](#parsing)
+    - [CSV](#csv)
+    - [JSON](#json)
+    - [XML & HTML](#xml--html)
+    - [Other Parsing](#other-parsing)
+- [Passbook](#passbook)
+- [Payments](#payments)
+- [Permissions](#permissions)
+- [Podcasts](#podcasts)
+- [Project setup](#project-setup)
+- [Prototyping](#prototyping)
+- [Rapid Development](#rapid-development)
+- [Reactive Programming](#reactive-programming)
+    - [React-Like](#react-like)
+- [Reference](#reference)
+- [Reflection](#reflection)
+- [Regex](#regex)
+- [SDK](#sdk)
+    - [Official](#official)
+    - [Unofficial](#unofficial)
+- [Security](#security)
+    - [Encryption](#encryption)
+    - [Keychain](#keychain)
+- [Server](#server)
+- [Style Guides](#style-guides)
+- [Testing](#testing)
+    - [TDD / BDD](#tdd--bdd)
+    - [A/B Testing](#ab-testing)
+    - [UI Testing](#ui-testing)
+    - [Other Testing](#other-testing)
+- [Text](#text)
+    - [Font](#font)
+- [UI](#ui)
+    - [Activity Indicator](#activity-indicator)
+    - [Alert & Action Sheet](#alert--action-sheet)
+    - [Animation](#animation)
+    - [Transition](#transition)
+    - [Badge](#badge)
+    - [Button](#button)
+    - [Calendar](#calendar)
+    - [Cards](#cards)
+    - [Form & Settings](#form--settings)
+    - [Keyboard](#keyboard)
+    - [Label](#label)
+    - [Login](#login)
+    - [Menu](#menu)
+    - [Navigation Bar](#navigation-bar)
+    - [PickerView](#pickerview)
+    - [Popup](#popup)
+    - [Progress View](#progress-view)
+    - [Pull to Refresh](#pull-to-refresh)
+    - [Rating Stars](#rating-stars)
+    - [ScrollView](#scrollview)
+    - [Segmented Control](#segmented-control)
+    - [Slider](#slider)
+    - [Splash View](#splash-view)
+    - [Status Bar](#status-bar)
+    - [Stepper](#stepper)
+    - [Switch](#switch)
+    - [Tab Bar](#tab-bar)
+    - [Table View / Collection View](#table-view--collection-view)
+      - [Table View](#table-view)
+      - [Collection View](#collection-view)
+      - [Expandable Cell](#expandable-cell)
+      - [Header](#header)
+      - [Placeholder](#placeholder)
+      - [Collection View Layout](#collection-view-layout)
+    - [Tag](#tag)
+    - [TextField & TextView](#textfield--textview)
+    - [UIPageControl](#uipagecontrol)
+    - [Web View](#web-view)
+- [Utility](#utility)
+- [User Consent](#user-consent)
+- [VR](#vr)
+- [Walkthrough / Intro / Tutorial](#walkthrough--intro--tutorial)
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'ios_README.md';
 
         fetch(markdownFile)
@@ -48,21 +363,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

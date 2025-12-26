@@ -8,38 +8,193 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Arbox Machine Learning With Ruby - Awesome List Resources">
-    <title>Arbox Machine Learning With Ruby</title>
+    <meta name="description" content="[RubyNLP | RubyDataScience | RubyInterop] > Curated List of Ruby Machine Learning Links and Resources [Machine Learning][ml] is a field of [Computational...">
+    <meta name="robots" content="index, follow">
+    <title>Ml With Ruby - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <p><img title="Awesome Machine Learning with Ruby" alt="Awesome Machine Learning with Ruby" src="header.png" align="center"></p>
+<p><a href="https://github.com/sindresorhus/awesome#readme"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a> <a href="https://www.patreon.com/arbox"><img alt="Support Me" src="https://img.shields.io/badge/%F0%9F%92%97-Support%20Me-blue.svg?style=flat-square" /></a></p>
+<p>[<a href="https://github.com/arbox/nlp-with-ruby">RubyNLP</a> |
+ <a href="https://github.com/arbox/data-science-with-ruby">RubyDataScience</a> |
+ <a href="https://github.com/arbox/ruby-interoperability">RubyInterop</a>]</p>
+<h1>Awesome Machine Learning with Ruby [<img src="ruby.jpg" align="left" width="30px" height="30px" />][ruby]</h1>
+<blockquote>
+<p>Curated List of Ruby Machine Learning Links and Resources</p>
+</blockquote>
+<p>[Machine Learning][ml] is a field of [Computational Science][cs] -
+often nested under [AI][ai] research - with many practical
+applications due to the ability of resulting algorithms to
+systematically implement a specific solution without explicit
+programmer's instructions. Obviously many algorithms need a definition
+of [features][fe] to look at or a biggish [training set][ts] of data to derive the
+solution from.</p>
+<p>This curated list comprises [<em>awesome</em>][awesome] libraries,
+data sources, tutorials and presentations about [Machine Learning][ml]
+utilizing the [Ruby][ruby] programming language.</p>
+<p>A lot of useful resources on this list come from the development by
+[The Ruby Science Foundation][sciruby], our [contributors][contributors] and
+our own day to day work on various ML applications.</p>
+<p>:sparkles: Every <a href="contributing.md">contribution</a> is welcome! Add links through pull
+requests or create an issue to start a discussion.</p>
+<p>Follow us on <a href="https://twitter.com/NonWebRuby">Twitter</a> and please spread
+the word using the <code>#RubyML</code> hash tag!</p>
+<!-- nodoc -->
+<h2>Contents</h2>
+<!-- toc -->
+
+<ul>
+<li><a href="#sparkles-tutorials">:sparkles: Tutorials</a></li>
+<li><a href="#machine-learning-libraries">Machine Learning Libraries</a></li>
+<li><a href="#frameworks">Frameworks</a></li>
+<li><a href="#neural-networks">Neural networks</a></li>
+<li><a href="#deep-learning">Deep Learning</a></li>
+<li><a href="#kernel-methods">Kernel methods</a></li>
+<li><a href="#evolutionary-algorithms">Evolutionary algorithms</a></li>
+<li><a href="#bayesian-methods">Bayesian methods</a></li>
+<li><a href="#decision-trees">Decision trees</a></li>
+<li><a href="#clustering">Clustering</a></li>
+<li><a href="#linear-classifiers">Linear classifiers</a></li>
+<li><a href="#statistical-models">Statistical models</a></li>
+<li><a href="#gradient-boosting">Gradient boosting</a></li>
+<li><a href="#vector-search">Vector search</a></li>
+<li><a href="#applications-of-machine-learning">Applications of machine learning</a></li>
+<li><a href="#data-structures">Data structures</a></li>
+<li><a href="#data-visualization">Data visualization</a></li>
+<li><a href="#articles-posts-talks-and-presentations">Articles, Posts, Talks, and Presentations</a></li>
+<li><a href="#projects-and-code-examples">Projects and Code Examples</a></li>
+<li><a href="#heroku-buildpacks">Heroku buildpacks</a></li>
+<li><a href="#books-blogs-channels">Books, Blogs, Channels</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#related-resources">Related Resources</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<!-- tocstop -->
+
+<!-- doc -->
+
+<h2>:sparkles: Tutorials</h2>
+<p>Please help us to fill out this section! :smiley:
+- <a href="https://www.honeybadger.io/blog/ruby-neural-networks/">Ruby neural networks</a>
+- <a href="https://www.practicalai.io/implementing-linear-regression-using-ruby/">How to implement linear regression in Ruby</a>
+  <sup>[<a href="https://github.com/daugaard/example-linear-regression">code</a>]</sup>
+- <a href="https://www.practicalai.io/implementing-classification-using-logistic-regression-in-ruby/">How to implement classification using logistic regression in Ruby</a>
+- <a href="https://www.practicalai.io/implementing-simple-classification-using-neural-network-in-ruby/">How to implement simple binary classification using a Neural Network in Ruby</a>
+  <sup>[<a href="https://github.com/daugaard/example-neural-network">code</a>]</sup>
+- <a href="https://www.practicalai.io/implementing-classification-using-a-svm-in-ruby/">How to implement classification using a SVM in Ruby</a>
+  <sup>[<a href="https://github.com/daugaard/example-svm">code</a>]</sup>
+- <a href="https://www.practicalai.io/unsupervised-learning-using-k-means-clustering-in-ruby/">Unsupervised learning using k-means clustering in Ruby</a>
+  <sup>[<a href="https://github.com/daugaard/example-kmeans-clustering">code</a>]</sup>
+- <a href="https://www.practicalai.io/teaching-ai-play-simple-game-using-q-learning/">Teaching an AI to play a simple game using Q-Learning in Ruby</a>
+  <sup>[<a href="https://github.com/daugaard/q-learning-simple-game">code</a>]</sup>
+- <a href="https://www.practicalai.io/teaching-a-neural-network-to-play-a-game-with-q-learning/">Teaching a Neural Network to play a game using Q-Learning in Ruby</a>
+  <sup>[<a href="https://github.com/daugaard/q-learning-simple-game/tree/neuralnetwork">code</a>]</sup>
+- <a href="https://www.practicalai.io/using-scikit-learn-machine-learning-library-in-ruby-using-pycall/">Using the Python scikit-learn machine learning library in Ruby using PyCall</a>
+  <sup>[<a href="https://github.com/daugaard/scikit-learn-from-ruby">code</a>]</sup>
+- <a href="https://github.com/giuse/machine_learning_workbench/blob/master/examples/neuroevolution.rb">How to <em>evolve</em> neural networks in Ruby using the Machine Learning Workbench</a></p>
+<h2>Machine Learning Libraries</h2>
+<p>[Machine Learning][ml] algorithms in pure Ruby or written in other
+programming languages with appropriate bindings for Ruby.</p>
+        </noscript>
+        <div id="dynamic-content">
+            <p><img title="Awesome Machine Learning with Ruby" alt="Awesome Machine Learning with Ruby" src="header.png" align="center"></p>
+<p><a href="https://github.com/sindresorhus/awesome#readme"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a> <a href="https://www.patreon.com/arbox"><img alt="Support Me" src="https://img.shields.io/badge/%F0%9F%92%97-Support%20Me-blue.svg?style=flat-square" /></a></p>
+<p>[<a href="https://github.com/arbox/nlp-with-ruby">RubyNLP</a> |
+ <a href="https://github.com/arbox/data-science-with-ruby">RubyDataScience</a> |
+ <a href="https://github.com/arbox/ruby-interoperability">RubyInterop</a>]</p>
+<h1>Awesome Machine Learning with Ruby [<img src="ruby.jpg" align="left" width="30px" height="30px" />][ruby]</h1>
+<blockquote>
+<p>Curated List of Ruby Machine Learning Links and Resources</p>
+</blockquote>
+<p>[Machine Learning][ml] is a field of [Computational Science][cs] -
+often nested under [AI][ai] research - with many practical
+applications due to the ability of resulting algorithms to
+systematically implement a specific solution without explicit
+programmer's instructions. Obviously many algorithms need a definition
+of [features][fe] to look at or a biggish [training set][ts] of data to derive the
+solution from.</p>
+<p>This curated list comprises [<em>awesome</em>][awesome] libraries,
+data sources, tutorials and presentations about [Machine Learning][ml]
+utilizing the [Ruby][ruby] programming language.</p>
+<p>A lot of useful resources on this list come from the development by
+[The Ruby Science Foundation][sciruby], our [contributors][contributors] and
+our own day to day work on various ML applications.</p>
+<p>:sparkles: Every <a href="contributing.md">contribution</a> is welcome! Add links through pull
+requests or create an issue to start a discussion.</p>
+<p>Follow us on <a href="https://twitter.com/NonWebRuby">Twitter</a> and please spread
+the word using the <code>#RubyML</code> hash tag!</p>
+<!-- nodoc -->
+<h2>Contents</h2>
+<!-- toc -->
+
+<ul>
+<li><a href="#sparkles-tutorials">:sparkles: Tutorials</a></li>
+<li><a href="#machine-learning-libraries">Machine Learning Libraries</a></li>
+<li><a href="#frameworks">Frameworks</a></li>
+<li><a href="#neural-networks">Neural networks</a></li>
+<li><a href="#deep-learning">Deep Learning</a></li>
+<li><a href="#kernel-methods">Kernel methods</a></li>
+<li><a href="#evolutionary-algorithms">Evolutionary algorithms</a></li>
+<li><a href="#bayesian-methods">Bayesian methods</a></li>
+<li><a href="#decision-trees">Decision trees</a></li>
+<li><a href="#clustering">Clustering</a></li>
+<li><a href="#linear-classifiers">Linear classifiers</a></li>
+<li><a href="#statistical-models">Statistical models</a></li>
+<li><a href="#gradient-boosting">Gradient boosting</a></li>
+<li><a href="#vector-search">Vector search</a></li>
+<li><a href="#applications-of-machine-learning">Applications of machine learning</a></li>
+<li><a href="#data-structures">Data structures</a></li>
+<li><a href="#data-visualization">Data visualization</a></li>
+<li><a href="#articles-posts-talks-and-presentations">Articles, Posts, Talks, and Presentations</a></li>
+<li><a href="#projects-and-code-examples">Projects and Code Examples</a></li>
+<li><a href="#heroku-buildpacks">Heroku buildpacks</a></li>
+<li><a href="#books-blogs-channels">Books, Blogs, Channels</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#related-resources">Related Resources</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<!-- tocstop -->
+
+<!-- doc -->
+
+<h2>:sparkles: Tutorials</h2>
+<p>Please help us to fill out this section! :smiley:
+- <a href="https://www.honeybadger.io/blog/ruby-neural-networks/">Ruby neural networks</a>
+- <a href="https://www.practicalai.io/implementing-linear-regression-using-ruby/">How to implement linear regression in Ruby</a>
+  <sup>[<a href="https://github.com/daugaard/example-linear-regression">code</a>]</sup>
+- <a href="https://www.practicalai.io/implementing-classification-using-logistic-regression-in-ruby/">How to implement classification using logistic regression in Ruby</a>
+- <a href="https://www.practicalai.io/implementing-simple-classification-using-neural-network-in-ruby/">How to implement simple binary classification using a Neural Network in Ruby</a>
+  <sup>[<a href="https://github.com/daugaard/example-neural-network">code</a>]</sup>
+- <a href="https://www.practicalai.io/implementing-classification-using-a-svm-in-ruby/">How to implement classification using a SVM in Ruby</a>
+  <sup>[<a href="https://github.com/daugaard/example-svm">code</a>]</sup>
+- <a href="https://www.practicalai.io/unsupervised-learning-using-k-means-clustering-in-ruby/">Unsupervised learning using k-means clustering in Ruby</a>
+  <sup>[<a href="https://github.com/daugaard/example-kmeans-clustering">code</a>]</sup>
+- <a href="https://www.practicalai.io/teaching-ai-play-simple-game-using-q-learning/">Teaching an AI to play a simple game using Q-Learning in Ruby</a>
+  <sup>[<a href="https://github.com/daugaard/q-learning-simple-game">code</a>]</sup>
+- <a href="https://www.practicalai.io/teaching-a-neural-network-to-play-a-game-with-q-learning/">Teaching a Neural Network to play a game using Q-Learning in Ruby</a>
+  <sup>[<a href="https://github.com/daugaard/q-learning-simple-game/tree/neuralnetwork">code</a>]</sup>
+- <a href="https://www.practicalai.io/using-scikit-learn-machine-learning-library-in-ruby-using-pycall/">Using the Python scikit-learn machine learning library in Ruby using PyCall</a>
+  <sup>[<a href="https://github.com/daugaard/scikit-learn-from-ruby">code</a>]</sup>
+- <a href="https://github.com/giuse/machine_learning_workbench/blob/master/examples/neuroevolution.rb">How to <em>evolve</em> neural networks in Ruby using the Machine Learning Workbench</a></p>
+<h2>Machine Learning Libraries</h2>
+<p>[Machine Learning][ml] algorithms in pure Ruby or written in other
+programming languages with appropriate bindings for Ruby.</p>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'ml-with-ruby_README.md';
 
         fetch(markdownFile)
@@ -48,21 +203,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

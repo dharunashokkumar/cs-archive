@@ -8,38 +8,173 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sjfricke Awesome Webgl - Awesome List Resources">
-    <title>Sjfricke Awesome Webgl</title>
+    <meta name="description" content="This is a curated list of awesome WebGL libraries, resources and much more. WebGL (Web Graphics Library) is a JavaScript API for rendering interactive 3D...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome WebGL [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome WebGL <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p><a href="https://www.khronos.org/webgl/"><img src="webgl_logo.png" align="right" width="175"></a></p>
+<p>This is a curated list of awesome WebGL libraries, resources and much more.</p>
+<h2>What is WebGL</h2>
+<p>WebGL (Web Graphics Library) is a JavaScript API for rendering interactive 3D computer graphics and 2D graphics within
+any compatible web browser without the use of plug-ins. WebGL is integrated completely into all the web standards
+of the browser allowing GPU accelerated usage of physics and image processing and effects as part of the web page canvas.</p>
+<p>WebGL elements can be mixed with other HTML elements and composited with other parts of the page or page background.
+WebGL programs consist of control code written in JavaScript and shader code that is executed on a computer's Graphics
+Processing Unit (GPU).</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#webgl">WebGL</a></li>
+<li><a href="#webgl-2">WebGL 2</a></li>
+<li><a href="#webvr">WebVR</a></li>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#community">Community</a></li>
+</ul>
+<h2>WebGL</h2>
+<blockquote>
+<p>All things dealing with WebGL</p>
+</blockquote>
+<h3>WebGL sub-categories</h3>
+<ul>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#blog-series">Blog Series</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#bug-reporting">Bug Reporting</a></li>
+<li><a href="#glsl-editors">GLSL Editors</a></li>
+<li><a href="#references">References</a></li>
+<li><a href="#talks">Talks</a></li>
+<li><a href="#toolsdebugging">Tools/Debugging</a></li>
+<li><a href="#chrome-specific-toolsdebugger">Chrome Specific Tools/Debugger</a></li>
+<li><a href="#firefox-specific-toolsdebugger">Firefox Specific Tools/Debugger</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#videos">Videos</a></li>
+</ul>
+<h3>Articles</h3>
+<blockquote>
+<p>WebGL articles and/or blog posts (non-tutorials)</p>
+</blockquote>
+<ul>
+<li><a href="https://medium.com/@mattdesl/non-intrusive-webgl-cebd176c281d#.gyc6h9mr5">Context Loss &amp; Preloading</a> - How to manage WebGL when you run into the dreaded context lost.</li>
+<li><a href="https://hacks.mozilla.org/2016/01/webgl-off-the-main-thread/">WebGL Off the Main Thread</a> - How to use Web Workers in WebGL.</li>
+<li><a href="https://www.soft8soft.com/docs/manual/en/introduction/Optimizing-WebGL-performance.html">Optimizing Scenes for Better WebGL Performance</a> - optimization techniques that proved to work well for creating WebGL-based interactives.</li>
+<li><a href="https://dev.to/aralroca/first-steps-in-webgl-385c">First steps in WebGL</a> - Learn what WebGL is and how it works by drawing a triangle. </li>
+</ul>
+<h3>Blog Series</h3>
+<blockquote>
+<p>Blog series of WebGL topics</p>
+</blockquote>
+<ul>
+<li><a href="http://codeflow.org/tags/webgl.html">Codeflow</a> - Many blogs on different tricks and techniques.</li>
+<li><a href="http://www.realtimerendering.com/blog/tag/webgl/">Real-Time Rendering</a> - This is the blog for the book <em>Real-Time Rendering</em>.</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/WebGL_best_practices">WebGL Best Practices</a> - Mozilla's offical set of best practices.</li>
+<li><a href="http://webglinsights.blogspot.com/">WebGL Insights</a> - This is the blog for the book <em>WebGL Insights</em>.</li>
+<li><a href="https://github.com/lesnitsky/webgl-month">WebGL Month</a> – Daily WebGL tutorial for a month.</li>
+<li><a href="https://maximmcnair.com/webgl-image-processing">WebGL Image Processing</a> - Covers a range of <em>Image Processing</em> algorithms in WebGL such as Color Correction, Blend Modes, Thresholding, Dithering, Convolution and Film Grain.</li>
+</ul>
+<h3>Books</h3>
+<blockquote>
+<p>Popular books about WebGL</p>
+</blockquote>
+<ul>
+<li><a href="https://www.amazon.com/Interactive-Computer-Graphics-Top-Down-Approach/dp/0133574849">Interactive Computer Graphics: A Top-Down Approach with WebGL</a> by <strong>Edward Angel</strong> and <strong>Dave Shreiner</strong> - Suitable for undergraduate students in computer science and engineering, for students in other disciplines who have good programming skills, and for professionals interested in computer animation and graphics using the latest version of WebGL.</li>
+<li><a href="https://www.amazon.com/Professional-WebGL-Programming-Developing-Graphics/dp/1119968860">Professional WebGL Programming</a> by <strong>Andreas Anyuru</strong> - Everything you need to know about developing hardware-accelerated 3D graphics with WebGL.</li>
+<li><a href="https://www.amazon.com/Programming-Applications-HTML5-WebGL-Visualization/dp/1449362966">Programming 3D Applications with HTML5 and WebGL</a> by <strong>Tony Parisi</strong> - Create high-performance, visually stunning 3D applications for the Web, using HTML5 and related technologies such as CSS3 and WebGL—the emerging web graphics standard.</li>
+<li><a href="https://www.amazon.com/WebGL-Beginners-Guide-Diego-Cantor/dp/184969172X">WebGL Beginner's guide</a> by <strong>Diego Cantor</strong> and <strong>Brandon Jones</strong> - For JavaScript developer who wants to take the plunge into 3D web development via WebGL.</li>
+<li><a href="https://www.amazon.com/WebGL-Hotshot-Mitch-Williams-ebook/dp/B00KLAJ65Y">WebGL Hotshot</a> by <strong>Mitch Williams</strong> - For web designer looking to expand your knowledge of 3D graphics concepts and broaden your existing skill set.</li>
+<li><a href="https://github.com/WebGLInsights/WebGLInsights.github.io/releases/download/v1.0/WebGL.Insights.-.Patrick.Cozzi.pdf">WebGL Insights</a> by <strong>Patrick Cozzi</strong> - Presents real-world techniques for intermediate and advanced WebGL developers by assembling contributions from experienced WebGL engine and application developers, GPU vendors, browser developers, researchers, and educators.</li>
+<li><a href="http://www.webglinsights.com/">Book's Personal Site</a></li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome WebGL <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p><a href="https://www.khronos.org/webgl/"><img src="webgl_logo.png" align="right" width="175"></a></p>
+<p>This is a curated list of awesome WebGL libraries, resources and much more.</p>
+<h2>What is WebGL</h2>
+<p>WebGL (Web Graphics Library) is a JavaScript API for rendering interactive 3D computer graphics and 2D graphics within
+any compatible web browser without the use of plug-ins. WebGL is integrated completely into all the web standards
+of the browser allowing GPU accelerated usage of physics and image processing and effects as part of the web page canvas.</p>
+<p>WebGL elements can be mixed with other HTML elements and composited with other parts of the page or page background.
+WebGL programs consist of control code written in JavaScript and shader code that is executed on a computer's Graphics
+Processing Unit (GPU).</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#webgl">WebGL</a></li>
+<li><a href="#webgl-2">WebGL 2</a></li>
+<li><a href="#webvr">WebVR</a></li>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#community">Community</a></li>
+</ul>
+<h2>WebGL</h2>
+<blockquote>
+<p>All things dealing with WebGL</p>
+</blockquote>
+<h3>WebGL sub-categories</h3>
+<ul>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#blog-series">Blog Series</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#bug-reporting">Bug Reporting</a></li>
+<li><a href="#glsl-editors">GLSL Editors</a></li>
+<li><a href="#references">References</a></li>
+<li><a href="#talks">Talks</a></li>
+<li><a href="#toolsdebugging">Tools/Debugging</a></li>
+<li><a href="#chrome-specific-toolsdebugger">Chrome Specific Tools/Debugger</a></li>
+<li><a href="#firefox-specific-toolsdebugger">Firefox Specific Tools/Debugger</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#videos">Videos</a></li>
+</ul>
+<h3>Articles</h3>
+<blockquote>
+<p>WebGL articles and/or blog posts (non-tutorials)</p>
+</blockquote>
+<ul>
+<li><a href="https://medium.com/@mattdesl/non-intrusive-webgl-cebd176c281d#.gyc6h9mr5">Context Loss &amp; Preloading</a> - How to manage WebGL when you run into the dreaded context lost.</li>
+<li><a href="https://hacks.mozilla.org/2016/01/webgl-off-the-main-thread/">WebGL Off the Main Thread</a> - How to use Web Workers in WebGL.</li>
+<li><a href="https://www.soft8soft.com/docs/manual/en/introduction/Optimizing-WebGL-performance.html">Optimizing Scenes for Better WebGL Performance</a> - optimization techniques that proved to work well for creating WebGL-based interactives.</li>
+<li><a href="https://dev.to/aralroca/first-steps-in-webgl-385c">First steps in WebGL</a> - Learn what WebGL is and how it works by drawing a triangle. </li>
+</ul>
+<h3>Blog Series</h3>
+<blockquote>
+<p>Blog series of WebGL topics</p>
+</blockquote>
+<ul>
+<li><a href="http://codeflow.org/tags/webgl.html">Codeflow</a> - Many blogs on different tricks and techniques.</li>
+<li><a href="http://www.realtimerendering.com/blog/tag/webgl/">Real-Time Rendering</a> - This is the blog for the book <em>Real-Time Rendering</em>.</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/WebGL_best_practices">WebGL Best Practices</a> - Mozilla's offical set of best practices.</li>
+<li><a href="http://webglinsights.blogspot.com/">WebGL Insights</a> - This is the blog for the book <em>WebGL Insights</em>.</li>
+<li><a href="https://github.com/lesnitsky/webgl-month">WebGL Month</a> – Daily WebGL tutorial for a month.</li>
+<li><a href="https://maximmcnair.com/webgl-image-processing">WebGL Image Processing</a> - Covers a range of <em>Image Processing</em> algorithms in WebGL such as Color Correction, Blend Modes, Thresholding, Dithering, Convolution and Film Grain.</li>
+</ul>
+<h3>Books</h3>
+<blockquote>
+<p>Popular books about WebGL</p>
+</blockquote>
+<ul>
+<li><a href="https://www.amazon.com/Interactive-Computer-Graphics-Top-Down-Approach/dp/0133574849">Interactive Computer Graphics: A Top-Down Approach with WebGL</a> by <strong>Edward Angel</strong> and <strong>Dave Shreiner</strong> - Suitable for undergraduate students in computer science and engineering, for students in other disciplines who have good programming skills, and for professionals interested in computer animation and graphics using the latest version of WebGL.</li>
+<li><a href="https://www.amazon.com/Professional-WebGL-Programming-Developing-Graphics/dp/1119968860">Professional WebGL Programming</a> by <strong>Andreas Anyuru</strong> - Everything you need to know about developing hardware-accelerated 3D graphics with WebGL.</li>
+<li><a href="https://www.amazon.com/Programming-Applications-HTML5-WebGL-Visualization/dp/1449362966">Programming 3D Applications with HTML5 and WebGL</a> by <strong>Tony Parisi</strong> - Create high-performance, visually stunning 3D applications for the Web, using HTML5 and related technologies such as CSS3 and WebGL—the emerging web graphics standard.</li>
+<li><a href="https://www.amazon.com/WebGL-Beginners-Guide-Diego-Cantor/dp/184969172X">WebGL Beginner's guide</a> by <strong>Diego Cantor</strong> and <strong>Brandon Jones</strong> - For JavaScript developer who wants to take the plunge into 3D web development via WebGL.</li>
+<li><a href="https://www.amazon.com/WebGL-Hotshot-Mitch-Williams-ebook/dp/B00KLAJ65Y">WebGL Hotshot</a> by <strong>Mitch Williams</strong> - For web designer looking to expand your knowledge of 3D graphics concepts and broaden your existing skill set.</li>
+<li><a href="https://github.com/WebGLInsights/WebGLInsights.github.io/releases/download/v1.0/WebGL.Insights.-.Patrick.Cozzi.pdf">WebGL Insights</a> by <strong>Patrick Cozzi</strong> - Presents real-world techniques for intermediate and advanced WebGL developers by assembling contributions from experienced WebGL engine and application developers, GPU vendors, browser developers, researchers, and educators.</li>
+<li><a href="http://www.webglinsights.com/">Book's Personal Site</a></li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'webgl_README.md';
 
         fetch(markdownFile)
@@ -48,21 +183,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

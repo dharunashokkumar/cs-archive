@@ -8,38 +8,169 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Robinrodricks Awesome Actionscript3 - Awesome List Resources">
-    <title>Actionscript3</title>
+    <meta name="description" content="> A curated list of awesome libraries and components for ActionScript 3 and Adobe AIR. Adobe AIR provides a single set of APIs to build cross-platform...">
+    <meta name="robots" content="index, follow">
+    <title>Actionscript 3 - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <p><a href="https://www.adobe.com/products/air.html"><img src="https://rawgit.com/hgupta9/awesome-actionscript3/master/AS3_AIR.png" align="right" width="150"></a></p>
+<h1>ActionScript 3</h1>
+<blockquote>
+<p>A curated list of awesome libraries and components for ActionScript 3 and Adobe AIR.</p>
+</blockquote>
+<p><a href="https://en.wikipedia.org/wiki/Adobe_AIR">Adobe AIR</a> provides a single set of APIs to build cross-platform desktop/mobile applications and games. <a href="https://en.wikipedia.org/wiki/ActionScript">ActionScript 3</a> is the programming language for AIR. Powerful native functionality such as file system, SQLite, sensors are included by default. To add missing functionality, you can build ANEs (Air Native Extensions) coded in the native language (eg VC++ for Windows, Java for Android, Swift/Objective-C for iOS). To build mobile apps/games with GPU-rendered graphics, use the <a href="https://gamua.com/starling/">Starling</a> framework and optionally the <a href="https://feathersui.com/">Feathers UI</a>. Adobe AIR is very popular in the mobile gaming space.</p>
+<p>Contributions welcome. To add a useful project simply create an <a href="https://github.com/hgupta9/awesome-actionscript3/issues">Issue</a>.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#development-tools">Development Tools</a></li>
+<li><a href="#frameworks">Frameworks</a></li>
+<li><a href="#user-interface">User Interface</a></li>
+<li><a href="#multimedia">Multimedia</a></li>
+<li><a href="#database">Database</a></li>
+<li><a href="#file-formats">File Formats</a></li>
+<li><a href="#networking">Networking</a></li>
+<li><a href="#utilities">Utilities</a></li>
+<li><a href="#runtimes">Runtimes</a></li>
+<li><a href="#air-native-extensions">AIR Native Extensions</a></li>
+</ul>
+<h2>Development Tools</h2>
+<p><em>This section includes commercial tools as well as free/open source tools.</em></p>
+<h4>Code Editors</h4>
+<ul>
+<li><a href="http://flashdevelop.org/">FlashDevelop</a> - Premiere free &amp; open-source IDE for AS3 &amp; AIR, with code completion, debugging, and more.</li>
+<li><a href="http://fdt.powerflasher.com/">Powerflasher FDT</a> - Commercial IDE built on the Eclipse platform for development of Adobe Flash/AIR content.</li>
+<li><a href="https://www.adobe.com/products/flash-builder.html">Adobe Flash Builder</a> - Commercial IDE for building applications on the Flex framework (with advanced debugging tools).</li>
+<li><a href="http://moonshine-ide.com/">Moonshine IDE</a> - Moonshine is a free and open source middleweight IDE built with ActionScript 3 for ActionScript 3, Apache Flex®, Apache FlexJS® and Feathers development with Cloud and Desktop support.</li>
+<li><a href="https://www.jetbrains.com/help/idea/building-actionscript-and-flex-applications.html">IntelliJ IDEA</a> - Commercial IDE that supports many different languages including AS3.</li>
+<li><a href="https://as3mxml.com/">Visual Studio Code</a> - An AS3 &amp; MXML language extension for Visual Studio Code. Runs on Windows, macOS, and Linux.</li>
+</ul>
+<h4>Live Debuggers</h4>
+<ul>
+<li><a href="https://www.adobe.com/products/scout.html">Adobe Scout</a> - Advanced visual profiling and debugging tool for AIR apps &amp; games (supports Stage3D).</li>
+<li><a href="https://github.com/MrTact/monsterdebugger">De-Monster Debugger</a> - Advanced tool to debug graphics and data from a live AIR application.</li>
+<li><a href="https://github.com/joshtynjala/monsterdebugger-client-starling">De-Monster Debugger (Starling)</a> - Fork of De-Monster Debugger with support for Starling Framework.</li>
+</ul>
+<h4>Asset Creators</h4>
+<ul>
+<li><a href="https://www.adobe.com/products/animate.html">Adobe Animate CC</a> - Premiere vector graphics and animation toolset for vector/spritesheet creation.</li>
+<li><a href="http://www.mapeditor.org/">TILED Map Editor</a> - Flexible tile map editor compatible with various AS3 game engines.</li>
+<li><a href="https://github.com/zenrobin/FlashMovieClipConverter">FlashMovieClipConverter</a> - Converts a Flash MovieClip to a Starling IAnimatable Sprite.</li>
+</ul>
+<h4>SWF Obfuscators</h4>
+<ul>
+<li><a href="http://www.kindi.com/">secureSWF</a> - Commercial AS3/AIR obfuscator with renaming, asset encryption and automatic code optimization.</li>
+<li><a href="http://www.ambiera.com/irrfuscator/">irrFuscator</a> - Commercial AS3 obfuscator for Flash and Flex SWF files.</li>
+</ul>
+<h4>SWF Inspectors</h4>
+<ul>
+<li><a href="https://github.com/magicalhobo/SWFWire">SWFWire</a> - Advanced SWF Decompiler, Inspector and Debugger Tools (<a href="http://www.swfwire.com/">website</a>).</li>
+<li><a href="https://github.com/velocity9/Inspector">Velocity9</a> - Basic SWF Inspector.</li>
+</ul>
+<h4>SWF Decompilers</h4>
+<ul>
+<li><a href="http://www.as3sorcerer.com/">AS3Sorcerer</a> - Premiere AS3 decompiler with 99% decompilation accuracy (supports SWF/SWC, Alchemy opcodes).</li>
+<li><a href="http://www.sothink.com/product/flashdecompiler/">Sothink Decompiler</a> - Advanced decompiler for AS2/AS3 (supports asset extraction and conversion of SWF to FLA/Flex).</li>
+</ul>
+<h4>ANE Dev Tools</h4>
+<ul>
+<li><a href="https://github.com/tuarua/FreSharp">FreSharp</a> - Build ANEs using C# with this C# wrapper for FlashRuntimeExtensions .</li>
+<li><a href="https://github.com/tuarua/Swift-IOS-ANE">Swift-IOS-ANE</a> - ANE starter kit written in Swift 3 for iOS 10 .</li>
+</ul>
+<h2>Frameworks</h2>
+<h4>MVC Frameworks</h4>
+<ul>
+<li><a href="https://github.com/PureMVC/puremvc-as3-standard-framework">PureMVC</a> - Industry-standard MVC framework for Flash (<a href="https://github.com/PureMVC/puremvc-as3-multicore-framework">multicore</a>).</li>
+<li><a href="https://github.com/robotlegs/robotlegs-framework">Robotlegs</a> - Dependency injection, module/view/command management framework for Flash.</li>
+<li><a href="https://github.com/flashapi/hummingbird">Hummingbird</a> - Build and deploy robust MVC applications for AS3, Mobile and the Starling Framework.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <p><a href="https://www.adobe.com/products/air.html"><img src="https://rawgit.com/hgupta9/awesome-actionscript3/master/AS3_AIR.png" align="right" width="150"></a></p>
+<h1>ActionScript 3</h1>
+<blockquote>
+<p>A curated list of awesome libraries and components for ActionScript 3 and Adobe AIR.</p>
+</blockquote>
+<p><a href="https://en.wikipedia.org/wiki/Adobe_AIR">Adobe AIR</a> provides a single set of APIs to build cross-platform desktop/mobile applications and games. <a href="https://en.wikipedia.org/wiki/ActionScript">ActionScript 3</a> is the programming language for AIR. Powerful native functionality such as file system, SQLite, sensors are included by default. To add missing functionality, you can build ANEs (Air Native Extensions) coded in the native language (eg VC++ for Windows, Java for Android, Swift/Objective-C for iOS). To build mobile apps/games with GPU-rendered graphics, use the <a href="https://gamua.com/starling/">Starling</a> framework and optionally the <a href="https://feathersui.com/">Feathers UI</a>. Adobe AIR is very popular in the mobile gaming space.</p>
+<p>Contributions welcome. To add a useful project simply create an <a href="https://github.com/hgupta9/awesome-actionscript3/issues">Issue</a>.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#development-tools">Development Tools</a></li>
+<li><a href="#frameworks">Frameworks</a></li>
+<li><a href="#user-interface">User Interface</a></li>
+<li><a href="#multimedia">Multimedia</a></li>
+<li><a href="#database">Database</a></li>
+<li><a href="#file-formats">File Formats</a></li>
+<li><a href="#networking">Networking</a></li>
+<li><a href="#utilities">Utilities</a></li>
+<li><a href="#runtimes">Runtimes</a></li>
+<li><a href="#air-native-extensions">AIR Native Extensions</a></li>
+</ul>
+<h2>Development Tools</h2>
+<p><em>This section includes commercial tools as well as free/open source tools.</em></p>
+<h4>Code Editors</h4>
+<ul>
+<li><a href="http://flashdevelop.org/">FlashDevelop</a> - Premiere free &amp; open-source IDE for AS3 &amp; AIR, with code completion, debugging, and more.</li>
+<li><a href="http://fdt.powerflasher.com/">Powerflasher FDT</a> - Commercial IDE built on the Eclipse platform for development of Adobe Flash/AIR content.</li>
+<li><a href="https://www.adobe.com/products/flash-builder.html">Adobe Flash Builder</a> - Commercial IDE for building applications on the Flex framework (with advanced debugging tools).</li>
+<li><a href="http://moonshine-ide.com/">Moonshine IDE</a> - Moonshine is a free and open source middleweight IDE built with ActionScript 3 for ActionScript 3, Apache Flex®, Apache FlexJS® and Feathers development with Cloud and Desktop support.</li>
+<li><a href="https://www.jetbrains.com/help/idea/building-actionscript-and-flex-applications.html">IntelliJ IDEA</a> - Commercial IDE that supports many different languages including AS3.</li>
+<li><a href="https://as3mxml.com/">Visual Studio Code</a> - An AS3 &amp; MXML language extension for Visual Studio Code. Runs on Windows, macOS, and Linux.</li>
+</ul>
+<h4>Live Debuggers</h4>
+<ul>
+<li><a href="https://www.adobe.com/products/scout.html">Adobe Scout</a> - Advanced visual profiling and debugging tool for AIR apps &amp; games (supports Stage3D).</li>
+<li><a href="https://github.com/MrTact/monsterdebugger">De-Monster Debugger</a> - Advanced tool to debug graphics and data from a live AIR application.</li>
+<li><a href="https://github.com/joshtynjala/monsterdebugger-client-starling">De-Monster Debugger (Starling)</a> - Fork of De-Monster Debugger with support for Starling Framework.</li>
+</ul>
+<h4>Asset Creators</h4>
+<ul>
+<li><a href="https://www.adobe.com/products/animate.html">Adobe Animate CC</a> - Premiere vector graphics and animation toolset for vector/spritesheet creation.</li>
+<li><a href="http://www.mapeditor.org/">TILED Map Editor</a> - Flexible tile map editor compatible with various AS3 game engines.</li>
+<li><a href="https://github.com/zenrobin/FlashMovieClipConverter">FlashMovieClipConverter</a> - Converts a Flash MovieClip to a Starling IAnimatable Sprite.</li>
+</ul>
+<h4>SWF Obfuscators</h4>
+<ul>
+<li><a href="http://www.kindi.com/">secureSWF</a> - Commercial AS3/AIR obfuscator with renaming, asset encryption and automatic code optimization.</li>
+<li><a href="http://www.ambiera.com/irrfuscator/">irrFuscator</a> - Commercial AS3 obfuscator for Flash and Flex SWF files.</li>
+</ul>
+<h4>SWF Inspectors</h4>
+<ul>
+<li><a href="https://github.com/magicalhobo/SWFWire">SWFWire</a> - Advanced SWF Decompiler, Inspector and Debugger Tools (<a href="http://www.swfwire.com/">website</a>).</li>
+<li><a href="https://github.com/velocity9/Inspector">Velocity9</a> - Basic SWF Inspector.</li>
+</ul>
+<h4>SWF Decompilers</h4>
+<ul>
+<li><a href="http://www.as3sorcerer.com/">AS3Sorcerer</a> - Premiere AS3 decompiler with 99% decompilation accuracy (supports SWF/SWC, Alchemy opcodes).</li>
+<li><a href="http://www.sothink.com/product/flashdecompiler/">Sothink Decompiler</a> - Advanced decompiler for AS2/AS3 (supports asset extraction and conversion of SWF to FLA/Flex).</li>
+</ul>
+<h4>ANE Dev Tools</h4>
+<ul>
+<li><a href="https://github.com/tuarua/FreSharp">FreSharp</a> - Build ANEs using C# with this C# wrapper for FlashRuntimeExtensions .</li>
+<li><a href="https://github.com/tuarua/Swift-IOS-ANE">Swift-IOS-ANE</a> - ANE starter kit written in Swift 3 for iOS 10 .</li>
+</ul>
+<h2>Frameworks</h2>
+<h4>MVC Frameworks</h4>
+<ul>
+<li><a href="https://github.com/PureMVC/puremvc-as3-standard-framework">PureMVC</a> - Industry-standard MVC framework for Flash (<a href="https://github.com/PureMVC/puremvc-as3-multicore-framework">multicore</a>).</li>
+<li><a href="https://github.com/robotlegs/robotlegs-framework">Robotlegs</a> - Dependency injection, module/view/command management framework for Flash.</li>
+<li><a href="https://github.com/flashapi/hummingbird">Hummingbird</a> - Build and deploy robust MVC applications for AS3, Mobile and the Starling Framework.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'actionscript-3_README.md';
 
         fetch(markdownFile)
@@ -48,21 +179,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

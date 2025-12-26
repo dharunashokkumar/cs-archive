@@ -8,38 +8,175 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Brillout Awesome Redux - Awesome List Resources">
-    <title>Brillout Awesome Redux</title>
+    <meta name="description" content="> Redux is a state container for JavaScript apps. - Official website: - Use devarchy to add a library to the catalog - Code Architecture - Utilities - Code...">
+    <meta name="robots" content="index, follow">
+    <title>Redux Libraries & Learning Material [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Redux Libraries &amp; Learning Material <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p><a href="http://redux.js.org/"><img src="https://rawgit.com/brillout/awesome-redux/master/redux-logo.svg" align="right" width="110"></a></p>
+<blockquote>
+<p>Redux is a state container for JavaScript apps.</p>
+</blockquote>
+<ul>
+<li>Official website: <a href="https://devarchy.com/redux"><code>devarchy.com/redux</code></a></li>
+<li>Use devarchy to add a library to the catalog</li>
+</ul>
+<p><br/></p>
+<h4>Contents</h4>
+<ul>
+<li><a href="#code-architecture">Code Architecture</a></li>
+<li><a href="#utilities">Utilities</a></li>
+<li><a href="#code-style">Code Style</a></li>
+<li><a href="#dev-tools--inspection-tools">Dev tools / Inspection tools</a></li>
+<li><a href="#react-integration">React Integration</a></li>
+<li><a href="#other-integrations">Other Integrations</a></li>
+<li><a href="#boilerplate">Boilerplate</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#learning-material">Learning Material</a></li>
+<li><a href="#community">Community</a></li>
+</ul>
+<p><br/></p>
+<h2>Code Architecture</h2>
+<p><em>Aims to improve the overall structure of the source code. Makes reasoning about the code easier.</em></p>
+<ul>
+<li><a href="https://github.com/ddsol/redux-schema">redux-schema</a> - Automatic actions, reducers and validation for Redux.</li>
+<li><a href="https://github.com/gcanti/redux-tcomb">redux-tcomb</a> - Immutable and type-checked state and actions for Redux.</li>
+<li><a href="https://github.com/cerebral/redux-action-tree">redux-action-tree</a> - The Cerebral signals running with Redux.</li>
+<li><a href="https://github.com/salsita/redux-elm">redux-elm</a> - The Elm Architecture in JavaScript.</li>
+</ul>
+<h2>Utilities</h2>
+<ul>
+<li><a href="https://github.com/tommikaikkonen/redux-orm">redux-orm</a> - Small, simple and immutable ORM to manage relational data in your Redux store.</li>
+<li><a href="https://github.com/agraboso/redux-api-middleware">redux-api-middleware</a> - Redux middleware for calling an API.</li>
+<li><a href="https://github.com/omnidan/redux-ignore">redux-ignore</a> - Higher-order reducer to ignore Redux actions.</li>
+<li><a href="https://github.com/calvinfroedge/redux-modifiers">redux-modifiers</a> - Collection of generic functions for writing Redux reducers to operate on various data structures.</li>
+<li><a href="https://github.com/slorber/rereduce">rereduce</a> - Reducer library for Redux.</li>
+<li><a href="https://github.com/treasure-data/redux-search">redux-search</a> - Redux bindings for client-side search.</li>
+<li><a href="https://github.com/evgenyrodionov/redux-logger">redux-logger</a> - Logger middleware for Redux.</li>
+<li><a href="https://github.com/gajus/redux-immutable">redux-immutable</a> - Redux-immutable is used to create an equivalent function of Redux combineReducers that works with Immutable.js state.</li>
+<li><a href="https://github.com/reactjs/reselect">reselect</a> - Selector library for Redux.</li>
+<li><a href="https://github.com/idolize/redux-requests">redux-requests</a> - Manages in-flight requests with a Redux reducer to avoid issuing duplicate requests.</li>
+<li><a href="https://github.com/omnidan/redux-undo">redux-undo</a> - Higher order reducer to add undo/redo functionality to Redux state containers.</li>
+<li><a href="https://github.com/dtschust/redux-bug-reporter">redux-bug-reporter</a> - Bug reporter and bug playback tool for Redux.</li>
+<li><a href="https://github.com/acdlite/redux-transducers">redux-transducers</a> - Transducer utilities for Redux.</li>
+</ul>
+<h3>Store Persistence</h3>
+<ul>
+<li><a href="https://github.com/michaelcontento/redux-storage">redux-storage</a> - Persistence layer for Redux with flexible backends.</li>
+<li><a href="https://github.com/rt2zz/redux-persist">redux-persist</a> - Persist and rehydrate a Redux store.</li>
+</ul>
+<h3>Side Effects</h3>
+<p><em>Side Effects / Asynchronous Actions</em></p>
+<ul>
+<li><a href="https://github.com/yelouafi/redux-saga">redux-saga</a> - Alternative side effect model for Redux apps.</li>
+<li><a href="https://github.com/pburtchaell/redux-promise-middleware">redux-promise-middleware</a> - Redux middleware for resolving and rejecting promises with conditional optimistic updates.</li>
+<li><a href="https://github.com/redux-effects/redux-effects">redux-effects</a> - You write pure functions, redux-effects handles the rest.</li>
+<li><a href="https://github.com/gaearon/redux-thunk">redux-thunk</a> - Thunk middleware for Redux.</li>
+<li><a href="https://github.com/makeomatic/redux-connect">redux-connect</a> - Provides decorator for resolving async props in react-router, extremely useful for handling server-side rendering in React.</li>
+<li><a href="https://github.com/redux-loop/redux-loop">redux-loop</a> - Port of elm-effects and the Elm Architecture to Redux that allows you to sequence your effects naturally and purely by returning them from your reducers.</li>
+<li><a href="https://github.com/salsita/redux-side-effects">redux-side-effects</a> - Redux toolset for keeping all the side effects inside your reducers while maintaining their purity.</li>
+<li><a href="https://github.com/jeffbski/redux-logic">redux-logic</a> - Redux middleware for organizing business logic and action side effects.</li>
+<li><a href="https://github.com/redux-observable/redux-observable">redux-observable</a> - RxJS middleware for action side effects in Redux using &quot;Epics&quot;.</li>
+<li><a href="https://github.com/clarus/redux-ship">redux-ship</a> - Composable, testable and typable side effects.</li>
+</ul>
+<h2>Code Style</h2>
+<p><em>Aims to make parts of the source code easier to read/write.</em></p>
+<ul>
+<li><a href="https://github.com/pauldijou/redux-act">redux-act</a> - Opinionated lib to create actions and reducers for Redux.</li>
+<li><a href="https://github.com/Versent/redux-crud">redux-crud</a> - Set of standard actions and reducers for Redux CRUD Applications.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Redux Libraries &amp; Learning Material <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p><a href="http://redux.js.org/"><img src="https://rawgit.com/brillout/awesome-redux/master/redux-logo.svg" align="right" width="110"></a></p>
+<blockquote>
+<p>Redux is a state container for JavaScript apps.</p>
+</blockquote>
+<ul>
+<li>Official website: <a href="https://devarchy.com/redux"><code>devarchy.com/redux</code></a></li>
+<li>Use devarchy to add a library to the catalog</li>
+</ul>
+<p><br/></p>
+<h4>Contents</h4>
+<ul>
+<li><a href="#code-architecture">Code Architecture</a></li>
+<li><a href="#utilities">Utilities</a></li>
+<li><a href="#code-style">Code Style</a></li>
+<li><a href="#dev-tools--inspection-tools">Dev tools / Inspection tools</a></li>
+<li><a href="#react-integration">React Integration</a></li>
+<li><a href="#other-integrations">Other Integrations</a></li>
+<li><a href="#boilerplate">Boilerplate</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#learning-material">Learning Material</a></li>
+<li><a href="#community">Community</a></li>
+</ul>
+<p><br/></p>
+<h2>Code Architecture</h2>
+<p><em>Aims to improve the overall structure of the source code. Makes reasoning about the code easier.</em></p>
+<ul>
+<li><a href="https://github.com/ddsol/redux-schema">redux-schema</a> - Automatic actions, reducers and validation for Redux.</li>
+<li><a href="https://github.com/gcanti/redux-tcomb">redux-tcomb</a> - Immutable and type-checked state and actions for Redux.</li>
+<li><a href="https://github.com/cerebral/redux-action-tree">redux-action-tree</a> - The Cerebral signals running with Redux.</li>
+<li><a href="https://github.com/salsita/redux-elm">redux-elm</a> - The Elm Architecture in JavaScript.</li>
+</ul>
+<h2>Utilities</h2>
+<ul>
+<li><a href="https://github.com/tommikaikkonen/redux-orm">redux-orm</a> - Small, simple and immutable ORM to manage relational data in your Redux store.</li>
+<li><a href="https://github.com/agraboso/redux-api-middleware">redux-api-middleware</a> - Redux middleware for calling an API.</li>
+<li><a href="https://github.com/omnidan/redux-ignore">redux-ignore</a> - Higher-order reducer to ignore Redux actions.</li>
+<li><a href="https://github.com/calvinfroedge/redux-modifiers">redux-modifiers</a> - Collection of generic functions for writing Redux reducers to operate on various data structures.</li>
+<li><a href="https://github.com/slorber/rereduce">rereduce</a> - Reducer library for Redux.</li>
+<li><a href="https://github.com/treasure-data/redux-search">redux-search</a> - Redux bindings for client-side search.</li>
+<li><a href="https://github.com/evgenyrodionov/redux-logger">redux-logger</a> - Logger middleware for Redux.</li>
+<li><a href="https://github.com/gajus/redux-immutable">redux-immutable</a> - Redux-immutable is used to create an equivalent function of Redux combineReducers that works with Immutable.js state.</li>
+<li><a href="https://github.com/reactjs/reselect">reselect</a> - Selector library for Redux.</li>
+<li><a href="https://github.com/idolize/redux-requests">redux-requests</a> - Manages in-flight requests with a Redux reducer to avoid issuing duplicate requests.</li>
+<li><a href="https://github.com/omnidan/redux-undo">redux-undo</a> - Higher order reducer to add undo/redo functionality to Redux state containers.</li>
+<li><a href="https://github.com/dtschust/redux-bug-reporter">redux-bug-reporter</a> - Bug reporter and bug playback tool for Redux.</li>
+<li><a href="https://github.com/acdlite/redux-transducers">redux-transducers</a> - Transducer utilities for Redux.</li>
+</ul>
+<h3>Store Persistence</h3>
+<ul>
+<li><a href="https://github.com/michaelcontento/redux-storage">redux-storage</a> - Persistence layer for Redux with flexible backends.</li>
+<li><a href="https://github.com/rt2zz/redux-persist">redux-persist</a> - Persist and rehydrate a Redux store.</li>
+</ul>
+<h3>Side Effects</h3>
+<p><em>Side Effects / Asynchronous Actions</em></p>
+<ul>
+<li><a href="https://github.com/yelouafi/redux-saga">redux-saga</a> - Alternative side effect model for Redux apps.</li>
+<li><a href="https://github.com/pburtchaell/redux-promise-middleware">redux-promise-middleware</a> - Redux middleware for resolving and rejecting promises with conditional optimistic updates.</li>
+<li><a href="https://github.com/redux-effects/redux-effects">redux-effects</a> - You write pure functions, redux-effects handles the rest.</li>
+<li><a href="https://github.com/gaearon/redux-thunk">redux-thunk</a> - Thunk middleware for Redux.</li>
+<li><a href="https://github.com/makeomatic/redux-connect">redux-connect</a> - Provides decorator for resolving async props in react-router, extremely useful for handling server-side rendering in React.</li>
+<li><a href="https://github.com/redux-loop/redux-loop">redux-loop</a> - Port of elm-effects and the Elm Architecture to Redux that allows you to sequence your effects naturally and purely by returning them from your reducers.</li>
+<li><a href="https://github.com/salsita/redux-side-effects">redux-side-effects</a> - Redux toolset for keeping all the side effects inside your reducers while maintaining their purity.</li>
+<li><a href="https://github.com/jeffbski/redux-logic">redux-logic</a> - Redux middleware for organizing business logic and action side effects.</li>
+<li><a href="https://github.com/redux-observable/redux-observable">redux-observable</a> - RxJS middleware for action side effects in Redux using &quot;Epics&quot;.</li>
+<li><a href="https://github.com/clarus/redux-ship">redux-ship</a> - Composable, testable and typable side effects.</li>
+</ul>
+<h2>Code Style</h2>
+<p><em>Aims to make parts of the source code easier to read/write.</em></p>
+<ul>
+<li><a href="https://github.com/pauldijou/redux-act">redux-act</a> - Opinionated lib to create actions and reducers for Redux.</li>
+<li><a href="https://github.com/Versent/redux-crud">redux-crud</a> - Set of standard actions and reducers for Redux CRUD Applications.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'redux_README.md';
 
         fetch(markdownFile)
@@ -48,21 +185,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

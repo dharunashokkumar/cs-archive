@@ -8,38 +8,171 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cutr At Usf Awesome Transit - Awesome List Resources">
-    <title>Cutr At Usf Awesome Transit</title>
+    <meta name="description" content="Open technology provides an opportunity for various stakeholders to collaborate efforts to improve public transit. Elements of open technology include: - Open...">
+    <meta name="robots" content="index, follow">
+    <title>awesome-transit [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) [![RSS](https://img.shields.io/badge/Subscribe-RSS-blue.svg)](https://github.com/MobilityData/awesome-transit/commits/master.atom) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>awesome-transit <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <a href="https://github.com/MobilityData/awesome-transit/commits/master.atom"><img alt="RSS" src="https://img.shields.io/badge/Subscribe-RSS-blue.svg" /></a></h1>
+<h5>Community list of data standards, APIs, apps, tools, datasets, and research around open source technology of public transit.</h5>
+<p>Open technology provides an opportunity for various stakeholders to collaborate efforts to improve public transit.</p>
+<p>Elements of open technology include:
+- Open standards
+- Open data
+- Open source software (both as consumer-facing apps like OpenTripPlanner and developer tools like the GTFS Validator)</p>
+<p>This list is focused around the open technology ecosystem for public transportation. Included technologies may be open source themselves and/or rely on open standards and/or open data.</p>
+<p>Have something to add or change? Open a <a href="https://github.com/MobilityData/awesome-transit/pulls">pull request</a> or <a href="https://github.com/MobilityData/awesome-transit/issues">issue</a> at <a href="https://github.com/MobilityData/awesome-transit">MobilityData/awesome-transit</a>.</p>
+<hr />
+<h3>Table of Contents</h3>
+<ul>
+<li><a href="#producing-data">Producting Data</a></li>
+<li><a href="#gtfs">GTFS</a><ul>
+<li><a href="#gtfs-libraries">GTFS Libraries</a></li>
+<li><a href="#gtfs-converters">GTFS Converters</a></li>
+<li><a href="#gtfs-data-collection-and-maintenance-tools">GTFS Data Collection and Maintenance Tools</a></li>
+<li><a href="#gtfs-merge-tools">GTFS Merge Tools</a></li>
+<li><a href="#gtfs-analysis-tools">GTFS Analysis Tools</a></li>
+<li><a href="#gtfs-timetable-publishing-tools">GTFS Timetable Publishing Tools</a></li>
+<li><a href="#gtfs-validators">GTFS Validators</a></li>
+</ul>
+</li>
+<li><a href="#gtfs-realtime">GTFS Realtime</a><ul>
+<li><a href="#gtfs-realtime-libraries--demo-apps">GTFS Realtime Libraries &amp; Demo Apps</a></li>
+<li><a href="#gtfs-realtime-validators">GTFS Realtime Validators</a></li>
+<li><a href="#gtfs-realtime-and-other-real-time-api-archival-tools">GTFS Realtime (and Other Real-time API) Archival Tools</a></li>
+<li><a href="#gtfs-realtime-convertors">GTFS Realtime Convertors</a></li>
+<li><a href="#gtfs-realtime-utilities">GTFS Realtime Utilities</a></li>
+</ul>
+</li>
+<li><a href="#siri">SIRI</a></li>
+<li><a href="#other-multimodal-data-formats">Other multimodal data formats</a></li>
+<li><a href="#sharing-data">Sharing Data</a></li>
+<li><a href="#using-data">Using Data</a></li>
+<li><a href="#consumer-apps">Consumer Apps</a><ul>
+<li><a href="#web-apps-open-source">Web Apps (open source)</a></li>
+<li><a href="#web-apps-closed-source">Web Apps (closed source)</a></li>
+<li><a href="#native-apps-open-source">Native Apps (open source)</a></li>
+<li><a href="#native-apps-closed-source">Native Apps (closed source)</a></li>
+</ul>
+</li>
+<li><a href="#hardware">Hardware</a></li>
+<li><a href="#software-for-creating-apis">Software for Creating APIs</a></li>
+<li><a href="#sdks">SDKs</a></li>
+<li><a href="#visualizations">Visualizations</a></li>
+<li><a href="#agency-tools">Agency Tools</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#community">Community</a></li>
+</ul>
+<h2>Producing Data</h2>
+<h3>GTFS</h3>
+<ul>
+<li><a href="https://gtfs.org">GTFS.org</a> official documentation site for the General Transit Feed Specification.</li>
+</ul>
+<h4>GTFS Courses</h4>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=SDz2460AjNo">MobilityData - "Understanding GTFS: An intro and overivew</a> - Video provides an overview of of the General Transit Feed Specification (GTFS) and why it is useful for transit agencies, riders, and policymakers. </li>
+<li><a href="https://olc.worldbank.org/content/introduction-general-transit-feed-specification-gtfs-and-informal-transit-system-mapping">World Bank - "Intro. to GTFS" online course</a> - A free, online, self-paced course for learning about GTFS and GTFS-realtime.</li>
+<li><a href="http://transitdatatoolkit.com/">Open Transit Data Toolkit</a> - A series of lessons to help people utilize open transit data.</li>
+<li><a href="https://www.youtube.com/watch?v=8OQKHhu1VgQ&amp;t=148s">ArcGIS - Introduction to GTFS</a></li>
+<li><a href="https://github.com/MobilityData/GTFS-books">GTFS-books</a> - Comprehensive guides to GTFS and GTFS Realtime. These books were written by <a href="https://github.com/HendX">Quentin Zervaas</a>, and have been donated to <a href="https://mobilitydata.org/">MobilityData</a> and made open access.</li>
+<li><a href="https://mybinder.org/v2/gh/mbta/gtfs_onboarding/main?urlpath=lab/tree/GTFS_Onboarding.ipynb">MBTA GTFS Onboarding</a> - An interactive tutorial created by MBTA for GTFS static. A <a href="https://github.com/mbta/gtfs_onboarding">stand-alone Docker image</a> is available on GitHub as well as a <a href="https://mybinder.org/v2/gh/mbta/gtfs_onboarding/main?urlpath=lab/tree/GTFS_Onboarding.ipynb">hosted/no-install version</a> of the Jupyter notebook.</li>
+<li><a href="https://courses.planetizen.com/course/building-transit-map-app">Planetizen "Building a Transit Map Web App" course</a> - A video tutorial on setting up your own web-based mapping application, with no coding experience required. </li>
+</ul>
+<h4>GTFS Consumer App Guidance</h4>
+<ul>
+<li><a href="https://developers.google.com/transit/gtfs/">Google Transit Developers</a> - Additional Google-specific documentation of GTFS.</li>
+<li><a href="https://resources.transitapp.com/article/458-guidelines-for-producing-gtfs-static-data-for-transit">Transit app Guidelines for Producing GTFS Static Data</a> - Additional Transit app-specific documentation of GTFS.</li>
+<li><a href="https://www.bing.com/maps/transitcontentproviders">Bing Maps Transit - Add your transit data to Bing Maps</a> - Additional Bing-specific documentation of GTFS.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>awesome-transit <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <a href="https://github.com/MobilityData/awesome-transit/commits/master.atom"><img alt="RSS" src="https://img.shields.io/badge/Subscribe-RSS-blue.svg" /></a></h1>
+<h5>Community list of data standards, APIs, apps, tools, datasets, and research around open source technology of public transit.</h5>
+<p>Open technology provides an opportunity for various stakeholders to collaborate efforts to improve public transit.</p>
+<p>Elements of open technology include:
+- Open standards
+- Open data
+- Open source software (both as consumer-facing apps like OpenTripPlanner and developer tools like the GTFS Validator)</p>
+<p>This list is focused around the open technology ecosystem for public transportation. Included technologies may be open source themselves and/or rely on open standards and/or open data.</p>
+<p>Have something to add or change? Open a <a href="https://github.com/MobilityData/awesome-transit/pulls">pull request</a> or <a href="https://github.com/MobilityData/awesome-transit/issues">issue</a> at <a href="https://github.com/MobilityData/awesome-transit">MobilityData/awesome-transit</a>.</p>
+<hr />
+<h3>Table of Contents</h3>
+<ul>
+<li><a href="#producing-data">Producting Data</a></li>
+<li><a href="#gtfs">GTFS</a><ul>
+<li><a href="#gtfs-libraries">GTFS Libraries</a></li>
+<li><a href="#gtfs-converters">GTFS Converters</a></li>
+<li><a href="#gtfs-data-collection-and-maintenance-tools">GTFS Data Collection and Maintenance Tools</a></li>
+<li><a href="#gtfs-merge-tools">GTFS Merge Tools</a></li>
+<li><a href="#gtfs-analysis-tools">GTFS Analysis Tools</a></li>
+<li><a href="#gtfs-timetable-publishing-tools">GTFS Timetable Publishing Tools</a></li>
+<li><a href="#gtfs-validators">GTFS Validators</a></li>
+</ul>
+</li>
+<li><a href="#gtfs-realtime">GTFS Realtime</a><ul>
+<li><a href="#gtfs-realtime-libraries--demo-apps">GTFS Realtime Libraries &amp; Demo Apps</a></li>
+<li><a href="#gtfs-realtime-validators">GTFS Realtime Validators</a></li>
+<li><a href="#gtfs-realtime-and-other-real-time-api-archival-tools">GTFS Realtime (and Other Real-time API) Archival Tools</a></li>
+<li><a href="#gtfs-realtime-convertors">GTFS Realtime Convertors</a></li>
+<li><a href="#gtfs-realtime-utilities">GTFS Realtime Utilities</a></li>
+</ul>
+</li>
+<li><a href="#siri">SIRI</a></li>
+<li><a href="#other-multimodal-data-formats">Other multimodal data formats</a></li>
+<li><a href="#sharing-data">Sharing Data</a></li>
+<li><a href="#using-data">Using Data</a></li>
+<li><a href="#consumer-apps">Consumer Apps</a><ul>
+<li><a href="#web-apps-open-source">Web Apps (open source)</a></li>
+<li><a href="#web-apps-closed-source">Web Apps (closed source)</a></li>
+<li><a href="#native-apps-open-source">Native Apps (open source)</a></li>
+<li><a href="#native-apps-closed-source">Native Apps (closed source)</a></li>
+</ul>
+</li>
+<li><a href="#hardware">Hardware</a></li>
+<li><a href="#software-for-creating-apis">Software for Creating APIs</a></li>
+<li><a href="#sdks">SDKs</a></li>
+<li><a href="#visualizations">Visualizations</a></li>
+<li><a href="#agency-tools">Agency Tools</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#community">Community</a></li>
+</ul>
+<h2>Producing Data</h2>
+<h3>GTFS</h3>
+<ul>
+<li><a href="https://gtfs.org">GTFS.org</a> official documentation site for the General Transit Feed Specification.</li>
+</ul>
+<h4>GTFS Courses</h4>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=SDz2460AjNo">MobilityData - "Understanding GTFS: An intro and overivew</a> - Video provides an overview of of the General Transit Feed Specification (GTFS) and why it is useful for transit agencies, riders, and policymakers. </li>
+<li><a href="https://olc.worldbank.org/content/introduction-general-transit-feed-specification-gtfs-and-informal-transit-system-mapping">World Bank - "Intro. to GTFS" online course</a> - A free, online, self-paced course for learning about GTFS and GTFS-realtime.</li>
+<li><a href="http://transitdatatoolkit.com/">Open Transit Data Toolkit</a> - A series of lessons to help people utilize open transit data.</li>
+<li><a href="https://www.youtube.com/watch?v=8OQKHhu1VgQ&amp;t=148s">ArcGIS - Introduction to GTFS</a></li>
+<li><a href="https://github.com/MobilityData/GTFS-books">GTFS-books</a> - Comprehensive guides to GTFS and GTFS Realtime. These books were written by <a href="https://github.com/HendX">Quentin Zervaas</a>, and have been donated to <a href="https://mobilitydata.org/">MobilityData</a> and made open access.</li>
+<li><a href="https://mybinder.org/v2/gh/mbta/gtfs_onboarding/main?urlpath=lab/tree/GTFS_Onboarding.ipynb">MBTA GTFS Onboarding</a> - An interactive tutorial created by MBTA for GTFS static. A <a href="https://github.com/mbta/gtfs_onboarding">stand-alone Docker image</a> is available on GitHub as well as a <a href="https://mybinder.org/v2/gh/mbta/gtfs_onboarding/main?urlpath=lab/tree/GTFS_Onboarding.ipynb">hosted/no-install version</a> of the Jupyter notebook.</li>
+<li><a href="https://courses.planetizen.com/course/building-transit-map-app">Planetizen "Building a Transit Map Web App" course</a> - A video tutorial on setting up your own web-based mapping application, with no coding experience required. </li>
+</ul>
+<h4>GTFS Consumer App Guidance</h4>
+<ul>
+<li><a href="https://developers.google.com/transit/gtfs/">Google Transit Developers</a> - Additional Google-specific documentation of GTFS.</li>
+<li><a href="https://resources.transitapp.com/article/458-guidelines-for-producing-gtfs-static-data-for-transit">Transit app Guidelines for Producing GTFS Static Data</a> - Additional Transit app-specific documentation of GTFS.</li>
+<li><a href="https://www.bing.com/maps/transitcontentproviders">Bing Maps Transit - Add your transit data to Bing Maps</a> - Additional Bing-specific documentation of GTFS.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'transit_README.md';
 
         fetch(markdownFile)
@@ -48,21 +181,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

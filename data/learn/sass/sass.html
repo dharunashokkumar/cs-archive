@@ -8,38 +8,167 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Famolus Awesome Sass - Awesome List Resources">
-    <title>Famolus Awesome Sass</title>
+    <meta name="description" content="!Awesome Sass > Curated list of awesome Sass and SCSS frameworks, libraries, style guides, articles, and resources. - Use command + F or ctrl + F to search for...">
+    <meta name="robots" content="index, follow">
+    <title>Sass - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <p><img alt="Awesome Sass" src="https://raw.githubusercontent.com/Famolus/awesome-sass/master/awesome-sass-logo-github.png" /></p>
+<h1>Awesome Sass <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<blockquote>
+<p>Curated list of awesome <a href="http://sass-lang.com/">Sass</a> and <a href="http://sass-lang.com/">SCSS</a> frameworks, libraries, style guides, articles, and resources.</p>
+</blockquote>
+<ul>
+<li>Use <kbd>command</kbd> + <kbd>F</kbd> or <kbd>ctrl</kbd> + <kbd>F</kbd> to search for a keyword.</li>
+<li>Contributions welcome, please see <a href="contributing.md">contribution guide</a>.</li>
+</ul>
+<h2>Contents</h2>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#getting-started">Getting Started</a></li>
+<li><a href="#sass-vs-scss">Sass vs SCSS</a></li>
+<li><a href="#frameworks">Frameworks</a></li>
+<li><a href="#libraries-and-mixins">Libraries and Mixins</a></li>
+<li><a href="#grid">Grid</a></li>
+<li><a href="#media-queries">Media Queries</a></li>
+<li><a href="#color">Color</a></li>
+<li><a href="#typography">Typography</a></li>
+<li><a href="#animation">Animation</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#style-guides">Style Guides</a></li>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#community">Community</a></li>
+</ul>
+<h2>About</h2>
+<p><a href="http://sass-lang.com/">Sass</a> is an extension of CSS that adds power and elegance to the basic language. It allows you to use variables, nested rules, mixins, inline imports, and more, all with a fully CSS-compatible syntax. Sass helps keep large stylesheets well-organized, and get small stylesheets up and running quickly.</p>
+<p>Sass has two syntaxes. The new main syntax (as of Sass 3) is known as "SCSS" (for "Sassy CSS"), and is a superset of CSS's syntax. This means that every valid CSS stylesheet is valid SCSS as well. SCSS files use the extension <code>.scss</code>.</p>
+<p>The second, older syntax is known as the indented syntax (or just "Sass"). Inspired by Haml's terseness, it's intended for people who prefer conciseness over similarity to CSS. Instead of brackets and semicolons, it uses the indentation of lines to specify blocks. Although no longer the primary syntax, the indented syntax will continue to be supported. Files in the indented syntax use the extension <code>.sass</code>.</p>
+<h2>Getting Started</h2>
+<ul>
+<li><a href="http://sass-lang.com/guide">Official Sass and SCSS Guide</a> - Official Sass and SCSS guide.</li>
+<li><a href="http://tutorialzine.com/2016/01/learn-sass-in-15-minutes/">Tutorialzine</a> - Learn SASS in 15 minutes tutorial.</li>
+<li><a href="https://www.codecademy.com/learn/learn-sass">Codecademy</a> - Learn Sass with Codecademy.</li>
+<li><a href="https://www.lynda.com/SASS-training-tutorials/1435-0.html">Lynda</a> - Learn how to use Sass, from beginner basics to advanced techniques, with online video tutorials taught by industry experts.</li>
+<li><a href="http://sass-lang.com/documentation/file.SASS_REFERENCE.html">Official Sass and SCSS Reference</a> - Official Sass and SCSS Documentation Reference.</li>
+<li><a href="https://www.sitepoint.com/sass-reference/">SitePoint Sass and SCSS Reference</a> - SitePoint Sass and SCSS reference.</li>
+</ul>
+<h2>Sass vs SCSS</h2>
+<ul>
+<li><a href="https://www.sitepoint.com/whats-difference-sass-scss/">SitePoint</a> - What’s the difference between Sass and SCSS?</li>
+<li><a href="http://thesassway.com/editorial/sass-vs-scss-which-syntax-is-better">The Sass Way</a> - Which syntax is better?</li>
+<li><a href="http://stackoverflow.com/questions/5654447/whats-the-difference-between-scss-and-sass">Stack Overflow</a> - What's the difference between SCSS and Sass?</li>
+</ul>
+<h2>Frameworks</h2>
+<ul>
+<li><a href="https://avalanche.oberlehner.net">avalanche</a> - Framework for building the foundation for a package based CSS workflow.</li>
+<li><a href="https://github.com/twbs/bootstrap">Bootstrap 4</a> - Bootstrap version 4, the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.</li>
+<li><a href="https://github.com/twbs/bootstrap-sass">Bootstrap-sass</a> - Official Sass port of Bootstrap 2 and 3.</li>
+<li><a href="https://github.com/jgthms/bulma">Bulma</a> - Modern CSS framework based on Flexbox.</li>
+<li><a href="https://github.com/Spiderpig86/Cirrus">Cirrus</a> - A component and utility centric SCSS framework designed for rapid prototyping.</li>
+<li><a href="https://github.com/zurb/foundation-sites">Foundation for Sites</a> - The most advanced responsive front-end framework in the world. Quickly create prototypes and production code for sites that work on any kind of device.</li>
+<li><a href="https://bkzl.github.io/hocus-pocus/">Hocus-Pocus</a> - Universal and lightweight stylesheet starter kit that focuses on base html elements and typography.</li>
+<li><a href="https://www.iotacss.com">iotaCSS</a> - Open source Sass-based OOCSS framework built for scale.</li>
+<li><a href="http://trykickoff.com">Kickoff</a> - Kickoff is a lightweight front-end framework for creating scalable, performant and responsive sites.</li>
+<li><a href="http://materializecss.com">Materialize</a> - Modern responsive front-end framework based on Material Design.</li>
+<li><a href="http://minicss.org/">mini.css</a> - Minimal, responsive, style-agnostic CSS framework.</li>
+<li><a href="http://dropbox.github.io/scooter/">Scooter</a> - SCSS framework built to provide base styles, CSS components, and rapid static prototyping for Dropbox.</li>
+<li><a href="http://sierra-library.github.io/">Sierra</a> - Micro SCSS library to help you build websites, without all the arbitrary selectors.</li>
+</ul>
+<h2>Libraries and Mixins</h2>
+<h3>Grid</h3>
+<ul>
+<li><a href="http://colourgarden.net/avalanche">Avalanche</a> - Lightweight, responsive, Sass-based, BEM-syntax grid system.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <p><img alt="Awesome Sass" src="https://raw.githubusercontent.com/Famolus/awesome-sass/master/awesome-sass-logo-github.png" /></p>
+<h1>Awesome Sass <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<blockquote>
+<p>Curated list of awesome <a href="http://sass-lang.com/">Sass</a> and <a href="http://sass-lang.com/">SCSS</a> frameworks, libraries, style guides, articles, and resources.</p>
+</blockquote>
+<ul>
+<li>Use <kbd>command</kbd> + <kbd>F</kbd> or <kbd>ctrl</kbd> + <kbd>F</kbd> to search for a keyword.</li>
+<li>Contributions welcome, please see <a href="contributing.md">contribution guide</a>.</li>
+</ul>
+<h2>Contents</h2>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#getting-started">Getting Started</a></li>
+<li><a href="#sass-vs-scss">Sass vs SCSS</a></li>
+<li><a href="#frameworks">Frameworks</a></li>
+<li><a href="#libraries-and-mixins">Libraries and Mixins</a></li>
+<li><a href="#grid">Grid</a></li>
+<li><a href="#media-queries">Media Queries</a></li>
+<li><a href="#color">Color</a></li>
+<li><a href="#typography">Typography</a></li>
+<li><a href="#animation">Animation</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#style-guides">Style Guides</a></li>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#community">Community</a></li>
+</ul>
+<h2>About</h2>
+<p><a href="http://sass-lang.com/">Sass</a> is an extension of CSS that adds power and elegance to the basic language. It allows you to use variables, nested rules, mixins, inline imports, and more, all with a fully CSS-compatible syntax. Sass helps keep large stylesheets well-organized, and get small stylesheets up and running quickly.</p>
+<p>Sass has two syntaxes. The new main syntax (as of Sass 3) is known as "SCSS" (for "Sassy CSS"), and is a superset of CSS's syntax. This means that every valid CSS stylesheet is valid SCSS as well. SCSS files use the extension <code>.scss</code>.</p>
+<p>The second, older syntax is known as the indented syntax (or just "Sass"). Inspired by Haml's terseness, it's intended for people who prefer conciseness over similarity to CSS. Instead of brackets and semicolons, it uses the indentation of lines to specify blocks. Although no longer the primary syntax, the indented syntax will continue to be supported. Files in the indented syntax use the extension <code>.sass</code>.</p>
+<h2>Getting Started</h2>
+<ul>
+<li><a href="http://sass-lang.com/guide">Official Sass and SCSS Guide</a> - Official Sass and SCSS guide.</li>
+<li><a href="http://tutorialzine.com/2016/01/learn-sass-in-15-minutes/">Tutorialzine</a> - Learn SASS in 15 minutes tutorial.</li>
+<li><a href="https://www.codecademy.com/learn/learn-sass">Codecademy</a> - Learn Sass with Codecademy.</li>
+<li><a href="https://www.lynda.com/SASS-training-tutorials/1435-0.html">Lynda</a> - Learn how to use Sass, from beginner basics to advanced techniques, with online video tutorials taught by industry experts.</li>
+<li><a href="http://sass-lang.com/documentation/file.SASS_REFERENCE.html">Official Sass and SCSS Reference</a> - Official Sass and SCSS Documentation Reference.</li>
+<li><a href="https://www.sitepoint.com/sass-reference/">SitePoint Sass and SCSS Reference</a> - SitePoint Sass and SCSS reference.</li>
+</ul>
+<h2>Sass vs SCSS</h2>
+<ul>
+<li><a href="https://www.sitepoint.com/whats-difference-sass-scss/">SitePoint</a> - What’s the difference between Sass and SCSS?</li>
+<li><a href="http://thesassway.com/editorial/sass-vs-scss-which-syntax-is-better">The Sass Way</a> - Which syntax is better?</li>
+<li><a href="http://stackoverflow.com/questions/5654447/whats-the-difference-between-scss-and-sass">Stack Overflow</a> - What's the difference between SCSS and Sass?</li>
+</ul>
+<h2>Frameworks</h2>
+<ul>
+<li><a href="https://avalanche.oberlehner.net">avalanche</a> - Framework for building the foundation for a package based CSS workflow.</li>
+<li><a href="https://github.com/twbs/bootstrap">Bootstrap 4</a> - Bootstrap version 4, the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.</li>
+<li><a href="https://github.com/twbs/bootstrap-sass">Bootstrap-sass</a> - Official Sass port of Bootstrap 2 and 3.</li>
+<li><a href="https://github.com/jgthms/bulma">Bulma</a> - Modern CSS framework based on Flexbox.</li>
+<li><a href="https://github.com/Spiderpig86/Cirrus">Cirrus</a> - A component and utility centric SCSS framework designed for rapid prototyping.</li>
+<li><a href="https://github.com/zurb/foundation-sites">Foundation for Sites</a> - The most advanced responsive front-end framework in the world. Quickly create prototypes and production code for sites that work on any kind of device.</li>
+<li><a href="https://bkzl.github.io/hocus-pocus/">Hocus-Pocus</a> - Universal and lightweight stylesheet starter kit that focuses on base html elements and typography.</li>
+<li><a href="https://www.iotacss.com">iotaCSS</a> - Open source Sass-based OOCSS framework built for scale.</li>
+<li><a href="http://trykickoff.com">Kickoff</a> - Kickoff is a lightweight front-end framework for creating scalable, performant and responsive sites.</li>
+<li><a href="http://materializecss.com">Materialize</a> - Modern responsive front-end framework based on Material Design.</li>
+<li><a href="http://minicss.org/">mini.css</a> - Minimal, responsive, style-agnostic CSS framework.</li>
+<li><a href="http://dropbox.github.io/scooter/">Scooter</a> - SCSS framework built to provide base styles, CSS components, and rapid static prototyping for Dropbox.</li>
+<li><a href="http://sierra-library.github.io/">Sierra</a> - Micro SCSS library to help you build websites, without all the arbitrary selectors.</li>
+</ul>
+<h2>Libraries and Mixins</h2>
+<h3>Grid</h3>
+<ul>
+<li><a href="http://colourgarden.net/avalanche">Avalanche</a> - Lightweight, responsive, Sass-based, BEM-syntax grid system.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'sass_README.md';
 
         fetch(markdownFile)
@@ -48,21 +177,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

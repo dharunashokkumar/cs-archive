@@ -8,38 +8,181 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jthegedus Awesome Firebase - Awesome List Resources">
-    <title>Jthegedus Awesome Firebase</title>
+    <meta name="description" content="The most up to date list of Firebase docs, talks, tools, examples & articles the internet has to offer. Translations: 🇬🇧 en · 🇰🇷 ko · 🇷🇺 ru Firebase is an app...">
+    <meta name="robots" content="index, follow">
+    <title>Firebase - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <!-- badges -->
+<div align="center">
+
+<!-- title -->
+<!--lint ignore no-dead-urls-->
+# Awesome Firebase [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![Lint Awesome List](https://github.com/jthegedus/awesome-firebase/workflows/lint/badge.svg)
+
+<!-- subtitle -->
+
+The most **up to date** list of Firebase docs, talks, tools, examples & articles the internet has to offer.
+
+<!-- image -->
+
+<a href="https://firebase.google.com/docs/" target="_blank" rel="noopener noreferrer">
+  <img src="images/firebase-services.gif" />
+</a>
+
+<!-- translations -->
+
+Translations: [🇬🇧 en](readme.md) · [🇰🇷 ko](readme-ko.md) · [🇷🇺 ru](readme-ru.md) <!-- · [🇪🇸 es](readme-es.md) · [🇮🇩 id](readme-id.md) · [🇯🇵 ja](readme-ja.md) · [🇵🇹 pt](readme-pt.md) · [🇨🇳 zh](readme-zh.md) -->
+
+[Firebase](https://firebase.google.com) is an app dev platform built on the [Google Cloud Platform](https://cloud.google.com/products) providing services and cross-platform SDKs!
+
+</div>
+
+<!-- toc -->
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#featured-new-releases">Featured (new releases)</a></li>
+<li><a href="#official-docs--quickstarts">Official Docs &amp; Quickstarts</a></li>
+<li><a href="#firebase-extensions">Firebase Extensions</a></li>
+<li><a href="#web">Web</a></li>
+<li><a href="#mobile">Mobile</a></li>
+<li><a href="#games">Games</a></li>
+<li><a href="#server-side-cloud-functions-bigquery-etc">Server-side (Cloud Functions, BigQuery etc)</a></li>
+<li><a href="#cli--editor">CLI &amp; Editor</a></li>
+<li><a href="#other">Other</a></li>
+<li><a href="#follow">Follow</a></li>
+</ul>
+<p><strong>Legend</strong>: 📝 blog posts · 💡 examples · 📖 docs · 🔌 libraries · 🔧 tools · 📹 talks/video · 🔊 podcasts</p>
+<!-- START content -->
+
+<h2>Featured (new releases)</h2>
+<ul>
+<li>🔧 <a href="https://github.com/kreait/firebase-php">(Unofficial) Firebase Admin SDK for PHP</a> - The Firebase Admin PHP SDK enables access to Firebase services from privileged environments (such as servers or cloud) in PHP.</li>
+<li>📖 <a href="https://firebase.google.com/docs/app-check">App Check</a> - Protect your backend resources from abuse, such as billing fraud or phishing.</li>
+<li>📖 <a href="https://firebase.google.com/docs/firestore/bundles">Firestore Data Bundles</a> - Data Bundles are static query results for CDN caching to speed first page loads.</li>
+<li>📖 <a href="https://firebase.google.com/docs/web/learn-more#modular-version">Modular Web SDK (v9)</a> - Import only what you need reducing SDK size up to 80%.</li>
+</ul>
+<h2>Official Docs &amp; Quickstarts</h2>
+<ul>
+<li>📖 <a href="https://firebase.google.com/docs">Firebase Documentation</a> - Official Firebase Documentation.</li>
+<li>🔧 <a href="https://status.firebase.google.com">Firebase Status Dashboard</a> - This page provides status information on the services that are part of Firebase.</li>
+<li>💡 <a href="https://github.com/firebase?utf8=%E2%9C%93&amp;q=quickstart&amp;type=&amp;language=">Firebase Quickstarts</a> - Official Firebase Quickstarts.</li>
+<li>💡 <a href="https://codelabs.developers.google.com/?cat=Firebase">Google Codelabs | Firebase</a> - Google Developers Codelabs provide a guided, tutorial, hands-on coding experience.</li>
+<li>📖 <a href="https://firebase.google.com/games">Firebase for Games</a> - New Firebase for Games landing page with links to Firebase/Google resources for game developers.</li>
+</ul>
+<h2>Firebase Extensions</h2>
+<ul>
+<li>🔧 <a href="https://firebase.google.com/products/extensions">Firebase Extensions</a> - Firebase Extensions provide extended functionality to your apps without the need to research, write, or debug code on your own.</li>
+<li>🔧 <a href="https://github.com/FirebaseExtended/experimental-extensions">Experimental Firebase Extensions</a> -  laboratory for new extensions created by Firebase.</li>
+<li>🔧 <a href="https://github.com/stripe/stripe-firebase-extensions">Stripe Extensions</a> - Official Stripe subscriptions and invoices extensions.</li>
+<li>🔧 <a href="https://github.com/messagebird/firestore-send-msg">MessageBird Extensions</a> - Official MessageBird extension to send messages via the MessageBird Converstations API.</li>
+<li>🔧 <a href="https://github.com/algolia/firestore-algolia-search">Algolia Extensions</a> - Official Algolia extension to enable full text search of Cloud Firestore with Algolia.</li>
+<li>🔧 <a href="https://github.com/mailchimp/Firebase">Mailchimp Extensions</a> - Official Mailchimp extension to sync Firebase Authentication events to create member tags, merge fields, and member events with Mailchimp.</li>
+<li>🔧 <a href="https://github.com/typesense/firestore-typesense-search">Typesense Extension for Full-Text Search</a> - Official Typesense extension to add full-text search in Firestore, by syncing the data to <a href="https://github.com/typesense/typesense">Typesense</a>, an OSS alternative to Algolia.</li>
+</ul>
+<h2>Web</h2>
+<ul>
+<li>🔌 <a href="https://github.com/samuelgozi/firebase-firestore-lite">Firestore Lite</a> - Lightweight Cloud Firestore library for the browser.</li>
+<li>🔌 <a href="https://github.com/codediodeio/sveltefire">SvelteFire</a> - Cybernetically enhanced Firebase apps.</li>
+<li>🔌 <a href="https://github.com/FirebaseExtended/reactfire">React Fire</a> - Official Firebase React library with Hooks, Context Providers, and Components that make it easy to interact with Firebase.</li>
+<li>🔧 <a href="https://github.com/firebaseextended/remote-styles/">Remote Styles with Remote Config</a> - Dynamic/Conditional loading of CSS stored in Remote Config. (<a href="https://medium.com/firebase-developers/introducing-remote-styles-conditional-css-loading-made-easy-daddbbcce050">Launch post</a>).</li>
+<li>🔌 <a href="https://github.com/CSFrequency/react-firebase-hooks">React Firebase Hooks</a> - React Hooks for Firebase services.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <!-- badges -->
+<div align="center">
+
+<!-- title -->
+<!--lint ignore no-dead-urls-->
+# Awesome Firebase [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![Lint Awesome List](https://github.com/jthegedus/awesome-firebase/workflows/lint/badge.svg)
+
+<!-- subtitle -->
+
+The most **up to date** list of Firebase docs, talks, tools, examples & articles the internet has to offer.
+
+<!-- image -->
+
+<a href="https://firebase.google.com/docs/" target="_blank" rel="noopener noreferrer">
+  <img src="images/firebase-services.gif" />
+</a>
+
+<!-- translations -->
+
+Translations: [🇬🇧 en](readme.md) · [🇰🇷 ko](readme-ko.md) · [🇷🇺 ru](readme-ru.md) <!-- · [🇪🇸 es](readme-es.md) · [🇮🇩 id](readme-id.md) · [🇯🇵 ja](readme-ja.md) · [🇵🇹 pt](readme-pt.md) · [🇨🇳 zh](readme-zh.md) -->
+
+[Firebase](https://firebase.google.com) is an app dev platform built on the [Google Cloud Platform](https://cloud.google.com/products) providing services and cross-platform SDKs!
+
+</div>
+
+<!-- toc -->
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#featured-new-releases">Featured (new releases)</a></li>
+<li><a href="#official-docs--quickstarts">Official Docs &amp; Quickstarts</a></li>
+<li><a href="#firebase-extensions">Firebase Extensions</a></li>
+<li><a href="#web">Web</a></li>
+<li><a href="#mobile">Mobile</a></li>
+<li><a href="#games">Games</a></li>
+<li><a href="#server-side-cloud-functions-bigquery-etc">Server-side (Cloud Functions, BigQuery etc)</a></li>
+<li><a href="#cli--editor">CLI &amp; Editor</a></li>
+<li><a href="#other">Other</a></li>
+<li><a href="#follow">Follow</a></li>
+</ul>
+<p><strong>Legend</strong>: 📝 blog posts · 💡 examples · 📖 docs · 🔌 libraries · 🔧 tools · 📹 talks/video · 🔊 podcasts</p>
+<!-- START content -->
+
+<h2>Featured (new releases)</h2>
+<ul>
+<li>🔧 <a href="https://github.com/kreait/firebase-php">(Unofficial) Firebase Admin SDK for PHP</a> - The Firebase Admin PHP SDK enables access to Firebase services from privileged environments (such as servers or cloud) in PHP.</li>
+<li>📖 <a href="https://firebase.google.com/docs/app-check">App Check</a> - Protect your backend resources from abuse, such as billing fraud or phishing.</li>
+<li>📖 <a href="https://firebase.google.com/docs/firestore/bundles">Firestore Data Bundles</a> - Data Bundles are static query results for CDN caching to speed first page loads.</li>
+<li>📖 <a href="https://firebase.google.com/docs/web/learn-more#modular-version">Modular Web SDK (v9)</a> - Import only what you need reducing SDK size up to 80%.</li>
+</ul>
+<h2>Official Docs &amp; Quickstarts</h2>
+<ul>
+<li>📖 <a href="https://firebase.google.com/docs">Firebase Documentation</a> - Official Firebase Documentation.</li>
+<li>🔧 <a href="https://status.firebase.google.com">Firebase Status Dashboard</a> - This page provides status information on the services that are part of Firebase.</li>
+<li>💡 <a href="https://github.com/firebase?utf8=%E2%9C%93&amp;q=quickstart&amp;type=&amp;language=">Firebase Quickstarts</a> - Official Firebase Quickstarts.</li>
+<li>💡 <a href="https://codelabs.developers.google.com/?cat=Firebase">Google Codelabs | Firebase</a> - Google Developers Codelabs provide a guided, tutorial, hands-on coding experience.</li>
+<li>📖 <a href="https://firebase.google.com/games">Firebase for Games</a> - New Firebase for Games landing page with links to Firebase/Google resources for game developers.</li>
+</ul>
+<h2>Firebase Extensions</h2>
+<ul>
+<li>🔧 <a href="https://firebase.google.com/products/extensions">Firebase Extensions</a> - Firebase Extensions provide extended functionality to your apps without the need to research, write, or debug code on your own.</li>
+<li>🔧 <a href="https://github.com/FirebaseExtended/experimental-extensions">Experimental Firebase Extensions</a> -  laboratory for new extensions created by Firebase.</li>
+<li>🔧 <a href="https://github.com/stripe/stripe-firebase-extensions">Stripe Extensions</a> - Official Stripe subscriptions and invoices extensions.</li>
+<li>🔧 <a href="https://github.com/messagebird/firestore-send-msg">MessageBird Extensions</a> - Official MessageBird extension to send messages via the MessageBird Converstations API.</li>
+<li>🔧 <a href="https://github.com/algolia/firestore-algolia-search">Algolia Extensions</a> - Official Algolia extension to enable full text search of Cloud Firestore with Algolia.</li>
+<li>🔧 <a href="https://github.com/mailchimp/Firebase">Mailchimp Extensions</a> - Official Mailchimp extension to sync Firebase Authentication events to create member tags, merge fields, and member events with Mailchimp.</li>
+<li>🔧 <a href="https://github.com/typesense/firestore-typesense-search">Typesense Extension for Full-Text Search</a> - Official Typesense extension to add full-text search in Firestore, by syncing the data to <a href="https://github.com/typesense/typesense">Typesense</a>, an OSS alternative to Algolia.</li>
+</ul>
+<h2>Web</h2>
+<ul>
+<li>🔌 <a href="https://github.com/samuelgozi/firebase-firestore-lite">Firestore Lite</a> - Lightweight Cloud Firestore library for the browser.</li>
+<li>🔌 <a href="https://github.com/codediodeio/sveltefire">SvelteFire</a> - Cybernetically enhanced Firebase apps.</li>
+<li>🔌 <a href="https://github.com/FirebaseExtended/reactfire">React Fire</a> - Official Firebase React library with Hooks, Context Providers, and Components that make it easy to interact with Firebase.</li>
+<li>🔧 <a href="https://github.com/firebaseextended/remote-styles/">Remote Styles with Remote Config</a> - Dynamic/Conditional loading of CSS stored in Remote Config. (<a href="https://medium.com/firebase-developers/introducing-remote-styles-conditional-css-loading-made-easy-daddbbcce050">Launch post</a>).</li>
+<li>🔌 <a href="https://github.com/CSFrequency/react-firebase-hooks">React Firebase Hooks</a> - React Hooks for Firebase services.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'firebase_README.md';
 
         fetch(markdownFile)
@@ -48,21 +191,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

@@ -8,38 +8,217 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Neueda Awesome Neo4j - Awesome List Resources">
-    <title>Neueda Awesome Neo4j</title>
+    <meta name="description" content="Awesome Neo4j ============== A curated list of awesome Neo4j resources. Inspired by the trend on GitHub. The goal is to build a categorized community-driven...">
+    <meta name="robots" content="index, follow">
+    <title>Neo4J - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Neo4j</h1>
+<p><a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a>
+<a href="https://travis-ci.org/neueda/awesome-neo4j"><img alt="Build Status" src="https://api.travis-ci.org/neueda/awesome-neo4j.svg?branch=master" /></a></p>
+<p>A curated list of awesome <a href="https://neo4j.com/">Neo4j</a> resources.<br />
+Inspired by the <code>awesome-*</code> trend on GitHub.</p>
+<p>The goal is to build a categorized community-driven collection of very well-known resources.<br />
+Sharing, suggestions and contributions are always welcome!</p>
+<p>Thanks to all <a href="https://github.com/Neueda/awesome-neo4j/graphs/contributors">contributors</a>.</p>
+<p>Maintained by <a href="http://labs.neueda.com/">Neueda R&amp;D</a>.</p>
+<h1>Table of Contents</h1>
+<ul>
+<li><a href="#basics">Basics</a></li>
+<li><a href="#connectors">Connectors</a><ul>
+<li><a href="#bolt">Bolt</a></li>
+<li><a href="#rest-api">REST API</a></li>
+<li><a href="#java">Java</a></li>
+<li><a href="#ruby">Ruby</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#php">PHP</a></li>
+<li><a href="#other">Other</a></li>
+</ul>
+</li>
+<li><a href="#cloud">Cloud</a></li>
+<li><a href="#packages">Packages</a></li>
+<li><a href="#docker">Docker</a></li>
+<li><a href="#full-text-search">Full-text search</a></li>
+<li><a href="#import">Import</a></li>
+<li><a href="#benchmarking">Benchmarking</a></li>
+<li><a href="#extensions">Extensions</a></li>
+<li><a href="#stored-procedures">Stored Procedures</a></li>
+<li><a href="#development">Development</a></li>
+<li><a href="#editors">Editors</a></li>
+<li><a href="#shell">Shell</a></li>
+<li><a href="#visualization">Visualization</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#resources">Resources</a><ul>
+<li><a href="#learn">Learn</a></li>
+<li><a href="#certification">Certification</a></li>
+<li><a href="#bolt-1">Bolt</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+</ul>
+</li>
+<li><a href="#license">License</a></li>
+</ul>
+<p>Created by <a href="https://github.com/ekalinin/github-markdown-toc.go">gh-md-toc</a></p>
+<h1>Basics</h1>
+<ul>
+<li><a href="https://neo4j.com/docs/">Official documentation</a></li>
+<li><a href="https://neo4j.com/docs/cypher-refcard/current/">Cypher Refcard</a></li>
+<li><a href="https://neo4j.com/developer/get-started/">Developer resources</a></li>
+<li><a href="http://graphgist.neo4j.com/">Gists</a> - With Neo4j GraphGists you can describe and model your domain in a simple text file and render it as a rich, interactive page in any browser. Perfect to document a specific domain, use-case, question or graph problem.</li>
+<li><a href="https://github.com/neo4j-examples">Neo4j Examples</a> - Examples for Neo4j and Library Usage.</li>
+</ul>
+<h1>Related project</h1>
+<ul>
+<li><a href="http://www.opencypher.org/">openCypher</a> - openCypher is an open source project to bring a new public implementation of the industry’s most widely adopted graph query language: Cypher.</li>
+<li><a href="https://boltprotocol.org">Bolt Protocol</a> - The Bolt network protocol is a highly efficient, lightweight client-server protocol designed for database applications.</li>
+</ul>
+<h1>Connectors</h1>
+<h2>Bolt</h2>
+<ul>
+<li><a href="https://github.com/neo4j/neo4j-java-driver">neo4j-java-driver</a> - Java driver for Neo4j binary protocol.</li>
+<li><a href="https://github.com/neo4j/neo4j-python-driver">neo4j-python-driver</a> - Python driver for Neo4j binary protocol.</li>
+<li><a href="https://github.com/neo4j/neo4j-javascript-driver">neo4j-javascript-driver</a> - JavaScript driver for Neo4j binary protocol.</li>
+<li><a href="https://github.com/neo4j/neo4j-dotnet-driver">neo4j-dotnet-driver</a> - .Net driver for Neo4j (Bolt).</li>
+<li><a href="https://github.com/graphaware/neo4j-bolt-php">neo4j-bolt-php</a> - PHP driver for Neo4j binary protocol.</li>
+<li><a href="https://github.com/cleishm/libneo4j-client">libneo4j-client</a> - libneo4j-client is a client library written in C for Neo4j. It is not intended as a complete driver, but rather as a foundation on which basic tools and drivers for various languages may be built. libneo4j-client takes care of all the detail of establishing a session with a Neo4j server, sending statements for evaluation, and retrieving results.</li>
+<li><a href="https://github.com/neo4j-contrib/neo4j-spark-connector">neo4j-spark-connector</a> - Neo4j-Spark-Connector based on Neo4j 3.0's Bolt protocol</li>
+<li><a href="https://github.com/mschae/boltex">neo4j-elixir-driver</a> - Elixir driver for the neo4j bolt protocol</li>
+<li><a href="https://github.com/florinpatrascu/bolt_sips">neo4j-elixir-wrapper</a> - Neo4j driver for Elixir, wrapped around the Bolt protocol. Fork of the Boltex.</li>
+</ul>
+<h2>REST API</h2>
+<h3>Java</h3>
+<ul>
+<li><a href="https://github.com/neo4j/neo4j-ogm">neo4j-ogm</a> - Object-Graph Mapping Library for Neo4j.</li>
+<li><a href="https://github.com/spring-projects/spring-data-neo4j">spring-data-neo4j</a> - Provides support to increase developer productivity in Java when using the neo4j graph database.</li>
+<li><a href="https://github.com/neo4j-contrib/neo4j-jdbc">neo4j-jdbc</a> - Neo4j JDBC driver.</li>
+<li><a href="https://github.com/Wolfgang-Schuetzelhofer/jcypher">jcypher</a> - Java access to Neo4J graph databases at multiple levels of abstraction.</li>
+</ul>
+<h3>Ruby</h3>
+<ul>
+<li><a href="https://github.com/neo4jrb/neo4j">neo4jrb</a> - An active model wrapper for the Neo4j Graph Database for Ruby.</li>
+<li><a href="https://github.com/maxdemarzi/neography">neography</a> - A thin Ruby wrapper to the Neo4j Rest API.</li>
+</ul>
+<h3>Python</h3>
+<ul>
+<li><a href="https://github.com/nigelsmall/py2neo">py2neo</a> - Py2neo is a comprehensive toolkit for working with Neo4j from within Python applications or from the command line.</li>
+<li><a href="https://github.com/neo4j-contrib/neomodel">neomodel</a> - An Object Graph Mapper (OGM) for the neo4j graph database, built on the awesome py2neo.</li>
+</ul>
+<h3>PHP</h3>
+<ul>
+<li><a href="https://github.com/graphaware/neo4j-php-ogm">Neo4j-PHP-OGM</a> - Doctrine style Object Graph Mapper for Neo4j</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Neo4j</h1>
+<p><a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a>
+<a href="https://travis-ci.org/neueda/awesome-neo4j"><img alt="Build Status" src="https://api.travis-ci.org/neueda/awesome-neo4j.svg?branch=master" /></a></p>
+<p>A curated list of awesome <a href="https://neo4j.com/">Neo4j</a> resources.<br />
+Inspired by the <code>awesome-*</code> trend on GitHub.</p>
+<p>The goal is to build a categorized community-driven collection of very well-known resources.<br />
+Sharing, suggestions and contributions are always welcome!</p>
+<p>Thanks to all <a href="https://github.com/Neueda/awesome-neo4j/graphs/contributors">contributors</a>.</p>
+<p>Maintained by <a href="http://labs.neueda.com/">Neueda R&amp;D</a>.</p>
+<h1>Table of Contents</h1>
+<ul>
+<li><a href="#basics">Basics</a></li>
+<li><a href="#connectors">Connectors</a><ul>
+<li><a href="#bolt">Bolt</a></li>
+<li><a href="#rest-api">REST API</a></li>
+<li><a href="#java">Java</a></li>
+<li><a href="#ruby">Ruby</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#php">PHP</a></li>
+<li><a href="#other">Other</a></li>
+</ul>
+</li>
+<li><a href="#cloud">Cloud</a></li>
+<li><a href="#packages">Packages</a></li>
+<li><a href="#docker">Docker</a></li>
+<li><a href="#full-text-search">Full-text search</a></li>
+<li><a href="#import">Import</a></li>
+<li><a href="#benchmarking">Benchmarking</a></li>
+<li><a href="#extensions">Extensions</a></li>
+<li><a href="#stored-procedures">Stored Procedures</a></li>
+<li><a href="#development">Development</a></li>
+<li><a href="#editors">Editors</a></li>
+<li><a href="#shell">Shell</a></li>
+<li><a href="#visualization">Visualization</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#resources">Resources</a><ul>
+<li><a href="#learn">Learn</a></li>
+<li><a href="#certification">Certification</a></li>
+<li><a href="#bolt-1">Bolt</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+</ul>
+</li>
+<li><a href="#license">License</a></li>
+</ul>
+<p>Created by <a href="https://github.com/ekalinin/github-markdown-toc.go">gh-md-toc</a></p>
+<h1>Basics</h1>
+<ul>
+<li><a href="https://neo4j.com/docs/">Official documentation</a></li>
+<li><a href="https://neo4j.com/docs/cypher-refcard/current/">Cypher Refcard</a></li>
+<li><a href="https://neo4j.com/developer/get-started/">Developer resources</a></li>
+<li><a href="http://graphgist.neo4j.com/">Gists</a> - With Neo4j GraphGists you can describe and model your domain in a simple text file and render it as a rich, interactive page in any browser. Perfect to document a specific domain, use-case, question or graph problem.</li>
+<li><a href="https://github.com/neo4j-examples">Neo4j Examples</a> - Examples for Neo4j and Library Usage.</li>
+</ul>
+<h1>Related project</h1>
+<ul>
+<li><a href="http://www.opencypher.org/">openCypher</a> - openCypher is an open source project to bring a new public implementation of the industry’s most widely adopted graph query language: Cypher.</li>
+<li><a href="https://boltprotocol.org">Bolt Protocol</a> - The Bolt network protocol is a highly efficient, lightweight client-server protocol designed for database applications.</li>
+</ul>
+<h1>Connectors</h1>
+<h2>Bolt</h2>
+<ul>
+<li><a href="https://github.com/neo4j/neo4j-java-driver">neo4j-java-driver</a> - Java driver for Neo4j binary protocol.</li>
+<li><a href="https://github.com/neo4j/neo4j-python-driver">neo4j-python-driver</a> - Python driver for Neo4j binary protocol.</li>
+<li><a href="https://github.com/neo4j/neo4j-javascript-driver">neo4j-javascript-driver</a> - JavaScript driver for Neo4j binary protocol.</li>
+<li><a href="https://github.com/neo4j/neo4j-dotnet-driver">neo4j-dotnet-driver</a> - .Net driver for Neo4j (Bolt).</li>
+<li><a href="https://github.com/graphaware/neo4j-bolt-php">neo4j-bolt-php</a> - PHP driver for Neo4j binary protocol.</li>
+<li><a href="https://github.com/cleishm/libneo4j-client">libneo4j-client</a> - libneo4j-client is a client library written in C for Neo4j. It is not intended as a complete driver, but rather as a foundation on which basic tools and drivers for various languages may be built. libneo4j-client takes care of all the detail of establishing a session with a Neo4j server, sending statements for evaluation, and retrieving results.</li>
+<li><a href="https://github.com/neo4j-contrib/neo4j-spark-connector">neo4j-spark-connector</a> - Neo4j-Spark-Connector based on Neo4j 3.0's Bolt protocol</li>
+<li><a href="https://github.com/mschae/boltex">neo4j-elixir-driver</a> - Elixir driver for the neo4j bolt protocol</li>
+<li><a href="https://github.com/florinpatrascu/bolt_sips">neo4j-elixir-wrapper</a> - Neo4j driver for Elixir, wrapped around the Bolt protocol. Fork of the Boltex.</li>
+</ul>
+<h2>REST API</h2>
+<h3>Java</h3>
+<ul>
+<li><a href="https://github.com/neo4j/neo4j-ogm">neo4j-ogm</a> - Object-Graph Mapping Library for Neo4j.</li>
+<li><a href="https://github.com/spring-projects/spring-data-neo4j">spring-data-neo4j</a> - Provides support to increase developer productivity in Java when using the neo4j graph database.</li>
+<li><a href="https://github.com/neo4j-contrib/neo4j-jdbc">neo4j-jdbc</a> - Neo4j JDBC driver.</li>
+<li><a href="https://github.com/Wolfgang-Schuetzelhofer/jcypher">jcypher</a> - Java access to Neo4J graph databases at multiple levels of abstraction.</li>
+</ul>
+<h3>Ruby</h3>
+<ul>
+<li><a href="https://github.com/neo4jrb/neo4j">neo4jrb</a> - An active model wrapper for the Neo4j Graph Database for Ruby.</li>
+<li><a href="https://github.com/maxdemarzi/neography">neography</a> - A thin Ruby wrapper to the Neo4j Rest API.</li>
+</ul>
+<h3>Python</h3>
+<ul>
+<li><a href="https://github.com/nigelsmall/py2neo">py2neo</a> - Py2neo is a comprehensive toolkit for working with Neo4j from within Python applications or from the command line.</li>
+<li><a href="https://github.com/neo4j-contrib/neomodel">neomodel</a> - An Object Graph Mapper (OGM) for the neo4j graph database, built on the awesome py2neo.</li>
+</ul>
+<h3>PHP</h3>
+<ul>
+<li><a href="https://github.com/graphaware/neo4j-php-ogm">Neo4j-PHP-OGM</a> - Doctrine style Object Graph Mapper for Neo4j</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'neo4j_README.md';
 
         fetch(markdownFile)
@@ -48,21 +227,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

@@ -8,38 +8,267 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Josephmisiti Awesome Machine Learning - Awesome List Resources">
-    <title>Josephmisiti Awesome Machine Learning</title>
+    <meta name="description" content="A curated list of awesome machine learning frameworks, libraries and software (by language). Inspired by . _If you want to contribute to this list (please do),...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Machine Learning [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) [![Track Awesome List](https://www.trackawesomelist.com/badge.svg)](https://www.trackawesomelist.com/josephmisiti/awesome-machine-learning/) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Machine Learning <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <a href="https://www.trackawesomelist.com/josephmisiti/awesome-machine-learning/"><img alt="Track Awesome List" src="https://www.trackawesomelist.com/badge.svg" /></a></h1>
+<p>A curated list of awesome machine learning frameworks, libraries and software (by language). Inspired by <code>awesome-php</code>.</p>
+<p><em>If you want to contribute to this list (please do), send me a pull request or contact me <a href="https://twitter.com/josephmisiti">@josephmisiti</a>.</em>
+Also, a listed repository should be deprecated if:</p>
+<ul>
+<li>Repository's owner explicitly says that "this library is not maintained".</li>
+<li>Not committed for a long time (2~3 years).</li>
+</ul>
+<p>Further resources:</p>
+<ul>
+<li>
+<p>For a list of free machine learning books available for download, go <a href="https://github.com/josephmisiti/awesome-machine-learning/blob/master/books.md">here</a>.</p>
+</li>
+<li>
+<p>For a list of professional machine learning events, go <a href="https://github.com/josephmisiti/awesome-machine-learning/blob/master/events.md">here</a>.</p>
+</li>
+<li>
+<p>For a list of (mostly) free machine learning courses available online, go <a href="https://github.com/josephmisiti/awesome-machine-learning/blob/master/courses.md">here</a>.</p>
+</li>
+<li>
+<p>For a list of blogs and newsletters on data science and machine learning, go <a href="https://github.com/josephmisiti/awesome-machine-learning/blob/master/blogs.md">here</a>.</p>
+</li>
+<li>
+<p>For a list of free-to-attend meetups and local events, go <a href="https://github.com/josephmisiti/awesome-machine-learning/blob/master/meetups.md">here</a>.</p>
+</li>
+</ul>
+<h2>Table of Contents</h2>
+<h3>Frameworks and Libraries</h3>
+<!-- MarkdownTOC depth=4 -->
+<!-- Contents-->
+<ul>
+<li><a href="#awesome-machine-learning-">Awesome Machine Learning <img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></li>
+<li><a href="#table-of-contents">Table of Contents</a><ul>
+<li><a href="#frameworks-and-libraries">Frameworks and Libraries</a></li>
+<li><a href="#tools">Tools</a></li>
+</ul>
+</li>
+<li><a href="#apl">APL</a><ul>
+<li><a href="#apl-general-purpose-machine-learning">General-Purpose Machine Learning</a></li>
+</ul>
+</li>
+<li><a href="#c">C</a><ul>
+<li><a href="#c-general-purpose-machine-learning">General-Purpose Machine Learning</a></li>
+<li><a href="#c-computer-vision">Computer Vision</a></li>
+</ul>
+</li>
+<li><a href="#cpp">C++</a><ul>
+<li><a href="#cpp-computer-vision">Computer Vision</a></li>
+<li><a href="#cpp-general-purpose-machine-learning">General-Purpose Machine Learning</a></li>
+<li><a href="#cpp-natural-language-processing">Natural Language Processing</a></li>
+<li><a href="#cpp-speech-recognition">Speech Recognition</a></li>
+<li><a href="#cpp-sequence-analysis">Sequence Analysis</a></li>
+<li><a href="#cpp-gesture-detection">Gesture Detection</a></li>
+<li><a href="#cpp-reinforcement-learning">Reinforcement Learning</a></li>
+</ul>
+</li>
+<li><a href="#common-lisp">Common Lisp</a><ul>
+<li><a href="#common-lisp-general-purpose-machine-learning">General-Purpose Machine Learning</a></li>
+</ul>
+</li>
+<li><a href="#clojure">Clojure</a><ul>
+<li><a href="#clojure-natural-language-processing">Natural Language Processing</a></li>
+<li><a href="#clojure-general-purpose-machine-learning">General-Purpose Machine Learning</a></li>
+<li><a href="#clojure-deep-learning">Deep Learning</a></li>
+<li><a href="#clojure-data-analysis--data-visualization">Data Analysis</a></li>
+<li><a href="#clojure-data-visualization">Data Visualization</a></li>
+<li><a href="#clojure-interop">Interop</a></li>
+<li><a href="#clojure-misc">Misc</a></li>
+<li><a href="#clojure-extra">Extra</a></li>
+</ul>
+</li>
+<li><a href="#crystal">Crystal</a><ul>
+<li><a href="#crystal-general-purpose-machine-learning">General-Purpose Machine Learning</a></li>
+</ul>
+</li>
+<li><a href="#elixir">Elixir</a><ul>
+<li><a href="#elixir-general-purpose-machine-learning">General-Purpose Machine Learning</a></li>
+<li><a href="#elixir-natural-language-processing">Natural Language Processing</a></li>
+</ul>
+</li>
+<li><a href="#erlang">Erlang</a><ul>
+<li><a href="#erlang-general-purpose-machine-learning">General-Purpose Machine Learning</a></li>
+</ul>
+</li>
+<li><a href="#fortran">Fortran</a><ul>
+<li><a href="#fortran-general-purpose-machine-learning">General-Purpose Machine Learning</a></li>
+<li><a href="#fortran-data-analysis--data-visualization">Data Analysis / Data Visualization</a></li>
+</ul>
+</li>
+<li><a href="#go">Go</a><ul>
+<li><a href="#go-natural-language-processing">Natural Language Processing</a></li>
+<li><a href="#go-general-purpose-machine-learning">General-Purpose Machine Learning</a></li>
+<li><a href="#go-spatial-analysis-and-geometry">Spatial analysis and geometry</a></li>
+<li><a href="#go-data-analysis--data-visualization">Data Analysis / Data Visualization</a></li>
+<li><a href="#go-computer-vision">Computer vision</a></li>
+<li><a href="#go-reinforcement-learning">Reinforcement learning</a></li>
+</ul>
+</li>
+<li><a href="#haskell">Haskell</a><ul>
+<li><a href="#haskell-general-purpose-machine-learning">General-Purpose Machine Learning</a></li>
+</ul>
+</li>
+<li><a href="#java">Java</a><ul>
+<li><a href="#java-natural-language-processing">Natural Language Processing</a></li>
+<li><a href="#java-general-purpose-machine-learning">General-Purpose Machine Learning</a></li>
+<li><a href="#java-speech-recognition">Speech Recognition</a></li>
+<li><a href="#java-data-analysis--data-visualization">Data Analysis / Data Visualization</a></li>
+<li><a href="#java-deep-learning">Deep Learning</a></li>
+</ul>
+</li>
+<li><a href="#javascript">Javascript</a><ul>
+<li><a href="#javascript-natural-language-processing">Natural Language Processing</a></li>
+<li><a href="#javascript-data-analysis--data-visualization">Data Analysis / Data Visualization</a></li>
+<li><a href="#javascript-general-purpose-machine-learning">General-Purpose Machine Learning</a></li>
+<li><a href="#javascript-misc">Misc</a></li>
+<li><a href="#javascript-demos-and-scripts">Demos and Scripts</a></li>
+</ul>
+</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Machine Learning <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <a href="https://www.trackawesomelist.com/josephmisiti/awesome-machine-learning/"><img alt="Track Awesome List" src="https://www.trackawesomelist.com/badge.svg" /></a></h1>
+<p>A curated list of awesome machine learning frameworks, libraries and software (by language). Inspired by <code>awesome-php</code>.</p>
+<p><em>If you want to contribute to this list (please do), send me a pull request or contact me <a href="https://twitter.com/josephmisiti">@josephmisiti</a>.</em>
+Also, a listed repository should be deprecated if:</p>
+<ul>
+<li>Repository's owner explicitly says that "this library is not maintained".</li>
+<li>Not committed for a long time (2~3 years).</li>
+</ul>
+<p>Further resources:</p>
+<ul>
+<li>
+<p>For a list of free machine learning books available for download, go <a href="https://github.com/josephmisiti/awesome-machine-learning/blob/master/books.md">here</a>.</p>
+</li>
+<li>
+<p>For a list of professional machine learning events, go <a href="https://github.com/josephmisiti/awesome-machine-learning/blob/master/events.md">here</a>.</p>
+</li>
+<li>
+<p>For a list of (mostly) free machine learning courses available online, go <a href="https://github.com/josephmisiti/awesome-machine-learning/blob/master/courses.md">here</a>.</p>
+</li>
+<li>
+<p>For a list of blogs and newsletters on data science and machine learning, go <a href="https://github.com/josephmisiti/awesome-machine-learning/blob/master/blogs.md">here</a>.</p>
+</li>
+<li>
+<p>For a list of free-to-attend meetups and local events, go <a href="https://github.com/josephmisiti/awesome-machine-learning/blob/master/meetups.md">here</a>.</p>
+</li>
+</ul>
+<h2>Table of Contents</h2>
+<h3>Frameworks and Libraries</h3>
+<!-- MarkdownTOC depth=4 -->
+<!-- Contents-->
+<ul>
+<li><a href="#awesome-machine-learning-">Awesome Machine Learning <img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></li>
+<li><a href="#table-of-contents">Table of Contents</a><ul>
+<li><a href="#frameworks-and-libraries">Frameworks and Libraries</a></li>
+<li><a href="#tools">Tools</a></li>
+</ul>
+</li>
+<li><a href="#apl">APL</a><ul>
+<li><a href="#apl-general-purpose-machine-learning">General-Purpose Machine Learning</a></li>
+</ul>
+</li>
+<li><a href="#c">C</a><ul>
+<li><a href="#c-general-purpose-machine-learning">General-Purpose Machine Learning</a></li>
+<li><a href="#c-computer-vision">Computer Vision</a></li>
+</ul>
+</li>
+<li><a href="#cpp">C++</a><ul>
+<li><a href="#cpp-computer-vision">Computer Vision</a></li>
+<li><a href="#cpp-general-purpose-machine-learning">General-Purpose Machine Learning</a></li>
+<li><a href="#cpp-natural-language-processing">Natural Language Processing</a></li>
+<li><a href="#cpp-speech-recognition">Speech Recognition</a></li>
+<li><a href="#cpp-sequence-analysis">Sequence Analysis</a></li>
+<li><a href="#cpp-gesture-detection">Gesture Detection</a></li>
+<li><a href="#cpp-reinforcement-learning">Reinforcement Learning</a></li>
+</ul>
+</li>
+<li><a href="#common-lisp">Common Lisp</a><ul>
+<li><a href="#common-lisp-general-purpose-machine-learning">General-Purpose Machine Learning</a></li>
+</ul>
+</li>
+<li><a href="#clojure">Clojure</a><ul>
+<li><a href="#clojure-natural-language-processing">Natural Language Processing</a></li>
+<li><a href="#clojure-general-purpose-machine-learning">General-Purpose Machine Learning</a></li>
+<li><a href="#clojure-deep-learning">Deep Learning</a></li>
+<li><a href="#clojure-data-analysis--data-visualization">Data Analysis</a></li>
+<li><a href="#clojure-data-visualization">Data Visualization</a></li>
+<li><a href="#clojure-interop">Interop</a></li>
+<li><a href="#clojure-misc">Misc</a></li>
+<li><a href="#clojure-extra">Extra</a></li>
+</ul>
+</li>
+<li><a href="#crystal">Crystal</a><ul>
+<li><a href="#crystal-general-purpose-machine-learning">General-Purpose Machine Learning</a></li>
+</ul>
+</li>
+<li><a href="#elixir">Elixir</a><ul>
+<li><a href="#elixir-general-purpose-machine-learning">General-Purpose Machine Learning</a></li>
+<li><a href="#elixir-natural-language-processing">Natural Language Processing</a></li>
+</ul>
+</li>
+<li><a href="#erlang">Erlang</a><ul>
+<li><a href="#erlang-general-purpose-machine-learning">General-Purpose Machine Learning</a></li>
+</ul>
+</li>
+<li><a href="#fortran">Fortran</a><ul>
+<li><a href="#fortran-general-purpose-machine-learning">General-Purpose Machine Learning</a></li>
+<li><a href="#fortran-data-analysis--data-visualization">Data Analysis / Data Visualization</a></li>
+</ul>
+</li>
+<li><a href="#go">Go</a><ul>
+<li><a href="#go-natural-language-processing">Natural Language Processing</a></li>
+<li><a href="#go-general-purpose-machine-learning">General-Purpose Machine Learning</a></li>
+<li><a href="#go-spatial-analysis-and-geometry">Spatial analysis and geometry</a></li>
+<li><a href="#go-data-analysis--data-visualization">Data Analysis / Data Visualization</a></li>
+<li><a href="#go-computer-vision">Computer vision</a></li>
+<li><a href="#go-reinforcement-learning">Reinforcement learning</a></li>
+</ul>
+</li>
+<li><a href="#haskell">Haskell</a><ul>
+<li><a href="#haskell-general-purpose-machine-learning">General-Purpose Machine Learning</a></li>
+</ul>
+</li>
+<li><a href="#java">Java</a><ul>
+<li><a href="#java-natural-language-processing">Natural Language Processing</a></li>
+<li><a href="#java-general-purpose-machine-learning">General-Purpose Machine Learning</a></li>
+<li><a href="#java-speech-recognition">Speech Recognition</a></li>
+<li><a href="#java-data-analysis--data-visualization">Data Analysis / Data Visualization</a></li>
+<li><a href="#java-deep-learning">Deep Learning</a></li>
+</ul>
+</li>
+<li><a href="#javascript">Javascript</a><ul>
+<li><a href="#javascript-natural-language-processing">Natural Language Processing</a></li>
+<li><a href="#javascript-data-analysis--data-visualization">Data Analysis / Data Visualization</a></li>
+<li><a href="#javascript-general-purpose-machine-learning">General-Purpose Machine Learning</a></li>
+<li><a href="#javascript-misc">Misc</a></li>
+<li><a href="#javascript-demos-and-scripts">Demos and Scripts</a></li>
+</ul>
+</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'machine-learning_README.md';
 
         fetch(markdownFile)
@@ -48,21 +277,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

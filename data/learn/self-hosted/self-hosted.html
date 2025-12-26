@@ -8,38 +8,159 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Awesome Selfhosted Awesome Selfhosted - Awesome List Resources">
-    <title>Awesome Selfhosted Awesome Selfhosted</title>
+    <meta name="description" content="Self-hosting is the practice of hosting and managing applications on your own server(s) instead of consuming from SaaSS providers. This is a list of Free...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome-Selfhosted - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome-Selfhosted</h1>
+<p><a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="_static/awesome.png" /></a> <a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data/issues/1"><img alt="" src="https://github.com/awesome-selfhosted/awesome-selfhosted-data/actions/workflows/check-dead-links.yml/badge.svg" /></a> <a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data/issues/1"><img alt="" src="https://github.com/awesome-selfhosted/awesome-selfhosted-data/actions/workflows/check-unmaintained-projects.yml/badge.svg" /></a> <a href="https://liberapay.com/awesome-selfhosted/"><img alt="" src="https://img.shields.io/liberapay/goal/awesome-selfhosted?logo=liberapay" /></a></p>
+<p>Self-hosting is the practice of hosting and managing applications on your own server(s) instead of consuming from <a href="https://www.gnu.org/philosophy/who-does-that-server-really-serve.html">SaaSS</a> providers.</p>
+<p>This is a list of <a href="https://en.wikipedia.org/wiki/Free_software">Free</a> Software <a href="https://en.wikipedia.org/wiki/Network_service">network services</a> and <a href="https://en.wikipedia.org/wiki/Web_application">web applications</a> which can be hosted on your own server(s). Non-Free software is listed on the <a href="https://github.com/awesome-selfhosted/awesome-selfhosted/blob/master/non-free.md">Non-Free</a> page.</p>
+<p><strong><a href="https://awesome-selfhosted.net/">HTML version</a> (recommended)</strong>, <a href="https://github.com/awesome-selfhosted/awesome-selfhosted">Markdown version</a> (legacy).</p>
+<p>See <a href="#contributing">Contributing</a>.</p>
+<hr />
+<h2>Table of contents</h2>
+<ul>
+<li><a href="#software">Software</a></li>
+<li><a href="#analytics">Analytics</a></li>
+<li><a href="#archiving-and-digital-preservation-dp">Archiving and Digital Preservation (DP)</a></li>
+<li><a href="#automation">Automation</a></li>
+<li><a href="#backup">Backup</a></li>
+<li><a href="#blogging-platforms">Blogging Platforms</a></li>
+<li><a href="#booking-and-scheduling">Booking and Scheduling</a></li>
+<li><a href="#bookmarks-and-link-sharing">Bookmarks and Link Sharing</a></li>
+<li><a href="#calendar--contacts">Calendar &amp; Contacts</a></li>
+<li><a href="#communication---custom-communication-systems">Communication - Custom Communication Systems</a></li>
+<li><a href="#communication---email---complete-solutions">Communication - Email - Complete Solutions</a></li>
+<li><a href="#communication---email---mail-delivery-agents">Communication - Email - Mail Delivery Agents</a></li>
+<li><a href="#communication---email---mail-transfer-agents">Communication - Email - Mail Transfer Agents</a></li>
+<li><a href="#communication---email---mailing-lists-and-newsletters">Communication - Email - Mailing Lists and Newsletters</a></li>
+<li><a href="#communication---email---webmail-clients">Communication - Email - Webmail Clients</a></li>
+<li><a href="#communication---irc">Communication - IRC</a></li>
+<li><a href="#communication---sip">Communication - SIP</a></li>
+<li><a href="#communication---social-networks-and-forums">Communication - Social Networks and Forums</a></li>
+<li><a href="#communication---video-conferencing">Communication - Video Conferencing</a></li>
+<li><a href="#communication---xmpp---servers">Communication - XMPP - Servers</a></li>
+<li><a href="#communication---xmpp---web-clients">Communication - XMPP - Web Clients</a></li>
+<li><a href="#community-supported-agriculture-csa">Community-Supported Agriculture (CSA)</a></li>
+<li><a href="#conference-management">Conference Management</a></li>
+<li><a href="#content-management-systems-cms">Content Management Systems (CMS)</a></li>
+<li><a href="#customer-relationship-management-crm">Customer Relationship Management (CRM)</a></li>
+<li><a href="#database-management">Database Management</a></li>
+<li><a href="#dns">DNS</a></li>
+<li><a href="#document-management">Document Management</a></li>
+<li><a href="#document-management---e-books">Document Management - E-books</a></li>
+<li><a href="#document-management---institutional-repository-and-digital-library-software">Document Management - Institutional Repository and Digital Library Software</a></li>
+<li><a href="#document-management---integrated-library-systems-ils">Document Management - Integrated Library Systems (ILS)</a></li>
+<li><a href="#e-commerce">E-commerce</a></li>
+<li><a href="#federated-identity--authentication">Federated Identity &amp; Authentication</a></li>
+<li><a href="#feed-readers">Feed Readers</a></li>
+<li><a href="#file-transfer--synchronization">File Transfer &amp; Synchronization</a></li>
+<li><a href="#file-transfer---distributed-filesystems">File Transfer - Distributed Filesystems</a></li>
+<li><a href="#file-transfer---object-storage--file-servers">File Transfer - Object Storage &amp; File Servers</a></li>
+<li><a href="#file-transfer---peer-to-peer-filesharing">File Transfer - Peer-to-peer Filesharing</a></li>
+<li><a href="#file-transfer---single-click--drag-n-drop-upload">File Transfer - Single-click &amp; Drag-n-drop Upload</a></li>
+<li><a href="#file-transfer---web-based-file-managers">File Transfer - Web-based File Managers</a></li>
+<li><a href="#games">Games</a></li>
+<li><a href="#games---administrative-utilities--control-panels">Games - Administrative Utilities &amp; Control Panels</a></li>
+<li><a href="#genealogy">Genealogy</a></li>
+<li><a href="#generative-artificial-intelligence-genai">Generative Artificial Intelligence (GenAI)</a></li>
+<li><a href="#groupware">Groupware</a></li>
+<li><a href="#health-and-fitness">Health and Fitness</a></li>
+<li><a href="#human-resources-management-hrm">Human Resources Management (HRM)</a></li>
+<li><a href="#identity-management">Identity Management</a></li>
+<li><a href="#internet-of-things-iot">Internet of Things (IoT)</a></li>
+<li><a href="#inventory-management">Inventory Management</a></li>
+<li><a href="#knowledge-management-tools">Knowledge Management Tools</a></li>
+<li><a href="#learning-and-courses">Learning and Courses</a></li>
+<li><a href="#manufacturing">Manufacturing</a></li>
+<li><a href="#maps-and-global-positioning-system-gps">Maps and Global Positioning System (GPS)</a></li>
+<li><a href="#media-management">Media Management</a></li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome-Selfhosted</h1>
+<p><a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="_static/awesome.png" /></a> <a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data/issues/1"><img alt="" src="https://github.com/awesome-selfhosted/awesome-selfhosted-data/actions/workflows/check-dead-links.yml/badge.svg" /></a> <a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data/issues/1"><img alt="" src="https://github.com/awesome-selfhosted/awesome-selfhosted-data/actions/workflows/check-unmaintained-projects.yml/badge.svg" /></a> <a href="https://liberapay.com/awesome-selfhosted/"><img alt="" src="https://img.shields.io/liberapay/goal/awesome-selfhosted?logo=liberapay" /></a></p>
+<p>Self-hosting is the practice of hosting and managing applications on your own server(s) instead of consuming from <a href="https://www.gnu.org/philosophy/who-does-that-server-really-serve.html">SaaSS</a> providers.</p>
+<p>This is a list of <a href="https://en.wikipedia.org/wiki/Free_software">Free</a> Software <a href="https://en.wikipedia.org/wiki/Network_service">network services</a> and <a href="https://en.wikipedia.org/wiki/Web_application">web applications</a> which can be hosted on your own server(s). Non-Free software is listed on the <a href="https://github.com/awesome-selfhosted/awesome-selfhosted/blob/master/non-free.md">Non-Free</a> page.</p>
+<p><strong><a href="https://awesome-selfhosted.net/">HTML version</a> (recommended)</strong>, <a href="https://github.com/awesome-selfhosted/awesome-selfhosted">Markdown version</a> (legacy).</p>
+<p>See <a href="#contributing">Contributing</a>.</p>
+<hr />
+<h2>Table of contents</h2>
+<ul>
+<li><a href="#software">Software</a></li>
+<li><a href="#analytics">Analytics</a></li>
+<li><a href="#archiving-and-digital-preservation-dp">Archiving and Digital Preservation (DP)</a></li>
+<li><a href="#automation">Automation</a></li>
+<li><a href="#backup">Backup</a></li>
+<li><a href="#blogging-platforms">Blogging Platforms</a></li>
+<li><a href="#booking-and-scheduling">Booking and Scheduling</a></li>
+<li><a href="#bookmarks-and-link-sharing">Bookmarks and Link Sharing</a></li>
+<li><a href="#calendar--contacts">Calendar &amp; Contacts</a></li>
+<li><a href="#communication---custom-communication-systems">Communication - Custom Communication Systems</a></li>
+<li><a href="#communication---email---complete-solutions">Communication - Email - Complete Solutions</a></li>
+<li><a href="#communication---email---mail-delivery-agents">Communication - Email - Mail Delivery Agents</a></li>
+<li><a href="#communication---email---mail-transfer-agents">Communication - Email - Mail Transfer Agents</a></li>
+<li><a href="#communication---email---mailing-lists-and-newsletters">Communication - Email - Mailing Lists and Newsletters</a></li>
+<li><a href="#communication---email---webmail-clients">Communication - Email - Webmail Clients</a></li>
+<li><a href="#communication---irc">Communication - IRC</a></li>
+<li><a href="#communication---sip">Communication - SIP</a></li>
+<li><a href="#communication---social-networks-and-forums">Communication - Social Networks and Forums</a></li>
+<li><a href="#communication---video-conferencing">Communication - Video Conferencing</a></li>
+<li><a href="#communication---xmpp---servers">Communication - XMPP - Servers</a></li>
+<li><a href="#communication---xmpp---web-clients">Communication - XMPP - Web Clients</a></li>
+<li><a href="#community-supported-agriculture-csa">Community-Supported Agriculture (CSA)</a></li>
+<li><a href="#conference-management">Conference Management</a></li>
+<li><a href="#content-management-systems-cms">Content Management Systems (CMS)</a></li>
+<li><a href="#customer-relationship-management-crm">Customer Relationship Management (CRM)</a></li>
+<li><a href="#database-management">Database Management</a></li>
+<li><a href="#dns">DNS</a></li>
+<li><a href="#document-management">Document Management</a></li>
+<li><a href="#document-management---e-books">Document Management - E-books</a></li>
+<li><a href="#document-management---institutional-repository-and-digital-library-software">Document Management - Institutional Repository and Digital Library Software</a></li>
+<li><a href="#document-management---integrated-library-systems-ils">Document Management - Integrated Library Systems (ILS)</a></li>
+<li><a href="#e-commerce">E-commerce</a></li>
+<li><a href="#federated-identity--authentication">Federated Identity &amp; Authentication</a></li>
+<li><a href="#feed-readers">Feed Readers</a></li>
+<li><a href="#file-transfer--synchronization">File Transfer &amp; Synchronization</a></li>
+<li><a href="#file-transfer---distributed-filesystems">File Transfer - Distributed Filesystems</a></li>
+<li><a href="#file-transfer---object-storage--file-servers">File Transfer - Object Storage &amp; File Servers</a></li>
+<li><a href="#file-transfer---peer-to-peer-filesharing">File Transfer - Peer-to-peer Filesharing</a></li>
+<li><a href="#file-transfer---single-click--drag-n-drop-upload">File Transfer - Single-click &amp; Drag-n-drop Upload</a></li>
+<li><a href="#file-transfer---web-based-file-managers">File Transfer - Web-based File Managers</a></li>
+<li><a href="#games">Games</a></li>
+<li><a href="#games---administrative-utilities--control-panels">Games - Administrative Utilities &amp; Control Panels</a></li>
+<li><a href="#genealogy">Genealogy</a></li>
+<li><a href="#generative-artificial-intelligence-genai">Generative Artificial Intelligence (GenAI)</a></li>
+<li><a href="#groupware">Groupware</a></li>
+<li><a href="#health-and-fitness">Health and Fitness</a></li>
+<li><a href="#human-resources-management-hrm">Human Resources Management (HRM)</a></li>
+<li><a href="#identity-management">Identity Management</a></li>
+<li><a href="#internet-of-things-iot">Internet of Things (IoT)</a></li>
+<li><a href="#inventory-management">Inventory Management</a></li>
+<li><a href="#knowledge-management-tools">Knowledge Management Tools</a></li>
+<li><a href="#learning-and-courses">Learning and Courses</a></li>
+<li><a href="#manufacturing">Manufacturing</a></li>
+<li><a href="#maps-and-global-positioning-system-gps">Maps and Global Positioning System (GPS)</a></li>
+<li><a href="#media-management">Media Management</a></li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'self-hosted_README.md';
 
         fetch(markdownFile)
@@ -48,21 +169,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

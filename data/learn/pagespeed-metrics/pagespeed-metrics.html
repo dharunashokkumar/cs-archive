@@ -8,38 +8,183 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Csabapalfi Awesome Pagespeed Metrics - Awesome List Resources">
-    <title>Csabapalfi Awesome Pagespeed Metrics</title>
+    <meta name="description" content="> Metrics to help understand page speed and user experience. If you're just getting started check out web.dev/metrics first. - Concepts - Lab Data (Synthetic...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Page Speed Metrics [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Page Speed Metrics <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<blockquote>
+<p>Metrics to help understand page speed and user experience.</p>
+</blockquote>
+<p>If you're just getting started check out <a href="https://web.dev/metrics/">web.dev/metrics</a> first.</p>
+<h2>Contents</h2>
+<!-- toc -->
+
+<ul>
+<li><a href="#concepts">Concepts</a></li>
+<li><a href="#lab-data-synthetic-measurements">Lab Data (Synthetic Measurements)</a></li>
+<li><a href="#field-data-real-user-monitoring---rum">Field Data (Real User Monitoring - RUM)</a></li>
+<li><a href="#critical-rendering-path">Critical rendering path</a></li>
+<li><a href="#long-tasks">Long tasks</a></li>
+<li><a href="#user-centric-metrics">User-centric metrics</a></li>
+<li><a href="#rendering-metrics">Rendering metrics</a></li>
+<li><a href="#first-contentful-paint-fcp">First Contentful Paint (FCP)</a></li>
+<li><a href="#largest-contentful-paint-lcp">Largest Contentful Paint (LCP)</a></li>
+<li><a href="#cumulative-layout-shift-cls">Cumulative Layout Shift (CLS)</a></li>
+<li><a href="#visually-complete">Visually Complete</a></li>
+<li><a href="#speed-index">Speed Index</a></li>
+<li><a href="#hero-element-timing">(Hero) Element Timing</a></li>
+<li><a href="#interactivity-metrics">Interactivity metrics</a></li>
+<li><a href="#time-to-interactive-tti">Time to Interactive (TTI)</a></li>
+<li><a href="#total-blocking-time-tbt">Total Blocking Time (TBT)</a></li>
+<li><a href="#first-input-delay-fid">First Input Delay (FID)</a></li>
+<li><a href="#max-potential-first-input-delay">Max Potential First Input Delay</a></li>
+<li><a href="#network-metrics">Network metrics</a></li>
+<li><a href="#dns-latency">DNS latency</a></li>
+<li><a href="#tcp-and-ssltls-latency">TCP and SSL/TLS latency</a></li>
+<li><a href="#time-to-first-byte-ttfb">Time to First Byte (TTFB)</a></li>
+<li><a href="#transferred-bytes">Transferred bytes</a></li>
+<li><a href="#other-metrics">Other metrics</a></li>
+<li><a href="#google-pagespeed-insights-score">Google PageSpeed Insights score</a></li>
+<li><a href="#user-timing">User Timing</a></li>
+<li><a href="#server-timing">Server Timing</a></li>
+<li><a href="#frame-rate">Frame rate</a></li>
+<li><a href="#domcontentloaded">DOMContentLoaded</a></li>
+<li><a href="#windowload">window.load</a></li>
+</ul>
+<!-- tocstop -->
+
+<h2>Concepts</h2>
+<h3>Lab Data (Synthetic Measurements)</h3>
+<p>Make a request to your page with a tool and evaluate performance. Be sure to make it realistic (e.g. by throttling network and CPU) and reduce noise (e.g. by running multiple times).</p>
+<ul>
+<li><a href="https://developers.google.com/web/tools/lighthouse/">Lighthouse</a> - A tool built on Google Chrome to audit web pages. You can run it from Chrome DevTools, a Chrome Extension or from the command line (even with headless Chrome).</li>
+<li><a href="https://developers.google.com/speed/pagespeed/insights/">Google PageSpeed Insights</a> - Free and hosted Lighthouse reporting (and more) by Google.</li>
+<li><a href="https://www.webpagetest.org/">WebpageTest</a> - Free and hosted web performance testing (also an open source project).</li>
+<li><a href="https://www.sitespeed.io/">Sitespeed.io</a> - A set of open source performance monitoring tools.</li>
+<li><a href="https://calibreapp.com">Calibre</a> - Web performance monitoring SaaS.</li>
+<li><a href="https://treo.sh/">treo.sh</a> - Web performance monitoring SaaS.</li>
+<li><a href="https://speedcurve.com/">SpeedCurve</a> - Web performance monitoring SaaS.</li>
+<li><a href="https://awesometechstack.com/">AwesomeTechStack</a> - Website awesomeness monitoring Tool.</li>
+</ul>
+<hr />
+<h3>Field Data (Real User Monitoring - RUM)</h3>
+<p>Collect performance data from real users visiting your page. Be mindful of the actual overhead, as it runs in your user's browser and watch out for browser support of more recent metrics (e.g. compared to your user-base).</p>
+<ul>
+<li><a href="https://philipwalton.com/articles/the-google-analytics-setup-i-use-on-every-site-i-build/#performance-tracking">Performance tracking with Google Analytics (GA)</a></li>
+<li><a href="https://developers.google.com/web/tools/chrome-user-experience-report/">Chrome User Experience Report (CrUX)</a></li>
+<li><a href="https://developers.google.com/web/updates/2017/06/user-centric-performance-metrics#load_abandonment">Load abandonment</a> - Track  <code>visibilitychange</code> to account for survivorship bias.</li>
+<li><a href="https://speedcurve.com/features/lux/">SpeedCurve LUX</a> - Real User Monitoring SaaS.</li>
+<li><a href="https://www.akamai.com/uk/en/products/performance/mpulse-real-user-monitoring.jsp">Akamai mPulse</a> - Real User Monitoring SaaS.</li>
+<li><a href="https://sematext.com/experience/">Sematext Experience</a> - Real User Monitoring SaaS.</li>
+<li><a href="https://zizzamia.github.io/perfume/">Perfume.js</a> - Open Source Library to collect Field Data.</li>
+<li><a href="https://github.com/GoogleChrome/web-vitals">Web Vitals</a> - Open Source Library to collect Field Data.</li>
+<li><a href="https://vercel.com/docs/analytics">Vercel Analytics</a> - Real User Monitoring based on Web Vitals.</li>
+</ul>
+<h3>Critical rendering path</h3>
+<p>The critical rendering path is <strong>everything that happens between receiving network bytes and rendering something on the screen</strong>. To optimize any rendering metrics like <a href="#first-contentful-paint-fcp">First Contentful Paint (FCP)</a> or <a href="#speed-index">Speed Index</a> you have to understand how the critical rendering path works.</p>
+<ul>
+<li><a href="https://developers.google.com/web/fundamentals/performance/critical-rendering-path/">Critical rendering path</a></li>
+</ul>
+<h3>Long tasks</h3>
+<p>The browser Main Thread that handles user input is also the one executing JavaScript (among many other things). Blocking the Main Thread for too long can make your page unresponsive.</p>
+<p>A user perceives any visual change within 100ms as instant. Any task blocking the Main Thread by <strong>taking longer than 50ms is considered a long task</strong> (as it might make the browser unresponsive to user input).</p>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Page Speed Metrics <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<blockquote>
+<p>Metrics to help understand page speed and user experience.</p>
+</blockquote>
+<p>If you're just getting started check out <a href="https://web.dev/metrics/">web.dev/metrics</a> first.</p>
+<h2>Contents</h2>
+<!-- toc -->
+
+<ul>
+<li><a href="#concepts">Concepts</a></li>
+<li><a href="#lab-data-synthetic-measurements">Lab Data (Synthetic Measurements)</a></li>
+<li><a href="#field-data-real-user-monitoring---rum">Field Data (Real User Monitoring - RUM)</a></li>
+<li><a href="#critical-rendering-path">Critical rendering path</a></li>
+<li><a href="#long-tasks">Long tasks</a></li>
+<li><a href="#user-centric-metrics">User-centric metrics</a></li>
+<li><a href="#rendering-metrics">Rendering metrics</a></li>
+<li><a href="#first-contentful-paint-fcp">First Contentful Paint (FCP)</a></li>
+<li><a href="#largest-contentful-paint-lcp">Largest Contentful Paint (LCP)</a></li>
+<li><a href="#cumulative-layout-shift-cls">Cumulative Layout Shift (CLS)</a></li>
+<li><a href="#visually-complete">Visually Complete</a></li>
+<li><a href="#speed-index">Speed Index</a></li>
+<li><a href="#hero-element-timing">(Hero) Element Timing</a></li>
+<li><a href="#interactivity-metrics">Interactivity metrics</a></li>
+<li><a href="#time-to-interactive-tti">Time to Interactive (TTI)</a></li>
+<li><a href="#total-blocking-time-tbt">Total Blocking Time (TBT)</a></li>
+<li><a href="#first-input-delay-fid">First Input Delay (FID)</a></li>
+<li><a href="#max-potential-first-input-delay">Max Potential First Input Delay</a></li>
+<li><a href="#network-metrics">Network metrics</a></li>
+<li><a href="#dns-latency">DNS latency</a></li>
+<li><a href="#tcp-and-ssltls-latency">TCP and SSL/TLS latency</a></li>
+<li><a href="#time-to-first-byte-ttfb">Time to First Byte (TTFB)</a></li>
+<li><a href="#transferred-bytes">Transferred bytes</a></li>
+<li><a href="#other-metrics">Other metrics</a></li>
+<li><a href="#google-pagespeed-insights-score">Google PageSpeed Insights score</a></li>
+<li><a href="#user-timing">User Timing</a></li>
+<li><a href="#server-timing">Server Timing</a></li>
+<li><a href="#frame-rate">Frame rate</a></li>
+<li><a href="#domcontentloaded">DOMContentLoaded</a></li>
+<li><a href="#windowload">window.load</a></li>
+</ul>
+<!-- tocstop -->
+
+<h2>Concepts</h2>
+<h3>Lab Data (Synthetic Measurements)</h3>
+<p>Make a request to your page with a tool and evaluate performance. Be sure to make it realistic (e.g. by throttling network and CPU) and reduce noise (e.g. by running multiple times).</p>
+<ul>
+<li><a href="https://developers.google.com/web/tools/lighthouse/">Lighthouse</a> - A tool built on Google Chrome to audit web pages. You can run it from Chrome DevTools, a Chrome Extension or from the command line (even with headless Chrome).</li>
+<li><a href="https://developers.google.com/speed/pagespeed/insights/">Google PageSpeed Insights</a> - Free and hosted Lighthouse reporting (and more) by Google.</li>
+<li><a href="https://www.webpagetest.org/">WebpageTest</a> - Free and hosted web performance testing (also an open source project).</li>
+<li><a href="https://www.sitespeed.io/">Sitespeed.io</a> - A set of open source performance monitoring tools.</li>
+<li><a href="https://calibreapp.com">Calibre</a> - Web performance monitoring SaaS.</li>
+<li><a href="https://treo.sh/">treo.sh</a> - Web performance monitoring SaaS.</li>
+<li><a href="https://speedcurve.com/">SpeedCurve</a> - Web performance monitoring SaaS.</li>
+<li><a href="https://awesometechstack.com/">AwesomeTechStack</a> - Website awesomeness monitoring Tool.</li>
+</ul>
+<hr />
+<h3>Field Data (Real User Monitoring - RUM)</h3>
+<p>Collect performance data from real users visiting your page. Be mindful of the actual overhead, as it runs in your user's browser and watch out for browser support of more recent metrics (e.g. compared to your user-base).</p>
+<ul>
+<li><a href="https://philipwalton.com/articles/the-google-analytics-setup-i-use-on-every-site-i-build/#performance-tracking">Performance tracking with Google Analytics (GA)</a></li>
+<li><a href="https://developers.google.com/web/tools/chrome-user-experience-report/">Chrome User Experience Report (CrUX)</a></li>
+<li><a href="https://developers.google.com/web/updates/2017/06/user-centric-performance-metrics#load_abandonment">Load abandonment</a> - Track  <code>visibilitychange</code> to account for survivorship bias.</li>
+<li><a href="https://speedcurve.com/features/lux/">SpeedCurve LUX</a> - Real User Monitoring SaaS.</li>
+<li><a href="https://www.akamai.com/uk/en/products/performance/mpulse-real-user-monitoring.jsp">Akamai mPulse</a> - Real User Monitoring SaaS.</li>
+<li><a href="https://sematext.com/experience/">Sematext Experience</a> - Real User Monitoring SaaS.</li>
+<li><a href="https://zizzamia.github.io/perfume/">Perfume.js</a> - Open Source Library to collect Field Data.</li>
+<li><a href="https://github.com/GoogleChrome/web-vitals">Web Vitals</a> - Open Source Library to collect Field Data.</li>
+<li><a href="https://vercel.com/docs/analytics">Vercel Analytics</a> - Real User Monitoring based on Web Vitals.</li>
+</ul>
+<h3>Critical rendering path</h3>
+<p>The critical rendering path is <strong>everything that happens between receiving network bytes and rendering something on the screen</strong>. To optimize any rendering metrics like <a href="#first-contentful-paint-fcp">First Contentful Paint (FCP)</a> or <a href="#speed-index">Speed Index</a> you have to understand how the critical rendering path works.</p>
+<ul>
+<li><a href="https://developers.google.com/web/fundamentals/performance/critical-rendering-path/">Critical rendering path</a></li>
+</ul>
+<h3>Long tasks</h3>
+<p>The browser Main Thread that handles user input is also the one executing JavaScript (among many other things). Blocking the Main Thread for too long can make your page unresponsive.</p>
+<p>A user perceives any visual change within 100ms as instant. Any task blocking the Main Thread by <strong>taking longer than 50ms is considered a long task</strong> (as it might make the browser unresponsive to user input).</p>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'pagespeed-metrics_README.md';
 
         fetch(markdownFile)
@@ -48,21 +193,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

@@ -8,38 +8,139 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Margaretmz Awesome Tensorflow Lite - Awesome List Resources">
-    <title>Margaretmz Awesome Tensorflow Lite</title>
+    <meta name="description" content="TensorFlow Lite is a set of tools that help convert and optimize TensorFlow models to run on mobile and edge devices. It's currently running on more than 4...">
+    <meta name="robots" content="index, follow">
+    <title>Tensorflow Lite - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <p align="center">
+    <img src="images/awesome-tflite.png" alt="awesome tflite" width="500">
+</p>
+
+<!-- omit in toc -->
+<h1>Awesome TensorFlow Lite <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a> <a href="http://makeapullrequest.com"><img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" /></a> <a href="https://twitter.com/margaretmz"><img alt="Twitter" src="https://img.shields.io/badge/Twitter-%40margaretmz-blue" /></a></h1>
+<p><a href="https://www.tensorflow.org/lite">TensorFlow Lite</a> is a set of tools that help convert and optimize TensorFlow models to run on mobile and edge devices. It's currently running on more than 4 billion devices! With TensorFlow 2.x, you can train a model with tf.Keras, easily convert a model to .tflite and deploy it; or you can download a pretrained TensorFlow Lite model from the model zoo.</p>
+<p>This is an awesome list of TensorFlow Lite models with sample apps, helpful tools and learning resources -
+* Showcase what the community has built with TensorFlow Lite
+* Put all the samples side-by-side for easy reference
+* Share knowledge and learning resources</p>
+<p>Please submit a PR if you would like to contribute and follow the guidelines <a href="CONTRIBUTING.md">here</a>.</p>
+<!-- omit in toc -->
+<p>## Contents
+- <a href="#past-announcements">Past announcements:</a>
+- <a href="#models-with-samples">Models with samples</a>
+  - <a href="#computer-vision">Computer vision</a>
+    - <a href="#classification">Classification</a>
+    - <a href="#detection">Detection</a>
+    - <a href="#segmentation">Segmentation</a>
+    - <a href="#style-transfer">Style Transfer</a>
+    - <a href="#generative">Generative</a>
+    - <a href="#post-estimation">Post estimation</a>
+    - <a href="#other">Other</a>
+  - <a href="#text">Text</a>
+  - <a href="#speech">Speech</a>
+  - <a href="#recommendation">Recommendation</a>
+  - <a href="#game">Game</a>
+- <a href="#model-zoo">Model zoo</a>
+  - <a href="#tensorflow-lite-models">TensorFlow Lite models</a>
+  - <a href="#tensorflow-models">TensorFlow models</a>
+- <a href="#ideas-and-inspiration">Ideas and Inspiration</a>
+- <a href="#ml-kit-examples">ML Kit examples</a>
+- <a href="#plugins-and-sdks">Plugins and SDKs</a>
+- <a href="#helpful-links">Helpful links</a>
+- <a href="#learning-resources">Learning resources</a>
+  - <a href="#blog-posts">Blog posts</a>
+  - <a href="#books">Books</a>
+  - <a href="#videos">Videos</a>
+  - <a href="#podcasts">Podcasts</a>
+  - <a href="#moocs">MOOCs</a></p>
+<h2>Past announcements:</h2>
+<p>Here are some past feature annoucements of TensorFlow Lite:
+* <a href="https://groups.google.com/a/tensorflow.org/d/msg/tflite/Z_h7706dt8Q/sNrjPj4yGgAJ">Announcement of the new converter</a> - <a href="https://medium.com/tensorflow/mlir-a-new-intermediate-representation-and-compiler-framework-beba999ed18d">MLIR</a>-based and enables conversion of new classes of models such as Mask R-CNN and Mobile BERT etc., supports functional control flow and better error handling during conversion. Enabled by default in the nightly builds.
+* <a href="https://github.com/tensorflow/tflite-support/tree/master/tensorflow_lite_support/java">Android Support Library</a> - Makes mobile development easier (<a href="https://github.com/tensorflow/examples/blob/master/lite/examples/image_classification/android/EXPLORE_THE_CODE.md">Android</a> sample code).
+* <a href="https://www.tensorflow.org/lite/guide/model_maker">Model Maker</a> - Create your custom <a href="https://github.com/tensorflow/examples/tree/master/tensorflow_examples/lite/model_maker">image &amp; text</a> classification models easily in a few lines of code. See below the Icon Classifier for a tutorial by the community.
+* <a href="https://blog.tensorflow.org/2019/12/example-on-device-model-personalization.html">On-device training</a> - It is finally here! Currently limited to transfer learning for image classification only but it's a great start. See the official <a href="https://github.com/tensorflow/examples/blob/master/lite/examples/model_personalization/README.md">Android</a> sample code and another one from the community (<a href="https://aqibsaeed.github.io/on-device-activity-recognition">Blog</a> | <a href="https://github.com/aqibsaeed/on-device-activity-recognition">Android</a>).
+* <a href="https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/g3doc/performance/hexagon_delegate.md">Hexagon delegate</a> - How to use the Hexagon Delegate to speed up model inference on mobile and edge devices. Also see blog post  <a href="https://blog.tensorflow.org/2019/12/accelerating-tensorflow-lite-on-qualcomm.html">Accelerating TensorFlow Lite on Qualcomm Hexagon DSPs</a>.
+* <a href="https://www.tensorflow.org/lite/convert/metadata">Model Metadata</a> - Provides a standard for model descriptions which also enables <a href="https://www.tensorflow.org/lite/inference_with_metadata/codegen">Code Gen and Android Studio ML Model Binding</a>.</p>
+<h2>Models with samples</h2>
+<p>Here are the TensorFlow Lite models with app / device implementations, and references.
+Note: pretrained TensorFlow Lite models from MediaPipe are included, which you can implement with or without MediaPipe.</p>
+<h3>Computer vision</h3>
+<h4>Classification</h4>
+<p>| Task                            | Model                                                                                                                                                             | App | Reference                                                                                                                                                                                                                                                                                                                                                                                                       | Source             |</p>
+        </noscript>
+        <div id="dynamic-content">
+            <p align="center">
+    <img src="images/awesome-tflite.png" alt="awesome tflite" width="500">
+</p>
+
+<!-- omit in toc -->
+<h1>Awesome TensorFlow Lite <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a> <a href="http://makeapullrequest.com"><img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" /></a> <a href="https://twitter.com/margaretmz"><img alt="Twitter" src="https://img.shields.io/badge/Twitter-%40margaretmz-blue" /></a></h1>
+<p><a href="https://www.tensorflow.org/lite">TensorFlow Lite</a> is a set of tools that help convert and optimize TensorFlow models to run on mobile and edge devices. It's currently running on more than 4 billion devices! With TensorFlow 2.x, you can train a model with tf.Keras, easily convert a model to .tflite and deploy it; or you can download a pretrained TensorFlow Lite model from the model zoo.</p>
+<p>This is an awesome list of TensorFlow Lite models with sample apps, helpful tools and learning resources -
+* Showcase what the community has built with TensorFlow Lite
+* Put all the samples side-by-side for easy reference
+* Share knowledge and learning resources</p>
+<p>Please submit a PR if you would like to contribute and follow the guidelines <a href="CONTRIBUTING.md">here</a>.</p>
+<!-- omit in toc -->
+<p>## Contents
+- <a href="#past-announcements">Past announcements:</a>
+- <a href="#models-with-samples">Models with samples</a>
+  - <a href="#computer-vision">Computer vision</a>
+    - <a href="#classification">Classification</a>
+    - <a href="#detection">Detection</a>
+    - <a href="#segmentation">Segmentation</a>
+    - <a href="#style-transfer">Style Transfer</a>
+    - <a href="#generative">Generative</a>
+    - <a href="#post-estimation">Post estimation</a>
+    - <a href="#other">Other</a>
+  - <a href="#text">Text</a>
+  - <a href="#speech">Speech</a>
+  - <a href="#recommendation">Recommendation</a>
+  - <a href="#game">Game</a>
+- <a href="#model-zoo">Model zoo</a>
+  - <a href="#tensorflow-lite-models">TensorFlow Lite models</a>
+  - <a href="#tensorflow-models">TensorFlow models</a>
+- <a href="#ideas-and-inspiration">Ideas and Inspiration</a>
+- <a href="#ml-kit-examples">ML Kit examples</a>
+- <a href="#plugins-and-sdks">Plugins and SDKs</a>
+- <a href="#helpful-links">Helpful links</a>
+- <a href="#learning-resources">Learning resources</a>
+  - <a href="#blog-posts">Blog posts</a>
+  - <a href="#books">Books</a>
+  - <a href="#videos">Videos</a>
+  - <a href="#podcasts">Podcasts</a>
+  - <a href="#moocs">MOOCs</a></p>
+<h2>Past announcements:</h2>
+<p>Here are some past feature annoucements of TensorFlow Lite:
+* <a href="https://groups.google.com/a/tensorflow.org/d/msg/tflite/Z_h7706dt8Q/sNrjPj4yGgAJ">Announcement of the new converter</a> - <a href="https://medium.com/tensorflow/mlir-a-new-intermediate-representation-and-compiler-framework-beba999ed18d">MLIR</a>-based and enables conversion of new classes of models such as Mask R-CNN and Mobile BERT etc., supports functional control flow and better error handling during conversion. Enabled by default in the nightly builds.
+* <a href="https://github.com/tensorflow/tflite-support/tree/master/tensorflow_lite_support/java">Android Support Library</a> - Makes mobile development easier (<a href="https://github.com/tensorflow/examples/blob/master/lite/examples/image_classification/android/EXPLORE_THE_CODE.md">Android</a> sample code).
+* <a href="https://www.tensorflow.org/lite/guide/model_maker">Model Maker</a> - Create your custom <a href="https://github.com/tensorflow/examples/tree/master/tensorflow_examples/lite/model_maker">image &amp; text</a> classification models easily in a few lines of code. See below the Icon Classifier for a tutorial by the community.
+* <a href="https://blog.tensorflow.org/2019/12/example-on-device-model-personalization.html">On-device training</a> - It is finally here! Currently limited to transfer learning for image classification only but it's a great start. See the official <a href="https://github.com/tensorflow/examples/blob/master/lite/examples/model_personalization/README.md">Android</a> sample code and another one from the community (<a href="https://aqibsaeed.github.io/on-device-activity-recognition">Blog</a> | <a href="https://github.com/aqibsaeed/on-device-activity-recognition">Android</a>).
+* <a href="https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/g3doc/performance/hexagon_delegate.md">Hexagon delegate</a> - How to use the Hexagon Delegate to speed up model inference on mobile and edge devices. Also see blog post  <a href="https://blog.tensorflow.org/2019/12/accelerating-tensorflow-lite-on-qualcomm.html">Accelerating TensorFlow Lite on Qualcomm Hexagon DSPs</a>.
+* <a href="https://www.tensorflow.org/lite/convert/metadata">Model Metadata</a> - Provides a standard for model descriptions which also enables <a href="https://www.tensorflow.org/lite/inference_with_metadata/codegen">Code Gen and Android Studio ML Model Binding</a>.</p>
+<h2>Models with samples</h2>
+<p>Here are the TensorFlow Lite models with app / device implementations, and references.
+Note: pretrained TensorFlow Lite models from MediaPipe are included, which you can implement with or without MediaPipe.</p>
+<h3>Computer vision</h3>
+<h4>Classification</h4>
+<p>| Task                            | Model                                                                                                                                                             | App | Reference                                                                                                                                                                                                                                                                                                                                                                                                       | Source             |</p>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'tensorflow-lite_README.md';
 
         fetch(markdownFile)
@@ -48,21 +149,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

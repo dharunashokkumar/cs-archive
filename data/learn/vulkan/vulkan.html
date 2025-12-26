@@ -8,38 +8,199 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Vinjn Awesome Vulkan - Awesome List Resources">
-    <title>Vinjn Awesome Vulkan</title>
+    <meta name="description" content="A curated list of awesome Vulkan libraries, debuggers and resources. Inspired by awesome-opengl and other awesome-... stuff. Hardware Support SDK IHV Document...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Vulkan [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Vulkan <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p><img src="https://raw.githubusercontent.com/SaschaWillems/Vulkan/master/images/vulkanlogoscene.png" alt="Vulkan demo scene" height="256px"></p>
+<p>A curated list of awesome Vulkan libraries, debuggers and resources. Inspired by <a href="https://github.com/eug/awesome-opengl">awesome-opengl</a> and other awesome-... stuff.</p>
+<ul>
+<li><strong><a href="#hardware-support">Hardware Support</a></strong></li>
+<li><strong><a href="#sdk">SDK</a></strong></li>
+<li><strong><a href="#document">IHV Document</a></strong></li>
+<li><strong><a href="#tutorial">Tutorial</a></strong></li>
+<li><strong><a href="#apps">Apps</a></strong></li>
+<li><strong><a href="#samples">Samples</a></strong></li>
+<li><strong><a href="#libraries">Libraries</a></strong></li>
+<li><strong><a href="#bindings">Bindings</a></strong></li>
+<li><strong><a href="#tools">Tools</a></strong></li>
+<li><strong><a href="#books">Books</a></strong></li>
+<li><strong><a href="#papers">Papers</a></strong></li>
+<li><strong><a href="#khronos">Khronos</a></strong></li>
+<li><strong><a href="#community">Community</a></strong></li>
+</ul>
+<h2>Hardware Support</h2>
+<ul>
+<li><a href="http://vulkan.gpuinfo.org/">gpuinfo</a> - Vulkan Hardware Database by Sascha Willems</li>
+<li><a href="https://www.khronos.org/vulkan">Khronos</a></li>
+<li><a href="https://developer.nvidia.com/Vulkan">NVIDIA</a><ul>
+<li><a href="https://developer.nvidia.com/vulkan-driver">Driver for Desktop</a></li>
+<li><a href="https://developer.nvidia.com/vulkan-android">Driver for Android</a></li>
+<li><a href="https://developer.nvidia.com/embedded/vulkan">Driver for Linux for Tegra (L4T)</a></li>
+</ul>
+</li>
+<li><a href="http://www.amd.com/en-gb/innovations/software-technologies/technologies-gaming/vulkan">AMD</a><ul>
+<li><a href="https://github.com/GPUOpen-Drivers/AMDVLK">Open-source Driver</a></li>
+</ul>
+</li>
+<li><a href="https://www.imgtec.com/developers/powervr-sdk-tools/">Imagination</a></li>
+<li>Intel<ul>
+<li><a href="https://01.org/linuxgraphics/blogs/jekstrand/2016/open-source-vulkan-drivers-intel-hardware/">Open-source Driver</a></li>
+<li><a href="https://software.intel.com/en-us/blogs/2016/03/14/new-intel-vulkan-beta-1540204404-graphics-driver-for-windows-78110-1540">Driver for Windows</a></li>
+</ul>
+</li>
+<li><a href="https://developer.qualcomm.com/software/adreno-gpu-sdk/gpu">Qualcomm</a></li>
+<li>Arm<ul>
+<li><a href="https://developer.arm.com/solutions/graphics/developer-guides/mali-gpu-best-practices">Mali GPU Best Practices</a></li>
+</ul>
+</li>
+</ul>
+<h2>SDK</h2>
+<ul>
+<li><a href="https://vulkan.lunarg.com/signin">For Windows &amp; Linux</a></li>
+<li><a href="https://developer.android.com/ndk/guides/graphics/index.html">For Android</a></li>
+</ul>
+<h2>Document</h2>
+<ul>
+<li><a href="http://gpuopen.com/tag/vulkan/">AMD</a><ul>
+<li><a href="http://gpuopen.com/vulkan-barriers-explained/">Vulkan barriers explained</a></li>
+<li><a href="https://gpuopen.com/wp-content/uploads/2016/03/VulkanFastPaths.pdf">Vulkan Fast Paths</a></li>
+<li><a href="https://gpuopen.com/wp-content/uploads/2016/03/Let_your_game_shine_optimizing_DirectX-12_and_Vulkan-performance_with_AMD_CodeXL.pdf">Let Your Game Shine – Optimizing DirectX 12 and Vulkan Performance with AMD CodeXL  </a></li>
+<li><a href="https://gpuopen.com/wp-content/uploads/2016/03/d3d12_vulkan_lessons_learned.pdf">D3D12 &amp; Vulkan: Lessons Learned  </a></li>
+<li><a href="http://gpuopen.com/say-hello/">Say Hello to a New Rendering API in Town!</a></li>
+<li><a href="http://gpuopen.com/vulkan-renderpasses/">Vulkan Renderpasses</a></li>
+<li><a href="http://gpuopen.com/performance-tweets-series-barriers-fences-synchronization/">Performance tweets series: Barriers, fences, synchronization</a></li>
+<li><a href="http://gpuopen.com/using-the-vulkan-validation-layers/">Using the Vulkan™ Validation Layers</a></li>
+<li><a href="https://gpuopen.com/wp-content/uploads/2016/05/Most-common-mistakes-in-Vulkan-apps.pdf">Most common mistakes in Vulkan apps</a></li>
+<li><a href="http://gpuopen.com/vulkan-device-memory/">Vulkan Device Memory</a></li>
+</ul>
+</li>
+<li><a href="https://developer.nvidia.com/taxonomy/term/586">NVIDIA</a><ul>
+<li><a href="https://developer.nvidia.com/device-generated-commands-vulkan">Vulkan Device-Generated Commands</a></li>
+<li><a href="https://developer.nvidia.com/getting-vulkan-ready-vr">Getting Vulkan Ready For VR</a></li>
+<li><a href="http://on-demand.gputechconf.com/gtc/2016/presentation/s6138-christoph-kubisch-pierre-boudier-gpu-driven-rendering.pdf">GPU-Driven Rendering</a></li>
+<li><a href="http://developer.download.nvidia.com/gameworks/events/GDC2016/mschott_lbishop_gl_vulkan.pdf">GDC 16 - High-performance, Low-Overhead Rendering with OpenGL and Vulkan</a></li>
+<li><a href="http://developer.download.nvidia.com/gameworks/events/GDC2016/Vulkan_Essentials_GDC16_tlorach.pdf">GDC 16 - Vulkan and NVIDIA – The Essentials</a></li>
+<li><a href="https://developer.nvidia.com/engaging-voyage-vulkan">Engaging the Voyage to Vulkan</a></li>
+<li><a href="https://developer.nvidia.com/vulkan-shader-resource-binding">Vulkan Shader Resource Binding</a></li>
+<li><a href="https://developer.nvidia.com/vulkan-memory-management">Vulkan Memory Management</a></li>
+<li><a href="https://developer.nvidia.com/opengl-vulkan">OpenGL like Vulkan</a></li>
+<li><a href="https://developer.nvidia.com/transitioning-opengl-vulkan">Transitioning from OpenGL to Vulkan</a></li>
+<li><a href="http://on-demand.gputechconf.com/siggraph/2015/presentation/SIG1501-Piers-Daniell.pdf">Siggraph 15 talk - Vulkan on NVIDIA GPUs</a></li>
+</ul>
+</li>
+<li><a href="https://developer.arm.com/solutions/graphics/apis/vulkan">Arm</a><ul>
+<li><a href="https://github.com/ARM-software/vulkan_best_practice_for_mobile_developers">Vulkan Best Practice for Mobile Developers Tutorials</a></li>
+<li><a href="https://developer.arm.com/-/media/Files/pdf/graphics-and-multimedia/Vulkan%20API%20key%20features%20on%20ARM%20architecture.pdf">Vulkan's Key Features on Arm Architecture</a></li>
+<li><a href="https://community.arm.com/groups/arm-mali-graphics/blog/2016/02/16/porting-a-graphics-engine-to-the-vulkan-api">Porting a Graphics Engine to the Vulkan API</a></li>
+</ul>
+</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Vulkan <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p><img src="https://raw.githubusercontent.com/SaschaWillems/Vulkan/master/images/vulkanlogoscene.png" alt="Vulkan demo scene" height="256px"></p>
+<p>A curated list of awesome Vulkan libraries, debuggers and resources. Inspired by <a href="https://github.com/eug/awesome-opengl">awesome-opengl</a> and other awesome-... stuff.</p>
+<ul>
+<li><strong><a href="#hardware-support">Hardware Support</a></strong></li>
+<li><strong><a href="#sdk">SDK</a></strong></li>
+<li><strong><a href="#document">IHV Document</a></strong></li>
+<li><strong><a href="#tutorial">Tutorial</a></strong></li>
+<li><strong><a href="#apps">Apps</a></strong></li>
+<li><strong><a href="#samples">Samples</a></strong></li>
+<li><strong><a href="#libraries">Libraries</a></strong></li>
+<li><strong><a href="#bindings">Bindings</a></strong></li>
+<li><strong><a href="#tools">Tools</a></strong></li>
+<li><strong><a href="#books">Books</a></strong></li>
+<li><strong><a href="#papers">Papers</a></strong></li>
+<li><strong><a href="#khronos">Khronos</a></strong></li>
+<li><strong><a href="#community">Community</a></strong></li>
+</ul>
+<h2>Hardware Support</h2>
+<ul>
+<li><a href="http://vulkan.gpuinfo.org/">gpuinfo</a> - Vulkan Hardware Database by Sascha Willems</li>
+<li><a href="https://www.khronos.org/vulkan">Khronos</a></li>
+<li><a href="https://developer.nvidia.com/Vulkan">NVIDIA</a><ul>
+<li><a href="https://developer.nvidia.com/vulkan-driver">Driver for Desktop</a></li>
+<li><a href="https://developer.nvidia.com/vulkan-android">Driver for Android</a></li>
+<li><a href="https://developer.nvidia.com/embedded/vulkan">Driver for Linux for Tegra (L4T)</a></li>
+</ul>
+</li>
+<li><a href="http://www.amd.com/en-gb/innovations/software-technologies/technologies-gaming/vulkan">AMD</a><ul>
+<li><a href="https://github.com/GPUOpen-Drivers/AMDVLK">Open-source Driver</a></li>
+</ul>
+</li>
+<li><a href="https://www.imgtec.com/developers/powervr-sdk-tools/">Imagination</a></li>
+<li>Intel<ul>
+<li><a href="https://01.org/linuxgraphics/blogs/jekstrand/2016/open-source-vulkan-drivers-intel-hardware/">Open-source Driver</a></li>
+<li><a href="https://software.intel.com/en-us/blogs/2016/03/14/new-intel-vulkan-beta-1540204404-graphics-driver-for-windows-78110-1540">Driver for Windows</a></li>
+</ul>
+</li>
+<li><a href="https://developer.qualcomm.com/software/adreno-gpu-sdk/gpu">Qualcomm</a></li>
+<li>Arm<ul>
+<li><a href="https://developer.arm.com/solutions/graphics/developer-guides/mali-gpu-best-practices">Mali GPU Best Practices</a></li>
+</ul>
+</li>
+</ul>
+<h2>SDK</h2>
+<ul>
+<li><a href="https://vulkan.lunarg.com/signin">For Windows &amp; Linux</a></li>
+<li><a href="https://developer.android.com/ndk/guides/graphics/index.html">For Android</a></li>
+</ul>
+<h2>Document</h2>
+<ul>
+<li><a href="http://gpuopen.com/tag/vulkan/">AMD</a><ul>
+<li><a href="http://gpuopen.com/vulkan-barriers-explained/">Vulkan barriers explained</a></li>
+<li><a href="https://gpuopen.com/wp-content/uploads/2016/03/VulkanFastPaths.pdf">Vulkan Fast Paths</a></li>
+<li><a href="https://gpuopen.com/wp-content/uploads/2016/03/Let_your_game_shine_optimizing_DirectX-12_and_Vulkan-performance_with_AMD_CodeXL.pdf">Let Your Game Shine – Optimizing DirectX 12 and Vulkan Performance with AMD CodeXL  </a></li>
+<li><a href="https://gpuopen.com/wp-content/uploads/2016/03/d3d12_vulkan_lessons_learned.pdf">D3D12 &amp; Vulkan: Lessons Learned  </a></li>
+<li><a href="http://gpuopen.com/say-hello/">Say Hello to a New Rendering API in Town!</a></li>
+<li><a href="http://gpuopen.com/vulkan-renderpasses/">Vulkan Renderpasses</a></li>
+<li><a href="http://gpuopen.com/performance-tweets-series-barriers-fences-synchronization/">Performance tweets series: Barriers, fences, synchronization</a></li>
+<li><a href="http://gpuopen.com/using-the-vulkan-validation-layers/">Using the Vulkan™ Validation Layers</a></li>
+<li><a href="https://gpuopen.com/wp-content/uploads/2016/05/Most-common-mistakes-in-Vulkan-apps.pdf">Most common mistakes in Vulkan apps</a></li>
+<li><a href="http://gpuopen.com/vulkan-device-memory/">Vulkan Device Memory</a></li>
+</ul>
+</li>
+<li><a href="https://developer.nvidia.com/taxonomy/term/586">NVIDIA</a><ul>
+<li><a href="https://developer.nvidia.com/device-generated-commands-vulkan">Vulkan Device-Generated Commands</a></li>
+<li><a href="https://developer.nvidia.com/getting-vulkan-ready-vr">Getting Vulkan Ready For VR</a></li>
+<li><a href="http://on-demand.gputechconf.com/gtc/2016/presentation/s6138-christoph-kubisch-pierre-boudier-gpu-driven-rendering.pdf">GPU-Driven Rendering</a></li>
+<li><a href="http://developer.download.nvidia.com/gameworks/events/GDC2016/mschott_lbishop_gl_vulkan.pdf">GDC 16 - High-performance, Low-Overhead Rendering with OpenGL and Vulkan</a></li>
+<li><a href="http://developer.download.nvidia.com/gameworks/events/GDC2016/Vulkan_Essentials_GDC16_tlorach.pdf">GDC 16 - Vulkan and NVIDIA – The Essentials</a></li>
+<li><a href="https://developer.nvidia.com/engaging-voyage-vulkan">Engaging the Voyage to Vulkan</a></li>
+<li><a href="https://developer.nvidia.com/vulkan-shader-resource-binding">Vulkan Shader Resource Binding</a></li>
+<li><a href="https://developer.nvidia.com/vulkan-memory-management">Vulkan Memory Management</a></li>
+<li><a href="https://developer.nvidia.com/opengl-vulkan">OpenGL like Vulkan</a></li>
+<li><a href="https://developer.nvidia.com/transitioning-opengl-vulkan">Transitioning from OpenGL to Vulkan</a></li>
+<li><a href="http://on-demand.gputechconf.com/siggraph/2015/presentation/SIG1501-Piers-Daniell.pdf">Siggraph 15 talk - Vulkan on NVIDIA GPUs</a></li>
+</ul>
+</li>
+<li><a href="https://developer.arm.com/solutions/graphics/apis/vulkan">Arm</a><ul>
+<li><a href="https://github.com/ARM-software/vulkan_best_practice_for_mobile_developers">Vulkan Best Practice for Mobile Developers Tutorials</a></li>
+<li><a href="https://developer.arm.com/-/media/Files/pdf/graphics-and-multimedia/Vulkan%20API%20key%20features%20on%20ARM%20architecture.pdf">Vulkan's Key Features on Arm Architecture</a></li>
+<li><a href="https://community.arm.com/groups/arm-mali-graphics/blog/2016/02/16/porting-a-graphics-engine-to-the-vulkan-api">Porting a Graphics Engine to the Vulkan API</a></li>
+</ul>
+</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'vulkan_README.md';
 
         fetch(markdownFile)
@@ -48,21 +209,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

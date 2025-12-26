@@ -8,38 +8,365 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fr0st Brutal Awesome Pascal - Awesome List Resources">
-    <title>Fr0st Brutal Awesome Pascal</title>
+    <meta name="description" content="A curated list of awesome Delphi, FreePascal and other Pascal frameworks, libraries, resources, and shiny things. Inspired by awesome-xxx stuff. Note that only...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Pascal [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Pascal <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p>A curated list of awesome Delphi, FreePascal and other *Pascal frameworks, libraries, resources, and shiny things. Inspired by awesome-xxx stuff.</p>
+<p><strong>Note that only open-source projects are considered. Dead projects (not updated for 3 years or more) must be really awesome or unique to be included.</strong></p>
+<p>Feel free to suggest other missing nice projects either by comments or pull requests.</p>
+<p>:exclamation: <strong>Note on compiler compatibility</strong>. There are compiler/language dialect compatibility badges for all projects based on a project's description. No real compatibility with compilers not officially supported is checked. Often a code could be used with non-supported compiler/language dialect with minor modifications but there could be exceptions.</p>
+<p>:exclamation: <strong>Note on features contained in big projects</strong>. There are plenty of big projects in the list that contain many features deserving to be noted in the corresponding sections. For example, a HTTP server could have JSON parser, logger, command line parser, DB access classes and so on. For really big code base duplicated entry in specific sections is allowed linking to a section with main description. However to reduce duplication additional features are more usually listed in comments. So if you're looking for some feature don't forget to search by key words through the whole list in additon to inspecting the corresponding section. Also feel free to suggest additions of available features in big projects to help others find what they want.</p>
+<h2>Contents</h2>
+<ul>
+<li>
+<p><a href="#general-libraries">General Libraries</a></p>
+</li>
+<li>
+<p><a href="#multimedia">Multimedia</a></p>
+<ul>
+<li>
+<p><a href="#audio">Audio</a></p>
+</li>
+<li>
+<p><a href="#video">Video</a></p>
+</li>
+<li>
+<p><a href="#graphic">Graphic</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="#game-dev">Game dev</a></p>
+</li>
+<li>
+<p><a href="#communications">Communications</a></p>
+<ul>
+<li>
+<p><a href="#network">Network</a></p>
+</li>
+<li>
+<p><a href="#serial-port">Serial port</a></p>
+</li>
+<li>
+<p><a href="#event-bus">Event bus</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="#gui">GUI</a></p>
+<ul>
+<li>
+<p><a href="#control-packs">Control packs</a></p>
+</li>
+<li>
+<p><a href="#single-controls">Single controls</a></p>
+</li>
+<li>
+<p><a href="#editors">Editors</a></p>
+</li>
+<li>
+<p><a href="#viewers">Viewers</a></p>
+</li>
+<li>
+<p><a href="#other-gui">Other GUI</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="#database">Database</a></p>
+</li>
+<li>
+<p><a href="#scripting">Scripting</a></p>
+</li>
+<li>
+<p><a href="#machine-learning">Machine Learning</a></p>
+</li>
+<li>
+<p><a href="#non-visual-classesutils">Non-visual Classes/Utils</a></p>
+<ul>
+<li>
+<p><a href="#compression">Compression</a></p>
+</li>
+<li>
+<p><a href="#encryption">Encryption</a></p>
+</li>
+<li>
+<p><a href="#xmljsonyamlhtml">XML/JSON/YAML/HTML</a></p>
+</li>
+<li>
+<p><a href="#language">Language</a></p>
+</li>
+<li>
+<p><a href="#memory-managers">Memory managers</a></p>
+</li>
+<li>
+<p><a href="#system">System</a></p>
+</li>
+<li>
+<p><a href="#template">Template</a></p>
+</li>
+<li>
+<p><a href="#logging">Logging</a></p>
+</li>
+<li>
+<p><a href="#math">Math</a></p>
+</li>
+<li>
+<p><a href="#command-line">Command-line</a></p>
+</li>
+<li>
+<p><a href="#other-non-visual">Other non-visual</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="#os">OS</a></p>
+</li>
+<li>
+<p><a href="#report-generating">Report generating</a></p>
+</li>
+<li>
+<p><a href="#unit-testing">Unit Testing</a></p>
+</li>
+<li>
+<p><a href="#debugging--error-handling">Debugging / error handling</a></p>
+</li>
+<li>
+<p><a href="#utilities">Utilities</a></p>
+<ul>
+<li>
+<p><a href="#rad-studio-ide-pluginswizards">RAD Studio IDE plugins/wizards</a></p>
+</li>
+<li>
+<p><a href="#plugins-for-other-ides">Plugins for other IDE's</a></p>
+</li>
+<li>
+<p><a href="#documentation">Documentation</a></p>
+</li>
+<li>
+<p><a href="#code-checkreview-debug">Code check/review, debug</a></p>
+</li>
+<li>
+<p><a href="#setup">Setup</a></p>
+</li>
+<li>
+<p><a href="#other">Other</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2>General Libraries</h2>
+<p><em>Big general-purpose libraries</em></p>
+<ul>
+<li>
+<p><a href="https://github.com/project-jedi/jcl">JCL</a>. <code>[Delphi]</code> <code>[FPC]</code> Set of thoroughly tested and fully documented utility functions and non-visual classes which can be instantly reused in your Delphi and C++ Builder projects. The library is grouped into several categories such as Strings, Files and I/O, Security, Math and many, many more.</p>
+</li>
+<li>
+<p><a href="https://github.com/project-jedi/jvcl">JVCL</a>. <code>[Delphi]</code> Library of over 600 Delphi components developed by "Project JEDI" members.</p>
+</li>
+</ul>
+<p>// <em>GUI, algorithms, classes, API headers etc.</em></p>
+<ul>
+<li><a href="http://sourceforge.net/projects/alcinoe">Alcinoe</a> (<a href="https://github.com/Zeus64/alcinoe">mirror at GH</a>). <code>[Delphi]</code> Library of visual and non-visual components for Delphi.</li>
+</ul>
+<p>// <em>Network: FTP/Http/NNTP/POP3/SMTP, ISAPI, WinInet Http/FTP clients; DB: Firebird/MySQL/SQLite3/Memcached/MongoDb/SphinxQL; XML/JSON Parser; ZLIB; Cryptography: AES, Blowfish, MD5, SHA, secure keyed MD5/SHA; opengl video player; FireMonkey controls; Other: Self-Balancing Binary Trees, expression evaluator</em></p>
+<ul>
+<li><a href="http://sourceforge.net/projects/fundementals">Fundamentals Code Library</a> (abandoned, more recent fork is <a href="https://github.com/fundamentalslib/fundamentals4">here</a> - though it slightly differs in units set, f.ex. no XML. Recent major version 5 <a href="https://github.com/fundamentalslib/fundamentals5">here</a>). <code>[Delphi]</code> <code>[FPC]</code> Collection of Delphi / FreePascal code units. Includes libraries for Unicode, Strings, Data Structures, Sockets and Mathematics.</li>
+</ul>
+<p>// <em>Utils: ZLIB compression; JSON; XML; ProtocolBuffers; Unicode routines; data structures; Hashes: XOR, CRC, Adler, MD5, SHA, secure keyed MD5/SHA, etc; Network: blocking TCP client/server, HTTP(S) via SSL3/TLS1.0/TLS1.1/TLS1.2 (fully native); SQL parser; BitCoin MtGox client; Blaise script engine; Cipher: AES, DES, FUNE, RC2, RC4, RSA, Diffie-Hellman; Maths: matrix, complex, statistics, huge numbers</em></p>
+<ul>
+<li><a href="https://bitbucket.org/sglienke/spring4d">Spring4D</a>. <code>[Delphi]</code> Open-source code library for Embarcadero Delphi 2010 and higher. It consists of a number of different modules that contain a base class library (common types, interface based collection types, reflection extensions) and a dependency injection framework. Includes Encryption Library.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Pascal <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p>A curated list of awesome Delphi, FreePascal and other *Pascal frameworks, libraries, resources, and shiny things. Inspired by awesome-xxx stuff.</p>
+<p><strong>Note that only open-source projects are considered. Dead projects (not updated for 3 years or more) must be really awesome or unique to be included.</strong></p>
+<p>Feel free to suggest other missing nice projects either by comments or pull requests.</p>
+<p>:exclamation: <strong>Note on compiler compatibility</strong>. There are compiler/language dialect compatibility badges for all projects based on a project's description. No real compatibility with compilers not officially supported is checked. Often a code could be used with non-supported compiler/language dialect with minor modifications but there could be exceptions.</p>
+<p>:exclamation: <strong>Note on features contained in big projects</strong>. There are plenty of big projects in the list that contain many features deserving to be noted in the corresponding sections. For example, a HTTP server could have JSON parser, logger, command line parser, DB access classes and so on. For really big code base duplicated entry in specific sections is allowed linking to a section with main description. However to reduce duplication additional features are more usually listed in comments. So if you're looking for some feature don't forget to search by key words through the whole list in additon to inspecting the corresponding section. Also feel free to suggest additions of available features in big projects to help others find what they want.</p>
+<h2>Contents</h2>
+<ul>
+<li>
+<p><a href="#general-libraries">General Libraries</a></p>
+</li>
+<li>
+<p><a href="#multimedia">Multimedia</a></p>
+<ul>
+<li>
+<p><a href="#audio">Audio</a></p>
+</li>
+<li>
+<p><a href="#video">Video</a></p>
+</li>
+<li>
+<p><a href="#graphic">Graphic</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="#game-dev">Game dev</a></p>
+</li>
+<li>
+<p><a href="#communications">Communications</a></p>
+<ul>
+<li>
+<p><a href="#network">Network</a></p>
+</li>
+<li>
+<p><a href="#serial-port">Serial port</a></p>
+</li>
+<li>
+<p><a href="#event-bus">Event bus</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="#gui">GUI</a></p>
+<ul>
+<li>
+<p><a href="#control-packs">Control packs</a></p>
+</li>
+<li>
+<p><a href="#single-controls">Single controls</a></p>
+</li>
+<li>
+<p><a href="#editors">Editors</a></p>
+</li>
+<li>
+<p><a href="#viewers">Viewers</a></p>
+</li>
+<li>
+<p><a href="#other-gui">Other GUI</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="#database">Database</a></p>
+</li>
+<li>
+<p><a href="#scripting">Scripting</a></p>
+</li>
+<li>
+<p><a href="#machine-learning">Machine Learning</a></p>
+</li>
+<li>
+<p><a href="#non-visual-classesutils">Non-visual Classes/Utils</a></p>
+<ul>
+<li>
+<p><a href="#compression">Compression</a></p>
+</li>
+<li>
+<p><a href="#encryption">Encryption</a></p>
+</li>
+<li>
+<p><a href="#xmljsonyamlhtml">XML/JSON/YAML/HTML</a></p>
+</li>
+<li>
+<p><a href="#language">Language</a></p>
+</li>
+<li>
+<p><a href="#memory-managers">Memory managers</a></p>
+</li>
+<li>
+<p><a href="#system">System</a></p>
+</li>
+<li>
+<p><a href="#template">Template</a></p>
+</li>
+<li>
+<p><a href="#logging">Logging</a></p>
+</li>
+<li>
+<p><a href="#math">Math</a></p>
+</li>
+<li>
+<p><a href="#command-line">Command-line</a></p>
+</li>
+<li>
+<p><a href="#other-non-visual">Other non-visual</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="#os">OS</a></p>
+</li>
+<li>
+<p><a href="#report-generating">Report generating</a></p>
+</li>
+<li>
+<p><a href="#unit-testing">Unit Testing</a></p>
+</li>
+<li>
+<p><a href="#debugging--error-handling">Debugging / error handling</a></p>
+</li>
+<li>
+<p><a href="#utilities">Utilities</a></p>
+<ul>
+<li>
+<p><a href="#rad-studio-ide-pluginswizards">RAD Studio IDE plugins/wizards</a></p>
+</li>
+<li>
+<p><a href="#plugins-for-other-ides">Plugins for other IDE's</a></p>
+</li>
+<li>
+<p><a href="#documentation">Documentation</a></p>
+</li>
+<li>
+<p><a href="#code-checkreview-debug">Code check/review, debug</a></p>
+</li>
+<li>
+<p><a href="#setup">Setup</a></p>
+</li>
+<li>
+<p><a href="#other">Other</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2>General Libraries</h2>
+<p><em>Big general-purpose libraries</em></p>
+<ul>
+<li>
+<p><a href="https://github.com/project-jedi/jcl">JCL</a>. <code>[Delphi]</code> <code>[FPC]</code> Set of thoroughly tested and fully documented utility functions and non-visual classes which can be instantly reused in your Delphi and C++ Builder projects. The library is grouped into several categories such as Strings, Files and I/O, Security, Math and many, many more.</p>
+</li>
+<li>
+<p><a href="https://github.com/project-jedi/jvcl">JVCL</a>. <code>[Delphi]</code> Library of over 600 Delphi components developed by "Project JEDI" members.</p>
+</li>
+</ul>
+<p>// <em>GUI, algorithms, classes, API headers etc.</em></p>
+<ul>
+<li><a href="http://sourceforge.net/projects/alcinoe">Alcinoe</a> (<a href="https://github.com/Zeus64/alcinoe">mirror at GH</a>). <code>[Delphi]</code> Library of visual and non-visual components for Delphi.</li>
+</ul>
+<p>// <em>Network: FTP/Http/NNTP/POP3/SMTP, ISAPI, WinInet Http/FTP clients; DB: Firebird/MySQL/SQLite3/Memcached/MongoDb/SphinxQL; XML/JSON Parser; ZLIB; Cryptography: AES, Blowfish, MD5, SHA, secure keyed MD5/SHA; opengl video player; FireMonkey controls; Other: Self-Balancing Binary Trees, expression evaluator</em></p>
+<ul>
+<li><a href="http://sourceforge.net/projects/fundementals">Fundamentals Code Library</a> (abandoned, more recent fork is <a href="https://github.com/fundamentalslib/fundamentals4">here</a> - though it slightly differs in units set, f.ex. no XML. Recent major version 5 <a href="https://github.com/fundamentalslib/fundamentals5">here</a>). <code>[Delphi]</code> <code>[FPC]</code> Collection of Delphi / FreePascal code units. Includes libraries for Unicode, Strings, Data Structures, Sockets and Mathematics.</li>
+</ul>
+<p>// <em>Utils: ZLIB compression; JSON; XML; ProtocolBuffers; Unicode routines; data structures; Hashes: XOR, CRC, Adler, MD5, SHA, secure keyed MD5/SHA, etc; Network: blocking TCP client/server, HTTP(S) via SSL3/TLS1.0/TLS1.1/TLS1.2 (fully native); SQL parser; BitCoin MtGox client; Blaise script engine; Cipher: AES, DES, FUNE, RC2, RC4, RSA, Diffie-Hellman; Maths: matrix, complex, statistics, huge numbers</em></p>
+<ul>
+<li><a href="https://bitbucket.org/sglienke/spring4d">Spring4D</a>. <code>[Delphi]</code> Open-source code library for Embarcadero Delphi 2010 and higher. It consists of a number of different modules that contain a base class library (common types, interface based collection types, reflection extensions) and a dependency injection framework. Includes Encryption Library.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'pascal_README.md';
 
         fetch(markdownFile)
@@ -48,21 +375,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

@@ -8,38 +8,223 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Davisonio Awesome Gif - Awesome List Resources">
-    <title>Davisonio Awesome Gif</title>
+    <meta name="description" content="> A curated list of awesome GIF resources. A list of tools, scripts, libraries, examples & other resources related to the Graphics Interchange Format (GIF). -...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome GIF [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome GIF <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a></h1>
+<blockquote>
+<p>A curated list of awesome <a href="https://en.wikipedia.org/wiki/GIF">GIF</a> resources.</p>
+</blockquote>
+<p>A list of tools, scripts, libraries, examples &amp; other resources related to the Graphics Interchange Format (GIF).</p>
+<h2>Contents</h2>
+<!--lint disable awesome-toc-->
+<ul>
+<li><a href="#general-tools">General Tools</a></li>
+<li><a href="#utilities">Utilities</a></li>
+<li><a href="#libraries">Libraries</a><ul>
+<li><a href="#actionscript">ActionScript</a></li>
+<li><a href="#c">C++</a></li>
+<li><a href="#c-sharp">C#</a></li>
+<li><a href="#haxe">Haxe</a></li>
+<li><a href="#java">Java</a></li>
+<li><a href="#javascript">JavaScript</a></li>
+<li><a href="#php">PHP</a></li>
+<li><a href="#objective-c">Objective-C</a></li>
+<li><a href="#swift">Swift</a></li>
+</ul>
+</li>
+<li><a href="#gui">GUI</a></li>
+<li><a href="#hosting">Hosting</a></li>
+<li><a href="#online-tools">Online Tools</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#scripts">Scripts</a><ul>
+<li><a href="#frames-to-gif">Frames to GIF</a></li>
+<li><a href="#gif-to-frames">GIF to frames</a></li>
+<li><a href="#high-quality-gif">High quality GIF</a></li>
+<li><a href="#optimize-gif">Optimize GIF</a></li>
+<li><a href="#lossy-gif-compressor">Lossy GIF Compressor</a></li>
+<li><a href="#making-gif-from-video">Making GIF from video</a></li>
+<li><a href="#cinemagraphs">Cinemagraphs</a></li>
+<li><a href="#perfect-loop">Perfect loop</a></li>
+<li><a href="#youtube-video-to-gif">YouTube video to GIF</a></li>
+<li><a href="#grabbing-each-frame-of-an-html5-canvas">Grabbing each frame of an HTML5 canvas</a></li>
+</ul>
+</li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+</ul>
+<h2>General Tools</h2>
+<ul>
+<li><a href="https://www.ffmpeg.org">FFmpeg</a></li>
+<li><a href="http://www.imagemagick.org/script/index.php">ImageMagick</a></li>
+<li><a href="http://www.graphicsmagick.org/">GraphicsMagick</a> - GraphicsMagick is usually faster than ImageMagick.</li>
+<li><a href="https://zulko.github.io/moviepy/">MoviePy</a> - Python module for video editing.</li>
+</ul>
+<h2>Utilities</h2>
+<ul>
+<li><a href="https://github.com/lukechilds/gifgen">Gifgen</a> - Simple high quality GIF encoding.</li>
+<li><a href="https://github.com/jclem/gifify">Gifify</a> - Convert screen recording into GIF.</li>
+<li><a href="https://github.com/jglovier/gifs">Gifs</a> - Storage place for GIFs.</li>
+<li><a href="https://github.com/yahoo/gifshot">Gifshot</a> - Create animated GIFs from media by Yahoo. (<a href="http://yahoo.github.io/gifshot/">demo</a>)</li>
+<li><a href="https://github.com/videlalvaro/gifsockets">Gifsockets</a> - Real Time communication library using Animated GIFs as a transport.</li>
+<li><a href="https://github.com/geelen/x-gif">X-gif</a> - A web component for flexible GIF playback.</li>
+<li><a href="https://github.com/yaronn/GifW00t">GifW00t</a> - JavaScript web recorder.</li>
+<li><a href="https://github.com/lelandbatey/gif-machine">gif-machine</a> - GIF creation from YouTube videos.</li>
+<li><a href="https://github.com/jbochi/gifstreaming">gifstreaming</a> - Live video streaming server.</li>
+<li><a href="https://github.com/dergachev/screengif">Screengif</a> - Create animated GIF screencasts.</li>
+<li><a href="https://github.com/sidorares/vnc-over-gif">vnc-over-gif</a> - Serves screen updates as animated GIF over http.</li>
+<li><a href="https://github.com/jaipandya/gifdeck">gifdeck</a> - Convert your SlideShares into animated GIFs.</li>
+<li><a href="https://github.com/schuyler/gifbot">Gifbot</a> - GIF search for Slack.</li>
+<li><a href="https://github.com/FuzzyWobble/GIF-Camera">Gif-camera</a> - Create animated GIFs using webcam.</li>
+<li><a href="https://github.com/zehfernandes/gifline">Gifline</a> - Chrome extension to put GIFs in your emails.</li>
+<li><a href="https://github.com/markjaquith/gifdrop">Gifdrop</a> - Create a repository for your collection of GIF images.</li>
+<li><a href="https://github.com/node-gh/gh-gif">Gh-gif</a> - NodeGH plugin for commenting on pull requests/issues using GIF reactions.</li>
+<li><a href="https://github.com/z24/tty2gif">Tty2gif</a> - Record scripts and their outputs into both binary and GIF formats.</li>
+<li><a href="https://github.com/desktoppr/giftoppr">Giftoppr</a> - Sync your favourite GIFs with Dropbox.</li>
+<li><a href="https://github.com/Fauntleroy/GIFit">Gifit</a> - Chrome extension to make a GIF from a YouTube video.</li>
+<li><a href="https://github.com/spite/ccapture.js">Ccapture.js</a> - Capture animations created with HTML5 canvas.</li>
+<li><a href="https://getkap.co/">Kap</a> - Beautiful open-source app to capture your screen and export to GIF.</li>
+<li><a href="https://github.com/rotblauer/gifit">Gifit (the other one)</a> - Get a search resulting giphy GIF in markdown in stdout, ala <code>$ gifit kittens</code>.</li>
+<li><a href="https://github.com/ImageOptim/gifski">gifski</a> - High-quality GIF encoder based on libimagequant.</li>
+<li><a href="https://github.com/lettier/gifcurry">Gifcurry</a> - Open-source, Haskell-built editor for GIF makers.</li>
+</ul>
+<h2>Libraries</h2>
+<h3>ActionScript</h3>
+<ul>
+<li><a href="https://github.com/theturtle32/Flash-Animated-GIF-Library">Flash Animated GIF Library</a> - AS3 library for playing Animated GIFs in Flash.</li>
+</ul>
+<h3>C++</h3>
+<ul>
+<li><a href="https://github.com/pkrumins/node-gif">Node-gif</a> - C++ library to make GIF.</li>
+<li><a href="https://github.com/charlietangora/gif-h">Gif-h</a> - C++ one-header library for the creation of animated GIFs.</li>
+<li><a href="https://github.com/notnullnotvoid/msf_gif">msf_gif</a> - C/C++ single-header library for creating animated GIFs.</li>
+</ul>
+<h3 id="c-sharp">C#</h2>
+
+- [dot-screencap](https://github.com/Speiser/dot-screencap) - A simple libary to record your screen and save it as animated GIF.
+- [WpfAnimatedGif](https://github.com/XamlAnimatedGif/WpfAnimatedGif) - A simple library to display animated GIF images in WPF.
+- [XamlAnimatedGif](https://github.com/XamlAnimatedGif/XamlAnimatedGif) - A simple library to display animated GIF images in XAML apps (WPF, WinRT, Windows Phone).
+- [AnimatedGif](https://github.com/mrousavy/AnimatedGif) - A high performance .NET library for reading and creating animated GIFs.
+
+### Haxe
+
+- [Gif](https://github.com/snowkit/gif) - Haxe GIF encoder.
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome GIF <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a></h1>
+<blockquote>
+<p>A curated list of awesome <a href="https://en.wikipedia.org/wiki/GIF">GIF</a> resources.</p>
+</blockquote>
+<p>A list of tools, scripts, libraries, examples &amp; other resources related to the Graphics Interchange Format (GIF).</p>
+<h2>Contents</h2>
+<!--lint disable awesome-toc-->
+<ul>
+<li><a href="#general-tools">General Tools</a></li>
+<li><a href="#utilities">Utilities</a></li>
+<li><a href="#libraries">Libraries</a><ul>
+<li><a href="#actionscript">ActionScript</a></li>
+<li><a href="#c">C++</a></li>
+<li><a href="#c-sharp">C#</a></li>
+<li><a href="#haxe">Haxe</a></li>
+<li><a href="#java">Java</a></li>
+<li><a href="#javascript">JavaScript</a></li>
+<li><a href="#php">PHP</a></li>
+<li><a href="#objective-c">Objective-C</a></li>
+<li><a href="#swift">Swift</a></li>
+</ul>
+</li>
+<li><a href="#gui">GUI</a></li>
+<li><a href="#hosting">Hosting</a></li>
+<li><a href="#online-tools">Online Tools</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#scripts">Scripts</a><ul>
+<li><a href="#frames-to-gif">Frames to GIF</a></li>
+<li><a href="#gif-to-frames">GIF to frames</a></li>
+<li><a href="#high-quality-gif">High quality GIF</a></li>
+<li><a href="#optimize-gif">Optimize GIF</a></li>
+<li><a href="#lossy-gif-compressor">Lossy GIF Compressor</a></li>
+<li><a href="#making-gif-from-video">Making GIF from video</a></li>
+<li><a href="#cinemagraphs">Cinemagraphs</a></li>
+<li><a href="#perfect-loop">Perfect loop</a></li>
+<li><a href="#youtube-video-to-gif">YouTube video to GIF</a></li>
+<li><a href="#grabbing-each-frame-of-an-html5-canvas">Grabbing each frame of an HTML5 canvas</a></li>
+</ul>
+</li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+</ul>
+<h2>General Tools</h2>
+<ul>
+<li><a href="https://www.ffmpeg.org">FFmpeg</a></li>
+<li><a href="http://www.imagemagick.org/script/index.php">ImageMagick</a></li>
+<li><a href="http://www.graphicsmagick.org/">GraphicsMagick</a> - GraphicsMagick is usually faster than ImageMagick.</li>
+<li><a href="https://zulko.github.io/moviepy/">MoviePy</a> - Python module for video editing.</li>
+</ul>
+<h2>Utilities</h2>
+<ul>
+<li><a href="https://github.com/lukechilds/gifgen">Gifgen</a> - Simple high quality GIF encoding.</li>
+<li><a href="https://github.com/jclem/gifify">Gifify</a> - Convert screen recording into GIF.</li>
+<li><a href="https://github.com/jglovier/gifs">Gifs</a> - Storage place for GIFs.</li>
+<li><a href="https://github.com/yahoo/gifshot">Gifshot</a> - Create animated GIFs from media by Yahoo. (<a href="http://yahoo.github.io/gifshot/">demo</a>)</li>
+<li><a href="https://github.com/videlalvaro/gifsockets">Gifsockets</a> - Real Time communication library using Animated GIFs as a transport.</li>
+<li><a href="https://github.com/geelen/x-gif">X-gif</a> - A web component for flexible GIF playback.</li>
+<li><a href="https://github.com/yaronn/GifW00t">GifW00t</a> - JavaScript web recorder.</li>
+<li><a href="https://github.com/lelandbatey/gif-machine">gif-machine</a> - GIF creation from YouTube videos.</li>
+<li><a href="https://github.com/jbochi/gifstreaming">gifstreaming</a> - Live video streaming server.</li>
+<li><a href="https://github.com/dergachev/screengif">Screengif</a> - Create animated GIF screencasts.</li>
+<li><a href="https://github.com/sidorares/vnc-over-gif">vnc-over-gif</a> - Serves screen updates as animated GIF over http.</li>
+<li><a href="https://github.com/jaipandya/gifdeck">gifdeck</a> - Convert your SlideShares into animated GIFs.</li>
+<li><a href="https://github.com/schuyler/gifbot">Gifbot</a> - GIF search for Slack.</li>
+<li><a href="https://github.com/FuzzyWobble/GIF-Camera">Gif-camera</a> - Create animated GIFs using webcam.</li>
+<li><a href="https://github.com/zehfernandes/gifline">Gifline</a> - Chrome extension to put GIFs in your emails.</li>
+<li><a href="https://github.com/markjaquith/gifdrop">Gifdrop</a> - Create a repository for your collection of GIF images.</li>
+<li><a href="https://github.com/node-gh/gh-gif">Gh-gif</a> - NodeGH plugin for commenting on pull requests/issues using GIF reactions.</li>
+<li><a href="https://github.com/z24/tty2gif">Tty2gif</a> - Record scripts and their outputs into both binary and GIF formats.</li>
+<li><a href="https://github.com/desktoppr/giftoppr">Giftoppr</a> - Sync your favourite GIFs with Dropbox.</li>
+<li><a href="https://github.com/Fauntleroy/GIFit">Gifit</a> - Chrome extension to make a GIF from a YouTube video.</li>
+<li><a href="https://github.com/spite/ccapture.js">Ccapture.js</a> - Capture animations created with HTML5 canvas.</li>
+<li><a href="https://getkap.co/">Kap</a> - Beautiful open-source app to capture your screen and export to GIF.</li>
+<li><a href="https://github.com/rotblauer/gifit">Gifit (the other one)</a> - Get a search resulting giphy GIF in markdown in stdout, ala <code>$ gifit kittens</code>.</li>
+<li><a href="https://github.com/ImageOptim/gifski">gifski</a> - High-quality GIF encoder based on libimagequant.</li>
+<li><a href="https://github.com/lettier/gifcurry">Gifcurry</a> - Open-source, Haskell-built editor for GIF makers.</li>
+</ul>
+<h2>Libraries</h2>
+<h3>ActionScript</h3>
+<ul>
+<li><a href="https://github.com/theturtle32/Flash-Animated-GIF-Library">Flash Animated GIF Library</a> - AS3 library for playing Animated GIFs in Flash.</li>
+</ul>
+<h3>C++</h3>
+<ul>
+<li><a href="https://github.com/pkrumins/node-gif">Node-gif</a> - C++ library to make GIF.</li>
+<li><a href="https://github.com/charlietangora/gif-h">Gif-h</a> - C++ one-header library for the creation of animated GIFs.</li>
+<li><a href="https://github.com/notnullnotvoid/msf_gif">msf_gif</a> - C/C++ single-header library for creating animated GIFs.</li>
+</ul>
+<h3 id="c-sharp">C#</h2>
+
+- [dot-screencap](https://github.com/Speiser/dot-screencap) - A simple libary to record your screen and save it as animated GIF.
+- [WpfAnimatedGif](https://github.com/XamlAnimatedGif/WpfAnimatedGif) - A simple library to display animated GIF images in WPF.
+- [XamlAnimatedGif](https://github.com/XamlAnimatedGif/XamlAnimatedGif) - A simple library to display animated GIF images in XAML apps (WPF, WinRT, Windows Phone).
+- [AnimatedGif](https://github.com/mrousavy/AnimatedGif) - A high performance .NET library for reading and creating animated GIFs.
+
+### Haxe
+
+- [Gif](https://github.com/snowkit/gif) - Haxe GIF encoder.
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'gif_README.md';
 
         fetch(markdownFile)
@@ -48,21 +233,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

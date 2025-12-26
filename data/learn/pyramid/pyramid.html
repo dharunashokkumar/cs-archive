@@ -8,38 +8,257 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Uralbash Awesome Pyramid - Awesome List Resources">
-    <title>Uralbash Awesome Pyramid</title>
+    <meta name="description" content="A curated list of awesome Pyramid apps, projects and resources. Inspired by and based on awesome-python. - Awesome Pyramid - Admin Interface - Asset Management...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Pyramid - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Pyramid</h1>
+<p><a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a>
+<a href="https://webchat.freenode.net/?channels=pyramid"><img alt="IRC
+Freenode" src="https://img.shields.io/badge/irc-freenode-blue.svg" /></a></p>
+<p>A curated list of awesome Pyramid apps, projects and resources. Inspired by and
+based on <a href="https://github.com/vinta/awesome-python/">awesome-python</a>.</p>
+<ul>
+<li><a href="#awesome-pyramid">Awesome Pyramid</a><ul>
+<li><a href="#admin-interface">Admin Interface</a></li>
+<li><a href="#asset-management">Asset Management</a></li>
+<li><a href="#async">Async</a></li>
+<li><a href="#authentication">Authentication</a></li>
+<li><a href="#authorization">Authorization</a></li>
+<li><a href="#caching--session">Caching &amp; Session</a></li>
+<li><a href="#debugging">Debugging</a></li>
+<li><a href="#email">Email</a></li>
+<li><a href="#forms">Forms</a></li>
+<li><a href="#media-management">Media-Management</a></li>
+<li><a href="#restful-api">RESTful API</a></li>
+<li><a href="#search">Search</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#settings">Settings</a></li>
+<li><a href="#storage">Storage</a></li>
+<li><a href="#task-queue">Task Queue</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#translations">Translations</a></li>
+<li><a href="#web-frontend-integration">Web frontend integration</a></li>
+<li><a href="#workflows">Workflows</a></li>
+<li><a href="#other">Other</a></li>
+</ul>
+</li>
+<li><a href="#projects">Projects</a><ul>
+<li><a href="#framework">Framework</a></li>
+<li><a href="#cms">CMS</a></li>
+<li><a href="#cookiecutters">Cookiecutters</a></li>
+<li><a href="#e-commerce">e-Commerce</a></li>
+<li><a href="#project-management">Project Management</a></li>
+<li><a href="#other">Other</a></li>
+</ul>
+</li>
+<li><a href="#resources">Resources</a><ul>
+<li><a href="#books">Books</a></li>
+<li><a href="#websites">Websites</a></li>
+<li><a href="#conferences">Conferences</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#who-uses-it">Who uses it?</a></li>
+</ul>
+</li>
+<li><a href="#contributing">Contributing</a></li>
+</ul>
+<h2>Admin interface</h2>
+<p><em>Packages that extend the Admin interface, adding or improving features.</em></p>
+<ul>
+<li><a href="https://github.com/FormAlchemy/pyramid_formalchemy">pyramid_formalchemy</a> -
+  provides a CRUD interface for pyramid based on FormAlchemy.</li>
+<li><a href="https://github.com/sacrud/pyramid_sacrud">pyramid_sacrud</a> -    Pyramid CRUD interface.
+  Provides an administration web interface for Pyramid.
+  Unlike classic CRUD, pyramid_sacrud allows overrides and flexibility to
+  customize your interface, similar to django.contrib.admin but uses a
+  different backend to provide resources. <a href="http://pyramid-sacrud.readthedocs.io/pages/contribute/architecture.html">New Architecture</a>
+  built on the resources and mechanism traversal, allows to use it in various cases.<ul>
+<li><a href="https://github.com/sacrud/ps_alchemy">ps_alchemy</a> - extension for pyramid_sacrud
+  which provides SQLAlchemy models.</li>
+<li><a href="https://github.com/sacrud/ps_tree">ps_tree</a> - extension for
+  <a href="https://github.com/sacrud/pyramid_sacrud">pyramid_sacrud</a> which displays
+  a list of records as tree. This works fine with models from
+  <a href="https://github.com/uralbash/sqlalchemy_mptt">sqlalchemy_mptt</a>.</li>
+</ul>
+</li>
+<li><a href="https://websauna.org/docs/">Websauna</a> - a full stack application framework for Pyramid</li>
+</ul>
+<h2>Asset Management</h2>
+<p><em>Packages that help manage the static assets of a project.</em></p>
+<ul>
+<li><a href="https://github.com/sontek/pyramid_webassets">pyramid_webassets</a> - Pyramid
+  extension for working with the webassets library.</li>
+<li><a href="https://github.com/mrijken/pyramid_bowerstatic">pyramid_bowerstatic</a> -
+  integration of Bowerstatic in Pyramid</li>
+</ul>
+<h2>Async</h2>
+<ul>
+<li><a href="https://github.com/housleyjk/aiopyramid">aiopyramid</a> - Run pyramid using
+  asyncio.</li>
+<li><a href="https://github.com/abourget/gevent-socketio">gevent-socketio</a> -
+  gevent-socketio is a Python implementation of the Socket.IO protocol,
+  developed originally for Node.js by LearnBoost and then ported to other
+  languages.</li>
+<li><a href="https://github.com/boothead/stargate">Stargate</a> - Stargate is a package for
+  adding WebSockets support to pyramid applications using the excellent
+  eventlet library for long running connections.</li>
+<li><a href="https://github.com/AppEnlight/channelstream">channelstream</a> - websocket communication server (gevent).</li>
+</ul>
+<h2>Authentication</h2>
+<p><em>Packages that improve or extend the authentication methods of Pyramid.</em></p>
+<ul>
+<li><a href="https://github.com/Pylons/pyramid_ldap">pyramid_ldap</a> - an LDAP
+  authentication policy for Pyramid.</li>
+<li><a href="https://github.com/Cito/pyramid_ldap3">pyramid_ldap3</a> - Provides LDAP authentication
+  services for your Pyramid application based on the ldap3 package.</li>
+<li><a href="https://github.com/Pylons/pyramid_who">pyramid_who</a> - Authentication policy
+  for pyramid using repoze.who 2.0 API.</li>
+<li><a href="https://github.com/bbangert/velruse">velruse</a> - Simplifying third-party
+  authentication for web applications. it supports most of auth
+  <a href="https://github.com/bbangert/velruse/tree/master/velruse/providers">providers</a>.</li>
+<li><a href="https://github.com/thruflo/pyramid_simpleauth">pyramid_simpleauth</a> - session
+  based authentication and role based security for Pyramid application</li>
+<li><a href="https://github.com/omab/python-social-auth">Python Social Auth</a> - Social
+  authentication/registration mechanism with support for a large number of
+  <a href="https://github.com/omab/python-social-auth#auth-providers">providers</a>.</li>
+<li><a href="https://github.com/authomatic/authomatic">Authomatic</a> -  Simple yet powerful
+  authorization / authentication client library for Python web applications.</li>
+<li><a href="https://github.com/cd34/apex">apex</a> - Toolkit for Pyramid, a Pylons Project,</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Pyramid</h1>
+<p><a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a>
+<a href="https://webchat.freenode.net/?channels=pyramid"><img alt="IRC
+Freenode" src="https://img.shields.io/badge/irc-freenode-blue.svg" /></a></p>
+<p>A curated list of awesome Pyramid apps, projects and resources. Inspired by and
+based on <a href="https://github.com/vinta/awesome-python/">awesome-python</a>.</p>
+<ul>
+<li><a href="#awesome-pyramid">Awesome Pyramid</a><ul>
+<li><a href="#admin-interface">Admin Interface</a></li>
+<li><a href="#asset-management">Asset Management</a></li>
+<li><a href="#async">Async</a></li>
+<li><a href="#authentication">Authentication</a></li>
+<li><a href="#authorization">Authorization</a></li>
+<li><a href="#caching--session">Caching &amp; Session</a></li>
+<li><a href="#debugging">Debugging</a></li>
+<li><a href="#email">Email</a></li>
+<li><a href="#forms">Forms</a></li>
+<li><a href="#media-management">Media-Management</a></li>
+<li><a href="#restful-api">RESTful API</a></li>
+<li><a href="#search">Search</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#settings">Settings</a></li>
+<li><a href="#storage">Storage</a></li>
+<li><a href="#task-queue">Task Queue</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#translations">Translations</a></li>
+<li><a href="#web-frontend-integration">Web frontend integration</a></li>
+<li><a href="#workflows">Workflows</a></li>
+<li><a href="#other">Other</a></li>
+</ul>
+</li>
+<li><a href="#projects">Projects</a><ul>
+<li><a href="#framework">Framework</a></li>
+<li><a href="#cms">CMS</a></li>
+<li><a href="#cookiecutters">Cookiecutters</a></li>
+<li><a href="#e-commerce">e-Commerce</a></li>
+<li><a href="#project-management">Project Management</a></li>
+<li><a href="#other">Other</a></li>
+</ul>
+</li>
+<li><a href="#resources">Resources</a><ul>
+<li><a href="#books">Books</a></li>
+<li><a href="#websites">Websites</a></li>
+<li><a href="#conferences">Conferences</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#who-uses-it">Who uses it?</a></li>
+</ul>
+</li>
+<li><a href="#contributing">Contributing</a></li>
+</ul>
+<h2>Admin interface</h2>
+<p><em>Packages that extend the Admin interface, adding or improving features.</em></p>
+<ul>
+<li><a href="https://github.com/FormAlchemy/pyramid_formalchemy">pyramid_formalchemy</a> -
+  provides a CRUD interface for pyramid based on FormAlchemy.</li>
+<li><a href="https://github.com/sacrud/pyramid_sacrud">pyramid_sacrud</a> -    Pyramid CRUD interface.
+  Provides an administration web interface for Pyramid.
+  Unlike classic CRUD, pyramid_sacrud allows overrides and flexibility to
+  customize your interface, similar to django.contrib.admin but uses a
+  different backend to provide resources. <a href="http://pyramid-sacrud.readthedocs.io/pages/contribute/architecture.html">New Architecture</a>
+  built on the resources and mechanism traversal, allows to use it in various cases.<ul>
+<li><a href="https://github.com/sacrud/ps_alchemy">ps_alchemy</a> - extension for pyramid_sacrud
+  which provides SQLAlchemy models.</li>
+<li><a href="https://github.com/sacrud/ps_tree">ps_tree</a> - extension for
+  <a href="https://github.com/sacrud/pyramid_sacrud">pyramid_sacrud</a> which displays
+  a list of records as tree. This works fine with models from
+  <a href="https://github.com/uralbash/sqlalchemy_mptt">sqlalchemy_mptt</a>.</li>
+</ul>
+</li>
+<li><a href="https://websauna.org/docs/">Websauna</a> - a full stack application framework for Pyramid</li>
+</ul>
+<h2>Asset Management</h2>
+<p><em>Packages that help manage the static assets of a project.</em></p>
+<ul>
+<li><a href="https://github.com/sontek/pyramid_webassets">pyramid_webassets</a> - Pyramid
+  extension for working with the webassets library.</li>
+<li><a href="https://github.com/mrijken/pyramid_bowerstatic">pyramid_bowerstatic</a> -
+  integration of Bowerstatic in Pyramid</li>
+</ul>
+<h2>Async</h2>
+<ul>
+<li><a href="https://github.com/housleyjk/aiopyramid">aiopyramid</a> - Run pyramid using
+  asyncio.</li>
+<li><a href="https://github.com/abourget/gevent-socketio">gevent-socketio</a> -
+  gevent-socketio is a Python implementation of the Socket.IO protocol,
+  developed originally for Node.js by LearnBoost and then ported to other
+  languages.</li>
+<li><a href="https://github.com/boothead/stargate">Stargate</a> - Stargate is a package for
+  adding WebSockets support to pyramid applications using the excellent
+  eventlet library for long running connections.</li>
+<li><a href="https://github.com/AppEnlight/channelstream">channelstream</a> - websocket communication server (gevent).</li>
+</ul>
+<h2>Authentication</h2>
+<p><em>Packages that improve or extend the authentication methods of Pyramid.</em></p>
+<ul>
+<li><a href="https://github.com/Pylons/pyramid_ldap">pyramid_ldap</a> - an LDAP
+  authentication policy for Pyramid.</li>
+<li><a href="https://github.com/Cito/pyramid_ldap3">pyramid_ldap3</a> - Provides LDAP authentication
+  services for your Pyramid application based on the ldap3 package.</li>
+<li><a href="https://github.com/Pylons/pyramid_who">pyramid_who</a> - Authentication policy
+  for pyramid using repoze.who 2.0 API.</li>
+<li><a href="https://github.com/bbangert/velruse">velruse</a> - Simplifying third-party
+  authentication for web applications. it supports most of auth
+  <a href="https://github.com/bbangert/velruse/tree/master/velruse/providers">providers</a>.</li>
+<li><a href="https://github.com/thruflo/pyramid_simpleauth">pyramid_simpleauth</a> - session
+  based authentication and role based security for Pyramid application</li>
+<li><a href="https://github.com/omab/python-social-auth">Python Social Auth</a> - Social
+  authentication/registration mechanism with support for a large number of
+  <a href="https://github.com/omab/python-social-auth#auth-providers">providers</a>.</li>
+<li><a href="https://github.com/authomatic/authomatic">Authomatic</a> -  Simple yet powerful
+  authorization / authentication client library for Python web applications.</li>
+<li><a href="https://github.com/cd34/apex">apex</a> - Toolkit for Pyramid, a Pylons Project,</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'pyramid_README.md';
 
         fetch(markdownFile)
@@ -48,21 +267,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

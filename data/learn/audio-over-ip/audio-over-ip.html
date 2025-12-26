@@ -8,38 +8,147 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mo Way Awesome Aoip - Awesome List Resources">
-    <title>Mo Way Awesome Aoip</title>
+    <meta name="description" content="> A curated list of awesome Audio over IP and AES67 tools and resources. In the professional audio sector, Audio over IP (AoIP) is about transmitting...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Audio Over IP [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Audio Over IP <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p><a href="https://wikipedia.org/wiki/AES67"><img src="./resources/aes67-logo.png" alt="AES67 Logo" align="centre"></a></p>
+<blockquote>
+<p>A curated list of awesome <a href="https://www.avid.com/resource-center/audio-over-ip-avb-and-dante-what-todays-music-producer-should-know">Audio over IP</a> and AES67 tools and resources.</p>
+</blockquote>
+<p>In the professional audio sector, Audio over IP (AoIP) is about transmitting uncompressed, low-latency audio over an IP (layer 3) network. Popular examples of protocols are <a href="https://en.wikipedia.org/wiki/Dante_(networking)">Dante</a>, <a href="https://en.wikipedia.org/wiki/AES67">AES67</a> and <a href="https://en.wikipedia.org/wiki/Ravenna_(networking)">Ravenna</a>.</p>
+<p>This list is short, partly due to excluding unmaintained projects. Check out the <a href="#footnotes">Footnotes</a> section at the bottom and <a href="awesome-but-inactive.md">awesome-but-inactive</a>, if you prefer a more lenient approach. In General, the AoIP ecosystem is still growing and there is rather sparse tooling available at the moment. Hence, if you find anything missing, it would delight me if you open a PR to add it.</p>
+<p>Contributions welcome! Read the <a href="contributing.md">contribution guidelines</a> first.</p>
+<hr />
+<h2>Contents</h2>
+<ul>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#organizations">Organizations</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#standards">Standards</a></li>
+</ul>
+<h2>Tools</h2>
+<ul>
+<li><a href="https://github.com/chris-ritsen/network-audio-controller">Network Audio Controller</a> - Reverse engineered Dante Controller on the command line.</li>
+<li><a href="https://gitlab.freedesktop.org/pipewire/pipewire/-/wikis/AES67">Pipewire AES67</a> - Show AES67 streams as native audio devices on Linux.</li>
+<li><a href="https://bitbucket.org/MergingTechnologies/ravenna-alsa-lkm/src/master/">Merging ALSA RAVENNA/AES67 Driver</a> - Open source driver that doesn't accept contributions.</li>
+<li><a href="https://github.com/bondagit/aes67-linux-daemon">AES67 Linux Daemon</a> - Fork of Merging's driver with an open source web server.</li>
+<li><a href="https://github.com/philhartung/aes67-monitor">AES67 Monitor</a> - Cross platform AES67 monitoring app.</li>
+<li><a href="https://jacktrip.github.io/jacktrip/">JackTrip</a> - An open source tool for transmitting real-time audio over LAN and WAN.</li>
+<li><a href="https://linuxptp.sourceforge.net/">LinuxPTP</a> - PTP IEEE 1588 for Linux. Provides various tools, e.g. <code>ptp4l</code> and <code>phc2sys</code>.</li>
+<li><a href="https://github.com/martim01/pam">PAM</a> - FOSS AES67 capable audio monitor.</li>
+<li><a href="https://github.com/badaix/snapcast/tree/develop">Snapcast</a> - FOSS project for a Sonos-like multiroom solution, using a custom TCP-based protocol.</li>
+<li><a href="https://github.com/soundondigital/ravennakit">Ravennakit SDK</a> - Provides a cross-platform C++ SDK for professional networked audio using AES67, RAVENNA, and ST2110-30.</li>
+</ul>
+<h3>Closed Source</h3>
+<ul>
+<li><a href="https://www.merging.com/aneman/">Aneman</a> - <strong>A</strong>udio <strong>NE</strong>twork <strong>MAN</strong>ager, the Ravenna equivalent for Dante controller.</li>
+<li><a href="https://www.ptptrackhound.com/">PTP Track Hound</a> - PTP network traffic analysis tool (cross-platform, basic free version available).</li>
+</ul>
+<h2>Organizations</h2>
+<ul>
+<li><a href="https://ipmx.io/about/">IPMX</a> - A proposed set of open standards and specifications for control, copy protection, connection management and security.</li>
+<li><a href="https://audinate.com">Audinate</a> - Its proprietary Dante technology is the most popular AoIP solution by far.</li>
+<li><a href="https://www.ravenna-network.com/">Ravenna</a> - Second most popular AoIP solution, which is more open than Dante.</li>
+</ul>
+<h2>Education</h2>
+<ul>
+<li><a href="https://rhconsulting.uk/blog/">Networked Audio Products</a> - A census of AoIP products, conducted every year (current: <a href="https://rhconsulting.uk/blog/networked-audio-products-2025/">2025</a>).</li>
+<li><a href="https://www.getdante.com/resources/training/dante-certification-program/">Dante Certification</a> - Understanding Dante helps to understand AoIP. The training requires an account. I recommend lv 1 and lv 2.</li>
+<li><a href="https://www.ravenna-network.com/resources/">Ravenna Resources</a> - Webinars and slides by Andreas Hildebrand about Ravenna, AES67, SMPTE 2110, PTP and IPMX.</li>
+<li><a href="https://download.yamaha.com/files/tcm:39-868466/">Connecting Dante with AES67</a> - Setting up AES67 from a Dante device isn't very straight forward, here's a guide from Yamaha as an example.</li>
+</ul>
+<h2>Standards</h2>
+<ul>
+<li><a href="https://www.aes.org/publications/standards/search.cfm?docID=96">AES67</a>, public <a href="https://aes2.org/standards-blog/call-for-comment-on-draft-revised-aes67-xxxx-high-performance-streaming-audio-over-ip-interoperability/">draft</a> - The open standard for Audio over IP.</li>
+<li><a href="https://github.com/AMWA-TV/nmos">NMOS</a> - REST APIs for controlling network media devices.</li>
+<li><a href="https://www.smpte.org/standards/st2110">SMPTE ST 2110-30</a>, public <a href="https://pub.smpte.org/latest/st2110-30/st2110-30-2017.pdf">version</a> - AES67 based audio transport in a video stream. Adds some contains to AES67.</li>
+</ul>
+<h2>Footnotes</h2>
+<ul>
+<li><a href="https://gist.github.com/njh/c9196c465ea33ae9f97db782870464ef">AES67 Wishlist</a> - Popular wishlist for AES67 software, which inspired this list.</li>
+<li><a href="https://aes67.app/resources">Curated Web Page</a> - Read-only "curated list of AES67 resources" by Philipp Hartung.</li>
+<li><a href="https://github.com/stingalleman/awesome-audiovisual">Awesome Audiovisual</a> - AV list containing a little AoIP.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Audio Over IP <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p><a href="https://wikipedia.org/wiki/AES67"><img src="./resources/aes67-logo.png" alt="AES67 Logo" align="centre"></a></p>
+<blockquote>
+<p>A curated list of awesome <a href="https://www.avid.com/resource-center/audio-over-ip-avb-and-dante-what-todays-music-producer-should-know">Audio over IP</a> and AES67 tools and resources.</p>
+</blockquote>
+<p>In the professional audio sector, Audio over IP (AoIP) is about transmitting uncompressed, low-latency audio over an IP (layer 3) network. Popular examples of protocols are <a href="https://en.wikipedia.org/wiki/Dante_(networking)">Dante</a>, <a href="https://en.wikipedia.org/wiki/AES67">AES67</a> and <a href="https://en.wikipedia.org/wiki/Ravenna_(networking)">Ravenna</a>.</p>
+<p>This list is short, partly due to excluding unmaintained projects. Check out the <a href="#footnotes">Footnotes</a> section at the bottom and <a href="awesome-but-inactive.md">awesome-but-inactive</a>, if you prefer a more lenient approach. In General, the AoIP ecosystem is still growing and there is rather sparse tooling available at the moment. Hence, if you find anything missing, it would delight me if you open a PR to add it.</p>
+<p>Contributions welcome! Read the <a href="contributing.md">contribution guidelines</a> first.</p>
+<hr />
+<h2>Contents</h2>
+<ul>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#organizations">Organizations</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#standards">Standards</a></li>
+</ul>
+<h2>Tools</h2>
+<ul>
+<li><a href="https://github.com/chris-ritsen/network-audio-controller">Network Audio Controller</a> - Reverse engineered Dante Controller on the command line.</li>
+<li><a href="https://gitlab.freedesktop.org/pipewire/pipewire/-/wikis/AES67">Pipewire AES67</a> - Show AES67 streams as native audio devices on Linux.</li>
+<li><a href="https://bitbucket.org/MergingTechnologies/ravenna-alsa-lkm/src/master/">Merging ALSA RAVENNA/AES67 Driver</a> - Open source driver that doesn't accept contributions.</li>
+<li><a href="https://github.com/bondagit/aes67-linux-daemon">AES67 Linux Daemon</a> - Fork of Merging's driver with an open source web server.</li>
+<li><a href="https://github.com/philhartung/aes67-monitor">AES67 Monitor</a> - Cross platform AES67 monitoring app.</li>
+<li><a href="https://jacktrip.github.io/jacktrip/">JackTrip</a> - An open source tool for transmitting real-time audio over LAN and WAN.</li>
+<li><a href="https://linuxptp.sourceforge.net/">LinuxPTP</a> - PTP IEEE 1588 for Linux. Provides various tools, e.g. <code>ptp4l</code> and <code>phc2sys</code>.</li>
+<li><a href="https://github.com/martim01/pam">PAM</a> - FOSS AES67 capable audio monitor.</li>
+<li><a href="https://github.com/badaix/snapcast/tree/develop">Snapcast</a> - FOSS project for a Sonos-like multiroom solution, using a custom TCP-based protocol.</li>
+<li><a href="https://github.com/soundondigital/ravennakit">Ravennakit SDK</a> - Provides a cross-platform C++ SDK for professional networked audio using AES67, RAVENNA, and ST2110-30.</li>
+</ul>
+<h3>Closed Source</h3>
+<ul>
+<li><a href="https://www.merging.com/aneman/">Aneman</a> - <strong>A</strong>udio <strong>NE</strong>twork <strong>MAN</strong>ager, the Ravenna equivalent for Dante controller.</li>
+<li><a href="https://www.ptptrackhound.com/">PTP Track Hound</a> - PTP network traffic analysis tool (cross-platform, basic free version available).</li>
+</ul>
+<h2>Organizations</h2>
+<ul>
+<li><a href="https://ipmx.io/about/">IPMX</a> - A proposed set of open standards and specifications for control, copy protection, connection management and security.</li>
+<li><a href="https://audinate.com">Audinate</a> - Its proprietary Dante technology is the most popular AoIP solution by far.</li>
+<li><a href="https://www.ravenna-network.com/">Ravenna</a> - Second most popular AoIP solution, which is more open than Dante.</li>
+</ul>
+<h2>Education</h2>
+<ul>
+<li><a href="https://rhconsulting.uk/blog/">Networked Audio Products</a> - A census of AoIP products, conducted every year (current: <a href="https://rhconsulting.uk/blog/networked-audio-products-2025/">2025</a>).</li>
+<li><a href="https://www.getdante.com/resources/training/dante-certification-program/">Dante Certification</a> - Understanding Dante helps to understand AoIP. The training requires an account. I recommend lv 1 and lv 2.</li>
+<li><a href="https://www.ravenna-network.com/resources/">Ravenna Resources</a> - Webinars and slides by Andreas Hildebrand about Ravenna, AES67, SMPTE 2110, PTP and IPMX.</li>
+<li><a href="https://download.yamaha.com/files/tcm:39-868466/">Connecting Dante with AES67</a> - Setting up AES67 from a Dante device isn't very straight forward, here's a guide from Yamaha as an example.</li>
+</ul>
+<h2>Standards</h2>
+<ul>
+<li><a href="https://www.aes.org/publications/standards/search.cfm?docID=96">AES67</a>, public <a href="https://aes2.org/standards-blog/call-for-comment-on-draft-revised-aes67-xxxx-high-performance-streaming-audio-over-ip-interoperability/">draft</a> - The open standard for Audio over IP.</li>
+<li><a href="https://github.com/AMWA-TV/nmos">NMOS</a> - REST APIs for controlling network media devices.</li>
+<li><a href="https://www.smpte.org/standards/st2110">SMPTE ST 2110-30</a>, public <a href="https://pub.smpte.org/latest/st2110-30/st2110-30-2017.pdf">version</a> - AES67 based audio transport in a video stream. Adds some contains to AES67.</li>
+</ul>
+<h2>Footnotes</h2>
+<ul>
+<li><a href="https://gist.github.com/njh/c9196c465ea33ae9f97db782870464ef">AES67 Wishlist</a> - Popular wishlist for AES67 software, which inspired this list.</li>
+<li><a href="https://aes67.app/resources">Curated Web Page</a> - Read-only "curated list of AES67 resources" by Philipp Hartung.</li>
+<li><a href="https://github.com/stingalleman/awesome-audiovisual">Awesome Audiovisual</a> - AV list containing a little AoIP.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'audio-over-ip_README.md';
 
         fetch(markdownFile)
@@ -48,21 +157,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

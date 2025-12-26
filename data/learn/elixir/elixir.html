@@ -8,38 +8,267 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="H4cc Awesome Elixir - Awesome List Resources">
-    <title>H4cc Awesome Elixir</title>
+    <meta name="description" content="A curated list of amazingly awesome Elixir libraries, resources, and shiny things inspired by awesome-php. If you think a package should be added, please add a...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Elixir [![CI Badge](https://github.com/h4cc/awesome-elixir/actions/workflows/ci.yml/badge.svg)](https://github.com/h4cc/awesome-elixir) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Elixir <a href="https://github.com/h4cc/awesome-elixir"><img alt="CI Badge" src="https://github.com/h4cc/awesome-elixir/actions/workflows/ci.yml/badge.svg" /></a> <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A curated list of amazingly awesome Elixir libraries, resources, and shiny things inspired by <a href="https://github.com/ziadoz/awesome-php">awesome-php</a>.</p>
+<p>If you think a package should be added, please add a :+1: (<code>:+1:</code>) at the according issue or create a new one.</p>
+<p>There are <a href="#other-awesome-lists">other sites with curated lists of elixir packages</a> which you can have a look at.</p>
+<ul>
+<li><a href="#awesome-elixir--">Awesome Elixir  </a></li>
+<li><a href="#actors">Actors</a></li>
+<li><a href="#algorithms-and-data-structures">Algorithms and Data structures</a></li>
+<li><a href="#applications">Applications</a></li>
+<li><a href="#artificial-intelligence">Artificial Intelligence</a></li>
+<li><a href="#audio-and-sounds">Audio and Sounds</a></li>
+<li><a href="#authentication">Authentication</a></li>
+<li><a href="#authorization">Authorization</a></li>
+<li><a href="#behaviours-and-interfaces">Behaviours and Interfaces</a></li>
+<li><a href="#benchmarking">Benchmarking</a></li>
+<li><a href="#bittorrent">Bittorrent</a></li>
+<li><a href="#bson">BSON</a></li>
+<li><a href="#build-tools">Build Tools</a></li>
+<li><a href="#caching">Caching</a></li>
+<li><a href="#chatting">Chatting</a></li>
+<li><a href="#cloud-infrastructure-and-management">Cloud Infrastructure and Management</a></li>
+<li><a href="#code-analysis">Code Analysis</a></li>
+<li><a href="#command-line-applications">Command Line Applications</a></li>
+<li><a href="#configuration">Configuration</a></li>
+<li><a href="#cryptography">Cryptography</a></li>
+<li><a href="#csv">CSV</a></li>
+<li><a href="#data-visualization">Data Visualization</a></li>
+<li><a href="#date-and-time">Date and Time</a></li>
+<li><a href="#debugging">Debugging</a></li>
+<li><a href="#deployment">Deployment</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#domain-specific-language">Domain-specific language</a></li>
+<li><a href="#ecmascript">ECMAScript</a></li>
+<li><a href="#email">Email</a></li>
+<li><a href="#embedded-systems">Embedded Systems</a></li>
+<li><a href="#encoding-and-compression">Encoding and Compression</a></li>
+<li><a href="#errors-and-exception-handling">Errors and Exception Handling</a></li>
+<li><a href="#eventhandling">Eventhandling</a></li>
+<li><a href="#examples-and-funny-stuff">Examples and funny stuff</a></li>
+<li><a href="#feature-flags-and-toggles">Feature Flags and Toggles</a></li>
+<li><a href="#feeds">Feeds</a></li>
+<li><a href="#files-and-directories">Files and Directories</a></li>
+<li><a href="#forms">Forms</a></li>
+<li><a href="#framework-components">Framework Components</a></li>
+<li><a href="#frameworks">Frameworks</a></li>
+<li><a href="#games">Games</a></li>
+<li><a href="#geolocation">Geolocation</a></li>
+<li><a href="#gui">GUI</a></li>
+<li><a href="#hardware">Hardware</a></li>
+<li><a href="#html">HTML</a></li>
+<li><a href="#http">HTTP</a></li>
+<li><a href="#images">Images</a></li>
+<li><a href="#instrumenting--monitoring">Instrumenting / Monitoring</a></li>
+<li><a href="#json">JSON</a></li>
+<li><a href="#languages">Languages</a></li>
+<li><a href="#lexical-analysis">Lexical analysis</a></li>
+<li><a href="#logging">Logging</a></li>
+<li><a href="#macros">Macros</a></li>
+<li><a href="#markdown">Markdown</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#native-implemented-functions">Native Implemented Functions</a></li>
+<li><a href="#natural-language-processing-nlp">Natural Language Processing (NLP)</a></li>
+<li><a href="#networking">Networking</a></li>
+<li><a href="#office">Office</a></li>
+<li><a href="#orm-and-datamapping">ORM and Datamapping</a></li>
+<li><a href="#otp">OTP</a></li>
+<li><a href="#package-management">Package Management</a></li>
+<li><a href="#pdf">PDF</a></li>
+<li><a href="#protocols">Protocols</a></li>
+<li><a href="#queue">Queue</a></li>
+<li><a href="#quic">QUIC</a></li>
+<li><a href="#release-management">Release Management</a></li>
+<li><a href="#rest-and-api">REST and API</a></li>
+<li><a href="#search">Search</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#sms">SMS</a></li>
+<li><a href="#static-page-generation">Static Page Generation</a></li>
+<li><a href="#statistics">Statistics</a></li>
+<li><a href="#templating">Templating</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#text-and-numbers">Text and Numbers</a></li>
+<li><a href="#third-party-apis">Third Party APIs</a></li>
+<li><a href="#translations-and-internationalizations">Translations and Internationalizations</a></li>
+<li><a href="#utilities">Utilities</a></li>
+<li><a href="#validations">Validations</a></li>
+<li><a href="#version-control">Version Control</a></li>
+<li><a href="#video">Video</a></li>
+<li><a href="#webassembly">WebAssembly</a></li>
+<li><a href="#xml">XML</a></li>
+<li><a href="#yaml">YAML</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#cheat-sheets">Cheat Sheets</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#editors">Editors</a></li>
+<li><a href="#newsletters">Newsletters</a></li>
+<li><a href="#other-awesome-lists">Other Awesome Lists</a></li>
+<li><a href="#podcasts">Podcasts</a></li>
+<li><a href="#reading">Reading</a></li>
+<li><a href="#screencasts">Screencasts</a></li>
+<li><a href="#styleguides">Styleguides</a></li>
+<li><a href="#websites">Websites</a></li>
+<li><a href="#contributing">Contributing</a></li>
+</ul>
+<h2>Actors</h2>
+<p><em>Libraries and tools for working with actors and such.</em>
+* <a href="https://github.com/antonmi/ALF">alf</a> - Flow-based Application Layer Framework.
+* <a href="https://github.com/spawnproc/bpe">bpe</a> - Business Process Engine in Erlang. (<a href="https://bpe.n2o.dev">Doc</a>).
+* <a href="https://github.com/seth/pooler">pooler</a> - An OTP Process Pool Application.
+* <a href="https://github.com/general-CbIC/poolex">poolex</a> - Pure elixir pool manager.
+* <a href="https://github.com/eigr/spawn">spawn</a> - Elixir poliglot actors service mesh.</p>
+<h2>Algorithms and Data structures</h2>
+<p><em>Libraries and implementations of algorithms and data structures.</em></p>
+<ul>
+<li><a href="https://github.com/sabiwara/aja">aja</a> - High performance persistent vectors and ordered maps.</li>
+<li><a href="https://github.com/takscape/elixir-array">array</a> - An Elixir wrapper library for Erlang's array.</li>
+<li><a href="https://github.com/dkendal/aruspex">aruspex</a> - Aruspex is a configurable constraint solver, written purely in Elixir.</li>
+<li><a href="https://github.com/mkaput/elixir-bimap">bimap</a> - Pure Elixir implementation of <a href="https://en.wikipedia.org/wiki/Bidirectional_map">bidirectional maps</a> and multimaps.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Elixir <a href="https://github.com/h4cc/awesome-elixir"><img alt="CI Badge" src="https://github.com/h4cc/awesome-elixir/actions/workflows/ci.yml/badge.svg" /></a> <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A curated list of amazingly awesome Elixir libraries, resources, and shiny things inspired by <a href="https://github.com/ziadoz/awesome-php">awesome-php</a>.</p>
+<p>If you think a package should be added, please add a :+1: (<code>:+1:</code>) at the according issue or create a new one.</p>
+<p>There are <a href="#other-awesome-lists">other sites with curated lists of elixir packages</a> which you can have a look at.</p>
+<ul>
+<li><a href="#awesome-elixir--">Awesome Elixir  </a></li>
+<li><a href="#actors">Actors</a></li>
+<li><a href="#algorithms-and-data-structures">Algorithms and Data structures</a></li>
+<li><a href="#applications">Applications</a></li>
+<li><a href="#artificial-intelligence">Artificial Intelligence</a></li>
+<li><a href="#audio-and-sounds">Audio and Sounds</a></li>
+<li><a href="#authentication">Authentication</a></li>
+<li><a href="#authorization">Authorization</a></li>
+<li><a href="#behaviours-and-interfaces">Behaviours and Interfaces</a></li>
+<li><a href="#benchmarking">Benchmarking</a></li>
+<li><a href="#bittorrent">Bittorrent</a></li>
+<li><a href="#bson">BSON</a></li>
+<li><a href="#build-tools">Build Tools</a></li>
+<li><a href="#caching">Caching</a></li>
+<li><a href="#chatting">Chatting</a></li>
+<li><a href="#cloud-infrastructure-and-management">Cloud Infrastructure and Management</a></li>
+<li><a href="#code-analysis">Code Analysis</a></li>
+<li><a href="#command-line-applications">Command Line Applications</a></li>
+<li><a href="#configuration">Configuration</a></li>
+<li><a href="#cryptography">Cryptography</a></li>
+<li><a href="#csv">CSV</a></li>
+<li><a href="#data-visualization">Data Visualization</a></li>
+<li><a href="#date-and-time">Date and Time</a></li>
+<li><a href="#debugging">Debugging</a></li>
+<li><a href="#deployment">Deployment</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#domain-specific-language">Domain-specific language</a></li>
+<li><a href="#ecmascript">ECMAScript</a></li>
+<li><a href="#email">Email</a></li>
+<li><a href="#embedded-systems">Embedded Systems</a></li>
+<li><a href="#encoding-and-compression">Encoding and Compression</a></li>
+<li><a href="#errors-and-exception-handling">Errors and Exception Handling</a></li>
+<li><a href="#eventhandling">Eventhandling</a></li>
+<li><a href="#examples-and-funny-stuff">Examples and funny stuff</a></li>
+<li><a href="#feature-flags-and-toggles">Feature Flags and Toggles</a></li>
+<li><a href="#feeds">Feeds</a></li>
+<li><a href="#files-and-directories">Files and Directories</a></li>
+<li><a href="#forms">Forms</a></li>
+<li><a href="#framework-components">Framework Components</a></li>
+<li><a href="#frameworks">Frameworks</a></li>
+<li><a href="#games">Games</a></li>
+<li><a href="#geolocation">Geolocation</a></li>
+<li><a href="#gui">GUI</a></li>
+<li><a href="#hardware">Hardware</a></li>
+<li><a href="#html">HTML</a></li>
+<li><a href="#http">HTTP</a></li>
+<li><a href="#images">Images</a></li>
+<li><a href="#instrumenting--monitoring">Instrumenting / Monitoring</a></li>
+<li><a href="#json">JSON</a></li>
+<li><a href="#languages">Languages</a></li>
+<li><a href="#lexical-analysis">Lexical analysis</a></li>
+<li><a href="#logging">Logging</a></li>
+<li><a href="#macros">Macros</a></li>
+<li><a href="#markdown">Markdown</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#native-implemented-functions">Native Implemented Functions</a></li>
+<li><a href="#natural-language-processing-nlp">Natural Language Processing (NLP)</a></li>
+<li><a href="#networking">Networking</a></li>
+<li><a href="#office">Office</a></li>
+<li><a href="#orm-and-datamapping">ORM and Datamapping</a></li>
+<li><a href="#otp">OTP</a></li>
+<li><a href="#package-management">Package Management</a></li>
+<li><a href="#pdf">PDF</a></li>
+<li><a href="#protocols">Protocols</a></li>
+<li><a href="#queue">Queue</a></li>
+<li><a href="#quic">QUIC</a></li>
+<li><a href="#release-management">Release Management</a></li>
+<li><a href="#rest-and-api">REST and API</a></li>
+<li><a href="#search">Search</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#sms">SMS</a></li>
+<li><a href="#static-page-generation">Static Page Generation</a></li>
+<li><a href="#statistics">Statistics</a></li>
+<li><a href="#templating">Templating</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#text-and-numbers">Text and Numbers</a></li>
+<li><a href="#third-party-apis">Third Party APIs</a></li>
+<li><a href="#translations-and-internationalizations">Translations and Internationalizations</a></li>
+<li><a href="#utilities">Utilities</a></li>
+<li><a href="#validations">Validations</a></li>
+<li><a href="#version-control">Version Control</a></li>
+<li><a href="#video">Video</a></li>
+<li><a href="#webassembly">WebAssembly</a></li>
+<li><a href="#xml">XML</a></li>
+<li><a href="#yaml">YAML</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#cheat-sheets">Cheat Sheets</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#editors">Editors</a></li>
+<li><a href="#newsletters">Newsletters</a></li>
+<li><a href="#other-awesome-lists">Other Awesome Lists</a></li>
+<li><a href="#podcasts">Podcasts</a></li>
+<li><a href="#reading">Reading</a></li>
+<li><a href="#screencasts">Screencasts</a></li>
+<li><a href="#styleguides">Styleguides</a></li>
+<li><a href="#websites">Websites</a></li>
+<li><a href="#contributing">Contributing</a></li>
+</ul>
+<h2>Actors</h2>
+<p><em>Libraries and tools for working with actors and such.</em>
+* <a href="https://github.com/antonmi/ALF">alf</a> - Flow-based Application Layer Framework.
+* <a href="https://github.com/spawnproc/bpe">bpe</a> - Business Process Engine in Erlang. (<a href="https://bpe.n2o.dev">Doc</a>).
+* <a href="https://github.com/seth/pooler">pooler</a> - An OTP Process Pool Application.
+* <a href="https://github.com/general-CbIC/poolex">poolex</a> - Pure elixir pool manager.
+* <a href="https://github.com/eigr/spawn">spawn</a> - Elixir poliglot actors service mesh.</p>
+<h2>Algorithms and Data structures</h2>
+<p><em>Libraries and implementations of algorithms and data structures.</em></p>
+<ul>
+<li><a href="https://github.com/sabiwara/aja">aja</a> - High performance persistent vectors and ordered maps.</li>
+<li><a href="https://github.com/takscape/elixir-array">array</a> - An Elixir wrapper library for Erlang's array.</li>
+<li><a href="https://github.com/dkendal/aruspex">aruspex</a> - Aruspex is a configurable constraint solver, written purely in Elixir.</li>
+<li><a href="https://github.com/mkaput/elixir-bimap">bimap</a> - Pure Elixir implementation of <a href="https://en.wikipedia.org/wiki/Bidirectional_map">bidirectional maps</a> and multimaps.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'elixir_README.md';
 
         fetch(markdownFile)
@@ -48,21 +277,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

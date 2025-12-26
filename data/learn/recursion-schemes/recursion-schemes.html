@@ -8,38 +8,163 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Passy Awesome Recursion Schemes - Awesome List Resources">
-    <title>Passy Awesome Recursion Schemes</title>
+    <meta name="description" content="> A curation of useful resources for learning about and using recursion schemes. Recursion schemes are simple, composable combinators, that automate the...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Recursion Schemes [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Recursion Schemes <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<blockquote>
+<p>A curation of useful resources for learning about and using recursion schemes.</p>
+</blockquote>
+<p>Recursion schemes are simple, composable combinators, that automate the process of traversing and recursing through nested data structures.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#introductions">Introductions</a></li>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#papers">Papers</a></li>
+<li><a href="#presentations">Presentations</a></li>
+<li><a href="#cheat-sheets">Cheat Sheets</a></li>
+<li><a href="#podcasts">Podcasts</a></li>
+<li><a href="#implementations">Implementations</a></li>
+</ul>
+<h2>Introductions</h2>
+<ul>
+<li><a href="https://github.com/passy/awesome-recursion-schemes">Awesome Recursion Schemes</a> - A curation of useful resources for learning about and using recursion schemes.</li>
+<li><a href="https://jtobin.io/practical-recursion-schemes">Practical Recursion Schemes</a> -
+  Introduction to pattern functors, fix points, anamorphisms, catamorphisms,
+  paramorphisms and hylomorphisms, requiring very little prior knowledge.</li>
+<li><a href="http://blog.sumtypeofway.com/an-introduction-to-recursion-schemes/">An Introduction to Recursion Schemes</a> -
+  Three-part series in which you discover recursion schemes from scratch and
+  implement a small subset of Edward Kmett's library.</li>
+<li><a href="https://www.schoolofhaskell.com/user/bartosz/understanding-algebras">Understanding Algebras</a> -
+  Bartosz Milewski explains F-algebras and shows how to use them in the context of
+  catamorphisms.</li>
+<li><a href="https://medium.com/@JosephJnk/recursion-schemes-in-javascript-and-flow-with-static-land-recursision-schemes-97cf10599fb7">Recursion Schemes in JavaScript and Flow</a> -
+  Series introducing recursion schemes and related concepts in JavaScript,
+  aimed at developers with a minimal functional programming background.</li>
+</ul>
+<h2>Articles</h2>
+<ul>
+<li><a href="http://comonad.com/reader/2009/recursion-schemes/">Recursion Schemes: A Field Guide (Redux)</a> -
+  List of various recursion schemes with code samples.</li>
+<li><a href="https://wiki.haskell.org/Catamorphisms">Catamorphisms</a> - Definition on the Haskell Wiki.</li>
+<li><a href="https://www.schoolofhaskell.com/user/edwardk/recursion-schemes/catamorphisms">Catamorphisms</a> -
+  Short definition with code on School of Haskell by Edward Kmett.</li>
+<li><a href="https://jtobin.io/rotating-squares">Rotating Squares</a> - Using a hylomorphism to rotate a quadtree by Jared Tobin.</li>
+<li><a href="http://blog.sumtypeofway.com/recursion-schemes-part-v/">Recursion Schemes, Part V: Hello, Hylomorphisms</a></li>
+<li><a href="https://jtobin.io/promorphisms-pre-post">Promorphisms, Pre and Post</a> - Practical examples of pre- and postpromorphisms by Jared Tobin.</li>
+<li><a href="https://jtobin.io/time-traveling-recursion">Time Traveling Recursion Schemes</a> - Exploring histo and futu by example by Jared Tobin.</li>
+<li><a href="http://blog.sumtypeofway.com/recursion-schemes-part-iv-time-is-of-the-essence/">Recursion Schemes, Part IV: Time is of the Essence</a> - Practical article about histomorphism and the futumorphism.</li>
+<li><a href="https://github.com/sellout/recursion-scheme-talk/blob/master/cheat%20sheet.pdf">Cheat Sheet</a> - Map of various recursion schemes and their duals.</li>
+<li><a href="http://logji.blogspot.co.uk/2012/02/correcting-visitor-pattern.html">Correcting the Visitor pattern</a> - Showing that the Visitor pattern implements an f-algebra for use with a catamorphism (in Java).</li>
+<li><a href="https://free.cofree.io/2017/11/13/recursion/">Recursion Schemes in Scala</a> - Introduces the fixpoint combinator, anamorphism, catamorphism, hylomorphism, paramorphism, apomorphism, histomorphism, dynamorphism and futumorphism.</li>
+<li><a href="https://duplode.github.io/posts/whats-in-a-fold.html">What's in a Fold: The Basic Catamorphism in recursion-schemes</a> - Introduces catamorphism as a generalization of fold.</li>
+</ul>
+<h3>Hylomorphisms in the Wild</h3>
+<p>Articles by Bartosz Milewski about solving small, practical problems by applying a hylomorphism.</p>
+<ul>
+<li><a href="https://bartoszmilewski.com/2017/12/29/stalking-a-hylomorphism-in-the-wild/">Stalking a Hylomorphism in the Wild</a> - Advent of Code 2017, Domino challenge</li>
+<li><a href="https://bartoszmilewski.com/2018/12/20/open-season-on-hylomorphisms/">Open Seasons on Hylomorphisms</a> - Advent of Code 2018, String comparison challenge</li>
+</ul>
+<h2>Papers</h2>
+<ul>
+<li><a href="http://maartenfokkinga.github.io/utwente/mmf91m.pdf">Functional Programming with Bananas, Lenses, Envelopes and Barbed Wire, 1991, Meijer et al.</a> -
+  The original paper most of this is based on.</li>
+<li><a href="http://www.cs.ox.ac.uk/ralf.hinze/publications/Sorting.pdf">A Duality of Sorts, 2013, Hinze et al.</a> -
+  Shows that many basic sorting algorithms exist as a pair, and that these pairs
+  arise naturally out of the duality between folds and unfolds.</li>
+<li><a href="http://www.cs.ox.ac.uk/people/daniel.james/sorting/sorting.pdf">Sorting with Bialgebras and Distributive Laws, 2012, Hinze et al.</a> -
+  Shows how paramorphisms and apomorphisms can be used for more efficient
+  implementations of sorting algorithms.</li>
+<li><a href="http://research.microsoft.com/en-us/um/people/simonpj/Papers/hmap/hmap.ps">Scrap your boilerplate: a practical design pattern for generic programming, 2003, SPJ et al.</a> -
+  Design pattern for writing programs that traverse data structures built from rich mutually-recursive data types.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Recursion Schemes <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<blockquote>
+<p>A curation of useful resources for learning about and using recursion schemes.</p>
+</blockquote>
+<p>Recursion schemes are simple, composable combinators, that automate the process of traversing and recursing through nested data structures.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#introductions">Introductions</a></li>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#papers">Papers</a></li>
+<li><a href="#presentations">Presentations</a></li>
+<li><a href="#cheat-sheets">Cheat Sheets</a></li>
+<li><a href="#podcasts">Podcasts</a></li>
+<li><a href="#implementations">Implementations</a></li>
+</ul>
+<h2>Introductions</h2>
+<ul>
+<li><a href="https://github.com/passy/awesome-recursion-schemes">Awesome Recursion Schemes</a> - A curation of useful resources for learning about and using recursion schemes.</li>
+<li><a href="https://jtobin.io/practical-recursion-schemes">Practical Recursion Schemes</a> -
+  Introduction to pattern functors, fix points, anamorphisms, catamorphisms,
+  paramorphisms and hylomorphisms, requiring very little prior knowledge.</li>
+<li><a href="http://blog.sumtypeofway.com/an-introduction-to-recursion-schemes/">An Introduction to Recursion Schemes</a> -
+  Three-part series in which you discover recursion schemes from scratch and
+  implement a small subset of Edward Kmett's library.</li>
+<li><a href="https://www.schoolofhaskell.com/user/bartosz/understanding-algebras">Understanding Algebras</a> -
+  Bartosz Milewski explains F-algebras and shows how to use them in the context of
+  catamorphisms.</li>
+<li><a href="https://medium.com/@JosephJnk/recursion-schemes-in-javascript-and-flow-with-static-land-recursision-schemes-97cf10599fb7">Recursion Schemes in JavaScript and Flow</a> -
+  Series introducing recursion schemes and related concepts in JavaScript,
+  aimed at developers with a minimal functional programming background.</li>
+</ul>
+<h2>Articles</h2>
+<ul>
+<li><a href="http://comonad.com/reader/2009/recursion-schemes/">Recursion Schemes: A Field Guide (Redux)</a> -
+  List of various recursion schemes with code samples.</li>
+<li><a href="https://wiki.haskell.org/Catamorphisms">Catamorphisms</a> - Definition on the Haskell Wiki.</li>
+<li><a href="https://www.schoolofhaskell.com/user/edwardk/recursion-schemes/catamorphisms">Catamorphisms</a> -
+  Short definition with code on School of Haskell by Edward Kmett.</li>
+<li><a href="https://jtobin.io/rotating-squares">Rotating Squares</a> - Using a hylomorphism to rotate a quadtree by Jared Tobin.</li>
+<li><a href="http://blog.sumtypeofway.com/recursion-schemes-part-v/">Recursion Schemes, Part V: Hello, Hylomorphisms</a></li>
+<li><a href="https://jtobin.io/promorphisms-pre-post">Promorphisms, Pre and Post</a> - Practical examples of pre- and postpromorphisms by Jared Tobin.</li>
+<li><a href="https://jtobin.io/time-traveling-recursion">Time Traveling Recursion Schemes</a> - Exploring histo and futu by example by Jared Tobin.</li>
+<li><a href="http://blog.sumtypeofway.com/recursion-schemes-part-iv-time-is-of-the-essence/">Recursion Schemes, Part IV: Time is of the Essence</a> - Practical article about histomorphism and the futumorphism.</li>
+<li><a href="https://github.com/sellout/recursion-scheme-talk/blob/master/cheat%20sheet.pdf">Cheat Sheet</a> - Map of various recursion schemes and their duals.</li>
+<li><a href="http://logji.blogspot.co.uk/2012/02/correcting-visitor-pattern.html">Correcting the Visitor pattern</a> - Showing that the Visitor pattern implements an f-algebra for use with a catamorphism (in Java).</li>
+<li><a href="https://free.cofree.io/2017/11/13/recursion/">Recursion Schemes in Scala</a> - Introduces the fixpoint combinator, anamorphism, catamorphism, hylomorphism, paramorphism, apomorphism, histomorphism, dynamorphism and futumorphism.</li>
+<li><a href="https://duplode.github.io/posts/whats-in-a-fold.html">What's in a Fold: The Basic Catamorphism in recursion-schemes</a> - Introduces catamorphism as a generalization of fold.</li>
+</ul>
+<h3>Hylomorphisms in the Wild</h3>
+<p>Articles by Bartosz Milewski about solving small, practical problems by applying a hylomorphism.</p>
+<ul>
+<li><a href="https://bartoszmilewski.com/2017/12/29/stalking-a-hylomorphism-in-the-wild/">Stalking a Hylomorphism in the Wild</a> - Advent of Code 2017, Domino challenge</li>
+<li><a href="https://bartoszmilewski.com/2018/12/20/open-season-on-hylomorphisms/">Open Seasons on Hylomorphisms</a> - Advent of Code 2018, String comparison challenge</li>
+</ul>
+<h2>Papers</h2>
+<ul>
+<li><a href="http://maartenfokkinga.github.io/utwente/mmf91m.pdf">Functional Programming with Bananas, Lenses, Envelopes and Barbed Wire, 1991, Meijer et al.</a> -
+  The original paper most of this is based on.</li>
+<li><a href="http://www.cs.ox.ac.uk/ralf.hinze/publications/Sorting.pdf">A Duality of Sorts, 2013, Hinze et al.</a> -
+  Shows that many basic sorting algorithms exist as a pair, and that these pairs
+  arise naturally out of the duality between folds and unfolds.</li>
+<li><a href="http://www.cs.ox.ac.uk/people/daniel.james/sorting/sorting.pdf">Sorting with Bialgebras and Distributive Laws, 2012, Hinze et al.</a> -
+  Shows how paramorphisms and apomorphisms can be used for more efficient
+  implementations of sorting algorithms.</li>
+<li><a href="http://research.microsoft.com/en-us/um/people/simonpj/Papers/hmap/hmap.ps">Scrap your boilerplate: a practical design pattern for generic programming, 2003, SPJ et al.</a> -
+  Design pattern for writing programs that traverse data structures built from rich mutually-recursive data types.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'recursion-schemes_README.md';
 
         fetch(markdownFile)
@@ -48,21 +173,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

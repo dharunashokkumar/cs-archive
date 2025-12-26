@@ -8,38 +8,165 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mcanouil Awesome Quarto - Awesome List Resources">
-    <title>Mcanouil Awesome Quarto</title>
+    <meta name="description" content="The most up to date curated list of Quarto® docs, talks, tools, examples & articles the internet has to offer. Quarto® is an open-source scientific and...">
+    <meta name="robots" content="index, follow">
+    <title>Quarto - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <!--lint disable double-link-->
+
+<div align="center">
+
+<!--lint ignore no-dead-urls-->
+
+# <a href="https://quarto.org" target="_blank" rel="noopener noreferrer"><img src="media/media.png" alt-text="Awesome list logo with the Quarto logo with text, which is a pair of sunglasses with below the text 'awesome' and then the Quarto logo in blue and grey blue as per Quarto's logo." width="75%"/></a></br>[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+
+The most up to date curated list of [Quarto®](https://quarto.org) docs, talks, tools, examples & articles the internet has to offer.
+
+[Quarto®](https://quarto.org) is an open-source scientific and technical publishing system built on [Pandoc]([Pandoc](https://pandoc.org/)).
+
+</div>
+
+<hr />
+<p>Contributions of any kind are welcome, just follow the <a href=".github/CONTRIBUTING.md">guidelines</a> by either:</p>
+<ul>
+<li>Filling a <a href="https://github.com/mcanouil/awesome-quarto/issues/new?assignees=mcanouil&amp;labels=&amp;template=suggestion.yml">suggestion issue</a> (easier).</li>
+<li>Opening a <a href="https://github.com/mcanouil/awesome-quarto/compare">pull request</a>.</li>
+</ul>
+<hr />
+<h2>Contents</h2>
+<ul>
+<li><a href="#official-documentation--quickstarts">Official documentation \&amp; quickstarts</a></li>
+<li><a href="#tutorials--workshops">Tutorials \&amp; workshops</a></li>
+<li><a href="#blog-posts">Blog posts</a></li>
+<li><a href="#talks-and-videos">Talks and videos</a></li>
+<li><a href="#supported-editors">Supported editors</a></li>
+<li><a href="#librariespackagesscripts">Libraries/Packages/Scripts</a></li>
+<li><a href="#r">R</a></li>
+<li><a href="#julia">Julia</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#editors">Editors</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#continuous-integration--continuous-deployment">Continuous integration / Continuous deployment</a></li>
+<li><a href="#extensions">Extensions</a></li>
+<li><a href="#real-life-examples">Real-life examples</a></li>
+<li><a href="#presentations-formats">Presentations formats</a></li>
+<li><a href="#websites-formats">Websites formats</a></li>
+<li><a href="#book-formats">Book formats</a></li>
+<li><a href="#other-formats">Other formats</a></li>
+<li><a href="#follow">Follow</a></li>
+<li><a href="#official">Official</a></li>
+<li><a href="#community">Community</a></li>
+</ul>
+<h2>Official documentation &amp; quickstarts</h2>
+<ul>
+<li><a href="https://quarto.org/">Documentation: Quarto documentation</a> - Official Quarto Documentation.</li>
+<li><a href="https://github.com/quarto-dev">GitHub: Quarto GitHub repository</a> - Official Quarto GitHub repository.</li>
+<li><a href="https://quarto.org/docs/get-started/hello/">Tutorial: Hello, Quarto</a> - Official "Hello, Quarto" tutorial.</li>
+<li><a href="https://quarto.org/docs/get-started/computations/">Tutorial: Computations</a> - Official "Computations" tutorial.</li>
+<li><a href="https://quarto.org/docs/get-started/authoring/">Tutorial: Authoring</a> - Official "Authoring" tutorial.</li>
+<li><a href="https://quartopub.com/">Service: Quarto Pub</a> - Create documents, websites, presentations, books, and blogs in Quarto, then securely publish them to the web with the Quarto CLI, the easiest way to publish and share on the web.</li>
+</ul>
+<h2>Tutorials &amp; workshops</h2>
+<ul>
+<li><a href="https://albert-rapp.de/posts/13_quarto_blog_writing_guide/13_quarto_blog_writing_guide.html">Tutorial: The ultimate guide to starting a Quarto blog</a> - An in-depth guide on how to start blogging with Quarto.</li>
+<li><a href="https://beamilz.com/posts/2022-06-05-creating-a-blog-with-quarto/en/">Tutorial: Creating a blog with Quarto in 10 steps</a> - A blog post introducing a new Quarto blog and the steps to create your own blog with Quarto.</li>
+<li><a href="https://openscapes.github.io/quarto-website-tutorial/">Tutorial: Making shareable docs with Quarto</a> - A tutorial to make a website with Quarto.</li>
+<li><a href="https://rstudio-conf-2022.github.io/rmd-to-quarto/">Workshop: From R Markdown to Quarto</a> - A workshop for those who want to take their R Markdown skills and expertise and apply them in Quarto, the next generation of R Markdown.</li>
+<li><a href="https://rstudio-conf-2022.github.io/get-started-quarto/">Workshop: Getting started with Quarto</a> - "Get started with Quarto" workshop materials for rstudio::conf(2022).</li>
+<li><a href="https://warwickcim.github.io/quarto-workshop/slides/slides.html">Workshop: Quarto, a library to run them all?</a> - Workshop at <a href="https://rsecon2022.society-rse.org/">RSECon'22</a>, led by Carlos Cámara, James Tripp and Cagatay Turkay (materials: <a href="https://github.com/WarwickCIM/quarto-workshop">https://github.com/WarwickCIM/quarto-workshop</a>).</li>
+<li><a href="https://ucsb-meds.github.io/creating-quarto-websites/">Tutorial: Creating your personal website using Quarto</a> - A step-by-step guide for setting up a personal website using Quarto by Samantha Csik.</li>
+<li><a href="https://ucsb-meds.github.io/customizing-quarto-websites/">Tutorial: Customizing Quarto Websites - Make your website stand out using SASS &amp; CSS</a> - Slides by Samantha Csik about using SASS and CSS to customise HTML Quarto websites (materials: <a href="https://github.com/UCSB-MEDS/customizing-quarto-websites">https://github.com/UCSB-MEDS/customizing-quarto-websites</a>).</li>
+<li><a href="https://drmowinckels.github.io/quartaki/">Workshop: Quartaki — 6 hour introduction to Quarto</a> - Using R and RStudio by <a href="https://github.com/drmowinckels">Athanasia Mo Mowinckel</a> covering basic markdown, html reports, citation &amp; cross-refs, pdf and journal templates and Reveal.js presentations.</li>
+<li><a href="https://perezp44.github.io/taller.primer.blog/">Workshop: Mi primer blog con Quarto</a> - A workshop in Spanish by Pedro J. Pérez to create a blog with Quarto (materials: <a href="https://github.com/perezp44/taller.primer.blog">https://github.com/perezp44/taller.primer.blog</a>).</li>
+<li><a href="https://christophertkenny.com/posts/2023-07-01-creating-quarto-journal-articles/">Tutorial: Creating Quarto Journal Article Templates</a> - An in-depth blog post detailing the process for converting journal LaTeX templates into Quarto templates.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <!--lint disable double-link-->
+
+<div align="center">
+
+<!--lint ignore no-dead-urls-->
+
+# <a href="https://quarto.org" target="_blank" rel="noopener noreferrer"><img src="media/media.png" alt-text="Awesome list logo with the Quarto logo with text, which is a pair of sunglasses with below the text 'awesome' and then the Quarto logo in blue and grey blue as per Quarto's logo." width="75%"/></a></br>[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+
+The most up to date curated list of [Quarto®](https://quarto.org) docs, talks, tools, examples & articles the internet has to offer.
+
+[Quarto®](https://quarto.org) is an open-source scientific and technical publishing system built on [Pandoc]([Pandoc](https://pandoc.org/)).
+
+</div>
+
+<hr />
+<p>Contributions of any kind are welcome, just follow the <a href=".github/CONTRIBUTING.md">guidelines</a> by either:</p>
+<ul>
+<li>Filling a <a href="https://github.com/mcanouil/awesome-quarto/issues/new?assignees=mcanouil&amp;labels=&amp;template=suggestion.yml">suggestion issue</a> (easier).</li>
+<li>Opening a <a href="https://github.com/mcanouil/awesome-quarto/compare">pull request</a>.</li>
+</ul>
+<hr />
+<h2>Contents</h2>
+<ul>
+<li><a href="#official-documentation--quickstarts">Official documentation \&amp; quickstarts</a></li>
+<li><a href="#tutorials--workshops">Tutorials \&amp; workshops</a></li>
+<li><a href="#blog-posts">Blog posts</a></li>
+<li><a href="#talks-and-videos">Talks and videos</a></li>
+<li><a href="#supported-editors">Supported editors</a></li>
+<li><a href="#librariespackagesscripts">Libraries/Packages/Scripts</a></li>
+<li><a href="#r">R</a></li>
+<li><a href="#julia">Julia</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#editors">Editors</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#continuous-integration--continuous-deployment">Continuous integration / Continuous deployment</a></li>
+<li><a href="#extensions">Extensions</a></li>
+<li><a href="#real-life-examples">Real-life examples</a></li>
+<li><a href="#presentations-formats">Presentations formats</a></li>
+<li><a href="#websites-formats">Websites formats</a></li>
+<li><a href="#book-formats">Book formats</a></li>
+<li><a href="#other-formats">Other formats</a></li>
+<li><a href="#follow">Follow</a></li>
+<li><a href="#official">Official</a></li>
+<li><a href="#community">Community</a></li>
+</ul>
+<h2>Official documentation &amp; quickstarts</h2>
+<ul>
+<li><a href="https://quarto.org/">Documentation: Quarto documentation</a> - Official Quarto Documentation.</li>
+<li><a href="https://github.com/quarto-dev">GitHub: Quarto GitHub repository</a> - Official Quarto GitHub repository.</li>
+<li><a href="https://quarto.org/docs/get-started/hello/">Tutorial: Hello, Quarto</a> - Official "Hello, Quarto" tutorial.</li>
+<li><a href="https://quarto.org/docs/get-started/computations/">Tutorial: Computations</a> - Official "Computations" tutorial.</li>
+<li><a href="https://quarto.org/docs/get-started/authoring/">Tutorial: Authoring</a> - Official "Authoring" tutorial.</li>
+<li><a href="https://quartopub.com/">Service: Quarto Pub</a> - Create documents, websites, presentations, books, and blogs in Quarto, then securely publish them to the web with the Quarto CLI, the easiest way to publish and share on the web.</li>
+</ul>
+<h2>Tutorials &amp; workshops</h2>
+<ul>
+<li><a href="https://albert-rapp.de/posts/13_quarto_blog_writing_guide/13_quarto_blog_writing_guide.html">Tutorial: The ultimate guide to starting a Quarto blog</a> - An in-depth guide on how to start blogging with Quarto.</li>
+<li><a href="https://beamilz.com/posts/2022-06-05-creating-a-blog-with-quarto/en/">Tutorial: Creating a blog with Quarto in 10 steps</a> - A blog post introducing a new Quarto blog and the steps to create your own blog with Quarto.</li>
+<li><a href="https://openscapes.github.io/quarto-website-tutorial/">Tutorial: Making shareable docs with Quarto</a> - A tutorial to make a website with Quarto.</li>
+<li><a href="https://rstudio-conf-2022.github.io/rmd-to-quarto/">Workshop: From R Markdown to Quarto</a> - A workshop for those who want to take their R Markdown skills and expertise and apply them in Quarto, the next generation of R Markdown.</li>
+<li><a href="https://rstudio-conf-2022.github.io/get-started-quarto/">Workshop: Getting started with Quarto</a> - "Get started with Quarto" workshop materials for rstudio::conf(2022).</li>
+<li><a href="https://warwickcim.github.io/quarto-workshop/slides/slides.html">Workshop: Quarto, a library to run them all?</a> - Workshop at <a href="https://rsecon2022.society-rse.org/">RSECon'22</a>, led by Carlos Cámara, James Tripp and Cagatay Turkay (materials: <a href="https://github.com/WarwickCIM/quarto-workshop">https://github.com/WarwickCIM/quarto-workshop</a>).</li>
+<li><a href="https://ucsb-meds.github.io/creating-quarto-websites/">Tutorial: Creating your personal website using Quarto</a> - A step-by-step guide for setting up a personal website using Quarto by Samantha Csik.</li>
+<li><a href="https://ucsb-meds.github.io/customizing-quarto-websites/">Tutorial: Customizing Quarto Websites - Make your website stand out using SASS &amp; CSS</a> - Slides by Samantha Csik about using SASS and CSS to customise HTML Quarto websites (materials: <a href="https://github.com/UCSB-MEDS/customizing-quarto-websites">https://github.com/UCSB-MEDS/customizing-quarto-websites</a>).</li>
+<li><a href="https://drmowinckels.github.io/quartaki/">Workshop: Quartaki — 6 hour introduction to Quarto</a> - Using R and RStudio by <a href="https://github.com/drmowinckels">Athanasia Mo Mowinckel</a> covering basic markdown, html reports, citation &amp; cross-refs, pdf and journal templates and Reveal.js presentations.</li>
+<li><a href="https://perezp44.github.io/taller.primer.blog/">Workshop: Mi primer blog con Quarto</a> - A workshop in Spanish by Pedro J. Pérez to create a blog with Quarto (materials: <a href="https://github.com/perezp44/taller.primer.blog">https://github.com/perezp44/taller.primer.blog</a>).</li>
+<li><a href="https://christophertkenny.com/posts/2023-07-01-creating-quarto-journal-articles/">Tutorial: Creating Quarto Journal Article Templates</a> - An in-depth blog post detailing the process for converting journal LaTeX templates into Quarto templates.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'quarto_README.md';
 
         fetch(markdownFile)
@@ -48,21 +175,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

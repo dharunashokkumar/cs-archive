@@ -8,38 +8,161 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cicdops Awesome Ciandcd - Awesome List Resources">
-    <title>Cicdops Awesome Ciandcd</title>
+    <meta name="description" content="Continuous Integration and Continuous Delivery Written by cicdops.com A curated list of awesome tools for: continuous integration continuous delivery software...">
+    <meta name="robots" content="index, follow">
+    <title>ciandcd [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>ciandcd <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p><strong>Continuous Integration and Continuous Delivery</strong></p>
+<p>Written by <a href="http://www.cicdops.com">cicdops.com</a>  </p>
+<p>A curated list of awesome tools for: <br />
+continuous integration<br />
+continuous delivery<br />
+software integration<br />
+devops  </p>
+<ul>
+<li><a href="#ciandcd">ciandcd</a></li>
+<li><a href="#theory">Theory</a></li>
+<li><a href="#build-and-release-system">Build And Release System</a></li>
+<li><a href="#online-build-system">Online Build System</a></li>
+<li><a href="#infrastructure">Infrastructure</a></li>
+<li><a href="#dev-env">dev env</a></li>
+<li><a href="#source-code-management">Source Code Management</a></li>
+<li><a href="#code-review">Code Review</a></li>
+<li><a href="#build">Build</a></li>
+<li><a href="#static-check">Static Check</a></li>
+<li><a href="#dynamic-check">Dynamic Check</a></li>
+<li><a href="#performance-analysis">Performance Analysis</a></li>
+<li><a href="#coverage">Coverage</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#package">Package</a></li>
+<li><a href="#deploy">Deploy</a></li>
+<li><a href="#delivery">Delivery</a></li>
+<li><a href="#provisioning-tools">Provisioning Tools</a></li>
+<li><a href="#secure-tools">secure-tools</a></li>
+<li><a href="#web-server">Web Server</a></li>
+<li><a href="#applications-and-container">Applications And Container</a></li>
+<li><a href="#os-and-shell">OS And Shell</a></li>
+<li><a href="#database-version-control">Database Version Control</a></li>
+<li><a href="#useful-sites">Useful Sites</a></li>
+<li><a href="#conference-and-submit">Conference And Submit</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#other-awesome-lists">Other Awesome Lists</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+<h2>Theory</h2>
+<p>The theory for continuous integration and continuous deliver<br />
+<em> <a href="http://martinfowler.com/articles/continuousIntegration.html">continuousIntegration</a><br />
+</em> <a href="http://continuousdelivery.com">continuousdelivery</a><br />
+<em> <a href="https://en.wikipedia.org/wiki/System_integration">software integration</a><br />
+</em> <a href="https://semaphoreci.com/blog/cicd-pipeline">ci/cd pipeline</a>
+* <a href="http://www.devopsdays.org">devopsdays</a><br />
+<em> <a href="https://dzone.com/refcardz/continuous-integration">ci cheatsheet</a><br />
+</em> <a href="https://github.com/kamranahmedse/developer-roadmap">devops_roadmap</a>  </p>
+<h2>Build And Release System</h2>
+<p>The system for software build and release, continuous integration and continuous delivery<br />
+<em> <a href="http://jenkins-ci.org">Jenkins</a>  An extendable open source continuous integration server<br />
+</em> <a href="https://www.solanolabs.com">Solano CI</a>  Faster Continuous Integration and Deployment with patented auto-parallelization. See results 10 to 80x faster. 14-day free trial. No credit card required.
+* <a href="https://concourse-ci.org">Concourse</a> Rather than a myriad of checkboxes, pipelines are defined as a single declarative config file
+* <a href="https://jazz.net/downloads/rational-build-forge/">BuildForge</a>  Automate and accelerate build and release processes<br />
+<em> <a href="http://electric-cloud.com/products/electricflow/">ElectricFlow</a>  ElectricFlow/ElectricCommander gives distributed teams shared control and visibility into infrastructure, tool chains and processes. It accelerates and automates the software delivery process to enable agility, predictability and security across many build-test-deploy pipelines<br />
+</em> <a href="http://www.jetbrains.com/teamcity/index.html">Teamcity</a>  Ready to work, extensible<br />
+and developer-friendly build server out of the box<br />
+<em> <a href="https://www.atlassian.com/software/bamboo">bamboo</a>  Bamboo does more than just run builds and tests. It connects issues, commits, test results, and deploys so the whole picture is available to your entire product team<br />
+</em> <a href="https://www.gocd.org/">go (the old snap-ci)</a>  Automate and streamline the build-test-release cycle for worry-free, continuous delivery of your product<br />
+<em> <a href="http://hudson-ci.org">hudson</a>  the previous one of Jenkins<br />
+</em> <a href="http://openbuildservice.org">openbuildservice</a>  The Open Build Service (OBS) is a generic system to build and distribute binary packages from sources in an automatic, consistent and reproducible way. You can release packages as well as updates, add-ons, appliances and entire distributions for a wide range of operating systems and hardware architectures<br />
+<em> <a href="http://trac.buildbot.net">buildbot</a>   Buildbot is a continuous integration system designed to automate the build/test cycle. By automatically rebuilding and testing the tree each time something has changed, build problems are pinpointed quickly, before other developers are inconvenienced by the failure<br />
+</em> <a href="http://www.viewtier.com/index.htm">Parabuild</a>  Parabuild is an enterprise software build and release management system that helps software teams to release on time by providing them practically unbreakable release builds and Continuous Integration<br />
+<em> <a href="https://www.finalbuilder.com/">FinalBuilder</a>  Automating your Build process is simple with FinalBuilder. With FinalBuilder you don't need to edit xml, or  write scripts. Visually define and debug your build scripts, then schedule them with windows scheduler, or integrate them with Continua CI, Jenkins or any other CI Server<br />
+</em> <a href="http://www.kinook.com/VisBuildPro/">VisualBuild</a>  Visual Build enables developers and build masters to easily create an automated, repeatable build process<br />
+<em> <a href="http://www.cruisecontrolnet.org">cruisecontrol</a>  CruiseControl.NET, an Automated Continuous Integration server, implemented using the .NET Framework<br />
+</em> <a href="http://continuum.apache.org/">continuum</a> Apache Continuum™ is an enterprise-ready continuous integration server with features such as automated builds, release management, role-based security, and integration with popular build tools and source control management systems  </p>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>ciandcd <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p><strong>Continuous Integration and Continuous Delivery</strong></p>
+<p>Written by <a href="http://www.cicdops.com">cicdops.com</a>  </p>
+<p>A curated list of awesome tools for: <br />
+continuous integration<br />
+continuous delivery<br />
+software integration<br />
+devops  </p>
+<ul>
+<li><a href="#ciandcd">ciandcd</a></li>
+<li><a href="#theory">Theory</a></li>
+<li><a href="#build-and-release-system">Build And Release System</a></li>
+<li><a href="#online-build-system">Online Build System</a></li>
+<li><a href="#infrastructure">Infrastructure</a></li>
+<li><a href="#dev-env">dev env</a></li>
+<li><a href="#source-code-management">Source Code Management</a></li>
+<li><a href="#code-review">Code Review</a></li>
+<li><a href="#build">Build</a></li>
+<li><a href="#static-check">Static Check</a></li>
+<li><a href="#dynamic-check">Dynamic Check</a></li>
+<li><a href="#performance-analysis">Performance Analysis</a></li>
+<li><a href="#coverage">Coverage</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#package">Package</a></li>
+<li><a href="#deploy">Deploy</a></li>
+<li><a href="#delivery">Delivery</a></li>
+<li><a href="#provisioning-tools">Provisioning Tools</a></li>
+<li><a href="#secure-tools">secure-tools</a></li>
+<li><a href="#web-server">Web Server</a></li>
+<li><a href="#applications-and-container">Applications And Container</a></li>
+<li><a href="#os-and-shell">OS And Shell</a></li>
+<li><a href="#database-version-control">Database Version Control</a></li>
+<li><a href="#useful-sites">Useful Sites</a></li>
+<li><a href="#conference-and-submit">Conference And Submit</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#other-awesome-lists">Other Awesome Lists</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+<h2>Theory</h2>
+<p>The theory for continuous integration and continuous deliver<br />
+<em> <a href="http://martinfowler.com/articles/continuousIntegration.html">continuousIntegration</a><br />
+</em> <a href="http://continuousdelivery.com">continuousdelivery</a><br />
+<em> <a href="https://en.wikipedia.org/wiki/System_integration">software integration</a><br />
+</em> <a href="https://semaphoreci.com/blog/cicd-pipeline">ci/cd pipeline</a>
+* <a href="http://www.devopsdays.org">devopsdays</a><br />
+<em> <a href="https://dzone.com/refcardz/continuous-integration">ci cheatsheet</a><br />
+</em> <a href="https://github.com/kamranahmedse/developer-roadmap">devops_roadmap</a>  </p>
+<h2>Build And Release System</h2>
+<p>The system for software build and release, continuous integration and continuous delivery<br />
+<em> <a href="http://jenkins-ci.org">Jenkins</a>  An extendable open source continuous integration server<br />
+</em> <a href="https://www.solanolabs.com">Solano CI</a>  Faster Continuous Integration and Deployment with patented auto-parallelization. See results 10 to 80x faster. 14-day free trial. No credit card required.
+* <a href="https://concourse-ci.org">Concourse</a> Rather than a myriad of checkboxes, pipelines are defined as a single declarative config file
+* <a href="https://jazz.net/downloads/rational-build-forge/">BuildForge</a>  Automate and accelerate build and release processes<br />
+<em> <a href="http://electric-cloud.com/products/electricflow/">ElectricFlow</a>  ElectricFlow/ElectricCommander gives distributed teams shared control and visibility into infrastructure, tool chains and processes. It accelerates and automates the software delivery process to enable agility, predictability and security across many build-test-deploy pipelines<br />
+</em> <a href="http://www.jetbrains.com/teamcity/index.html">Teamcity</a>  Ready to work, extensible<br />
+and developer-friendly build server out of the box<br />
+<em> <a href="https://www.atlassian.com/software/bamboo">bamboo</a>  Bamboo does more than just run builds and tests. It connects issues, commits, test results, and deploys so the whole picture is available to your entire product team<br />
+</em> <a href="https://www.gocd.org/">go (the old snap-ci)</a>  Automate and streamline the build-test-release cycle for worry-free, continuous delivery of your product<br />
+<em> <a href="http://hudson-ci.org">hudson</a>  the previous one of Jenkins<br />
+</em> <a href="http://openbuildservice.org">openbuildservice</a>  The Open Build Service (OBS) is a generic system to build and distribute binary packages from sources in an automatic, consistent and reproducible way. You can release packages as well as updates, add-ons, appliances and entire distributions for a wide range of operating systems and hardware architectures<br />
+<em> <a href="http://trac.buildbot.net">buildbot</a>   Buildbot is a continuous integration system designed to automate the build/test cycle. By automatically rebuilding and testing the tree each time something has changed, build problems are pinpointed quickly, before other developers are inconvenienced by the failure<br />
+</em> <a href="http://www.viewtier.com/index.htm">Parabuild</a>  Parabuild is an enterprise software build and release management system that helps software teams to release on time by providing them practically unbreakable release builds and Continuous Integration<br />
+<em> <a href="https://www.finalbuilder.com/">FinalBuilder</a>  Automating your Build process is simple with FinalBuilder. With FinalBuilder you don't need to edit xml, or  write scripts. Visually define and debug your build scripts, then schedule them with windows scheduler, or integrate them with Continua CI, Jenkins or any other CI Server<br />
+</em> <a href="http://www.kinook.com/VisBuildPro/">VisualBuild</a>  Visual Build enables developers and build masters to easily create an automated, repeatable build process<br />
+<em> <a href="http://www.cruisecontrolnet.org">cruisecontrol</a>  CruiseControl.NET, an Automated Continuous Integration server, implemented using the .NET Framework<br />
+</em> <a href="http://continuum.apache.org/">continuum</a> Apache Continuum™ is an enterprise-ready continuous integration server with features such as automated builds, release management, role-based security, and integration with popular build tools and source control management systems  </p>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'continuous-integration-and-continuous-delivery_README.md';
 
         fetch(markdownFile)
@@ -48,21 +171,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

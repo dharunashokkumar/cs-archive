@@ -8,38 +8,271 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rockerboo Awesome Neovim - Awesome List Resources">
-    <title>Rockerboo Awesome Neovim</title>
+    <meta name="description" content="> Collections of awesome Neovim plugins. Mostly targeting Neovim specific features. This means Vim-compatible plugins are not listed here. Neovim is a...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Neovim [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Neovim <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a></h1>
+<p><a href="https://neovim.io/"><img src="https://neovim.io/logos/neovim-mark-flat.png" align="right" width="144" /></a></p>
+<blockquote>
+<p>Collections of awesome Neovim plugins. Mostly targeting Neovim specific features. This means Vim-compatible plugins are not listed here.</p>
+</blockquote>
+<p><a href="https://neovim.io/">Neovim</a> is a Vim-based text editor engineered for extensibility and usability, to encourage new applications and contributions.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#plugin-manager">Plugin Manager</a></li>
+<li><a href="#lsp">LSP</a></li>
+<li><a href="#lsp-installer">LSP Installer</a></li>
+<li><a href="#diagnostics">Diagnostics</a></li>
+<li><a href="#completion">Completion</a></li>
+<li><a href="#ai">AI</a></li>
+<li><a href="#programming-languages-support">Programming Languages Support</a></li>
+<li><a href="#golang">Golang</a></li>
+<li><a href="#yaml">YAML</a></li>
+<li><a href="#web-development">Web Development</a></li>
+<li><a href="#markdown-and-latex">Markdown and LaTeX</a></li>
+<li><a href="#php">PHP</a></li>
+<li><a href="#powershell">Powershell</a></li>
+<li><a href="#assembly">Assembly</a></li>
+<li><a href="#language">Language</a></li>
+<li><a href="#syntax">Syntax</a></li>
+<li><a href="#snippet">Snippet</a></li>
+<li><a href="#register">Register</a></li>
+<li><a href="#marks">Marks</a></li>
+<li><a href="#search">Search</a></li>
+<li><a href="#fuzzy-finder">Fuzzy Finder</a></li>
+<li><a href="#file-explorer">File Explorer</a></li>
+<li><a href="#project">Project</a></li>
+<li><a href="#color">Color</a></li>
+<li><a href="#colorscheme">Colorscheme</a></li>
+<li><a href="#colorscheme-creation">Colorscheme Creation</a></li>
+<li><a href="#colorscheme-switchers">Colorscheme Switchers</a></li>
+<li><a href="#bars-and-lines">Bars and Lines</a></li>
+<li><a href="#statusline">Statusline</a></li>
+<li><a href="#tabline">Tabline</a></li>
+<li><a href="#cursorline">Cursorline</a></li>
+<li><a href="#startup">Startup</a></li>
+<li><a href="#icon">Icon</a></li>
+<li><a href="#media">Media</a></li>
+<li><a href="#note-taking">Note Taking</a></li>
+<li><a href="#utility">Utility</a></li>
+<li><a href="#csv-files">CSV Files</a></li>
+<li><a href="#animation">Animation</a></li>
+<li><a href="#terminal-integration">Terminal Integration</a></li>
+<li><a href="#debugging">Debugging</a></li>
+<li><a href="#quickfix">Quickfix</a></li>
+<li><a href="#deployment">Deployment</a></li>
+<li><a href="#test">Test</a></li>
+<li><a href="#code-runner">Code Runner</a></li>
+<li><a href="#neovim-lua-development">Neovim Lua Development</a></li>
+<li><a href="#fennel">Fennel</a></li>
+<li><a href="#dependency-management">Dependency Management</a></li>
+<li><a href="#git">Git</a></li>
+<li><a href="#github">GitHub</a></li>
+<li><a href="#gitlab">GitLab</a></li>
+<li><a href="#motion">Motion</a></li>
+<li><a href="#tree-sitter-based">Tree-sitter Based</a></li>
+<li><a href="#keybinding">Keybinding</a></li>
+<li><a href="#mouse">Mouse</a></li>
+<li><a href="#scrolling">Scrolling</a></li>
+<li><a href="#scrollbar">Scrollbar</a></li>
+<li><a href="#editing-support">Editing Support</a></li>
+<li><a href="#comment">Comment</a></li>
+<li><a href="#formatting">Formatting</a></li>
+<li><a href="#indent">Indent</a></li>
+<li><a href="#command-line">Command Line</a></li>
+<li><a href="#session">Session</a></li>
+<li><a href="#remote-development">Remote Development</a></li>
+<li><a href="#split-and-window">Split and Window</a></li>
+<li><a href="#tmux">Tmux</a></li>
+<li><a href="#game">Game</a></li>
+<li><a href="#competitive-programming">Competitive Programming</a></li>
+<li><a href="#workflow">Workflow</a></li>
+<li><a href="#database">Database</a></li>
+<li><a href="#preconfigured-configuration">Preconfigured Configuration</a></li>
+<li><a href="#external">External</a></li>
+<li><a href="#version-manager">Version Manager</a></li>
+<li><a href="#boilerplate">Boilerplate</a></li>
+<li><a href="#os-specific">OS-specific</a></li>
+<li><a href="#wishlist">Wishlist</a></li>
+<li><a href="#ui">UI</a></li>
+<li><a href="#starter-templates">Starter Templates</a></li>
+<li><a href="#vim">Vim</a></li>
+<li><a href="#resource">Resource</a></li>
+</ul>
+<h2>Plugin Manager</h2>
+<ul>
+<li><a href="https://github.com/lewis6991/pckr.nvim">lewis6991/pckr.nvim</a> - Spiritual successor of <code>wbthomason/packer.nvim</code>.</li>
+<li><a href="https://github.com/savq/paq-nvim">savq/paq-nvim</a> - Neovim package manager written in Lua.</li>
+<li><a href="https://github.com/NTBBloodbath/cheovim">NTBBloodbath/cheovim</a> - Neovim configuration switcher written in Lua. Inspired by chemacs.</li>
+<li><a href="https://github.com/folke/lazy.nvim">folke/lazy.nvim</a> - A modern plugin manager, featuring a graphical interface, async execution, a lockfile and more.</li>
+<li><a href="https://github.com/alex-popov-tech/store.nvim">alex-popov-tech/store.nvim</a> - Plugins discovery tool with hourly updated database, and one-key installation for <code>lazy.nvim</code> and <code>vim.pack</code>.</li>
+<li><a href="https://github.com/nvim-neorocks/rocks.nvim">nvim-neorocks/rocks.nvim</a> - A modern approach to plugin management using Luarocks, inspired by Cargo.</li>
+<li><a href="https://github.com/nvim-mini/mini.nvim/blob/main/readmes/mini-deps.md">nvim-mini/mini.nvim#mini.deps</a> - Module of <code>mini.nvim</code> for managing other plugins. Uses Git and built-in packages to install, update, clean, and snapshot plugins.</li>
+<li><a href="https://github.com/wsdjeg/nvim-plug">wsdjeg/nvim-plug</a> - Asynchronous Neovim plugin manager written in Lua.</li>
+<li><a href="https://github.com/alyxshang/nuwa.nvim">alyxshang/nuwa.nvim</a> - A light Neovim package manager.</li>
+<li><a href="https://github.com/piersolenski/plugin-addict.nvim">piersolenski/plugin-addict.nvim</a> - A stupidly simple way to quickly install plugins.</li>
+<li><a href="https://github.com/OriginCoderPulse/synapse.nvim">synapse.nvim</a> - A modern, lightweight plugin manager with beautiful UI, intelligent dependency management, tag/branch support, and post-install command execution.</li>
+</ul>
+<!--lint disable double-link -->
+
+<p><strong><a href="#contents">⬆ back to top</a></strong></p>
+<!--lint enable double-link -->
+
+<h2>LSP</h2>
+<p><strong>(requires Neovim 0.5)</strong></p>
+<ul>
+<li><a href="https://github.com/romus204/referencer.nvim">romus204/referencer.nvim</a> - Lightweight, asynchronous that uses the LSP to show references to functions, methods, types and other.</li>
+<li><a href="https://github.com/Dan7h3x/signup.nvim">Dan7h3x/signup.nvim</a> - a little smart <code>lsp_signature</code> helper with awesome features.</li>
+</ul>
+<!--lint disable awesome-spell-check-->
+<ul>
+<li><a href="https://github.com/neovim/nvim-lspconfig">neovim/nvim-lspconfig</a> - Quickstart configurations for the LSP client.</li>
+</ul>
+<!--lint enable awesome-spell-check-->
+<ul>
+<li><a href="https://github.com/nvim-lua/lsp-status.nvim">nvim-lua/lsp-status.nvim</a> - This is a plugin/library for generating statusline components from the built-in LSP client.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Neovim <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a></h1>
+<p><a href="https://neovim.io/"><img src="https://neovim.io/logos/neovim-mark-flat.png" align="right" width="144" /></a></p>
+<blockquote>
+<p>Collections of awesome Neovim plugins. Mostly targeting Neovim specific features. This means Vim-compatible plugins are not listed here.</p>
+</blockquote>
+<p><a href="https://neovim.io/">Neovim</a> is a Vim-based text editor engineered for extensibility and usability, to encourage new applications and contributions.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#plugin-manager">Plugin Manager</a></li>
+<li><a href="#lsp">LSP</a></li>
+<li><a href="#lsp-installer">LSP Installer</a></li>
+<li><a href="#diagnostics">Diagnostics</a></li>
+<li><a href="#completion">Completion</a></li>
+<li><a href="#ai">AI</a></li>
+<li><a href="#programming-languages-support">Programming Languages Support</a></li>
+<li><a href="#golang">Golang</a></li>
+<li><a href="#yaml">YAML</a></li>
+<li><a href="#web-development">Web Development</a></li>
+<li><a href="#markdown-and-latex">Markdown and LaTeX</a></li>
+<li><a href="#php">PHP</a></li>
+<li><a href="#powershell">Powershell</a></li>
+<li><a href="#assembly">Assembly</a></li>
+<li><a href="#language">Language</a></li>
+<li><a href="#syntax">Syntax</a></li>
+<li><a href="#snippet">Snippet</a></li>
+<li><a href="#register">Register</a></li>
+<li><a href="#marks">Marks</a></li>
+<li><a href="#search">Search</a></li>
+<li><a href="#fuzzy-finder">Fuzzy Finder</a></li>
+<li><a href="#file-explorer">File Explorer</a></li>
+<li><a href="#project">Project</a></li>
+<li><a href="#color">Color</a></li>
+<li><a href="#colorscheme">Colorscheme</a></li>
+<li><a href="#colorscheme-creation">Colorscheme Creation</a></li>
+<li><a href="#colorscheme-switchers">Colorscheme Switchers</a></li>
+<li><a href="#bars-and-lines">Bars and Lines</a></li>
+<li><a href="#statusline">Statusline</a></li>
+<li><a href="#tabline">Tabline</a></li>
+<li><a href="#cursorline">Cursorline</a></li>
+<li><a href="#startup">Startup</a></li>
+<li><a href="#icon">Icon</a></li>
+<li><a href="#media">Media</a></li>
+<li><a href="#note-taking">Note Taking</a></li>
+<li><a href="#utility">Utility</a></li>
+<li><a href="#csv-files">CSV Files</a></li>
+<li><a href="#animation">Animation</a></li>
+<li><a href="#terminal-integration">Terminal Integration</a></li>
+<li><a href="#debugging">Debugging</a></li>
+<li><a href="#quickfix">Quickfix</a></li>
+<li><a href="#deployment">Deployment</a></li>
+<li><a href="#test">Test</a></li>
+<li><a href="#code-runner">Code Runner</a></li>
+<li><a href="#neovim-lua-development">Neovim Lua Development</a></li>
+<li><a href="#fennel">Fennel</a></li>
+<li><a href="#dependency-management">Dependency Management</a></li>
+<li><a href="#git">Git</a></li>
+<li><a href="#github">GitHub</a></li>
+<li><a href="#gitlab">GitLab</a></li>
+<li><a href="#motion">Motion</a></li>
+<li><a href="#tree-sitter-based">Tree-sitter Based</a></li>
+<li><a href="#keybinding">Keybinding</a></li>
+<li><a href="#mouse">Mouse</a></li>
+<li><a href="#scrolling">Scrolling</a></li>
+<li><a href="#scrollbar">Scrollbar</a></li>
+<li><a href="#editing-support">Editing Support</a></li>
+<li><a href="#comment">Comment</a></li>
+<li><a href="#formatting">Formatting</a></li>
+<li><a href="#indent">Indent</a></li>
+<li><a href="#command-line">Command Line</a></li>
+<li><a href="#session">Session</a></li>
+<li><a href="#remote-development">Remote Development</a></li>
+<li><a href="#split-and-window">Split and Window</a></li>
+<li><a href="#tmux">Tmux</a></li>
+<li><a href="#game">Game</a></li>
+<li><a href="#competitive-programming">Competitive Programming</a></li>
+<li><a href="#workflow">Workflow</a></li>
+<li><a href="#database">Database</a></li>
+<li><a href="#preconfigured-configuration">Preconfigured Configuration</a></li>
+<li><a href="#external">External</a></li>
+<li><a href="#version-manager">Version Manager</a></li>
+<li><a href="#boilerplate">Boilerplate</a></li>
+<li><a href="#os-specific">OS-specific</a></li>
+<li><a href="#wishlist">Wishlist</a></li>
+<li><a href="#ui">UI</a></li>
+<li><a href="#starter-templates">Starter Templates</a></li>
+<li><a href="#vim">Vim</a></li>
+<li><a href="#resource">Resource</a></li>
+</ul>
+<h2>Plugin Manager</h2>
+<ul>
+<li><a href="https://github.com/lewis6991/pckr.nvim">lewis6991/pckr.nvim</a> - Spiritual successor of <code>wbthomason/packer.nvim</code>.</li>
+<li><a href="https://github.com/savq/paq-nvim">savq/paq-nvim</a> - Neovim package manager written in Lua.</li>
+<li><a href="https://github.com/NTBBloodbath/cheovim">NTBBloodbath/cheovim</a> - Neovim configuration switcher written in Lua. Inspired by chemacs.</li>
+<li><a href="https://github.com/folke/lazy.nvim">folke/lazy.nvim</a> - A modern plugin manager, featuring a graphical interface, async execution, a lockfile and more.</li>
+<li><a href="https://github.com/alex-popov-tech/store.nvim">alex-popov-tech/store.nvim</a> - Plugins discovery tool with hourly updated database, and one-key installation for <code>lazy.nvim</code> and <code>vim.pack</code>.</li>
+<li><a href="https://github.com/nvim-neorocks/rocks.nvim">nvim-neorocks/rocks.nvim</a> - A modern approach to plugin management using Luarocks, inspired by Cargo.</li>
+<li><a href="https://github.com/nvim-mini/mini.nvim/blob/main/readmes/mini-deps.md">nvim-mini/mini.nvim#mini.deps</a> - Module of <code>mini.nvim</code> for managing other plugins. Uses Git and built-in packages to install, update, clean, and snapshot plugins.</li>
+<li><a href="https://github.com/wsdjeg/nvim-plug">wsdjeg/nvim-plug</a> - Asynchronous Neovim plugin manager written in Lua.</li>
+<li><a href="https://github.com/alyxshang/nuwa.nvim">alyxshang/nuwa.nvim</a> - A light Neovim package manager.</li>
+<li><a href="https://github.com/piersolenski/plugin-addict.nvim">piersolenski/plugin-addict.nvim</a> - A stupidly simple way to quickly install plugins.</li>
+<li><a href="https://github.com/OriginCoderPulse/synapse.nvim">synapse.nvim</a> - A modern, lightweight plugin manager with beautiful UI, intelligent dependency management, tag/branch support, and post-install command execution.</li>
+</ul>
+<!--lint disable double-link -->
+
+<p><strong><a href="#contents">⬆ back to top</a></strong></p>
+<!--lint enable double-link -->
+
+<h2>LSP</h2>
+<p><strong>(requires Neovim 0.5)</strong></p>
+<ul>
+<li><a href="https://github.com/romus204/referencer.nvim">romus204/referencer.nvim</a> - Lightweight, asynchronous that uses the LSP to show references to functions, methods, types and other.</li>
+<li><a href="https://github.com/Dan7h3x/signup.nvim">Dan7h3x/signup.nvim</a> - a little smart <code>lsp_signature</code> helper with awesome features.</li>
+</ul>
+<!--lint disable awesome-spell-check-->
+<ul>
+<li><a href="https://github.com/neovim/nvim-lspconfig">neovim/nvim-lspconfig</a> - Quickstart configurations for the LSP client.</li>
+</ul>
+<!--lint enable awesome-spell-check-->
+<ul>
+<li><a href="https://github.com/nvim-lua/lsp-status.nvim">nvim-lua/lsp-status.nvim</a> - This is a plugin/library for generating statusline components from the built-in LSP client.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'neovim_README.md';
 
         fetch(markdownFile)
@@ -48,21 +281,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

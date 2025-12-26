@@ -8,38 +8,149 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Readthedocs Examples Awesome Read The Docs - Awesome List Resources">
-    <title>Readthedocs Examples Awesome Read The Docs</title>
+    <meta name="description" content="> A curated list of awesome documentation projects, useful to learn from and for bootstrapping new documentation projects. > Plus cool real-life usages of Read...">
+    <meta name="robots" content="index, follow">
+    <title>Read The Docs - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <!--lint ignore awesome-git-repo-age-->
+<!--lint disable double-link-->
+
+<!-- title -->
+
+<h1>Awesome Read the Docs <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a> <a href="https://github.com/readthedocs-examples/awesome-read-the-docs/actions/workflows/lint.yaml"><img alt="lint" src="https://github.com/readthedocs-examples/awesome-read-the-docs/actions/workflows/lint.yaml/badge.svg" /></a></h1>
+<!-- subtitle -->
+
+<blockquote>
+<p>A curated list of awesome documentation projects, useful to learn from and for bootstrapping new documentation projects.
+Plus cool real-life usages of Read the Docs.</p>
+</blockquote>
+<!-- image -->
+
+<p><a href="https://docs.readthedocs.io/en/stable/tutorial/index.html" target="_blank" rel="noopener noreferrer">
+  <img src="./readthedocs-logo.svg" />
+</a></p>
+<!-- description -->
+
+<p>Read the Docs is a fully open-source platform that builds and publishes documentation.
+Read more on https://about.readthedocs.com.</p>
+<h2>Foreword</h2>
+<p>Many new and exciting documentation projects have emerged in <em>science and academia</em>, taking the world of documentation beyond just software projects.
+To capture the latest development and trends, we are compiling a list of inspirational uses of documentation technology, especially outside of the traditional field of software documentation.</p>
+<p>In addition to showing awesome and real-life Read the Docs projects, a number of <a href="#example-projects">Example Projects</a> are being built to help people learn and get started.</p>
+<p>We hope that this will inspire people writing documentation, developing new documentation projects or updating existing ones.
+All projects mentioned here are <strong>open source</strong>, meaning that you can find their source code and understand how it's done.</p>
+<p>The list is a work in progress, please feel invited to <a href="#contributing">contribute</a>!</p>
+<!-- TOC -->
+<!--lint disable awesome-toc-->
+<h2>Contents</h2>
+<!--lint enable awesome-toc-->
+
+<ul>
+<li><a href="#sphinx-projects">Sphinx projects</a></li>
+<li><a href="#mkdocs-projects">MkDocs projects</a></li>
+<li><a href="#api-reference">API Reference</a></li>
+<li><a href="#science-projects">Science projects</a></li>
+<li><a href="#tag-cloud">Tag cloud</a></li>
+</ul>
+<!-- CONTENT -->
+
+<h2>Sphinx projects</h2>
+<ul>
+<li><a href="https://crate.io/docs/crate/">CrateDB</a> - Crate.io has integrated their documentation experience into their general website. There's a total of 15 documentation projects nested. They use a custom theme, <a href="https://github.com/crate/crate-docs-theme">crate-docs-theme</a> to orchestrate the projects and align them. <strong>#sphinx</strong> <strong>#custom-theme</strong>.</li>
+<li><a href="https://docs.django-cms.org/">django-cms</a> - django-cms's developer documentation is as extensive as it's well-organized. It uses the Furo theme. <strong>#sphinx</strong> <strong>#large-project</strong>.</li>
+<li><a href="https://docs.ray.io/">Ray</a> - Ray is a documentation project spanning multiple software components. It uses several extensions from the Executable Book project. Features are showcased in <a href="https://twitter.com/readthedocs/status/1663923671470047234">this twitter thread</a>. <strong>#sphinx</strong> <strong>#themes</strong> <strong>#large-project</strong>.</li>
+<li><a href="https://docs.scrapy.org/">Scrapy</a> - Embeds a lot of reference snippets and uses <code>sphinx-hoverxref</code> for quick reference tooltips. Lots of inspiration to be found in content organization. <strong>#sphinx</strong>.</li>
+<li><a href="https://setuptools.pypa.io/">setuptools</a> - Lots of features, using the Furo theme. <a href="https://twitter.com/readthedocs/status/1546527820150718469">Twitter thread</a> with some examples. <strong>#sphinx</strong> <strong>#themes</strong>.</li>
+<li><a href="https://sphinx-needs.readthedocs.io/">sphinx-needs</a> - Documentation of <code>sphinx-needs</code>. <strong>#sphinx</strong> <strong>#themes</strong>.</li>
+<li><a href="https://sphinx-immaterial.readthedocs.io/">sphinx-immaterial</a> - Documentation of <code>sphinx-immaterial</code>, a Material theme for Sphinx, based on Material for MkDocs. <strong>#sphinx</strong> <strong>#themes</strong>.</li>
+<li><a href="https://manual.uberspace.de/">Uberspace</a> - Customized sidebar and footer, adding project's branding through custom CSS and HTML to <code>sphinx_rtd_theme</code>. Latest version and release date on front page. <strong>#sphinx</strong> <strong>#themes</strong> <strong>#custom-theme</strong>.</li>
+<li><a href="https://docs.wagtail.org/">Wagtail</a> - Wagtail is a Django-based CMS with a global community. The documentation spans multiple stakeholders (editors and developers), has it's own beautiful theme and is largely structured around Diátaxis ideals. The <a href="https://docs.wagtail.org/en/stable/releases/index.html">Release Notes</a> and <a href="https://docs.wagtail.org/en/stable/contributing/index.html">Contribution guide</a> are remarkable. Wagtail's documentation uses a minimal set of Sphinx extensions. <strong>#sphinx</strong> <strong>#themes</strong> <strong>#diataxis</strong>.</li>
+<li><a href="https://docs.weblate.org/">Weblate</a> - Weblate is a translation platform with a large documentation project with many translations and customized Read the Docs theme. Documentation aimed at all segments: users, administrators and developers. Also features an extensive Changelog. <strong>#sphinx</strong> <strong>#themes</strong> <strong>#translation</strong>.</li>
+</ul>
+<h2>MkDocs projects</h2>
+<ul>
+<li><a href="https://argo-cd.readthedocs.io/">Argo CD</a> - Material for MkDocs theme with custom colors and a nice version drop down. Animated product demo and carefully designed sidebar presenting targeted guides for Operators, Users and Developers. <strong>#mkdocs</strong> <strong>#themes</strong> <strong>#large-project</strong>.</li>
+<li><a href="https://doc2dash.readthedocs.io/">doc2dash</a> - Material for MkDocs with a custom version provider fully compatible with Read the Docs <strong>#mkdocs</strong> <strong>#themes</strong>.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <!--lint ignore awesome-git-repo-age-->
+<!--lint disable double-link-->
+
+<!-- title -->
+
+<h1>Awesome Read the Docs <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a> <a href="https://github.com/readthedocs-examples/awesome-read-the-docs/actions/workflows/lint.yaml"><img alt="lint" src="https://github.com/readthedocs-examples/awesome-read-the-docs/actions/workflows/lint.yaml/badge.svg" /></a></h1>
+<!-- subtitle -->
+
+<blockquote>
+<p>A curated list of awesome documentation projects, useful to learn from and for bootstrapping new documentation projects.
+Plus cool real-life usages of Read the Docs.</p>
+</blockquote>
+<!-- image -->
+
+<p><a href="https://docs.readthedocs.io/en/stable/tutorial/index.html" target="_blank" rel="noopener noreferrer">
+  <img src="./readthedocs-logo.svg" />
+</a></p>
+<!-- description -->
+
+<p>Read the Docs is a fully open-source platform that builds and publishes documentation.
+Read more on https://about.readthedocs.com.</p>
+<h2>Foreword</h2>
+<p>Many new and exciting documentation projects have emerged in <em>science and academia</em>, taking the world of documentation beyond just software projects.
+To capture the latest development and trends, we are compiling a list of inspirational uses of documentation technology, especially outside of the traditional field of software documentation.</p>
+<p>In addition to showing awesome and real-life Read the Docs projects, a number of <a href="#example-projects">Example Projects</a> are being built to help people learn and get started.</p>
+<p>We hope that this will inspire people writing documentation, developing new documentation projects or updating existing ones.
+All projects mentioned here are <strong>open source</strong>, meaning that you can find their source code and understand how it's done.</p>
+<p>The list is a work in progress, please feel invited to <a href="#contributing">contribute</a>!</p>
+<!-- TOC -->
+<!--lint disable awesome-toc-->
+<h2>Contents</h2>
+<!--lint enable awesome-toc-->
+
+<ul>
+<li><a href="#sphinx-projects">Sphinx projects</a></li>
+<li><a href="#mkdocs-projects">MkDocs projects</a></li>
+<li><a href="#api-reference">API Reference</a></li>
+<li><a href="#science-projects">Science projects</a></li>
+<li><a href="#tag-cloud">Tag cloud</a></li>
+</ul>
+<!-- CONTENT -->
+
+<h2>Sphinx projects</h2>
+<ul>
+<li><a href="https://crate.io/docs/crate/">CrateDB</a> - Crate.io has integrated their documentation experience into their general website. There's a total of 15 documentation projects nested. They use a custom theme, <a href="https://github.com/crate/crate-docs-theme">crate-docs-theme</a> to orchestrate the projects and align them. <strong>#sphinx</strong> <strong>#custom-theme</strong>.</li>
+<li><a href="https://docs.django-cms.org/">django-cms</a> - django-cms's developer documentation is as extensive as it's well-organized. It uses the Furo theme. <strong>#sphinx</strong> <strong>#large-project</strong>.</li>
+<li><a href="https://docs.ray.io/">Ray</a> - Ray is a documentation project spanning multiple software components. It uses several extensions from the Executable Book project. Features are showcased in <a href="https://twitter.com/readthedocs/status/1663923671470047234">this twitter thread</a>. <strong>#sphinx</strong> <strong>#themes</strong> <strong>#large-project</strong>.</li>
+<li><a href="https://docs.scrapy.org/">Scrapy</a> - Embeds a lot of reference snippets and uses <code>sphinx-hoverxref</code> for quick reference tooltips. Lots of inspiration to be found in content organization. <strong>#sphinx</strong>.</li>
+<li><a href="https://setuptools.pypa.io/">setuptools</a> - Lots of features, using the Furo theme. <a href="https://twitter.com/readthedocs/status/1546527820150718469">Twitter thread</a> with some examples. <strong>#sphinx</strong> <strong>#themes</strong>.</li>
+<li><a href="https://sphinx-needs.readthedocs.io/">sphinx-needs</a> - Documentation of <code>sphinx-needs</code>. <strong>#sphinx</strong> <strong>#themes</strong>.</li>
+<li><a href="https://sphinx-immaterial.readthedocs.io/">sphinx-immaterial</a> - Documentation of <code>sphinx-immaterial</code>, a Material theme for Sphinx, based on Material for MkDocs. <strong>#sphinx</strong> <strong>#themes</strong>.</li>
+<li><a href="https://manual.uberspace.de/">Uberspace</a> - Customized sidebar and footer, adding project's branding through custom CSS and HTML to <code>sphinx_rtd_theme</code>. Latest version and release date on front page. <strong>#sphinx</strong> <strong>#themes</strong> <strong>#custom-theme</strong>.</li>
+<li><a href="https://docs.wagtail.org/">Wagtail</a> - Wagtail is a Django-based CMS with a global community. The documentation spans multiple stakeholders (editors and developers), has it's own beautiful theme and is largely structured around Diátaxis ideals. The <a href="https://docs.wagtail.org/en/stable/releases/index.html">Release Notes</a> and <a href="https://docs.wagtail.org/en/stable/contributing/index.html">Contribution guide</a> are remarkable. Wagtail's documentation uses a minimal set of Sphinx extensions. <strong>#sphinx</strong> <strong>#themes</strong> <strong>#diataxis</strong>.</li>
+<li><a href="https://docs.weblate.org/">Weblate</a> - Weblate is a translation platform with a large documentation project with many translations and customized Read the Docs theme. Documentation aimed at all segments: users, administrators and developers. Also features an extensive Changelog. <strong>#sphinx</strong> <strong>#themes</strong> <strong>#translation</strong>.</li>
+</ul>
+<h2>MkDocs projects</h2>
+<ul>
+<li><a href="https://argo-cd.readthedocs.io/">Argo CD</a> - Material for MkDocs theme with custom colors and a nice version drop down. Animated product demo and carefully designed sidebar presenting targeted guides for Operators, Users and Developers. <strong>#mkdocs</strong> <strong>#themes</strong> <strong>#large-project</strong>.</li>
+<li><a href="https://doc2dash.readthedocs.io/">doc2dash</a> - Material for MkDocs with a custom version provider fully compatible with Read the Docs <strong>#mkdocs</strong> <strong>#themes</strong>.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'read-the-docs_README.md';
 
         fetch(markdownFile)
@@ -48,21 +159,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

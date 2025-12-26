@@ -8,38 +8,133 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Meirwah Awesome Incident Response - Awesome List Resources">
-    <title>Meirwah Awesome Incident Response</title>
+    <meta name="description" content="> A curated list of tools and resources for security incident response, aimed to help security analysts and DFIR teams. Digital Forensics and Incident Response...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Incident Response [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) [![Check URLs](https://github.com/meirwah/awesome-incident-response/actions/workflows/check_urls.yml/badge.svg)](https://github.com/meirwah/awesome-incident-response/actions/workflows/check_urls.yml) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Incident Response <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <a href="https://github.com/meirwah/awesome-incident-response/actions/workflows/check_urls.yml"><img alt="Check URLs" src="https://github.com/meirwah/awesome-incident-response/actions/workflows/check_urls.yml/badge.svg" /></a></h1>
+<blockquote>
+<p>A curated list of tools and resources for security incident response, aimed to help security analysts and <a href="http://www.acronymfinder.com/Digital-Forensics%2c-Incident-Response-%28DFIR%29.html">DFIR</a> teams.</p>
+</blockquote>
+<p>Digital Forensics and Incident Response (DFIR) teams are groups of people in an organization responsible for managing the response to a security incident, including gathering evidence of the incident, remediating its effects, and implementing controls to prevent the incident from recurring in the future.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#adversary-emulation">Adversary Emulation</a></li>
+<li><a href="#all-in-one-tools">All-In-One Tools</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#communities">Communities</a></li>
+<li><a href="#disk-image-creation-tools">Disk Image Creation Tools</a></li>
+<li><a href="#evidence-collection">Evidence Collection</a></li>
+<li><a href="#incident-management">Incident Management</a></li>
+<li><a href="#knowledge-bases">Knowledge Bases</a></li>
+<li><a href="#linux-distributions">Linux Distributions</a></li>
+<li><a href="#linux-evidence-collection">Linux Evidence Collection</a></li>
+<li><a href="#log-analysis-tools">Log Analysis Tools</a></li>
+<li><a href="#memory-analysis-tools">Memory Analysis Tools</a></li>
+<li><a href="#memory-imaging-tools">Memory Imaging Tools</a></li>
+<li><a href="#osx-evidence-collection">OSX Evidence Collection</a></li>
+<li><a href="#other-lists">Other Lists</a></li>
+<li><a href="#other-tools">Other Tools</a></li>
+<li><a href="#playbooks">Playbooks</a></li>
+<li><a href="#process-dump-tools">Process Dump Tools</a></li>
+<li><a href="#sandboxingreversing-tools">Sandboxing/Reversing Tools</a></li>
+<li><a href="#scanner-tools">Scanner Tools</a></li>
+<li><a href="#timeline-tools">Timeline Tools</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#windows-evidence-collection">Windows Evidence Collection</a></li>
+</ul>
+<h2>IR Tools Collection</h2>
+<h3>Adversary Emulation</h3>
+<ul>
+<li><a href="https://github.com/NextronSystems/APTSimulator">APTSimulator</a> - Windows Batch script that uses a set of tools and output files to make a system look as if it was compromised.</li>
+<li><a href="https://github.com/redcanaryco/atomic-red-team">Atomic Red Team (ART)</a> - Small and highly portable detection tests mapped to the MITRE ATT&amp;CK Framework.</li>
+<li><a href="https://github.com/jymcheong/AutoTTP">AutoTTP</a> - Automated Tactics Techniques &amp; Procedures. Re-running complex sequences manually for regression tests, product evaluations, generate data for researchers.</li>
+<li><a href="https://github.com/mitre/caldera">Caldera</a> - Automated adversary emulation system that performs post-compromise adversarial behavior within Windows Enterprise networks. It generates plans during operation using a planning system and a pre-configured adversary model based on the Adversarial Tactics, Techniques &amp; Common Knowledge (ATT&amp;CK™) project.</li>
+<li><a href="https://github.com/TryCatchHCF/DumpsterFire">DumpsterFire</a> - Modular, menu-driven, cross-platform tool for building repeatable, time-delayed, distributed security events. Easily create custom event chains for Blue Team drills and sensor /   alert mapping. Red Teams can create decoy incidents, distractions, and lures to support and scale their operations.</li>
+<li><a href="https://github.com/uber-common/metta">Metta</a> - Information security preparedness tool to do adversarial simulation.</li>
+<li><a href="https://github.com/alphasoc/flightsim">Network Flight Simulator</a> - Lightweight utility used to generate malicious network traffic and help security teams to evaluate security controls and network visibility.</li>
+<li><a href="https://github.com/endgameinc/RTA">Red Team Automation (RTA)</a> - RTA provides a framework of scripts designed to allow blue teams to test their detection capabilities against malicious tradecraft, modeled after MITRE ATT&amp;CK.</li>
+<li><a href="https://github.com/redhuntlabs/RedHunt-OS">RedHunt-OS</a> - Virtual machine for adversary emulation and threat hunting.</li>
+</ul>
+<h3>All-In-One Tools</h3>
+<ul>
+<li><a href="https://belkasoft.com/ec">Belkasoft Evidence Center</a> -  The toolkit will quickly extract digital evidence from multiple sources by analyzing hard drives, drive images, memory dumps, iOS, Blackberry and Android backups, UFED, JTAG and chip-off dumps.</li>
+<li><a href="https://github.com/PowerShellMafia/CimSweep">CimSweep</a> - Suite of CIM/WMI-based tools that enable the ability to perform incident response and hunting operations remotely across all versions of Windows.</li>
+<li><a href="https://github.com/byt3smith/CIRTKit">CIRTkit</a> - CIRTKit is not just a collection of tools, but also a framework to aid in the ongoing unification of Incident Response and Forensics investigation processes.</li>
+<li><a href="http://www.cybertriage.com">Cyber Triage</a> - Cyber Triage collects and analyzes host data to determine if it is compromised. It's scoring system and recommendation engine allow you to quickly focus on the important artifacts. It can import data from its collection tool, disk images, and other collectors (such as KAPE). It can run on an examiner's desktop or in a server model. Developed by Sleuth Kit Labs, which also makes Autopsy. </li>
+<li><a href="https://github.com/fox-it/dissect">Dissect</a> - Dissect is a digital forensics &amp; incident response framework and toolset that allows you to quickly access and analyse forensic artefacts from various disk and file formats, developed by Fox-IT (part of NCC Group).</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Incident Response <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <a href="https://github.com/meirwah/awesome-incident-response/actions/workflows/check_urls.yml"><img alt="Check URLs" src="https://github.com/meirwah/awesome-incident-response/actions/workflows/check_urls.yml/badge.svg" /></a></h1>
+<blockquote>
+<p>A curated list of tools and resources for security incident response, aimed to help security analysts and <a href="http://www.acronymfinder.com/Digital-Forensics%2c-Incident-Response-%28DFIR%29.html">DFIR</a> teams.</p>
+</blockquote>
+<p>Digital Forensics and Incident Response (DFIR) teams are groups of people in an organization responsible for managing the response to a security incident, including gathering evidence of the incident, remediating its effects, and implementing controls to prevent the incident from recurring in the future.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#adversary-emulation">Adversary Emulation</a></li>
+<li><a href="#all-in-one-tools">All-In-One Tools</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#communities">Communities</a></li>
+<li><a href="#disk-image-creation-tools">Disk Image Creation Tools</a></li>
+<li><a href="#evidence-collection">Evidence Collection</a></li>
+<li><a href="#incident-management">Incident Management</a></li>
+<li><a href="#knowledge-bases">Knowledge Bases</a></li>
+<li><a href="#linux-distributions">Linux Distributions</a></li>
+<li><a href="#linux-evidence-collection">Linux Evidence Collection</a></li>
+<li><a href="#log-analysis-tools">Log Analysis Tools</a></li>
+<li><a href="#memory-analysis-tools">Memory Analysis Tools</a></li>
+<li><a href="#memory-imaging-tools">Memory Imaging Tools</a></li>
+<li><a href="#osx-evidence-collection">OSX Evidence Collection</a></li>
+<li><a href="#other-lists">Other Lists</a></li>
+<li><a href="#other-tools">Other Tools</a></li>
+<li><a href="#playbooks">Playbooks</a></li>
+<li><a href="#process-dump-tools">Process Dump Tools</a></li>
+<li><a href="#sandboxingreversing-tools">Sandboxing/Reversing Tools</a></li>
+<li><a href="#scanner-tools">Scanner Tools</a></li>
+<li><a href="#timeline-tools">Timeline Tools</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#windows-evidence-collection">Windows Evidence Collection</a></li>
+</ul>
+<h2>IR Tools Collection</h2>
+<h3>Adversary Emulation</h3>
+<ul>
+<li><a href="https://github.com/NextronSystems/APTSimulator">APTSimulator</a> - Windows Batch script that uses a set of tools and output files to make a system look as if it was compromised.</li>
+<li><a href="https://github.com/redcanaryco/atomic-red-team">Atomic Red Team (ART)</a> - Small and highly portable detection tests mapped to the MITRE ATT&amp;CK Framework.</li>
+<li><a href="https://github.com/jymcheong/AutoTTP">AutoTTP</a> - Automated Tactics Techniques &amp; Procedures. Re-running complex sequences manually for regression tests, product evaluations, generate data for researchers.</li>
+<li><a href="https://github.com/mitre/caldera">Caldera</a> - Automated adversary emulation system that performs post-compromise adversarial behavior within Windows Enterprise networks. It generates plans during operation using a planning system and a pre-configured adversary model based on the Adversarial Tactics, Techniques &amp; Common Knowledge (ATT&amp;CK™) project.</li>
+<li><a href="https://github.com/TryCatchHCF/DumpsterFire">DumpsterFire</a> - Modular, menu-driven, cross-platform tool for building repeatable, time-delayed, distributed security events. Easily create custom event chains for Blue Team drills and sensor /   alert mapping. Red Teams can create decoy incidents, distractions, and lures to support and scale their operations.</li>
+<li><a href="https://github.com/uber-common/metta">Metta</a> - Information security preparedness tool to do adversarial simulation.</li>
+<li><a href="https://github.com/alphasoc/flightsim">Network Flight Simulator</a> - Lightweight utility used to generate malicious network traffic and help security teams to evaluate security controls and network visibility.</li>
+<li><a href="https://github.com/endgameinc/RTA">Red Team Automation (RTA)</a> - RTA provides a framework of scripts designed to allow blue teams to test their detection capabilities against malicious tradecraft, modeled after MITRE ATT&amp;CK.</li>
+<li><a href="https://github.com/redhuntlabs/RedHunt-OS">RedHunt-OS</a> - Virtual machine for adversary emulation and threat hunting.</li>
+</ul>
+<h3>All-In-One Tools</h3>
+<ul>
+<li><a href="https://belkasoft.com/ec">Belkasoft Evidence Center</a> -  The toolkit will quickly extract digital evidence from multiple sources by analyzing hard drives, drive images, memory dumps, iOS, Blackberry and Android backups, UFED, JTAG and chip-off dumps.</li>
+<li><a href="https://github.com/PowerShellMafia/CimSweep">CimSweep</a> - Suite of CIM/WMI-based tools that enable the ability to perform incident response and hunting operations remotely across all versions of Windows.</li>
+<li><a href="https://github.com/byt3smith/CIRTKit">CIRTkit</a> - CIRTKit is not just a collection of tools, but also a framework to aid in the ongoing unification of Incident Response and Forensics investigation processes.</li>
+<li><a href="http://www.cybertriage.com">Cyber Triage</a> - Cyber Triage collects and analyzes host data to determine if it is compromised. It's scoring system and recommendation engine allow you to quickly focus on the important artifacts. It can import data from its collection tool, disk images, and other collectors (such as KAPE). It can run on an examiner's desktop or in a server model. Developed by Sleuth Kit Labs, which also makes Autopsy. </li>
+<li><a href="https://github.com/fox-it/dissect">Dissect</a> - Dissect is a digital forensics &amp; incident response framework and toolset that allows you to quickly access and analyse forensic artefacts from various disk and file formats, developed by Fox-IT (part of NCC Group).</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'incident-response_README.md';
 
         fetch(markdownFile)
@@ -48,21 +143,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

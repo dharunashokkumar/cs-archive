@@ -8,38 +8,217 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mjhea0 Awesome Flask - Awesome List Resources">
-    <title>Mjhea0 Awesome Flask</title>
+    <meta name="description" content="> A curated list of awesome things related to Flask. Flask is a lightweight WSGI web application framework written in Python. - Third-Party Extensions - Admin...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Flask [![Awesome](https://awesome.re/badge-flat.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Flask <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a></h1>
+<blockquote>
+<p>A curated list of awesome things related to Flask.</p>
+</blockquote>
+<!--lint ignore double-link-->
+<p><a href="https://flask.palletsprojects.com/">Flask</a> is a lightweight WSGI web application framework written in Python.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#third-party-extensions">Third-Party Extensions</a></li>
+<li><a href="#admin">Admin</a></li>
+<li><a href="#apis">APIs</a></li>
+<li><a href="#auth">Auth</a></li>
+<li><a href="#cache">Cache</a></li>
+<li><a href="#data-validation-and-serialization">Data Validation and Serialization</a></li>
+<li><a href="#databases">Databases</a></li>
+<li><a href="#developer-tools">Developer Tools</a></li>
+<li><a href="#email">Email</a></li>
+<li><a href="#forms">Forms</a></li>
+<li><a href="#full-text-search">Full-text Search</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#task-queues">Task Queues</a></li>
+<li><a href="#utils">Utils</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#official-resources">Official Resources</a></li>
+<li><a href="#external-resources">External Resources</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#conferences">Conferences</a></li>
+<li><a href="#meetups">Meetups</a></li>
+<li><a href="#podcasts">Podcasts</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#courses">Courses</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#hosting">Hosting</a></li>
+<li><a href="#paas">PaaS</a></li>
+<li><a href="#iaas">IaaS</a></li>
+<li><a href="#serverless">Serverless</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#boilerplates">Boilerplates</a></li>
+<li><a href="#open-source-projects">Open Source Projects</a></li>
+</ul>
+<h2>Third-Party Extensions</h2>
+<h3>Admin</h3>
+<ul>
+<li><a href="https://github.com/pallets-eco/flask-admin">Flask-Admin</a> - Functional admin panel that provides a user interface for managing data based on your models.</li>
+</ul>
+<h3>APIs</h3>
+<h4>RESTful API Support</h4>
+<ul>
+<li><a href="https://docs.python-eve.org">Eve</a> - RESTful API framework designed for human beings.</li>
+<li><a href="https://flask-classful.readthedocs.io/">Flask-Classful</a> - Adds support for class-based views for setting up RESTful API route endpoints.</li>
+<li><a href="https://github.com/closeio/flask-mongorest">Flask-MongoRest</a> - RESTful API framework wrapped around <a href="http://mongoengine.org/">MongoEngine</a>.</li>
+<li><a href="https://flask-restful.readthedocs.io">Flask-RESTful</a> - Quickly build RESTful APIs.</li>
+</ul>
+<h4>RESTful API + Swagger/OpenAPI Documentation Support</h4>
+<ul>
+<li><a href="https://github.com/apiflask/apiflask">APIFlask</a> - Integrates marshmallow for validation and serialization, and for OpenAPI generation with Swagger UI.</li>
+<li><a href="https://connexion.readthedocs.io">Connexion</a> - Open source, OpenAPI-based, REST framework built on top of Flask.</li>
+<li><a href="https://github.com/flasgger/flasgger">Flasgger</a> - OpenAPI and Swagger UI. Builds the API from Flasgger models, marshmallow models, dicts, or YAML files.</li>
+<li><a href="https://github.com/plangrid/flask-rebar">Flask-Rebar</a> - Combines Flask, <a href="https://marshmallow.readthedocs.io/">marshmallow</a>, and <a href="https://www.openapis.org/">OpenAPI</a> for robust REST services.</li>
+<li><a href="https://flask-restx.readthedocs.io">Flask-RESTX</a> - Community-driven fork of <a href="https://flask-restplus.readthedocs.io/">Flask-RESTPlus</a> that makes it easy to build and document RESTful APIs with Flask.</li>
+<li><a href="https://github.com/marshmallow-code/flask-smorest/">flask-smorest</a> - Marshmallow's official Flask REST integration. Uses marshmallow models for request/response validation and serialization, and generates OpenAPI with Swagger UI.</li>
+</ul>
+<h4>Swagger/OpenAPI Documentation Support</h4>
+<ul>
+<li><a href="https://github.com/thomaxxl/safrs">SAFRS: Python OpenAPI &amp; JSON:API Framework</a> - SAFRS, which is an acronym for <em>S</em>ql<em>A</em>lchemy <em>F</em>lask-<em>R</em>estful <em>S</em>wagger, is meant to help developers create self-documenting JSON APIs for SQLAlchemy database objects and relationships.</li>
+</ul>
+<h3>Auth</h3>
+<h4>Basic Auth and Session-based (for HTML Endpoints)</h4>
+<ul>
+<li><a href="https://flask-httpauth.readthedocs.io">Flask-HTTPAuth</a> - Authentication.</li>
+<li><a href="https://flask-login.readthedocs.io/">Flask-Login</a> - Account management and authentication.</li>
+<li><a href="https://pythonhosted.org/Flask-Principal/">Flask Principal</a> - Authorization.</li>
+<li><a href="https://flask-security-too.readthedocs.io/en/stable/">Flask-Security-Too</a> - Account management, authentication, authorization.</li>
+<li><a href="https://flasksession.readthedocs.io/en/latest/">Flask-Session</a> - Session managment.</li>
+<li><a href="https://github.com/flask-extensions/Flask-SimpleLogin">Flask-SimpleLogin</a> - Authentication.</li>
+<li><a href="https://flask-user.readthedocs.io">Flask-User</a> - Account management, authentication, authorization.</li>
+</ul>
+<blockquote>
+<p>Curious about the differences differences between Flask-User and Flask-Security? Review the Flask-User <a href="https://flask-user.readthedocs.io/en/latest/faq.html">FAQ</a>.</p>
+</blockquote>
+<h4>JWT-based (for JSON Endpoints)</h4>
+<ul>
+<li><a href="https://pythonhosted.org/Flask-JWT/">Flask-JWT</a> - Basic support for working with JWTs.</li>
+<li><a href="https://flask-jwt-extended.readthedocs.io">Flask-JWT-Extended</a> - Advanced support for working with JWTs.</li>
+<li><a href="https://github.com/joegasewicz/flask-jwt-router">Flask-JWT-Router</a> - Adds authorized routes to a Flask app.</li>
+<li><a href="https://flask-praetorian.readthedocs.io">Flask-Praetorian</a> - Authentication and authorization for Flask APIs.</li>
+</ul>
+<h4>OAuth</h4>
+<ul>
+<li><a href="https://authlib.org/">Authlib</a> - Library for building OAuth and OpenID clients and servers.</li>
+<li><a href="https://github.com/authomatic/authomatic">Authomatic</a> - Framework agnostic library for Python web applications that simplifies authentication and authorization of users via OAuth and OpenID.</li>
+<li><a href="https://github.com/singingwolfboy/flask-dance">Flask-Dance</a> - OAuth support via <a href="https://oauthlib.readthedocs.io/">OAuthLib</a>.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Flask <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a></h1>
+<blockquote>
+<p>A curated list of awesome things related to Flask.</p>
+</blockquote>
+<!--lint ignore double-link-->
+<p><a href="https://flask.palletsprojects.com/">Flask</a> is a lightweight WSGI web application framework written in Python.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#third-party-extensions">Third-Party Extensions</a></li>
+<li><a href="#admin">Admin</a></li>
+<li><a href="#apis">APIs</a></li>
+<li><a href="#auth">Auth</a></li>
+<li><a href="#cache">Cache</a></li>
+<li><a href="#data-validation-and-serialization">Data Validation and Serialization</a></li>
+<li><a href="#databases">Databases</a></li>
+<li><a href="#developer-tools">Developer Tools</a></li>
+<li><a href="#email">Email</a></li>
+<li><a href="#forms">Forms</a></li>
+<li><a href="#full-text-search">Full-text Search</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#task-queues">Task Queues</a></li>
+<li><a href="#utils">Utils</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#official-resources">Official Resources</a></li>
+<li><a href="#external-resources">External Resources</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#conferences">Conferences</a></li>
+<li><a href="#meetups">Meetups</a></li>
+<li><a href="#podcasts">Podcasts</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#courses">Courses</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#hosting">Hosting</a></li>
+<li><a href="#paas">PaaS</a></li>
+<li><a href="#iaas">IaaS</a></li>
+<li><a href="#serverless">Serverless</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#boilerplates">Boilerplates</a></li>
+<li><a href="#open-source-projects">Open Source Projects</a></li>
+</ul>
+<h2>Third-Party Extensions</h2>
+<h3>Admin</h3>
+<ul>
+<li><a href="https://github.com/pallets-eco/flask-admin">Flask-Admin</a> - Functional admin panel that provides a user interface for managing data based on your models.</li>
+</ul>
+<h3>APIs</h3>
+<h4>RESTful API Support</h4>
+<ul>
+<li><a href="https://docs.python-eve.org">Eve</a> - RESTful API framework designed for human beings.</li>
+<li><a href="https://flask-classful.readthedocs.io/">Flask-Classful</a> - Adds support for class-based views for setting up RESTful API route endpoints.</li>
+<li><a href="https://github.com/closeio/flask-mongorest">Flask-MongoRest</a> - RESTful API framework wrapped around <a href="http://mongoengine.org/">MongoEngine</a>.</li>
+<li><a href="https://flask-restful.readthedocs.io">Flask-RESTful</a> - Quickly build RESTful APIs.</li>
+</ul>
+<h4>RESTful API + Swagger/OpenAPI Documentation Support</h4>
+<ul>
+<li><a href="https://github.com/apiflask/apiflask">APIFlask</a> - Integrates marshmallow for validation and serialization, and for OpenAPI generation with Swagger UI.</li>
+<li><a href="https://connexion.readthedocs.io">Connexion</a> - Open source, OpenAPI-based, REST framework built on top of Flask.</li>
+<li><a href="https://github.com/flasgger/flasgger">Flasgger</a> - OpenAPI and Swagger UI. Builds the API from Flasgger models, marshmallow models, dicts, or YAML files.</li>
+<li><a href="https://github.com/plangrid/flask-rebar">Flask-Rebar</a> - Combines Flask, <a href="https://marshmallow.readthedocs.io/">marshmallow</a>, and <a href="https://www.openapis.org/">OpenAPI</a> for robust REST services.</li>
+<li><a href="https://flask-restx.readthedocs.io">Flask-RESTX</a> - Community-driven fork of <a href="https://flask-restplus.readthedocs.io/">Flask-RESTPlus</a> that makes it easy to build and document RESTful APIs with Flask.</li>
+<li><a href="https://github.com/marshmallow-code/flask-smorest/">flask-smorest</a> - Marshmallow's official Flask REST integration. Uses marshmallow models for request/response validation and serialization, and generates OpenAPI with Swagger UI.</li>
+</ul>
+<h4>Swagger/OpenAPI Documentation Support</h4>
+<ul>
+<li><a href="https://github.com/thomaxxl/safrs">SAFRS: Python OpenAPI &amp; JSON:API Framework</a> - SAFRS, which is an acronym for <em>S</em>ql<em>A</em>lchemy <em>F</em>lask-<em>R</em>estful <em>S</em>wagger, is meant to help developers create self-documenting JSON APIs for SQLAlchemy database objects and relationships.</li>
+</ul>
+<h3>Auth</h3>
+<h4>Basic Auth and Session-based (for HTML Endpoints)</h4>
+<ul>
+<li><a href="https://flask-httpauth.readthedocs.io">Flask-HTTPAuth</a> - Authentication.</li>
+<li><a href="https://flask-login.readthedocs.io/">Flask-Login</a> - Account management and authentication.</li>
+<li><a href="https://pythonhosted.org/Flask-Principal/">Flask Principal</a> - Authorization.</li>
+<li><a href="https://flask-security-too.readthedocs.io/en/stable/">Flask-Security-Too</a> - Account management, authentication, authorization.</li>
+<li><a href="https://flasksession.readthedocs.io/en/latest/">Flask-Session</a> - Session managment.</li>
+<li><a href="https://github.com/flask-extensions/Flask-SimpleLogin">Flask-SimpleLogin</a> - Authentication.</li>
+<li><a href="https://flask-user.readthedocs.io">Flask-User</a> - Account management, authentication, authorization.</li>
+</ul>
+<blockquote>
+<p>Curious about the differences differences between Flask-User and Flask-Security? Review the Flask-User <a href="https://flask-user.readthedocs.io/en/latest/faq.html">FAQ</a>.</p>
+</blockquote>
+<h4>JWT-based (for JSON Endpoints)</h4>
+<ul>
+<li><a href="https://pythonhosted.org/Flask-JWT/">Flask-JWT</a> - Basic support for working with JWTs.</li>
+<li><a href="https://flask-jwt-extended.readthedocs.io">Flask-JWT-Extended</a> - Advanced support for working with JWTs.</li>
+<li><a href="https://github.com/joegasewicz/flask-jwt-router">Flask-JWT-Router</a> - Adds authorized routes to a Flask app.</li>
+<li><a href="https://flask-praetorian.readthedocs.io">Flask-Praetorian</a> - Authentication and authorization for Flask APIs.</li>
+</ul>
+<h4>OAuth</h4>
+<ul>
+<li><a href="https://authlib.org/">Authlib</a> - Library for building OAuth and OpenID clients and servers.</li>
+<li><a href="https://github.com/authomatic/authomatic">Authomatic</a> - Framework agnostic library for Python web applications that simplifies authentication and authorization of users via OAuth and OpenID.</li>
+<li><a href="https://github.com/singingwolfboy/flask-dance">Flask-Dance</a> - OAuth support via <a href="https://oauthlib.readthedocs.io/">OAuthLib</a>.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'flask_README.md';
 
         fetch(markdownFile)
@@ -48,21 +227,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

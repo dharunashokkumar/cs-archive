@@ -8,38 +8,109 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tupletype Awesome Cicd Attacks - Awesome List Resources">
-    <title>Tupletype Awesome Cicd Attacks</title>
+    <meta name="description" content="Offensive research of systems and processes related to developing and deploying code. - Techniques - Publicly Exposed Sensitive Data - Initial Code Execution -...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome CI/CD Attacks [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome CI/CD Attacks <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p>Offensive research of systems and processes related to developing and deploying code.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#techniques">Techniques</a></li>
+<li><a href="#publicly-exposed-sensitive-data">Publicly Exposed Sensitive Data</a></li>
+<li><a href="#initial-code-execution">Initial Code Execution</a></li>
+<li><a href="#post-exploitation">Post Exploitation</a></li>
+<li><a href="#defense-evasion">Defense Evasion</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#case-studies">Case Studies</a></li>
+<li><a href="#similar-projects">Similar Projects</a></li>
+</ul>
+<h2>Techniques</h2>
+<p>A curated list of unique and useful CI/CD attack techniques.</p>
+<h3>Publicly Exposed Sensitive Data</h3>
+<ul>
+<li><a href="https://trufflesecurity.com/blog/postman-carries-lots-of-secrets">(The) Postman Carries Lots of Secrets</a> - Postman's public API network leaks thousands of secrets due to confusing UI, forks, and insufficient secret scanning.</li>
+<li><a href="https://www.paloaltonetworks.com/blog/prisma-cloud/secrets-leakage-user-error-azure-cli/">All the Small Things: Azure CLI Leakage and Problematic Usage Patterns</a> - Azure CLI leaks secrets to CI/CD logs due to usage patterns.</li>
+<li><a href="https://trufflesecurity.com/blog/anyone-can-access-deleted-and-private-repo-data-github">Anyone can Access Deleted and Private Repository Data on GitHub</a> - As long as it's part of a fork network.</li>
+<li><a href="https://duo.com/blog/beyond-s3-exposed-resources-on-aws">Beyond S3: Exposed Resources on AWS</a> - Public EBS, RDS, AMI and Elasticsearch clusters exposed to the internet. </li>
+<li><a href="https://securitycafe.ro/2024/05/08/aws-cloudquarry-digging-for-secrets-in-public-amis/">CloudQuarry: Digging for secrets in public AMIs</a> - Researchers found 500GB of credentials, private repos, and keys in public AWS AMIs, impacting various industries.</li>
+<li><a href="https://www.aquasec.com/blog/github-repos-expose-azure-and-red-hat-secrets/">Employee Personal GitHub Repos Expose Internal Azure and Red Hat Secrets</a> - Employee's personal GitHub repos expose internal Azure &amp; Red Hat secrets.</li>
+<li><a href="https://www.aquasec.com/blog/250m-artifacts-exposed-via-misconfigured-registries/">Fortune 500 at Risk: 250M Artifacts Exposed via Misconfigured Registries</a> - Misconfigured public registries with software artifacts containing sensitive proprietary code and secrets.</li>
+<li><a href="https://github.com/RichardoC/gitlab-secrets">GitLab Secrets</a> - A tool that can reveal deleted GitLab commits that potentially contain sensitive information and are not accessible via the public Git history.</li>
+<li><a href="https://neodyme.io/en/blog/github_secrets/">Hidden GitHub Commits and How to Reveal Them</a> - A tool that can reveal deleted GitHub commits that potentially contain sensitive information and are not accessible via the public Git history.</li>
+<li><a href="https://cloud.google.com/blog/topics/threat-intelligence/bitbucket-pipeline-leaking-secrets">Holes in Your Bitbucket: Why Your CI/CD Pipeline Is Leaking Secrets</a> - Bitbucket Secured Variables leak secrets via artifact objects; recommendations include using dedicated secrets managers and code scanning.</li>
+<li><a href="https://web.archive.org/web/20230531032433/https://redhuntlabs.com/blog/millions-of-secrets-exposed-via-web-application-frontend/">Millions of Secrets Exposed via Web Application Frontends</a> - Millions of secrets exposed in web app frontends via JavaScript and debug pages.</li>
+<li><a href="https://ramimac.me/exposed-docdb">Publicly Exposed AWS Document DB Snapshots</a> -  Publicly exposed AWS DocumentDB snapshot of Cinemark Brazil revealed millions of customer records.</li>
+<li><a href="https://www.bleepingcomputer.com/news/security/thousands-of-images-on-docker-hub-leak-auth-secrets-private-keys/">Thousands of images on Docker Hub leak auth secrets, private keys</a> - Researchers found thousands of Docker Hub images leaking private keys and API secrets.</li>
+</ul>
+<h3>Initial Code Execution</h3>
+<ul>
+<li><a href="https://github.com/AdnaneKhan/ActionsTOCTOU/">ActionsTOCTOU (Time Of Check to Time Of Use)</a> - A tool to monitor for an approval event and then quickly replace a file in the PR head with a local file specified as a parameter.</li>
+<li><a href="https://www.mend.io/blog/aws-targeted-by-a-package-backfill-attack/">AWS Targeted by a Package Backfill Attack</a> - Scan commit history for internal packages to execute dependency confusion.</li>
+<li><a href="https://vulcan.io/blog/ai-hallucinations-package-risk">Can you trust ChatGPT's package recommendations?</a> - Exploit generative AI platforms' tendency to generate non-existent coding libraries to execute Dependecy Confusion.</li>
+<li><a href="https://www.aquasec.com/blog/can-you-trust-your-vscode-extensions/">Can You Trust Your VSCode Extensions?</a> - Impersonate popular VSCode extensions and trick unknowing developers into downloading them.</li>
+<li><a href="https://snyk.io/blog/visual-studio-code-extension-security-vulnerabilities-deep-dive/">Deep dive into Visual Studio Code extension security vulnerabilities</a> - VS Code extensions have vulnerabilities (command injection, path traversal, zip slip) that can compromise developer machines.</li>
+<li><a href="https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610">Dependency Confusion: How I Hacked Into Apple, Microsoft and Dozens of Other Companies</a> - Researchers uploaded malicious packages with internal company names, gaining access to Apple, Microsoft, and others due to dependency confusion.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome CI/CD Attacks <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p>Offensive research of systems and processes related to developing and deploying code.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#techniques">Techniques</a></li>
+<li><a href="#publicly-exposed-sensitive-data">Publicly Exposed Sensitive Data</a></li>
+<li><a href="#initial-code-execution">Initial Code Execution</a></li>
+<li><a href="#post-exploitation">Post Exploitation</a></li>
+<li><a href="#defense-evasion">Defense Evasion</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#case-studies">Case Studies</a></li>
+<li><a href="#similar-projects">Similar Projects</a></li>
+</ul>
+<h2>Techniques</h2>
+<p>A curated list of unique and useful CI/CD attack techniques.</p>
+<h3>Publicly Exposed Sensitive Data</h3>
+<ul>
+<li><a href="https://trufflesecurity.com/blog/postman-carries-lots-of-secrets">(The) Postman Carries Lots of Secrets</a> - Postman's public API network leaks thousands of secrets due to confusing UI, forks, and insufficient secret scanning.</li>
+<li><a href="https://www.paloaltonetworks.com/blog/prisma-cloud/secrets-leakage-user-error-azure-cli/">All the Small Things: Azure CLI Leakage and Problematic Usage Patterns</a> - Azure CLI leaks secrets to CI/CD logs due to usage patterns.</li>
+<li><a href="https://trufflesecurity.com/blog/anyone-can-access-deleted-and-private-repo-data-github">Anyone can Access Deleted and Private Repository Data on GitHub</a> - As long as it's part of a fork network.</li>
+<li><a href="https://duo.com/blog/beyond-s3-exposed-resources-on-aws">Beyond S3: Exposed Resources on AWS</a> - Public EBS, RDS, AMI and Elasticsearch clusters exposed to the internet. </li>
+<li><a href="https://securitycafe.ro/2024/05/08/aws-cloudquarry-digging-for-secrets-in-public-amis/">CloudQuarry: Digging for secrets in public AMIs</a> - Researchers found 500GB of credentials, private repos, and keys in public AWS AMIs, impacting various industries.</li>
+<li><a href="https://www.aquasec.com/blog/github-repos-expose-azure-and-red-hat-secrets/">Employee Personal GitHub Repos Expose Internal Azure and Red Hat Secrets</a> - Employee's personal GitHub repos expose internal Azure &amp; Red Hat secrets.</li>
+<li><a href="https://www.aquasec.com/blog/250m-artifacts-exposed-via-misconfigured-registries/">Fortune 500 at Risk: 250M Artifacts Exposed via Misconfigured Registries</a> - Misconfigured public registries with software artifacts containing sensitive proprietary code and secrets.</li>
+<li><a href="https://github.com/RichardoC/gitlab-secrets">GitLab Secrets</a> - A tool that can reveal deleted GitLab commits that potentially contain sensitive information and are not accessible via the public Git history.</li>
+<li><a href="https://neodyme.io/en/blog/github_secrets/">Hidden GitHub Commits and How to Reveal Them</a> - A tool that can reveal deleted GitHub commits that potentially contain sensitive information and are not accessible via the public Git history.</li>
+<li><a href="https://cloud.google.com/blog/topics/threat-intelligence/bitbucket-pipeline-leaking-secrets">Holes in Your Bitbucket: Why Your CI/CD Pipeline Is Leaking Secrets</a> - Bitbucket Secured Variables leak secrets via artifact objects; recommendations include using dedicated secrets managers and code scanning.</li>
+<li><a href="https://web.archive.org/web/20230531032433/https://redhuntlabs.com/blog/millions-of-secrets-exposed-via-web-application-frontend/">Millions of Secrets Exposed via Web Application Frontends</a> - Millions of secrets exposed in web app frontends via JavaScript and debug pages.</li>
+<li><a href="https://ramimac.me/exposed-docdb">Publicly Exposed AWS Document DB Snapshots</a> -  Publicly exposed AWS DocumentDB snapshot of Cinemark Brazil revealed millions of customer records.</li>
+<li><a href="https://www.bleepingcomputer.com/news/security/thousands-of-images-on-docker-hub-leak-auth-secrets-private-keys/">Thousands of images on Docker Hub leak auth secrets, private keys</a> - Researchers found thousands of Docker Hub images leaking private keys and API secrets.</li>
+</ul>
+<h3>Initial Code Execution</h3>
+<ul>
+<li><a href="https://github.com/AdnaneKhan/ActionsTOCTOU/">ActionsTOCTOU (Time Of Check to Time Of Use)</a> - A tool to monitor for an approval event and then quickly replace a file in the PR head with a local file specified as a parameter.</li>
+<li><a href="https://www.mend.io/blog/aws-targeted-by-a-package-backfill-attack/">AWS Targeted by a Package Backfill Attack</a> - Scan commit history for internal packages to execute dependency confusion.</li>
+<li><a href="https://vulcan.io/blog/ai-hallucinations-package-risk">Can you trust ChatGPT's package recommendations?</a> - Exploit generative AI platforms' tendency to generate non-existent coding libraries to execute Dependecy Confusion.</li>
+<li><a href="https://www.aquasec.com/blog/can-you-trust-your-vscode-extensions/">Can You Trust Your VSCode Extensions?</a> - Impersonate popular VSCode extensions and trick unknowing developers into downloading them.</li>
+<li><a href="https://snyk.io/blog/visual-studio-code-extension-security-vulnerabilities-deep-dive/">Deep dive into Visual Studio Code extension security vulnerabilities</a> - VS Code extensions have vulnerabilities (command injection, path traversal, zip slip) that can compromise developer machines.</li>
+<li><a href="https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610">Dependency Confusion: How I Hacked Into Apple, Microsoft and Dozens of Other Companies</a> - Researchers uploaded malicious packages with internal company names, gaining access to Apple, Microsoft, and others due to dependency confusion.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'cicd-attacks_README.md';
 
         fetch(markdownFile)
@@ -48,21 +119,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

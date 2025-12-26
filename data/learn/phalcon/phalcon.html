@@ -8,38 +8,243 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Phalcon Awesome Phalcon - Awesome List Resources">
-    <title>Phalcon Awesome Phalcon</title>
+    <meta name="description" content="A curated list of awesome Phalcon libraries and resources. Inspired by awesome-go. Please take a quick gander at the contribution guidelines first. Thanks to...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Phalcon - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Phalcon</h1>
+<p><a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.jsdelivr.net/gh/sindresorhus/awesome@d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a>
+<a href="https://github.com/phalcon/awesome-phalcon/actions"><img alt="Actions Status" src="https://github.com/phalcon/awesome-phalcon/workflows/CI/badge.svg" /></a></p>
+<p>A curated list of awesome Phalcon libraries and resources. Inspired by <a href="https://github.com/avelino/awesome-go">awesome-go</a>.</p>
+<h3>Contributing</h3>
+<p>Please take a quick gander at the <a href="CONTRIBUTING.md">contribution guidelines</a> first. Thanks to all <a href="https://github.com/phalcon/awesome-phalcon/graphs/contributors">contributors</a>; you rock!</p>
+<p>Join us on <a href="https://discord.com/invite/kRc2N2M">Discord</a> to chat with other awesome-phalcon maintainers!</p>
+<h3>Contents</h3>
+<ul>
+<li>
+<p><a href="#awesome-phalcon">Awesome Phalcon</a></p>
+<ul>
+<li><a href="#acl">ACL</a></li>
+<li><a href="#application-skeleton">Application Skeleton</a></li>
+<li><a href="#authentication--oauth">Authentication &amp; OAuth</a></li>
+<li><a href="#cms--blogs">CMS &amp; Blogs</a></li>
+<li><a href="#command-line">Command Line</a></li>
+<li><a href="#dashboard">Dashboard</a></li>
+<li><a href="#debug">Debug</a></li>
+<li><a href="#i18n">i18n</a></li>
+<li><a href="#integration">Integration</a></li>
+<li><a href="#ide">IDE</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#orm">ORM</a></li>
+<li><a href="#odm">ODM</a></li>
+<li><a href="#provisioning">Provisioning</a></li>
+<li><a href="#restful">RESTful</a></li>
+<li><a href="#routing">Routing</a></li>
+<li><a href="#searching">Searching</a></li>
+<li><a href="#seo">SEO</a></li>
+<li><a href="#shop--ecommerce">Shop &amp; Ecommerce</a></li>
+<li><a href="#talks">Talks</a></li>
+<li><a href="#templating">Templating</a></li>
+<li><a href="#testing">Testing</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#server-applications">Server Applications</a></p>
+</li>
+<li>
+<p><a href="#resources">Resources</a></p>
+<ul>
+<li><a href="#conferences">Conferences</a><ul>
+<li><a href="#communities">Communities</a></li>
+</ul>
+</li>
+<li><a href="#books">Books</a></li>
+<li><a href="#e-books">E-Books</a></li>
+<li><a href="#magazines">Magazines</a></li>
+<li><a href="#websites">Websites</a><ul>
+<li><a href="#tutorials">Tutorials</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>ACL</h2>
+<p><em>Access control list.</em></p>
+<ul>
+<li><a href="https://github.com/calinrada/PhalconUserPlugin">PhalconUserPlugin</a> - Plugin based on Vökuró ACL idea</li>
+</ul>
+<h2>Application Skeleton</h2>
+<p><em>Various application skeletons.</em></p>
+<ul>
+<li><a href="https://github.com/phalcon/album-o-rama">Album O'Rama</a> - Sample modular application for the Phalcon Framework</li>
+<li><a href="https://github.com/mruz/base-app">Base App</a> - The base application in Phalcon Framework</li>
+<li><a href="https://github.com/phalcon/invo">INVO Application</a> - Sample application for the Phalcon Framework</li>
+<li><a href="https://github.com/phalcon/mvc">MVC</a> - Examples of Phalcon MVC file structures</li>
+<li><a href="https://github.com/xxtime/phalcon">Phalcon Composer</a> - Phalcon with Composer support MySql MongoDb Redis, clean + beauty</li>
+<li><a href="https://github.com/phalcon/vokuro">Vökuró</a> - Sample application for Phalcon Framework (Acl, Auth, Security)</li>
+<li><a href="https://github.com/perchlabs/webird">Webird</a> - Webird was created to merge the latest PHP and Node.js innovations into a single application stack</li>
+<li><a href="https://github.com/les-enovateurs/phalcon-nova-mooc">NovaMOOC</a> - Sample application with API/BackEnd and FrontEnd + Authentication with JWT + Cypress tests with GitHub Actions + Docker compose.</li>
+<li><a href="https://github.com/corentin-begne/phalconTool">PhalconTool</a> - Alternative to Phalcon devtools with complete frontend stack without any framework but helpers system allowing to automaticaly bind HTML events using Phalcon 5, PHP 8, Apache, MYSQL, SASS, ES6 and jQuery.</li>
+</ul>
+<h2>Authentication &amp; OAuth</h2>
+<p><em>Libraries for implementing authentications schemes.</em></p>
+<ul>
+<li><a href="https://github.com/tegaphilip/padlock">Padlock</a> - A docker-based phalcon authentication server built on top of the PHP OAuth 2.0 Server</li>
+<li><a href="https://github.com/SidRoberts/phalcon-authmiddleware">phalcon-authmiddleware</a> - Add middleware events to the dispatcher. Generic design that's compatible with ACL or a custom auth library.</li>
+<li><a href="https://github.com/sinbadxiii/phalcon-auth">Phalcon Auth</a> - Out-of-the-box authentication component based on guards and providers.</li>
+</ul>
+<h2>CMS &amp; Blogs</h2>
+<p><em>Content management systems &amp; blogs.</em></p>
+<ul>
+<li><a href="https://github.com/monocasual/giada-www">giada-www</a> - Official website of <a href="https://www.giadamusic.com/">Giada Loop Machine</a></li>
+<li><a href="https://github.com/krazzer/kikcms">KikCMS</a> - CMS built on Phalcon Framework</li>
+<li><a href="https://github.com/yuriygr/skopy">Skopy Blog Engine</a> - A simple blog engine for those who want to start learning Phalcon</li>
+<li><a href="https://github.com/alexander-torosh/yona-cms">Yona CMS</a> - CMS based on Phalcon Framework with modular structure</li>
+<li><a href="https://github.com/KevinJay/PhalconCMS">PhalconCMS</a> - A blog built on Phalcon Framework</li>
+<li><a href="https://github.com/mvanvu/hummingbird-cms">Hummingbird CMS</a> - A CMS based on Phalcon 4 with many powerful features</li>
+<li><a href="https://github.com/odvapro/element">Element CMF</a> - Admin panel for everything <a href="https://element-demo.odva.pro/element/">Demo</a> (admin | adminpass)</li>
+</ul>
+<h2>Command Line</h2>
+<p><em>Command line applications &amp; tools.</em></p>
+<ul>
+<li><a href="https://github.com/viebig/phalcon-console">phalcon-console</a> - Sample bootstraping application for command line applications using the outstanding Phalcon Framework</li>
+<li><a href="https://github.com/SidRoberts/phalcon-cron">phalcon-cron</a> - Cron component for Phalcon</li>
+</ul>
+<h2>Config</h2>
+<ul>
+<li><a href="https://github.com/ienaga/PhalconConfig">Phalcon Config Loader for Yaml</a> - Loads all the yml in the directory of the app/config.</li>
+</ul>
+<h2>Dashboard</h2>
+<p><em>Admin Panels &amp; Dashboards.</em></p>
+<ul>
+<li><a href="https://github.com/Videles/PhalconTime">PhalconTime</a> - TimeKeeping tool / Dashboard skeleton</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Phalcon</h1>
+<p><a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.jsdelivr.net/gh/sindresorhus/awesome@d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a>
+<a href="https://github.com/phalcon/awesome-phalcon/actions"><img alt="Actions Status" src="https://github.com/phalcon/awesome-phalcon/workflows/CI/badge.svg" /></a></p>
+<p>A curated list of awesome Phalcon libraries and resources. Inspired by <a href="https://github.com/avelino/awesome-go">awesome-go</a>.</p>
+<h3>Contributing</h3>
+<p>Please take a quick gander at the <a href="CONTRIBUTING.md">contribution guidelines</a> first. Thanks to all <a href="https://github.com/phalcon/awesome-phalcon/graphs/contributors">contributors</a>; you rock!</p>
+<p>Join us on <a href="https://discord.com/invite/kRc2N2M">Discord</a> to chat with other awesome-phalcon maintainers!</p>
+<h3>Contents</h3>
+<ul>
+<li>
+<p><a href="#awesome-phalcon">Awesome Phalcon</a></p>
+<ul>
+<li><a href="#acl">ACL</a></li>
+<li><a href="#application-skeleton">Application Skeleton</a></li>
+<li><a href="#authentication--oauth">Authentication &amp; OAuth</a></li>
+<li><a href="#cms--blogs">CMS &amp; Blogs</a></li>
+<li><a href="#command-line">Command Line</a></li>
+<li><a href="#dashboard">Dashboard</a></li>
+<li><a href="#debug">Debug</a></li>
+<li><a href="#i18n">i18n</a></li>
+<li><a href="#integration">Integration</a></li>
+<li><a href="#ide">IDE</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#orm">ORM</a></li>
+<li><a href="#odm">ODM</a></li>
+<li><a href="#provisioning">Provisioning</a></li>
+<li><a href="#restful">RESTful</a></li>
+<li><a href="#routing">Routing</a></li>
+<li><a href="#searching">Searching</a></li>
+<li><a href="#seo">SEO</a></li>
+<li><a href="#shop--ecommerce">Shop &amp; Ecommerce</a></li>
+<li><a href="#talks">Talks</a></li>
+<li><a href="#templating">Templating</a></li>
+<li><a href="#testing">Testing</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#server-applications">Server Applications</a></p>
+</li>
+<li>
+<p><a href="#resources">Resources</a></p>
+<ul>
+<li><a href="#conferences">Conferences</a><ul>
+<li><a href="#communities">Communities</a></li>
+</ul>
+</li>
+<li><a href="#books">Books</a></li>
+<li><a href="#e-books">E-Books</a></li>
+<li><a href="#magazines">Magazines</a></li>
+<li><a href="#websites">Websites</a><ul>
+<li><a href="#tutorials">Tutorials</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>ACL</h2>
+<p><em>Access control list.</em></p>
+<ul>
+<li><a href="https://github.com/calinrada/PhalconUserPlugin">PhalconUserPlugin</a> - Plugin based on Vökuró ACL idea</li>
+</ul>
+<h2>Application Skeleton</h2>
+<p><em>Various application skeletons.</em></p>
+<ul>
+<li><a href="https://github.com/phalcon/album-o-rama">Album O'Rama</a> - Sample modular application for the Phalcon Framework</li>
+<li><a href="https://github.com/mruz/base-app">Base App</a> - The base application in Phalcon Framework</li>
+<li><a href="https://github.com/phalcon/invo">INVO Application</a> - Sample application for the Phalcon Framework</li>
+<li><a href="https://github.com/phalcon/mvc">MVC</a> - Examples of Phalcon MVC file structures</li>
+<li><a href="https://github.com/xxtime/phalcon">Phalcon Composer</a> - Phalcon with Composer support MySql MongoDb Redis, clean + beauty</li>
+<li><a href="https://github.com/phalcon/vokuro">Vökuró</a> - Sample application for Phalcon Framework (Acl, Auth, Security)</li>
+<li><a href="https://github.com/perchlabs/webird">Webird</a> - Webird was created to merge the latest PHP and Node.js innovations into a single application stack</li>
+<li><a href="https://github.com/les-enovateurs/phalcon-nova-mooc">NovaMOOC</a> - Sample application with API/BackEnd and FrontEnd + Authentication with JWT + Cypress tests with GitHub Actions + Docker compose.</li>
+<li><a href="https://github.com/corentin-begne/phalconTool">PhalconTool</a> - Alternative to Phalcon devtools with complete frontend stack without any framework but helpers system allowing to automaticaly bind HTML events using Phalcon 5, PHP 8, Apache, MYSQL, SASS, ES6 and jQuery.</li>
+</ul>
+<h2>Authentication &amp; OAuth</h2>
+<p><em>Libraries for implementing authentications schemes.</em></p>
+<ul>
+<li><a href="https://github.com/tegaphilip/padlock">Padlock</a> - A docker-based phalcon authentication server built on top of the PHP OAuth 2.0 Server</li>
+<li><a href="https://github.com/SidRoberts/phalcon-authmiddleware">phalcon-authmiddleware</a> - Add middleware events to the dispatcher. Generic design that's compatible with ACL or a custom auth library.</li>
+<li><a href="https://github.com/sinbadxiii/phalcon-auth">Phalcon Auth</a> - Out-of-the-box authentication component based on guards and providers.</li>
+</ul>
+<h2>CMS &amp; Blogs</h2>
+<p><em>Content management systems &amp; blogs.</em></p>
+<ul>
+<li><a href="https://github.com/monocasual/giada-www">giada-www</a> - Official website of <a href="https://www.giadamusic.com/">Giada Loop Machine</a></li>
+<li><a href="https://github.com/krazzer/kikcms">KikCMS</a> - CMS built on Phalcon Framework</li>
+<li><a href="https://github.com/yuriygr/skopy">Skopy Blog Engine</a> - A simple blog engine for those who want to start learning Phalcon</li>
+<li><a href="https://github.com/alexander-torosh/yona-cms">Yona CMS</a> - CMS based on Phalcon Framework with modular structure</li>
+<li><a href="https://github.com/KevinJay/PhalconCMS">PhalconCMS</a> - A blog built on Phalcon Framework</li>
+<li><a href="https://github.com/mvanvu/hummingbird-cms">Hummingbird CMS</a> - A CMS based on Phalcon 4 with many powerful features</li>
+<li><a href="https://github.com/odvapro/element">Element CMF</a> - Admin panel for everything <a href="https://element-demo.odva.pro/element/">Demo</a> (admin | adminpass)</li>
+</ul>
+<h2>Command Line</h2>
+<p><em>Command line applications &amp; tools.</em></p>
+<ul>
+<li><a href="https://github.com/viebig/phalcon-console">phalcon-console</a> - Sample bootstraping application for command line applications using the outstanding Phalcon Framework</li>
+<li><a href="https://github.com/SidRoberts/phalcon-cron">phalcon-cron</a> - Cron component for Phalcon</li>
+</ul>
+<h2>Config</h2>
+<ul>
+<li><a href="https://github.com/ienaga/PhalconConfig">Phalcon Config Loader for Yaml</a> - Loads all the yml in the directory of the app/config.</li>
+</ul>
+<h2>Dashboard</h2>
+<p><em>Admin Panels &amp; Dashboards.</em></p>
+<ul>
+<li><a href="https://github.com/Videles/PhalconTime">PhalconTime</a> - TimeKeeping tool / Dashboard skeleton</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'phalcon_README.md';
 
         fetch(markdownFile)
@@ -48,21 +253,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

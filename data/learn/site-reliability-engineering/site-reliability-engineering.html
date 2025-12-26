@@ -8,38 +8,157 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dastergon Awesome Sre - Awesome List Resources">
-    <title>Dastergon Awesome Sre</title>
+    <meta name="description" content="A curated list of awesome Site Reliability and Production Engineering resources. > "Fundamentally, it's what happens when you ask a software engineer to design...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Site Reliability Engineering  [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Site Reliability Engineering  <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p><a href="https://dastergon.gr/awesome-sre"><img src="awesome-sre-logo.svg" align="right" width="100"></a></p>
+<p>A curated list of awesome <a href="https://www.usenix.org/conference/srecon14/technical-sessions/presentation/keys-sre">Site Reliability</a> and <a href="https://www.usenix.org/conference/srecon15/program/presentation/canahuati">Production</a> Engineering resources.</p>
+<h4>What is Site Reliability Engineering?</h4>
+<blockquote>
+<p>"Fundamentally, it's what happens when you ask a software engineer to design an operations function." - Ben Treynor Sloss, VP Google Engineering, founder of Google SRE</p>
+</blockquote>
+<h2>Contributing</h2>
+<p>Please take a look at the <a href="CONTRIBUTING.md">contribution guidelines</a> first.
+Contributions are always welcome!</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#culture">Culture</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#hiring">Hiring</a></li>
+<li><a href="#reliability">Reliability</a></li>
+<li><a href="#monitoring--observability--alerting">Monitoring &amp; Observability &amp; Alerting</a></li>
+<li><a href="#on-call">On-Call</a></li>
+<li><a href="#post-mortem">Post-Mortem</a></li>
+<li><a href="#capacity-planning">Capacity Planning</a></li>
+<li><a href="#service-level-agreement">Service Level Agreement</a></li>
+<li><a href="#performance">Performance</a></li>
+<li><a href="#programming">Programming</a></li>
+<li><a href="#misc-articles">Misc Articles</a></li>
+<li><a href="#real-time-messaging">Real-time Messaging</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#newsletters">Newsletters</a></li>
+<li><a href="#conferences-meetups">Conferences &amp; Meetups</a></li>
+<li><a href="#twitter">Twitter</a></li>
+<li><a href="#sre-tools">SRE Tools</a></li>
+<li><a href="#podcasts">SRE Podcasts</a></li>
+</ul>
+<h2>Culture</h2>
+<ul>
+<li><a href="https://landing.google.com/sre/interview/ben-treynor.html">What is Site Reliability Engineering?</a></li>
+<li><a href="https://www.usenix.org/conference/srecon14/technical-sessions/presentation/keys-sre">Keys To SRE by Ben Treynor</a></li>
+<li><a href="https://landing.google.com/sre/resources.html">Google SRE Resources</a></li>
+<li><a href="https://www.usenix.org/conference/srecon15/program/presentation/canahuati">Notes from Production Engineering by Pedro Canahuati</a></li>
+<li><a href="https://www.usenix.org/conference/srecon15europe/program/presentation/underwood">PostOps: Recovery from Operations</a></li>
+<li><a href="https://www.atlassian.com/it-service/site-reliability-engineering-sre">Love DevOps? Wait 'till you meet SRE</a> <a href="https://youtu.be/fsTpRx8Pt-k">[video]</a></li>
+<li><a href="https://www.youtube.com/watch?v=H4vMcD7zKM0">How Google Does Planet-Scale Engineering for Planet-Scale Infra</a></li>
+<li><a href="https://www.facebook.com/notes/facebook-engineering/site-reliability-engineering-at-facebook/291616313919/">Site Reliability Engineering at Facebook</a></li>
+<li><a href="https://www.youtube.com/watch?v=qJnS-EfIIIE&amp;nohtml5=False">A History of Site Reliability Engineering at Uber</a></li>
+<li><a href="https://www.usenix.org/conference/srecon15/program/presentation/limoncelli">Case Study: Adopting SRE Principles at StackOverflow</a></li>
+<li><a href="https://www.youtube.com/watch?v=ggizCjUCCqE">Site Reliability Engineering at Dropbox</a></li>
+<li><a href="https://www.youtube.com/watch?v=yXI7r0_J29M">Site Reliability Engineers — Keeping Google up and running 24/7</a></li>
+<li><a href="https://www.salesforce.com/video/193050/">Site Reliability Engineering at Salesforce</a></li>
+<li>From Sys Admin to Netflix SRE - <a href="https://www.youtube.com/watch?v=lZI51YzIgVE">video</a> and <a href="https://www.socallinuxexpo.org/sites/default/files/presentations/Scale%20x14%20Slides.pdf">slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=iIuTnhdTzK0">SRE@Google: Thousands of DevOps Since 2004</a></li>
+<li><a href="https://www.usenix.org/conference/lisa15/conference-program/presentation/limoncelli">Transactional System Administration Is Killing Us and Must be Stopped</a></li>
+<li><a href="https://web.archive.org/web/20190401220948/https://plus.google.com/+lizthegrey/posts/MLAJFVyEb2f">A hierarchy of SRE needs</a></li>
+<li><a href="https://www.usenix.org/conference/lisa13/technical-sessions/plenary/underwood">PostOps: A Non-Surgical Tale of Software, Fragility, and Reliability</a></li>
+<li><a href="https://web.archive.org/web/20180820235243/http://anthonycaiafa.com/2016/04/10/sre-cultural-narnia/">SRE: An incomplete guide to cultural Narnia</a> - <a href="https://www.youtube.com/watch?v=__wypEhdcrQ&amp;t=0s">[Video]</a></li>
+<li><a href="https://www.usenix.org/conference/srecon16/program/presentation/krishnan">Putting Together Great SRE Teams</a></li>
+<li><a href="https://www.youtube.com/watch?v=bwt6TZjefGM">Work at Google: Meet our Production Engineers for Site Reliability Hangout on Air</a></li>
+<li><a href="https://sharpend.io/toil-a-word-every-engineer-should-know/">Toil: A Word Every Engineer Should Know</a></li>
+<li><a href="https://research.google.com/pubs/pub32583.html">Engineering Reliability into Web Sites: Google SRE</a></li>
+<li><a href="https://vimeo.com/179914447">DEVOPS &amp; SRE AMA - Building High Performance Organizations</a></li>
+<li><a href="https://community.atlassian.com/t5/Jira-Ops-questions/I-m-John-Allspaw-Ask-Me-Anything-about-incident-analysis-and/qaq-p/957084">John Allspaw's AMA on Incident Analysis and Postmortems</a></li>
+<li>Site Reliability Engineering with Paul Newson - <a href="https://www.gcppodcast.com/post/episode-38-site-reliability-engineering-with-paul-newson/">Part 1</a> &amp; <a href="https://gcppodcast.com/post/episode-59-sre-ii-with-paul-newson/">Part 2</a></li>
+<li><a href="https://queue.acm.org/detail.cfm?id=2891413">How SysAdmins Devalue Themselves</a></li>
+<li><a href="https://www.youtube.com/watch?v=ry51Llzil1I">The Softer Side of DevOps</a></li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Site Reliability Engineering  <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p><a href="https://dastergon.gr/awesome-sre"><img src="awesome-sre-logo.svg" align="right" width="100"></a></p>
+<p>A curated list of awesome <a href="https://www.usenix.org/conference/srecon14/technical-sessions/presentation/keys-sre">Site Reliability</a> and <a href="https://www.usenix.org/conference/srecon15/program/presentation/canahuati">Production</a> Engineering resources.</p>
+<h4>What is Site Reliability Engineering?</h4>
+<blockquote>
+<p>"Fundamentally, it's what happens when you ask a software engineer to design an operations function." - Ben Treynor Sloss, VP Google Engineering, founder of Google SRE</p>
+</blockquote>
+<h2>Contributing</h2>
+<p>Please take a look at the <a href="CONTRIBUTING.md">contribution guidelines</a> first.
+Contributions are always welcome!</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#culture">Culture</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#hiring">Hiring</a></li>
+<li><a href="#reliability">Reliability</a></li>
+<li><a href="#monitoring--observability--alerting">Monitoring &amp; Observability &amp; Alerting</a></li>
+<li><a href="#on-call">On-Call</a></li>
+<li><a href="#post-mortem">Post-Mortem</a></li>
+<li><a href="#capacity-planning">Capacity Planning</a></li>
+<li><a href="#service-level-agreement">Service Level Agreement</a></li>
+<li><a href="#performance">Performance</a></li>
+<li><a href="#programming">Programming</a></li>
+<li><a href="#misc-articles">Misc Articles</a></li>
+<li><a href="#real-time-messaging">Real-time Messaging</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#newsletters">Newsletters</a></li>
+<li><a href="#conferences-meetups">Conferences &amp; Meetups</a></li>
+<li><a href="#twitter">Twitter</a></li>
+<li><a href="#sre-tools">SRE Tools</a></li>
+<li><a href="#podcasts">SRE Podcasts</a></li>
+</ul>
+<h2>Culture</h2>
+<ul>
+<li><a href="https://landing.google.com/sre/interview/ben-treynor.html">What is Site Reliability Engineering?</a></li>
+<li><a href="https://www.usenix.org/conference/srecon14/technical-sessions/presentation/keys-sre">Keys To SRE by Ben Treynor</a></li>
+<li><a href="https://landing.google.com/sre/resources.html">Google SRE Resources</a></li>
+<li><a href="https://www.usenix.org/conference/srecon15/program/presentation/canahuati">Notes from Production Engineering by Pedro Canahuati</a></li>
+<li><a href="https://www.usenix.org/conference/srecon15europe/program/presentation/underwood">PostOps: Recovery from Operations</a></li>
+<li><a href="https://www.atlassian.com/it-service/site-reliability-engineering-sre">Love DevOps? Wait 'till you meet SRE</a> <a href="https://youtu.be/fsTpRx8Pt-k">[video]</a></li>
+<li><a href="https://www.youtube.com/watch?v=H4vMcD7zKM0">How Google Does Planet-Scale Engineering for Planet-Scale Infra</a></li>
+<li><a href="https://www.facebook.com/notes/facebook-engineering/site-reliability-engineering-at-facebook/291616313919/">Site Reliability Engineering at Facebook</a></li>
+<li><a href="https://www.youtube.com/watch?v=qJnS-EfIIIE&amp;nohtml5=False">A History of Site Reliability Engineering at Uber</a></li>
+<li><a href="https://www.usenix.org/conference/srecon15/program/presentation/limoncelli">Case Study: Adopting SRE Principles at StackOverflow</a></li>
+<li><a href="https://www.youtube.com/watch?v=ggizCjUCCqE">Site Reliability Engineering at Dropbox</a></li>
+<li><a href="https://www.youtube.com/watch?v=yXI7r0_J29M">Site Reliability Engineers — Keeping Google up and running 24/7</a></li>
+<li><a href="https://www.salesforce.com/video/193050/">Site Reliability Engineering at Salesforce</a></li>
+<li>From Sys Admin to Netflix SRE - <a href="https://www.youtube.com/watch?v=lZI51YzIgVE">video</a> and <a href="https://www.socallinuxexpo.org/sites/default/files/presentations/Scale%20x14%20Slides.pdf">slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=iIuTnhdTzK0">SRE@Google: Thousands of DevOps Since 2004</a></li>
+<li><a href="https://www.usenix.org/conference/lisa15/conference-program/presentation/limoncelli">Transactional System Administration Is Killing Us and Must be Stopped</a></li>
+<li><a href="https://web.archive.org/web/20190401220948/https://plus.google.com/+lizthegrey/posts/MLAJFVyEb2f">A hierarchy of SRE needs</a></li>
+<li><a href="https://www.usenix.org/conference/lisa13/technical-sessions/plenary/underwood">PostOps: A Non-Surgical Tale of Software, Fragility, and Reliability</a></li>
+<li><a href="https://web.archive.org/web/20180820235243/http://anthonycaiafa.com/2016/04/10/sre-cultural-narnia/">SRE: An incomplete guide to cultural Narnia</a> - <a href="https://www.youtube.com/watch?v=__wypEhdcrQ&amp;t=0s">[Video]</a></li>
+<li><a href="https://www.usenix.org/conference/srecon16/program/presentation/krishnan">Putting Together Great SRE Teams</a></li>
+<li><a href="https://www.youtube.com/watch?v=bwt6TZjefGM">Work at Google: Meet our Production Engineers for Site Reliability Hangout on Air</a></li>
+<li><a href="https://sharpend.io/toil-a-word-every-engineer-should-know/">Toil: A Word Every Engineer Should Know</a></li>
+<li><a href="https://research.google.com/pubs/pub32583.html">Engineering Reliability into Web Sites: Google SRE</a></li>
+<li><a href="https://vimeo.com/179914447">DEVOPS &amp; SRE AMA - Building High Performance Organizations</a></li>
+<li><a href="https://community.atlassian.com/t5/Jira-Ops-questions/I-m-John-Allspaw-Ask-Me-Anything-about-incident-analysis-and/qaq-p/957084">John Allspaw's AMA on Incident Analysis and Postmortems</a></li>
+<li>Site Reliability Engineering with Paul Newson - <a href="https://www.gcppodcast.com/post/episode-38-site-reliability-engineering-with-paul-newson/">Part 1</a> &amp; <a href="https://gcppodcast.com/post/episode-59-sre-ii-with-paul-newson/">Part 2</a></li>
+<li><a href="https://queue.acm.org/detail.cfm?id=2891413">How SysAdmins Devalue Themselves</a></li>
+<li><a href="https://www.youtube.com/watch?v=ry51Llzil1I">The Softer Side of DevOps</a></li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'site-reliability-engineering_README.md';
 
         fetch(markdownFile)
@@ -48,21 +167,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

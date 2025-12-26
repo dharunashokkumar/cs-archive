@@ -8,38 +8,153 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cerberauth Awesome Openid Connect - Awesome List Resources">
-    <title>Cerberauth Awesome Openid Connect</title>
+    <meta name="description" content="> OpenID Connect is an authentication protocol and identity layer on top of OAuth 2.0 used in many SSO and adopted in many social logins (Apple, Facebook,...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome OpenID Connect [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome OpenID Connect <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a></h1>
+<blockquote>
+<p><a href="https://openid.net/#introduction">OpenID Connect</a> is an authentication protocol and identity layer on top of OAuth 2.0 used in many SSO and adopted in many social logins (Apple, Facebook, Google, etc). Basically, it allows a user to authenticate to a service using an existing account from an OpenID Connect Provider (OP), sharing some identity information after the user consent, and get an access token to access resources on a Relying Party (RP) application.</p>
+<p>Find this curated list of providers, services, libraries, and resources to adopt it and know more about existing and draft specs.</p>
+</blockquote>
+<h2>Contents</h2>
+<ul>
+<li><a href="#openid-providers-op">OpenID Providers (OP)</a></li>
+<li><a href="#relying-parties-rp-libraries">Relying Parties (RP) Libraries</a><ul>
+<li><a href="#c">C</a></li>
+<li><a href="#c-1">C#</a></li>
+<li><a href="#dart">Dart</a></li>
+<li><a href="#erlang">Erlang</a></li>
+<li><a href="#golang">Golang</a></li>
+<li><a href="#java">Java</a></li>
+<li><a href="#javascript">JavaScript</a></li>
+<li><a href="#ocaml">OCaml</a></li>
+<li><a href="#php">PHP</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#ruby">Ruby</a></li>
+<li><a href="#rust">Rust</a></li>
+</ul>
+</li>
+<li><a href="#relying-parties-rp-software-plugins">Relying Parties (RP) Software Plugins</a></li>
+<li><a href="#resources">Resources</a><ul>
+<li><a href="#flows--grant-types-specifications">Flows / Grant Types Specifications</a></li>
+<li><a href="#specifications">Specifications</a></li>
+<li><a href="#websites">Websites</a></li>
+<li><a href="#thematic-articles">Thematic Articles</a></li>
+<li><a href="#playgrounds">Playgrounds</a></li>
+<li><a href="#books">Books</a></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2>OpenID Providers (OP)</h2>
+<p><em>OpenID Connect Providers as SaaS and Open Source solutions.</em></p>
+<ul>
+<li><a href="https://auth0.com/docs/authenticate/protocols/openid-connect-protocol">Auth0</a> - OpenID Connect and OAuth 2.0 service that is available on the cloud as a SaaS.</li>
+<li><a href="https://www.authelia.com/">Authelia</a> - Open Source authentication, authorization server and portal fulfilling the identity and access management (IAM) role of information security in providing single sign-on (SSO).</li>
+<li><a href="https://github.com/goauthentik/authentik">Authentik</a> - Open Source Identity Provider focused on flexibility and versatility.</li>
+<li><a href="https://www.authlete.com/">Authlete</a> - Set of APIs for developers to implement OAuth authorization servers and OpenID Connect identity providers.</li>
+<li><a href="https://aws.amazon.com/cognito/">AWS Cognito</a> - Cognito by Amazon Web Services has OpenID Connect provider in addition to IAM capabilities.</li>
+<li><a href="https://cloudentity.com/">Cloudentity</a> - Cloud Identity and Authorization Platform with FAPI and eKYC support.</li>
+<li><a href="https://connect2id.com/products/server">Connect2id</a> - OpenID Connect SSO and IdP server for enterprise.</li>
+<li><a href="https://curity.io/product/">Curity Identity Server</a> - API Security solution that brings identity and API access management together.</li>
+<li><a href="https://docs.descope.com/identity-federation/applications/oidc-apps">Descope</a> - OpenID Connect Provider and Identity Federation solution that provides drag and drop user authentication and authorization flows.</li>
+<li><a href="https://duendesoftware.com/products/identityserver">Duende IdentityServer</a> - ASP.NET Core OpenID Connect Provider solution.</li>
+<li><a href="https://duo.com/">Duo</a> - OpenID Connect Provider and IdP solution developed by Cisco.</li>
+<li><a href="https://docs.frontegg.com/docs/configure-frontegg-as-oidc-idp">FrontEgg</a> - A Customer Identity solution for SaaS platform with OpenID Connect Provider capability.</li>
+<li><a href="https://www.keycloak.org/">Keycloak</a> - Open Source project powered by RedHat which provides user federation, strong authentication, user management, fine-grained authorization, and more.</li>
+<li><a href="https://gluu.org/">Gluu</a> - OpenID Connect Provider and FAPI certified solution and integrated with IAM.</li>
+<li><a href="https://www.gravitee.io/platform/access-management">Gravitee.io</a> - Open Source OpenID Connect/OAuth 2.0 provider aims to be a bridge between applications and identity providers to authenticate, authorize and getting information about user accounts.</li>
+<li><a href="https://kinde.com">Kinde</a> - OpenID Connect and OAuth 2.0 service that is available on the cloud as a SaaS.</li>
+<li><a href="https://www.loginradius.com/">LoginRadius</a> - A SaaS CIAM that can act as an OpenID Connect provider.</li>
+<li><a href="https://github.com/logto-io/logto">Logto</a> - An Open-source solution designed for Customer Identity and Access Management (CIAM) and Workforce Identity Management with OpenID Connect based authentication.</li>
+<li><a href="https://www.okta.com/">Okta</a> - Extensible solution that enables both customer and workforce identity with federation, single sign-on, API security and workflows for both cloud and on-prem solutions.</li>
+<li><a href="https://www.microsoft.com/en-us/security/business/solutions/identity-access">Microsoft Entra ID</a> - Software component developed by Microsoft providing single sign-on access to systems and applications.</li>
+<li><a href="https://github.com/mitreid-connect/OpenID-Connect-Java-Spring-Server">MITREid Connect</a> - Open Source OpenID Connect reference implementation in Java.</li>
+<li><a href="https://github.com/openiddict/openiddict-core">OpenIddict</a> - .NET Open Source OpenID Connect Provider implementation with ASP.NET Core 2.1 (and higher) applications support.</li>
+<li><a href="https://www.onelogin.com/">OneLogin</a> - SaaS Employee and Customer IAM solution with OpenID Connect Provider capabilities.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome OpenID Connect <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a></h1>
+<blockquote>
+<p><a href="https://openid.net/#introduction">OpenID Connect</a> is an authentication protocol and identity layer on top of OAuth 2.0 used in many SSO and adopted in many social logins (Apple, Facebook, Google, etc). Basically, it allows a user to authenticate to a service using an existing account from an OpenID Connect Provider (OP), sharing some identity information after the user consent, and get an access token to access resources on a Relying Party (RP) application.</p>
+<p>Find this curated list of providers, services, libraries, and resources to adopt it and know more about existing and draft specs.</p>
+</blockquote>
+<h2>Contents</h2>
+<ul>
+<li><a href="#openid-providers-op">OpenID Providers (OP)</a></li>
+<li><a href="#relying-parties-rp-libraries">Relying Parties (RP) Libraries</a><ul>
+<li><a href="#c">C</a></li>
+<li><a href="#c-1">C#</a></li>
+<li><a href="#dart">Dart</a></li>
+<li><a href="#erlang">Erlang</a></li>
+<li><a href="#golang">Golang</a></li>
+<li><a href="#java">Java</a></li>
+<li><a href="#javascript">JavaScript</a></li>
+<li><a href="#ocaml">OCaml</a></li>
+<li><a href="#php">PHP</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#ruby">Ruby</a></li>
+<li><a href="#rust">Rust</a></li>
+</ul>
+</li>
+<li><a href="#relying-parties-rp-software-plugins">Relying Parties (RP) Software Plugins</a></li>
+<li><a href="#resources">Resources</a><ul>
+<li><a href="#flows--grant-types-specifications">Flows / Grant Types Specifications</a></li>
+<li><a href="#specifications">Specifications</a></li>
+<li><a href="#websites">Websites</a></li>
+<li><a href="#thematic-articles">Thematic Articles</a></li>
+<li><a href="#playgrounds">Playgrounds</a></li>
+<li><a href="#books">Books</a></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2>OpenID Providers (OP)</h2>
+<p><em>OpenID Connect Providers as SaaS and Open Source solutions.</em></p>
+<ul>
+<li><a href="https://auth0.com/docs/authenticate/protocols/openid-connect-protocol">Auth0</a> - OpenID Connect and OAuth 2.0 service that is available on the cloud as a SaaS.</li>
+<li><a href="https://www.authelia.com/">Authelia</a> - Open Source authentication, authorization server and portal fulfilling the identity and access management (IAM) role of information security in providing single sign-on (SSO).</li>
+<li><a href="https://github.com/goauthentik/authentik">Authentik</a> - Open Source Identity Provider focused on flexibility and versatility.</li>
+<li><a href="https://www.authlete.com/">Authlete</a> - Set of APIs for developers to implement OAuth authorization servers and OpenID Connect identity providers.</li>
+<li><a href="https://aws.amazon.com/cognito/">AWS Cognito</a> - Cognito by Amazon Web Services has OpenID Connect provider in addition to IAM capabilities.</li>
+<li><a href="https://cloudentity.com/">Cloudentity</a> - Cloud Identity and Authorization Platform with FAPI and eKYC support.</li>
+<li><a href="https://connect2id.com/products/server">Connect2id</a> - OpenID Connect SSO and IdP server for enterprise.</li>
+<li><a href="https://curity.io/product/">Curity Identity Server</a> - API Security solution that brings identity and API access management together.</li>
+<li><a href="https://docs.descope.com/identity-federation/applications/oidc-apps">Descope</a> - OpenID Connect Provider and Identity Federation solution that provides drag and drop user authentication and authorization flows.</li>
+<li><a href="https://duendesoftware.com/products/identityserver">Duende IdentityServer</a> - ASP.NET Core OpenID Connect Provider solution.</li>
+<li><a href="https://duo.com/">Duo</a> - OpenID Connect Provider and IdP solution developed by Cisco.</li>
+<li><a href="https://docs.frontegg.com/docs/configure-frontegg-as-oidc-idp">FrontEgg</a> - A Customer Identity solution for SaaS platform with OpenID Connect Provider capability.</li>
+<li><a href="https://www.keycloak.org/">Keycloak</a> - Open Source project powered by RedHat which provides user federation, strong authentication, user management, fine-grained authorization, and more.</li>
+<li><a href="https://gluu.org/">Gluu</a> - OpenID Connect Provider and FAPI certified solution and integrated with IAM.</li>
+<li><a href="https://www.gravitee.io/platform/access-management">Gravitee.io</a> - Open Source OpenID Connect/OAuth 2.0 provider aims to be a bridge between applications and identity providers to authenticate, authorize and getting information about user accounts.</li>
+<li><a href="https://kinde.com">Kinde</a> - OpenID Connect and OAuth 2.0 service that is available on the cloud as a SaaS.</li>
+<li><a href="https://www.loginradius.com/">LoginRadius</a> - A SaaS CIAM that can act as an OpenID Connect provider.</li>
+<li><a href="https://github.com/logto-io/logto">Logto</a> - An Open-source solution designed for Customer Identity and Access Management (CIAM) and Workforce Identity Management with OpenID Connect based authentication.</li>
+<li><a href="https://www.okta.com/">Okta</a> - Extensible solution that enables both customer and workforce identity with federation, single sign-on, API security and workflows for both cloud and on-prem solutions.</li>
+<li><a href="https://www.microsoft.com/en-us/security/business/solutions/identity-access">Microsoft Entra ID</a> - Software component developed by Microsoft providing single sign-on access to systems and applications.</li>
+<li><a href="https://github.com/mitreid-connect/OpenID-Connect-Java-Spring-Server">MITREid Connect</a> - Open Source OpenID Connect reference implementation in Java.</li>
+<li><a href="https://github.com/openiddict/openiddict-core">OpenIddict</a> - .NET Open Source OpenID Connect Provider implementation with ASP.NET Core 2.1 (and higher) applications support.</li>
+<li><a href="https://www.onelogin.com/">OneLogin</a> - SaaS Employee and Customer IAM solution with OpenID Connect Provider capabilities.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'openid-connect_README.md';
 
         fetch(markdownFile)
@@ -48,21 +163,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

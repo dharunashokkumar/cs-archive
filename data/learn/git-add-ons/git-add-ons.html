@@ -8,38 +8,395 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Stevemao Awesome Git Addons - Awesome List Resources">
-    <title>Stevemao Awesome Git Addons</title>
+    <meta name="description" content="A curated list of add-ons that extend/enhance the git CLI. > _“You don’t have to know everything. You simply need to know where to find it when necessary.”...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome git addons [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome git addons <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A curated list of add-ons that extend/enhance the git CLI.</p>
+<pre><code>$ git bla
+Something awesome happens!
+</code></pre>
+<blockquote>
+<p><em>“You don’t have to know everything. You simply need to know where to find it when necessary.” (John Brunner)</em></p>
+</blockquote>
+<p>Inspired by the <a href="https://github.com/sindresorhus/awesome">awesome</a> list thing.</p>
+<p><strong>Note</strong>: Certain commands may not function immediately after installation. You may need to run a post-install script or manually configure aliases for them to work correctly.</p>
+<h2>Table of Contents</h2>
+<ul>
+<li><a href="#git-extras">Git Extras</a></li>
+<li><a href="#gitflow-avh-edition">Git Flow</a></li>
+<li><a href="#git-up">Git Up</a></li>
+<li><a href="#hub">Hub</a></li>
+<li><a href="#git-deploy">Git Deploy</a></li>
+<li><a href="#git-cal">Git Cal</a></li>
+<li><a href="#git-hooks">Git Hooks</a></li>
+<li><a href="#git-imerge">Git Imerge</a></li>
+<li><a href="#git-issue">Git Issue</a></li>
+<li><a href="#git-lfs">Git Large File Storage</a></li>
+<li><a href="#git-now">Git Now</a></li>
+<li><a href="#git-plus">Git Plus</a></li>
+<li><a href="#git-test">Git Test</a></li>
+<li><a href="#legit">Legit</a></li>
+<li><a href="#git-when-merged">Git When Merged</a></li>
+<li><a href="#git-playback">Git Playback</a></li>
+<li><a href="#git-branch-status">Git Branch Status</a></li>
+<li><a href="#git-open">Git Open</a></li>
+<li><a href="#git-my">Git My</a></li>
+<li><a href="#git-ink">Git Ink</a></li>
+<li><a href="#recursive-blame">Recursive Blame</a></li>
+<li><a href="#hyper-blame">Git Hyper Blame</a></li>
+<li><a href="#git-word-blame">Git Word Blame</a></li>
+<li><a href="#git-fire">Git Fire</a></li>
+<li><a href="#git-town">Git Town</a></li>
+<li><a href="#git-blame-someone-else">Git blame-someone-else</a></li>
+<li><a href="#diff-so-fancy">Diff So Fancy</a></li>
+<li><a href="#git-stats">Git Stats</a></li>
+<li><a href="#git-secret">Git Secret</a></li>
+<li><a href="#git-secrets">Git Secrets</a></li>
+<li><a href="#git-fixup">git-fixup</a></li>
+<li><a href="#git-recent">git-recent</a></li>
+<li><a href="#git-interactive-rebase-tool">git-interactive-rebase-tool</a></li>
+<li><a href="#git-fiddle">git-fiddle</a></li>
+<li><a href="#git-user">git-user</a></li>
+<li><a href="#gitsome">gitsome</a></li>
+<li><a href="#git-hound">Git Hound</a></li>
+<li><a href="#git-recall">git-recall</a></li>
+<li><a href="#git-standup">git-standup</a></li>
+<li><a href="#commitizen">Commitizen</a></li>
+<li><a href="#git-fresh">git-fresh</a></li>
+<li><a href="#git-fs">git-fs</a></li>
+<li><a href="#git-url">Git Url</a></li>
+<li><a href="#git-signatures">Git Signatures</a></li>
+<li><a href="#git-profile">Git Profile</a></li>
+<li><a href="#git-revise">git revise</a></li>
+<li><a href="#filter-repo">filter-repo</a></li>
+<li><a href="#git-jump">git-jump</a></li>
+<li><a href="#git-project">git-project</a></li>
+<li><a href="#git-branchcut">git-branchcut</a></li>
+<li><a href="#git-exfiltrate">git-exfiltrate</a></li>
+<li><a href="#git-spend">git-spend</a></li>
+</ul>
+<h2><a href="https://github.com/tj/git-extras">git-extras</a></h2>
+<h3>squash</h3>
+<pre><code>$ git squash fixed-cursor-styling &quot;Fixed cursor styling&quot;
+$ git squash 95b7c52
+$ git squash HEAD~3
+</code></pre>
+<h3>summary</h3>
+<pre><code>$ git summary
+
+ project  : git
+ repo age : 10 years
+ active   : 11868 days
+ commits  : 40530
+ files    : 2825
+ authors  :
+ 15401  Junio C Hamano                  38.0%
+  1844  Jeff King                       4.5%
+</code></pre>
+<h3>line-summary</h3>
+<pre><code>$ git line-summary
+
+ project  : gulp
+ lines    : 3900
+ authors  :
+ 1040 Contra                    26.7%
+  828 Sindre Sorhus             21.2%
+</code></pre>
+<h3>effort</h3>
+<pre><code>$ git effort
+
+  file                                          commits    active days
+
+  .gitattributes............................... 3          3
+  .gitignore................................... 265        226
+  .mailmap..................................... 47         40
+</code></pre>
+<h3>authors</h3>
+<pre><code>$ git authors
+Contra &lt;contra@maricopa.edu&gt;
+Eric Schoffstall &lt;contra@wearefractal.com&gt;
+Sindre Sorhus &lt;sindresorhus@gmail.com&gt;
+</code></pre>
+<h3>changelog</h3>
+<pre><code>$ git changelog
+## 3.9.0
+
+- add babel support
+- add transpiler fallback support
+- add support for some renamed transpilers (livescript, etc)
+- add JSCS
+- update dependecies (liftoff, interpret)
+- documentation tweaks
+
+## 3.8.11
+
+- fix node 0.12/iojs problems
+- add node 0.12 and iojs to travis
+- update dependencies (liftoff, v8flags)
+- documentation tweaks
+</code></pre>
+<h3>commits-since</h3>
+<pre><code>$ git commits-since yesterday
+... changes since yesterday
+TJ Holowaychuk - Fixed readme
+</code></pre>
+<h3>count</h3>
+<pre><code>$ git count
+total 855
+</code></pre>
+<h3>create-branch</h3>
+<pre><code>$ git create-branch development
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/tj/git-extras.git
+ * [new branch]      HEAD -&gt; development
+Branch development set up to track remote branch development from origin.
+Switched to a new branch 'development'
+</code></pre>
+<h3>delete-branch</h3>
+<pre><code>$ git delete-branch integration
+Deleted branch integration (was bfb8522).
+Deleted remote-tracking branch remote/integration (was bfb8522).
+To git@github.com:remote/gulp.git
+ - [deleted]         integration
+</code></pre>
+<h3>delete-submodule</h3>
+<pre><code>$ git delete-submodule lib/foo
+</code></pre>
+<h3>delete-tag</h3>
+<pre><code>$ git delete-tag v0.1.1
+Deleted tag 'v0.1.1' (was 9fde751)
+To https://github.com/tj/git-extras.git
+ - [deleted]         v0.1.1
+</code></pre>
+<h3>delete-merged-branches</h3>
+<pre><code>$ git delete-merged-branches
+Deleted feature/themes (was c029ab3).
+Deleted feature/live_preview (was a81b002).
+Deleted feature/dashboard (was 923befa).
+</code></pre>
+<h3>fresh-branch</h3>
+<pre><code>$ git fresh-branch docs
+Removing .DS_Store
+Removing .editorconfig
+Removing .gitignore
+</code></pre>
+<h3>guilt</h3>
+<pre><code>$ git guilt `git log --until=&quot;3 weeks ago&quot; --format=&quot;%H&quot; -n 1` HEAD
+Paul Schreiber                +++++++++++++++++++++++++++++++++++++++++++++(349)
+spacewander                   +++++++++++++++++++++++++++++++++++++++++++++(113)
+Mark Eissler                  ++++++++++++++++++++++++++
+</code></pre>
+<h3>merge-into</h3>
+<p>```
+$ git merge-into master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+Updating 9fde751..e62edfa
+Fast-forward</p>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome git addons <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A curated list of add-ons that extend/enhance the git CLI.</p>
+<pre><code>$ git bla
+Something awesome happens!
+</code></pre>
+<blockquote>
+<p><em>“You don’t have to know everything. You simply need to know where to find it when necessary.” (John Brunner)</em></p>
+</blockquote>
+<p>Inspired by the <a href="https://github.com/sindresorhus/awesome">awesome</a> list thing.</p>
+<p><strong>Note</strong>: Certain commands may not function immediately after installation. You may need to run a post-install script or manually configure aliases for them to work correctly.</p>
+<h2>Table of Contents</h2>
+<ul>
+<li><a href="#git-extras">Git Extras</a></li>
+<li><a href="#gitflow-avh-edition">Git Flow</a></li>
+<li><a href="#git-up">Git Up</a></li>
+<li><a href="#hub">Hub</a></li>
+<li><a href="#git-deploy">Git Deploy</a></li>
+<li><a href="#git-cal">Git Cal</a></li>
+<li><a href="#git-hooks">Git Hooks</a></li>
+<li><a href="#git-imerge">Git Imerge</a></li>
+<li><a href="#git-issue">Git Issue</a></li>
+<li><a href="#git-lfs">Git Large File Storage</a></li>
+<li><a href="#git-now">Git Now</a></li>
+<li><a href="#git-plus">Git Plus</a></li>
+<li><a href="#git-test">Git Test</a></li>
+<li><a href="#legit">Legit</a></li>
+<li><a href="#git-when-merged">Git When Merged</a></li>
+<li><a href="#git-playback">Git Playback</a></li>
+<li><a href="#git-branch-status">Git Branch Status</a></li>
+<li><a href="#git-open">Git Open</a></li>
+<li><a href="#git-my">Git My</a></li>
+<li><a href="#git-ink">Git Ink</a></li>
+<li><a href="#recursive-blame">Recursive Blame</a></li>
+<li><a href="#hyper-blame">Git Hyper Blame</a></li>
+<li><a href="#git-word-blame">Git Word Blame</a></li>
+<li><a href="#git-fire">Git Fire</a></li>
+<li><a href="#git-town">Git Town</a></li>
+<li><a href="#git-blame-someone-else">Git blame-someone-else</a></li>
+<li><a href="#diff-so-fancy">Diff So Fancy</a></li>
+<li><a href="#git-stats">Git Stats</a></li>
+<li><a href="#git-secret">Git Secret</a></li>
+<li><a href="#git-secrets">Git Secrets</a></li>
+<li><a href="#git-fixup">git-fixup</a></li>
+<li><a href="#git-recent">git-recent</a></li>
+<li><a href="#git-interactive-rebase-tool">git-interactive-rebase-tool</a></li>
+<li><a href="#git-fiddle">git-fiddle</a></li>
+<li><a href="#git-user">git-user</a></li>
+<li><a href="#gitsome">gitsome</a></li>
+<li><a href="#git-hound">Git Hound</a></li>
+<li><a href="#git-recall">git-recall</a></li>
+<li><a href="#git-standup">git-standup</a></li>
+<li><a href="#commitizen">Commitizen</a></li>
+<li><a href="#git-fresh">git-fresh</a></li>
+<li><a href="#git-fs">git-fs</a></li>
+<li><a href="#git-url">Git Url</a></li>
+<li><a href="#git-signatures">Git Signatures</a></li>
+<li><a href="#git-profile">Git Profile</a></li>
+<li><a href="#git-revise">git revise</a></li>
+<li><a href="#filter-repo">filter-repo</a></li>
+<li><a href="#git-jump">git-jump</a></li>
+<li><a href="#git-project">git-project</a></li>
+<li><a href="#git-branchcut">git-branchcut</a></li>
+<li><a href="#git-exfiltrate">git-exfiltrate</a></li>
+<li><a href="#git-spend">git-spend</a></li>
+</ul>
+<h2><a href="https://github.com/tj/git-extras">git-extras</a></h2>
+<h3>squash</h3>
+<pre><code>$ git squash fixed-cursor-styling &quot;Fixed cursor styling&quot;
+$ git squash 95b7c52
+$ git squash HEAD~3
+</code></pre>
+<h3>summary</h3>
+<pre><code>$ git summary
+
+ project  : git
+ repo age : 10 years
+ active   : 11868 days
+ commits  : 40530
+ files    : 2825
+ authors  :
+ 15401  Junio C Hamano                  38.0%
+  1844  Jeff King                       4.5%
+</code></pre>
+<h3>line-summary</h3>
+<pre><code>$ git line-summary
+
+ project  : gulp
+ lines    : 3900
+ authors  :
+ 1040 Contra                    26.7%
+  828 Sindre Sorhus             21.2%
+</code></pre>
+<h3>effort</h3>
+<pre><code>$ git effort
+
+  file                                          commits    active days
+
+  .gitattributes............................... 3          3
+  .gitignore................................... 265        226
+  .mailmap..................................... 47         40
+</code></pre>
+<h3>authors</h3>
+<pre><code>$ git authors
+Contra &lt;contra@maricopa.edu&gt;
+Eric Schoffstall &lt;contra@wearefractal.com&gt;
+Sindre Sorhus &lt;sindresorhus@gmail.com&gt;
+</code></pre>
+<h3>changelog</h3>
+<pre><code>$ git changelog
+## 3.9.0
+
+- add babel support
+- add transpiler fallback support
+- add support for some renamed transpilers (livescript, etc)
+- add JSCS
+- update dependecies (liftoff, interpret)
+- documentation tweaks
+
+## 3.8.11
+
+- fix node 0.12/iojs problems
+- add node 0.12 and iojs to travis
+- update dependencies (liftoff, v8flags)
+- documentation tweaks
+</code></pre>
+<h3>commits-since</h3>
+<pre><code>$ git commits-since yesterday
+... changes since yesterday
+TJ Holowaychuk - Fixed readme
+</code></pre>
+<h3>count</h3>
+<pre><code>$ git count
+total 855
+</code></pre>
+<h3>create-branch</h3>
+<pre><code>$ git create-branch development
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/tj/git-extras.git
+ * [new branch]      HEAD -&gt; development
+Branch development set up to track remote branch development from origin.
+Switched to a new branch 'development'
+</code></pre>
+<h3>delete-branch</h3>
+<pre><code>$ git delete-branch integration
+Deleted branch integration (was bfb8522).
+Deleted remote-tracking branch remote/integration (was bfb8522).
+To git@github.com:remote/gulp.git
+ - [deleted]         integration
+</code></pre>
+<h3>delete-submodule</h3>
+<pre><code>$ git delete-submodule lib/foo
+</code></pre>
+<h3>delete-tag</h3>
+<pre><code>$ git delete-tag v0.1.1
+Deleted tag 'v0.1.1' (was 9fde751)
+To https://github.com/tj/git-extras.git
+ - [deleted]         v0.1.1
+</code></pre>
+<h3>delete-merged-branches</h3>
+<pre><code>$ git delete-merged-branches
+Deleted feature/themes (was c029ab3).
+Deleted feature/live_preview (was a81b002).
+Deleted feature/dashboard (was 923befa).
+</code></pre>
+<h3>fresh-branch</h3>
+<pre><code>$ git fresh-branch docs
+Removing .DS_Store
+Removing .editorconfig
+Removing .gitignore
+</code></pre>
+<h3>guilt</h3>
+<pre><code>$ git guilt `git log --until=&quot;3 weeks ago&quot; --format=&quot;%H&quot; -n 1` HEAD
+Paul Schreiber                +++++++++++++++++++++++++++++++++++++++++++++(349)
+spacewander                   +++++++++++++++++++++++++++++++++++++++++++++(113)
+Mark Eissler                  ++++++++++++++++++++++++++
+</code></pre>
+<h3>merge-into</h3>
+<p>```
+$ git merge-into master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+Updating 9fde751..e62edfa
+Fast-forward</p>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'git-add-ons_README.md';
 
         fetch(markdownFile)
@@ -48,21 +405,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

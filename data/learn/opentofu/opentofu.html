@@ -8,38 +8,209 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Virtualroot Awesome Opentofu - Awesome List Resources">
-    <title>Virtualroot Awesome Opentofu</title>
+    <meta name="description" content="> A curated and collaborative list of awesome OpenTofu resources and tools. OpenTofu allows you to declaratively manage your infrastructure. It's an...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome OpenTofu [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) <!-- omit in toc --> - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome OpenTofu <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a> <!-- omit in toc --></h1>
+<blockquote>
+<p>A curated and collaborative list of awesome OpenTofu resources and tools.</p>
+</blockquote>
+<p><a href="https://opentofu.org/">OpenTofu</a> allows you to declaratively manage your infrastructure. It's an open-source, community-driven alternative to Terraform.</p>
+<h2>Contents <!-- omit in toc --></h2>
+<ul>
+<li><a href="#official">Official</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#environment-managers">Environment managers</a></li>
+<li><a href="#wrappers">Wrappers</a></li>
+<li><a href="#ci">CI</a></li>
+<li><a href="#tests">Tests</a></li>
+<li><a href="#state">State</a></li>
+<li><a href="#providers">Providers</a></li>
+<li><a href="#platforms">Platforms</a></li>
+<li><a href="#registry">Registry</a></li>
+<li><a href="#helpers">Helpers</a></li>
+<li><a href="#learning">Learning</a></li>
+<li><a href="#media">Media</a></li>
+<li><a href="#podcasts">Podcasts</a></li>
+</ul>
+<h2>Official</h2>
+<ul>
+<li><a href="https://github.com/opentofu/opentofu">OpenTofu repository</a> 🎉</li>
+<li><a href="https://opentofu.org/announcement">Fork announcement</a></li>
+<li><a href="https://github.com/opentofu/registry">Registry</a></li>
+<li><a href="https://github.com/opentofu/opentofu-mcp-server#opentofu-mcp-server">Registry MCP Server</a></li>
+<li><a href="https://github.com/opentofu/opentofu/blob/main/WEEKLY_UPDATES.md">Weekly updates</a></li>
+<li><a href="https://www.youtube.com/watch?v=aEoMzUza6Ok&amp;list=PLnVotLM2QsyhCc1_8PA7fbVF-ixt4_XAY">Office hours</a></li>
+<li><a href="https://github.com/opentofu/org/tree/main/TSC">Technical Steering Committee updates</a></li>
+</ul>
+<h2>Community</h2>
+<p><em>Communication channels, meetups, newsletters, and forums.</em></p>
+<ul>
+<li><a href="https://github.com/orgs/opentofu/discussions">OpenTofu GitHub Discussion</a></li>
+<li><a href="https://www.linkedin.com/company/opentofuorg/">OpenTofu LinkedIn</a></li>
+<li><a href="https://opentofu.org/slack">OpenTofu Slack</a></li>
+<li><a href="https://twitter.com/opentofuorg">OpenTofu Twitter</a></li>
+</ul>
+<h2>Features</h2>
+<!--lint disable double-link-->
+
+<ul>
+<li><a href="https://opentofu.org/docs/intro/whats-new/#enhanced-moved-and-removed-blocks">1.10 - Enhanced moved and removed blocks</a></li>
+<li><a href="https://opentofu.org/docs/intro/whats-new/#external-key-providers">1.10 - External key providers</a></li>
+<li><a href="https://opentofu.org/docs/cli/oci_registries/">1.10 - OCI registry support</a></li>
+<li><a href="https://opentofu.org/docs/intro/whats-new/#native-s3-state-locking">1.10 - S3 native state locking</a></li>
+<li><a href="https://opentofu.org/docs/intro/whats-new/#target-and-exclude-files">1.10 - Target and exclude files</a></li>
+<li><a href="https://opentofu.org/docs/v1.9/intro/whats-new/#provider-iteration-for_each">1.9 - Provider iteration with for_each</a></li>
+<li><a href="https://opentofu.org/docs/v1.9/intro/whats-new/#the--exclude-flag">1.9 - The -exclude flag</a></li>
+<li><a href="https://opentofu.org/docs/v1.8/intro/whats-new/#early-variablelocals-evaluation">1.8 - Early variable and locals evaluation</a></li>
+<li><a href="https://opentofu.org/docs/v1.8/intro/whats-new/#override-files-for-opentofu-keeping-compatibility">1.8 - Override files for OpenTofu (.tofu)</a></li>
+<li><a href="https://opentofu.org/docs/v1.7/intro/whats-new/#state-encryption">1.7 - End-to-end encryption for state files</a></li>
+<li><a href="https://opentofu.org/docs/v1.7/intro/whats-new/#loopable-import-blocks">1.7 - Loopable import blocks</a></li>
+<li><a href="https://opentofu.org/docs/v1.7/intro/whats-new/#provider-defined-functions">1.7 - Provider-defined functions</a></li>
+<li><a href="https://opentofu.org/docs/v1.7/intro/whats-new/#removed-block">1.7 - Removed block</a></li>
+<li><a href="https://cani.tf/">CanI.TF - Feature parity between Terraform and OpenTofu</a></li>
+</ul>
+<!--lint enable double-link-->
+
+<h2>Tools</h2>
+<h3>Environment managers</h3>
+<ul>
+<li><a href="https://github.com/alexellis/arkade">arkade</a> - CLI and Kubernetes app installer.</li>
+<li><a href="https://github.com/virtualroot/asdf-opentofu">asdf-opentofu</a> - OpenTofu plugin for asdf version manager.</li>
+<li><a href="https://github.com/tofuutils/tenv">tenv</a> - Terraform and OpenTofu version manager written in Go.</li>
+<li><a href="https://github.com/ASleepyCat/tfswitcher">tfswitcher</a> - Terraform and OpenTofu version switcher written in Rust.</li>
+<li><a href="https://github.com/tofuutils/tofuenv">tofuenv</a> - OpenTofu version manager inspired by tfenv.</li>
+</ul>
+<h3>Wrappers</h3>
+<p><em>Simplify your OpenTofu workflows with a thin wrapper.</em></p>
+<ul>
+<li><a href="https://github.com/cloudposse/atmos">Atmos</a> - Orchestration tool that keeps environment configuration DRY.</li>
+<li><a href="https://github.com/gruntwork-io/terragrunt">Terragrunt</a> - Keep your configurations DRY, work with multiple modules, and manage remote state.</li>
+<li><a href="https://github.com/terramate-io/terramate">Terramate</a> - Automation, orchestration, and code generation for OpenTofu, Terraform, Kubernetes, and others.</li>
+<li><a href="https://github.com/SeisoLLC/easy_infra">easy_infra</a> - Docker container to simplify and secure the use of infrastructure as code.</li>
+<li><a href="https://github.com/leg100/pug">pug</a> - A terminal user interface for power users.</li>
+<li><a href="https://github.com/dex4er/tf">tf</a> - Less verbose and more friendly command outputs.</li>
+<li><a href="https://github.com/Ant0wan/tfam">tfam</a> - Rust-powered wrapper for concurrent Terraform/OpenTofu apply, enabling multi-deployment support.</li>
+<li><a href="https://github.com/Ant0wan/tfexe">tfexe</a> - Rust-powered wrapper for seamless execution of tfswitch and Terraform/OpenTofu with version control.</li>
+<li><a href="https://github.com/claranet/tfwrapper">tfwrapper</a> - Python wrapper that simplifies OpenTofu usage and enforces best practices.</li>
+</ul>
+<h3>CI</h3>
+<ul>
+<li><a href="https://www.runatlantis.io/">Atlantis</a> - Automating workflows via pull requests.</li>
+<li><a href="https://docs.burrito.tf/latest/overview/">Burrito</a> - A TACoS (Terraform Automation and Collaboration Software) that works inside Kubernetes.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome OpenTofu <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a> <!-- omit in toc --></h1>
+<blockquote>
+<p>A curated and collaborative list of awesome OpenTofu resources and tools.</p>
+</blockquote>
+<p><a href="https://opentofu.org/">OpenTofu</a> allows you to declaratively manage your infrastructure. It's an open-source, community-driven alternative to Terraform.</p>
+<h2>Contents <!-- omit in toc --></h2>
+<ul>
+<li><a href="#official">Official</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#environment-managers">Environment managers</a></li>
+<li><a href="#wrappers">Wrappers</a></li>
+<li><a href="#ci">CI</a></li>
+<li><a href="#tests">Tests</a></li>
+<li><a href="#state">State</a></li>
+<li><a href="#providers">Providers</a></li>
+<li><a href="#platforms">Platforms</a></li>
+<li><a href="#registry">Registry</a></li>
+<li><a href="#helpers">Helpers</a></li>
+<li><a href="#learning">Learning</a></li>
+<li><a href="#media">Media</a></li>
+<li><a href="#podcasts">Podcasts</a></li>
+</ul>
+<h2>Official</h2>
+<ul>
+<li><a href="https://github.com/opentofu/opentofu">OpenTofu repository</a> 🎉</li>
+<li><a href="https://opentofu.org/announcement">Fork announcement</a></li>
+<li><a href="https://github.com/opentofu/registry">Registry</a></li>
+<li><a href="https://github.com/opentofu/opentofu-mcp-server#opentofu-mcp-server">Registry MCP Server</a></li>
+<li><a href="https://github.com/opentofu/opentofu/blob/main/WEEKLY_UPDATES.md">Weekly updates</a></li>
+<li><a href="https://www.youtube.com/watch?v=aEoMzUza6Ok&amp;list=PLnVotLM2QsyhCc1_8PA7fbVF-ixt4_XAY">Office hours</a></li>
+<li><a href="https://github.com/opentofu/org/tree/main/TSC">Technical Steering Committee updates</a></li>
+</ul>
+<h2>Community</h2>
+<p><em>Communication channels, meetups, newsletters, and forums.</em></p>
+<ul>
+<li><a href="https://github.com/orgs/opentofu/discussions">OpenTofu GitHub Discussion</a></li>
+<li><a href="https://www.linkedin.com/company/opentofuorg/">OpenTofu LinkedIn</a></li>
+<li><a href="https://opentofu.org/slack">OpenTofu Slack</a></li>
+<li><a href="https://twitter.com/opentofuorg">OpenTofu Twitter</a></li>
+</ul>
+<h2>Features</h2>
+<!--lint disable double-link-->
+
+<ul>
+<li><a href="https://opentofu.org/docs/intro/whats-new/#enhanced-moved-and-removed-blocks">1.10 - Enhanced moved and removed blocks</a></li>
+<li><a href="https://opentofu.org/docs/intro/whats-new/#external-key-providers">1.10 - External key providers</a></li>
+<li><a href="https://opentofu.org/docs/cli/oci_registries/">1.10 - OCI registry support</a></li>
+<li><a href="https://opentofu.org/docs/intro/whats-new/#native-s3-state-locking">1.10 - S3 native state locking</a></li>
+<li><a href="https://opentofu.org/docs/intro/whats-new/#target-and-exclude-files">1.10 - Target and exclude files</a></li>
+<li><a href="https://opentofu.org/docs/v1.9/intro/whats-new/#provider-iteration-for_each">1.9 - Provider iteration with for_each</a></li>
+<li><a href="https://opentofu.org/docs/v1.9/intro/whats-new/#the--exclude-flag">1.9 - The -exclude flag</a></li>
+<li><a href="https://opentofu.org/docs/v1.8/intro/whats-new/#early-variablelocals-evaluation">1.8 - Early variable and locals evaluation</a></li>
+<li><a href="https://opentofu.org/docs/v1.8/intro/whats-new/#override-files-for-opentofu-keeping-compatibility">1.8 - Override files for OpenTofu (.tofu)</a></li>
+<li><a href="https://opentofu.org/docs/v1.7/intro/whats-new/#state-encryption">1.7 - End-to-end encryption for state files</a></li>
+<li><a href="https://opentofu.org/docs/v1.7/intro/whats-new/#loopable-import-blocks">1.7 - Loopable import blocks</a></li>
+<li><a href="https://opentofu.org/docs/v1.7/intro/whats-new/#provider-defined-functions">1.7 - Provider-defined functions</a></li>
+<li><a href="https://opentofu.org/docs/v1.7/intro/whats-new/#removed-block">1.7 - Removed block</a></li>
+<li><a href="https://cani.tf/">CanI.TF - Feature parity between Terraform and OpenTofu</a></li>
+</ul>
+<!--lint enable double-link-->
+
+<h2>Tools</h2>
+<h3>Environment managers</h3>
+<ul>
+<li><a href="https://github.com/alexellis/arkade">arkade</a> - CLI and Kubernetes app installer.</li>
+<li><a href="https://github.com/virtualroot/asdf-opentofu">asdf-opentofu</a> - OpenTofu plugin for asdf version manager.</li>
+<li><a href="https://github.com/tofuutils/tenv">tenv</a> - Terraform and OpenTofu version manager written in Go.</li>
+<li><a href="https://github.com/ASleepyCat/tfswitcher">tfswitcher</a> - Terraform and OpenTofu version switcher written in Rust.</li>
+<li><a href="https://github.com/tofuutils/tofuenv">tofuenv</a> - OpenTofu version manager inspired by tfenv.</li>
+</ul>
+<h3>Wrappers</h3>
+<p><em>Simplify your OpenTofu workflows with a thin wrapper.</em></p>
+<ul>
+<li><a href="https://github.com/cloudposse/atmos">Atmos</a> - Orchestration tool that keeps environment configuration DRY.</li>
+<li><a href="https://github.com/gruntwork-io/terragrunt">Terragrunt</a> - Keep your configurations DRY, work with multiple modules, and manage remote state.</li>
+<li><a href="https://github.com/terramate-io/terramate">Terramate</a> - Automation, orchestration, and code generation for OpenTofu, Terraform, Kubernetes, and others.</li>
+<li><a href="https://github.com/SeisoLLC/easy_infra">easy_infra</a> - Docker container to simplify and secure the use of infrastructure as code.</li>
+<li><a href="https://github.com/leg100/pug">pug</a> - A terminal user interface for power users.</li>
+<li><a href="https://github.com/dex4er/tf">tf</a> - Less verbose and more friendly command outputs.</li>
+<li><a href="https://github.com/Ant0wan/tfam">tfam</a> - Rust-powered wrapper for concurrent Terraform/OpenTofu apply, enabling multi-deployment support.</li>
+<li><a href="https://github.com/Ant0wan/tfexe">tfexe</a> - Rust-powered wrapper for seamless execution of tfswitch and Terraform/OpenTofu with version control.</li>
+<li><a href="https://github.com/claranet/tfwrapper">tfwrapper</a> - Python wrapper that simplifies OpenTofu usage and enforces best practices.</li>
+</ul>
+<h3>CI</h3>
+<ul>
+<li><a href="https://www.runatlantis.io/">Atlantis</a> - Automating workflows via pull requests.</li>
+<li><a href="https://docs.burrito.tf/latest/overview/">Burrito</a> - A TACoS (Terraform Automation and Collaboration Software) that works inside Kubernetes.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'opentofu_README.md';
 
         fetch(markdownFile)
@@ -48,21 +219,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

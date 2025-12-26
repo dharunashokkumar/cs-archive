@@ -8,38 +8,505 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gbdev Awesome Gbdev - Awesome List Resources">
-    <title>Gbdev Awesome Gbdev</title>
+    <meta name="description" content="A curated list of awesome Game Boy (Color) Development resources, tools, docs, related projects and open-source ROMs. Inspired by the awesome list thing. You...">
+    <meta name="robots" content="index, follow">
+    <title>![GameboyIcon](http://i.imgur.com/ROUq7NT.gif) Awesome Game Boy Development - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1><img alt="GameboyIcon" src="http://i.imgur.com/ROUq7NT.gif" /> Awesome Game Boy Development</h1>
+<h4><a href="https://gbdev.io/chat.html">Join us on Discord</a> <a href="https://discord.gg/tKGMPNr"><img alt="Discord Badge" src="https://img.shields.io/badge/dynamic/json.svg?label=chat&amp;colorB=green&amp;suffix=%20online&amp;query=presence_count&amp;uri=https://discordapp.com/api/guilds/303217943234215948/widget.json" /></a></h4>
+<p>A curated list of awesome Game Boy (Color) Development resources, tools, docs, related projects and open-source ROMs. Inspired by the <a href="https://github.com/sindresorhus/awesome">awesome</a> list thing.</p>
+<p>You can find a (way cooler) web version of this list <a href="https://gbdev.github.io/resources">here</a>.</p>
+<h2>Contents</h2>
+<ul>
+<li>
+<p><a href="#introduction">Introduction</a></p>
+</li>
+<li>
+<p><a href="#disambiguation">Disambiguation</a></p>
+</li>
+<li>
+<p><a href="#community">Community</a></p>
+</li>
+<li>
+<p><a href="#documentation">Documentation</a></p>
+</li>
+<li>
+<p><a href="#misc">Misc</a></p>
+</li>
+<li>
+<p><a href="#opcodes">Opcodes</a></p>
+</li>
+<li>
+<p><a href="#game-boy-color">Game Boy Color</a></p>
+</li>
+<li>
+<p><a href="#hardware">Hardware</a></p>
+</li>
+<li>
+<p><a href="#peripherals">Peripherals</a></p>
+</li>
+<li>
+<p><a href="#cartridges">Cartridges</a></p>
+</li>
+<li>
+<p><a href="#emulator-development">Emulator Development</a></p>
+</li>
+<li>
+<p><a href="#testing">Testing</a></p>
+</li>
+<li>
+<p><a href="#software-development">Software Development</a></p>
+</li>
+<li>
+<p><a href="#assemblers">Assemblers</a></p>
+</li>
+<li>
+<p><a href="#compilers">Compilers</a></p>
+<ul>
+<li><a href="#experimentalproof-of-concepts">Experimental/Proof of Concepts</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#emulators">Emulators</a></p>
+</li>
+<li>
+<p><a href="#tools">Tools</a></p>
+<ul>
+<li>
+<p><a href="#engines">Engines</a></p>
+</li>
+<li>
+<p><a href="#development-tools">Development tools</a></p>
+</li>
+<li>
+<p><a href="#graphics-utilities">Graphics utilities</a></p>
+</li>
+<li>
+<p><a href="#hardware-and-rom-utilities">Hardware and ROM utilities</a></p>
+</li>
+<li>
+<p><a href="#music-drivers-and-trackers">Music drivers and trackers</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="#programming">Programming</a></p>
+</li>
+<li>
+<p><a href="#asm">ASM</a></p>
+<ul>
+<li>
+<p><a href="#sources">Sources</a></p>
+</li>
+<li>
+<p><a href="#timings">Timings</a></p>
+</li>
+<li>
+<p><a href="#boilerplates">Boilerplates</a></p>
+</li>
+<li>
+<p><a href="#syntax-highlighting-packages">Syntax highlighting packages</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="#c">C</a></p>
+</li>
+<li>
+<p><a href="#homebrews">Homebrews</a></p>
+</li>
+<li>
+<p><a href="#asm-1">ASM</a></p>
+</li>
+<li>
+<p><a href="#c-1">C</a></p>
+</li>
+<li>
+<p><a href="#gb-studio">GB Studio</a> </p>
+</li>
+<li>
+<p><a href="#demos">Demos</a></p>
+</li>
+<li>
+<p><a href="#reverse-engineering">Reverse Engineering</a></p>
+</li>
+<li>
+<p><a href="#game-disassemblies">Game Disassemblies</a></p>
+</li>
+<li>
+<p><a href="#game-boy-camera">Game Boy Camera</a></p>
+</li>
+<li>
+<p><a href="#retrieving-images">Retrieving Images</a></p>
+</li>
+<li>
+<p><a href="#changing-the-cameras-behavior">Changing the camera's behavior</a></p>
+</li>
+<li>
+<p><a href="#post-processing">Post-processing</a></p>
+</li>
+<li>
+<p><a href="#related-projects">Related projects</a></p>
+</li>
+<li>
+<p><a href="#directories">Directories</a></p>
+</li>
+<li>
+<p><a href="#websites">Websites</a></p>
+</li>
+<li>
+<p><a href="#about">About</a></p>
+</li>
+<li>
+<p><a href="#contribute">Contribute</a></p>
+</li>
+<li>
+<p><a href="#license">License</a></p>
+</li>
+<li>
+<p><a href="#acknowledgements">Acknowledgements</a></p>
+</li>
+<li>
+<p><a href="#sponsors">Sponsors</a></p>
+</li>
+</ul>
+<h2>Introduction</h2>
+<ul>
+<li>
+<p><a href="https://www.youtube.com/playlist?list=PLu3xpmdUP-GRDp8tknpXC_Y4RUQtMMqEu">The Game Boy, a hardware autopsy</a></p>
+</li>
+<li>
+<p><a href="https://media.ccc.de/v/33c3-8029-the_ultimate_game_boy_talk">The Ultimate Game Boy Talk</a></p>
+</li>
+</ul>
+<blockquote>
+<h3>Disambiguation</h3>
+<h4>Game Boy Advance</h4>
+<p>Game Boy Advance development is covered by another project, the <a href="https://github.com/gbdev/awesome-gbadev">awesome-gbadev</a> list.</p>
+<p>GBA, however, <em>can run</em> GB/GBC games. It does so in a slightly different way compared to native hardware: this is covered in the Emulator Development section of this list.</p>
+<h4>Game Boy Color and Super Game Boy</h4>
+<p>This list is focused on the original <em>Game Boy</em> (GB or DMG, 1989), the <em>Game Boy Color</em> (GBC or CGB) and the <em>Super Game Boy</em> (SGB) are very similar systems, with a few important distinctions, such as:</p>
+<ul>
+<li>
+<p>Different hardware specifications;</p>
+</li>
+<li>
+<p>Specific hardware and software features;</p>
+</li>
+<li>
+<p>Specific registers;</p>
+</li>
+<li>
+<p>Specific bugs, quirks and exploitable behaviours.</p>
+</li>
+</ul>
+<p>If you aim to develop your software for SGB or GBC, or you want to know how it runs on the other systems, you may want to take advantage and adapt to these differences, check the <a href="#game-boy-color">Game Boy Color</a> category and look for specific references to GBC/CGB and SGB.</p>
+</blockquote>
+<h2>Community</h2>
+<ul>
+<li>
+<p><a href="https://gbdev.io/chat">Chat channels</a></p>
+</li>
+<li>
+<p><a href="https://gbdev.gg8.se/forums/">Forum</a></p>
+</li>
+</ul>
+<h2>Documentation</h2>
+<ul>
+<li>
+<p><a href="https://gbdev.github.io/pandocs/"><strong>Pan Docs</strong></a> - The single, most comprehensive technical reference to Game Boy available to the public. Corrected, updated and maintained by the community.</p>
+</li>
+<li>
+<p><a href="https://github.com/AntonioND/giibiiadvance/blob/master/docs/TCAGBD.pdf">The Cycle-Accurate Game Boy Docs</a> - A precise documentation by AntonioND to make a cycle-accurate Game Boy emulator.</p>
+</li>
+<li>
+<p><a href="https://gekkio.fi/files/gb-docs/gbctr.pdf">Complete Technical Reference</a> - by Gekkio.</p>
+</li>
+<li>
+<p><a href="https://www.copetti.org/writings/consoles/game-boy/">Game Boy Architecture: A Practical Analysis</a> - by Rodrigo Copetti.</p>
+</li>
+<li>
+<p><a href="http://www.cs.columbia.edu/~sedwards/classes/2019/4840-spring/reports/GameBoy.pdf">Game Boy Project Report</a> - Report of an hardware <a href="https://github.com/kitsuneh/SVGameBoy">emulator</a> (on a Terasic DE1-SoC Board) developed as final project for the CSEE4840 Embedded Systems Design course at Columbia University.</p>
+</li>
+</ul>
+<h4>Opcodes</h4>
+<ul>
+<li>
+<p><a href="https://gbdev.github.io/gb-opcodes/optables/">gb-opcodes</a> - Opcodes table</p>
+</li>
+<li>
+<p><a href="https://rgbds.gbdev.io/docs/gbz80.7">RGBDS opcodes reference</a> - A reference of all instructions, including short descriptions, cycle and byte counts, and explanations of flag modifications.</p>
+</li>
+</ul>
+<h3>Game Boy Color</h3>
+<ul>
+<li>
+<p><a href="https://tcrf.net/Game_Boy_Color_Bootstrap_ROM">Bootstrap ROM</a></p>
+</li>
+<li>
+<p><a href="https://tcrf.net/Notes:Game_Boy_Color_Bootstrap_ROM">Unused Palettes</a></p>
+</li>
+<li>
+<p><a href="https://forums.nesdev.com/viewtopic.php?p=114388&amp;sid=c3d4ce08cfd9d9c834958d4f148750c3#p114388">Colorization palettes in the BIOS</a></p>
+</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1><img alt="GameboyIcon" src="http://i.imgur.com/ROUq7NT.gif" /> Awesome Game Boy Development</h1>
+<h4><a href="https://gbdev.io/chat.html">Join us on Discord</a> <a href="https://discord.gg/tKGMPNr"><img alt="Discord Badge" src="https://img.shields.io/badge/dynamic/json.svg?label=chat&amp;colorB=green&amp;suffix=%20online&amp;query=presence_count&amp;uri=https://discordapp.com/api/guilds/303217943234215948/widget.json" /></a></h4>
+<p>A curated list of awesome Game Boy (Color) Development resources, tools, docs, related projects and open-source ROMs. Inspired by the <a href="https://github.com/sindresorhus/awesome">awesome</a> list thing.</p>
+<p>You can find a (way cooler) web version of this list <a href="https://gbdev.github.io/resources">here</a>.</p>
+<h2>Contents</h2>
+<ul>
+<li>
+<p><a href="#introduction">Introduction</a></p>
+</li>
+<li>
+<p><a href="#disambiguation">Disambiguation</a></p>
+</li>
+<li>
+<p><a href="#community">Community</a></p>
+</li>
+<li>
+<p><a href="#documentation">Documentation</a></p>
+</li>
+<li>
+<p><a href="#misc">Misc</a></p>
+</li>
+<li>
+<p><a href="#opcodes">Opcodes</a></p>
+</li>
+<li>
+<p><a href="#game-boy-color">Game Boy Color</a></p>
+</li>
+<li>
+<p><a href="#hardware">Hardware</a></p>
+</li>
+<li>
+<p><a href="#peripherals">Peripherals</a></p>
+</li>
+<li>
+<p><a href="#cartridges">Cartridges</a></p>
+</li>
+<li>
+<p><a href="#emulator-development">Emulator Development</a></p>
+</li>
+<li>
+<p><a href="#testing">Testing</a></p>
+</li>
+<li>
+<p><a href="#software-development">Software Development</a></p>
+</li>
+<li>
+<p><a href="#assemblers">Assemblers</a></p>
+</li>
+<li>
+<p><a href="#compilers">Compilers</a></p>
+<ul>
+<li><a href="#experimentalproof-of-concepts">Experimental/Proof of Concepts</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#emulators">Emulators</a></p>
+</li>
+<li>
+<p><a href="#tools">Tools</a></p>
+<ul>
+<li>
+<p><a href="#engines">Engines</a></p>
+</li>
+<li>
+<p><a href="#development-tools">Development tools</a></p>
+</li>
+<li>
+<p><a href="#graphics-utilities">Graphics utilities</a></p>
+</li>
+<li>
+<p><a href="#hardware-and-rom-utilities">Hardware and ROM utilities</a></p>
+</li>
+<li>
+<p><a href="#music-drivers-and-trackers">Music drivers and trackers</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="#programming">Programming</a></p>
+</li>
+<li>
+<p><a href="#asm">ASM</a></p>
+<ul>
+<li>
+<p><a href="#sources">Sources</a></p>
+</li>
+<li>
+<p><a href="#timings">Timings</a></p>
+</li>
+<li>
+<p><a href="#boilerplates">Boilerplates</a></p>
+</li>
+<li>
+<p><a href="#syntax-highlighting-packages">Syntax highlighting packages</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="#c">C</a></p>
+</li>
+<li>
+<p><a href="#homebrews">Homebrews</a></p>
+</li>
+<li>
+<p><a href="#asm-1">ASM</a></p>
+</li>
+<li>
+<p><a href="#c-1">C</a></p>
+</li>
+<li>
+<p><a href="#gb-studio">GB Studio</a> </p>
+</li>
+<li>
+<p><a href="#demos">Demos</a></p>
+</li>
+<li>
+<p><a href="#reverse-engineering">Reverse Engineering</a></p>
+</li>
+<li>
+<p><a href="#game-disassemblies">Game Disassemblies</a></p>
+</li>
+<li>
+<p><a href="#game-boy-camera">Game Boy Camera</a></p>
+</li>
+<li>
+<p><a href="#retrieving-images">Retrieving Images</a></p>
+</li>
+<li>
+<p><a href="#changing-the-cameras-behavior">Changing the camera's behavior</a></p>
+</li>
+<li>
+<p><a href="#post-processing">Post-processing</a></p>
+</li>
+<li>
+<p><a href="#related-projects">Related projects</a></p>
+</li>
+<li>
+<p><a href="#directories">Directories</a></p>
+</li>
+<li>
+<p><a href="#websites">Websites</a></p>
+</li>
+<li>
+<p><a href="#about">About</a></p>
+</li>
+<li>
+<p><a href="#contribute">Contribute</a></p>
+</li>
+<li>
+<p><a href="#license">License</a></p>
+</li>
+<li>
+<p><a href="#acknowledgements">Acknowledgements</a></p>
+</li>
+<li>
+<p><a href="#sponsors">Sponsors</a></p>
+</li>
+</ul>
+<h2>Introduction</h2>
+<ul>
+<li>
+<p><a href="https://www.youtube.com/playlist?list=PLu3xpmdUP-GRDp8tknpXC_Y4RUQtMMqEu">The Game Boy, a hardware autopsy</a></p>
+</li>
+<li>
+<p><a href="https://media.ccc.de/v/33c3-8029-the_ultimate_game_boy_talk">The Ultimate Game Boy Talk</a></p>
+</li>
+</ul>
+<blockquote>
+<h3>Disambiguation</h3>
+<h4>Game Boy Advance</h4>
+<p>Game Boy Advance development is covered by another project, the <a href="https://github.com/gbdev/awesome-gbadev">awesome-gbadev</a> list.</p>
+<p>GBA, however, <em>can run</em> GB/GBC games. It does so in a slightly different way compared to native hardware: this is covered in the Emulator Development section of this list.</p>
+<h4>Game Boy Color and Super Game Boy</h4>
+<p>This list is focused on the original <em>Game Boy</em> (GB or DMG, 1989), the <em>Game Boy Color</em> (GBC or CGB) and the <em>Super Game Boy</em> (SGB) are very similar systems, with a few important distinctions, such as:</p>
+<ul>
+<li>
+<p>Different hardware specifications;</p>
+</li>
+<li>
+<p>Specific hardware and software features;</p>
+</li>
+<li>
+<p>Specific registers;</p>
+</li>
+<li>
+<p>Specific bugs, quirks and exploitable behaviours.</p>
+</li>
+</ul>
+<p>If you aim to develop your software for SGB or GBC, or you want to know how it runs on the other systems, you may want to take advantage and adapt to these differences, check the <a href="#game-boy-color">Game Boy Color</a> category and look for specific references to GBC/CGB and SGB.</p>
+</blockquote>
+<h2>Community</h2>
+<ul>
+<li>
+<p><a href="https://gbdev.io/chat">Chat channels</a></p>
+</li>
+<li>
+<p><a href="https://gbdev.gg8.se/forums/">Forum</a></p>
+</li>
+</ul>
+<h2>Documentation</h2>
+<ul>
+<li>
+<p><a href="https://gbdev.github.io/pandocs/"><strong>Pan Docs</strong></a> - The single, most comprehensive technical reference to Game Boy available to the public. Corrected, updated and maintained by the community.</p>
+</li>
+<li>
+<p><a href="https://github.com/AntonioND/giibiiadvance/blob/master/docs/TCAGBD.pdf">The Cycle-Accurate Game Boy Docs</a> - A precise documentation by AntonioND to make a cycle-accurate Game Boy emulator.</p>
+</li>
+<li>
+<p><a href="https://gekkio.fi/files/gb-docs/gbctr.pdf">Complete Technical Reference</a> - by Gekkio.</p>
+</li>
+<li>
+<p><a href="https://www.copetti.org/writings/consoles/game-boy/">Game Boy Architecture: A Practical Analysis</a> - by Rodrigo Copetti.</p>
+</li>
+<li>
+<p><a href="http://www.cs.columbia.edu/~sedwards/classes/2019/4840-spring/reports/GameBoy.pdf">Game Boy Project Report</a> - Report of an hardware <a href="https://github.com/kitsuneh/SVGameBoy">emulator</a> (on a Terasic DE1-SoC Board) developed as final project for the CSEE4840 Embedded Systems Design course at Columbia University.</p>
+</li>
+</ul>
+<h4>Opcodes</h4>
+<ul>
+<li>
+<p><a href="https://gbdev.github.io/gb-opcodes/optables/">gb-opcodes</a> - Opcodes table</p>
+</li>
+<li>
+<p><a href="https://rgbds.gbdev.io/docs/gbz80.7">RGBDS opcodes reference</a> - A reference of all instructions, including short descriptions, cycle and byte counts, and explanations of flag modifications.</p>
+</li>
+</ul>
+<h3>Game Boy Color</h3>
+<ul>
+<li>
+<p><a href="https://tcrf.net/Game_Boy_Color_Bootstrap_ROM">Bootstrap ROM</a></p>
+</li>
+<li>
+<p><a href="https://tcrf.net/Notes:Game_Boy_Color_Bootstrap_ROM">Unused Palettes</a></p>
+</li>
+<li>
+<p><a href="https://forums.nesdev.com/viewtopic.php?p=114388&amp;sid=c3d4ce08cfd9d9c834958d4f148750c3#p114388">Colorization palettes in the BIOS</a></p>
+</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'game-boy-development_README.md';
 
         fetch(markdownFile)
@@ -48,21 +515,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

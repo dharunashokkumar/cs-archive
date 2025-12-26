@@ -8,38 +8,137 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Accelerated Text Awesome Nlg - Awesome List Resources">
-    <title>Accelerated Text Awesome Nlg</title>
+    <meta name="description" content="Natural Language Generation is a broad domain with applications in chat-bots, story generation, and data descriptions. There is a wide spectrum of different...">
+    <meta name="robots" content="index, follow">
+    <title>Natural Language Generation - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Natural Language Generation</h1>
+<p>Natural Language Generation is a broad domain with applications in chat-bots, story generation, and data descriptions. There is a wide spectrum of different technologies addressing parts or the whole of the NLG process. This list aims to represent this deversity of NLG applications and techniques by providing links to various projects, tools, research papers, and learning materials.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#datasets">Datasets</a></li>
+<li><a href="#dialog">Dialog</a></li>
+<li><a href="#evaluation">Evaluation</a></li>
+<li><a href="#grammar">Grammar</a></li>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#narrative-generation">Narrative Generation</a></li>
+<li><a href="#neural-natural-language-generation">Neural Natural Language Generation</a></li>
+<li><a href="#papers-and-articles">Papers and Articles</a></li>
+<li><a href="#products">Products</a></li>
+<li><a href="#realizers">Realizers</a></li>
+<li><a href="#templating-languages">Templating Languages</a></li>
+<li><a href="#videos">Videos</a></li>
+</ul>
+<h2>Datasets</h2>
+<ul>
+<li><a href="https://github.com/UFAL-DSG/alex_context_nlg_dataset">Alex Context NLG Dataset</a> - A dataset for NLG in dialogue systems in the public transport information domain.</li>
+<li><a href="https://github.com/harvardnlp/boxscore-data/">Box-score data</a> - This dataset consists of (human-written) NBA basketball game summaries aligned with their corresponding box- and line-scores.</li>
+<li><a href="http://www.macs.hw.ac.uk/InteractionLab/E2E">E2E</a> - This shared task focuses on recent end-to-end (E2E), data-driven NLG methods, which jointly learn sentence planning and surface realisation from non-aligned data.</li>
+<li><a href="https://github.com/pvougiou/Neural-Wikipedian">Neural-Wikipedian</a> - The repository contains the code along with the required corpora that were used in order to build a system that "learns" how to generate English biographies for Semantic Web triples.</li>
+<li><a href="https://cs.stanford.edu/~pliang/data/weather-data.zip">WeatherGov</a> - Computer-generated weather forecasts from weather.gov (US public forecast), along with corresponding weather data.</li>
+<li><a href="https://github.com/ThiagoCF05/webnlg">WebNLG</a> - The enriched version of the WebNLG - a resource for evaluating common NLG tasks, including Discourse Ordering, Lexicalization and Referring Expression Generation.</li>
+<li><a href="https://rlebret.github.io/wikipedia-biography-dataset/">WikiBio - wikipedia biography dataset</a> - This dataset gathers 728,321 biographies from wikipedia. It aims at evaluating text generation algorithms.</li>
+<li><a href="https://github.com/google-research-datasets/dstc8-schema-guided-dialogue">The Schema-Guided Dialogue Dataset</a> - The Schema-Guided Dialogue (SGD) dataset consists of over 20k annotated multi-domain, task-oriented conversations between a human and a virtual assistant.</li>
+<li><a href="https://gricad-gitlab.univ-grenoble-alpes.fr/getalp/wikipediacompanycorpus">The Wikipedia company corpus</a> - Company descriptions collected from Wikipedia. The dataset contains semantic representations, short, and long descriptions for 51K companies in English.</li>
+<li><a href="https://nlds.soe.ucsc.edu/yelpnlg">YelpNLG</a> - YelpNLG provides resources for natural language generation of restaurant reviews.</li>
+</ul>
+<h2>Dialog</h2>
+<ul>
+<li><a href="https://github.com/rodrigopivi/Chatito">Chatito</a> - Generate datasets for AI chatbots, NLP tasks, named entity recognition or text classification models using a simple DSL!</li>
+<li><a href="https://github.com/shawnwun/NNDIAL">NNDIAL</a> - NNDial is an open source toolkit for building end-to-end trainable task-oriented dialogue models.</li>
+<li><a href="https://github.com/uber-research/plato-research-dialogue-system">Plato</a> - This is the Plato Research Dialogue System, a flexible platform for developing conversational AI agents. </li>
+<li><a href="https://github.com/shawnwun/RNNLG">RNNLG</a> - RNNLG is an open source benchmark toolkit for Natural Language Generation (NLG) in spoken dialogue system application domains.</li>
+<li><a href="https://github.com/UFAL-DSG/tgen">TGen</a> - Statistical NLG for spoken dialogue systems.</li>
+</ul>
+<h2>Evaluation</h2>
+<ul>
+<li><a href="https://github.com/google-research/bleurt">BLEURT: a Transfer Learning-Based Metric for Natural Language Generation</a></li>
+<li><a href="https://github.com/neulab/compare-mt">compare-mt</a> - A tool for holistic analysis of language generations systems.</li>
+<li><a href="https://gem-benchmark.com/">GEM</a> - a benchmark environment for NLG with a focus on its Evaluation, both through human annotations and automated Metrics.</li>
+<li><a href="https://github.com/Maluuba/nlg-eval">NLG-eval</a> - Evaluation code for various unsupervised automated metrics for Natural Language Generation.</li>
+<li><a href="https://github.com/facebookresearch/vizseq">VizSeq</a> - A Visual Analysis Toolkit for Text Generation Tasks.</li>
+</ul>
+<h2>Grammar</h2>
+<ul>
+<li><a href="https://github.com/OpenCCG/openccg">OpenCCG</a> - OpenCCG library for parsing and realization with CCG.</li>
+<li><a href="http://www.grammaticalframework.org/">GrammaticalFramework</a> - A programming language for multilingual grammar applications.</li>
+<li><a href="https://github.com/mikelewis0/easyccg">EasyCCG</a> - CCG: All combinators, common grammar format, parsing to logical form, parameter estimation for probabilistic CCG.</li>
+<li><a href="https://github.com/bozsahin/ccglab">CCG Lab</a> - All combinators, common grammar format, parsing to logical form, parameter estimation for probabilistic CCG.</li>
+<li><a href="https://github.com/texttheater/ccgweb">CCGweb</a> - A Web platform for parsing and annotation.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Natural Language Generation</h1>
+<p>Natural Language Generation is a broad domain with applications in chat-bots, story generation, and data descriptions. There is a wide spectrum of different technologies addressing parts or the whole of the NLG process. This list aims to represent this deversity of NLG applications and techniques by providing links to various projects, tools, research papers, and learning materials.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#datasets">Datasets</a></li>
+<li><a href="#dialog">Dialog</a></li>
+<li><a href="#evaluation">Evaluation</a></li>
+<li><a href="#grammar">Grammar</a></li>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#narrative-generation">Narrative Generation</a></li>
+<li><a href="#neural-natural-language-generation">Neural Natural Language Generation</a></li>
+<li><a href="#papers-and-articles">Papers and Articles</a></li>
+<li><a href="#products">Products</a></li>
+<li><a href="#realizers">Realizers</a></li>
+<li><a href="#templating-languages">Templating Languages</a></li>
+<li><a href="#videos">Videos</a></li>
+</ul>
+<h2>Datasets</h2>
+<ul>
+<li><a href="https://github.com/UFAL-DSG/alex_context_nlg_dataset">Alex Context NLG Dataset</a> - A dataset for NLG in dialogue systems in the public transport information domain.</li>
+<li><a href="https://github.com/harvardnlp/boxscore-data/">Box-score data</a> - This dataset consists of (human-written) NBA basketball game summaries aligned with their corresponding box- and line-scores.</li>
+<li><a href="http://www.macs.hw.ac.uk/InteractionLab/E2E">E2E</a> - This shared task focuses on recent end-to-end (E2E), data-driven NLG methods, which jointly learn sentence planning and surface realisation from non-aligned data.</li>
+<li><a href="https://github.com/pvougiou/Neural-Wikipedian">Neural-Wikipedian</a> - The repository contains the code along with the required corpora that were used in order to build a system that "learns" how to generate English biographies for Semantic Web triples.</li>
+<li><a href="https://cs.stanford.edu/~pliang/data/weather-data.zip">WeatherGov</a> - Computer-generated weather forecasts from weather.gov (US public forecast), along with corresponding weather data.</li>
+<li><a href="https://github.com/ThiagoCF05/webnlg">WebNLG</a> - The enriched version of the WebNLG - a resource for evaluating common NLG tasks, including Discourse Ordering, Lexicalization and Referring Expression Generation.</li>
+<li><a href="https://rlebret.github.io/wikipedia-biography-dataset/">WikiBio - wikipedia biography dataset</a> - This dataset gathers 728,321 biographies from wikipedia. It aims at evaluating text generation algorithms.</li>
+<li><a href="https://github.com/google-research-datasets/dstc8-schema-guided-dialogue">The Schema-Guided Dialogue Dataset</a> - The Schema-Guided Dialogue (SGD) dataset consists of over 20k annotated multi-domain, task-oriented conversations between a human and a virtual assistant.</li>
+<li><a href="https://gricad-gitlab.univ-grenoble-alpes.fr/getalp/wikipediacompanycorpus">The Wikipedia company corpus</a> - Company descriptions collected from Wikipedia. The dataset contains semantic representations, short, and long descriptions for 51K companies in English.</li>
+<li><a href="https://nlds.soe.ucsc.edu/yelpnlg">YelpNLG</a> - YelpNLG provides resources for natural language generation of restaurant reviews.</li>
+</ul>
+<h2>Dialog</h2>
+<ul>
+<li><a href="https://github.com/rodrigopivi/Chatito">Chatito</a> - Generate datasets for AI chatbots, NLP tasks, named entity recognition or text classification models using a simple DSL!</li>
+<li><a href="https://github.com/shawnwun/NNDIAL">NNDIAL</a> - NNDial is an open source toolkit for building end-to-end trainable task-oriented dialogue models.</li>
+<li><a href="https://github.com/uber-research/plato-research-dialogue-system">Plato</a> - This is the Plato Research Dialogue System, a flexible platform for developing conversational AI agents. </li>
+<li><a href="https://github.com/shawnwun/RNNLG">RNNLG</a> - RNNLG is an open source benchmark toolkit for Natural Language Generation (NLG) in spoken dialogue system application domains.</li>
+<li><a href="https://github.com/UFAL-DSG/tgen">TGen</a> - Statistical NLG for spoken dialogue systems.</li>
+</ul>
+<h2>Evaluation</h2>
+<ul>
+<li><a href="https://github.com/google-research/bleurt">BLEURT: a Transfer Learning-Based Metric for Natural Language Generation</a></li>
+<li><a href="https://github.com/neulab/compare-mt">compare-mt</a> - A tool for holistic analysis of language generations systems.</li>
+<li><a href="https://gem-benchmark.com/">GEM</a> - a benchmark environment for NLG with a focus on its Evaluation, both through human annotations and automated Metrics.</li>
+<li><a href="https://github.com/Maluuba/nlg-eval">NLG-eval</a> - Evaluation code for various unsupervised automated metrics for Natural Language Generation.</li>
+<li><a href="https://github.com/facebookresearch/vizseq">VizSeq</a> - A Visual Analysis Toolkit for Text Generation Tasks.</li>
+</ul>
+<h2>Grammar</h2>
+<ul>
+<li><a href="https://github.com/OpenCCG/openccg">OpenCCG</a> - OpenCCG library for parsing and realization with CCG.</li>
+<li><a href="http://www.grammaticalframework.org/">GrammaticalFramework</a> - A programming language for multilingual grammar applications.</li>
+<li><a href="https://github.com/mikelewis0/easyccg">EasyCCG</a> - CCG: All combinators, common grammar format, parsing to logical form, parameter estimation for probabilistic CCG.</li>
+<li><a href="https://github.com/bozsahin/ccglab">CCG Lab</a> - All combinators, common grammar format, parsing to logical form, parameter estimation for probabilistic CCG.</li>
+<li><a href="https://github.com/texttheater/ccgweb">CCGweb</a> - A Web platform for parsing and annotation.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'natural-language-generation_README.md';
 
         fetch(markdownFile)
@@ -48,21 +147,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

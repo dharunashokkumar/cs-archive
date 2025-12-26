@@ -8,38 +8,181 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mystenlabs Awesome Move - Awesome List Resources">
-    <title>Mystenlabs Awesome Move</title>
+    <meta name="description" content="> A curated list of code and content from the Move programming language community. Move is a programming language for writing safe smart contracts originally...">
+    <meta name="robots" content="index, follow">
+    <title>Move - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <!--lint disable double-link-->
+<h1>Awesome Move <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<blockquote>
+<p>A curated list of code and content from the <a href="https://github.com/move-language/move">Move</a> programming language community.</p>
+</blockquote>
+<p>Move is a programming language for writing safe smart contracts originally developed at Facebook to power the Libra blockchain. Move is designed to be a platform-agnostic language to enable common libraries, tooling, and developer communities across diverse blockchains with vastly different data and execution models. Move's ambition is to become the "JavaScript of web3" in terms of ubiquity--when developers want to quickly write safe code involving assets, it should be written in Move.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#move-powered-blockchains">Move-Powered Blockchains</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#code">Code</a></li>
+<li><a href="#fungible-tokens">Fungible Tokens</a></li>
+<li><a href="#non-fungible-tokens">Non-Fungible Tokens</a></li>
+<li><a href="#decentralized-identity">Decentralized Identity</a></li>
+<li><a href="#defi">DeFi</a></li>
+<li><a href="#socialfi">SocialFi</a></li>
+<li><a href="#on-chain-governance">On-Chain Governance</a></li>
+<li><a href="#cross-chain-bridge">Cross-Chain Bridge</a></li>
+<li><a href="#accounts">Accounts</a></li>
+<li><a href="#frameworks">Frameworks</a></li>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#ides">IDEs</a></li>
+<li><a href="#package-managers">Package Managers</a></li>
+<li><a href="#wallets">Wallets</a></li>
+<li><a href="#sdks">SDKs</a></li>
+<li><a href="#papers">Papers</a></li>
+<li><a href="#language-design">Language Design</a></li>
+<li><a href="#static-analysis-and-verification">Static Analysis and Verification</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#slides">Slides</a></li>
+<li><a href="#podcasts">Podcasts</a></li>
+<li><a href="#blog-posts">Blog Posts</a></li>
+<li><a href="#security">Security</a></li>
+</ul>
+<h2>Overview</h2>
+<ul>
+<li><a href="https://github.com/move-language/move/tree/main/language/tools/move-cli#installation">Installation</a></li>
+<li><a href="https://github.com/mystenlabs/awesome-move/blob/main/docs/problem_statement.md#problem-statement">Problem Statement</a></li>
+</ul>
+<h2>Move-Powered Blockchains</h2>
+<ul>
+<li><a href="https://github.com/MystenLabs/sui">Sui</a> - A next-generation smart contract platform with high throughput, low latency, and an asset-oriented programming model powered by the Move programming language (in <a href="https://medium.com/mysten-labs/sui-devnet-public-release-a2be304ff36b">devnet</a>).</li>
+<li><a href="https://github.com/OLSF/libra">0L</a> - A reference implementation of a neutral replicated state machine. Forked from the Libra/Diem technologies (in <a href="https://0l.network/">mainnet</a>).</li>
+<li><a href="https://github.com/starcoinorg/starcoin">Starcoin</a> - A smart contract blockchain network that scales by layering (in <a href="https://stcscan.io/">mainnet</a>).</li>
+<li><a href="https://github.com/aptos-labs/aptos-core">Aptos</a> - Aptos-core strives towards being the safest and most scalable layer one blockchain solution (in <a href="https://explorer.aptoslabs.com/?network=mainnet">mainnet</a>).</li>
+<li><a href="https://github.com/pontem-network/pontem">Pontem</a> - Substrate based parachain with MoveVM onboard (in <a href="https://polkadot.js.org/apps/?rpc=wss://testnet.pontem.network/ws#/explorer">testnet</a>).</li>
+<li><a href="https://github.com/celo-org/celo-blockchain">Celo</a> - Blockchain with EVM and MoveVM (<a href="https://www.businesswire.com/news/home/20210921006104/en/Celo-Sets-Sights-On-Becoming-Fastest-EVM-Chain-Through-Collaboration-With-Mysten-Labs">coming soon</a>).</li>
+<li><a href="https://github.com/diem/diem">Diem</a> - The original Move based blockchain from Meta (form. Libra by Facebook) (discontinued).</li>
+<li><a href="https://github.com/chainx-org/ChainX">ChainX</a> - Bitcoin's layer2 smart contract network has already supported WASM and EVM, and is supporting MoveVM (in <a href="https://scan.chainx.org">mainnet</a>).</li>
+</ul>
+<h2>Books</h2>
+<ul>
+<li><a href="https://move-language.github.io/move/">Move Book</a> - Move book maintained by the Move core team (<a href="https://github.com/move-language/move/tree/main/language/documentation/book/translations/move-book-zh">中文</a>).</li>
+<li><a href="https://move-book.com/">Move Book</a> - Move book maintained by <a href="https://github.com/damirka">@damirka</a> (<a href="https://move-book.com/cn/">中文</a>).</li>
+<li><a href="https://www.move-patterns.com/">Move Patterns</a> - A book on Move software design patterns maintained by <a href="https://github.com/villesundell">@villesundell</a>.</li>
+<li><a href="https://examples.sui.io/">Sui Move by Example</a> - A book on the Sui Move variant maintained by <a href="https://github.com/MystenLabs">@MystenLabs</a>.</li>
+</ul>
+<h2>Tutorials</h2>
+<ul>
+<li><a href="https://github.com/move-language/move/tree/main/language/documentation/tutorial">Implementing, testing, and verifying a fungible token</a> - Maintained by the Move core team.</li>
+<li><a href="https://docs.sui.io/build/programming-with-objects">Programming with objects</a> - Maintained by the Sui team.</li>
+<li><a href="https://starcoinorg.github.io/starcoin-cookbook/docs/move/">Move and SmartContract Development</a> - Maintained by the Starcoin team.</li>
+<li><a href="https://imcoding.online/courses/move-language">Move Language</a> - Interactive Move language course, free for everyone, maintained by <a href="https://imcoding.online">imcoding.online</a> (<a href="https://imcoding.online/courses/move-language?lng=zh">中文</a>).</li>
+</ul>
+<h2>Community</h2>
+<ul>
+<li><a href="https://discord.gg/cPUmhe24Mz">Move Language Discord</a></li>
+<li><a href="https://discord.gg/sui">Move @ Sui by Mysten Labs Discord</a></li>
+<li><a href="https://discord.gg/0lnetwork">Move @ 0L Discord</a></li>
+<li><a href="https://discord.gg/starcoin">Move @ Starcoin Discord</a></li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <!--lint disable double-link-->
+<h1>Awesome Move <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<blockquote>
+<p>A curated list of code and content from the <a href="https://github.com/move-language/move">Move</a> programming language community.</p>
+</blockquote>
+<p>Move is a programming language for writing safe smart contracts originally developed at Facebook to power the Libra blockchain. Move is designed to be a platform-agnostic language to enable common libraries, tooling, and developer communities across diverse blockchains with vastly different data and execution models. Move's ambition is to become the "JavaScript of web3" in terms of ubiquity--when developers want to quickly write safe code involving assets, it should be written in Move.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#move-powered-blockchains">Move-Powered Blockchains</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#code">Code</a></li>
+<li><a href="#fungible-tokens">Fungible Tokens</a></li>
+<li><a href="#non-fungible-tokens">Non-Fungible Tokens</a></li>
+<li><a href="#decentralized-identity">Decentralized Identity</a></li>
+<li><a href="#defi">DeFi</a></li>
+<li><a href="#socialfi">SocialFi</a></li>
+<li><a href="#on-chain-governance">On-Chain Governance</a></li>
+<li><a href="#cross-chain-bridge">Cross-Chain Bridge</a></li>
+<li><a href="#accounts">Accounts</a></li>
+<li><a href="#frameworks">Frameworks</a></li>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#ides">IDEs</a></li>
+<li><a href="#package-managers">Package Managers</a></li>
+<li><a href="#wallets">Wallets</a></li>
+<li><a href="#sdks">SDKs</a></li>
+<li><a href="#papers">Papers</a></li>
+<li><a href="#language-design">Language Design</a></li>
+<li><a href="#static-analysis-and-verification">Static Analysis and Verification</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#slides">Slides</a></li>
+<li><a href="#podcasts">Podcasts</a></li>
+<li><a href="#blog-posts">Blog Posts</a></li>
+<li><a href="#security">Security</a></li>
+</ul>
+<h2>Overview</h2>
+<ul>
+<li><a href="https://github.com/move-language/move/tree/main/language/tools/move-cli#installation">Installation</a></li>
+<li><a href="https://github.com/mystenlabs/awesome-move/blob/main/docs/problem_statement.md#problem-statement">Problem Statement</a></li>
+</ul>
+<h2>Move-Powered Blockchains</h2>
+<ul>
+<li><a href="https://github.com/MystenLabs/sui">Sui</a> - A next-generation smart contract platform with high throughput, low latency, and an asset-oriented programming model powered by the Move programming language (in <a href="https://medium.com/mysten-labs/sui-devnet-public-release-a2be304ff36b">devnet</a>).</li>
+<li><a href="https://github.com/OLSF/libra">0L</a> - A reference implementation of a neutral replicated state machine. Forked from the Libra/Diem technologies (in <a href="https://0l.network/">mainnet</a>).</li>
+<li><a href="https://github.com/starcoinorg/starcoin">Starcoin</a> - A smart contract blockchain network that scales by layering (in <a href="https://stcscan.io/">mainnet</a>).</li>
+<li><a href="https://github.com/aptos-labs/aptos-core">Aptos</a> - Aptos-core strives towards being the safest and most scalable layer one blockchain solution (in <a href="https://explorer.aptoslabs.com/?network=mainnet">mainnet</a>).</li>
+<li><a href="https://github.com/pontem-network/pontem">Pontem</a> - Substrate based parachain with MoveVM onboard (in <a href="https://polkadot.js.org/apps/?rpc=wss://testnet.pontem.network/ws#/explorer">testnet</a>).</li>
+<li><a href="https://github.com/celo-org/celo-blockchain">Celo</a> - Blockchain with EVM and MoveVM (<a href="https://www.businesswire.com/news/home/20210921006104/en/Celo-Sets-Sights-On-Becoming-Fastest-EVM-Chain-Through-Collaboration-With-Mysten-Labs">coming soon</a>).</li>
+<li><a href="https://github.com/diem/diem">Diem</a> - The original Move based blockchain from Meta (form. Libra by Facebook) (discontinued).</li>
+<li><a href="https://github.com/chainx-org/ChainX">ChainX</a> - Bitcoin's layer2 smart contract network has already supported WASM and EVM, and is supporting MoveVM (in <a href="https://scan.chainx.org">mainnet</a>).</li>
+</ul>
+<h2>Books</h2>
+<ul>
+<li><a href="https://move-language.github.io/move/">Move Book</a> - Move book maintained by the Move core team (<a href="https://github.com/move-language/move/tree/main/language/documentation/book/translations/move-book-zh">中文</a>).</li>
+<li><a href="https://move-book.com/">Move Book</a> - Move book maintained by <a href="https://github.com/damirka">@damirka</a> (<a href="https://move-book.com/cn/">中文</a>).</li>
+<li><a href="https://www.move-patterns.com/">Move Patterns</a> - A book on Move software design patterns maintained by <a href="https://github.com/villesundell">@villesundell</a>.</li>
+<li><a href="https://examples.sui.io/">Sui Move by Example</a> - A book on the Sui Move variant maintained by <a href="https://github.com/MystenLabs">@MystenLabs</a>.</li>
+</ul>
+<h2>Tutorials</h2>
+<ul>
+<li><a href="https://github.com/move-language/move/tree/main/language/documentation/tutorial">Implementing, testing, and verifying a fungible token</a> - Maintained by the Move core team.</li>
+<li><a href="https://docs.sui.io/build/programming-with-objects">Programming with objects</a> - Maintained by the Sui team.</li>
+<li><a href="https://starcoinorg.github.io/starcoin-cookbook/docs/move/">Move and SmartContract Development</a> - Maintained by the Starcoin team.</li>
+<li><a href="https://imcoding.online/courses/move-language">Move Language</a> - Interactive Move language course, free for everyone, maintained by <a href="https://imcoding.online">imcoding.online</a> (<a href="https://imcoding.online/courses/move-language?lng=zh">中文</a>).</li>
+</ul>
+<h2>Community</h2>
+<ul>
+<li><a href="https://discord.gg/cPUmhe24Mz">Move Language Discord</a></li>
+<li><a href="https://discord.gg/sui">Move @ Sui by Mysten Labs Discord</a></li>
+<li><a href="https://discord.gg/0lnetwork">Move @ 0L Discord</a></li>
+<li><a href="https://discord.gg/starcoin">Move @ Starcoin Discord</a></li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'move_README.md';
 
         fetch(markdownFile)
@@ -48,21 +191,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

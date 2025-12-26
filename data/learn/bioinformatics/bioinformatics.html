@@ -8,38 +8,199 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Danielecook Awesome Bioinformatics - Awesome List Resources">
-    <title>Danielecook Awesome Bioinformatics</title>
+    <meta name="description" content="> Bioinformatics is an interdisciplinary field that develops methods and software tools for understanding biological data. — Wikipedia A curated list of...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Bioinformatics [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) [![Check URLs](https://github.com/danielecook/Awesome-Bioinformatics/actions/workflows/url-check.yml/badge.svg)](https://github.com/danielecook/Awesome-Bioinformatics/actions/workflows/url-check.yml) [![Generate TOC](https://github.com/danielecook/Awesome-Bioinformatics/actions/workflows/toc.yml/badge.svg)](https://github.com/danielecook/Awesome-Bioinformatics/actions/workflows/toc.yml) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Bioinformatics <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <a href="https://github.com/danielecook/Awesome-Bioinformatics/actions/workflows/url-check.yml"><img alt="Check URLs" src="https://github.com/danielecook/Awesome-Bioinformatics/actions/workflows/url-check.yml/badge.svg" /></a> <a href="https://github.com/danielecook/Awesome-Bioinformatics/actions/workflows/toc.yml"><img alt="Generate TOC" src="https://github.com/danielecook/Awesome-Bioinformatics/actions/workflows/toc.yml/badge.svg" /></a></h1>
+<blockquote>
+<p>Bioinformatics is an interdisciplinary field that develops methods and software tools for understanding biological data. — <a href="https://en.wikipedia.org/wiki/Bioinformatics">Wikipedia</a></p>
+</blockquote>
+<p>A curated list of awesome Bioinformatics software, resources, and libraries. Mostly command line based, and free or open-source. Please feel free to <a href="CONTRIBUTING.md">contribute</a>!</p>
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+<h2>Table of Contents</h2>
+<ul>
+<li><a href="#package-suites">Package suites</a></li>
+<li><a href="#data-tools">Data Tools</a></li>
+<li><a href="#downloading">Downloading</a></li>
+<li><a href="#compressing">Compressing</a></li>
+<li><a href="#data-processing">Data Processing</a></li>
+<li><a href="#command-line-utilities">Command Line Utilities</a></li>
+<li><a href="#next-generation-sequencing">Next Generation Sequencing</a></li>
+<li><a href="#workflow-managers">Workflow Managers</a></li>
+<li><a href="#pipelines">Pipelines</a></li>
+<li><a href="#sequence-processing">Sequence Processing</a></li>
+<li><a href="#data-analysis">Data Analysis</a></li>
+<li><a href="#sequence-alignment">Sequence Alignment</a><ul>
+<li><a href="#pairwise">Pairwise</a></li>
+<li><a href="#multiple-sequence-alignment">Multiple Sequence Alignment</a></li>
+<li><a href="#clustering">Clustering</a></li>
+</ul>
+</li>
+<li><a href="#quantification">Quantification</a></li>
+<li><a href="#variant-calling">Variant Calling</a><ul>
+<li><a href="#structural-variant-callers">Structural variant callers</a></li>
+</ul>
+</li>
+<li><a href="#bam-file-utilities">BAM File Utilities</a></li>
+<li><a href="#vcf-file-utilities">VCF File Utilities</a></li>
+<li><a href="#gff-bed-file-utilities">GFF BED File Utilities</a></li>
+<li><a href="#variant-simulation">Variant Simulation</a></li>
+<li><a href="#variant-predictionannotation">Variant Prediction/Annotation</a></li>
+<li><a href="#python-modules">Python Modules</a><ul>
+<li><a href="#data">Data</a></li>
+<li><a href="#tools">Tools</a></li>
+</ul>
+</li>
+<li><a href="#assembly">Assembly</a></li>
+<li><a href="#annotation">Annotation</a></li>
+<li><a href="#long-read-sequencing">Long-read sequencing</a></li>
+<li><a href="#long-read-assembly">Long-read Assembly</a></li>
+<li><a href="#visualization">Visualization</a></li>
+<li><a href="#genome-browsers--gene-diagrams">Genome Browsers / Gene Diagrams</a></li>
+<li><a href="#circos-related">Circos Related</a></li>
+<li><a href="#database-access">Database Access</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#becoming-a-bioinformatician">Becoming a Bioinformatician</a></li>
+<li><a href="#bioinformatics-on-github">Bioinformatics on GitHub</a></li>
+<li><a href="#sequencing">Sequencing</a></li>
+<li><a href="#rna-seq">RNA-Seq</a></li>
+<li><a href="#chip-seq">ChIP-Seq</a></li>
+<li><a href="#youtube-channels-and-playlists">YouTube Channels and Playlists</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#online-networking-groups">Online networking groups</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+<hr />
+<h2>Package suites</h2>
+<p>Package suites gather software packages and installation tools for specific languages or platforms. We have some for bioinformatics software.</p>
+<ul>
+<li>
+<p><strong><a href="https://github.com/bioperl/bioperl-live">Bioperl</a></strong> - International association of users &amp; developers of open source Perl tools for bioinformatics, genomics and life sciences. [ <a href="https://doi.org/10.1101%2Fgr.361602">paper-2002</a> | <a href="https://bioperl.org">web</a> ]</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/Bioconductor">Bioconductor</a></strong> - A plethora of tools for analysis and comprehension of high-throughput genomic data, including 1500+ software packages. [ <a href="https://link.springer.com/article/10.1186/gb-2004-5-10-r80">paper-2004</a> | <a href="https://www.bioconductor.org">web</a> ]</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/biopython/biopython">Biopython</a></strong> - Freely available tools for biological computing in Python, with included cookbook, packaging and thorough documentation. Part of the <a href="http://open-bio.org/">Open Bioinformatics Foundation</a>. Contains the very useful <a href="https://biopython.org/DIST/docs/api/Bio.Entrez-module.html">Entrez</a> package for API access to the NCBI databases. [ <a href="https://pubmed.ncbi.nlm.nih.gov/19304878">paper-2009</a> | <a href="https://biopython.org">web</a> ]</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/bioconda">Bioconda</a></strong> - A channel for the <a href="http://conda.pydata.org/docs/intro.html">conda package manager</a> specializing in bioinformatics software. Includes a repository with 3000+ ready-to-install (with <code>conda install</code>) bioinformatics packages. [ <a href="https://pubmed.ncbi.nlm.nih.gov/29967506">paper-2018</a> | <a href="https://bioconda.github.io">web</a> ]</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/BioJulia">BioJulia</a></strong> - Bioinformatics and computational biology infastructure for the Julia programming language. [ <a href="https://biojulia.net">web</a> ]</p>
+</li>
+<li><strong><a href="https://github.com/rust-bio/rust-bio">Rust-Bio</a></strong> - Rust implementations of algorithms and data structures useful for bioinformatics. [ <a href="http://bioinformatics.oxfordjournals.org/content/early/2015/10/06/bioinformatics.btv573.short?rss=1">paper-2016</a> ]</li>
+<li><strong><a href="https://github.com/seqan/seqan3">SeqAn</a></strong> - The modern C++ library for sequence analysis.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Bioinformatics <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a> <a href="https://github.com/danielecook/Awesome-Bioinformatics/actions/workflows/url-check.yml"><img alt="Check URLs" src="https://github.com/danielecook/Awesome-Bioinformatics/actions/workflows/url-check.yml/badge.svg" /></a> <a href="https://github.com/danielecook/Awesome-Bioinformatics/actions/workflows/toc.yml"><img alt="Generate TOC" src="https://github.com/danielecook/Awesome-Bioinformatics/actions/workflows/toc.yml/badge.svg" /></a></h1>
+<blockquote>
+<p>Bioinformatics is an interdisciplinary field that develops methods and software tools for understanding biological data. — <a href="https://en.wikipedia.org/wiki/Bioinformatics">Wikipedia</a></p>
+</blockquote>
+<p>A curated list of awesome Bioinformatics software, resources, and libraries. Mostly command line based, and free or open-source. Please feel free to <a href="CONTRIBUTING.md">contribute</a>!</p>
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+<h2>Table of Contents</h2>
+<ul>
+<li><a href="#package-suites">Package suites</a></li>
+<li><a href="#data-tools">Data Tools</a></li>
+<li><a href="#downloading">Downloading</a></li>
+<li><a href="#compressing">Compressing</a></li>
+<li><a href="#data-processing">Data Processing</a></li>
+<li><a href="#command-line-utilities">Command Line Utilities</a></li>
+<li><a href="#next-generation-sequencing">Next Generation Sequencing</a></li>
+<li><a href="#workflow-managers">Workflow Managers</a></li>
+<li><a href="#pipelines">Pipelines</a></li>
+<li><a href="#sequence-processing">Sequence Processing</a></li>
+<li><a href="#data-analysis">Data Analysis</a></li>
+<li><a href="#sequence-alignment">Sequence Alignment</a><ul>
+<li><a href="#pairwise">Pairwise</a></li>
+<li><a href="#multiple-sequence-alignment">Multiple Sequence Alignment</a></li>
+<li><a href="#clustering">Clustering</a></li>
+</ul>
+</li>
+<li><a href="#quantification">Quantification</a></li>
+<li><a href="#variant-calling">Variant Calling</a><ul>
+<li><a href="#structural-variant-callers">Structural variant callers</a></li>
+</ul>
+</li>
+<li><a href="#bam-file-utilities">BAM File Utilities</a></li>
+<li><a href="#vcf-file-utilities">VCF File Utilities</a></li>
+<li><a href="#gff-bed-file-utilities">GFF BED File Utilities</a></li>
+<li><a href="#variant-simulation">Variant Simulation</a></li>
+<li><a href="#variant-predictionannotation">Variant Prediction/Annotation</a></li>
+<li><a href="#python-modules">Python Modules</a><ul>
+<li><a href="#data">Data</a></li>
+<li><a href="#tools">Tools</a></li>
+</ul>
+</li>
+<li><a href="#assembly">Assembly</a></li>
+<li><a href="#annotation">Annotation</a></li>
+<li><a href="#long-read-sequencing">Long-read sequencing</a></li>
+<li><a href="#long-read-assembly">Long-read Assembly</a></li>
+<li><a href="#visualization">Visualization</a></li>
+<li><a href="#genome-browsers--gene-diagrams">Genome Browsers / Gene Diagrams</a></li>
+<li><a href="#circos-related">Circos Related</a></li>
+<li><a href="#database-access">Database Access</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#becoming-a-bioinformatician">Becoming a Bioinformatician</a></li>
+<li><a href="#bioinformatics-on-github">Bioinformatics on GitHub</a></li>
+<li><a href="#sequencing">Sequencing</a></li>
+<li><a href="#rna-seq">RNA-Seq</a></li>
+<li><a href="#chip-seq">ChIP-Seq</a></li>
+<li><a href="#youtube-channels-and-playlists">YouTube Channels and Playlists</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+<li><a href="#online-networking-groups">Online networking groups</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+<hr />
+<h2>Package suites</h2>
+<p>Package suites gather software packages and installation tools for specific languages or platforms. We have some for bioinformatics software.</p>
+<ul>
+<li>
+<p><strong><a href="https://github.com/bioperl/bioperl-live">Bioperl</a></strong> - International association of users &amp; developers of open source Perl tools for bioinformatics, genomics and life sciences. [ <a href="https://doi.org/10.1101%2Fgr.361602">paper-2002</a> | <a href="https://bioperl.org">web</a> ]</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/Bioconductor">Bioconductor</a></strong> - A plethora of tools for analysis and comprehension of high-throughput genomic data, including 1500+ software packages. [ <a href="https://link.springer.com/article/10.1186/gb-2004-5-10-r80">paper-2004</a> | <a href="https://www.bioconductor.org">web</a> ]</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/biopython/biopython">Biopython</a></strong> - Freely available tools for biological computing in Python, with included cookbook, packaging and thorough documentation. Part of the <a href="http://open-bio.org/">Open Bioinformatics Foundation</a>. Contains the very useful <a href="https://biopython.org/DIST/docs/api/Bio.Entrez-module.html">Entrez</a> package for API access to the NCBI databases. [ <a href="https://pubmed.ncbi.nlm.nih.gov/19304878">paper-2009</a> | <a href="https://biopython.org">web</a> ]</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/bioconda">Bioconda</a></strong> - A channel for the <a href="http://conda.pydata.org/docs/intro.html">conda package manager</a> specializing in bioinformatics software. Includes a repository with 3000+ ready-to-install (with <code>conda install</code>) bioinformatics packages. [ <a href="https://pubmed.ncbi.nlm.nih.gov/29967506">paper-2018</a> | <a href="https://bioconda.github.io">web</a> ]</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/BioJulia">BioJulia</a></strong> - Bioinformatics and computational biology infastructure for the Julia programming language. [ <a href="https://biojulia.net">web</a> ]</p>
+</li>
+<li><strong><a href="https://github.com/rust-bio/rust-bio">Rust-Bio</a></strong> - Rust implementations of algorithms and data structures useful for bioinformatics. [ <a href="http://bioinformatics.oxfordjournals.org/content/early/2015/10/06/bioinformatics.btv573.short?rss=1">paper-2016</a> ]</li>
+<li><strong><a href="https://github.com/seqan/seqan3">SeqAn</a></strong> - The modern C++ library for sequence analysis.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'bioinformatics_README.md';
 
         fetch(markdownFile)
@@ -48,21 +209,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

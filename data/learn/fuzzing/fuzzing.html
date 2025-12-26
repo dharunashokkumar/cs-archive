@@ -8,38 +8,139 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cpuu Awesome Fuzzing - Awesome List Resources">
-    <title>Cpuu Awesome Fuzzing</title>
+    <meta name="description" content="> Fuzzing or fuzz testing is an automated software testing technique that involves providing invalid, unexpected, or random data as inputs to a computer...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Fuzzing [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Fuzzing <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<blockquote>
+<p><a href="https://en.wikipedia.org/wiki/Fuzzing">Fuzzing</a> or fuzz testing is an automated software testing technique that involves providing invalid, unexpected, or random data as inputs to a computer program. The program is then monitored for exceptions such as crashes, failing built-in code assertions, or potential memory leaks. Typically, fuzzers are used to test programs that take structured inputs. </p>
+</blockquote>
+<p>A curated list of references to awesome Fuzzing for security testing. Additionally there is a collection of freely available academic papers, tools and so on.</p>
+<p>Your favorite tool or your own paper is not listed? Fork and create a Pull Request to add it!</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#books">Books</a></li>
+<li><a href="#papers">Papers</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#platform">Platform</a></li>
+</ul>
+<h2>Books</h2>
+<ul>
+<li><a href="https://github.com/antonio-morales/Fuzzing101">Fuzzing-101</a></li>
+<li><a href="https://www.fuzzingbook.org/">The Fuzzing Book</a> (2019)</li>
+<li><a href="https://ieeexplore.ieee.org/document/8863940">The Art, Science, and Engineering of Fuzzing: A Survey</a> (2019) - 
+Actually, this document is a paper, but it contains more important and essential content than any other book.</li>
+<li><a href="https://www.amazon.com/Fuzzing-Software-Security-Testing-Assurance/dp/1608078507/">Fuzzing for Software Security Testing and Quality Assurance, 2nd Edition</a> (2018)</li>
+<li><a href="https://www.amazon.com/Fuzzing-Brute-Force-Vulnerability-Discovery/dp/0321446119/">Fuzzing: Brute Force Vulnerability Discovery, 1st Edition</a> (2007)</li>
+<li><a href="https://www.amazon.com/Open-Source-Fuzzing-Tools-Rathaus/dp/1597491950/">Open Source Fuzzing Tools, 1st Edition</a> (2007)</li>
+</ul>
+<h2>Talks</h2>
+<ul>
+<li><a href="https://www.youtube.com/channel/UCGD1Qt2jgnFRjrfAITGdNfQ">Fuzzing Labs - Patrick Ventuzelo</a>, Youtube</li>
+<li><a href="https://youtu.be/qTTwqFRD1H8">Effective File Format Fuzzing</a>, Black Hat Europe 2016</li>
+<li><a href="https://www.youtube.com/watch?v=SngK4W4tVc0">Adventures in Fuzzing</a>, NYU Talk 2018</li>
+<li><a href="https://www.youtube.com/watch?v=DFQT1YxvpDo">Fuzzing with AFL</a>, NDC Conferences 2018</li>
+</ul>
+<h2>Papers</h2>
+<p>To achieve a well-defined scope, I have chosen to include publications on fuzzing in the last proceedings of 4
+top major security conferences and others from Jan 2008 to Jul 2019.
+It includes (i) Network and Distributed System Security Symposium (NDSS), (ii) IEEE Symposium on
+Security and Privacy (S&amp;P), (iii) USENIX Security Symposium (USEC), and (iv) ACM Conference on Computer and Communications Security (CCS).</p>
+<h3>The Network and Distributed System Security Symposium (NDSS)</h3>
+<ul>
+<li><a href="https://www.ndss-symposium.org/wp-content/uploads/2022-345-paper.pdf">Semantic-Informed Driver Fuzzing Without Both the Hardware Devices and the Emulators, 2022</a></li>
+<li><a href="https://www.ndss-symposium.org/wp-content/uploads/2022-314-paper.pdf">MobFuzz: Adaptive Multi-objective Optimization in Gray-box Fuzzing, 2022</a></li>
+<li><a href="https://www.ndss-symposium.org/wp-content/uploads/2022-296-paper.pdf">Context-Sensitive and Directional Concurrency Fuzzing for Data-Race Detection, 2022</a></li>
+<li><a href="https://www.ndss-symposium.org/wp-content/uploads/2022-162-paper.pdf">EMS: History-Driven Mutation for Coverage-based Fuzzing, 2022</a></li>
+<li><a href="https://taesoo.kim/pubs/2021/jung:winnie.pdf">WINNIE : Fuzzing Windows Applications with Harness Synthesis and Fast Cloning, 2021</a></li>
+<li><a href="https://www.cs.ucr.edu/~heng/pubs/afl-hier.pdf">Reinforcement Learning-based Hierarchical Seed Scheduling for Greybox Fuzzing, 2021</a></li>
+<li><a href="https://beerkay.github.io/papers/Berkay2021PGFuzzNDSS.pdf">PGFUZZ: Policy-Guided Fuzzing for Robotic Vehicles, 2021</a></li>
+<li><a href="https://www.ndss-symposium.org/wp-content/uploads/ndss2021_6A-2_24224_paper.pdf">Favocado: Fuzzing Binding Code of JavaScript Engines Using Semantically Correct Test Cases, 2021</a></li>
+<li><a href="https://www.unexploitable.systems/publication/kimhfl/">HFL: Hybrid Fuzzing on the Linux Kernel, 2020</a></li>
+<li><a href="https://www.researchgate.net/publication/339164746_HotFuzz_Discovering_Algorithmic_Denial-of-Service_Vulnerabilities_Through_Guided_Micro-Fuzzing">HotFuzz: Discovering Algorithmic Denial-of-Service Vulnerabilities Through Guided Micro-Fuzzing, 2020</a></li>
+<li><a href="https://www.syssec.ruhr-uni-bochum.de/media/emma/veroeffentlichungen/2020/02/07/Hyper-Cube-NDSS20.pdf">HYPER-CUBE: High-Dimensional Hypervisor Fuzzing, 2020</a></li>
+<li><a href="https://www.ndss-symposium.org/wp-content/uploads/2020/02/24422.pdf">Not All Coverage Measurements Are Equal: Fuzzing by Coverage Accounting for Input Prioritization, 2020</a></li>
+<li><a href="https://daramg.gift/paper/han-ndss2019.pdf">CodeAlchemist: Semantics-Aware Code Generation to Find Vulnerabilities in JavaScript Engines, 2019</a></li>
+<li><a href="https://people.cs.kuleuven.be/~stijn.volckaert/papers/2019_NDSS_PeriScope.pdf">PeriScope: An Effective Probing and Fuzzing Framework for the Hardware-OS Boundary, 2019</a></li>
+<li><a href="https://www.syssec.ruhr-uni-bochum.de/media/emma/veroeffentlichungen/2018/12/17/NDSS19-Redqueen.pdf">REDQUEEN: Fuzzing with Input-to-State Correspondence, 2019</a></li>
+<li><a href="https://www.cs.ucr.edu/~heng/pubs/digfuzz_ndss19.pdf">Send Hardest Problems My Way: Probabilistic Path Prioritization for Hybrid Fuzzing, 2019</a></li>
+<li><a href="https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_08-4_Zhang_paper.pdf">Life after Speech Recognition: Fuzzing Semantic Misinterpretation for Voice Assistant Applications, 2019</a></li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Fuzzing <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<blockquote>
+<p><a href="https://en.wikipedia.org/wiki/Fuzzing">Fuzzing</a> or fuzz testing is an automated software testing technique that involves providing invalid, unexpected, or random data as inputs to a computer program. The program is then monitored for exceptions such as crashes, failing built-in code assertions, or potential memory leaks. Typically, fuzzers are used to test programs that take structured inputs. </p>
+</blockquote>
+<p>A curated list of references to awesome Fuzzing for security testing. Additionally there is a collection of freely available academic papers, tools and so on.</p>
+<p>Your favorite tool or your own paper is not listed? Fork and create a Pull Request to add it!</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#books">Books</a></li>
+<li><a href="#papers">Papers</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#platform">Platform</a></li>
+</ul>
+<h2>Books</h2>
+<ul>
+<li><a href="https://github.com/antonio-morales/Fuzzing101">Fuzzing-101</a></li>
+<li><a href="https://www.fuzzingbook.org/">The Fuzzing Book</a> (2019)</li>
+<li><a href="https://ieeexplore.ieee.org/document/8863940">The Art, Science, and Engineering of Fuzzing: A Survey</a> (2019) - 
+Actually, this document is a paper, but it contains more important and essential content than any other book.</li>
+<li><a href="https://www.amazon.com/Fuzzing-Software-Security-Testing-Assurance/dp/1608078507/">Fuzzing for Software Security Testing and Quality Assurance, 2nd Edition</a> (2018)</li>
+<li><a href="https://www.amazon.com/Fuzzing-Brute-Force-Vulnerability-Discovery/dp/0321446119/">Fuzzing: Brute Force Vulnerability Discovery, 1st Edition</a> (2007)</li>
+<li><a href="https://www.amazon.com/Open-Source-Fuzzing-Tools-Rathaus/dp/1597491950/">Open Source Fuzzing Tools, 1st Edition</a> (2007)</li>
+</ul>
+<h2>Talks</h2>
+<ul>
+<li><a href="https://www.youtube.com/channel/UCGD1Qt2jgnFRjrfAITGdNfQ">Fuzzing Labs - Patrick Ventuzelo</a>, Youtube</li>
+<li><a href="https://youtu.be/qTTwqFRD1H8">Effective File Format Fuzzing</a>, Black Hat Europe 2016</li>
+<li><a href="https://www.youtube.com/watch?v=SngK4W4tVc0">Adventures in Fuzzing</a>, NYU Talk 2018</li>
+<li><a href="https://www.youtube.com/watch?v=DFQT1YxvpDo">Fuzzing with AFL</a>, NDC Conferences 2018</li>
+</ul>
+<h2>Papers</h2>
+<p>To achieve a well-defined scope, I have chosen to include publications on fuzzing in the last proceedings of 4
+top major security conferences and others from Jan 2008 to Jul 2019.
+It includes (i) Network and Distributed System Security Symposium (NDSS), (ii) IEEE Symposium on
+Security and Privacy (S&amp;P), (iii) USENIX Security Symposium (USEC), and (iv) ACM Conference on Computer and Communications Security (CCS).</p>
+<h3>The Network and Distributed System Security Symposium (NDSS)</h3>
+<ul>
+<li><a href="https://www.ndss-symposium.org/wp-content/uploads/2022-345-paper.pdf">Semantic-Informed Driver Fuzzing Without Both the Hardware Devices and the Emulators, 2022</a></li>
+<li><a href="https://www.ndss-symposium.org/wp-content/uploads/2022-314-paper.pdf">MobFuzz: Adaptive Multi-objective Optimization in Gray-box Fuzzing, 2022</a></li>
+<li><a href="https://www.ndss-symposium.org/wp-content/uploads/2022-296-paper.pdf">Context-Sensitive and Directional Concurrency Fuzzing for Data-Race Detection, 2022</a></li>
+<li><a href="https://www.ndss-symposium.org/wp-content/uploads/2022-162-paper.pdf">EMS: History-Driven Mutation for Coverage-based Fuzzing, 2022</a></li>
+<li><a href="https://taesoo.kim/pubs/2021/jung:winnie.pdf">WINNIE : Fuzzing Windows Applications with Harness Synthesis and Fast Cloning, 2021</a></li>
+<li><a href="https://www.cs.ucr.edu/~heng/pubs/afl-hier.pdf">Reinforcement Learning-based Hierarchical Seed Scheduling for Greybox Fuzzing, 2021</a></li>
+<li><a href="https://beerkay.github.io/papers/Berkay2021PGFuzzNDSS.pdf">PGFUZZ: Policy-Guided Fuzzing for Robotic Vehicles, 2021</a></li>
+<li><a href="https://www.ndss-symposium.org/wp-content/uploads/ndss2021_6A-2_24224_paper.pdf">Favocado: Fuzzing Binding Code of JavaScript Engines Using Semantically Correct Test Cases, 2021</a></li>
+<li><a href="https://www.unexploitable.systems/publication/kimhfl/">HFL: Hybrid Fuzzing on the Linux Kernel, 2020</a></li>
+<li><a href="https://www.researchgate.net/publication/339164746_HotFuzz_Discovering_Algorithmic_Denial-of-Service_Vulnerabilities_Through_Guided_Micro-Fuzzing">HotFuzz: Discovering Algorithmic Denial-of-Service Vulnerabilities Through Guided Micro-Fuzzing, 2020</a></li>
+<li><a href="https://www.syssec.ruhr-uni-bochum.de/media/emma/veroeffentlichungen/2020/02/07/Hyper-Cube-NDSS20.pdf">HYPER-CUBE: High-Dimensional Hypervisor Fuzzing, 2020</a></li>
+<li><a href="https://www.ndss-symposium.org/wp-content/uploads/2020/02/24422.pdf">Not All Coverage Measurements Are Equal: Fuzzing by Coverage Accounting for Input Prioritization, 2020</a></li>
+<li><a href="https://daramg.gift/paper/han-ndss2019.pdf">CodeAlchemist: Semantics-Aware Code Generation to Find Vulnerabilities in JavaScript Engines, 2019</a></li>
+<li><a href="https://people.cs.kuleuven.be/~stijn.volckaert/papers/2019_NDSS_PeriScope.pdf">PeriScope: An Effective Probing and Fuzzing Framework for the Hardware-OS Boundary, 2019</a></li>
+<li><a href="https://www.syssec.ruhr-uni-bochum.de/media/emma/veroeffentlichungen/2018/12/17/NDSS19-Redqueen.pdf">REDQUEEN: Fuzzing with Input-to-State Correspondence, 2019</a></li>
+<li><a href="https://www.cs.ucr.edu/~heng/pubs/digfuzz_ndss19.pdf">Send Hardest Problems My Way: Probabilistic Path Prioritization for Hybrid Fuzzing, 2019</a></li>
+<li><a href="https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_08-4_Zhang_paper.pdf">Life after Speech Recognition: Fuzzing Semantic Misinterpretation for Voice Assistant Applications, 2019</a></li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'fuzzing_README.md';
 
         fetch(markdownFile)
@@ -48,21 +149,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

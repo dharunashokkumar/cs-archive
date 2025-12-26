@@ -8,38 +8,115 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="N2cholas Awesome Jax - Awesome List Resources">
-    <title>N2cholas Awesome Jax</title>
+    <meta name="description" content="JAX brings automatic differentiation and the XLA compiler together through a NumPy-like API for high performance machine learning research on accelerators like...">
+    <meta name="robots" content="index, follow">
+    <title>Jax - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <!--lint ignore double-link-->
+<h1>Awesome JAX <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a><a href="https://github.com/google/jax"><img src="https://raw.githubusercontent.com/google/jax/master/images/jax_logo_250px.png" alt="JAX Logo" align="right" height="100"></a></h1>
+<!--lint ignore double-link-->
+<p><a href="https://github.com/google/jax">JAX</a> brings automatic differentiation and the <a href="https://www.tensorflow.org/xla">XLA compiler</a> together through a <a href="https://numpy.org/">NumPy</a>-like API for high performance machine learning research on accelerators like GPUs and TPUs.</p>
+<!--lint enable double-link-->
+
+<p>This is a curated list of awesome JAX libraries, projects, and other resources. Contributions are welcome!</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#models-and-projects">Models and Projects</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#papers">Papers</a>https://github.com/jax-ml/jax</li>
+<li><a href="#tutorials-and-blog-posts">Tutorials and Blog Posts</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#community">Community</a></li>
+</ul>
+<p><a name="libraries" /></p>
+<h2>Libraries</h2>
+<ul>
+<li>Neural Network Libraries<ul>
+<li><a href="https://github.com/google/flax">Flax</a> - Centered on flexibility and clarity. <img src="https://img.shields.io/github/stars/google/flax?style=social" align="center"></li>
+<li><a href="https://github.com/google/flax/tree/main/flax/nnx">Flax NNX</a> - An evolution on Flax by the same team <img src="https://img.shields.io/github/stars/google/flax?style=social" align="center"></li>
+<li><a href="https://github.com/deepmind/dm-haiku">Haiku</a> - Focused on simplicity, created by the authors of Sonnet at DeepMind. <img src="https://img.shields.io/github/stars/deepmind/dm-haiku?style=social" align="center"></li>
+<li><a href="https://github.com/google/objax">Objax</a> - Has an object oriented design similar to PyTorch. <img src="https://img.shields.io/github/stars/google/objax?style=social" align="center"></li>
+<li><a href="https://poets-ai.github.io/elegy/">Elegy</a> - A High Level API for Deep Learning in JAX. Supports Flax, Haiku, and Optax. <img src="https://img.shields.io/github/stars/poets-ai/elegy?style=social" align="center"></li>
+<li><a href="https://github.com/google/trax">Trax</a> - "Batteries included" deep learning library focused on providing solutions for common workloads. <img src="https://img.shields.io/github/stars/google/trax?style=social" align="center"></li>
+<li><a href="https://github.com/deepmind/jraph">Jraph</a> - Lightweight graph neural network library. <img src="https://img.shields.io/github/stars/deepmind/jraph?style=social" align="center"></li>
+<li><a href="https://github.com/google/neural-tangents">Neural Tangents</a> - High-level API for specifying neural networks of both finite and <em>infinite</em> width. <img src="https://img.shields.io/github/stars/google/neural-tangents?style=social" align="center"></li>
+<li><a href="https://github.com/huggingface/transformers">HuggingFace Transformers</a> - Ecosystem of pretrained Transformers for a wide range of natural language tasks (Flax). <img src="https://img.shields.io/github/stars/huggingface/transformers?style=social" align="center"></li>
+<li><a href="https://github.com/patrick-kidger/equinox">Equinox</a> - Callable PyTrees and filtered JIT/grad transformations =&gt; neural networks in JAX. <img src="https://img.shields.io/github/stars/patrick-kidger/equinox?style=social" align="center"></li>
+<li><a href="https://github.com/google-research/scenic">Scenic</a> - A Jax Library for Computer Vision Research and Beyond.  <img src="https://img.shields.io/github/stars/google-research/scenic?style=social" align="center"></li>
+<li><a href="https://github.com/google-deepmind/penzai">Penzai</a> - Prioritizes legibility, visualization, and easy editing of neural network models with composable tools and a simple mental model.  <img src="https://img.shields.io/github/stars/google-deepmind/penzai?style=social" align="center"></li>
+</ul>
+</li>
+<li><a href="https://github.com/stanford-crfm/levanter">Levanter</a> - Legible, Scalable, Reproducible Foundation Models with Named Tensors and JAX.  <img src="https://img.shields.io/github/stars/stanford-crfm/levanter?style=social" align="center"></li>
+<li><a href="https://github.com/young-geng/EasyLM">EasyLM</a> - LLMs made easy: Pre-training, finetuning, evaluating and serving LLMs in JAX/Flax.  <img src="https://img.shields.io/github/stars/young-geng/EasyLM?style=social" align="center"></li>
+<li><a href="https://github.com/pyro-ppl/numpyro">NumPyro</a> - Probabilistic programming based on the Pyro library. <img src="https://img.shields.io/github/stars/pyro-ppl/numpyro?style=social" align="center"></li>
+<li><a href="https://github.com/deepmind/chex">Chex</a> - Utilities to write and test reliable JAX code. <img src="https://img.shields.io/github/stars/deepmind/chex?style=social" align="center"></li>
+<li><a href="https://github.com/deepmind/optax">Optax</a> - Gradient processing and optimization library. <img src="https://img.shields.io/github/stars/deepmind/optax?style=social" align="center"></li>
+<li><a href="https://github.com/deepmind/rlax">RLax</a> - Library for implementing reinforcement learning agents. <img src="https://img.shields.io/github/stars/deepmind/rlax?style=social" align="center"></li>
+<li><a href="https://github.com/google/jax-md">JAX, M.D.</a> - Accelerated, differential molecular dynamics. <img src="https://img.shields.io/github/stars/google/jax-md?style=social" align="center"></li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <!--lint ignore double-link-->
+<h1>Awesome JAX <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a><a href="https://github.com/google/jax"><img src="https://raw.githubusercontent.com/google/jax/master/images/jax_logo_250px.png" alt="JAX Logo" align="right" height="100"></a></h1>
+<!--lint ignore double-link-->
+<p><a href="https://github.com/google/jax">JAX</a> brings automatic differentiation and the <a href="https://www.tensorflow.org/xla">XLA compiler</a> together through a <a href="https://numpy.org/">NumPy</a>-like API for high performance machine learning research on accelerators like GPUs and TPUs.</p>
+<!--lint enable double-link-->
+
+<p>This is a curated list of awesome JAX libraries, projects, and other resources. Contributions are welcome!</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#models-and-projects">Models and Projects</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#papers">Papers</a>https://github.com/jax-ml/jax</li>
+<li><a href="#tutorials-and-blog-posts">Tutorials and Blog Posts</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#community">Community</a></li>
+</ul>
+<p><a name="libraries" /></p>
+<h2>Libraries</h2>
+<ul>
+<li>Neural Network Libraries<ul>
+<li><a href="https://github.com/google/flax">Flax</a> - Centered on flexibility and clarity. <img src="https://img.shields.io/github/stars/google/flax?style=social" align="center"></li>
+<li><a href="https://github.com/google/flax/tree/main/flax/nnx">Flax NNX</a> - An evolution on Flax by the same team <img src="https://img.shields.io/github/stars/google/flax?style=social" align="center"></li>
+<li><a href="https://github.com/deepmind/dm-haiku">Haiku</a> - Focused on simplicity, created by the authors of Sonnet at DeepMind. <img src="https://img.shields.io/github/stars/deepmind/dm-haiku?style=social" align="center"></li>
+<li><a href="https://github.com/google/objax">Objax</a> - Has an object oriented design similar to PyTorch. <img src="https://img.shields.io/github/stars/google/objax?style=social" align="center"></li>
+<li><a href="https://poets-ai.github.io/elegy/">Elegy</a> - A High Level API for Deep Learning in JAX. Supports Flax, Haiku, and Optax. <img src="https://img.shields.io/github/stars/poets-ai/elegy?style=social" align="center"></li>
+<li><a href="https://github.com/google/trax">Trax</a> - "Batteries included" deep learning library focused on providing solutions for common workloads. <img src="https://img.shields.io/github/stars/google/trax?style=social" align="center"></li>
+<li><a href="https://github.com/deepmind/jraph">Jraph</a> - Lightweight graph neural network library. <img src="https://img.shields.io/github/stars/deepmind/jraph?style=social" align="center"></li>
+<li><a href="https://github.com/google/neural-tangents">Neural Tangents</a> - High-level API for specifying neural networks of both finite and <em>infinite</em> width. <img src="https://img.shields.io/github/stars/google/neural-tangents?style=social" align="center"></li>
+<li><a href="https://github.com/huggingface/transformers">HuggingFace Transformers</a> - Ecosystem of pretrained Transformers for a wide range of natural language tasks (Flax). <img src="https://img.shields.io/github/stars/huggingface/transformers?style=social" align="center"></li>
+<li><a href="https://github.com/patrick-kidger/equinox">Equinox</a> - Callable PyTrees and filtered JIT/grad transformations =&gt; neural networks in JAX. <img src="https://img.shields.io/github/stars/patrick-kidger/equinox?style=social" align="center"></li>
+<li><a href="https://github.com/google-research/scenic">Scenic</a> - A Jax Library for Computer Vision Research and Beyond.  <img src="https://img.shields.io/github/stars/google-research/scenic?style=social" align="center"></li>
+<li><a href="https://github.com/google-deepmind/penzai">Penzai</a> - Prioritizes legibility, visualization, and easy editing of neural network models with composable tools and a simple mental model.  <img src="https://img.shields.io/github/stars/google-deepmind/penzai?style=social" align="center"></li>
+</ul>
+</li>
+<li><a href="https://github.com/stanford-crfm/levanter">Levanter</a> - Legible, Scalable, Reproducible Foundation Models with Named Tensors and JAX.  <img src="https://img.shields.io/github/stars/stanford-crfm/levanter?style=social" align="center"></li>
+<li><a href="https://github.com/young-geng/EasyLM">EasyLM</a> - LLMs made easy: Pre-training, finetuning, evaluating and serving LLMs in JAX/Flax.  <img src="https://img.shields.io/github/stars/young-geng/EasyLM?style=social" align="center"></li>
+<li><a href="https://github.com/pyro-ppl/numpyro">NumPyro</a> - Probabilistic programming based on the Pyro library. <img src="https://img.shields.io/github/stars/pyro-ppl/numpyro?style=social" align="center"></li>
+<li><a href="https://github.com/deepmind/chex">Chex</a> - Utilities to write and test reliable JAX code. <img src="https://img.shields.io/github/stars/deepmind/chex?style=social" align="center"></li>
+<li><a href="https://github.com/deepmind/optax">Optax</a> - Gradient processing and optimization library. <img src="https://img.shields.io/github/stars/deepmind/optax?style=social" align="center"></li>
+<li><a href="https://github.com/deepmind/rlax">RLax</a> - Library for implementing reinforcement learning agents. <img src="https://img.shields.io/github/stars/deepmind/rlax?style=social" align="center"></li>
+<li><a href="https://github.com/google/jax-md">JAX, M.D.</a> - Accelerated, differential molecular dynamics. <img src="https://img.shields.io/github/stars/google/jax-md?style=social" align="center"></li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'jax_README.md';
 
         fetch(markdownFile)
@@ -48,21 +125,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

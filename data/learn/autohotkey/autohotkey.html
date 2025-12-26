@@ -8,38 +8,211 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ahkscript Awesome Autohotkey - Awesome List Resources">
-    <title>Ahkscript Awesome Autohotkey</title>
+    <meta name="description" content="A curated list of awesome AutoHotkey libraries, library distributions, scripts, tools and resources. Inspired by the other awesome lists. Please read...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome AutoHotkey [![AutoHotkey](https://img.shields.io/badge/Language-AutoHotkey-yellowgreen.svg)](https://autohotkey.com/) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome AutoHotkey <a href="https://autohotkey.com/"><img alt="AutoHotkey" src="https://img.shields.io/badge/Language-AutoHotkey-yellowgreen.svg" /></a> <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A curated list of awesome <a href="https://autohotkey.com/">AutoHotkey</a> libraries, library distributions, scripts, tools and resources. Inspired by the other <a href="https://github.com/bayandin/awesome-awesomeness">awesome lists</a>. Please read <a href="https://github.com/ahkscript/awesome-AutoHotkey/blob/master/.github/CONTRIBUTING.md">CONTRIBUTING.md</a> before contributing.</p>
+<p>Out-of-date or discontinued, but nonetheless historically relevant items can be found on <a href="https://github.com/ahkscript/awesome-AutoHotkey/blob/master/Historical.md">Historical.md</a></p>
+<p>Development state: 
+<a href="https://travis-ci.org/ahkscript/awesome-AutoHotkey"><img alt="Build Status" src="https://travis-ci.org/ahkscript/awesome-AutoHotkey.svg" /></a> <a href="https://github.com/dkhamsing/awesome_bot"><img alt="awesome_bot" src="https://img.shields.io/badge/PoweredBy-awesome_bot-yellow.svg" /></a></p>
+<!-- Note: be sure to use unique anchor tags for each item in the table of contents -->
+<ul>
+<li><a href="#awesome-autohotkey">Awesome AutoHotkey</a></li>
+<li><a href="#libraries">Libraries</a><ul>
+<li><a href="#clipboard">Clipboard</a></li>
+<li><a href="#console">Console</a></li>
+<li><a href="#libraries-data-format">Data format</a></li>
+<li><a href="#libraries-data-structs-algorithms">Data Structures and Algorithms</a></li>
+<li><a href="#database">Database</a></li>
+<li><a href="#filesystem">Filesystem</a></li>
+<li><a href="#libraries-graphics">Graphics</a></li>
+<li><a href="#libraries-gui">GUI</a></li>
+<li><a href="#hotkeys">Hotkeys</a></li>
+<li><a href="#joystick">Joystick</a></li>
+<li><a href="#maths">Maths</a></li>
+<li><a href="#memory">Memory</a></li>
+<li><a href="#networking">Networking</a></li>
+<li><a href="#libraries-plotting">Plotting (graphs, bars, charts and etc)</a></li>
+<li><a href="#libraries-system">System</a></li>
+<li><a href="#text-manipulation">Text manipulation</a></li>
+</ul>
+</li>
+<li><a href="#library-distributions">Library Distributions</a></li>
+<li><a href="#scripts">Scripts</a><ul>
+<li><a href="#scripts-clipboard">Clipboard</a></li>
+<li><a href="#scripts-filesystem">Filesystem</a></li>
+<li><a href="#scripts-graphics">Graphics</a></li>
+<li><a href="#scripts-gui">GUI</a></li>
+<li><a href="#scripts-maths">Maths</a></li>
+<li><a href="#mouse">Mouse</a></li>
+<li><a href="#typing">Typing</a></li>
+<li><a href="#window-management">Window management</a></li>
+<li><a href="#games">Games</a></li>
+</ul>
+</li>
+<li><a href="#tools">Tools</a><ul>
+<li><a href="#interpreter">Interpreter</a></li>
+<li><a href="#decompilers">Decompilers</a></li>
+<li><a href="#debugging">Debugging</a></li>
+<li><a href="#integrated-development-environment">Integrated Development Environment</a></li>
+<li><a href="#gui-wysiwyg-builders">GUI WYSIWYG Builders</a></li>
+<li><a href="#script-recorders-and-writers">Script Recorders and Writers</a></li>
+<li><a href="#web-syntax-highlighters">Web Syntax Highlighters</a></li>
+<li><a href="#tools-others">Others</a></li>
+<li><a href="#use-in-other-programming-languages">(Use in) other programming languages</a></li>
+</ul>
+</li>
+<li><a href="#tutorials">Tutorials</a><ul>
+<li><a href="#tutorials-classes">Classes</a></li>
+<li><a href="#tutorials-com">COM</a></li>
+<li><a href="#tutorials-gui">GUI</a></li>
+<li><a href="#tutorials-mcode">MCode (machine code)</a></li>
+</ul>
+</li>
+<li><a href="#resources">Resources</a><ul>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#quick-start-guides">Quick-start guides</a></li>
+<li><a href="#websites">Websites</a></li>
+</ul>
+</li>
+<li><a href="#forks">Forks</a><ul>
+<li><a href="#autohotkey_h">AutoHotkey_H</a></li>
+</ul>
+</li>
+</ul>
+<hr/>
+
+<h2>Libraries</h2>
+<p><em>List of useful AutoHotkey libraries. Library is code that has some reusable functionality that can be combined with your own code in order to create new functionality.</em></p>
+<h3>Clipboard</h3>
+<ul>
+<li><a href="http://www.apathysoftworks.com/ahk/WinClip.zip">WinClip</a> - by Deo - WinClip is a clipboard manipulation class extending AutoHotkey's clipboard capabilities including support for RTF, HTML and images. Forum thread: <a href="https://autohotkey.com/board/topic/74670-class-winclip-direct-clipboard-manipulations/">link</a>.</li>
+</ul>
+<h3>Console</h3>
+<ul>
+<li><a href="https://github.com/G33kDude/Console">AHKonsole</a> - by G33kdude - Class based AutoHotkey library for console support. This library enables you to create an object representing a console to interact with, as well as multiple console buffer objects to facilitate in double buffering. Forum thread: <a href="https://autohotkey.com/boards/viewtopic.php?f=6&amp;t=4955">link</a>.</li>
+<li><a href="https://github.com/joedf/LibCon.ahk">LibCon</a> - by joedf - AutoHotkey Library For Console Support. This library enables you to write console applications and interact with other console instances. Basically, this library facilitates anything that has to do with writing and interacting with consoles. Forum thread: <a href="https://autohotkey.com/boards/viewtopic.php?t=17">link</a>.</li>
+</ul>
+<h3><a name="libraries-data-format"></a>Data format</h3>
+<ul>
+<li><a href="https://github.com/hoppfrosch/AHK_cTable">AHK_ctable</a> - by hoppfrosch - Library to handle strings in tabular format - Forum thread: <a href="https://autohotkey.com/board/topic/61256-object-table/://autohotkey.com/board/topic/61256-object-table/page-2?&amp;#entry467816">link</a>.</li>
+<li><a href="https://github.com/cocobelgica/AutoHotkey-JSON">AutoHotkey-JSON</a> - by cocobelgica - JSON lib for AutoHotkey. Forum thread: <a href="https://autohotkey.com/boards/viewtopic.php?f=6&amp;t=627">link</a>.</li>
+<li><a href="https://github.com/hi5/CSV">CSV</a> - by trueski/kdoske - Library to work with CSV files and Listview functions. Forum thread: <a href="https://autohotkey.com/boards/viewtopic.php?f=6&amp;t=34853">link</a>.</li>
+<li><a href="http://www.hars.us/SW/List.ahk">List manipulation functions</a> - by Laszlo - Function library to manipulate comma delimited lists. Forum thread: <a href="https://autohotkey.com/board/topic/3020-list-manipulation-functions/">link</a>.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome AutoHotkey <a href="https://autohotkey.com/"><img alt="AutoHotkey" src="https://img.shields.io/badge/Language-AutoHotkey-yellowgreen.svg" /></a> <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A curated list of awesome <a href="https://autohotkey.com/">AutoHotkey</a> libraries, library distributions, scripts, tools and resources. Inspired by the other <a href="https://github.com/bayandin/awesome-awesomeness">awesome lists</a>. Please read <a href="https://github.com/ahkscript/awesome-AutoHotkey/blob/master/.github/CONTRIBUTING.md">CONTRIBUTING.md</a> before contributing.</p>
+<p>Out-of-date or discontinued, but nonetheless historically relevant items can be found on <a href="https://github.com/ahkscript/awesome-AutoHotkey/blob/master/Historical.md">Historical.md</a></p>
+<p>Development state: 
+<a href="https://travis-ci.org/ahkscript/awesome-AutoHotkey"><img alt="Build Status" src="https://travis-ci.org/ahkscript/awesome-AutoHotkey.svg" /></a> <a href="https://github.com/dkhamsing/awesome_bot"><img alt="awesome_bot" src="https://img.shields.io/badge/PoweredBy-awesome_bot-yellow.svg" /></a></p>
+<!-- Note: be sure to use unique anchor tags for each item in the table of contents -->
+<ul>
+<li><a href="#awesome-autohotkey">Awesome AutoHotkey</a></li>
+<li><a href="#libraries">Libraries</a><ul>
+<li><a href="#clipboard">Clipboard</a></li>
+<li><a href="#console">Console</a></li>
+<li><a href="#libraries-data-format">Data format</a></li>
+<li><a href="#libraries-data-structs-algorithms">Data Structures and Algorithms</a></li>
+<li><a href="#database">Database</a></li>
+<li><a href="#filesystem">Filesystem</a></li>
+<li><a href="#libraries-graphics">Graphics</a></li>
+<li><a href="#libraries-gui">GUI</a></li>
+<li><a href="#hotkeys">Hotkeys</a></li>
+<li><a href="#joystick">Joystick</a></li>
+<li><a href="#maths">Maths</a></li>
+<li><a href="#memory">Memory</a></li>
+<li><a href="#networking">Networking</a></li>
+<li><a href="#libraries-plotting">Plotting (graphs, bars, charts and etc)</a></li>
+<li><a href="#libraries-system">System</a></li>
+<li><a href="#text-manipulation">Text manipulation</a></li>
+</ul>
+</li>
+<li><a href="#library-distributions">Library Distributions</a></li>
+<li><a href="#scripts">Scripts</a><ul>
+<li><a href="#scripts-clipboard">Clipboard</a></li>
+<li><a href="#scripts-filesystem">Filesystem</a></li>
+<li><a href="#scripts-graphics">Graphics</a></li>
+<li><a href="#scripts-gui">GUI</a></li>
+<li><a href="#scripts-maths">Maths</a></li>
+<li><a href="#mouse">Mouse</a></li>
+<li><a href="#typing">Typing</a></li>
+<li><a href="#window-management">Window management</a></li>
+<li><a href="#games">Games</a></li>
+</ul>
+</li>
+<li><a href="#tools">Tools</a><ul>
+<li><a href="#interpreter">Interpreter</a></li>
+<li><a href="#decompilers">Decompilers</a></li>
+<li><a href="#debugging">Debugging</a></li>
+<li><a href="#integrated-development-environment">Integrated Development Environment</a></li>
+<li><a href="#gui-wysiwyg-builders">GUI WYSIWYG Builders</a></li>
+<li><a href="#script-recorders-and-writers">Script Recorders and Writers</a></li>
+<li><a href="#web-syntax-highlighters">Web Syntax Highlighters</a></li>
+<li><a href="#tools-others">Others</a></li>
+<li><a href="#use-in-other-programming-languages">(Use in) other programming languages</a></li>
+</ul>
+</li>
+<li><a href="#tutorials">Tutorials</a><ul>
+<li><a href="#tutorials-classes">Classes</a></li>
+<li><a href="#tutorials-com">COM</a></li>
+<li><a href="#tutorials-gui">GUI</a></li>
+<li><a href="#tutorials-mcode">MCode (machine code)</a></li>
+</ul>
+</li>
+<li><a href="#resources">Resources</a><ul>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#quick-start-guides">Quick-start guides</a></li>
+<li><a href="#websites">Websites</a></li>
+</ul>
+</li>
+<li><a href="#forks">Forks</a><ul>
+<li><a href="#autohotkey_h">AutoHotkey_H</a></li>
+</ul>
+</li>
+</ul>
+<hr/>
+
+<h2>Libraries</h2>
+<p><em>List of useful AutoHotkey libraries. Library is code that has some reusable functionality that can be combined with your own code in order to create new functionality.</em></p>
+<h3>Clipboard</h3>
+<ul>
+<li><a href="http://www.apathysoftworks.com/ahk/WinClip.zip">WinClip</a> - by Deo - WinClip is a clipboard manipulation class extending AutoHotkey's clipboard capabilities including support for RTF, HTML and images. Forum thread: <a href="https://autohotkey.com/board/topic/74670-class-winclip-direct-clipboard-manipulations/">link</a>.</li>
+</ul>
+<h3>Console</h3>
+<ul>
+<li><a href="https://github.com/G33kDude/Console">AHKonsole</a> - by G33kdude - Class based AutoHotkey library for console support. This library enables you to create an object representing a console to interact with, as well as multiple console buffer objects to facilitate in double buffering. Forum thread: <a href="https://autohotkey.com/boards/viewtopic.php?f=6&amp;t=4955">link</a>.</li>
+<li><a href="https://github.com/joedf/LibCon.ahk">LibCon</a> - by joedf - AutoHotkey Library For Console Support. This library enables you to write console applications and interact with other console instances. Basically, this library facilitates anything that has to do with writing and interacting with consoles. Forum thread: <a href="https://autohotkey.com/boards/viewtopic.php?t=17">link</a>.</li>
+</ul>
+<h3><a name="libraries-data-format"></a>Data format</h3>
+<ul>
+<li><a href="https://github.com/hoppfrosch/AHK_cTable">AHK_ctable</a> - by hoppfrosch - Library to handle strings in tabular format - Forum thread: <a href="https://autohotkey.com/board/topic/61256-object-table/://autohotkey.com/board/topic/61256-object-table/page-2?&amp;#entry467816">link</a>.</li>
+<li><a href="https://github.com/cocobelgica/AutoHotkey-JSON">AutoHotkey-JSON</a> - by cocobelgica - JSON lib for AutoHotkey. Forum thread: <a href="https://autohotkey.com/boards/viewtopic.php?f=6&amp;t=627">link</a>.</li>
+<li><a href="https://github.com/hi5/CSV">CSV</a> - by trueski/kdoske - Library to work with CSV files and Listview functions. Forum thread: <a href="https://autohotkey.com/boards/viewtopic.php?f=6&amp;t=34853">link</a>.</li>
+<li><a href="http://www.hars.us/SW/List.ahk">List manipulation functions</a> - by Laszlo - Function library to manipulate comma delimited lists. Forum thread: <a href="https://autohotkey.com/board/topic/3020-list-manipulation-functions/">link</a>.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'autohotkey_README.md';
 
         fetch(markdownFile)
@@ -48,21 +221,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

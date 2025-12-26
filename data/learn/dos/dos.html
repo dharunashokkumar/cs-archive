@@ -8,38 +8,149 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Balintkissdev Awesome Dos - Awesome List Resources">
-    <title>Balintkissdev Awesome Dos</title>
+    <meta name="description" content="Family of operating systems for x86-based personal computers including IBM PC DOS and MS-DOS that were popular during the 1980s and early 1990s. A curated list...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome DOS [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome DOS <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p>Family of operating systems for x86-based personal computers including IBM PC DOS and MS-DOS that were popular during the 1980s and early 1990s.</p>
+<p><a href="https://github.com/balintkissdev/awesome-dos"><img src="logo.svg" align="right" width="100"></a></p>
+<p>A curated list of references for development of DOS applications and learning
+about the system itself. This includes list of compilers, tutorials, videos,
+links to free and paid books and source code to DOS operating systems and DOS
+games. The goal of this list is to collect information and act as a starting
+point for someone who wants to start out retro-programming for the DOS
+platform.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#development-tools">Development tools</a></li>
+<li><a href="#tutorials-and-programming-resources">Tutorials and programming resources</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#source-code">Source code</a></li>
+<li><a href="#open-source-dos-operating-systems">Open source DOS operating systems</a></li>
+<li><a href="#open-source-dos-libraries">Open source DOS libraries</a></li>
+<li><a href="#open-source-dos-games">Open source DOS games</a></li>
+<li><a href="#drivers-and-emulators">Drivers and emulators</a></li>
+</ul>
+<h2>Development tools</h2>
+<ul>
+<li><a href="https://gitlab.com/FreeDOS/devel/bcc">bcc - Bruce's C Compiler</a> - Bruce's C compiler is a simple C compiler that produces 8086 assembler for tiny/small memory models.</li>
+<li><a href="http://www.delorie.com/djgpp/">DJGPP</a> - DJ Delorie's complete 32-bit C/C++ development environment for Intel 80386. Used for Quake.</li>
+<li><a href="https://gitlab.com/tkchia/build-ia16/-/releases">GCC IA-16 toolchain</a> - A 16-bit counterpart to DJGPP, a GCC-based toolchain for developing 16-bit (8086 to 80286, a.k.a. IA-16) DOS applications, currently maintained by TK Chia.</li>
+<li><a href="https://www.bttr-software.de/products/insight/">Insight</a> - Very small debugger for real-mode DOS programs with Borland's Turbo like UI. Features an i80486 disassembler, and i8086 assembler.</li>
+<li><a href="https://web.archive.org/web/20220627162043/http://www.openwatcom.org/">Open Watcom</a> - Formerly commercial C/C++ development environment for 16- and 32-bit DOS and
+  Windows. The current official version is 1.9. A GitHub fork is also available. Used for Doom I-II, Warcraft I-II, Duke Nukem 3D, Full Throttle, Dark Forces and Retro City Rampage.</li>
+<li>The <a href="https://web.archive.org/web/20220630162351/http://www.openwatcom.org/doc.php">documentation</a> is very valuable in order to understand working with both version 1.9 and the V2 fork.</li>
+<li><a href="https://wiki.archlinux.org/index.php/Open_Watcom">Arch Wiki page</a></li>
+<li><a href="https://github.com/open-watcom/open-watcom-v2">Open Watcom V2</a> - GitHub fork which is actively maintained and is
+  ported to 64-bit Windows and Linux.</li>
+<li><a href="http://www.doshaven.eu/wp-content/uploads/2014/08/tc201.zip">Turbo C 2.01</a> - C IDE and compiler from Borland first released in 1987.</li>
+<li><a href="http://www.doshaven.eu/wp-content/uploads/2014/08/tcpp101.zip">Turbo C++ 1.01</a> - C++ IDE and compiler from Borland released in 1991.</li>
+<li><a href="https://archive.org/details/tcc_20210425">Turbo C++ 3.0</a> - C++ IDE and compiler from Borland released in 1992.</li>
+<li><a href="https://turboc.pages.dev/">Online version.</a></li>
+<li><a href="https://archive.org/details/div2_iso">DIV Games Studio 2</a> - IDE to develop DOS games in 2d, mode 7 and 3d. Released in 1998.</li>
+<li><a href="http://js.mikedx.co.uk/DIV1.html">Online version.</a></li>
+<li><a href="https://t3x.org/t3x/#t3x7">T3X</a> - A small, portable, procedural, block-structured, recursive, almost typeless, and to some degree object-oriented programming language by Nils M. Holm.</li>
+<li><a href="https://github.com/alexfru/SmallerC.git">SmallerC</a> - Portable self-hosting C compiler capable of producing executables for a number of platforms, including real and protected mode DOS programs, by Alexei A. Frounze.</li>
+<li><a href="https://github.com/humbertocsjr/Small-C.git">Small-C Toolkit</a> - A self-hosting Small-C Compiler Toolkit for DOS(8086) with: K&amp;R C Compiler, Make, Linker, Assembler. First released in 1982 by Jim E. Hendrix.</li>
+</ul>
+<h3>Memory managers</h3>
+<ul>
+<li><a href="https://github.com/sudleyplace/386MAX">386MAX</a> - Memory manager for DOS PCs with 386 or higher CPUs, <a href="https://winworldpc.com/product/386max/6x">released by Qualitas company in 1992</a>. Source code was released in June 2022 on GitHub with GPL-3.0 license.</li>
+</ul>
+<h3>Scripting languages and interpreters for DOS</h3>
+<ul>
+<li><a href="https://github.com/SuperIlu/DOjS">DOjS</a> - JavaScript programming environment for MS-DOS, FreeDOS or any DOS-based Windows (like 95, 98, ME).</li>
+<li><a href="https://archive.org/details/lua5.3.5">Lua for DOS</a> - Online demo of Lua 5.3.5, compiled for MS-DOS on the Intel 80486 processor.</li>
+<li><a href="https://github.com/pohmelie/micropython-freedos">Micropython for FreeDOS</a> - FreeDOS ad-hoc module for <a href="https://github.com/micropython/micropython">micropython</a>.</li>
+<li><a href="https://perldoc.perl.org/perldos">perldos</a> - Perl for DOS.</li>
+<li><a href="http://www.caddit.net/pythond/">PythonD</a> - Python for DOS, including multi-threading, networking and OpenGL.</li>
+</ul>
+<h2>Tutorials and programming resources</h2>
+<h3>History</h3>
+<ul>
+<li><a href="https://b13rg.github.io/Life-of-MS-DOS/">The Life of MS-DOS by Brendan Byers</a> - History of the DOS family including CP/M, Q-DOS/86-DOS, MS-DOS and PC-DOS. Article also includes a diagram of the timeline and family tree of DOS</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome DOS <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p>Family of operating systems for x86-based personal computers including IBM PC DOS and MS-DOS that were popular during the 1980s and early 1990s.</p>
+<p><a href="https://github.com/balintkissdev/awesome-dos"><img src="logo.svg" align="right" width="100"></a></p>
+<p>A curated list of references for development of DOS applications and learning
+about the system itself. This includes list of compilers, tutorials, videos,
+links to free and paid books and source code to DOS operating systems and DOS
+games. The goal of this list is to collect information and act as a starting
+point for someone who wants to start out retro-programming for the DOS
+platform.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#development-tools">Development tools</a></li>
+<li><a href="#tutorials-and-programming-resources">Tutorials and programming resources</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#source-code">Source code</a></li>
+<li><a href="#open-source-dos-operating-systems">Open source DOS operating systems</a></li>
+<li><a href="#open-source-dos-libraries">Open source DOS libraries</a></li>
+<li><a href="#open-source-dos-games">Open source DOS games</a></li>
+<li><a href="#drivers-and-emulators">Drivers and emulators</a></li>
+</ul>
+<h2>Development tools</h2>
+<ul>
+<li><a href="https://gitlab.com/FreeDOS/devel/bcc">bcc - Bruce's C Compiler</a> - Bruce's C compiler is a simple C compiler that produces 8086 assembler for tiny/small memory models.</li>
+<li><a href="http://www.delorie.com/djgpp/">DJGPP</a> - DJ Delorie's complete 32-bit C/C++ development environment for Intel 80386. Used for Quake.</li>
+<li><a href="https://gitlab.com/tkchia/build-ia16/-/releases">GCC IA-16 toolchain</a> - A 16-bit counterpart to DJGPP, a GCC-based toolchain for developing 16-bit (8086 to 80286, a.k.a. IA-16) DOS applications, currently maintained by TK Chia.</li>
+<li><a href="https://www.bttr-software.de/products/insight/">Insight</a> - Very small debugger for real-mode DOS programs with Borland's Turbo like UI. Features an i80486 disassembler, and i8086 assembler.</li>
+<li><a href="https://web.archive.org/web/20220627162043/http://www.openwatcom.org/">Open Watcom</a> - Formerly commercial C/C++ development environment for 16- and 32-bit DOS and
+  Windows. The current official version is 1.9. A GitHub fork is also available. Used for Doom I-II, Warcraft I-II, Duke Nukem 3D, Full Throttle, Dark Forces and Retro City Rampage.</li>
+<li>The <a href="https://web.archive.org/web/20220630162351/http://www.openwatcom.org/doc.php">documentation</a> is very valuable in order to understand working with both version 1.9 and the V2 fork.</li>
+<li><a href="https://wiki.archlinux.org/index.php/Open_Watcom">Arch Wiki page</a></li>
+<li><a href="https://github.com/open-watcom/open-watcom-v2">Open Watcom V2</a> - GitHub fork which is actively maintained and is
+  ported to 64-bit Windows and Linux.</li>
+<li><a href="http://www.doshaven.eu/wp-content/uploads/2014/08/tc201.zip">Turbo C 2.01</a> - C IDE and compiler from Borland first released in 1987.</li>
+<li><a href="http://www.doshaven.eu/wp-content/uploads/2014/08/tcpp101.zip">Turbo C++ 1.01</a> - C++ IDE and compiler from Borland released in 1991.</li>
+<li><a href="https://archive.org/details/tcc_20210425">Turbo C++ 3.0</a> - C++ IDE and compiler from Borland released in 1992.</li>
+<li><a href="https://turboc.pages.dev/">Online version.</a></li>
+<li><a href="https://archive.org/details/div2_iso">DIV Games Studio 2</a> - IDE to develop DOS games in 2d, mode 7 and 3d. Released in 1998.</li>
+<li><a href="http://js.mikedx.co.uk/DIV1.html">Online version.</a></li>
+<li><a href="https://t3x.org/t3x/#t3x7">T3X</a> - A small, portable, procedural, block-structured, recursive, almost typeless, and to some degree object-oriented programming language by Nils M. Holm.</li>
+<li><a href="https://github.com/alexfru/SmallerC.git">SmallerC</a> - Portable self-hosting C compiler capable of producing executables for a number of platforms, including real and protected mode DOS programs, by Alexei A. Frounze.</li>
+<li><a href="https://github.com/humbertocsjr/Small-C.git">Small-C Toolkit</a> - A self-hosting Small-C Compiler Toolkit for DOS(8086) with: K&amp;R C Compiler, Make, Linker, Assembler. First released in 1982 by Jim E. Hendrix.</li>
+</ul>
+<h3>Memory managers</h3>
+<ul>
+<li><a href="https://github.com/sudleyplace/386MAX">386MAX</a> - Memory manager for DOS PCs with 386 or higher CPUs, <a href="https://winworldpc.com/product/386max/6x">released by Qualitas company in 1992</a>. Source code was released in June 2022 on GitHub with GPL-3.0 license.</li>
+</ul>
+<h3>Scripting languages and interpreters for DOS</h3>
+<ul>
+<li><a href="https://github.com/SuperIlu/DOjS">DOjS</a> - JavaScript programming environment for MS-DOS, FreeDOS or any DOS-based Windows (like 95, 98, ME).</li>
+<li><a href="https://archive.org/details/lua5.3.5">Lua for DOS</a> - Online demo of Lua 5.3.5, compiled for MS-DOS on the Intel 80486 processor.</li>
+<li><a href="https://github.com/pohmelie/micropython-freedos">Micropython for FreeDOS</a> - FreeDOS ad-hoc module for <a href="https://github.com/micropython/micropython">micropython</a>.</li>
+<li><a href="https://perldoc.perl.org/perldos">perldos</a> - Perl for DOS.</li>
+<li><a href="http://www.caddit.net/pythond/">PythonD</a> - Python for DOS, including multi-threading, networking and OpenGL.</li>
+</ul>
+<h2>Tutorials and programming resources</h2>
+<h3>History</h3>
+<ul>
+<li><a href="https://b13rg.github.io/Life-of-MS-DOS/">The Life of MS-DOS by Brendan Byers</a> - History of the DOS family including CP/M, Q-DOS/86-DOS, MS-DOS and PC-DOS. Article also includes a diagram of the timeline and family tree of DOS</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'dos_README.md';
 
         fetch(markdownFile)
@@ -48,21 +159,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

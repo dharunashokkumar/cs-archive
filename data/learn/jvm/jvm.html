@@ -8,38 +8,177 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Deephacks Awesome Jvm - Awesome List Resources">
-    <title>Deephacks Awesome Jvm</title>
+    <meta name="description" content="A curated list of awesome JVM low level, performance and non-framework related stuff. - Awesome JVM - Bytecode - Garbage collectors - Load tools - Languages -...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome JVM [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome JVM <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A curated list of awesome JVM low level, performance and non-framework related stuff.</p>
+<ul>
+<li><a href="#awesome-jvm">Awesome JVM</a><ul>
+<li><a href="#bytecode">Bytecode</a></li>
+<li><a href="#garbage-collectors">Garbage collectors</a></li>
+<li><a href="#load-tools">Load tools</a></li>
+<li><a href="#languages">Languages</a></li>
+<li><a href="#machine-learning">Machine Learning</a></li>
+<li><a href="#memory-and-concurrency">Memory and Concurrency</a></li>
+<li><a href="#metaprogramming">Metaprogramming</a></li>
+<li><a href="#native">Native</a></li>
+<li><a href="#network">Network</a></li>
+<li><a href="#nix-tools">Nix tools</a></li>
+<li><a href="#profilers">Profilers</a></li>
+<li><a href="#runtimes">Runtimes</a></li>
+<li><a href="#virtual-machines">Virtual Machines</a></li>
+</ul>
+</li>
+<li><a href="#resources">Resources</a><ul>
+<li><a href="#communities">Communities</a>    </li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#media">Media</a></li>
+<li><a href="#people">People</a></li>
+</ul>
+</li>
+<li><a href="#contributing">Contributing</a></li>
+</ul>
+<h2>Bytecode</h2>
+<p><em>Tools for bytecode manipulation and analysis.</em></p>
+<ul>
+<li><a href="https://wiki.openjdk.java.net/display/CodeTools/asmtools">asmtools</a> - Used to develop tools for the production of Java .class files.</li>
+<li><a href="http://bytebuddy.net">Byte Buddy</a> - Code generation library creating Java classes at runtime without the help of a compiler.</li>
+<li><a href="https://github.com/qmx/jitescript">Jitescript</a> - Bytecode generation library similar to BiteScript. </li>
+</ul>
+<h2>Garbage collectors</h2>
+<p><em>Garbage collectors for the JVM.</em></p>
+<ul>
+<li><a href="https://www.azul.com/files/wp_pgc_zing_v52.pdf">Azul Pauseless Garbage Collection</a> - Providing continuous, pauseless operation for Java applications.</li>
+<li><a href="http://www.ibm.com/developerworks/websphere/techjournal/1108_sciampacone/1108_sciampacone.html">Balanced GC</a> - GC policy available in the Java Virtual Machine for IBM WebSphere Application Server V8.</li>
+<li><a href="http://openjdk.java.net/jeps/318">Epsilon GC</a> - Completely passive GC implementation with bounded allocation limit, and lowest runtime performance overhead possible.</li>
+<li><a href="http://www.oracle.com/technetwork/java/javase/tech/g1-intro-jsp-135488.html">G1</a> - The Garbage-First Garbage Collector.</li>
+<li><a href="http://openjdk.java.net/jeps/189">Shenandoah</a> - Ultra-Low-Pause-Time Garbage Collector.</li>
+<li><a href="http://gchandbook.org">The Garbage Collection Handbook</a> - Book that addresses new challenges to garbage collection made by recent advances in hardware and software.</li>
+<li><a href="http://mail.openjdk.java.net/pipermail/announce/2017-October/000237.html">ZGC</a> - Garbage collector optimized for low latency and very large heaps.</li>
+</ul>
+<h2>Load tools</h2>
+<p><em>Tools that generate load and measure the system accurately without coordinated omission</em></p>
+<ul>
+<li><a href="http://gatling.io">Gatling</a> - Asynchronous non-blocking scenario driven load testing tool for testing HTTP servers.</li>
+<li><a href="https://github.com/giltene/wrk2">wrk2</a> - A constant throughput, correct latency recording variant of wrk.</li>
+</ul>
+<h2>Languages</h2>
+<p><em>Languages running on the JVM.</em>
+* <a href="http://ceylon-lang.org/">Ceylon</a> - Object-oriented, strong and static programming language with an emphasis on immutability, created by Red Hat.
+* <a href="http://clojure.org/">Clojure</a> - Dialect of Lisp created by Rich Hickey. Dynamically typed with emphasis on functional programming.
+* <a href="http://www.erjang.org">Erjang</a> - A JVM-based Erlang VM.
+* <a href="http://eta-lang.org/">Eta</a> - Pure, lazy, strongly typed functional programming language on the JVM.
+* <a href="https://github.com/Frege/frege">Frege</a> - Pure functional programming language in the spirit of Haskell.
+* <a href="https://github.com/sridharv/gojava">gojava</a> - Java bindings for Go packages.
+* <a href="http://golo-lang.org/">Golo</a> - A simple dynamic language that makes extensive usage of <code>invokedynamic</code>.
+* <a href="http://www.groovy-lang.org/">Groovy</a> - Optionally typed and dynamic language, with static-typing and static compilation capabilities.
+* <a href="http://www.oracle.com/technetwork/java/javase/overview/index.html">Java</a> - General-purpose, concurrent, strongly typed, class-based object-oriented language.
+* <a href="http://jruby.org">JRuby</a> - Implementation of the Ruby language on the JVM.
+* <a href="https://github.com/jphp-group/jphp">JPHP</a> - PHP on the Java VM.
+* <a href="http://www.jython.org">Jython</a> - Python for the Java Platform.
+* <a href="http://www.gnu.org/software/kawa/">Kawa</a> - Extension of the Scheme language, which is in the Lisp family of programming languages.
+* <a href="http://kotlinlang.org/">Kotlin</a> - Statically typed programming language for the JVM, Android and the browser.
+* <a href="http://www.luaj.org/luaj/3.0/README.html">LuaJ</a> - Java-centric implementation of lua vm built to leverage standard Java features.
+* <a href="http://openjdk.java.net/projects/nashorn/">Nashorn</a> - Lightweight high-performance JavaScript runtime in Java with a native JVM.
+* <a href="http://www.ocamljava.org/">OCaml-Java</a> - Supports OCaml language v4. Generates plain Java bytecode and have seamless integration with Java.
+* <a href="https://github.com/mjanicek/rembulan">Rembulan</a> - Rembulan is an implementation of Lua 5.3 for the JVM, written in pure Java with minimal dependencies.
+* <a href="http://www.renjin.org/">Renjin</a> - JVM-based interpreter for the R language for the statistical analysis
+* <a href="http://www.scala-lang.org/">Scala</a> - Strong and static programming language that combine object-oriented and functional programming ideas.</p>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome JVM <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A curated list of awesome JVM low level, performance and non-framework related stuff.</p>
+<ul>
+<li><a href="#awesome-jvm">Awesome JVM</a><ul>
+<li><a href="#bytecode">Bytecode</a></li>
+<li><a href="#garbage-collectors">Garbage collectors</a></li>
+<li><a href="#load-tools">Load tools</a></li>
+<li><a href="#languages">Languages</a></li>
+<li><a href="#machine-learning">Machine Learning</a></li>
+<li><a href="#memory-and-concurrency">Memory and Concurrency</a></li>
+<li><a href="#metaprogramming">Metaprogramming</a></li>
+<li><a href="#native">Native</a></li>
+<li><a href="#network">Network</a></li>
+<li><a href="#nix-tools">Nix tools</a></li>
+<li><a href="#profilers">Profilers</a></li>
+<li><a href="#runtimes">Runtimes</a></li>
+<li><a href="#virtual-machines">Virtual Machines</a></li>
+</ul>
+</li>
+<li><a href="#resources">Resources</a><ul>
+<li><a href="#communities">Communities</a>    </li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#media">Media</a></li>
+<li><a href="#people">People</a></li>
+</ul>
+</li>
+<li><a href="#contributing">Contributing</a></li>
+</ul>
+<h2>Bytecode</h2>
+<p><em>Tools for bytecode manipulation and analysis.</em></p>
+<ul>
+<li><a href="https://wiki.openjdk.java.net/display/CodeTools/asmtools">asmtools</a> - Used to develop tools for the production of Java .class files.</li>
+<li><a href="http://bytebuddy.net">Byte Buddy</a> - Code generation library creating Java classes at runtime without the help of a compiler.</li>
+<li><a href="https://github.com/qmx/jitescript">Jitescript</a> - Bytecode generation library similar to BiteScript. </li>
+</ul>
+<h2>Garbage collectors</h2>
+<p><em>Garbage collectors for the JVM.</em></p>
+<ul>
+<li><a href="https://www.azul.com/files/wp_pgc_zing_v52.pdf">Azul Pauseless Garbage Collection</a> - Providing continuous, pauseless operation for Java applications.</li>
+<li><a href="http://www.ibm.com/developerworks/websphere/techjournal/1108_sciampacone/1108_sciampacone.html">Balanced GC</a> - GC policy available in the Java Virtual Machine for IBM WebSphere Application Server V8.</li>
+<li><a href="http://openjdk.java.net/jeps/318">Epsilon GC</a> - Completely passive GC implementation with bounded allocation limit, and lowest runtime performance overhead possible.</li>
+<li><a href="http://www.oracle.com/technetwork/java/javase/tech/g1-intro-jsp-135488.html">G1</a> - The Garbage-First Garbage Collector.</li>
+<li><a href="http://openjdk.java.net/jeps/189">Shenandoah</a> - Ultra-Low-Pause-Time Garbage Collector.</li>
+<li><a href="http://gchandbook.org">The Garbage Collection Handbook</a> - Book that addresses new challenges to garbage collection made by recent advances in hardware and software.</li>
+<li><a href="http://mail.openjdk.java.net/pipermail/announce/2017-October/000237.html">ZGC</a> - Garbage collector optimized for low latency and very large heaps.</li>
+</ul>
+<h2>Load tools</h2>
+<p><em>Tools that generate load and measure the system accurately without coordinated omission</em></p>
+<ul>
+<li><a href="http://gatling.io">Gatling</a> - Asynchronous non-blocking scenario driven load testing tool for testing HTTP servers.</li>
+<li><a href="https://github.com/giltene/wrk2">wrk2</a> - A constant throughput, correct latency recording variant of wrk.</li>
+</ul>
+<h2>Languages</h2>
+<p><em>Languages running on the JVM.</em>
+* <a href="http://ceylon-lang.org/">Ceylon</a> - Object-oriented, strong and static programming language with an emphasis on immutability, created by Red Hat.
+* <a href="http://clojure.org/">Clojure</a> - Dialect of Lisp created by Rich Hickey. Dynamically typed with emphasis on functional programming.
+* <a href="http://www.erjang.org">Erjang</a> - A JVM-based Erlang VM.
+* <a href="http://eta-lang.org/">Eta</a> - Pure, lazy, strongly typed functional programming language on the JVM.
+* <a href="https://github.com/Frege/frege">Frege</a> - Pure functional programming language in the spirit of Haskell.
+* <a href="https://github.com/sridharv/gojava">gojava</a> - Java bindings for Go packages.
+* <a href="http://golo-lang.org/">Golo</a> - A simple dynamic language that makes extensive usage of <code>invokedynamic</code>.
+* <a href="http://www.groovy-lang.org/">Groovy</a> - Optionally typed and dynamic language, with static-typing and static compilation capabilities.
+* <a href="http://www.oracle.com/technetwork/java/javase/overview/index.html">Java</a> - General-purpose, concurrent, strongly typed, class-based object-oriented language.
+* <a href="http://jruby.org">JRuby</a> - Implementation of the Ruby language on the JVM.
+* <a href="https://github.com/jphp-group/jphp">JPHP</a> - PHP on the Java VM.
+* <a href="http://www.jython.org">Jython</a> - Python for the Java Platform.
+* <a href="http://www.gnu.org/software/kawa/">Kawa</a> - Extension of the Scheme language, which is in the Lisp family of programming languages.
+* <a href="http://kotlinlang.org/">Kotlin</a> - Statically typed programming language for the JVM, Android and the browser.
+* <a href="http://www.luaj.org/luaj/3.0/README.html">LuaJ</a> - Java-centric implementation of lua vm built to leverage standard Java features.
+* <a href="http://openjdk.java.net/projects/nashorn/">Nashorn</a> - Lightweight high-performance JavaScript runtime in Java with a native JVM.
+* <a href="http://www.ocamljava.org/">OCaml-Java</a> - Supports OCaml language v4. Generates plain Java bytecode and have seamless integration with Java.
+* <a href="https://github.com/mjanicek/rembulan">Rembulan</a> - Rembulan is an implementation of Lua 5.3 for the JVM, written in pure Java with minimal dependencies.
+* <a href="http://www.renjin.org/">Renjin</a> - JVM-based interpreter for the R language for the statistical analysis
+* <a href="http://www.scala-lang.org/">Scala</a> - Strong and static programming language that combine object-oriented and functional programming ideas.</p>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'jvm_README.md';
 
         fetch(markdownFile)
@@ -48,21 +187,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

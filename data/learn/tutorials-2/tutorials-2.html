@@ -8,38 +8,323 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ujjwalkarn Machine Learning Tutorials - Awesome List Resources">
-    <title>Ujjwalkarn Machine Learning Tutorials</title>
+    <meta name="description" content="- This repository contains a topic-wise curated list of Machine Learning and Deep Learning tutorials, articles and other resources. Other awesome lists can be...">
+    <meta name="robots" content="index, follow">
+    <title>Tutorials 2 - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Machine Learning &amp; Deep Learning Tutorials <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<ul>
+<li>
+<p>This repository contains a topic-wise curated list of Machine Learning and Deep Learning tutorials, articles and other resources. Other awesome lists can be found in this <a href="https://github.com/sindresorhus/awesome">list</a>.</p>
+</li>
+<li>
+<p>If you want to contribute to this list, please read <a href="https://github.com/ujjwalkarn/Machine-Learning-Tutorials/blob/master/contributing.md">Contributing Guidelines</a>.</p>
+</li>
+<li>
+<p><a href="https://github.com/ujjwalkarn/DataScienceR">Curated list of R tutorials for Data Science, NLP and Machine Learning</a>.</p>
+</li>
+<li>
+<p><a href="https://github.com/ujjwalkarn/DataSciencePython">Curated list of Python tutorials for Data Science, NLP and Machine Learning</a>.</p>
+</li>
+</ul>
+<h2>Contents</h2>
+<ul>
+<li><a href="#general">Introduction</a></li>
+<li><a href="#interview">Interview Resources</a></li>
+<li><a href="#ai">Artificial Intelligence</a></li>
+<li><a href="#ga">Genetic Algorithms</a></li>
+<li><a href="#stat">Statistics</a></li>
+<li><a href="#blogs">Useful Blogs</a></li>
+<li><a href="#quora">Resources on Quora</a></li>
+<li><a href="#kaggle">Resources on Kaggle</a></li>
+<li><a href="#cs">Cheat Sheets</a></li>
+<li><a href="#classification">Classification</a></li>
+<li><a href="#linear">Linear Regression</a></li>
+<li><a href="#logistic">Logistic Regression</a></li>
+<li><a href="#validation">Model Validation using Resampling</a><ul>
+<li><a href="#cross">Cross Validation</a></li>
+<li><a href="#boot">Bootstraping</a></li>
+</ul>
+</li>
+<li><a href="#deep">Deep Learning</a><ul>
+<li><a href="#frame">Frameworks</a></li>
+<li><a href="#feed">Feed Forward Networks</a></li>
+<li><a href="#rnn">Recurrent Neural Nets, LSTM, GRU</a></li>
+<li><a href="#rbm">Restricted Boltzmann Machine, DBNs</a></li>
+<li><a href="#auto">Autoencoders</a></li>
+<li><a href="#cnn">Convolutional Neural Nets</a></li>
+<li><a href="#nrl">Graph Representation Learning</a></li>
+</ul>
+</li>
+<li><a href="#nlp">Natural Language Processing</a><ul>
+<li><a href="#topic">Topic Modeling, LDA</a></li>
+<li><a href="#word2vec">Word2Vec</a></li>
+</ul>
+</li>
+<li><a href="#vision">Computer Vision</a></li>
+<li><a href="#svm">Support Vector Machine</a></li>
+<li><a href="#rl">Reinforcement Learning</a></li>
+<li><a href="#dt">Decision Trees</a></li>
+<li><a href="#rf">Random Forest / Bagging</a></li>
+<li><a href="#gbm">Boosting</a></li>
+<li><a href="#ensem">Ensembles</a></li>
+<li><a href="#stack">Stacking Models</a></li>
+<li><a href="#vc">VC Dimension</a></li>
+<li><a href="#bayes">Bayesian Machine Learning</a></li>
+<li><a href="#semi">Semi Supervised Learning</a></li>
+<li><a href="#opt">Optimizations</a></li>
+<li><a href="#other">Other Useful Tutorials</a></li>
+</ul>
+<p><a name="general" /></p>
+<h2>Introduction</h2>
+<ul>
+<li>
+<p><a href="https://www.coursera.org/learn/machine-learning">Machine Learning Course by Andrew Ng (Stanford University)</a></p>
+</li>
+<li>
+<p><a href="https://github.com/dair-ai/ML-YouTube-Courses">AI/ML YouTube Courses</a></p>
+</li>
+<li>
+<p><a href="https://hackr.io/tutorials/learn-machine-learning-ml">Curated List of Machine Learning Resources</a></p>
+</li>
+<li>
+<p><a href="http://www.dataschool.io/15-hours-of-expert-machine-learning-videos/">In-depth introduction to machine learning in 15 hours of expert videos</a></p>
+</li>
+<li>
+<p><a href="http://www-bcf.usc.edu/~gareth/ISL/">An Introduction to Statistical Learning</a></p>
+</li>
+<li>
+<p><a href="https://github.com/prakhar1989/awesome-courses#machine-learning">List of Machine Learning University Courses</a></p>
+</li>
+<li>
+<p><a href="https://github.com/ZuzooVn/machine-learning-for-software-engineers">Machine Learning for Software Engineers</a></p>
+</li>
+<li>
+<p><a href="https://github.com/hangtwenty/dive-into-machine-learning">Dive into Machine Learning</a></p>
+</li>
+<li>
+<p><a href="https://github.com/josephmisiti/awesome-machine-learning">A curated list of awesome Machine Learning frameworks, libraries and software</a></p>
+</li>
+<li>
+<p><a href="https://github.com/fasouto/awesome-dataviz">A curated list of awesome data visualization libraries and resources.</a></p>
+</li>
+<li>
+<p><a href="https://github.com/okulbilisim/awesome-datascience">An awesome Data Science repository to learn and apply for real world problems</a></p>
+</li>
+<li>
+<p><a href="http://datasciencemasters.org/">The Open Source Data Science Masters</a></p>
+</li>
+<li>
+<p><a href="http://stats.stackexchange.com/questions/tagged/machine-learning">Machine Learning FAQs on Cross Validated</a></p>
+</li>
+<li>
+<p><a href="https://www.quora.com/What-are-some-Machine-Learning-algorithms-that-you-should-always-have-a-strong-understanding-of-and-why">Machine Learning algorithms that you should always have a strong understanding of</a></p>
+</li>
+<li>
+<p><a href="http://terpconnect.umd.edu/~bmomen/BIOM621/LineardepCorrOrthogonal.pdf">Difference between Linearly Independent, Orthogonal, and Uncorrelated Variables</a></p>
+</li>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/List_of_machine_learning_concepts">List of Machine Learning Concepts</a></p>
+</li>
+<li>
+<p><a href="http://www.slideshare.net/pierluca.lanzi/presentations">Slides on Several Machine Learning Topics</a></p>
+</li>
+<li>
+<p><a href="http://www.ai.mit.edu/courses/6.867-f04/lectures.html">MIT Machine Learning Lecture Slides</a></p>
+</li>
+<li>
+<p><a href="http://www.dataschool.io/comparing-supervised-learning-algorithms/">Comparison Supervised Learning Algorithms</a></p>
+</li>
+<li>
+<p><a href="http://www.dataschool.io/learning-data-science-fundamentals/">Learning Data Science Fundamentals</a></p>
+</li>
+<li>
+<p><a href="https://medium.com/@nomadic_mind/new-to-machine-learning-avoid-these-three-mistakes-73258b3848a4#.lih061l3l">Machine Learning mistakes to avoid</a></p>
+</li>
+<li>
+<p><a href="http://www.stat.cmu.edu/~larry/=sml/">Statistical Machine Learning Course</a></p>
+</li>
+<li>
+<p><a href="https://github.com/pedrosan/TheAnalyticsEdge">TheAnalyticsEdge edX Notes and Codes</a></p>
+</li>
+<li>
+<p><a href="https://github.com/humphd/have-fun-with-machine-learning">Have Fun With Machine Learning</a></p>
+</li>
+<li>
+<p><a href="http://theherdlocker.com/tweet/popularity/machinelearning">Twitter's Most Shared #machineLearning Content From The Past 7 Days</a></p>
+</li>
+<li>
+<p><a href="https://www.manning.com/books/grokking-machine-learning">Grokking Machine Learning</a></p>
+</li>
+</ul>
+<p><a name="interview" /></p>
+<h2>Interview Resources</h2>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Machine Learning &amp; Deep Learning Tutorials <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<ul>
+<li>
+<p>This repository contains a topic-wise curated list of Machine Learning and Deep Learning tutorials, articles and other resources. Other awesome lists can be found in this <a href="https://github.com/sindresorhus/awesome">list</a>.</p>
+</li>
+<li>
+<p>If you want to contribute to this list, please read <a href="https://github.com/ujjwalkarn/Machine-Learning-Tutorials/blob/master/contributing.md">Contributing Guidelines</a>.</p>
+</li>
+<li>
+<p><a href="https://github.com/ujjwalkarn/DataScienceR">Curated list of R tutorials for Data Science, NLP and Machine Learning</a>.</p>
+</li>
+<li>
+<p><a href="https://github.com/ujjwalkarn/DataSciencePython">Curated list of Python tutorials for Data Science, NLP and Machine Learning</a>.</p>
+</li>
+</ul>
+<h2>Contents</h2>
+<ul>
+<li><a href="#general">Introduction</a></li>
+<li><a href="#interview">Interview Resources</a></li>
+<li><a href="#ai">Artificial Intelligence</a></li>
+<li><a href="#ga">Genetic Algorithms</a></li>
+<li><a href="#stat">Statistics</a></li>
+<li><a href="#blogs">Useful Blogs</a></li>
+<li><a href="#quora">Resources on Quora</a></li>
+<li><a href="#kaggle">Resources on Kaggle</a></li>
+<li><a href="#cs">Cheat Sheets</a></li>
+<li><a href="#classification">Classification</a></li>
+<li><a href="#linear">Linear Regression</a></li>
+<li><a href="#logistic">Logistic Regression</a></li>
+<li><a href="#validation">Model Validation using Resampling</a><ul>
+<li><a href="#cross">Cross Validation</a></li>
+<li><a href="#boot">Bootstraping</a></li>
+</ul>
+</li>
+<li><a href="#deep">Deep Learning</a><ul>
+<li><a href="#frame">Frameworks</a></li>
+<li><a href="#feed">Feed Forward Networks</a></li>
+<li><a href="#rnn">Recurrent Neural Nets, LSTM, GRU</a></li>
+<li><a href="#rbm">Restricted Boltzmann Machine, DBNs</a></li>
+<li><a href="#auto">Autoencoders</a></li>
+<li><a href="#cnn">Convolutional Neural Nets</a></li>
+<li><a href="#nrl">Graph Representation Learning</a></li>
+</ul>
+</li>
+<li><a href="#nlp">Natural Language Processing</a><ul>
+<li><a href="#topic">Topic Modeling, LDA</a></li>
+<li><a href="#word2vec">Word2Vec</a></li>
+</ul>
+</li>
+<li><a href="#vision">Computer Vision</a></li>
+<li><a href="#svm">Support Vector Machine</a></li>
+<li><a href="#rl">Reinforcement Learning</a></li>
+<li><a href="#dt">Decision Trees</a></li>
+<li><a href="#rf">Random Forest / Bagging</a></li>
+<li><a href="#gbm">Boosting</a></li>
+<li><a href="#ensem">Ensembles</a></li>
+<li><a href="#stack">Stacking Models</a></li>
+<li><a href="#vc">VC Dimension</a></li>
+<li><a href="#bayes">Bayesian Machine Learning</a></li>
+<li><a href="#semi">Semi Supervised Learning</a></li>
+<li><a href="#opt">Optimizations</a></li>
+<li><a href="#other">Other Useful Tutorials</a></li>
+</ul>
+<p><a name="general" /></p>
+<h2>Introduction</h2>
+<ul>
+<li>
+<p><a href="https://www.coursera.org/learn/machine-learning">Machine Learning Course by Andrew Ng (Stanford University)</a></p>
+</li>
+<li>
+<p><a href="https://github.com/dair-ai/ML-YouTube-Courses">AI/ML YouTube Courses</a></p>
+</li>
+<li>
+<p><a href="https://hackr.io/tutorials/learn-machine-learning-ml">Curated List of Machine Learning Resources</a></p>
+</li>
+<li>
+<p><a href="http://www.dataschool.io/15-hours-of-expert-machine-learning-videos/">In-depth introduction to machine learning in 15 hours of expert videos</a></p>
+</li>
+<li>
+<p><a href="http://www-bcf.usc.edu/~gareth/ISL/">An Introduction to Statistical Learning</a></p>
+</li>
+<li>
+<p><a href="https://github.com/prakhar1989/awesome-courses#machine-learning">List of Machine Learning University Courses</a></p>
+</li>
+<li>
+<p><a href="https://github.com/ZuzooVn/machine-learning-for-software-engineers">Machine Learning for Software Engineers</a></p>
+</li>
+<li>
+<p><a href="https://github.com/hangtwenty/dive-into-machine-learning">Dive into Machine Learning</a></p>
+</li>
+<li>
+<p><a href="https://github.com/josephmisiti/awesome-machine-learning">A curated list of awesome Machine Learning frameworks, libraries and software</a></p>
+</li>
+<li>
+<p><a href="https://github.com/fasouto/awesome-dataviz">A curated list of awesome data visualization libraries and resources.</a></p>
+</li>
+<li>
+<p><a href="https://github.com/okulbilisim/awesome-datascience">An awesome Data Science repository to learn and apply for real world problems</a></p>
+</li>
+<li>
+<p><a href="http://datasciencemasters.org/">The Open Source Data Science Masters</a></p>
+</li>
+<li>
+<p><a href="http://stats.stackexchange.com/questions/tagged/machine-learning">Machine Learning FAQs on Cross Validated</a></p>
+</li>
+<li>
+<p><a href="https://www.quora.com/What-are-some-Machine-Learning-algorithms-that-you-should-always-have-a-strong-understanding-of-and-why">Machine Learning algorithms that you should always have a strong understanding of</a></p>
+</li>
+<li>
+<p><a href="http://terpconnect.umd.edu/~bmomen/BIOM621/LineardepCorrOrthogonal.pdf">Difference between Linearly Independent, Orthogonal, and Uncorrelated Variables</a></p>
+</li>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/List_of_machine_learning_concepts">List of Machine Learning Concepts</a></p>
+</li>
+<li>
+<p><a href="http://www.slideshare.net/pierluca.lanzi/presentations">Slides on Several Machine Learning Topics</a></p>
+</li>
+<li>
+<p><a href="http://www.ai.mit.edu/courses/6.867-f04/lectures.html">MIT Machine Learning Lecture Slides</a></p>
+</li>
+<li>
+<p><a href="http://www.dataschool.io/comparing-supervised-learning-algorithms/">Comparison Supervised Learning Algorithms</a></p>
+</li>
+<li>
+<p><a href="http://www.dataschool.io/learning-data-science-fundamentals/">Learning Data Science Fundamentals</a></p>
+</li>
+<li>
+<p><a href="https://medium.com/@nomadic_mind/new-to-machine-learning-avoid-these-three-mistakes-73258b3848a4#.lih061l3l">Machine Learning mistakes to avoid</a></p>
+</li>
+<li>
+<p><a href="http://www.stat.cmu.edu/~larry/=sml/">Statistical Machine Learning Course</a></p>
+</li>
+<li>
+<p><a href="https://github.com/pedrosan/TheAnalyticsEdge">TheAnalyticsEdge edX Notes and Codes</a></p>
+</li>
+<li>
+<p><a href="https://github.com/humphd/have-fun-with-machine-learning">Have Fun With Machine Learning</a></p>
+</li>
+<li>
+<p><a href="http://theherdlocker.com/tweet/popularity/machinelearning">Twitter's Most Shared #machineLearning Content From The Past 7 Days</a></p>
+</li>
+<li>
+<p><a href="https://www.manning.com/books/grokking-machine-learning">Grokking Machine Learning</a></p>
+</li>
+</ul>
+<p><a name="interview" /></p>
+<h2>Interview Resources</h2>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'tutorials-2_README.md';
 
         fetch(markdownFile)
@@ -48,21 +333,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

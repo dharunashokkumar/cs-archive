@@ -8,38 +8,229 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Apsdehal Awesome Ctf - Awesome List Resources">
-    <title>Apsdehal Awesome Ctf</title>
+    <meta name="description" content="A curated list of Capture The Flag (CTF) frameworks, libraries, resources, softwares and tutorials. This list aims to help starters as well as seasoned CTF...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome CTF [![Build Status](https://travis-ci.org/apsdehal/awesome-ctf.svg?branch=master)](https://travis-ci.org/apsdehal/awesome-ctf) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome CTF <a href="https://travis-ci.org/apsdehal/awesome-ctf"><img alt="Build Status" src="https://travis-ci.org/apsdehal/awesome-ctf.svg?branch=master" /></a> <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A curated list of <a href="https://en.wikipedia.org/wiki/Capture_the_flag#Computer_security">Capture The Flag</a> (CTF) frameworks, libraries, resources, softwares and tutorials. This list aims to help starters as well as seasoned CTF players to find everything related to CTFs at one place.</p>
+<h3>Contributing</h3>
+<p>Please take a quick look at the <a href="https://github.com/apsdehal/ctf-tools/blob/master/CONTRIBUTING.md">contribution guidelines</a> first.</p>
+<h4><em>If you know a tool that isn't present here, feel free to open a pull request.</em></h4>
+<h3>Why?</h3>
+<p>It takes time to build up collection of tools used in CTF and remember them all. This repo helps to keep all these scattered tools at one place.</p>
+<h3>Contents</h3>
+<ul>
+<li><a href="#awesome-ctf">Awesome CTF</a></li>
+<li><a href="#create">Create</a><ul>
+<li><a href="#forensics">Forensics</a></li>
+<li><a href="#platforms">Platforms</a></li>
+<li><a href="#steganography">Steganography</a></li>
+<li><a href="#web">Web</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#solve">Solve</a></p>
+<ul>
+<li><a href="#attacks">Attacks</a></li>
+<li><a href="#bruteforcers">Bruteforcers</a></li>
+<li><a href="#crypto">Cryptography</a></li>
+<li><a href="#exploits">Exploits</a></li>
+<li><a href="#forensics-1">Forensics</a></li>
+<li><a href="#networking">Networking</a></li>
+<li><a href="#reversing">Reversing</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#steganography-1">Steganography</a></li>
+<li><a href="#web-1">Web</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#resources">Resources</a></p>
+</li>
+<li><a href="#operating-systems">Operating Systems</a></li>
+<li><a href="#starter-packs">Starter Packs</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#wargames">Wargames</a></li>
+<li><a href="#websites">Websites</a></li>
+<li><a href="#wikis">Wikis</a></li>
+<li><a href="#writeups-collections">Writeups Collections</a></li>
+</ul>
+<h1>Create</h1>
+<p><em>Tools used for creating CTF challenges</em></p>
+<ul>
+<li><a href="https://www.packtpub.com/eu/networking-and-servers/kali-linux-ctf-blueprints">Kali Linux CTF Blueprints</a> - Online book on building, testing, and customizing your own Capture the Flag challenges.</li>
+</ul>
+<h2>Forensics</h2>
+<p><em>Tools used for creating Forensics challenges</em></p>
+<ul>
+<li><a href="https://github.com/iagox86/dnscat2">Dnscat2</a> - Hosts communication through DNS.</li>
+<li><a href="https://learn.duffandphelps.com/kape">Kroll Artifact Parser and Extractor (KAPE)</a> - Triage program.</li>
+<li><a href="https://www.magnetforensics.com/downloadaxiom">Magnet AXIOM</a> - Artifact-centric DFIR tool.</li>
+<li><a href="http://www.kahusecurity.com/posts/registry_dumper_find_and_dump_hidden_registry_keys.html">Registry Dumper</a> - Dump your registry.</li>
+</ul>
+<h2>Platforms</h2>
+<p><em>Projects that can be used to host a CTF</em></p>
+<ul>
+<li><a href="https://github.com/isislab/CTFd">CTFd</a> - Platform to host jeopardy style CTFs from ISISLab, NYU Tandon.</li>
+<li><a href="https://github.com/echoCTF/echoCTF.RED">echoCTF.RED</a> - Develop, deploy and maintain your own CTF infrastructure.</li>
+<li><a href="https://github.com/facebook/fbctf">FBCTF</a> - Platform to host Capture the Flag competitions from Facebook.</li>
+<li><a href="https://github.com/aau-network-security/haaukins">Haaukins</a>- A Highly Accessible and Automated Virtualization Platform for Security Education.</li>
+<li><a href="https://github.com/mcpa-stlouis/hack-the-arch">HackTheArch</a> - CTF scoring platform.</li>
+<li><a href="https://github.com/Nakiami/mellivora">Mellivora</a> - A CTF engine written in PHP.</li>
+<li><a href="https://github.com/andreafioraldi/motherfucking-ctf">MotherFucking-CTF</a> - Badass lightweight plaform to host CTFs. No JS involved.</li>
+<li><a href="https://github.com/UnrealAkama/NightShade">NightShade</a> - A simple security CTF framework.</li>
+<li><a href="https://github.com/easyctf/openctf">OpenCTF</a> - CTF in a box. Minimal setup required.</li>
+<li><a href="https://github.com/picoCTF/picoCTF">PicoCTF</a> - The platform used to run picoCTF. A great framework to host any CTF.</li>
+<li><a href="https://github.com/pdautry/py_chall_factory">PyChallFactory</a> - Small framework to create/manage/package jeopardy CTF challenges.</li>
+<li><a href="https://github.com/moloch--/RootTheBox">RootTheBox</a> - A Game of Hackers (CTF Scoreboard &amp; Game Manager).</li>
+<li><a href="https://github.com/legitbs/scorebot">Scorebot</a> - Platform for CTFs by Legitbs (Defcon).</li>
+<li><a href="https://github.com/cliffe/SecGen">SecGen</a> - Security Scenario Generator. Creates randomly vulnerable virtual machines.</li>
+</ul>
+<h2>Steganography</h2>
+<p><em>Tools used to create stego challenges</em></p>
+<p>Check solve section for steganography.</p>
+<h2>Web</h2>
+<p><em>Tools used for creating Web challenges</em></p>
+<p><em>JavaScript Obfustcators</em></p>
+<ul>
+<li><a href="https://github.com/rapid7/metasploit-framework/wiki/How-to-obfuscate-JavaScript-in-Metasploit">Metasploit JavaScript Obfuscator</a></li>
+<li><a href="https://github.com/mishoo/UglifyJS">Uglify</a></li>
+</ul>
+<h1>Solve</h1>
+<p><em>Tools used for solving CTF challenges</em></p>
+<h2>Attacks</h2>
+<p><em>Tools used for performing various kinds of attacks</em></p>
+<ul>
+<li><a href="https://github.com/bettercap/bettercap">Bettercap</a> - Framework to perform MITM (Man in the Middle) attacks.</li>
+<li><a href="https://github.com/tomac/yersinia">Yersinia</a> - Attack various protocols on layer 2.</li>
+</ul>
+<h2>Crypto</h2>
+<p><em>Tools used for solving Crypto challenges</em></p>
+<ul>
+<li><a href="https://gchq.github.io/CyberChef">CyberChef</a> - Web app for analysing and decoding data.</li>
+<li><a href="https://github.com/nccgroup/featherduster">FeatherDuster</a> - An automated, modular cryptanalysis tool.</li>
+<li><a href="https://github.com/iagox86/hash_extender">Hash Extender</a> - A utility tool for performing hash length extension attacks.</li>
+<li><a href="https://github.com/KishanBagaria/padding-oracle-attacker">padding-oracle-attacker</a> - A CLI tool to execute padding oracle attacks.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome CTF <a href="https://travis-ci.org/apsdehal/awesome-ctf"><img alt="Build Status" src="https://travis-ci.org/apsdehal/awesome-ctf.svg?branch=master" /></a> <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p>A curated list of <a href="https://en.wikipedia.org/wiki/Capture_the_flag#Computer_security">Capture The Flag</a> (CTF) frameworks, libraries, resources, softwares and tutorials. This list aims to help starters as well as seasoned CTF players to find everything related to CTFs at one place.</p>
+<h3>Contributing</h3>
+<p>Please take a quick look at the <a href="https://github.com/apsdehal/ctf-tools/blob/master/CONTRIBUTING.md">contribution guidelines</a> first.</p>
+<h4><em>If you know a tool that isn't present here, feel free to open a pull request.</em></h4>
+<h3>Why?</h3>
+<p>It takes time to build up collection of tools used in CTF and remember them all. This repo helps to keep all these scattered tools at one place.</p>
+<h3>Contents</h3>
+<ul>
+<li><a href="#awesome-ctf">Awesome CTF</a></li>
+<li><a href="#create">Create</a><ul>
+<li><a href="#forensics">Forensics</a></li>
+<li><a href="#platforms">Platforms</a></li>
+<li><a href="#steganography">Steganography</a></li>
+<li><a href="#web">Web</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#solve">Solve</a></p>
+<ul>
+<li><a href="#attacks">Attacks</a></li>
+<li><a href="#bruteforcers">Bruteforcers</a></li>
+<li><a href="#crypto">Cryptography</a></li>
+<li><a href="#exploits">Exploits</a></li>
+<li><a href="#forensics-1">Forensics</a></li>
+<li><a href="#networking">Networking</a></li>
+<li><a href="#reversing">Reversing</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#steganography-1">Steganography</a></li>
+<li><a href="#web-1">Web</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#resources">Resources</a></p>
+</li>
+<li><a href="#operating-systems">Operating Systems</a></li>
+<li><a href="#starter-packs">Starter Packs</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#wargames">Wargames</a></li>
+<li><a href="#websites">Websites</a></li>
+<li><a href="#wikis">Wikis</a></li>
+<li><a href="#writeups-collections">Writeups Collections</a></li>
+</ul>
+<h1>Create</h1>
+<p><em>Tools used for creating CTF challenges</em></p>
+<ul>
+<li><a href="https://www.packtpub.com/eu/networking-and-servers/kali-linux-ctf-blueprints">Kali Linux CTF Blueprints</a> - Online book on building, testing, and customizing your own Capture the Flag challenges.</li>
+</ul>
+<h2>Forensics</h2>
+<p><em>Tools used for creating Forensics challenges</em></p>
+<ul>
+<li><a href="https://github.com/iagox86/dnscat2">Dnscat2</a> - Hosts communication through DNS.</li>
+<li><a href="https://learn.duffandphelps.com/kape">Kroll Artifact Parser and Extractor (KAPE)</a> - Triage program.</li>
+<li><a href="https://www.magnetforensics.com/downloadaxiom">Magnet AXIOM</a> - Artifact-centric DFIR tool.</li>
+<li><a href="http://www.kahusecurity.com/posts/registry_dumper_find_and_dump_hidden_registry_keys.html">Registry Dumper</a> - Dump your registry.</li>
+</ul>
+<h2>Platforms</h2>
+<p><em>Projects that can be used to host a CTF</em></p>
+<ul>
+<li><a href="https://github.com/isislab/CTFd">CTFd</a> - Platform to host jeopardy style CTFs from ISISLab, NYU Tandon.</li>
+<li><a href="https://github.com/echoCTF/echoCTF.RED">echoCTF.RED</a> - Develop, deploy and maintain your own CTF infrastructure.</li>
+<li><a href="https://github.com/facebook/fbctf">FBCTF</a> - Platform to host Capture the Flag competitions from Facebook.</li>
+<li><a href="https://github.com/aau-network-security/haaukins">Haaukins</a>- A Highly Accessible and Automated Virtualization Platform for Security Education.</li>
+<li><a href="https://github.com/mcpa-stlouis/hack-the-arch">HackTheArch</a> - CTF scoring platform.</li>
+<li><a href="https://github.com/Nakiami/mellivora">Mellivora</a> - A CTF engine written in PHP.</li>
+<li><a href="https://github.com/andreafioraldi/motherfucking-ctf">MotherFucking-CTF</a> - Badass lightweight plaform to host CTFs. No JS involved.</li>
+<li><a href="https://github.com/UnrealAkama/NightShade">NightShade</a> - A simple security CTF framework.</li>
+<li><a href="https://github.com/easyctf/openctf">OpenCTF</a> - CTF in a box. Minimal setup required.</li>
+<li><a href="https://github.com/picoCTF/picoCTF">PicoCTF</a> - The platform used to run picoCTF. A great framework to host any CTF.</li>
+<li><a href="https://github.com/pdautry/py_chall_factory">PyChallFactory</a> - Small framework to create/manage/package jeopardy CTF challenges.</li>
+<li><a href="https://github.com/moloch--/RootTheBox">RootTheBox</a> - A Game of Hackers (CTF Scoreboard &amp; Game Manager).</li>
+<li><a href="https://github.com/legitbs/scorebot">Scorebot</a> - Platform for CTFs by Legitbs (Defcon).</li>
+<li><a href="https://github.com/cliffe/SecGen">SecGen</a> - Security Scenario Generator. Creates randomly vulnerable virtual machines.</li>
+</ul>
+<h2>Steganography</h2>
+<p><em>Tools used to create stego challenges</em></p>
+<p>Check solve section for steganography.</p>
+<h2>Web</h2>
+<p><em>Tools used for creating Web challenges</em></p>
+<p><em>JavaScript Obfustcators</em></p>
+<ul>
+<li><a href="https://github.com/rapid7/metasploit-framework/wiki/How-to-obfuscate-JavaScript-in-Metasploit">Metasploit JavaScript Obfuscator</a></li>
+<li><a href="https://github.com/mishoo/UglifyJS">Uglify</a></li>
+</ul>
+<h1>Solve</h1>
+<p><em>Tools used for solving CTF challenges</em></p>
+<h2>Attacks</h2>
+<p><em>Tools used for performing various kinds of attacks</em></p>
+<ul>
+<li><a href="https://github.com/bettercap/bettercap">Bettercap</a> - Framework to perform MITM (Man in the Middle) attacks.</li>
+<li><a href="https://github.com/tomac/yersinia">Yersinia</a> - Attack various protocols on layer 2.</li>
+</ul>
+<h2>Crypto</h2>
+<p><em>Tools used for solving Crypto challenges</em></p>
+<ul>
+<li><a href="https://gchq.github.io/CyberChef">CyberChef</a> - Web app for analysing and decoding data.</li>
+<li><a href="https://github.com/nccgroup/featherduster">FeatherDuster</a> - An automated, modular cryptanalysis tool.</li>
+<li><a href="https://github.com/iagox86/hash_extender">Hash Extender</a> - A utility tool for performing hash length extension attacks.</li>
+<li><a href="https://github.com/KishanBagaria/padding-oracle-attacker">padding-oracle-attacker</a> - A CLI tool to execute padding oracle attacks.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'ctf_README.md';
 
         fetch(markdownFile)
@@ -48,21 +239,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

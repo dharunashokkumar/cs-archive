@@ -8,38 +8,501 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Arslanbilal Git Cheat Sheet - Awesome List Resources">
-    <title>Arslanbilal Git Cheat Sheet</title>
+    <meta name="description" content="--- This comprehensive Git cheat sheet helps you master Git commands without memorizing everything. Whether you're a beginner or an experienced developer, this...">
+    <meta name="robots" content="index, follow">
+    <title>Git and Git Flow Cheat Sheet - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Git and Git Flow Cheat Sheet</h1>
+<p><a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></p>
+<p align="center">
+    <img alt="Git" src="./Img/git-logo.png" height="190" width="455">
+</p>
+
+<hr />
+<h2>📖 About</h2>
+<p>This comprehensive Git cheat sheet helps you master Git commands without memorizing everything. Whether you're a beginner or an experienced developer, this guide provides quick reference to essential Git operations.</p>
+<p><strong>Contributions Welcome!</strong> Feel free to:
+- Fix grammar mistakes
+- Add new commands
+- Translate to your language
+- Improve explanations</p>
+<hr />
+<h2>📋 Table of Contents</h2>
+<ul>
+<li><a href="#-setup">🔧 Setup</a></li>
+<li><a href="#️-configuration-files">⚙️ Configuration Files</a></li>
+<li><a href="#-create-repository">🆕 Create Repository</a></li>
+<li><a href="#-local-changes">📝 Local Changes</a></li>
+<li><a href="#-search">🔍 Search</a></li>
+<li><a href="#-commit-history">📖 Commit History</a></li>
+<li><a href="#-move--rename">📁 Move / Rename</a></li>
+<li><a href="#-branches--tags">🌿 Branches &amp; Tags</a></li>
+<li><a href="#-update--publish">🔄 Update &amp; Publish</a></li>
+<li><a href="#-merge--rebase">🔀 Merge &amp; Rebase</a></li>
+<li><a href="#️-undo">↩️ Undo</a></li>
+<li><a href="#-git-flow">🌊 Git Flow</a></li>
+<li><a href="#-other-languages">🌍 Other Languages</a></li>
+</ul>
+<hr />
+<h2>🔧 Setup</h2>
+<h3>View Configuration</h3>
+<p><strong>Show current configuration:</strong></p>
+<pre><code class="language-bash">git config --list
+</code></pre>
+<p><strong>Show repository configuration:</strong></p>
+<pre><code class="language-bash">git config --local --list
+</code></pre>
+<p><strong>Show global configuration:</strong></p>
+<pre><code class="language-bash">git config --global --list
+</code></pre>
+<p><strong>Show system configuration:</strong></p>
+<pre><code class="language-bash">git config --system --list
+</code></pre>
+<h3>User Configuration</h3>
+<p><strong>Set your name for version history:</strong></p>
+<pre><code class="language-bash">git config --global user.name &quot;[firstname lastname]&quot;
+</code></pre>
+<p><strong>Set your email address:</strong></p>
+<pre><code class="language-bash">git config --global user.email &quot;[valid-email]&quot;
+</code></pre>
+<h3>Display &amp; Editor Settings</h3>
+<p><strong>Enable automatic command line coloring:</strong></p>
+<pre><code class="language-bash">git config --global color.ui auto
+</code></pre>
+<p><strong>Set global editor for commits:</strong></p>
+<pre><code class="language-bash">git config --global core.editor vi
+</code></pre>
+<hr />
+<h2>⚙️ Configuration Files</h2>
+<table>
+<thead>
+<tr>
+<th>Scope</th>
+<th>Location</th>
+<th>Command Flag</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Repository</strong></td>
+<td><code>&lt;repo&gt;/.git/config</code></td>
+<td><code>--local</code></td>
+</tr>
+<tr>
+<td><strong>User</strong></td>
+<td><code>~/.gitconfig</code></td>
+<td><code>--global</code></td>
+</tr>
+<tr>
+<td><strong>System</strong></td>
+<td><code>/etc/gitconfig</code></td>
+<td><code>--system</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>🆕 Create Repository</h2>
+<h3>Clone Existing Repository</h3>
+<p><strong>Via SSH:</strong></p>
+<pre><code class="language-bash">git clone ssh://user@domain.com/repo.git
+</code></pre>
+<p><strong>Via HTTPS:</strong></p>
+<pre><code class="language-bash">git clone https://domain.com/user/repo.git
+</code></pre>
+<h3>Initialize New Repository</h3>
+<p><strong>Create repository in current directory:</strong></p>
+<pre><code class="language-bash">git init
+</code></pre>
+<p><strong>Create repository in specific directory:</strong></p>
+<pre><code class="language-bash">git init &lt;directory&gt;
+</code></pre>
+<hr />
+<h2>📝 Local Changes</h2>
+<h3>Check Status &amp; Differences</h3>
+<p><strong>View working directory status:</strong></p>
+<pre><code class="language-bash">git status
+</code></pre>
+<p><strong>Show changes to tracked files:</strong></p>
+<pre><code class="language-bash">git diff
+</code></pre>
+<p><strong>Show changes in specific file:</strong></p>
+<pre><code class="language-bash">git diff &lt;file&gt;
+</code></pre>
+<h3>Staging Changes</h3>
+<p><strong>Add all current changes:</strong></p>
+<pre><code class="language-bash">git add .
+</code></pre>
+<p><strong>Add specific files:</strong></p>
+<pre><code class="language-bash">git add &lt;filename1&gt; &lt;filename2&gt;
+</code></pre>
+<p><strong>Interactively add parts of a file:</strong></p>
+<pre><code class="language-bash">git add -p &lt;file&gt;
+</code></pre>
+<h3>Committing Changes</h3>
+<p><strong>Commit all tracked file changes:</strong></p>
+<pre><code class="language-bash">git commit -a
+</code></pre>
+<p><strong>Commit staged changes:</strong></p>
+<pre><code class="language-bash">git commit
+</code></pre>
+<p><strong>Commit with message:</strong></p>
+<pre><code class="language-bash">git commit -m 'message here'
+</code></pre>
+<p><strong>Skip staging and commit with message:</strong></p>
+<pre><code class="language-bash">git commit -am 'message here'
+</code></pre>
+<p><strong>Commit with specific date:</strong></p>
+<pre><code class="language-bash">git commit --date=&quot;`date --date='n day ago'`&quot; -am &quot;&lt;Commit Message Here&gt;&quot;
+</code></pre>
+<h3>Modify Last Commit</h3>
+<blockquote>
+<p>⚠️ <strong>Warning:</strong> Don't amend published commits!</p>
+</blockquote>
+<p><strong>Amend last commit:</strong></p>
+<pre><code class="language-bash">git commit -a --amend
+</code></pre>
+<p><strong>Amend without changing commit message:</strong></p>
+<pre><code class="language-bash">git commit --amend --no-edit
+</code></pre>
+<p><strong>Change committer date:</strong></p>
+<pre><code class="language-bash">GIT_COMMITTER_DATE=&quot;date&quot; git commit --amend
+</code></pre>
+<p><strong>Change author date:</strong></p>
+<pre><code class="language-bash">git commit --amend --date=&quot;date&quot;
+</code></pre>
+<h3>Stashing Changes</h3>
+<p><strong>Save current changes temporarily:</strong></p>
+<pre><code class="language-bash">git stash
+</code></pre>
+<p><strong>Apply last stashed changes:</strong></p>
+<pre><code class="language-bash">git stash apply
+</code></pre>
+<p><strong>Apply specific stash:</strong></p>
+<pre><code class="language-bash">git stash apply stash@{stash_number}
+</code></pre>
+<blockquote>
+<p>Use <code>git stash list</code> to see available stashes</p>
+</blockquote>
+<p><strong>Remove last stash:</strong></p>
+<pre><code class="language-bash">git stash drop
+</code></pre>
+<p><strong>Move uncommitted changes to another branch:</strong></p>
+<pre><code class="language-bash">git stash
+git checkout branch2
+git stash pop
+</code></pre>
+<hr />
+<h2>🔍 Search</h2>
+<h3>Text Search</h3>
+<p><strong>Search for text in all files:</strong></p>
+<pre><code class="language-bash">git grep &quot;Hello&quot;
+</code></pre>
+<p><strong>Search in specific version:</strong></p>
+<pre><code class="language-bash">git grep &quot;Hello&quot; v2.5
+</code></pre>
+<h3>Commit Search</h3>
+<p><strong>Find commits that introduced specific keyword:</strong></p>
+<pre><code class="language-bash">git log -S 'keyword'
+</code></pre>
+<p><strong>Search with regular expression:</strong></p>
+<pre><code class="language-bash">git log -S 'keyword' --pickaxe-regex
+</code></pre>
+<hr />
+<h2>📖 Commit History</h2>
+<h3>Basic History</h3>
+<p><strong>Show all commits (detailed):</strong></p>
+<pre><code class="language-bash">git log
+</code></pre>
+<p><strong>Show commits (one line each):</strong></p>
+<pre><code class="language-bash">git log --oneline
+</code></pre>
+<p><strong>Show commits by specific author:</strong></p>
+<pre><code class="language-bash">git log --author=&quot;username&quot;
+</code></pre>
+<p><strong>Show changes for specific file:</strong></p>
+<pre><code class="language-bash">git log -p &lt;file&gt;
+</code></pre>
+<h3>Advanced History</h3>
+<p><strong>Compare branches:</strong></p>
+<pre><code class="language-bash">git log --oneline &lt;origin/master&gt;..&lt;remote/master&gt; --left-right
+</code></pre>
+<p><strong>Show who changed what and when:</strong></p>
+<pre><code class="language-bash">git blame &lt;file&gt;
+</code></pre>
+<h3>Reference Logs</h3>
+<p><strong>Show reference log:</strong></p>
+<pre><code class="language-bash">git reflog show
+</code></pre>
+<p><strong>Delete reference log:</strong></p>
+<pre><code class="language-bash">git reflog delete
+</code></pre>
+<hr />
+<h2>📁 Move / Rename</h2>
+<p><strong>Rename a file:</strong></p>
+<pre><code class="language-bash">git mv Index.txt Index.html
+</code></pre>
+<hr />
+<h2>🌿 Branches &amp; Tags</h2>
+<h3>List Branches</h3>
+<p><strong>List local branches:</strong></p>
+<pre><code class="language-bash">git branch
+</code></pre>
+<p><strong>List all branches (local + remote):</strong></p>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Git and Git Flow Cheat Sheet</h1>
+<p><a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></p>
+<p align="center">
+    <img alt="Git" src="./Img/git-logo.png" height="190" width="455">
+</p>
+
+<hr />
+<h2>📖 About</h2>
+<p>This comprehensive Git cheat sheet helps you master Git commands without memorizing everything. Whether you're a beginner or an experienced developer, this guide provides quick reference to essential Git operations.</p>
+<p><strong>Contributions Welcome!</strong> Feel free to:
+- Fix grammar mistakes
+- Add new commands
+- Translate to your language
+- Improve explanations</p>
+<hr />
+<h2>📋 Table of Contents</h2>
+<ul>
+<li><a href="#-setup">🔧 Setup</a></li>
+<li><a href="#️-configuration-files">⚙️ Configuration Files</a></li>
+<li><a href="#-create-repository">🆕 Create Repository</a></li>
+<li><a href="#-local-changes">📝 Local Changes</a></li>
+<li><a href="#-search">🔍 Search</a></li>
+<li><a href="#-commit-history">📖 Commit History</a></li>
+<li><a href="#-move--rename">📁 Move / Rename</a></li>
+<li><a href="#-branches--tags">🌿 Branches &amp; Tags</a></li>
+<li><a href="#-update--publish">🔄 Update &amp; Publish</a></li>
+<li><a href="#-merge--rebase">🔀 Merge &amp; Rebase</a></li>
+<li><a href="#️-undo">↩️ Undo</a></li>
+<li><a href="#-git-flow">🌊 Git Flow</a></li>
+<li><a href="#-other-languages">🌍 Other Languages</a></li>
+</ul>
+<hr />
+<h2>🔧 Setup</h2>
+<h3>View Configuration</h3>
+<p><strong>Show current configuration:</strong></p>
+<pre><code class="language-bash">git config --list
+</code></pre>
+<p><strong>Show repository configuration:</strong></p>
+<pre><code class="language-bash">git config --local --list
+</code></pre>
+<p><strong>Show global configuration:</strong></p>
+<pre><code class="language-bash">git config --global --list
+</code></pre>
+<p><strong>Show system configuration:</strong></p>
+<pre><code class="language-bash">git config --system --list
+</code></pre>
+<h3>User Configuration</h3>
+<p><strong>Set your name for version history:</strong></p>
+<pre><code class="language-bash">git config --global user.name &quot;[firstname lastname]&quot;
+</code></pre>
+<p><strong>Set your email address:</strong></p>
+<pre><code class="language-bash">git config --global user.email &quot;[valid-email]&quot;
+</code></pre>
+<h3>Display &amp; Editor Settings</h3>
+<p><strong>Enable automatic command line coloring:</strong></p>
+<pre><code class="language-bash">git config --global color.ui auto
+</code></pre>
+<p><strong>Set global editor for commits:</strong></p>
+<pre><code class="language-bash">git config --global core.editor vi
+</code></pre>
+<hr />
+<h2>⚙️ Configuration Files</h2>
+<table>
+<thead>
+<tr>
+<th>Scope</th>
+<th>Location</th>
+<th>Command Flag</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Repository</strong></td>
+<td><code>&lt;repo&gt;/.git/config</code></td>
+<td><code>--local</code></td>
+</tr>
+<tr>
+<td><strong>User</strong></td>
+<td><code>~/.gitconfig</code></td>
+<td><code>--global</code></td>
+</tr>
+<tr>
+<td><strong>System</strong></td>
+<td><code>/etc/gitconfig</code></td>
+<td><code>--system</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>🆕 Create Repository</h2>
+<h3>Clone Existing Repository</h3>
+<p><strong>Via SSH:</strong></p>
+<pre><code class="language-bash">git clone ssh://user@domain.com/repo.git
+</code></pre>
+<p><strong>Via HTTPS:</strong></p>
+<pre><code class="language-bash">git clone https://domain.com/user/repo.git
+</code></pre>
+<h3>Initialize New Repository</h3>
+<p><strong>Create repository in current directory:</strong></p>
+<pre><code class="language-bash">git init
+</code></pre>
+<p><strong>Create repository in specific directory:</strong></p>
+<pre><code class="language-bash">git init &lt;directory&gt;
+</code></pre>
+<hr />
+<h2>📝 Local Changes</h2>
+<h3>Check Status &amp; Differences</h3>
+<p><strong>View working directory status:</strong></p>
+<pre><code class="language-bash">git status
+</code></pre>
+<p><strong>Show changes to tracked files:</strong></p>
+<pre><code class="language-bash">git diff
+</code></pre>
+<p><strong>Show changes in specific file:</strong></p>
+<pre><code class="language-bash">git diff &lt;file&gt;
+</code></pre>
+<h3>Staging Changes</h3>
+<p><strong>Add all current changes:</strong></p>
+<pre><code class="language-bash">git add .
+</code></pre>
+<p><strong>Add specific files:</strong></p>
+<pre><code class="language-bash">git add &lt;filename1&gt; &lt;filename2&gt;
+</code></pre>
+<p><strong>Interactively add parts of a file:</strong></p>
+<pre><code class="language-bash">git add -p &lt;file&gt;
+</code></pre>
+<h3>Committing Changes</h3>
+<p><strong>Commit all tracked file changes:</strong></p>
+<pre><code class="language-bash">git commit -a
+</code></pre>
+<p><strong>Commit staged changes:</strong></p>
+<pre><code class="language-bash">git commit
+</code></pre>
+<p><strong>Commit with message:</strong></p>
+<pre><code class="language-bash">git commit -m 'message here'
+</code></pre>
+<p><strong>Skip staging and commit with message:</strong></p>
+<pre><code class="language-bash">git commit -am 'message here'
+</code></pre>
+<p><strong>Commit with specific date:</strong></p>
+<pre><code class="language-bash">git commit --date=&quot;`date --date='n day ago'`&quot; -am &quot;&lt;Commit Message Here&gt;&quot;
+</code></pre>
+<h3>Modify Last Commit</h3>
+<blockquote>
+<p>⚠️ <strong>Warning:</strong> Don't amend published commits!</p>
+</blockquote>
+<p><strong>Amend last commit:</strong></p>
+<pre><code class="language-bash">git commit -a --amend
+</code></pre>
+<p><strong>Amend without changing commit message:</strong></p>
+<pre><code class="language-bash">git commit --amend --no-edit
+</code></pre>
+<p><strong>Change committer date:</strong></p>
+<pre><code class="language-bash">GIT_COMMITTER_DATE=&quot;date&quot; git commit --amend
+</code></pre>
+<p><strong>Change author date:</strong></p>
+<pre><code class="language-bash">git commit --amend --date=&quot;date&quot;
+</code></pre>
+<h3>Stashing Changes</h3>
+<p><strong>Save current changes temporarily:</strong></p>
+<pre><code class="language-bash">git stash
+</code></pre>
+<p><strong>Apply last stashed changes:</strong></p>
+<pre><code class="language-bash">git stash apply
+</code></pre>
+<p><strong>Apply specific stash:</strong></p>
+<pre><code class="language-bash">git stash apply stash@{stash_number}
+</code></pre>
+<blockquote>
+<p>Use <code>git stash list</code> to see available stashes</p>
+</blockquote>
+<p><strong>Remove last stash:</strong></p>
+<pre><code class="language-bash">git stash drop
+</code></pre>
+<p><strong>Move uncommitted changes to another branch:</strong></p>
+<pre><code class="language-bash">git stash
+git checkout branch2
+git stash pop
+</code></pre>
+<hr />
+<h2>🔍 Search</h2>
+<h3>Text Search</h3>
+<p><strong>Search for text in all files:</strong></p>
+<pre><code class="language-bash">git grep &quot;Hello&quot;
+</code></pre>
+<p><strong>Search in specific version:</strong></p>
+<pre><code class="language-bash">git grep &quot;Hello&quot; v2.5
+</code></pre>
+<h3>Commit Search</h3>
+<p><strong>Find commits that introduced specific keyword:</strong></p>
+<pre><code class="language-bash">git log -S 'keyword'
+</code></pre>
+<p><strong>Search with regular expression:</strong></p>
+<pre><code class="language-bash">git log -S 'keyword' --pickaxe-regex
+</code></pre>
+<hr />
+<h2>📖 Commit History</h2>
+<h3>Basic History</h3>
+<p><strong>Show all commits (detailed):</strong></p>
+<pre><code class="language-bash">git log
+</code></pre>
+<p><strong>Show commits (one line each):</strong></p>
+<pre><code class="language-bash">git log --oneline
+</code></pre>
+<p><strong>Show commits by specific author:</strong></p>
+<pre><code class="language-bash">git log --author=&quot;username&quot;
+</code></pre>
+<p><strong>Show changes for specific file:</strong></p>
+<pre><code class="language-bash">git log -p &lt;file&gt;
+</code></pre>
+<h3>Advanced History</h3>
+<p><strong>Compare branches:</strong></p>
+<pre><code class="language-bash">git log --oneline &lt;origin/master&gt;..&lt;remote/master&gt; --left-right
+</code></pre>
+<p><strong>Show who changed what and when:</strong></p>
+<pre><code class="language-bash">git blame &lt;file&gt;
+</code></pre>
+<h3>Reference Logs</h3>
+<p><strong>Show reference log:</strong></p>
+<pre><code class="language-bash">git reflog show
+</code></pre>
+<p><strong>Delete reference log:</strong></p>
+<pre><code class="language-bash">git reflog delete
+</code></pre>
+<hr />
+<h2>📁 Move / Rename</h2>
+<p><strong>Rename a file:</strong></p>
+<pre><code class="language-bash">git mv Index.txt Index.html
+</code></pre>
+<hr />
+<h2>🌿 Branches &amp; Tags</h2>
+<h3>List Branches</h3>
+<p><strong>List local branches:</strong></p>
+<pre><code class="language-bash">git branch
+</code></pre>
+<p><strong>List all branches (local + remote):</strong></p>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'git-cheat-sheet-git-flow_README.md';
 
         fetch(markdownFile)
@@ -48,21 +511,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

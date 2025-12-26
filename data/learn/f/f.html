@@ -8,38 +8,219 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fsprojects Awesome Fsharp - Awesome List Resources">
-    <title>Fsprojects Awesome Fsharp</title>
+    <meta name="description" content="F# is a programming language with focus on immutability, type inference, first-class functions, powerful data types and pattern matching, targeting .NET and...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome F# [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) <img src="https://fsharp.org/img/logo/fsharp.svg" width="48" height="48" align="right"/> - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome F# <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a> <img src="https://fsharp.org/img/logo/fsharp.svg" width="48" height="48" align="right"/></h1>
+<p>F# is a programming language with focus on immutability, type inference, first-class functions, powerful data types and pattern matching, targeting .NET and other platforms.</p>
+<p>This is a curated list of awesome F# frameworks, libraries, software and resources.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#main-language-related-repositories">Main Language-Related Repositories</a></li>
+<li><a href="#f-wrappers-for-popular-net-libraries">F# Wrappers for Popular .NET Libraries</a></li>
+<li><a href="#actor-frameworks">Actor Frameworks</a></li>
+<li><a href="#build-tools">Build Tools</a></li>
+<li><a href="#cloud">Cloud</a></li>
+<li><a href="#code-analysis">Code Analysis</a></li>
+<li><a href="#code-generation">Code Generation</a></li>
+<li><a href="#compilers-for-other-platforms">Compilers for Other Platforms</a></li>
+<li><a href="#concurrent-asynchronous-and-parallel-programming">Concurrent, Asynchronous, and Parallel Programming</a></li>
+<li><a href="#configuration">Configuration</a></li>
+<li><a href="#data-science">Data Science</a></li>
+<li><a href="#development-tools">Development Tools</a></li>
+<li><a href="#ide">IDE</a></li>
+<li><a href="#editor-plugins">Editor Plugins</a></li>
+<li><a href="#performance-analysis">Performance Analysis</a></li>
+<li><a href="#general-purpose-libraries">General Purpose Libraries</a></li>
+<li><a href="#game-development">Game Development</a></li>
+<li><a href="#gui">GUI</a></li>
+<li><a href="#http-clients">HTTP Clients</a></li>
+<li><a href="#logging">Logging</a></li>
+<li><a href="#package-management">Package Management</a></li>
+<li><a href="#parsing">Parsing</a></li>
+<li><a href="#serialization">Serialization</a></li>
+<li><a href="#simulation">Simulation</a></li>
+<li><a href="#static-site-generators">Static Site Generators</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#type-providers">Type Providers</a></li>
+<li><a href="#creating-type-providers">Creating Type Providers</a></li>
+<li><a href="#visualization">Visualization</a></li>
+<li><a href="#web-frameworks">Web Frameworks</a></li>
+<li><a href="#net-core-templates">.NET Core Templates</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#cheatsheets">Cheatsheets</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#other-lists">Other Lists</a></li>
+<li><a href="#websites">Websites</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#courses">Courses</a></li>
+</ul>
+<h2>Main Language-Related Repositories</h2>
+<ul>
+<li><a href="https://github.com/dotnet/fsharp">F# main repository</a></li>
+<li><a href="https://github.com/fsprojects">F# projects</a></li>
+<li><a href="https://github.com/fsharp/fslang-suggestions">F# suggestions</a></li>
+<li><a href="https://github.com/fsharp/fslang-design">F# RFCs</a></li>
+</ul>
+<h2>F# Wrappers for Popular .NET Libraries</h2>
+<p>Looking to have a more enjoyable experience when consuming a popular .NET library? Here is a quick table.</p>
+<!-- The following table includes some entries that are duplicated in the list below. This is by design. -->
+<!--lint disable double-link -->
+<table>
+<thead>
+<tr>
+<th>.NET Library</th>
+<th>F# Wrapper</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/dotnet/aspnetcore/tree/main/src/Components">SP.NTCore Blazor</a></td>
+<td><a href="https://github.com/fsbolero/Bolero">Bolero</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/dotnet/aspnetcore">ASP.NTCore</a></td>
+<td><a href="https://github.com/giraffe-fsharp/Giraffe">Giraffe</a> (+ optionally <a href="https://github.com/SaturnFramework/Saturn">Saturn</a>)<br/><a href="https://github.com/Lanayx/Oxpecker">Oxpecker</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/AvaloniaUI/Avalonia">Avalonia</a></td>
+<td><a href="https://github.com/fsprojects/Avalonia.FuncUI">Avalonia.FuncUI</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/dotnet/maui">MAUI</a>/<a href="https://github.com/xamarin/Xamarin.Forms">Xamarin.Forms</a></td>
+<td><a href="https://github.com/fabulous-dev/Fabulous">Fabulous</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/microsoft/testfx">MSTest</a>/<a href="https://github.com/nunit/nunit">NUnit</a>/<a href="https://github.com/xunit/xunit">xUnit.net</a></td>
+<td><a href="https://github.com/fsprojects/FsUnit">FsUnit</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/dotnet/runtime/tree/main/src/libraries/System.Text.Json">System.TetJson</a></td>
+<td><a href="https://github.com/Tarmil/FSharp.SystemTextJson">FSharp.SystemTextJson</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/dotnet/wpf">WPF</a></td>
+<td><a href="https://github.com/elmish/Elmish.WPF">Elmish.WPF</a></td>
+</tr>
+</tbody>
+</table>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome F# <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a> <img src="https://fsharp.org/img/logo/fsharp.svg" width="48" height="48" align="right"/></h1>
+<p>F# is a programming language with focus on immutability, type inference, first-class functions, powerful data types and pattern matching, targeting .NET and other platforms.</p>
+<p>This is a curated list of awesome F# frameworks, libraries, software and resources.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#main-language-related-repositories">Main Language-Related Repositories</a></li>
+<li><a href="#f-wrappers-for-popular-net-libraries">F# Wrappers for Popular .NET Libraries</a></li>
+<li><a href="#actor-frameworks">Actor Frameworks</a></li>
+<li><a href="#build-tools">Build Tools</a></li>
+<li><a href="#cloud">Cloud</a></li>
+<li><a href="#code-analysis">Code Analysis</a></li>
+<li><a href="#code-generation">Code Generation</a></li>
+<li><a href="#compilers-for-other-platforms">Compilers for Other Platforms</a></li>
+<li><a href="#concurrent-asynchronous-and-parallel-programming">Concurrent, Asynchronous, and Parallel Programming</a></li>
+<li><a href="#configuration">Configuration</a></li>
+<li><a href="#data-science">Data Science</a></li>
+<li><a href="#development-tools">Development Tools</a></li>
+<li><a href="#ide">IDE</a></li>
+<li><a href="#editor-plugins">Editor Plugins</a></li>
+<li><a href="#performance-analysis">Performance Analysis</a></li>
+<li><a href="#general-purpose-libraries">General Purpose Libraries</a></li>
+<li><a href="#game-development">Game Development</a></li>
+<li><a href="#gui">GUI</a></li>
+<li><a href="#http-clients">HTTP Clients</a></li>
+<li><a href="#logging">Logging</a></li>
+<li><a href="#package-management">Package Management</a></li>
+<li><a href="#parsing">Parsing</a></li>
+<li><a href="#serialization">Serialization</a></li>
+<li><a href="#simulation">Simulation</a></li>
+<li><a href="#static-site-generators">Static Site Generators</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#type-providers">Type Providers</a></li>
+<li><a href="#creating-type-providers">Creating Type Providers</a></li>
+<li><a href="#visualization">Visualization</a></li>
+<li><a href="#web-frameworks">Web Frameworks</a></li>
+<li><a href="#net-core-templates">.NET Core Templates</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#cheatsheets">Cheatsheets</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#other-lists">Other Lists</a></li>
+<li><a href="#websites">Websites</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#courses">Courses</a></li>
+</ul>
+<h2>Main Language-Related Repositories</h2>
+<ul>
+<li><a href="https://github.com/dotnet/fsharp">F# main repository</a></li>
+<li><a href="https://github.com/fsprojects">F# projects</a></li>
+<li><a href="https://github.com/fsharp/fslang-suggestions">F# suggestions</a></li>
+<li><a href="https://github.com/fsharp/fslang-design">F# RFCs</a></li>
+</ul>
+<h2>F# Wrappers for Popular .NET Libraries</h2>
+<p>Looking to have a more enjoyable experience when consuming a popular .NET library? Here is a quick table.</p>
+<!-- The following table includes some entries that are duplicated in the list below. This is by design. -->
+<!--lint disable double-link -->
+<table>
+<thead>
+<tr>
+<th>.NET Library</th>
+<th>F# Wrapper</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/dotnet/aspnetcore/tree/main/src/Components">SP.NTCore Blazor</a></td>
+<td><a href="https://github.com/fsbolero/Bolero">Bolero</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/dotnet/aspnetcore">ASP.NTCore</a></td>
+<td><a href="https://github.com/giraffe-fsharp/Giraffe">Giraffe</a> (+ optionally <a href="https://github.com/SaturnFramework/Saturn">Saturn</a>)<br/><a href="https://github.com/Lanayx/Oxpecker">Oxpecker</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/AvaloniaUI/Avalonia">Avalonia</a></td>
+<td><a href="https://github.com/fsprojects/Avalonia.FuncUI">Avalonia.FuncUI</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/dotnet/maui">MAUI</a>/<a href="https://github.com/xamarin/Xamarin.Forms">Xamarin.Forms</a></td>
+<td><a href="https://github.com/fabulous-dev/Fabulous">Fabulous</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/microsoft/testfx">MSTest</a>/<a href="https://github.com/nunit/nunit">NUnit</a>/<a href="https://github.com/xunit/xunit">xUnit.net</a></td>
+<td><a href="https://github.com/fsprojects/FsUnit">FsUnit</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/dotnet/runtime/tree/main/src/libraries/System.Text.Json">System.TetJson</a></td>
+<td><a href="https://github.com/Tarmil/FSharp.SystemTextJson">FSharp.SystemTextJson</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/dotnet/wpf">WPF</a></td>
+<td><a href="https://github.com/elmish/Elmish.WPF">Elmish.WPF</a></td>
+</tr>
+</tbody>
+</table>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'f_README.md';
 
         fetch(markdownFile)
@@ -48,21 +229,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

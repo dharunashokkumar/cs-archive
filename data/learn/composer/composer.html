@@ -8,38 +8,135 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jakoch Awesome Composer - Awesome List Resources">
-    <title>Jakoch Awesome Composer</title>
+    <meta name="description" content="> A curated list of resources for Composer, Packagist, Satis, Plugins, Scripts, Videos, Tutorials. You might also like awesome-php. Please read the...">
+    <meta name="robots" content="index, follow">
+    <title>Composer - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <!--lint disable double-link awesome-toc-->
+<h1>Awesome Composer <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a> <a href="https://github.com/jakoch/awesome-composer/actions/workflows/awesome-bot.yml"><img alt="Build on Windows" src="https://github.com/jakoch/awesome-composer/actions/workflows/awesome-bot.yml/badge.svg?branch=main" /></a> <a href=""><img alt="license" src="https://img.shields.io/github/license/jakoch/awesome-composer.svg?maxAge=2592000" /></a></h1>
+<p><a href="https://getcomposer.org/"><img src="https://raw.githubusercontent.com/jakoch/awesome-composer/master/logo-composer-transparent.png" align="right" width="150"></a></p>
+<blockquote>
+<p>A curated list of resources for Composer, Packagist, Satis, Plugins, Scripts, Videos, Tutorials.</p>
+</blockquote>
+<p>You might also like <a href="https://github.com/ziadoz/awesome-php">awesome-php</a>.</p>
+<p><em>Please read the <a href="https://github.com/jakoch/awesome-composer/blob/main/.github/CONTRIBUTING.md">contribution guidelines</a> before contributing.</em></p>
+<h2>Composer</h2>
+<ul>
+<li><a href="https://getcomposer.org/">Official Website</a></li>
+<li><a href="https://github.com/composer/composer">GitHub</a></li>
+<li><a href="https://github.com/composer/composer/issues">Issues</a></li>
+<li><a href="https://github.com/composer/composer/tree/HEAD/src/Composer">Source</a></li>
+<li><a href="https://getcomposer.org/doc/">Documentation</a></li>
+<li><a href="https://getcomposer.org/doc/00-intro.md">Getting Started Guide and Installation Instructions</a></li>
+<li><a href="https://packagist.org/">Find Packages on Packagist</a></li>
+<li><a href="https://composer.json.jolicode.com/">CheatSheet</a> - Overview of CLI commands and <code>composer.json</code> schema.</li>
+<li><a href="https://github.com/composer/installers">Composer Installers</a> - Composer installers for multiple frameworks.</li>
+</ul>
+<h3>Support</h3>
+<h4>Stack Overflow</h4>
+<ul>
+<li>You might use the following tags: <code>composer-php</code>, <code>packagist</code>, <code>satis</code> + <code>php</code>.</li>
+<li><a href="https://stackoverflow.com/questions/ask?tags=composer-php+php">Ask a new question</a></li>
+<li><a href="https://stackoverflow.com/questions/tagged/composer-php">Find questions tagged <code>composer-php</code></a></li>
+</ul>
+<h4>IRC</h4>
+<ul>
+<li>IRC channels are on <code>irc.freenode.org</code>: <a href="https://irc.com/#composer">#composer</a> for users and <a href="https://irc.com/#composer-dev">#composer-dev</a> for development.</li>
+</ul>
+<hr />
+<h2>Plugins</h2>
+<ul>
+<li><a href="https://getcomposer.org/doc/articles/plugins.md">Documentation for Plugins</a> - This offical documentation is good starting point, when writing a Composer plugin.</li>
+<li><a href="https://github.com/fxpio/composer-asset-plugin">Composer-Asset-Plugin</a> - A npm/Bower Dependencies Manager for Composer.</li>
+<li><a href="https://github.com/naderman/composer-aws">Composer-AWS</a> - The plugin loads repository data and downloads packages from Amazon S3 (with authentication support for private repositories).</li>
+<li><a href="https://github.com/bamarni/composition">Composer-Composition</a> - Provides an API, for checking your environment at runtime.</li>
+<li><a href="https://github.com/nfreear/composer-suggest">Composer-Suggest</a> - Enables you to install a custom group of suggested packages, based on keyword patterns.</li>
+<li><a href="https://github.com/Soullivaneuh/composer-versions-check">Composer-Versions-Check</a> - Shows outdated packages from last major versions after using the update command (showing "Latest is vX.Y.Z").</li>
+<li><a href="https://github.com/pyrech/composer-changelogs">Composer-Changelogs</a> - Provides a summary of the updates with links to changelog/releasenote/tag. The output is ready to be pasted into the commit message when updating the composer.lock file.</li>
+<li><a href="https://github.com/wikimedia/composer-merge-plugin">Composer-Merge-Plugin</a> - Merges multiple <code>composer.json</code> files at Composer runtime.</li>
+<li><a href="https://github.com/bamarni/composer-bin-plugin">Composer-Bin-Plugin</a> - Adds support for managing dependencies for multiple packages in a single repository or isolate bin dependencies.</li>
+<li><a href="https://github.com/theofidry/composer-inheritance-plugin">Composer-Inheritance-Plugin</a> - Opinionated version of Wikimedia composer-merge-plugin to work in pair with Bamarni composer-bin-plugin.</li>
+<li><a href="https://github.com/beberlei/composer-monorepo-plugin">Composer-MonoRepo-Plugin</a> - The plugin helps to manage dependencies for multiple packages in a single repository.</li>
+<li><a href="https://github.com/netresearch/composer-patches-plugin">Composer-Patches-Plugin</a> - Enables you to provide patches for any package from any package. When the dependency is fetched, the patch is applied on top.</li>
+<li><a href="https://github.com/cweagans/composer-patches">Composer-Patches</a> - The plugin applies a patch from a local or remote file to any required package.</li>
+<li><a href="https://github.com/vaimo/composer-patches">Composer-Patches</a> - Applies a patch from a local or remote file to any package that is part of a given composer project.</li>
+<li><a href="https://github.com/mageops/php-composer-plugin-patchset">Composer-Patchset</a> - Automatically fetch, update and apply patches to any composer package with a twist - store the patchset as a composer package itself.</li>
+<li><a href="https://github.com/Webysther/composer-plugin-qa">Composer-Plugin-QA</a> - Comprehensive Plugin for composer to execute PHP Quality assurance Tools.</li>
+<li><a href="https://github.com/barryvdh/composer-cleanup-plugin">Composer-Cleanup-Plugin</a> - Removes tests &amp; documentation folders from the vendor dir.</li>
+<li><a href="https://github.com/dg/composer-cleaner">Composer-Cleaner</a> - The tool removes unnecessary files and directories from the vendor directory.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <!--lint disable double-link awesome-toc-->
+<h1>Awesome Composer <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://awesome.re/badge-flat.svg" /></a> <a href="https://github.com/jakoch/awesome-composer/actions/workflows/awesome-bot.yml"><img alt="Build on Windows" src="https://github.com/jakoch/awesome-composer/actions/workflows/awesome-bot.yml/badge.svg?branch=main" /></a> <a href=""><img alt="license" src="https://img.shields.io/github/license/jakoch/awesome-composer.svg?maxAge=2592000" /></a></h1>
+<p><a href="https://getcomposer.org/"><img src="https://raw.githubusercontent.com/jakoch/awesome-composer/master/logo-composer-transparent.png" align="right" width="150"></a></p>
+<blockquote>
+<p>A curated list of resources for Composer, Packagist, Satis, Plugins, Scripts, Videos, Tutorials.</p>
+</blockquote>
+<p>You might also like <a href="https://github.com/ziadoz/awesome-php">awesome-php</a>.</p>
+<p><em>Please read the <a href="https://github.com/jakoch/awesome-composer/blob/main/.github/CONTRIBUTING.md">contribution guidelines</a> before contributing.</em></p>
+<h2>Composer</h2>
+<ul>
+<li><a href="https://getcomposer.org/">Official Website</a></li>
+<li><a href="https://github.com/composer/composer">GitHub</a></li>
+<li><a href="https://github.com/composer/composer/issues">Issues</a></li>
+<li><a href="https://github.com/composer/composer/tree/HEAD/src/Composer">Source</a></li>
+<li><a href="https://getcomposer.org/doc/">Documentation</a></li>
+<li><a href="https://getcomposer.org/doc/00-intro.md">Getting Started Guide and Installation Instructions</a></li>
+<li><a href="https://packagist.org/">Find Packages on Packagist</a></li>
+<li><a href="https://composer.json.jolicode.com/">CheatSheet</a> - Overview of CLI commands and <code>composer.json</code> schema.</li>
+<li><a href="https://github.com/composer/installers">Composer Installers</a> - Composer installers for multiple frameworks.</li>
+</ul>
+<h3>Support</h3>
+<h4>Stack Overflow</h4>
+<ul>
+<li>You might use the following tags: <code>composer-php</code>, <code>packagist</code>, <code>satis</code> + <code>php</code>.</li>
+<li><a href="https://stackoverflow.com/questions/ask?tags=composer-php+php">Ask a new question</a></li>
+<li><a href="https://stackoverflow.com/questions/tagged/composer-php">Find questions tagged <code>composer-php</code></a></li>
+</ul>
+<h4>IRC</h4>
+<ul>
+<li>IRC channels are on <code>irc.freenode.org</code>: <a href="https://irc.com/#composer">#composer</a> for users and <a href="https://irc.com/#composer-dev">#composer-dev</a> for development.</li>
+</ul>
+<hr />
+<h2>Plugins</h2>
+<ul>
+<li><a href="https://getcomposer.org/doc/articles/plugins.md">Documentation for Plugins</a> - This offical documentation is good starting point, when writing a Composer plugin.</li>
+<li><a href="https://github.com/fxpio/composer-asset-plugin">Composer-Asset-Plugin</a> - A npm/Bower Dependencies Manager for Composer.</li>
+<li><a href="https://github.com/naderman/composer-aws">Composer-AWS</a> - The plugin loads repository data and downloads packages from Amazon S3 (with authentication support for private repositories).</li>
+<li><a href="https://github.com/bamarni/composition">Composer-Composition</a> - Provides an API, for checking your environment at runtime.</li>
+<li><a href="https://github.com/nfreear/composer-suggest">Composer-Suggest</a> - Enables you to install a custom group of suggested packages, based on keyword patterns.</li>
+<li><a href="https://github.com/Soullivaneuh/composer-versions-check">Composer-Versions-Check</a> - Shows outdated packages from last major versions after using the update command (showing "Latest is vX.Y.Z").</li>
+<li><a href="https://github.com/pyrech/composer-changelogs">Composer-Changelogs</a> - Provides a summary of the updates with links to changelog/releasenote/tag. The output is ready to be pasted into the commit message when updating the composer.lock file.</li>
+<li><a href="https://github.com/wikimedia/composer-merge-plugin">Composer-Merge-Plugin</a> - Merges multiple <code>composer.json</code> files at Composer runtime.</li>
+<li><a href="https://github.com/bamarni/composer-bin-plugin">Composer-Bin-Plugin</a> - Adds support for managing dependencies for multiple packages in a single repository or isolate bin dependencies.</li>
+<li><a href="https://github.com/theofidry/composer-inheritance-plugin">Composer-Inheritance-Plugin</a> - Opinionated version of Wikimedia composer-merge-plugin to work in pair with Bamarni composer-bin-plugin.</li>
+<li><a href="https://github.com/beberlei/composer-monorepo-plugin">Composer-MonoRepo-Plugin</a> - The plugin helps to manage dependencies for multiple packages in a single repository.</li>
+<li><a href="https://github.com/netresearch/composer-patches-plugin">Composer-Patches-Plugin</a> - Enables you to provide patches for any package from any package. When the dependency is fetched, the patch is applied on top.</li>
+<li><a href="https://github.com/cweagans/composer-patches">Composer-Patches</a> - The plugin applies a patch from a local or remote file to any required package.</li>
+<li><a href="https://github.com/vaimo/composer-patches">Composer-Patches</a> - Applies a patch from a local or remote file to any package that is part of a given composer project.</li>
+<li><a href="https://github.com/mageops/php-composer-plugin-patchset">Composer-Patchset</a> - Automatically fetch, update and apply patches to any composer package with a twist - store the patchset as a composer package itself.</li>
+<li><a href="https://github.com/Webysther/composer-plugin-qa">Composer-Plugin-QA</a> - Comprehensive Plugin for composer to execute PHP Quality assurance Tools.</li>
+<li><a href="https://github.com/barryvdh/composer-cleanup-plugin">Composer-Cleanup-Plugin</a> - Removes tests &amp; documentation folders from the vendor dir.</li>
+<li><a href="https://github.com/dg/composer-cleaner">Composer-Cleaner</a> - The tool removes unnecessary files and directories from the vendor directory.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'composer_README.md';
 
         fetch(markdownFile)
@@ -48,21 +145,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

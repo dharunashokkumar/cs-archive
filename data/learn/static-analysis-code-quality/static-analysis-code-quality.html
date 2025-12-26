@@ -8,38 +8,355 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Analysis Tools Dev Static Analysis - Awesome List Resources">
-    <title>Analysis Tools Dev Static Analysis</title>
+    <meta name="description" content="This repository lists static analysis tools for all programming languages, build tools, config files and more. The focus is on tools which improve code quality...">
+    <meta name="robots" content="index, follow">
+    <title>Static Analysis Code Quality - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <!-- 🚨🚨 DON'T EDIT THIS FILE DIRECTLY. Edit `data/tools.yml` instead. 🚨🚨 -->
+
+<p><a href="https://analysis-tools.dev/">
+   <img alt="Analysis Tools Website" src="https://raw.githubusercontent.com/analysis-tools-dev/assets/master/static/redesign.svg" />
+ </a></p>
+<p>This repository lists <strong>static analysis tools</strong> for all programming languages, build tools, config files and more. The focus is on tools which improve code quality such as linters and formatters.
+The official website, <a href="https://analysis-tools.dev/">analysis-tools.dev</a> is based on this repository and adds rankings, user comments, and additional resources like videos for each tool.</p>
+<p><a href="https://analysis-tools.dev"><img alt="Website" src="https://img.shields.io/badge/Website-Online-2B5BAE" /></a>
+<img alt="CI" src="https://github.com/analysis-tools-dev/static-analysis/workflows/CI/badge.svg" />
+<a href="https://github.com/analysis-tools-dev/static-analysis/actions/workflows/links.yml"><img alt="Links" src="https://github.com/analysis-tools-dev/static-analysis/actions/workflows/links.yml/badge.svg" /></a></p>
+<h2>Sponsors</h2>
+<p>This project would not be possible without the generous support of our sponsors.</p>
+<table>
+   <tr>
+      <td>
+         <a href="https://www.pixee.ai/">
+            <picture >
+               <source width="200px" media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/analysis-tools-dev/assets/master/static/sponsors/pixee-light.png">
+               <img width="200px" alt="Pixee" src="https://raw.githubusercontent.com/analysis-tools-dev/assets/master/static/sponsors/pixee-dark.png">
+            </picture>
+         </a>
+      </td>
+      <td>
+         <a href="https://coderabbit.ai">
+            <img width="200px" src="https://raw.githubusercontent.com/analysis-tools-dev/assets/master/static/sponsors/code-rabbit.svg" />
+         </a>
+      </td>
+      <td>
+         <a href="https://semgrep.dev/">
+            <img width="200px" src="https://raw.githubusercontent.com/analysis-tools-dev/assets/master/static/sponsors/semgrep.svg" />
+         </a>
+      </td>
+      <td>
+         <a href="https://offensive360.com/">
+            <img width="200px" src="https://raw.githubusercontent.com/analysis-tools-dev/assets/master/static/sponsors/offensive360.png" />
+         </a>
+      </td>
+   </tr>
+</table>
+
+<p>If you also want to support this project, head over to our <a href="https://github.com/sponsors/analysis-tools-dev">Github sponsors page</a>.</p>
+<h2>Meaning of Symbols:</h2>
+<ul>
+<li>:copyright: stands for proprietary software. All other tools are Open Source.</li>
+<li>:information_source: indicates that the community does not recommend to use this tool for new projects anymore. The icon links to the discussion issue.</li>
+<li>:warning: means that this tool was not updated for more than 1 year, or the repo was archived.</li>
+</ul>
+<p>Pull requests are very welcome!<br />
+Also check out the sister project, <a href="https://github.com/mre/awesome-dynamic-analysis">awesome-dynamic-analysis</a>.</p>
+<h2>Table of Contents</h2>
+<h4><a href="#programming-languages-1">Programming Languages</a></h4>
+<ul>
+<li><a href="#abap">ABAP</a></li>
+<li><a href="#ada">Ada</a></li>
+<li><a href="#asm">Assembly</a></li>
+<li><a href="#awk">Awk</a></li>
+<li><a href="#c">C</a></li>
+<li><a href="#csharp">C#</a></li>
+<li><a href="#cpp">C++</a></li>
+<li><a href="#clojure">Clojure</a></li>
+<li><a href="#coffeescript">CoffeeScript</a></li>
+<li><a href="#coldfusion">ColdFusion</a></li>
+<li><a href="#crystal">Crystal</a></li>
+<li><a href="#dart">Dart</a></li>
+<li><a href="#delphi">Delphi</a></li>
+<li><a href="#dlang">Dlang</a></li>
+<li><a href="#elixir">Elixir</a></li>
+<li><a href="#elm">Elm</a></li>
+<li><a href="#erlang">Erlang</a></li>
+<li><a href="#fsharp">F#</a></li>
+<li><a href="#fortran">Fortran</a></li>
+<li><a href="#go">Go</a></li>
+<li><a href="#groovy">Groovy</a></li>
+<li><a href="#haskell">Haskell</a></li>
+<li><a href="#haxe">Haxe</a></li>
+<li><a href="#java">Java</a></li>
+<li><a href="#javascript">JavaScript</a></li>
+<li><a href="#julia">Julia</a></li>
+<li><a href="#kotlin">Kotlin</a></li>
+<li><a href="#lua">Lua</a></li>
+<li><a href="#matlab">MATLAB</a></li>
+<li><a href="#nim">Nim</a></li>
+<li><a href="#ocaml">Ocaml</a></li>
+<li><a href="#php">PHP</a></li>
+<li><a href="#plsql">PL/SQL</a></li>
+<li><a href="#perl">Perl</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#r">R</a></li>
+<li><a href="#rego">Rego</a></li>
+<li><a href="#ruby">Ruby</a></li>
+<li><a href="#rust">Rust</a></li>
+<li><a href="#sql">SQL</a></li>
+<li><a href="#scala">Scala</a></li>
+<li><a href="#shell">Shell</a></li>
+<li><a href="#swift">Swift</a></li>
+<li><a href="#tcl">Tcl</a></li>
+<li><a href="#typescript">TypeScript</a></li>
+<li><a href="#verilog">Verilog/SystemVerilog</a></li>
+<li><a href="#vim-script">Vim Script</a></li>
+<li><a href="#wasm">WebAssembly</a></li>
+</ul>
+<h4><a href="#multiple-languages-1">Multiple Languages</a></h4>
+<h4><a href="#other-1">Other</a></h4>
+<details>
+ <summary>Show Other</summary>
+
+- [.env](#dotenv)
+- [Ansible](#ansible)
+- [Archive](#archive)
+- [Azure Resource Manager](#arm)
+- [Binaries](#binary)
+- [Build tools](#buildtool)
+- [CSS/SASS/SCSS](#css)
+- [Config Files](#configfile)
+- [Configuration Management](#configmanagement)
+- [Containers](#container)
+- [Continuous Integration](#ci)
+- [Deno](#deno)
+- [Dockerfile](#dockerfile)
+- [Embedded](#embedded)
+- [Embedded Ruby (a.k.a. ERB, eRuby)](#erb)
+- [Gherkin](#gherkin)
+- [HTML](#html)
+- [JSON](#json)
+- [Kubernetes](#kubernetes)
+- [LaTeX](#latex)
+- [Laravel](#laravel)
+- [Makefiles](#make)
+- [Markdown](#markdown)
+- [Metalinter](#meta)
+- [Mobile](#mobile)
+- [Nix](#nix)
+- [Node.js](#nodejs)
+- [Packages](#package)
+- [Prometheus](#prometheus)
+- [Protocol Buffers](#protobuf)
+- [Puppet](#puppet)
+- [Rails](#rails)
+- [Security/SAST](#security)
+- [Smart Contracts](#smart-contracts)
+- [Support](#support)
+- [Template-Languages](#template)
+- [Terraform](#terraform)
+- [Translation](#translation)
+- [Vue.js](#vue)
+- [Writing](#writing)
+- [YAML](#yaml)
+- [git](#git)
+</details>
+
+<hr />
+<h2>Programming Languages</h2>
+<p><a name="abap" /></p>
+<h2>ABAP</h2>
+
+<ul>
+<li>
+<p><a href="https://abaplint.org">abaplint</a> — Linter for ABAP, written in TypeScript.</p>
+</li>
+<li>
+<p><a href="https://docs.abapopenchecks.org">abapOpenChecks</a> — Enhances the SAP Code Inspector with new and customizable checks.</p>
+</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <!-- 🚨🚨 DON'T EDIT THIS FILE DIRECTLY. Edit `data/tools.yml` instead. 🚨🚨 -->
+
+<p><a href="https://analysis-tools.dev/">
+   <img alt="Analysis Tools Website" src="https://raw.githubusercontent.com/analysis-tools-dev/assets/master/static/redesign.svg" />
+ </a></p>
+<p>This repository lists <strong>static analysis tools</strong> for all programming languages, build tools, config files and more. The focus is on tools which improve code quality such as linters and formatters.
+The official website, <a href="https://analysis-tools.dev/">analysis-tools.dev</a> is based on this repository and adds rankings, user comments, and additional resources like videos for each tool.</p>
+<p><a href="https://analysis-tools.dev"><img alt="Website" src="https://img.shields.io/badge/Website-Online-2B5BAE" /></a>
+<img alt="CI" src="https://github.com/analysis-tools-dev/static-analysis/workflows/CI/badge.svg" />
+<a href="https://github.com/analysis-tools-dev/static-analysis/actions/workflows/links.yml"><img alt="Links" src="https://github.com/analysis-tools-dev/static-analysis/actions/workflows/links.yml/badge.svg" /></a></p>
+<h2>Sponsors</h2>
+<p>This project would not be possible without the generous support of our sponsors.</p>
+<table>
+   <tr>
+      <td>
+         <a href="https://www.pixee.ai/">
+            <picture >
+               <source width="200px" media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/analysis-tools-dev/assets/master/static/sponsors/pixee-light.png">
+               <img width="200px" alt="Pixee" src="https://raw.githubusercontent.com/analysis-tools-dev/assets/master/static/sponsors/pixee-dark.png">
+            </picture>
+         </a>
+      </td>
+      <td>
+         <a href="https://coderabbit.ai">
+            <img width="200px" src="https://raw.githubusercontent.com/analysis-tools-dev/assets/master/static/sponsors/code-rabbit.svg" />
+         </a>
+      </td>
+      <td>
+         <a href="https://semgrep.dev/">
+            <img width="200px" src="https://raw.githubusercontent.com/analysis-tools-dev/assets/master/static/sponsors/semgrep.svg" />
+         </a>
+      </td>
+      <td>
+         <a href="https://offensive360.com/">
+            <img width="200px" src="https://raw.githubusercontent.com/analysis-tools-dev/assets/master/static/sponsors/offensive360.png" />
+         </a>
+      </td>
+   </tr>
+</table>
+
+<p>If you also want to support this project, head over to our <a href="https://github.com/sponsors/analysis-tools-dev">Github sponsors page</a>.</p>
+<h2>Meaning of Symbols:</h2>
+<ul>
+<li>:copyright: stands for proprietary software. All other tools are Open Source.</li>
+<li>:information_source: indicates that the community does not recommend to use this tool for new projects anymore. The icon links to the discussion issue.</li>
+<li>:warning: means that this tool was not updated for more than 1 year, or the repo was archived.</li>
+</ul>
+<p>Pull requests are very welcome!<br />
+Also check out the sister project, <a href="https://github.com/mre/awesome-dynamic-analysis">awesome-dynamic-analysis</a>.</p>
+<h2>Table of Contents</h2>
+<h4><a href="#programming-languages-1">Programming Languages</a></h4>
+<ul>
+<li><a href="#abap">ABAP</a></li>
+<li><a href="#ada">Ada</a></li>
+<li><a href="#asm">Assembly</a></li>
+<li><a href="#awk">Awk</a></li>
+<li><a href="#c">C</a></li>
+<li><a href="#csharp">C#</a></li>
+<li><a href="#cpp">C++</a></li>
+<li><a href="#clojure">Clojure</a></li>
+<li><a href="#coffeescript">CoffeeScript</a></li>
+<li><a href="#coldfusion">ColdFusion</a></li>
+<li><a href="#crystal">Crystal</a></li>
+<li><a href="#dart">Dart</a></li>
+<li><a href="#delphi">Delphi</a></li>
+<li><a href="#dlang">Dlang</a></li>
+<li><a href="#elixir">Elixir</a></li>
+<li><a href="#elm">Elm</a></li>
+<li><a href="#erlang">Erlang</a></li>
+<li><a href="#fsharp">F#</a></li>
+<li><a href="#fortran">Fortran</a></li>
+<li><a href="#go">Go</a></li>
+<li><a href="#groovy">Groovy</a></li>
+<li><a href="#haskell">Haskell</a></li>
+<li><a href="#haxe">Haxe</a></li>
+<li><a href="#java">Java</a></li>
+<li><a href="#javascript">JavaScript</a></li>
+<li><a href="#julia">Julia</a></li>
+<li><a href="#kotlin">Kotlin</a></li>
+<li><a href="#lua">Lua</a></li>
+<li><a href="#matlab">MATLAB</a></li>
+<li><a href="#nim">Nim</a></li>
+<li><a href="#ocaml">Ocaml</a></li>
+<li><a href="#php">PHP</a></li>
+<li><a href="#plsql">PL/SQL</a></li>
+<li><a href="#perl">Perl</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#r">R</a></li>
+<li><a href="#rego">Rego</a></li>
+<li><a href="#ruby">Ruby</a></li>
+<li><a href="#rust">Rust</a></li>
+<li><a href="#sql">SQL</a></li>
+<li><a href="#scala">Scala</a></li>
+<li><a href="#shell">Shell</a></li>
+<li><a href="#swift">Swift</a></li>
+<li><a href="#tcl">Tcl</a></li>
+<li><a href="#typescript">TypeScript</a></li>
+<li><a href="#verilog">Verilog/SystemVerilog</a></li>
+<li><a href="#vim-script">Vim Script</a></li>
+<li><a href="#wasm">WebAssembly</a></li>
+</ul>
+<h4><a href="#multiple-languages-1">Multiple Languages</a></h4>
+<h4><a href="#other-1">Other</a></h4>
+<details>
+ <summary>Show Other</summary>
+
+- [.env](#dotenv)
+- [Ansible](#ansible)
+- [Archive](#archive)
+- [Azure Resource Manager](#arm)
+- [Binaries](#binary)
+- [Build tools](#buildtool)
+- [CSS/SASS/SCSS](#css)
+- [Config Files](#configfile)
+- [Configuration Management](#configmanagement)
+- [Containers](#container)
+- [Continuous Integration](#ci)
+- [Deno](#deno)
+- [Dockerfile](#dockerfile)
+- [Embedded](#embedded)
+- [Embedded Ruby (a.k.a. ERB, eRuby)](#erb)
+- [Gherkin](#gherkin)
+- [HTML](#html)
+- [JSON](#json)
+- [Kubernetes](#kubernetes)
+- [LaTeX](#latex)
+- [Laravel](#laravel)
+- [Makefiles](#make)
+- [Markdown](#markdown)
+- [Metalinter](#meta)
+- [Mobile](#mobile)
+- [Nix](#nix)
+- [Node.js](#nodejs)
+- [Packages](#package)
+- [Prometheus](#prometheus)
+- [Protocol Buffers](#protobuf)
+- [Puppet](#puppet)
+- [Rails](#rails)
+- [Security/SAST](#security)
+- [Smart Contracts](#smart-contracts)
+- [Support](#support)
+- [Template-Languages](#template)
+- [Terraform](#terraform)
+- [Translation](#translation)
+- [Vue.js](#vue)
+- [Writing](#writing)
+- [YAML](#yaml)
+- [git](#git)
+</details>
+
+<hr />
+<h2>Programming Languages</h2>
+<p><a name="abap" /></p>
+<h2>ABAP</h2>
+
+<ul>
+<li>
+<p><a href="https://abaplint.org">abaplint</a> — Linter for ABAP, written in TypeScript.</p>
+</li>
+<li>
+<p><a href="https://docs.abapopenchecks.org">abapOpenChecks</a> — Enhances the SAP Code Inspector with new and customizable checks.</p>
+</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'static-analysis-code-quality_README.md';
 
         fetch(markdownFile)
@@ -48,21 +365,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

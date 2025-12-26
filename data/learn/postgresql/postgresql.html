@@ -8,38 +8,163 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dhamaniasad Awesome Postgres - Awesome List Resources">
-    <title>Dhamaniasad Awesome Postgres</title>
+    <meta name="description" content="> A curated list of awesome PostgreSQL software, libraries, tools and resources, inspired by awesome-mysql PostgreSQL, often simply Postgres, is an...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Postgres [![awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Postgres <a href="https://github.com/sindresorhus/awesome"><img alt="awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p><a href="https://www.postgresql.org/"><img src="https://wiki.postgresql.org/images/a/a4/PostgreSQL_logo.3colors.svg" align="right"  width="100"></a></p>
+<blockquote>
+<p>A curated list of awesome <a href="https://www.postgresql.org/">PostgreSQL</a> software, libraries, tools and resources, inspired by <a href="http://shlomi-noach.github.io/awesome-mysql/">awesome-mysql</a></p>
+</blockquote>
+<p><a href="https://en.wikipedia.org/wiki/PostgreSQL">PostgreSQL</a>, often simply Postgres, is an <a href="https://en.wikipedia.org/wiki/Object-relational_database">object-relational database</a> (ORDBMS). PostgreSQL is <a href="https://en.wikipedia.org/wiki/ACID">ACID-compliant</a> and <a href="https://en.wikipedia.org/wiki/Transaction_processing">transactional</a>. (see more: <a href="https://en.wikipedia.org/wiki/PostgreSQL">wikipedia:PostgreSQL</a>, <a href="https://www.postgresql.org">PostgreSQL.org</a>)</p>
+<p>:elephant: Contributions welcome. Add links through <a href="https://github.com/dhamaniasad/awesome-postgres/pulls">pull requests</a> or create an <a href="https://github.com/dhamaniasad/awesome-postgres/issues">issue</a> to start a discussion. Please take a look at the <a href="CONTRIBUTING.md">contribution guidelines</a>.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#awesome-postgres-">Awesome Postgres</a><ul>
+<li><a href="#high-availability">High-Availability</a></li>
+<li><a href="#backups">Backups</a></li>
+<li><a href="#gui">GUI</a></li>
+<li><a href="#distributions">Distributions</a></li>
+<li><a href="#cli">CLI</a></li>
+<li><a href="#server">Server</a></li>
+<li><a href="#monitoring">Monitoring</a></li>
+<li><a href="#extensions">Extensions</a></li>
+<li><a href="#work-queues">Work Queues</a></li>
+<li><a href="#optimization">Optimization</a></li>
+<li><a href="#utilities">Utilities</a></li>
+<li><a href="#language-bindings">Language bindings</a></li>
+<li><a href="#paas-postgresql-as-a-service">PaaS (PostgreSQL as a Service)</a></li>
+<li><a href="#docker-images">Docker images</a></li>
+<li><a href="#kubernetes">Kubernetes</a></li>
+</ul>
+</li>
+<li><a href="#resources">Resources</a><ul>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#newsletters">Newsletters</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#roadmaps">Roadmaps</a></li>
+<li><a href="#external-lists">External lists</a></li>
+</ul>
+</li>
+</ul>
+<h3>High-Availability</h3>
+<ul>
+<li><a href="https://github.com/vitabaks/autobase">autobase</a> - Autobase for PostgreSQL® is an open-source DBaaS that automates the deployment and management of highly available PostgreSQL clusters.</li>
+<li><a href="https://github.com/2ndQuadrant/bdr">BDR</a> - BiDirectional Replication - a multimaster replication system for PostgreSQL</li>
+<li><a href="https://github.com/zalando/patroni">Patroni</a> - Template for PostgreSQL HA with ZooKeeper or etcd.</li>
+<li><a href="https://github.com/pgEdge/spock">Spock</a> - 100% open-source logical multi-master PostgreSQL replication.</li>
+<li><a href="https://github.com/sorintlab/stolon">Stolon</a> - PostgreSQL HA based on Consul or etcd, with Kubernetes integration.</li>
+<li><a href="https://github.com/aiven/pglookout">pglookout</a> - Replication monitoring and failover daemon.</li>
+<li><a href="https://github.com/2ndQuadrant/repmgr">repmgr</a> - Open-source tool suite to manage replication and failover in a cluster of PostgreSQL servers.</li>
+<li><a href="https://slony.info/">Slony-I</a> - "Master to multiple slaves" replication system with cascading and failover.</li>
+<li><a href="https://github.com/ClusterLabs/PAF">PAF</a> - PostgreSQL Automatic Failover: High-Availibility for Postgres, based on Pacemaker and Corosync.</li>
+<li><a href="https://github.com/pgq/skytools-legacy">SkyTools</a> - Replication tools, including PgQ, a queuing system, and Londiste, a replication system a bit simpler to manage than Slony.</li>
+<li><a href="https://github.com/citusdata/pg_auto_failover">pg_auto_failover</a> - Postgres extension and service for automated failover and high-availability.</li>
+<li><a href="https://github.com/hashmap-kz/pgrwl">pgrwl</a> - Stream write-ahead logs (WAL) from a PostgreSQL server in real time. A drop-in, container-friendly alternative to pg_receivewal.</li>
+</ul>
+<h3>Backups</h3>
+<ul>
+<li><a href="https://www.pgbarman.org/index.html">Barman</a> - Backup and Recovery Manager for PostgreSQL by 2ndQuadrant.</li>
+<li><a href="https://github.com/omniti-labs/omnipitr">OmniPITR</a> - Advanced WAL File Management Tools for PostgreSQL.</li>
+<li><a href="https://github.com/postgrespro/pg_probackup">pg_probackup</a> – A fork of pg_arman, improved by @PostgresPro, supports incremental backups, backups from replica, multithreaded backup and restore, and anonymous backup without archive command.</li>
+<li><a href="https://pgbackrest.org/">pgBackRest</a>  - Reliable PostgreSQL Backup &amp; Restore.</li>
+<li><a href="https://github.com/eduardolat/pgbackweb">pgbackweb</a> - A Complete Docker-based Postgres backup and maintenance tool with Web UI. </li>
+<li><a href="https://github.com/orgrim/pg_back/">pg_back</a> - pg_back is a simple backup script</li>
+<li><a href="https://github.com/aiven/pghoard">pghoard</a> - Backup and restore tool for cloud object stores (AWS S3, Azure, Google Cloud, OpenStack Swift).</li>
+<li><a href="https://github.com/isaced/postgres-backup-oss">postgres-backup-oss</a> - A handy Docker container to periodically backup PostgreSQL to Alibaba Cloud Object Storage Service (OSS)</li>
+<li><a href="https://github.com/wal-e/wal-e">wal-e</a> (obsolete) - Simple Continuous Archiving for PostgreSQL to S3, Azure, or Swift by Heroku.</li>
+<li><a href="https://github.com/wal-g/wal-g">wal-g</a> - The successor of WAL-E rewritten in Go. Currently supports cloud object storage services by AWS (S3), Google Cloud (GCS), Azure, as well as OpenStack Swift, MinIO, and file system storages. Supports block-level incremental backups, offloading backup tasks to a standby server, provides parallelization and throttling options. In addition to Postgres, WAL-G can be used for MySQL and MongoDB databases.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Postgres <a href="https://github.com/sindresorhus/awesome"><img alt="awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<p><a href="https://www.postgresql.org/"><img src="https://wiki.postgresql.org/images/a/a4/PostgreSQL_logo.3colors.svg" align="right"  width="100"></a></p>
+<blockquote>
+<p>A curated list of awesome <a href="https://www.postgresql.org/">PostgreSQL</a> software, libraries, tools and resources, inspired by <a href="http://shlomi-noach.github.io/awesome-mysql/">awesome-mysql</a></p>
+</blockquote>
+<p><a href="https://en.wikipedia.org/wiki/PostgreSQL">PostgreSQL</a>, often simply Postgres, is an <a href="https://en.wikipedia.org/wiki/Object-relational_database">object-relational database</a> (ORDBMS). PostgreSQL is <a href="https://en.wikipedia.org/wiki/ACID">ACID-compliant</a> and <a href="https://en.wikipedia.org/wiki/Transaction_processing">transactional</a>. (see more: <a href="https://en.wikipedia.org/wiki/PostgreSQL">wikipedia:PostgreSQL</a>, <a href="https://www.postgresql.org">PostgreSQL.org</a>)</p>
+<p>:elephant: Contributions welcome. Add links through <a href="https://github.com/dhamaniasad/awesome-postgres/pulls">pull requests</a> or create an <a href="https://github.com/dhamaniasad/awesome-postgres/issues">issue</a> to start a discussion. Please take a look at the <a href="CONTRIBUTING.md">contribution guidelines</a>.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#awesome-postgres-">Awesome Postgres</a><ul>
+<li><a href="#high-availability">High-Availability</a></li>
+<li><a href="#backups">Backups</a></li>
+<li><a href="#gui">GUI</a></li>
+<li><a href="#distributions">Distributions</a></li>
+<li><a href="#cli">CLI</a></li>
+<li><a href="#server">Server</a></li>
+<li><a href="#monitoring">Monitoring</a></li>
+<li><a href="#extensions">Extensions</a></li>
+<li><a href="#work-queues">Work Queues</a></li>
+<li><a href="#optimization">Optimization</a></li>
+<li><a href="#utilities">Utilities</a></li>
+<li><a href="#language-bindings">Language bindings</a></li>
+<li><a href="#paas-postgresql-as-a-service">PaaS (PostgreSQL as a Service)</a></li>
+<li><a href="#docker-images">Docker images</a></li>
+<li><a href="#kubernetes">Kubernetes</a></li>
+</ul>
+</li>
+<li><a href="#resources">Resources</a><ul>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#newsletters">Newsletters</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#roadmaps">Roadmaps</a></li>
+<li><a href="#external-lists">External lists</a></li>
+</ul>
+</li>
+</ul>
+<h3>High-Availability</h3>
+<ul>
+<li><a href="https://github.com/vitabaks/autobase">autobase</a> - Autobase for PostgreSQL® is an open-source DBaaS that automates the deployment and management of highly available PostgreSQL clusters.</li>
+<li><a href="https://github.com/2ndQuadrant/bdr">BDR</a> - BiDirectional Replication - a multimaster replication system for PostgreSQL</li>
+<li><a href="https://github.com/zalando/patroni">Patroni</a> - Template for PostgreSQL HA with ZooKeeper or etcd.</li>
+<li><a href="https://github.com/pgEdge/spock">Spock</a> - 100% open-source logical multi-master PostgreSQL replication.</li>
+<li><a href="https://github.com/sorintlab/stolon">Stolon</a> - PostgreSQL HA based on Consul or etcd, with Kubernetes integration.</li>
+<li><a href="https://github.com/aiven/pglookout">pglookout</a> - Replication monitoring and failover daemon.</li>
+<li><a href="https://github.com/2ndQuadrant/repmgr">repmgr</a> - Open-source tool suite to manage replication and failover in a cluster of PostgreSQL servers.</li>
+<li><a href="https://slony.info/">Slony-I</a> - "Master to multiple slaves" replication system with cascading and failover.</li>
+<li><a href="https://github.com/ClusterLabs/PAF">PAF</a> - PostgreSQL Automatic Failover: High-Availibility for Postgres, based on Pacemaker and Corosync.</li>
+<li><a href="https://github.com/pgq/skytools-legacy">SkyTools</a> - Replication tools, including PgQ, a queuing system, and Londiste, a replication system a bit simpler to manage than Slony.</li>
+<li><a href="https://github.com/citusdata/pg_auto_failover">pg_auto_failover</a> - Postgres extension and service for automated failover and high-availability.</li>
+<li><a href="https://github.com/hashmap-kz/pgrwl">pgrwl</a> - Stream write-ahead logs (WAL) from a PostgreSQL server in real time. A drop-in, container-friendly alternative to pg_receivewal.</li>
+</ul>
+<h3>Backups</h3>
+<ul>
+<li><a href="https://www.pgbarman.org/index.html">Barman</a> - Backup and Recovery Manager for PostgreSQL by 2ndQuadrant.</li>
+<li><a href="https://github.com/omniti-labs/omnipitr">OmniPITR</a> - Advanced WAL File Management Tools for PostgreSQL.</li>
+<li><a href="https://github.com/postgrespro/pg_probackup">pg_probackup</a> – A fork of pg_arman, improved by @PostgresPro, supports incremental backups, backups from replica, multithreaded backup and restore, and anonymous backup without archive command.</li>
+<li><a href="https://pgbackrest.org/">pgBackRest</a>  - Reliable PostgreSQL Backup &amp; Restore.</li>
+<li><a href="https://github.com/eduardolat/pgbackweb">pgbackweb</a> - A Complete Docker-based Postgres backup and maintenance tool with Web UI. </li>
+<li><a href="https://github.com/orgrim/pg_back/">pg_back</a> - pg_back is a simple backup script</li>
+<li><a href="https://github.com/aiven/pghoard">pghoard</a> - Backup and restore tool for cloud object stores (AWS S3, Azure, Google Cloud, OpenStack Swift).</li>
+<li><a href="https://github.com/isaced/postgres-backup-oss">postgres-backup-oss</a> - A handy Docker container to periodically backup PostgreSQL to Alibaba Cloud Object Storage Service (OSS)</li>
+<li><a href="https://github.com/wal-e/wal-e">wal-e</a> (obsolete) - Simple Continuous Archiving for PostgreSQL to S3, Azure, or Swift by Heroku.</li>
+<li><a href="https://github.com/wal-g/wal-g">wal-g</a> - The successor of WAL-E rewritten in Go. Currently supports cloud object storage services by AWS (S3), Google Cloud (GCS), Azure, as well as OpenStack Swift, MinIO, and file system storages. Supports block-level incremental backups, offloading backup tasks to a standby server, provides parallelization and throttling options. In addition to Postgres, WAL-G can be used for MySQL and MongoDB databases.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'postgresql_README.md';
 
         fetch(markdownFile)
@@ -48,21 +173,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

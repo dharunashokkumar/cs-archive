@@ -8,38 +8,137 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Terryum Awesome Deep Learning Papers - Awesome List Resources">
-    <title>Terryum Awesome Deep Learning Papers</title>
+    <meta name="description" content="[Notice] This list is not being maintained anymore because of the overwhelming amount of deep learning papers published every day since 2017. A curated list of...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome - Most Cited Deep Learning Papers - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome - Most Cited Deep Learning Papers</h1>
+<p><a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></p>
+<p>[Notice] This list is not being maintained anymore because of the overwhelming amount of deep learning papers published every day since 2017.</p>
+<p>A curated list of the most cited deep learning papers (2012-2016)</p>
+<p>We believe that there exist <em>classic</em> deep learning papers which are worth reading regardless of their application domain. Rather than providing overwhelming amount of papers, We would like to provide a <em>curated list</em> of the awesome deep learning papers which are considered as <em>must-reads</em> in certain research domains.</p>
+<h2>Background</h2>
+<p>Before this list, there exist other <em>awesome deep learning lists</em>, for example, <a href="https://github.com/kjw0612/awesome-deep-vision">Deep Vision</a> and <a href="https://github.com/kjw0612/awesome-rnn">Awesome Recurrent Neural Networks</a>. Also, after this list comes out, another awesome list for deep learning beginners, called <a href="https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap">Deep Learning Papers Reading Roadmap</a>, has been created and loved by many deep learning researchers.</p>
+<p>Although the <em>Roadmap List</em> includes lots of important deep learning papers, it feels overwhelming for me to read them all. As I mentioned in the introduction, I believe that seminal works can give us lessons regardless of their application domain. Thus, I would like to introduce <strong>top 100 deep learning papers</strong> here as a good starting point of overviewing deep learning researches.</p>
+<p>To get the news for newly released papers everyday, follow my <a href="https://twitter.com/TerryUm_ML">twitter</a> or <a href="https://www.facebook.com/terryum.io/">facebook page</a>! </p>
+<h2>Awesome list criteria</h2>
+<ol>
+<li>A list of <strong>top 100 deep learning papers</strong> published from 2012 to 2016 is suggested.</li>
+<li>If a paper is added to the list, another paper (usually from *More Papers from 2016" section) should be removed to keep top 100 papers. (Thus, removing papers is also important contributions as well as adding papers)</li>
+<li>Papers that are important, but failed to be included in the list, will be listed in <em>More than Top 100</em> section.</li>
+<li>Please refer to <em>New Papers</em> and <em>Old Papers</em> sections for the papers published in recent 6 months or before 2012.</li>
+</ol>
+<p><em>(Citation criteria)</em>
+- <strong>&lt; 6 months</strong> : <em>New Papers</em> (by discussion)
+- <strong>2016</strong> :  +60 citations or "More Papers from 2016"
+- <strong>2015</strong> :  +200 citations
+- <strong>2014</strong> :  +400 citations
+- <strong>2013</strong> :  +600 citations
+- <strong>2012</strong> :  +800 citations
+- <strong>~2012</strong> : <em>Old Papers</em> (by discussion)</p>
+<p>Please note that we prefer seminal deep learning papers that can be applied to various researches rather than application papers. For that reason, some papers that meet the criteria may not be accepted while others can be. It depends on the impact of the paper, applicability to other researches scarcity of the research domain, and so on.</p>
+<p><strong>We need your contributions!</strong></p>
+<p>If you have any suggestions (missing papers, new papers, key researchers or typos), please feel free to edit and pull a request.
+(Please read the <a href="https://github.com/terryum/awesome-deep-learning-papers/blob/master/Contributing.md">contributing guide</a> for further instructions, though just letting me know the title of papers can also be a big contribution to us.)</p>
+<p>(Update) You can download all top-100 papers with <a href="https://github.com/terryum/awesome-deep-learning-papers/blob/master/fetch_papers.py">this</a> and collect all authors' names with <a href="https://github.com/terryum/awesome-deep-learning-papers/blob/master/get_authors.py">this</a>. Also, <a href="https://github.com/terryum/awesome-deep-learning-papers/blob/master/top100papers.bib">bib file</a> for all top-100 papers are available. Thanks, doodhwala, <a href="https://github.com/sunshinemyson">Sven</a> and <a href="https://github.com/grepinsight">grepinsight</a>!</p>
+<ul>
+<li>Can anyone contribute the code for obtaining the statistics of the authors of Top-100 papers?</li>
+</ul>
+<h2>Contents</h2>
+<ul>
+<li><a href="#understanding--generalization--transfer">Understanding / Generalization / Transfer</a></li>
+<li><a href="#optimization--training-techniques">Optimization / Training Techniques</a></li>
+<li><a href="#unsupervised--generative-models">Unsupervised / Generative Models</a></li>
+<li><a href="#convolutional-neural-network-models">Convolutional Network Models</a></li>
+<li><a href="#image-segmentation--object-detection">Image Segmentation / Object Detection</a></li>
+<li><a href="#image--video--etc">Image / Video / Etc</a></li>
+<li><a href="#natural-language-processing--rnns">Natural Language Processing / RNNs</a></li>
+<li><a href="#speech--other-domain">Speech / Other Domain</a></li>
+<li><a href="#reinforcement-learning--robotics">Reinforcement Learning / Robotics</a></li>
+<li><a href="#more-papers-from-2016">More Papers from 2016</a></li>
+</ul>
+<p><em>(More than Top 100)</em></p>
+<ul>
+<li><a href="#new-papers">New Papers</a> : Less than 6 months</li>
+<li><a href="#old-papers">Old Papers</a> : Before 2012</li>
+<li><a href="#hw--sw--dataset">HW / SW / Dataset</a> : Technical reports</li>
+<li><a href="#book--survey--review">Book / Survey / Review</a></li>
+<li><a href="#video-lectures--tutorials--blogs">Video Lectures / Tutorials / Blogs</a></li>
+<li><a href="#appendix-more-than-top-100">Appendix: More than Top 100</a> : More papers not in the list</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome - Most Cited Deep Learning Papers</h1>
+<p><a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></p>
+<p>[Notice] This list is not being maintained anymore because of the overwhelming amount of deep learning papers published every day since 2017.</p>
+<p>A curated list of the most cited deep learning papers (2012-2016)</p>
+<p>We believe that there exist <em>classic</em> deep learning papers which are worth reading regardless of their application domain. Rather than providing overwhelming amount of papers, We would like to provide a <em>curated list</em> of the awesome deep learning papers which are considered as <em>must-reads</em> in certain research domains.</p>
+<h2>Background</h2>
+<p>Before this list, there exist other <em>awesome deep learning lists</em>, for example, <a href="https://github.com/kjw0612/awesome-deep-vision">Deep Vision</a> and <a href="https://github.com/kjw0612/awesome-rnn">Awesome Recurrent Neural Networks</a>. Also, after this list comes out, another awesome list for deep learning beginners, called <a href="https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap">Deep Learning Papers Reading Roadmap</a>, has been created and loved by many deep learning researchers.</p>
+<p>Although the <em>Roadmap List</em> includes lots of important deep learning papers, it feels overwhelming for me to read them all. As I mentioned in the introduction, I believe that seminal works can give us lessons regardless of their application domain. Thus, I would like to introduce <strong>top 100 deep learning papers</strong> here as a good starting point of overviewing deep learning researches.</p>
+<p>To get the news for newly released papers everyday, follow my <a href="https://twitter.com/TerryUm_ML">twitter</a> or <a href="https://www.facebook.com/terryum.io/">facebook page</a>! </p>
+<h2>Awesome list criteria</h2>
+<ol>
+<li>A list of <strong>top 100 deep learning papers</strong> published from 2012 to 2016 is suggested.</li>
+<li>If a paper is added to the list, another paper (usually from *More Papers from 2016" section) should be removed to keep top 100 papers. (Thus, removing papers is also important contributions as well as adding papers)</li>
+<li>Papers that are important, but failed to be included in the list, will be listed in <em>More than Top 100</em> section.</li>
+<li>Please refer to <em>New Papers</em> and <em>Old Papers</em> sections for the papers published in recent 6 months or before 2012.</li>
+</ol>
+<p><em>(Citation criteria)</em>
+- <strong>&lt; 6 months</strong> : <em>New Papers</em> (by discussion)
+- <strong>2016</strong> :  +60 citations or "More Papers from 2016"
+- <strong>2015</strong> :  +200 citations
+- <strong>2014</strong> :  +400 citations
+- <strong>2013</strong> :  +600 citations
+- <strong>2012</strong> :  +800 citations
+- <strong>~2012</strong> : <em>Old Papers</em> (by discussion)</p>
+<p>Please note that we prefer seminal deep learning papers that can be applied to various researches rather than application papers. For that reason, some papers that meet the criteria may not be accepted while others can be. It depends on the impact of the paper, applicability to other researches scarcity of the research domain, and so on.</p>
+<p><strong>We need your contributions!</strong></p>
+<p>If you have any suggestions (missing papers, new papers, key researchers or typos), please feel free to edit and pull a request.
+(Please read the <a href="https://github.com/terryum/awesome-deep-learning-papers/blob/master/Contributing.md">contributing guide</a> for further instructions, though just letting me know the title of papers can also be a big contribution to us.)</p>
+<p>(Update) You can download all top-100 papers with <a href="https://github.com/terryum/awesome-deep-learning-papers/blob/master/fetch_papers.py">this</a> and collect all authors' names with <a href="https://github.com/terryum/awesome-deep-learning-papers/blob/master/get_authors.py">this</a>. Also, <a href="https://github.com/terryum/awesome-deep-learning-papers/blob/master/top100papers.bib">bib file</a> for all top-100 papers are available. Thanks, doodhwala, <a href="https://github.com/sunshinemyson">Sven</a> and <a href="https://github.com/grepinsight">grepinsight</a>!</p>
+<ul>
+<li>Can anyone contribute the code for obtaining the statistics of the authors of Top-100 papers?</li>
+</ul>
+<h2>Contents</h2>
+<ul>
+<li><a href="#understanding--generalization--transfer">Understanding / Generalization / Transfer</a></li>
+<li><a href="#optimization--training-techniques">Optimization / Training Techniques</a></li>
+<li><a href="#unsupervised--generative-models">Unsupervised / Generative Models</a></li>
+<li><a href="#convolutional-neural-network-models">Convolutional Network Models</a></li>
+<li><a href="#image-segmentation--object-detection">Image Segmentation / Object Detection</a></li>
+<li><a href="#image--video--etc">Image / Video / Etc</a></li>
+<li><a href="#natural-language-processing--rnns">Natural Language Processing / RNNs</a></li>
+<li><a href="#speech--other-domain">Speech / Other Domain</a></li>
+<li><a href="#reinforcement-learning--robotics">Reinforcement Learning / Robotics</a></li>
+<li><a href="#more-papers-from-2016">More Papers from 2016</a></li>
+</ul>
+<p><em>(More than Top 100)</em></p>
+<ul>
+<li><a href="#new-papers">New Papers</a> : Less than 6 months</li>
+<li><a href="#old-papers">Old Papers</a> : Before 2012</li>
+<li><a href="#hw--sw--dataset">HW / SW / Dataset</a> : Technical reports</li>
+<li><a href="#book--survey--review">Book / Survey / Review</a></li>
+<li><a href="#video-lectures--tutorials--blogs">Video Lectures / Tutorials / Blogs</a></li>
+<li><a href="#appendix-more-than-top-100">Appendix: More than Top 100</a> : More papers not in the list</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'papers-2_README.md';
 
         fetch(markdownFile)
@@ -48,21 +147,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

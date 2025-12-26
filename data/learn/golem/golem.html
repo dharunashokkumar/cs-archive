@@ -8,38 +8,157 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Golemfactory Awesome Golem - Awesome List Resources">
-    <title>Golemfactory Awesome Golem</title>
+    <meta name="description" content="> Welcome to Awesome Golem, a community-curated list of resources, links, projects, tools and applications on Golem! The users of Golem run the reference...">
+    <meta name="robots" content="index, follow">
+    <title>Awesome Golem [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![awesome-lint](https://github.com/golemfactory/awesome-golem/actions/workflows/main.yml/badge.svg)](https://github.com/golemfactory/awesome-golem/actions/workflows/main.yml/badge.svg) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome Golem <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a> <a href="https://github.com/golemfactory/awesome-golem/actions/workflows/main.yml/badge.svg"><img alt="awesome-lint" src="https://github.com/golemfactory/awesome-golem/actions/workflows/main.yml/badge.svg" /></a></h1>
+<p><a href="https://golem.network/"><img src="golem-logo.svg" align="right" width="150"></a></p>
+<blockquote>
+<p>Welcome to <strong>Awesome Golem</strong>, a community-curated list of resources, links, projects, tools and applications on Golem!</p>
+</blockquote>
+<p>The users of Golem run the reference implementation in the form of the Rust implementation, Yagna. Together the users make up the Golem Network, a P2P marketplace for computational resources where individuals can act as one of the two non-exclusive roles; a provider selling idle resources, or a requestor buying resources to run tasks.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#golem">Golem</a></li>
+<li><a href="#network-statistics">Network Statistics</a></li>
+<li><a href="#Golem-Projects">Golem Projects</a></li>
+<li><a href="#GPU-Provider">GPU Provider</a></li>
+<li><a href="#Ray-on-Golem">Ray on Golem</a></li>
+<li><a href="#golem-js---the-JS-SDK-from-Golem">golem-js - the JS SDK from Golem</a></li>
+<li><a href="#Jupyter-on-Golem">Jupyter on Golem</a></li>
+<li><a href="#Rendering-on-Golem">Rendering on Golem</a></li>
+<li><a href="#Reputation-System">Reputation System</a></li>
+<li><a href="#Ecosystem">Ecosystem</a></li>
+<li><a href="#Blockchain-automations-(aka-Emeth.xyz)">Blockchain Automations (aka Emeth.xyz)</a></li>
+<li><a href="#developer-and-requestor-resources">Developer and Requestor Resources</a></li>
+<li><a href="#provider-resources">Provider Resources</a></li>
+<li><a href="#monitoring">Monitoring</a></li>
+<li><a href="#provisioning">Provisioning</a></li>
+<li><a href="#learning-resources">Learning Resources</a></li>
+<li><a href="#presentations-and-workshop-material">Presentations and Workshop Material</a></li>
+<li><a href="#unraveling-golems-the-next-milestone-blog-series">Unraveling Golem's The Next Milestone Blog Series</a></li>
+<li><a href="#github-digest-blog-series">GitHub Digest Blog Series</a></li>
+<li><a href="#Archive">Archive</a></li>
+<li><a href="#apps">Apps</a></li>
+</ul>
+<h2>Golem</h2>
+<ul>
+<li><a href="https://www.golem.network/platform">Golem Network Platform</a> - Learn the Golem platform on the official Golem Network website.</li>
+<li><a href="https://chat.golem.network/">Golem Network Discord</a> - Join the Golem Network community on Discord and chat directly with the team.</li>
+<li><a href="https://reddit.com/r/GolemProject">Reddit</a> - Golem Network discussion on the Reddit platform.</li>
+<li><a href="https://twitter.com/golemproject">Twitter</a> - The Golem Project Twitter.</li>
+<li><a href="http://blog.golemproject.net/">Blog</a> - The official blog where you can find the most reliable information on announcements, summaries and updates.</li>
+</ul>
+<h2>Network Statistics</h2>
+<ul>
+<li><a href="https://stats.golem.network">Golem Network Stats</a> - Statistics tracking tasks and provider resource utilization in the Golem Network.</li>
+<li><a href="https://github.com/cryptobench/golem-stats-backend">Golem Stats backend</a> - Backend of the Golem Network Statistics page including API endpoint URLs.</li>
+<li><a href="https://docs.stats.golem.network/">Stats API Documentation</a> - API endpoints that the Golem Network Stats page uses to display its data.</li>
+</ul>
+<h2>Golem Projects</h2>
+<h3>GPU Provider</h3>
+<p>We want to extend the capabilities of Golem Network for GPU workloads. Project status is available on the pinned messages of the dedicated GPU Provider channel on our <a href="https://chat.golem.network/">Discord</a>. You can find it under #golem-projects.</p>
+<h3>Ray on Golem</h3>
+<p><a href="https://github.com/golemfactory/ray-on-golem">Ray on Golem</a> is an exciting integration with Ray, a distributed computing framework, to provide an easier way of accessing the Golem Network for Python developers.</p>
+<h3>golem-js - the JS SDK from Golem</h3>
+<p><a href="https://github.com/golemfactory/golem-js">golem-js</a> is a library and set of developer tools and docs that are aimed to enable developers to create Golem applications running in Node.js or browser context.</p>
+<h3>Jupyter on Golem</h3>
+<p><a href="https://github.com/golemfactory/golem-kernel-python">Jupyter on Golem</a> is a JupyterLab Python kernel that empowers you to run your Python Notebooks using the decentralized resources available on the Golem Network. </p>
+<h3>Rendering on Golem</h3>
+<p>In close collaboration with Reality Games, we've developed a service that activates Golem's providers for rendering personalized building animations as a (web2) proof-of-ownership for ERC-1155 tokens. Learn more <a href="https://reality.golem.network/">here</a> </p>
+<h3>Reputation System</h3>
+<p>The Reputation System goal is to address the challenges of trust and reliability in the network where anyone can participate as a provider or requestor without any sort of identification. The system aims to establish a framework of trust, ensuring secure and reliable interactions between participants on the network.</p>
+<h2>Ecosystem</h2>
+<h3>Blockchain Automations (aka Emeth.xyz)</h3>
+<p>Emeth specializes in DeFi (Decentralized Finance) portfolio management and blockchain automations. It leverages Golem's technology to offer tools for  automation and simplification of managing DeFi investments. The platform focuses on enhancing the ease and efficiency of operating within the DeFi space. It combines user-friendly interfaces with sophisticated analytics, catering to the needs of both novice and experienced DeFi users.</p>
+<h2>Developer and Requestor Resources</h2>
+<ul>
+<li><a href="https://docs.golem.network/">Golem Docs</a> - A manual for Golem (both for Requestors and Providers).</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome Golem <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a> <a href="https://github.com/golemfactory/awesome-golem/actions/workflows/main.yml/badge.svg"><img alt="awesome-lint" src="https://github.com/golemfactory/awesome-golem/actions/workflows/main.yml/badge.svg" /></a></h1>
+<p><a href="https://golem.network/"><img src="golem-logo.svg" align="right" width="150"></a></p>
+<blockquote>
+<p>Welcome to <strong>Awesome Golem</strong>, a community-curated list of resources, links, projects, tools and applications on Golem!</p>
+</blockquote>
+<p>The users of Golem run the reference implementation in the form of the Rust implementation, Yagna. Together the users make up the Golem Network, a P2P marketplace for computational resources where individuals can act as one of the two non-exclusive roles; a provider selling idle resources, or a requestor buying resources to run tasks.</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#golem">Golem</a></li>
+<li><a href="#network-statistics">Network Statistics</a></li>
+<li><a href="#Golem-Projects">Golem Projects</a></li>
+<li><a href="#GPU-Provider">GPU Provider</a></li>
+<li><a href="#Ray-on-Golem">Ray on Golem</a></li>
+<li><a href="#golem-js---the-JS-SDK-from-Golem">golem-js - the JS SDK from Golem</a></li>
+<li><a href="#Jupyter-on-Golem">Jupyter on Golem</a></li>
+<li><a href="#Rendering-on-Golem">Rendering on Golem</a></li>
+<li><a href="#Reputation-System">Reputation System</a></li>
+<li><a href="#Ecosystem">Ecosystem</a></li>
+<li><a href="#Blockchain-automations-(aka-Emeth.xyz)">Blockchain Automations (aka Emeth.xyz)</a></li>
+<li><a href="#developer-and-requestor-resources">Developer and Requestor Resources</a></li>
+<li><a href="#provider-resources">Provider Resources</a></li>
+<li><a href="#monitoring">Monitoring</a></li>
+<li><a href="#provisioning">Provisioning</a></li>
+<li><a href="#learning-resources">Learning Resources</a></li>
+<li><a href="#presentations-and-workshop-material">Presentations and Workshop Material</a></li>
+<li><a href="#unraveling-golems-the-next-milestone-blog-series">Unraveling Golem's The Next Milestone Blog Series</a></li>
+<li><a href="#github-digest-blog-series">GitHub Digest Blog Series</a></li>
+<li><a href="#Archive">Archive</a></li>
+<li><a href="#apps">Apps</a></li>
+</ul>
+<h2>Golem</h2>
+<ul>
+<li><a href="https://www.golem.network/platform">Golem Network Platform</a> - Learn the Golem platform on the official Golem Network website.</li>
+<li><a href="https://chat.golem.network/">Golem Network Discord</a> - Join the Golem Network community on Discord and chat directly with the team.</li>
+<li><a href="https://reddit.com/r/GolemProject">Reddit</a> - Golem Network discussion on the Reddit platform.</li>
+<li><a href="https://twitter.com/golemproject">Twitter</a> - The Golem Project Twitter.</li>
+<li><a href="http://blog.golemproject.net/">Blog</a> - The official blog where you can find the most reliable information on announcements, summaries and updates.</li>
+</ul>
+<h2>Network Statistics</h2>
+<ul>
+<li><a href="https://stats.golem.network">Golem Network Stats</a> - Statistics tracking tasks and provider resource utilization in the Golem Network.</li>
+<li><a href="https://github.com/cryptobench/golem-stats-backend">Golem Stats backend</a> - Backend of the Golem Network Statistics page including API endpoint URLs.</li>
+<li><a href="https://docs.stats.golem.network/">Stats API Documentation</a> - API endpoints that the Golem Network Stats page uses to display its data.</li>
+</ul>
+<h2>Golem Projects</h2>
+<h3>GPU Provider</h3>
+<p>We want to extend the capabilities of Golem Network for GPU workloads. Project status is available on the pinned messages of the dedicated GPU Provider channel on our <a href="https://chat.golem.network/">Discord</a>. You can find it under #golem-projects.</p>
+<h3>Ray on Golem</h3>
+<p><a href="https://github.com/golemfactory/ray-on-golem">Ray on Golem</a> is an exciting integration with Ray, a distributed computing framework, to provide an easier way of accessing the Golem Network for Python developers.</p>
+<h3>golem-js - the JS SDK from Golem</h3>
+<p><a href="https://github.com/golemfactory/golem-js">golem-js</a> is a library and set of developer tools and docs that are aimed to enable developers to create Golem applications running in Node.js or browser context.</p>
+<h3>Jupyter on Golem</h3>
+<p><a href="https://github.com/golemfactory/golem-kernel-python">Jupyter on Golem</a> is a JupyterLab Python kernel that empowers you to run your Python Notebooks using the decentralized resources available on the Golem Network. </p>
+<h3>Rendering on Golem</h3>
+<p>In close collaboration with Reality Games, we've developed a service that activates Golem's providers for rendering personalized building animations as a (web2) proof-of-ownership for ERC-1155 tokens. Learn more <a href="https://reality.golem.network/">here</a> </p>
+<h3>Reputation System</h3>
+<p>The Reputation System goal is to address the challenges of trust and reliability in the network where anyone can participate as a provider or requestor without any sort of identification. The system aims to establish a framework of trust, ensuring secure and reliable interactions between participants on the network.</p>
+<h2>Ecosystem</h2>
+<h3>Blockchain Automations (aka Emeth.xyz)</h3>
+<p>Emeth specializes in DeFi (Decentralized Finance) portfolio management and blockchain automations. It leverages Golem's technology to offer tools for  automation and simplification of managing DeFi investments. The platform focuses on enhancing the ease and efficiency of operating within the DeFi space. It combines user-friendly interfaces with sophisticated analytics, catering to the needs of both novice and experienced DeFi users.</p>
+<h2>Developer and Requestor Resources</h2>
+<ul>
+<li><a href="https://docs.golem.network/">Golem Docs</a> - A manual for Golem (both for Requestors and Providers).</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'golem_README.md';
 
         fetch(markdownFile)
@@ -48,21 +167,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

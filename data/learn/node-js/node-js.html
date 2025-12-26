@@ -8,38 +8,367 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sindresorhus Awesome Nodejs - Awesome List Resources">
-    <title>Sindresorhus Awesome Nodejs</title>
+    <meta name="description" content="My open source work is supported by the community Special thanks to: Effortless backends with infrastructure from code An open-source framework that supports...">
+    <meta name="robots" content="index, follow">
+    <title>Node Js - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <div align="center">
+    <div>
+        <img width="500" src="media/logo.svg" alt="Awesome Node.js">
+        <br>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <p>
+        <p>
+            <sup>
+                <a href="https://github.com/sponsors/sindresorhus">My open source work is supported by the community</a>
+            </sup>
+        </p>
+        <sup>Special thanks to:</sup>
+        <br>
+        <br>
+        <br>
+        <a href="https://nitric.io/?utm_campaign=github_repo&utm_medium=referral&utm_content=sindresorhus&utm_source=github">
+            <div>
+                <img width="230" src="https://sindresorhus.com/assets/thanks/nitric-logo.svg" alt="nitric logo">
+            </div>
+            <b>Effortless backends with infrastructure from code</b>
+            <div>
+                <sup>An open-source framework that supports any programming language, cloud provider, or deployment automation tool.</sup>
+            </div>
+        </a>
+        <br>
+        <br>
+        <h3>
+            <a href="https://ref.wisprflow.ai/VjA6dYR">Wispr Flow</a>
+        </h3>
+        <a href="https://ref.wisprflow.ai/VjA6dYR">
+            <div>
+                <img width="150" src="https://sindresorhus.com/assets/thanks/flow-logo.svg" alt="Wispr Flow logo">
+            </div>
+            <b>Talk to code, stay in the Flow.</b>
+            <div>
+                <sup>Flow is built for devs who live in their tools. Speak and give more context, get better results.</sup>
+            </div>
+        </a>
+        <br>
+        <br>
+        <br>
+        <a href="https://depot.dev?utm_source=github&utm_medium=sindresorhus">
+            <div>
+                <picture>
+                    <source width="180" media="(prefers-color-scheme: dark)" srcset="https://sindresorhus.com/assets/thanks/depot-logo-dark.svg">
+                    <source width="180" media="(prefers-color-scheme: light)" srcset="https://sindresorhus.com/assets/thanks/depot-logo-light.svg">
+                    <img width="180" src="https://sindresorhus.com/assets/thanks/depot-logo-light.svg" alt="Depot logo">
+                </picture>
+            </div>
+            <b>Fast remote container builds and GitHub Actions runners.</b>
+        </a>
+        <br>
+        <br>
+        <br>
+    </p>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a href="https://awesome.re">
+        <img src="https://awesome.re/badge-flat2.svg" alt="Awesome">
+    </a>
+    <p>
+        <sub>Just type <a href="https://node.cool"><code>node.cool</code></a> to go here. Follow me on <a href="https://twitter.com/sindresorhus">Twitter</a>.</sub>
+    </p>
+    <br>
+    <p>
+        <a href="https://en.wikipedia.org/wiki/Node.js">Node.js</a> is an open-source, cross-platform, JavaScript runtime for writing servers and command-line tools.
+    </p>
+    <br>
+</div>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#official">Official</a></li>
+<li><a href="#packages">Packages</a><ul>
+<li><a href="#mad-science">Mad science</a></li>
+<li><a href="#command-line-apps">Command-line apps</a></li>
+<li><a href="#functional-programming">Functional programming</a></li>
+<li><a href="#http">HTTP</a></li>
+<li><a href="#debugging--profiling">Debugging / Profiling</a></li>
+<li><a href="#logging">Logging</a></li>
+<li><a href="#command-line-utilities">Command-line utilities</a></li>
+<li><a href="#build-tools">Build tools</a></li>
+<li><a href="#hardware">Hardware</a></li>
+<li><a href="#templating">Templating</a></li>
+<li><a href="#web-frameworks">Web frameworks</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#filesystem">Filesystem</a></li>
+<li><a href="#control-flow">Control flow</a></li>
+<li><a href="#streams">Streams</a></li>
+<li><a href="#real-time">Real-time</a></li>
+<li><a href="#image">Image</a></li>
+<li><a href="#text">Text</a></li>
+<li><a href="#number">Number</a></li>
+<li><a href="#math">Math</a></li>
+<li><a href="#date">Date</a></li>
+<li><a href="#url">URL</a></li>
+<li><a href="#data-validation">Data validation</a></li>
+<li><a href="#parsing">Parsing</a></li>
+<li><a href="#humanize">Humanize</a></li>
+<li><a href="#compression">Compression</a></li>
+<li><a href="#network">Network</a></li>
+<li><a href="#database">Database</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#benchmarking">Benchmarking</a></li>
+<li><a href="#minifiers">Minifiers</a></li>
+<li><a href="#authentication">Authentication</a></li>
+<li><a href="#authorization">Authorization</a></li>
+<li><a href="#email">Email</a></li>
+<li><a href="#job-queues">Job queues</a></li>
+<li><a href="#nodejs-management">Node.js management</a></li>
+<li><a href="#cross-platform-integration">Cross-platform integration</a></li>
+<li><a href="#natural-language-processing">Natural language processing</a></li>
+<li><a href="#process-management">Process management</a></li>
+<li><a href="#automation">Automation</a></li>
+<li><a href="#ast">AST</a></li>
+<li><a href="#static-site-generators">Static site generators</a></li>
+<li><a href="#content-management-systems">Content management systems</a></li>
+<li><a href="#forum">Forum</a></li>
+<li><a href="#blogging">Blogging</a></li>
+<li><a href="#weird">Weird</a></li>
+<li><a href="#serialization">Serialization</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+</ul>
+</li>
+<li><a href="#package-manager">Package Manager</a></li>
+<li><a href="#resources">Resources</a><ul>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#discovery">Discovery</a></li>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#newsletters">Newsletters</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#courses">Courses</a></li>
+<li><a href="#cheatsheets">Cheatsheets</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#miscellaneous-1">Miscellaneous</a></li>
+</ul>
+</li>
+<li><a href="#related-lists">Related lists</a></li>
+</ul>
+<h2>Official</h2>
+<ul>
+<li><a href="https://nodejs.org">Website</a></li>
+<li><a href="https://nodejs.org/dist/latest/docs/api/">Documentation</a></li>
+<li><a href="https://github.com/nodejs/node">Repository</a></li>
+</ul>
+<h2>Packages</h2>
+<h3>Mad science</h3>
+<ul>
+<li><a href="https://github.com/webtorrent/webtorrent">webtorrent</a> - Streaming torrent client for Node.js and the browser.</li>
+<li><a href="https://github.com/mafintosh/peerflix">peerflix</a> - Streaming torrent client.</li>
+<li><a href="https://github.com/ipfs/helia">ipfs</a> - Distributed file system that seeks to connect all computing devices with the same system of files.</li>
+<li><a href="https://github.com/stackgl">stackgl</a> - Open software ecosystem for WebGL, built on top of browserify and npm.</li>
+<li><a href="https://github.com/mafintosh/peerwiki">peerwiki</a> - All of Wikipedia on BitTorrent.</li>
+<li><a href="https://github.com/mafintosh/peercast">peercast</a> - Stream a torrent video to Chromecast.</li>
+<li><a href="https://github.com/bitcoinjs/bitcoinjs-lib">BitcoinJS</a> - Clean, readable, proven Bitcoin library.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <div align="center">
+    <div>
+        <img width="500" src="media/logo.svg" alt="Awesome Node.js">
+        <br>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <p>
+        <p>
+            <sup>
+                <a href="https://github.com/sponsors/sindresorhus">My open source work is supported by the community</a>
+            </sup>
+        </p>
+        <sup>Special thanks to:</sup>
+        <br>
+        <br>
+        <br>
+        <a href="https://nitric.io/?utm_campaign=github_repo&utm_medium=referral&utm_content=sindresorhus&utm_source=github">
+            <div>
+                <img width="230" src="https://sindresorhus.com/assets/thanks/nitric-logo.svg" alt="nitric logo">
+            </div>
+            <b>Effortless backends with infrastructure from code</b>
+            <div>
+                <sup>An open-source framework that supports any programming language, cloud provider, or deployment automation tool.</sup>
+            </div>
+        </a>
+        <br>
+        <br>
+        <h3>
+            <a href="https://ref.wisprflow.ai/VjA6dYR">Wispr Flow</a>
+        </h3>
+        <a href="https://ref.wisprflow.ai/VjA6dYR">
+            <div>
+                <img width="150" src="https://sindresorhus.com/assets/thanks/flow-logo.svg" alt="Wispr Flow logo">
+            </div>
+            <b>Talk to code, stay in the Flow.</b>
+            <div>
+                <sup>Flow is built for devs who live in their tools. Speak and give more context, get better results.</sup>
+            </div>
+        </a>
+        <br>
+        <br>
+        <br>
+        <a href="https://depot.dev?utm_source=github&utm_medium=sindresorhus">
+            <div>
+                <picture>
+                    <source width="180" media="(prefers-color-scheme: dark)" srcset="https://sindresorhus.com/assets/thanks/depot-logo-dark.svg">
+                    <source width="180" media="(prefers-color-scheme: light)" srcset="https://sindresorhus.com/assets/thanks/depot-logo-light.svg">
+                    <img width="180" src="https://sindresorhus.com/assets/thanks/depot-logo-light.svg" alt="Depot logo">
+                </picture>
+            </div>
+            <b>Fast remote container builds and GitHub Actions runners.</b>
+        </a>
+        <br>
+        <br>
+        <br>
+    </p>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a href="https://awesome.re">
+        <img src="https://awesome.re/badge-flat2.svg" alt="Awesome">
+    </a>
+    <p>
+        <sub>Just type <a href="https://node.cool"><code>node.cool</code></a> to go here. Follow me on <a href="https://twitter.com/sindresorhus">Twitter</a>.</sub>
+    </p>
+    <br>
+    <p>
+        <a href="https://en.wikipedia.org/wiki/Node.js">Node.js</a> is an open-source, cross-platform, JavaScript runtime for writing servers and command-line tools.
+    </p>
+    <br>
+</div>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#official">Official</a></li>
+<li><a href="#packages">Packages</a><ul>
+<li><a href="#mad-science">Mad science</a></li>
+<li><a href="#command-line-apps">Command-line apps</a></li>
+<li><a href="#functional-programming">Functional programming</a></li>
+<li><a href="#http">HTTP</a></li>
+<li><a href="#debugging--profiling">Debugging / Profiling</a></li>
+<li><a href="#logging">Logging</a></li>
+<li><a href="#command-line-utilities">Command-line utilities</a></li>
+<li><a href="#build-tools">Build tools</a></li>
+<li><a href="#hardware">Hardware</a></li>
+<li><a href="#templating">Templating</a></li>
+<li><a href="#web-frameworks">Web frameworks</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#filesystem">Filesystem</a></li>
+<li><a href="#control-flow">Control flow</a></li>
+<li><a href="#streams">Streams</a></li>
+<li><a href="#real-time">Real-time</a></li>
+<li><a href="#image">Image</a></li>
+<li><a href="#text">Text</a></li>
+<li><a href="#number">Number</a></li>
+<li><a href="#math">Math</a></li>
+<li><a href="#date">Date</a></li>
+<li><a href="#url">URL</a></li>
+<li><a href="#data-validation">Data validation</a></li>
+<li><a href="#parsing">Parsing</a></li>
+<li><a href="#humanize">Humanize</a></li>
+<li><a href="#compression">Compression</a></li>
+<li><a href="#network">Network</a></li>
+<li><a href="#database">Database</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#benchmarking">Benchmarking</a></li>
+<li><a href="#minifiers">Minifiers</a></li>
+<li><a href="#authentication">Authentication</a></li>
+<li><a href="#authorization">Authorization</a></li>
+<li><a href="#email">Email</a></li>
+<li><a href="#job-queues">Job queues</a></li>
+<li><a href="#nodejs-management">Node.js management</a></li>
+<li><a href="#cross-platform-integration">Cross-platform integration</a></li>
+<li><a href="#natural-language-processing">Natural language processing</a></li>
+<li><a href="#process-management">Process management</a></li>
+<li><a href="#automation">Automation</a></li>
+<li><a href="#ast">AST</a></li>
+<li><a href="#static-site-generators">Static site generators</a></li>
+<li><a href="#content-management-systems">Content management systems</a></li>
+<li><a href="#forum">Forum</a></li>
+<li><a href="#blogging">Blogging</a></li>
+<li><a href="#weird">Weird</a></li>
+<li><a href="#serialization">Serialization</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+</ul>
+</li>
+<li><a href="#package-manager">Package Manager</a></li>
+<li><a href="#resources">Resources</a><ul>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#discovery">Discovery</a></li>
+<li><a href="#articles">Articles</a></li>
+<li><a href="#newsletters">Newsletters</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#courses">Courses</a></li>
+<li><a href="#cheatsheets">Cheatsheets</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#community">Community</a></li>
+<li><a href="#miscellaneous-1">Miscellaneous</a></li>
+</ul>
+</li>
+<li><a href="#related-lists">Related lists</a></li>
+</ul>
+<h2>Official</h2>
+<ul>
+<li><a href="https://nodejs.org">Website</a></li>
+<li><a href="https://nodejs.org/dist/latest/docs/api/">Documentation</a></li>
+<li><a href="https://github.com/nodejs/node">Repository</a></li>
+</ul>
+<h2>Packages</h2>
+<h3>Mad science</h3>
+<ul>
+<li><a href="https://github.com/webtorrent/webtorrent">webtorrent</a> - Streaming torrent client for Node.js and the browser.</li>
+<li><a href="https://github.com/mafintosh/peerflix">peerflix</a> - Streaming torrent client.</li>
+<li><a href="https://github.com/ipfs/helia">ipfs</a> - Distributed file system that seeks to connect all computing devices with the same system of files.</li>
+<li><a href="https://github.com/stackgl">stackgl</a> - Open software ecosystem for WebGL, built on top of browserify and npm.</li>
+<li><a href="https://github.com/mafintosh/peerwiki">peerwiki</a> - All of Wikipedia on BitTorrent.</li>
+<li><a href="https://github.com/mafintosh/peercast">peercast</a> - Stream a torrent video to Chromecast.</li>
+<li><a href="https://github.com/bitcoinjs/bitcoinjs-lib">BitcoinJS</a> - Clean, readable, proven Bitcoin library.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'node-js_README.md';
 
         fetch(markdownFile)
@@ -48,21 +377,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

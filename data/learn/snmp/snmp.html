@@ -8,38 +8,191 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Eozer Awesome Snmp - Awesome List Resources">
-    <title>Eozer Awesome Snmp</title>
+    <meta name="description" content="Simple Network Management Protocol (SNMP) is an Internet Standard protocol for collecting and organizing information about managed devices on IP networks and...">
+    <meta name="robots" content="index, follow">
+    <title>Snmp - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <!--lint disable double-link-->
+<h1>Awesome SNMP <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p><a href="https://github.com/eozer/awesome-snmp/actions/workflows/awesome-lint.yml"><img alt="Awesome lint" src="https://github.com/eozer/awesome-snmp/actions/workflows/awesome-lint.yml/badge.svg" /></a></p>
+<p><a href="https://en.wikipedia.org/wiki/Simple_Network_Management_Protocol">Simple Network Management Protocol (SNMP)</a> is an Internet Standard protocol for collecting and organizing information about managed devices on IP networks and for modifying that information to change device behaviour.</p>
+<p>This is a curated list of awesome SNMP libraries, tools, and other resources. Contributions are welcome!</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#cc">C/C++</a></li>
+<li><a href="#c">C#</a></li>
+<li><a href="#erlang">Erlang</a></li>
+<li><a href="#go">Go</a></li>
+<li><a href="#java">Java</a></li>
+<li><a href="#javascript">JavaScript</a></li>
+<li><a href="#lua">Lua</a></li>
+<li><a href="#php">PHP</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#ruby">Ruby</a></li>
+<li><a href="#rust">Rust</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#clis">CLIs</a></li>
+<li><a href="#guis">GUIs</a></li>
+<li><a href="#publications">Publications</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#rfcs">RFCs</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#public-servers">Public servers</a></li>
+<li><a href="#mib-repositories">MIB repositories</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+</ul>
+<h2>Libraries</h2>
+<p><em>Helpful to write SNMP applications.</em></p>
+<h3>C/C++</h3>
+<ul>
+<li><a href="http://www.net-snmp.org/">net-snmp</a> - A suite of software for using and deploying the SNMP protocol (v1, v2c and v3 and the AgentX subagent protocol). Contains also Python bindings.</li>
+<li><a href="https://www.agentpp.com/api/cpp/snmp_pp.html">SNMP++</a> - BSD licensed SNMP implemention from HP. Supports SNMP v1/2c/v3, thread-safety, and many more.</li>
+<li><a href="https://www.agentpp.com/api/cpp/agent_pp.html">AGENT++</a> - The AGENT++ C++ framework provides a complete tri-lingual SNMP v1/2c/3 protocol engine and dispatcher for the development of SNMP agents. Apache licensed.</li>
+<li><a href="https://www.agentpp.com/api/cpp/agentx_pp.html">AgentX++</a> - The AgentX++ C++ framework provides a complete AgentX protocol (RFC 2741) implementation that adds AgentX master and sub-agent support to AGENT++ (<code>Commercial</code>).</li>
+<li><a href="https://sourceforge.net/projects/opensnmp/">openSNMP</a> - BSD licensed multi-threaded implementation of SNMPv3.</li>
+</ul>
+<h3>C</h3>
+<ul>
+<li><a href="https://github.com/lextudio/sharpsnmplib">C# SNMP Library</a> - MIT licensed SNMP library for .NET with extensive SNMP standard support, latest .NET platform targets, as well as rich manager/agent samples.</li>
+<li><a href="https://pro.sharpsnmp.com">SNMP Pro</a> - Commercial extension that adds enterprise MIB support.</li>
+<li><a href="https://github.com/rqx110/SnmpSharpNet">SnmpSharpNet</a> - Simple Network Management Protocol (SNMP) .Net library written in C# (csharp). Implements protocol version 1, 2 and 3.</li>
+</ul>
+<h3>Erlang</h3>
+<ul>
+<li><a href="https://www.erlang.org/doc/apps/snmp/users_guide.html">Erlang/OTP SNMP</a> - SNMP development is included as a component of the Erlang/Open Telecom Platform development environment.</li>
+</ul>
+<h3>Go</h3>
+<ul>
+<li><a href="https://github.com/gosnmp/gosnmp">gosnmp/gosnmp</a> - An SNMP library written in Go. It provides Get, GetNext, GetBulk, Walk, BulkWalk, Set and Traps. It supports IPv4/IPv6, using SNMP v1/v2c/v3.</li>
+<li><a href="https://github.com/sleepinggenius2/gosmi">sleepinggenius2/gosmi</a> - MIB parser in Go language.</li>
+<li><a href="https://github.com/posteo/go-agentx">posteo/go-agentx</a> - A library with a pure Go implementation of the AgentX-Protocol.</li>
+</ul>
+<h3>Java</h3>
+<ul>
+<li><a href="https://www.agentpp.com/api/java/snmp4j.html">SNMP4J</a> - SNMP4J is an enterprise class, free open source, and state-of-the-art SNMP v1/2c/v3 implementation for Java™.</li>
+<li><a href="https://www.agentpp.com/api/java/snmp4jagent.html">SNMP4J-Agent</a> - SNMP4J-Agent is a Java™ API on top of the core SNMP4J API for the development of SNMP agents (command responders).</li>
+<li><a href="https://sourceforge.net/projects/joesnmp/">joeSNMP</a> - joeSNMP is an open-source Java SNMP class library published under the LGPL.</li>
+<li><a href="https://snmp.westhawk.co.uk/">Westhawk's SNMP</a> - An open-sourced Java library that can be used for SNMP v1/v2c/v3. Supports traps, authentication and privacy. As authentication protocols it offers MD5 and SHA1.</li>
+<li><a href="https://github.com/cederberg/mibble">mibble</a> - Mibble is an open-source SNMP MIB (or SMI) parser library for Java.</li>
+</ul>
+<h3>JavaScript</h3>
+<ul>
+<li><a href="https://github.com/markabrahams/node-net-snmp">node-net-snmp</a> -  JavaScript implementation of the Simple Network Management Protocol (SNMP), implements versions 1, 2c and 3.</li>
+<li><a href="https://github.com/calmh/node-snmp-native">node-snmp-native</a> -  Native JavaScript SNMP library for Node.js.</li>
+<li><a href="https://github.com/joyent/node-snmpjs">node-snmpjs</a> - This package provides a toolkit for SNMP agents and management applications in Node.js.</li>
+<li><a href="https://github.com/neias/snmp-node">snmp-node</a> - Native JavaScript SNMP library for Node.js.</li>
+</ul>
+<h3>Lua</h3>
+<ul>
+<li><a href="https://github.com/hleuwer/luasnmp">luasnmp</a> - Lua binding to net-snmp library.</li>
+</ul>
+<h3>PHP</h3>
+<ul>
+<li><a href="https://www.php.net/manual/en/book.snmp.php">php.net/SNMP</a> - This is an SNMP extension for PHP, which is a wrapper around the net-snmp library.</li>
+<li><a href="https://github.com/FreeDSx/SNMP">FreeDSx/SNMP</a> - A Pure PHP SNMP Library.</li>
+<li><a href="https://github.com/opensolutions/OSS_SNMP">opensolutions/OSS_SNMP</a> - A PHP SNMP library for people who hate SNMP, MIBs and OIDs!</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <!--lint disable double-link-->
+<h1>Awesome SNMP <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge.svg" /></a></h1>
+<p><a href="https://github.com/eozer/awesome-snmp/actions/workflows/awesome-lint.yml"><img alt="Awesome lint" src="https://github.com/eozer/awesome-snmp/actions/workflows/awesome-lint.yml/badge.svg" /></a></p>
+<p><a href="https://en.wikipedia.org/wiki/Simple_Network_Management_Protocol">Simple Network Management Protocol (SNMP)</a> is an Internet Standard protocol for collecting and organizing information about managed devices on IP networks and for modifying that information to change device behaviour.</p>
+<p>This is a curated list of awesome SNMP libraries, tools, and other resources. Contributions are welcome!</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#cc">C/C++</a></li>
+<li><a href="#c">C#</a></li>
+<li><a href="#erlang">Erlang</a></li>
+<li><a href="#go">Go</a></li>
+<li><a href="#java">Java</a></li>
+<li><a href="#javascript">JavaScript</a></li>
+<li><a href="#lua">Lua</a></li>
+<li><a href="#php">PHP</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#ruby">Ruby</a></li>
+<li><a href="#rust">Rust</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#clis">CLIs</a></li>
+<li><a href="#guis">GUIs</a></li>
+<li><a href="#publications">Publications</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#rfcs">RFCs</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#public-servers">Public servers</a></li>
+<li><a href="#mib-repositories">MIB repositories</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+</ul>
+<h2>Libraries</h2>
+<p><em>Helpful to write SNMP applications.</em></p>
+<h3>C/C++</h3>
+<ul>
+<li><a href="http://www.net-snmp.org/">net-snmp</a> - A suite of software for using and deploying the SNMP protocol (v1, v2c and v3 and the AgentX subagent protocol). Contains also Python bindings.</li>
+<li><a href="https://www.agentpp.com/api/cpp/snmp_pp.html">SNMP++</a> - BSD licensed SNMP implemention from HP. Supports SNMP v1/2c/v3, thread-safety, and many more.</li>
+<li><a href="https://www.agentpp.com/api/cpp/agent_pp.html">AGENT++</a> - The AGENT++ C++ framework provides a complete tri-lingual SNMP v1/2c/3 protocol engine and dispatcher for the development of SNMP agents. Apache licensed.</li>
+<li><a href="https://www.agentpp.com/api/cpp/agentx_pp.html">AgentX++</a> - The AgentX++ C++ framework provides a complete AgentX protocol (RFC 2741) implementation that adds AgentX master and sub-agent support to AGENT++ (<code>Commercial</code>).</li>
+<li><a href="https://sourceforge.net/projects/opensnmp/">openSNMP</a> - BSD licensed multi-threaded implementation of SNMPv3.</li>
+</ul>
+<h3>C</h3>
+<ul>
+<li><a href="https://github.com/lextudio/sharpsnmplib">C# SNMP Library</a> - MIT licensed SNMP library for .NET with extensive SNMP standard support, latest .NET platform targets, as well as rich manager/agent samples.</li>
+<li><a href="https://pro.sharpsnmp.com">SNMP Pro</a> - Commercial extension that adds enterprise MIB support.</li>
+<li><a href="https://github.com/rqx110/SnmpSharpNet">SnmpSharpNet</a> - Simple Network Management Protocol (SNMP) .Net library written in C# (csharp). Implements protocol version 1, 2 and 3.</li>
+</ul>
+<h3>Erlang</h3>
+<ul>
+<li><a href="https://www.erlang.org/doc/apps/snmp/users_guide.html">Erlang/OTP SNMP</a> - SNMP development is included as a component of the Erlang/Open Telecom Platform development environment.</li>
+</ul>
+<h3>Go</h3>
+<ul>
+<li><a href="https://github.com/gosnmp/gosnmp">gosnmp/gosnmp</a> - An SNMP library written in Go. It provides Get, GetNext, GetBulk, Walk, BulkWalk, Set and Traps. It supports IPv4/IPv6, using SNMP v1/v2c/v3.</li>
+<li><a href="https://github.com/sleepinggenius2/gosmi">sleepinggenius2/gosmi</a> - MIB parser in Go language.</li>
+<li><a href="https://github.com/posteo/go-agentx">posteo/go-agentx</a> - A library with a pure Go implementation of the AgentX-Protocol.</li>
+</ul>
+<h3>Java</h3>
+<ul>
+<li><a href="https://www.agentpp.com/api/java/snmp4j.html">SNMP4J</a> - SNMP4J is an enterprise class, free open source, and state-of-the-art SNMP v1/2c/v3 implementation for Java™.</li>
+<li><a href="https://www.agentpp.com/api/java/snmp4jagent.html">SNMP4J-Agent</a> - SNMP4J-Agent is a Java™ API on top of the core SNMP4J API for the development of SNMP agents (command responders).</li>
+<li><a href="https://sourceforge.net/projects/joesnmp/">joeSNMP</a> - joeSNMP is an open-source Java SNMP class library published under the LGPL.</li>
+<li><a href="https://snmp.westhawk.co.uk/">Westhawk's SNMP</a> - An open-sourced Java library that can be used for SNMP v1/v2c/v3. Supports traps, authentication and privacy. As authentication protocols it offers MD5 and SHA1.</li>
+<li><a href="https://github.com/cederberg/mibble">mibble</a> - Mibble is an open-source SNMP MIB (or SMI) parser library for Java.</li>
+</ul>
+<h3>JavaScript</h3>
+<ul>
+<li><a href="https://github.com/markabrahams/node-net-snmp">node-net-snmp</a> -  JavaScript implementation of the Simple Network Management Protocol (SNMP), implements versions 1, 2c and 3.</li>
+<li><a href="https://github.com/calmh/node-snmp-native">node-snmp-native</a> -  Native JavaScript SNMP library for Node.js.</li>
+<li><a href="https://github.com/joyent/node-snmpjs">node-snmpjs</a> - This package provides a toolkit for SNMP agents and management applications in Node.js.</li>
+<li><a href="https://github.com/neias/snmp-node">snmp-node</a> - Native JavaScript SNMP library for Node.js.</li>
+</ul>
+<h3>Lua</h3>
+<ul>
+<li><a href="https://github.com/hleuwer/luasnmp">luasnmp</a> - Lua binding to net-snmp library.</li>
+</ul>
+<h3>PHP</h3>
+<ul>
+<li><a href="https://www.php.net/manual/en/book.snmp.php">php.net/SNMP</a> - This is an SNMP extension for PHP, which is a wrapper around the net-snmp library.</li>
+<li><a href="https://github.com/FreeDSx/SNMP">FreeDSx/SNMP</a> - A Pure PHP SNMP Library.</li>
+<li><a href="https://github.com/opensolutions/OSS_SNMP">opensolutions/OSS_SNMP</a> - A PHP SNMP library for people who hate SNMP, MIBs and OIDs!</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'snmp_README.md';
 
         fetch(markdownFile)
@@ -48,21 +201,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>

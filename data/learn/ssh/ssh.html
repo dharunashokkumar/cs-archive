@@ -8,38 +8,147 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-WRJ69W24DT');
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Moul Awesome Ssh - Awesome List Resources">
-    <title>Moul Awesome Ssh</title>
+    <meta name="description" content="> A curated list of SSH apps, libraries and resources. Inspired by the awesome list thing. Please read the contribution guidelines if you want to contribute....">
+    <meta name="robots" content="index, follow">
+    <title>Awesome SSH [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) - CS Archive</title>
     <link rel="stylesheet" href="../markdown-page.css">
-    <!-- Marked.js - Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+    <!-- SEO: Static content for search engines -->
     <article id="content">
-        <p>Loading content...</p>
+        <noscript>
+            <h1>Awesome SSH <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<blockquote>
+<p>A curated list of <em>SSH</em> <a href="#apps">apps</a>, <a href="#libraries">libraries</a> and <a href="#resources">resources</a>.</p>
+</blockquote>
+<h2 align="center"><img src="https://raw.githubusercontent.com/moul/awesome-ssh/master/logo.jpg" width="400" /></h2>
+
+<p>Inspired by the <a href="https://github.com/sindresorhus/awesome">awesome</a> list thing.</p>
+<p>Please read the <a href="CONTRIBUTING.md">contribution guidelines</a> if you want to contribute.</p>
+<p><strong>Check out my <a href="https://manfred.life/">blog</a> 🦄 or say <em>hi</em> on <a href="https://twitter.com/moul">Twitter</a>.</strong></p>
+<h2>Table of Contents</h2>
+<ul>
+<li><a href="#apps">Apps</a></li>
+<li><a href="#sshconfig"><code>.ssh/config</code></a></li>
+<li><a href="#tools-using-the-ssh-protocol">Tools using the <em>SSH</em> protocol</a></li>
+<li><a href="#servers">Servers</a></li>
+<li><a href="#network">Network</a></li>
+<li><a href="#multiplexers">Multiplexers</a></li>
+<li><a href="#ssh-keys--authentication">SSH Keys / Authentication</a></li>
+<li><a href="#ssh-agent">SSH agent</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#automation">Automation</a></li>
+<li><a href="#web">Web</a></li>
+<li><a href="#testing--honeypots">Testing / Honeypots</a></li>
+<li><a href="#alternatives-to-ssh">Alternatives to SSH</a></li>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#community">Community</a></li>
+</ul>
+<h2>Apps</h2>
+<h3><code>.ssh/config</code></h3>
+<ul>
+<li><a href="https://github.com/moul/assh"><code>assh</code></a> <a href="https://github.com/moul/advanced-ssh-config"><img alt="stars" src="https://img.shields.io/github/stars/moul/advanced-ssh-config.svg?style=social&amp;label=stars" /></a> - Transparent wrapper (ProxyCommand) that adds regex, aliases, gateways, includes, dynamic hostnames to <em>SSH</em> and <code>ssh-config</code>. <em>Previously: <code>advanced-ssh-config</code></em></li>
+<li><a href="https://github.com/emre/storm">storm</a> <a href="https://github.com/emre/storm"><img alt="stars" src="https://img.shields.io/github/stars/emre/storm.svg?style=social&amp;label=stars" /></a> - Manage your <em>SSH</em> like a boss.</li>
+<li><a href="https://github.com/gaqzi/ansible-ssh-config">ansible-ssh-config</a> <a href="https://github.com/gaqzi/ansible-ssh-config"><img alt="stars" src="https://img.shields.io/github/stars/gaqzi/ansible-ssh-config.svg?style=social&amp;label=stars" /></a> - Letting <em>Ansible</em> manage <code>ssh_config</code>.</li>
+<li><a href="https://github.com/mirakui/ec2ssh">ec2ssh</a> <a href="https://github.com/mirakui/ec2ssh"><img alt="stars" src="https://img.shields.io/github/stars/mirakui/ec2ssh.svg?style=social&amp;label=stars" /></a> - A <code>ssh_config</code> manager for <em>AWS EC2</em>.</li>
+<li><a href="https://github.com/dbrady/ssh-config">ssh-config</a> <a href="https://github.com/dbrady/ssh-config"><img alt="stars" src="https://img.shields.io/github/stars/dbrady/ssh-config.svg?style=social&amp;label=stars" /></a> - A tool to help manage your <code>.ssh/config</code> file.</li>
+</ul>
+<h3>Tools using the <em>SSH</em> protocol</h3>
+<ul>
+<li><a href="http://linux.die.net/man/1/scp">scp</a> - Secure remote file copy utility over <em>SSH</em>.</li>
+<li><a href="https://rsync.samba.org">rsync</a> - Fast incremental transfer utility that supports <em>SSH</em>.</li>
+<li><a href="https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol">sftp</a> - File transfer protocol over <em>SSH</em>.</li>
+<li><a href="http://curl.haxx.se">curl</a> - Command line tool and library to transfer data (support <code>sftp</code>).</li>
+</ul>
+<h3>Servers</h3>
+<ul>
+<li><a href="https://github.com/moul/sshportal">sshportal</a> <a href="https://github.com/moul/sshportal"><img alt="stars" src="https://img.shields.io/github/stars/moul/sshportal.svg?style=social&amp;label=stars" /></a> - simple, fun, and transparent SSH (&amp; Telnet) Bastion Server</li>
+<li><a href="https://github.com/moul/ssh2docker">ssh2docker</a> <a href="https://github.com/moul/ssh2docker"><img alt="stars" src="https://img.shields.io/github/stars/moul/ssh2docker.svg?style=social&amp;label=stars" /></a> - <em>SSH</em> server to Docker containers.</li>
+<li><a href="https://github.com/ml-tooling/ssh-proxy">ssh-proxy</a> <a href="https://github.com/ml-tooling/ssh-proxy"><img alt="stars" src="https://img.shields.io/github/stars/ml-tooling/ssh-proxy.svg?style=social&amp;label=stars" /></a> - Dockerized SSH bastion to proxy SSH connections to arbitrary containers.</li>
+<li><a href="https://github.com/FiloSottile/whosthere">whosthere</a> <a href="https://github.com/FiloSottile/whosthere"><img alt="stars" src="https://img.shields.io/github/stars/FiloSottile/whosthere.svg?style=social&amp;label=stars" /></a> - A <em>SSH</em> server that knows who you are. <code>$ ssh whoami.filippo.io</code>.</li>
+<li><a href="https://github.com/gliderlabs/sshfront">sshfront</a> <a href="https://github.com/gliderlabs/sshfront"><img alt="stars" src="https://img.shields.io/github/stars/gliderlabs/sshfront.svg?style=social&amp;label=stars" /></a> - Programmable <em>SSH</em> frontend.</li>
+<li><a href="https://github.com/shazow/ssh-chat">ssh-chat</a> <a href="https://github.com/shazow/ssh-chat"><img alt="stars" src="https://img.shields.io/github/stars/shazow/ssh-chat.svg?style=social&amp;label=stars" /></a> - Chat over <em>SSH</em>.</li>
+<li><a href="https://github.com/dokku/sshcommand">sshcommand</a> <a href="https://github.com/dokku/sshcommand"><img alt="stars" src="https://img.shields.io/github/stars/dokku/sshcommand.svg?style=social&amp;label=stars" /></a> - Turn <em>SSH</em> into a thin client specifically for your app.</li>
+<li><a href="https://github.com/joushou/sshmuxd">sshmuxd</a> <a href="https://github.com/joushou/sshmuxd"><img alt="stars" src="https://img.shields.io/github/stars/joushou/sshmuxd.svg?style=social&amp;label=stars" /></a> - <code>sshmux</code> frontend.</li>
+<li><a href="https://github.com/jquast/x84">x84</a> <a href="https://github.com/jquast/x84"><img alt="stars" src="https://img.shields.io/github/stars/jquast/x84.svg?style=social&amp;label=stars" /></a> - A <em>python</em> <code>telnet</code>/<code>ssh</code> server for modern <em>UTF-8</em> and classic <em>cp437</em> network virtual terminals. In spirit of classic software such as <em>ami/x</em>, <em>teleguard</em>, <em>renegade</em>, <em>iniquity</em>.</li>
+</ul>
+        </noscript>
+        <div id="dynamic-content">
+            <h1>Awesome SSH <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a></h1>
+<blockquote>
+<p>A curated list of <em>SSH</em> <a href="#apps">apps</a>, <a href="#libraries">libraries</a> and <a href="#resources">resources</a>.</p>
+</blockquote>
+<h2 align="center"><img src="https://raw.githubusercontent.com/moul/awesome-ssh/master/logo.jpg" width="400" /></h2>
+
+<p>Inspired by the <a href="https://github.com/sindresorhus/awesome">awesome</a> list thing.</p>
+<p>Please read the <a href="CONTRIBUTING.md">contribution guidelines</a> if you want to contribute.</p>
+<p><strong>Check out my <a href="https://manfred.life/">blog</a> 🦄 or say <em>hi</em> on <a href="https://twitter.com/moul">Twitter</a>.</strong></p>
+<h2>Table of Contents</h2>
+<ul>
+<li><a href="#apps">Apps</a></li>
+<li><a href="#sshconfig"><code>.ssh/config</code></a></li>
+<li><a href="#tools-using-the-ssh-protocol">Tools using the <em>SSH</em> protocol</a></li>
+<li><a href="#servers">Servers</a></li>
+<li><a href="#network">Network</a></li>
+<li><a href="#multiplexers">Multiplexers</a></li>
+<li><a href="#ssh-keys--authentication">SSH Keys / Authentication</a></li>
+<li><a href="#ssh-agent">SSH agent</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#automation">Automation</a></li>
+<li><a href="#web">Web</a></li>
+<li><a href="#testing--honeypots">Testing / Honeypots</a></li>
+<li><a href="#alternatives-to-ssh">Alternatives to SSH</a></li>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#community">Community</a></li>
+</ul>
+<h2>Apps</h2>
+<h3><code>.ssh/config</code></h3>
+<ul>
+<li><a href="https://github.com/moul/assh"><code>assh</code></a> <a href="https://github.com/moul/advanced-ssh-config"><img alt="stars" src="https://img.shields.io/github/stars/moul/advanced-ssh-config.svg?style=social&amp;label=stars" /></a> - Transparent wrapper (ProxyCommand) that adds regex, aliases, gateways, includes, dynamic hostnames to <em>SSH</em> and <code>ssh-config</code>. <em>Previously: <code>advanced-ssh-config</code></em></li>
+<li><a href="https://github.com/emre/storm">storm</a> <a href="https://github.com/emre/storm"><img alt="stars" src="https://img.shields.io/github/stars/emre/storm.svg?style=social&amp;label=stars" /></a> - Manage your <em>SSH</em> like a boss.</li>
+<li><a href="https://github.com/gaqzi/ansible-ssh-config">ansible-ssh-config</a> <a href="https://github.com/gaqzi/ansible-ssh-config"><img alt="stars" src="https://img.shields.io/github/stars/gaqzi/ansible-ssh-config.svg?style=social&amp;label=stars" /></a> - Letting <em>Ansible</em> manage <code>ssh_config</code>.</li>
+<li><a href="https://github.com/mirakui/ec2ssh">ec2ssh</a> <a href="https://github.com/mirakui/ec2ssh"><img alt="stars" src="https://img.shields.io/github/stars/mirakui/ec2ssh.svg?style=social&amp;label=stars" /></a> - A <code>ssh_config</code> manager for <em>AWS EC2</em>.</li>
+<li><a href="https://github.com/dbrady/ssh-config">ssh-config</a> <a href="https://github.com/dbrady/ssh-config"><img alt="stars" src="https://img.shields.io/github/stars/dbrady/ssh-config.svg?style=social&amp;label=stars" /></a> - A tool to help manage your <code>.ssh/config</code> file.</li>
+</ul>
+<h3>Tools using the <em>SSH</em> protocol</h3>
+<ul>
+<li><a href="http://linux.die.net/man/1/scp">scp</a> - Secure remote file copy utility over <em>SSH</em>.</li>
+<li><a href="https://rsync.samba.org">rsync</a> - Fast incremental transfer utility that supports <em>SSH</em>.</li>
+<li><a href="https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol">sftp</a> - File transfer protocol over <em>SSH</em>.</li>
+<li><a href="http://curl.haxx.se">curl</a> - Command line tool and library to transfer data (support <code>sftp</code>).</li>
+</ul>
+<h3>Servers</h3>
+<ul>
+<li><a href="https://github.com/moul/sshportal">sshportal</a> <a href="https://github.com/moul/sshportal"><img alt="stars" src="https://img.shields.io/github/stars/moul/sshportal.svg?style=social&amp;label=stars" /></a> - simple, fun, and transparent SSH (&amp; Telnet) Bastion Server</li>
+<li><a href="https://github.com/moul/ssh2docker">ssh2docker</a> <a href="https://github.com/moul/ssh2docker"><img alt="stars" src="https://img.shields.io/github/stars/moul/ssh2docker.svg?style=social&amp;label=stars" /></a> - <em>SSH</em> server to Docker containers.</li>
+<li><a href="https://github.com/ml-tooling/ssh-proxy">ssh-proxy</a> <a href="https://github.com/ml-tooling/ssh-proxy"><img alt="stars" src="https://img.shields.io/github/stars/ml-tooling/ssh-proxy.svg?style=social&amp;label=stars" /></a> - Dockerized SSH bastion to proxy SSH connections to arbitrary containers.</li>
+<li><a href="https://github.com/FiloSottile/whosthere">whosthere</a> <a href="https://github.com/FiloSottile/whosthere"><img alt="stars" src="https://img.shields.io/github/stars/FiloSottile/whosthere.svg?style=social&amp;label=stars" /></a> - A <em>SSH</em> server that knows who you are. <code>$ ssh whoami.filippo.io</code>.</li>
+<li><a href="https://github.com/gliderlabs/sshfront">sshfront</a> <a href="https://github.com/gliderlabs/sshfront"><img alt="stars" src="https://img.shields.io/github/stars/gliderlabs/sshfront.svg?style=social&amp;label=stars" /></a> - Programmable <em>SSH</em> frontend.</li>
+<li><a href="https://github.com/shazow/ssh-chat">ssh-chat</a> <a href="https://github.com/shazow/ssh-chat"><img alt="stars" src="https://img.shields.io/github/stars/shazow/ssh-chat.svg?style=social&amp;label=stars" /></a> - Chat over <em>SSH</em>.</li>
+<li><a href="https://github.com/dokku/sshcommand">sshcommand</a> <a href="https://github.com/dokku/sshcommand"><img alt="stars" src="https://img.shields.io/github/stars/dokku/sshcommand.svg?style=social&amp;label=stars" /></a> - Turn <em>SSH</em> into a thin client specifically for your app.</li>
+<li><a href="https://github.com/joushou/sshmuxd">sshmuxd</a> <a href="https://github.com/joushou/sshmuxd"><img alt="stars" src="https://img.shields.io/github/stars/joushou/sshmuxd.svg?style=social&amp;label=stars" /></a> - <code>sshmux</code> frontend.</li>
+<li><a href="https://github.com/jquast/x84">x84</a> <a href="https://github.com/jquast/x84"><img alt="stars" src="https://img.shields.io/github/stars/jquast/x84.svg?style=social&amp;label=stars" /></a> - A <em>python</em> <code>telnet</code>/<code>ssh</code> server for modern <em>UTF-8</em> and classic <em>cp437</em> network virtual terminals. In spirit of classic software such as <em>ami/x</em>, <em>teleguard</em>, <em>renegade</em>, <em>iniquity</em>.</li>
+</ul>
+        </div>
     </article>
 
     <script>
-        // =====================================================
-        // MARKDOWN TEMPLATE - Direct .md file rendering
-        // =====================================================
-        // 
-        // HOW TO USE:
-        // 1. Copy this template and rename it for your page
-        // 2. Change the 'markdownFile' variable below to your .md filename
-        // 3. Update the <title> and meta description
-        // 4. That's it! The markdown will be automatically converted to HTML
-        //
-        // =====================================================
-
-        // Change this to your markdown file name
+        // Load full markdown dynamically for users with JS
         const markdownFile = 'ssh_README.md';
 
         fetch(markdownFile)
@@ -48,21 +157,11 @@
                 return response.text();
             })
             .then(markdown => {
-                // Parse markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked.parse(markdown);
+                document.getElementById('dynamic-content').innerHTML = marked.parse(markdown);
             })
             .catch(err => {
                 console.error('Error loading markdown:', err);
-                document.getElementById('content').innerHTML = `
-                    <h1>Markdown Template</h1>
-                    <p>Could not load <code>${markdownFile}</code></p>
-                    <p>To use this template:</p>
-                    <ol>
-                        <li>Place your .md file in the same directory</li>
-                        <li>Edit the <code>markdownFile</code> variable in this HTML file</li>
-                        <li>Update the page title and description in the &lt;head&gt;</li>
-                    </ol>
-                `;
+                // Static content already visible, no action needed
             });
     </script>
 </body>
