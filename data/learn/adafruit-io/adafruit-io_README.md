@@ -1,7 +1,5 @@
-<h1 align="center">
-  <a href="https://io.adafruit.com">
-  </a><br>Awesome Adafruit IO
-</h1>
+# Adafruit IO
+
 
 
 

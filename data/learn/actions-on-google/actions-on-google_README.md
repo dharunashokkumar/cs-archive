@@ -1,6 +1,6 @@
-# Awesome Actions on Google  [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Actions on Google 
 
-A curated list of awesome AoG(Action on Google) libraries, blogs, open-source project, videos.
+A curated list of AoG(Action on Google) libraries, blogs, open-source project, videos.
 
 With [Actions on Google](https://developers.google.com/actions/), you can easily reach and engage with users across Google. From quick commands to full conversations, Actions help you connect your content and services to users with the Google Assistant.
 
@@ -106,10 +106,3 @@ With [Actions on Google](https://developers.google.com/actions/), you can easily
 - [Fun Tricks](https://assistant.google.com/services/a/uid/00000038e95bb789) - Lighten up your day with jokes and other fun tricks. Check them out, there's always something new to try.
 - [Google Podcasts](https://assistant.google.com/services/a/uid/000000e0ea9c992f) - Listen to your favorite podcasts by asking your Assistant.
 
-## Contribute
-
-Contributions welcome! Read the [contribution guidelines](contributing.md) first.
-
-## License
-
-[![CC0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)

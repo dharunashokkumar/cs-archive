@@ -1,5 +1,4 @@
-# Awesome Ad-Free [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
-
+# Ad-Free 
 A curated list of ad-free alternatives to popular services on the web.
 
 > Am I saying you should refrain from using an ad blocker? No. But consider offsetting your act of disobedience with an act of affirmative support. Vote with your wallet. Put some money behind the writing you like—whether it’s a website or a magazine or a newspaper. “But such-and-such website won’t let me pay for it.” Then discover something new.
@@ -169,6 +168,3 @@ These business don't advertise yet are successful.
 - [Art Not Ads](http://artnotads.org) - Artists creating change in the urban landscape, but not by going after the ads themselves. ([Wayback Machine archive](http://web.archive.org/web/20190111233537/http://artnotads.org/))
 - [Goblin Refuge](https://goblinrefuge.com/mediagoblin/) - Video and image sharing service powered by MediaGoblin. ([Wayback Machine archive](https://web.archive.org/web/20190512071500/https://goblinrefuge.com/mediagoblin/))
 
-## License
-
-[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)

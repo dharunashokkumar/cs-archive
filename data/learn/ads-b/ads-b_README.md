@@ -1,12 +1,11 @@
 <!-- GITHUB LOGO PLACEHOLDER -->
 
-<div align="center">
 
 <!-- title -->
 
 <!--lint ignore double-link-->
 
-# <a style="color: inherit" href="https://github.com/rickstaa/awesome-adsb">Awesome ADS-B</a> [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![GitHub contributors](https://img.shields.io/github/contributors/rickstaa/awesome-adsb?color=geen)](https://github.com/rickstaa/awesome-adsb/graphs/contributors) [![GitHub Repo stars](https://img.shields.io/github/stars/rickstaa/awesome-adsb)](https://github.com/rickstaa/awesome-adsb/stargazers) <!-- omit in toc -->
+# ADS - B
 
 > **Note**
 > Just type `adsb.cool` to go here.
@@ -190,40 +189,3 @@ A curated list of awesome [ASD-B](https://en.wikipedia.org/wiki/Automatic_Depend
 - [Vinnant antennas](https://vinnant.sk/) - Specialized premium antennas made in Slovakia.
 - [DPD antennas](https://dpdproductions.com/) - High-quality antennas for various radio services produced in the USA.
 
-## Follow
-
-<!-- List people worth following on social sites (Twitter, LinkedIn, GitHub, YouTube etc.) -->
-
-<!--lint ignore double-link-->
-
-> **TODO:**
-> Please [create a pull request](https://github.com/rickstaa/awesome-adsb/pulls) if you know people in the ADS-B space that are worth following.
-
-Who else should we [be following](https://github.com/rickstaa/awesome-adsb/issues/new?assignees=&labels=&template=suggestion.yaml)?
-
-<!-- END CONTENT -->
-
-**[⬆ back to top](#contents)**
-
-<!-- REPO INFO -->
-
-<!-- omit in toc -->
-## Contributing
-
-Contributions of any kind are welcome 💙! Please check out the [contributing guidelines](contributing.md).
-
-[![CC0](https://i.creativecommons.org/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
-
-<!-- omit in toc -->
-### Contributors
-
-<!--lint ignore double-link-->
-
-This project exists thanks to all the people [that contributed](https://github.com/rickstaa/awesome-adsb/graphs/contributors)!
-
-<!--lint ignore double-link-->
-<a href="https://github.com/rickstaa/awesome-adsb/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=rickstaa/awesome-adsb" />
-</a>
-</br>
-</br>

@@ -1,4 +1,4 @@
-# Awesome Advertising [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Advertising
 
 **A curated list of advertising and programmatic media content and resources.**
 
@@ -92,20 +92,3 @@
 - [Prebid + GAM setup tool](https://github.com/kmjennison/dfp-prebid-setup) - An automated line item generator for Prebid.js and Google Ad Manager.
 - React Prebid - [GitHub](https://github.com/technology-ebay-de/react-prebid) | [Docs](https://github.com/technology-ebay-de/react-prebid/wiki) - React library to implement Google Ad Manager on your website.
 
-## Newsletters
-
-- [AdProfs](https://adprofs.co/this-week-in-ad-tech/) - This week in ad tech - one email per week, 5 min read.
-- [Business News from Facebook](https://www.facebook.com/business/m/updates-signup) - Latest updates, marketing trends and advertising tips from Facebook.
-- [Happy Friday by Simon J. Harris](https://simonjharris.substack.com) - Ad tech info curated by [@SimonJHarris](https://twitter.com/SimonJHarris).
-
-## Contributing
-
-Contributions to this list are always welcome! Take a look at [contribution guidelines](https://github.com/cenoura/awesome-ads/blob/master/CONTRIBUTING.md) and feel free to open a PR adding/updating items.
-
-## Contact
-
-If you have any questions or suggestions about this list, do not hesitate to contact me on Twitter [@\_seunoura](https://twitter.com/_seunoura) or [open an issue](https://github.com/cenoura/awesome-ads/issues/new).
-
-## License
-
-This work is licensed under [Creative Commons Attribution 4.0 International](https://github.com/cenoura/awesome-ads/blob/master/LICENSE).
